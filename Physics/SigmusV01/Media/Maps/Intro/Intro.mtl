@@ -1,0 +1,36 @@
+# Exported from DeleD's Wavefront OBJ Exporter 1.0
+# Visit http://www.delgine.com for more information.
+newmtl system
+map_Kd system.bmp
+newmtl Floor_1
+map_Kd Floor_1.jpg
+newmtl Floor_3
+map_Kd Floor_3.jpg
+newmtl Floor_5
+map_Kd Floor_5.jpg
+newmtl HightechFloor02
+map_Kd HightechFloor02.jpg
+newmtl Ceiling_3
+map_Kd Ceiling_3.jpg
+newmtl Ceiling_2
+map_Kd Ceiling_2.jpg
+newmtl Ceiling_1
+map_Kd Ceiling_1.jpg
+newmtl HightechWall03
+map_Kd HightechWall03.jpg
+newmtl HightechWall05
+map_Kd HightechWall05.jpg
+newmtl Wall_2
+map_Kd Wall_2.jpg
+newmtl Wall_4
+map_Kd Wall_4.jpg
+newmtl Wall_6
+map_Kd Wall_6.jpg
+newmtl Wall_9
+map_Kd Wall_9.jpg
+newmtl 0111_MET
+map_Kd 0111_MET.JPG
+newmtl 0110_MET
+map_Kd 0110_MET.JPG
+newmtl METAL127
+map_Kd METAL127.TGA

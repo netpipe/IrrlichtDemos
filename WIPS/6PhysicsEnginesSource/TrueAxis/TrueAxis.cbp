@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TrueAxis" />
+		<Option pch_mode="2" />
+		<Option compiler="msvc8" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin\Release\TrueAxis" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="msvc8" />
+			</Target>
+		</Build>
+		<Linker>
+			<Add option="/nodefaultlib:libc.lib /nodefaultlib:libcp.lib" />
+			<Add library="F:\IrrlichtStuff\TrueAxisSDK\TA\TAPhysicsS.lib" />
+			<Add library="F:\IrrlichtStuff\TrueAxisSDK\TA\TACommonS.lib" />
+			<Add library="F:\IrrlichtStuff\irrlicht-1.4.1\lib\Win32-visualstudio\Irrlicht.lib" />
+		</Linker>
+		<Unit filename="..\..\..\BrauchbareIncludes\hr_time.cpp" />
+		<Unit filename="..\..\..\BrauchbareIncludes\hr_time.h" />
+		<Unit filename="..\DebugDisplay\DebugDisplayClass.cpp" />
+		<Unit filename="..\DebugDisplay\DebugDisplayClass.h" />
+		<Unit filename="..\IrrEvents\IrrEventsClass.cpp" />
+		<Unit filename="..\IrrEvents\IrrEventsClass.h" />
+		<Unit filename="Main.cpp" />
+		<Unit filename="TrueAxisClass.cpp" />
+		<Unit filename="TrueAxisClass.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

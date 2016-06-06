@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Bullet" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin\Release\Bullet" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Os" />
+			<Add option="-O3" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Linker>
+			<Add option="-s" />
+			<Add library="..\..\Libraries\Grafik\irrlicht-1.4.1\lib\Win32-gcc\libIrrlicht.a" />
+			<Add library="..\..\Libraries\Physik\BulletSDK\out\release8\libs\libbulletsoftbody.a" />
+			<Add library="..\..\Libraries\Physik\BulletSDK\out\release8\libs\libbulletdynamics.a" />
+			<Add library="..\..\Libraries\Physik\BulletSDK\out\release8\libs\libbulletmath.a" />
+			<Add library="..\..\Libraries\Physik\BulletSDK\out\release8\libs\libbulletcollision.a" />
+			<Add library="..\..\Libraries\Physik\BulletSDK\out\release8\libs\libBulletColladaConverter.a" />
+			<Add library="..\..\Libraries\Physik\BulletSDK\out\release8\libs\libbulletmultithreaded.a" />
+			<Add library="..\..\Libraries\Physik\BulletSDK\out\release8\libs\libbulletopenglsupport.a" />
+			<Add library="..\..\Libraries\Physik\BulletSDK\out\release8\libs\libcolladadom.a" />
+			<Add library="..\..\Libraries\Physik\BulletSDK\out\release8\libs\libconvexdecomposition.a" />
+			<Add library="..\..\Libraries\Physik\BulletSDK\out\release8\libs\libGIMPACT.a" />
+			<Add library="..\..\Libraries\Physik\BulletSDK\out\release8\libs\libGIMPACTUtils.a" />
+			<Add library="..\..\Libraries\Physik\BulletSDK\out\release8\libs\libglui.a" />
+			<Add library="..\..\Libraries\Physik\BulletSDK\out\release8\libs\liblibxml.a" />
+		</Linker>
+		<Unit filename="..\..\..\BrauchbareIncludes\hr_time.cpp" />
+		<Unit filename="..\..\..\BrauchbareIncludes\hr_time.h" />
+		<Unit filename="BulletClass.cpp" />
+		<Unit filename="BulletClass.h" />
+		<Unit filename="Main.cpp" />
+		<Unit filename="..\DebugDisplay\DebugDisplayClass.cpp" />
+		<Unit filename="..\DebugDisplay\DebugDisplayClass.h" />
+		<Unit filename="..\IrrEvents\IrrEventsClass.cpp" />
+		<Unit filename="..\IrrEvents\IrrEventsClass.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

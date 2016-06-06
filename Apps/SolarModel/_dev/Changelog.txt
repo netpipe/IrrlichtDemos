@@ -1,0 +1,81 @@
+Solar Model Changelog
+=====================
+
+- Implement LOD.
+- Add bump maps to planets (add ability to specify it in Object->Material in xml somehow).
+- Add zoomIn/zoomOut animation when using Galaxy feature.
+/ Add realtime shadows.
+
+v2.1 Notes
+----------
+
++ Added Ruler feature.
++ Added Measurer feature.
++ Added Advanced SysInfo feature.
++ Added Screenshot without GUI option.
++ Added tooltips to some GUI elements.
++ Fixed bug with incorrect Earth rotation direction.
++ Fixed bug with incorrect measurement of system RAM (in SysInfo).
++ Fixed bug with rendering atmosphere layer on Saturn when using OpenGL renderer.
++ Moved to latest IrrLicht library (version 1.4.1, revision 1458).
+
+V2.0 Notes
+----------
+
++ Reworked GUI.
++ Improved asteroids looking.
++ Located planets in the correct nowadays positions.
++ Added displaying current approximate camera's distance from the Sun (in km and a.u.).
++ Added Galaxy feature.
++ Added Options feature.
++ Added Direct3D9 renderer.
++ Added bills to gas gians (Jupiter, Saturn, Uranus, Neptune).
++ Added Screenshots feature.
++ Added ability to change camera speed.
++ Migrated map scripts on XML.
++ Fixed found grammar mistakes.
++ Updated to latest IrrLicht library (version 1.3.1, revision 721).
+
+V1.21 Notes
+-----------
+
++ Added Asteroid Belt.
++ Add Kuiper Belt.
++ Fixed Saturn polar diameter.
++ Improved source compatibility (now the same source compiles under Windows and Linux).
++ Updated to latest IrrLicht library (version 1.3, revision 636).
+
+V1.2 Notes
+----------
+
++ Added ability to link camera LookFrom and LookAt points with space objects.
++ Added ability to switch on/off labels on objects.
++ Added Ceres dwarf planet.
++ Added ring to Uranus.
++ Added number of moons with descriptions (and all "old" moons reviewed). Fixed rotating traectories.
++ Added original textures of main moons of the planets.
++ Added real angles to orbits of Eris, Pluto and Neptune.
++ Fixed shifted object picking.
++ Fixed screen blinking when changing time flow speed.
++ SysInfo feature added.
++ Help feature added.
++ Pluto's and Charon's textures changed.
++ Number of object's description updated.
++ Adopted space object proportions. Sun updated to smaller size (indeed Sun more than 1 million times bigger of Earth ). Lets ignore Sun's size and distance to Earth, so now from Earth Sun looks like real; Moon some times can hide the Sun makes solar eclipse possible).
++ Updated to latest IrrLicht library (vesion 1.3, revision 568).
++ Fixed found grammar mistakes.
+
+V1.1 Notes
+----------
++ Removed transparency from Sun texture.
++ Increased Sun’s brightness.
++ Fixed some grammar mistakes.
++ Fixed wrong textures of Uranus, Neptune and Pluto.
++ Changed diffuse textures for more detailed for such planets/moons: Sun, Mercury, Venus, Moon, Mars, Jupiter, Saturn, Uranus, Neptune and Pluto. Also space stars texture now got 1024x1024 size.
++ Added atmospheric glow to Earth.
++ Added configuration file (config.dat). It contains all information about what driver to use for rendering, what resolution, use full screen or not and more.
++ Charon’s over Pluto rotation period fixed. Charon’s description added.
+
+V1.0 Notes
+----------
+First release.

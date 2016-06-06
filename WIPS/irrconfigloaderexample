@@ -1,0 +1,187 @@
+
+void CApp::LoadPlayerModel(char* filename)
+{
+	io::IXMLReader* xml = filesystem->createXMLReader(filename);
+
+	CPlayerModel* PlayerModel = new CPlayerModel();
+	
+
+	while(xml && xml->read())
+	{
+		switch(xml->getNodeType())
+		{
+			case io::EXN_ELEMENT:
+			{
+				if (core::stringw("model") == xml->getNodeName())
+				{
+					PlayerModel->scale = Game->GetVectorFromString(xml->getAttributeValue(L"scale"));
+					PlayerModel->position = Game->GetVectctorFromString(xml->getAttributeValue(L"position"));
+					PlayerModel->rotation = Game->GetVeorFromString(xml->getAttributeValue(L"rotation"));
+					PlayerModel->name = xml->getAttributeValue(L"name");
+					PlayerModel->file = xml->getAttributeValue(L"file");
+					PlayerModel->skin = xml->getAttributeValue(L"skin");
+				}
+			}
+		}
+	}
+
+	PlayerModels.push_back(PlayerModel);
+
+	xml->drop();
+}
+
+void CApp::LoadPlayerModelsList()
+{
+	io::IReadFile* file = filesystem->createAndOpenFile("player_models.txt");
+
+	char *contents = new char[file->getSize()+1]; 
+	memset(contents, 0, file->getSize()+1);
+
+	file->read(contents, file->getSize());
+	delete file;
+
+	char* linepos = contents;
+	char* line = new char[256];
+
+	for (int i = 0; true ; i++)
+	{
+		// read line
+		char* p=linepos;
+		for(; *p && *p != '\n'; p++);
+
+		if (!*p)
+			break;
+
+		memset(line, 0, 256);
+		memcpy(line, linepos, p-linepos-1);
+
+		linepos = p+1;
+
+		LoadPlayerModel(line);
+	}
+
+	delete contents;
+	delete line;	
+}
+
+void CApp::LoadMapList()
+{
+	for(u32 m=0; m<App->MapList.size(); m++)
+	{
+		delete MapList[m];
+	}
+	MapList.clear();
+
+	filesystem->changeWorkingDirectoryTo("maps/");
+	io::IFileList* files = filesystem->createFileList();
+
+	CMap* LastMap = NULL;
+
+	for(int i=0; i<files->getFileCount(); i++)
+	{
+		const char* filename = files->getFileName(i); 
+		
+		const char* lastchar = filename + strlen(filename) -1;
+		if ( strlen(filename) <= 4 || *(lastchar-3) != '.' || *(lastchar-2) != 'x'  || *(lastchar-1) != 'm' || *lastchar != 'l'  )
+			continue;
+
+		io::IXMLReader* xml = filesystem->createXMLReader(filename);
+		
+		while(xml && xml->read())
+		{
+			switch(xml->getNodeType())
+			{
+				case io::EXN_ELEMENT:
+				{
+					if (core::stringw("map") == xml->getNodeName())
+					{
+						CMap* newMap = new CMap();
+						LastMap = newMap,
+						newMap->MapName = xml->getAttributeValue(L"name");
+						newMap->ZipFilename = xml->getAttributeValue(L"zip");
+						newMap->BspFilename = xml->getAttributeValue(L"bsp");
+						newMap->Scale = Game->GetVectorFromString(xml->getAttributeValue(L"scale"));
+						
+						char* cBuffer = new char[256];
+						wcstombs(cBuffer, newMap->ZipFilename.c_str(),256);
+						
+						FILE* fp = fopen(cBuffer, "r");
+						if ( fp )
+						{
+							MapList.push_back(newMap);
+							fclose(fp);
+						}
+
+						else
+						{
+							Log("Could not open Map Zip File: %s",newMap->ZipFilename.c_str() );
+
+							delete newMap;
+							LastMap = NULL;
+						}
+					}
+
+					else if (LastMap && core::stringw("spawnpoint") == xml->getNodeName())
+					{
+						CSpawnPoint Spawn;
+						Spawn.position = Game->GetVectorFromString(xml->getAttributeValue(L"position"));
+						Spawn.lookat = Game->GetVectorFromString(xml->getAttributeValue(L"lookat"));
+						core::stringw team = xml->getAttributeValue(L"team");
+						if ( team == core::stringw("neutral") )
+							Spawn.team = 0;
+						else if ( team == core::stringw("red") )
+							Spawn.team = 1;
+						else if ( team == core::stringw("blue") )
+							Spawn.team = 2;
+						LastMap->SpawnPoints.push_back(Spawn);
+					}
+
+					else if (LastMap && core::stringw("water") == xml->getNodeName())
+					{
+						CWaterEntity Water;
+						Water.position = Game->GetVectorFromString(xml->getAttributeValue(L"position"));
+						Water.dimensions = Game->GetVectorFromString(xml->getAttributeValue(L"dimensions"));
+						Water.WaterName = xml->getAttributeValue(L"name");
+						LastMap->WaterEntities.push_back(Water);
+					}
+					
+					else if (LastMap && core::stringw("entity") == xml->getNodeName())
+					{
+						core::stringw type = xml->getAttributeValue(L"type");
+						CEntity Entity;
+						Entity.type = type;
+						Entity.position = Game->GetVectorFromString(xml->getAttributeValue(L"position"));
+						LastMap->Entities.push_back(Entity);
+					}
+
+					else if (LastMap && core::stringw("weaponspawn") == xml->getNodeName())
+					{
+						CWeaponSpawn WeaponSpawn;
+						WeaponSpawn.Active = true;
+						
+						core::stringw _delay = xml->getAttributeValue(L"delay");
+						core::stringw _id = xml->getAttributeValue(L"id");
+						core::stringw _giveammo = xml->getAttributeValue(L"giveammo");
+						
+						WeaponSpawn.Position = Game->GetVectorFromString(xml->getAttributeValue(L"position"));
+						WeaponSpawn.Name = xml->getAttributeValue(L"_name");
+						WeaponSpawn.LastSpawn = 0;
+
+						swscanf(_id.c_str(), L"%i", &WeaponSpawn.WeaponID);
+						swscanf(_giveammo.c_str(), L"%i", &WeaponSpawn.GiveAmmo);
+						swscanf(_delay.c_str(), L"%i", &WeaponSpawn.Delay);
+						
+						LastMap->WeaponSpawnPoints.push_back(WeaponSpawn);
+					}
+				} // end case
+				break;
+			} // end switch
+		} // end while
+
+		if (xml)
+				xml->drop(); // don't forget to delete the xml reader 		
+	}
+
+	filesystem->changeWorkingDirectoryTo("../");
+	delete files;
+}

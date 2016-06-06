@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Z0" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="TechnoMemo" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="E:/LTGameJam_2010/Z0/.objs" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Linker>
+					<Add library="OpenAL32" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="TechnoMemo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="E:/LTGameJam_2010/Z0/.objs_release" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Os" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="OpenAL32" />
+				</Linker>
+			</Target>
+			<Target title="Linux">
+				<Option output="TechnoMemo" prefix_auto="1" extension_auto="1" />
+				<Option object_output=".lobjs_release" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Os" />
+					<Add option="-O2" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="openal" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="kodas" />
+		</Compiler>
+		<Linker>
+			<Add library="vorbis" />
+			<Add library="vorbisfile" />
+			<Add library="Irrlicht" />
+		</Linker>
+		<Unit filename="Res.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="kodas/defines.cpp" />
+		<Unit filename="kodas/defines.hpp" />
+		<Unit filename="kodas/globals.cpp" />
+		<Unit filename="kodas/globals.hpp" />
+		<Unit filename="kodas/variklis/garsas/garsai.cpp" />
+		<Unit filename="kodas/variklis/garsas/garsai.hpp" />
+		<Unit filename="kodas/variklis/garsas/garsas.cpp" />
+		<Unit filename="kodas/variklis/garsas/garsas.hpp" />
+		<Unit filename="kodas/variklis/garsas/ogg.cpp" />
+		<Unit filename="kodas/variklis/garsas/ogg.hpp" />
+		<Unit filename="kodas/variklis/garsas/ogg_garsas.cpp" />
+		<Unit filename="kodas/variklis/garsas/ogg_garsas.hpp" />
+		<Unit filename="kodas/variklis/garsas/ogg_stream.cpp" />
+		<Unit filename="kodas/variklis/garsas/ogg_stream.hpp" />
+		<Unit filename="kodas/variklis/garsas/wav.cpp" />
+		<Unit filename="kodas/variklis/garsas/wav.hpp" />
+		<Unit filename="kodas/variklis/garsas/wav_dat.cpp" />
+		<Unit filename="kodas/variklis/garsas/wav_dat.hpp" />
+		<Unit filename="kodas/variklis/logas.cpp" />
+		<Unit filename="kodas/variklis/logas.hpp" />
+		<Unit filename="kodas/variklis/matke/taskas.cpp" />
+		<Unit filename="kodas/variklis/matke/taskas.hpp" />
+		<Unit filename="kodas/variklis/utils/f_uzkrovimas.cpp" />
+		<Unit filename="kodas/variklis/utils/f_uzkrovimas.hpp" />
+		<Unit filename="kodas/variklis/utils/utils.cpp" />
+		<Unit filename="kodas/variklis/utils/utils.hpp" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

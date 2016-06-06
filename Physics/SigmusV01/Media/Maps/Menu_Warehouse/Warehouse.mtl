@@ -1,0 +1,16 @@
+# Exported from DeleD's Wavefront OBJ Exporter 1.0
+# Visit http://www.delgine.com for more information.
+newmtl HightechFloor01
+map_Kd HightechFloor01.jpg
+newmtl HightechFloor02
+map_Kd HightechFloor02.jpg
+newmtl HightechWall01
+map_Kd HightechWall01.jpg
+newmtl HightechWall02
+map_Kd HightechWall02.jpg
+newmtl HightechWall03
+map_Kd HightechWall03.jpg
+newmtl HightechWall05
+map_Kd HightechWall05.jpg
+newmtl HightechWall06
+map_Kd HightechWall06.jpg

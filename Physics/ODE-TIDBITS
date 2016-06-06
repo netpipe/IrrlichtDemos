@@ -1,0 +1,33 @@
+/*
+
+Here is code to use ODE to ray cast from an irrlicht scene node object. Useful for shooting and as a turn sensor. I assume you alredy have the the Irrlicht ODE tutorial working. scenenode is the node that you want to cast a ray from, Geom is the ODE geometry attached to the scenenode, Body is the ODE body attached to the scene node, and space is the collision space.
+
+Code:
+*/
+
+dGeomID ray = dCreateRay(Space,1000);
+bPos = scenenode->getAbsolutePosition();
+const dReal *r;
+r = dBodyGetRotation(Body);
+dGeomSetRotation (ray,r);
+dGeomSetPosition (ray,bPos.X, bPos.Y, bPos.Z);
+
+dContactGeom contact;
+dGeomRaySetLength (ray,1000);
+int num = dSpaceGetNumGeoms(Space);
+for (int ii=0; ii<num; ++ii) {
+   dGeomID geo = dSpaceGetGeom(Space,ii);
+   if ( dGeomGetClass( geo ) == dSphereClass || dGeomGetClass( geo ) == dBoxClass ){
+      if (geo != Geom) {
+         if ( dCollide( ray, geo, 1, &contact, sizeof(contact) ) ){
+            cout << "contact with object at co-ord : " << endl;
+            const dReal *tPos  = dGeomGetPosition (geo);
+            cout << "x" << tPos[0] << "; y" << tPos[1] << "; z" << tPos[2] << endl;
+         }
+      }
+   }
+}
+dSpaceRemove( Space, ray );
+dGeomDestroy( ray );
+
+

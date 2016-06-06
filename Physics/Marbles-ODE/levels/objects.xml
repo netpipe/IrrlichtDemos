@@ -1,0 +1,18 @@
+<objects>
+  <object name="ice" slip1="50.0" slip2="75.0" />
+  <object name="bounce_s" ay="2" sound="sounds/jump.ogg" />
+  <object name="bounce_m" ay="8" sound="sounds/jump.ogg" />
+  <object name="bounce_l" ay="20" sound="sounds/jump.ogg" delay="500" />
+  <object name="push_x1_s" ax="2" sound="sounds/accel.ogg" delay="500" />
+  <object name="push_x1_m" ax="5" sound="sounds/accel.ogg" delay="500" />
+  <object name="push_x1_l" ax="10" sound="sounds/accel.ogg" delay="500" />
+  <object name="push_z1_s" az="2" sound="sounds/accel.ogg" delay="500" />
+  <object name="push_z1_m" az="5" sound="sounds/accel.ogg" delay="500" />
+  <object name="push_z1_l" az="10" sound="sounds/accel.ogg" delay="500" />
+  <object name="push_x2_s" ax="-2" sound="sounds/accel.ogg" delay="500" />
+  <object name="push_x2_m" ax="-5" sound="sounds/accel.ogg" delay="500" />
+  <object name="push_x2_l" ax="-10" sound="sounds/accel.ogg" delay="500" />
+  <object name="push_z2_s" az="-2" sound="sounds/accel.ogg" delay="500" />
+  <object name="push_z2_m" az="-5" sound="sounds/accel.ogg" delay="500" />
+  <object name="push_z2_l" az="-10" sound="sounds/accel.ogg" delay="500" />
+</objects>

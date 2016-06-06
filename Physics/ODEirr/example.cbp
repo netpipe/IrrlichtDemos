@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ODEirr" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./Chapev" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="../../../../libs/irrlicht-1.6/include" />
+			<Add directory="../../../../libs/ode-0.11.1/include" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="ode" />
+			<Add library="drawstuff" />
+			<Add directory="../../../../libs/irrlicht-1.6/lib/Linux" />
+			<Add directory="../../../../libs/ode-0.11.1/ode/src/.libs" />
+			<Add directory="../../../../libs/ode-0.11.1/drawstuff/src/.libs" />
+		</Linker>
+		<Unit filename="base/box.cpp" />
+		<Unit filename="base/box.h" />
+		<Unit filename="base/cam_attachment.cpp" />
+		<Unit filename="base/cam_attachment.h" />
+		<Unit filename="base/map.cpp" />
+		<Unit filename="base/map.h" />
+		<Unit filename="base/player.cpp" />
+		<Unit filename="base/player.h" />
+		<Unit filename="base/rag_doll.cpp" />
+		<Unit filename="base/rag_doll.h" />
+		<Unit filename="camera.cpp" />
+		<Unit filename="camera.h" />
+		<Unit filename="core.cpp" />
+		<Unit filename="core.h" />
+		<Unit filename="globals.cpp" />
+		<Unit filename="globals.h" />
+		<Unit filename="help.cpp" />
+		<Unit filename="help.h" />
+		<Unit filename="menu.cpp" />
+		<Unit filename="menu.h" />
+		<Unit filename="misc/enums.h" />
+		<Unit filename="misc/player_direction.cpp" />
+		<Unit filename="misc/player_direction.h" />
+		<Unit filename="misc/structs.cpp" />
+		<Unit filename="misc/structs.h" />
+		<Unit filename="node/mesh_node.cpp" />
+		<Unit filename="node/mesh_node.h" />
+		<Unit filename="physics/basic.cpp" />
+		<Unit filename="physics/basic.h" />
+		<Unit filename="physics/box.cpp" />
+		<Unit filename="physics/box.h" />
+		<Unit filename="physics/player.cpp" />
+		<Unit filename="physics/player.h" />
+		<Unit filename="physics/rag_doll.cpp" />
+		<Unit filename="physics/rag_doll.h" />
+		<Unit filename="settings.cpp" />
+		<Unit filename="settings.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

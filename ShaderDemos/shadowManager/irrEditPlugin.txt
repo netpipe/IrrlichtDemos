@@ -1,0 +1,4 @@
+To install the IrrEdit plugin copy managedShadowPlugin.dll to the irredit/plugins folder and data/sceneNode_CManagedShadow.bmp to
+the irredit/resources folder. After restarting irredit the new scene node is available
+
+The plugin is designed for IrrEdit 1.5

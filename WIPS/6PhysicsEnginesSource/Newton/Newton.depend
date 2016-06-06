@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1215979239 source:f:\irrlichtstuff\meineprojekte\projects\irrevents\irreventsclass.cpp
+	"IrrEventsClass.h"
+
+1215979249 f:\irrlichtstuff\meineprojekte\projects\irrevents\irreventsclass.h
+	<irrlicht.h>
+
+1215983678 source:f:\irrlichtstuff\meineprojekte\projects\newton\main.cpp
+	"NewtonClass.h"
+	"IrrEventsClass.h"
+	"DebugDisplayClass.h"
+
+1215120050 f:\irrlichtstuff\meineprojekte\projects\newton\newtonclass.h
+	<irrlicht.h>
+	<Newton.h>
+	<hr_time.h>
+
+1215967199 source:f:\irrlichtstuff\meineprojekte\projects\newton\newtonclass.cpp
+	"NewtonClass.h"
+
+1214856413 source:f:\irrlichtstuff\brauchbareincludes\hr_time.cpp
+	"hr_time.h"
+
+1214856363 f:\irrlichtstuff\brauchbareincludes\hr_time.h
+	<windows.h>
+
+1215968693 source:f:\irrlichtstuff\meineprojekte\projects\debugdisplay\debugdisplayclass.cpp
+	"DebugDisplayClass.h"
+
+1215966774 f:\irrlichtstuff\meineprojekte\projects\debugdisplay\debugdisplayclass.h
+	<irrlicht.h>
+
+1215968693 source:f:\dev\projekte\debugdisplay\debugdisplayclass.cpp
+	"DebugDisplayClass.h"
+
+1215966774 f:\dev\projekte\debugdisplay\debugdisplayclass.h
+	<irrlicht.h>
+
+1215979239 source:f:\dev\projekte\irrevents\irreventsclass.cpp
+	"IrrEventsClass.h"
+
+1215979249 f:\dev\projekte\irrevents\irreventsclass.h
+	<irrlicht.h>
+
+1215983678 source:f:\dev\projekte\newton\main.cpp
+	"NewtonClass.h"
+	"IrrEventsClass.h"
+	"DebugDisplayClass.h"
+
+1215120050 f:\dev\projekte\newton\newtonclass.h
+	<irrlicht.h>
+	<Newton.h>
+	<hr_time.h>
+
+1215967199 source:f:\dev\projekte\newton\newtonclass.cpp
+	"NewtonClass.h"
+
+1214856413 source:f:\dev\includes\hr_time.cpp
+	"hr_time.h"
+
+1214856363 f:\dev\includes\hr_time.h
+	<windows.h>
+

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Sigmus" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../Sigmus" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../Sigmus" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-fPIC" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.75/src" />
+					<Add directory="./" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/source/Irrlicht" />
+				</Compiler>
+				<Linker>
+					<Add library="Irrlicht" />
+					<Add library="Xxf86vm" />
+					<Add library="BulletSoftBody" />
+					<Add library="BulletDynamics" />
+					<Add library="BulletCollision" />
+					<Add library="LinearMath" />
+					<Add library="GL" />
+					<Add library="Xcursor" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.75/src/LinearMath" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.75/src/BulletCollision" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.75/src/BulletDynamics" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.75/src/BulletSoftBody" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="gdi32" />
+			<Add library="C:/Libraries/bullet-2.76/libBulletDynamics.a" />
+			<Add library="C:/Libraries/bullet-2.76/libLinearMath.a" />
+			<Add library="C:/Libraries/bullet-2.76/libBulletCollision.a" />
+			<Add library="irrKlang" />
+		</Linker>
+		<Unit filename="./GUI.cpp" />
+		<Unit filename="./GUI.h" />
+		<Unit filename="./HUD.cpp" />
+		<Unit filename="./HUD.h" />
+		<Unit filename="./NPCmanager.cpp" />
+		<Unit filename="./NPCmanager.h" />
+		<Unit filename="PostProcessBloom.h" />
+		<Unit filename="PostProcessInvert.h" />
+		<Unit filename="core.cpp" />
+		<Unit filename="core.h" />
+		<Unit filename="./debugdraw.h" />
+		<Unit filename="./effectsmanager.cpp" />
+		<Unit filename="./effectsmanager.h" />
+		<Unit filename="./explosion.cpp" />
+		<Unit filename="./explosion.h" />
+		<Unit filename="./flowmanager.cpp" />
+		<Unit filename="./flowmanager.h" />
+		<Unit filename="globals.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="main.h" />
+		<Unit filename="./map.cpp" />
+		<Unit filename="./map.h" />
+		<Unit filename="./physics.cpp" />
+		<Unit filename="./physics.h" />
+		<Unit filename="./player.cpp" />
+		<Unit filename="./player.h" />
+		<Unit filename="./powerup.cpp" />
+		<Unit filename="./powerup.h" />
+		<Unit filename="./sound.cpp" />
+		<Unit filename="./sound.h" />
+		<Unit filename="todo.txt" />
+		<Unit filename="./trigger.cpp" />
+		<Unit filename="./trigger.h" />
+		<Unit filename="./turret.cpp" />
+		<Unit filename="./turret.h" />
+		<Unit filename="./zone.cpp" />
+		<Unit filename="./zone.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

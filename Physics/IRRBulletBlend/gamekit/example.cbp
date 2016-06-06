@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Bullet Physics" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./BulletPhysics" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-DGLEW_STATIC" />
+			<Add option="-DHAVE_MALLOC_H" />
+			<Add directory="/home/Dev/libs/Irrlicht/include" />
+			<Add directory="readblend" />
+			<Add directory="../bullet/src" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="BulletDynamics" />
+			<Add library="BulletCollision" />
+			<Add library="LinearMath" />
+			<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
+			<Add directory="../bullet/src/LinearMath" />
+			<Add directory="../bullet/src/BulletSoftBody" />
+			<Add directory="../bullet/src/BulletDynamics" />
+			<Add directory="../bullet/src/BulletCollision" />
+			<Add directory="../bullet/Extras/readblend" />
+		</Linker>
+		<Unit filename="BulletBlendReader.cpp" />
+		<Unit filename="BulletBlendReader.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="readblend/abs-file.h" />
+		<Unit filename="readblend/blendtype.h" />
+		<Unit filename="readblend/readblend.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="readblend/readblend.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

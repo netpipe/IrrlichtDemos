@@ -1,0 +1,34 @@
+/* Author : Xaron
+ * @brief computes the aiming vector in 3d space to hit a target
+ *
+ * @param origin          - absolute position of the player
+ * @param targetPos       - absolute position of the target
+ * @param targetVel       - velocity of the target (as a vector) in meters/sec
+ * @param projectileSpeed - speed of the projectile in meters/sec
+ *
+ * @return aimingVector    - current absolute position of the rendezvous (meeting point)
+ *                           of the projectile and the target
+ *
+ *******************************************************************************************************/
+core::vector3df computeAimingVector( core::vector3df& origin, core::vector3df& targetPos,
+                                     core::vector3df& targetVel, float projectileSpeed )
+{
+  // get the vector to the target
+  core::vector3df toTargetVec = targetPos - origin;
+
+  // compute the discriminant of the term for the time.
+  // If it's less than zero, it's impossible to hit the target.
+  // This might happen, if the target is faster than the projectile.
+  // In that case we return just the target vector.
+  float discriminant = projectileSpeed * projectileSpeed * toTargetVec.getLengthSQ()
+    - ( toTargetVec.crossProduct( targetVel ) ).getLengthSQ();
+  if( discriminant < 0.0f )
+    return targetPos;
+
+  // Compute the target-hit-time
+  float fTime = ( sqrtf( discriminant ) + toTargetVec.dotProduct( targetVel ) )
+    / ( projectileSpeed * projectileSpeed - targetVel.getLengthSQ() );
+
+  // return target (aiming) vector
+  return targetPos + targetVel * fTime;
+} 

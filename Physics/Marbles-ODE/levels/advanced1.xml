@@ -1,0 +1,11 @@
+<marbles>
+  <level name="levels/advanced1.irr" gameover="gameover" respawn="-10" challange="25" />
+  <start x="0" y="3" z="0" />
+  <objects count="2">
+    <object name="theLevel" />
+    <object name="finish" />
+  </objects>
+  <checkPoints count="1">
+    <check num="0" name="finish" img="levels/images/finish.png" img_ok="levels/images/finish_ok.png" light="finishLight" />
+  </checkPoints count="1">
+</marbles>

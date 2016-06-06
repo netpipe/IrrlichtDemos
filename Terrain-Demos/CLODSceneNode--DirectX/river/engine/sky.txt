@@ -1,0 +1,14 @@
+<sunDirection>327</sunDirection>
+<time>7</time>
+<rFrom>225</rFrom>
+<gFrom>195</gFrom>
+<bFrom>190</bFrom>
+<rTo>125</rTo>
+<gTo>162</gTo>
+<bTo>232</bTo>
+<rAmbient>117</rAmbient>
+<gAmbient>117</gAmbient>
+<bAmbient>132</bAmbient>
+<rDiffuse>255</rDiffuse>
+<gDiffuse>216</gDiffuse>
+<bDiffuse>207</bDiffuse>

@@ -1,0 +1,13 @@
+- Add Map Lighting Enable
+
+- Fix Player Physics
+
+- Add EMP projectiles for turret deactivation
+
+- Fix Turret HUD/Rotation Problems
+
+- Add Various Sound Effects
+    - Add better sound managing
+
+- Add Powerups to EffectsManager
+    - Add a remove() function

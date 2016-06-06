@@ -1,0 +1,26 @@
+Particular Zlib License /LIBRARY(NO(C)).
+
+3DP.h
+3DP.obj
+
+Copyright (C) 2008 Lucian.
+
+Este software é distribuído na forma em que se encontra, 
+sem nenhuma garantia expressa ou implícita. 
+Em nenhum momento os autores cobrirão algum dano ou problema que
+este software venha causar em seu computador.
+
+Permissão é garantida para qualquer um que venha usar este 
+software para qualquer propósito, incluindo aplicações comerciais,
+sujeito às seguintes restrições:
+
+1. A origem deste software não deve ser falsificada;
+ você não deve reivindicar que você escreveu o software.
+ Se você usa este software em um produto, um reconhecimento na 
+documentação do produto é apreciada, porém não é requerida.
+
+2. Este deve permanecer sob esta mesma licensa 
+que de modo algum podera ser alterada.Sem as devidas permissoes do autor.
+
+3. Esta advertência não pode ser removida ou alterada de qualquer 
+distribuição do software.

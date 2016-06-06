@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Tetris" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="IrrTriz" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output=".obj" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="0" />
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-fexpensive-optimizations" />
+			<Add option="-Os" />
+			<Add option="-O3" />
+			<Add option="-O" />
+			<Add directory="/home/Dev/libs/Irrlicht/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-s" />
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="GL" />
+			<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
+		</Linker>
+		<Unit filename="Resourcen.h" />
+		<Unit filename="Resourcen.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="main.cpp" />
+		<Unit filename="main.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

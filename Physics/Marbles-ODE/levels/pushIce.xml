@@ -1,0 +1,27 @@
+<marbles>
+  <level name="levels/pushIce.irr" gameover="gameover" respawn="-10" challange="15" />
+  <start x="" y="5" z="0" />
+  <objects count="16">
+    <object name="plane1" />
+    <object name="plane2" />
+    <object name="plane3" />
+    <object name="plane4" />
+    <object name="icey" class="ice" />
+    <object name="pushX1" class="push_x1_m" />
+    <object name="pushX2" class="push_x2_m" />
+    <object name="pushZ1" class="push_z1_m" />
+    <object name="pushZ2" class="push_z2_m" />
+    <object name="check1" />
+    <object name="check2" />
+    <object name="finish" />
+    <object name="jump1" class="bounce_s" />
+    <object name="jump2" class="bounce_m" />
+    <object name="jump3" class="bounce_m" />
+    <object name="jump4" class="bounce_l" />
+  </objects>
+  <checkPoints count="3">
+    <check num="0" name="check1" img="levels/images/check1.png" img_ok="levels/images/check1_ok.png" light="check1Light" x="-4" z="-2" y="2" />
+    <check num="0" name="check2" img="levels/images/check2.png" img_ok="levels/images/check2_ok.png" light="check2Light" x="-2" z="4" y="2" />
+    <check num="0" name="finish" img="levels/images/finish.png" img_ok="levels/images/finish_ok.png" light="finishLight" />
+  </checkPoints count="1">
+</marbles>

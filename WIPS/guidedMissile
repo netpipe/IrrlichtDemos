@@ -1,0 +1,50 @@
+/*
+
+The following code gives you the delta pitch and delta roll to the target. So you can roll and pitch into the target which looks very nice instead of just using delta pitch and yaw, especially if you have a tail unit.
+You just have to get these delta pitch and roll values to zero in your steering update section. If these (return) values are zero, your target is straight ahead. Smile
+
+Author : Xaron
+ * @brief guided missile steering helper function
+ *
+ * @param missilePosition - current absolute position of the missile
+ * @param missileRotation - current absolute rotation of the missile
+ * @param targetPosition  - current absolute target position
+ * @param oversteer       - oversteer factor in degrees
+ *
+ * @return targetPitchRoll - delta pitch (x) and delta roll (z) values to the target
+ *
+ *******************************************************************************************************/
+
+core::vector3df getToTargetPitchRoll( core::vector3df& missilePosition, core::vector3df& missileRotation, core::vector3df& targetPosition, float oversteer = 0.0f )
+{
+  core::matrix4 rotMatrix, invRotMatrix;
+  rotMatrix.setRotationDegrees( missileRotation );
+  core::vector3df targetPitchRoll( 0.0f, 0.0f, 0.0f );
+  // get the current missile direction
+  core::vector3df currentMissileTargetVec( 0.0f, 0.0f, 1.0f );
+
+  // get the vector to the target (from the missile position)
+  core::vector3df missileTargetVec = ( targetPosition - missilePosition ).normalize();
+  // invert the rotation matrix to transform the target vector into the missile's local space
+  rotMatrix.getInverse( invRotMatrix );
+  // transform the target vector into missile's local space
+  invRotMatrix.rotateVect( missileTargetVec );
+  // compute the roll angle to the target
+  float deltaRoll = atan2f( missileTargetVec.Y, missileTargetVec.X ) * core::RADTODEG - 90.0f;
+  if( deltaRoll < 0.0f )
+    deltaRoll += 360.0f;
+  if( deltaRoll >= 360.0f )
+    deltaRoll -= 360.0f;
+
+  if( deltaRoll > 180.0f )
+    deltaRoll -= 360.0f;
+
+  // compute the pitch angle to the target
+  float deltaPitch = acosf( currentMissileTargetVec.dotProduct( missileTargetVec ) )
+    * core::RADTODEG + oversteer;
+
+  targetPitchRoll.X = -deltaPitch;
+  targetPitchRoll.Z = deltaRoll;
+
+  return targetPitchRoll;
+} 

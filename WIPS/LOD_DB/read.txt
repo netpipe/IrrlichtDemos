@@ -1,0 +1,8 @@
+level of detail database idea by Gaz Davidson
+
+inspired by quadtree node by Paulo R. Oliveira
+
+--
+
+quick test demo, doesnt read from the database yet, 
+but you'll still need sqlite devpak to compile.

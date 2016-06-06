@@ -1,0 +1,17 @@
+<marbles>
+  <level name="levels/bowling.irr" gameover="gameover" respawn="-10" challange="10" />
+  <start x="0" y="6" z="0" />
+  <objects count="8">
+    <object name="court" />
+    <object name="finish" />
+    <object name="pin1" mass="0.7" />
+    <object name="pin2" mass="0.7" />
+    <object name="pin3" mass="0.7" />
+    <object name="pin4" mass="0.7" />
+    <object name="pin5" mass="0.7" />
+    <object name="pin6" mass="0.7" />
+  </objects>
+  <checkPoints count="1">
+    <check num="2" name="finish" img="levels/images/finish.png" img_ok="levels/images/finish_ok.png" light="finishLight" />
+  </checkPoints count="1">
+</marbles>

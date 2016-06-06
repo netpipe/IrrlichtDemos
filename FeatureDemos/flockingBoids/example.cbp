@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Boids - Flocking Demo" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./Boids" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="/home/Dev/libs/Irrlicht/include" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="GL" />
+			<Add library="Xxf86vm" />
+			<Add library="X11" />
+			<Add directory="/home/Dev/libs/Irrlicht/lib/gcc" />
+		</Linker>
+		<Unit filename="Flock.cpp" />
+		<Unit filename="Flock.h" />
+		<Unit filename="core/Application.cpp" />
+		<Unit filename="core/Application.h" />
+		<Unit filename="core/Configuration.cpp" />
+		<Unit filename="core/Configuration.h" />
+		<Unit filename="core/Demo.cpp" />
+		<Unit filename="core/Demo.h" />
+		<Unit filename="core/statemanager/State.h" />
+		<Unit filename="core/statemanager/StateManager.h" />
+		<Unit filename="gui/Compass.cpp" />
+		<Unit filename="gui/Compass.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="scene/BoidSceneNode.cpp" />
+		<Unit filename="scene/BoidSceneNode.h" />
+		<Unit filename="scene/Forest.cpp" />
+		<Unit filename="scene/Forest.h" />
+		<Unit filename="scene/TeleporterSceneNode.cpp" />
+		<Unit filename="scene/TeleporterSceneNode.h" />
+		<Unit filename="scene/WhirlSceneNode.cpp" />
+		<Unit filename="scene/WhirlSceneNode.h" />
+		<Unit filename="scene/grass/CGrassGeneratorNode.cpp" />
+		<Unit filename="scene/grass/CGrassGeneratorNode.h" />
+		<Unit filename="scene/grass/CGrassPatchSceneNode.cpp" />
+		<Unit filename="scene/grass/CGrassPatchSceneNode.h" />
+		<Unit filename="scene/grass/CWindGenerator.h" />
+		<Unit filename="scene/grass/IWindGenerator.h" />
+		<Unit filename="scene/lensflare/CLensFlareSceneNode.cpp" />
+		<Unit filename="scene/lensflare/CLensFlareSceneNode.h" />
+		<Unit filename="scene/lensflare/ILensFlareSceneNode.h" />
+		<Unit filename="states/GlobalState.h" />
+		<Unit filename="states/IntroState.h" />
+		<Unit filename="states/RunningState.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

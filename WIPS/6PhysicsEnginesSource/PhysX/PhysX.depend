@@ -1,0 +1,47 @@
+# depslib dependency file v1.0
+1215968693 source:f:\irrlichtstuff\meineprojekte\projects\debugdisplay\debugdisplayclass.cpp
+	"DebugDisplayClass.h"
+
+1215966774 f:\irrlichtstuff\meineprojekte\projects\debugdisplay\debugdisplayclass.h
+	<irrlicht.h>
+
+1215979239 source:f:\irrlichtstuff\meineprojekte\projects\irrevents\irreventsclass.cpp
+	"IrrEventsClass.h"
+
+1215979249 f:\irrlichtstuff\meineprojekte\projects\irrevents\irreventsclass.h
+	<irrlicht.h>
+
+1216065842 source:f:\irrlichtstuff\meineprojekte\projects\physx\main.cpp
+	"PhysXClass.h"
+	"IrrEventsClass.h"
+	"DebugDisplayClass.h"
+
+1216065664 f:\irrlichtstuff\meineprojekte\projects\physx\physxclass.h
+	<irrlicht.h>
+	<NxPhysics.h>
+	<NxCooking.h>
+	"PhysXStream.h"
+	<hr_time.h>
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
+	<stdio.h>
+
+1214856413 source:f:\irrlichtstuff\brauchbareincludes\hr_time.cpp
+	"hr_time.h"
+
+1214856363 f:\irrlichtstuff\brauchbareincludes\hr_time.h
+	<windows.h>
+
+1216066167 source:f:\irrlichtstuff\meineprojekte\projects\physx\physxclass.cpp
+	"PhysXClass.h"
+
+1215343362 f:\irrlichtstuff\meineprojekte\projects\physx\physxstream.h
+	<NxStream.h>
+
+1215343362 source:f:\irrlichtstuff\meineprojekte\projects\physx\physxstream.cpp
+	<stdio.h>
+	<NxPhysics.h>
+	"PhysXStream.h"
+

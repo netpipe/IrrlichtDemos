@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Newton" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="Newton" prefix_auto="1" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Os" />
+					<Add option="-O3" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Os" />
+			<Add option="-O3" />
+			<Add directory='&quot;F:\Irrlicht Stuff\Irrlicht SDK V1.4\include&quot;' />
+		</Compiler>
+		<Linker>
+			<Add library="..\..\Libraries\Grafik\irrlicht-1.4.1\lib\Win32-gcc\libIrrlicht.a" />
+			<Add library="..\..\Libraries\Physik\NewtonSDK\sdk\dll\Newton.lib" />
+			<Add directory='&quot;F:\Irrlicht Stuff\Irrlicht SDK V1.4\lib\Win32-gcc&quot;' />
+		</Linker>
+		<Unit filename="..\..\Includes\hr_time.cpp" />
+		<Unit filename="..\..\Includes\hr_time.h" />
+		<Unit filename="..\DebugDisplay\DebugDisplayClass.cpp" />
+		<Unit filename="..\DebugDisplay\DebugDisplayClass.h" />
+		<Unit filename="..\IrrEvents\IrrEventsClass.cpp" />
+		<Unit filename="..\IrrEvents\IrrEventsClass.h" />
+		<Unit filename="Main.cpp" />
+		<Unit filename="NewtonClass.cpp" />
+		<Unit filename="NewtonClass.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

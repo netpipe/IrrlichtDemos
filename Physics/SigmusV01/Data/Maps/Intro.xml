@@ -1,0 +1,57 @@
+<!-- Training Level -->
+
+<Data Model="Intro.obj" Name="Intro" InternalName="Training Level"/>
+<Rotation X="0" Y="0" Z="0"/>
+<Size Scale="1.0"/>
+<Camera PosX="3016" PosY="1107" PosZ="-657" LookX="2977" LookY="1107" LookZ="15"/>
+<Ambience R="0.2" G="0.2" B="0.2" A="1"/>
+<Player MoveSpeed="0.5" RotSpeed="100" JumpSpeed="10" />
+
+<!-- Original Map Start - 3016, 1107, -657 -->
+<!-- Original Map Target - 2977, 1107, 15 -->
+
+<Light PosX="2941" PosY="1107" PosZ="-52" R="5" G="5" B="5" A="1" Radius="30.0"/>
+<Light PosX="2260" PosY="1142" PosZ="75" R="5" G="5" B="5" A="1" Radius="30.0"/>
+<Light PosX="2260" PosY="1142" PosZ="75" R="5" G="5" B="5" A="1" Radius="30.0"/>
+<Light PosX="2853" PosY="1142" PosZ="1183" R="5" G="5" B="5" A="1" Radius="30.0"/>
+<Light PosX="2491" PosY="1142" PosZ="1930" R="5" G="5" B="5" A="1" Radius="25.0"/>
+<Light PosX="2260" PosY="1142" PosZ="75" R="5" G="5" B="5" A="1" Radius="30.0"/>
+<Light PosX="1392" PosY="984" PosZ="1951" R="5" G="5" B="5" A="1" Radius="10.0"/>
+<Light PosX="74" PosY="839" PosZ="2067" R="5" G="5" B="5" A="1" Radius="10.0"/>
+<Light PosX="-1083" PosY="507" PosZ="888" R="5" G="5" B="5" A="1" Radius="10.0"/>
+<Light PosX="-1017" PosY="1000" PosZ="-202" R="5" G="5" B="5" A="1" Radius="50.0"/>
+<Light PosX="-2116" PosY="809" PosZ="-225" R="5" G="5" B="5" A="1" Radius="50.0"/>
+<Light PosX="-1140" PosY="507" PosZ="-1403" R="5" G="5" B="5" A="1" Radius="30.0"/>
+<Light PosX="-2008" PosY="507" PosZ="-1458" R="5" G="5" B="5" A="1" Radius="10.0"/>
+<Light PosX="-1560" PosY="700" PosZ="-1460" R="5" G="5" B="5" A="1" Radius="20.0"/>
+<Light PosX="-2135" PosY="1000" PosZ="-1554" R="5" G="5" B="5" A="1" Radius="20.0"/>
+<Light PosX="-2421" PosY="300" PosZ="-1521" R="5" G="5" B="5" A="1" Radius="5.0"/>
+
+
+<!-- Map Entities -->
+<Stack PosX="2049" PosY="1052" PosZ="1720" Spacing="0" Size="50" UnitsL="9" UnitsY="4" Axis="Z" Mass="10" Tex="default.jpg"/>
+<Stack PosX="-1371" PosY="447" PosZ="291" Spacing="0" Size="50" UnitsL="15" UnitsY="4" Axis="X" Mass="10" Tex="default.jpg"/>
+<Stack PosX="-1441" PosY="447" PosZ="-1820" Spacing="0" Size="50" UnitsL="13" UnitsY="6" Axis="Z" Mass="10" Tex="default.jpg"/>
+<Stack PosX="-1734" PosY="447" PosZ="-1820" Spacing="0" Size="50" UnitsL="13" UnitsY="6" Axis="Z" Mass="10" Tex="default.jpg"/>
+
+<Zone MinX="-1520" MinY="-67" MinZ="-1162" MaxX="-1659" MaxY="67" MaxZ="-1852" Color="Red" Type="Death" />
+<Zone MinX="-2069" MinY="-1547" MinZ="-1154" MaxX="-2856" MaxY="-1200" MaxZ="-1889" Color="Blue" Type="End" />
+<Zone MinX="2853" MinY="1107" MinZ="-471" MaxX="3129" MaxY="1300" MaxZ="-802" Color="Green" Type="Normal" ID="1" />
+<Zone MinX="3129" MinY="1107" MinZ="-296" MaxX="2523" MaxY="1300" MaxZ="-75" Color="Green" Type="Normal" ID="2" />
+<Zone MinX="951" MinY="957" MinZ="2133" MaxX="1165" MaxY="1080" MaxZ="1779" Color="Green" Type="Normal" ID="3" />
+<Zone MinX="-556" MinY="507" MinZ="223" MaxX="-1416" MaxY="800" MaxZ="-44" Color="Green" Type="Normal" ID="4" />
+<Zone MinX="-1834" MinY="507" MinZ="-1852" MaxX="-2144" MaxY="800" MaxZ="-1162" Color="Green" Type="Normal" ID="5" />
+<Zone MinX="-2400" MinY="400" MinZ="-1460" MaxX="-2535" MaxY="100" MaxZ="-1610" Color="Green" Type="Normal" ID="6" />
+
+<!-- Map Triggers -->
+<Trigger Zone="1" Type="Control" Action="Enable" />
+<Trigger Zone="1" Type="Sound" File=".\\Media\\Sounds\\Voice\\Voice1.ogg" Loop="0" EOSA="PlayerCTRL" EOSAction="Enable" />
+<Trigger Zone="2" Type="Sound" File=".\\Media\\Sounds\\Voice\\Voice2.ogg" Loop="0" EOSA="None" />
+<Trigger Zone="2" Type="Ammo" AmmoType="Normal" Amount="50" Action="Add" />
+<Trigger Zone="3" Type="Sound" File=".\\Media\\Sounds\\Voice\\Voice3.ogg" Loop="0" EOSA="None" />
+<Trigger Zone="3" Type="Ammo" AmmoType="Explosive" Amount="10" Action="Add" />
+<Trigger Zone="4" Type="Sound" File=".\\Media\\Sounds\\Voice\\Voice4.ogg" Loop="0" EOSA="None" />
+<Trigger Zone="4" Type="Ammo" AmmoType="Attractive" Amount="10" Action="Add" />
+<Trigger Zone="5" Type="Sound" File=".\\Media\\Sounds\\Voice\\Voice5.ogg" Loop="0" EOSA="None" />
+<Trigger Zone="6" Type="Shader" Effect="Invert" Action="Enable" />
+<Trigger Zone="6" Type="Control" Action="Disable" />

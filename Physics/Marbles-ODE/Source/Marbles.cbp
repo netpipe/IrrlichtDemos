@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="BulletByte Marbles" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="../Marbles" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="../" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Compiler>
+					<Add directory="/home/Dev/libs/physics/ode/include" />
+					<Add directory="/home/Dev/libs/Irrlicht/include" />
+					<Add directory="/home/Dev/libs/Irrlicht/source/Irrlicht" />
+				</Compiler>
+				<Linker>
+					<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
+					<Add directory="/home/Dev/libs/physics/ode/lib" />
+				</Linker>
+			</Target>
+			<Environment>
+				<Variable name="IRR_BASE" value="C:/Irrlicht" />
+			</Environment>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<ResourceCompiler>
+			<Add directory="$(IRR_BASE)/include" />
+		</ResourceCompiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="ode" />
+			<Add library="Xxf86vm" />
+			<Add library="GL" />
+			<Add library="drawstuff" />
+			<Add directory="$(IRR_BASE)/lib/Win32-VisualStudio" />
+		</Linker>
+		<Unit filename="CGame.cpp" />
+		<Unit filename="CGame.h" />
+		<Unit filename="CLevelData.cpp" />
+		<Unit filename="CLevelData.h" />
+		<Unit filename="CLevelObject.cpp" />
+		<Unit filename="CLevelObject.h" />
+		<Unit filename="CLevels.cpp" />
+		<Unit filename="CLevels.h" />
+		<Unit filename="CMainMenu.cpp" />
+		<Unit filename="CMainMenu.h" />
+		<Unit filename="CMarble.cpp" />
+		<Unit filename="CMarble.h" />
+		<Unit filename="CMenu.cpp" />
+		<Unit filename="CMenu.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="ode/CIrrOdeManager.cpp" />
+		<Unit filename="ode/CIrrOdeManager.h" />
+		<Unit filename="ode/IIrrOdeBase.h" />
+		<Unit filename="ode/IIrrOdeEntity.cpp" />
+		<Unit filename="ode/IIrrOdeEntity.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

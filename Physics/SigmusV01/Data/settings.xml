@@ -1,0 +1,7 @@
+<!-- Graphics Config -->
+<Screen X="1280" Y="1024" Z="32" F="0"/>
+<Render AA="1" SB="1" VS="1" Driver="gl"/>
+
+
+<!--             Valid Values                          -->
+<!-- Driver -> gl, dx                                  -->

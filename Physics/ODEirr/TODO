@@ -1,0 +1,19 @@
+
+use timer correctly. it makes app really slow now.
+
+setting positions is not easy at all, because we must do collision, but if we just set position, then collision will be broken. damn, how to overcome it?
+
+make a Player class. it should be represented as a capsule with a ray. this also seems quite easy... heh
+
+make possible pick up objects (dBodyID). it seems to be easy, since scene node selection is shown in an irr example, and picking up ... is like constant SetPosition and then Shoot
+
+make models scalable along X, Y and Z axes, this means we'll be able to resize models and it will look (renderer) and behave (physics) as it should according to its size. i guess we should modify Irrlicht code a bit, scaled mesh must be saved somewhere, so we need to fetch it (just a guess)
+
+make RagDoll for a Cal3D model, well, first we need a Cal3D model :P
+
+make a little interpenetration layer around all objects, so that they can interpenetrate a little without "jumping off the scene" when, e.g., touching a ground or other objects
+
+go with CEGUI (some day :P)
+
+make correct timesteps. this will increase game performance, and will alow the same physics simulation speed on all PCs. so far it's half done. i.e., now physics runs at the same speed on all PCs, but sometimes you can see the picture is not perfect. you can read this article: http://www.gaffer.org/articles/ about Fix you timestep. The Final Touch is still pending, I hope someone will do it, because I (kornerr) can't do it.
+

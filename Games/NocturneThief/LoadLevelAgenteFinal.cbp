@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="LoadLevelAgenteFinal" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="Player/;Cofre/;Camera/;Guarda/;App/;AStar/;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/LoadLevelAgenteFinal" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="Irrlicht" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="gdi32" />
+					<Add library="src/irrklang/libirrKlang.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/LoadLevelAgenteFinal" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="/home/andres/PROGRAMACAO/irrlicht-engine/bin/" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="Irrlicht" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="gdi32" />
+					<Add library="src/irrklang/libirrKlang.a" />
+				</Linker>
+			</Target>
+			<Target title="Linux">
+				<Option output="./bin/LevelAgenteFinal" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="Irrlicht" />
+					<Add library="GL" />
+					<Add library="Xxf86vm" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+		</Compiler>
+		<Linker>
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Unit filename="src/App.cpp">
+			<Option virtualFolder="App/" />
+		</Unit>
+		<Unit filename="src/App.h">
+			<Option virtualFolder="App/" />
+		</Unit>
+		<Unit filename="src/Camera.cpp">
+			<Option virtualFolder="Camera/" />
+		</Unit>
+		<Unit filename="src/Camera.h">
+			<Option virtualFolder="Camera/" />
+		</Unit>
+		<Unit filename="src/Cofre.cpp">
+			<Option virtualFolder="Cofre/" />
+		</Unit>
+		<Unit filename="src/Cofre.h">
+			<Option virtualFolder="Cofre/" />
+		</Unit>
+		<Unit filename="src/Guarda.cpp">
+			<Option virtualFolder="Guarda/" />
+		</Unit>
+		<Unit filename="src/Guarda.h">
+			<Option virtualFolder="Guarda/" />
+		</Unit>
+		<Unit filename="src/Input.h">
+			<Option virtualFolder="App/" />
+		</Unit>
+		<Unit filename="src/Player.cpp">
+			<Option virtualFolder="Player/" />
+		</Unit>
+		<Unit filename="src/Player.h">
+			<Option virtualFolder="Player/" />
+		</Unit>
+		<Unit filename="src/aStar/AStar.cpp">
+			<Option virtualFolder="AStar/" />
+		</Unit>
+		<Unit filename="src/aStar/AStar.h">
+			<Option virtualFolder="AStar/" />
+		</Unit>
+		<Unit filename="src/aStar/Arc.cpp">
+			<Option virtualFolder="AStar/" />
+		</Unit>
+		<Unit filename="src/aStar/Arc.h">
+			<Option virtualFolder="AStar/" />
+		</Unit>
+		<Unit filename="src/aStar/Graph.cpp">
+			<Option virtualFolder="AStar/" />
+		</Unit>
+		<Unit filename="src/aStar/Graph.h">
+			<Option virtualFolder="AStar/" />
+		</Unit>
+		<Unit filename="src/aStar/Node.cpp">
+			<Option virtualFolder="AStar/" />
+		</Unit>
+		<Unit filename="src/aStar/Node.h">
+			<Option virtualFolder="AStar/" />
+		</Unit>
+		<Extensions>
+			<code_completion>
+				<search_path add="../irrlicht-engine/include" />
+				<search_path add="src\irrklang" />
+			</code_completion>
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

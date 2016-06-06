@@ -1,0 +1,15 @@
+<marbles>
+  <level name="levels/beginner_1.irr" gameover="gameover" respawn="-10" challange="20" />
+  <start x="1" y="6" z="25" />
+  <objects count="4">
+    <object name="theLevel" />
+    <object name="check1" />
+    <object name="check2" />
+    <object name="finish" />
+  </objects>
+  <checkPoints count="3">
+    <check num="0" name="check1" img="levels/images/check1.png" img_ok="levels/images/check1_ok.png" light="check1Light" z="-4" y="1" />
+    <check num="0" name="check2" img="levels/images/check2.png" img_ok="levels/images/check2_ok.png" light="check2Light" z="4" y="1" />
+    <check num="0" name="finish" img="levels/images/finish.png" img_ok="levels/images/finish_ok.png" light="finishLight" />
+  </checkPoints count="1">
+</marbles>

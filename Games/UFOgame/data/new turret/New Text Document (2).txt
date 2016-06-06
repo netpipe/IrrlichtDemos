@@ -1,0 +1,11 @@
+
+
+upper head = x-0.802 y1.723 z0
+upper head gun =x-1.111 y2.057 z0
+
+lower head = x0.077 y0.655 z0
+lower head gun = x-0.478 y0.952 z0
+
+tower is x0 y0 z0
+
+scale of 5?

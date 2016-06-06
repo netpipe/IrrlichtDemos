@@ -1,0 +1,14 @@
+<marbles>
+  <level name="levels/smr2.irr" gameover="gameover" respawn="-10" challange="40" />
+  <start x="110" y="4" z="65" />
+  <objects count="4">
+    <object name="loop" />
+    <object name="hiTurn" />
+    <object name="check1" />
+    <object name="finish" />
+  </objects>
+  <checkPoints count="2">
+    <check num="0" name="check1" img="levels/images/check1.png" img_ok="levels/images/check1_ok.png" light="check1Light" z="-4" y="2" />
+    <check num="1" name="finish" img="levels/images/finish.png" img_ok="levels/images/finish_ok.png" light="check2Light" />
+  </checkPoints count="1">
+</marbles>

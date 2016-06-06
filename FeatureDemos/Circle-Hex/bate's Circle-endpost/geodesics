@@ -1,0 +1,100 @@
+I finally had some time to code my drawGeodesicLine function. It draws the geodesic line (shortest path) between 2 points on a sphere (with given radius and origin (0,0,0)). The math is correct and everything works fine but I would like to put it in a SceneNode just like Acki did with the circleDrawer. Unfortunately, I didn't succeed in doing so; guess that's because I don't understand everything in his code Embarassed
+
+So could maybe someone help me with this? (winking at Acki Wink)
+
+Here's how it works so far...
+
+Hint:
+It does not work if p1 and p2 are pole and exact anti-pole, e.g. p1(50,0,0) p2(-50,0,0), since there is no distinct solution (each path has the same length). In that case you have to distort one point a little bit: p1(50, 0.1f, 0.1f). Also, the closer you get to the pole issue the more lines you need to draw (higher value for k) in order to get a perfect circlular path. That is because the algorithm uses a linear dispersion for the distances between the points and I wouldn't bother to make it a spherical dispersion like -e^-(x^2) in order to get equally partitioned segments on the sphere. 
+
+
+
+
+
+
+
+// FUNCTION
+
+void geo(irr::core::array<S3DVertex> &arrayVertices,
+         irr::core::array<u16> &arrayIndices,
+         irr::core::vector3df p1, // starting point
+         irr::core::vector3df p2, // endpoint
+         irr::f32 r,              // radius
+         irr::f32 k)              // precision (how many lines)
+{
+
+// put p1 as first vertex
+arrayIndices.push_back(arrayVertices.size());
+arrayVertices.push_back( S3DVertex(p1, vector3df(0,0,0), SColor(255, 255,0,0), vector2df(0,0) ));
+
+// calc vertices
+for(f32 i = 1; i < k; i++)
+{
+
+f32 t;
+
+// nevermind whats going on here :)
+// but I can explain the maths if someone's interested
+t = squareroot(
+                ( pow(r,2) * pow(k,2) ) /
+                  (
+                    ( pow((k-i),2) * pow(p1.X,2) + 2 * (k-i) * p1.X * i * p2.X + pow(i,2) * pow(p2.X,2) ) +
+                    ( pow((k-i),2) * pow(p1.Y,2) + 2 * (k-i) * p1.Y * i * p2.Y + pow(i,2) * pow(p2.Y,2) ) +
+                    ( pow((k-i),2) * pow(p1.Z,2) + 2 * (k-i) * p1.Z * i * p2.Z + pow(i,2) * pow(p2.Z,2) )
+                  )
+              );
+
+// the next vertex
+S3DVertex newVertex;
+
+// set postion of next vertex
+newVertex.Pos = t * (
+                      ( ((k-i) / k) * p1 ) +
+                      ( (i/k) * p2 )
+                    );
+
+// set color
+newVertex.Color = SColor(255, 255,0,0);
+
+// put next vertex in array
+arrayIndices.push_back(arrayVertices.size());
+arrayVertices.push_back(newVertex);
+}
+
+// put p2 as last vertex
+arrayIndices.push_back(arrayVertices.size());
+arrayVertices.push_back( S3DVertex(p2, vector3df(0,0,0), SColor(255, 255,0,0), vector2df(0,0) ));
+}
+
+
+Code:
+
+USAGE
+
+// my arrays
+irr::core::array<S3DVertex> arrayVertices;
+irr::core::array<u16> arrayIndices;
+
+// test points
+vector3df p1 = vector3df(52,0,0);
+vector3df p2 = vector3df(0,52,0);
+
+// function call
+  // radius = 52
+  // precision = 25
+geodesicLine(arrayVertices, arrayIndices, p1, p2, 52, 25);
+
+
+Code:
+
+// RENDER LOOP
+
+SMaterial mt;
+mt.AntiAliasing = EAAM_QUALITY;
+mt.AmbientColor = mt.DiffuseColor = mt.EmissiveColor = SColor(255, 255, 0, 0);
+
+driver->setMaterial(mt);
+driver->setTransform(video::ETS_WORLD, core::matrix4());
+
+// primcount is "arrayIndices.size() - 1" since I'm using LINE_STRIP
+driver->drawVertexPrimitiveList(&arrayVertices[0], arrayVertices.size(), &arrayIndices[0], (arrayIndices.size() - 1), EVT_STANDARD, EPT_LINE_STRIP, EIT_16BIT); 

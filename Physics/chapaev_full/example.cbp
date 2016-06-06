@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Chapev / ODE physics demo" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./ODEirr" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="../../../../libs/irrlicht-1.6/include" />
+			<Add directory="../../../../libs/ode-0.11.1/include" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="ode" />
+			<Add directory="../../../../libs/irrlicht-1.6/lib/Linux" />
+			<Add directory="../../../../libs/ode-0.11.1/ode/src/.libs" />
+		</Linker>
+		<Unit filename="src/core.cpp" />
+		<Unit filename="src/core.h" />
+		<Unit filename="src/events.h" />
+		<Unit filename="src/gui/about_menu.cpp" />
+		<Unit filename="src/gui/about_menu.h" />
+		<Unit filename="src/gui/main_menu.cpp" />
+		<Unit filename="src/gui/main_menu.h" />
+		<Unit filename="src/gui/options_menu.cpp" />
+		<Unit filename="src/gui/options_menu.h" />
+		<Unit filename="src/help.cpp" />
+		<Unit filename="src/help.h" />
+		<Unit filename="src/phys/box.cpp" />
+		<Unit filename="src/phys/box.h" />
+		<Unit filename="src/phys/sm_entity.cpp" />
+		<Unit filename="src/phys/sm_entity.h" />
+		<Unit filename="src/phys/sphere.cpp" />
+		<Unit filename="src/phys/sphere.h" />
+		<Unit filename="src/phys/world.cpp" />
+		<Unit filename="src/phys/world.h" />
+		<Unit filename="src/settings.cpp" />
+		<Unit filename="src/settings.h" />
+		<Unit filename="src/wrap/box.cpp" />
+		<Unit filename="src/wrap/box.h" />
+		<Unit filename="src/wrap/map.cpp" />
+		<Unit filename="src/wrap/map.h" />
+		<Unit filename="src/wrap/sm_entity.cpp" />
+		<Unit filename="src/wrap/sm_entity.h" />
+		<Unit filename="src/wrap/sphere.cpp" />
+		<Unit filename="src/wrap/sphere.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

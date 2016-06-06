@@ -1,0 +1,74 @@
+--- orig/CGUITreeCtrl.cpp   Sun Jun 17 21:25:19 2007
++++ CGUITreeCtrl.cpp   Mon Jun 18 08:06:15 2007
+@@ -374,6 +374,8 @@
+             {
+                MyClip = &clientClip;
+             }
++            // this seems to fix the horizontal clipping problem
++            MyClip = &clientClip;
+             s32 IconWidth = 0;
+             // Get Origin
+             // = ItemWidth to the left of the text
+@@ -448,7 +450,8 @@
+                {
+                   wchar_t Txt[2] = {node->Open ? node->IconOpen : node->IconClosed, L'\0'};
+                   IconWidth = IconFont->getDimension(Txt).Width+1;
+-                  IconFont->draw(Txt, core::rect<s32>(Origin, Origin + core::position2d<s32>(IconWidth, ItemHeight)), col, false, true, MyClip);
++                  // Use EGDC_BUTTON_TEXT color (colblk) for everything except selected text, otherwise it doesn't show properly against certain background colors
++                  IconFont->draw(Txt, core::rect<s32>(Origin, Origin + core::position2d<s32>(IconWidth, ItemHeight)), colblk, false, true, MyClip);
+                }
+                else
+                {
+@@ -467,17 +470,17 @@
+                      // Horizontal
+                      DrawHorizontalLine(
+                         Origin + core::position2d<s32>(Frac18, Frac12),
+-                        SqSize, col, MyClip);
++                        SqSize, colblk, MyClip);
+                      // Vertical
+                      DrawVerticalLine(
+                         Origin + core::position2d<s32>(Frac12, Frac18),
+-                        SqSize, col, MyClip);
++                        SqSize, colblk, MyClip);
+                   }
+                   // Draw Square (After, so it covers up and looks nice
+-                  DrawVerticalLine(UpperLeft, SqSize, col, MyClip);
+-                  DrawHorizontalLine(UpperLeft, SqSize, col, MyClip);
+-                  DrawVerticalLine(UpperRight, SqSize, col, MyClip);
+-                  DrawHorizontalLine(LowerLeft, SqSize, col, MyClip);
++                  DrawVerticalLine(UpperLeft, SqSize, colblk, MyClip);
++                  DrawHorizontalLine(UpperLeft, SqSize, colblk, MyClip);
++                  DrawVerticalLine(UpperRight, SqSize, colblk, MyClip);
++                  DrawHorizontalLine(LowerLeft, SqSize, colblk, MyClip);
+                   IconWidth = ItemHeight;
+                }            
+             }
+@@ -495,7 +498,8 @@
+                IconWidth = IconFont->getDimension(Txt).Width+1;
+             }
+             if(node == Selected)
+-               video->draw2DRectangle(skin->getColor(gui::EGDC_3D_HIGH_LIGHT),core::rect<s32>(Origin + core::position2d<s32>(IconWidth,0), Origin + core::position2d<s32>(ItemHeight + Font->getDimension(node->Text.c_str()).Width+IconWidth-ItemHeight+1,ItemHeight)), &clientClip);
++//               video->draw2DRectangle(skin->getColor(gui::EGDC_3D_HIGH_LIGHT),core::rect<s32>(Origin + core::position2d<s32>(IconWidth,0), Origin + core::position2d<s32>(ItemHeight + Font->getDimension(node->Text.c_str()).Width+IconWidth-ItemHeight+1,ItemHeight)), &clientClip);
++               video->draw2DRectangle(skin->getColor(gui::EGDC_HIGH_LIGHT),core::rect<s32>(Origin + core::position2d<s32>(IconWidth,0), Origin + core::position2d<s32>(ItemHeight + Font->getDimension(node->Text.c_str()).Width+IconWidth-ItemHeight+1,ItemHeight)), &clientClip);
+             Font->draw(node->Text.c_str(),
+                core::rect<s32>
+                (   AbsoluteRect.UpperLeftCorner.X + (Indent-1)*ItemHeight + IconWidth + 2,
+@@ -557,7 +561,12 @@
+    // Line can't be draw here
+    if(ClipRect)
+    {
+-      if(!ClipRect->isPointInside(start))
++// this fixes the 'missing vert lines in top row' prob
++//      if(!ClipRect->isPointInside(start))
++//         return false;
++      rect<s32> ExpClipRect(   ClipRect->UpperLeftCorner - position2d<s32>(1,1),
++                        ClipRect->LowerRightCorner + position2d<s32>(1,1));
++      if(!ExpClipRect.isPointInside(start))
+          return;
+       if(start.Y + length > ClipRect->LowerRightCorner.Y)
+          length = ClipRect->LowerRightCorner.Y - start.Y;
+@@ -901,3 +910,4 @@
+ {
+    return OverrideFont;
+ }
++ 

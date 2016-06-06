@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Linux" />
+	<File name="../Includes/DebugDisplayClass.h" open="1" top="0" tabpos="1">
+		<Cursor position="1152" topLine="0" />
+	</File>
+	<File name="../Includes/IrrEventsClass.cpp" open="1" top="0" tabpos="6">
+		<Cursor position="0" topLine="60" />
+	</File>
+	<File name="Main.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="1604" topLine="42" />
+	</File>
+	<File name="ODEClass.cpp" open="1" top="1" tabpos="5">
+		<Cursor position="5725" topLine="234" />
+	</File>
+	<File name="ODEClass.h" open="1" top="0" tabpos="2">
+		<Cursor position="2017" topLine="28" />
+	</File>
+</CodeBlocks_layout_file>

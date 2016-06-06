@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="default" />
+	<File name="CLODSceneNode.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="2709" topLine="104" />
+	</File>
+	<File name="CLODSceneNode.h" open="1" top="0" tabpos="5">
+		<Cursor position="2767" topLine="76" />
+	</File>
+	<File name="CQuadTreeSceneNode.cpp" open="1" top="1" tabpos="6">
+		<Cursor position="1885" topLine="14" />
+	</File>
+	<File name="CQuadTreeSceneNode.h" open="0" top="0" tabpos="7">
+		<Cursor position="446" topLine="0" />
+	</File>
+	<File name="MyMaterial.cpp" open="0" top="0" tabpos="8">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="MyMaterial.h" open="0" top="0" tabpos="11">
+		<Cursor position="732" topLine="0" />
+	</File>
+	<File name="ScapeMakerLoader.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="776" topLine="12" />
+	</File>
+	<File name="ScapeMakerLoader.h" open="1" top="0" tabpos="3">
+		<Cursor position="914" topLine="36" />
+	</File>
+	<File name="SceneReader.cpp" open="0" top="0" tabpos="9">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="SceneReader.h" open="0" top="0" tabpos="10">
+		<Cursor position="596" topLine="0" />
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="270" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

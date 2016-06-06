@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SimpleSteering" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="./bin/Steering.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="./bin" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Option projectResourceIncludeDirsRelation="0" />
+				<Compiler>
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-Os" />
+					<Add option="-O3" />
+					<Add option="-O" />
+					<Add option="-s" />
+					<Add option="-DnDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="/home/Dev/libs/Irrlicht/include" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="GL" />
+			<Add directory="/home/Dev/libs/Irrlicht/lib/gcc" />
+		</Linker>
+		<Unit filename="cPathFinder.cpp" />
+		<Unit filename="cPathFinder.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="myEventReceiver.cpp" />
+		<Unit filename="myEventReceiver.h" />
+		<Unit filename="stdDefs.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

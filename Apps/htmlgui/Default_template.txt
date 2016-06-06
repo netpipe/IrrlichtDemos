@@ -1,0 +1,32 @@
+<HTML>
+	<HEAD>
+		<TITLE>
+		</TITLE>				<script><!--
+/*			function setMyTimer(){
+				setTimeout("refresh()",2*1100);
+			}
+						function refresh(){
+				window.location.reload(true)
+			}
+//<BODY onload="setMyTimer()">
+*/		//--></script>	</HEAD>
+	<BODY>
+
+	<TABLE border=2 >
+          <TR>
+	   <TD bgcolor = '0xFFFFFF' >
+	      <!--HelloImage-->
+	   </TD>
+	   <TD>
+	      <!--XRotate--> 
+		<BR>
+	      <!--YRotate--> 
+	   </TD>
+	  </TR>
+        </TABLE>
+
+	<BR>
+	<!--Exit-->
+
+	</BODY>
+</HTML>

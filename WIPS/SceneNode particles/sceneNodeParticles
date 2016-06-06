@@ -1,0 +1,145 @@
+Author : garrittg
+
+
+
+i was searching for a way to have chunks fly for an explosion but still use the Irrlicht particles system. Irrlicht does not provide a mechanism for using your own particle subclass for the particles so i came up with a particle affector that substitutes nodes for particles, but uses the particle management of Irrlicht to move the nodes. this substitutes nodes for particles by setting the particle size to 0 and then moving the nodes based on the position of the invisible particles during the affect call.
+
+this is a little different than the C++ stuff as its in BlitzMax, but many can pull useful info from it since the concept is the main thing. the possibilities are pretty cool in that you could then add scenenodeanimators to the nodes so you can have something like flying, rotating debris. you can still also use any other particle affectors that affect the position of the particle (ie gravity affector). you could even base things about the node given the properties of the particle such as color. pretty cool stuff Smile
+Code:
+
+' - this affector creates and destroys nodes and positions them based on the position of a particle.
+' - override createNode to determine the node thats used in place of particles
+' - each node is tied to a particle so it moves with the particle
+Type ParticleToNodeAffector Extends BMXIParticleAffector
+
+   Field particles:TMap=New TMap ' map of scene node particles
+   Field particle_queue:TList=New TList ' holds unassigned particles
+   Field grow_size:Int=10
+   
+   ' returns a new scene node that will be tied to a new particle
+   Method createNode:T_irrISceneNode() Abstract   
+   
+   ' frees any nodes that are assigned to particles that no longer exist
+   Method freeUnusedNodes(validparticles:TList)
+      For Local key:String=EachIn particles.Keys()
+         If Not validparticles.Contains(key) Then unassignParticle(key.ToInt())
+      Next
+   EndMethod
+   
+   ' returns the scene node bound to the passed particle handle
+   Method getNode:T_irrISceneNode(particle:Int,bAutoAssign:Int=True)
+      Local node:T_irrISceneNode=T_irrISceneNode(particles.ValueForKey(String.FromInt(particle)))
+      If Not node And bAutoAssign Then node=assignParticle(particle)
+      Return node
+   EndMethod
+   
+   ' assigns the next available scene node to the passed particle
+   Method assignParticle:T_irrISceneNode(particle:Int)
+      ' if there are no particles left to assign, then grow
+      If particle_queue.Count()=0 Then growParticleNodeQueue(grow_size)
+      ' pop the last node off the queue
+      Local node:T_irrISceneNode=T_irrISceneNode(particle_queue.RemoveLast())
+      ' map the node to the particle
+      particles.Insert(String.FromInt(particle),node)      
+      Return node
+   EndMethod
+   
+   ' unassigns a node from a particle and releases it to the queue
+   Method unassignParticle(particle:Int)
+      Local node:T_irrISceneNode=getNode(particle)
+      If node Then
+         ' make node invisible
+         node.SetVisible(False)
+         particle_queue.AddLast(node)
+         particles.Remove(String.FromInt(particle))
+      EndIf
+   EndMethod
+   
+   ' grows the particle queue by the passed size
+   Method growParticleNodeQueue(by_size:Int=0)
+      If by_size=0 Then by_size=grow_size
+      For Local i:Int=1 To by_size
+         Local node:T_irrISceneNode=createNode()
+         node.SetVisible(False)
+         particle_queue.AddLast(node)
+      Next
+   EndMethod
+   
+   Method Delete()
+      ' unassign all remaining particles
+      For Local key:String=EachIn particles.Keys()
+         unassignParticle(key.ToInt())
+      Next
+      ' delete all the particles from the scene manager
+      clearParticleQueue()
+   EndMethod
+
+   ' clears the queue
+   Method clearParticleQueue()
+      ' remove the nodes from the scene manager
+      For Local node:T_irrISceneNode=EachIn particle_queue
+         g_engine.smgr.addToDeletionQueue(node)
+      Next
+      particle_queue.Clear()
+   EndMethod
+   
+         ' loops through the particles
+   Method affect(now:Int,particles:T_irrArray_SParticle)
+      Local size:Int=particles.size()
+      
+      Local validparticles:TList=New TList
+      For Local i:Int=0 To size-1         
+         Local particle:T_irrSParticle=particles.elementAt(i)
+         OnAffectParticle(now,particle)
+         validparticles.AddLast(String.FromInt(particle.handle))         
+      Next
+      freeUnusedNodes(validparticles)
+   EndMethod
+
+         ' for each particle, reposition the node associated with it
+   Method OnAffectParticle(now:Int,particle:T_irrSParticle)
+      Local node:T_irrISceneNode=getNode(particle.handle)
+      If node Then
+         node.setPosition(particle.pos())
+         node.setVisible(True)
+      EndIf
+   EndMethod
+         
+EndType
+
+Type boxesForParticles Extends ParticleToNodeAffector
+   Method createNode:T_irrISceneNode()
+      Local node:T_irrISceneNode=g_engine.smgr.addTestSceneNode()
+      Return node
+   EndMethod
+   
+   Function generate:BMXIParticleAffector()
+      Return New test
+   EndFunction      
+EndType
+
+' create the particle system node
+Local ps:T_irrIParticleSystemSceneNode=g_engine.smgr.addParticleSystemSceneNode(False)
+
+ps.setPosition(T_irrVector3df.createFromVals(-70,60,40))
+ps.setScale(T_irrVector3df.createFromVals(2,2,2))
+
+' set the particle size to 0 (this is important so they dont show)
+ps.setParticleSize(T_irrDimension2d_f32.create(0, 0))
+
+' setup a box emitter
+Local em:T_irrIParticleEmitter = ps.createBoxEmitter( ..
+   T_irrAABbox3df.createFromVals(-7,0,-7,7,1,7), ..
+   T_irrVector3df.createFromVals(0.0,0.06,0.0), ..
+   80,100, ..
+   T_irrSColor.createFromVals(0,255,255,255), T_irrSColor.createFromVals(0,255,255,255), ..
+   800,2000)
+
+ps.setEmitter(em)
+em.drop()
+
+' create the affector
+Local patst:boxesForParticles=boxesForParticles(boxesForParticles.create(boxesForParticles.generate))
+
+' add the affector
+ps.addAffector(patst.getIParticleAffector()) 

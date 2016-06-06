@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="examples/Widgets.cbp" active="1" />
+		<Project filename="examples/Action.cbp" />
+		<Project filename="examples/helloWorld.cbp" />
+		<Project filename="src/Lib.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

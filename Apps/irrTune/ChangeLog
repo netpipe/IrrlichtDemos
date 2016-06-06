@@ -1,0 +1,5 @@
+0.3:
+ * Optimized the FFT algorithm by using the floating point version of
+   FFTW3 and in-place transforms.  Results in less memory and CPU cycle usage.
+ * Fixed compilation with GCC 4.0.
+

@@ -1,0 +1,5 @@
+<reflection>50</reflection>
+<transparency>65</transparency>
+<rColor>100</rColor>
+<gColor>100</gColor>
+<bColor>100</bColor>

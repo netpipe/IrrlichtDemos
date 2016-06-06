@@ -1,0 +1,16 @@
+
+uniform float range;
+uniform float focus;
+
+uniform sampler2D RT		: register(s0);
+uniform sampler2D Distance	: register(s1);
+uniform sampler2D Blur0		: register(s2);
+uniform sampler2D Blur1		: register(s3);
+
+float4 pixelMain(in float2 vTexCoord : TEXCOORD0) : COLOR
+{
+   float4 sharp = tex2D(RT, vTexCoord);
+   float4 blur  = tex2D(Blur1, vTexCoord);
+   float4 dist  = tex2D(Distance, vTexCoord);
+   return lerp(sharp, blur, saturate(range * abs(focus - dist.r)));
+}

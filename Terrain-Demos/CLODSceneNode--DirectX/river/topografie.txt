@@ -1,0 +1,13 @@
+<size>0</size>
+<improveTerrain>0</improveTerrain>
+<drops>3000</drops>
+<bottom>5</bottom>
+<middle>6</middle>
+<top>5</top>
+<bottomBorder>33</bottomBorder>
+<middleBorder>66</middleBorder>
+<roughness>5</roughness>
+<smoothness>2</smoothness>
+<lowestHeight>0</lowestHeight>
+<highestHeight>1000</highestHeight>
+<tileable>1</tileable>

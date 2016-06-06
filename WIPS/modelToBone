@@ -1,0 +1,34 @@
+Author : Cristian
+
+Using this, you won't need to add one line of code to the engine.
+Works both for .X & .ms3d files.
+For ms3d support just replace all instances of "IAnimatedMeshX" with "IAnimatedMeshMS3D". I am curently using it in my game, so it's tested & tried. It works with as many animations as you want. (I have 5 animations inside my character's .x file & it works perfectly with all).
+
+Before your main loop or in a function add and modify (as needed) this:
+
+Code:
+
+player_mesh = smgr->getMesh([your player mesh]);
+player_node = smgr->addAnimatedMeshSceneNode( player_mesh );
+player_mesh->drop();
+
+IAnimatedMesh* weapon_mesh = smgr->getMesh([your weapon mesh]);
+IAnimatedMeshSceneNode* weapon_node = smgr->addAnimatedMeshSceneNode(weapon_mesh);
+
+weapon_mesh->drop();
+weapon_node->setScale(core::vector3df(0.25,0.25,0.25));//scale it as needed
+weapon_node->setMaterialTexture(0,[your weapon texture])
+   
+int JointNo = ((IAnimatedMeshX*)mesh)->getJointNumber([Desired joint name]);
+
+player_node->addChild( weapon_node );
+
+
+and inside your main loop, do this:
+
+Code:
+
+weapon_node->setPosition(((IAnimatedMeshX*)weapon_mesh)->getMatrixOfJoint(JointNo,0)->getTranslation());
+weapon_node->setRotation(((IAnimatedMeshX*)weapon_mesh)->getMatrixOfJoint(JointNo,0)->getRotationDegrees());
+
+It did wonders for me, & I didn't need engine recompilation anymore, nor hours spent for animating each weapon.

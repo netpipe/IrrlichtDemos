@@ -1,0 +1,53 @@
+
+
+
+scene::IAnimatedMesh* mesh = smgr->getMesh("kulki.b3d");
+mesh->getMeshBuffer(0)->setHardwareMappingHint(scene::EHM_STATIC); 
+
+
+//------------------
+
+
+
+
+void CNullDriver::updateAllHardwareBuffers()
+{
+   core::map<const scene::IMeshBuffer*,SHWBufferLink*>::ParentFirstIterator Iterator=HWBufferMap.getParentFirstIterator();
+
+   // buffer list to delete
+   irr::core::list<SHWBufferLink*> LinkList;
+
+   for (;!Iterator.atEnd();Iterator++)
+   {
+      SHWBufferLink *Link=Iterator.getNode()->getValue();   
+
+      Link->LastUsed++;
+      if (Link->LastUsed>200000)
+      {
+         // add buffer to list
+         LinkList.push_back(Link);
+         //deleteHardwareBuffer(Link);
+      }
+   }
+
+   // if there is some buffers to delete
+   if(!LinkList.empty())
+   {
+      // delete all buffer in list
+      irr::core::list<SHWBufferLink*>::Iterator it = LinkList.begin();
+      for (; it != LinkList.end(); ++it)
+      {
+          deleteHardwareBuffer((*it));
+       }
+   }
+} 
+
+
+
+
+
+
+
+
+
+

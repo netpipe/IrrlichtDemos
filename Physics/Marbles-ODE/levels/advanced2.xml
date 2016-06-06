@@ -1,0 +1,20 @@
+<marbles>
+  <level name="levels/advanced2.irr" gameover="gameover" respawn="-10" challange="85" />
+  <start x="-64" y="4" z="0" />
+  <objects count="8">
+    <object name="part1" />
+    <object name="check1" />
+    <object name="part2" />
+    <object name="check2" />
+    <object name="part3" />
+    <object name="check3" />
+    <object name="part4" />
+    <object name="finish" />
+  </objects>
+  <checkPoints count="4">
+    <check num="0" name="check1" img="levels/images/check1.png" img_ok="levels/images/check1_ok.png" light="check1Light" x="-4" y="2" />
+    <check num="1" name="check2" img="levels/images/check2.png" img_ok="levels/images/check2_ok.png" light="check2Light" z="-4" y="2" />
+    <check num="2" name="check3" img="levels/images/check3.png" img_ok="levels/images/check3_ok.png" light="check3Light" z="-4" />
+    <check num="3" name="finish" img="levels/images/finish.png" img_ok="levels/images/finish_ok.png" light="finishLight" />
+  </checkPoints count="1">
+</marbles>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="IrrConsole" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./irrConsole" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="/home/Dev/libs/Irrlicht/include" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
+		</Linker>
+		<Unit filename="IrrConsole/console.h" />
+		<Unit filename="IrrConsole/defaultCmds.h" />
+		<Unit filename="IrrConsole/includes.h" />
+		<Unit filename="IrrConsole/nodeViewer.h" />
+		<Unit filename="IrrConsole/testApp.h" />
+		<Unit filename="IrrConsole/utils.h" />
+		<Unit filename="console.cpp" />
+		<Unit filename="defaultCmds.cpp" />
+		<Unit filename="nodeViewer.cpp" />
+		<Unit filename="testApp.cpp" />
+		<Unit filename="utils.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

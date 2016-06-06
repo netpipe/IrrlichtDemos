@@ -1,0 +1,5 @@
+Author: Brett R. Jones
+
+I issue the compass_body.tga and compass_needle.tga to public domain
+compass_body texture came from golgotha ( a defunct game ) that was
+in public domain. compass needle I created in photoshop

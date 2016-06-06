@@ -1,0 +1,35 @@
+<marbles>
+  <level name="levels/smr3.irr" gameover="gameover" respawn="-10" challange="70" />
+  <start x="0" y="4" z="0" />
+  <objects count="20">
+    <object name="ramp1" />
+    <object name="ramp2" />
+    <object name="ramp3" />
+    <object name="curve1" />
+    <object name="check1" />
+    <object name="up" />
+    <object name="curve2" />
+    <object name="check2" />
+    <object name="curve3" />
+    <object name="down" />
+    <object name="straight1" />
+    <object name="check3" />
+    <object name="jump1" />
+    <object name="jump2" />
+    <object name="straight2" />
+    <object name="curve4" />
+    <object name="jump3" />
+    <object name="jump4" />
+    <object name="check4" />
+    <object name="curve5" />
+    <object name="jump5" />
+    <object name="finish" />
+  </objects>
+  <checkPoints count="2">
+    <check num="0" name="check1" img="levels/images/check1.png" img_ok="levels/images/check1_ok.png" light="check1Light" y="3" />
+    <check num="1" name="check2" img="levels/images/check2.png" img_ok="levels/images/check2_ok.png" light="check2Light" y="3" />
+    <check num="2" name="check3" img="levels/images/check3.png" img_ok="levels/images/check3_ok.png" light="check3Light" y="3" />
+    <check num="3" name="check4" img="levels/images/check4.png" img_ok="levels/images/check4_ok.png" light="check4Light" y="3" />
+    <check num="4" name="finish" img="levels/images/finish.png" img_ok="levels/images/finish_ok.png" light="finishLight" />
+  </checkPoints count="1">
+</marbles>

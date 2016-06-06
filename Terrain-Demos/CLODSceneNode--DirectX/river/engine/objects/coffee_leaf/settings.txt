@@ -1,0 +1,13 @@
+<type>0</type>
+<lods>
+<0>
+<file>pflanze.X</file>
+<billBoard>0</billBoard>
+<maxDistance>10.0</maxDistance>
+</0>
+<1>
+<file>pflanze_bb.X</file>
+<billBoard>1</billBoard>
+<maxDistance>40.0</maxDistance>
+</1>
+</lods>

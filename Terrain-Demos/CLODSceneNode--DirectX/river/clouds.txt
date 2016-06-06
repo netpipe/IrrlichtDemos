@@ -1,0 +1,14 @@
+<cumulusDensity>0</cumulusDensity>
+<cumulusSpeed>50</cumulusSpeed>
+<cumulusHeight>8</cumulusHeight>
+<cumulusLength>30</cumulusLength>
+<cumulusWidth>10</cumulusWidth>
+<cirrusResolution>256</cirrusResolution>
+<cirrusCoverage>50</cirrusCoverage>
+<cirrusSize>6</cirrusSize>
+<cirrusSmoothness>90</cirrusSmoothness>
+<cirrusFrames>10</cirrusFrames>
+<cirrusMutationSpeed>10</cirrusMutationSpeed>
+<cirrusMovingSpeed>10</cirrusMovingSpeed>
+<cirrusRepetition>8</cirrusRepetition>
+<cirrusHeight>3000</cirrusHeight>

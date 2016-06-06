@@ -1,0 +1,34 @@
+<marbles>
+  <level name="levels/worldofice.irr" gameover="gameover" respawn="-10" challange="70" />
+  <start x="0" y="4" z="0" />
+  <objects count="22">
+    <object name="start" />
+    <object name="ice1" class="ice" />
+    <object name="solid1" />
+    <object name="jpad1" class="bounce_l" />
+    <object name="ice2" class="ice" />
+    <object name="apad1" class="push_z1_l" />
+    <object name="ice3" class="ice" />
+    <object name="solid2" />
+    <object name="check1" />
+    <object name="finish" />
+    <object name="ice4" class="ice" />
+    <object name="solid3" />
+    <object name="ice5" class="ice" />
+    <object name="solid4" />
+    <object name="ice6" class="ice" />
+    <object name="ice7" class="ice" />
+    <object name="ice8" class="ice" />
+    <object name="ice9" class="ice" />
+    <object name="solid5" />
+    <object name="check2" />
+    <object name="apad2" class="push_x1_l" />
+    <object name="ice10" class="ice" />
+    <object name="ice11" class="ice" />
+  </objects>
+  <checkPoints count="2">
+    <check num="0" name="check1" img="levels/images/check1.png" img_ok="levels/images/check1_ok.png" light="check1Light" z="-4" y="1" />
+    <check num="1" name="check2" img="levels/images/check2.png" img_ok="levels/images/check2_ok.png" light="check2Light" y="3" />
+    <check num="2" name="finish" img="levels/images/finish.png" img_ok="levels/images/finish_ok.png" light="finishLight" />
+  </checkPoints count="1">
+</marbles>

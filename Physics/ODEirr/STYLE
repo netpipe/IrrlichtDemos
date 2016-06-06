@@ -1,0 +1,16 @@
+---------------------------------------
+In class methods parameters one may use first 2 letters of a word when setting value to a ... :
+class A {
+	public:
+		void SetGravity (float gr);
+
+	private:
+		float gravity;
+};
+
+void A::SetGravity (float gr) {
+	gravity = gr;
+}
+---------------------------------------
+A line must be no longer than 80 characters
+---------------------------------------

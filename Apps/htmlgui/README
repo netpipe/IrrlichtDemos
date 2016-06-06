@@ -1,0 +1,9 @@
+irrlicht 1.5
+Put directory in the irrlicht example directory 
+make clean 
+make
+
+in the irrlicht bin/linux directory run program ./01.Helloworld
+
+link with a browser to 127.0.0.1:20000
+

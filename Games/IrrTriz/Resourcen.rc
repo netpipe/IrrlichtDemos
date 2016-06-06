@@ -1,0 +1,4 @@
+#include "Resourcen.h"
+
+prgIcon ICON DISCARDABLE "irr.ico"
+

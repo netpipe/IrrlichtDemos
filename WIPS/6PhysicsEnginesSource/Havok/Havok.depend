@@ -1,0 +1,54 @@
+# depslib dependency file v1.0
+1215981740 source:f:\irrlichtstuff\meineprojekte\projects\havok\havokclass.cpp
+	"HavokClass.h"
+
+1215640382 f:\irrlichtstuff\meineprojekte\projects\havok\havokclass.h
+	<irrlicht.h>
+	<Common/hkAnimationPhysicsPublicInclude.h>
+	<hr_time.h>
+	<iostream>
+
+1216069749 source:f:\irrlichtstuff\meineprojekte\projects\havok\main.cpp
+	"HavokClass.h"
+	"IrrEventsClass.h"
+	"DebugDisplayClass.h"
+
+1215968693 source:f:\irrlichtstuff\meineprojekte\projects\debugdisplay\debugdisplayclass.cpp
+	"DebugDisplayClass.h"
+
+1215966774 f:\irrlichtstuff\meineprojekte\projects\debugdisplay\debugdisplayclass.h
+	<irrlicht.h>
+
+1215979239 source:f:\irrlichtstuff\meineprojekte\projects\irrevents\irreventsclass.cpp
+	"IrrEventsClass.h"
+
+1215979249 f:\irrlichtstuff\meineprojekte\projects\irrevents\irreventsclass.h
+	<irrlicht.h>
+
+1214856413 source:f:\irrlichtstuff\brauchbareincludes\hr_time.cpp
+	"hr_time.h"
+
+1214856363 f:\irrlichtstuff\brauchbareincludes\hr_time.h
+	<windows.h>
+
+1215968693 source:f:\dev\projekte\debugdisplay\debugdisplayclass.cpp
+	"DebugDisplayClass.h"
+
+1215966774 f:\dev\projekte\debugdisplay\debugdisplayclass.h
+	<irrlicht.h>
+
+1215981740 source:f:\dev\projekte\havok\havokclass.cpp
+	"HavokClass.h"
+
+1215640382 f:\dev\projekte\havok\havokclass.h
+	<irrlicht.h>
+	<Common/hkAnimationPhysicsPublicInclude.h>
+	<hr_time.h>
+	<iostream>
+
+1215979239 source:f:\dev\projekte\irrevents\irreventsclass.cpp
+	"IrrEventsClass.h"
+
+1215979249 f:\dev\projekte\irrevents\irreventsclass.h
+	<irrlicht.h>
+

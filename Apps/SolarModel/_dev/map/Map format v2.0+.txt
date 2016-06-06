@@ -1,0 +1,1 @@
+Since Version 2.0 Solar Model has moved on XML format which can be easily understood by simple reading it.

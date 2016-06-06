@@ -1,0 +1,3 @@
+<lowestHeight>0</lowestHeight>
+<highestHeight>1516</highestHeight>
+<tileable>1</tileable>

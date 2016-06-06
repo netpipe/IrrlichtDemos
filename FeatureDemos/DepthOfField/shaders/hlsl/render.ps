@@ -1,0 +1,8 @@
+
+float4 pixelMain(in float3 vViewVec : TEXCOORD0) : COLOR
+{
+   // use the distance to decide how much blur we want
+   float dist = length(vViewVec);
+
+   return dist.xxxx; // swizzle :)
+}

@@ -1,0 +1,21 @@
+====================================
+CClockGUIElement and CClockSceneNode
+====================================
+
+(c) 2009/2010 by A.Buschhüter
+A_Buschhueter@gmx.de
+
+Disclaimer:
+Use any code you want, it's free for any use (comercial or noncomercial) !!!
+All graphic arts are made by me and also free for use !!!
+But there is absolutely no warranty, use it on your own risk !!! ;)
+
+Credits are always welcome !!! :)
+
+The code was written for Windows...
+For use with other systems you'll have to change some code...
+All code you need to change has a remark:
+    // NOTE (Linux#9#): use Irrlicht timer
+
+Have fun with it !!!
+cu, Acki

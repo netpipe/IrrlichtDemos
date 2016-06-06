@@ -1,0 +1,214 @@
+<html>
+<head>
+<style type="text/css" rel="stylesheet" type="text/css">
+body{
+	background: #242323 url(deg0.bmp) repeat-x left top;
+	color:#FFFFFF;
+	font: 9px verdana;
+}
+div.info{
+	border:2px dotted #CCCCCC;
+	background-color:#999999;
+	padding:20px;
+}
+div#large{
+	width:80%;
+}
+
+</style>
+</head>
+
+<body>
+
+<center>
+<div id="large">
+
+<div class="info">
+ <h1>
+	IRRLICHT 3D RENDERING<br/>-<br/>
+	FPS<br/>-<br/>
+	FIRST AND THIRD PERSON MODEL WEAPON<br/>
+ </h1>
+
+</div>
+
+
+
+
+<hr/>
+
+
+
+<div class="info">
+
+ Right Mouse Button : aim<br/>
+ Left Mouse Button : shoot<br/>
+ Press R to reload<br/><br/>
+ 
+
+ <img src="irrlicht-render0.jpg" /><br/>
+ <i>Irrlicht render (without Anti-Aliasing)</i><br/><br/>
+
+ <img src="irrlicht-render1.jpg" /><br/>
+ <i>Irrlicht render (with Anti-Aliasing)</i><br/><br/>
+
+
+
+ <img src="../models/M4/1st_person/M4A1.jpg"/><br/>
+ <i>The texture</i><br/>
+
+</div>
+
+
+
+
+<hr/>
+
+
+
+
+<div class="info" style="height:480px;">
+
+ <h1>1st PERSON WEAPON</h1>
+
+ <div style="float:left;width:240px;border:1px dotted #BBBBBB; padding:10px;" align="left">
+
+ I created the gun and its texture, first. Then the magazine, then hands,
+ all exported as 3ds files.<br/><br/>
+
+ Then parts were imported in <a href="http://www.insanesoftware.de/">CharacterFX</a>,
+ a rig was created, vertices assigned to bones, to finally create the animations.
+
+ See <b>firstPersonWeapon.h</b> for the frames list:<br/>
+
+	<div style="border:1px solid orange; padding:4px; margin:4px;" align="left"><b>
+	// model animation frames<br/>
+	#define PLAYER_IDLE 1,36<br/>
+	#define PLAYER_DRAW 36,48<br/>
+	#define PLAYER_AIMING 49,79<br/>
+	#define PLAYER_HOLSTER 80,90<br/>
+	#define PLAYER_RELOAD 90,136<br/>
+	#define PLAYER_SHOOT_HIP 136,139<br/>
+	#define PLAYER_SHOOT_SHOULDER 140,143<br/>
+	</b></div>
+	<br/>
+
+ The result is <b>models/M4/1st_person/fpw_M4.cfx</b>, I urge you to open this file
+ to see it as shown on the image.<br/><br/>
+
+ It was exported from CFX as a b3d file : <b>models/M4/1st_person/fpw_M4.b3d</b>
+ this is the final model loaded by 3D engine.<br/><br/>
+
+	<b>How to modifiy the mesh WITHOUT modifying animations:</b><br/>
+	In CFX you can select a part and export it as 3ds.
+	Edit this mesh in your model editor, export it as 3ds. Back in CFX, select
+	the old mesh, delete it, import the new one, assign vertices
+	to bones, and voilà you can export as b3d!
+ </div>
+
+ <div style="float:right; width:652px; /*border:1px solid green*/">
+  <img src="cfx.jpg"/><br/>
+   <i>CFX capture</i><br/>
+ </div>
+
+</div>
+
+
+
+
+<hr/>
+
+
+
+
+
+
+<div class="info" style="height:560px;">
+
+<h1>3d PERSON WEAPON</h1>
+
+ <div style="float:left; width:200px; border:1px dotted #BBBBBB; padding:10px">
+ <br/><br/><br/><br/>
+ When the 1st person weapon model was ready, it has been duplicated
+ to create the third-person models for LOD :<br/><br/><br/><br/>
+
+	<div style="border:1px solid orange; padding:4px; margin:4px;" align="left"><b>
+	M4A1a.3ds : 1065 tris<br/>
+	M4A1b.3ds : 934  tris<br/>
+	M4A1c.3ds : 851  tris<br/>
+	M4A1d.3ds : 813  tris<br/>
+	</b></div>
+	<br/><br/><br/><br/>
+	The lowest poly version is the one effectively used for the 3d model weapon
+	(in the background on the image).
+	<br/><br/><br/><br/>
+ </div>
+
+ <div style="float:right; width:640px;">
+  <img src="image.jpg"/><br/>
+  <i>MAX render</i><br/>
+ </div>
+
+
+
+</div>
+
+
+
+
+
+<hr/>
+
+
+
+
+
+
+<div class="info">
+
+<h1>SILENCER</h1>
+	Not used yet. It brings questions about parenting...<br/><br/>
+    <img src="silencer.jpg"/><br/>
+    <i>MAX render</i><br/><br/>
+
+	<img src="../models/M4/silencer/silencer.bmp"/><br/>
+	<i>The texture</i><br/>
+</div>
+
+
+
+
+
+<hr/>
+
+
+
+
+
+
+<div class="info" align="left">
+
+<center><h1>Final notes</h1></center>
+
+	This is where artwork joins the coding side. I'm a programmer.<br/><br/>
+
+	There are still a lot of things to do. For example parent the weapon
+	to the hands model (instead of doing it by artwork), to be able to load
+	several weapons.<br/><br/>
+
+	LOD ranges are wrong. Goes from 1065 to 813 tris. Gain is 250 polies, should be more!<br/><br/>
+
+	A lot of bones from the left hand are totally unused so why keep so many bones...<br/><br/>
+
+	Add bump mapping if you can.<br/><br/>
+</div>
+
+
+
+
+
+</div>
+</center>
+</body>
+
+</html>

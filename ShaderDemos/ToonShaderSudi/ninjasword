@@ -1,0 +1,424 @@
+   1.
+      <Object>
+   2.
+              <Mesh value="show/ninja.b3d"/>
+   3.
+              <Position value="0.000000, 0.000000, 0.000000"/>
+   4.
+              <Rotation value="0.000000, 0.000000, 0.000000"/>
+   5.
+              <Scale value="1.000000, 1.000000, 1.000000"/>
+   6.
+       
+   7.
+       
+   8.
+       
+   9.
+              <MaterialPipeline>
+  10.
+                      <Material id="0">
+  11.
+                              <MaterialType value="Toon.Material"/>
+  12.
+                              <Lightning value="false"/>
+  13.
+                              <BackfaceCulling value="true"/>
+  14.
+                              <FrontfaceCulling value="false"/>
+  15.
+                      </Material>
+  16.
+       
+  17.
+                      <Material id="1">
+  18.
+                              <MaterialType value="Toon.Material"/>
+  19.
+                              <Lightning value="false"/>
+  20.
+                              <BackfaceCulling value="true"/>
+  21.
+                              <FrontfaceCulling value="false"/>
+  22.
+                      </Material>
+  23.
+              </MaterialPipeline>
+  24.
+       
+  25.
+              <MaterialPipeline>
+  26.
+                      <Material id="0">
+  27.
+                              <MaterialType value="Cell.Material"/>
+  28.
+                              <Lightning value="false"/>
+  29.
+                              <BackfaceCulling value="false"/>
+  30.
+                              <FrontfaceCulling value="true"/>
+  31.
+                      </Material>
+  32.
+       
+  33.
+                      <Material id="1">
+  34.
+                              <MaterialType value="Cell.Material"/>
+  35.
+                              <Lightning value="false"/>
+  36.
+                              <BackfaceCulling value="false"/>
+  37.
+                              <FrontfaceCulling value="true"/>
+  38.
+                      </Material>
+  39.
+              </MaterialPipeline>
+  40.
+       
+  41.
+              <Animation name="Walk">
+  42.
+                      <Range value="1" value1="14">
+  43.
+                      <Speed value="15.000000">
+  44.
+                      <Loop value="true">
+  45.
+              </Animation>
+  46.
+       
+  47.
+              <Animation name="Stealth_Walk">
+  48.
+                      <Range value="15" value1="30">
+  49.
+                      <Speed value="15.000000">
+  50.
+                      <Loop value="true">
+  51.
+              </Animation>
+  52.
+       
+  53.
+              <Animation name="Punch_and_swipe_Sword">
+  54.
+                      <Range value="32" value1="44">
+  55.
+                      <Speed value="10.000000">
+  56.
+                      <Loop value="false">
+  57.
+                      <Next value="Idle1"/>
+  58.
+                      <Next value="Idle2"/>
+  59.
+                      <Next value="Idle3"/>
+  60.
+              </Animation>
+  61.
+       
+  62.
+              <Animation name="Swipe_and_spin_Sword">
+  63.
+                      <Range value="45" value1="59">
+  64.
+                      <Speed value="10.000000">
+  65.
+                      <Loop value="false">
+  66.
+                      <Next value="Idle1"/>
+  67.
+                      <Next value="Idle2"/>
+  68.
+                      <Next value="Idle3"/>
+  69.
+              </Animation>
+  70.
+       
+  71.
+              <Animation name="DownCut">
+  72.
+                      <Range value="60" value1="68">
+  73.
+                      <Speed value="5.000000">
+  74.
+                      <Loop value="false">
+  75.
+                      <Next value="Idle1"/>
+  76.
+                      <Next value="Idle2"/>
+  77.
+                      <Next value="Idle3"/>
+  78.
+              </Animation>
+  79.
+       
+  80.
+              <Animation name="Block_up">
+  81.
+                      <Range value="69" value1="72">
+  82.
+                      <Speed value="1.000000">
+  83.
+                      <Loop value="false">
+  84.
+                      <Next value="Idle1"/>
+  85.
+                      <Next value="Idle2"/>
+  86.
+                      <Next value="Idle3"/>
+  87.
+              </Animation>
+  88.
+       
+  89.
+              <Animation name="Block_down">
+  90.
+                      <Range value="72" value1="69">
+  91.
+                      <Speed value="1.000000">
+  92.
+                      <Loop value="false">
+  93.
+                      <Next value="Idle1"/>
+  94.
+                      <Next value="Idle2"/>
+  95.
+                      <Next value="Idle3"/>
+  96.
+              </Animation>
+  97.
+       
+  98.
+              <Animation name="Kick">
+  99.
+                      <Range value="73" value1="83">
+ 100.
+                      <Speed value="30.000000">
+ 101.
+                      <Loop value="false">
+ 102.
+                      <Next value="Idle1"/>
+ 103.
+                      <Next value="Idle2"/>
+ 104.
+                      <Next value="Idle3"/>
+ 105.
+              </Animation>
+ 106.
+       
+ 107.
+              <Animation name="PickUp">
+ 108.
+                      <Range value="84" value1="93">
+ 109.
+                      <Speed value="1.000000">
+ 110.
+                      <Loop value="false">
+ 111.
+                      <Next value="Idle1"/>
+ 112.
+                      <Next value="Idle2"/>
+ 113.
+                      <Next value="Idle3"/>
+ 114.
+              </Animation>
+ 115.
+       
+ 116.
+              <Animation name="Crouch">
+ 117.
+                      <Range value="87" value1="87">
+ 118.
+                      <Speed value="30.000000">
+ 119.
+                      <Loop value="true">
+ 120.
+              </Animation>
+ 121.
+       
+ 122.
+              <Animation name="Jump">
+ 123.
+                      <Range value="94" value1="102">
+ 124.
+                      <Speed value="5.000000">
+ 125.
+                      <Loop value="false">
+ 126.
+                      <Next value="Idle1"/>
+ 127.
+                      <Next value="Idle2"/>
+ 128.
+                      <Next value="Idle3"/>
+ 129.
+              </Animation>
+ 130.
+       
+ 131.
+              <Animation name="FinishMove">
+ 132.
+                      <Range value="112" value1="125">
+ 133.
+                      <Speed value="5.000000">
+ 134.
+                      <Loop value="false">
+ 135.
+                      <Next value="Idle1"/>
+ 136.
+                      <Next value="Idle2"/>
+ 137.
+                      <Next value="Idle3"/>
+ 138.
+              </Animation>
+ 139.
+       
+ 140.
+              <Animation name="SideKick">
+ 141.
+                      <Range value="126" value1="133">
+ 142.
+                      <Speed value="30.000000">
+ 143.
+                      <Loop value="false">
+ 144.
+                      <Next value="Idle1"/>
+ 145.
+                      <Next value="Idle2"/>
+ 146.
+                      <Next value="Idle3"/>
+ 147.
+              </Animation>
+ 148.
+       
+ 149.
+              <Animation name="SpinningSword">
+ 150.
+                      <Range value="134" value1="145">
+ 151.
+                      <Speed value="10.000000">
+ 152.
+                      <Loop value="false">
+ 153.
+                      <Next value="Idle1"/>
+ 154.
+                      <Next value="Idle2"/>
+ 155.
+                      <Next value="Idle3"/>
+ 156.
+              </Animation>
+ 157.
+       
+ 158.
+              <Animation name="Backflip">
+ 159.
+                      <Range value="146" value1="158">
+ 160.
+                      <Speed value="10.000000">
+ 161.
+                      <Loop value="false">
+ 162.
+                      <Next value="Idle1"/>
+ 163.
+                      <Next value="Idle2"/>
+ 164.
+                      <Next value="Idle3"/>
+ 165.
+              </Animation>
+ 166.
+       
+ 167.
+              <Animation name="ClimbWall">
+ 168.
+                      <Range value="159" value1="165">
+ 169.
+                      <Speed value="30.000000">
+ 170.
+                      <Loop value="false">
+ 171.
+              </Animation>
+ 172.
+       
+ 173.
+              <Animation name="Death1">
+ 174.
+                      <Range value="166" value1="173">
+ 175.
+                      <Speed value="5.000000">
+ 176.
+                      <Loop value="false">
+ 177.
+              </Animation>
+ 178.
+       
+ 179.
+              <Animation name="Death2">
+ 180.
+                      <Range value="174" value1="182">
+ 181.
+                      <Speed value="5.000000">
+ 182.
+                      <Loop value="false">
+ 183.
+              </Animation>
+ 184.
+       
+ 185.
+              <Animation name="Idle1">
+ 186.
+                      <Range value="184" value1="205">
+ 187.
+                      <Speed value="10.000000">
+ 188.
+                      <Loop value="false">
+ 189.
+                      <Next value="Idle1"/>
+ 190.
+                      <Next value="Idle2"/>
+ 191.
+                      <Next value="Idle3"/>
+ 192.
+              </Animation>
+ 193.
+       
+ 194.
+              <Animation name="Idle2">
+ 195.
+                      <Range value="206" value1="250">
+ 196.
+                      <Speed value="10.000000">
+ 197.
+                      <Loop value="false">
+ 198.
+                      <Next value="Idle1"/>
+ 199.
+                      <Next value="Idle2"/>
+ 200.
+                      <Next value="Idle3"/>
+ 201.
+              </Animation>
+ 202.
+       
+ 203.
+              <Animation name="Idle3">
+ 204.
+                      <Range value="251" value1="300">
+ 205.
+                      <Speed value="10.000000">
+ 206.
+                      <Loop value="false">
+ 207.
+                      <Next value="Idle3"/>
+ 208.
+                      <Next value="Idle2"/>
+ 209.
+                      <Next value="Idle1"/>
+ 210.
+              </Animation>
+ 211.
+       
+ 212.
+      </Object>

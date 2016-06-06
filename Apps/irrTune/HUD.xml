@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<HUD>
+<string name="PictureCount" value="2"/>
+<string name="TextCount" value="2"/>
+
+<node type="picture0">
+	<string name="picture0" value="3"/>
+	<string name="file" value="hud.jpg"/>
+	<float name="Xcoord" value="0.0f" />
+	<float name="Ycoord" value="100.0f" />
+	<float name="width" value="640.0f" />
+	<float name="height" value="480.0f" />
+
+</node>
+<node type="picture1">
+	<string name="picture1" value="3"/>
+	<string name="file" value="hud.jpg"/>
+	<float name="Xcoord" value="0.0f" />
+	<float name="Ycoord" value="0.0f" />
+	<float name="width" value="50.0f" />
+	<float name="height" value="11.0f" />
+</node>
+<node type="text0">
+	<string name="text0" value="8"/>
+	<string name="file" value="hello world"/>
+	<float name="Xcoord" value="20.0f" />
+	<float name="Ycoord" value="10.0f" />
+	<float name="width" value="440.0f" />
+	<float name="height" value="100.0f" />
+	<vector name="color" value="255,255,255" />
+	<vector name="alpha" value="255" />
+  	<int   name="fSize" value="1" />
+</node>
+<node type="text1oh">
+	<string name="text1" value="8"/>
+	<string name="file" value="ladadadadadaaaaaaaaaaaa"/>
+	<float name="Xcoord" value="20.0f" />
+	<float name="Ycoord" value="50.0f" />
+	<float name="width" value="440.0f" />
+	<float name="height" value="100.0f" />
+	<vector name="color" value="255,255,255" />
+	<vector name="alpha" value="255" />
+  	<int   name="fSize" value="1" />
+</node>
+</HUD>

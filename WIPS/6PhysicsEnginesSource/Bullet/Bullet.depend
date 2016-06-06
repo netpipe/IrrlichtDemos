@@ -1,0 +1,67 @@
+# depslib dependency file v1.0
+1216152661 source:f:\irrlichtstuff\meineprojekte\projects\bullet\bulletclass.cpp
+	"BulletClass.h"
+
+1216152661 f:\irrlichtstuff\meineprojekte\projects\bullet\bulletclass.h
+	<irrlicht.h>
+	<btBulletDynamicsCommon.h>
+	<btSoftBody.h>
+	<btSoftBodyRigidBodyCollisionConfiguration.h>
+	<btSoftRigidDynamicsWorld.h>
+	<btSoftBodyHelpers.h>
+	<hr_time.h>
+	<iostream>
+
+1216152289 source:f:\irrlichtstuff\meineprojekte\projects\bullet\main.cpp
+	"BulletClass.h"
+	"IrrEventsClass.h"
+	"DebugDisplayClass.h"
+
+1215968693 source:f:\irrlichtstuff\meineprojekte\projects\debugdisplay\debugdisplayclass.cpp
+	"DebugDisplayClass.h"
+
+1215966774 f:\irrlichtstuff\meineprojekte\projects\debugdisplay\debugdisplayclass.h
+	<irrlicht.h>
+
+1215979239 source:f:\irrlichtstuff\meineprojekte\projects\irrevents\irreventsclass.cpp
+	"IrrEventsClass.h"
+
+1215979249 f:\irrlichtstuff\meineprojekte\projects\irrevents\irreventsclass.h
+	<irrlicht.h>
+
+1214856413 source:f:\irrlichtstuff\brauchbareincludes\hr_time.cpp
+	"hr_time.h"
+
+1214856363 f:\irrlichtstuff\brauchbareincludes\hr_time.h
+	<windows.h>
+
+1216152661 source:f:\dev\projekte\bullet\bulletclass.cpp
+	"BulletClass.h"
+
+1216152661 f:\dev\projekte\bullet\bulletclass.h
+	<irrlicht.h>
+	<btBulletDynamicsCommon.h>
+	<btSoftBody.h>
+	<btSoftBodyRigidBodyCollisionConfiguration.h>
+	<btSoftRigidDynamicsWorld.h>
+	<btSoftBodyHelpers.h>
+	<hr_time.h>
+	<iostream>
+
+1217426102 source:f:\dev\projekte\bullet\main.cpp
+	"BulletClass.h"
+	"IrrEventsClass.h"
+	"DebugDisplayClass.h"
+
+1217199565 source:f:\dev\projekte\debugdisplay\debugdisplayclass.cpp
+	"DebugDisplayClass.h"
+
+1215966774 f:\dev\projekte\debugdisplay\debugdisplayclass.h
+	<irrlicht.h>
+
+1216949788 source:f:\dev\projekte\irrevents\irreventsclass.cpp
+	"IrrEventsClass.h"
+
+1216949777 f:\dev\projekte\irrevents\irreventsclass.h
+	<irrlicht.h>
+

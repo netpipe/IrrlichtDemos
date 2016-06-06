@@ -1,0 +1,10 @@
+drivertype opengl
+width 1024
+height 768
+bitsperpixel 24
+fullscreen 0
+antialias 1
+vsync 0
+backgroundrendering 0
+screenshotwithoutgui 0
+screenshotquality 100

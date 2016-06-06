@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ODE" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../bin/ODE" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../obj/ODE/Linux" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../bin/ODE" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../obj/ODE/Linux" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="Linux">
+				<Option output="../bin/ODE" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../bin" />
+				<Option object_output="../obj/ODE/Linux" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+					<Add directory="/home/Dev/libs/physics/ode-0.11.1/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="Xxf86vm" />
+					<Add library="GL" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+					<Add directory="/home/Dev/libs/physics/ode-0.11.1/ode/src/.libs" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="ode" />
+		</Linker>
+		<Unit filename="../Includes/DebugDisplayClass.cpp" />
+		<Unit filename="../Includes/DebugDisplayClass.h" />
+		<Unit filename="../Includes/IrrEventsClass.cpp" />
+		<Unit filename="../Includes/IrrEventsClass.h" />
+		<Unit filename="Main.cpp" />
+		<Unit filename="ODEClass.cpp" />
+		<Unit filename="ODEClass.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

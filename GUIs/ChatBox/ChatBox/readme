@@ -1,0 +1,11 @@
+Instructions for Usage
+======================
+
+#include "CGUIChatBox.h"
+
+
+gui::CGUIChatBox* chat = new gui::CGUIChatBox(env, env->getRootGUIElement(), 230, core::rect<int>(20,550,300,700));
+
+chat->addItem(L"(john) Kill that thing...");
+chat->addItem(L"(firestaff) lol", video::SColor(0, 0, 255, 255));
+chat->addItem(L"(juli) that's too big", video::SColor(0, 0, 0, 255)); 

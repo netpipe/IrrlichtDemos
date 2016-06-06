@@ -1,0 +1,36 @@
+# Project: Curse of the Pharaoh
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = OBJ/Curse_of_the_Pharoah_private.res
+OBJ  = OBJ/PortalSceneNode.o OBJ/CurseOfThePharaoh.o $(RES)
+LINKOBJ  = OBJ/PortalSceneNode.o OBJ/CurseOfThePharaoh.o $(RES)
+LIBS =  -L"E:/Dev-Cpp/lib" "../Audiere 1.9.4/audiere - win32 binary/lib/audiere.lib" ../irrlicht-1.3.1/lib/Win32-gcc/libIrrlicht.a  
+INCS =  -I"E:/Dev-Cpp/include"  -I"F:/C++ Work/Audiere 1.9.4/audiere - win32 binary/include"  -I"F:/C++ Work/irrlicht-1.3.1/include" 
+CXXINCS =  -I"E:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"E:/Dev-Cpp/include/c++/3.4.2/backward"  -I"E:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"E:/Dev-Cpp/include/c++/3.4.2"  -I"E:/Dev-Cpp/include"  -I"F:/C++ Work/Audiere 1.9.4/audiere - win32 binary/include"  -I"F:/C++ Work/irrlicht-1.3.1/include" 
+BIN  = "Curse of the Pharaoh.exe"
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before "Curse of the Pharaoh.exe" all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "Curse of the Pharaoh.exe" $(LIBS)
+
+OBJ/PortalSceneNode.o: SRC/PortalSceneNode.cpp
+	$(CPP) -c SRC/PortalSceneNode.cpp -o OBJ/PortalSceneNode.o $(CXXFLAGS)
+
+OBJ/CurseOfThePharaoh.o: SRC/CurseOfThePharaoh.cpp
+	$(CPP) -c SRC/CurseOfThePharaoh.cpp -o OBJ/CurseOfThePharaoh.o $(CXXFLAGS)
+
+OBJ/Curse_of_the_Pharoah_private.res: Curse_of_the_Pharoah_private.rc 
+	$(WINDRES) -i Curse_of_the_Pharoah_private.rc --input-format=rc -o OBJ/Curse_of_the_Pharoah_private.res -O coff 

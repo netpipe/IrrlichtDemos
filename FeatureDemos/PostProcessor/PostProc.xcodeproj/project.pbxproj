@@ -1,0 +1,261 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5502F726105712C700273D37 /* CWaterPostProc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5502F725105712C700273D37 /* CWaterPostProc.cpp */; };
+		558E77381045E36900E564DD /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 558E77231045E31700E564DD /* OpenGL.framework */; };
+		558E77391045E36900E564DD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 558E77241045E31700E564DD /* Cocoa.framework */; };
+		558E773A1045E36900E564DD /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 558E77251045E31700E564DD /* Carbon.framework */; };
+		558E773B1045E36900E564DD /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 558E77261045E31700E564DD /* AppKit.framework */; };
+		558E773C1045E36900E564DD /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 558E77271045E31700E564DD /* IOKit.framework */; };
+		558E773D1045E36900E564DD /* libIrrlicht.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 558E772A1045E31700E564DD /* libIrrlicht.a */; };
+		558E77431045E38100E564DD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 558E77421045E38100E564DD /* main.cpp */; };
+		558E77621045E72600E564DD /* IPostProc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 558E77611045E72600E564DD /* IPostProc.cpp */; };
+		558E77671045E80D00E564DD /* CRendererPostProc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 558E77661045E80D00E564DD /* CRendererPostProc.cpp */; };
+		558E776C1045E8AC00E564DD /* CEffectPostProc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 558E776B1045E8AC00E564DD /* CEffectPostProc.cpp */; };
+		558E77711045E91200E564DD /* CTransitionPostProc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 558E77701045E91200E564DD /* CTransitionPostProc.cpp */; };
+		5596061110537527003764B1 /* CLensFlarePostProc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5596061010537527003764B1 /* CLensFlarePostProc.cpp */; };
+		55A2C5EF104C3DE0000FE538 /* CSplitPostProc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55A2C5EE104C3DE0000FE538 /* CSplitPostProc.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5502F724105712C700273D37 /* CWaterPostProc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWaterPostProc.h; sourceTree = "<group>"; };
+		5502F725105712C700273D37 /* CWaterPostProc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWaterPostProc.cpp; sourceTree = "<group>"; };
+		558E77231045E31700E564DD /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		558E77241045E31700E564DD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		558E77251045E31700E564DD /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		558E77261045E31700E564DD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		558E77271045E31700E564DD /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		558E772A1045E31700E564DD /* libIrrlicht.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIrrlicht.a; path = /usr/lib/libIrrlicht.a; sourceTree = "<absolute>"; };
+		558E77311045E35600E564DD /* Main.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Main.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		558E77341045E35600E564DD /* Main-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Main-Info.plist"; sourceTree = "<group>"; };
+		558E77421045E38100E564DD /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		558E775D1045E4FB00E564DD /* shaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shaders.h; sourceTree = "<group>"; };
+		558E77601045E72600E564DD /* IPostProc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPostProc.h; sourceTree = "<group>"; };
+		558E77611045E72600E564DD /* IPostProc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IPostProc.cpp; sourceTree = "<group>"; };
+		558E77651045E80D00E564DD /* CRendererPostProc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRendererPostProc.h; sourceTree = "<group>"; };
+		558E77661045E80D00E564DD /* CRendererPostProc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CRendererPostProc.cpp; sourceTree = "<group>"; };
+		558E776A1045E8AC00E564DD /* CEffectPostProc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEffectPostProc.h; sourceTree = "<group>"; };
+		558E776B1045E8AC00E564DD /* CEffectPostProc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CEffectPostProc.cpp; sourceTree = "<group>"; };
+		558E776F1045E91200E564DD /* CTransitionPostProc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTransitionPostProc.h; sourceTree = "<group>"; };
+		558E77701045E91200E564DD /* CTransitionPostProc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CTransitionPostProc.cpp; sourceTree = "<group>"; };
+		558E77AB1045EB5300E564DD /* CShaderCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CShaderCallbacks.h; sourceTree = "<group>"; };
+		5596060F10537527003764B1 /* CLensFlarePostProc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLensFlarePostProc.h; sourceTree = "<group>"; };
+		5596061010537527003764B1 /* CLensFlarePostProc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CLensFlarePostProc.cpp; sourceTree = "<group>"; };
+		55A2C5ED104C3DE0000FE538 /* CSplitPostProc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSplitPostProc.h; sourceTree = "<group>"; };
+		55A2C5EE104C3DE0000FE538 /* CSplitPostProc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CSplitPostProc.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		558E772F1045E35600E564DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				558E77381045E36900E564DD /* OpenGL.framework in Frameworks */,
+				558E77391045E36900E564DD /* Cocoa.framework in Frameworks */,
+				558E773A1045E36900E564DD /* Carbon.framework in Frameworks */,
+				558E773B1045E36900E564DD /* AppKit.framework in Frameworks */,
+				558E773C1045E36900E564DD /* IOKit.framework in Frameworks */,
+				558E773D1045E36900E564DD /* libIrrlicht.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		558E74DC1045E2EA00E564DD = {
+			isa = PBXGroup;
+			children = (
+				5502F724105712C700273D37 /* CWaterPostProc.h */,
+				5502F725105712C700273D37 /* CWaterPostProc.cpp */,
+				5596060F10537527003764B1 /* CLensFlarePostProc.h */,
+				5596061010537527003764B1 /* CLensFlarePostProc.cpp */,
+				55A2C5ED104C3DE0000FE538 /* CSplitPostProc.h */,
+				55A2C5EE104C3DE0000FE538 /* CSplitPostProc.cpp */,
+				558E77AB1045EB5300E564DD /* CShaderCallbacks.h */,
+				558E776A1045E8AC00E564DD /* CEffectPostProc.h */,
+				558E776B1045E8AC00E564DD /* CEffectPostProc.cpp */,
+				558E77651045E80D00E564DD /* CRendererPostProc.h */,
+				558E77661045E80D00E564DD /* CRendererPostProc.cpp */,
+				558E77601045E72600E564DD /* IPostProc.h */,
+				558E77611045E72600E564DD /* IPostProc.cpp */,
+				558E775D1045E4FB00E564DD /* shaders.h */,
+				558E77231045E31700E564DD /* OpenGL.framework */,
+				558E77241045E31700E564DD /* Cocoa.framework */,
+				558E77251045E31700E564DD /* Carbon.framework */,
+				558E77261045E31700E564DD /* AppKit.framework */,
+				558E77271045E31700E564DD /* IOKit.framework */,
+				558E772A1045E31700E564DD /* libIrrlicht.a */,
+				558E77321045E35600E564DD /* Products */,
+				558E77341045E35600E564DD /* Main-Info.plist */,
+				558E77421045E38100E564DD /* main.cpp */,
+				558E776F1045E91200E564DD /* CTransitionPostProc.h */,
+				558E77701045E91200E564DD /* CTransitionPostProc.cpp */,
+			);
+			sourceTree = "<group>";
+		};
+		558E77321045E35600E564DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				558E77311045E35600E564DD /* Main.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		558E77301045E35600E564DD /* Main */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 558E77371045E35800E564DD /* Build configuration list for PBXNativeTarget "Main" */;
+			buildPhases = (
+				558E772D1045E35600E564DD /* Resources */,
+				558E772E1045E35600E564DD /* Sources */,
+				558E772F1045E35600E564DD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Main;
+			productName = Main;
+			productReference = 558E77311045E35600E564DD /* Main.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		558E74DE1045E2EA00E564DD /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 558E74E11045E2EA00E564DD /* Build configuration list for PBXProject "PostProc" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 0;
+			mainGroup = 558E74DC1045E2EA00E564DD;
+			productRefGroup = 558E77321045E35600E564DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				558E77301045E35600E564DD /* Main */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		558E772D1045E35600E564DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		558E772E1045E35600E564DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				558E77431045E38100E564DD /* main.cpp in Sources */,
+				558E77621045E72600E564DD /* IPostProc.cpp in Sources */,
+				558E77671045E80D00E564DD /* CRendererPostProc.cpp in Sources */,
+				558E776C1045E8AC00E564DD /* CEffectPostProc.cpp in Sources */,
+				558E77711045E91200E564DD /* CTransitionPostProc.cpp in Sources */,
+				55A2C5EF104C3DE0000FE538 /* CSplitPostProc.cpp in Sources */,
+				5596061110537527003764B1 /* CLensFlarePostProc.cpp in Sources */,
+				5502F726105712C700273D37 /* CWaterPostProc.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		558E74DF1045E2EA00E564DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		558E74E01045E2EA00E564DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+		558E77351045E35800E564DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				HEADER_SEARCH_PATHS = "/usr/include/irrlicht/**";
+				INFOPLIST_FILE = "Main-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Main;
+			};
+			name = Debug;
+		};
+		558E77361045E35800E564DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				HEADER_SEARCH_PATHS = "/usr/include/irrlicht/**";
+				INFOPLIST_FILE = "Main-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Main;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		558E74E11045E2EA00E564DD /* Build configuration list for PBXProject "PostProc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				558E74DF1045E2EA00E564DD /* Debug */,
+				558E74E01045E2EA00E564DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		558E77371045E35800E564DD /* Build configuration list for PBXNativeTarget "Main" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				558E77351045E35800E564DD /* Debug */,
+				558E77361045E35800E564DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 558E74DE1045E2EA00E564DD /* Project object */;
+}

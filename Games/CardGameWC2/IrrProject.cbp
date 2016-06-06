@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="CardGameWC2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option extended_obj_names="1" />
+		<Build>
+			<Target title="all-debug">
+				<Option output="CardGameWC2" prefix_auto="1" extension_auto="1" />
+				<Option object_output=".obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-pg" />
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-pg" />
+				</Linker>
+			</Target>
+			<Target title="Release-gcc">
+				<Option output="bin-gcc/TriSol" prefix_auto="1" extension_auto="1" />
+				<Option object_output=".obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectCompilerOptionsRelation="0" />
+				<Compiler>
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="bin-gcc/libIrrlicht.a" />
+					<Add directory="bin-gcc" />
+				</Linker>
+			</Target>
+			<Target title="Debug-msvc">
+				<Option platforms="Windows;" />
+				<Option output="bin-gcc/Debug/IrrProject" prefix_auto="1" extension_auto="1" />
+				<Option object_output=".obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="msvc8" />
+				<Compiler>
+					<Add option="/Zi /D_DEBUG" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="/DEBUG" />
+					<Add library="bin-msvc/Irrlicht.lib" />
+					<Add directory="bin-msvc" />
+				</Linker>
+			</Target>
+			<Target title="Release-msvc">
+				<Option platforms="Windows;" />
+				<Option output="bin-gcc/TriSol" prefix_auto="1" extension_auto="1" />
+				<Option object_output=".obj/Release/" />
+				<Option type="0" />
+				<Option compiler="msvc8" />
+				<Compiler>
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="bin-msvc/Irrlicht.lib" />
+					<Add directory="bin-msvc" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="/home/Dev/libs/Irrlicht/include" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="GL" />
+			<Add directory="/home/Dev/libs/Irrlicht/lib/gcc" />
+		</Linker>
+		<Unit filename="MastEventReceiver.cpp" />
+		<Unit filename="MastEventReceiver.h" />
+		<Unit filename="card.cpp" />
+		<Unit filename="card.h" />
+		<Unit filename="cardgame.h" />
+		<Unit filename="gamelogic.cpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="manager.cpp" />
+		<Unit filename="manager.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

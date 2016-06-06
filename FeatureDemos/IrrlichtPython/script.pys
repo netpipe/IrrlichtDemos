@@ -1,0 +1,6 @@
+import irr
+cube_id = irr.add_cube(1,12.0,0.0,0.0,25.0,0.0,0.0,0.0,1.0,1.0,1.0)
+tex_id = irr.load_texture("crate.png")
+irr.set_texture(cube_id,tex_id)
+
+#End of FILE

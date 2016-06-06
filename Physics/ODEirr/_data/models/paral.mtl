@@ -1,0 +1,13 @@
+# Blender MTL File: paral.blend
+# Material Count: 1
+newmtl Material_wall.bmp
+Ns 88.0
+Ka 0.0 0.0 0.0
+Kd 0.4096 0.4096 0.4096
+Ks 0.125 0.125 0.125
+Ni 1.0
+d 1.0
+illum 2
+map_Kd wall.bmp
+
+

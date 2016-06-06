@@ -1,0 +1,15 @@
+count=14
+Beginner's|First=levels/beginner_1.xml
+Classic|1=levels/classic1.xml
+Classic|2=levels/classic2.xml
+Advanced|1=levels/advanced1.xml
+Advanced|2=levels/advanced2.xml
+Upstairs=levels/upstairs.xml
+Downstairs=levels/downstairs.xml
+Stunt|Marble|Racer|1=levels/smr1.xml
+Stunt|Marble|Racer|2=levels/smr2.xml
+Stunt|Marble|Racer|3=levels/smr3.xml
+Push|and|ice=levels/pushIce.xml
+Bowling=levels/bowling.xml
+a|world|of|ice=levels/worldofice.xml
+3|Jump=levels/3jump.xml

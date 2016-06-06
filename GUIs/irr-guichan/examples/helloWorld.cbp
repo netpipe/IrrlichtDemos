@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="irrGUICHAN-HelloWorld" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./HelloWorld" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+			<Add directory="/home/Dev/libs/gui/guichan-0.8.2/include" />
+			<Add directory="/home/Dev/Agnostic-SF/Stuff/Demos/WIPs/GUI/irr-guichan/include" />
+			<Add directory="../include" />
+		</Compiler>
+		<Linker>
+			<Add library="irrGUICHAN" />
+			<Add library="guichan" />
+			<Add library="Irrlicht" />
+			<Add library="GL" />
+			<Add library="Xxf86vm" />
+			<Add library="GLU" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+			<Add directory="/home/Dev/libs/gui/guichan-0.8.2/out/lib" />
+			<Add directory="../src" />
+		</Linker>
+		<Unit filename="helloworld.hpp" />
+		<Unit filename="irrlichthelloworld.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

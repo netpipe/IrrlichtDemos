@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="omares plane game" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="../planegame" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="../" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="/home/Dev/libs/Irrlicht/include" />
+			<Add directory="/home/Dev/libs/audio/audiere/src" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="ogg" />
+			<Add library="vorbis" />
+			<Add library="vorbisfile" />
+			<Add library="pthread" />
+			<Add library="rt" />
+			<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
+			<Add directory="/home/Dev/libs/audio/audiere/src/.libs" />
+		</Linker>
+		<Unit filename="../audiere.h" />
+		<Unit filename="Imenu.h" />
+		<Unit filename="IrrBox.cpp" />
+		<Unit filename="IrrBox.h" />
+		<Unit filename="Main.cpp" />
+		<Unit filename="StdAfx.h" />
+		<Unit filename="game.cpp" />
+		<Unit filename="game.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

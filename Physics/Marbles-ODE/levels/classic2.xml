@@ -1,0 +1,25 @@
+<marbles>
+  <level name="levels/classic2.irr" gameover="gameover" respawn="-20" challange="40" />
+  <start x="0" y="30" z="0" />
+  <objects count="13">
+    <object name="part1" />
+    <object name="check1" />
+    <object name="part2" />
+    <object name="check2" />
+    <object name="finish" />
+    <object name="part3" />
+    <object name="part4" class="bounce_l" />
+    <object name="part5" />
+    <object name="part6" class="ice" />
+    <object name="part7" />
+    <object name="part8" />
+    <object name="part9" />
+    <object name="check3" />
+  </objects>
+  <checkPoints count="3">
+    <check num="0" name="check1" img="levels/images/check1.png" img_ok="levels/images/check1_ok.png" light="check1Light" y="3" />
+    <check num="1" name="check2" img="levels/images/check2.png" img_ok="levels/images/check2_ok.png" light="check2Light" y="3" />
+    <check num="2" name="check3" img="levels/images/check3.png" img_ok="levels/images/check3_ok.png" light="check3Light" y="3" />
+    <check num="2" name="finish" img="levels/images/finish.png" img_ok="levels/images/finish_ok.png" light="finishLight" />
+  </checkPoints count="1">
+</marbles>

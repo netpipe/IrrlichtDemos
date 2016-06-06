@@ -1,0 +1,14 @@
+<type>0</type>
+<collisionFile>pine_coll.x</collisionFile>
+<lods>
+<0>
+<file>pine_near.x</file>
+<billBoard>0</billBoard>
+<maxDistance>20.0</maxDistance>
+</0>
+<1>
+<file>pine_far.x</file>
+<billBoard>1</billBoard>
+<maxDistance>70.0</maxDistance>
+</1>
+</lods>

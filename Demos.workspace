@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="Physics/metaballswip/example.cbp" />
+		<Project filename="Physics/bullet-softbody/example.cbp" />
+		<Project filename="Physics/ODEblocks/example.cbp" />
+		<Project filename="Physics/IHoverCraft/source/example.cbp" />
+		<Project filename="Physics/irrtest-bullet/example.cbp" />
+		<Project filename="Terrain-Demos/MarsFace-libmini/FaceOfMars.cbp" active="1" />
+		<Project filename="Terrain-Demos/ShTlTerrainSources070803/example.cbp" />
+		<Project filename="Terrain-Demos/irrCaves/irrLearn.cbp" />
+		<Project filename="Terrain-Demos/irrCompass/example.cbp" />
+		<Project filename="Physics/Marbles-ODE/Source/Marbles.cbp" />
+		<Project filename="Physics/ODEirr/example.cbp" />
+		<Project filename="Physics/chapaev_full/example.cbp" />
+		<Project filename="Terrain-Demos/irrSimpQuad-Paulo/example.cbp" />
+		<Project filename="FeatureDemos/4waystoorbit/example.cbp" />
+		<Project filename="FeatureDemos/anipathmove/example.cbp" />
+		<Project filename="FeatureDemos/ChatBox/example.cbp" />
+		<Project filename="FeatureDemos/Colisionmejorada/example.cbp" />
+		<Project filename="FeatureDemos/FormationDemo/example.cbp" />
+		<Project filename="FeatureDemos/PerFaceCulling/example.cbp" />
+		<Project filename="FeatureDemos/raindemo/example.cbp" />
+		<Project filename="FeatureDemos/skeleton/skeleton.cbp" />
+		<Project filename="FeatureDemos/Snow/example.cbp" />
+		<Project filename="FeatureDemos/Spirals/example.cbp" />
+		<Project filename="SceneNodes/BeamSceneNode/example.cbp" />
+		<Project filename="SceneNodes/BoltSceneNode/example.cbp" />
+		<Project filename="SceneNodes/ReflectiveWater/example.cbp" />
+		<Project filename="Games/COT_Pharaoh/curseofpharo.cbp" />
+		<Project filename="Games/IrrPong/example.cbp" />
+		<Project filename="Games/IrrTriz/IrrTris.cbp" />
+		<Project filename="Games/PNMZ/example.cbp" />
+		<Project filename="WIPS/proceduralTextureManager/example.cbp" />
+		<Project filename="Terrain-Demos/irrSimpQuad/example.cbp" />
+		<Project filename="FeatureDemos/flockingBoids/example.cbp" />
+		<Project filename="FeatureDemos/AgainstTheTide/example.cbp" />
+		<Project filename="FeatureDemos/terrain-painting/example.cbp" />
+		<Project filename="FeatureDemos/Turn2Target/example.cbp" />
+		<Project filename="Games/arkanoid/example.cbp" />
+		<Project filename="FeatureDemos/flares/example.cbp" />
+		<Project filename="FeatureDemos/irrphotopuzzle-0.1/example.cbp" />
+		<Project filename="FeatureDemos/PathDemo070512/editor.cbp" />
+		<Project filename="Games/omaresPlaneGame/code/example.cbp" />
+		<Project filename="Games/breakout/example.cbp" />
+		<Project filename="Games/CardGameWC2/IrrProject.cbp" />
+		<Project filename="Terrain-Demos/TerrainSplat/example.cbp" />
+		<Project filename="FeatureDemos/KatGraph/example.cbp" />
+		<Project filename="FeatureDemos/GUI_ProgressBar/example.cbp" />
+		<Project filename="FeatureDemos/editor/example.cbp" />
+		<Project filename="FeatureDemos/JointManipulation/example.cbp" />
+		<Project filename="FeatureDemos/SimpleSteering/SimpleSteering.cbp" />
+		<Project filename="FeatureDemos/IrrFreeType/example.cbp" />
+		<Project filename="FeatureDemos/CBatchingMesh/example.cbp" />
+		<Project filename="FeatureDemos/BubbleRefract/example.cbp" />
+		<Project filename="FeatureDemos/DepthOfField/example.cbp" />
+		<Project filename="FeatureDemos/IrrlichtPython/example.cbp" />
+		<Project filename="FeatureDemos/IrrConsole/example.cbp" />
+		<Project filename="Apps/irrIRC/example.cbp" />
+		<Project filename="Apps/irrVideoPlayer/example.cbp" />
+		<Project filename="Apps/irrTune/example.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

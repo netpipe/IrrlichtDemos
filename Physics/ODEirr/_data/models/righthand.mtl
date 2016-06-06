@@ -1,0 +1,13 @@
+# Blender3D MTL File: righthand.blend
+# Material Count: 1
+newmtl high_contrast
+Ns 13.725490
+Ka 0.000000 0.000000 0.000000
+Kd 0.762952 0.680914 0.664507
+Ks 0.065154 0.073859 0.087626
+Ni 1.705780
+d 1.000000
+illum 2
+map_Kd colore pelle.jpg
+
+
