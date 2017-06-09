@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<irrshader>
+	<config>
+		<vertex-shader-file name="perpixellighting.vert" entry="main" />
+		<fragment-shader-file name="perpixellighting.frag" entry="main" />
+	</config>
+	<variables>
+		<uniform count="0">
+		</uniform>
+	</variables>
+</irrshader>

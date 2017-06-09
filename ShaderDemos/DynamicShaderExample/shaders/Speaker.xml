@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<irrshader>
+	<config>
+		<vertex-shader-file name="speaker.vert" entry="main" />
+		<fragment-shader-file name="speaker.frag" entry="main" />
+	</config>
+	<variables>
+		<uniform count="8">
+			<variable type="predefined" name="view_proj_matrix" isFragmentVar="0">
+				<value val="predefined_mat4_view_proj" />
+			</variable>
+			<variable type="predefined" name="view_matrix" isFragmentVar="0">
+				<value val="predefined_mat4_view" />
+			</variable>
+			<variable type="predefined" name="time_0_X" isFragmentVar="0">
+				<value val="predefined_float_time0x" />
+			</variable>
+			<variable type="float" name="pulseSharpness" isFragmentVar="0">
+				<value val="14.00000" />
+			</variable>
+			<variable type="float" name="beat" isFragmentVar="0">
+				<value val="2.2500" />
+			</variable>
+			<variable type="float" name="amplitude" isFragmentVar="0">
+				<value val="2.4000" />
+			</variable>
+			<variable type="float" name="bassFrequency" isFragmentVar="0">
+				<value val="44.0000" />
+			</variable>
+			<variable type="sampler2d" name="base" isFragmentVar="1">
+				<value val="0" />
+			</variable>
+		</uniform>
+	</variables>
+</irrshader>

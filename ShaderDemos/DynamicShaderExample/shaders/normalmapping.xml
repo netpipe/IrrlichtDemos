@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<irrshader>
+	<config>
+		<vertex-shader-file name="normalmapping.vert" entry="main" />
+		<fragment-shader-file name="normalmapping.frag" entry="main" />
+	</config>
+	<variables>
+		<uniform count="4">
+			<variable type="float" name="fSpecularPower" isFragmentVar="1">
+				<value val="25.0000" />
+			</variable>
+			<variable type="sampler2d" name="baseMap" isFragmentVar="1">
+				<value val="0" />
+			</variable>
+			<variable type="sampler2d" name="bumpMap" isFragmentVar="1">
+				<value val="1" />
+			</variable>
+			<variable type="predefined" name="fvEyePosition" isFragmentVar="0">
+				<value val="predefined_eye_position" additional_info=""/>
+			</variable>
+		</uniform>
+	</variables>
+</irrshader>

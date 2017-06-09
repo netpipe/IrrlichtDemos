@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<irrshader>
+	<config>
+		<vertex-shader-file name="plastic.vert" entry="main" />
+		<fragment-shader-file name="plastic.frag" entry="main" />
+	</config>
+	<variables>
+		<uniform count="1">
+			<variable type="vec4" name="Color" isFragmentVar="1">
+				<value val="0.800000" />
+				<value val="0.800000" />
+				<value val="0.000000" />
+				<value val="0.800000" />
+			</variable>
+		</uniform>
+	</variables>
+</irrshader>

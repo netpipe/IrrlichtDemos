@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<irrshader>
+	<config>
+	<!-- specfiy shader file and their entry-function -->
+		<vertex-shader-file name="texturedphong.vert" entry="main" />
+		<fragment-shader-file name="texturedphong.frag" entry="main" />
+	</config>
+	<variables>
+		<uniform count="6">
+		<!-- specify all uniform variables the shader needs.
+		"isFragmentVar" tells the program wether the var is for
+		the vertex or the pixel shader -->
+			<variable type="vec4" name="fvAmbient" isFragmentVar="1">
+				<value val="0.3686" />
+				<value val="0.3684" />
+				<value val="0.3684" />
+				<value val="1.0000" />
+			</variable>
+			<variable type="vec4" name="fvSpecular" isFragmentVar="1">
+				<value val="0.4902" />
+				<value val="0.4887" />
+				<value val="0.4887" />
+				<value val="1.0000" />
+			</variable>
+			<variable type="vec4" name="fvDiffuse" isFragmentVar="1">
+				<value val="0.8863" />
+				<value val="0.8850" />
+				<value val="0.8850" />
+				<value val="1.0000" />
+			</variable>
+			<variable type="float" name="fSpecularPower" isFragmentVar="1">
+				<value val="25.0000" />
+			</variable>
+			<!-- sets a texturechannel for the sampler2d var. here the texture in
+			channel 0 is used. You have to set it yourself in the program-->
+			<variable type="sampler2d" name="baseMap" isFragmentVar="1">
+				<value val="0.0000" />
+			</variable>
+			<!-- variables can also have a predefined value which is set automatically
+			by the program. Currently there are the following predefined values defined:
+				predefined_eye_position
+				predefined_mat4_view_proj
+				predefined_mat4_view
+				predefined_float_time0x
+				predefined_rtt_view-->
+			<variable type="predefined" name="fvEyePosition" isFragmentVar="0">
+				<value val="predefined_eye_position" />
+			</variable>
+		</uniform>
+	</variables>
+</irrshader>

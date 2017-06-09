@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="game" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="Fractal Explorer" prefix_auto="1" extension_auto="1" />
+				<Option working_dir=".\" />
+				<Option object_output="..\.obj\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-w" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="..\source" />
+			<Add directory="..\..\irrlicht-171\include" />
+		</Compiler>
+		<Linker>
+			<Add library="..\..\irrlicht-171\lib\Win32-gcc\libIrrlicht.a" />
+		</Linker>
+		<Unit filename="fractal.frag" />
+		<Unit filename="fractal.vert" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

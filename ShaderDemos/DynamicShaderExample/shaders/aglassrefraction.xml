@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<irrshader>
+	<config>
+		<vertex-shader-file name="glassrefraction.vert" entry="main" />
+		<fragment-shader-file name="glassrefraction.frag" entry="main" />
+	</config>
+	<variables>
+		<uniform count="7">
+			<variable type="vec3" name="BaseColor" isFragmentVar="1" isArtistVar="1">
+				<value val="0.40000" />
+				<value val="0.40000" />
+				<value val="1.00000" />
+			</variable>
+			<variable type="float" name="Depth" isFragmentVar="1" isArtistVar="1">
+				<value val="0.10000" />
+			</variable>
+			<variable type="float" name="MixRatio" isFragmentVar="1" isArtistVar="1">
+				<value val="1.0000" />
+			</variable>
+			<variable type="float" name="FrameHeight" isFragmentVar="1" isArtistVar="0">
+				<value val="255.0000" />
+			</variable>
+			<variable type="float" name="FrameWidth" isFragmentVar="1" isArtistVar="0">
+				<value val="255.0000" />
+			</variable>
+			<variable type="sampler2d" name="EnvMap" isFragmentVar="1" isArtistVar="0">
+				<value val="0" />
+			</variable>
+			<variable type="predefined" name="RefractionMap" isFragmentVar="1" isArtistVar="0">
+				<value val="predefined_rtt_view" additional_info="1"/>
+			</variable>
+		</uniform>
+	</variables>
+</irrshader>

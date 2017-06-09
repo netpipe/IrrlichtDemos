@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<irrshader>
+	<config>
+		<vertex-shader-file name="Gooch.vert" entry="main" />
+		<fragment-shader-file name="Gooch.frag" entry="main" />
+	</config>
+	<variables>
+		<uniform count="5">
+			<variable type="vec3" name="SurfaceColor" isFragmentVar="1">
+				<value val="0.75000" />
+				<value val="0.75000" />
+				<value val="0.75000" />
+			</variable>
+			<variable type="vec3" name="WarmColor" isFragmentVar="1">
+				<value val="0.60000" />
+				<value val="0.60000" />
+				<value val="0.00000" />
+			</variable>
+			<variable type="vec3" name="CoolColor" isFragmentVar="1">
+				<value val="0.00000" />
+				<value val="0.00000" />
+				<value val="0.60000" />
+			</variable>
+			<variable type="float" name="DiffuseWarm" isFragmentVar="1">
+				<value val="0.450000" />
+			</variable>
+			<variable type="float" name="DiffuseCool" isFragmentVar="1">
+				<value val="0.450000" />
+			</variable>
+		</uniform>
+	</variables>
+</irrshader>

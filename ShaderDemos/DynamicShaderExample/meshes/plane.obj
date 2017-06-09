@@ -1,0 +1,30 @@
+# 3ds Max Wavefront OBJ-Export v0.97b - (c)2007 guruware
+# Datei erstellt: 01.06.2010 15:54:21
+
+mtllib plane.mtl
+
+#
+# object Ebene01
+#
+
+v  -38.0591 0.0000 -36.2763
+v  -38.0591 0.0000 36.7865
+v  37.2177 0.0000 36.7865
+v  37.2177 0.0000 -36.2763
+# 4 vertices
+
+vn 0.0000 1.0000 -0.0000
+# 1 vertex normals
+
+vt 0.0000 1.0000 0.0000
+vt 0.0000 0.0000 0.0000
+vt 1.0000 0.0000 0.0000
+vt 1.0000 1.0000 0.0000
+# 4 texture coords
+
+g Ebene01
+usemtl wire_196088225
+s 1
+f 1/1/1 2/2/1 3/3/1 4/4/1 
+# 1 polygons
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<setting name="Plastic example">
+	<model path="./teapot.obj" withTangents="0">
+		<position x="0.00000" y="0.000000" z="0.00000" />
+		<rotation x="0.00000" y="0.000000" z="0.00000" />
+		<scale x="1.00000" y="1.000000" z="1.00000" />
+		<textures count="0">
+		</textures>
+		<shader path="./shaders/plastic.xml" />
+	</model>
+	<lights count="1">
+		<light>
+			<position x="40.0000" y="100.000" z="100.0000" />
+			<radius value="50.0000" />
+			<ambientcolor r="0.3686" g="0.3686" b="0.3686" a="1.0000" />
+			<diffusecolor  r="0.8863" g="0.8850" b="0.8850" a="1.0000"/>
+			<specularcolor r="0.4902" g="0.4887" b="0.4887" a="1.0000" />
+		</light>
+	</lights>
+</setting>
