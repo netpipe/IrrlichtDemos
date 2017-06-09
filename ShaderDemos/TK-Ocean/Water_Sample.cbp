@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Water_Sample" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="TKOceanSceneNode/;TKSkySceneNode/;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Water_Sample" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Water_Sample" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="E:/CODEBLOCKS/Seven/irrlicht-engine/bin/Win32-gcc" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="GLU" />
+			<Add library="Xxf86vm" />
+			<Add library="Xext" />
+			<Add library="Irrlicht" />
+			<Add library="X11" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Unit filename="src/TKOceanSceneNode.cpp">
+			<Option virtualFolder="TKOceanSceneNode/" />
+		</Unit>
+		<Unit filename="src/TKOceanSceneNode.h">
+			<Option virtualFolder="TKOceanSceneNode/" />
+		</Unit>
+		<Unit filename="src/TKOceanSceneNodeShaderCallBack.h">
+			<Option virtualFolder="TKOceanSceneNode/" />
+		</Unit>
+		<Unit filename="src/TKSkySceneNode.cpp">
+			<Option virtualFolder="TKSkySceneNode/" />
+		</Unit>
+		<Unit filename="src/TKSkySceneNode.h">
+			<Option virtualFolder="TKSkySceneNode/" />
+		</Unit>
+		<Extensions>
+			<code_completion>
+				<search_path add="../irrlicht-engine/include" />
+			</code_completion>
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
