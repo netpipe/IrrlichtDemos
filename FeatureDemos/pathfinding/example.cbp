@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Irrlicht Pong" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./Pong" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="X11" />
+			<Add library="GL" />
+			<Add library="Xxf86vm" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+		</Linker>
+		<Unit filename="catmull_rom.cpp" />
+		<Unit filename="catmull_rom.h" />
+		<Unit filename="fsa.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="navinode.cpp" />
+		<Unit filename="navinode.h" />
+		<Unit filename="navinode_control.cpp" />
+		<Unit filename="navinode_control.h" />
+		<Unit filename="navinode_view.cpp" />
+		<Unit filename="navinode_view.h" />
+		<Unit filename="npc_path_control.cpp" />
+		<Unit filename="npc_path_control.h" />
+		<Unit filename="segment.cpp" />
+		<Unit filename="segment.h" />
+		<Unit filename="simple_util.cpp" />
+		<Unit filename="simple_util.h" />
+		<Unit filename="stlastar.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

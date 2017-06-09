@@ -1,0 +1,26 @@
+In general:
+	'F1' to toggle help text on/off
+	'F2' to move camera near the NPC
+	'F3' to show/hide cursor
+	     to disable/enable mouse input to fps camera
+	
+For waypoint editing:
+	'A' to add waypoint
+	'Z' to add waypoint with no line-of-sight test
+	'X' to delete waypoint
+	
+	'F11', 'F12' and mouse wheel button to change max. dist. for connecting nodes
+	
+For path finding:
+	'S' to pick START node
+	'W' to pick END node
+	'F5' to find and run the path
+	
+	'G' to go from last END node to the SELECTED node
+	'B' to go from END node to START node
+	'R' to set node as RESERVED
+	'E' to unset node as RESERVED
+	'T' to unset all nodes as RESERVED
+	
+	
+	ESC to quit

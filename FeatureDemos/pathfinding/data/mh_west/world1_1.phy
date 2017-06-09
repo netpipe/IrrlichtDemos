@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright (C) 2007 Keith Harrison-->
+
+<Physics>
+	<!--Physics properties for object-->
+	<enum name="Type" value="EBT_TREE" />
+	<bool name="Dynamic" value="false" />
+	<float name="Mass" value="0" />
+</Physics>
