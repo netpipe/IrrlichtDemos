@@ -1,0 +1,149 @@
+FunCollision -- Collision detection and response system -- changes.txt
+[Legend: '.' Change; '+' Added; '*' Fixed; '-' Removed]
+______________________________________________________________________
+Version 1.1 (10-??-??)
+
+
+. manager->checkTimeing instead of manager->checkTimer and
+  manager->restartTimeing instead of manager->restart
+
+* StandValue and SlideValue: Entities won't float when these values are
+  set to 1.0f.
+
++ [API CHANGE] Added setStandAngle and setSlideAngle which is more 
+  comfortable to use. When creating a sampler, now you can set only the 
+  stand- and slide angles.
+
+* TerrainSelector bug fix: now numOccupied values in the cells are 
+  filled before starting to use. Visual C++ crash fix by Gustavo Rodrigez.
+  Thanks!
+
++ Added NormalLength parameter to entity->drawDebugData
+
++ [API CHANGE] Added interfaces: ICollManager, ICollEntity, ICollObject,
+  ICollSampler and ICollSelector. These can be used now safely.
+  Also, they're now reference counted, thus can be grabbed or dropped.
+
++ [API CHANGE] Now the createCollisionManager function should be used 
+  for creating the collision manager (Surprise! :))
+  For deleting it, manager->drop(); should be called.
+
+. SCollContact is now a struct instead of a public class.
+
+* Fixed gravity related issues on slower computers.
+
+* Fixed sleeping bug: entities were mostly / always awake on faster
+  computers, now it takes equal time on all the computers.
+  It also can generate speed-ups due to less computation.
+
+* In memoriam "sinking bug"! It was a real bastard, worth remembering.
+  No more sliding into the geometry on 90 degree angles! :)
+
+* Ray casting is more accurate and (in some cases) faster now.
+
+. [API CHANGE] entity->addForce and ->addImpulse ForceAdd was renamed
+  to WaitSync, and also it's functionality changes:
+  set it to false where you used to set it true, 
+  and true where it was false before!
+
+* Some minor speed-ups due to cleaning up the code.
+
+______________________________________________________________________
+Version 1.0 (09-12-13)
+
+
+* Finished new map
+* Contact generation done
++ Object exception to ray casting
++ Bounding box selector
++ Terrain selector
++ Triangle IDs stored in the contacts
+- Discrete collision detection
++ Rewritten almost from scretch
++ Continuous collision detection
+* Got rid of jittering for good
++ No high-speed passing through objects/entities
+* Broad-phase is better (but it could be faster)
++ Forces and impulses, gravity
++ Jumping, jumppads
+* Pushing characters restored
++ System-level friction
++ Spawning, teleporting
++ Mass and bouncing
++ Timeing syncronisation
++ Automatic sleeping for the entities to gain more FPS 
++ Remove_ functions
++ RestartTimer() and checkTimer()
++ Readme.txt and changes.txt
+
+
+Known Issues:
+
+- If the framerate drops really low (<= 10), jumping and gravity related 
+  movement is slower. On slower computers this can be an issue. (But 
+  playing a game which runs with 10 FPS isn't really a good idea anyway.)
+
+- If the framerate is very high, (and there's gravity) entities doesn't
+  want to sleep.
+
+- It's general speed is approx. 3X slower than it used to be, which is
+  really uncool. It's related to selection. But I have a solution for this.
+
+- Also, due to this selection problem, theoretically it might be possible 
+  at high speeds to pass an object without colliding into it. However, I
+  haven't noticed anything like this.
+
+______________________________________________________________________
+Version ??? (09-09-29)
+
+
+. Changed project title to FunCollision
++ New work-in-progress test map
++ Custom camera
+* Speedups
+* Less jittering
++ Fast raycasting
+* Collision shapes repaired
++ Basic contact generation
+
+
+In detail:
+
+- Custom camera. 
+  This is not an animator! (I don't like them :)) As I've mentioned 
+  earlier, it was high time to make this. Not only to avoid jittering, 
+  but for custom controls, and for the features coming later. Use 
+  WASD now to control the camera!
+
+- Speedups. 
+  I've turned all the collision detection tests into discrete micro-
+  collisions. This is obviously not as puncual as a continous collision
+  detection (like what Irrlicht currently has). I'll also need to work
+  on some issues coming along with this solution. But it's fast! Really
+  fast, even with a large number of collisions.
+
+- Less jittering. 
+  Apart from the benefits of the custom camera, there's also a minimum 
+  length of movement that will be ignored. User-controllable, of course.
+  But, when an entity is in a complicated situation (under the stairs,
+  in the demo) there might be a really nasty jumping effect.
+
+- Fast raycasting. 
+  The ray is divided into smaller segments (user controllable) therefore
+  it's possible to get the intersection quickly.
+
+- Collision shapes repaired. 
+  No more penetrating into the wall! But, there are only two types of 
+  shapes now: spheres and axis-aligned ellipsoids.
+
+- Basic contact generation. 
+  This is truly experimental. Practically the the deepest contacts are
+  chosen. (You can see them in the demo when turning debug data on)
+
+______________________________________________________________________
+Version ??? (09-08-22)
+
+
++ CCollObject class for static geometry
++ CCollEntity class for characters
++ Different collision entity shapes

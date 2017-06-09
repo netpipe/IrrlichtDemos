@@ -1,0 +1,71 @@
+/* TODO -------------------------------------------------------------------
+
+- Where's line2line function from?
+
+- I only collect 1X in the manager, while during entity->collide I do it 
+  multiple times! --> Collect only if it's needed - when the current 
+  tunnel (based on the current prevPos, pos) is not fully inside the main
+  tunnel (based on the main travel vector), then a new collection should
+  be made. Otherwise, (frame coherence:) the previously collected data can
+  be used:
+    SCollDataCache
+    {
+      CCollEntity* entity;
+      CCollObject* object;
+      core::list<CCollTriangloid> selectedTris;
+    }
+
+- RayIntersect could also create a list of possible colliders first:
+  one for the objects and the other for the entities it can hit by
+  it's full length.
+
+- [API] More feedback from the functions, what did 
+  they do, succeeded or not, etc.
+
+- [API] Selectors: add setMesh and setMeshBuffer functions, that would 
+  automatically build too. Get rid of the add_ functions from 
+  CCollTerrainSelector, and use set_ functions only.
+
+- CCollManager-> AddForceInRadius, AddImpulseInRadius
+
+- CCollBBoxSelector: setFromBBox(aabb)
+
+- Gravity should not be affected by the base friction that much --> 
+  so that entities could have different friction values
+
+(- Safety: COLL_MAX_MOVEMENT_SQ and COLL_MAX_TIME_CYCLES)
+
+(- More detailed, separated documentation file (.html) with images)
+
+- Add 3rd person camera to the demo (code is almost ready for this).
+
+- Ball physics ... as for rotation (got the code for it).
+
+- Ability to change the height of samplers (e.g. crouching)
+
+(- BVH selector, top-down and bottom-up build possibilities.)
+
+- Collision groups
+
+(- Triggers (different gravity zones, for example: ladders))
+
+(- Particle collison. (Group the particles into one!))
+
+(- Semi-dynamic objects (moveing platforms, doors, etc))
+
+
+Shadowlair suggested:
+
+- [BUG] Gravity should be affected by mass too! (You're right, I've 
+  forgotten this one out XD)
+
+- [BUG] RayIntersect bug when units are small or when numSegments == 1.
+
+- standValue and slideValue --> Defineing by unit heights?
+
+- Unified unit size in meters, unified force and impulse calculations.
+  Also would affect some const values.
+
+- Some new mass measurement: kilograms?
+
+\TODO ------------------------------------------------------------------- */
