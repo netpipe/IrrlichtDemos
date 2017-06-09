@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="All" />
+	<File name="explosion.cpp" open="1" top="0" tabpos="15">
+		<Cursor position="485" topLine="0" />
+	</File>
+	<File name="explosion.h" open="1" top="0" tabpos="3">
+		<Cursor position="450" topLine="0" />
+	</File>
+	<File name="gameloop.cpp" open="1" top="0" tabpos="11">
+		<Cursor position="5532" topLine="137" />
+	</File>
+	<File name="gameloop.h" open="1" top="0" tabpos="4">
+		<Cursor position="86" topLine="0" />
+	</File>
+	<File name="gamemanager.cpp" open="1" top="0" tabpos="14">
+		<Cursor position="6108" topLine="157" />
+	</File>
+	<File name="gamemanager.h" open="1" top="0" tabpos="5">
+		<Cursor position="96" topLine="0" />
+	</File>
+	<File name="hud.h" open="1" top="0" tabpos="6">
+		<Cursor position="80" topLine="0" />
+	</File>
+	<File name="init.h" open="1" top="0" tabpos="7">
+		<Cursor position="110" topLine="0" />
+	</File>
+	<File name="menu.h" open="1" top="0" tabpos="8">
+		<Cursor position="82" topLine="0" />
+	</File>
+	<File name="planet.cpp" open="1" top="0" tabpos="16">
+		<Cursor position="153" topLine="0" />
+	</File>
+	<File name="planet.h" open="1" top="0" tabpos="12">
+		<Cursor position="306" topLine="0" />
+	</File>
+	<File name="player.cpp" open="1" top="0" tabpos="17">
+		<Cursor position="5106" topLine="110" />
+	</File>
+	<File name="projectile.cpp" open="1" top="0" tabpos="21">
+		<Cursor position="2745" topLine="34" />
+	</File>
+	<File name="projectile.h" open="1" top="0" tabpos="9">
+		<Cursor position="1260" topLine="20" />
+	</File>
+	<File name="sTypes.h" open="1" top="0" tabpos="19">
+		<Cursor position="1226" topLine="2" />
+	</File>
+	<File name="ship.cpp" open="1" top="0" tabpos="23">
+		<Cursor position="7569" topLine="223" />
+	</File>
+	<File name="ship.h" open="1" top="0" tabpos="10">
+		<Cursor position="2426" topLine="107" />
+	</File>
+	<File name="stdafx.h" open="1" top="0" tabpos="2">
+		<Cursor position="230" topLine="0" />
+	</File>
+	<File name="targetver.h" open="1" top="0" tabpos="1">
+		<Cursor position="292" topLine="0" />
+	</File>
+	<File name="turret.cpp" open="1" top="1" tabpos="24">
+		<Cursor position="270" topLine="0" />
+	</File>
+	<File name="turret.h" open="1" top="0" tabpos="18">
+		<Cursor position="586" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>
