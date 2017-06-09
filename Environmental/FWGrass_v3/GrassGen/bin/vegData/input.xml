@@ -1,0 +1,33 @@
+﻿<?xml version="1.0"?>
+<grassGeneratorParameters>
+   <!--This is a parameters file for the Grass Generator. Text enclosed in !—and – is a comment -->
+   <terrainModel file="./terrain.ms3d" />
+   <vegetationMap  file="./grassmap.png" />
+   <globals  density="0.35" up_axis="Y" />
+   <!--vegetationTypes -->
+         <vegetationType colorMask="g" ratio="36" scale="0.2" position_var="0.125" scale_var="0.04" model="./vegData/grass1.ms3d" texture="./vegData/grass.png"  />
+         <vegetationType colorMask="rg" ratio="48" scale="0.2" position_var="0.125" scale_var="0.04" model="./vegData/grass1.ms3d" texture="./vegData/grass_2.png"  />
+         <vegetationType colorMask="gr" ratio="14" scale="0.2" position_var="0.125" scale_var="0.04" model="./vegData/grass1.ms3d" texture="./vegData/grass2.png"  />
+         <vegetationType colorMask="bgr" ratio="12" scale="0.2" position_var="0.125" scale_var="0.04" model="./vegData/grass1.ms3d" texture="./vegData/grass4.png"  />
+         <vegetationType colorMask="g" ratio="36" scale="0.2" position_var="0.125" scale_var="0.04" model="./vegData/grass6.ms3d" texture="./vegData/grass.png"  />
+         <vegetationType colorMask="rg" ratio="48" scale="0.2" position_var="0.125" scale_var="0.04" model="./vegData/grass5.ms3d" texture="./vegData/grass_2.png"  />
+         <vegetationType colorMask="gr" ratio="14" scale="0.2" position_var="0.125" scale_var="0.04" model="./vegData/grass4.ms3d" texture="./vegData/grass2.png"  />
+         <vegetationType colorMask="gbr" ratio="12" scale="0.2" position_var="0.125" scale_var="0.04" model="./vegData/grass2.ms3d" texture="./vegData/grass4.png"  />
+         <vegetationType colorMask="g" ratio="36" scale="0.2" position_var="0.125" scale_var="0.04" model="./vegData/grass2.ms3d" texture="./vegData/grass.png"  />
+         <vegetationType colorMask="rg" ratio="48" scale="0.2" position_var="0.125" scale_var="0.04" model="./vegData/grass2.ms3d" texture="./vegData/grass_2.png"  />
+         <vegetationType colorMask="gr" ratio="14" scale="0.2" position_var="0.125" scale_var="0.04" model="./vegData/grass2.ms3d" texture="./vegData/grass2.png"  />
+         <vegetationType colorMask="rgb" ratio="12" scale="0.2" position_var="0.125" scale_var="0.04" model="./vegData/grass2.ms3d" texture="./vegData/grass4.png"  />
+         <vegetationType colorMask="g" ratio="36" scale="0.2" position_var="0.125" scale_var="0.04" model="./vegData/grass3.ms3d" texture="./vegData/grass.png"  />
+         <vegetationType colorMask="rg" ratio="48" scale="0.2" position_var="0.125" scale_var="0.04" model="./vegData/grass3.ms3d" texture="./vegData/grass_2.png"  />
+         <vegetationType colorMask="gr" ratio="14" scale="0.2" position_var="0.125" scale_var="0.04" model="./vegData/grass3.ms3d" texture="./vegData/grass2.png"  />
+         <vegetationType colorMask="rbg" ratio="12" scale="0.2" position_var="0.125" scale_var="0.04" model="./vegData/grass3.ms3d" texture="./vegData/grass4.png"  />
+
+         <vegetationType colorMask="b" ratio="8" scale="0.4" position_var="0.25" scale_var="0.1" model="./vegData/weeds/fern.ms3d" texture="./vegData/weeds/fern1.tga"  />
+         <vegetationType colorMask="rb" ratio="2" scale="0.4" position_var="0.25" scale_var="0.1" model="./vegData/weeds/fern.ms3d" texture="./vegData/weeds/fern1.tga"  />
+         <vegetationType colorMask="b" ratio="16" scale="0.4" position_var="0.25" scale_var="0.1" model="./vegData/weeds/fern2.ms3d" texture="./vegData/weeds/fern2.tga"  />
+         <vegetationType colorMask="br" ratio="4" scale="0.4" position_var="0.25" scale_var="0.1" model="./vegData/weeds/fern2.ms3d" texture="./vegData/weeds/fern2.tga"  />
+         <vegetationType colorMask="r" ratio="8" scale="0.4" position_var="0.25" scale_var="0.1" model="./vegData/weeds/weed1.ms3d" texture="./vegData/weeds/weed1.tga"  />
+         <vegetationType colorMask="rb" ratio="2" scale="0.4" position_var="0.25" scale_var="0.1" model="./vegData/weeds/weed1.ms3d" texture="./vegData/weeds/weed1.tga"  />
+         <vegetationType colorMask="r" ratio="8" scale="0.4" position_var="0.25" scale_var="0.1" model="./vegData/weeds/weed2.ms3d" texture="./vegData/weeds/weed6.tga"  />
+         <vegetationType colorMask="br" ratio="2" scale="0.4" position_var="0.25" scale_var="0.1" model="./vegData/weeds/weed3.ms3d" texture="./vegData/weeds/weed6.tga"  />
+</grassGeneratorParameters>
