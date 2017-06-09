@@ -1,0 +1,61 @@
+Bomberman was delveloped by Hudson Soft in 1983.
+The fazination results out of the simplicity of the Game. You have too blow up your opponent in a cartoon like world. There is a single player mission but the best part is the multiplayer mode.
+
+Its perfectly suited to Multiplayer Hot Seat because you easily can join or miss several rounds without messing up the hole game.
+
+Because of the short Roundtime you can play it for 10 min or 2 hours.
+
+Its so easy too learn that nearly everybody can understand the basics (and the Rest) in very short time.
+
+Because your friends are nearly your only opponents you are interacting nearly only with them.
+
+This reasons makes Bomberman a computer assisted boardgame with focus on social aspects. Bringing as many people together having fun. This is a good thing.
+
+Why this Release? Why not take an existing?
+The first 2 Releases of Bomberman for snes supports up to 4 Players. The next 3 some of them only released in Japan supports up to 5 Players.
+For all of them you had to get (or it was shipped) additional equipement. Mainly because the snes only supported only 2 controllers.
+(getting it today is nearly as expensive as in the former days)
+
+Saturn Bomberman was a big step forward: It supports: up to 10 Players, nearly all elements of the games before, very customizable.
+Considered as the best game in the series. (Some considered it the best Multiplayer game of all time, try to get it)
+
+Bomberman Blast, Bomberman Ultra, Battlefest nice games up to 8 Players.
+
+xbomberbox a "homebrew" project for the xbox up to 4 Players. Funniest and best grafics in my opinion.
+
+This is the console world.
+
+In pc world:
+commercial:
+
+Dyna Blaster up to 5 Player runs in dos released 1991-92.
+
+Atomic Bomberman by Interplay 1996 Up to 10 Player support through ipx
+
+non comercial:
+windows:
+bombzone nice version for windows up to 10 players
+windows and *nix:
+granatier part of kde
+bomberclone
+xblast
+
+I like reusing things.
+
+The Reason why old console is expensive is the lack of hardware to support multiple players. The Game is "cheap" and the console too.
+What it breaks are the controller + multitaps. You need some of them. That said basic bomberman requires 4 directions and 2 Buttons so nothing fancy at all.
+So every controller that you can hook up should work. So reusing a controller is a nice ability. Looking at the mentioned consoles nearly no reuse ability.
+
+I dont want to buy a crippled new computer (console) or (an old one) to play only one game that runs fine on a Celeron 700.
+
+Hudson seems to ignore the pc market (2011). no available up to date Product. For the not so up to date products: I dont want to mess with ipx.
+
+bombzone is very nice and you should try it. But closed source, windows only combined with irregularly Progress. 2d.
+granatier is limited to 5 players no joystick support. 2d.
+bomberclone and xblast 2d only
+
+Doing a not so outdated *nix 3d bomberman with the focus on hotseat idea and as many players as you like and the ability to evolve and to reuse as much as possible.
+
+My personal opinion: some things are too good not to be composed
+
+

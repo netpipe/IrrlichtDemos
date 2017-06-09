@@ -1,0 +1,12 @@
+# Blender MTL File: 'brick2x2.blend'
+# Material Count: 1
+newmtl Material
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.348235 0.138039 0.188235
+Ks 0.217647 0.086275 0.117647
+Ni 1.000000
+d 1.000000
+illum 2
+
+

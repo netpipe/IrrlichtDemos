@@ -1,0 +1,2 @@
+<?xml version="1.0" ?>
+<playeritemIrrlicht meshname="./media/Characters/0102.x"  ipx="0" ipy="0" ipz="0.0" irx="-90" iry="0" irz="0" standingstart="0" standingend="55" runningstart="55" runningend="100" winningstart="105" winningend="223" loosingstart="0" loosingend="0" iconname="./media/Characters/Itr.tb"/>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Arena arenaFileVersion="1" rowCount="13" colCount="17">
+
+  <Row>p_xxxxxxxxxxxxx_p</Row>
+  <Row>_=x=x=x=x=x=x=x=_</Row>
+  <Row>xxxxp_xxx_pxxxxxx</Row>
+  <Row>x=x=_=x=x=_=x=x=x</Row>
+  <Row>xxxxxxxxxxxxxxxxx</Row>
+  <Row>x=x=x=x=x=x=x=x=x</Row>
+  <Row>xxxxxxxxxxxxxxxxx</Row>
+  <Row>x=x=x=x=x===x=x==</Row>
+  <Row>xxxxxxxxxxxxxxxxx</Row>
+  <Row>x=x=_=x=x=_=x=x=x</Row>
+  <Row>=xxxp_xxx_pxxxxx=</Row>
+  <Row>_=x=x=x=x=x=x=x=_</Row>
+  <Row>p_xxxxxxxxxxxxx_p</Row>
+  <view meshname="./media/Arena/RLegoTxtSC.obj" ipx="7.5" ipy="-1.5" ipz="6" irx="90" iry="270" irz="0" modellfieldsize="2"/>
+</Arena>

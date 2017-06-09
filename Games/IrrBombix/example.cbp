@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Irrlicht Pong" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./Pong" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+			<Add directory="/home/Dev/libs/Media/cAudio/cAudio-2.1.0" />
+			<Add directory="/home/Dev/libs/Media/cAudio/cAudio-2.1.0/include" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="X11" />
+			<Add library="/home/Dev/libs/Media/cAudio/cAudio-2.1.0/cAudio/libcAudio.so" />
+			<Add library="pthread" />
+			<Add library="dl" />
+			<Add library="ccext2" />
+			<Add library="ccgnu2" />
+			<Add library="rt" />
+			<Add library="openal" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+		</Linker>
+		<Unit filename="ArenaIrrlicht.cpp" />
+		<Unit filename="ArenaIrrlicht.h" />
+		<Unit filename="ArenaItemIrrlicht.cpp" />
+		<Unit filename="ArenaItemIrrlicht.h" />
+		<Unit filename="BlockIrrlicht.cpp" />
+		<Unit filename="BlockIrrlicht.h" />
+		<Unit filename="BlockItemIrrlicht.cpp" />
+		<Unit filename="BlockItemIrrlicht.h" />
+		<Unit filename="BombExplosionIrrlicht.cpp" />
+		<Unit filename="BombExplosionIrrlicht.h" />
+		<Unit filename="BombExplosionItemIrrlicht.cpp" />
+		<Unit filename="BombExplosionItemIrrlicht.h" />
+		<Unit filename="BombIrrlicht.cpp" />
+		<Unit filename="BombIrrlicht.h" />
+		<Unit filename="BombItemIrrlicht.cpp" />
+		<Unit filename="BombItemIrrlicht.h" />
+		<Unit filename="Bonus/BonusBombIrrlicht.cpp" />
+		<Unit filename="Bonus/BonusBombIrrlicht.h" />
+		<Unit filename="Bonus/BonusIrrlicht.cpp" />
+		<Unit filename="Bonus/BonusIrrlicht.h" />
+		<Unit filename="Bonus/BonusXMLitemIrrlicht.cpp" />
+		<Unit filename="Bonus/BonusXMLitemIrrlicht.h" />
+		<Unit filename="Bonus/BonusfireIrrlicht.cpp" />
+		<Unit filename="Bonus/BonusfireIrrlicht.h" />
+		<Unit filename="Bonus/BonushyperactiveIrrlicht.cpp" />
+		<Unit filename="Bonus/BonushyperactiveIrrlicht.h" />
+		<Unit filename="Bonus/BonuskickIrrlicht.cpp" />
+		<Unit filename="Bonus/BonuskickIrrlicht.h" />
+		<Unit filename="Bonus/BonusmirrorIrrlicht.cpp" />
+		<Unit filename="Bonus/BonusmirrorIrrlicht.h" />
+		<Unit filename="Bonus/BonusrestrainIrrlicht.cpp" />
+		<Unit filename="Bonus/BonusrestrainIrrlicht.h" />
+		<Unit filename="Bonus/BonusscattyIrrlicht.cpp" />
+		<Unit filename="Bonus/BonusscattyIrrlicht.h" />
+		<Unit filename="Bonus/BonusshieldIrrlicht.cpp" />
+		<Unit filename="Bonus/BonusshieldIrrlicht.h" />
+		<Unit filename="Bonus/BonusslowIrrlicht.cpp" />
+		<Unit filename="Bonus/BonusslowIrrlicht.h" />
+		<Unit filename="Bonus/BonusspeedIrrlicht.cpp" />
+		<Unit filename="Bonus/BonusspeedIrrlicht.h" />
+		<Unit filename="Bonus/BonusthrowIrrlicht.cpp" />
+		<Unit filename="Bonus/BonusthrowIrrlicht.h" />
+		<Unit filename="Cell.cpp" />
+		<Unit filename="Cell.h" />
+		<Unit filename="CellPos.cpp" />
+		<Unit filename="CellPos.h" />
+		<Unit filename="ControllerManager.cpp" />
+		<Unit filename="ControllerManager.h" />
+		<Unit filename="Deserializer.cpp" />
+		<Unit filename="Deserializer.h" />
+		<Unit filename="ElementIrrlicht.cpp" />
+		<Unit filename="ElementIrrlicht.h" />
+		<Unit filename="ElementItemIrrlicht.cpp" />
+		<Unit filename="ElementItemIrrlicht.h" />
+		<Unit filename="FallingBlockIrrlicht.cpp" />
+		<Unit filename="FallingBlockIrrlicht.h" />
+		<Unit filename="FallingBlockItemIrrlicht.cpp" />
+		<Unit filename="FallingBlockItemIrrlicht.h" />
+		<Unit filename="FlyBombIrrlicht.cpp" />
+		<Unit filename="FlyBombIrrlicht.h" />
+		<Unit filename="GameIrrlicht.cpp" />
+		<Unit filename="GameIrrlicht.h" />
+		<Unit filename="GameItemIrrlicht.cpp" />
+		<Unit filename="GameItemIrrlicht.h" />
+		<Unit filename="GameState.cpp" />
+		<Unit filename="GameState.h" />
+		<Unit filename="GameStateManager.cpp" />
+		<Unit filename="GameStateManager.h" />
+		<Unit filename="GameTimerIrrlicht.cpp" />
+		<Unit filename="GameTimerIrrlicht.h" />
+		<Unit filename="GroundIrrlicht.cpp" />
+		<Unit filename="GroundIrrlicht.h" />
+		<Unit filename="GroundItemIrrlicht.cpp" />
+		<Unit filename="GroundItemIrrlicht.h" />
+		<Unit filename="IJElementIrrlicht.cpp" />
+		<Unit filename="IJElementIrrlicht.h" />
+		<Unit filename="IrrlichtEventReceiver.cpp" />
+		<Unit filename="IrrlichtEventReceiver.h" />
+		<Unit filename="Main.cpp" />
+		<Unit filename="Mainwindow.cpp" />
+		<Unit filename="Mainwindow.h" />
+		<Unit filename="MapParserIrrlicht.cpp" />
+		<Unit filename="MapParserIrrlicht.h" />
+		<Unit filename="OptionsWidget.cpp" />
+		<Unit filename="OptionsWidget.h" />
+		<Unit filename="OptionsWidgetContainer.cpp" />
+		<Unit filename="OptionsWidgetContainer.h" />
+		<Unit filename="OptionsWidgetObject.cpp" />
+		<Unit filename="PlayerControllerJoystick.cpp" />
+		<Unit filename="PlayerControllerJoystick.h" />
+		<Unit filename="PlayerControllerKeyboard.cpp" />
+		<Unit filename="PlayerControllerKeyboard.h" />
+		<Unit filename="PlayerControllerNetwork.cpp" />
+		<Unit filename="PlayerControllerNetwork.h" />
+		<Unit filename="PlayerIrrlicht.cpp" />
+		<Unit filename="PlayerIrrlicht.h" />
+		<Unit filename="PlayerItemIrrlicht.cpp" />
+		<Unit filename="PlayerItemIrrlicht.h" />
+		<Unit filename="Serializable.cpp" />
+		<Unit filename="Serializable.h" />
+		<Unit filename="Serializer.cpp" />
+		<Unit filename="Serializer.h" />
+		<Unit filename="SoundManager.cpp" />
+		<Unit filename="SoundManager.h" />
+		<Unit filename="States/StateAfterGame.cpp" />
+		<Unit filename="States/StateAfterGame.h" />
+		<Unit filename="States/StateArenaSelectboard.cpp" />
+		<Unit filename="States/StateArenaSelectboard.h" />
+		<Unit filename="States/StateBeforeGame.cpp" />
+		<Unit filename="States/StateBeforeGame.h" />
+		<Unit filename="States/StateCredit.cpp" />
+		<Unit filename="States/StateCredit.h" />
+		<Unit filename="States/StateDrawGame.cpp" />
+		<Unit filename="States/StateDrawGame.h" />
+		<Unit filename="States/StateInGame.cpp" />
+		<Unit filename="States/StateInGame.h" />
+		<Unit filename="States/StateIntro.cpp" />
+		<Unit filename="States/StateIntro.h" />
+		<Unit filename="States/StateOptionsboard.cpp" />
+		<Unit filename="States/StateOptionsboard.h" />
+		<Unit filename="States/StatePause.cpp" />
+		<Unit filename="States/StatePause.h" />
+		<Unit filename="States/StatePlayerSelectionboard.cpp" />
+		<Unit filename="States/StatePlayerSelectionboard.h" />
+		<Unit filename="States/StateScoreboard.cpp" />
+		<Unit filename="States/StateScoreboard.h" />
+		<Unit filename="TcpInputServer.cpp" />
+		<Unit filename="TcpInputServer.h" />
+		<Unit filename="TcpSocket.cpp" />
+		<Unit filename="TcpSocket.h" />
+		<Unit filename="TerrainIrrlicht.cpp" />
+		<Unit filename="TerrainIrrlicht.h" />
+		<Unit filename="WallIrrlicht.cpp" />
+		<Unit filename="WallIrrlicht.h" />
+		<Unit filename="WallItemIrrlicht.cpp" />
+		<Unit filename="WallItemIrrlicht.h" />
+		<Unit filename="XYElement.cpp" />
+		<Unit filename="XYElement.h" />
+		<Unit filename="hasModell.cpp" />
+		<Unit filename="hasModell.h" />
+		<Unit filename="tinyxml/tinystr.cpp" />
+		<Unit filename="tinyxml/tinystr.h" />
+		<Unit filename="tinyxml/tinyxml.cpp" />
+		<Unit filename="tinyxml/tinyxml.h" />
+		<Unit filename="tinyxml/tinyxmlerror.cpp" />
+		<Unit filename="tinyxml/tinyxmlparser.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

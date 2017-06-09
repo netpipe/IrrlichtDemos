@@ -1,0 +1,20 @@
+Maps are pretty easily moded but currently needs a recompile. The xml files in the maps directory contains the path to the 3d Modell and the information of all fields. Its the same syntax as Granatier and so the same syntax as ... (wide base)
+
+in short:
+x cell with a possible crate
+p a playerstarting position
+_ a free cell
+= a wall cell
+
+To postion the map to the logic you have 6 values ip stands for initialpostion so ipx moves the modell ipx*modellfieldsize units.
+ir stands for initialrotation and rotates the modell along the axes.
+
+If your map has its zero at the lower left side you shlouldnt have to move it. (but im not sure about this)
+Easiest way copy an existing 3d Map and play with it.
+
+to insert it modify /States/StateArenaSelectboard.cpp (i guess you can do it without any c)
+
+Characters are found in media/Characters (and you dont need to recompile just add).
+you have to specify a 3d modell and icon picture and the frame start and ends of your animation for various Situations
+just keep the name structure of the xml file and increase the number by one:
+example 0122.xml is the biggest xml file (122 > the rest) name your xml file 0132.xml and put it in the same folder.

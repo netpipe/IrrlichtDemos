@@ -1,0 +1,22 @@
+# Blender MTL File: 'untitled.blend'
+# Material Count: 2
+newmtl CadbottesMat1
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.670588 0.000000 0.000000
+Ks 0.670588 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+
+newmtl CadbottesMat0
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.070588 0.000000 1.000000
+Ks 0.070588 0.000000 1.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+

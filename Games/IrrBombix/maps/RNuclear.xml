@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Arena arenaFileVersion="1" rowCount="11" colCount="13">
+
+  <Row>p_xxxxxxxxx_p</Row>
+  <Row>_=x=x=x=x=x=_</Row>
+  <Row>xxxxp_xxx_pxx</Row>
+  <Row>x=x=_=x=x=_=x</Row>
+  <Row>xxxxxxxxxxxxx</Row>
+  <Row>x=x=x=x=x=x=x</Row>
+  <Row>xxxxxxxxxxxxx</Row>
+  <Row>x=x=_=x=x=_=x</Row>
+  <Row>xxxxp_xxx_pxx</Row>
+  <Row>_=x=x=x=x=x=_</Row>
+  <Row>p_xxxxxxxxx_p</Row>
+  <view meshname="./media/ArenaX/RNuclear/RNuclear.x" ipx="8.5" ipy="-1.5" ipz="4" irx="0" iry="180" irz="0" modellfieldsize="2"/>
+</Arena>
