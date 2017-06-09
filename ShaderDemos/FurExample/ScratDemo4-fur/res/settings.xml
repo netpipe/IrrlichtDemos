@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config>
+<!--This is a config file for the Irrlicht Engine.-->
+<settings width = "800" height = "600" fullscreen = "0" vsync = "0" debug="1" shadows="0" shader="1" music="0">
+</settings>
+</config>

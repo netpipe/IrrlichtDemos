@@ -1,0 +1,14 @@
+\create map res/3D/Terrain/Terrain.b3d
+\set map matflag EMF_LIGHTING 0
+\set map matflag EMF_ANISOTROPIC_FILTER 0
+\set map mattype EMT_LIGHTMAP
+\set map matflag EMF_BACK_FACE_CULLING 1
+\set map texture0 res/3D/Terrain/Textures/Terrain_Texture.bmp
+\set map texture1 res/3D/Terrain/Textures/TerrainLightmap_Texture.bmp
+\set map col 1
+\create skydome res/3d/terrain/skydome.b3d
+\set skydome matflag EMF_LIGHTING 0
+\set skydome texture0 res/3d/terrain/textures/skydome_texture.bmp
+\create water res/3d/terrain/water.b3d
+\set water texture0 res/3d/terrain/textures/water_texture.bmp
+echo levelloaded

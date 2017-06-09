@@ -1,0 +1,3 @@
+\run res/scripts/loadlevel.txt
+\set player pos 0 800 0
+\echo finished
