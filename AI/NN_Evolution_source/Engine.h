@@ -47,7 +47,7 @@ public:
 	{
 		// Before creating the window, find out the desktop resolution
 		device = createDevice(video::EDT_NULL);
-		core::dimension2d<s32> res = core::dimension2d<s32> (800,600);// device->getVideoModeList()->getDesktopResolution();
+		core::dimension2d<u32> res = core::dimension2d<u32> (800,600);// device->getVideoModeList()->getDesktopResolution();
 		device->drop();
 
 		// Initialise the Irrlicht window at the desktop resolution

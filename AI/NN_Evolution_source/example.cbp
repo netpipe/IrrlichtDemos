@@ -17,14 +17,14 @@
 			<Add alias="All" targets="default;" />
 		</VirtualTargets>
 		<Compiler>
-			<Add directory="/home/Dev/libs/Irrlicht/include" />
+			<Add directory="../../../../../../Dev/libs/game/Irrlicht-SVN/include" />
 		</Compiler>
 		<Linker>
-			<Add library="GL" />
-			<Add library="Irrlicht" />
 			<Add library="Xxf86vm" />
 			<Add library="X11" />
-			<Add directory="/home/Dev/libs/Irrlicht/lib/gcc" />
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add directory="../../../../../../Dev/libs/game/Irrlicht-SVN/lib/Linux" />
 		</Linker>
 		<Unit filename="CameraController.h" />
 		<Unit filename="Engine.h" />
