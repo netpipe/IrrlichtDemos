@@ -18,15 +18,16 @@
 		</VirtualTargets>
 		<Compiler>
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
-			<Add directory="/home/Dev/libs/physics/Box2D_v2.1.2/Box2D" />
+			<Add directory="/home/Dev/libs/physics/Box2D/Box2D_v2.1.2/Box2D" />
 		</Compiler>
 		<Linker>
 			<Add library="GL" />
 			<Add library="Irrlicht" />
 			<Add library="Xxf86vm" />
 			<Add library="Box2D" />
+			<Add library="X11" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
-			<Add directory="/home/Dev/libs/physics/Box2D_v2.1.2/Box2D/Box2D" />
+			<Add directory="/home/Dev/libs/physics/Box2D/Box2D_v2.1.2/Box2D/Box2D" />
 		</Linker>
 		<Unit filename="main.cpp" />
 		<Extensions>
