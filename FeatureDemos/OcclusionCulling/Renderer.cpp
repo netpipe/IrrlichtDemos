@@ -122,7 +122,7 @@ void Renderer::addMy3DScene(char* scene, f32 X, f32 Y, f32 Z)
    scene::IAnimatedMesh* mesh;
    mesh = smgr->getMesh(scene);
 
-   scene::ISceneNode* my3d = smgr->addOctTreeSceneNode(mesh->getMesh(0));
+   scene::ISceneNode* my3d = smgr->addOctreeSceneNode(mesh->getMesh(0));
    //my3d->setPosition(irr::core::vector3df(X,terrain->getHeight(X,Z)+Y,Z));
    my3d->setPosition(irr::core::vector3df(X,Y,Z));
    //my3d->setScale(irr::core::vector3df(2,2,2));
@@ -152,19 +152,19 @@ my3d->setMaterialType(video::EMT_TRANSPARENT_ALPHA_CHANNEL);
 /*----------------------------------------------------------------------------*/
 void Renderer::addSky(char *skytex)
 {
-  scene::ISceneNode* skydome = smgr->addSkyDomeSceneNode(NULL, 8,4, 1.f,1.3f, NULL, -1);
-
-  video::IImage *img1 = driver->createImageFromFile(skytex);
-  video::ITexture* tex = driver->addTexture(skytex,img1);
-				   tex->grab();
-				   skydome->setMaterialTexture(0, tex);
-				   tex->drop();
-
-	  /*obtient le 220e pixel: il détermine le fog*/
-	  img1->lock();
-	  video::SColor p1 = img1->getPixel(0,180);
-	  img1->unlock();
-	  driver->setFog(p1, true, 1000.f, 30000.f);
+//  scene::ISceneNode* skydome = smgr->addSkyDomeSceneNode(NULL, 8,4, 1.f,1.3f, NULL, -1);
+//
+//  video::IImage *img1 = driver->createImageFromFile(skytex);
+//  video::ITexture* tex = driver->addTexture(skytex,img1);
+//				   tex->grab();
+//				   skydome->setMaterialTexture(0, tex);
+//				   tex->drop();
+//
+//	  /*obtient le 220e pixel: il détermine le fog*/
+//	  img1->lock();
+//	  video::SColor p1 = img1->getPixel(0,180);
+//	  img1->unlock();
+//	  driver->setFog(p1, true, 1000.f, 30000.f);
 }
 
 /*----------------------------------------------------------------------------*/

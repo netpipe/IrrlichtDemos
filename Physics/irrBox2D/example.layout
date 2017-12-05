@@ -4,7 +4,15 @@
 	<ActiveTarget name="All" />
 	<File name="main.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="82" topLine="66" />
+			<Cursor1 position="82" topLine="2" />
 		</Cursor>
+		<Folding>
+			<Collapse line="20" />
+			<Collapse line="96" />
+			<Collapse line="148" />
+			<Collapse line="184" />
+			<Collapse line="213" />
+		</Folding>
 	</File>
+	<EditorTabsLayout layout="fbc9d520595b1c53001c41ed00000002=*0;Irrlicht Pong:main.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=808;besth=341;minw=808;minh=341;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=fbc9d520595b1c53001c41ed00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>

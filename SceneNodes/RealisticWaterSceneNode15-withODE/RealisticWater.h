@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2007, elvman
+ * Copyright (c) 2013, elvman
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -21,18 +21,19 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
+#ifndef _REALISTIC_WATER_SCENE_NODE_H
+#define _REALISTIC_WATER_SCENE_NODE_H
 
-#pragma once
-
-#include <string>
 #include <irrlicht.h>
+
 using namespace irr;
 
 class RealisticWaterSceneNode: public scene::ISceneNode, video::IShaderConstantSetCallBack
 {
 public:
-	RealisticWaterSceneNode(scene::ISceneManager* sceneManager, f32 width, f32 height, video::ITexture* bumpTexture, ITimer* timer,
-		core::dimension2du renderTargetSize=core::dimension2du(512,512),scene::ISceneNode* parent = 0, s32 id = -1);
+	RealisticWaterSceneNode(scene::ISceneManager* sceneManager, f32 width, f32 height,
+							const irr::core::stringc& resourcePath = irr::core::stringc(),
+							core::dimension2du renderTargetSize=core::dimension2du(512,512),scene::ISceneNode* parent = NULL, s32 id = -1);
 	virtual ~RealisticWaterSceneNode();
 
 	// frame
@@ -42,39 +43,44 @@ public:
 
 	// renders terrain
 	virtual void render();
-
+    
 	// returns the axis aligned bounding box of terrain
 	virtual const core::aabbox3d<f32>& getBoundingBox() const;
 
 	virtual void OnSetConstants(video::IMaterialRendererServices* services, s32 userData);
 
-	virtual void setWindForce(const f32 windForce);
-	virtual void setWindDirection(const core::vector2df& windDirection);
-	virtual void setWaveHeight(const f32 waveHeight);
+	void setWindForce(f32 windForce);
+	void setWindDirection(const core::vector2df& windDirection);
+	void setWaveHeight(f32 waveHeight);
 
-	virtual void setWaterColor(const video::SColorf& waterColor);
-	virtual void setColorBlendFactor(const f32 colorBlendFactor);
+	void setWaterColor(const video::SColorf& waterColor);
+	void setColorBlendFactor(f32 colorBlendFactor);
 
 private:
 
-	scene::ICameraSceneNode*		Camera;
-	scene::ISceneNode*				WaterSceneNode;
+	scene::ICameraSceneNode*		_camera;
+	scene::ISceneNode*				_waterSceneNode;
 
-	video::IVideoDriver*			VideoDriver;
-	scene::ISceneManager*			SceneManager;
-	ITimer*							Timer;
+	video::IVideoDriver*			_videoDriver;
+	scene::ISceneManager*			_sceneManager;
+	
+	core::dimension2d<f32>			_size;
 
-	core::dimension2d<f32>			Size;
+	s32								_shaderMaterial;
 
-	s32								ShaderMaterial;
+	scene::IAnimatedMesh*			_waterMesh;
 
-	video::ITexture*				RefractionMap;
-	video::ITexture*				ReflectionMap;
+	video::ITexture*				_refractionMap;
+	video::ITexture*				_reflectionMap;
 
-	f32								WindForce;
-	core::vector2df					WindDirection;
-	f32								WaveHeight;
+	f32								_windForce;
+	core::vector2df					_windDirection;
+	f32								_waveHeight;
 
-	video::SColorf					WaterColor;
-	f32								ColorBlendFactor;
+	video::SColorf					_waterColor;
+	f32								_colorBlendFactor;
+
+	u32								_time;
 };
+
+#endif

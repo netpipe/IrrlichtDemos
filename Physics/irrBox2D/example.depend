@@ -188,8 +188,9 @@
 	<stdlib.h>
 	<limits.h>
 
-1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/irrTypes.h
+1506216577 /home/Dev/libs/game/Irrlicht-SVN/include/irrTypes.h
 	"IrrCompileConfig.h"
+	<limits.h>
 	<wchar.h>
 	<crtdbg.h>
 	"assert.h"
@@ -257,11 +258,11 @@
 	"EMaterialFlags.h"
 	"SMaterialLayer.h"
 
-1455454597 /home/Dev/libs/game/Irrlicht-SVN/include/SColor.h
+1506216577 /home/Dev/libs/game/Irrlicht-SVN/include/SColor.h
 	"irrTypes.h"
 	"irrMath.h"
 
-1494856607 /home/Dev/libs/game/Irrlicht-SVN/include/matrix4.h
+1506216577 /home/Dev/libs/game/Irrlicht-SVN/include/matrix4.h
 	"irrMath.h"
 	"vector3d.h"
 	"vector2d.h"
@@ -407,7 +408,7 @@
 	"IReferenceCounted.h"
 	"irrXML.h"
 
-1482754352 /home/Dev/libs/game/Irrlicht-SVN/include/irrXML.h
+1506216577 /home/Dev/libs/game/Irrlicht-SVN/include/irrXML.h
 	<stdio.h>
 	"IrrCompileConfig.h"
 	<irrXML.h>
@@ -420,7 +421,7 @@
 	"IReadFile.h"
 	"IFileList.h"
 
-1482754352 /home/Dev/libs/game/Irrlicht-SVN/include/IReadFile.h
+1506216577 /home/Dev/libs/game/Irrlicht-SVN/include/IReadFile.h
 	"IReferenceCounted.h"
 	"coreutil.h"
 
@@ -428,7 +429,7 @@
 	"IReferenceCounted.h"
 	"path.h"
 
-1494856606 /home/Dev/libs/game/Irrlicht-SVN/include/IVideoDriver.h
+1506216577 /home/Dev/libs/game/Irrlicht-SVN/include/IVideoDriver.h
 	"rect.h"
 	"SColor.h"
 	"ITexture.h"
@@ -437,12 +438,12 @@
 	"plane3d.h"
 	"dimension2d.h"
 	"position2d.h"
-	"SMaterial.h"
 	"IMeshBuffer.h"
 	"triangle3d.h"
 	"EDriverTypes.h"
 	"EDriverFeatures.h"
 	"SExposedVideoData.h"
+	"SOverrideMaterial.h"
 
 1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/ITexture.h
 	"IReferenceCounted.h"
@@ -886,7 +887,7 @@
 	"IReferenceCounted.h"
 	"path.h"
 
-1495594191 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneManager.h
+1506216577 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneManager.h
 	"IReferenceCounted.h"
 	"irrArray.h"
 	"irrString.h"
@@ -954,7 +955,7 @@
 1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IVolumeLightSceneNode.h
 	"ISceneNode.h"
 
-1482754352 /home/Dev/libs/game/Irrlicht-SVN/include/IWriteFile.h
+1506216577 /home/Dev/libs/game/Irrlicht-SVN/include/IWriteFile.h
 	"IReferenceCounted.h"
 	"path.h"
 
@@ -1313,8 +1314,11 @@
 1494856606 /home/Dev/libs/game/Irrlicht-SVN/include/IOctreeSceneNode.h
 	"IMeshSceneNode.h"
 
-1455454597 /home/Dev/libs/game/Irrlicht-SVN/include/IRenderTarget.h
+1506216577 /home/Dev/libs/game/Irrlicht-SVN/include/IRenderTarget.h
 	"IReferenceCounted.h"
 	"EDriverTypes.h"
 	"irrArray.h"
+
+1506216577 /home/Dev/libs/game/Irrlicht-SVN/include/SOverrideMaterial.h
+	"SMaterial.h"
 

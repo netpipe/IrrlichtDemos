@@ -3,7 +3,7 @@
 
 int main()
 {
-  IrrlichtDevice* device = createDevice(EDT_OPENGL, dimension2d<s32>(800,600), 24, false);
+  IrrlichtDevice* device = createDevice(EDT_OPENGL, dimension2d<u32>(800,600), 24, false);
   if (!device) return 0;
 
   IVideoDriver* driver = device->getVideoDriver();
@@ -24,7 +24,7 @@ int main()
   {
       if (!device->isWindowActive())
                 device->sleep(200);
-      driver->beginScene(true, true, 0);
+//      driver->beginScene(true, true, 0);
       smgr->drawAll();
       RenderMan.drawGUI();
       driver->endScene();

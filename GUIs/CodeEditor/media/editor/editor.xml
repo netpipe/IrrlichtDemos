@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<IrrRPG_Builder_DynamicObjects version="1.0">
+	<dynamic_object name="target" mesh="../editor/pentagram.x" materialType="transparent_8bit" type="editor" scale="2.0">
+		<animation name="idle" start="0" end="90" speed="30.0" />
+	</dynamic_object>
+	<dynamic_object name="error" mesh="../editor/error.obj" type="non-interactive" scale="0.5" />
+</IrrRPG_Builder_DynamicObjects>

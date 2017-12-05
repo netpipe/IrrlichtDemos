@@ -2,7 +2,7 @@
 #include "game.h"
 
 void CGame::menu()
-{device = createDevice(video::EDT_OPENGL, core::dimension2d<s32>(512, 256), 32, false, false,false, this);
+{device = createDevice(video::EDT_OPENGL, core::dimension2d<u32>(512, 256), 32, false, false,false, this);
 
 		driver = device->getVideoDriver();
 		guiEnv = device->getGUIEnvironment();

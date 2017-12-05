@@ -946,3 +946,63 @@
 	"matrix4.h"
 	"IVideoDriver.h"
 
+1362077442 source:/mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/GUIs/EditorControl/CGUIEditorControl.cpp
+	"CGUIPanel.h"
+	"CGUIEditorControl.h"
+	"IGUIFont.h"
+	"IGUIImage.h"
+	"IGUIButton.h"
+	"IGUIComboBox.h"
+	"IGUIEditBox.h"
+	"IGUICheckBox.h"
+	"IGUITreeCtrl.h"
+	"IGUITabControl.h"
+	"IGUIStaticText.h"
+	"IGUIElementFactory.h"
+	"IGUIFileOpenDialog.h"
+	"IGUIEnvironment.h"
+	"IVideoDriver.h"
+	"IFileSystem.h"
+	<sstream>
+	<cwchar>
+
+1362077442 /mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/GUIs/EditorControl/CGUIPanel.h
+	"IGUIElement.h"
+
+1362077442 /mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/GUIs/EditorControl/CGUIEditorControl.h
+	"IGUITreeCtrl.h"
+	"IGUIElement.h"
+	"IGUIWindow.h"
+	"IGUISkin.h"
+	"irrTypes.h"
+
+1362077442 /mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/GUIs/EditorControl/IGUITreeCtrl.h
+	"IGUIElement.h"
+	"irrTypes.h"
+
+1362077442 source:/mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/GUIs/EditorControl/CGUIPanel.cpp
+	"CGUIPanel.h"
+	"IGUIEnvironment.h"
+	"IGUIScrollBar.h"
+	"IGUITabControl.h"
+	"IVideoDriver.h"
+
+1362077442 source:/mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/GUIs/EditorControl/CGUITreeCtrl.cpp
+	"CGUITreeCtrl.h"
+	"IGUIEnvironment.h"
+	"IGUIFont.h"
+	"IVideoDriver.h"
+
+1362077442 /mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/GUIs/EditorControl/CGUITreeCtrl.h
+	"IGUITreeCtrl.h"
+	<IGUIScrollBar.h>
+	<irrArray.h>
+	<SColor.h>
+	<IVideoDriver.h>
+
+1362077442 source:/mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/GUIs/EditorControl/Main.cpp
+	<irrlicht.h>
+	"CGUIEditorControl.h"
+	<ctime>
+	<cstdlib>
+

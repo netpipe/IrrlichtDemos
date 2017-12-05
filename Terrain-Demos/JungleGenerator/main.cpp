@@ -41,7 +41,7 @@ int main(int argc, char** argv)
 
     // terrain
     ITerrainSceneNode* terrain = smgr->addTerrainSceneNode(
-        "./media/terrain-heightmap.bmp",
+        "./kornJungle/terrain-heightmap.bmp",
         0,                  // parent node
         -1,                 // node id
         core::vector3df(0.f, 0.f, 0.f),     // position
@@ -55,9 +55,9 @@ int main(int argc, char** argv)
 
 
     terrain->setMaterialTexture(0,
-            driver->getTexture("./media/terrain-texture.jpg"));
+            driver->getTexture("./kornJungle/terrain-texture.jpg"));
     terrain->setMaterialTexture(1,
-            driver->getTexture("./media/detailmap3.jpg"));
+            driver->getTexture("./kornJungle/detailmap3.jpg"));
 
     terrain->setMaterialType(video::EMT_DETAIL_MAP);
 
@@ -77,13 +77,13 @@ int main(int argc, char** argv)
                 -1);
 
     smgr->getRootSceneNode()->addChild(jungle);
-    jungle->getMaterial(0).setTexture(0, driver->getTexture("./media/bark.png"));
-    jungle->getMaterial(0).setTexture(1, driver->getTexture("./media/bark_normal.png"));
+    jungle->getMaterial(0).setTexture(0, driver->getTexture("./kornJungle/bark.png"));
+    jungle->getMaterial(0).setTexture(1, driver->getTexture("./kornJungle/bark_normal.png"));
     jungle->getMaterial(0).MaterialType = EMT_NORMAL_MAP_SOLID;
     jungle->getMaterial(0).Shininess = 0.0f;
 
     jungle->getMaterial(1).setFlag(EMF_BACK_FACE_CULLING, false);
-    jungle->getMaterial(1).setTexture(0,driver->getTexture("./media/leaf.png"));
+    jungle->getMaterial(1).setTexture(0,driver->getTexture("./kornJungle/leaf.png"));
     jungle->getMaterial(1).MaterialType = EMT_TRANSPARENT_ALPHA_CHANNEL_REF;
     // start growing trees
 

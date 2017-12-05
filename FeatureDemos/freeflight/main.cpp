@@ -93,9 +93,9 @@ int main()
     for(s32 i=0; i<KEY_KEY_CODES_COUNT; i++) keys[i] = false;
     MyEventReceiver receiver;
     IrrlichtDevice *device =
-      createDevice(video::EDT_OPENGL, core::dimension2d<s32>(800, 600), 32, false, false, false, &receiver);
+      createDevice(video::EDT_OPENGL, core::dimension2d<u32>(800, 600), 32, false, false, false, &receiver);
 
-   device->setResizeAble(true);
+//   device->setResizeAble(true);
 
    video::IVideoDriver* driver = device->getVideoDriver();
    scene::ISceneManager* smgr = device->getSceneManager();

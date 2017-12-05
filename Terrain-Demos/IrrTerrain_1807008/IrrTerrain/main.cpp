@@ -99,7 +99,7 @@ int main(int argc, char **argv)
 	// irrlicht parametres
 	irr::SIrrlichtCreationParameters param;
 	param.DriverType = video::EDT_OPENGL;
-	param.WindowSize = core::dimension2di(800,600);
+	param.WindowSize = core::dimension2du(800,600);
 	param.Fullscreen = false;
 	param.Vsync = false;
 	param.Bits = 16;

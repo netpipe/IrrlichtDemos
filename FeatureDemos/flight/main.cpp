@@ -234,7 +234,7 @@
 
         // load building:
         scene::IMeshSceneNode* q3node = 0;
-        const char* name = "media/map-20kdm2.pk3";
+        const char* name = "../../media/map-20kdm2.pk3";
         fs->addZipFileArchive(name);
 
 
@@ -309,7 +309,8 @@
 
         while (device->run())
         {
-                 driver->beginScene(true, true, 0);
+            driver->beginScene(video::ECBF_COLOR | video::ECBF_DEPTH, video::SColor(255,113,113,133));
+              //   driver->beginScene(true, true, 0);
             currentTime = device->getTimer()->getTime();
 
             updateFollowCamera(followCamera, airplane);

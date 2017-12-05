@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2007, elvman
+ * Copyright (c) 2013, elvman
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -13,7 +13,7 @@
  * THIS SOFTWARE IS PROVIDED BY elvman ``AS IS'' AND ANY
  * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
  * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
- * DISCLAIMED. IN NO EVENT SHALL <copyright holder> BE LIABLE FOR ANY
+ * DISCLAIMED. IN NO EVENT SHALL elvman BE LIABLE FOR ANY
  * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
  * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
  * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
@@ -22,7 +22,7 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-float4x4	View;
+//float4x4	View;
 float4x4	WorldViewProj;  // World * View * Projection transformation
 float4x4	WorldReflectionViewProj;  // World * Reflection View * Projection transformation
 
@@ -35,38 +35,46 @@ float2		WindDirection;
 // Vertex shader output structure
 struct VS_OUTPUT
 {
-	float4 Position					: POSITION;   // vertex position
+	float4 position					: POSITION;   // vertex position
 	
-	float2 BumpMapTexCoord			: TEXCOORD0;
-	float4 RefractionMapTexCoord	: TEXCOORD1;
-	float4 ReflectionMapTexCoord	: TEXCOORD2;
+	float2 bumpMapTexCoord			: TEXCOORD0;
+	float3 refractionMapTexCoord	: TEXCOORD1;
+	float3 reflectionMapTexCoord	: TEXCOORD2;
 	
-	float3 Position3D				: TEXCOORD3;
+	float3 position3D				: TEXCOORD3;
 };
 
 struct VS_INPUT
 {
-	float4 Position		: POSITION;
-	float4 Color		: COLOR0;
-	float2 TexCoord0	: TEXCOORD0;
+	float4 position		: POSITION;
+	float4 color		: COLOR0;
+	float2 texCoord0	: TEXCOORD0;
 };
 
-
-VS_OUTPUT main(VS_INPUT Input)
+VS_OUTPUT main(VS_INPUT input)
 {
-	VS_OUTPUT Output;
+	VS_OUTPUT output;
 
-	// transform position to clip space 
-	Output.Position = mul(Input.Position, WorldViewProj);
+	// transform position to clip space
+	float4 pos = mul(input.position, WorldViewProj);
+	output.position = pos;
 	
 	// calculate vawe coords
-	Output.BumpMapTexCoord = Input.TexCoord0/WaveLength + Time*WindForce*WindDirection;
+	output.bumpMapTexCoord = input.texCoord0 / WaveLength + Time * WindForce * WindDirection;
+
+	// refraction texcoords
+	output.refractionMapTexCoord.x = 0.5 * (pos.w + pos.x);
+	output.refractionMapTexCoord.y = 0.5 * (pos.w - pos.y);
+	output.refractionMapTexCoord.z = pos.w;
+								
+	// reflection texcoords
+	pos = mul(input.position, WorldReflectionViewProj);	
+	output.reflectionMapTexCoord.x = 0.5 * (pos.w + pos.x);
+	output.reflectionMapTexCoord.y = 0.5 * (pos.w - pos.y);
+	output.reflectionMapTexCoord.z = pos.w;
 	
-	Output.RefractionMapTexCoord = mul(Input.Position, WorldViewProj);	
-	Output.ReflectionMapTexCoord = mul(Input.Position, WorldReflectionViewProj);
+	// position of the vertex
+	output.position3D = input.position;
 	
-	// position of the pixel
-	Output.Position3D = mul(Input.Position, View);
-	
-	return Output;
+	return output;
 }

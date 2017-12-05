@@ -1,214 +1,308 @@
+/*
+ * Copyright (c) 2013, elvman
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *     * Redistributions of source code must retain the above copyright
+ *       notice, this list of conditions and the following disclaimer.
+ *     * Redistributions in binary form must reproduce the above copyright
+ *       notice, this list of conditions and the following disclaimer in the
+ *       documentation and/or other materials provided with the distribution.
+ *
+ * THIS SOFTWARE IS PROVIDED BY elvman ``AS IS'' AND ANY
+ * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL <copyright holder> BE LIABLE FOR ANY
+ * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+
 #include "RealisticWater.h"
 
-using namespace irr;
-using namespace video;
-using namespace core;
-using namespace gui;
-using namespace scene;
-RealisticWaterSceneNode::RealisticWaterSceneNode(scene::ISceneManager* sceneManager, f32 width, f32 height,
-												video::ITexture* bumpTexture, ITimer* timer, core::dimension2du renderTargetSize,
-												scene::ISceneNode* parent, s32 id):
-	scene::ISceneNode( parent?parent:sceneManager->getRootSceneNode(), sceneManager, id),
-	Timer(timer), Size(width,height), SceneManager(sceneManager), RefractionMap(0), ReflectionMap(0),
-	WindForce(20.0f),WindDirection(0,1),WaveHeight(0.3f), WaterColor(0.1f, 0.1f, 0.6f, 1.0f), ColorBlendFactor(0.2f), Camera(0)
+RealisticWaterSceneNode::RealisticWaterSceneNode(scene::ISceneManager* sceneManager, f32 width, f32 height, 
+												 const irr::core::stringc& resourcePath, core::dimension2du renderTargetSize,
+												 scene::ISceneNode* parent, s32 id):
+	scene::ISceneNode(parent, sceneManager, id), _time(0),
+	_size(width, height), _sceneManager(sceneManager), _refractionMap(NULL), _reflectionMap(NULL),
+	_windForce(20.0f),_windDirection(0, 1),_waveHeight(0.3f), _waterColor(0.1f, 0.1f, 0.6f, 1.0f), _colorBlendFactor(0.2f), _camera(NULL)
 {
-	VideoDriver = SceneManager->getVideoDriver();
+	_videoDriver = sceneManager->getVideoDriver();
 
-	scene::ICameraSceneNode* CurrentCamera=SceneManager->getActiveCamera(); //get current camera
-	Camera=SceneManager->addCameraSceneNode(); //create new camera
+	//create new camera
+	_camera = sceneManager->addCameraSceneNode(0, core::vector3df(0, 0, 0), core::vector3df(0, 0, 0), -1, false);
 
-    Camera->setFarValue(CurrentCamera->getFarValue());
-	Camera->setFOV(CurrentCamera->getFOV());
-	SceneManager->setActiveCamera(CurrentCamera); //set back the previous camera
+	_waterMesh = sceneManager->addHillPlaneMesh("RealisticWater", _size, core::dimension2d<u32>(1, 1));
 
-	scene::IAnimatedMesh* WaterMesh=SceneManager->addHillPlaneMesh("realisticwater",Size,core::dimension2d<u32>(1,1));
+	_waterSceneNode = sceneManager->addMeshSceneNode(_waterMesh->getMesh(0), this);
 
-	WaterSceneNode=SceneManager->addMeshSceneNode(WaterMesh->getMesh(0),this);
+	video::IGPUProgrammingServices* GPUProgrammingServices = _videoDriver->getGPUProgrammingServices();
 
-	//WaterMesh->drop();
+	core::stringc waterPixelShader;
+	core::stringc waterVertexShader;
 
-	video::IGPUProgrammingServices* GPUProgrammingServices = VideoDriver->getGPUProgrammingServices();
-
-	std::string WaterPixelShader;
-	std::string WaterVertexShader;
-
-	if (VideoDriver->getDriverType()==video::EDT_DIRECT3D9)
+	if (_videoDriver->getDriverType() == video::EDT_DIRECT3D9)
 	{
-		WaterPixelShader="shaders/Water_ps.hlsl";
-		WaterVertexShader="shaders/Water_vs.hlsl";
+		waterPixelShader = resourcePath + "/shaders/Water_ps.hlsl";
+		waterVertexShader = resourcePath + "/shaders/Water_vs.hlsl";
 	}
-	else if (VideoDriver->getDriverType()==video::EDT_OPENGL)
+	else if (_videoDriver->getDriverType() == video::EDT_OPENGL)
 	{
-		WaterPixelShader="shaders/Water_ps.glsl";
-		WaterVertexShader="shaders/Water_vs.glsl";
+		waterPixelShader = resourcePath + "/shaders/Water_ps.glsl";
+		waterVertexShader = resourcePath + "/shaders/Water_vs.glsl";
 	}
 
-	ShaderMaterial=GPUProgrammingServices->addHighLevelShaderMaterialFromFiles(
-		WaterVertexShader.c_str(),"main",video::EVST_VS_1_1,
-		WaterPixelShader.c_str(),"main",video::EPST_PS_2_0,
-		this,video::EMT_LIGHTMAP);
+	_shaderMaterial = GPUProgrammingServices->addHighLevelShaderMaterialFromFiles(
+		waterVertexShader.c_str(), "main", video::EVST_VS_1_1,
+		waterPixelShader.c_str(), "main", video::EPST_PS_1_1,
+		this);
 
-	WaterSceneNode->setMaterialType((video::E_MATERIAL_TYPE)ShaderMaterial);
+	_waterSceneNode->setMaterialType((video::E_MATERIAL_TYPE)_shaderMaterial);
 
-	WaterSceneNode->setMaterialTexture(0,bumpTexture);
+	irr::video::ITexture* bumpTexture = _videoDriver->getTexture(resourcePath + "/data/waterbump.png");
+	_waterSceneNode->setMaterialTexture(0, bumpTexture);
 
-	RefractionMap=VideoDriver->addRenderTargetTexture(renderTargetSize);
-	ReflectionMap=VideoDriver->addRenderTargetTexture(renderTargetSize);
+	_refractionMap = _videoDriver->addRenderTargetTexture(renderTargetSize);
+	_reflectionMap = _videoDriver->addRenderTargetTexture(renderTargetSize);
 
-	WaterSceneNode->setMaterialTexture(1,RefractionMap);
-	WaterSceneNode->setMaterialTexture(2,ReflectionMap);
+	_waterSceneNode->setMaterialTexture(1, _refractionMap);
+	_waterSceneNode->setMaterialTexture(2, _reflectionMap);
 }
 
 RealisticWaterSceneNode::~RealisticWaterSceneNode()
 {
-	Camera->drop();
+	if (_camera)
+	{
+		_camera->drop();
+		_camera = NULL;
+	}
 
-	if (RefractionMap) RefractionMap->drop();
-	if (ReflectionMap) ReflectionMap->drop();
+	if (_refractionMap)
+	{
+		_refractionMap->drop();
+		_refractionMap = NULL;
+	}
+
+	if (_reflectionMap)
+	{
+		_reflectionMap->drop();
+		_reflectionMap = NULL;
+	}
+
+	if (_waterSceneNode)
+	{
+		_waterSceneNode->drop();
+		_waterSceneNode = NULL;
+	}
+
+	if (_waterMesh)
+	{
+		_waterMesh->drop();
+		_waterMesh = NULL;
+	}
 }
 
 // frame
 void RealisticWaterSceneNode::OnRegisterSceneNode()
 {
-	if (IsVisible)
-		SceneManager->registerNodeForRendering(this);
-
 	ISceneNode::OnRegisterSceneNode();
+
+	if (IsVisible)
+	{
+		_sceneManager->registerNodeForRendering(this);
+	}
 }
 
 void RealisticWaterSceneNode::OnAnimate(u32 timeMs)
 {
+	ISceneNode::OnAnimate(timeMs);
+
+	_time = timeMs;
+
+	//fixes glitches with incomplete refraction
+	const f32 CLIP_PLANE_OFFSET_Y = 5.0f;
+
 	if (IsVisible)
 	{
 		setVisible(false); //hide the water
 
 		//refraction
-		VideoDriver->setRenderTarget(RefractionMap, true, true, video::SColor(0,0,0,255)); //render to refraction
+		_videoDriver->setRenderTarget(_refractionMap, true, true); //render to refraction
 
-		core::plane3d<f32> refractionClipPlane(0,RelativeTranslation.Y+5,0, 0,-1,0); //refraction clip plane
-		//VideoDriver->setClipPlane(0,refractionClipPlane,true);
+		//refraction clipping plane
+		core::plane3d<f32> refractionClipPlane(0, RelativeTranslation.Y + CLIP_PLANE_OFFSET_Y, 0, 0, -1, 0); //refraction clip plane
+		_videoDriver->setClipPlane(0, refractionClipPlane, true);
 
-		SceneManager->drawAll(); //draw the scene
-
-		//VideoDriver->enableClipPlane(0,false);
+		_sceneManager->drawAll(); //draw the scene
 
 		//reflection
-		VideoDriver->setRenderTarget(ReflectionMap, true, true, video::SColor(0,0,0,255)); //render to reflection
+		_videoDriver->setRenderTarget(_reflectionMap, true, true); //render to reflection
 
-		scene::ICameraSceneNode* CurrentCamera=SceneManager->getActiveCamera(); //get current camera
-        // Added by Christian Clavet to update the camera FOV (Zooming)
-        Camera->setFarValue(CurrentCamera->getFarValue());
-	    Camera->setFOV(CurrentCamera->getFOV());
-	    // end
-		core::vector3df position=CurrentCamera->getAbsolutePosition(); ///getPosition();
-		position.Y=-position.Y+2*RelativeTranslation.Y; //position of the water
-		Camera->setPosition(position);
+		//get current camera
+		scene::ICameraSceneNode* currentCamera = _sceneManager->getActiveCamera();
 
-		core::vector3df target=CurrentCamera->getTarget();
-		target.Y=-target.Y+2*RelativeTranslation.Y;
-		Camera->setTarget(target);
+		//set FOV anf far value from current camera
+		_camera->setFarValue(currentCamera->getFarValue());
+		_camera->setFOV(currentCamera->getFOV());
 
-		SceneManager->setActiveCamera(Camera); //set the reflection camera
+		core::vector3df position = currentCamera->getAbsolutePosition();
+		position.Y = -position.Y + 2 * RelativeTranslation.Y; //position of the water
+		_camera->setPosition(position);
 
-		//core::plane3d<f32> reflectionClipPlane(0,RelativeTranslation.Y,0, 0,1,0);
-		//VideoDriver->setClipPlane(0,reflectionClipPlane,true);
+		core::vector3df target = currentCamera->getTarget();
 
-		SceneManager->drawAll(); //draw the scene
+		//invert Y position of current camera
+		target.Y = -target.Y + 2 * RelativeTranslation.Y;
+		_camera->setTarget(target);
 
-		//VideoDriver->enableClipPlane(0,false);
+		//set the reflection camera
+		_sceneManager->setActiveCamera(_camera);
 
-		// set back old render target
-		VideoDriver->setRenderTarget(0,true,true,video::SColor(255,255,255,255));
+		//reflection clipping plane
+		core::plane3d<f32> reflectionClipPlane(0, RelativeTranslation.Y - CLIP_PLANE_OFFSET_Y, 0, 0, 1, 0);
+		_videoDriver->setClipPlane(0, reflectionClipPlane, true);
 
-		SceneManager->setActiveCamera(CurrentCamera);
+		_sceneManager->drawAll(); //draw the scene
+
+		//disable clip plane
+		_videoDriver->enableClipPlane(0, false);
+
+		//set back old render target
+		_videoDriver->setRenderTarget(0);
+
+		//set back the active camera
+		_sceneManager->setActiveCamera(currentCamera);
 
 		setVisible(true); //show it again
 	}
-
-	ISceneNode::OnAnimate(timeMs);
 }
 
 void RealisticWaterSceneNode::render()
 {
+	/*core::array<video::IRenderTarget> renderTargets;
+	//renderTargets.push_back();
+	renderTargets.push_back(_refractionMap);
 
+	_videoDriver->setRenderTarget(renderTargets, true, true);*/
+	//_videoDriver->draw2DImage(_reflectionMap,core::position2d<s32>(0,0));
 }
 
 // returns the axis aligned bounding box of terrain
 const core::aabbox3d<f32>& RealisticWaterSceneNode::getBoundingBox() const
 {
-	return WaterSceneNode->getBoundingBox();
+	return _waterSceneNode->getBoundingBox();
 }
 
 void RealisticWaterSceneNode::OnSetConstants(video::IMaterialRendererServices* services, s32 userData)
 {
 	video::IVideoDriver* driver = services->getVideoDriver();
 
+	core::matrix4 projection = driver->getTransform(video::ETS_PROJECTION);
 	core::matrix4 view = driver->getTransform(video::ETS_VIEW);
-	services->setVertexShaderConstant("View", view.pointer(), 16);
+	core::matrix4 world = driver->getTransform(video::ETS_WORLD);
+
+	core::matrix4 cameraView = _camera->getViewMatrix();
 
 	//vertex shader constants
-	core::matrix4 worldViewProj = driver->getTransform(video::ETS_PROJECTION);
-	worldViewProj *= driver->getTransform(video::ETS_VIEW);
-	worldViewProj *= driver->getTransform(video::ETS_WORLD);
+	//services->setVertexShaderConstant("View", view.pointer(), 16);
+	
+	core::matrix4 worldViewProj = projection;			
+	worldViewProj *= view;
+	worldViewProj *= world;
+	
+	core::matrix4 worldReflectionViewProj = projection;
+	worldReflectionViewProj *= cameraView;
+	worldReflectionViewProj *= world;
+	
+	f32 waveLength = 0.1f;
+	f32 time = _time / 100000.0f;
+	core::vector3df cameraPosition = _sceneManager->getActiveCamera()->getPosition();
+	
+	bool fogEnabled = getMaterial(0).getFlag(video::EMF_FOG_ENABLE);
+	irr::video::SColor color;
+	irr::video::E_FOG_TYPE fogType;
+	f32 start;
+	f32 end;
+	f32 density;
+	bool pixelFog;
+	bool rangeFog;
+	driver->getFog(color, fogType, start, end, density, pixelFog, rangeFog);
+	
+#if (IRRLICHT_VERSION_MAJOR == 1 && IRRLICHT_VERSION_MINOR == 9)
+	services->setVertexShaderConstant(services->getVertexShaderConstantID("WorldViewProj"), worldViewProj.pointer(), 16);
+	services->setVertexShaderConstant(services->getVertexShaderConstantID("WorldReflectionViewProj"), worldReflectionViewProj.pointer(), 16);
+	services->setVertexShaderConstant(services->getVertexShaderConstantID("WaveLength"), &waveLength, 1);
+	services->setVertexShaderConstant(services->getVertexShaderConstantID("Time"), &time, 1);
+	services->setVertexShaderConstant(services->getVertexShaderConstantID("WindForce"), &_windForce, 1);
+	services->setVertexShaderConstant(services->getVertexShaderConstantID("WindDirection"), &_windDirection.X, 2);
+	services->setPixelShaderConstant(services->getVertexShaderConstantID("CameraPosition"), &cameraPosition.X, 3);
+	services->setPixelShaderConstant(services->getVertexShaderConstantID("WaveHeight"), &_waveHeight, 1);
+	services->setPixelShaderConstant(services->getVertexShaderConstantID("WaterColor"), &_waterColor.r, 4);
+	services->setPixelShaderConstant(services->getVertexShaderConstantID("ColorBlendFactor"), &_colorBlendFactor, 1);
+#else
 	services->setVertexShaderConstant("WorldViewProj", worldViewProj.pointer(), 16);
-
-	core::matrix4 worldReflectionViewProj=driver->getTransform(video::ETS_PROJECTION);
-	worldReflectionViewProj *= Camera->getViewMatrix();
-	worldReflectionViewProj *= driver->getTransform(video::ETS_WORLD);
 	services->setVertexShaderConstant("WorldReflectionViewProj", worldReflectionViewProj.pointer(), 16);
-
-	f32 WaveLength=0.1f;
-	services->setVertexShaderConstant("WaveLength", &WaveLength, 1);
-
-	f32 time=Timer->getTime()/100000.0f;
+	services->setVertexShaderConstant("WaveLength", &waveLength, 1);
 	services->setVertexShaderConstant("Time", &time, 1);
-
-	services->setVertexShaderConstant("WindForce", &WindForce, 1);
-
-	services->setVertexShaderConstant("WindDirection", &WindDirection.X, 2);
-
-	//pixel shader constants
-	core::vector3df CameraPosition = SceneManager->getActiveCamera()->getPosition();
-	services->setPixelShaderConstant("CameraPosition", &CameraPosition.X, 3);
-
-	services->setPixelShaderConstant("WaveHeight", &WaveHeight, 1);
-
-	services->setPixelShaderConstant("WaterColor", &WaterColor.r, 4);
-
-	services->setPixelShaderConstant("ColorBlendFactor", &ColorBlendFactor, 1);
-
+	services->setVertexShaderConstant("WindForce", &_windForce, 1);
+	services->setVertexShaderConstant("WindDirection", &_windDirection.X, 2);
+	services->setPixelShaderConstant("CameraPosition", &cameraPosition.X, 3);
+	services->setPixelShaderConstant("WaveHeight", &_waveHeight, 1);
+	services->setPixelShaderConstant("WaterColor", &_waterColor.r, 4);
+	services->setPixelShaderConstant("ColorBlendFactor", &_colorBlendFactor, 1);
+#endif
+	
+	//texture constants for GLSL
 	if (driver->getDriverType() == video::EDT_OPENGL)
 	{
-		int d[] = {  0,1,2  }; // sampler2d IDs
-		services->setPixelShaderConstant("WaterBump", (float*)&d[0], 1);
-		services->setPixelShaderConstant("RefractionMap", (float*)&d[1], 1);
-		services->setPixelShaderConstant("ReflectionMap", (float*)&d[2], 1);
+		int var0 = 0;
+		int var1 = 1;
+		int var2 = 2;
+		
+#if (IRRLICHT_VERSION_MAJOR == 1 && IRRLICHT_VERSION_MINOR == 9)
+		services->setPixelShaderConstant(services->getVertexShaderConstantID("WaterBump"), &var0, 1);
+		services->setPixelShaderConstant(services->getVertexShaderConstantID("RefractionMap"), &var1, 1);
+		services->setPixelShaderConstant(services->getVertexShaderConstantID("ReflectionMap"), &var2, 1);
+		
+		services->setPixelShaderConstant(services->getVertexShaderConstantID("FogEnabled"), (int*)&fogEnabled, 1);
+		services->setPixelShaderConstant(services->getVertexShaderConstantID("FogMode"), (int*)&fogType, 1);
+#else
+		services->setPixelShaderConstant("WaterBump", &var0, 1);
+		services->setPixelShaderConstant("RefractionMap", &var1, 1);
+		services->setPixelShaderConstant("ReflectionMap", &var2, 1);
+		
+		services->setPixelShaderConstant("FogEnabled", (int*)&fogEnabled, 1);
+		services->setPixelShaderConstant("FogMode", (int*)&fogType, 1);
+#endif
 	}
-
 }
 
 void RealisticWaterSceneNode::setWindForce(const f32 windForce)
 {
-	WindForce=windForce;
+	_windForce = windForce;
 }
 
 void RealisticWaterSceneNode::setWindDirection(const core::vector2df& windDirection)
 {
-	WindDirection=windDirection;
-	WindDirection.normalize();
+	_windDirection = windDirection;
+	_windDirection.normalize();
 }
 
 void RealisticWaterSceneNode::setWaveHeight(const f32 waveHeight)
 {
-	WaveHeight=waveHeight;
+	_waveHeight = waveHeight;
 }
 
 void RealisticWaterSceneNode::setWaterColor(const video::SColorf& waterColor)
 {
-	WaterColor=waterColor;
+	_waterColor = waterColor;
 }
 
 void RealisticWaterSceneNode::setColorBlendFactor(const f32 colorBlendFactor)
 {
-	ColorBlendFactor=colorBlendFactor;
+	_colorBlendFactor = colorBlendFactor;
 }

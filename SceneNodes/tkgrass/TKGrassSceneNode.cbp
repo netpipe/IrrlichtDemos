@@ -32,7 +32,7 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
-			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+			<Add directory="../../../LunaLibs/Irrlicht/include" />
 		</Compiler>
 		<Linker>
 			<Add library="Xxf86vm" />
@@ -41,7 +41,8 @@
 			<Add library="GL" />
 			<Add library="GLU" />
 			<Add library="gdk-x11-2.0" />
-			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+			<Add library="X11" />
+			<Add directory="../../../LunaLibs/Irrlicht/lib/Linux" />
 		</Linker>
 		<Unit filename="TKGrassSceneNode.cpp" />
 		<Unit filename="TKGrassSceneNode.h" />

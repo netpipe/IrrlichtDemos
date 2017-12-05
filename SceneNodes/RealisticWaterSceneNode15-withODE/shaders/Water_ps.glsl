@@ -1,86 +1,96 @@
-//
-// Structure definitions
-//
+/*
+ * Copyright (c) 2013, elvman
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *     * Redistributions of source code must retain the above copyright
+ *       notice, this list of conditions and the following disclaimer.
+ *     * Redistributions in binary form must reproduce the above copyright
+ *       notice, this list of conditions and the following disclaimer in the
+ *       documentation and/or other materials provided with the distribution.
+ *
+ * THIS SOFTWARE IS PROVIDED BY elvman ``AS IS'' AND ANY
+ * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL elvman BE LIABLE FOR ANY
+ * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+ 
+const float LOG2 = 1.442695;
 
-struct PS_OUTPUT {
-    vec4 Color;
-};
+uniform vec3		CameraPosition;  // Position of main position
+uniform float		WaveHeight;
 
-struct PS_INPUT {
-    vec4 Position;
-    vec2 BumpMapTexCoord;
-    vec4 RefractionMapTexCoord;
-    vec4 ReflectionMapTexCoord;
-    vec3 Position3D;
-};
+uniform vec4		WaterColor;
+uniform float		ColorBlendFactor;
 
+uniform sampler2D	WaterBump; //coverage
+uniform sampler2D	RefractionMap; //coverage
+uniform sampler2D	ReflectionMap; //coverage
 
-//
-// Global variable definitions
-//
+uniform bool		FogEnabled;
+uniform int			FogMode;
 
-uniform vec3 CameraPosition;
-uniform float ColorBlendFactor;
-uniform sampler2D ReflectionMap;
-uniform sampler2D RefractionMap;
-uniform sampler2D WaterBump;
-uniform vec4 WaterColor;
-uniform float WaveHeight;
+varying vec2 bumpMapTexCoord;
+varying vec3 refractionMapTexCoord;
+varying vec3 reflectionMapTexCoord;
+varying vec3 position3D;
+	
+void main()
+{
+	//bump color
+	vec4 bumpColor = texture2D(WaterBump, bumpMapTexCoord);
+	vec2 perturbation = WaveHeight * (bumpColor.rg - 0.5);
+	
+	//refraction
+	vec2 ProjectedRefractionTexCoords = clamp(refractionMapTexCoord.xy / refractionMapTexCoord.z + perturbation, 0.0, 1.0);
+	//calculate final refraction color
+	vec4 refractiveColor = texture2D(RefractionMap, ProjectedRefractionTexCoords );
+	
+	//reflection
+	vec2 ProjectedReflectionTexCoords = clamp(reflectionMapTexCoord.xy / reflectionMapTexCoord.z + perturbation, 0.0, 1.0);
+	//calculate final reflection color
+	vec4 reflectiveColor = texture2D(ReflectionMap, ProjectedReflectionTexCoords );
 
-//
-// Function declarations
-//
+	//fresnel
+	vec3 eyeVector = normalize(CameraPosition - position3D);
+	vec3 upVector = vec3(0.0, 1.0, 0.0);
+	
+	//fresnel can not be lower than 0
+	float fresnelTerm = max( dot(eyeVector, upVector), 0.0 );
+	
+	float fogFactor = 1.0;
+	
+	if (FogEnabled)
+	{
+		float z = gl_FragCoord.z / gl_FragCoord.w;
 
-PS_OUTPUT xlat_main( in PS_INPUT Input );
-
-//
-// Function definitions
-//
-
-PS_OUTPUT xlat_main( in PS_INPUT Input ) {
-    vec4 bumpColor;
-    vec2 perturbation;
-    vec2 ProjectedRefractionTexCoords;
-    vec4 refractiveColor;
-    vec2 ProjectedReflectionTexCoords;
-    vec4 reflectiveColor;
-    vec3 eyeVector;
-    vec3 normalVector = vec3( 0.000000, 1.00000, 0.000000);
-    float fresnelTerm;
-    vec4 combinedColor;
-    PS_OUTPUT Output;
-
-    bumpColor = texture2D( WaterBump, Input.BumpMapTexCoord);
-    perturbation = (WaveHeight * (bumpColor.xy  - 0.500000));
-    ProjectedRefractionTexCoords.x  = (((Input.RefractionMapTexCoord.x  / Input.RefractionMapTexCoord.w ) / 2.00000) + 0.500000);
-    ProjectedRefractionTexCoords.y  = (((( Input.RefractionMapTexCoord.y  ) / Input.RefractionMapTexCoord.w ) / 2.00000) + 0.500000);
-    refractiveColor = texture2D( RefractionMap, (ProjectedRefractionTexCoords + perturbation));
-    ProjectedReflectionTexCoords.x  = (((Input.ReflectionMapTexCoord.x  / Input.ReflectionMapTexCoord.w ) / 2.00000) + 0.500000);
-    ProjectedReflectionTexCoords.y  = (((( Input.ReflectionMapTexCoord.y  ) / Input.ReflectionMapTexCoord.w ) / 2.00000) + 0.500000);
-    reflectiveColor = texture2D( ReflectionMap, (ProjectedReflectionTexCoords + perturbation));
-    eyeVector = normalize( (CameraPosition - Input.Position3D) );
-    fresnelTerm = max( dot( eyeVector, normalVector), 0.000000);
-    combinedColor = mix( refractiveColor, (reflectiveColor * (1.00000 - fresnelTerm)), vec4( 0.250000));
-    Output.Color = ((ColorBlendFactor * WaterColor) + ((1.00000 - ColorBlendFactor) * combinedColor));
-    return Output;
+		if (FogMode == 1) //exp
+		{
+			float fogFactor = exp2(-gl_Fog.density * z * LOG2);
+			fogFactor = clamp(fogFactor, 0.0, 1.0);
+		}
+		else if (FogMode == 0) //linear
+		{
+			fogFactor = (gl_Fog.end - z) / (gl_Fog.end - gl_Fog.start);
+		}
+		else if (FogMode == 2) //exp2
+		{
+			float fogFactor = exp2(-gl_Fog.density * gl_Fog.density * z * z * LOG2);
+			fogFactor = clamp(fogFactor, 0.0, 1.0);
+		}
+	}
+	
+	vec4 combinedColor = refractiveColor * fresnelTerm + reflectiveColor * (1.0 - fresnelTerm);
+	
+	vec4 finalColor = ColorBlendFactor * WaterColor + (1.0 - ColorBlendFactor) * combinedColor;
+	
+	gl_FragColor = mix(gl_Fog.color, finalColor, fogFactor );
 }
-
-
-//
-// Translator's entry point
-//
-void main() {
-    PS_OUTPUT xlat_retVal;
-    PS_INPUT xlat_temp_Input;
-    xlat_temp_Input.Position = vec4( gl_FragCoord);
-    xlat_temp_Input.BumpMapTexCoord = vec2( gl_TexCoord[0]);
-    xlat_temp_Input.RefractionMapTexCoord = vec4( gl_TexCoord[1]);
-    xlat_temp_Input.ReflectionMapTexCoord = vec4( gl_TexCoord[2]);
-    xlat_temp_Input.Position3D = vec3( gl_TexCoord[3]);
-
-    xlat_retVal = xlat_main( xlat_temp_Input);
-
-    gl_FragData[0] = vec4( xlat_retVal.Color);
-}
-
 

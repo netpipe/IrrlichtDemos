@@ -141,7 +141,7 @@ void control(scene::ISceneNode *node, f32 speed)
 int main()
 {
    IrrlichtDevice *device = createDevice(video::EDT_OPENGL,
-      core::dimension2d<s32>(640, 480), 16, false, false, false, &Receiver);
+      core::dimension2d<u32>(640, 480), 16, false, false, false, &Receiver);
 
    device->setWindowCaption(L"Irrlicht Vzor");
 

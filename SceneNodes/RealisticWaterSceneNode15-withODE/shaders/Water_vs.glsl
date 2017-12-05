@@ -1,73 +1,65 @@
-//
-// Structure definitions
-//
+/*
+ * Copyright (c) 2013, elvman
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *     * Redistributions of source code must retain the above copyright
+ *       notice, this list of conditions and the following disclaimer.
+ *     * Redistributions in binary form must reproduce the above copyright
+ *       notice, this list of conditions and the following disclaimer in the
+ *       documentation and/or other materials provided with the distribution.
+ *
+ * THIS SOFTWARE IS PROVIDED BY elvman ``AS IS'' AND ANY
+ * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL elvman BE LIABLE FOR ANY
+ * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
 
-struct VS_OUTPUT {
-    vec4 Position;
-    vec2 BumpMapTexCoord;
-    vec4 RefractionMapTexCoord;
-    vec4 ReflectionMapTexCoord;
-    vec3 Position3D;
-};
+//uniform mat4	View;
+uniform mat4	WorldViewProj;  // World * View * Projection transformation
+uniform mat4	WorldReflectionViewProj;  // World * Reflection View * Projection transformation
 
-struct VS_INPUT {
-    vec4 Position;
-    vec4 Color;
-    vec2 TexCoord0;
-};
+uniform float	WaveLength;
 
+uniform float	Time;
+uniform float	WindForce;
+uniform vec2	WindDirection;
 
-//
-// Global variable definitions
-//
+// Vertex shader output structure
+varying vec2 bumpMapTexCoord;
+varying vec3 refractionMapTexCoord;
+varying vec3 reflectionMapTexCoord;
+varying vec3 position3D;
 
-uniform float Time;
-uniform mat4 View;
-uniform float WaveLength;
-uniform vec2 WindDirection;
-uniform float WindForce;
-uniform mat4 WorldReflectionViewProj;
-uniform mat4 WorldViewProj;
+void main()
+{
+	//color = gl_Color;
 
-//
-// Function declarations
-//
+	// transform position to clip space
+	vec4 pos = WorldViewProj * gl_Vertex;
+	gl_Position = pos;
+	
+	// calculate vawe coords
+	bumpMapTexCoord = gl_MultiTexCoord0.xy / WaveLength + Time * WindForce * WindDirection;
 
-VS_OUTPUT xlat_main( in VS_INPUT Input );
-
-//
-// Function definitions
-//
-
-VS_OUTPUT xlat_main( in VS_INPUT Input ) {
-    VS_OUTPUT Output;
-
-    Output.Position = ( WorldViewProj * Input.Position );
-    Output.BumpMapTexCoord = ((Input.TexCoord0 / WaveLength) + ((Time * WindForce) * WindDirection));
-    Output.RefractionMapTexCoord = ( WorldViewProj * Input.Position );
-    Output.ReflectionMapTexCoord = ( WorldReflectionViewProj * Input.Position);
-    Output.Position3D = vec3( ( View * Input.Position ));
-    return Output;
+	// refraction texcoords
+	refractionMapTexCoord.x = 0.5 * (pos.w + pos.x);
+	refractionMapTexCoord.y = 0.5 * (pos.w + pos.y);
+	refractionMapTexCoord.z = pos.w;
+								
+	// reflection texcoords
+	pos = WorldReflectionViewProj * gl_Vertex;
+	reflectionMapTexCoord.x = 0.5 * (pos.w + pos.x);
+	reflectionMapTexCoord.y = 0.5 * (pos.w + pos.y);
+	reflectionMapTexCoord.z = pos.w;
+	
+	// position of the vertex
+	position3D = gl_Vertex.xyz;
 }
-
-
-//
-// Translator's entry point
-//
-void main() {
-    VS_OUTPUT xlat_retVal;
-    VS_INPUT xlat_temp_Input;
-    xlat_temp_Input.Position = vec4( gl_Vertex);
-    xlat_temp_Input.Color = vec4( gl_Color);
-    xlat_temp_Input.TexCoord0 = vec2( gl_MultiTexCoord0);
-
-    xlat_retVal = xlat_main( xlat_temp_Input);
-
-    gl_Position = vec4( xlat_retVal.Position);
-    gl_TexCoord[0] = vec4( xlat_retVal.BumpMapTexCoord, 0.0, 0.0);
-    gl_TexCoord[1] = vec4( xlat_retVal.RefractionMapTexCoord);
-    gl_TexCoord[2] = vec4( xlat_retVal.ReflectionMapTexCoord);
-    gl_TexCoord[3] = vec4( xlat_retVal.Position3D, 0.0);
-}
-
-

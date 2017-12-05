@@ -1,0 +1,16 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 04.12.2012 19:10:48
+
+newmtl Error_Material
+	Ns 10.0000
+	Ni 1.5000
+	d 0.8100
+	Tr 0.1900
+	Tf 0.8100 0.8100 0.8100 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.4647 0.4647 0.4647
+	map_Ka red.jpg
+	map_Kd red.jpg

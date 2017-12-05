@@ -230,9 +230,16 @@ int main()
 
 smgr->addCameraSceneNodeFPS();
 
-    RealisticWaterSceneNode *Water=new RealisticWaterSceneNode(smgr, 100, 200,
-    driver->getTexture("data/waterbump.png"), device->getTimer());
+const f32 width = 512.0f;
+const f32 height = 512.0f;
+stringc resourcePath;
+resourcePath="./";
 
+   // RealisticWaterSceneNode *Water=new RealisticWaterSceneNode(smgr, 100, 200,
+  //  driver->getTexture("data/waterbump.png"), device->getTimer());
+RealisticWaterSceneNode* water = new RealisticWaterSceneNode(smgr, width, height, resourcePath);
+
+smgr->getRootSceneNode()->addChild(water);
 
    while (device->run())
    {

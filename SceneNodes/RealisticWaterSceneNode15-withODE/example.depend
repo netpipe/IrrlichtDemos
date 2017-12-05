@@ -95,7 +95,7 @@
 1244517923 /home/Dev/libs/physics/ode-0.11.1/include/ode/export-dif.h
 	<ode/common.h>
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/irrlicht.h
+1494856606 /home/Dev/libs/game/Irrlicht-SVN/include/irrlicht.h
 	"IrrCompileConfig.h"
 	"aabbox3d.h"
 	"CDynamicMeshBuffer.h"
@@ -103,6 +103,7 @@
 	"CMeshBuffer.h"
 	"coreutil.h"
 	"CVertexBuffer.h"
+	"IProfiler.h"
 	"dimension2d.h"
 	"ECullingTypes.h"
 	"EDebugSceneTypes.h"
@@ -130,6 +131,7 @@
 	"IBillboardTextSceneNode.h"
 	"IBoneSceneNode.h"
 	"ICameraSceneNode.h"
+	"IContextManager.h"
 	"ICursorControl.h"
 	"IDummyTransformationSceneNode.h"
 	"IDynamicMeshBuffer.h"
@@ -164,6 +166,7 @@
 	"IGUIToolbar.h"
 	"IGUIWindow.h"
 	"IGUITreeView.h"
+	"IGUIProfiler.h"
 	"IImage.h"
 	"IImageLoader.h"
 	"IImageWriter.h"
@@ -179,6 +182,7 @@
 	"IMeshManipulator.h"
 	"IMeshSceneNode.h"
 	"IMeshWriter.h"
+	"IOctreeSceneNode.h"
 	"IColladaMeshWriter.h"
 	"IMetaTriangleSelector.h"
 	"IOSOperator.h"
@@ -189,6 +193,7 @@
 	"IReferenceCounted.h"
 	"irrArray.h"
 	"IRandomizer.h"
+	"IRenderTarget.h"
 	"IrrlichtDevice.h"
 	"irrList.h"
 	"irrMap.h"
@@ -255,17 +260,17 @@
 	"vector3d.h"
 	"SIrrCreationParameters.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/IrrCompileConfig.h
+1455454597 /home/Dev/libs/game/Irrlicht-SVN/include/IrrCompileConfig.h
 	<stdio.h>
 	<xtl.h>
 	<tchar.h>
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/aabbox3d.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/aabbox3d.h
 	"irrMath.h"
 	"plane3d.h"
 	"line3d.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/irrMath.h
+1494856605 /home/Dev/libs/game/Irrlicht-SVN/include/irrMath.h
 	"IrrCompileConfig.h"
 	"irrTypes.h"
 	<math.h>
@@ -273,36 +278,37 @@
 	<stdlib.h>
 	<limits.h>
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/irrTypes.h
+1506216577 /home/Dev/libs/game/Irrlicht-SVN/include/irrTypes.h
 	"IrrCompileConfig.h"
+	<limits.h>
 	<wchar.h>
 	<crtdbg.h>
 	"assert.h"
 	<stdlib.h>
 	<crtdbg.h>
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/plane3d.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/plane3d.h
 	"irrMath.h"
 	"vector3d.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/vector3d.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/vector3d.h
 	"irrMath.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/line3d.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/line3d.h
 	"irrTypes.h"
 	"vector3d.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/CDynamicMeshBuffer.h
+1494856606 /home/Dev/libs/game/Irrlicht-SVN/include/CDynamicMeshBuffer.h
 	"IDynamicMeshBuffer.h"
 	"CVertexBuffer.h"
 	"CIndexBuffer.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IDynamicMeshBuffer.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IDynamicMeshBuffer.h
 	"IMeshBuffer.h"
 	"IVertexBuffer.h"
 	"IIndexBuffer.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IMeshBuffer.h
+1494856607 /home/Dev/libs/game/Irrlicht-SVN/include/IMeshBuffer.h
 	"IReferenceCounted.h"
 	"SMaterial.h"
 	"aabbox3d.h"
@@ -311,29 +317,29 @@
 	"EHardwareBufferFlags.h"
 	"EPrimitiveTypes.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/IReferenceCounted.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IReferenceCounted.h
 	"irrTypes.h"
 	"leakHunter.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/leakHunter.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/leakHunter.h
 	"IrrCompileConfig.h"
 	"irrArray.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/irrArray.h
+1496717987 /home/Dev/libs/game/Irrlicht-SVN/include/irrArray.h
 	"irrTypes.h"
 	"heapsort.h"
 	"irrAllocator.h"
 	"irrMath.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/heapsort.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/heapsort.h
 	"irrTypes.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/irrAllocator.h
+1496717987 /home/Dev/libs/game/Irrlicht-SVN/include/irrAllocator.h
 	"irrTypes.h"
 	<new>
 	<memory.h>
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/SMaterial.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/SMaterial.h
 	"SColor.h"
 	"matrix4.h"
 	"irrArray.h"
@@ -342,11 +348,11 @@
 	"EMaterialFlags.h"
 	"SMaterialLayer.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/SColor.h
+1506216577 /home/Dev/libs/game/Irrlicht-SVN/include/SColor.h
 	"irrTypes.h"
 	"irrMath.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/matrix4.h
+1506216577 /home/Dev/libs/game/Irrlicht-SVN/include/matrix4.h
 	"irrMath.h"
 	"vector3d.h"
 	"vector2d.h"
@@ -355,23 +361,23 @@
 	"rect.h"
 	"irrString.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/vector2d.h
+1494856606 /home/Dev/libs/game/Irrlicht-SVN/include/vector2d.h
 	"irrMath.h"
 	"dimension2d.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/dimension2d.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/dimension2d.h
 	"irrTypes.h"
 	"irrMath.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/rect.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/rect.h
 	"irrTypes.h"
 	"dimension2d.h"
 	"position2d.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/position2d.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/position2d.h
 	"vector2d.h"
 
-1357824267 /home/Dev/libs/game/Irrlicht-SVN/include/irrString.h
+1482754352 /home/Dev/libs/game/Irrlicht-SVN/include/irrString.h
 	"irrTypes.h"
 	"irrAllocator.h"
 	"irrMath.h"
@@ -379,119 +385,120 @@
 	<string.h>
 	<stdlib.h>
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/EMaterialTypes.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/EMaterialTypes.h
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/EMaterialFlags.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/EMaterialFlags.h
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/SMaterialLayer.h
+1482754352 /home/Dev/libs/game/Irrlicht-SVN/include/SMaterialLayer.h
 	"matrix4.h"
 	"irrAllocator.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/S3DVertex.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/S3DVertex.h
 	"vector3d.h"
 	"vector2d.h"
 	"SColor.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/SVertexIndex.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/SVertexIndex.h
 	"irrTypes.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/EHardwareBufferFlags.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/EHardwareBufferFlags.h
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/EPrimitiveTypes.h
+1494856607 /home/Dev/libs/game/Irrlicht-SVN/include/EPrimitiveTypes.h
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IVertexBuffer.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IVertexBuffer.h
 	"IReferenceCounted.h"
 	"irrArray.h"
 	"S3DVertex.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IIndexBuffer.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IIndexBuffer.h
 	"IReferenceCounted.h"
 	"irrArray.h"
 	"SVertexIndex.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/CVertexBuffer.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/CVertexBuffer.h
 	"IVertexBuffer.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/CIndexBuffer.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/CIndexBuffer.h
 	"IIndexBuffer.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/CMeshBuffer.h
+1494856606 /home/Dev/libs/game/Irrlicht-SVN/include/CMeshBuffer.h
 	"irrArray.h"
 	"IMeshBuffer.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/coreutil.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/coreutil.h
 	"irrString.h"
 	"path.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/path.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/path.h
 	"irrString.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/ECullingTypes.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/ECullingTypes.h
 	"irrTypes.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/EDebugSceneTypes.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/EDebugSceneTypes.h
 
-1361941618 /home/Dev/libs/game/Irrlicht-SVN/include/EDriverFeatures.h
+1455454597 /home/Dev/libs/game/Irrlicht-SVN/include/EDriverFeatures.h
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/EDriverTypes.h
-
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/EGUIAlignment.h
-
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/EGUIElementTypes.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/EDriverTypes.h
 	"irrTypes.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/EMeshWriterEnums.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/EGUIAlignment.h
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/EGUIElementTypes.h
 	"irrTypes.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/EMessageBoxFlags.h
-
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/ESceneNodeAnimatorTypes.h
-
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/ESceneNodeTypes.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/EMeshWriterEnums.h
 	"irrTypes.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/ETerrainElements.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/EMessageBoxFlags.h
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/fast_atof.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/ESceneNodeAnimatorTypes.h
+
+1494856606 /home/Dev/libs/game/Irrlicht-SVN/include/ESceneNodeTypes.h
+	"irrTypes.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/ETerrainElements.h
+
+1494856606 /home/Dev/libs/game/Irrlicht-SVN/include/fast_atof.h
 	"irrMath.h"
 	"irrString.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IAnimatedMesh.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IAnimatedMesh.h
 	"aabbox3d.h"
 	"IMesh.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IMesh.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IMesh.h
 	"IReferenceCounted.h"
 	"SMaterial.h"
 	"EHardwareBufferFlags.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IAnimatedMeshMD2.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IAnimatedMeshMD2.h
 	"IAnimatedMesh.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/IAnimatedMeshMD3.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IAnimatedMeshMD3.h
 	"IAnimatedMesh.h"
 	"IQ3Shader.h"
 	"quaternion.h"
 	"irrpack.h"
 	"irrunpack.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/IQ3Shader.h
+1496717987 /home/Dev/libs/game/Irrlicht-SVN/include/IQ3Shader.h
 	"irrArray.h"
 	"fast_atof.h"
 	"IFileSystem.h"
 	"IVideoDriver.h"
 	"coreutil.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/IFileSystem.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IFileSystem.h
 	"IReferenceCounted.h"
 	"IXMLReader.h"
 	"IFileArchive.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IXMLReader.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IXMLReader.h
 	"IReferenceCounted.h"
 	"irrXML.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/irrXML.h
+1506216577 /home/Dev/libs/game/Irrlicht-SVN/include/irrXML.h
 	<stdio.h>
 	"IrrCompileConfig.h"
 	<irrXML.h>
@@ -500,19 +507,19 @@
 	<irrXML.h>
 	<irrXML.h>
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IFileArchive.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IFileArchive.h
 	"IReadFile.h"
 	"IFileList.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/IReadFile.h
+1506216577 /home/Dev/libs/game/Irrlicht-SVN/include/IReadFile.h
 	"IReferenceCounted.h"
 	"coreutil.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IFileList.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IFileList.h
 	"IReferenceCounted.h"
 	"path.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/IVideoDriver.h
+1506216577 /home/Dev/libs/game/Irrlicht-SVN/include/IVideoDriver.h
 	"rect.h"
 	"SColor.h"
 	"ITexture.h"
@@ -521,14 +528,14 @@
 	"plane3d.h"
 	"dimension2d.h"
 	"position2d.h"
-	"SMaterial.h"
 	"IMeshBuffer.h"
 	"triangle3d.h"
 	"EDriverTypes.h"
 	"EDriverFeatures.h"
 	"SExposedVideoData.h"
+	"SOverrideMaterial.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/ITexture.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/ITexture.h
 	"IReferenceCounted.h"
 	"IImage.h"
 	"dimension2d.h"
@@ -536,37 +543,39 @@
 	"path.h"
 	"matrix4.h"
 
-1361941618 /home/Dev/libs/game/Irrlicht-SVN/include/IImage.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IImage.h
 	"IReferenceCounted.h"
 	"position2d.h"
 	"rect.h"
 	"SColor.h"
+	"irrAllocator.h"
+	<string.h>
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/triangle3d.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/triangle3d.h
 	"vector3d.h"
 	"line3d.h"
 	"plane3d.h"
 	"aabbox3d.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/SExposedVideoData.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/SExposedVideoData.h
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/quaternion.h
+1494856606 /home/Dev/libs/game/Irrlicht-SVN/include/quaternion.h
 	"irrTypes.h"
 	"irrMath.h"
 	"matrix4.h"
 	"vector3d.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/irrpack.h
+1445553015 /home/Dev/libs/game/Irrlicht-SVN/include/irrpack.h
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/irrunpack.h
+1445553015 /home/Dev/libs/game/Irrlicht-SVN/include/irrunpack.h
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IAnimatedMeshSceneNode.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IAnimatedMeshSceneNode.h
 	"ISceneNode.h"
 	"IBoneSceneNode.h"
 	"IAnimatedMeshMD2.h"
 	"IAnimatedMeshMD3.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneNode.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneNode.h
 	"IAttributeExchangingObject.h"
 	"ESceneNodeTypes.h"
 	"ECullingTypes.h"
@@ -580,39 +589,41 @@
 	"irrList.h"
 	"IAttributes.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IAttributeExchangingObject.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IAttributeExchangingObject.h
 	"IReferenceCounted.h"
 
-1369199943 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneNodeAnimator.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneNodeAnimator.h
 	"IReferenceCounted.h"
 	"vector3d.h"
 	"ESceneNodeAnimatorTypes.h"
 	"IAttributeExchangingObject.h"
+	"IAttributes.h"
 	"IEventReceiver.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/IEventReceiver.h
+1494856606 /home/Dev/libs/game/Irrlicht-SVN/include/IEventReceiver.h
 	"ILogger.h"
 	"Keycodes.h"
 	"irrString.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/ILogger.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/ILogger.h
 	"IReferenceCounted.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/Keycodes.h
+1494856606 /home/Dev/libs/game/Irrlicht-SVN/include/Keycodes.h
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/ITriangleSelector.h
+1496717987 /home/Dev/libs/game/Irrlicht-SVN/include/ITriangleSelector.h
 	"IReferenceCounted.h"
 	"triangle3d.h"
 	"aabbox3d.h"
 	"matrix4.h"
 	"line3d.h"
+	"irrArray.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/irrList.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/irrList.h
 	"irrTypes.h"
 	"irrAllocator.h"
 	"irrMath.h"
 
-1357708572 /home/Dev/libs/game/Irrlicht-SVN/include/IAttributes.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IAttributes.h
 	"IReferenceCounted.h"
 	"SColor.h"
 	"vector3d.h"
@@ -635,51 +646,51 @@
 	"EAttributes.h"
 	"path.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/line2d.h
+1494856607 /home/Dev/libs/game/Irrlicht-SVN/include/line2d.h
 	"irrTypes.h"
 	"vector2d.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/EAttributes.h
+1433162418 /home/Dev/libs/game/Irrlicht-SVN/include/EAttributes.h
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IBoneSceneNode.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IBoneSceneNode.h
 	"ISceneNode.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IBillboardSceneNode.h
+1494856606 /home/Dev/libs/game/Irrlicht-SVN/include/IBillboardSceneNode.h
 	"ISceneNode.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IBillboardTextSceneNode.h
+1494856607 /home/Dev/libs/game/Irrlicht-SVN/include/IBillboardTextSceneNode.h
 	"IBillboardSceneNode.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/ICameraSceneNode.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/ICameraSceneNode.h
 	"ISceneNode.h"
 	"IEventReceiver.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/ICursorControl.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/ICursorControl.h
 	"IReferenceCounted.h"
 	"position2d.h"
 	"rect.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IDummyTransformationSceneNode.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IDummyTransformationSceneNode.h
 	"ISceneNode.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IGeometryCreator.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGeometryCreator.h
 	"IReferenceCounted.h"
 	"IMesh.h"
 	"IImage.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IGPUProgrammingServices.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IGPUProgrammingServices.h
 	"EShaderTypes.h"
 	"EMaterialTypes.h"
 	"EPrimitiveTypes.h"
 	"path.h"
 
-1329805111 /home/Dev/libs/game/Irrlicht-SVN/include/EShaderTypes.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/EShaderTypes.h
 	"irrTypes.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIButton.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIButton.h
 	"IGUIElement.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIElement.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIElement.h
 	"IAttributeExchangingObject.h"
 	"irrList.h"
 	"rect.h"
@@ -689,147 +700,148 @@
 	"EGUIAlignment.h"
 	"IAttributes.h"
 
-1357708572 /home/Dev/libs/game/Irrlicht-SVN/include/IGUICheckBox.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGUICheckBox.h
 	"IGUIElement.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIColorSelectDialog.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIColorSelectDialog.h
 	"IGUIElement.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIComboBox.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIComboBox.h
 	"IGUIElement.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIContextMenu.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIContextMenu.h
 	"IGUIElement.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIEditBox.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIEditBox.h
 	"IGUIElement.h"
 	"SColor.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIElementFactory.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIElementFactory.h
 	"IReferenceCounted.h"
 	"EGUIElementTypes.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIEnvironment.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIEnvironment.h
 	"IReferenceCounted.h"
 	"IGUISkin.h"
 	"rect.h"
 	"EMessageBoxFlags.h"
+	"EFocusFlags.h"
 	"IEventReceiver.h"
 	"IXMLReader.h"
 	"path.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IGUISkin.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGUISkin.h
 	"IAttributeExchangingObject.h"
 	"EGUIAlignment.h"
 	"SColor.h"
 	"rect.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIFileOpenDialog.h
+1455454597 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIFileOpenDialog.h
 	"IGUIElement.h"
 	"path.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIFont.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIFont.h
 	"IReferenceCounted.h"
 	"SColor.h"
 	"rect.h"
 	"irrString.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIFontBitmap.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIFontBitmap.h
 	"IGUIFont.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIImage.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIImage.h
 	"IGUIElement.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIInOutFader.h
-	"IGUIElement.h"
-	"SColor.h"
-
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIListBox.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIInOutFader.h
 	"IGUIElement.h"
 	"SColor.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIMeshViewer.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIListBox.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIMeshViewer.h
 	"IGUIElement.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIScrollBar.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIScrollBar.h
 	"IGUIElement.h"
 
-1357708572 /home/Dev/libs/game/Irrlicht-SVN/include/IGUISpinBox.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGUISpinBox.h
 	"IGUIElement.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IGUISpriteBank.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IGUISpriteBank.h
 	"IReferenceCounted.h"
 	"irrArray.h"
 	"SColor.h"
 	"rect.h"
 
-1357708572 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIStaticText.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIStaticText.h
 	"IGUIElement.h"
 	"SColor.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IGUITabControl.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IGUITabControl.h
 	"IGUIElement.h"
-	"SColor.h"
-	"IGUISkin.h"
-
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IGUITable.h
-	"IGUIElement.h"
-	"irrTypes.h"
 	"SColor.h"
 	"IGUISkin.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIToolbar.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IGUITable.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIToolbar.h
 	"IGUIElement.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIWindow.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIWindow.h
 	"IGUIElement.h"
 	"EMessageBoxFlags.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/IGUITreeView.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IGUITreeView.h
 	"IGUIElement.h"
 	"IGUIImageList.h"
 	"irrTypes.h"
 
-1329794808 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIImageList.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIImageList.h
 	"IGUIElement.h"
 	"rect.h"
 	"irrTypes.h"
 
-1361941618 /home/Dev/libs/game/Irrlicht-SVN/include/IImageLoader.h
+1458226655 /home/Dev/libs/game/Irrlicht-SVN/include/IImageLoader.h
 	"IReferenceCounted.h"
 	"IImage.h"
 	"path.h"
+	"irrArray.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IImageWriter.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IImageWriter.h
 	"IReferenceCounted.h"
 	"irrString.h"
 	"coreutil.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/ILightSceneNode.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/ILightSceneNode.h
 	"ISceneNode.h"
 	"SLight.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/SLight.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/SLight.h
 	"SColor.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IMaterialRenderer.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IMaterialRenderer.h
 	"IReferenceCounted.h"
 	"SMaterial.h"
 	"S3DVertex.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IMaterialRendererServices.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IMaterialRendererServices.h
 	"SMaterial.h"
 	"S3DVertex.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/IMeshCache.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IMeshCache.h
 	"IReferenceCounted.h"
 	"path.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IMeshLoader.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IMeshLoader.h
 	"IReferenceCounted.h"
 	"path.h"
+	"IMeshTextureLoader.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/IMeshManipulator.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IMeshManipulator.h
 	"IReferenceCounted.h"
 	"vector3d.h"
 	"aabbox3d.h"
@@ -838,31 +850,31 @@
 	"IMeshBuffer.h"
 	"SVertexManipulator.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/SVertexManipulator.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/SVertexManipulator.h
 	"S3DVertex.h"
 	"SColor.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IMeshSceneNode.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IMeshSceneNode.h
 	"ISceneNode.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IMeshWriter.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IMeshWriter.h
 	"IReferenceCounted.h"
 	"EMeshWriterEnums.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/IColladaMeshWriter.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IColladaMeshWriter.h
 	"IMeshWriter.h"
 	"ISceneNode.h"
 	"IAnimatedMesh.h"
 	"SMaterial.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IMetaTriangleSelector.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IMetaTriangleSelector.h
 	"ITriangleSelector.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IOSOperator.h
+1494856607 /home/Dev/libs/game/Irrlicht-SVN/include/IOSOperator.h
 	"IReferenceCounted.h"
 	"irrString.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleSystemSceneNode.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleSystemSceneNode.h
 	"ISceneNode.h"
 	"IParticleAnimatedMeshSceneNodeEmitter.h"
 	"IParticleBoxEmitter.h"
@@ -876,60 +888,60 @@
 	"IParticleRotationAffector.h"
 	"dimension2d.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleAnimatedMeshSceneNodeEmitter.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleAnimatedMeshSceneNodeEmitter.h
 	"IParticleEmitter.h"
 	"IAnimatedMeshSceneNode.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleEmitter.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleEmitter.h
 	"IAttributeExchangingObject.h"
 	"SParticle.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/SParticle.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/SParticle.h
 	"vector3d.h"
 	"dimension2d.h"
 	"SColor.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleBoxEmitter.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleBoxEmitter.h
 	"IParticleEmitter.h"
 	"aabbox3d.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleCylinderEmitter.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleCylinderEmitter.h
 	"IParticleEmitter.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleMeshEmitter.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleMeshEmitter.h
 	"IParticleEmitter.h"
 	"IMesh.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleRingEmitter.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleRingEmitter.h
 	"IParticleEmitter.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleSphereEmitter.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleSphereEmitter.h
 	"IParticleEmitter.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleAttractionAffector.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleAttractionAffector.h
 	"IParticleAffector.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleAffector.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleAffector.h
 	"IAttributeExchangingObject.h"
 	"SParticle.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleFadeOutAffector.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleFadeOutAffector.h
 	"IParticleAffector.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleGravityAffector.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleGravityAffector.h
 	"IParticleAffector.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleRotationAffector.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleRotationAffector.h
 	"IParticleAffector.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IQ3LevelMesh.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IQ3LevelMesh.h
 	"IAnimatedMesh.h"
 	"IQ3Shader.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IRandomizer.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IRandomizer.h
 	"IReferenceCounted.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/IrrlichtDevice.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IrrlichtDevice.h
 	"IReferenceCounted.h"
 	"dimension2d.h"
 	"IVideoDriver.h"
@@ -941,31 +953,31 @@
 	"ITimer.h"
 	"IOSOperator.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/EDeviceTypes.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/EDeviceTypes.h
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IVideoModeList.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IVideoModeList.h
 	"IReferenceCounted.h"
 	"dimension2d.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/ITimer.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/ITimer.h
 	"IReferenceCounted.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/irrMap.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/irrMap.h
 	"irrTypes.h"
 	"irrMath.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneCollisionManager.h
+1482754352 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneCollisionManager.h
 	"IReferenceCounted.h"
 	"vector3d.h"
 	"triangle3d.h"
 	"position2d.h"
 	"line3d.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneLoader.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneLoader.h
 	"IReferenceCounted.h"
 	"path.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneManager.h
+1506216577 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneManager.h
 	"IReferenceCounted.h"
 	"irrArray.h"
 	"irrString.h"
@@ -981,107 +993,107 @@
 	"IGeometryCreator.h"
 	"ISkinnedMesh.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/SceneParameters.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/SceneParameters.h
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/ISkinnedMesh.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/ISkinnedMesh.h
 	"irrArray.h"
 	"IBoneSceneNode.h"
 	"IAnimatedMesh.h"
 	"SSkinMeshBuffer.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/SSkinMeshBuffer.h
+1494856606 /home/Dev/libs/game/Irrlicht-SVN/include/SSkinMeshBuffer.h
 	"IMeshBuffer.h"
 	"S3DVertex.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneNodeAnimatorCameraFPS.h
+1494856605 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneNodeAnimatorCameraFPS.h
 	"ISceneNodeAnimator.h"
 	"IEventReceiver.h"
 	"irrArray.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneNodeAnimatorCameraMaya.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneNodeAnimatorCameraMaya.h
 	"ISceneNodeAnimator.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneNodeAnimatorCollisionResponse.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneNodeAnimatorCollisionResponse.h
 	"ISceneNode.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneNodeAnimatorFactory.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneNodeAnimatorFactory.h
 	"IReferenceCounted.h"
 	"ESceneNodeAnimatorTypes.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneNodeFactory.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneNodeFactory.h
 	"IReferenceCounted.h"
 	"ESceneNodeTypes.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneUserDataSerializer.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneUserDataSerializer.h
 	"IReferenceCounted.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IShaderConstantSetCallBack.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IShaderConstantSetCallBack.h
 	"IReferenceCounted.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IShadowVolumeSceneNode.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IShadowVolumeSceneNode.h
 	"ISceneNode.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/ITerrainSceneNode.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/ITerrainSceneNode.h
 	"ETerrainElements.h"
 	"ISceneNode.h"
 	"IDynamicMeshBuffer.h"
 	"irrArray.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/ITextSceneNode.h
+1494856607 /home/Dev/libs/game/Irrlicht-SVN/include/ITextSceneNode.h
 	"ISceneNode.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/IVolumeLightSceneNode.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IVolumeLightSceneNode.h
 	"ISceneNode.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/IWriteFile.h
+1506216577 /home/Dev/libs/game/Irrlicht-SVN/include/IWriteFile.h
 	"IReferenceCounted.h"
 	"path.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/IXMLWriter.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IXMLWriter.h
 	"IReferenceCounted.h"
 	"irrArray.h"
 	"irrString.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/ILightManager.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/ILightManager.h
 	"IReferenceCounted.h"
 	"irrArray.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/SAnimatedMesh.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/SAnimatedMesh.h
 	"IAnimatedMesh.h"
 	"IMesh.h"
 	"aabbox3d.h"
 	"irrArray.h"
 
-1366442910 /home/Dev/libs/game/Irrlicht-SVN/include/SIrrCreationParameters.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/SIrrCreationParameters.h
 	"EDriverTypes.h"
 	"EDeviceTypes.h"
 	"dimension2d.h"
 	"ILogger.h"
 	"position2d.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/SKeyMap.h
+1494856606 /home/Dev/libs/game/Irrlicht-SVN/include/SKeyMap.h
 	"Keycodes.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/SMesh.h
+1482754352 /home/Dev/libs/game/Irrlicht-SVN/include/SMesh.h
 	"IMesh.h"
 	"IMeshBuffer.h"
 	"aabbox3d.h"
 	"irrArray.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/SMeshBuffer.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/SMeshBuffer.h
 	"CMeshBuffer.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/SMeshBufferLightMap.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/SMeshBufferLightMap.h
 	"CMeshBuffer.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/SMeshBufferTangents.h
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/SMeshBufferTangents.h
 	"CMeshBuffer.h"
 
-1357708572 /home/Dev/libs/game/Irrlicht-SVN/include/SSharedMeshBuffer.h
+1494856607 /home/Dev/libs/game/Irrlicht-SVN/include/SSharedMeshBuffer.h
 	"irrArray.h"
 	"IMeshBuffer.h"
 
-1356244994 /home/Dev/libs/game/Irrlicht-SVN/include/SViewFrustum.h
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/SViewFrustum.h
 	"plane3d.h"
 	"vector3d.h"
 	"line3d.h"
@@ -1094,5 +1106,246 @@
 	<irrlicht.h>
 
 1362077373 source:/home/Dev/agnostic/Stuff/Demos/SceneNodes/RealisticWaterSceneNode15-withODE/RealisticWater.cpp
+	"RealisticWater.h"
+
+1512383203 source:/mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/SceneNodes/RealisticWaterSceneNode15-withODE/main.cpp
+	<ode/ode.h>
+	<irrlicht.h>
+	"RealisticWater.h"
+
+1433162418 /home/Dev/libs/game/Irrlicht-SVN/include/IProfiler.h
+	"IrrCompileConfig.h"
+	"irrString.h"
+	"irrArray.h"
+	"ITimer.h"
+	<limits.h>
+
+1506216577 /home/Dev/libs/game/Irrlicht-SVN/include/SOverrideMaterial.h
+	"SMaterial.h"
+
+1455454597 /home/Dev/libs/game/Irrlicht-SVN/include/IContextManager.h
+	"SExposedVideoData.h"
+	"SIrrCreationParameters.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/EFocusFlags.h
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIProfiler.h
+	"IGUIElement.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IMeshTextureLoader.h
+	"path.h"
+	"IReferenceCounted.h"
+
+1494856606 /home/Dev/libs/game/Irrlicht-SVN/include/IOctreeSceneNode.h
+	"IMeshSceneNode.h"
+
+1506216577 /home/Dev/libs/game/Irrlicht-SVN/include/IRenderTarget.h
+	"IReferenceCounted.h"
+	"EDriverTypes.h"
+	"irrArray.h"
+
+1512382646 /mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/SceneNodes/RealisticWaterSceneNode15-withODE/RealisticWater.h
+	<irrlicht.h>
+
+1244517923 /home/Dev/libs/physics/ODE/ode-0.11.1/include/ode/ode.h
+	<ode/odeconfig.h>
+	<ode/compatibility.h>
+	<ode/common.h>
+	<ode/odeinit.h>
+	<ode/contact.h>
+	<ode/error.h>
+	<ode/memory.h>
+	<ode/odemath.h>
+	<ode/matrix.h>
+	<ode/timer.h>
+	<ode/rotation.h>
+	<ode/mass.h>
+	<ode/misc.h>
+	<ode/objects.h>
+	<ode/odecpp.h>
+	<ode/collision_space.h>
+	<ode/collision.h>
+	<ode/odecpp_collision.h>
+	<ode/export-dif.h>
+
+1244517923 /home/Dev/libs/physics/ODE/ode-0.11.1/include/ode/odeconfig.h
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	<math.h>
+	<string.h>
+	<float.h>
+
+1244517923 /home/Dev/libs/physics/ODE/ode-0.11.1/include/ode/compatibility.h
+
+1244517923 /home/Dev/libs/physics/ODE/ode-0.11.1/include/ode/common.h
+	<ode/odeconfig.h>
+	<ode/error.h>
+	<math.h>
+
+1244517923 /home/Dev/libs/physics/ODE/ode-0.11.1/include/ode/error.h
+	<ode/odeconfig.h>
+
+1244517923 /home/Dev/libs/physics/ODE/ode-0.11.1/include/ode/odeinit.h
+	<ode/common.h>
+
+1244517923 /home/Dev/libs/physics/ODE/ode-0.11.1/include/ode/contact.h
+	<ode/common.h>
+
+1244517923 /home/Dev/libs/physics/ODE/ode-0.11.1/include/ode/memory.h
+	<ode/odeconfig.h>
+
+1244517923 /home/Dev/libs/physics/ODE/ode-0.11.1/include/ode/odemath.h
+	<ode/common.h>
+
+1244517923 /home/Dev/libs/physics/ODE/ode-0.11.1/include/ode/matrix.h
+	<ode/common.h>
+
+1244517923 /home/Dev/libs/physics/ODE/ode-0.11.1/include/ode/timer.h
+	<ode/odeconfig.h>
+
+1244517923 /home/Dev/libs/physics/ODE/ode-0.11.1/include/ode/rotation.h
+	<ode/common.h>
+	<ode/compatibility.h>
+
+1244517923 /home/Dev/libs/physics/ODE/ode-0.11.1/include/ode/mass.h
+	<ode/common.h>
+
+1244517923 /home/Dev/libs/physics/ODE/ode-0.11.1/include/ode/misc.h
+	<ode/common.h>
+
+1244517923 /home/Dev/libs/physics/ODE/ode-0.11.1/include/ode/objects.h
+	<ode/common.h>
+	<ode/mass.h>
+	<ode/contact.h>
+
+1244517923 /home/Dev/libs/physics/ODE/ode-0.11.1/include/ode/odecpp.h
+
+1244517923 /home/Dev/libs/physics/ODE/ode-0.11.1/include/ode/collision_space.h
+	<ode/common.h>
+
+1244517923 /home/Dev/libs/physics/ODE/ode-0.11.1/include/ode/collision.h
+	<ode/common.h>
+	<ode/collision_space.h>
+	<ode/contact.h>
+	<ode/odeinit.h>
+	"collision_trimesh.h"
+
+1244517923 /home/Dev/libs/physics/ODE/ode-0.11.1/include/ode/collision_trimesh.h
+
+1244517923 /home/Dev/libs/physics/ODE/ode-0.11.1/include/ode/odecpp_collision.h
+
+1244517923 /home/Dev/libs/physics/ODE/ode-0.11.1/include/ode/export-dif.h
+	<ode/common.h>
+
+1376934483 /home/Dev/libs/physics/ODE/ode-0.13/include/ode/ode.h
+	<ode/odeconfig.h>
+	<ode/compatibility.h>
+	<ode/common.h>
+	<ode/odeinit.h>
+	<ode/contact.h>
+	<ode/error.h>
+	<ode/memory.h>
+	<ode/odemath.h>
+	<ode/matrix.h>
+	<ode/timer.h>
+	<ode/rotation.h>
+	<ode/mass.h>
+	<ode/misc.h>
+	<ode/objects.h>
+	<ode/collision_space.h>
+	<ode/collision.h>
+	<ode/threading.h>
+	<ode/threading_impl.h>
+	<ode/export-dif.h>
+	<ode/odecpp.h>
+	<ode/odecpp_collision.h>
+
+1376934483 /home/Dev/libs/physics/ODE/ode-0.13/include/ode/odeconfig.h
+	<stddef.h>
+	<limits.h>
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	<math.h>
+	<string.h>
+	<float.h>
+	<ode/precision.h>
+
+1512383521 /home/Dev/libs/physics/ODE/ode-0.13/include/ode/precision.h
+
+1376934483 /home/Dev/libs/physics/ODE/ode-0.13/include/ode/compatibility.h
+
+1391390908 /home/Dev/libs/physics/ODE/ode-0.13/include/ode/common.h
+	<ode/odeconfig.h>
+	<ode/error.h>
+
+1376934483 /home/Dev/libs/physics/ODE/ode-0.13/include/ode/error.h
+	<ode/odeconfig.h>
+
+1376934483 /home/Dev/libs/physics/ODE/ode-0.13/include/ode/odeinit.h
+	<ode/common.h>
+
+1387570372 /home/Dev/libs/physics/ODE/ode-0.13/include/ode/contact.h
+	<ode/common.h>
+
+1376934483 /home/Dev/libs/physics/ODE/ode-0.13/include/ode/memory.h
+	<ode/odeconfig.h>
+
+1391220582 /home/Dev/libs/physics/ODE/ode-0.13/include/ode/odemath.h
+	<ode/common.h>
+	<ode/odemath_legacy.h>
+
+1376934483 /home/Dev/libs/physics/ODE/ode-0.13/include/ode/odemath_legacy.h
+
+1384832607 /home/Dev/libs/physics/ODE/ode-0.13/include/ode/matrix.h
+	<ode/common.h>
+
+1376934483 /home/Dev/libs/physics/ODE/ode-0.13/include/ode/timer.h
+	<ode/odeconfig.h>
+
+1376934483 /home/Dev/libs/physics/ODE/ode-0.13/include/ode/rotation.h
+	<ode/common.h>
+	<ode/compatibility.h>
+
+1376934483 /home/Dev/libs/physics/ODE/ode-0.13/include/ode/mass.h
+	<ode/common.h>
+
+1376934483 /home/Dev/libs/physics/ODE/ode-0.13/include/ode/misc.h
+	<ode/common.h>
+
+1391386758 /home/Dev/libs/physics/ODE/ode-0.13/include/ode/objects.h
+	<ode/common.h>
+	<ode/mass.h>
+	<ode/contact.h>
+	<ode/threading.h>
+
+1376934483 /home/Dev/libs/physics/ODE/ode-0.13/include/ode/threading.h
+	<ode/odeconfig.h>
+	<time.h>
+
+1376934483 /home/Dev/libs/physics/ODE/ode-0.13/include/ode/collision_space.h
+	<ode/common.h>
+
+1376934483 /home/Dev/libs/physics/ODE/ode-0.13/include/ode/collision.h
+	<ode/common.h>
+	<ode/collision_space.h>
+	<ode/contact.h>
+	"collision_trimesh.h"
+
+1376934483 /home/Dev/libs/physics/ODE/ode-0.13/include/ode/collision_trimesh.h
+
+1376934483 /home/Dev/libs/physics/ODE/ode-0.13/include/ode/threading_impl.h
+	<ode/odeconfig.h>
+	<ode/threading.h>
+
+1376934483 /home/Dev/libs/physics/ODE/ode-0.13/include/ode/export-dif.h
+	<ode/common.h>
+
+1376934483 /home/Dev/libs/physics/ODE/ode-0.13/include/ode/odecpp.h
+
+1376934483 /home/Dev/libs/physics/ODE/ode-0.13/include/ode/odecpp_collision.h
+
+1512382646 source:/mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/SceneNodes/RealisticWaterSceneNode15-withODE/RealisticWater.cpp
 	"RealisticWater.h"
 

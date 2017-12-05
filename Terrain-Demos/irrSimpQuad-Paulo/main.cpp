@@ -432,7 +432,7 @@ public:
 int main()
 {
 
-	IrrlichtDevice *device =createDevice(video::EDT_OPENGL, core::dimension2d<s32>(640, 480), 16, false);
+	IrrlichtDevice *device =createDevice(video::EDT_OPENGL, core::dimension2du(640, 480), 16, false);
 	device->setWindowCaption(L"QuadTree + SIMPLEX - Irrlicht Engine Demo");
 	video::IVideoDriver* driver = device->getVideoDriver();
 	scene::ISceneManager* smgr = device->getSceneManager();

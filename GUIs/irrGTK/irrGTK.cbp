@@ -50,7 +50,7 @@
 			<Add option="-I/usr/include/pixman-1" />
 			<Add option="`pkg-config gtk+-2.0 --cflags`" />
 			<Add option="`wx-config --cflags --gl-libs`" />
-			<Add directory="/home/Dev/libs/Irrlicht/include" />
+			<Add directory="/home/Dev/libs/game/irrlicht/Irrlicht-SVN/include" />
 			<Add directory="/usr/include/gtk-2.0" />
 			<Add directory="/usr/include/libpng12" />
 			<Add directory="/usr/include/glib-2.0" />
@@ -67,12 +67,13 @@
 			<Add library="GL" />
 			<Add library="X11" />
 			<Add library="Xxf86vm" />
-			<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
+			<Add directory="/home/Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux" />
 		</Linker>
 		<Unit filename="irrGTK.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />
+			<envvars />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
