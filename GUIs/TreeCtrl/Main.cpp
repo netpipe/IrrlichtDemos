@@ -8,7 +8,7 @@ using namespace irr;
 s32 main()
 {
 	// create device and exit if creation failed
-	IrrlichtDevice *device = createDevice(video::EDT_OPENGL, core::dimension2d<s32>(640, 480));
+	IrrlichtDevice *device = createDevice(video::EDT_OPENGL, core::dimension2du(640, 480));
 	video::IVideoDriver *video = device->getVideoDriver();
 	gui::IGUIEnvironment *gui = device->getGUIEnvironment();
 	gui::IGUISkin *skin = gui->getSkin();

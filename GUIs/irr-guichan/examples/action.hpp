@@ -11,7 +11,7 @@ namespace action
 {
     gcn::Container* top;
     gcn::ImageFont* font;
-    gcn::Button* button1; 
+    gcn::Button* button1;
     gcn::Button* button2;
     gcn::Label* label1;
     gcn::Label* label2;
@@ -79,7 +79,7 @@ namespace action
         globals::gui->setTop(top);
 
         // Now we load the font used in this example.
-        font = new gcn::ImageFont("fixedfont.bmp", " abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789");
+        font = new gcn::ImageFont("media/fixedfont.bmp", " abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789");
         // Widgets may have a global font so we don't need to pass the
         // font object to every created widget. The global font is static.
         gcn::Widget::setGlobalFont(font);

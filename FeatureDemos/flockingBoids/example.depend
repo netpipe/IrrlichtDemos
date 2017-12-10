@@ -1037,3 +1037,154 @@
 	<ISceneManager.h>
 	<ICameraSceneNode.h>
 
+1362077132 source:/mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/core/Application.cpp
+	"Application.h"
+	<irrlicht.h>
+	<irrKlang.h>
+	"Configuration.h"
+	"Demo.h"
+	"../states/GlobalState.h"
+	"../states/IntroState.h"
+	"../states/RunningState.h"
+
+1362077132 /mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/core/Application.h
+
+1362077132 /mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/core/Configuration.h
+	<irrString.h>
+	<SIrrCreationParameters.h>
+
+1362077132 /mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/core/Demo.h
+	<IrrlichtDevice.h>
+	<IMetaTriangleSelector.h>
+	"statemanager/StateManager.h"
+
+1362077132 /mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/core/statemanager/StateManager.h
+	"State.h"
+
+1362077132 /mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/core/statemanager/State.h
+
+1362077132 /mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/states/GlobalState.h
+
+1362077132 /mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/states/IntroState.h
+
+1362077132 /mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/states/RunningState.h
+	"../scene/grass/CGrassGeneratorNode.h"
+	"../scene/grass/CWindGenerator.h"
+	"../scene/TeleporterSceneNode.h"
+	"../scene/Forest.h"
+	"../scene/lensflare/CLensFlareSceneNode.h"
+	"../gui/Compass.h"
+	"../Flock.h"
+
+1362077133 /mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/scene/grass/CGrassGeneratorNode.h
+	"CGrassPatchSceneNode.h"
+
+1362077133 /mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/scene/grass/CGrassPatchSceneNode.h
+	"IWindGenerator.h"
+
+1362077133 /mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/scene/grass/IWindGenerator.h
+	<irrlicht.h>
+	<cstdlib>
+
+1362077133 /mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/scene/grass/CWindGenerator.h
+	"IWindGenerator.h"
+
+1362077133 /mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/scene/TeleporterSceneNode.h
+	<ISceneNode.h>
+
+1362077134 /mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/scene/Forest.h
+	<irrlicht.h>
+
+1362077134 /mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/scene/lensflare/CLensFlareSceneNode.h
+	"ILensFlareSceneNode.h"
+	"S3DVertex.h"
+
+1362077134 /mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/scene/lensflare/ILensFlareSceneNode.h
+	"ISceneNode.h"
+
+1362077132 /mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/gui/Compass.h
+	<IGUIElement.h>
+	<SMeshBuffer.h>
+
+1362077132 /mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/Flock.h
+	<irrArray.h>
+	<vector3d.h>
+
+1362077132 source:/mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/core/Configuration.cpp
+	"Configuration.h"
+	<irrlicht.h>
+
+1362077132 source:/mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/core/Demo.cpp
+	"Demo.h"
+	"ISceneManager.h"
+	<IGUIEnvironment.h>
+	<irrKlang.h>
+
+1362054619 source:/mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/Flock.cpp
+	"Flock.h"
+	<ISceneManager.h>
+	"core/Configuration.h"
+	"core/Demo.h"
+	"scene/BoidSceneNode.h"
+
+1362077134 /mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/scene/BoidSceneNode.h
+	<IMeshSceneNode.h>
+	<irrKlang.h>
+
+1362077132 source:/mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/gui/Compass.cpp
+	"Compass.h"
+	<IGUIEnvironment.h>
+	<IVideoDriver.h>
+
+1362077132 source:/mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/main.cpp
+	"core/Application.h"
+
+1362077134 source:/mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/scene/BoidSceneNode.cpp
+	"BoidSceneNode.h"
+	<ISceneManager.h>
+	<IVideoDriver.h>
+	<SMesh.h>
+	<SMeshBuffer.h>
+	<ISceneCollisionManager.h>
+	<IParticleSystemSceneNode.h>
+	<IMeshManipulator.h>
+
+1362077134 source:/mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/scene/Forest.cpp
+	"Forest.h"
+
+1362077133 source:/mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/scene/grass/CGrassGeneratorNode.cpp
+	<iostream>
+	"CGrassGeneratorNode.h"
+	"../../core/Demo.h"
+
+1362077133 source:/mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/scene/grass/CGrassPatchSceneNode.cpp
+	"CGrassPatchSceneNode.h"
+
+1362077134 source:/mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/scene/lensflare/CLensFlareSceneNode.cpp
+	"CLensFlareSceneNode.h"
+	"ISceneManager.h"
+	"IVideoDriver.h"
+	"ISceneCollisionManager.h"
+	"ICameraSceneNode.h"
+
+1362077134 source:/mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/scene/TeleporterSceneNode.cpp
+	"TeleporterSceneNode.h"
+	<ISceneManager.h>
+	<IVideoDriver.h>
+	<IBillboardTextSceneNode.h>
+	<irrKlang.h>
+	"../core/Configuration.h"
+	"../core/Demo.h"
+	"WhirlSceneNode.h"
+	<ISceneNodeAnimatorCollisionResponse.h>
+
+1362077133 /mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/scene/WhirlSceneNode.h
+	<ISceneNode.h>
+	<S3DVertex.h>
+
+1362077134 source:/mnt/wwn-0x5000c5008b2f8da9-part1/tecan/games/Luna/IrrlichtDemos-git/FeatureDemos/flockingBoids/scene/WhirlSceneNode.cpp
+	"WhirlSceneNode.h"
+	<IVideoDriver.h>
+	<ISceneManager.h>
+	<ICameraSceneNode.h>
+

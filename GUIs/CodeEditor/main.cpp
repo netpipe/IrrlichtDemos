@@ -303,7 +303,7 @@ int main()
 	SAppContext context;
 	context.device = device;
 	context.codeEditor = codeEditor;
-//	context.menu = menu;
+	context.menu = menu;
 
 
 	// Then create the event receiver, giving it that context structure.

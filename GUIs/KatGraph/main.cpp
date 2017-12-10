@@ -15,7 +15,7 @@
 
 int main()
 {
-  IrrlichtDevice* device = createDevice(EDT_OPENGL, dimension2d<s32>(280,300));
+  IrrlichtDevice* device = createDevice(EDT_OPENGL, dimension2du(280,300));
   if (!device) return 1;
 
   device->setWindowCaption(L"Graph class");

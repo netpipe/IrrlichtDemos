@@ -1,4 +1,62 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="All" />
+	<File name="states/RunningState.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="241" />
+		</Cursor>
+		<Folding>
+			<Collapse line="12" />
+			<Collapse line="80" />
+			<Collapse line="85" />
+			<Collapse line="161" />
+			<Collapse line="429" />
+		</Folding>
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="scene/TeleporterSceneNode.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="30" />
+		</Cursor>
+	</File>
+	<File name="core/Demo.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="15" />
+		</Cursor>
+		<Folding>
+			<Collapse line="30" />
+			<Collapse line="41" />
+			<Collapse line="50" />
+			<Collapse line="55" />
+			<Collapse line="64" />
+			<Collapse line="76" />
+			<Collapse line="98" />
+			<Collapse line="103" />
+		</Folding>
+	</File>
+	<File name="core/Application.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="54" />
+		</Cursor>
+		<Folding>
+			<Collapse line="17" />
+			<Collapse line="22" />
+		</Folding>
+	</File>
+	<File name="Flock.cpp" open="1" top="1" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="18" />
+			<Collapse line="37" />
+			<Collapse line="100" />
+		</Folding>
+	</File>
+	<EditorTabsLayout layout="76ba9d405a2ce6c9003ce7e500000002=0;Boids - Flocking Demo:main.cpp,1;Boids - Flocking Demo:states/RunningState.h,2;Boids - Flocking Demo:core/Application.cpp,3;Boids - Flocking Demo:core/Demo.cpp,4;Boids - Flocking Demo:scene/TeleporterSceneNode.cpp,*5;Boids - Flocking Demo:Flock.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=814;besth=354;minw=814;minh=354;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=76ba9d405a2ce6c9003ce7e500000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>

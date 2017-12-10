@@ -269,7 +269,7 @@ int main()
 
    if (mesh)
 
-      node = smgr->addOctTreeSceneNode(mesh->getMesh(0));
+      node = smgr->addOctreeSceneNode(mesh->getMesh(0));
 
 
 

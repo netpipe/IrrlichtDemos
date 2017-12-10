@@ -19,8 +19,7 @@
 		</VirtualTargets>
 		<Compiler>
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
-			<Add directory="/home/Dev/libs/gui/guichan-0.8.2/include" />
-			<Add directory="/home/Dev/Agnostic-SF/Stuff/Demos/WIPs/GUI/irr-guichan/include" />
+			<Add directory="/home/Dev/libs/GUI/guichan-0.8.2-git/include" />
 			<Add directory="../include" />
 		</Compiler>
 		<Linker>
@@ -30,7 +29,7 @@
 			<Add library="Xxf86vm" />
 			<Add library="GLU" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
-			<Add directory="/home/Dev/libs/gui/guichan-0.8.2/out/lib" />
+			<Add directory="/home/Dev/libs/GUI/guichan-0.8.2-git/out/lib" />
 		</Linker>
 		<Unit filename="irrlicht.cpp" />
 		<Unit filename="irrlichtgraphics.cpp" />
@@ -40,6 +39,7 @@
 		<Extensions>
 			<code_completion />
 			<debugger />
+			<envvars />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

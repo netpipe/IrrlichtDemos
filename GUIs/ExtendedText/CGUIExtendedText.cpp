@@ -19,10 +19,10 @@ CGUIExtendedText::CGUIExtendedText( IGUIEnvironment* environment, IGUIElement* p
     #ifdef _DEBUG
     setDebugName( "CGUIExtendedText" );
     #endif
-    
+
     if ( text != 0 )
         setText( text );
-    
+
     LastPlainTextElement = NULL;
 }
 
@@ -35,7 +35,7 @@ CGUIExtendedText::~CGUIExtendedText()
         (*it)->drop();
         it = TextTags.erase(it);
     }
-    
+
     clearLines();
 }
 
@@ -49,14 +49,14 @@ void CGUIExtendedText::draw()
 {
     if ( Text.size() == 0 )
         return;
-    
+
     if ( LastRelativeRect.getSize() != RelativeRect.getSize() )
         parseText( Text.c_str() );
-    
+
     video::IVideoDriver* driver = Environment->getVideoDriver();
-    
+
     s32 y = AbsoluteRect.UpperLeftCorner.Y;
-    
+
     // Render all lines
     for ( s32 i=0; i<Lines.size(); i++ )
     {
@@ -65,11 +65,11 @@ void CGUIExtendedText::draw()
         {
             E_TEXT_ALIGN align = Lines[i]->Alignment;
             s32 width = Lines[i]->Width;
-            
+
             s32 leftX = AbsoluteRect.UpperLeftCorner.X + Lines[i]->LeftMargin;
             s32 rightX = AbsoluteRect.LowerRightCorner.X - Lines[i]->RightMargin;
             s32 xWidth = rightX - leftX;
-            
+
             // Find the starting X value
             s32 x;
             switch(align)
@@ -77,54 +77,54 @@ void CGUIExtendedText::draw()
                 case TEXT_ALIGN_LEFT:
                     x = leftX;
                     break;
-                    
+
                 case TEXT_ALIGN_CENTER:
                     x = leftX + (xWidth - width) / 2;
                     break;
-                
+
                 case TEXT_ALIGN_RIGHT:
                     x = leftX + xWidth - width;
                     break;
             }
-            
+
             core::list<ITextElement*>::Iterator it = Lines[i]->Elements.begin();
             while ( it != Lines[i]->Elements.end() )
             {
                 ITextElement* element = (*it);
-                
+
                 core::rect<s32> dstRect = core::rect<s32>( core::position2d<s32>( x, y ), element->getDimension() );
-                
+
                 element->draw( dstRect, AbsoluteClippingRect, driver );
-                
+
                 x += element->getDimension().Width;
-                
+
                 it++;
             }
         }
         y += Lines[i]->Height;
     }
-    
+
     // Render all anchored elements
     core::list<SAnchoredElement>::Iterator ait = AnchoredElements.begin();
     while ( ait != AnchoredElements.end() )
     {
         ITextElement* elem = (*ait).Element;
-        
+
         core::dimension2d<s32> dim = elem->getDimension();
-        
+
         s32 y = AbsoluteRect.UpperLeftCorner.Y + (*ait).BottomY - dim.Height;
-        
+
         s32 x;
         if ( (*ait).IsLeft )
             x = AbsoluteRect.UpperLeftCorner.X;
         else
             x = AbsoluteRect.LowerRightCorner.X - dim.Width;
-        
+
         elem->draw( core::rect<s32>( core::position2d<s32>(x,y), dim ), AbsoluteClippingRect, driver );
-        
+
         ait++;
     }
-    
+
     IGUIElement::draw();
 }
 
@@ -140,17 +140,17 @@ void CGUIExtendedText::addTextTag( ITextTag* textTag )
 ITextTag* CGUIExtendedText::getTextTagMatching( const core::stringw& tag )
 {
     core::list<ITextTag*>::Iterator it = TextTags.begin();
-    
+
     while ( it != TextTags.end() )
     {
         ITextTag* textTag = (*it);
-        
+
         if ( textTag->match(tag) )
             return textTag;
-        
+
         it++;
     }
-    
+
     return NULL;
 }
 
@@ -237,13 +237,13 @@ inline int parseLineBreak( const wchar_t* &c )
             numN++;
         else
             numR++;
-        
+
         c++;
     }
-    
+
     if ( numR > numN )
         return numR;
-        
+
     return numN;
 }
 
@@ -253,13 +253,13 @@ inline bool parseToken( const wchar_t* &c, core::stringw* tokenName, core::array
 {
     if ( *c != L'#' )
         return false;
-    
+
     c++;
-    
+
     bool tokenNameFound = false;
-    
+
     core::stringw str;
-    
+
     while ( *c != 0 && *c != L'#' )
     {
         if ( *c == L':' )
@@ -271,7 +271,7 @@ inline bool parseToken( const wchar_t* &c, core::stringw* tokenName, core::array
             }
             else
                 params->push_back( str );
-            
+
             str = L"";
         }
         else
@@ -280,63 +280,63 @@ inline bool parseToken( const wchar_t* &c, core::stringw* tokenName, core::array
         }
         c++;
     }
-    
+
     if ( !tokenNameFound )
         *tokenName = str;
     else
         params->push_back( str );
-    
+
     if ( *c == L'#' )
     {
         c++;
         return true;
     }
-    
+
     return false;
 }
 
 void CGUIExtendedText::insertTextElement( ITextElement* element )
 {
     core::dimension2d<s32> dim = element->getDimension();
-    
+
     if ( dim.Width > LineSpaceRemaining )
         insertLineBreak();
-    
+
     LineSpaceRemaining -= dim.Width;
-    
+
     if ( dim.Height > Lines[CurrentLine]->Height )
         Lines[CurrentLine]->Height = dim.Height;
-    
+
     Lines[CurrentLine]->Elements.push_back( element );
     Lines[CurrentLine]->Width += dim.Width;
-    
+
     LastPlainTextElement = NULL;
 }
 
 void CGUIExtendedText::insertAnchoredTextElement( ITextElement* element, bool leftAnchor )
 {
     core::dimension2d<s32> dim = element->getDimension();
-    
+
     if ( FullLineSpace < dim.Width ) // There simply isn't room for this element
         return;
-    
+
     // Insert line-breaks until there is room for this element
     while ( dim.Width > LineSpaceRemaining )
         insertLineBreak();
-    
+
     SAnchoredElement anch;
     anch.FarX = dim.Width + (leftAnchor? CurrentLeftMargin : CurrentRightMargin);
     anch.BottomY = TotalHeight + dim.Height;
     anch.IsLeft = leftAnchor;
     anch.Element = element;
-    
+
     AnchoredElements.push_back( anch );
-    
+
     updateMargins();
-    
+
     Lines[CurrentLine]->LeftMargin = CurrentLeftMargin;
     Lines[CurrentLine]->RightMargin = CurrentRightMargin;
-    
+
     LineSpace -= dim.Width;
     LineSpaceRemaining -= dim.Width;
 }
@@ -344,22 +344,22 @@ void CGUIExtendedText::insertAnchoredTextElement( ITextElement* element, bool le
 void CGUIExtendedText::insertLineBreak()
 {
     Lines.push_back( new SLine() );
-    
+
     CurrentLine++;
-    
+
     Lines[CurrentLine]->Alignment = Lines[CurrentLine-1]->Alignment;
-    
+
     TotalHeight += Lines[CurrentLine-1]->Height;
-    
+
     updateMargins();
-    
+
     Lines[CurrentLine]->LeftMargin = CurrentLeftMargin;
     Lines[CurrentLine]->RightMargin = CurrentRightMargin;
-    
+
     LineSpace = FullLineSpace - CurrentLeftMargin - CurrentRightMargin;
-    
+
     LineSpaceRemaining = LineSpace;
-    
+
     LastPlainTextElement = NULL;
 }
 
@@ -389,52 +389,52 @@ void CGUIExtendedText::parseText( const wchar_t* text )
 {
     DefaultFont = Environment->getSkin()->getFont();
     DefaultColor = Environment->getSkin()->getColor( IsEnabled? EGDC_BUTTON_TEXT : EGDC_GRAY_TEXT );
-    
+
     CurrentFont = DefaultFont;
     CurrentColor = DefaultColor;
-    
+
     if ( CurrentFont == NULL )
         return;
-    
+
     CurrentLeftMargin = 0;
     CurrentRightMargin = 0;
     TotalHeight = 0;
-    
+
     FullLineSpace = RelativeRect.getWidth();
     LineSpace = FullLineSpace;
     LineSpaceRemaining = LineSpace;
-    
+
     CurrentLine = 0;
-    
+
     clearLines();
     Lines.push_back( new SLine() );
-    
+
     s32 whiteSpaceSize = CurrentFont->getDimension( L" " ).Width;
     core::dimension2d<s32> squareDim = CurrentFont->getDimension( L"#" );
-    
+
     LastPlainTextElement = NULL;
-    
+
     core::array<core::stringw> tokenParams;
-    
+
     const wchar_t* c = text;
     while ( *c != 0 )
     {
         // Insert word
         core::stringw str = parseWord(c);
-        
+
         if ( str.size() > 0 )
         {
             appendText( str.c_str(), CurrentFont->getDimension(str.c_str()) );
         }
-        
-        
+
+
         // Insert whitespace
         str = parseWhitespace(c);
-        
+
         if ( str.size() > 0 )
         {
             s32 size = whiteSpaceSize * str.size();
-            
+
             if ( LineSpaceRemaining < size )
             {
                 insertLineBreak();
@@ -444,15 +444,15 @@ void CGUIExtendedText::parseText( const wchar_t* text )
                 appendText( str.c_str(), core::dimension2d<s32>( size, 1 ) );
             }
         }
-        
+
         // Insert linebreaks
         int numLineBreaks = parseLineBreak(c);
-        
+
         for ( s32 i=0; i<numLineBreaks; i++ )
         {
             insertLineBreak();
         }
-        
+
         // Parse token
         tokenParams.set_used(0);
         if ( parseToken( c, &str, &tokenParams ) )
@@ -466,7 +466,7 @@ void CGUIExtendedText::parseText( const wchar_t* text )
             else
             {
                 ITextTag* textTag = getTextTagMatching( str );
-                
+
                 if ( textTag != NULL )
                 {
                     textTag->create( this, str, tokenParams );
@@ -474,7 +474,7 @@ void CGUIExtendedText::parseText( const wchar_t* text )
             }
         }
     }
-    
+
     RelativeRect.LowerRightCorner.Y = RelativeRect.UpperLeftCorner.Y + TotalHeight;
     LastRelativeRect = RelativeRect;
 }
@@ -485,21 +485,21 @@ void CGUIExtendedText::appendText( const wchar_t* text, const core::dimension2d<
     {
         insertLineBreak();
     }
-    
+
     if ( LastPlainTextElement != NULL )
     {
         LastPlainTextElement->append( text, dim );
-                
+
         LineSpaceRemaining -= dim.Width;
         Lines[CurrentLine]->Width += dim.Width;
-        
+
         if ( Lines[CurrentLine]->Height < dim.Height )
             Lines[CurrentLine]->Height = dim.Height;
     }
     else
     {
         LastPlainTextElement = new CPlainTextElement( text, dim, CurrentColor, CurrentFont );
-        
+
         insertTextElement( LastPlainTextElement );
     }
 }
@@ -518,7 +518,7 @@ void CGUIExtendedText::clearLines()
         delete Lines[i];
     }
     Lines.set_used(0);
-    
+
     core::list<SAnchoredElement>::Iterator it = AnchoredElements.begin();
     while ( it != AnchoredElements.end() )
     {
@@ -531,7 +531,7 @@ void CGUIExtendedText::updateMargins()
 {
     CurrentLeftMargin = 0;
     CurrentRightMargin = 0;
-    
+
     core::list<SAnchoredElement>::Iterator it = AnchoredElements.begin();
     while ( it != AnchoredElements.end() )
     {
