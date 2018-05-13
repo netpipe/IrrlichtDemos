@@ -17,20 +17,20 @@
    <widget class="QWidget" name="irrRenderWidget0" native="true">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>110</y>
-      <width>120</width>
-      <height>80</height>
+      <x>0</x>
+      <y>0</y>
+      <width>241</width>
+      <height>281</height>
      </rect>
     </property>
    </widget>
    <widget class="QWidget" name="irrRenderWidget1" native="true">
     <property name="geometry">
      <rect>
-      <x>370</x>
-      <y>120</y>
-      <width>120</width>
-      <height>80</height>
+      <x>239</x>
+      <y>9</y>
+      <width>381</width>
+      <height>271</height>
      </rect>
     </property>
    </widget>

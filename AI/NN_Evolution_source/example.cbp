@@ -20,10 +20,10 @@
 			<Add directory="../../../../../../Dev/libs/game/Irrlicht-SVN/include" />
 		</Compiler>
 		<Linker>
-			<Add library="Xxf86vm" />
-			<Add library="X11" />
-			<Add library="GL" />
 			<Add library="Irrlicht" />
+			<Add library="GL" />
+			<Add library="X11" />
+			<Add library="Xxf86vm" />
 			<Add directory="../../../../../../Dev/libs/game/Irrlicht-SVN/lib/Linux" />
 		</Linker>
 		<Unit filename="CameraController.h" />

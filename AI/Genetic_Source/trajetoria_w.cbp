@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="trajetoria_w" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="app/;archer/;arrow/;geretic/;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/trajetoria_w" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/trajetoria_w" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="C:/Documents and Settings/All Users/Documentos/PROG/irrlicht-1.5/irrlicht-1.5/bin/Win32-gcc" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="/home/Dev/libs/Irrlicht/include" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="GL" />
+			<Add library="glut" />
+			<Add directory="/home/Dev/libs/Irrlicht/lib/gcc" />
+		</Linker>
+		<Unit filename="Arrow.cpp">
+			<Option virtualFolder="arrow/" />
+		</Unit>
+		<Unit filename="Arrow.h">
+			<Option virtualFolder="arrow/" />
+		</Unit>
+		<Unit filename="EventReceiver.h" />
+		<Unit filename="Genetic.cpp">
+			<Option virtualFolder="geretic/" />
+		</Unit>
+		<Unit filename="Genetic.h">
+			<Option virtualFolder="geretic/" />
+		</Unit>
+		<Unit filename="app.cpp">
+			<Option virtualFolder="app/" />
+		</Unit>
+		<Unit filename="app.h">
+			<Option virtualFolder="app/" />
+		</Unit>
+		<Unit filename="archer.cpp">
+			<Option virtualFolder="archer/" />
+		</Unit>
+		<Unit filename="archer.h">
+			<Option virtualFolder="archer/" />
+		</Unit>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion>
+				<search_path add="irrlicht-1.5\include" />
+			</code_completion>
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

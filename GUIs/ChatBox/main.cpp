@@ -172,7 +172,7 @@ int main()
    // create device
    MyEventReceiver receiver;
 
-   IrrlichtDevice* device = createDevice(EDT_OPENGL, dimension2d<s32>(800, 600),
+   IrrlichtDevice* device = createDevice(EDT_OPENGL, dimension2du(800, 600),
        16, false, false, true, &receiver);
    if (device == 0) return 1; // could not create selected driver.
    IVideoDriver* driver = device->getVideoDriver();
