@@ -27,22 +27,6 @@ using namespace video;
 using namespace io;
 using namespace gui;
 
-#include "utils/fluidsynth_priv.h"
-#if defined(HAVE_GETOPT_H)
-#include <getopt.h>
-#define GETOPT_SUPPORT 1
-#endif
-
-#include "fluidsynth.h"
-
-#include "bindings/fluid_lash.h"
-
-#ifndef WITH_MIDI
-#define WITH_MIDI 1
-#endif
-fluid_cmd_handler_t* cmd_handler = NULL;
-
-
 #ifdef _MSC_VER
 #pragma comment(lib, "Irrlicht.lib")
 #endif
@@ -239,21 +223,7 @@ private:
 	SAppContext & Context;
 };
 
-static void
-fast_render_loop(fluid_settings_t* settings, fluid_synth_t* synth, fluid_player_t* player)
-{
-  fluid_file_renderer_t* renderer;
 
-  renderer = new_fluid_file_renderer (synth);
-  if (!renderer) return;
-
-  while (fluid_player_get_status(player) == FLUID_PLAYER_PLAYING) {
-    if (fluid_file_renderer_process_block(renderer) != FLUID_OK) {
-      break;
-    }
-  }
-  delete_fluid_file_renderer(renderer);
-}
 /*
 OK, now for the more interesting part. First, create the Irrlicht device. As in
 some examples before, we ask the user which driver he wants to use for this
@@ -353,193 +323,58 @@ int main()
 	/*
 	That's all, we only have to draw everything.
 	*/
-  fluid_settings_t* settings;
-  int arg1 = 1;
-  char buf[512];
-  int c, i;
-  int interactive = 1;
-  int midi_in = 1;
-  fluid_player_t* player = NULL;
-  fluid_midi_router_t* router = NULL;
-  //fluid_sequencer_t* sequencer = NULL;
-  fluid_midi_driver_t* mdriver = NULL;
-  fluid_audio_driver_t* adriver = NULL;
-  fluid_synth_t* synth = NULL;
-#ifdef NETWORK_SUPPORT
-  fluid_server_t* server = NULL;
-  int with_server = 0;
-#endif
-  char* config_file = NULL;
-  int audio_groups = 0;
-  int audio_channels = 0;
-  int dump = 0;
-  int fast_render = 0;
-  static const char optchars[] = "a:C:c:dE:f:F:G:g:hijK:L:lm:nO:o:p:R:r:sT:Vvz:";
-#ifdef LASH_ENABLED
-  int connect_lash = 1;
-  int enabled_lash = 0;		/* set to TRUE if lash gets enabled */
-  fluid_lash_args_t *lash_args;
+	        fluid_settings_t* settings;
+        fluid_synth_t* synth = NULL;
+        fluid_audio_driver_t* adriver = NULL;
+        int err = 0;
+        struct fx_data_t fx_data;
+//
+//        if (argc != 3) {
+//                fprintf(stderr, "Usage: fluidsynth_simple [soundfont] [gain]\n");
+//                return 1;
+//        }
+//
+        /* Create the settings object. This example uses the default
+         * values for the settings. */
+        settings = new_fluid_settings();
+        if (settings == NULL) {
+                fprintf(stderr, "Failed to create the settings\n");
+                err = 2;
+                goto cleanup;
+        }
 
-  lash_args = fluid_lash_extract_args (&argc, &argv);
-#endif
+        /* Create the synthesizer */
+        synth = new_fluid_synth(settings);
+        if (synth == NULL) {
+                fprintf(stderr, "Failed to create the synthesizer\n");
+                err = 3;
+                goto cleanup;
+        }
 
+        /* Load the soundfont */
+//        if (fluid_synth_sfload(synth, "soundfonts/example.sf2", 1) == -1) {
+        if (fluid_synth_sfload(synth, "soundfonts/VintageDreamsWaves-v2.sf2", 1) == -1) {
+//        if (fluid_synth_sfload(synth, "soundfonts/VintageDreamsWaves-v2.sf3", 1) == -1) {
+ //       if (fluid_synth_sfload(synth, "soundfonts/philharmonia_violin_short.gig", 1) == -1) { //was to check and see if it had gig support but no.
 
+                fprintf(stderr, "Failed to load the SoundFont\n");
+                err = 4;
+                goto cleanup;
+        }
 
-  settings = new_fluid_settings();
+        /* Fill in the data of the effects unit */
+        fx_data.synth = synth;
+        fx_data.gain = 10; //atof(argv[2]);
 
-
- /* The 'groups' setting is relevant for LADSPA operation and channel mapping
-   * in rvoice_mixer.
-   * If not given, set number groups to number of audio channels, because
-   * they are the same (there is nothing between synth output and 'sound card')
-   */
-  if ((audio_groups == 0) && (audio_channels != 0)) {
-      audio_groups = audio_channels;
-  }
-  if (audio_groups != 0)
-  {
-      fluid_settings_setint(settings, "synth.audio-groups", audio_groups);
-  }
-
-  if (fast_render) {
-    midi_in = 0;
-    interactive = 0;
-#ifdef NETWORK_SUPPORT
-    with_server = 0;
-#endif
-    fluid_settings_setstr(settings, "player.timing-source", "sample");
-    fluid_settings_setint(settings, "synth.lock-memory", 0);
-  }
-
-  /* create the synthesizer */
-  synth = new_fluid_synth(settings);
-  if (synth == NULL) {
-    fprintf(stderr, "Failed to create the synthesizer\n");
-    exit(-1);
-  }
-
-  char *psoundfont;
-  psoundfont="soundfonts/VintageDreamsWaves-v2.sf2";
-  /* load the soundfonts (check that all non options are SoundFont or MIDI files) */
-//  for (i = arg1; i < argc; i++) {
-    if (fluid_is_soundfont(psoundfont))
-    {
-      if (fluid_synth_sfload(synth, psoundfont, 1) == -1)
-	fprintf(stderr, "Failed to load the SoundFont %s\n", psoundfont);
-    }
-    else if (!fluid_is_midifile(psoundfont))
-      fprintf (stderr, "Parameter '%s' not a SoundFont or MIDI file or error occurred identifying it.\n",
-	       psoundfont);
-
-
-  /* start the synthesis thread */
-  if (!fast_render) {
-		fluid_settings_setstr(settings, "audio.driver", "alsa");
-    adriver = new_fluid_audio_driver(settings, synth);
-    if (adriver == NULL) {
-      fprintf(stderr, "Failed to create the audio driver\n");
-//      goto cleanup;
-    }
-  }
-
-
-  /* start the midi router and link it to the synth */
-#if WITH_MIDI
-  if (midi_in) {
-    /* In dump mode, text output is generated for events going into and out of the router.
-     * The example dump functions are put into the chain before and after the router..
-     */
-    //sequencer = new_fluid_sequencer2(0);
-
-    router = new_fluid_midi_router(
-      settings,
-      dump ? fluid_midi_dump_postrouter : fluid_synth_handle_midi_event,
-      (void*)synth);
-
-    if (router == NULL) {
-      fprintf(stderr, "Failed to create the MIDI input router; no MIDI input\n"
-	      "will be available. You can access the synthesizer \n"
-	      "through the console.\n");
-    } else {
-      mdriver = new_fluid_midi_driver(
-	settings,
-	dump ? fluid_midi_dump_prerouter : fluid_midi_router_handle_midi_event,
-	(void*) router);
-      if (mdriver == NULL) {
-	fprintf(stderr, "Failed to create the MIDI thread; no MIDI input\n"
-		"will be available. You can access the synthesizer \n"
-		"through the console.\n");
-      }
-    }
-  }
-#endif
-//stringc psong;
-char *psong = "BLUES.MID";
-
-  /* play the midi fildes, if any */
-//  for (i = arg1; i < argc; i++) {
-    if  (fluid_is_midifile(psong)) {
-
-      if (player == NULL) {
-	player = new_fluid_player(synth);
-	if (player == NULL) {
-	  fprintf(stderr, "Failed to create the midifile player.\n"
-		  "Continuing without a player.\n");
-	//  break;
-	}
-      }
-
-      fluid_player_add(player, psong);
-    }
- // }
-
-  if (player != NULL) {
-
-    if (fluid_synth_get_sfont(synth, 0) == NULL) {
-      /* Try to load the default soundfont if no soundfont specified */
-      char *s;
-      if (fluid_settings_dupstr(settings, "synth.default-soundfont", &s) != FLUID_OK)
-        s = NULL;
-      if ((s != NULL) && (s[0] != '\0'))
-        fluid_synth_sfload(synth, s, 1);
-
-      FLUID_FREE(s);
-    }
-
-    fluid_player_play(player);
-  }
-
-  cmd_handler = new_fluid_cmd_handler(synth, router);
-  if (cmd_handler == NULL) {
-    fprintf(stderr, "Failed to create the command handler\n");
- //   goto cleanup;
-  }
-
-  /* try to load the user or system configuration */
-  if (config_file != NULL) {
-    fluid_source(cmd_handler, config_file);
-  } else if (fluid_get_userconf(buf, sizeof(buf)) != NULL) {
-    fluid_source(cmd_handler, buf);
-  } else if (fluid_get_sysconf(buf, sizeof(buf)) != NULL) {
-    fluid_source(cmd_handler, buf);
-  }
-
-  /* run the server, if requested */
-#ifdef NETWORK_SUPPORT
-  if (with_server) {
-    server = new_fluid_server(settings, synth, router);
-    if (server == NULL) {
-      fprintf(stderr, "Failed to create the server.\n"
-	     "Continuing without it.\n");
-    }
-  }
-#endif
-
-#ifdef LASH_ENABLED
-  if (enabled_lash)
-    fluid_lash_create_thread (synth);
-#endif
-
+        /* Create the audio driver. As soon as the audio driver is
+         * created, the synthesizer can be played. */
+fluid_settings_setstr(settings, "audio.driver", "alsa");
+        adriver = new_fluid_audio_driver2(settings, fx_function, (void*) &fx_data);
+        if (adriver == NULL) {
+                fprintf(stderr, "Failed to create the audio driver\n");
+                err = 5;
+                goto cleanup;
+        }
 
 
 
@@ -552,22 +387,9 @@ char *psong = "BLUES.MID";
 
 
 
- if (fast_render) {
-    char *filename;
-    if (player == NULL) {
-      fprintf(stderr, "No midi file specified!\n");
-//      goto cleanup;
-    }
-
-    fluid_settings_dupstr (settings, "audio.file.name", &filename);
-    printf ("Rendering audio to file '%s'..\n", filename);
-    if (filename) FLUID_FREE (filename);
-
-    fast_render_loop(settings, synth, player);
-  }
 
         /* Play a note */
-  //      fluid_synth_noteon(synth, 0, 60, 100);
+        fluid_synth_noteon(synth, 0, 60, 100);
 
 //        printf("Press \"Enter\" to stop: ");
 //        fgetc(stdin);
@@ -579,6 +401,7 @@ char *psong = "BLUES.MID";
 
 		driver->endScene();
 	}
+ cleanup:
 
         if (adriver) {
                 delete_fluid_audio_driver(adriver);

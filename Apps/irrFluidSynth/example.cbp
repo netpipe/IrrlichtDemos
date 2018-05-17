@@ -18,6 +18,8 @@
 		</VirtualTargets>
 		<Compiler>
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+			<Add directory="../../../LunaLibs/fluidsynth/include" />
+			<Add directory="../../../LunaLibs/fluidsynth/" />
 		</Compiler>
 		<Linker>
 			<Add library="Irrlicht" />
