@@ -11,12 +11,12 @@ a counter variable for changing the creation position of a window,
 and a pointer to a listbox.
 */
 #include <irrlicht.h>
-#include "driverChoice.h"
+//#include "driverChoice.h"
 #include "exampleHelper.h"
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <fluidsynth.h>
+
 
 
 using namespace irr;
@@ -43,9 +43,10 @@ using namespace gui;
 fluid_cmd_handler_t* cmd_handler = NULL;
 
 
-#ifdef _MSC_VER
-#pragma comment(lib, "Irrlicht.lib")
-#endif
+
+	char *psoundfont ="soundfonts/VintageDreamsWaves-v2.sf2";
+	char *psong = "BLUES.MID";
+
 
 // Declare a structure to hold some context for the event receiver so that it
 // has it available inside its OnEvent() method.
@@ -354,9 +355,9 @@ int main()
 	That's all, we only have to draw everything.
 	*/
   fluid_settings_t* settings;
-  int arg1 = 1;
+//  int arg1 = 1;
   char buf[512];
-  int c, i;
+//  int c, i;
   int interactive = 1;
   int midi_in = 1;
   fluid_player_t* player = NULL;
@@ -418,8 +419,7 @@ int main()
     exit(-1);
   }
 
-  char *psoundfont;
-  psoundfont="soundfonts/VintageDreamsWaves-v2.sf2";
+
   /* load the soundfonts (check that all non options are SoundFont or MIDI files) */
 //  for (i = arg1; i < argc; i++) {
     if (fluid_is_soundfont(psoundfont))
@@ -473,8 +473,7 @@ int main()
     }
   }
 #endif
-//stringc psong;
-char *psong = "BLUES.MID";
+
 
   /* play the midi fildes, if any */
 //  for (i = arg1; i < argc; i++) {
