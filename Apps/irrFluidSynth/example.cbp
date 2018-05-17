@@ -24,7 +24,11 @@
 			<Add library="GL" />
 			<Add library="Xxf86vm" />
 			<Add library="X11" />
-			<Add library="/usr/local/lib64/libfluidsynth.so" />
+			<Add library="../../../LunaLibs/fluidsynth/fluidsynth.so" />
+			<Add library="sndfile" />
+			<Add library="pulse" />
+			<Add library="pulse-simple" />
+			<Add library="readline" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
 		</Linker>
 		<Unit filename="main.cpp" />
