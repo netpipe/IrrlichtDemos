@@ -7,7 +7,7 @@
 
 #include <fstream>
 
-#define test
+//#define test
 #ifdef test
 	const std::string serverName("127.0.0.1");
 	const unsigned short serverPort = 6668;

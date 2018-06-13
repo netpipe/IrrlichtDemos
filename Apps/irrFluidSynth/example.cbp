@@ -17,6 +17,7 @@
 			<Add alias="All" targets="default;" />
 		</VirtualTargets>
 		<Compiler>
+			<Add option="-D__cplusplus" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
 			<Add directory="../../../LunaLibs/fluidsynth/include" />
 			<Add directory="../../../LunaLibs/fluidsynth/" />

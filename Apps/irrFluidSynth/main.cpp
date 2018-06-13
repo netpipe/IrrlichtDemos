@@ -32,7 +32,7 @@ using namespace gui;
 #include <getopt.h>
 #define GETOPT_SUPPORT 1
 #endif
-
+//#undef __cplusplus
 #include "fluidsynth.h"
 
 #include "bindings/fluid_lash.h"
@@ -44,9 +44,10 @@ fluid_cmd_handler_t* cmd_handler = NULL;
 
 
 
-	char *psoundfont ="soundfonts/VintageDreamsWaves-v2.sf2";
-	char *psong = "BLUES.MID";
-
+	//char *psoundfont ="soundfonts/VintageDreamsWaves-v2.sf2";
+		char *psoundfont ="soundfonts/Piano.SF2";
+	//char *psong = "BLUES.MID";
+     char *psong = "songs/y.mid";
 
 // Declare a structure to hold some context for the event receiver so that it
 // has it available inside its OnEvent() method.
@@ -549,21 +550,22 @@ int main()
 
 		env->drawAll();
 
+//fast_render;
 
-
- if (fast_render) {
-    char *filename;
-    if (player == NULL) {
-      fprintf(stderr, "No midi file specified!\n");
-//      goto cleanup;
-    }
-
-    fluid_settings_dupstr (settings, "audio.file.name", &filename);
-    printf ("Rendering audio to file '%s'..\n", filename);
-    if (filename) FLUID_FREE (filename);
-
-    fast_render_loop(settings, synth, player);
-  }
+// if (fast_render) {
+//    char *filename;
+//    if (player == NULL) {
+//      fprintf(stderr, "No midi file specified!\n");
+//   //   fluid_player_play(player);
+////      goto cleanup;
+//    }
+//
+//    fluid_settings_dupstr (settings, "audio.file.name", &filename);
+//    printf ("Rendering audio to file '%s'..\n", filename);
+//    if (filename) FLUID_FREE (filename);
+//
+//    fast_render_loop(settings, synth, player);
+//  }
 
         /* Play a note */
   //      fluid_synth_noteon(synth, 0, 60, 100);
@@ -574,7 +576,7 @@ int main()
 
 
 
-
+		device->sleep(129);
 
 		driver->endScene();
 	}
