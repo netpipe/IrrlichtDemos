@@ -10,19 +10,19 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QFrame>
-#include <QtGui/QHBoxLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QMainWindow>
-#include <QtGui/QMenu>
-#include <QtGui/QMenuBar>
-#include <QtGui/QStatusBar>
-#include <QtGui/QTabWidget>
-#include <QtGui/QToolBar>
-#include <QtGui/QWidget>
+#include <QAction>
+#include <QApplication>
+#include <QButtonGroup>
+#include <QFrame>
+#include <QHBoxLayout>
+#include <QHeaderView>
+#include <QMainWindow>
+#include <QMenu>
+#include <QMenuBar>
+#include <QStatusBar>
+#include <QTabWidget>
+#include <QToolBar>
+#include <QWidget>
 
 QT_BEGIN_NAMESPACE
 
@@ -150,19 +150,19 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0, QApplication::UnicodeUTF8));
-        actionNew->setText(QApplication::translate("MainWindow", "New", 0, QApplication::UnicodeUTF8));
-        actionOpen->setText(QApplication::translate("MainWindow", "Open", 0, QApplication::UnicodeUTF8));
-        actionQuit->setText(QApplication::translate("MainWindow", "Quit", 0, QApplication::UnicodeUTF8));
-        actionStatic_Mesh->setText(QApplication::translate("MainWindow", "Actor", 0, QApplication::UnicodeUTF8));
-        actionAnimated_Mesh->setText(QApplication::translate("MainWindow", "Spawn Point", 0, QApplication::UnicodeUTF8));
-        actionEntity->setText(QApplication::translate("MainWindow", "Entity", 0, QApplication::UnicodeUTF8));
-        actionAbout->setText(QApplication::translate("MainWindow", "About", 0, QApplication::UnicodeUTF8));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "World", 0, QApplication::UnicodeUTF8));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Tab 2", 0, QApplication::UnicodeUTF8));
-        menuFile->setTitle(QApplication::translate("MainWindow", "File", 0, QApplication::UnicodeUTF8));
-        menuAdd->setTitle(QApplication::translate("MainWindow", "Add", 0, QApplication::UnicodeUTF8));
-        menuHelp->setTitle(QApplication::translate("MainWindow", "Help", 0, QApplication::UnicodeUTF8));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
+        actionNew->setText(QApplication::translate("MainWindow", "New", 0));
+        actionOpen->setText(QApplication::translate("MainWindow", "Open", 0));
+        actionQuit->setText(QApplication::translate("MainWindow", "Quit", 0));
+        actionStatic_Mesh->setText(QApplication::translate("MainWindow", "Actor", 0));
+        actionAnimated_Mesh->setText(QApplication::translate("MainWindow", "Spawn Point", 0));
+        actionEntity->setText(QApplication::translate("MainWindow", "Entity", 0));
+        actionAbout->setText(QApplication::translate("MainWindow", "About", 0));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "World", 0));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Tab 2", 0));
+        menuFile->setTitle(QApplication::translate("MainWindow", "File", 0));
+        menuAdd->setTitle(QApplication::translate("MainWindow", "Add", 0));
+        menuHelp->setTitle(QApplication::translate("MainWindow", "Help", 0));
     } // retranslateUi
 
 };

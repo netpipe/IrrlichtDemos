@@ -4,6 +4,11 @@
 #
 #-------------------------------------------------
 
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
+TARGET = lib-communi
+TEMPLATE = app
+
 QT       += core gui
 
 TARGET = SmallBoxEngine
@@ -19,13 +24,12 @@ HEADERS  += mainwindow.h \
 
 FORMS    += mainwindow.ui
 
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../../../../../usr/lib/release/ -lIrrlicht
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../../../../usr/lib/debug/ -lIrrlicht
-else:unix:!symbian: LIBS += -L$$PWD/../../../../../usr/lib/ -lIrrlicht -lGL -lXext -lX11 -lGLU
+unix:MOC_DIR = ./mocs
+win32:MOC_DIR = c:/myproject/tmp
 
-INCLUDEPATH += $$PWD/../../../../../usr/include/irrlicht
-DEPENDPATH += $$PWD/../../../../../usr/include/irrlicht
+win32:INCLUDEPATH+=C:\Users\TEST\Downloads\irrlicht-1.8.4\irrlicht-1.8.4\include
+else:unix:INCLUDEPATH+= /home/Dev/libs/game/irrlicht/Irrlicht-SVN/include/ /home/Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux/
 
-win32:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/../../../../../usr/lib/release/Irrlicht.lib
-else:win32:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/../../../../../usr/lib/debug/Irrlicht.lib
-else:unix:!symbian: PRE_TARGETDEPS += $$PWD/../../../../../usr/lib/libIrrlicht.a
+win32:LIBS += -LC:\Users\TEST\Downloads\irrlicht-1.8.4\irrlicht-1.8.4\lib\Win32-visualstudio -lIrrlicht
+else:unix:LIBS += -L/home/Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux/ -LC:\Users\TEST\Downloads\irrlicht-1.8.4\irrlicht-1.8.4\lib\Win32-visualstudio   -lQt5OpenGL -lQt5Widgets -lQt5Gui -lQt5Core -lIrrlicht -lGL -lX11 -lXxf86vm -luchardet
+

@@ -54,14 +54,14 @@
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
 			<Add directory="/home/Dev/libs/net/IRC/libcommuni/lib" />
 		</Linker>
-		<Unit filename="irrcorerenderer.cpp" />
-		<Unit filename="irrcorerenderer.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="mainwindow.cpp" />
 		<Unit filename="mainwindow.h" />
-		<Unit filename="moc_irrcorerenderer.cpp" />
-		<Unit filename="moc_mainwindow.cpp" />
-		<Unit filename="moc_predefs.h" />
+		<Unit filename="mocs/moc_mainwindow.cpp" />
+		<Unit filename="mocs/moc_predefs.h" />
+		<Unit filename="mocs/moc_smallboxWidget.cpp" />
+		<Unit filename="smallboxWidget.cpp" />
+		<Unit filename="smallboxWidget.h" />
 		<Unit filename="ui_mainwindow.h" />
 		<Extensions>
 			<code_completion />
