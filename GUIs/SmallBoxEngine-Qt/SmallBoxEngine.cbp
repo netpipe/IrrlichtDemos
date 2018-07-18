@@ -10,7 +10,6 @@
 				<Option output="./Pong" prefix_auto="0" extension_auto="0" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option projectCompilerOptionsRelation="2" />
 				<Option projectResourceIncludeDirsRelation="1" />
 			</Target>
 		</Build>
@@ -18,26 +17,49 @@
 			<Add alias="All" targets="default;" />
 		</VirtualTargets>
 		<Compiler>
+			<Add option="-fPIC" />
+			<Add option="`pkg-config Qt5OpenGL Qt5Widgets Qt5Gui Qt5Core Qt5Qml Qt5Network Qt5X11Extras --cflags`" />
+			<Add option="-DIRC_SHARED" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
-			<Add directory="/usr/lib64/qt4/include" />
-			<Add directory="/usr/lib64/qt4/include/QtGui" />
-			<Add directory="/usr/lib64/qt4/include/QtCore" />
+			<Add directory="/home/Dev/libs/net/IRC/libcommuni/include" />
+			<Add directory="/usr/include/x86_64-linux-gnu/qt5" />
+			<Add directory="/home/Dev/libs/net/IRC/libcommuni/include/IrcCore" />
+			<Add directory="/home/Dev/libs/net/IRC/libcommuni/include/IrcModel" />
+			<Add directory="/home/Dev/libs/net/IRC/libcommuni/include/IrcUtil" />
+			<Add directory="./" />
+			<Add directory="/usr/include/libdrm" />
+			<Add directory="/usr/include/uchardet" />
 		</Compiler>
 		<Linker>
-			<Add library="QtCore" />
-			<Add library="QtGui" />
-			<Add library="GL" />
+			<Add option="-DQT_DEPRECATED_WARNINGS" />
+			<Add option="-DIRC_STATIC" />
+			<Add option="-DQT_NO_DEBUG" />
+			<Add option="-DQT_OPENGL_LIB" />
+			<Add option="-DQT_WIDGETS_LIB" />
+			<Add option="-DQT_GUI_LIB" />
+			<Add option="-DQT_NETWORK_LIB" />
+			<Add option="-DQT_CORE_LIB" />
 			<Add library="Irrlicht" />
+			<Add library="GL" />
 			<Add library="Xxf86vm" />
 			<Add library="X11" />
+			<Add library="uchardet" />
+			<Add library="Qt5OpenGL" />
+			<Add library="Qt5Widgets" />
+			<Add library="Qt5Gui" />
+			<Add library="Qt5Core" />
+			<Add library="Qt5X11Extras" />
+			<Add library="QtNetwork" />
+			<Add library="Qt5Qml" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
-			<Add directory="/usr/lib64/qt4/lib" />
+			<Add directory="/home/Dev/libs/net/IRC/libcommuni/lib" />
 		</Linker>
 		<Unit filename="main.cpp" />
 		<Unit filename="mainwindow.cpp" />
 		<Unit filename="mainwindow.h" />
-		<Unit filename="moc_mainwindow.cpp" />
-		<Unit filename="moc_smallboxWidget.cpp" />
+		<Unit filename="mocs/moc_mainwindow.cpp" />
+		<Unit filename="mocs/moc_predefs.h" />
+		<Unit filename="mocs/moc_smallboxWidget.cpp" />
 		<Unit filename="smallboxWidget.cpp" />
 		<Unit filename="smallboxWidget.h" />
 		<Unit filename="ui_mainwindow.h" />

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 4.8.7
+** Created by: Qt User Interface Compiler version 5.9.5
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,19 +10,19 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
-#include <QAction>
-#include <QApplication>
-#include <QButtonGroup>
-#include <QFrame>
-#include <QHBoxLayout>
-#include <QHeaderView>
-#include <QMainWindow>
-#include <QMenu>
-#include <QMenuBar>
-#include <QStatusBar>
-#include <QTabWidget>
-#include <QToolBar>
-#include <QWidget>
+#include <QtWidgets/QAction>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QFrame>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenu>
+#include <QtWidgets/QMenuBar>
+#include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTabWidget>
+#include <QtWidgets/QToolBar>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
@@ -53,30 +53,30 @@ public:
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
-            MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
+            MainWindow->setObjectName(QStringLiteral("MainWindow"));
         MainWindow->resize(640, 480);
         actionNew = new QAction(MainWindow);
-        actionNew->setObjectName(QString::fromUtf8("actionNew"));
+        actionNew->setObjectName(QStringLiteral("actionNew"));
         actionOpen = new QAction(MainWindow);
-        actionOpen->setObjectName(QString::fromUtf8("actionOpen"));
+        actionOpen->setObjectName(QStringLiteral("actionOpen"));
         actionQuit = new QAction(MainWindow);
-        actionQuit->setObjectName(QString::fromUtf8("actionQuit"));
+        actionQuit->setObjectName(QStringLiteral("actionQuit"));
         actionStatic_Mesh = new QAction(MainWindow);
-        actionStatic_Mesh->setObjectName(QString::fromUtf8("actionStatic_Mesh"));
+        actionStatic_Mesh->setObjectName(QStringLiteral("actionStatic_Mesh"));
         actionAnimated_Mesh = new QAction(MainWindow);
-        actionAnimated_Mesh->setObjectName(QString::fromUtf8("actionAnimated_Mesh"));
+        actionAnimated_Mesh->setObjectName(QStringLiteral("actionAnimated_Mesh"));
         actionEntity = new QAction(MainWindow);
-        actionEntity->setObjectName(QString::fromUtf8("actionEntity"));
+        actionEntity->setObjectName(QStringLiteral("actionEntity"));
         actionAbout = new QAction(MainWindow);
-        actionAbout->setObjectName(QString::fromUtf8("actionAbout"));
+        actionAbout->setObjectName(QStringLiteral("actionAbout"));
         centralWidget = new QWidget(MainWindow);
-        centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
+        centralWidget->setObjectName(QStringLiteral("centralWidget"));
         horizontalLayout = new QHBoxLayout(centralWidget);
         horizontalLayout->setSpacing(6);
         horizontalLayout->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         frame = new QFrame(centralWidget);
-        frame->setObjectName(QString::fromUtf8("frame"));
+        frame->setObjectName(QStringLiteral("frame"));
         QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -88,12 +88,12 @@ public:
         horizontalLayout_2 = new QHBoxLayout(frame);
         horizontalLayout_2->setSpacing(6);
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
-        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
+        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
 
         horizontalLayout->addWidget(frame);
 
         tabWidget = new QTabWidget(centralWidget);
-        tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
+        tabWidget->setObjectName(QStringLiteral("tabWidget"));
         QSizePolicy sizePolicy1(QSizePolicy::Maximum, QSizePolicy::Expanding);
         sizePolicy1.setHorizontalStretch(0);
         sizePolicy1.setVerticalStretch(0);
@@ -101,30 +101,30 @@ public:
         tabWidget->setSizePolicy(sizePolicy1);
         tabWidget->setMaximumSize(QSize(250, 16777215));
         tab = new QWidget();
-        tab->setObjectName(QString::fromUtf8("tab"));
+        tab->setObjectName(QStringLiteral("tab"));
         tabWidget->addTab(tab, QString());
         tab_2 = new QWidget();
-        tab_2->setObjectName(QString::fromUtf8("tab_2"));
+        tab_2->setObjectName(QStringLiteral("tab_2"));
         tabWidget->addTab(tab_2, QString());
 
         horizontalLayout->addWidget(tabWidget);
 
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
-        menuBar->setObjectName(QString::fromUtf8("menuBar"));
+        menuBar->setObjectName(QStringLiteral("menuBar"));
         menuBar->setGeometry(QRect(0, 0, 640, 23));
         menuFile = new QMenu(menuBar);
-        menuFile->setObjectName(QString::fromUtf8("menuFile"));
+        menuFile->setObjectName(QStringLiteral("menuFile"));
         menuAdd = new QMenu(menuBar);
-        menuAdd->setObjectName(QString::fromUtf8("menuAdd"));
+        menuAdd->setObjectName(QStringLiteral("menuAdd"));
         menuHelp = new QMenu(menuBar);
-        menuHelp->setObjectName(QString::fromUtf8("menuHelp"));
+        menuHelp->setObjectName(QStringLiteral("menuHelp"));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
-        mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
+        mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
         MainWindow->addToolBar(Qt::TopToolBarArea, mainToolBar);
         statusBar = new QStatusBar(MainWindow);
-        statusBar->setObjectName(QString::fromUtf8("statusBar"));
+        statusBar->setObjectName(QStringLiteral("statusBar"));
         MainWindow->setStatusBar(statusBar);
 
         menuBar->addAction(menuFile->menuAction());
@@ -150,19 +150,19 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
-        actionNew->setText(QApplication::translate("MainWindow", "New", 0));
-        actionOpen->setText(QApplication::translate("MainWindow", "Open", 0));
-        actionQuit->setText(QApplication::translate("MainWindow", "Quit", 0));
-        actionStatic_Mesh->setText(QApplication::translate("MainWindow", "Actor", 0));
-        actionAnimated_Mesh->setText(QApplication::translate("MainWindow", "Spawn Point", 0));
-        actionEntity->setText(QApplication::translate("MainWindow", "Entity", 0));
-        actionAbout->setText(QApplication::translate("MainWindow", "About", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "World", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Tab 2", 0));
-        menuFile->setTitle(QApplication::translate("MainWindow", "File", 0));
-        menuAdd->setTitle(QApplication::translate("MainWindow", "Add", 0));
-        menuHelp->setTitle(QApplication::translate("MainWindow", "Help", 0));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", Q_NULLPTR));
+        actionNew->setText(QApplication::translate("MainWindow", "New", Q_NULLPTR));
+        actionOpen->setText(QApplication::translate("MainWindow", "Open", Q_NULLPTR));
+        actionQuit->setText(QApplication::translate("MainWindow", "Quit", Q_NULLPTR));
+        actionStatic_Mesh->setText(QApplication::translate("MainWindow", "Actor", Q_NULLPTR));
+        actionAnimated_Mesh->setText(QApplication::translate("MainWindow", "Spawn Point", Q_NULLPTR));
+        actionEntity->setText(QApplication::translate("MainWindow", "Entity", Q_NULLPTR));
+        actionAbout->setText(QApplication::translate("MainWindow", "About", Q_NULLPTR));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "World", Q_NULLPTR));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Tab 2", Q_NULLPTR));
+        menuFile->setTitle(QApplication::translate("MainWindow", "File", Q_NULLPTR));
+        menuAdd->setTitle(QApplication::translate("MainWindow", "Add", Q_NULLPTR));
+        menuHelp->setTitle(QApplication::translate("MainWindow", "Help", Q_NULLPTR));
     } // retranslateUi
 
 };
