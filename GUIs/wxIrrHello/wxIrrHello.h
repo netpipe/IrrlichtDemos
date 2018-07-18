@@ -1,0 +1,103 @@
+
+#include <irrlicht.h>
+#include <wx/wx.h>
+using namespace irr;
+
+typedef irr::SIrrlichtCreationParameters   wxIrrCreateParam;
+typedef irr::video::E_DRIVER_TYPE         wxIrrDriverType;
+typedef irr::IrrlichtDevice               wxIrrDevice;
+typedef irr::scene::ISceneManager         wxIrrSceneManager;
+typedef irr::video::IVideoDriver         wxIrrVideoDriver;
+
+typedef irr::scene::ICameraSceneNode      wxIrrCamera;
+typedef irr::scene::ISceneNode            wxIrrNode;
+
+typedef irr::video::SColor               wxIrrColor;
+typedef irr::core::dimension2d<irr::s32>   wxIrrDimension2D;
+typedef irr::core::vector3df            wxIrrVector3DFloat;
+typedef irr::s32                     wxIrrS32;
+typedef irr::video::E_MATERIAL_FLAG         wxIrrMaterialFlag;
+
+class CIrrApp;
+class CIrrDevice;
+class CIrrWindow;
+class CIrrFrame;
+
+int MyCube=1;
+
+enum
+{
+   ID_Quit = 1,
+   ID_About,
+};
+
+class CIrrApp : public wxApp
+{
+   public:
+      virtual bool OnInit(void);
+};
+
+class CIrrDevice
+{
+   public:
+      CIrrDevice(CIrrWindow *window, wxIrrDriverType type=irr::video::EDT_OPENGL, bool bResizeable=true);
+      ~CIrrDevice();
+
+      inline wxIrrDevice *GetHandle(void) { return irrDevice; }
+      inline wxIrrSceneManager *GetSceneManager(void) { return irrDevice ? irrDevice->getSceneManager() : NULL; }
+      inline wxIrrVideoDriver *GetVideoDriver(void) { return irrDevice ? irrDevice->getVideoDriver() : NULL; }
+
+      wxIrrCamera *AddCamera(wxIrrNode *parent=0, irr::core::vector3df position=irr::core::vector3df(0.0f,0.0f,0.0f),
+      irr::core::vector3df lookat=irr::core::vector3df(0.0f,0.0f,1.0f), wxIrrS32 id=1);
+
+   protected:
+      wxIrrDevice *irrDevice;
+};
+
+class CIrrWindow : public wxWindow
+{
+   public:
+      CIrrWindow(wxWindow *parent, wxWindowID id, long style=wxTAB_TRAVERSAL);
+      ~CIrrWindow();
+
+      void OnPaint(wxPaintEvent &event);
+      void OnSize(wxSizeEvent &event);
+      void OnTimer(wxTimerEvent &event);
+
+      void OnSceneUpdate(void);
+
+      inline wxIrrSceneManager *GetSceneManager(void) { return irrDevice ? irrDevice->GetSceneManager() : NULL; }
+      inline wxIrrVideoDriver *GetVideoDriver(void) { return irrDevice ? irrDevice->GetVideoDriver() : NULL; }
+
+      inline void SetDevice(CIrrDevice *irrdevice) { irrDevice = irrdevice; }
+      inline void SetCamera(wxIrrCamera *irrcam) { irrCameraCurrent = irrcam; }
+
+      wxIrrCamera *AddCamera(wxIrrNode *parent=0, irr::core::vector3df position= irr::core::vector3df(0.0f,0.0f,0.0f),
+                    irr::core::vector3df lookat=core::vector3df(0.0f,0.0f,1.0f), wxIrrS32 id=1, bool bsetcurrent=true);
+
+   DECLARE_EVENT_TABLE()
+
+   protected:
+      CIrrDevice *irrDevice;
+      wxIrrCamera *irrCameraCurrent;
+
+   private:
+      float fRatio;
+      wxTimer m_Timer;
+};
+
+class CIrrFrame : public wxFrame
+{
+   public:
+      CIrrFrame(const wxString &title, const wxPoint &pos, const wxSize &size, long style=wxDEFAULT_FRAME_STYLE);
+
+      void OnQuit(wxCommandEvent &event);
+      void OnAbout(wxCommandEvent &event);
+
+      DECLARE_EVENT_TABLE()
+
+   protected:
+      CIrrDevice *device3D;
+      wxIrrCamera *irrCam;
+      CIrrWindow *window3D;
+};
