@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="AgEditor" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="AgEditor" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug Win32" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-W" />
+				</Compiler>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="AgEditor" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release Win32" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-W" />
+					<Add option="-D_UNICODE" />
+					<Add directory="../Includes" />
+					<Add directory="../../Luna-GameEngine/includes" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../Includes" />
+					<Add directory="../../Luna-GameEngine/includes" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="wxbase28u" />
+					<Add library="wxmsw28u_media" />
+					<Add library="wxmsw28u_core" />
+					<Add library="wxmsw28u_adv" />
+					<Add library="wxmsw28u_gl" />
+					<Add library="comctl32" />
+					<Add directory="../libs" />
+					<Add directory="../../Luna-GameEngine/libs" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="`wx-config --cflags`" />
+			<Add option="`pkg-config gtk+-2.0 --cflags`" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+			<Add directory="/usr/include/glib-2.0" />
+			<Add directory="/usr/include/gtk-2.0" />
+			<Add directory="/usr/lib/glib/include" />
+		</Compiler>
+		<Linker>
+			<Add option="`wx-config --libs`" />
+			<Add option="`wx-config --gl-libs`" />
+			<Add option="`pkg-config gtk+-2.0 --libs`" />
+			<Add library="Xxf86vm" />
+			<Add library="Irrlicht" />
+			<Add library="GL" />
+			<Add library="glut" />
+			<Add library="X11" />
+			<Add library="GLU" />
+			<Add library="Xxf86vm" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+		</Linker>
+		<Unit filename="src/Config/Helpers/defaults.h" />
+		<Unit filename="src/Config/Helpers/types.h" />
+		<Unit filename="src/Config/Helpers/types/boolean.cpp" />
+		<Unit filename="src/Config/Helpers/types/boolean.h" />
+		<Unit filename="src/Config/Helpers/types/float.cpp" />
+		<Unit filename="src/Config/Helpers/types/float.h" />
+		<Unit filename="src/Config/Helpers/types/integer.cpp" />
+		<Unit filename="src/Config/Helpers/types/integer.h" />
+		<Unit filename="src/Config/Helpers/types/long.cpp" />
+		<Unit filename="src/Config/Helpers/types/long.h" />
+		<Unit filename="src/Config/config.cpp" />
+		<Unit filename="src/Config/config.h" />
+		<Unit filename="src/Config/properties.cpp" />
+		<Unit filename="src/Config/properties.h" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/main.h" />
+		<Unit filename="src/mainFrame.cpp" />
+		<Unit filename="src/mainFrame.h" />
+		<Unit filename="src/renderWindow.cpp" />
+		<Unit filename="src/renderWindow.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
