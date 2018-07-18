@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="AgEditor" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="AgEditor" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug Win32" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-W" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="AgEditor" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release Win32" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-D_UNICODE" />
+					<Add option="-W" />
+					<Add option="-O2" />
+					<Add directory="../Includes" />
+					<Add directory="../../Luna-GameEngine/includes" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../Includes" />
+					<Add directory="../../Luna-GameEngine/includes" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="wxbase28u" />
+					<Add library="wxmsw28u_media" />
+					<Add library="wxmsw28u_core" />
+					<Add library="wxmsw28u_adv" />
+					<Add library="wxmsw28u_gl" />
+					<Add library="comctl32" />
+					<Add directory="../libs" />
+					<Add directory="../../Luna-GameEngine/libs" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="`wx-config --cflags`" />
+			<Add option="`pkg-config gtk+-2.0 --cflags`" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+			<Add directory="/usr/include/glib-2.0" />
+			<Add directory="/usr/include/gtk-2.0" />
+			<Add directory="/usr/lib/glib/include" />
+		</Compiler>
+		<Linker>
+			<Add option="`wx-config --libs --gl-libs`" />
+			<Add option="`pkg-config gtk+-2.0 --libs`" />
+			<Add library="Irrlicht" />
+			<Add library="glut" />
+			<Add library="GL" />
+			<Add library="X11" />
+			<Add library="Xxf86vm" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+		</Linker>
+		<Unit filename="wxeditor.cpp" />
+		<Unit filename="wxeditor.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
