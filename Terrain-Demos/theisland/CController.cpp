@@ -314,7 +314,7 @@ namespace island
 
 			irr::core::stringc file = "models/balloon";
 			file += (randomNum % 4) + 1;
-			file += ".x";
+			file += ".X";
 
 			//creates the ballon
 			irr::scene::IAnimatedMesh* ballonMesh = core->getSceneManager()->getMesh(file.c_str());
