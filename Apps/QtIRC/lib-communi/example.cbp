@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Irrlicht Pong" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./Pong" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-fPIC" />
+			<Add option="`pkg-config Qt5OpenGL Qt5Widgets Qt5Gui Qt5Core Qt5Qml Qt5Network Qt5X11Extras --cflags`" />
+			<Add option="-DIRC_SHARED" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+			<Add directory="/home/Dev/libs/net/IRC/libcommuni/include" />
+			<Add directory="/usr/include/x86_64-linux-gnu/qt5" />
+			<Add directory="/home/Dev/libs/net/IRC/libcommuni/include/IrcCore" />
+			<Add directory="/home/Dev/libs/net/IRC/libcommuni/include/IrcModel" />
+			<Add directory="/home/Dev/libs/net/IRC/libcommuni/include/IrcUtil" />
+			<Add directory="./" />
+			<Add directory="/usr/include/libdrm" />
+			<Add directory="/usr/include/uchardet" />
+			<Add directory="./mocs" />
+		</Compiler>
+		<Linker>
+			<Add option="-DQT_DEPRECATED_WARNINGS" />
+			<Add option="-DIRC_STATIC" />
+			<Add option="-DQT_NO_DEBUG" />
+			<Add option="-DQT_OPENGL_LIB" />
+			<Add option="-DQT_WIDGETS_LIB" />
+			<Add option="-DQT_GUI_LIB" />
+			<Add option="-DQT_NETWORK_LIB" />
+			<Add option="-DQT_CORE_LIB" />
+			<Add library="Irrlicht" />
+			<Add library="GL" />
+			<Add library="Xxf86vm" />
+			<Add library="X11" />
+			<Add library="uchardet" />
+			<Add library="Qt5Core" />
+			<Add library="Qt5OpenGL" />
+			<Add library="Qt5Gui" />
+			<Add library="Qt5Widgets" />
+			<Add library="QtNetwork" />
+			<Add library="Qt5Qml" />
+			<Add library="Qt5X11Extras" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+			<Add directory="/home/Dev/libs/net/IRC/libcommuni/lib" />
+		</Linker>
+		<Unit filename="IrcCore/Irc" />
+		<Unit filename="IrcCore/IrcCommandFilter" />
+		<Unit filename="IrcCore/IrcConnection" />
+		<Unit filename="IrcCore/IrcGlobal" />
+		<Unit filename="IrcCore/IrcMessage" />
+		<Unit filename="IrcCore/IrcMessageFilter" />
+		<Unit filename="IrcCore/IrcNetwork" />
+		<Unit filename="IrcCore/IrcProtocol" />
+		<Unit filename="IrcCore/irc.cpp" />
+		<Unit filename="IrcCore/irc.h" />
+		<Unit filename="IrcCore/irccommand.cpp" />
+		<Unit filename="IrcCore/irccommand.h" />
+		<Unit filename="IrcCore/irccommand_p.h" />
+		<Unit filename="IrcCore/irccommandfilter.h" />
+		<Unit filename="IrcCore/ircconnection.cpp" />
+		<Unit filename="IrcCore/ircconnection.h" />
+		<Unit filename="IrcCore/ircconnection_p.h" />
+		<Unit filename="IrcCore/irccore.cpp" />
+		<Unit filename="IrcCore/irccore.h" />
+		<Unit filename="IrcCore/ircdebug_p.h" />
+		<Unit filename="IrcCore/ircfilter.cpp" />
+		<Unit filename="IrcCore/ircfilter.h" />
+		<Unit filename="IrcCore/ircglobal.h" />
+		<Unit filename="IrcCore/ircmessage.cpp" />
+		<Unit filename="IrcCore/ircmessage.h" />
+		<Unit filename="IrcCore/ircmessage_p.cpp" />
+		<Unit filename="IrcCore/ircmessage_p.h" />
+		<Unit filename="IrcCore/ircmessagecomposer.cpp" />
+		<Unit filename="IrcCore/ircmessagecomposer_p.h" />
+		<Unit filename="IrcCore/ircmessagedecoder.cpp" />
+		<Unit filename="IrcCore/ircmessagedecoder_none.cpp" />
+		<Unit filename="IrcCore/ircmessagedecoder_p.h" />
+		<Unit filename="IrcCore/ircmessagefilter.h" />
+		<Unit filename="IrcCore/ircnetwork.cpp" />
+		<Unit filename="IrcCore/ircnetwork.h" />
+		<Unit filename="IrcCore/ircnetwork_p.h" />
+		<Unit filename="IrcCore/ircprotocol.cpp" />
+		<Unit filename="IrcCore/ircprotocol.h" />
+		<Unit filename="IrcModel/IrcBuffer" />
+		<Unit filename="IrcModel/IrcBufferModel" />
+		<Unit filename="IrcModel/IrcChannel" />
+		<Unit filename="IrcModel/IrcModel" />
+		<Unit filename="IrcModel/IrcUser" />
+		<Unit filename="IrcModel/IrcUserModel" />
+		<Unit filename="IrcModel/ircbuffer.cpp" />
+		<Unit filename="IrcModel/ircbuffer.h" />
+		<Unit filename="IrcModel/ircbuffer_p.h" />
+		<Unit filename="IrcModel/ircbuffermodel.cpp" />
+		<Unit filename="IrcModel/ircbuffermodel.h" />
+		<Unit filename="IrcModel/ircbuffermodel_p.h" />
+		<Unit filename="IrcModel/ircchannel.cpp" />
+		<Unit filename="IrcModel/ircchannel.h" />
+		<Unit filename="IrcModel/ircchannel_p.h" />
+		<Unit filename="IrcModel/ircmodel.cpp" />
+		<Unit filename="IrcModel/ircmodel.h" />
+		<Unit filename="IrcModel/ircuser.cpp" />
+		<Unit filename="IrcModel/ircuser.h" />
+		<Unit filename="IrcModel/ircuser_p.h" />
+		<Unit filename="IrcModel/ircusermodel.cpp" />
+		<Unit filename="IrcModel/ircusermodel.h" />
+		<Unit filename="IrcModel/ircusermodel_p.h" />
+		<Unit filename="IrcUtil/IrcCommandParser" />
+		<Unit filename="IrcUtil/IrcCommandQueue" />
+		<Unit filename="IrcUtil/IrcCompleter" />
+		<Unit filename="IrcUtil/IrcLagTimer" />
+		<Unit filename="IrcUtil/IrcPalette" />
+		<Unit filename="IrcUtil/IrcTextFormat" />
+		<Unit filename="IrcUtil/IrcUtil" />
+		<Unit filename="IrcUtil/irccommandparser.cpp" />
+		<Unit filename="IrcUtil/irccommandparser.h" />
+		<Unit filename="IrcUtil/irccommandparser_p.h" />
+		<Unit filename="IrcUtil/irccommandqueue.cpp" />
+		<Unit filename="IrcUtil/irccommandqueue.h" />
+		<Unit filename="IrcUtil/irccommandqueue_p.h" />
+		<Unit filename="IrcUtil/irccompleter.cpp" />
+		<Unit filename="IrcUtil/irccompleter.h" />
+		<Unit filename="IrcUtil/irclagtimer.cpp" />
+		<Unit filename="IrcUtil/irclagtimer.h" />
+		<Unit filename="IrcUtil/irclagtimer_p.h" />
+		<Unit filename="IrcUtil/ircpalette.cpp" />
+		<Unit filename="IrcUtil/ircpalette.h" />
+		<Unit filename="IrcUtil/irctextformat.cpp" />
+		<Unit filename="IrcUtil/irctextformat.h" />
+		<Unit filename="IrcUtil/irctoken.cpp" />
+		<Unit filename="IrcUtil/irctoken_p.h" />
+		<Unit filename="IrcUtil/ircutil.cpp" />
+		<Unit filename="IrcUtil/ircutil.h" />
+		<Unit filename="ircclient.cpp" />
+		<Unit filename="ircclient.h" />
+		<Unit filename="ircmessageformatter.cpp" />
+		<Unit filename="ircmessageformatter.h" />
+		<Unit filename="irrlichtwidget.cpp" />
+		<Unit filename="irrlichtwidget.h" />
+		<Unit filename="irrutil.cpp" />
+		<Unit filename="irrutil.h" />
+		<Unit filename="irrwidget.cpp" />
+		<Unit filename="irrwidget.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="mainwindow.cpp" />
+		<Unit filename="mainwindow.h" />
+		<Unit filename="mocs/moc_irc.cpp" />
+		<Unit filename="mocs/moc_ircbuffer.cpp" />
+		<Unit filename="mocs/moc_ircbuffermodel.cpp" />
+		<Unit filename="mocs/moc_ircbuffermodel_p.cpp" />
+		<Unit filename="mocs/moc_ircchannel.cpp" />
+		<Unit filename="mocs/moc_ircclient.cpp" />
+		<Unit filename="mocs/moc_irccommand.cpp" />
+		<Unit filename="mocs/moc_irccommandparser.cpp" />
+		<Unit filename="mocs/moc_irccommandqueue.cpp" />
+		<Unit filename="mocs/moc_irccommandqueue_p.cpp" />
+		<Unit filename="mocs/moc_irccompleter.cpp" />
+		<Unit filename="mocs/moc_ircconnection.cpp" />
+		<Unit filename="mocs/moc_irclagtimer.cpp" />
+		<Unit filename="mocs/moc_irclagtimer_p.cpp" />
+		<Unit filename="mocs/moc_ircmessage.cpp" />
+		<Unit filename="mocs/moc_ircmessagecomposer_p.cpp" />
+		<Unit filename="mocs/moc_ircnetwork.cpp" />
+		<Unit filename="mocs/moc_ircpalette.cpp" />
+		<Unit filename="mocs/moc_ircprotocol.cpp" />
+		<Unit filename="mocs/moc_irctextformat.cpp" />
+		<Unit filename="mocs/moc_ircuser.cpp" />
+		<Unit filename="mocs/moc_ircusermodel.cpp" />
+		<Unit filename="mocs/moc_irrlichtwidget.cpp" />
+		<Unit filename="mocs/moc_irrwidget.cpp" />
+		<Unit filename="mocs/moc_mainwindow.cpp" />
+		<Unit filename="mocs/moc_predefs.h" />
+		<Unit filename="movemodelanimator.cpp" />
+		<Unit filename="movemodelanimator.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
