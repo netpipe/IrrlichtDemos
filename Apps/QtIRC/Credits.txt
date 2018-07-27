@@ -1,0 +1,13 @@
+# QtIRC
+Irc client using qt and irrlicht.
+
+
+Authors / Credits
+
+| Name               |     Roll                                 |
+|--------------------|------------------------------------------|
+|Clay Shippy - Tecan| Project Admin|
+|Anirban Talukdar| Coder|
+|lib-communi||
+|Irrlicht||
+
