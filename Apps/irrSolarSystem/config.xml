@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<config>
+<!--This is the config file for irrSolarSystem. You can change the 
+gravity, Camera-Speed and Timestep and Startdate here.
+The real gravity is as follows:
+Mercury        330e21 kg / 0.0558 x EM                    
+Venus         4869e21 kg / 0.815 x EM                    
+Earth         5972e21 kg / 1 x EM                        
+Mars        642.19e21 kg / 0.1075 x EM                 
+Jupiter    1900000e21 kg / 317.83 x EM                
+Saturn      568000e21 kg / 95.147 x EM                 
+Uranus       86830e21 kg / 14.54 x EM                   
+Neptune     102470e21 kg / 17.23 x EM                  
+Pluto         12.7e21 kg / 0.0022 x EM                  
+Sun     1989000000e21 kg / 3.33e+05 x EM-->                 
+                                            
+<Mercury mass="330e21" />                 
+<Venus   mass="4869e21" />                 
+<Earth   mass="5972e21" />                 
+<Mars    mass="642.19e21" />                 
+<Jupiter mass="1900000e21" />               
+<Saturn  mass="568000e21" />               
+<Uranus  mass="86830e21" />
+<Neptune mass="102470e21" />
+<Pluto   mass="12.7e21" />
+<Sun     mass="1989000000e21" />
+
+<Timestep step="100" />
+
+<year is="1996"/>
+<month is="6"/>
+<day is="21"/>
+<hour is="15"/>
+<minute is="45"/>
+<second is="0"/>
+
+<CamSpeedUpDown speed="0.1" />
+<CamSpeedLeftRight speed="0.1" />
+<CamSpeedForwardBackward speed="0.15" />
+</config>

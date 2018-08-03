@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SolarSystem" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./bin/SolarSystem" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="./bin" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="X11" />
+			<Add library="f2c" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+			<Add directory="./" />
+			<Add directory="libf2c" />
+		</Linker>
+		<Unit filename="CBatchingMesh.cpp" />
+		<Unit filename="CBatchingMesh.h" />
+		<Unit filename="CRTTSkyBoxSceneNode.cpp" />
+		<Unit filename="CRTTSkyBoxSceneNode.h" />
+		<Unit filename="Geopack-2008.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Geopack-2008.h" />
+		<Unit filename="libf2c/abort_.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/arith.h" />
+		<Unit filename="libf2c/arithchk.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/backspac.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/c_abs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/c_cos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/c_div.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/c_exp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/c_log.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/c_sin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/c_sqrt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/cabs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/close.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/ctype.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/ctype.h" />
+		<Unit filename="libf2c/d_abs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/d_acos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/d_asin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/d_atan.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/d_atn2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/d_cnjg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/d_cos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/d_cosh.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/d_dim.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/d_exp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/d_imag.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/d_int.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/d_lg10.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/d_log.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/d_mod.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/d_nint.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/d_prod.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/d_sign.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/d_sin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/d_sinh.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/d_sqrt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/d_tan.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/d_tanh.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/derf_.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/derfc_.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/dfe.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/dolio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/dtime_.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/due.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/ef1asc_.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/ef1cmc_.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/endfile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/erf_.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/erfc_.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/err.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/etime_.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/exit_.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/f2c.h" />
+		<Unit filename="libf2c/f2ch.add" />
+		<Unit filename="libf2c/f77_aloc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/f77vers.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/fio.h" />
+		<Unit filename="libf2c/fmt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/fmt.h" />
+		<Unit filename="libf2c/fmtlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/fp.h" />
+		<Unit filename="libf2c/ftell64_.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/ftell_.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/getarg_.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/getenv_.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/h_abs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/h_dim.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/h_dnnt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/h_indx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/h_len.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/h_mod.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/h_nint.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/h_sign.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/hl_ge.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/hl_gt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/hl_le.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/hl_lt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/i77vers.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/i_abs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/i_dim.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/i_dnnt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/i_indx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/i_len.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/i_mod.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/i_nint.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/i_sign.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/iargc_.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/iio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/ilnw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/inquire.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/l_ge.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/l_gt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/l_le.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/l_lt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/lbitbits.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/lbitshft.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/lio.h" />
+		<Unit filename="libf2c/lread.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/lwrite.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/open.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/pow_ci.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/pow_dd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/pow_di.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/pow_hh.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/pow_ii.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/pow_qq.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/pow_ri.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/pow_zi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/pow_zz.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/qbitbits.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/qbitshft.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/r_abs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/r_acos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/r_asin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/r_atan.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/r_atn2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/r_cnjg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/r_cos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/r_cosh.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/r_dim.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/r_exp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/r_imag.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/r_int.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/r_lg10.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/r_log.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/r_mod.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/r_nint.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/r_sign.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/r_sin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/r_sinh.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/r_sqrt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/r_tan.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/r_tanh.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/rawio.h" />
+		<Unit filename="libf2c/rdfmt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/rewind.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/rsfe.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/rsli.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/rsne.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/s_cat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/s_cmp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/s_copy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/s_paus.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/s_rnge.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/s_stop.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/sfe.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/sig_die.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/signal1.h" />
+		<Unit filename="libf2c/signal_.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/signbit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/sue.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/sysdep1.h" />
+		<Unit filename="libf2c/system_.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/typesize.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/uio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/uninit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/util.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/wref.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/wrtfmt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/wsfe.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/wsle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/wsne.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/xwsne.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/z_abs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/z_cos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/z_div.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/z_exp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/z_log.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/z_sin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libf2c/z_sqrt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.cpp" />
+		<Unit filename="solar.cpp" />
+		<Unit filename="solar.h" />
+		<Unit filename="t96_01.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="t96_01.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
