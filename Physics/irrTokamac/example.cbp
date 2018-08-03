@@ -7,7 +7,7 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="default">
-				<Option output="./IrrShaderViewer" prefix_auto="0" extension_auto="0" />
+				<Option output="./Pong" prefix_auto="0" extension_auto="0" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Option projectResourceIncludeDirsRelation="1" />
@@ -18,25 +18,18 @@
 		</VirtualTargets>
 		<Compiler>
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+			<Add directory="tokamak_release/include" />
 		</Compiler>
 		<Linker>
 			<Add library="Irrlicht" />
 			<Add library="GL" />
 			<Add library="Xxf86vm" />
-			<Add library="X11" />
+			<Add library="tokamak" />
 			<Add library="X11" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+			<Add directory="tokamak_release/lib" />
 		</Linker>
-		<Unit filename="CShader.cpp" />
-		<Unit filename="CShader.h" />
-		<Unit filename="DynamicShaderExample.cpp" />
-		<Unit filename="XML/tinystr.cpp" />
-		<Unit filename="XML/tinystr.h" />
-		<Unit filename="XML/tinyxml.cpp" />
-		<Unit filename="XML/tinyxml.h" />
-		<Unit filename="XML/tinyxmlerror.cpp" />
-		<Unit filename="XML/tinyxmlparser.cpp" />
-		<Unit filename="targetver.h" />
+		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />

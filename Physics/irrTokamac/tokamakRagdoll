@@ -1,0 +1,260 @@
+//how to use http://www.ogre3d.org/forums/viewtopic.php?f=1&t=3095&start=125
+/*
+   // Create ragdolls
+   for(unsigned int i = 0; i < 5; i++)
+   {
+      constructRagDoll("doll_" + StringConverter::toString(i),
+                     Vector3(Math::RangeRandom(-250.0f, 250.0f), (500.0f + (i * 250.0f)), -1250.0f),
+                     40.0f,
+                     8.0f,
+                     4);
+   }
+*/
+
+// constructRagDoll()
+void constructRagDoll(const String& name,
+                  const Vector3& basePosition,
+                  Real bodyMass,
+                  Real limbMass,
+                  unsigned int jointIterations)
+{
+   // Quaternion to rotate the bodyparts/joints
+   Quaternion rotation;
+
+   // Create the body parts
+   //====================================================================================
+
+   // Body
+   DynamicBox* body = Simulation::getSingleton().createDynamicBox(name + "_body",
+                                       String::BLANK,
+                                       String::BLANK,
+                                       basePosition + Vector3(0.0f, 0.0f, 0.0f),
+                                       Quaternion::IDENTITY,
+                                       String::BLANK,
+                                       Vector3(55.0f, 70.0f, 30.0f),
+                                       bodyMass,
+                                       true);
+
+   // Head
+   DynamicSphere* head = Simulation::getSingleton().createDynamicSphere(name + "_head",
+                                          String::BLANK,
+                                          String::BLANK,
+                                          basePosition + Vector3(0.0f, 55.0f, 0.0f),
+                                          Quaternion::IDENTITY,
+                                          String::BLANK,
+                                          40.0f,
+                                          limbMass,
+                                          true);
+   head->setAngularDamping(0.0025f);
+
+   // Right Arm
+   rotation.FromAngleAxis((-PI / 2.0f), Vector3(0.0f, 0.0f, 1.0f));
+   DynamicCapsule* rightArm = Simulation::getSingleton().createDynamicCapsule(name + "_rightArm",
+                                             String::BLANK,
+                                             String::BLANK,
+                                             basePosition + Vector3(-45.0f, 28.0f, 0.0f),
+                                             rotation,
+                                             String::BLANK,
+                                             25.0f, 40.0f,
+                                             limbMass,
+                                             true);
+
+   // Left Arm
+   rotation.FromAngleAxis((PI / 2.0f), Vector3(0.0f, 0.0f, 1.0f));
+   DynamicCapsule* leftArm = Simulation::getSingleton().createDynamicCapsule(name + "_leftArm",
+                                             String::BLANK,
+                                             String::BLANK,
+                                             basePosition + Vector3(45.0f, 28.0f, 0.0f),
+                                             rotation,
+                                             String::BLANK,
+                                             25.0f, 40.0f,
+                                             limbMass,
+                                             true);
+
+   // Right Forearm
+   rotation.FromAngleAxis((-PI / 2.0f), Vector3(0.0f, 0.0f, 1.0f));
+   DynamicBox* rightForearm = Simulation::getSingleton().createDynamicBox(name + "_rightForearm",
+                                             String::BLANK,
+                                             String::BLANK,
+                                             basePosition + Vector3(-90.0f, 28.0f, 0.0f),
+                                             rotation,
+                                             String::BLANK,
+                                             Vector3(24.0f, 60.0f, 24.0f),
+                                             limbMass,
+                                             true);
+
+   // Left Forearm
+   rotation.FromAngleAxis((PI / 2.0f), Vector3(0.0f, 0.0f, 1.0f));
+   DynamicBox* leftForearm = Simulation::getSingleton().createDynamicBox(name + "_leftForearm",   
+                                             String::BLANK,                 
+                                             String::BLANK,                 
+                                             basePosition + Vector3(90.0f, 28.0f, 0.0f),   
+                                             rotation,           
+                                             String::BLANK,
+                                             Vector3(24.0f, 60.0f, 24.0f),
+                                             limbMass,
+                                             true);
+
+   // Right Thigh
+   DynamicCapsule* rightThigh = Simulation::getSingleton().createDynamicCapsule(name + "_rightThigh",
+                                                String::BLANK,
+                                                String::BLANK,
+                                                basePosition + Vector3(-20.0f, -60.0f, 0.0f),
+                                                Quaternion::IDENTITY,
+                                                String::BLANK,
+                                                27.0f, 70.0f,
+                                                limbMass,
+                                                true);
+
+   // Left Thigh
+   DynamicCapsule* leftThigh = Simulation::getSingleton().createDynamicCapsule(name + "leftThigh",
+                                                String::BLANK,
+                                                String::BLANK,
+                                                basePosition + Vector3(20.0f, -60.0f, 0.0f),
+                                                Quaternion::IDENTITY,
+                                                String::BLANK,
+                                                27.0f, 70.0f,
+                                                limbMass,
+                                                true);
+
+   // Right Leg
+   DynamicBox* rightLeg = Simulation::getSingleton().createDynamicBox(name + "_rightLeg",
+                                          String::BLANK,
+                                          String::BLANK,
+                                          basePosition + Vector3(-20.0f, -130.0f, 0.0f),
+                                          Quaternion::IDENTITY,
+                                          String::BLANK,
+                                          Vector3(30.0f, 80.0f, 30.0f),
+                                          8.0f,
+                                          true);
+
+   // Left Left
+   DynamicBox* leftLeg = Simulation::getSingleton().createDynamicBox(name + "_leftLeg",
+                                          String::BLANK,
+                                          String::BLANK,
+                                          basePosition + Vector3(20.0f, -130.0f, 0.0f),
+                                          Quaternion::IDENTITY,
+                                          String::BLANK,
+                                          Vector3(30.0f, 80.0f, 30.0f),
+                                          8.0f,
+                                          true);
+
+   // Create the Joints
+   //====================================================================================
+
+   // Head - Body joint
+   Hinge* bodyHeadJoint = Simulation::getSingleton().createHinge(name + "_BodyHeadJoint",
+                                          body, head,
+                                          10.0f,
+                                          basePosition + Vector3(0.0f, 35.0f, 0.0f));
+   bodyHeadJoint->setLowerLimit(-PI / 4.0f);
+   bodyHeadJoint->setUpperLimit(PI / 4.0f);
+   bodyHeadJoint->setLimitEnabled(true);
+   bodyHeadJoint->setNumIterations(jointIterations);
+   bodyHeadJoint->setDampingFactor(0.25f);
+
+   // Right Arm - Body joint
+   BallSocket* rightArmBodyJoint = Simulation::getSingleton().createBallSocket(name + "_RightArmBodyJoint",
+                                                rightArm,
+                                                body,
+                                                basePosition + Vector3(-22.0f, 28.0f, 0.0f),
+                                                Quaternion::IDENTITY);
+   rightArmBodyJoint->setLowerLimit(0.0f);
+   rightArmBodyJoint->setUpperLimit(PI / 2.5f);
+   rightArmBodyJoint->setLimitEnabled(true);
+   rightArmBodyJoint->setLowerTwistLimit(0.1f);
+   rightArmBodyJoint->setTwistLimitEnabled(true);
+   rightArmBodyJoint->setNumIterations(jointIterations);
+
+   // Left Arm - Body joint
+   BallSocket* leftArmBodyJoint = Simulation::getSingleton().createBallSocket(name + "_LeftArmBodyJoint",
+                                                leftArm,
+                                                body,
+                                                basePosition + Vector3(22.0f, 28.0f, 0.0f),
+                                                Quaternion::IDENTITY);
+   leftArmBodyJoint->setLowerLimit(0.0f);
+   leftArmBodyJoint->setUpperLimit(PI / 2.5f);
+   leftArmBodyJoint->setLimitEnabled(true);
+   leftArmBodyJoint->setLowerTwistLimit(0.1f);
+   leftArmBodyJoint->setTwistLimitEnabled(true);
+   leftArmBodyJoint->setNumIterations(jointIterations);
+
+   // Right Forearm - Arm Joint
+   rotation.FromAxes(Vector3(-1.0f, 0.0f, 0.0f), Vector3(0.0f, -1.0f, 0.0f), Vector3(0.0f, 0.0f, 1.0f));
+   Hinge* rightForearmArmJoint = Simulation::getSingleton().createHinge(name + "_RightForearmArmJoint",
+                                                rightArm,
+                                                rightForearm,
+                                                10.0f,
+                                                basePosition + Vector3(-65.0f, 28.0f, 0.0f),
+                                                rotation);
+   rightForearmArmJoint->setLowerLimit(0.0f);
+   rightForearmArmJoint->setUpperLimit(PI / 2.0f);
+   rightForearmArmJoint->setLimitEnabled(true);
+   rightForearmArmJoint->setNumIterations(jointIterations);
+
+   // Left Forearm - Arm Joint
+   rotation.FromAxes(Vector3(-1.0f, 0.0f, 0.0f), Vector3(0.0f, -1.0f, 0.0f), Vector3(0.0f, 0.0f, 1.0f));
+   Hinge* leftForearmArmJoint = Simulation::getSingleton().createHinge(name + "_LeftForearmArmJoint",
+                                                leftForearm,
+                                                leftArm,
+                                                10.0f,
+                                                basePosition + Vector3(65.0f, 28.0f, 0.0f),
+                                                rotation);
+   leftForearmArmJoint->setLowerLimit(0.0);
+   leftForearmArmJoint->setUpperLimit(PI / 2.0f);
+   leftForearmArmJoint->setLimitEnabled(true);
+   leftForearmArmJoint->setNumIterations(jointIterations);
+
+   // Right Thigh - Body Joint
+   rotation.FromAngleAxis((PI * 6.0f / 8.0f), Vector3(0.0f, 0.0f, 1.0f));
+   BallSocket* rightThighBodyJoint = Simulation::getSingleton().createBallSocket(name + "_RightThighBodyJoint",
+                                                   rightThigh,
+                                                   body,
+                                                   basePosition + Vector3(-20.0f, -32.0f, 0.0f),
+                                                   rotation);
+   rightThighBodyJoint->setLowerLimit(0.0f);
+   rightThighBodyJoint->setUpperLimit(PI / 4.0f);
+   rightThighBodyJoint->setLimitEnabled(true);
+   rightThighBodyJoint->setLowerTwistLimit(0.8f);
+   rightThighBodyJoint->setTwistLimitEnabled(true);
+   rightThighBodyJoint->setNumIterations(jointIterations);
+
+   // Left Thigh - Body Joint
+   rotation.FromAngleAxis((PI * 6.0f / 8.0f), Vector3(0.0f, 0.0f, 1.0f));
+   BallSocket* leftThighBodyJoint = Simulation::getSingleton().createBallSocket(name + "_LeftThighBodyJoint",
+                                                   leftThigh,
+                                                   body,
+                                                   basePosition + Vector3(20.0f, -32.0f, 0.0f));
+   leftThighBodyJoint->setLowerLimit(0.0f);
+   leftThighBodyJoint->setUpperLimit(PI / 4.0f);
+   leftThighBodyJoint->setLimitEnabled(true);
+   leftThighBodyJoint->setLowerTwistLimit(0.8f);
+   leftThighBodyJoint->setTwistLimitEnabled(true);
+   leftThighBodyJoint->setNumIterations(jointIterations);
+
+   // Right Leg - Thigh Joint
+   rotation.FromAngleAxis((-PI * 0.5f), Vector3(0.0f, 0.0f, 1.0f));
+   Hinge* rightLegThighJoint = Simulation::getSingleton().createHinge(name + "_RightLegThighJoint",
+                                             rightLeg,
+                                             rightThigh,
+                                             15.0f,
+                                             basePosition + Vector3(-20.0f, -95.0f, 0.0f),
+                                             rotation);
+   rightLegThighJoint->setLowerLimit(0.0f);
+   rightLegThighJoint->setUpperLimit(PI / 2.0f);
+   rightLegThighJoint->setLimitEnabled(true);
+   rightLegThighJoint->setNumIterations(jointIterations);
+
+   // Left Leg - Thigh Joint
+   rotation.FromAngleAxis((-PI * 0.5f), Vector3(0.0f, 0.0f, 1.0f));
+   Hinge* leftLegThighJoint = Simulation::getSingleton().createHinge(name + "_LeftLegThighJoint",
+                                             leftLeg,
+                                             leftThigh,
+                                             15.0f,
+                                             basePosition + Vector3(20.0f, -95.0f, 0.0f),
+                                             rotation);
+   leftLegThighJoint->setLowerLimit(0.0f);
+   leftLegThighJoint->setUpperLimit(PI / 2.0f);
+   leftLegThighJoint->setLimitEnabled(true);
+   leftLegThighJoint->setNumIterations(jointIterations);
+}
