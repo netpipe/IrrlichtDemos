@@ -1,0 +1,11 @@
+core::array<core::vector3df> points;
+points.push_back(core::vector3df(2.92085,23.3746,150.167));
+points.push_back(core::vector3df(2.92085,23.3746,150.167));
+points.push_back(core::vector3df(2.92085,23.3746,150.167));
+points.push_back(core::vector3df(277.503,-6.37026,82.8841));
+points.push_back(core::vector3df(189.569,0.614033,125.995));
+points.push_back(core::vector3df(181.072,1.68596,132.071));
+points.push_back(core::vector3df(185.013,36.5351,410.36));
+points.push_back(core::vector3df(179.963,39.5683,417.813));
+points.push_back(core::vector3df(55.1641,135.841,646.719));
+points.push_back(core::vector3df(55.1641,135.841,646.719));
