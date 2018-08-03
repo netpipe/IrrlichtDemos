@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CSGTestWorld", "CSGTestWorld\CSGTestWorld.vcproj", "{D1458623-BCA0-4770-B9E1-9456822CF611}"
+	ProjectSection(ProjectDependencies) = postProject
+		{485EA467-5C3E-45CD-98E5-D791834402A6} = {485EA467-5C3E-45CD-98E5-D791834402A6}
+		{17D65891-F68D-4125-BC10-D91DC981ACC3} = {17D65891-F68D-4125-BC10-D91DC981ACC3}
+		{FF323B9F-40F2-4A41-ABA6-2879454DFE20} = {FF323B9F-40F2-4A41-ABA6-2879454DFE20}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenGLUT", "OpenGlut\OpenGLUT.vcproj", "{17D65891-F68D-4125-BC10-D91DC981ACC3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "World", "World\World.vcproj", "{FF323B9F-40F2-4A41-ABA6-2879454DFE20}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MathAndGraphix", "MathAndGraphix\MathAndGraphix.vcproj", "{485EA467-5C3E-45CD-98E5-D791834402A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1458623-BCA0-4770-B9E1-9456822CF611}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D1458623-BCA0-4770-B9E1-9456822CF611}.Debug|Win32.Build.0 = Debug|Win32
+		{D1458623-BCA0-4770-B9E1-9456822CF611}.Release|Win32.ActiveCfg = Release|Win32
+		{D1458623-BCA0-4770-B9E1-9456822CF611}.Release|Win32.Build.0 = Release|Win32
+		{17D65891-F68D-4125-BC10-D91DC981ACC3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{17D65891-F68D-4125-BC10-D91DC981ACC3}.Debug|Win32.Build.0 = Debug|Win32
+		{17D65891-F68D-4125-BC10-D91DC981ACC3}.Release|Win32.ActiveCfg = Release|Win32
+		{17D65891-F68D-4125-BC10-D91DC981ACC3}.Release|Win32.Build.0 = Release|Win32
+		{FF323B9F-40F2-4A41-ABA6-2879454DFE20}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FF323B9F-40F2-4A41-ABA6-2879454DFE20}.Debug|Win32.Build.0 = Debug|Win32
+		{FF323B9F-40F2-4A41-ABA6-2879454DFE20}.Release|Win32.ActiveCfg = Release|Win32
+		{FF323B9F-40F2-4A41-ABA6-2879454DFE20}.Release|Win32.Build.0 = Release|Win32
+		{485EA467-5C3E-45CD-98E5-D791834402A6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{485EA467-5C3E-45CD-98E5-D791834402A6}.Debug|Win32.Build.0 = Debug|Win32
+		{485EA467-5C3E-45CD-98E5-D791834402A6}.Release|Win32.ActiveCfg = Release|Win32
+		{485EA467-5C3E-45CD-98E5-D791834402A6}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

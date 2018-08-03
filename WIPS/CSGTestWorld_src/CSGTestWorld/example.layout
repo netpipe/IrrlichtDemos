@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="All" />
+	<File name="../World/World.h" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="270" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="18" />
+		</Folding>
+	</File>
+	<File name="../MathAndGraphix/GX_ModelUtil.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="262" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../MathAndGraphix/GX_TransformUtility.cpp" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="180" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="10" />
+			<Collapse line="21" />
+		</Folding>
+	</File>
+	<File name="../MathAndGraphix/GX_RenderingLine.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="196" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="11" />
+			<Collapse line="20" />
+			<Collapse line="30" />
+			<Collapse line="40" />
+			<Collapse line="51" />
+			<Collapse line="55" />
+			<Collapse line="60" />
+		</Folding>
+	</File>
+	<File name="../MathAndGraphix/GX_RenderingPoint.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="196" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="11" />
+			<Collapse line="17" />
+			<Collapse line="21" />
+			<Collapse line="41" />
+			<Collapse line="64" />
+			<Collapse line="95" />
+			<Collapse line="116" />
+		</Folding>
+	</File>
+	<File name="../MathAndGraphix/GX_Scene.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="218" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="13" />
+			<Collapse line="24" />
+			<Collapse line="32" />
+			<Collapse line="55" />
+			<Collapse line="63" />
+			<Collapse line="68" />
+			<Collapse line="73" />
+			<Collapse line="78" />
+			<Collapse line="83" />
+			<Collapse line="88" />
+			<Collapse line="106" />
+			<Collapse line="126" />
+			<Collapse line="144" />
+			<Collapse line="154" />
+			<Collapse line="159" />
+			<Collapse line="171" />
+		</Folding>
+	</File>
+	<File name="../MathAndGraphix/GX_TextureArchive.h" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="274" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="16" />
+		</Folding>
+	</File>
+	<File name="../World/3DWorld.h" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="250" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="19" />
+		</Folding>
+	</File>
+	<File name="../MathAndGraphix/UT_String.cpp" open="1" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="296" topLine="10" />
+		</Cursor>
+		<Folding>
+			<Collapse line="19" />
+			<Collapse line="33" />
+			<Collapse line="75" />
+			<Collapse line="85" />
+			<Collapse line="93" />
+			<Collapse line="102" />
+			<Collapse line="111" />
+			<Collapse line="120" />
+			<Collapse line="130" />
+			<Collapse line="141" />
+			<Collapse line="153" />
+			<Collapse line="158" />
+			<Collapse line="163" />
+			<Collapse line="168" />
+			<Collapse line="173" />
+			<Collapse line="178" />
+			<Collapse line="183" />
+			<Collapse line="188" />
+		</Folding>
+	</File>
+	<File name="../MathAndGraphix/GX_Color.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="163" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="22" />
+			<Collapse line="26" />
+			<Collapse line="30" />
+			<Collapse line="34" />
+			<Collapse line="43" />
+			<Collapse line="48" />
+			<Collapse line="65" />
+			<Collapse line="82" />
+			<Collapse line="95" />
+		</Folding>
+	</File>
+	<File name="../World/2DOrthoWorld.h" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="171" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="17" />
+		</Folding>
+	</File>
+	<File name="../World/FourWorldConfiguration.cpp" open="1" top="1" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2531" topLine="90" />
+		</Cursor>
+		<Folding>
+			<Collapse line="28" />
+			<Collapse line="93" />
+			<Collapse line="118" />
+			<Collapse line="163" />
+			<Collapse line="198" />
+			<Collapse line="211" />
+			<Collapse line="220" />
+			<Collapse line="228" />
+			<Collapse line="236" />
+			<Collapse line="244" />
+			<Collapse line="252" />
+			<Collapse line="312" />
+		</Folding>
+	</File>
+	<File name="../MathAndGraphix/GX_RenderingTriangle.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="281" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="18" />
+		</Folding>
+	</File>
+	<File name="../World/TwoWorldConfiguration.cpp" open="1" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="182" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="29" />
+			<Collapse line="38" />
+			<Collapse line="95" />
+			<Collapse line="150" />
+			<Collapse line="176" />
+			<Collapse line="221" />
+			<Collapse line="241" />
+			<Collapse line="261" />
+			<Collapse line="274" />
+			<Collapse line="283" />
+			<Collapse line="291" />
+			<Collapse line="299" />
+			<Collapse line="307" />
+			<Collapse line="315" />
+			<Collapse line="375" />
+		</Folding>
+	</File>
+	<File name="../MathAndGraphix/GX_RenderingTriangle.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="224" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="23" />
+			<Collapse line="40" />
+			<Collapse line="61" />
+			<Collapse line="76" />
+			<Collapse line="95" />
+			<Collapse line="118" />
+			<Collapse line="137" />
+			<Collapse line="141" />
+			<Collapse line="146" />
+			<Collapse line="210" />
+			<Collapse line="255" />
+		</Folding>
+	</File>
+	<File name="../MathAndGraphix/GX_ModelUtil.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7389" topLine="18" />
+		</Cursor>
+		<Folding>
+			<Collapse line="21" />
+			<Collapse line="143" />
+			<Collapse line="170" />
+			<Collapse line="182" />
+			<Collapse line="203" />
+			<Collapse line="219" />
+			<Collapse line="240" />
+			<Collapse line="250" />
+			<Collapse line="281" />
+			<Collapse line="288" />
+			<Collapse line="300" />
+		</Folding>
+	</File>
+	<File name="../MathAndGraphix/GX_Model.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="242" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="19" />
+			<Collapse line="34" />
+			<Collapse line="83" />
+			<Collapse line="96" />
+			<Collapse line="104" />
+			<Collapse line="112" />
+			<Collapse line="138" />
+			<Collapse line="164" />
+			<Collapse line="199" />
+			<Collapse line="239" />
+			<Collapse line="261" />
+			<Collapse line="280" />
+			<Collapse line="287" />
+			<Collapse line="303" />
+			<Collapse line="410" />
+			<Collapse line="467" />
+			<Collapse line="477" />
+			<Collapse line="490" />
+			<Collapse line="495" />
+			<Collapse line="501" />
+			<Collapse line="509" />
+		</Folding>
+	</File>
+	<File name="../MathAndGraphix/ML_HermiteCurveRenderer.cpp" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="381" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="23" />
+		</Folding>
+	</File>
+	<File name="../MathAndGraphix/GX_TextureLoader.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="202" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="11" />
+		</Folding>
+	</File>
+	<File name="../World/SingleWorldConfiguration.cpp" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="185" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="32" />
+			<Collapse line="37" />
+			<Collapse line="49" />
+			<Collapse line="96" />
+			<Collapse line="112" />
+			<Collapse line="143" />
+			<Collapse line="153" />
+			<Collapse line="163" />
+			<Collapse line="169" />
+			<Collapse line="174" />
+			<Collapse line="179" />
+			<Collapse line="184" />
+			<Collapse line="189" />
+			<Collapse line="231" />
+		</Folding>
+	</File>
+	<File name="../World/ThreeWorldConfiguration.cpp" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="184" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="33" />
+			<Collapse line="42" />
+			<Collapse line="114" />
+			<Collapse line="119" />
+			<Collapse line="126" />
+			<Collapse line="151" />
+			<Collapse line="196" />
+			<Collapse line="293" />
+			<Collapse line="306" />
+			<Collapse line="315" />
+			<Collapse line="323" />
+			<Collapse line="331" />
+			<Collapse line="339" />
+			<Collapse line="347" />
+			<Collapse line="407" />
+		</Folding>
+	</File>
+	<EditorTabsLayout layout="c56dc4005b63d61800120cb000000002=0;Irrlicht Pong:../MathAndGraphix/GX_Color.cpp,1;Irrlicht Pong:../MathAndGraphix/GX_RenderingTriangle.h,2;Irrlicht Pong:../MathAndGraphix/GX_ModelUtil.h,3;Irrlicht Pong:../MathAndGraphix/GX_Model.cpp,4;Irrlicht Pong:../MathAndGraphix/GX_ModelUtil.cpp,5;Irrlicht Pong:../MathAndGraphix/GX_RenderingLine.cpp,6;Irrlicht Pong:../MathAndGraphix/GX_RenderingPoint.cpp,7;Irrlicht Pong:../MathAndGraphix/GX_RenderingTriangle.cpp,8;Irrlicht Pong:../MathAndGraphix/GX_Scene.cpp,9;Irrlicht Pong:../World/SingleWorldConfiguration.cpp,10;Irrlicht Pong:../MathAndGraphix/GX_TextureLoader.h,11;Irrlicht Pong:../World/ThreeWorldConfiguration.cpp,12;Irrlicht Pong:../World/3DWorld.h,13;Irrlicht Pong:../MathAndGraphix/ML_HermiteCurveRenderer.cpp,14;Irrlicht Pong:../World/2DOrthoWorld.h,15;Irrlicht Pong:../MathAndGraphix/GX_TransformUtility.cpp,16;Irrlicht Pong:../MathAndGraphix/GX_TextureArchive.h,*17;Irrlicht Pong:../World/FourWorldConfiguration.cpp,18;Irrlicht Pong:../World/World.h,19;Irrlicht Pong:../World/TwoWorldConfiguration.cpp,20;Irrlicht Pong:../MathAndGraphix/UT_String.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=814;besth=343;minw=814;minh=343;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=c56dc4005b63d61800120cb000000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+</CodeBlocks_layout_file>

@@ -1,0 +1,661 @@
+%% Marcin Załuski - praca dyplomowa
+%%
+%% http://www.immt.pwr.wroc.pl/index.php?option=com_docman&task=down&bid=75 - instrukcja do szablonu
+%%
+%% mwrep:
+%% 	sudo apt-get install texlive-lang-polish 
+%% textpops
+%%	sudo apt-get install texlive-latex-extra
+%%
+%% *.sty do katalogu:
+%% 	mkdir -p ~/texmf/tex/latex/pwr
+%% 	texhash ~/texmf
+%% 	sudo updmap
+
+\newcommand{\cmnt}[1]{}
+\documentclass[11pt]{mwrep}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage{pwrdtyt}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{lineno}
+\usepackage{array}
+\usepackage[dvips, pdfborder={0}, bookmarks, colorlinks=false, pdftitle={Animacja 3D z wykorzystaniem kinematyki odwrotnej}, pdfauthor={Marcin Załuski}, pdfsubject={Animacja 3D z wykorzystaniem kinematyki odwrotnej}, pdfkeywords={Animacja, 3D, kinematyka odwrotna, Irrlicht}]{hyperref}
+\renewcommand{\baselinestretch}{1.5}
+\usepackage[a4paper]{geometry}
+
+\usepackage{color}
+\usepackage{xcolor}
+% \usepackage{helvet}
+% \renewcommand*\familydefault{\sfdefault}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+
+
+\lstnewenvironment{listing}[3][C++]{ \vspace{0ex}\noindent
+  \lstset{caption=#2,label=#3,
+frame=b,numbers=left,language=#1,numberstyle=\tiny,
+breaklines=true,breakautoindent=true,basicstyle=\footnotesize,escapechar=¶, tabsize=2,showspaces=false,showstringspaces=false
+          } 
+\renewcommand{\baselinestretch}{1}
+}{ }
+
+
+
+\author{Marcin Załuski}
+\title{Animacja 3D z wykorzystaniem kinematyki odwrotnej}
+\promotor{dr inż. Tomasz Kapłon}
+\wydzial{Elektronika}
+\kluczowe{animacja, 3D, kinematyka, odwrotna, gra, silnik graficzny, ruch, postać}
+\streszczenie{Streszczenie pracy}
+
+\begin{document}
+\maketitle
+
+\pdfbookmark[1]{Spis treści}{table}
+
+\tableofcontents
+
+% \linenumbers
+\chapter{Wprowadzenie}
+
+Od czasu kiedy po raz pierwszy podłączono wyświetlacz do komputera i wykorzystano go w celach rozrywkowych, gry komputerowe stały się ważną kategorią oprogramowania. Nieustanny rozwój technologii i dostarczanie przez producentów coraz bardziej zaawansowanych rozwiązań sprzętowych, pozwalają z dnia na dzień przesuwać granice jakości animacji generowanych w czasie rzeczywistym. Nowoczesne procesory graficzne są bardzo złożone i pozwalają oprócz standardowego zastosowania, jakim jest wspieranie procesu wyświetlania obrazu, sprawdzają się także przy łamaniu szyfrów, obliczeniach naukowych i symulacjach fizycznych. Dziś nikogo już nie dziwią złożone animacje trójwymiarowe dostępne w grach komputerowych. Co więcej, osiągnięcie komercyjnego sukcesu przez grę nieużywającą sprzętowej akceleracji do renderowania grafiki wydaje się być niemożliwe. 
+
+Rynek gier komputerowych jest bardzo dochodowy i napędza sprzedaż oraz rozwój nowych procesorów graficznych. Istnieje także sprzężenie zwrotne -- lepszy sprzęt pozwala na stosowanie bardziej wyrafinowanych i efektownych technik, w tym również z zakresu trójwymiarowej animacji komputerowej. Ma to na celu zwiększenie poziomu realizmu oraz satysfakcji użytkownika, co z kolei przekłada się na wymierny zysk finansowy dla wydawcy. Przykładem może być kinematyka odwrotna, której poświęcono niniejszą pracę. Algorytmy i metody stosowane w grach komputerowych są nieustannie rozwijane i udoskonalane. Na potrzeby gier często powstają również nowe techniki opisywane w poważnych pracach naukowych, a uczelnie wyższe kształcą specjalistów z zakresu programowania gier komputerowych.
+
+  \section{Charakterystyka problemu}
+
+Pierwsze obiekty w grach komputerowych były złożone z podstawowych kształtów geometrycznych takich jak punkty i proste. Obecnie wysokobudżetowe produkcje na wzór filmów fabularnych charakteryzują się profesjonalną ścieżką dźwiękową oraz niemal fotorealistyczną oprawą graficzną. Animacja postaci o wysokim stopniu złożoności jest dalece bardziej kłopotliwa od animacji obiektów składających się z kilku odcinków prostych.
+
+Kinematyka odwrotna jest jedną z metod przeznaczonych do animacji złożonych struktur obiektów. Na pole grafiki komputerowej zaadaptowana została z automatyki i robotyki, gdzie wykorzystywana jest do sterowania ramionami robotów. Dzięki zastosowaniu systemu szkieletowego i kinematyki odwrotnej, tak złożone zagadnienie, jakim jest niewątpliwie animacja skomplikowanych modeli trójwymiarowych, zostało znacznie uproszczone.
+
+  \section{Cel pracy}
+
+  Aby ukierunkować rozwój pracy i określić charakter badań, które zostaną przeprowadzone w trakcie jej tworzenia, konieczne było ustalenie celu. Efektem tego ukierunkowania była możliwość wybrania oraz zastosowania odpowiedniej metodologii badawczej. Celem niniejszego dzieła jest zastosowanie kinematyki odwrotnej do trójwymiarowej animacji postaci humanoidalnej oraz porównanie tej metody animacji z inną techniką.
+
+  \section{Etapy oraz zakres pracy}
+
+  Obszar, jaki zajmuje problematyka dotycząca animacji komputerowej, a w szczególności animacji trójwymiarowej jest bardzo rozległy, a same zagadnienia bywają niezwykle trudne i złożone. Prowadzi to do tego, że zainteresowanym osobom, oferowane jest szerokie pole do badań i rozwoju. Pamiętając o tym, a przede wszystkim mając na względzie przejrzystość pracy, po wcześniejszym przyjęciu odpowiednich założeń, podzielono ją na etapy. W ten sposób nadano przeprowadzanym badaniom odpowiedni kierunek oraz określono ramy, w jakich powinny się one zawierać. Dzięki temu oraz poprzez sprecyzowanie celu, o którym mowa była w poprzednim podrozdziale, określenie, w którym momencie niniejsze dzieło może zostać uznane za zakończone, było w znacznym stopniu ułatwione.
+
+  Aspektem inżynierskim tej pracy jest opracowanie animacji w przestrzeni trójwymiarowej obiektów, których ruch oparty jest o algorytm kinematyki odwrotnej. Jako aspekt badawczy natomiast, określone zostało zastosowanie algorytmu kinematyki odwrotnej do tworzenia animacji w przestrzeni trójwymiarowej, a także zbadanie przydatności oraz efektywności wykorzystania tejże kinematyki.
+
+  Jak już wspomniano powyżej, praca została podzielona na etapy. Zabieg ten ułatwić miał rozeznanie się w osiąganych postępach oraz wcześniejsze nakreślenie odpowiedniego harmonogramu. Kroki, obrane przy realizacji pracy wyglądają, jak następuje:
+
+  \begin{enumerate}
+
+  \item Przegląd literatury
+  \item Opracowanie koncepcji rozwiązania
+  \item Modelowanie aktywnych obiektów sceny
+  \item Opracowanie zestawu animacji z wykorzystaniem kinematyki odwrotnej
+  \item Przygotowanie platformy testowej
+  \item Implementacja algorytmu kinematyki odwrotnej dla aktywnych obiektów sceny
+  \item Weryfikacja poprawności i jakości wizualnej ruchu na platformie testowej
+  \item Analiza, opracowanie i interpretacja wyników
+  \item Redakcja pracy
+
+  \end{enumerate}
+
+\pagebreak
+
+  \section{Struktura pracy}
+
+  W drugim rozdziale niniejszego dzieła poruszone zostały zagadnienia, które bezpośrednio dotyczą tematu animacji komputerowej. Przybliżono w nim szereg różnych terminów, których znajomość i zrozumienie są niezbędne, aby móc w pełni pojąć dalszą część pracy. Przykładem takiego terminu jest choćby system szkieletowy.
+
+  Rozdział trzeci natomiast, w całości został poświęcony badanemu zagadnieniu, jakim jest kinematyka odwrotna, ze szczególnym uwzględnieniem jej zastosowania w aspekcie trójwymiarowej animacji komputerowej.
+  
+  W kolejnym, czwartym rozdziale zawarto szczegóły dotyczące projektu, który został zrealizowany na potrzeby tej pracy. Na początku tego rozdziału przedstawiono założenia, jakie przyjęto przed przystąpieniem do wykonania projektu. Następnym etapem było dokonanie przeglądu, a wreszcie wybór technologii, które zostały później wykorzystane przy realizacji planu. Detale oraz uwagi dotyczące implementacji zrealizowanego projektu przedstawiono na końcu rozdziału.
+
+  Piąty rozdział został poświęcony deskrypcji i specyfikacji badań, które zostały wykonane na potrzeby pracy. W tej części znalazły się także otrzymane w przebiegu wspomnianych wcześniej badań wyniki.
+
+  W ostatnim, szóstym rozdziale, podsumowano przeprowadzone badania oraz całą pracę jako ogół. Przedyskutowano w nim między innymi osiągnięte rezultaty, a także określono możliwe perspektywy dla dalszych prac badawczych.
+
+
+\chapter{Animacja 3D}
+
+Słowo „animacja” wywodzi się od łacińskiego terminu \textit{animatio} oznaczającego ożywianie. Jak nie trudno się domyślić, animacja używana w kontekście terminologii filmowej, czy też graficznej, polega na ożywianiu nieruchomych, martwych obiektów -- fizycznych, bądź też wirtualnych. Oczywiście w tym konkretnym przypadku nie chodzi o pełne ożywienie, a jedynie nadanie postaci jednej z wielu różnych cech, jakimi charakteryzują się istoty żywe. Tą cechą jest poruszanie się.
+
+Początkowo sztuka animacji opierała się jedynie na talencie i umiejętnościach ar\-tys\-tów-plas\-tyk\-ów, którzy na kartkach papieru rysowali postać w kolejnych ułamkach sekundy. Odpowiednio szybkie wyświetlenie tak przygotowanej sekwencji rysunków daje wrażenie ruchu. Obecnie zadanie animacji zostało znacznie uproszczone i przyspieszone dzięki zastosowaniu grafiki komputerowej. Animator może przy użyciu odpowiednich narzędzi określić fazę początkową i końcową ruchu, a wszelkie klatki pośrednie zostaną wygenerowane automatycznie na podstawie odpowiedniego algorytmu.
+
+Animacja trójwymiarowa jest przypadkiem szczególnym i należy do podzbioru ogólnie rozumianej animacji komputerowej. Dla uściślenia warto wspomnieć, że nie chodzi tu o zrealizowanie filmu dającego wrażenie pełnej trójwymiarowości, które można uzyskać poprzez użycie okularów ze specjalnymi soczewkami, pozwalającymi na rozdzielanie dwóch nałożonych na siebie obrazów, przygotowanych z użyciem innej perspektywy.
+
+Zauważalnym trendem jest dążenie do maksymalizacji poziomu realizmu, jakim cechuje się film animowany, czy gra komputerowa. Aby uzyskać odpowiedni efekt, stosuje się wiele wysublimowanych technik, w tym również tych z zakresu animacji komputerowej. Dziś już nikogo specjalnie nie dziwi postać z animowanymi włosami, swobodnie falującą odzieżą, czy dająca wyraz swoim emocjom poprzez odpowiednie napięcia mięśni twarzy. Co więcej, zaawansowane techniki do niedawna oglądanie tylko i wyłącznie na wielkim ekranie, powstałe podczas wielogodzinnych procesów renderowania na farmach superkomputerów, dzięki nieustannemu rozwojowi technologii, dziś coraz częściej spotykane są w grach komputerowych.
+
+  \section{Model}
+Trójwymiarowe modele w praktyce wyparły dwuwymiarowe rysunki przy produkcji filmów animowanych i stosowane są na szeroką skalę w architekturze, przemyśle, czy grach komputerowych. Artyści do ich wykonania posługują się zaawansowanymi narzędziami, zróżnicowanymi pod względem ceny, zastosowania, obsługi, czy możliwości. Jednymi z najpopularniejszych są takie produkty jak \texttt{3ds Max}, \texttt{Maya}, \texttt{Blender} i \texttt{ZBrush}. Przykładowy model przygotowany za pomocą ostatniego z wymienionych programów przedstawia rys. \ref{img:zbrush}.
+
+Modele wykorzystywane w grafice trójwymiarowej przeważnie zbudowane są z siatki trójkątów, ze względu na specyficzne cechy tego najprostszego wielokąta. Najważniejszą zaletą takiego rozwiązania jest niska złożoność możliwego do zastosowania algorytmu rasteryzacji. Dzieje się tak ze względu na fakt, iż trójkąt nigdy nie jest figurą wklęsłą, co ułatwia rysowanie jego wypełnienia. Niestety z drugiej strony, aby model był wystarczająco dokładny i dość wiernie odzwierciedlał obiekt rzeczywisty, musi składać się z bardzo dużej liczby trójkątów. W wysokobudżetowych produkcjach filmowych liczbę wielokątów liczy się obecnie w milionach. Przykładowo w filmie \texttt{Avatar} wykorzystano model złożony z dwudziestu milionów wielokątów \cite{avatar}. Nastręcza to pewne problemy przy animacji tak złożonej siatki trójkątów.
+
+    \begin{figure}
+  \centering
+    \includegraphics[keepaspectratio=true,width=0.85\linewidth]{./img/zbrush.jpg}
+  \caption{Model neandertalczyka wykonany w programie ZBrush \cite{zbrush}}
+  \label{img:zbrush}
+  \end{figure}
+
+\pagebreak
+
+  \section{Animacja szkieletowa}
+
+Niezwykle ważny dla poruszania się organizmów żywych należących do podtypu kręgowców jest układ mięśniowy oraz układ kostny. Mięśnie odpowiadają za wywarcie siły, w wyniku której zmianie ulega pozycja szkieletu. Dzięki tej prostej obserwacji, opisany mechanizm z wielkim powodzeniem zapożyczono ze świata biologii i przeniesiono do obszaru grafiki komputerowej.
+
+Ponieważ animacji podlegają modele, wiąże się to z problemem idącym w parze z ich złożonością. Już w przypadku bardzo prostego modelu złożonego z zaledwie kilkudziesięciu trójkątów, zauważalny jest problem z jego animacją. Manualna deformacja siatki, a co za tym idzie wszystkich jej wierzchołków, w celu uzyskania zamierzonej pozycji, nastręcza wiele trudności, lub jest wręcz niewykonywalna.
+
+Remedium na opisany powyżej problem stanowi właśnie animacja szkieletowa. Idea jest prosta -- do siatki dodaje się uproszczony szkielet wzorowany na systemie kostnym kręgowców. Przy animacji zmienia się pozycję kości, a położenie odpowiadającym im fragmentom siatki modelu jest modyfikowane na podstawie przypisanych wag. Szkielet wraz z nałożoną na niego siatką wielokątów (ang. \textit{skinning}) przedstawia rys. \ref{img:skeleton}.
+
+    \begin{figure}
+  \centering
+    \includegraphics[keepaspectratio=true,width=\linewidth]{./img/skeleton.png}
+  \caption{Animacja szkieletowa: A) szkielet postaci, B) model ze szkieletem złożony z siatki trójkątów}
+  \label{img:skeleton}
+  \end{figure}
+
+  \section{Animacja poklatkowa}
+  
+Pierwsza metoda animacji użyta do realizacji prekursora dzisiejszych filmów animowanych. Polega ona na wprowadzaniu zmian w kolejnych klatkach, w taki sposób, aby całość po odtworzeniu w odpowiednim tempie stała się w efekcie animacją.
+
+W odniesieniu do animacji komputerowej technikę tę można rozumieć jako manipulację modelem, lub jego szkieletem w odpowiedni sposób dla kolejnych klatek. Animację taką można następnie wyeksportować i zapisać razem z informacjami o położeniu wierzchołków wielokątów w pliku z modelem. Daje to możliwość użycia w grze komputerowej uprzednio przygotowanych dla danego modelu animacji.
+
+  \section{Kinematyka prosta}
+
+  Słowo kinematyka wywodzi się od greckiego słowa \textit{kín\={e}ma}, które to oznacza ruch. Kinematyka jako dział fizyki zajmuje się zatem badaniem ruchu, ale bez uwzględnienia sił, przez działanie których ruch ten został wywołany. Ponieważ niniejsza praca traktuje o kinematyce odwrotnej, wypadałoby zatem już w tym miejscu wyjaśnić, w stosunku do czego jest ona odwrotna. Otóż jest ona odwrotna do \texttt{kinematyki prostej}. Za tym niezwykle banalnym pojęciem kryje się bardzo prosta koncepcja. Polega ona na poddawaniu sukcesywnym przekształceniom kolejnych części łańcucha kinematycznego, aż do osiągnięcia pozycji docelowej, bądź do niej możliwie najbliższej, jeśli pozycja docelowa miałaby okazać się nieosiągalna. Dla przykładu, jeśli chcemy aby animowana postać podniosła rękę, należy odpowiednio ustawić staw barkowy tak, aby przedramię osiągnęło właściwą pozycję, a następnie tę samą czynność trzeba wykonać dla stawu łokciowego. Kinematyka prosta została zilustrowana na rys. \ref{img:fk} Wynika z niego, że w tym przypadku mamy do czynienia z bezpośrednim sterowaniem każdej części ruchomego systemu, takiego jak dla przykładu szkielet ludzki.
+
+  \section{Kinematyka odwrotna}
+
+  Kinematyka odwrotna, jak łatwo się domyślić, polega na odwróceniu procedury opisanej w punkcie poprzednim. Taki zabieg sprawia, że konieczność każdorazowej manipulacji elementami składowymi ruchomego układu, zostaje wyeliminowana. Bardziej wnikliwe studium tej metody animacji zostanie przedstawione w dalszej części tej pracy.
+
+\vspace{15ex}
+
+  \begin{figure}[h!]
+  \centering
+    \includegraphics[keepaspectratio=true,width=0.68\linewidth]{./img/fk.png}
+  \caption{Kinematyka prosta}
+  \label{img:fk}
+  \end{figure}
+
+  
+\chapter{Kinematyka odwrotna}
+
+Kinematyka odwrotna jest metodą, którą od dawna stosuje się w dziedzinie automatyki i robotyki, do sterowania różnego rodzaju manipulatorami i kończynami robotów, w tym robotów autonomicznych. Nieco później, z dużym powodzeniem tej metody, kinematyką odwrotną zainteresował się przemysł filmowy. Ze względu na niewielką ilość czynności koniecznych do osiągnięcia zamierzonego przez grafików efektu, przyczynia się ona do przyspieszenia procesu animowania komputerowo wygenerowanej postaci. Obecnie kinematyka odwrotna stosowana jest na bardzo szeroką skalę w różnych dziedzinach naukowo-rozrywkowych, w tym także w przemyśle gier komputerowych, na przykład do animacji modeli w czasie rzeczywistym.
+
+W rozdziale tym dokonano bliższego niż w poprzednich częściach tej pracy przedstawienia istotnego zagadnienia, za jakie uznaliśmy kinematykę odwrotną. Opisano w nim pokrótce historię powstania tejże techniki, dokonano jej formalnej definicji oraz nieco bliżej przedstawiono kilka wybranych, dotyczących jej algorytmów.
+
+  \section{Geneza i zastosowania}
+
+  Kiedy zaczęto projektować pierwsze na świecie roboty z ruchomymi ramionami, pojawił się także problem sterowania konstrukcjami tego typu. Ze względu na stosowanie mikrokontrolerów, które to są taktowane znacznie niższymi częstotliwościami, niż klasyczne komputery i charakteryzują się ograniczoną mocą obliczeniową, duży nacisk postawiono na opracowanie odpowiedniego algorytmu. Mając to na uwadze, oczywistym staje się fakt, że problem sterowania robotów przerodził się w istotne pole badań. Celem stało się opracowanie rozwiązania o jak najniższej złożoności obliczeniowej oraz zachowującego możliwie wysoką precyzję w odwzorowaniu naturalnych ruchów.
+
+  \textit{Li-Chun Tommy Wang} wraz z \textit{Chih Cheng Chenem} w \cite{ikrobot} zaproponował koncepcję rozwiązania problemu, którą później rozwinął \textit{Chris Welman} w \cite{welman}. Mimo, że są to dość leciwe publikacje, w dalszym ciągu są cytowane przez wielu autorów. Sama kinematyka odwrotna w kontekście sterowania, jak i animacji komputerowej znana jest od dość dawna. Nie przeszkadza to jednak w ciągłym stosowaniu oraz udoskonalaniu tej metody. Przykładowo w bazie \texttt{Scopus} dnia 29 stycznia 2012 roku dla zapytania \verb|TITLE-ABS-KEY(inverse kinematics) AND (LIMIT-TO(PUBYEAR, 2012))|, a więc ograniczającego datę publikacji tylko do bieżącego roku, znaleziono trzydzieści pozycji.
+
+  Kinematyka odwrotna jest obecnie powszechnie stosowana w procesie animacji komputerowej. Korzysta się z niej zarówno podczas modelowania postaci w programach takich jak \texttt{3ds Max} i \texttt{Blender} oraz również do animacji w czasie rzeczywistym w wielu rozmaitych grach komputerowych.
+  
+%   aplikacje blender itp, nowe algorytmy, scopus
+\section{Formalna definicja problemu}
+
+ Niech zadany będzie łańcuch kinematyczny długości $n$ zakończony manipulatorem \textbf{N} (ostatni z $n$ elementów składowych łańcucha). Przyjmując, że $\bf\vec{v}$ jest to wektor określający docelową pozycję manipulatora \textbf{N} w trójwymiarowej przestrzeni kartezjańskiej, natomiast $\bf\vec{s}$ definiując jako wektor stanu rozważanego układu, kinematykę prostą można sformułować jako funkcję $f$:
+$$
+\bf\vec{v} = f(\bf\vec{s})
+$$
+Dodatkowo, jeżeli określimy $P_i$ jako macierz przekształceń składowej $a_i$ zadanego łańcucha kinematycznego, funkcja $f$ może zostać rozwinięta do:
+
+$$
+{\vec{v}} = P_1a_1({s_1})P_2a_2({s_2}) \dots P_na_n({s_n})
+$$
+Problemem, który okazuje się łatwiejszym do rozwiązania, może być po prostu znalezienie funkcji odwrotnej do $f$, którą to określono jako kinematyka odwrotna:
+\nopagebreak
+$$
+f^{-1} (\vec{v})  = \vec{s}
+$$
+
+% 
+%   \section{Przegląd publikacji}
+% 
+% W tym podrozdziale zawarto krótki opis przeprowadzonych poszukiwań, których celem było rozeznanie się w aktualnym stanie wiedzy, jak i zbadanie popularności tematu kinematyki odwrotnej.
+% 
+% Mój tzw. Systematic literature review i notatki po ang. do przetłumaczenia, ogarnięcia i uzupełnienia.
+% 
+% 
+%     Your query:   TITLE-ABS-KEY((inverse kinematics OR reverse kinematics) AND 3d) AND SUBJAREA(comp OR phys) AND (LIMIT-TO(SUBJAREA, "COMP") OR LIMIT-TO(SUBJAREA, "MULT")) Document results: 153 
+% 
+% many non related publications:
+% 
+% (e.g. Synthetic echocardiographic image sequences for cardiac inverse electro-kinematic learning     Prakosa, A., Sermesant, M., Delingette, H., Saloux, E., Allain, P., Cathier, P., Etyngier, P., (...), Ayache, N.     2011     Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) 6891 LNCS (PART 1), pp. 505-507,
+% 
+% Protein loop closure using orientational restraints from NMR data     Tripathy, C., Zeng, J., Zhou, P., Donald, B.R.     2011     Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) 6577 LNBI, pp. 483-498     0  )
+% 
+%         Heuristic solution for constrained 7-DOF motion planning in 3D scanning application
+%         Intuitive interactive human-character posing with millions of example poses
+% 
+% 
+%     Your query:   TITLE-ABS-KEY(((inverse kinematics OR reverse kinematics) AND animation) OR ((inverse kinematics OR reverse kinematics) AND motion)) AND SUBJAREA(comp) AND (LIMIT-TO(EXACTKEYWORD, "Three dimensional")) AND (LIMIT-TO(DOCTYPE, "ar"))
+%       Document results: 16
+% 
+% \begin{enumerate}
+%  \item Natural character posing from a large motion database - novel IK solution NAT-IK (2011)
+%  \item Wearable sensors for 3D upper limb motion modeling and ubiquitous estimation - not closely related
+%  \item      Ambulatory estimation of muscle forces of lower limbs in a Rehabilitation robot system - not closely related
+% \item        Evaluation of a geometry-based knee joint compared to a planar knee joint - not closely related
+% \item        Adding image constraints to inverse kinematics for human motion capture - inverse kinematics applied to markerless motion capture process. Related, but not so much.
+% \item        A biomimetic approach to inverse kinematics for a redundant robot arm - consider evaluating proposed IK algorithm for 3d animation (2010)
+% \item         An interactive motion-editing method for human animation - Focused on motion-editing.
+% \item         An off-line robot simulation toolbox - not closely related
+%         \item Automatic reconstruction of 3D human motion pose from uncalibrated monocular video sequences based on markerless human motion tracking - yet another markerless human motion tracking involving IK.
+% \item         Hand modeling and motion controlling based on lay figure in virtual assembly - hand animation
+% \item         Research on kinematics simulation of maintenance and inspection robot in nuclear power plants	 - robot simulation
+% \item         Full-body performance animation with Sequential Inverse Kinematics - Sequential IK, algorithms comparsion study
+% \item         Evaluating the influence of induced passive torques in the simulation of time-varying human poses
+% \item         A scalable model-based hand posture analysis system
+% \item         A cell decomposition-based collision avoidance algorithm for robot manipulators
+% \item         Algebraic methods for image processing and computer vision
+% \end{enumerate}
+% 
+% 
+% remark- use exact IK keyword in scopus - prev results include I and K not as a one phrase
+% consider looking for IK algorithms
+
+  \section{Metody kinematyki odwrotnej}
+
+    Jak wspomniano na początku tego rozdziału, kinematyka odwrotna jest niezwykle rozległym obszarem do badań naukowych. Znamienny jest choćby sam fakt, że w ciągu miesiąca ukazało się trzydzieści publikacji, co średnio daje jedną publikację dziennie. Cały czas zatem opracowywane i ewaluowane są nowe metody wykorzystujące kinematykę odwrotną. W tej części postanowiono opisać dwie najbardziej ugruntowane z nich, ponieważ śledzenie na bieżąco tak prężnie rozwijającej się gałęzi nauki i raportowanie najnowszych osiągnięć z jej zakresu wykracza dalece poza ramy tej pracy.
+
+
+    \subsection{Metody macierzy Jacobiego}
+
+Ponieważ rozważana funkcja $f$ cechuje się nieliniowością, jednym z pomysłów na rozwiązanie problemu jest znalezienie jej liniowego przybliżenia. Z idei tej korzystają metody rozwiązywania zadania kinematyki odwrotnej oparte o macierz Jacobiego.
+
+Elementarna dla opisywanej w tym punkcie grupy metod jest macierz Jacobiego, którą można zdefiniować następująco:
+$$J_f(x) = \left[\frac{\partial f_i}{\partial x_j}(\mathrm x)\right]_{i, j} ,$$
+przy założeniu, że wszystkie pochodne funkcji $f$  znajdują się w punkcie $x\in U$, a $U$ jest podzbiorem otwartym przestrzeni euklidesowej. Dodatkowo funkcja $ f = (f_1, \dots, f_m)$ zbioru $U\;$ w przestrzeń $ \mathbb{R}^m,$ powinna posiadać $m\;$ składowych będących funkcjami $f_i\;$ zbioru $U\;$ o wartościach rzeczywistych.
+
+Przy znajdowaniu rozwiązania dla problemu kinematyki odwrotnej z użyciem macierzy Jacobiego skorzystać można z metody polegającej na odwróceniu tej macierzy, bądź jej transponowaniu. Implikuje to niestety dość złożone obliczenia.
+\pagebreak
+    \subsection{Cyclic-Coordinate Descent}
+
+  Metoda ta, w skrócie nazywana \texttt{CCD}, należy do klasy metod zwanych metodami heurystycznymi. Idea kryjąca się za tym sposobem rozwiązywania zadania kinematyki odwrotnej polega na analitycznym podejściu do szeregu znacznie prostszych problemów. W pierwszej i w każdej kolejnej iteracji poszukiwane są parametry, dla których zadana funkcja przyjmuje wartość minimalną przy spełnieniu określonych kryteriów. Wspomniana funkcja jest znacznie mniej złożona i cechuje się o wiele niższym stopniem komplikacji obliczeniowej w porównaniu z podejściem w pełni analitycznym.
+
+  Przykład wykorzystania CCD został przedstawiony na rys. \ref{img:ccd}. Ukazane na nim jest ramię zakończone manipulatorem \texttt{E} oraz punkt docelowy \texttt{D}, w którym powinno się ono znaleźć. Jako \texttt{R} oznaczono aktualnie rozważany węzeł (staw) łańcucha kinematycznego. W pierwszym kroku obliczono wektory $\vec{RE}$ i $\vec{RD}$ oraz na ich podstawie przy pomocy funkcji trygonometrycznych uzyskano kąt, o jaki należy obrócić węzeł, aby przybliżyć go do celu. Ramię po tym przekształceniu zostało ukazane na rys. \ref{img:ccd}B. W kolejnym kroku analogicznemu przekształceniu podlega staw dalszy od manipulatora w hierarchii łańcucha kinematycznego. Efekt tej operacji zilustrowano na rys. \ref{img:ccd}D Manipulator osiągnął cel, więc można w tym momencie zakończyć operacje. Gdyby jednak tak się nie stało, należałoby powtórzyć sekwencję od początku, zbliżając w każdej iteracji, minimalizując tym samym długość wektora $\vec{ED}$. W metodzie tej ważny jest warunek stopu, zapobiegający nieskończonemu powtarzaniu tych operacji. Na ogół przyjmowana jest konkretna liczba powtórzeń, po której należy zakończyć działanie.
+
+  \begin{figure}
+  \centering
+    \includegraphics[keepaspectratio=true,width=0.7\linewidth]{./img/ccd.png}
+  \caption{Kinematyka odwrotna -- kolejne kroki postępowania przy użyciu metody heurystycznej CCD \cite{lander}}
+  \label{img:ccd}
+  \end{figure}
+
+
+\chapter{Projekt}
+
+W rozdziale tym opisano wszelkie zagadnienia dotyczące zrealizowanego na potrzeby tej pracy projektu. Przedstawiono przyjęte założenia, dokonano przeglądu różnych technologii oraz zawarto szczegóły techniczne dotyczące implementacji.
+
+
+  \section{Założenia}
+
+Ważnym aspektem każdego projektu jest przyjęcie odpowiednich założeń i wytycznych. Dzięki takiemu podejściu łatwiej jest określić dokładniejszą specyfikację produktu końcowego oraz dostarczyć aplikację zgodną z oczekiwaniami. Poniżej przedstawiono przyjęte założenia.
+
+
+\begin{enumerate}
+ \item Celem projektu jest dostarczenie środowiska testowego dla zbadania przydatności i efektywności techniki animacji opartej o metody kinematyki odwrotnej.
+
+\item Z uwagi na fakt, iż postanowiono porównać ze sobą co najmniej dwie techniki animacji, należało je zaimplementować w aplikacji pełniącej rolę środowiska testowego. Wybór padł na animację poklatkową i metodę kinematyki odwrotnej CCD.
+
+\item Przyjęto, że środowisko testowe będzie aplikacją o charakterze gry komputerowej. Animacja oparta o metodę kinematyki odwrotnej będzie generowana w czasie rzeczywistym. Przedstawiać będzie postać wchodzącą po schodach.
+
+\item Projekt realizowany będzie z użyciem systemu GNU/Linux na mikrokomputerze o architekturze x86 przy użyciu języka programowania C++.
+
+\item Ponieważ charakter niniejszej pracy cechuje się wysoką presją czasową, ważne w jego realizacji było przyjęcie takich założeń, aby możliwe było jego ukończenie w wyznaczonym terminie. W związku z powyższym zdecydowano się w możliwie wysokim stopniu wykorzystać istniejące narzędzia i elementy, których wykonanie nie jest celem tej pracy. W wyniku takiego założenia, przyjęto, że wykorzystane zostaną ogólnodostępne modele oraz silnik graficzny dystrybuowany na otwartej licencji.
+
+
+\end{enumerate}
+
+
+  \section{Przegląd i wybór technologii}
+
+
+    Przed przystąpieniem do realizacji jakiegokolwiek projektu wysoce wskazane jest, aby rozważyć możliwość i zasadność zastosowania różnego typu narzędzi oraz technologii. Dzięki takiemu podejściu możliwe jest zminimalizowanie czasu potrzebnego na ukończenie danego projektu. Inną istotną zaletą przeprowadzania wstępnej analizy dostępnych rozwiązań, jest również znacznie wyższe prawdopodobieństwo, że jakość ukończonego z ich pomocą projektu, będzie o wiele wyższa i lepsza.
+
+    W niniejszym podrozdziale dokonano przeglądu istniejących narzędzi i technologii pod kątem wykorzystania ich w tym projekcie. Na początku znajduje się wprowadzenie w tematykę najbardziej przydatnych i koniecznych narzędzi, jakimi są silniki graficzne. W dalszej kolejności przedstawiono kryteria, jakimi kierowano się przy podejmowaniu wyboru oraz opisano trzy rozważane przez autora rozwiązania. Część ta kończy się krótkim podsumowaniem i uzasadnieniem, dlaczego wybrane zostało takie, a nie inne rozwiązanie. Na zakończenie tego podrozdziału przybliżono, bez zbytniego zagłębiania się w szczegóły, dwa popularne dla sprzętu graficznego interfejsy programowe.
+
+
+    \subsection{Silnik Graficzny}
+
+    Bez wykorzystania mocnych silników graficznych, prawdopodobnie nie powstałyby wielkie, wy\-so\-ko\-bud\-że\-to\-we produkcje, jakie obecnie i od lat ukazują się na rynku gier komputerowych . Wiąże się to ze stale rosnącym, wysokim stopniem skomplikowania układów graficznych, coraz większym poziomem realizmu oraz wykorzystaniem bardziej zaawansowanych efektów wizualnych, takich jak \texttt{HDR}, czy efekty cząsteczkowe.
+
+    Obecnie na rynku dostępnych jest wiele zróżnicowanych silników graficznych, urozmaiconych pod wieloma względami i prezentujących ogromną liczbę indywidualnych cech oraz funkcjonalności. Dzięki ich zastosowaniu, programiści mogą się skupić na implementacji innych, unikalnych dla danej gry elementów, takich jak choćby logika czy system rozwoju postaci. Wiąże się to z oszczędnością czasu pracy i optymalizacją wykorzystywanych zasobów. Ponadto powszechnym zjawiskiem jest, że firmy na bazie jednego silnika wydają kilka różnych produkcji w dość krótkim czasie. Takie zjawisko nie byłoby możliwe, gdyby przy tworzeniu każdej, pojedynczej gry, konieczna była obsługa programowego interfejsu dla sprzętu graficznego od podstaw. Co więcej, częstokroć bywa tak, że producent nie posiada silnika graficznego, ani nie zamierza rozwijać jego bazy od samego początku, lecz zwyczajnie używa już dostępnego. Zazwyczaj ma to miejsce w przedsięwzięciach amatorskich, hobbystycznych, niskobudżetowych, lub badawczych, jakkolwiek nie jest to regułą. W wymienionych wyżej projektach, głównie ze względów finansowych, wybór przeważnie pada na darmowe rozwiązania otwartoźródłowe.
+
+
+    Przykładem komercyjnego silnika, wykorzystywanego w licznych uznanych, dużych i popularnych produkcjach niezależnych firm, może być \texttt{RenderWare}. Jest to produkt studia \textit{Criterion}, które było częścią firmy \textit{Canon}. Został on użyty przy tworzeniu takich tytułów jak \textit{Tony Hawk's Pro Skater 3}, \textit{Battlefield 2: Modern Combat}, czy choćby słynnej serii \textit{Grand Theft Auto} oraz wielu, wielu innych -- obszerna lista wykorzystujących go produktów jest dostępna na \cite{renderware:list}. Wymienione gry wydane zostały kolejno przez firmy \textit{Neversoft/Activision}, \textit{DICE}, \textit{Rockstar Games}. Można zauważyć, że są to światowej sławy spółki, co świadczy o prestiżu silnika RenderWare, o którym więcej można się dowiedzieć na \cite{renderware}. Niestety po wykupieniu praw do niego przez \textit{Electronic Arts}, dystrybucja licencji oraz rozwój silnika zostały wstrzymane.
+
+
+    W związku z faktem, iż nawet najwięksi wydawcy gier stosują w swoich produktach zewnętrzne rozwiązania oraz biorąc pod uwagę zakres i czas ograniczony terminem złożenia pracy dyplomowej, również w tym projekcie postanowiono użyć już istniejącego silnika graficznego. W dalszej części rozdziału przedstawione zostały kryteria i wymogi jakie autor postawił przed poszukiwanym silnikiem oraz pokrótce opisano inne, także rozważane możliwości. Na końcu znajduje się uzasadnienie ostatecznej decyzji, która została podjęta przy wyborze używanego silnika graficznego.
+
+
+    Głównym kryterium, którym kierowano się przy wyborze, była licencja, na której opublikowany został dany silnik graficzny. Ze względu na naukowy i niedochodowy charakter projektu, rozwiązanie, którego poszukiwano, powinno być o otwartych źródłach, a co za tym idzie, o licencji zgodniej z \texttt{GPL}/\texttt{BSD}, bądź do niej zbliżonej. Kolejnym istotnym wymogiem były obsługiwane platformy sprzętowo-sys\-te\-mo\-we, jako że projekt rozwijany był przy wykorzystaniu systemu operacyjnego \texttt{GNU/Linux} i mikrokomputera o architekturze \texttt{x86}. Kluczowa była także możliwość użycia danego silnika graficznego w aplikacji pisanej w języku programowania \texttt{C/C++}. Ponadto ze względu na presję, jaką wywierał termin złożenia pracy, poszukiwano rozwiązania o stosunkowo łagodnej krzywej uczenia. W związku z tym, za duży atut uważano również popularność silnika, a także ilość oraz jakość dostępnej dokumentacji i materiałów dydaktycznych. Z tego samego powodu za istotną uznano dużą osiągalność materiałów gotowych i dozwolonych do użycia, takich jak sceny i modele postaci. To z kolei przekłada się na ilość i rodzaj obsługiwanych przez dany silnik graficzny formatów wejściowych. Biorąc pod uwagę postawiony cel, implementację algorytmu kinematyki odwrotnej, wykorzystanie systemu szkieletowego przyjęto za bardzo ważne kryterium. Zwrócono również uwagę na to, aby silnik graficzny nie posiadał jeszcze metod kinematyki odwrotnej. Za drugorzędne, a nawet dużo mniej istotne uznano takie cechy jak jakość renderowanej grafiki i możliwość użycia shaderów oraz zaawansowanych efektów specjalnych czy oświetleniowych.
+
+ 
+      \subsubsection{OGRE}
+ 
+      OGRE to popularny silnik graficzny, oparty na wolnej licencji \texttt{MIT}, która to jest kompatybilna z licencją \texttt{GPL}. Nazwa silnika jest skrótem od angielskiego \textit{Object-Oriented Graphics Rendering Engine}, co w języku polskim oznacza Zorientowany Obiektowo Silnik Renderujący Grafikę.
+
+      OGRE, jak większość szeroko stosowanych silników graficznych, został napisany w języku \texttt{C++}. Wszelkie szczegóły dotyczące implementacji niższych warstw, takich jak wywołania API \texttt{OpenGL} lub \texttt{Direct3D}, podlegają hermetyzacji dzięki użyciu klas. Daje to możliwość szybkiego osiągnięcia zamierzonych rezultatów bez konieczności szczegółowego zapoznawania się ze specyfiką konkretnej biblioteki graficznej oraz ułatwia przenoszenie aplikacji między platformami systemowymi. OGRE, jak już wcześniej wspomniano, wspiera zarówno OpenGL, jak i Direct3D a także główne systemy operacyjne, to jest \texttt{Windows}, \texttt{Linux} oraz \texttt{Mac OS X}. Silnik ten oferuje także możliwość użycia programów cieniujących, animacji szkieletowej, skórowania i wiele innych, ciekawych technik.
+
+      Ze względu na dużą popularność tego silnika graficznego, istnieje naprawdę mnóstwo materiałów dydaktycznych dotyczących jego obsługi. Na uwagę zasługują publikacje w formie drukowanych książek. Dobrym przykładem są takie pozycje jak \cite{ogreb1}, czy też najnowsza publikacja dostępna w chwili pisania niniejszej pracy, cechująca się nieco innym podejściem do tematu. Mowa tutaj o \cite{ogreb2}. Na początku pracy z OGRE warto jednak zapoznać się przede wszystkim z materiałami dostępnymi na \cite{ogre}.
+
+
+      OGRE niestety nie jest szczególnie łatwym w użyciu silnikiem graficznym. Aby zrozumieć filozofię jego działania i programowania aplikacji, należy poświęcić sporo czasu. Wynikowy kod dla prostej sceny również zdaje się być dość rozwlekły. Co prawda, sam silnik nie oferuje metod animacji opartych o kinematykę odwrotną, ale istnieją poboczne implementacje algorytmów IK z użyciem OGRE, które jak dotąd nie zostały włączone do głównego projektu.
+
+      \subsubsection{Panda3D}
+
+      W porównaniu z pozostałymi rozpatrywanymi rozwiązaniami, \texttt{Panda3D} jest projektem dalece bardziej złożonym. Przyczyny takiego stanu rzeczy należy upatrywać w tym, że nie jest to jedynie silnik graficzny, a kompletny silnik gry. W związku z powyższym \texttt{Panda3D} posiada skomplikowaną strukturę oraz podsystemy odpowiedzialne za renderowanie grafiki, animacje, odtwarzanie dźwięku, sterowanie, detekcję kolizji, obsługę sieci, symulacje fizyczne, sztuczną inteligencję i inne.
+
+      Zdecydowanie warto zaznaczyć, że projekt ten powstał jako zamknięte oprogramowanie rozwijane na własne potrzeby przez studio \texttt{Disney VR} będące częścią dobrze wszystkim znanej korporacji \texttt{The Walt Disney Company}. W roku 2002 silnik został opublikowany jako wolne oprogramowanie. Obecnie jego rozwój jest kontynuowany na licencji \texttt{BSD} przez \texttt{Entertainment Technology Center} przy uniwersytecie \texttt{Carnegie Mellon} we współpracy z \texttt{Disneyem}.
+
+      Panda3D jest napisana w języku \texttt{C++} i pozwala na programowanie aplikacji zarówno z użyciem \texttt{Pythona}, jak i \texttt{C++}. Niestety przekłada się to na skomplikowany proces budowania silnika ze źródeł. Dostępne są dwa systemy -- \texttt{ppremake} i \texttt{makepanda}. Pierwszy jest rozbudowany i dostarcza szereg rozmaitych opcji konfiguracyjnych, lecz jest trudniejszy w obsłudze. Drugi natomiast jest rozwiązaniem prostym i pozwalającym szybko zbudować niezbędne moduły bez zagłębiania się w szczegółowe niuanse tego procesu.
+
+      Opisywany silnik ma możliwość korzystania z dwóch interfejsów programowych dla sprzętu graficznego -- \texttt{OpenGL} i \texttt{Direct3D}. Pozwala także na używanie programów cieniujących i animacji szkieletowej.
+
+     Dokumentacja projektu jest bardzo dobra. Za pewien mankament można uznać fakt, że podstawowym i głównie wspieranym językiem jest w tym przypadku \texttt{Python}. Wiąże się to z ukierunkowaniem dokumentacji właśnie na ten język, co można zauważyć na \cite{panda}. Obecnie dostępne są dwie pozycje książkowe w całości poświęcone programowaniu z wykorzystaniem silnika graficznego \texttt{Panda3D}. Podczas gdy \cite{pandab1}, pomimo skupienia na podstawowym języku programowania, zawiera także fragmenty przeznaczone dla programistów C++, tak \cite{pandab2} jest przeznaczona dla osób początkujących w dziedzinie projektowania oraz rozwijania gier i napisana została w pełni pod kątem Pythona.
+
+      Niestety podczas kompilacji Pandy w stabilnej wersji \textit{1.7.2} napotkano szereg problemów, a proces budowania wielokrotnie kończył się komunikatem błędu. Poszukiwania rozwiązań dla tych problemów na \cite{pandaf} zakończyły się znalezieniem sugestii, aby skorzystać z wersji rozwojowej silnika dostępnej przez repozytorium. Kompilacja tym razem powiodła się, ale problematyczne okazało się uruchomienie dostarczonych przykładów. 
+\pagebreak
+      \subsubsection{Irrlicht}
+
+      Silnik ten jest dystrybuowany na licencji \texttt{ZLib}, która to jest zgodna z licencją GPL. Nazwa jest złożeniem niemieckich słów \textit{Irre}, co oznacza zwariowany i \textit{Licht}, czyli światło, co w połączeniu daje błędny ognik. Początki projektu sięgają roku 2002, kiedy Nikolaus Gebhardt rozpoczął prace nad nowym silnikiem graficznym.
+
+      Irrlicht charakteryzuje się łagodną krzywą uczenia i wysoką elastycznością. Silnik został napisany w przejrzysty oraz czytelny sposób w języku \texttt{C++} z użyciem przestrzeni nazw i wzorców projektowych \texttt{GRASP}. Dzięki temu łatwo można zorientować się w jego kodzie źródłowym. Ponadto obok tych wymienionych już zalet, Irrlicht jest wieloplatformowy, stabilny, nie wymaga instalacji dodatkowych bibliotek w systemie oraz działa bardzo szybko.
+
+      Silnik pozwala na użycie zarówno \texttt{OpenGL}, jak i \texttt{Direct3D} oraz własnego programowego mechanizmu renderowania. Na uwagę zasługuje duża ilość standardowo obsługiwanych formatów wejściowych. Otwiera to możliwości, aby bez problemu używać animowanych modeli z gry Quake w wersji 2 i 3 oraz zapisanych w formacie B3D, DirectX, czy Milkshape. Lista obsługiwanych obiektów statycznych jest jeszcze dłuższa i znajduje się na niej m.in. natywny format OGRE, 3d Studio, Alias Wavefront Maya i Lightwave. Dzięki temu możliwe jest skorzystanie z bogatej biblioteki modeli i użycie ich jako obiektów zastępczych do czasu przygotowania własnych. Zwiększa to też liczbę dostępnych do użycia programów służących do modelowania trójwymiarowego. Irrlicht pozwala na zastosowanie animacji szkieletowej, efektów cząsteczkowych, dynamicznego oświetlenia i programów cieniujących. Można z niego korzystać w wielu językach, n.p. C++ C$\sharp$, VisualBasic, Delphi, Java.
+
+       Obecnie na rynku znaleźć można dwie publikacje książkowe traktujące wyłącznie o opisywanym silniku graficznym. Są to \cite{irrlichtb1} i \cite{irrlichtb2}. Obie są pozycjami skierowanymi do początkujących programistów. Także dokumentacja dostępna na \cite{irrlichtw} jest przejrzysta i pomocna. Jej wysoką jakość można zawdzięczać faktowi, iż została przygotowana za pomocą popularnego narzędzia \texttt{Doxygen}.
+
+      \subsubsection{Podsumowanie}
+
+      W powyższych trzech punktach pokrótce zostały przedstawione trzy silniki graficzne, których użycie rozważano przy powstawaniu niniejszego projektu. Zebrane zostały podstawowe dane oraz wady i zalety, a następnie przedstawiono je w stabelaryzowanej formie (tab. \ref{tab:silniki}). Wszystkie te koncepty są dojrzałe i godne uwagi oraz oferują możliwość wykorzystania animacji szkieletowej. Dodatkowo są one dostępne na licencjach zgodnych z licencją GPL i cechują się wieloplatformowością, co pozawala na przenoszenie aplikacji między różnymi systemami operacyjnymi. Można w nich korzystać zarówno z OpenGL, jak i Direct3D. Warte uwagi jest to, że są to silniki graficzne cały czas rozwijane, o czym świadczą daty wydań ich najnowszych wersji stabilnych. Po ich analizie i rozważeniu wszystkich za i przeciw, ostatecznie zdecydowano się na użycie trzeciego omawianego tu silnika, to jest Irrlicht. Na taki, a nie inny wybór znaczny wpływ miała prostota użycia i duża liczba obsługiwanych formatów wejściowych oraz bezproblemowa kompilacja. Dzięki użyciu tego silnika graficznego można było szybko uzyskać efekty zadowalające autora pracy. Atutem jest także jego spójność, czytelność kodu źródłowego oraz bardzo dobra dokumentacja i dostępne w pakiecie praktyczne przykłady wraz z obszernymi komentarzami.
+
+\begin{table}[p]
+
+\begin{center}
+\footnotesize
+\begin{tabular}{|p{3.6cm}||>{\centering}p{3cm}|>{\centering}p{3cm}|>{\centering}p{3cm}|c} 
+\cline{2-4}
+  \multicolumn{1}{l|}{} & \textbf{OGRE} & \textbf{Panda3D} & \textbf{Irrlicht} & \\ \cline{2-4} \noalign{\smallskip} \cline{1-4}
+Producent & Torus Knot Software Ltd & Disney i Carnegie Mellon University & Nikolaus Gebhardt &\\ \cline{1-4}
+Licencja &MIT &BSD & ZLib &\\ \cline{1-4}
+Systemy operacyjne & Windows, Linux, Mac OS X & Windows, Linux, Mac OS X, FreeBSD & Windows, Linux, Mac OS X, Solaris, inne &\\ \cline{1-4}
+Rok wydania pierwszej wersji & 2005 & 2004 & 2002 &\\ \cline{1-4}
+Data wydania najnowszej wersji &8 maja 2011 & marzec 2011 & listopad 2010 &\\ \cline{1-4}
+Ilość materiałów dydaktycznych & duża & średnia & duża &\\ \cline{1-4}
+Ilość wydanych książek & 3 & 2 & 2 &\\ \cline{1-4}
+Języki programowania & C++, Java, .Net, Python, inne & Python, C++ & C++, C$\sharp$, VisualBasic, Delphi, Java, inne &\\ \cline{1-4}
+Animacja szkieletowa & tak & tak & tak &\\ \cline{1-4}
+Kinematyka odwrotna & zewnętrzna implementacja & brak & brak &\\ \cline{1-4}
+Klasyfikacja użycia & trudne & średnie & proste &\\ \cline{1-4}
+
+  \end{tabular}
+\end{center}
+  \caption{Zestawienie informacji o silnikach graficznych}
+\label{tab:silniki}
+\end{table}
+
+     \subsection{Interfejs programowy dla sprzętu graficznego}
+
+      Wykorzystany przez autora do projektu, nad którym pracował, silnik graficzny pozwala na użycie do renderowania zarówno interfejsu Direct3D, jak i OpenGL. Co prawda założenia projektowe ograniczają wybór do tego drugiego, jednak dla pełnego obrazu, w niniejszej pracy postanowiono przedstawić opis obu konkurencyjnych rozwiązań.
+
+      \subsubsection{Direct3D}
+
+      Direct3D jest częścią opracowanej przez firmę \texttt{Microsoft} biblioteki DirectX -- zbioru API służącego do programowania gier. Powszechnie stosuje się go w produktach przeznaczonych dla rodziny systemów operacyjnych Windows, konsolach tejże firmy, a także urządzeniach mobilnych opartych o rozwiązania Microsoftu.
+ 
+      Omawiane API oparte zostało na tak zwanych interfejsach \texttt{COM} (ang. Component Object Model). Interfejsy te są standardem, jaki firma Microsoft wprowadziła w swoim oprogramowaniu. Zwiększa to trudność użycia i zmniejsza czytelność kodu. DirectX jest zamkniętym rozwiązaniem,  w całości kontrolowanym przez Microsoft. Jego pełna dokumentacja dostępna jest na \cite{dx}.
+
+      \subsubsection{OpenGL}
+
+      Biblioteka ta powstała na bazie \texttt{IRIS GL} rozwijanej przez firmę \texttt{Silicon Graphics}, która swojego czasu była światowym potentatem w dziedzinie grafiki i animacji komputerowej. OpenGL jest standardem otwartym, a pieczę nad jego rozwojem sprawuje \texttt{Khronos Group}. Jest to związek przedsiębiorstw zajmujący się rozwojem otwartych standardów.
+
+      OpenGL jest dostępne na wielu platformach, takich jak Windows, Mac OS X, iPhone, Nintendo, Android, a także systemach operacyjnych z rodziny Unix, w tym Linux. Jest szeroko wykorzystywane w zaawansowanych narzędziach do tworzenia grafiki komputerowej i wizualizacji naukowych. Z dokumentacją biblioteki można zapoznać się na \cite{opengl}.
+
+  \section{Implementacja}
+
+Przy implementacji aplikacji będącej środowiskiem testowym posłużono się dystrybuowanym na otwartej licencji silnikiem Irrlicht.
+
+Podstawową kwestią przy wykorzystaniu Irrlicht jest tworzenie wirtualnego urządzenia, które jest obiektem elementarnym. Dzięki temu biblioteka zostanie zainicjowana i będzie gotowa do użytku. Jako parametr do odpowiadającej za to funkcji należy podać wybrany mechanizm renderujący. W tym wypadku jest to mechanizm oparty o API OpenGL. Kolejnymi parametrami są wymiary tworzonego okna, głębia kolorów, szereg przełączników, w tym decydujący o zastosowaniu trybu pełnoekranowego i na końcu referencja do obiektu klasy implementującej interfejs obsługi zdarzeń. Po tej czynności można uzyskać dostęp do menadżera sceny oraz sterownika wideo. Czynności te zostały przedstawione na list. \ref{list:irrstart}.
+
+Kolejnym etapem jest dodanie węzła kamery oraz wczytanie z pliku modelu sceny. W tym wypadku dodano kamerę wzorowaną na tej z programu Maya. Pozwala ona na zmianę obserwowanego punktu i pozycji obserwatora poprzez ruch myszą z przytrzymanym lewym, bądź prawym przyciskiem. W projekcie użyto modelu sceny, który został dostarczony razem ze źródłami wykorzystywanego silnika graficznego. Jest to model pochodzący z popularnej gry Quake. Omawiane kroki zostały przedstawione na list. \ref{list:irrsq3l}.
+
+W dalszej kolejności umieszczono wywołania funkcji, które na celu miały wczytanie i zainicjalizowanie modelu postaci. Kod odpowiedzialny za te czynności został zaprezentowany na list. \ref{list:irrzombie}. Posłużono się tu modelem dostarczonym w pakiecie z wykorzystywanym silnikiem graficznym. 
+
+
+
+\begin{figure}
+\begin{listing}{Inicjalizacja biblioteki Irrlicht}{list:irrstart}
+	Input input;
+	
+	IrrlichtDevice *dev = createDevice(video::EDT_OPENGL,
+			core::dimension2d<u32>(800, 600),
+			32, false, false, false, &input);
+
+	if (!dev)
+		return EXIT_FAILURE;
+
+	scene::ISceneManager *scene = dev->getSceneManager();
+	video::IVideoDriver *drv = dev->getVideoDriver();
+
+\end{listing}
+\end{figure}
+
+
+Kiedy już wczytano i zainicjalizowano wszelkie modele, dodano kamerę i zakończono czynności konieczne do wykonania przed wyświetleniem na ekranie sceny, można uruchomić główną pętlę programu. W niej testowane są rozmaite warunki mające wpływ na rysowane elementy oraz wyświetlana jest kompletna scena, a obiekty aktywne poddawane są animacji. Szablon pętli wraz z wywołaniem funkcji odpowiedzialnych za przerysowanie sceny przedstawia list. \ref{list:irrloop}.
+
+\begin{figure}[p]
+\begin{listing}{Dodanie kamery i inicjalizacja sceny}{list:irrsq3l}
+	scene::ICameraSceneNode* camera = scene->addCameraSceneNodeMaya(
+			NULL, 150, 500, 150, 1, 1);
+
+	camera->setTarget(core::vector3df(50, 50, -30));
+	dev->getFileSystem()->addZipFileArchive("media/map-20kdm2.pk3");
+	scene::IAnimatedMesh* q3map = scene->getMesh("20kdm2.bsp");
+	scene::IMeshSceneNode* q3mapNode = scene->addOctreeSceneNode(
+			q3map->getMesh(0));
+
+	q3mapNode->setPosition(core::vector3df(-1400, -70, -1400));
+\end{listing}
+\end{figure}
+
+\begin{figure}[p]
+\begin{listing}{Wczytanie i inicjalizacja modelu postaci}{list:irrzombie}
+	scene::IAnimatedMeshSceneNode* node = NULL;
+	node = scene->addAnimatedMeshSceneNode(
+			scene->getMesh("media/zombie/zombie.b3d"));
+	node->setScale(core::vector3df(7, 7, 7));
+	node->setPosition(core::vector3df(0, 50, 0));
+	node->getMaterial(0).NormalizeNormals = true;
+	node->setJointMode(scene::EJUOR_CONTROL);
+	node->setMaterialFlag(video::EMF_LIGHTING, false);
+\end{listing}
+\end{figure}
+
+\begin{figure}[p]
+\begin{listing}{Schemat głównej pętli programu}{list:irrloop}
+	while (dev->run()) {
+		drv->beginScene(true, true, video::SColor(1));
+
+		// ¶ciało pętli -- logika programu [...]¶
+
+		scene->drawAll();
+		guienv->drawAll();
+		drv->endScene();
+	}
+	dev->drop();
+\end{listing}
+\end{figure}
+
+\begin{figure}[p]
+\begin{listing}{Deklaracja funkcji implementującej metodę kinematyki odwrotnej}{list:anim_ccd}
+void anim_ccd( scene::IBoneSceneNode &effector,
+		  scene::IBoneSceneNode &bone,
+		  core::vector3df target,
+		  int steps,
+		  video::IVideoDriver *drv,
+		  bool inner = false  )
+\end{listing}
+\end{figure}
+\pagebreak
+Kolejnym etapem było wykonanie animacji ukazującej postać chodzącą po schodach z wykorzystaniem klatek zapisanych w modelu. Przede wszystkim należało wybrać zakres wyświetlanych kolejno klatek, które najbardziej odpowiadałyby docelowemu ruchowi. Użyto do tego metody \texttt{setFrameLoop} z klasy \textit{IAnimatedMeshSceneNode}. Wykorzystywany model dostarczony został z sekwencjami klatek przedstawiającymi postać idącą na dwa sposoby, atakowaną na dwa sposoby przez oponenta, upadającą, leżącą, zabijaną, wykonującą wykop, uderzającą przeciwnika, atakującą głową i stojącą. Wybrano pierwszy sposób chodu zawierający się w przedziale klatek \textit{2-20}. Poruszanie się postaci jest składową tejże animacji oraz translacji o wektor. Przy zbliżeniu się do stopni, wektor odpowiadający za przesunięcie w kierunku marszu poddawany jest rotacji. Dzięki temu postać oprócz przemieszczaniu się w poziomie, ulega również uniesieniu. Zastosowanie wbudowanego w wykorzystywany silnik graficzny mechanizmu detekcji kolizji pozwoliło na wykrycie zbliżającego się stopnia oraz na opadnięcie postaci na kolejny stopień, po uprzedniej translacji o wektor odchylony od poziomu. Opisana powyżej technika została zilustrowana na rys. \ref{img:irrikwalking}.
+
+  \begin{figure}
+  \centering
+    \includegraphics[keepaspectratio=true,height=0.8\textheight]{./img/walking.png}
+  \caption{Aplikacja testowa: efekt wchodzenia po schodach uzyskany przy pomocy złożenia dwóch animacji. Fioletowa linia wskazuje miejsce kolizji aktora ze zbliżającym się stopniem.}
+  \label{img:irrikwalking}
+  \end{figure}
+
+Animacja z wykorzystaniem kinematyki odwrotnej, a konkretniej metody heurystycznej CCD odbywa się przy użyciu zaimplementowanej na potrzeby pracy funkcji \texttt{anim\_ccd}. Jej deklaracja przedstawiona została na list. \ref{list:anim_ccd}. Funkcja wywoływana jest rekurencyjnie, a warunkiem zatrzymania jest osiągnięcie odpowiedniej głębokości wywołań, zadanej parametrem \textit{steps}. Funkcja wylicza na podstawie absolutnych wektorów położenia, wektory względne dla celu, kości i manipulatora. Następnie przy użyciu kwaternionów i funkcji trygonometrycznych wyznaczane są kąty, o jakie należy obrócić kość, aby manipulator zbliżył się do celu. Dalej na podstawie nazwy aktualnie rozpatrywanej kości ograniczane są stopnie swobody i zakresy kątów. Ostatecznie przekształcenie jest aplikowane i w zależności od warunku stopu funkcja wywoływana jest dla kości położonej wyżej w hierarchii, bądź następuje wyjście z funkcji. Powyższy ciąg operacji wywoływany jest wielokrotnie, dzięki czemu z każdą iteracją osiągany jest lepszy rezultat. Efekt działania w środowisku testowym opisanej powyżej implementacji metody CCD został przedstawiony na rys. \ref{img:irrikccd}.
+
+
+  \begin{figure}
+  \centering
+    \includegraphics[keepaspectratio=true,height=0.8\textheight]{./img/irrik-ik.png}
+  \caption{Aplikacja testowa: postać animowana z użyciem kinematyki odwrotnej. Widoczne obiekty pomocnicze. Świetlisty punkt wskazuje cel.}
+  \label{img:irrikccd}
+  \end{figure}
+
+\addtocontents{toc}{\protect\pagebreak}
+\chapter{Otrzymane rezultaty}
+
+W tym rozdziale skupiono się na sprawdzeniu i zbadaniu rezultatów osiągniętych poprzez zastosowanie dwóch sposobów animacji. Opisano w tej części przebieg badań, a także przedstawiono i zinterpretowano otrzymane wyniki oraz dokonano porównania użytych metod.
+
+Opisana w czwartym rozdziale aplikacja była uruchamiana na platformie testowej. Konfigurację systemowo-sprzętową przedstawiono w tab. \ref{tab:conf}. Przed przystąpieniem do testów zatrzymano wszelkie procesy, których działanie nie było konieczne do właściwej pracy systemu operacyjnego oraz funkcjonowania aplikacji testowej. Dzięki takiemu postępowaniu możliwe było obniżenie prawdopodobieństwa wystąpienia zakłóceń oraz wprowadzenia opóźnień w działaniu aplikacji, co w rezultacie doprowadziłoby do przekłamania uzyskanych wyników.
+
+\begin{table}[p]
+
+\begin{center}
+\footnotesize
+\begin{tabular}{|p{0.55\linewidth}||p{0.4\linewidth}|} 
+\hline
+
+Procesor graficzny & nVidia GeForce 7600 GS, PCI-E\\ \hline
+Ilość pamięci układu graficznego & 256 MB \\ \hline
+Mikroprocesor & Core 2 Duo E6320, 1.86 GHz\\ \hline
+Rzeczywista częstotliwość taktowania procesora & 1862 MHz \\ \hline 
+Ilość pamięci RAM & 3025 MB \\ \hline
+Monitor & LG E2770V-PN \\ \hline
+ \hline
+System operacyjny & GNU/Linux Kubuntu 11.10, 3.0.0-15-generic i686\\ \hline
+Sterownik procesora graficznego & nvidia 173.14.30 \\ \hline
+Serwer X & X.Org X Server 1.10.4 \\ \hline
+Wersja OpenGL & OpenGL 2.1.2 GLSL 1.2 \\ \hline
+Wersja silnika Irrlicht & 1.7.2 \\ \hline
+Rozdzielczość monitora & 1920x1080 px \\  \hline
+Wymiary okna aplikacji & 800x450 px \\ \hline
+  \end{tabular}
+\end{center}
+  \caption{Konfiguracja systemowo-sprzętowa platformy testowej}
+\label{tab:conf}
+\end{table}
+
+
+Przy użyciu animacji zapisanej w modelu postaci, dało się zauważyć szereg problemów. Przede wszystkim taka, jak mogłoby się wydawać, stosunkowo prosta czynność jaką jest wchodzenie po schodach, okazała się trudna do osiągnięcia przy zastosowaniu animacji chodzenia po płaszczyźnie. Uwydatnia się tutaj zatem główna wada tej techniki animacji, jaką jest brak elastyczności i możliwości dopasowania ruchu do zmiennych uwarunkowań terenu. Głównym mankamentem było w tym przypadku nieunoszenie stopy przez postać dostatecznie wysoko, a co za tym idzie wnikanie w stopnie schodów. Obecnie w grach często można się spotkać ze scenami generowanymi w sposób dynamiczny i losowy. Odnosi się to również do podłoża. W takich przypadkach ciężko uzyskać realistyczny efekt przy zastosowaniu animacji przygotowanej w programie do modelowania i wyeksportowanej następnie wraz z modelem postaci. 
+
+\pagebreak
+
+Animacja uzyskana poprzez zastosowanie techniki kinematyki odwrotnej była płynna i realistyczna. Dzięki specyfice tej metody i obliczaniu pozycji kończyn postaci w czasie rzeczywistym, udało się uniknąć bardzo nieestetycznego efektu przenikania nogi przez stopnie schodów. Na rys. \ref{img:irrikcomp} przedstawiono to zjawisko oraz ukazano różnice między animacją zapisaną w modelu, a otrzymaną poprzez użycie kinematyki odwrotnej. Wysoka elastyczność i możliwość dopasowania animacji do uwarunkowań terenu jest niewątpliwą zaletą stosowania kinematyki odwrotnej w trójwymiarowych grach komputerowych.
+
+
+  \begin{figure}
+  \centering
+    \includegraphics[keepaspectratio=true,width=\linewidth]{./img/comparsion.png}
+  \caption{Porównanie działania dwóch metod animacji: u góry animacja zapisana w modelu, na dole wykorzystująca kinematyką odwrotną. Na czerwono wyróżniono wadę pierwszej techniki.}
+  \label{img:irrikcomp}
+  \end{figure}
+
+Dodatkowo aplikacja testowa pozwoliła na zebranie i uśrednienie danych dotyczących liczby wyświetlanych klatek na sekundę. Ten parametr, szeroko znany pod angielskim skrótem \texttt{FPS} (frames per second), jest często wykorzystywany do określenia wydajności procesorów graficznych i prędkości animacji. Bezpośredni wpływ na współczynnik FPS mają takie elementy jak złożoność sceny, ilość wykorzystanych modeli, efekty oświetleniowe, czy zastosowane metody i algorytmy. Wszystkie parametry poza ostatnim były stałe, a badanie trwało \textit{60} sec. Zebrane wyniki przedstawiono w tab. \ref{tab:results}. Należy zauważyć, że różnice między dwiema badanymi technikami animacji trójwymiarowej są niewielkie. Uzyskanie płynnej animacji możliwe jest już przy \textit{60} FPS. W związku z tym różnice rzędu \textit{10} FPS nie są zauważalne dla użytkownika. Wskazywać to może na wydajność metody \texttt{CCD} w kontekście generowania animacji w czasie rzeczywistym. Należy jednak pamiętać, że animowany model nie był wykonany z dużą dokładnością, a użyty do jego animacji system szkieletowy jest dość prosty. W przypadku bardziej złożonych postaci różnice mogłyby być większe.
+
+Istotną zaletą stosowania kinematyki odwrotnej jest także prostota uzyskania zamierzonej pozy postaci. Niezwykle ułatwia i przyspiesza to proces animacji postaci w programach przeznaczonych do modelowania obiektów trójwymiarowych, a także skraca czas potrzebny na uzyskanie odpowiedniego rezultatu przy implementacji animacji generowanej  w czasie rzeczywistym z uwzględnieniem czynników zmiennych. W przypadku zastosowania kinematyki prostej, kod odpowiedzialny za ruch modelu byłby bardzo złożony i trudny do rozwoju, czy utrzymania.
+
+
+\begin{table}[p]
+
+\begin{center}
+
+\begin{tabular}{|l||c|c|c|} 
+\hline
+
+ & \textbf{animacja poklatkowa} & \textbf{kinematyka odwrotna} & \textbf{różnica} \\ \hline 
+
+\hline
+
+\textbf{wartość średnia} & 124 & 118 & 6 \\ \hline
+\textbf{wartość maksymalna} & 137 & 133 & 4 \\ \hline
+\textbf{wartość minimalna} & 99 & 86 & 13 \\ \hline
+
+  \end{tabular}
+\end{center}
+  \caption{Wyniki badania zależności liczby klatek na sekundę (FPS) od zastosowanej techniki animacji}
+\label{tab:results}
+\end{table}
+
+
+\chapter{Podsumowanie}
+
+Celem pracy było zastosowanie kinematyki odwrotnej do trójwymiarowej animacji postaci humanoidalnej oraz porównanie tej metody animacji z inną techniką. Tak sformułowany cel został w pełni osiągnięty w wyznaczonych ramach czasowych. 
+
+Jako że zagadnienie animacji, w tym także jej jednej gałęzi, jaką jest animacja trójwymiarowa, jest bardzo rozległe, dążenie do osiągnięcia zamierzonych rezultatów zostało podzielone na etapy. Pierwszym, bardzo ważnym krokiem był przegląd literatury przedmiotu i bliższe zapoznanie się z tematem. Później przyszedł czas na opracowanie stosownej koncepcji rozwiązania, po czym można było przejść do wyboru użytych technologii i modeli. Implementacja algorytmu możliwa była po przygotowaniu platformy testowej, na której dokonano  weryfikacji poprawności i jakości wizualnej ruchu. Wszelkie wnioski i spostrzeżenia, a także końcowe wyniki zostały przeanalizowane i opracowane, a wreszcie zredagowane w formę niniejszej pracy.
+
+W pracy dokonano przeglądu różnych technik animacji. Opisano także szereg zagadnień związanych z procesem animacji w grach komputerowych. Następnie w sposób bardziej szczegółowy dokonano opisu kinematyki odwrotnej. Przedstawiono rys historyczny i opisano popularne techniki z zakresu tej metody animacji. W dalszej części zawarto przegląd technologii, wraz z wyborem konkretnych rozwiązań. Dokonano również uzasadnienia dla zastosowania istniejącego silnika graficznego i wykorzystania ogólnodostępnych modeli. Następnie opisano przyjęte założenia i przedstawiono szczegóły dotyczące implementacji aplikacji testowej. Całość została wzbogacona adekwatnymi ilustracjami pomocniczymi i zrzutami ekranu przedstawiającymi działanie animacji.
+
+Wykazano, że kinematyka odwrotna jest bardzo użyteczną techniką trójwymiarowej animacji komputerowej. Jest ona szeroko stosowana przez światowej sławy producentów gier komputerowych oraz wytwórnie filmów fabularnych. Kinematyka odwrotna w dalszym ciągu jest obiektem badań wielu naukowców, o czym świadczy choćby fakt, że w ciągu ostatniego miesiąca ukazało się trzydzieści publikacji związanych z tym zagadnieniem. Zasadność stosowania tej metody potwierdzają otrzymane wyniki przeprowadzonych badań. Niewątpliwą zaletą rozważanej techniki jest szybkość i prostota z jaką można uzyskać zamierzony efekt. Dzięki niej możliwa i łatwa do osiągnięcia jest realistyczna animacja postaci w czasie rzeczywistym. Co więcej, dzięki zastosowaniu kinematyki odwrotnej, nie jest problemem uzależnienie ruchu modelu od zmiennych w czasie warunków takich jak choćby ukształtowanie terenu. Wiąże się to z uzyskaniem animacji bardzo zbliżonej do sposobu poruszania się istot żywych, odwzorowanych na ekranie monitora.
+
+
+Ze względu na charakter niniejszej pracy, z góry narzucone ramy czasowe oraz rozległość tematu, niemożliwe było rozszerzenie jej o dodatkowe elementy. W związku z tym, dzieło to można uznać jako dobry punkt wyjściowy dla dalszych badań w tym zakresie. Kontynuacją pracy mogłoby być przeprowadzenie eksperymentów na większej liczbie metod kinematyki odwrotnej i dokonanie ich analizy porównawczej. Kolejną możliwością jest adaptacja algorytmu kinematyki odwrotnej jeszcze nieużytego w dziedzinie animacji trójwymiarowej i zbadanie jego przydatności w tym zastosowaniu. Przeprowadzone badania warto by było także poszerzyć o sprawdzenie zależności od stopnia złożoności, jak i ilości wykorzystanych modeli.
+
+
+\renewcommand{\lstlistlistingname}{Spis listingów}
+
+\listoftables
+\listoffigures
+\lstlistoflistings
+
+
+% \section*{Spis listingów}
+ \addcontentsline{toc}{chapter}{Spis listingów}
+% \markboth{SPIS LISTINGÓW}{}
+% \newcommand\stdsection{}
+% \newcommand\stdaddtocontents{}
+% \let\stdsection\section
+% \let\stdaddtocontents\addtocontents
+% \def\section*#1{}
+% \renewcommand\addtocontents[3]{}
+% \lstlistoflistings
+% \let\section\stdsection
+% \let\addtocontents\stdaddtocontents
+
+\begin{thebibliography}{99}
+
+%  \addcontentsline{toc}{section}{Bibliografia}
+% \footnotesize
+
+\bibitem{zbrush} Majid Esmaeili, \textit{Ready, Set, Render! Part2}, \url{http://www.zbrushcentral.com/showthread.php?164247}
+\bibitem{avatar} Leonard Teo \& Mark Ramshaw, \textit{The Making of Avatar}, \url{http://www.3dworldmag.com/2010/11/16/the-making-of-avatar/}
+\bibitem{ikrobot} Li-Chun Tommy Wang, Chih Cheng Chen, \textit{A Combined Optimization Method for Solving the Inverse Kinematics Problem of Mechanical Manipulators}, IEEE Transactions on Robotics and Automation, Vol 7 No 4, August 1991
+\bibitem{lander} Jeff Lander, \textit{Graphic Content: Oh My God, I Inverted Kine!}, Game Developer, 1998
+\bibitem{welman} Chris Welman, \textit{Inverse Kinematics and Geometric Constraints for Articulated Figure Manipulation}, Simon Frasier University, 1993
+\bibitem{renderware:list} MobyGames, \textit{Graphics Engine: RenderWare}, \url{http://www.mobygames.com/game-group/graphics-engine-renderware}
+\bibitem{renderware} Criterion Software, \textit{RENDERWARE GRAPHICS}, \url{http://web.archive.org/web/20070105144827/http://www.renderware.com/graphics.asp}
+\bibitem{ogreb1} Gregory Junker, \textit{Pro OGRE 3D Programming (Expert's Voice in Open Source)}, Apress 2006
+\bibitem{ogreb2} Ilya Grinblat, \textit{OGRE 3D 1.7 Application Development Cookbookt}, Packt Publishing 2011
+\bibitem{ogre} Torus Knot Software Ltd, \textit{OGRE -- Open Source 3D Graphics Engine}, \url{http://www.ogre3d.org/}
+\bibitem{panda} Carnegie Mellon University, \textit{Panda3D - Free 3D Game Engine} \url{http://www.panda3d.org}
+\bibitem{pandab1} Christoph Lang, \textit{Panda3D 1.7 Game Developer's Cookbook}, Packt Publishing 2011
+\bibitem{pandab2} Dave Mathews, \textit{Panda3D 1.6 Game Engine Beginner's Guide}, Packt Publishing 2011
+\bibitem{pandaf} Carnegie Mellon University, \textit{Panda3D Forums} \url{http://www.panda3d.org/forums/}
+\bibitem{irrlichtb1} André Koscianski, \textit{Game Programming with Irrlicht}, CreateSpace 2011
+\bibitem{irrlichtb2} Johannes Stein, \textit{Irrlicht 1.7 Realtime 3D Engine Beginner's Guide}, Packt Publishing 2011
+\pagebreak
+\bibitem{irrlichtw} Nikolaus Gebhardt, \textit{Irrlicht Engine - A free open source 3D engine}, \url{http://irrlicht.sourceforge.net}
+\bibitem{dx} Microsoft, \textit{Direct3D 10 Graphics}, \url{http://msdn.microsoft.com/en-us/library/windows/desktop/bb205066%28v=vs.85%29.aspx}
+\bibitem{opengl} Khronos Group, \textit{OpenGL - The Industry Standard for High Performance Graphics}, \url{http://www.opengl.org/}
+
+\end{thebibliography}
+
+\end{document}

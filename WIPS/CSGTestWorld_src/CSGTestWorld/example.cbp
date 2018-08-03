@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Irrlicht Pong" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./Pong" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+			<Add directory="../MathAndGraphix" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="X11" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+		</Linker>
+		<Unit filename="../MathAndGraphix/GX_Color.cpp" />
+		<Unit filename="../MathAndGraphix/GX_Color.h" />
+		<Unit filename="../MathAndGraphix/GX_Intersection.cpp" />
+		<Unit filename="../MathAndGraphix/GX_Intersection.h" />
+		<Unit filename="../MathAndGraphix/GX_Model.cpp" />
+		<Unit filename="../MathAndGraphix/GX_Model.h" />
+		<Unit filename="../MathAndGraphix/GX_ModelLibrary.cpp" />
+		<Unit filename="../MathAndGraphix/GX_ModelLibrary.h" />
+		<Unit filename="../MathAndGraphix/GX_ModelUtil.cpp" />
+		<Unit filename="../MathAndGraphix/GX_ModelUtil.h" />
+		<Unit filename="../MathAndGraphix/GX_RenderingLine.cpp" />
+		<Unit filename="../MathAndGraphix/GX_RenderingLine.h" />
+		<Unit filename="../MathAndGraphix/GX_RenderingPoint.cpp" />
+		<Unit filename="../MathAndGraphix/GX_RenderingPoint.h" />
+		<Unit filename="../MathAndGraphix/GX_RenderingTriangle.cpp" />
+		<Unit filename="../MathAndGraphix/GX_RenderingTriangle.h" />
+		<Unit filename="../MathAndGraphix/GX_Scene.cpp" />
+		<Unit filename="../MathAndGraphix/GX_Scene.h" />
+		<Unit filename="../MathAndGraphix/GX_TextureArchive.cpp" />
+		<Unit filename="../MathAndGraphix/GX_TextureArchive.h" />
+		<Unit filename="../MathAndGraphix/GX_TextureLoader.cpp" />
+		<Unit filename="../MathAndGraphix/GX_TextureLoader.h" />
+		<Unit filename="../MathAndGraphix/GX_TransformUtility.cpp" />
+		<Unit filename="../MathAndGraphix/GX_TransformUtility.h" />
+		<Unit filename="../MathAndGraphix/GX_Viewport2D.cpp" />
+		<Unit filename="../MathAndGraphix/GX_Viewport2D.h" />
+		<Unit filename="../MathAndGraphix/ML_Circle.cpp" />
+		<Unit filename="../MathAndGraphix/ML_Circle.h" />
+		<Unit filename="../MathAndGraphix/ML_Disc.cpp" />
+		<Unit filename="../MathAndGraphix/ML_Disc.h" />
+		<Unit filename="../MathAndGraphix/ML_HermiteCurveCalculator.cpp" />
+		<Unit filename="../MathAndGraphix/ML_HermiteCurveCalculator.h" />
+		<Unit filename="../MathAndGraphix/ML_HermiteCurvePoint.h" />
+		<Unit filename="../MathAndGraphix/ML_HermiteCurveRenderer.cpp" />
+		<Unit filename="../MathAndGraphix/ML_HermiteCurveRenderer.h" />
+		<Unit filename="../MathAndGraphix/ML_Line.cpp" />
+		<Unit filename="../MathAndGraphix/ML_Line.h" />
+		<Unit filename="../MathAndGraphix/ML_Maths.cpp" />
+		<Unit filename="../MathAndGraphix/ML_Maths.h" />
+		<Unit filename="../MathAndGraphix/ML_Matrix.cpp" />
+		<Unit filename="../MathAndGraphix/ML_Matrix.h" />
+		<Unit filename="../MathAndGraphix/ML_Quaternion.cpp" />
+		<Unit filename="../MathAndGraphix/ML_Quaternion.h" />
+		<Unit filename="../MathAndGraphix/ML_Sphere.cpp" />
+		<Unit filename="../MathAndGraphix/ML_Sphere.h" />
+		<Unit filename="../MathAndGraphix/ML_Transform.cpp" />
+		<Unit filename="../MathAndGraphix/ML_Transform.h" />
+		<Unit filename="../MathAndGraphix/ML_TransformTest.cpp" />
+		<Unit filename="../MathAndGraphix/ML_TransformTest.h" />
+		<Unit filename="../MathAndGraphix/ML_Triangle.cpp" />
+		<Unit filename="../MathAndGraphix/ML_Triangle.h" />
+		<Unit filename="../MathAndGraphix/ML_Types.h" />
+		<Unit filename="../MathAndGraphix/ML_Vector.cpp" />
+		<Unit filename="../MathAndGraphix/ML_Vector.h" />
+		<Unit filename="../MathAndGraphix/UT_Functions.cpp" />
+		<Unit filename="../MathAndGraphix/UT_Functions.h" />
+		<Unit filename="../MathAndGraphix/UT_Intersection.cpp" />
+		<Unit filename="../MathAndGraphix/UT_Intersection.h" />
+		<Unit filename="../MathAndGraphix/UT_String.cpp" />
+		<Unit filename="../MathAndGraphix/UT_String.h" />
+		<Unit filename="../World/2DOrthoWorld.cpp" />
+		<Unit filename="../World/2DOrthoWorld.h" />
+		<Unit filename="../World/3DWorld.cpp" />
+		<Unit filename="../World/3DWorld.h" />
+		<Unit filename="../World/EnhancedCameraWorld.cpp" />
+		<Unit filename="../World/EnhancedCameraWorld.h" />
+		<Unit filename="../World/FourWorldConfiguration.cpp" />
+		<Unit filename="../World/FourWorldConfiguration.h" />
+		<Unit filename="../World/SingleWorldConfiguration.cpp" />
+		<Unit filename="../World/SingleWorldConfiguration.h" />
+		<Unit filename="../World/ThreeWorldConfiguration.cpp" />
+		<Unit filename="../World/ThreeWorldConfiguration.h" />
+		<Unit filename="../World/TwoWorldConfiguration.cpp" />
+		<Unit filename="../World/TwoWorldConfiguration.h" />
+		<Unit filename="../World/World.cpp" />
+		<Unit filename="../World/World.h" />
+		<Unit filename="BooleanModeller.cpp" />
+		<Unit filename="BooleanModeller.h" />
+		<Unit filename="Bound.cpp" />
+		<Unit filename="Bound.h" />
+		<Unit filename="CSGPlayWorld.cpp" />
+		<Unit filename="CSGPlayWorld.h" />
+		<Unit filename="ColorSet.cpp" />
+		<Unit filename="ColorSet.h" />
+		<Unit filename="DiagnosticEvent.cpp" />
+		<Unit filename="DiagnosticEvent.h" />
+		<Unit filename="DiagnosticTool.cpp" />
+		<Unit filename="DiagnosticTool.h" />
+		<Unit filename="Face.cpp" />
+		<Unit filename="Face.h" />
+		<Unit filename="FaceSet.cpp" />
+		<Unit filename="FaceSet.h" />
+		<Unit filename="IntSet.cpp" />
+		<Unit filename="IntSet.h" />
+		<Unit filename="Line.cpp" />
+		<Unit filename="Line.h" />
+		<Unit filename="Main.cpp" />
+		<Unit filename="Object3D.cpp" />
+		<Unit filename="Object3D.h" />
+		<Unit filename="Segment.cpp" />
+		<Unit filename="Segment.h" />
+		<Unit filename="Solid.cpp" />
+		<Unit filename="Solid.h" />
+		<Unit filename="VectorSet.cpp" />
+		<Unit filename="VectorSet.h" />
+		<Unit filename="Vertex.cpp" />
+		<Unit filename="Vertex.h" />
+		<Unit filename="VertexSet.cpp" />
+		<Unit filename="VertexSet.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
