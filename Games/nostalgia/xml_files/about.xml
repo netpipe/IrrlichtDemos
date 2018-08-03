@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config>
+<!--This is a config file for arcade nostalgia-->
+<MessageText  caption="About Nostalgia de Robert Garand">
+First game made by me,
+I used:
+
+Irrlicht as 3d engine,
+Irrklang as sound engine,
+Code Blocks as compiler
+Milk Shape 3D as modeler.
+
+All Great Free Programs, (except MS3D, 42$...a deal)
+many thanks to creators
+and their community, a lot of good poeples.
+
+I did all aspects, graphic, animation, sound,
+trajectory calculation and whatever else !!!
+
+November 2008
+</MessageText>
+</config>

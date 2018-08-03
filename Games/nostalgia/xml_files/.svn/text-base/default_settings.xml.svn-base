@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!--This is a config file for arcade nostalgia-->
+<config>
+<settings width = "1023" height = "767" antialias = "0" fullscreen = "1" vsync = "0" driver ="EDT_OPENGL" bits ="32">
+</settings>
+</config> 
+

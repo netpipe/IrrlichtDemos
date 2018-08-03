@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<config>
+<!--This is a help file for arcade nostalgia-->
+<messageText caption="Nostalgia de Robert Garand">
+Controls: 	
+	Use mouse to aim canon.
+	Use left or right arrows to move canon.
+	left button or space bar to fire shell.
+	Right button to aim missiles at enemies, 
+	takes a second to lock and auto-fires when lock on the target.
+	when you hear the bip, you're on target.
+
+	C change camera to fps to view world, but don't pause game itself.
+	P pause/unpause game.
+	V change video settings and options
+	S change sound options and parameters
+	F1 open this window
+
+The Object of the game is to defend your air raffinery.
+If enemy shoot at or touch them, they stop working. 
+When they're is none working...You're dead !
+
+Press  P to pause and access menu;
+File-Newgame to start a new game, hey!
+File-Sound and parameters
+You can adjust data display opacity,
+sound level of music or Fx. 
+They're is also a reverse audio button
+for those with too short right wire (like me)
+
+file->Change Video Mode
+You can change video screen size, resolution, fullscreen, etc
+and save it, if you want
+
+
+on the Help menu you have:
+Help File F1 - this file
+Tips:gives some insight on the game
+About.:thanks and other
+
+</messageText>
+</config>
