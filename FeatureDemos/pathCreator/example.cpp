@@ -59,7 +59,7 @@ int main()
 	video::IVideoDriver* driver = device->getVideoDriver();
 	scene::ISceneManager* smgr = device->getSceneManager();
 
-	device->getFileSystem()->addZipFileArchive("./map-20kdm2.pk3");
+	device->getFileSystem()->addZipFileArchive("../../media/map-20kdm2.pk3");
 
 	scene::IAnimatedMesh* mesh = smgr->getMesh("20kdm2.bsp");
 	scene::ISceneNode* node = 0;

@@ -1,0 +1,14 @@
+
+
+Re: Trying to load MOHAA .BSP
+
+Postby wombat » Sat Aug 20, 2011 2:20 am
+OK I uploaded what I got so far (not much). It needs proper shader loading, and LOD terrain drawing (the blank spots on the ground), which I'll take care of soon.
+
+http://home.arcor.de/wombat23/irrlicht-mohaabsp.7z
+
+CMOHAALevelMesh.cpp and .h must be added to source/Irrlicht/ they are a modification based on the pre-existing CQ3LevelMesh files. they should be added to the project / makefile.
+
+The archive also contains a slightly modified CBSPMeshFileLoader.cpp, that will load the first 4 bytes of the .bsp to automatically choose between Q3 and MOHAA mesh loader.
+
+A test example can be found here: http://pastebin.com/ecb7Fe1i
