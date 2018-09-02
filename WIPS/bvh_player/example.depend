@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1454198739 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/model/BVH/bvh_player/BVH.cpp
+	<fstream>
+	<string.h>
+	<stdlib.h>
+	"BVH.h"
+	<math.h>
+	<GL/glut.h>
+
+1198821734 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/model/BVH/bvh_player/BVH.h
+	<vector>
+	<map>
+	<string>
+
+1432591549 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/model/BVH/bvh_player/bvh_player.cpp
+	<windows.h>
+	<GL/glut.h>
+	<stdlib.h>
+	<stdio.h>
+	"BVH.h"
+
+1454198739 source:/mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/Model/BVH/bvh_player/BVH.cpp
+	<fstream>
+	<string.h>
+	<stdlib.h>
+	"BVH.h"
+	<math.h>
+	<GL/glut.h>
+
+1198821734 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/Model/BVH/bvh_player/BVH.h
+	<vector>
+	<map>
+	<string>
+
