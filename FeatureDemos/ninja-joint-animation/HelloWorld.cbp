@@ -15,11 +15,12 @@
 					<Add option="-g" />
 					<Add option="-W" />
 					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add directory="/home/Dev/libs/game/irrlicht/Irrlicht-SVN/include" />
 				</Compiler>
 				<Linker>
 					<Add library="Xxf86vm" />
 					<Add library="GL" />
-					<Add directory="../../../lib/Linux" />
+					<Add directory="/home/Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux" />
 				</Linker>
 			</Target>
 			<Target title="Windows">

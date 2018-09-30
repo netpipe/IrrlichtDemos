@@ -22,7 +22,7 @@
 int main()
 {
    // create Irrlicht device
-      IrrlichtDevice* device = createDevice( video::EDT_OPENGL, dimension2d<s32>(800, 600), 32,
+      IrrlichtDevice* device = createDevice( video::EDT_OPENGL, dimension2d<u32>(800, 600), 32,
             false, false);
 
       if (device == 0)
