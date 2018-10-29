@@ -19,7 +19,7 @@
 		<Compiler>
 			<Add option="-fpermissive" />
 			<Add directory="/home/Dev/libs/game/irrlicht/irrlicht-1.7/include" />
-			<Add directory="/home/Dev/libs/physics/ode-0.11.1/include" />
+			<Add directory="/home/Dev/libs/physics/ODE/ode-0.11.1/include" />
 		</Compiler>
 		<Linker>
 			<Add library="Irrlicht" />
@@ -28,7 +28,7 @@
 			<Add library="ode" />
 			<Add library="X11" />
 			<Add directory="/home/Dev/libs/game/irrlicht/irrlicht-1.6/lib/Linux" />
-			<Add directory="/home/Dev/libs/physics/ode-0.11.1/ode/src/.libs" />
+			<Add directory="/home/Dev/libs/physics/ODE/ode-0.11.1/ode/src/.libs" />
 		</Linker>
 		<Unit filename="core/Application.cpp" />
 		<Unit filename="core/Application.h" />

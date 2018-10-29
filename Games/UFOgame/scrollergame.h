@@ -1,3 +1,5 @@
+#ifndef scroller_h
+#define scroller_h
 // Wave based back view 3d scroller game
 // code by G Davidson
 
@@ -82,7 +84,7 @@ struct SEnemy
 
 core::array< core::array<SEnemy> > waves;
 
-#include "CParticleSystem2SceneNode.cpp"
+#include "CParticleSystem2SceneNode.h"
 
 // Textures and meshes
 
@@ -468,3 +470,5 @@ class CGameCamera : public CGameSceneNode
         u32             lasttime;
         u32             lastframe;
 };
+
+#endif

@@ -1,3 +1,5 @@
+#ifndef scroller_CPP
+#define scroller_CPP
 // Wave based back view 3d scroller game
 // code by G Davidson
 
@@ -239,6 +241,7 @@ void removeFromCollisionList(CGameSceneNode *node)
             core::triangle3df triout;
             core::vector3df   colpoint;
  core::vector3df   HitPoint1;
+ irr::scene::ISceneNode* outNode;
 
             if (movement == GM_FLYING)
             {
@@ -248,7 +251,7 @@ void removeFromCollisionList(CGameSceneNode *node)
                 colpoint =
                     SceneManager->getSceneCollisionManager()->getCollisionResultPosition(
                          terrain->getSelector(pos.Z), pos, core::vector3df(size/100,size/100,size/100),
-                         velocity*t, triout,HitPoint1, outFalling);
+                         velocity*t, triout,HitPoint1, outFalling,outNode);
 
                 if (colpoint != newpos)
                 {
@@ -282,7 +285,7 @@ void removeFromCollisionList(CGameSceneNode *node)
                 colpoint =
                     SceneManager->getSceneCollisionManager()->getCollisionResultPosition(
                          terrain->getSelector(pos.Z), pos, core::vector3df(size, size, size),
-                         velocity*t, triout, HitPoint1,outFalling, 0.0005f,core::vector3df(0.0f, -5.0f, 0.0f) );
+                         velocity*t, triout, HitPoint1,outFalling,outNode, 0.0005f,core::vector3df(0.0f, -5.0f, 0.0f) );
 
                 if (!outFalling)
                 {
@@ -578,6 +581,7 @@ void removeFromCollisionList(CGameSceneNode *node)
             hasenergy = false;          // they dont smoke, collide, or have energy bars
             energy   = impactenergy;    // ...so we use energy variable as the payload
             lasttime = 0;
+irr::scene::ISceneNode* outNode;
 
             setAutomaticCulling( scene::EAC_OFF );
             setDebugDataVisible(true);
@@ -595,7 +599,7 @@ void removeFromCollisionList(CGameSceneNode *node)
             if (terrain->selector[0] != NULL)
             {
                 // check the ground
-                if (SceneManager->getSceneCollisionManager()->getCollisionPoint(p, terrain->selector[0], endpoint, tri))
+                if (SceneManager->getSceneCollisionManager()->getCollisionPoint(p, terrain->selector[0], endpoint, tri,outNode))
                 {
                     // we found the end point
                     impact = true;
@@ -604,7 +608,7 @@ void removeFromCollisionList(CGameSceneNode *node)
             if (!impact && terrain->selector[1] != NULL)
             {
                 // check the ground
-                if (SceneManager->getSceneCollisionManager()->getCollisionPoint(p, terrain->selector[1], endpoint, tri))
+                if (SceneManager->getSceneCollisionManager()->getCollisionPoint(p, terrain->selector[1], endpoint, tri,outNode))
                 {
                     // we found the end point
                     impact = true;
@@ -710,7 +714,7 @@ void removeFromCollisionList(CGameSceneNode *node)
            hasenergy = false;          // they dont smoke, collide, or have energy bars
            lasttime = 0;
 
-           setAutomaticCulling( EAC_OFF );
+//           setAutomaticCulling( EAC_OFF );
            setDebugDataVisible(true);
 
            energy = maxenergy = e;
@@ -1226,14 +1230,14 @@ void removeFromCollisionList(CGameSceneNode *node)
         core::vector3df CScrollingWorldSceneNode::getHeightAtXZ(f32 X, f32 Z)
         {
             int i = Z > join ? 1 : 0; // triangle selector number
-
+irr::scene::ISceneNode* outNode;
             selector[i];
 
             core::line3d<f32> line = core::line3d<f32>(X,10000.0f,Z,X,-10000.0f,Z);
             core::vector3df   intersection;
             core::triangle3df tri;
 
-            SceneManager->getSceneCollisionManager()->getCollisionPoint(line, selector[i], intersection, tri);
+            SceneManager->getSceneCollisionManager()->getCollisionPoint(line, selector[i], intersection, tri,outNode);
 
             // printf("collision at %f, %f, %f from %f, %f\n", intersection.X, intersection.Y, intersection.Z, X, Z);
 
@@ -1610,3 +1614,4 @@ void removeFromCollisionList(CGameSceneNode *node)
             this->CGameSceneNode::OnPostRender(t);
         }
 
+        #endif

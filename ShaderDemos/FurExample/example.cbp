@@ -21,8 +21,8 @@
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
 		</Compiler>
 		<Linker>
-			<Add library="GL" />
 			<Add library="Irrlicht" />
+			<Add library="GL" />
 			<Add library="Xxf86vm" />
 			<Add library="Xcursor" />
 			<Add library="X11" />
@@ -36,6 +36,7 @@
 		<Extensions>
 			<code_completion />
 			<debugger />
+			<envvars />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

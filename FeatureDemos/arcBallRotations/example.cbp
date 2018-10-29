@@ -20,9 +20,10 @@
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
 		</Compiler>
 		<Linker>
-			<Add library="GL" />
 			<Add library="Irrlicht" />
+			<Add library="GL" />
 			<Add library="Xxf86vm" />
+			<Add library="X11" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
 		</Linker>
 		<Unit filename="CSceneNodeAnimatorCameraArcball.cpp" />
@@ -32,6 +33,7 @@
 		<Extensions>
 			<code_completion />
 			<debugger />
+			<envvars />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

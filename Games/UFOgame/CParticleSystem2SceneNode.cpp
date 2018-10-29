@@ -1,3 +1,5 @@
+#ifndef CPARTICLE_CPP
+#define CPARTICLE_CPP
 // Copyright (C) 2002-2005 Nikolaus Gebhardt
 // This file is part of the "Irrlicht Engine".
 // For conditions of distribution and use, see copyright notice in Irrlicht.h
@@ -291,4 +293,4 @@ void CParticleSystem2SceneNode::reallocateBuffers()
 
 } // end namespace scene
 } // end namespace irr
-
+#endif

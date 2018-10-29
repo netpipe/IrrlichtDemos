@@ -11,7 +11,7 @@
 using namespace irr;
 using namespace scene;
 
-#include "scrollergame.h"
+#include "scrollergame.cpp"
 
 
 // lots of the cpp code ploped into a header so it would compile
@@ -25,7 +25,7 @@ int main()
     // do the standard irrlicht startup thing
 
     // create device
-    device = createDevice(video::EDT_OPENGL, core::dimension2d<s32>(screenwidth, screenheight),
+    device = createDevice(video::EDT_OPENGL, core::dimension2d<u32>(screenwidth, screenheight),
                  16, false, false, false, &receiver);
 
     if (device == 0)

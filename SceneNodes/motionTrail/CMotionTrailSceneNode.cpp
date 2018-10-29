@@ -20,7 +20,7 @@ inline void CatmullRomCalc(core::vector3df &out, f32 t, const core::vector3df p0
 {
 	f32 t2 = t * t;
 	f32 t3 = t2 * t;
-	
+
 	out.X = 0.5f * ( ( 2.0f * p1.X ) +
 		( -p0.X + p2.X ) * t +
 		( 2.0f * p0.X - 5.0f * p1.X + 4 * p2.X - p3.X ) * t2 +
@@ -38,14 +38,14 @@ inline void CatmullRomCalc(core::vector3df &out, f32 t, const core::vector3df p0
 inline f32 interpolate(const f32 from, const f32 to, const f32 factor)
 {
    return from + factor*(to-from);
-}   
+}
 
 namespace scene
 {
 
 //! constructor
 CMotionTrailSceneNode::CMotionTrailSceneNode(ISceneNode* parent, ISceneManager* mgr,
-		s32 id, IrrlichtDevice* inDevice, 
+		s32 id, IrrlichtDevice* inDevice,
 		const core::vector3df& position,
 		const core::vector3df& rotation, const core::vector3df& scale)
 	: IMotionTrailSceneNode(parent, mgr, id, irrDevice, position, rotation, scale),
@@ -54,11 +54,11 @@ CMotionTrailSceneNode::CMotionTrailSceneNode(ISceneNode* parent, ISceneManager* 
 	#ifdef _DEBUG
 	setDebugName("CMotionTrailSceneNode");
 	#endif
-	
+
 	trailCount =  0;
 	trailList.Head = NULL;
 	trailList.Curr = NULL;
-	
+
 	//trailMaterial.MaterialType = video::EMT_ONETEXTURE_BLEND;
 	//trailMaterial.MaterialTypeParam = pack_texureBlendFunc( video::EBF_SRC_ALPHA, video::EBF_ONE_MINUS_SRC_ALPHA, video::EMFN_MODULATE_1X );
 	//trailMaterial.MaterialTypeParam = pack_texureBlendFunc( video::EBF_SRC_COLOR, video::EBF_SRC_ALPHA, video::EMFN_MODULATE_1X );
@@ -72,9 +72,9 @@ CMotionTrailSceneNode::CMotionTrailSceneNode(ISceneNode* parent, ISceneManager* 
 	//trailMaterial.ZWriteEnable = false;
 	//trailMaterial.BackfaceCulling = false;
 	//trailMaterial.ZBuffer = false;
-	
+
 	//trailMaterial.Thickness = 3.0f;
-	
+
 	setAutomaticCulling(scene::EAC_OFF);
 
 	irrDevice = inDevice;
@@ -108,13 +108,13 @@ void CMotionTrailSceneNode::renderTrail(u32 currentTrail)
 		glDrawElements(GL_QUADS, trailList.Curr->indices_count+1, GL_UNSIGNED_SHORT, trailList.Curr->indicies);
 		return;
 	}
-	
+
 	//create the trail
 	if (trailCount < 2)
 		return;
 
 	core::vector3df startPoints[4], endPoints[4];
-	
+
 	if(currentTrail < 1)
 		startPoints[0] = trailList.Head->start;
 	else
@@ -163,9 +163,9 @@ void CMotionTrailSceneNode::renderTrail(u32 currentTrail)
 	memset(trailList.Curr->verts, '\0', (sizeof(vertpoints_s)*size));
 	trailList.Curr->indicies	= (u16 *)malloc(sizeof(u16)*size);
 	memset(trailList.Curr->indicies, '\0', (sizeof(u16)*size));
-	
+
 	trailList.Curr->indices_count = -1;
-	
+
 	s32 count = 0;
 	s32 clrCount = 0;
 // -----------------------------------------------------------------------
@@ -250,7 +250,7 @@ void CMotionTrailSceneNode::renderTrail(u32 currentTrail)
 		if ((count+4) >= size)
 			break;
 	}
-	
+
 	//if (size != count)
 	//	printf("count: %i size: %i\n", count, size);
 	if (trailList.Curr->verts) {
@@ -302,7 +302,7 @@ void CMotionTrailSceneNode::render()
 	if (isLightingOn)
 		glDisable(GL_LIGHTING);
 	glDepthMask(GL_FALSE);
-	
+
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 	glDisable(GL_CULL_FACE);
 
@@ -326,9 +326,9 @@ void CMotionTrailSceneNode::render()
 		if (!mptr)
 			break;
 	}
-	
+
 	trailList.Curr = curTrail;
-	
+
 	//restore env
 	glDisableClientState(GL_COLOR_ARRAY);
 	glDisableClientState(GL_VERTEX_ARRAY);
@@ -455,14 +455,14 @@ void CMotionTrailSceneNode::addTrail(core::vector3df inStart, core::vector3df in
 	// Check, if the new pos is somewhat different from the last one.
 	if(core::vector3df(lastAddedPos - inStart).getLength() < 0.1f)
 		return;
-	
+
 	lastAddedPos = inStart;
-	
+
 	motionTrailSection * newTrail;
-	
+
 	newTrail = (motionTrailSection *)malloc(sizeof(motionTrailSection));
 	memset(newTrail, '\0', sizeof(motionTrailSection));
-	
+
 	newTrail->start = inStart;
 	newTrail->end   = inEnd;
 	newTrail->ElapsedTime = 0.0f;
@@ -471,7 +471,7 @@ void CMotionTrailSceneNode::addTrail(core::vector3df inStart, core::vector3df in
 	if (trailCount == 0) {
 		trailList.Head = newTrail;
 	}
-	
+
 	if (trailList.Curr) {
 		newTrail->Prev = trailList.Curr;
 		trailList.Curr->Next = newTrail;
@@ -498,14 +498,14 @@ void CMotionTrailSceneNode::addTrail(core::vector3df inStart, core::vector3df in
 		}
 	}
 	trailList.Curr = newTrail;
-	
+
 	trailCount++;
 
 	//boundingBox.reset(0,0,0);
-	
+
 	//boundingBox.addInternalPoint(trailList.Head->start);
 	//boundingBox.addInternalPoint(trail[trailCount-1].end);
-	
+
 	if (trailCount == 1) {
 		setPosition((inStart + inEnd) * 0.5f);
 		//updateAbsolutePosition();
