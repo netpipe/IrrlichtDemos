@@ -2,66 +2,110 @@
 #define GUI_H_
 
 #include <irrlicht.h>
+#include <vector>
+
+enum 
+{
+	GUI_ID_CONNECT_SERVER = 101,
+	GUI_ID_JOIN_CHANNEL_BUTTON,
+	GUI_ID_JOIN_CHANNEL_DLG,
+	GUI_ID_CONNECT_SERVER_DLG,
+	GUI_ID_JOIN_CHANNEL_OK,
+	GUI_ID_SERVER_CONNECT_OK,
+	GUI_ID_JOIN_CHANNEL_NAME_EDIT,
+	GUI_ID_SERVER_ADDRESS_EDIT,
+	GUI_ID_SERVER_PORT_EDIT
+};
+
+#define GUI_ID_TREE_NODE	200
+
+using namespace irr;
+using namespace core;
+using namespace gui;
 
 class Gui
 {
+public:
+    Gui(IGUIEnvironment* env);
+
+	void addLine(const core::stringw& who, const core::stringw& message);
+	
+	bool addChannelTab(core::stringw channel);
+
+	void removeChannelTab(core::stringw channel);
+
+	void addServerChild(core::stringw server);
+
+	core::stringc getActiveTabName();
+	
+
+	void ShowJoinChannel();
+
+	void ShowConnectServer();
+
+	IGUIEditBox* getChatBox();
+	
+	IGUIListBox* getChatMembers();
+
+	IGUIListBox* getChatHistory();
+	
+	IGUIEditBox* getChannelNameEdit() { return this->editChannelName;  }
+
+	IGUIWindow* getJoinChannelDlg() { return this->dlgJoinChannel;  }
+
+	IGUIWindow * getConnectServerDlg() { return this->dlgConnectServer;  }
+	
+	IGUIEditBox* getServerAddressEdit() { return this->editServerAddress;  }
+
+	IGUIEditBox* getServerPortEdit() { return this->editServerPort;  }
+
+	IGUITabControl* getCurTabServer();
+
+	IGUITreeViewNode* getSelectedNode() { return this->treeServer->getSelected(); }
+
+	u32 getSelectedNodeIdx();
+	
+	u32 getServerIdx(core::stringw serverName);
+
+	void SetVisibleTabeServer(u32 idx);
 
 public:
-irr::gui::IGUIListBox* list;
+    IGUIListBox* list;
+    IGUIButton* btnConnectServer;
+	IGUIButton* btnJoinChannel;
 
-	Gui(irr::gui::IGUIEnvironment* const guienv)
-	{
-	    irr::gui::IGUIFont* const font = guienv->getFont("fontlucida.png");
-		if (font)
-			guienv->getSkin()->setFont(font);
+	IGUITreeView* treeServer;
+	IGUITreeViewNode* treeRootNode;
+	std::vector<core::stringw> listServerAddress;
 
-		const irr::core::dimension2d<irr::u32>& screenSize = guienv->getVideoDriver()->getScreenSize();
-		const irr::core::vector2d<irr::u32> tabcontrolSize(700, 500);
-		const irr::core::vector2d<irr::u32> pos((screenSize.Width-tabcontrolSize.X)/2, (screenSize.Height-tabcontrolSize.Y)/2);
+	IGUIWindow* dlgJoinChannel;
 
-		irr::gui::IGUITabControl* const tabcontrol = guienv->addTabControl(irr::core::rect<int>(pos.X, pos.Y, pos.X + tabcontrolSize.X, pos.Y + tabcontrolSize.Y), 0, true, true, -1);
+	IGUIWindow* dlgConnectServer;
 
+	IGUIButton* btnJoinChannelOk;
 
-		irr::gui::IGUITab* tab = tabcontrol->addTab(L"Chatting Room", -1);
-
-/*
-		mox = guienv->addEditBox(L"", irr::core::recti(10, 10, tabcontrolSize.X-160, tabcontrolSize.Y-100), true, tab, -1);
-		mox->setTextAlignment(irr::gui::EGUIA_UPPERLEFT, irr::gui::EGUIA_UPPERLEFT);
-		mox->setAutoScroll(true);
-*/
-
-		mox = guienv->addListBox(irr::core::rect<int>(10, 10, tabcontrolSize.X-160, tabcontrolSize.Y-100), tab, -1, true);
-		mox->setAutoScrollEnabled(true);
-
-		box = guienv->addEditBox(L"", irr::core::rect<int>(10, tabcontrolSize.Y-90, tabcontrolSize.X-160, tabcontrolSize.Y-50), true, tab, -1);
-
-
-        list = guienv->addListBox(irr::core::rect<int>(tabcontrolSize.X-150, 10, tabcontrolSize.X-10, tabcontrolSize.Y-50), tab, -1, true);
-	//	list->addItem(L"VarmintTheRat");
-	//	list->addItem(L"randomMesh");
-	//	list->addItem(L"rooly");
-       // list->addItem(L"Tecan");
-
-	}
-
-	void addLine(const irr::core::stringw& who, const irr::core::stringw& message) const
-	{
-		irr::core::stringw bla(who);
-		bla += L" ";
-		bla += message;
-		mox->addItem(bla.c_str());
-		mox->setSelected(mox->getItemCount()-1);
-	}
-
-	inline irr::gui::IGUIListBox* const getMox() const { return this->mox; }
-
-	inline irr::gui::IGUIEditBox* const getBox() const { return this->box; }
-
+	IGUIButton* btnServerConnectOk;
+	
 private:
+	IGUIEnvironment* guienv;
 
-	irr::gui::IGUIListBox* mox;
+	std::vector<IGUITabControl*> tabServerList;
 
-	irr::gui::IGUIEditBox* box;
+	IGUIListBox* mox;
+	
+	IGUIEditBox* box;
+
+	//join channel dlg
+	IGUIEditBox* editChannelName;
+	
+	//connect to server dlg
+	IGUIEditBox* editServerAddress;
+	IGUIEditBox* editServerPort;
+
+
+	std::vector<IGUIListBox*> listChatHistory;
+	std::vector<IGUIEditBox*> listChatBox;
+	std::vector<IGUIListBox*> listChatMemebers;
 
 };
 

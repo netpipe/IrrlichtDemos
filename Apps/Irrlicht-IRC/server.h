@@ -12,7 +12,14 @@ public:
 	const ServerConfig &config() const;
 
 	void connectToServer();
-    void message( const std::string &msg );
+
+	void joinToChannel(std::string channel);
+
+	void leaveToChannel(std::string channel);
+	
+    void message( const std::string channel, const std::string msg );
+
+	void me(const std::string channel, const std::string msg);
 
 private:
 	// explicitly disable copy constructor

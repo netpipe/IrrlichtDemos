@@ -5,6 +5,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <sstream>
+#include <string>
 #include <stdarg.h>
 
 #include "server.h"
@@ -25,6 +26,27 @@ typedef struct
 	char 	* nick;
 
 } irc_ctx_t;
+
+
+std::vector<std::string> tokenize(const std::string & delim, const std::string & str)
+{
+	using namespace std;
+	vector<std::string> tokens;
+
+	size_t p0 = 0, p1 = std::string::npos;
+	while (p0 != std::string::npos)
+	{
+		p1 = str.find_first_of(delim, p0);
+		if (p1 != p0)
+		{
+			std::string token = str.substr(p0, p1 - p0);
+			tokens.push_back(token);
+		}
+		p0 = str.find_first_not_of(delim, p1);
+	}
+
+	return tokens;
+}
 
 
 Server::Server(const ServerConfig &sc)
@@ -52,7 +74,7 @@ void addlog (const char * fmt, ...)
 
 	va_start (va_alist, fmt);
 #if defined (_WIN32)
-	_vsnprintf (buf, sizeof(buf), fmt, va_alist);
+	printf (buf, sizeof(buf), fmt, va_alist);
 #else
 	vsnprintf (buf, sizeof(buf), fmt, va_alist);
 #endif
@@ -87,21 +109,43 @@ void dump_event (irc_session_t * session, const char * event, const char * origi
 	addlog ("Event \"%s\", origin: \"%s\", params: %d [%s]", event, origin ? origin : "NULL", cnt, buf);
 }
 
+void event_leave(irc_session_t * session, const char * event, const char * origin, const char ** params, unsigned int count)
+{
+	dump_event(session, event, origin, params, count);
+	irc_cmd_names(session, params[0]);
+
+	//update GUI
+	//irr::core::stringw who(origin);
+	//who = who.subString(0, who.findFirst('!'));
+	//g_app->gui->addLine(who + " leaved to ", irr::core::stringw(params[0]));
+
+}
 
 void event_join (irc_session_t * session, const char * event, const char * origin, const char ** params, unsigned int count)
 {
 	dump_event (session, event, origin, params, count);
 	irc_cmd_user_mode (session, "+i");
-	irc_cmd_msg (session, params[0], "Hi all");
+	//irc_cmd_msg (session, params[0], "Hi all");
+
+	irc_cmd_names(session, params[0]);
+
+	//update GUI
+	irr::core::stringw who(origin);
+	who = who.subString(0, who.findFirst('!'));
+	g_app->gui->addLine(who + " joined to ", irr::core::stringw(params[0]));
+
+
 }
 
 
 void event_connect (irc_session_t * session, const char * event, const char * origin, const char ** params, unsigned int count)
 {
-	irc_ctx_t * ctx = (irc_ctx_t *) irc_get_ctx (session);
+	//irc_ctx_t * ctx = (irc_ctx_t *) irc_get_ctx (session);
 	dump_event (session, event, origin, params, count);
 
-	irc_cmd_join (session, ctx->channel, 0);
+	//irc_cmd_join (session, ctx->channel, 0);
+
+	g_app->gui->ShowJoinChannel();
 }
 
 
@@ -184,7 +228,8 @@ void event_channel (irc_session_t * session, const char * event, const char * or
 		params[0], params[1] );
 
 	//update GUI
-	const irr::core::stringw who(params[0]);
+	irr::core::stringw who(origin);
+	who = who.subString(0, who.findFirst('!'));
 	g_app->gui->addLine(who + " : ", irr::core::stringw(params[1]));
 
 	if ( !origin )
@@ -261,8 +306,26 @@ void event_numeric (irc_session_t * session, unsigned int event, const char * or
 {
 	char buf[24];
 	sprintf (buf, "%d", event);
+	dump_event(session, buf, origin, params, count);
 
-	dump_event (session, buf, origin, params, count);
+	switch (event)
+	{
+	case 353: {
+		std::string members(params[3]);
+		std::vector<std::string> tokens = tokenize(" ", members.c_str());
+		g_app->gui->getChatMembers()->clear();
+		for (int x = 0; x<tokens.size(); x++)
+		{
+			const irr::core::stringw message3(tokens[x].c_str());
+			g_app->gui->getChatMembers()->addItem((wchar_t*)message3.c_str());
+		}
+		break;
+	}
+
+	default:
+		break;
+	}
+
 }
 
 
@@ -279,7 +342,7 @@ void Server::connectToServer()
 	callbacks.event_join = event_join;
 	callbacks.event_nick = dump_event;
 	callbacks.event_quit = dump_event;
-	callbacks.event_part = dump_event;
+	callbacks.event_part = event_leave;
 	callbacks.event_mode = dump_event;
 	callbacks.event_topic = dump_event;
 	callbacks.event_kick = dump_event;
@@ -327,9 +390,24 @@ void Server::connectToServer()
 
 }
 
-void Server::message( const std::string &msg ) {
+void Server::joinToChannel(std::string channel)
+{
+	irc_cmd_join (IRC, channel.c_str(), 0);
+}
 
-	irc_cmd_msg(IRC, config_.channel.c_str(), msg.c_str());
+void Server::leaveToChannel(std::string channel)
+{
+	irc_cmd_part(IRC, channel.c_str());
+}
 
+void Server::message(const std::string channel, const std::string msg ) {
+
+	irc_cmd_msg(IRC, channel.c_str(), msg.c_str());
+
+}
+
+void Server::me(const std::string channel, const std::string msg)
+{
+	irc_cmd_me(IRC, channel.c_str(), msg.c_str());
 }
 
