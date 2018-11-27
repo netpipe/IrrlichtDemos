@@ -1,0 +1,95 @@
+<tree>
+	
+	<branch id="1">
+		
+		<length min="4" max="6" />
+		
+		<radius min="0.35" max="0.35" />
+		
+		<radiusEnd value="0.50" />
+		
+		<!-- Leaves at tip of last level of branches -->
+		<leaf level="1">
+			<pitch value="0" />
+			
+			<width value="3" />
+			<height value="3" />
+			
+			<red min="225" max="255" />
+			<green value="255" />
+			<blue min="128" max="128" />
+			
+			<position value="1.00" />
+		</leaf>
+		
+		<!-- Split -->
+		<child ref="1" level="-1">
+			<lengthScale value="0.65653" />
+			
+			<radiusScale value="1.00" />
+			
+			<position value="0.95" />
+			
+			<orientation min="120.0" max="240.0" />
+			
+			<pitch min="0.0" max="45.0" />
+			
+			<count min="1" max="2" />
+		</child>
+		
+		<!-- Side-branches -->
+		<child ref="1" level="-2">
+			<lengthScale value="0.40322" />
+			
+			<radiusScale value="0.50" />
+			
+			<position min="0.3" max="0.8" />
+			
+			<pitch min="0.0" max="60.0" />
+			
+			<count min="0" max="1" />
+		</child>
+		
+	</branch>
+	
+	<!--  Root branch -->
+	<branch id="2">
+	
+		<length min="5" max="8" />
+		
+		<radius min="0.3" max="0.35" />
+		
+		<radiusEnd value="0.50" />
+		
+		<!-- Split -->
+		<child ref="1" level="-1">
+			<lengthScale value="0.60653" />
+			
+			<radiusScale value="1.00" />
+			
+			<position value="0.95" />
+			
+			<orientation min="100.0" max="160.0" />
+			
+			<pitch min="0.0" max="45.0" />
+			
+			<count value="3" />
+		</child>
+		
+		<child ref="1" level="-2">
+			<lengthScale value="0.40322" />
+			
+			<radiusScale value="0.50" />
+			
+			<position min="0.5" max="0.7" />
+			
+			<pitch min="30.0" max="85.0" />
+			
+			<count min="0" max="1" />
+		</child>
+		
+	</branch>
+	
+	<root ref="2" levels="6" />
+	
+</tree>

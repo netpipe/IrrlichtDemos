@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Irrlicht Pong" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./bin/Tikal" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="./bin/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-fpermissive" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="GL" />
+			<Add library="Xxf86vm" />
+			<Add library="X11" />
+			<Add library="pthread" />
+			<Add library="enet" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Game/TKBuilding.cpp" />
+		<Unit filename="src/Game/TKBuilding.h" />
+		<Unit filename="src/Game/TKBuildingManager.cpp" />
+		<Unit filename="src/Game/TKBuildingManager.h" />
+		<Unit filename="src/Game/TKCamera.cpp" />
+		<Unit filename="src/Game/TKCamera.h" />
+		<Unit filename="src/Game/TKCharacter.cpp" />
+		<Unit filename="src/Game/TKCharacter.h" />
+		<Unit filename="src/Game/TKCharacterManager.cpp" />
+		<Unit filename="src/Game/TKCharacterManager.h" />
+		<Unit filename="src/Game/TKCore.cpp" />
+		<Unit filename="src/Game/TKCore.h" />
+		<Unit filename="src/Game/TKDataBaseManager.cpp" />
+		<Unit filename="src/Game/TKDataBaseManager.h" />
+		<Unit filename="src/Game/TKEventReceiver.cpp" />
+		<Unit filename="src/Game/TKEventReceiver.h" />
+		<Unit filename="src/Game/TKHudInfo.cpp" />
+		<Unit filename="src/Game/TKHudInfo.h" />
+		<Unit filename="src/Game/TKMenuManager.cpp" />
+		<Unit filename="src/Game/TKMenuManager.h" />
+		<Unit filename="src/Game/TKNetwork.cpp" />
+		<Unit filename="src/Game/TKNetwork.h" />
+		<Unit filename="src/Objects/ObjectsManager.cpp" />
+		<Unit filename="src/Objects/ObjectsManager.h" />
+		<Unit filename="src/Objects/TKFoodResource.cpp" />
+		<Unit filename="src/Objects/TKFoodResource.h" />
+		<Unit filename="src/Objects/TKGroundVegetationSceneNode.cpp" />
+		<Unit filename="src/Objects/TKGroundVegetationSceneNode.h" />
+		<Unit filename="src/Objects/TKOceanSceneNode.cpp" />
+		<Unit filename="src/Objects/TKOceanSceneNode.h" />
+		<Unit filename="src/Objects/TKRockSceneNode.cpp" />
+		<Unit filename="src/Objects/TKRockSceneNode.h" />
+		<Unit filename="src/Objects/TKSkySceneNode.cpp" />
+		<Unit filename="src/Objects/TKSkySceneNode.h" />
+		<Unit filename="src/Objects/TKStoneResource.cpp" />
+		<Unit filename="src/Objects/TKStoneResource.h" />
+		<Unit filename="src/Objects/TKTerrainSceneNode.cpp" />
+		<Unit filename="src/Objects/TKTerrainSceneNode.h" />
+		<Unit filename="src/Objects/TKTreeSceneNode.cpp" />
+		<Unit filename="src/Objects/TKTreeSceneNode.h" />
+		<Unit filename="src/Objects/shadercb.h" />
+		<Unit filename="src/XEffects/CScreenQuad.h" />
+		<Unit filename="src/XEffects/CShaderPre.cpp" />
+		<Unit filename="src/XEffects/CShaderPre.h" />
+		<Unit filename="src/XEffects/EffectCB.h" />
+		<Unit filename="src/XEffects/EffectHandler.cpp" />
+		<Unit filename="src/XEffects/EffectHandler.h" />
+		<Unit filename="src/XEffects/XEffects.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

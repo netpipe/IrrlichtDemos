@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Tikal" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="Objects/;Objects/ObjectsManager/;XEffects/;Game/;Objects/TKGroundVegetationSceneNode/;Objects/TKSkySceneNode/;Objects/TKTreeSceneNode/;Objects/TKTerrainSceneNode/;Objects/TKRockSceneNode/;Objects/TKOceanSceneNode/;Game/TKCharacterManager/;Game/TKCharacterManager/Characters/;Objects/TKStoneResource/;Objects/TKFoodResource/;Game/MenuManager/;Game/TKBuildingManager/;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Tikal" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Tikal" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fpermissive" />
+			<Add directory="/home/Dev/libs/game/irrlicht/Irrlicht-SVN/include" />
+			<Add directory="tree" />
+			<Add directory="src" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="GL" />
+			<Add library="GLU" />
+			<Add library="Xxf86vm" />
+			<Add library="pthread" />
+			<Add library="src/enet/libenet.a" />
+			<Add directory="/home/Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Game/TKBuilding.cpp">
+			<Option virtualFolder="Game/TKBuildingManager/" />
+		</Unit>
+		<Unit filename="src/Game/TKBuilding.h">
+			<Option virtualFolder="Game/TKBuildingManager/" />
+		</Unit>
+		<Unit filename="src/Game/TKBuildingManager.cpp">
+			<Option virtualFolder="Game/TKBuildingManager/" />
+		</Unit>
+		<Unit filename="src/Game/TKBuildingManager.h">
+			<Option virtualFolder="Game/TKBuildingManager/" />
+		</Unit>
+		<Unit filename="src/Game/TKCamera.cpp">
+			<Option virtualFolder="Game/" />
+		</Unit>
+		<Unit filename="src/Game/TKCamera.h">
+			<Option virtualFolder="Game/" />
+		</Unit>
+		<Unit filename="src/Game/TKCharacter.cpp">
+			<Option virtualFolder="Game/TKCharacterManager/Characters/" />
+		</Unit>
+		<Unit filename="src/Game/TKCharacter.h">
+			<Option virtualFolder="Game/TKCharacterManager/Characters/" />
+		</Unit>
+		<Unit filename="src/Game/TKCharacterManager.cpp">
+			<Option virtualFolder="Game/TKCharacterManager/" />
+		</Unit>
+		<Unit filename="src/Game/TKCharacterManager.h">
+			<Option virtualFolder="Game/TKCharacterManager/" />
+		</Unit>
+		<Unit filename="src/Game/TKCore.cpp">
+			<Option virtualFolder="Game/" />
+		</Unit>
+		<Unit filename="src/Game/TKCore.h">
+			<Option virtualFolder="Game/" />
+		</Unit>
+		<Unit filename="src/Game/TKDataBaseManager.cpp">
+			<Option virtualFolder="Game/" />
+		</Unit>
+		<Unit filename="src/Game/TKDataBaseManager.h">
+			<Option virtualFolder="Game/" />
+		</Unit>
+		<Unit filename="src/Game/TKEventReceiver.cpp">
+			<Option virtualFolder="Game/" />
+		</Unit>
+		<Unit filename="src/Game/TKEventReceiver.h">
+			<Option virtualFolder="Game/" />
+		</Unit>
+		<Unit filename="src/Game/TKHudInfo.cpp">
+			<Option virtualFolder="Game/" />
+		</Unit>
+		<Unit filename="src/Game/TKHudInfo.h">
+			<Option virtualFolder="Game/" />
+		</Unit>
+		<Unit filename="src/Game/TKMenuManager.cpp">
+			<Option virtualFolder="Game/MenuManager/" />
+		</Unit>
+		<Unit filename="src/Game/TKMenuManager.h">
+			<Option virtualFolder="Game/MenuManager/" />
+		</Unit>
+		<Unit filename="src/Game/TKNetwork.cpp">
+			<Option virtualFolder="Game/" />
+		</Unit>
+		<Unit filename="src/Game/TKNetwork.h">
+			<Option virtualFolder="Game/" />
+		</Unit>
+		<Unit filename="src/Objects/ObjectsManager.cpp">
+			<Option virtualFolder="Objects/ObjectsManager/" />
+		</Unit>
+		<Unit filename="src/Objects/ObjectsManager.h">
+			<Option virtualFolder="Objects/ObjectsManager/" />
+		</Unit>
+		<Unit filename="src/Objects/TKFoodResource.cpp">
+			<Option virtualFolder="Objects/TKFoodResource/" />
+		</Unit>
+		<Unit filename="src/Objects/TKFoodResource.h">
+			<Option virtualFolder="Objects/TKFoodResource/" />
+		</Unit>
+		<Unit filename="src/Objects/TKGroundVegetationSceneNode.cpp">
+			<Option virtualFolder="Objects/TKGroundVegetationSceneNode/" />
+		</Unit>
+		<Unit filename="src/Objects/TKGroundVegetationSceneNode.h">
+			<Option virtualFolder="Objects/TKGroundVegetationSceneNode/" />
+		</Unit>
+		<Unit filename="src/Objects/TKOceanSceneNode.cpp">
+			<Option virtualFolder="Objects/TKOceanSceneNode/" />
+		</Unit>
+		<Unit filename="src/Objects/TKOceanSceneNode.h">
+			<Option virtualFolder="Objects/TKOceanSceneNode/" />
+		</Unit>
+		<Unit filename="src/Objects/TKRockSceneNode.cpp">
+			<Option virtualFolder="Objects/TKRockSceneNode/" />
+		</Unit>
+		<Unit filename="src/Objects/TKRockSceneNode.h">
+			<Option virtualFolder="Objects/TKRockSceneNode/" />
+		</Unit>
+		<Unit filename="src/Objects/TKSkySceneNode.cpp">
+			<Option virtualFolder="Objects/TKSkySceneNode/" />
+		</Unit>
+		<Unit filename="src/Objects/TKSkySceneNode.h">
+			<Option virtualFolder="Objects/TKSkySceneNode/" />
+		</Unit>
+		<Unit filename="src/Objects/TKStoneResource.cpp">
+			<Option virtualFolder="Objects/TKStoneResource/" />
+		</Unit>
+		<Unit filename="src/Objects/TKStoneResource.h">
+			<Option virtualFolder="Objects/TKStoneResource/" />
+		</Unit>
+		<Unit filename="src/Objects/TKTerrainSceneNode.cpp">
+			<Option virtualFolder="Objects/TKTerrainSceneNode/" />
+		</Unit>
+		<Unit filename="src/Objects/TKTerrainSceneNode.h">
+			<Option virtualFolder="Objects/TKTerrainSceneNode/" />
+		</Unit>
+		<Unit filename="src/Objects/TKTreeSceneNode.cpp">
+			<Option virtualFolder="Objects/TKTreeSceneNode/" />
+		</Unit>
+		<Unit filename="src/Objects/TKTreeSceneNode.h">
+			<Option virtualFolder="Objects/TKTreeSceneNode/" />
+		</Unit>
+		<Unit filename="src/XEffects/CScreenQuad.h">
+			<Option virtualFolder="XEffects/" />
+		</Unit>
+		<Unit filename="src/XEffects/CShaderPre.cpp">
+			<Option virtualFolder="XEffects/" />
+		</Unit>
+		<Unit filename="src/XEffects/CShaderPre.h">
+			<Option virtualFolder="XEffects/" />
+		</Unit>
+		<Unit filename="src/XEffects/EffectCB.h">
+			<Option virtualFolder="XEffects/" />
+		</Unit>
+		<Unit filename="src/XEffects/EffectHandler.cpp">
+			<Option virtualFolder="XEffects/" />
+		</Unit>
+		<Unit filename="src/XEffects/EffectHandler.h">
+			<Option virtualFolder="XEffects/" />
+		</Unit>
+		<Unit filename="src/XEffects/XEffects.h">
+			<Option virtualFolder="XEffects/" />
+		</Unit>
+		<Unit filename="src/shadercb.h">
+			<Option virtualFolder="Objects/ObjectsManager/" />
+		</Unit>
+		<Extensions>
+			<code_completion>
+				<search_path add="../irrlicht-engine/include" />
+			</code_completion>
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

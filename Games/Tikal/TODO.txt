@@ -1,0 +1,8 @@
+//http://www.andresjesse.com/graduation/tikal
+
+Documenar padrões GOF, dizer na modelagem quais classes pertencem a cada padrão.
+
+ObjectsManager, CharacterManager -> Factory Method
+Ocean, Terrain -> singleton
+
+core -> façade?? observer??
