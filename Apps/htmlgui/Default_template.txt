@@ -1,15 +1,24 @@
 <HTML>
 	<HEAD>
 		<TITLE>
-		</TITLE>				<script><!--
-/*			function setMyTimer(){
-				setTimeout("refresh()",2*1100);
-			}
-						function refresh(){
-				window.location.reload(true)
-			}
+		</TITLE>
+				<script><!--
+/*
+			function setMyTimer(){
+
+				setTimeout("refresh()",2*1100);
+
+			}
+			
+			function refresh(){
+
+				window.location.reload(true)
+
+			}
 //<BODY onload="setMyTimer()">
-*/		//--></script>	</HEAD>
+*/
+		//--></script>
+	</HEAD>
 	<BODY>
 
 	<TABLE border=2 >
