@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Irrlicht Pong" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="../Pong" prefix_auto="0" extension_auto="0" />
+				<Option working_dir=".." />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+			<Add directory="./include" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="GL" />
+			<Add library="Xxf86vm" />
+			<Add library="X11" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+		</Linker>
+		<Unit filename="PathCreator.cpp" />
+		<Unit filename="PathCreator.h" />
+		<Unit filename="cam.cpp" />
+		<Unit filename="cam.h" />
+		<Unit filename="include/Effects/CEffectPostProc.cpp" />
+		<Unit filename="include/Effects/CEffectPostProc.h" />
+		<Unit filename="include/Effects/CLensFlarePostProc.cpp" />
+		<Unit filename="include/Effects/CLensFlarePostProc.h" />
+		<Unit filename="include/Effects/CRendererPostProc.cpp" />
+		<Unit filename="include/Effects/CRendererPostProc.h" />
+		<Unit filename="include/Effects/CShaderCallbacks.h" />
+		<Unit filename="include/Effects/CSplitPostProc.cpp" />
+		<Unit filename="include/Effects/CSplitPostProc.h" />
+		<Unit filename="include/Effects/CTransitionPostProc.cpp" />
+		<Unit filename="include/Effects/CTransitionPostProc.h" />
+		<Unit filename="include/Effects/CWaterPostProc.cpp" />
+		<Unit filename="include/Effects/CWaterPostProc.h" />
+		<Unit filename="include/Effects/IPostProc.cpp" />
+		<Unit filename="include/Effects/IPostProc.h" />
+		<Unit filename="include/Effects/shaders.h" />
+		<Unit filename="include/HardwareSkinCallback.cpp" />
+		<Unit filename="include/HardwareSkinCallback.h" />
+		<Unit filename="include/camera.cpp" />
+		<Unit filename="include/camera.h" />
+		<Unit filename="include/events.cpp" />
+		<Unit filename="include/events.h" />
+		<Unit filename="include/globals.cpp" />
+		<Unit filename="include/globals.h" />
+		<Unit filename="include/gui.cpp" />
+		<Unit filename="include/gui.h" />
+		<Unit filename="include/lighting.cpp" />
+		<Unit filename="include/lighting.h" />
+		<Unit filename="include/mesh.cpp" />
+		<Unit filename="include/mesh.h" />
+		<Unit filename="include/ray3d.cpp" />
+		<Unit filename="include/ray3d.h" />
+		<Unit filename="include/render.cpp" />
+		<Unit filename="include/render.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="main.h" />
+		<Unit filename="pulse.cpp" />
+		<Unit filename="pulse.h" />
+		<Unit filename="room.cpp" />
+		<Unit filename="room.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
