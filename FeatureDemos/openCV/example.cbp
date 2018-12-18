@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Irrlicht Pong" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./Pong" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="/home/Dev/libs/Irrlicht/include" />
+			<Add directory="/home/Dev/libs/game/OpenCVlibrary/OpenCV-2.0.0/include" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="cv" />
+			<Add library="highgui" />
+			<Add library="jpeg" />
+			<Add library="png" />
+			<Add library="m" />
+			<Add directory="/home/Dev/libs/Irrlicht/lib/gcc" />
+			<Add directory="/home/Dev/libs/game/OpenCVlibrary/OpenCV-2.0.0/lib" />
+		</Linker>
+		<Unit filename="CvIrrAviTexture.cpp" />
+		<Unit filename="CvIrrAviTexture.h" />
+		<Unit filename="CvIrrCamController.cpp" />
+		<Unit filename="CvIrrCamController.h" />
+		<Unit filename="CvIrrCamTexture.cpp" />
+		<Unit filename="CvIrrCamTexture.h" />
+		<Unit filename="CvIrrRenderAvi.cpp" />
+		<Unit filename="CvIrrRenderAvi.h" />
+		<Unit filename="test.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

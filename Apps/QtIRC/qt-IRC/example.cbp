@@ -19,6 +19,7 @@
 		<Compiler>
 			<Add option="-fPIC" />
 			<Add option="`pkg-config Qt5OpenGL Qt5Widgets Qt5Gui Qt5Core Qt5Qml Qt5Network Qt5X11Extras --cflags`" />
+			<Add option="-fpermissive" />
 			<Add option="-DIRC_SHARED" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
 			<Add directory="/home/Dev/libs/net/IRC/libcommuni/include" />

@@ -56,13 +56,12 @@
 			<Add option="`wx-config --libs`" />
 			<Add option="`wx-config --gl-libs`" />
 			<Add option="`pkg-config gtk+-2.0 --libs`" />
-			<Add library="Xxf86vm" />
 			<Add library="Irrlicht" />
 			<Add library="GL" />
+			<Add library="Xxf86vm" />
 			<Add library="glut" />
 			<Add library="X11" />
 			<Add library="GLU" />
-			<Add library="Xxf86vm" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
 		</Linker>
 		<Unit filename="src/Config/Helpers/defaults.h" />

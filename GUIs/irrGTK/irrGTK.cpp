@@ -136,6 +136,7 @@ int main (int argc, char **argv)
          smgr->drawAll();
          guienv->drawAll();
          driver->endScene();
+         usleep(10000);
       }
       if (mode == 'g' || mode == 'm')
          gtk_main_iteration_do(FALSE);

@@ -34,8 +34,8 @@ XID xHandle = GDK_WINDOW_XWINDOW(widget->window);
 
    irrDevice = irr::createDeviceEx(param);
    window->SetDevice( this );
-   if ( irrDevice )
-      irrDevice->setResizeAble( bResizeable );
+  // if ( irrDevice )
+//      irrDevice->setResizeAble( bResizeable );
 }
 
 CIrrDevice::~CIrrDevice()
@@ -108,7 +108,7 @@ void CIrrWindow::OnSize(wxSizeEvent &event)
 
       if ( driver )
       {
-         driver->OnResize( wxIrrDimension2D(w, h) );
+//         driver->OnResize( wxIrrDimension2D(w, h) );
          if ( irrCameraCurrent )
             irrCameraCurrent->setAspectRatio( fRatio );
          if ( !m_Timer.IsRunning() )
@@ -192,7 +192,7 @@ CIrrFrame::CIrrFrame(const wxString& title, const wxPoint& pos, const wxSize& si
    CreateStatusBar();
    SetStatusText( _T("Welcome to wxIrrlich!") );
 
-   device3D = new CIrrDevice( window3D );
+   device3D = new CIrrDevice( window3D, irr::video::EDT_OPENGL );
    window3D->AddCamera();
 
    wxIrrNode *cube=window3D->GetSceneManager()->addCubeSceneNode( 1.0f, 0, MyCube );

@@ -256,7 +256,7 @@ CIrrFrame::CIrrFrame(const wxString& title, const wxPoint& pos, const wxSize& si
    CreateStatusBar();
    SetStatusText( _T("Welcome to wxIrrlich!") );
 
-   device3D = new CIrrDevice( window3D );
+   device3D = new CIrrDevice( window3D, EDT_OPENGL );
 
    // setup a simple 3d scene
    scene::ISceneManager *smgr = window3D->GetSceneManager();

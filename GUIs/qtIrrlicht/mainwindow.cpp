@@ -29,7 +29,7 @@ void MainWindow::initIrrInstance0(QWidget *irrRenderTarget)
 
 void MainWindow::initIrrInstance1(QWidget *irrRenderTarget)
 {
-    this->irr1 = new IrrCoreRenderer(irrRenderTarget, true);
+    this->irr1 = new IrrCoreRenderer(irrRenderTarget, 1);
 
     this->irr1->init();
 }

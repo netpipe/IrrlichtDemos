@@ -5,6 +5,7 @@
 #include <FL/Fl.H>
 #include <FL/Fl_Window.H>
 #include <FL/Fl_Button.H>
+   #include <unistd.h>
 
 using namespace irr;
 using namespace core;
@@ -42,7 +43,7 @@ int main() {
    if (node) {
       node->setMaterialFlag(EMF_LIGHTING, false);
       node->setMD2Animation(scene::EMAT_STAND);
-      node->setMaterialTexture( 0, driver->getTexture("../../media/sydney.png") );
+      node->setMaterialTexture( 0, driver->getTexture("../../media/sydney.bmp") );
    }
 
    ISceneNode *cam = smgr->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,5,0));
@@ -61,6 +62,7 @@ int main() {
    int fps=-1, lastfps= -1;
    long long time, lasttime = timer->getTime(), timediff;
    wchar_t cfps[7];
+
 
    while(device->run()) {
       driver->beginScene(true, true, SColor(255,100,101,140));
@@ -86,7 +88,8 @@ int main() {
       // I just prefer all my projects to be efficient.
 
       lasttime = timer->getTime();
-   }
+      usleep(1000);
+         }
 
    device->drop();
 
