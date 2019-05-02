@@ -50,7 +50,7 @@ MeshData testMesh;
 
 int main (void)
 {
-    IrrlichtDevice *device = createDevice(EDT_OPENGL, dimension2d<s32>(640, 480), 16,
+    IrrlichtDevice *device = createDevice(EDT_OPENGL, dimension2du(640, 480), 16,
         false, true, false, 0);
     device->setWindowCaption(L"Irrlicht + Bullet : SoftBody Demo");
     IVideoDriver* driver = device->getVideoDriver();

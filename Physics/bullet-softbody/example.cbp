@@ -17,8 +17,8 @@
 			<Add alias="All" targets="default;" />
 		</VirtualTargets>
 		<Compiler>
-			<Add directory="/home/Dev/libs/Irrlicht/include" />
-			<Add directory="/home/Dev/libs/physics/bullet-2.75/src" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
+			<Add directory="../../../LunaLibs/bullet-2.78/src" />
 		</Compiler>
 		<Linker>
 			<Add library="GL" />
@@ -28,11 +28,13 @@
 			<Add library="BulletDynamics" />
 			<Add library="BulletCollision" />
 			<Add library="LinearMath" />
-			<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
-			<Add directory="/home/Dev/libs/physics/bullet-2.75/src/BulletSoftBody" />
-			<Add directory="/home/Dev/libs/physics/bullet-2.75/src/LinearMath" />
-			<Add directory="/home/Dev/libs/physics/bullet-2.75/src/BulletDynamics" />
-			<Add directory="/home/Dev/libs/physics/bullet-2.75/src/BulletCollision" />
+			<Add library="X11" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
+			<Add directory="../../../LunaLibs/bullet-2.78/src/BulletSoftBody" />
+			<Add directory="../../../LunaLibs/bullet-2.78/src/LinearMath" />
+			<Add directory="../../../LunaLibs/bullet-2.78/src/BulletDynamics" />
+			<Add directory="../../../LunaLibs/bullet-2.78/src/BulletCollision" />
+			<Add directory="../../../LunaLibs/bullet-2.78/msvc/2008/lib/Release" />
 		</Linker>
 		<Unit filename="main.cpp" />
 		<Extensions>
