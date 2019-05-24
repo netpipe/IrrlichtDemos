@@ -70,7 +70,7 @@ void RunFourWorldConfiguration(
 	glutMotionFunc( FourWorldConfiguration_mousemove );
 	glutPassiveMotionFunc( FourWorldConfiguration_passivemousemove);
 
-	glutMouseWheelFunc( FourWorldConfiguration_mousewheel );
+//	glutMouseWheelFunc( FourWorldConfiguration_mousewheel );
 
 	glClearColor(0,0,0,1);
 
@@ -204,7 +204,9 @@ void FourWorldConfiguration_keyDown ( unsigned char key, int x, int y )
 
 	if(key == 27) // Escape
 	{
-		glutLeaveMainLoop();
+		//glutLeaveMainLoop();
+		//triewd  glutExit();
+		glutDestroyWindow(glutGetWindow());
 	}
 }
 

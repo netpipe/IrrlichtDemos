@@ -76,7 +76,7 @@ void RunSingleWorldConfiguration(
 	glutMotionFunc( SingleWorldConfiguration_mousemove );
 	glutPassiveMotionFunc( SingleWorldConfiguration_passivemousemove);
 
-	glutMouseWheelFunc( SingleWorldConfiguration_mousewheel );
+	//glutMouseWheelFunc( SingleWorldConfiguration_mousewheel );
 
 	glClearColor(0,0,0,1);
 

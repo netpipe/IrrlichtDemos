@@ -2,14 +2,27 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="All" />
-	<File name="BVH.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="bvh_player.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="295" topLine="12" />
+			<Cursor1 position="6265" topLine="0" />
 		</Cursor>
+		<Folding>
+			<Collapse line="64" />
+			<Collapse line="166" />
+			<Collapse line="185" />
+			<Collapse line="348" />
+			<Collapse line="384" />
+		</Folding>
 	</File>
-	<File name="bvh_player.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="BVH.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="8507" topLine="271" />
+			<Cursor1 position="10801" topLine="15" />
 		</Cursor>
+		<Folding>
+			<Collapse line="15" />
+			<Collapse line="38" />
+			<Collapse line="68" />
+		</Folding>
 	</File>
+	<EditorTabsLayout layout="0288d7205cdd2f4b00121cde00000002=*0;Irrlicht Pong:BVH.cpp,1;Irrlicht Pong:bvh_player.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=814;besth=348;minw=814;minh=348;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=0288d7205cdd2f4b00121cde00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>
