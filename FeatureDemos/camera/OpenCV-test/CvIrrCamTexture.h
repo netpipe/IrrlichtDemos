@@ -1,6 +1,6 @@
 #include <cv.h>
 #include <highgui.h>
-#include <irrlicht/irrlicht.h>
+#include <irrlicht.h>
 #include <math.h>
 
 //I'm lazy
