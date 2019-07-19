@@ -28,34 +28,36 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
 
-   // MainWindow w;
-    this->setWindowTitle("Main Window");
+  //  MainWindow w;
+  //  this->setWindowTitle("Main Window");
 
-    Dialog1 *newDlg = new Dialog1();
-    this->hide();
-    int result = newDlg->exec();
-    this->show();
-    delete newDlg;
+//    Dialog1 *newDlg = new Dialog1();
+//    this->hide();
+//    int result = newDlg->exec();
+//    this->show();
+//    delete newDlg;
 
-   // IrrWidget* widget = new IrrWidget();
-   // setCentralWidget(new IrcClient()); //widget
-  //  setCentralWidget(widget); //widget
-  //  showMaximized();
-  //  widget->autoRepaint();
+  //  IrrWidget* widget = new IrrWidget();
 
-    m_button = new QPushButton("My Button", this);
+    setCentralWidget(new IrcClient()); //widget
+
+//    setCentralWidget(widget); //widget
+//    showMaximized();
+//    widget->autoRepaint();
+
+   // m_button = new QPushButton("My Button", this);
     // set size and location of the button
-    m_button->setGeometry(QRect(QPoint(100, 100),
-    QSize(200, 50)));
-    m_button->setAttribute(Qt::WA_TranslucentBackground);
+   // m_button->setGeometry(QRect(QPoint(100, 100),
+   // QSize(200, 50)));
+   // m_button->setAttribute(Qt::WA_TranslucentBackground);
 
     // Connect button signal to appropriate slot
-    connect(m_button, SIGNAL (released()), this, SLOT (handleButton()));
+  //  connect(m_button, SIGNAL (released()), this, SLOT (handleButton()));
 
 
-  //  QWindow* dlg = new QWindow();
-    //dlg->setModal(false);
-  //  dlg->show();
+   // QWindow* dlg = new QWindow();
+   // dlg->setModal(false);
+   // dlg->show();
 }
 
 MainWindow::~MainWindow()
