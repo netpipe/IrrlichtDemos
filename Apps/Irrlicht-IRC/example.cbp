@@ -38,16 +38,12 @@
 		</Linker>
 		<Unit filename="Application.cpp" />
 		<Unit filename="Application.h" />
-		<Unit filename="botFuncts.h" />
 		<Unit filename="config.h" />
+		<Unit filename="gui.cpp" />
 		<Unit filename="gui.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="network.cpp" />
-		<Unit filename="network.h" />
 		<Unit filename="server.cpp" />
 		<Unit filename="server.h" />
-		<Unit filename="utils.cpp" />
-		<Unit filename="utils.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />
