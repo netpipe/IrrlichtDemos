@@ -42,12 +42,12 @@ IRC_CORE_EXPORT bool irc_is_supported_encoding(const QByteArray& encoding)
 
 IrcMessageDecoder::IrcMessageDecoder()
 {
-    initialize();
+    //initialize();
 }
 
 IrcMessageDecoder::~IrcMessageDecoder()
 {
-    uninitialize();
+    //uninitialize();
 }
 
 QString IrcMessageDecoder::decode(const QByteArray& data, const QByteArray& encoding) const

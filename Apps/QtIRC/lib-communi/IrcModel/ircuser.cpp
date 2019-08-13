@@ -271,6 +271,6 @@ QDebug operator<<(QDebug debug, const IrcUser* user)
 }
 #endif // QT_NO_DEBUG_STREAM
 
-#include "moc_ircuser.cpp"
+#include "./mocs/moc_ircuser.cpp"
 
 IRC_END_NAMESPACE

@@ -522,6 +522,6 @@ void IrcPalette::setColorName(int color, const QString& name)
     d->colors.insert(color, name);
 }
 
-#include "moc_ircpalette.cpp"
+#include "./mocs/moc_ircpalette.cpp"
 
 IRC_END_NAMESPACE

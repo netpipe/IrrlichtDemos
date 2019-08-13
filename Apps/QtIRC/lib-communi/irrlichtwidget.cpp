@@ -7,7 +7,6 @@
 #include <QKeyEvent>
 #include <QMouseEvent>
 
-
 using namespace irr;
 using namespace irr::core;
 using namespace irr::scene;
@@ -16,6 +15,7 @@ using namespace irr::video;
 IrrlichtWidget::IrrlichtWidget(QWidget* parent)
     : QGLWidget(parent)
     , mModelNode(NULL)
+    , mMoveModelAnimator(NULL)
     , mDevice(NULL)
     , mDriver(NULL) {
 
@@ -24,39 +24,39 @@ IrrlichtWidget::IrrlichtWidget(QWidget* parent)
     setMouseTracking(true);
     setFocusPolicy(Qt::ClickFocus);
     setFocus(Qt::OtherFocusReason);
-    //setMinimumSize(640, 480);
 }
 
 IrrlichtWidget::~IrrlichtWidget(){
+    if(mMoveModelAnimator){
+        mMoveModelAnimator->drop();
+    }
     if(mDevice){
         mDevice->drop();
         mDevice = 0;
     }
 }
 
-void IrrlichtWidget::initializeGL(){
-    init();
-}
-
-void IrrlichtWidget::resizeGL(int width, int height){
-    if(mDevice != 0){
-        dimension2d<uint> size;
-        size.Width = width;
-        size.Height = height;
-
-        mDriver->OnResize(size);
-    }
-}
-
-void IrrlichtWidget::paintGL(){
-    if(mDevice == 0)
-        return;
-    drawIrrlichtScene();
-    update();
-}
-
 void IrrlichtWidget::init(){
     createIrrlichtDevice();
+}
+
+void IrrlichtWidget::initializeGL()
+{
+}
+
+void IrrlichtWidget::resizeGL( int w, int h )
+{
+    // Set the viewport to window dimensions
+    glViewport( 0, 0, w, qMax( h, 1 ) );
+}
+
+void IrrlichtWidget::paintGL()
+{
+    // Clear the buffer with the current clearing color
+   // glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
+
+    // Draw stuff
+   // glDrawArrays( GL_TRIANGLES, 0, 3 );
 }
 
 void IrrlichtWidget::createIrrlichtDevice(){
@@ -65,9 +65,9 @@ void IrrlichtWidget::createIrrlichtDevice(){
     }
     SIrrlichtCreationParameters params;
     params.DriverType = EDT_OPENGL;
-    //params.WindowId = (void*)winId();
-    params.WindowSize =irr::core::dimension2d<irr::u32>(640, 480);
-    params.Stencilbuffer = false;
+    params.WindowId = (void*)winId();
+    params.WindowSize =irr::core::dimension2d<irr::u32>(size().width()-100, size().height()-100);
+    params.Stencilbuffer = true;
 
     mDevice = createDeviceEx(params);
     if(mDevice == 0){
@@ -82,22 +82,21 @@ void IrrlichtWidget::createIrrlichtDevice(){
 void IrrlichtWidget::buildIrrlichtScene(){
     scene::ISceneManager* manager = mDevice->getSceneManager();
     mDevice->setWindowCaption(L"Hello World!");
-
-    scene::IAnimatedMesh* mesh = manager->getMesh("C:/Users/TEST/Downloads/irrlicht-1.8.4/irrlicht-1.8.4/media/sydney.md2");
-    if(mesh == NULL){
+    scene::ISceneNode* n = manager->addAnimatedMeshSceneNode(manager->getMesh("./media/sydney.md2"));
+    if(n == nullptr){
+        qDebug() << "Unable to load requested mesh\n";
         return;
     }
-    scene::IAnimatedMeshSceneNode* node = manager->addAnimatedMeshSceneNode(mesh);
-    if(node !=NULL){
-        node->setMaterialFlag(EMF_LIGHTING, false);
-        node->setMD2Animation(scene::EMAT_STAND);
-        node->setMaterialTexture(0, mDriver->getTexture("C:/Users/TEST/Downloads/irrlicht-1.8.4/irrlicht-1.8.4/media/sydney.bmp"));
-    }
+    n->setMaterialTexture(0, mDriver->getTexture("./media/sydney.bmp"));
+    n->setMaterialFlag( video::EMF_LIGHTING, false );
     manager->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,5,0));
+
+    mDevice->getFileSystem()->addFileArchive("./media/map-20kdm2.pk3");
+    manager->addOctreeSceneNode(manager->getMesh("maps/20kdm2.bsp"));
 }
 
 void IrrlichtWidget::drawIrrlichtScene(){
-    mDriver->beginScene(true, true, video::SColor(255, 100, 101, 140));
+    mDriver->beginScene(true, true, video::SColor(255, 100, 0, 255));
     mDevice->getSceneManager()->drawAll();
     mDriver->endScene();
 }
@@ -173,4 +172,35 @@ void IrrlichtWidget::irrlichtMouseEvent(QMouseEvent* event, bool keyPressed) {
     mDevice->postEventFromUser( irrEvent );
 
     repaint();
+}
+
+void IrrlichtWidget::animatedMoveModelToPosition(irr::core::vector3df transition, irr::scene::ISceneNode* modelNode){
+    if(modelNode != 0){
+        return;
+    }
+    f32 distanceToNewPoint = transition.getDistanceFrom(mModelNode->getPosition());
+    u32 timeForAnimation = u32(distanceToNewPoint);
+    stopMoveAnimation();
+    mMoveModelAnimator = new MoveModelAnimator(mModelNode->getPosition(), transition, timeForAnimation, mModelNode->getRotation());
+    mModelNode->addAnimator(mMoveModelAnimator);
+    mModelNode->setMD2Animation(EMAT_RUN);
+}
+
+void IrrlichtWidget::onCollisionDetected(){
+    stopMoveAnimation();
+}
+
+void IrrlichtWidget::checkMoveAnimation(){
+    if(mMoveModelAnimator && mMoveModelAnimator->hasFinished()){
+        stopMoveAnimation();
+    }
+}
+
+void IrrlichtWidget::stopMoveAnimation(){
+    if(mMoveModelAnimator && mModelNode){
+        mModelNode->removeAnimator(mMoveModelAnimator);
+        mMoveModelAnimator->drop();
+        mMoveModelAnimator = 0;
+        mModelNode->setMD2Animation(EMAT_STAND);
+    }
 }

@@ -1,15 +1,18 @@
 #ifndef IRRLICHTWIDGET_H
 #define IRRLICHTWIDGET_H
 
-
+#include <QGLWidget>
 #include <QVector3D>
 #include <QTimer>
 #include <vector3d.h>
 #include <SKeyMap.h>
 
+//#include <QOpenGLWidget>
+
+#include <QOpenGLBuffer>
+#include <QOpenGLShaderProgram>
 #include <QObject>
-#include <QWidget>
-#include <QGLWidget>
+#include <QtOpenGL>
 
 namespace irr {
     class IrrlichtDevice;
@@ -25,7 +28,6 @@ namespace irr {
         class IVideoDriver;
     }
 }
-
 
 class IrrlichtWidget : public QGLWidget {
     Q_OBJECT
@@ -44,6 +46,9 @@ public:
 signals:
     void keyPressed(QKeyEvent* event);
 
+private slots:
+    void onCollisionDetected();
+
 protected:
     void initializeGL();
     void resizeGL(int width, int height);
@@ -56,6 +61,11 @@ protected:
 private:
     void irrlichtMouseEvent(QMouseEvent* event, bool keyPressed = true);
     void irrlichtKeyEvent(QKeyEvent* event, bool pressed);
+    void animatedMoveModelToPosition(irr::core::vector3df transition, irr::scene::ISceneNode* modelNode = 0);
+    irr::core::vector3df getCursoreIntersation();
+    void checkMoveAnimation();
+    void stopMoveAnimation();
+    irr::SKeyMap* getCameraKeyMap();
 
 private:
     irr::core::vector3df mMoveToVector;
@@ -63,6 +73,8 @@ private:
     irr::scene::ISceneManager* mScene;
     irr::video::IVideoDriver* mDriver;
     irr::scene::IAnimatedMeshSceneNode* mModelNode;
+    irr::scene::ISceneNodeAnimator* mMoveModelAnimator;
+    irr::scene::IBillboardSceneNode* mCursor;
 };
 
 #endif // IRRLICHTWIDGET_H

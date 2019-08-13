@@ -742,6 +742,6 @@ QDebug operator<<(QDebug debug, const IrcNetwork* network)
 }
 #endif // QT_NO_DEBUG_STREAM
 
-#include "moc_ircnetwork.cpp"
+#include "./mocs/moc_ircnetwork.cpp"
 
 IRC_END_NAMESPACE

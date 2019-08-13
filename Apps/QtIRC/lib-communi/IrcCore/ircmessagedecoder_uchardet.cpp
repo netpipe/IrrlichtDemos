@@ -27,7 +27,7 @@
 */
 
 #include "ircmessagedecoder_p.h"
-#include <uchardet/uchardet.h>
+//#include <uchardet/uchardet.h>
 
 IRC_BEGIN_NAMESPACE
 
@@ -36,20 +36,21 @@ IRC_BEGIN_NAMESPACE
 
 void IrcMessageDecoder::initialize()
 {
-    d.detector = uchardet_new();
+    //d.detector = uchardet_new();
 }
 
 void IrcMessageDecoder::uninitialize()
 {
-    uchardet_delete(UCD(d.detector));
+   // uchardet_delete(UCD(d.detector));
 }
 
 QByteArray IrcMessageDecoder::codecForData(const QByteArray &data) const
 {
-    uchardet_reset(UCD(d.detector));
-    uchardet_handle_data(UCD(d.detector), data.constData(), data.length());
-    uchardet_data_end(UCD(d.detector));
-    return uchardet_get_charset(UCD(d.detector));
+   // uchardet_reset(UCD(d.detector));
+    //uchardet_handle_data(UCD(d.detector), data.constData(), data.length());
+   // uchardet_data_end(UCD(d.detector));
+    //return uchardet_get_charset(UCD(d.detector));
+    return QByteArray();
 }
 #endif // IRC_DOXYGEN
 

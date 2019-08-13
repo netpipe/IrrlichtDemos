@@ -20,6 +20,7 @@
 			<Add option="-fPIC" />
 			<Add option="`pkg-config Qt5OpenGL Qt5Widgets Qt5Gui Qt5Core Qt5Qml Qt5Network Qt5X11Extras --cflags`" />
 			<Add option="-DIRC_SHARED" />
+			<Add option="-DBUILD_IRC_CORE" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
 			<Add directory="/home/Dev/libs/net/IRC/libcommuni/include" />
 			<Add directory="/usr/include/x86_64-linux-gnu/qt5" />
@@ -29,7 +30,11 @@
 			<Add directory="./" />
 			<Add directory="/usr/include/libdrm" />
 			<Add directory="/usr/include/uchardet" />
-			<Add directory="./mocs" />
+			<Add directory="../../../Qt/Qt5.9.1/5.9.1/mingw53_32/include/QtCore" />
+			<Add directory="../../../Qt/Qt5.9.1/5.9.1/mingw53_32/include/QtGui" />
+			<Add directory="../../../Qt/Qt5.9.1/5.9.1/mingw53_32/include" />
+			<Add directory="../cannachat/IrcCore" />
+			<Add directory="../../../Qt/Qt5.9.1/5.9.1/mingw53_32/include/QtNetwork" />
 		</Compiler>
 		<Linker>
 			<Add option="-DQT_DEPRECATED_WARNINGS" />
@@ -45,16 +50,19 @@
 			<Add library="Xxf86vm" />
 			<Add library="X11" />
 			<Add library="uchardet" />
-			<Add library="Qt5Core" />
 			<Add library="Qt5OpenGL" />
-			<Add library="Qt5Gui" />
 			<Add library="Qt5Widgets" />
+			<Add library="Qt5Gui" />
+			<Add library="Qt5Core" />
+			<Add library="Qt5X11Extras" />
 			<Add library="QtNetwork" />
 			<Add library="Qt5Qml" />
-			<Add library="Qt5X11Extras" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
 			<Add directory="/home/Dev/libs/net/IRC/libcommuni/lib" />
 		</Linker>
+		<ExtraCommands>
+			<Add before='C:\Qt\Qt5.9.1\5.9.1\mingw53_32\bin\moc  &quot;./IrcCore/IrcCommand.h&quot; -o &quot;./mocs/moc_irccommand.cpp&quot;' />
+		</ExtraCommands>
 		<Unit filename="IrcCore/Irc" />
 		<Unit filename="IrcCore/IrcCommandFilter" />
 		<Unit filename="IrcCore/IrcConnection" />
@@ -150,8 +158,6 @@
 		<Unit filename="irrlichtwidget.h" />
 		<Unit filename="irrutil.cpp" />
 		<Unit filename="irrutil.h" />
-		<Unit filename="irrwidget.cpp" />
-		<Unit filename="irrwidget.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="mainwindow.cpp" />
 		<Unit filename="mainwindow.h" />
@@ -178,7 +184,6 @@
 		<Unit filename="mocs/moc_ircuser.cpp" />
 		<Unit filename="mocs/moc_ircusermodel.cpp" />
 		<Unit filename="mocs/moc_irrlichtwidget.cpp" />
-		<Unit filename="mocs/moc_irrwidget.cpp" />
 		<Unit filename="mocs/moc_mainwindow.cpp" />
 		<Unit filename="mocs/moc_predefs.h" />
 		<Unit filename="movemodelanimator.cpp" />

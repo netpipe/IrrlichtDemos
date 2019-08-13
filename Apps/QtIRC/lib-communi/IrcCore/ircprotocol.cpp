@@ -568,6 +568,6 @@ void IrcProtocol::setActiveCapabilities(const QSet<QString>& capabilities)
     priv->setActiveCapabilities(capabilities);
 }
 
-#include "moc_ircprotocol.cpp"
+#include "./mocs/moc_ircprotocol.cpp"
 
 IRC_END_NAMESPACE

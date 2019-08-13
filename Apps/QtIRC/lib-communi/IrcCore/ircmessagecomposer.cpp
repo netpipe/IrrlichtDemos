@@ -253,6 +253,6 @@ void IrcMessageComposer::replaceParam(int index, const QString& param)
 }
 #endif // IRC_DOXYGEN
 
-#include "moc_ircmessagecomposer_p.cpp"
+#include "./mocs/moc_ircmessagecomposer_p.cpp"
 
 IRC_END_NAMESPACE

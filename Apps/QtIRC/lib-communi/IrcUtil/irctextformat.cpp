@@ -549,6 +549,6 @@ void IrcTextFormat::parse(const QString& text)
     d->parse(text, &d->plainText, &d->html, &d->urls);
 }
 
-#include "moc_irctextformat.cpp"
+#include "./mocs/moc_irctextformat.cpp"
 
 IRC_END_NAMESPACE

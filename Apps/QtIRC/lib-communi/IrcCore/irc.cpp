@@ -239,6 +239,6 @@ QDebug operator<<(QDebug debug, Irc::SortMethod method)
 }
 #endif // QT_NO_DEBUG_STREAM
 
-#include "moc_irc.cpp"
+//#include "./mocs/moc_irc.cpp"
 
 IRC_END_NAMESPACE

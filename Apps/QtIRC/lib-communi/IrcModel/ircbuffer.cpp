@@ -632,6 +632,6 @@ QDebug operator<<(QDebug debug, const IrcBuffer* buffer)
 }
 #endif // QT_NO_DEBUG_STREAM
 
-#include "moc_ircbuffer.cpp"
+#include "./mocs/moc_ircbuffer.cpp"
 
 IRC_END_NAMESPACE

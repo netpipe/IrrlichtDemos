@@ -751,6 +751,6 @@ bool IrcUserModel::lessThan(IrcUser* one, IrcUser* another, Irc::SortMethod meth
     return n1.compare(n2, Qt::CaseInsensitive) < 0;
 }
 
-#include "moc_ircusermodel.cpp"
+#include "./mocs/moc_ircusermodel.cpp"
 
 IRC_END_NAMESPACE
