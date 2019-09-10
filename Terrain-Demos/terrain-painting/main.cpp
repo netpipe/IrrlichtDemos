@@ -245,8 +245,8 @@ int main()
 	// Terrain
 	ITerrainSceneNode* terrain = smgr->addTerrainSceneNode("heightmap.bmp");
 	terrain->setMaterialFlag(video::EMF_LIGHTING, false);
-	terrain->setMaterialTexture(0, driver->getTexture("./media/Grass.jpg"));
-	terrain->setMaterialTexture(1, driver->getTexture("./media/detailmap3.jpg"));
+	terrain->setMaterialTexture(0, driver->getTexture("../../media/Grass.jpg"));
+	terrain->setMaterialTexture(1, driver->getTexture("../../media/detailmap3.jpg"));
 	terrain->setMaterialType(video::EMT_DETAIL_MAP);
 	terrain->scaleTexture(5.0f, 10.0f);
   //  terrain->setScale(vector3df(5,2,5));

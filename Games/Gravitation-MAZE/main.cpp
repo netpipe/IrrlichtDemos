@@ -149,7 +149,7 @@ class theEventReceiver : public IEventReceiver {
 int main(int argc, char** argv)
 {
   theEventReceiver aReceiver;
-  IrrlichtDevice *device=createDevice(EDT_OPENGL, dimension2d<s32>(800,600), 16, false, false, true, &aReceiver);
+  IrrlichtDevice *device=createDevice(EDT_OPENGL, dimension2du(800,600), 16, false, false, true, &aReceiver);
   device->setWindowCaption(L"Hello World! - Irrlicht Engine Demo");
 
   array <CBox2DImageSceneNode *> theB2DNodes;
@@ -166,7 +166,7 @@ int main(int argc, char** argv)
  // b2dnode->loadImageMesh("levels/wmb.png");
     b2dnode->loadImageMesh("mazes/cretan-labyrinth-round_svg.png");
 b2dnode->setRotation(vector3df(90,0,0));
-b2dnode->getsc
+//b2dnode->getsc
 
   IAnimatedMesh* mesh = smgr->getMesh("data/gravity-recon.3ds");
   IAnimatedMeshSceneNode* node = smgr->addAnimatedMeshSceneNode( mesh );

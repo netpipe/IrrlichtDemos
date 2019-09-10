@@ -19,7 +19,7 @@ class CBox2DMeshLoader : public IMeshLoader {
   public:
     CBox2DMeshLoader(IVideoDriver *pDriver);
     virtual ~CBox2DMeshLoader();
-    virtual bool isALoadableFileExtension(const irr::c8 *fileName) const;
+    bool isALoadableFileExtension(const irr::c8 *fileName) const;
     virtual IAnimatedMesh *createMesh(io::IReadFile *file);
 };
 
