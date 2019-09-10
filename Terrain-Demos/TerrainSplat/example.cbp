@@ -23,6 +23,7 @@
 			<Add library="GL" />
 			<Add library="Irrlicht" />
 			<Add library="Xxf86vm" />
+			<Add library="X11" />
 			<Add directory="/home/Dev/libs/Irrlicht/lib/gcc" />
 		</Linker>
 		<Unit filename="main.cpp" />
