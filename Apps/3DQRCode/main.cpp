@@ -17,6 +17,7 @@ and create an event listener to listen if the user presses certain keys.
 //#include "exampleHelper.h"
 #include "BitBuffer.hpp"
 #include "QrCode.hpp"
+#include "./IrrAssimp/IrrAssimp.h"
 
 
 #include <cstdint>
@@ -216,7 +217,7 @@ int main()
 //	video::E_DRIVER_TYPE driverType=driverChoiceConsole();
 //	if (driverType==video::EDT_COUNT)
 	//	return 1;
-
+IrrAssimp assimp(smgr);
 	// create device with full flexibility over creation parameters
 	// you can add more parameters if desired, check irr::SIrrlichtCreationParameters
 	irr::SIrrlichtCreationParameters params;
@@ -227,6 +228,7 @@ int main()
 	doBasicDemo();
 
 	system("inkscape -z -e tmp.png -w 1000 -h 1000 tmp.svg");
+
 
 	if (device == 0)
 		return 1; // could not create selected driver.
@@ -285,6 +287,7 @@ int main()
 		);
 
 
+
 //		 smgr->getGeometryCreator()->createTerrainMesh(video::IImage* texture,
 //            video::IImage* heightmap,
 //            const core::dimension2d<f32>& stretchSize,
@@ -308,6 +311,11 @@ int main()
 	terrain->setMaterialType(video::EMT_DETAIL_MAP);
 
 	terrain->scaleTexture(1.0f, 20.0f);
+
+	IMesh* pMesh = terrain->getMesh();
+
+	assimp.exportMesh(pMesh, "obj", "qrcode.obj");
+//assimp.exportMesh(pMesh, "stl", "qrcode.stl");
 
 	/*
 	To be able to do collision with the terrain, we create a triangle selector.
