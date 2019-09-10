@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Gravitation" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="Gravitation" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="./" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="D:/myStuff/projects/libs/irrlicht-1.4/include" />
+				</Compiler>
+				<Linker>
+					<Add directory="D:/myStuff/projects/libs/irrlicht-1.4/lib/Win32-gcc" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="Gravitation" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="D:/myStuff/projects/libs/irrlicht-1.4/bin/Win32-gcc" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="Linux">
+				<Option output="Gravitation" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="/home/Dev/libs/Irrlicht/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="GL" />
+					<Add library="Irrlicht" />
+					<Add library="Xxf86vm" />
+					<Add library="X11" />
+					<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+		</Linker>
+		<Unit filename="CBox2DAnimatedImageMesh.cpp" />
+		<Unit filename="CBox2DAnimatedImageMesh.h" />
+		<Unit filename="CBox2DImageRootSceneNode.cpp" />
+		<Unit filename="CBox2DImageRootSceneNode.h" />
+		<Unit filename="CBox2DImageSceneNode.cpp" />
+		<Unit filename="CBox2DImageSceneNode.h" />
+		<Unit filename="CBox2DManager.cpp" />
+		<Unit filename="CBox2DManager.h" />
+		<Unit filename="CBox2DMeshLoader.cpp" />
+		<Unit filename="CBox2DMeshLoader.h" />
+		<Unit filename="CBox2DSceneNode.cpp" />
+		<Unit filename="CBox2DSceneNode.h" />
+		<Unit filename="CBox2DSceneNodeFactory.cpp" />
+		<Unit filename="CBox2DSceneNodeFactory.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

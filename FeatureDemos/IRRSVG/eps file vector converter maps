@@ -1,0 +1,1 @@
+pstoedit -f fig -psarg "-r600x600" myfilename.eps myfilename.fig
