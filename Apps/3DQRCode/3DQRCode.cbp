@@ -46,14 +46,23 @@
 			<Add directory="../../../../../Dev/libs/Irrlicht/include" />
 			<Add directory="/home/Dev/libs/Media/agg-2.5/include" />
 			<Add directory="/home/Dev/libs/Media/agg-2.5/examples/svg_viewer/" />
+			<Add directory="../../../LunaLibs/assimp-3.3.1/include" />
 		</Compiler>
 		<Linker>
 			<Add library="Irrlicht" />
+			<Add library="assimp" />
 			<Add directory="/home/Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux" />
 			<Add directory="../../../../../Dev/libs/Irrlicht/lib/gcc" />
+			<Add directory="../../../LunaLibs/assimp-3.3.1/lib" />
 		</Linker>
 		<Unit filename="BitBuffer.cpp" />
 		<Unit filename="BitBuffer.hpp" />
+		<Unit filename="IrrAssimp/IrrAssimp.cpp" />
+		<Unit filename="IrrAssimp/IrrAssimp.h" />
+		<Unit filename="IrrAssimp/IrrAssimpExport.cpp" />
+		<Unit filename="IrrAssimp/IrrAssimpExport.h" />
+		<Unit filename="IrrAssimp/IrrAssimpImport.cpp" />
+		<Unit filename="IrrAssimp/IrrAssimpImport.h" />
 		<Unit filename="QrCode.cpp" />
 		<Unit filename="QrCode.hpp" />
 		<Unit filename="QrSegment.cpp" />

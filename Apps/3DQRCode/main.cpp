@@ -217,7 +217,9 @@ int main()
 //	video::E_DRIVER_TYPE driverType=driverChoiceConsole();
 //	if (driverType==video::EDT_COUNT)
 	//	return 1;
-IrrAssimp assimp(smgr);
+
+
+
 	// create device with full flexibility over creation parameters
 	// you can add more parameters if desired, check irr::SIrrlichtCreationParameters
 	irr::SIrrlichtCreationParameters params;
@@ -244,6 +246,7 @@ IrrAssimp assimp(smgr);
 	smgr = device->getSceneManager();
 	env = device->getGUIEnvironment();
 
+
 	driver->setTextureCreationFlag(video::ETCF_ALWAYS_32_BIT, true);
 
 //	const io::path mediaPath = getExampleMediaPath();
@@ -259,6 +262,9 @@ IrrAssimp assimp(smgr);
 	env->addStaticText(
 		L"Press 'W' to change wireframe mode\nPress 'D' to toggle detail map\nPress 'S' to toggle skybox/skydome",
 		core::rect<s32>(10,421,250,475), true, true, 0, -1, true);
+
+		IrrAssimp assimp(smgr);
+
 
 	// add camera
 	scene::ICameraSceneNode* camera =
@@ -314,8 +320,11 @@ IrrAssimp assimp(smgr);
 
 	IMesh* pMesh = terrain->getMesh();
 
-	assimp.exportMesh(pMesh, "obj", "qrcode.obj");
-//assimp.exportMesh(pMesh, "stl", "qrcode.stl");
+	printf ("export mesh");
+	assimp.exportMesh(pMesh, "obj", "./qrcode.obj");
+
+	//printf ("export stl mesh \n");
+	//assimp.exportMesh(pMesh, "stl", "./qrcode.stl");
 
 	/*
 	To be able to do collision with the terrain, we create a triangle selector.
