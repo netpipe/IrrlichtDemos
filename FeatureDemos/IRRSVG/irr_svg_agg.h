@@ -10,10 +10,27 @@
 #include "agg_rasterizer_scanline_aa.h"
 #include "agg_renderer_scanline.h"
 #include "agg_pixfmt_rgba.h"
-#include "..\..\agg-2.5\examples\svg_viewer\agg_svg_parser.h"
+#include "./agg_svg_parser.h"
 #include "named_colors_agg.h"
 
+#include <algorithm>
+#include <string>
+#include <cstdio>
+#include <math.h>
+#include <stdlib.h>
+#include <wchar.h>
+
+using namespace std;
+
 using namespace agg;
+
+int _wcsnicmp(
+   const wchar_t *string1,
+   const wchar_t *string2,
+   size_t count
+);
+
+
 
 inline int __cdecl cmp_color_agg(const void* p1, const void* p2)
 {
@@ -132,7 +149,7 @@ public:
 							//		tokenizer.set_path_str(attr_value);
 							//		_path_renderer_.parse_path(tokenizer);
 							//		_path_renderer_.end_path();
-							//	} 
+							//	}
 							//	free(attr_value);
 							//}
 						}
@@ -514,7 +531,7 @@ public:
 				case L'H': case L'h':
 					_path_renderer_.hline_to(_wtof(cmds[i].trim("Hh ").c_str()), cmd == L'h');
 					break;
-	            
+
 				case L'Q': case L'q':
 					cmds[i].trim("Qq ").split(arg, L"-, ", 3, true, true);
 					for (u32 a = 0; a < arg.size()/4; a++)

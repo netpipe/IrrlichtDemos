@@ -26,6 +26,12 @@ and create an event listener to listen if the user presses certain keys.
 #include <string>
 #include <vector>
 
+
+#include <bits/stdc++.h>
+using namespace std;
+
+//#include "irr_svg_agg.h"
+
 //
 
 using std::uint8_t;
@@ -108,31 +114,61 @@ private:
 };
 
 
-
+//class agg_svg_loader : public irr::video::IImageLoader
+//{
+//public:
+//   agg_svg_loader(IVideoDriver* driver)
+//   {
+//      video_driver = driver;
+//   }
+//   ~agg_svg_loader()
+//   {
+//      video_driver = 0;
+//   }
+//   virtual bool isALoadableFileExtension(const io::path& filename) const
+//   {
+//      return core::hasFileExtension ( filename, "svg" );
+//   }
+//   virtual bool isALoadableFileFormat(irr::io::IReadFile* file) const
+//   {
+//      return (false);
+//   }
+//   virtual irr::video::IImage* loadImage(irr::io::IReadFile* file) const
+//   {
+//      agg::svg::path_renderer m_path;
+//      agg::svg::parser p(m_path);
+//      p.parse(file->getFileName().c_str());
+//      double m_min_x = 0.0;
+//      double m_min_y = 0.0;
+//      double m_max_x = 0.0;
+//      double m_max_y = 0.0;
+//      m_path.bounding_rect(&m_min_x, &m_min_y, &m_max_x, &m_max_y);
+//      const dimension2d<u32>& image_size = dimension2d<u32>((irr::u32)m_max_x, (irr::u32)m_max_y);
+//      IImage* image = video_driver->createImage(ECF_A8R8G8B8, image_size);
+//      typedef row_accessor<irr::u32> rendering_buffer_u32;
+//      rendering_buffer_u32 rbuf((irr::u32*)image->lock(), image_size.Width, image_size.Height, image_size.Width);
+//      agg_pixel_type pixf(rbuf);
+//      agg::renderer_base<agg_pixel_type> renb(pixf);
+//      agg::renderer_scanline_aa_solid<agg::renderer_base<agg_pixel_type>> ren(renb);
+//      renb.clear(agg::rgba8(255, 255, 255, 0));
+//      agg::rasterizer_scanline_aa<> ras;
+//      agg::scanline_p8 sl;
+//      agg::trans_affine mtx;
+//      agg::render_scanlines(ras, sl, ren);
+//      m_path.render(ras, sl, ren, mtx, renb.clip_box(), 1.0);
+//      image->unlock();
+//      return image;
+//   }
+//   protected:
+//      IVideoDriver* video_driver;
+//};
+//
 
 static void doBasicDemo() {
 	const char *text = //"Hello, world!";              // User-supplied text
 "tes1234567ajsl;dkfjasdlk;fj;lsadjf;lsdakjf;lsdkajf;alsdkjfs;dlakjfsdal;kjfsadlkjfsdaljfl;sdkaja;lskd \
 fjlskdjflskdajflksa;djflksjdaf;lkjsda;lfkjsdalkfjsd;lkfjsda;ljf;lsdakjfl;skadjf;lksdjfl;ksajdfl;ksdjlk\
-fjdsjdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd\
-ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd\
-ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd\
-ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd\
-ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd\
-dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd\
-dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd\
-ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd\
-dddddtes1234567ajsl;dkfjasdlk;fj;lsadjf;lsdakjf;lsdkajf;alsdkjfs;dlakjfsdal;kjfsadlkjfsdaljfl;sdkaja;lskd \
-fjlskdjflskdajflksa;djflksjdaf;lkjsda;lfkjsdalkfjsd;lkfjsda;ljf;lsdakjfl;skadjf;lksdjfl;ksajdfl;ksdjlk\
-fjdsjdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd\
-ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd\
-ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd\
-ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd\
-ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd\
-dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd\
-dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd\
-ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd\
-ddddd";
+fj";
 
 	const QrCode::Ecc errCorLvl = QrCode::Ecc::LOW;  // Error correction level
 
@@ -140,6 +176,13 @@ ddddd";
 	const QrCode qr = QrCode::encodeText(text, errCorLvl);
 	//printQr(qr);
 	std::cout << qr.toSvgString(4) << std::endl;
+
+	//system ( "" );
+	ofstream write;
+
+	std::string   filename = "tmp.svg";
+    write.open(filename.c_str(), ios::out | ios::binary);
+    write << qr.toSvgString(4);
 }
 
 // borrowed fromn terrain-paint example)
@@ -183,6 +226,8 @@ int main()
 
 	doBasicDemo();
 
+	system("inkscape -z -e tmp.png -w 1000 -h 1000 tmp.svg");
+
 	if (device == 0)
 		return 1; // could not create selected driver.
 
@@ -224,30 +269,9 @@ int main()
 	// disable mouse cursor
 	device->getCursorControl()->setVisible(false);
 
-	/*
-	Here comes the terrain renderer scene node: We add it just like any
-	other scene node to the scene using
-	ISceneManager::addTerrainSceneNode(). The first parameter is a
-	file name to the heightmap we use. A heightmap is simply a gray scale
-	texture. The terrain renderer loads it and creates the 3D terrain from
-	it.
-
-	To make the terrain look bigger, we change it's scale factor to
-	(40, 4.4, 40). Because we don't have any dynamic lights in the
-	scene, we switch off the lighting, and we set the file
-	terrain-texture.jpg as texture for the terrain and detailmap3.jpg as
-	second texture, called detail map. At last, we set the scale values for
-	the texture: The first texture will be repeated only one time over the
-	whole terrain, and the second one (detail map) 20 times.
-	*/
-
-	// add terrain scene node
-
-	//a_level.png
-
 	scene::ITerrainSceneNode* terrain = smgr->addTerrainSceneNode(
 		//mediaPath + "terrain-heightmap.bmp", //
-		"qrcode.png", //terrain-heightmap.bmp
+		"tmp.png", //terrain-heightmap.bmp
 		0,					// parent node
 		-1,					// node id
 		core::vector3df(0.f, 0.f, 0.f),		// position
@@ -255,9 +279,9 @@ int main()
 		//core::vector3df(40.f, 4.4f, 40.f),	// scale
 		core::vector3df(40.f, 4.4f, 40.f),	// scale
 		video::SColor ( 255, 255, 255, 255 ),	// vertexColor
-		5,					// maxLOD
+		1,					// maxLOD
 		scene::ETPS_17,				// patchSize
-		4					// smoothFactor
+		0					// smoothFactor
 		);
 
 
@@ -269,6 +293,10 @@ int main()
 //            bool debugBorders=false) const =0;
 
 
+// inhouse svg support rather than external inkscape command
+// todo export itexture
+//	video_driver->addExternalImageLoader(new agg_svg_loader(video_driver));
+//	ITexture* tex = video_driver->getTexture("test.svg");
 
 	terrain->setMaterialFlag(video::EMF_LIGHTING, false);
 
