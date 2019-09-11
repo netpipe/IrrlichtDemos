@@ -285,7 +285,7 @@ int main()
 		core::vector3df(0.f, 0.f, 0.f),		// position
 		core::vector3df(0.f, 0.f, 0.f),		// rotation
 		//core::vector3df(40.f, 4.4f, 40.f),	// scale
-		core::vector3df(40.f, 4.4f, 40.f),	// scale
+		core::vector3df(4.f, -0.5f, 4.f),	// scale
 		video::SColor ( 255, 255, 255, 255 ),	// vertexColor
 		1,					// maxLOD
 		scene::ETPS_17,				// patchSize
@@ -310,7 +310,7 @@ int main()
 	terrain->setMaterialFlag(video::EMF_LIGHTING, false);
 
 	terrain->setMaterialTexture(0,
-			driver->getTexture( "terrain-texture.jpg"));
+			driver->getTexture( "tmp.png"));
 	terrain->setMaterialTexture(1,
 			driver->getTexture( "detailmap3.jpg"));
 
@@ -318,10 +318,7 @@ int main()
 
 	terrain->scaleTexture(1.0f, 20.0f);
 
-	IMesh* pMesh = terrain->getMesh();
 
-	printf ("export mesh");
-	assimp.exportMesh(pMesh, "obj", "./qrcode.obj");
 
 	//printf ("export stl mesh \n");
 	//assimp.exportMesh(pMesh, "stl", "./qrcode.stl");
@@ -355,7 +352,44 @@ int main()
 	terrain->getMeshBufferForLOD(*buffer, 0);
 	video::S3DVertex2TCoords* data = (video::S3DVertex2TCoords*)buffer->getVertexBuffer().getData();
 	// Work on data or get the IndexBuffer with a similar call.
+
+
+
+
+
+//   btVector3 vertices[3];
+//   s32 j,k;
+//  // btTriangleMesh *  mTriMesh = new btTriangleMesh();
+//
+//   const irr::u32 vertexCount = buffer->getVertexCount();
+//   const irr::u32 indexCount = buffer->getIndexCount();
+//
+//            irr::video::S3DVertex2TCoords* mb_vertices = (irr::video::S3DVertex2TCoords*)buffer->getVertexBuffer().getData();
+//
+//   u16* mb_indices = buffer->getIndices();
+//
+//   for(j=0;j<indexCount;j+=3)
+//   {
+//      for (k=0;k<3;k++)
+//      {
+//         s32 index = mb_indices[j+k];
+//         vertices[k] = btVector3(
+//            mb_vertices[index].X,
+//            mb_vertices[index].Y,
+//            mb_vertices[index].Z);
+//      }
+//      mTriMesh->addTriangle(vertices[0], vertices[1], vertices[2]);
+//   }
 	buffer->drop(); // When done drop the buffer again.
+
+	// for some reason mesh not exporting properly yet.
+	IMesh* pMesh = terrain->getMesh();
+	//IMeshBuffer *mb=mesh->getMeshBuffer(0);
+
+	printf ("export mesh");
+	assimp.exportMesh(pMesh, "obj", "./qrcode.obj");
+
+
 
 	/*
 	To make the user be able to switch between normal and wireframe mode,
