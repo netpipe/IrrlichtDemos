@@ -284,7 +284,7 @@ int create3dQR(){
 		core::vector3df(0.f, 0.f, 0.f),		// position
 		core::vector3df(0.f, 0.f, 0.f),		// rotation
 		//core::vector3df(40.f, 4.4f, 40.f),	// scale
-		core::vector3df(4.f, -0.5f, 4.f),	// scale
+		core::vector3df(4.f, -0.1f, 4.f),	// scale
 		video::SColor ( 255, 255, 255, 255 ),	// vertexColor
 		1,					// maxLOD
 		scene::ETPS_17,				// patchSize
