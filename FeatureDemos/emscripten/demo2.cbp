@@ -15,6 +15,7 @@
 					<Add option="-g" />
 					<Add option="-s FULL_ES2=1" />
 					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_IRR_EMSCRIPTEN_PLATFORM_" />
 				</Compiler>
 				<ResourceCompiler>
 					<Add option="-s FULL_ES2=1" />
@@ -22,7 +23,12 @@
 				<Linker>
 					<Add option="-s ALLOW_MEMORY_GROWTH=1" />
 					<Add option="--preload-file media/" />
+					<Add option="-s FULL_ES2=1" />
+					<Add option="-s DISABLE_EXCEPTION_CATCHING=0" />
+					<Add option="-s NO_EXIT_RUNTIME=1" />
 					<Add library="GLESv2" />
+					<Add library="GL" />
+					<Add library="SDL" />
 					<Add directory="../../lib/Linux" />
 				</Linker>
 			</Target>
