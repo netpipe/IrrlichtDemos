@@ -105,7 +105,7 @@ void GameInit()
 
 	srand(Game.Timer->getRealTime());
 
-	Game.Video->setFog(video::SColor(0,8,8,8), true, 500.0f, 1200.0f);
+///	Game.Video->setFog(video::SColor(0,8,8,8), true, 500.0f, 1200.0f);
 
 	// Maps setup
 
@@ -156,7 +156,7 @@ void GameInit()
 			fnt, core::stringw(mapdesc->Items[i].title.c_str()).c_str(),
 			video::SColor(100,255,255,255), n);
 	}
-	
+
 	SetLabelsVisibility_r(Game.Scene->getRootSceneNode(), labelVisibility);
 
 	// GUI setup
@@ -365,7 +365,7 @@ void ProcessEvent_GUI_ButtonClicked_SysInfo()
 void ProcessEvent_GUI_ButtonClicked_SysInfoAdvanced()
 {
 	core::stringw s;
-	
+
 	s = L"Detected video device features:";
 	s += Game.Video->queryFeature(video::EVDF_RENDER_TO_TARGET) ? L"\n+ Render to target" : L"";
 	s += Game.Video->queryFeature(video::EVDF_HARDWARE_TL) ? L"\n+ Hardware transform and lighting" : L"";
@@ -525,7 +525,7 @@ void ProcessEvent_GUI_ButtonClicked_Options()
 
 	gui::IGUIComboBox *res =
 		Game.GUI->addComboBox(core::rect<s32>(260,50,480,70), win, 402);
-	
+
 	k = 0;
 	sel = 0;
 
@@ -556,7 +556,7 @@ void ProcessEvent_GUI_ButtonClicked_Options()
 	res->setSelected(sel);
 
 	// fullscreen checkbox
-	
+
 	Game.GUI->addCheckBox(
 		conf.Fullscreen,
 		core::rect<s32>(260,90,480,110), win, 403, L"Use fullscreen mode");
@@ -957,7 +957,7 @@ bool ProcessEvent_Keys_SpeedAndTime(SEvent event)
 
 			core::list<scene::ISceneNodeAnimator*>::ConstIterator ait =
 				user_camera->getAnimators().begin();
-			
+
 			SEvent ekey;
 			ekey.EventType = EET_KEY_INPUT_EVENT;
 			ekey.KeyInput.Char = 0;
@@ -989,7 +989,7 @@ bool ProcessEvent_Keys_SpeedAndTime(SEvent event)
 
 	if (t>0.0f) cam_timespeed = t;
 	if (s>0.0f)	cam_movespeed = s;
-
+cam_movespeed=50;
 	if (t>0.0f || s>0.0f)
 	{
 		Game.Timer->setSpeed(cam_timespeed);
@@ -1062,8 +1062,8 @@ void SetLabelsVisibility_r(scene::ISceneNode *node, bool value)
 {
 	if (node->getType() == scene::ESNT_TEXT) node->setVisible(value);
 
-	core::list<scene::ISceneNode*>::ConstIterator begin = node->getChildren().begin(); 
-	core::list<scene::ISceneNode*>::ConstIterator end = node->getChildren().end(); 
+	core::list<scene::ISceneNode*>::ConstIterator begin = node->getChildren().begin();
+	core::list<scene::ISceneNode*>::ConstIterator end = node->getChildren().end();
 	for (; begin != end; ++begin) SetLabelsVisibility_r(*begin, value);
 }
 

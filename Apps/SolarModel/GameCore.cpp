@@ -49,7 +49,7 @@ void GameLog(char *str, ...)
 
 	if (Game.Logger) Game.Logger->log(buf);
 	else printf("%s\n", buf);
-} 
+}
 
 
 bool GameScreenshot(GameStruct *pGame, core::stringc &filename)
@@ -125,7 +125,7 @@ void GameCreateIrrLicht(GameStruct *pGame)
 {
 	pGame->Device = createDevice(
 		pGame->DriverType,
-		core::dimension2d<s32>( pGame->Width, pGame->Height ),
+		core::dimension2du( pGame->Width, pGame->Height ),
 		pGame->BitsPerPixel,
 		pGame->Fullscreen,
 		false, // Game.StencilBuffer

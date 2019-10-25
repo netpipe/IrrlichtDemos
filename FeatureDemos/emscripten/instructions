@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#run this after to correct the javascript
+
+#this is from irrlicht-ogl-es
+#set your emcc paths in the irrlicht-ogl-es makefile then run make
+#CXX=../../upstream/emscripten/emcc
+#EMMAKE=/home/netpipe/Desktop/emsdk/upstream/emscripten/emmake
+
+sed -i '/___buildEnvironment(__get_environ());/d' test.js
+

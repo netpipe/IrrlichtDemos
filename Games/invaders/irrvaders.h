@@ -550,7 +550,7 @@ namespace game
 			/*
 				start Irrlicht
 			*/
-			device = createDevice( video::EDT_OPENGL, dimension2d<s32>(800, 600), 16, false, false, false, 0);
+			device = createDevice( video::EDT_OPENGL, dimension2d<u32>(800, 600), 16, false, false, false, 0);
 			device->setWindowCaption(L"Irrvaders");
 			device->setEventReceiver(&Events);
 

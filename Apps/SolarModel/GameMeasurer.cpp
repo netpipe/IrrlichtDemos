@@ -194,7 +194,7 @@ void GameMeasurer::BodyAdd(wchar_t *name, char *tex, float size, float dist)
 	b.name = name;
 	b.dist = dist;
 	b.size = size;
-	
+
 	b.guiImage = Game.GUI->addImage(Game.Video->getTexture(tex), core::position2d<s32>(), true, imgMain);
 	b.guiImage->setScaleImage(true);
 
@@ -253,7 +253,7 @@ void GameMeasurer::BodyUserPosChanged()
 gotNewT:
 		canGotNewT = false;
 skipFalse:
-		core::dimension2d<s32> dim = font->getDimension(t.c_str());
+		core::dimension2du dim = font->getDimension(t.c_str());
 		int tX = int(x-dim.Width/2);
 		if (tX < 0) { if (canGotNewT) {t=core::stringw("<-")+t; goto gotNewT;} else tX=0; }
 		if (tX+dim.Width > Game.Width) { if (canGotNewT) {t+="->"; goto gotNewT;} else tX=Game.Width-dim.Width; }

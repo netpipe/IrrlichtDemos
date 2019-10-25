@@ -108,7 +108,7 @@ int main(int argc,char *argv[])
 	int cameraoffset=120;
 
 	IrrlichtDevice *device =
-	createDevice(video::EDT_OPENGL, core::dimension2d<s32>(640, 480));
+	createDevice(video::EDT_OPENGL, core::dimension2d<u32>(640, 480));
 
 	driver = device->getVideoDriver();
 	scene::ISceneManager* smgr = device->getSceneManager();
