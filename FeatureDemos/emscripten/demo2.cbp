@@ -16,6 +16,7 @@
 					<Add option="-s FULL_ES2=1" />
 					<Add option="-D_IRR_STATIC_LIB_" />
 					<Add option="-D_IRR_EMSCRIPTEN_PLATFORM_" />
+					<Add directory="/home/Dev/libs/Scripting/emsdk/emscripten-projects/irrlicht-ogl-es/irrlicht/include" />
 				</Compiler>
 				<ResourceCompiler>
 					<Add option="-s FULL_ES2=1" />
@@ -30,6 +31,7 @@
 					<Add library="GL" />
 					<Add library="SDL" />
 					<Add directory="../../lib/Linux" />
+					<Add directory="/home/Dev/libs/Scripting/emsdk/emscripten-projects/irrlicht-ogl-es/irrlicht/lib/Linux" />
 				</Linker>
 			</Target>
 			<Target title="Windows">

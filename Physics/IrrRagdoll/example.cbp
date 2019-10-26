@@ -28,6 +28,7 @@
 			<Add library="BulletDynamics" />
 			<Add library="BulletCollision" />
 			<Add library="LinearMath" />
+			<Add library="X11" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
 			<Add directory="/home/Dev/libs/physics/bullet-2.75/src/BulletSoftBody" />
 			<Add directory="/home/Dev/libs/physics/bullet-2.75/src/LinearMath" />

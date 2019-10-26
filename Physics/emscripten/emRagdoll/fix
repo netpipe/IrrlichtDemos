@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#run this after on the SoftBody.js to fix it
+
+sed -i '/___buildEnvironment(__get_environ());/d' "./$1.js"
+

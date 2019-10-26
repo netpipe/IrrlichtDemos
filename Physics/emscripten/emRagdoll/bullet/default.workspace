@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="BULLET_PHYSICS workspace">
+		<Project filename="msvc/2008/Demos/AllBulletDemos/AppAllBulletDemos.cbp">
+			<Depends filename="msvc/2008/src/BulletSoftBody/BulletSoftBody.cbp" />
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Extras/ConvexDecomposition/ConvexDecomposition.cbp" />
+			<Depends filename="msvc/2008/Extras/glui/GLUI.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletMultiThreaded/BulletMultiThreaded.cbp" />
+			<Depends filename="msvc/2008/Extras/Serialize/BulletWorldImporter/BulletWorldImporter.cbp" />
+			<Depends filename="msvc/2008/Extras/GIMPACTUtils/GIMPACTUtils.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+			<Depends filename="msvc/2008/Extras/Serialize/BulletFileLoader/BulletFileLoader.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/BasicDemo/AppBasicDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/Benchmarks/AppBenchmarks.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/Box2dDemo/AppBox2dDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/BspDemo/AppBspPhysicsDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/CcdPhysicsDemo/AppCcdPhysicsDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/CharacterDemo/AppCharacterDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/CollisionDemo/AppCollisionDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/CollisionInterfaceDemo/AppCollisionInterfaceDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/ConcaveConvexcastDemo/AppConcaveConvexCastDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/ConcaveDemo/AppConcaveDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/Extras/Serialize/BulletWorldImporter/BulletWorldImporter.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+			<Depends filename="msvc/2008/Extras/Serialize/BulletFileLoader/BulletFileLoader.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/ConcaveRaycastDemo/AppConcaveRayCastDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/ConstraintDemo/AppConstraintDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/Extras/Serialize/BulletWorldImporter/BulletWorldImporter.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+			<Depends filename="msvc/2008/Extras/Serialize/BulletFileLoader/BulletFileLoader.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/ContinuousConvexCollision/AppContinuousConvexCollisionDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/ConvexDecompositionDemo/AppConvexDecompositionDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Extras/ConvexDecomposition/ConvexDecomposition.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/Extras/Serialize/BulletWorldImporter/BulletWorldImporter.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+			<Depends filename="msvc/2008/Extras/Serialize/BulletFileLoader/BulletFileLoader.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/DoublePrecisionDemo/AppDoublePrecisionDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/ForkLiftDemo/AppForkLiftDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/GenericJointDemo/AppGenericJointDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/HelloWorld/AppHelloWorld.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/InternalEdgeDemo/AppInternalEdgeDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/GjkConvexCastDemo/AppLinearConvexCastDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/DynamicControlDemo/AppMotorDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/MovingConcaveDemo/AppMovingConcaveDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/MultiMaterialDemo/AppMultiMaterialDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/MultiThreadedDemo/AppMultiThreadedDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletMultiThreaded/BulletMultiThreaded.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/ParticlesOpenCL/MiniCL/AppParticlesOCL_Mini.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/src/MiniCL/MiniCL.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletMultiThreaded/BulletMultiThreaded.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/RagdollDemo/AppRagdollDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/Raytracer/AppRaytracer.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/SerializeDemo/AppSerializeDemo.cbp">
+			<Depends filename="msvc/2008/src/BulletSoftBody/BulletSoftBody.cbp" />
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/Extras/Serialize/BulletWorldImporter/BulletWorldImporter.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+			<Depends filename="msvc/2008/Extras/Serialize/BulletFileLoader/BulletFileLoader.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/SimplexDemo/AppSimplexDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/SliderConstraintDemo/AppSliderConstraintDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/SoftDemo/AppSoftBodyDemo.cbp">
+			<Depends filename="msvc/2008/src/BulletSoftBody/BulletSoftBody.cbp" />
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/ThreadingDemo/AppThreadingDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletMultiThreaded/BulletMultiThreaded.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/UserCollisionAlgorithm/AppUserCollisionAlgorithm.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/VectorAdd_OpenCL/MiniCL/AppVectorAdd_Mini.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/src/MiniCL/MiniCL.cbp" />
+			<Depends filename="msvc/2008/src/BulletMultiThreaded/BulletMultiThreaded.cbp" />
+		</Project>
+		<Project filename="msvc/2008/Demos/VehicleDemo/AppVehicleDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+		<Project filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		<Project filename="msvc/2008/Extras/Serialize/BulletFileLoader/BulletFileLoader.cbp" />
+		<Project filename="msvc/2008/src/BulletMultiThreaded/BulletMultiThreaded.cbp" />
+		<Project filename="msvc/2008/src/BulletSoftBody/BulletSoftBody.cbp" />
+		<Project filename="msvc/2008/Extras/Serialize/BulletWorldImporter/BulletWorldImporter.cbp" />
+		<Project filename="msvc/2008/Extras/ConvexDecomposition/ConvexDecomposition.cbp" />
+		<Project filename="msvc/2008/Extras/GIMPACTUtils/GIMPACTUtils.cbp" />
+		<Project filename="msvc/2008/Extras/glui/GLUI.cbp" />
+		<Project filename="msvc/2008/Demos/HeightFieldFluidDemo/HfFluidDemo.cbp">
+			<Depends filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+			<Depends filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+			<Depends filename="msvc/2008/src/BulletCollision/BulletCollision.cbp" />
+			<Depends filename="msvc/2008/src/BulletDynamics/BulletDynamics.cbp" />
+		</Project>
+		<Project filename="msvc/2008/src/LinearMath/LinearMath.cbp" />
+		<Project filename="msvc/2008/src/MiniCL/MiniCL.cbp" />
+		<Project filename="msvc/2008/Demos/OpenGL/OpenGLSupport.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

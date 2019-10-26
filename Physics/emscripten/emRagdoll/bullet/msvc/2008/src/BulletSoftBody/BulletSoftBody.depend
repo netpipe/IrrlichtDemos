@@ -1,0 +1,462 @@
+# depslib dependency file v1.0
+1572021119 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletSoftBody/btDefaultSoftBodySolver.cpp
+	"BulletCollision/CollisionShapes/btTriangleIndexVertexArray.h"
+	"BulletCollision/CollisionDispatch/btCollisionObject.h"
+	"BulletCollision/CollisionShapes/btCollisionShape.h"
+	"btDefaultSoftBodySolver.h"
+	"BulletCollision/CollisionShapes/btCapsuleShape.h"
+	"BulletSoftBody/btSoftBody.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/CollisionShapes/btTriangleIndexVertexArray.h
+	"btStridingMeshInterface.h"
+	"LinearMath/btAlignedObjectArray.h"
+	"LinearMath/btScalar.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/CollisionShapes/btStridingMeshInterface.h
+	"LinearMath/btVector3.h"
+	"btTriangleCallback.h"
+	"btConcaveShape.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btVector3.h
+	"btScalar.h"
+	"btMinMax.h"
+	"btAlignedAllocator.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btScalar.h
+	<math.h>
+	<stdlib.h>
+	<float.h>
+	<ppcintrinsics.h>
+	<emmintrin.h>
+	<stdio.h>
+	<assert.h>
+	<assert.h>
+	<spu_printf.h>
+	<assert.h>
+	<smmintrin.h>
+	<tmmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+	<arm_neon.h>
+	<assert.h>
+	<stdio.h>
+	<assert.h>
+	<arm_neon.h>
+	<arm_neon.h>
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btMinMax.h
+	"btScalar.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btAlignedAllocator.h
+	"btScalar.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/CollisionShapes/btTriangleCallback.h
+	"LinearMath/btVector3.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/CollisionShapes/btConcaveShape.h
+	"btCollisionShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"btTriangleCallback.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/CollisionShapes/btCollisionShape.h
+	"LinearMath/btTransform.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btMatrix3x3.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btTransform.h
+	"btMatrix3x3.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btMatrix3x3.h
+	"btVector3.h"
+	"btQuaternion.h"
+	<stdio.h>
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btQuaternion.h
+	"btVector3.h"
+	"btQuadWord.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btQuadWord.h
+	"btScalar.h"
+	"btMinMax.h"
+	<altivec.h>
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
+	"LinearMath/btScalar.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btAlignedAllocator.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btAlignedObjectArray.h
+	"btScalar.h"
+	"btAlignedAllocator.h"
+	<memory.h>
+	<string.h>
+	<new>
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/CollisionDispatch/btCollisionObject.h
+	"LinearMath/btTransform.h"
+	"LinearMath/btMotionState.h"
+	"LinearMath/btAlignedAllocator.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btMotionState.h
+	"btTransform.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletSoftBody/btDefaultSoftBodySolver.h
+	"BulletSoftBody/btSoftBodySolvers.h"
+	"btSoftBodySolverVertexBuffer.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletSoftBody/btSoftBodySolvers.h
+	"BulletCollision/CollisionShapes/btTriangleIndexVertexArray.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletSoftBody/btSoftBodySolverVertexBuffer.h
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/CollisionShapes/btCapsuleShape.h
+	"btConvexInternalShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/CollisionShapes/btConvexInternalShape.h
+	"btConvexShape.h"
+	"LinearMath/btAabbUtil2.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/CollisionShapes/btConvexShape.h
+	"btCollisionShape.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransform.h"
+	"LinearMath/btMatrix3x3.h"
+	"btCollisionMargin.h"
+	"LinearMath/btAlignedAllocator.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/CollisionShapes/btCollisionMargin.h
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btAabbUtil2.h
+	"btTransform.h"
+	"btVector3.h"
+	"btMinMax.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletSoftBody/btSoftBody.h
+	"LinearMath/btAlignedObjectArray.h"
+	"LinearMath/btTransform.h"
+	"LinearMath/btIDebugDraw.h"
+	"BulletDynamics/Dynamics/btRigidBody.h"
+	"BulletCollision/CollisionShapes/btConcaveShape.h"
+	"BulletCollision/CollisionDispatch/btCollisionCreateFunc.h"
+	"btSparseSDF.h"
+	"BulletCollision/BroadphaseCollision/btDbvt.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btIDebugDraw.h
+	"btVector3.h"
+	"btTransform.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletDynamics/Dynamics/btRigidBody.h
+	"LinearMath/btAlignedObjectArray.h"
+	"LinearMath/btTransform.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"BulletCollision/CollisionDispatch/btCollisionObject.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/CollisionDispatch/btCollisionCreateFunc.h
+	"LinearMath/btAlignedObjectArray.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletSoftBody/btSparseSDF.h
+	"BulletCollision/CollisionDispatch/btCollisionObject.h"
+	"BulletCollision/NarrowPhaseCollision/btGjkEpa2.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/NarrowPhaseCollision/btGjkEpa2.h
+	"BulletCollision/CollisionShapes/btConvexShape.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/BroadphaseCollision/btDbvt.h
+	"LinearMath/btAlignedObjectArray.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransform.h"
+	"LinearMath/btAabbUtil2.h"
+	<emmintrin.h>
+	<memory.h>
+	<string.h>
+
+1572021119 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletSoftBody/btSoftBody.cpp
+	"btSoftBodyInternals.h"
+	"BulletSoftBody/btSoftBodySolvers.h"
+	"btSoftBodyData.h"
+	"LinearMath/btSerializer.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletSoftBody/btSoftBodyInternals.h
+	"btSoftBody.h"
+	"LinearMath/btQuickprof.h"
+	"LinearMath/btPolarDecomposition.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseInterface.h"
+	"BulletCollision/CollisionDispatch/btCollisionDispatcher.h"
+	"BulletCollision/CollisionShapes/btConvexInternalShape.h"
+	"BulletCollision/NarrowPhaseCollision/btGjkEpa2.h"
+	<string.h>
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btQuickprof.h
+	<stdio.h>
+	"btScalar.h"
+	"btAlignedAllocator.h"
+	<new>
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btPolarDecomposition.h
+	"btMatrix3x3.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
+	"btBroadphaseProxy.h"
+	"LinearMath/btVector3.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/CollisionDispatch/btCollisionDispatcher.h
+	"BulletCollision/BroadphaseCollision/btDispatcher.h"
+	"BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
+	"BulletCollision/CollisionDispatch/btManifoldResult.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"LinearMath/btAlignedObjectArray.h"
+	"btCollisionCreateFunc.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/BroadphaseCollision/btDispatcher.h
+	"LinearMath/btScalar.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/NarrowPhaseCollision/btPersistentManifold.h
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransform.h"
+	"btManifoldPoint.h"
+	"LinearMath/btAlignedAllocator.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/NarrowPhaseCollision/btManifoldPoint.h
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransformUtil.h"
+	"physics_effects/base_level/solver/pfx_constraint_row.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btTransformUtil.h
+	"btTransform.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/CollisionDispatch/btManifoldResult.h
+	"BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
+	"BulletCollision/NarrowPhaseCollision/btDiscreteCollisionDetectorInterface.h"
+	"LinearMath/btTransform.h"
+	"BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h"
+	"BulletCollision/CollisionDispatch/btCollisionObject.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/NarrowPhaseCollision/btDiscreteCollisionDetectorInterface.h
+	"LinearMath/btTransform.h"
+	"LinearMath/btVector3.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h
+	"LinearMath/btScalar.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletSoftBody/btSoftBodyData.h
+	"BulletCollision/CollisionDispatch/btCollisionObject.h"
+	"BulletDynamics/Dynamics/btRigidBody.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btSerializer.h
+	"btScalar.h"
+	"btHashMap.h"
+	<memory.h>
+	<string.h>
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btHashMap.h
+	"btAlignedObjectArray.h"
+
+1572021119 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletSoftBody/btSoftBodyConcaveCollisionAlgorithm.cpp
+	"btSoftBodyConcaveCollisionAlgorithm.h"
+	"BulletCollision/CollisionDispatch/btCollisionObject.h"
+	"BulletCollision/CollisionShapes/btMultiSphereShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"BulletCollision/CollisionShapes/btConcaveShape.h"
+	"BulletCollision/CollisionDispatch/btManifoldResult.h"
+	"BulletCollision/NarrowPhaseCollision/btRaycastCallback.h"
+	"BulletCollision/CollisionShapes/btTriangleShape.h"
+	"BulletCollision/CollisionShapes/btSphereShape.h"
+	"BulletCollision/CollisionShapes/btTetrahedronShape.h"
+	"BulletCollision/CollisionShapes/btConvexHullShape.h"
+	"BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h"
+	"LinearMath/btIDebugDraw.h"
+	"BulletCollision/NarrowPhaseCollision/btSubSimplexConvexCast.h"
+	"BulletSoftBody/btSoftBody.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletSoftBody/btSoftBodyConcaveCollisionAlgorithm.h
+	"BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h"
+	"BulletCollision/BroadphaseCollision/btDispatcher.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseInterface.h"
+	"BulletCollision/CollisionShapes/btTriangleCallback.h"
+	"BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"BulletCollision/CollisionDispatch/btCollisionCreateFunc.h"
+	"LinearMath/btHashMap.h"
+	"BulletCollision/BroadphaseCollision/btQuantizedBvh.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h
+	"LinearMath/btScalar.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/BroadphaseCollision/btQuantizedBvh.h
+	<stdio.h>
+	<stdlib.h>
+	"LinearMath/btVector3.h"
+	"LinearMath/btAlignedAllocator.h"
+	"LinearMath/btAlignedAllocator.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/CollisionShapes/btMultiSphereShape.h
+	"btConvexInternalShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"LinearMath/btAlignedObjectArray.h"
+	"LinearMath/btAabbUtil2.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/NarrowPhaseCollision/btRaycastCallback.h
+	"BulletCollision/CollisionShapes/btTriangleCallback.h"
+	"LinearMath/btTransform.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/CollisionShapes/btTriangleShape.h
+	"btConvexShape.h"
+	"btBoxShape.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/CollisionShapes/btBoxShape.h
+	"btPolyhedralConvexShape.h"
+	"btCollisionMargin.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btMinMax.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/CollisionShapes/btPolyhedralConvexShape.h
+	"LinearMath/btMatrix3x3.h"
+	"btConvexInternalShape.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/CollisionShapes/btSphereShape.h
+	"btConvexInternalShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/CollisionShapes/btTetrahedronShape.h
+	"btPolyhedralConvexShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/CollisionShapes/btConvexHullShape.h
+	"btPolyhedralConvexShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/NarrowPhaseCollision/btSubSimplexConvexCast.h
+	"btConvexCast.h"
+	"btSimplexSolverInterface.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/NarrowPhaseCollision/btConvexCast.h
+	"LinearMath/btTransform.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btScalar.h"
+	"LinearMath/btIDebugDraw.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/NarrowPhaseCollision/btSimplexSolverInterface.h
+	"LinearMath/btVector3.h"
+	"btVoronoiSimplexSolver.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/NarrowPhaseCollision/btVoronoiSimplexSolver.h
+	"btSimplexSolverInterface.h"
+
+1572021119 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletSoftBody/btSoftBodyHelpers.cpp
+	"btSoftBodyInternals.h"
+	<stdio.h>
+	<string.h>
+	"btSoftBodyHelpers.h"
+	"LinearMath/btConvexHull.h"
+	"LinearMath/btConvexHullComputer.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletSoftBody/btSoftBodyHelpers.h
+	"btSoftBody.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btConvexHull.h
+	"btVector3.h"
+	"btAlignedObjectArray.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btConvexHullComputer.h
+	"btVector3.h"
+	"btAlignedObjectArray.h"
+
+1572021119 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletSoftBody/btSoftBodyRigidBodyCollisionConfiguration.cpp
+	"btSoftBodyRigidBodyCollisionConfiguration.h"
+	"btSoftRigidCollisionAlgorithm.h"
+	"btSoftBodyConcaveCollisionAlgorithm.h"
+	"btSoftSoftCollisionAlgorithm.h"
+	"LinearMath/btPoolAllocator.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletSoftBody/btSoftBodyRigidBodyCollisionConfiguration.h
+	"BulletCollision/CollisionDispatch/btDefaultCollisionConfiguration.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/CollisionDispatch/btDefaultCollisionConfiguration.h
+	"btCollisionConfiguration.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/CollisionDispatch/btCollisionConfiguration.h
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletSoftBody/btSoftRigidCollisionAlgorithm.h
+	"BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"BulletCollision/CollisionDispatch/btCollisionCreateFunc.h"
+	"BulletCollision/CollisionDispatch/btCollisionDispatcher.h"
+	"LinearMath/btVector3.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletSoftBody/btSoftSoftCollisionAlgorithm.h
+	"BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"BulletCollision/BroadphaseCollision/btDispatcher.h"
+	"BulletCollision/CollisionDispatch/btCollisionCreateFunc.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btPoolAllocator.h
+	"btScalar.h"
+	"btAlignedAllocator.h"
+
+1572021119 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletSoftBody/btSoftRigidCollisionAlgorithm.cpp
+	"btSoftRigidCollisionAlgorithm.h"
+	"BulletCollision/CollisionDispatch/btCollisionDispatcher.h"
+	"BulletCollision/CollisionShapes/btSphereShape.h"
+	"BulletCollision/CollisionShapes/btBoxShape.h"
+	"BulletCollision/CollisionDispatch/btCollisionObject.h"
+	"btSoftBody.h"
+	"BulletSoftBody/btSoftBodySolvers.h"
+	"BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h"
+	<stdio.h>
+
+1572021119 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletSoftBody/btSoftRigidDynamicsWorld.cpp
+	"btSoftRigidDynamicsWorld.h"
+	"LinearMath/btQuickprof.h"
+	"btSoftBody.h"
+	"btSoftBodyHelpers.h"
+	"btSoftBodySolvers.h"
+	"btDefaultSoftBodySolver.h"
+	"LinearMath/btSerializer.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletSoftBody/btSoftRigidDynamicsWorld.h
+	"BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h"
+	"btSoftBody.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h
+	"btDynamicsWorld.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletDynamics/Dynamics/btDynamicsWorld.h
+	"BulletCollision/CollisionDispatch/btCollisionWorld.h"
+	"BulletDynamics/ConstraintSolver/btContactSolverInfo.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/CollisionDispatch/btCollisionWorld.h
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransform.h"
+	"btCollisionObject.h"
+	"btCollisionDispatcher.h"
+	"BulletCollision/BroadphaseCollision/btOverlappingPairCache.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/BroadphaseCollision/btOverlappingPairCache.h
+	"btBroadphaseInterface.h"
+	"btBroadphaseProxy.h"
+	"btOverlappingPairCallback.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletCollision/BroadphaseCollision/btOverlappingPairCallback.h
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletDynamics/ConstraintSolver/btContactSolverInfo.h
+	"LinearMath/btScalar.h"
+
+1572021119 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/BulletSoftBody/btSoftSoftCollisionAlgorithm.cpp
+	"btSoftSoftCollisionAlgorithm.h"
+	"BulletCollision/CollisionDispatch/btCollisionDispatcher.h"
+	"BulletCollision/CollisionShapes/btBoxShape.h"
+	"BulletCollision/CollisionDispatch/btCollisionObject.h"
+	"BulletSoftBody/btSoftBodySolvers.h"
+	"btSoftBody.h"
+	"BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h"
+

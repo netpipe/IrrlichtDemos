@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="emscripten" />
+	<File name="../../../../src/BulletDynamics/Vehicle/btRaycastVehicle.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="42" />
+		</Cursor>
+		<Folding>
+			<Collapse line="28" />
+			<Collapse line="37" />
+			<Collapse line="47" />
+			<Collapse line="57" />
+			<Collapse line="65" />
+			<Collapse line="95" />
+			<Collapse line="103" />
+			<Collapse line="136" />
+			<Collapse line="152" />
+			<Collapse line="167" />
+			<Collapse line="253" />
+			<Collapse line="268" />
+			<Collapse line="366" />
+			<Collapse line="376" />
+			<Collapse line="382" />
+			<Collapse line="390" />
+			<Collapse line="397" />
+			<Collapse line="404" />
+			<Collapse line="411" />
+			<Collapse line="468" />
+			<Collapse line="496" />
+			<Collapse line="526" />
+			<Collapse line="719" />
+			<Collapse line="748" />
+		</Folding>
+	</File>
+	<EditorTabsLayout layout="0403c5505db3e0c4000bf6a500000002=*1;BulletDynamics:../../../../src/BulletDynamics/Vehicle/btRaycastVehicle.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=814;besth=348;minw=814;minh=348;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=0403c5505db3e0c4000bf6a500000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+</CodeBlocks_layout_file>

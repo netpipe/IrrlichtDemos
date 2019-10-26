@@ -28,6 +28,7 @@
 			<Add library="BulletDynamics" />
 			<Add library="BulletCollision" />
 			<Add library="LinearMath" />
+			<Add library="X11" />
 			<Add directory="/home/Dev/libs/Irrlicht/lib/gcc" />
 			<Add directory="/home/Dev/libs/physics/bullet/src/BulletCollision" />
 			<Add directory="/home/Dev/libs/physics/bullet/src/BulletDynamics" />

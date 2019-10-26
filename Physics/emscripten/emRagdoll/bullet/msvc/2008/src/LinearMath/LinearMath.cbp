@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="LinearMath" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="../../lib/Debug/LinearMath" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="LinearMath.dir/Debug" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;Debug\&quot;' />
+					<Add option="-W" />
+					<Add option="-O0" />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</ResourceCompiler>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="../../lib/Release/LinearMath" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="LinearMath.dir/Release" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;Release\&quot;' />
+					<Add option="-W" />
+					<Add option="-O2" />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</ResourceCompiler>
+			</Target>
+			<Target title="MinSizeRel Win32">
+				<Option output="../../lib/MinSizeRel/LinearMath" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="LinearMath.dir/MinSizeRel" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;MinSizeRel\&quot;' />
+					<Add option="-W" />
+					<Add option="-O1" />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</ResourceCompiler>
+			</Target>
+			<Target title="RelWithDebInfo Win32">
+				<Option output="../../lib/RelWithDebInfo/LinearMath" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="LinearMath.dir/RelWithDebInfo" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;' />
+					<Add option="-W" />
+					<Add option="-O2" />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</ResourceCompiler>
+			</Target>
+			<Target title="Linux">
+				<Option output="../../lib/Release/LinearMath" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="LinearMath.dir/Release" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-W" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;Release\&quot;' />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</ResourceCompiler>
+			</Target>
+			<Target title="emscripten">
+				<Option output="../../lib/Release/LinearMath" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="LinearMath.dir/Release" />
+				<Option type="2" />
+				<Option compiler="emscripten" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-W" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;Release\&quot;' />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</ResourceCompiler>
+			</Target>
+		</Build>
+		<Unit filename="../../../../src/LinearMath/btAabbUtil2.h" />
+		<Unit filename="../../../../src/LinearMath/btAlignedAllocator.cpp" />
+		<Unit filename="../../../../src/LinearMath/btAlignedAllocator.h" />
+		<Unit filename="../../../../src/LinearMath/btAlignedObjectArray.h" />
+		<Unit filename="../../../../src/LinearMath/btConvexHull.cpp" />
+		<Unit filename="../../../../src/LinearMath/btConvexHull.h" />
+		<Unit filename="../../../../src/LinearMath/btConvexHullComputer.cpp" />
+		<Unit filename="../../../../src/LinearMath/btConvexHullComputer.h" />
+		<Unit filename="../../../../src/LinearMath/btDefaultMotionState.h" />
+		<Unit filename="../../../../src/LinearMath/btGeometryUtil.cpp" />
+		<Unit filename="../../../../src/LinearMath/btGeometryUtil.h" />
+		<Unit filename="../../../../src/LinearMath/btGrahamScan2dConvexHull.h" />
+		<Unit filename="../../../../src/LinearMath/btHashMap.h" />
+		<Unit filename="../../../../src/LinearMath/btIDebugDraw.h" />
+		<Unit filename="../../../../src/LinearMath/btList.h" />
+		<Unit filename="../../../../src/LinearMath/btMatrix3x3.h" />
+		<Unit filename="../../../../src/LinearMath/btMatrixX.h" />
+		<Unit filename="../../../../src/LinearMath/btMinMax.h" />
+		<Unit filename="../../../../src/LinearMath/btMotionState.h" />
+		<Unit filename="../../../../src/LinearMath/btPolarDecomposition.cpp" />
+		<Unit filename="../../../../src/LinearMath/btPolarDecomposition.h" />
+		<Unit filename="../../../../src/LinearMath/btPoolAllocator.h" />
+		<Unit filename="../../../../src/LinearMath/btQuadWord.h" />
+		<Unit filename="../../../../src/LinearMath/btQuaternion.h" />
+		<Unit filename="../../../../src/LinearMath/btQuickprof.cpp" />
+		<Unit filename="../../../../src/LinearMath/btQuickprof.h" />
+		<Unit filename="../../../../src/LinearMath/btRandom.h" />
+		<Unit filename="../../../../src/LinearMath/btScalar.h" />
+		<Unit filename="../../../../src/LinearMath/btSerializer.cpp" />
+		<Unit filename="../../../../src/LinearMath/btSerializer.h" />
+		<Unit filename="../../../../src/LinearMath/btStackAlloc.h" />
+		<Unit filename="../../../../src/LinearMath/btTransform.h" />
+		<Unit filename="../../../../src/LinearMath/btTransformUtil.h" />
+		<Unit filename="../../../../src/LinearMath/btVector3.cpp" />
+		<Unit filename="../../../../src/LinearMath/btVector3.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

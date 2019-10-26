@@ -1,0 +1,304 @@
+# depslib dependency file v1.0
+1379308835 source:/mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btAlignedAllocator.cpp
+	"btAlignedAllocator.h"
+	<malloc.h>
+	<stdlib.h>
+	<stdio.h>
+
+1379308835 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btAlignedAllocator.h
+	"btScalar.h"
+
+1379308835 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btScalar.h
+	<math.h>
+	<stdlib.h>
+	<float.h>
+	<ppcintrinsics.h>
+	<emmintrin.h>
+	<assert.h>
+	<assert.h>
+	<spu_printf.h>
+	<assert.h>
+	<emmintrin.h>
+	<assert.h>
+	<assert.h>
+
+1379308835 source:/mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btConvexHull.cpp
+	<string.h>
+	"btConvexHull.h"
+	"btAlignedObjectArray.h"
+	"btMinMax.h"
+	"btVector3.h"
+
+1379308835 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btConvexHull.h
+	"btVector3.h"
+	"btAlignedObjectArray.h"
+
+1379308835 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btVector3.h
+	"btScalar.h"
+	"btMinMax.h"
+
+1379308835 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btMinMax.h
+	"LinearMath/btScalar.h"
+
+1379308835 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btAlignedObjectArray.h
+	"btScalar.h"
+	"btAlignedAllocator.h"
+	<memory.h>
+	<string.h>
+	<new>
+
+1379308835 source:/mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btConvexHullComputer.cpp
+	<string.h>
+	"btConvexHullComputer.h"
+	"btAlignedObjectArray.h"
+	"btMinMax.h"
+	"btVector3.h"
+	<stdint.h>
+	<stdio.h>
+
+1379308835 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btConvexHullComputer.h
+	"btVector3.h"
+	"btAlignedObjectArray.h"
+
+1379308835 source:/mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btGeometryUtil.cpp
+	"btGeometryUtil.h"
+
+1379308835 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btGeometryUtil.h
+	"btVector3.h"
+	"btAlignedObjectArray.h"
+
+1379308835 source:/mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btQuickprof.cpp
+	"btQuickprof.h"
+	<sys/sys_time.h>
+	<sys/time_util.h>
+	<stdio.h>
+	<stdio.h>
+	<Xtl.h>
+	<windows.h>
+	<time.h>
+	<sys/time.h>
+	<stdio.h>
+
+1379308835 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btQuickprof.h
+	<stdio.h>
+	"btScalar.h"
+	"btAlignedAllocator.h"
+	<new>
+
+1540844033 source:/mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btSerializer.cpp
+
+1379308835 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btAlignedAllocator.cpp
+	"btAlignedAllocator.h"
+	<malloc.h>
+	<stdlib.h>
+	<stdio.h>
+
+1379308835 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btAlignedAllocator.h
+	"btScalar.h"
+
+1379308835 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btScalar.h
+	<math.h>
+	<stdlib.h>
+	<float.h>
+	<ppcintrinsics.h>
+	<emmintrin.h>
+	<assert.h>
+	<assert.h>
+	<spu_printf.h>
+	<assert.h>
+	<emmintrin.h>
+	<assert.h>
+	<assert.h>
+
+1379308835 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btConvexHull.cpp
+	<string.h>
+	"btConvexHull.h"
+	"btAlignedObjectArray.h"
+	"btMinMax.h"
+	"btVector3.h"
+
+1379308835 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btConvexHull.h
+	"btVector3.h"
+	"btAlignedObjectArray.h"
+
+1379308835 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btVector3.h
+	"btScalar.h"
+	"btMinMax.h"
+
+1379308835 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btMinMax.h
+	"LinearMath/btScalar.h"
+
+1379308835 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btAlignedObjectArray.h
+	"btScalar.h"
+	"btAlignedAllocator.h"
+	<memory.h>
+	<string.h>
+	<new>
+
+1379308835 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btConvexHullComputer.cpp
+	<string.h>
+	"btConvexHullComputer.h"
+	"btAlignedObjectArray.h"
+	"btMinMax.h"
+	"btVector3.h"
+	<stdint.h>
+	<stdio.h>
+
+1379308835 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btConvexHullComputer.h
+	"btVector3.h"
+	"btAlignedObjectArray.h"
+
+1379308835 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btGeometryUtil.cpp
+	"btGeometryUtil.h"
+
+1379308835 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btGeometryUtil.h
+	"btVector3.h"
+	"btAlignedObjectArray.h"
+
+1379308835 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btQuickprof.cpp
+	"btQuickprof.h"
+	<sys/sys_time.h>
+	<sys/time_util.h>
+	<stdio.h>
+	<stdio.h>
+	<Xtl.h>
+	<windows.h>
+	<time.h>
+	<sys/time.h>
+	<stdio.h>
+
+1379308835 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btQuickprof.h
+	<stdio.h>
+	"btScalar.h"
+	"btAlignedAllocator.h"
+	<new>
+
+1540844033 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/bullet-2.78/src/LinearMath/btSerializer.cpp
+
+1572021119 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btAlignedAllocator.cpp
+	"btAlignedAllocator.h"
+	<malloc.h>
+	<stdlib.h>
+	<stdio.h>
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btAlignedAllocator.h
+	"btScalar.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btScalar.h
+	<math.h>
+	<stdlib.h>
+	<float.h>
+	<ppcintrinsics.h>
+	<emmintrin.h>
+	<stdio.h>
+	<assert.h>
+	<assert.h>
+	<spu_printf.h>
+	<assert.h>
+	<smmintrin.h>
+	<tmmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+	<arm_neon.h>
+	<assert.h>
+	<stdio.h>
+	<assert.h>
+	<arm_neon.h>
+	<arm_neon.h>
+
+1572021119 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btConvexHull.cpp
+	<string.h>
+	"btConvexHull.h"
+	"btAlignedObjectArray.h"
+	"btMinMax.h"
+	"btVector3.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btConvexHull.h
+	"btVector3.h"
+	"btAlignedObjectArray.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btVector3.h
+	"btScalar.h"
+	"btMinMax.h"
+	"btAlignedAllocator.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btMinMax.h
+	"btScalar.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btAlignedObjectArray.h
+	"btScalar.h"
+	"btAlignedAllocator.h"
+	<memory.h>
+	<string.h>
+	<new>
+
+1572021119 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btConvexHullComputer.cpp
+	<string.h>
+	"btConvexHullComputer.h"
+	"btAlignedObjectArray.h"
+	"btMinMax.h"
+	"btVector3.h"
+	<stdint.h>
+	<stdio.h>
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btConvexHullComputer.h
+	"btVector3.h"
+	"btAlignedObjectArray.h"
+
+1572021119 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btGeometryUtil.cpp
+	"btGeometryUtil.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btGeometryUtil.h
+	"btVector3.h"
+	"btAlignedObjectArray.h"
+
+1572021119 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btQuickprof.cpp
+	"btQuickprof.h"
+	<sys/sys_time.h>
+	<sys/time_util.h>
+	<stdio.h>
+	<stdio.h>
+	<Xtl.h>
+	<windows.h>
+	<time.h>
+	<sys/time.h>
+	<stdio.h>
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btQuickprof.h
+	<stdio.h>
+	"btScalar.h"
+	"btAlignedAllocator.h"
+	<new>
+
+1572021119 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btSerializer.cpp
+
+1572021119 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btPolarDecomposition.cpp
+	"btPolarDecomposition.h"
+	"btMinMax.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btPolarDecomposition.h
+	"btMatrix3x3.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btMatrix3x3.h
+	"btVector3.h"
+	"btQuaternion.h"
+	<stdio.h>
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btQuaternion.h
+	"btVector3.h"
+	"btQuadWord.h"
+
+1572021119 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btQuadWord.h
+	"btScalar.h"
+	"btMinMax.h"
+	<altivec.h>
+
+1572021119 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/src/LinearMath/btVector3.cpp
+	"btVector3.h"
+	<string.h>
+	<stdint.h>
+	<emmintrin.h>
+	<arm_neon.h>
+	<sys/types.h>
+	<sys/sysctl.h>
+

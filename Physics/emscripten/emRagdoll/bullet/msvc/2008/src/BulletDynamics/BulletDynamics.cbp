@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="BulletDynamics" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="../../lib/Debug/BulletDynamics" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="BulletDynamics.dir/Debug" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;Debug\&quot;' />
+					<Add option="-W" />
+					<Add option="-O0" />
+					<Add option="-frtti" />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</ResourceCompiler>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="../../lib/Release/BulletDynamics" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="BulletDynamics.dir/Release" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;Release\&quot;' />
+					<Add option="-W" />
+					<Add option="-O2" />
+					<Add option="-frtti" />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</ResourceCompiler>
+			</Target>
+			<Target title="MinSizeRel Win32">
+				<Option output="../../lib/MinSizeRel/BulletDynamics" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="BulletDynamics.dir/MinSizeRel" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;MinSizeRel\&quot;' />
+					<Add option="-W" />
+					<Add option="-O1" />
+					<Add option="-frtti" />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</ResourceCompiler>
+			</Target>
+			<Target title="RelWithDebInfo Win32">
+				<Option output="../../lib/RelWithDebInfo/BulletDynamics" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="BulletDynamics.dir/RelWithDebInfo" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;' />
+					<Add option="-W" />
+					<Add option="-O2" />
+					<Add option="-frtti" />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</ResourceCompiler>
+			</Target>
+			<Target title="emscripten">
+				<Option output="../../lib/Release/BulletDynamics" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="BulletDynamics.dir/Release" />
+				<Option type="2" />
+				<Option compiler="emscripten" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-W" />
+					<Add option="-frtti" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;Release\&quot;' />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</ResourceCompiler>
+			</Target>
+		</Build>
+		<Unit filename="../../../../src/BulletDynamics/Character/btCharacterControllerInterface.h" />
+		<Unit filename="../../../../src/BulletDynamics/Character/btKinematicCharacterController.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/Character/btKinematicCharacterController.h" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btConeTwistConstraint.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btConeTwistConstraint.h" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btConstraintSolver.h" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btContactConstraint.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btContactConstraint.h" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btContactSolverInfo.h" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btFixedConstraint.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btFixedConstraint.h" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btGearConstraint.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btGearConstraint.h" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btGeneric6DofConstraint.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btGeneric6DofConstraint.h" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btGeneric6DofSpringConstraint.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btGeneric6DofSpringConstraint.h" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btHinge2Constraint.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btHinge2Constraint.h" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btHingeConstraint.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btHingeConstraint.h" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btJacobianEntry.h" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btPoint2PointConstraint.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btPoint2PointConstraint.h" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolver.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolver.h" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btSliderConstraint.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btSliderConstraint.h" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btSolve2LinearConstraint.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btSolve2LinearConstraint.h" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btSolverBody.h" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btSolverConstraint.h" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btTypedConstraint.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btTypedConstraint.h" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btUniversalConstraint.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/ConstraintSolver/btUniversalConstraint.h" />
+		<Unit filename="../../../../src/BulletDynamics/Dynamics/Bullet-C-API.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/Dynamics/btActionInterface.h" />
+		<Unit filename="../../../../src/BulletDynamics/Dynamics/btDiscreteDynamicsWorld.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h" />
+		<Unit filename="../../../../src/BulletDynamics/Dynamics/btDynamicsWorld.h" />
+		<Unit filename="../../../../src/BulletDynamics/Dynamics/btRigidBody.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/Dynamics/btRigidBody.h" />
+		<Unit filename="../../../../src/BulletDynamics/Dynamics/btSimpleDynamicsWorld.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/Dynamics/btSimpleDynamicsWorld.h" />
+		<Unit filename="../../../../src/BulletDynamics/Featherstone/btMultiBody.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/Featherstone/btMultiBody.h" />
+		<Unit filename="../../../../src/BulletDynamics/Featherstone/btMultiBodyConstraint.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/Featherstone/btMultiBodyConstraint.h" />
+		<Unit filename="../../../../src/BulletDynamics/Featherstone/btMultiBodyConstraintSolver.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/Featherstone/btMultiBodyConstraintSolver.h" />
+		<Unit filename="../../../../src/BulletDynamics/Featherstone/btMultiBodyDynamicsWorld.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/Featherstone/btMultiBodyDynamicsWorld.h" />
+		<Unit filename="../../../../src/BulletDynamics/Featherstone/btMultiBodyJointLimitConstraint.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/Featherstone/btMultiBodyJointLimitConstraint.h" />
+		<Unit filename="../../../../src/BulletDynamics/Featherstone/btMultiBodyJointMotor.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/Featherstone/btMultiBodyJointMotor.h" />
+		<Unit filename="../../../../src/BulletDynamics/Featherstone/btMultiBodyLink.h" />
+		<Unit filename="../../../../src/BulletDynamics/Featherstone/btMultiBodyLinkCollider.h" />
+		<Unit filename="../../../../src/BulletDynamics/Featherstone/btMultiBodyPoint2Point.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/Featherstone/btMultiBodyPoint2Point.h" />
+		<Unit filename="../../../../src/BulletDynamics/Featherstone/btMultiBodySolverConstraint.h" />
+		<Unit filename="../../../../src/BulletDynamics/MLCPSolvers/btDantzigLCP.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/MLCPSolvers/btDantzigLCP.h" />
+		<Unit filename="../../../../src/BulletDynamics/MLCPSolvers/btDantzigSolver.h" />
+		<Unit filename="../../../../src/BulletDynamics/MLCPSolvers/btMLCPSolver.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/MLCPSolvers/btMLCPSolver.h" />
+		<Unit filename="../../../../src/BulletDynamics/MLCPSolvers/btMLCPSolverInterface.h" />
+		<Unit filename="../../../../src/BulletDynamics/MLCPSolvers/btPATHSolver.h" />
+		<Unit filename="../../../../src/BulletDynamics/MLCPSolvers/btSolveProjectedGaussSeidel.h" />
+		<Unit filename="../../../../src/BulletDynamics/Vehicle/btRaycastVehicle.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/Vehicle/btRaycastVehicle.h" />
+		<Unit filename="../../../../src/BulletDynamics/Vehicle/btVehicleRaycaster.h" />
+		<Unit filename="../../../../src/BulletDynamics/Vehicle/btWheelInfo.cpp" />
+		<Unit filename="../../../../src/BulletDynamics/Vehicle/btWheelInfo.h" />
+		<Unit filename="../../../../src/btBulletDynamicsCommon.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

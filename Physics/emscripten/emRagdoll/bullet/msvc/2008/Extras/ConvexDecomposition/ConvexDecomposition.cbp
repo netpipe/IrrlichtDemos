@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ConvexDecomposition" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="../../lib/Debug/ConvexDecomposition" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="ConvexDecomposition.dir/Debug" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;Debug\&quot;' />
+					<Add option="-W" />
+					<Add option="-O0" />
+					<Add option="-frtti" />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../Extras/ConvexDecomposition" />
+					<Add directory="../../../../src" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../Extras/ConvexDecomposition" />
+					<Add directory="../../../../src" />
+				</ResourceCompiler>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="../../lib/Release/ConvexDecomposition" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="ConvexDecomposition.dir/Release" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;Release\&quot;' />
+					<Add option="-W" />
+					<Add option="-O2" />
+					<Add option="-frtti" />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../Extras/ConvexDecomposition" />
+					<Add directory="../../../../src" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../Extras/ConvexDecomposition" />
+					<Add directory="../../../../src" />
+				</ResourceCompiler>
+			</Target>
+			<Target title="MinSizeRel Win32">
+				<Option output="../../lib/MinSizeRel/ConvexDecomposition" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="ConvexDecomposition.dir/MinSizeRel" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;MinSizeRel\&quot;' />
+					<Add option="-W" />
+					<Add option="-O1" />
+					<Add option="-frtti" />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../Extras/ConvexDecomposition" />
+					<Add directory="../../../../src" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../Extras/ConvexDecomposition" />
+					<Add directory="../../../../src" />
+				</ResourceCompiler>
+			</Target>
+			<Target title="RelWithDebInfo Win32">
+				<Option output="../../lib/RelWithDebInfo/ConvexDecomposition" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="ConvexDecomposition.dir/RelWithDebInfo" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;' />
+					<Add option="-W" />
+					<Add option="-O2" />
+					<Add option="-frtti" />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../Extras/ConvexDecomposition" />
+					<Add directory="../../../../src" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../Extras/ConvexDecomposition" />
+					<Add directory="../../../../src" />
+				</ResourceCompiler>
+			</Target>
+		</Build>
+		<Unit filename="../../../../Extras/ConvexDecomposition/ConvexBuilder.cpp" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/ConvexBuilder.h" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/ConvexDecomposition.cpp" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/ConvexDecomposition.h" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/bestfit.cpp" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/bestfit.h" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/bestfitobb.cpp" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/bestfitobb.h" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/cd_hull.cpp" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/cd_hull.h" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/cd_vector.h" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/cd_wavefront.cpp" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/cd_wavefront.h" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/concavity.cpp" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/concavity.h" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/fitsphere.cpp" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/fitsphere.h" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/float_math.cpp" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/float_math.h" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/meshvolume.cpp" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/meshvolume.h" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/planetri.cpp" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/planetri.h" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/raytri.cpp" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/raytri.h" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/splitplane.cpp" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/splitplane.h" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/vlookup.cpp" />
+		<Unit filename="../../../../Extras/ConvexDecomposition/vlookup.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
