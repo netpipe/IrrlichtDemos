@@ -1,22 +1,25 @@
-<!DOCTYPE html>
-<html xml:lang="en" lang="en">
-<head>
-
-		<title>	website</title>
-			<script>
-
+<HTML>
+	<HEAD>
+		<TITLE>
+		</TITLE>
+				<script>
 			function setMyTimer(){
+
 				setTimeout("refresh()",2*1100);
+
 			}
 			
 			function refresh(){
+
 				window.location.reload(true)
+
 			}
-//<BODY onload="setMyTimer()">
+
 
 		</script>
-	</head>
-	<body style="background:#968D87">
+	</HEAD>
+
+	<BODY onload="setMyTimer()">
 
 	<TABLE border=2 >
           <TR>
@@ -34,5 +37,5 @@
 	<BR>
 	<!--Exit-->
 
-	</body>
-</html>
+	</BODY>
+</HTML>

@@ -54,8 +54,8 @@ int ReadSocket(char *cGetData,unsigned int Len){
       }
       if(bytesRecv > 0){
             cGetData[bytesRecv]=0;
-            //*cGetData =   recvbuf;
-            //printf("Server: %s \n",cGetData);
+            *cGetData =   bytesRecv;
+            printf("Server: %s \n",cGetData);
       }
 
     }
@@ -86,7 +86,7 @@ char  InitConnection (unsigned int Port ){
  int optVal =1;
  static struct sockaddr_in service;
   #define INVALID_SOCKET  -1
- 
+
   m_socket = socket(AF_INET, SOCK_STREAM, 0);
 
   if ( m_socket == INVALID_SOCKET ) {
@@ -94,7 +94,7 @@ char  InitConnection (unsigned int Port ){
         return  0;
     }
 
-     
+
 
     service.sin_family = AF_INET;
     service.sin_addr.s_addr = inet_addr( "127.0.0.1" ); //INADDR_ANY; //
@@ -102,7 +102,7 @@ char  InitConnection (unsigned int Port ){
 
      //Il socket will be not blocking
     //error =fcntl(m_socket,F_SETFL,O_NONBLOCK);
-   
+
     optVal =1;
     if (setsockopt( m_socket, SOL_SOCKET, SO_REUSEADDR, (char *)&optVal,sizeof(optVal)) < 0) {
        printf("errror during setsockopt");
@@ -118,7 +118,7 @@ char  InitConnection (unsigned int Port ){
         return 0;
     }
 
-    if ( listen( m_socket, 1 ) == SOCKET_ERROR ){ // listen(.. , 1)  max number of connection 
+    if ( listen( m_socket, 1 ) == SOCKET_ERROR ){ // listen(.. , 1)  max number of connection
         printf( "Error listening on socket.\n");
         close(m_socket);
         return 0;
