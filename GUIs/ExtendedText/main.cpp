@@ -15,7 +15,7 @@ using namespace irr;
 
 int main()
 {
-    IrrlichtDevice* device = createDevice( video::EDT_OPENGL , core::dimension2d<s32>(640,480), 32);
+    IrrlichtDevice* device = createDevice( video::EDT_OPENGL , core::dimension2du(640,480), 32);
 
     scene::ISceneManager* manager = device->getSceneManager();
     video::IVideoDriver* driver = device->getVideoDriver();

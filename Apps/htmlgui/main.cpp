@@ -80,10 +80,10 @@ int main()
 	while(device->run())
 	{
 		///HTMGUI
-		CheckGUI();		
+		CheckGUI();
 		if(fExit){
 			break;
-		}	
+		}
                 if(VRotate){
                    VRotate =0;
                    vector3df objRot = node->getRotation();
@@ -109,7 +109,9 @@ int main()
                 video::IImage* image = driver->createImageFromData (rt->getColorFormat(),rt->getSize(),rt->lock(),true);
                 rt->unlock();
                 driver->writeImageToFile(image,"Hello.bmp");
-                //image->drop();
+                image->drop();
+
+		device->sleep(15);
 
 	}
 

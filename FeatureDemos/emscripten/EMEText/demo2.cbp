@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Irrlicht Example 01 Hello World" />
+		<Option pch_mode="0" />
+		<Option compiler="emscripten" />
+		<Build>
+			<Target title="Linux">
+				<Option platforms="Unix;" />
+				<Option output="./test.html" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="emscripten" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-s FULL_ES2=1" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_IRR_EMSCRIPTEN_PLATFORM_" />
+					<Add directory="/home/Dev/libs/Scripting/emsdk/emscripten-projects/irrlicht-ogl-es/irrlicht/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add option="-s FULL_ES2=1" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s ALLOW_MEMORY_GROWTH=1" />
+					<Add option="--preload-file media/" />
+					<Add option="-s FULL_ES2=1" />
+					<Add option="-s DISABLE_EXCEPTION_CATCHING=0" />
+					<Add option="-s NO_EXIT_RUNTIME=1" />
+					<Add library="GLESv2" />
+					<Add library="GL" />
+					<Add library="SDL" />
+					<Add directory="../../lib/Linux" />
+					<Add directory="/home/Dev/libs/Scripting/emsdk/emscripten-projects/irrlicht-ogl-es/irrlicht/lib/Linux" />
+				</Linker>
+			</Target>
+			<Target title="Windows">
+				<Option platforms="Windows;" />
+				<Option output="../../bin/Win32-gcc/HelloWorld" prefix_auto="0" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="emscripten" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add directory="../../lib/Win32-gcc" />
+				</Linker>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="Windows;Linux;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-g" />
+			<Add directory="../../include" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+		</Linker>
+		<Unit filename="CAlignTextTag.cpp" />
+		<Unit filename="CAlignTextTag.h" />
+		<Unit filename="CBlankTextElement.cpp" />
+		<Unit filename="CBlankTextElement.h" />
+		<Unit filename="CColorTextTag.cpp" />
+		<Unit filename="CColorTextTag.h" />
+		<Unit filename="CFontTextTag.cpp" />
+		<Unit filename="CFontTextTag.h" />
+		<Unit filename="CGUIExtendedText.cpp" />
+		<Unit filename="CGUIExtendedText.h" />
+		<Unit filename="CGUIPanel.cpp" />
+		<Unit filename="CGUIPanel.h" />
+		<Unit filename="CHLineTextElement.cpp" />
+		<Unit filename="CHLineTextElement.h" />
+		<Unit filename="CHLineTextTag.cpp" />
+		<Unit filename="CHLineTextTag.h" />
+		<Unit filename="CImageTextElement.cpp" />
+		<Unit filename="CImageTextElement.h" />
+		<Unit filename="CImageTextTag.cpp" />
+		<Unit filename="CImageTextTag.h" />
+		<Unit filename="CPlainTextElement.cpp" />
+		<Unit filename="CPlainTextElement.h" />
+		<Unit filename="CTabTextTag.cpp" />
+		<Unit filename="CTabTextTag.h" />
+		<Unit filename="IExtendedText.h" />
+		<Unit filename="ITextElement.h" />
+		<Unit filename="ITextTag.h" />
+		<Unit filename="clipRects.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
