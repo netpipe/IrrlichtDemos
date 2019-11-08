@@ -2,50 +2,23 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="All" />
-	<File name="main.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2902" topLine="85" />
-		</Cursor>
-		<Folding>
-			<Collapse line="127" />
-			<Collapse line="131" />
-			<Collapse line="135" />
-		</Folding>
-	</File>
 	<File name="GUIHtm.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="11794" topLine="118" />
+			<Cursor1 position="5568" topLine="159" />
 		</Cursor>
 		<Folding>
-			<Collapse line="21" />
-			<Collapse line="27" />
-			<Collapse line="80" />
-			<Collapse line="85" />
-			<Collapse line="171" />
-			<Collapse line="187" />
-			<Collapse line="206" />
-			<Collapse line="248" />
-			<Collapse line="284" />
-			<Collapse line="320" />
-			<Collapse line="342" />
-			<Collapse line="432" />
-			<Collapse line="464" />
-			<Collapse line="485" />
-			<Collapse line="511" />
-			<Collapse line="536" />
-			<Collapse line="563" />
-			<Collapse line="591" />
-			<Collapse line="621" />
-			<Collapse line="632" />
-			<Collapse line="642" />
-			<Collapse line="669" />
-			<Collapse line="682" />
+			<Collapse line="363" />
 		</Folding>
+	</File>
+	<File name="main.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="117" topLine="36" />
+		</Cursor>
 	</File>
 	<File name="SocketMngr.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="692" topLine="132" />
+			<Cursor1 position="1592" topLine="51" />
 		</Cursor>
 	</File>
-	<EditorTabsLayout layout="02b7ac405dbf8d92000aac2400000002=0;Irrlicht Pong:GUIHtm.c,*1;Irrlicht Pong:main.cpp,2;Irrlicht Pong:SocketMngr.c@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=704;besth=296;minw=704;minh=296;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=02b7ac405dbf8d92000aac2400000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+	<EditorTabsLayout layout="024972305dbfa16c000eaf6400000002=0;Irrlicht Pong:GUIHtm.c,*1;Irrlicht Pong:main.cpp,2;Irrlicht Pong:SocketMngr.c@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=448;besth=296;minw=448;minh=296;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=024972305dbfa16c000eaf6400000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>
