@@ -1,0 +1,40 @@
+06/09/98================================================================
+Model Name              : Terminator
+installation directory  : quake2/baseq2/players/Terminator (just unzip to the drive that Q2 is on)
+Author                  : James Edwards (Gwot)
+Skin Author             : ditto           
+Email Address           : gwot@planetquake.com
+Web                     : http://www.planetquake.com/q2pmp/hostings/gwot/
+Model description       : Tactical Dreadnought Power Armor from the Warhammer 40000 Tabletop game.
+Other info              : Gwot make model, too.  Give Gwot job making games pleez.
+Additional Credits to   : id Software 
+Thanks to               : Paul Steed, and Kenneth Scott for inspiration.  All the guys and gals from Q2pmp and Bodyshop for help and guidance.
+================================================================
+* Play Information *
+New Sounds              : Yes, Provided by Corvi42    corvi42@interlog.com
+CTF Skins               : YES, included in Ultramarine and Blood Angel Chapter colors.
+VWEP Support            : yes, provided by Kurt  turbo911@datatone.com
+* Construction *
+Poly Count              : <522 polys>
+Vert Count              : <269 Verts>
+Skin Verts              : <359 Verts>
+Skin Dimensions         : <256 x 256>
+Skin Count              : 3 Skins - Dark Angels (deathmatch), Ultramarines and Blood Angels (dm or ctf)Base                    : New modelWeapon Polys            : <138 polys>
+Weapon Verts            : <68 Verts>
+Skin Verts              : <89 Verts>
+Skin Dimensions         : <128 x 128>
+
+Editor used             : 3dsmaxR2/bonespro, Q2modler, NST, Paintshop Pro
+Known Bugs              : Death anims are outside of bounding box, so model will fall into walls occasionally.
+Build/Animation time    : approximately 60 hours
+
+* How to use this model *
+Um, load up q2 and run around abit and shoot some stuff.
+
+<INSTALLATION INFO>
+Unzip to the drive that has Quake 2 installed.  Do not install into the Quake 2 folder.  The files in this zip are fully recursed and will extract to the proper location on your drive.
+
+Terminator(R) and Wh40k(R) are registered Trademarks of Games Workshop, Inc.
+QUAKE(R) and QUAKE II(R) are registered trademarks of id Software, Inc.
+This model and its skins are not to be used in any TC or other program or graphical way without the author's consent, who would then have to consult Games Workshop which would suck abit.
+ 

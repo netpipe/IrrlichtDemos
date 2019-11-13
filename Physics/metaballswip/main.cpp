@@ -28,7 +28,7 @@ public:
 		//std::cin >> SampleWidth;
 
 		// Create the Irrlicht device.
-		device = createDevice(EDT_OPENGL,dimension2du(800,600),32);
+		device = createDevice(EDT_OPENGL,dimension2d<s32>(800,600),32);
 
 		// Yes, this very class is the event reciever.
 		device->setEventReceiver(this);
@@ -84,7 +84,7 @@ public:
 
 		// Here I make a RTT for the refraction, you can use a higher res one if you want,
 		// I chose 512^2 for compatibility. I also load the normalmap.
-		ITexture* RTTTex = driver->addRenderTargetTexture(dimension2du(512,512));
+		ITexture* RTTTex = driver->createRenderTargetTexture(dimension2d<s32>(512,512));
 
 		meta->getMaterial(0).setTexture(0, RTTTex);
 		meta->getMaterial(0).BackfaceCulling = false;

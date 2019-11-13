@@ -1,0 +1,24 @@
+irrBullet 0.1.1 Release:
+	Added: IBulletWorld function to get number of Active or Sleeping objects.
+	Fixed: getName() function in ICollisionShape
+	Fixed: ISphereShape scale 
+	Added: Function to IBulletWorld to draw debug properties to the GUI environment
+	Improved: Cleaned up source files and removed some unnecessary things
+	Added: IGImpactMeshShape for GImpact rigid body triangle meshes
+	Fixed: Now classes derived from ICollisionShape actually update their inertia
+	Improved: Improved coding in the header files
+	Added: All rigid bodies now use IMotionState instead of btDefaultMotionState
+	Added: IBvhTriangleMeshShape is now supported
+	Changed: ICollisionShape::setLocalScaling() now scales the scene node it controls
+	Added: autoCalculateCcdValues() to IRigidBody to automatically set Continuous 
+		Collision Detection values to avoid tunneling of fast moving objects.
+	Added: setCcdValues() to IRigidBody to manually set Continous Collision Detection 
+		values to avoid tunneling of fast moving objects.
+	Removed: updateRigidBody() from IRigidBody
+	Added: New class ICollisionObject, which all other objects inherit from
+	Changed: EPhysicsBodyState in common.h renamed to EActivationState and moved to collisionobject.h
+	Changed: EAS_ALL removed. debugDrawProperties() directly affected.\
+	Improved: ICollisionObject now has all needed original btCollisionObject functions.
+	Improved: IRigidBody now has all needed original btRigidBody functions.
+	Improved: Collision masks for IRigidBody are now finished and ready to be used.
+	Changed: setCollisionFlags() now takes ECollisionFlag as a parameter instead of u32.

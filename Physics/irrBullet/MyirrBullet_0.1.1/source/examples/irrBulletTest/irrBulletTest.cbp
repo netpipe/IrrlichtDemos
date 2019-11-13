@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="irrBulletTest" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/irrBulletTest" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/Library/irrBullet/include" />
+				</Compiler>
+				<Linker>
+					<Add library="C:/Program Files (x86)/CodeBlocks/Library/irrBullet/libs/Release/libirrBullet.a" />
+					<Add library="C:/Program Files (x86)/CodeBlocks/Library/irrlicht-1.6/lib/Win32-gcc/libIrrlicht.a" />
+					<Add library="C:/Program Files (x86)/CodeBlocks/Library/irrBullet/libs/libbulletdynamics.a" />
+					<Add library="C:/Program Files (x86)/CodeBlocks/Library/irrBullet/libs/libGIMPACTUtils.a" />
+					<Add library="C:/Program Files (x86)/CodeBlocks/Library/irrBullet/libs/libbulletmath.a" />
+					<Add library="C:/Program Files (x86)/CodeBlocks/Library/irrBullet/libs/libbulletcollision.a" />
+				</Linker>
+			</Target>
+			<Target title="Linux">
+				<Option output="irrBulletTest" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.75/src" />
+				</Compiler>
+				<Linker>
+					<Add library="Xxf86vm" />
+					<Add library="BulletSoftBody" />
+					<Add library="BulletDynamics" />
+					<Add library="BulletCollision" />
+					<Add library="LinearMath" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.75/src/LinearMath" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.75/src/BulletCollision" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.75/src/BulletDynamics" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.75/src/BulletSoftBody" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="../../../source" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="irrBullet" />
+			<Add directory="../../../source" />
+		</Linker>
+		<Unit filename="irrBulletTest.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

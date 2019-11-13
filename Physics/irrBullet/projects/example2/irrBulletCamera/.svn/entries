@@ -1,0 +1,56 @@
+10
+
+dir
+0
+https://agnostic.svn.sourceforge.net/svnroot/agnostic/Stuff/Demos/Physics/IrrRagdoll
+https://agnostic.svn.sourceforge.net/svnroot/agnostic
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+752de3f3-8709-49f4-9f13-05fc4e69731b
+
+main.cpp
+file
+
+
+
+add
+
+Ragdoll.cpp
+file
+
+
+
+add
+
+Ragdoll.h
+file
+
+
+
+add
+
+example.cbp
+file
+
+
+
+add
+
