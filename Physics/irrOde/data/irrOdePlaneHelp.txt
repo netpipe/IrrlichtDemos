@@ -1,0 +1,43 @@
+
+
+			IrrOdePlane -- Help
+
+Welcome to the airplane scene of IrrODECar, a little demo application using Irrlicht, ODE and the IrrODE wrapper. You can control the airplane with the following keys:
+ 
+ F1: toggle help screen
+ Cursor Left/Right: Roll
+ Cursor Up/Down: Pitch
+ A/D: Yaw
+ W: increase engine power
+ S: decrease engine power
+ SPACE: drop bomb
+ C: toggle follow bomb camera
+ R: rear view
+ B: ground brake
+ 
+Some notes
+
+I know, I know ... this is fun but not really realistic ... but realism was not the main goal when I decided to integrate an airplane.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

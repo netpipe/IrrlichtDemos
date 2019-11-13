@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="..\include\IrrOdePlayground\myEventListeners.h" open="0" top="0" tabpos="1">
+		<Cursor position="105" topLine="0" />
+	</File>
+	<File name="..\include\IrrOdePlayground\myEventReceiver.h" open="0" top="0" tabpos="4">
+		<Cursor position="225" topLine="0" />
+	</File>
+	<File name="..\source\IrrOdePlayground\main.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="17582" topLine="402" />
+	</File>
+	<File name="..\source\IrrOdePlayground\myEventListeners.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="5245" topLine="118" />
+	</File>
+	<File name="..\source\IrrOdePlayground\myEventReceiver.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="19" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

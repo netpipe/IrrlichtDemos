@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="irrOdePlayground" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="..\bin\gcc-win32\irrOdePlayground" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="..\bin\gcc-win32" />
+				<Option object_output="..\..\_obj_dump\irrOde\IrrOdePlayground\debug" />
+				<Option external_deps="..\bin\gcc-win32\libIrrOde.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_TRACE_INIT_PHYSICS" />
+					<Add directory="..\..\libs\ode-0.11-gcc\include" />
+				</Compiler>
+				<Linker>
+					<Add library="..\bin\gcc-win32\libIrrOde.a" />
+					<Add library="libode_singled" />
+					<Add library="Irrlicht" />
+					<Add directory="..\..\libs\ode-0.11-gcc\lib\DebugSingleDLL" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="..\bin\gcc-win32\irrOdePlayground" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="..\bin\gcc-win32" />
+				<Option object_output="..\..\_obj_dump\irrOde\IrrOdePlayground\release" />
+				<Option external_deps="..\bin\gcc-win32\libIrrOde.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-D_USE_HEIGHTFIELD_FOR_TERRAIN" />
+					<Add directory="..\..\libs\ode-0.11-gcc\include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="..\bin\gcc-win32\libIrrOde.a" />
+					<Add library="libode_single" />
+					<Add library="Irrlicht" />
+					<Add directory="..\..\libs\ode-0.11-gcc\lib\ReleaseSingleDLL" />
+				</Linker>
+			</Target>
+			<Target title="Linux">
+				<Option output="..\bin\Linux\irrOdePlayground" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="..\bin\Linux" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Option projectCompilerOptionsRelation="1" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Compiler>
+					<Add directory="\home\Dev\libs\physics\ode-0.11\include" />
+					<Add directory="\home\Dev\libs\Irrlicht\include" />
+					<Add directory="..\include\IrrOde" />
+					<Add directory="..\include\IrrOdePlayground" />
+				</Compiler>
+				<Linker>
+					<Add library="GL" />
+					<Add library="Irrlicht" />
+					<Add library="Xxf86vm" />
+					<Add library="ode" />
+					<Add directory="\home\Dev\libs\physics\ode-0.11\ode\src\.libs" />
+					<Add directory="\home\Dev\libs\Irrlicht\lib\gcc" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="..\..\libs\irrlicht-1.7.1\include" />
+			<Add directory="..\include\IrrOde" />
+			<Add directory="..\include\IrrOdePlayground" />
+		</Compiler>
+		<Linker>
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="gdi32" />
+			<Add directory="..\..\libs\irrlicht-1.7.1\lib\Win32-gcc" />
+		</Linker>
+		<Unit filename="..\include\IrrOdePlayground\myEventListeners.h" />
+		<Unit filename="..\include\IrrOdePlayground\myEventReceiver.h" />
+		<Unit filename="..\source\IrrOdePlayground\main.cpp" />
+		<Unit filename="..\source\IrrOdePlayground\myEventListeners.cpp" />
+		<Unit filename="..\source\IrrOdePlayground\myEventReceiver.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

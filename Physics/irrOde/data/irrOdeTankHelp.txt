@@ -1,0 +1,40 @@
+
+
+			IrrOdeCar -- Help
+
+Welcome to the tank scene of IrrODECar, a little demo application using Irrlicht, ODE and the IrrODE wrapper. You can control the tank, move the turrent and fire at the targets standing around.
+
+ F1: toggle help screen
+ Cursor Keys: control the tank
+ a/d: rotate the tank's turret
+ w/s: raise and lower the cannon
+ Space: fire the cannon
+ t: toggle the camera's "follow turret" function
+ b: toggle the camera's "follow bullet" function
+ f: toggle "fast object collision detection"
+ Enter: flip tank
+ tab: return to vehicle selection menu.
+ 
+Some notes:
+
+As you might realize the bullets are pretty slow. This was necessary because otherwise they might just fly straight through the targets as ODE does not calculate the movement between two steps, so a fast flying bullet might be on one side of a target in one and on the other side in the next step.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

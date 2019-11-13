@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="..\include\IrrOdeMarble\CAbout.h" open="0" top="0" tabpos="5">
+		<Cursor position="1693" topLine="20" />
+	</File>
+	<File name="..\include\IrrOdeMarble\CHiScore.h" open="0" top="0" tabpos="3">
+		<Cursor position="1884" topLine="38" />
+	</File>
+	<File name="..\include\IrrOdeMarble\CMenu.h" open="0" top="0" tabpos="4">
+		<Cursor position="1377" topLine="0" />
+	</File>
+	<File name="..\include\IrrOdeMarble\CPlay.h" open="0" top="0" tabpos="1">
+		<Cursor position="158" topLine="0" />
+	</File>
+	<File name="..\include\IrrOdeMarble\CSettings.h" open="0" top="0" tabpos="2">
+		<Cursor position="3181" topLine="47" />
+	</File>
+	<File name="..\include\IrrOdeMarble\IState.h" open="0" top="0" tabpos="3">
+		<Cursor position="1553" topLine="17" />
+	</File>
+	<File name="..\source\irrOdeMarble\CAbout.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="552" topLine="0" />
+	</File>
+	<File name="..\source\irrOdeMarble\CHiScore.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="1187" topLine="21" />
+	</File>
+	<File name="..\source\irrOdeMarble\CMenu.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="127" topLine="0" />
+	</File>
+	<File name="..\source\irrOdeMarble\CPlay.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="9772" topLine="243" />
+	</File>
+	<File name="..\source\irrOdeMarble\CSettings.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="8909" topLine="194" />
+	</File>
+	<File name="..\source\irrOdeMarble\irrOdeMarble.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="1819" topLine="60" />
+	</File>
+</CodeBlocks_layout_file>

@@ -3,7 +3,7 @@
 
 CLevelData::CLevelData()
 {
-  m_pObjects=NULL;
+  int m_pObjects=0;
   m_iObjectCnt=0;
 }
 

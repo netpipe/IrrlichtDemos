@@ -1,0 +1,139 @@
+<html><html>
+  <head>
+    <title>IrrOde Tutorial 03 - IrrOdEdit</title>
+	<style type="text/css">
+
+#mainFrame
+{
+  border: 1px solid #4466FF;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 640px;
+  overflow: auto;
+  padding: 5px;
+  margin: 0px;
+  font-family: Arial;
+  font-size: 10pt;
+  background-color: #CCDDFF;
+  text-align: justify;
+}
+
+img {
+ margin: 5px;
+}
+
+pre {
+  padding: 5px;
+  margin: 5px;
+  background-color: #DDEEFF;
+  border: 1px solid #4466FF;
+  font-size: 10pt;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="mainFrame">
+	  This is the third <b>IrrODE</b> tutorial. This time I will show you how to install and use <b>IrrOdEdit</b>, the plugin for IrrEdit, to
+	  create a demo that is mostly the same as in the first tutorial with much less effort. Currently IrrOdEdit support IrrEdit 1.5.<br /><br />
+	  <b>Step 1: install IrrOdEdit</b><br />
+	  Copy the file <i>IrrOdEdit.dll</i> to the &quot;&lt;IrrEdit Directory&gt;/plugins&quot; and the content of the
+	  &quot;&lt;IrrODE Directory&gt;/data/IrrOdEdit&quot; to the &quot;&lt;IrrEdit Directory&gt;/resources&quot;. After starting
+	  <b>IrrEdit</b> you should be able to add all <b>IrrODE</b> scene nodes in the editor.<br /><br />
+	  <b>Step 2: creating an IrrODE scene in IrrEdit</b><br />
+	  We start with an empty scene that just contains a skybox and a camera<br />
+	  <img src="pix/start.jpg" alt="empty scene in IrrEdit" /><br />
+	  Next we add a <i>CIrrOdeWorld</i> scene node and adjust it's parameters. Set the position to (0,0,0) and the gravity to (0,-10,0).
+	  The cube that shows the world will not be visible in the application, it's just a dummy that is displayed so there is something
+	  to display in the editor. This is the same for all <b>IrrODE</b> scene nodes.<br />
+	  <img src="pix/world.jpg" alt="adding a CIrrOdeWorld object" /><br />
+	  Next we add the box that our sphere will drop on. First we need to add an AnimatedMeshSceneNode and set it's texture, next we
+	  add a <i>CIrrOdeGeomBox</i> scene node and adjust the parameters of all these nodes. Set the position of both the AnimatedMeshSceneNode
+	  and the <i>CIrrOdeGeomBox</i> scene node to (0,0,0), then check the &quot;mode_bounce&quot; flag of the <i>CIrrOdeGeomBox</i> and
+	  set it's &quot;bounce&quot; attribute to 1.<br />
+	  <img src="pix/box.jpg" alt="adding a box" /><br />
+	  In order to get some dynamic stuff into our scene we will add a sphere that will bounce off our static box. I think I heard that before
+	  ... somewhere. First we add a <i>CIrrOdeBody</i> scene node as child of the <i>CIrrOdeWorld</i> node. Set it's position to (0,15,0).
+	  Next we need another AnimatedMeshSceneNode as child of our body. The position of this new node needs to be (0,0,0). We're almost done now,
+	  all that's left to do is to add a <i>CIrrOdeGeomSphere</i> scene node as child of the child of our body. Set it's position to (0,0,0) as
+	  well and don't forget to make the surface bouncy by checking the &quot;mode_bounce&quot; flag and setting the &quot;bounce&quot;
+	  attribute to 1.<br />
+	  <img src="pix/sphere.jpg" alt="add a dynamic sphere" /><br />
+	  Now save the scene so that you can load it later on.<br /><br />
+	  <b>Step 3: loading the scene from an IrrODE program</b><br />
+	  Before we can do this you have to go throught the first 3 steps of the first tutorial in order to get an empty <b>IrrODE</b> application.
+	  After that instead of adding the the <b>IrrODE</b> scene nodes by hand we just load the file we have created before.
+	  <pre>
+  smgr->loadScene("data/IrrOdEdit_example.xml");</pre>
+      Now the code of your main file should look something like this:<br />
+	  <pre>
+#include &lt;irrlicht.h&gt;
+#include &lt;IrrODE.h&gt;
+
+using namespace irr;
+
+using namespace core;
+using namespace scene;
+using namespace video;
+using namespace io;
+using namespace gui;
+using namespace ode;  //This is the namespace of all IrrODE stuff
+
+int main(int argc, char** argv) {
+  IrrlichtDevice *device=createDevice(EDT_DIRECT3D9,
+                                      dimension2d<s32>(640,480),
+                                      16,false,false,false,0);
+  device->setWindowCaption(L"Hello World! - Irrlicht-ODE Engine Demo");
+
+  IVideoDriver *driver = device->getVideoDriver();
+  ISceneManager *smgr = device->getSceneManager();
+  IGUIEnvironment *guienv = device->getGUIEnvironment();
+  ICursorControl *pCursor=device->getCursorControl();
+  pCursor->setVisible(false);
+
+  CIrrOdeSceneNodeFactory cFactory(smgr);
+  smgr->registerSceneNodeFactory(&cFactory);
+
+  smgr->loadScene("data/IrrOdEdit_example.xml");
+
+  //init the ODE
+  CIrrOdeManager::getSharedInstance()->initODE();
+  CIrrOdeManager::getSharedInstance()->initPhysics();
+
+  //set IrrODE's timer
+  ITimer *pTimer=device->getTimer();
+  CIrrOdeManager::getSharedInstance()->setTimer(pTimer);
+
+  ICameraSceneNode *cam=reinterpret_cast&lt;ICameraSceneNode *&gt;
+                        (smgr->getSceneNodeFromName("theCamera"));
+  cam->setTarget(vector3df(0,0,0));
+
+  while (pTimer->isStopped()) pTimer->start();
+
+  //let's run the loop
+  while(device->run()) {
+    //step the simulation
+    CIrrOdeManager::getSharedInstance()->step();
+
+    //now for the normal Irrlicht stuff ...
+    //begin, draw and end scene
+    driver->beginScene(true, true, SColor(0,200,200,200));
+
+    smgr->drawAll();
+    guienv->drawAll();
+
+    driver->endScene();
+  }
+
+  //drop the world so it is destroyed
+  device->drop();
+
+  return 0;
+}</pre><br />
+      After you got everything compiled and started you have almost the same result as in tutorial01 (ok, this one looks better because of the
+	  skybox), but this time by using IrrEdit and with much less programming work.<br />
+	  <img src="pix/IrrOdEdit.jpg" alt="the result" />
+	</div>
+  </body>
+</html>

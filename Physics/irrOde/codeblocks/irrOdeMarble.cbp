@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="irrOdeMarble" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../bin/gcc-win32/irrOdeMarble" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../bin/gcc-win32" />
+				<Option object_output="../../_obj_dump/irrOde/irrOdeMarble/debug" />
+				<Option external_deps="../bin/gcc-win32/libIrrOde.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="../bin/gcc-win32/libIrrOde.a" />
+					<Add library="libode_singled.a" />
+					<Add library="Irrlicht" />
+					<Add directory="../../libs/ode-0.11-gcc/lib/DebugSingleDLL" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="../bin/gcc-win32/irrOdeMarble" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../bin/gcc-win32" />
+				<Option object_output="../../_obj_dump/irrOde/irrOdeMarble/release" />
+				<Option external_deps="../bin/gcc-win32/libIrrOde.a;" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="/home/Dev/libs/physics/ODE/ode-0.13/include" />
+					<Add directory="../include/IrrOde" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="IrrOde" />
+					<Add library="Irrlicht" />
+					<Add library="X11" />
+					<Add library="glut" />
+					<Add library="GL" />
+					<Add library="Xxf86vm" />
+					<Add library="ode" />
+					<Add library="pthread" />
+					<Add directory="/home/Dev/libs/physics/ODE/ode-0.13/ode/src/.libs" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+					<Add directory="/home/Dev/irrdemos-code/Demos/WIPs/physics/ODEStuff/irrOde/bin/Linux" />
+					<Add directory="../bin/Linux" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="D:/myStuff/projects/libs/irrlicht-1.7.1/include" />
+			<Add directory="../include/IrrOdeMarble" />
+			<Add directory="../../libs/ode-0.11-gcc/include" />
+			<Add directory="../include/IrrOde" />
+		</Compiler>
+		<Linker>
+			<Add directory="D:/myStuff/projects/libs/irrlicht-1.7.1/lib/Win32-gcc" />
+		</Linker>
+		<Unit filename="../include/IrrOdeMarble/CAbout.h" />
+		<Unit filename="../include/IrrOdeMarble/CHiScore.h" />
+		<Unit filename="../include/IrrOdeMarble/CMenu.h" />
+		<Unit filename="../include/IrrOdeMarble/CPlay.h" />
+		<Unit filename="../include/IrrOdeMarble/CSettings.h" />
+		<Unit filename="../include/IrrOdeMarble/IState.h" />
+		<Unit filename="../source/irrOdeMarble/CAbout.cpp" />
+		<Unit filename="../source/irrOdeMarble/CHiScore.cpp" />
+		<Unit filename="../source/irrOdeMarble/CMenu.cpp" />
+		<Unit filename="../source/irrOdeMarble/CPlay.cpp" />
+		<Unit filename="../source/irrOdeMarble/CSettings.cpp" />
+		<Unit filename="../source/irrOdeMarble/irrOdeMarble.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

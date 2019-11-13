@@ -175,7 +175,7 @@ MyEventReceiver rec;
 void initGfx()
 {
 
-    device = createDevice(EDT_OPENGL, dimension2d<s32>(1024, 768), 32, false, false, false, &rec);
+    device = createDevice(EDT_OPENGL, dimension2du(1024, 768), 32, false, false, false, &rec);
     device->getCursorControl()->setVisible(false);
 
     driver = device->getVideoDriver();

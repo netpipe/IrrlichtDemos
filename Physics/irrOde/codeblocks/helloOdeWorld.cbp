@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="helloOdeWorld" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="..\bin\gcc-win32\helloOdeWorld" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="..\bin\gcc-win32" />
+				<Option object_output="..\..\_obj_dump\irrOde\helloOdeWorld\debug" />
+				<Option external_deps="..\bin\gcc-win32\libIrrOde.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="..\bin\gcc-win32\libIrrOde.a" />
+					<Add library="libode_singled" />
+					<Add library="Irrlicht" />
+					<Add directory="..\..\libs\ode-0.11-gcc\lib\DebugSingleDLL" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="..\bin\gcc-win32\helloOdeWorld" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="..\bin\gcc-win32" />
+				<Option object_output="..\..\_obj_dump\irrOde\helloOdeWorld\release" />
+				<Option external_deps="..\bin\gcc-win32\libIrrOde.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="..\bin\gcc-win32\libIrrOde.a" />
+					<Add library="libode_single" />
+					<Add library="Irrlicht" />
+					<Add directory="..\..\libs\ode-0.11-gcc\lib\ReleaseSingleDLL" />
+				</Linker>
+			</Target>
+			<Target title="Linux">
+				<Option output="..\bin\Linux\helloOdeWorld" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="..\bin\Linux" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectCompilerOptionsRelation="1" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Compiler>
+					<Add directory="\home\Dev\libs\physics\ode-0.11\include" />
+					<Add directory="\home\Dev\libs\Irrlicht\include" />
+					<Add directory="..\include\IrrOde" />
+					<Add directory="..\include\IrrOdePlayground" />
+				</Compiler>
+				<Linker>
+					<Add library="GL" />
+					<Add library="Irrlicht" />
+					<Add library="Xxf86vm" />
+					<Add library="ode" />
+					<Add directory="\home\Dev\libs\physics\ode-0.11\ode\src\.libs" />
+					<Add directory="\home\Dev\libs\Irrlicht\lib\gcc" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="D:\myStuff\projects\libs\irrlicht-1.7.1\include" />
+			<Add directory="..\include\IrrOde" />
+		</Compiler>
+		<Linker>
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="gdi32" />
+			<Add directory="D:\myStuff\projects\libs\irrlicht-1.7.1\lib\Win32-gcc" />
+		</Linker>
+		<Unit filename="..\source\helloOdeWorld\main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -53,7 +53,13 @@ int main()
 
     irr::scene::ISceneNode* node = smgr->addCubeSceneNode(10);
 
-    smgr->addCameraSceneNodeFPS();
+ //   smgr->addCameraSceneNodeFPS();
+    smgr->addCameraSceneNode();
+
+ //      irr::core::matrix4 MyMatrix;
+ //  MyMatrix.buildProjectionMatrixOrthoLH(16.0f,12.0f,1.5f,-32.5f);
+ //  camera = smgr->addCameraSceneNode(Center,irr::core::vector3df(-14.0f,14.0f,-14.0f),irr::core::vector3df(0,0,0));
+ //  camera->setProjectionMatrix(MyMatrix);
 
     CIrrRocketGUI gui(device);
 

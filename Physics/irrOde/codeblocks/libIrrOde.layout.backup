@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="..\include\IrrOde\CIrrOdeBody.h" open="0" top="0" tabpos="1">
+		<Cursor position="6884" topLine="95" />
+	</File>
+	<File name="..\include\IrrOde\CIrrOdeContactParameters.h" open="0" top="0" tabpos="2">
+		<Cursor position="106" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\CIrrOdeDampable.h" open="0" top="0" tabpos="0">
+		<Cursor position="95" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\CIrrOdeDevice.h" open="0" top="0" tabpos="6">
+		<Cursor position="2389" topLine="59" />
+	</File>
+	<File name="..\include\IrrOde\CIrrOdeManager.h" open="0" top="0" tabpos="2">
+		<Cursor position="2328" topLine="46" />
+	</File>
+	<File name="..\include\IrrOde\CIrrOdeNullDevice.h" open="0" top="0" tabpos="9">
+		<Cursor position="11773" topLine="181" />
+	</File>
+	<File name="..\include\IrrOde\CIrrOdeSceneNode.h" open="0" top="0" tabpos="4">
+		<Cursor position="4113" topLine="73" />
+	</File>
+	<File name="..\include\IrrOde\CIrrOdeSceneNodeFactory.h" open="0" top="0" tabpos="4">
+		<Cursor position="434" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\CIrrOdeSpace.h" open="0" top="0" tabpos="0">
+		<Cursor position="1300" topLine="22" />
+	</File>
+	<File name="..\include\IrrOde\CIrrOdeSurfaceParameters.h" open="0" top="0" tabpos="1">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\CIrrOdeWorld.h" open="0" top="0" tabpos="6">
+		<Cursor position="581" topLine="4" />
+	</File>
+	<File name="..\include\IrrOde\CSerializer.h" open="0" top="0" tabpos="0">
+		<Cursor position="1533" topLine="34" />
+	</File>
+	<File name="..\include\IrrOde\IIrrOdeContactParameters.h" open="0" top="0" tabpos="0">
+		<Cursor position="414" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\IIrrOdeDevice.h" open="0" top="0" tabpos="8">
+		<Cursor position="13393" topLine="247" />
+	</File>
+	<File name="..\include\IrrOde\IrrOde.h" open="0" top="0" tabpos="7">
+		<Cursor position="695" topLine="6" />
+	</File>
+	<File name="..\include\IrrOde\event\CIrrOdeEventActivationChanged.h" open="0" top="0" tabpos="2">
+		<Cursor position="410" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\event\CIrrOdeEventBeforeStep.h" open="0" top="0" tabpos="4">
+		<Cursor position="634" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\event\CIrrOdeEventBodyCreated.h" open="0" top="0" tabpos="6">
+		<Cursor position="811" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\event\CIrrOdeEventBodyMoved.h" open="0" top="0" tabpos="4">
+		<Cursor position="427" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\event\CIrrOdeEventBodyRemoved.h" open="0" top="0" tabpos="10">
+		<Cursor position="927" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\event\CIrrOdeEventClose.h" open="0" top="0" tabpos="12">
+		<Cursor position="556" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\event\CIrrOdeEventInit.h" open="0" top="0" tabpos="16">
+		<Cursor position="539" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\event\CIrrOdeEventRayHit.h" open="0" top="0" tabpos="18">
+		<Cursor position="332" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\event\CIrrOdeEventStep.h" open="0" top="0" tabpos="8">
+		<Cursor position="243" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\event\IIrrOdeEvent.h" open="0" top="0" tabpos="1">
+		<Cursor position="65" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\event\IIrrOdeEventListener.h" open="0" top="0" tabpos="1">
+		<Cursor position="748" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\geom\CIrrOdeGeom.h" open="0" top="0" tabpos="2">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\geom\CIrrOdeGeomBox.h" open="0" top="0" tabpos="0">
+		<Cursor position="123" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\geom\CIrrOdeGeomCapsule.h" open="0" top="0" tabpos="0">
+		<Cursor position="131" topLine="1" />
+	</File>
+	<File name="..\include\IrrOde\geom\CIrrOdeGeomCylinder.h" open="0" top="0" tabpos="0">
+		<Cursor position="133" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\geom\CIrrOdeGeomHeightfield.h" open="0" top="0" tabpos="13">
+		<Cursor position="139" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\geom\CIrrOdeGeomPlane.h" open="0" top="0" tabpos="0">
+		<Cursor position="133" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\geom\CIrrOdeGeomRay.h" open="0" top="0" tabpos="5">
+		<Cursor position="1283" topLine="21" />
+	</File>
+	<File name="..\include\IrrOde\geom\CIrrOdeGeomSphere.h" open="0" top="0" tabpos="0">
+		<Cursor position="844" topLine="5" />
+	</File>
+	<File name="..\include\IrrOde\geom\CIrrOdeGeomTrimesh.h" open="0" top="0" tabpos="1">
+		<Cursor position="308" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\joints\CIrrOdeJoint.h" open="0" top="0" tabpos="0">
+		<Cursor position="756" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\joints\CIrrOdeJointBallSocket.h" open="0" top="0" tabpos="0">
+		<Cursor position="150" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\joints\CIrrOdeJointFixed.h" open="0" top="0" tabpos="0">
+		<Cursor position="138" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\joints\CIrrOdeJointHinge.h" open="0" top="0" tabpos="0">
+		<Cursor position="138" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\joints\CIrrOdeJointHinge2.h" open="0" top="0" tabpos="0">
+		<Cursor position="140" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\joints\CIrrOdeJointPiston.h" open="0" top="0" tabpos="0">
+		<Cursor position="140" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\joints\CIrrOdeJointSlider.h" open="0" top="0" tabpos="0">
+		<Cursor position="140" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\joints\CIrrOdeJointUniversal.h" open="0" top="0" tabpos="0">
+		<Cursor position="171" topLine="0" />
+	</File>
+	<File name="..\include\IrrOde\motors\CIrrOdeMotor.h" open="0" top="0" tabpos="3">
+		<Cursor position="707" topLine="6" />
+	</File>
+	<File name="..\include\IrrOde\motors\CIrrOdeServo.h" open="0" top="0" tabpos="4">
+		<Cursor position="474" topLine="0" />
+	</File>
+	<File name="..\source\IrrOde\CIrrOdeBody.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="13388" topLine="430" />
+	</File>
+	<File name="..\source\IrrOde\CIrrOdeContactParameters.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1203" topLine="0" />
+	</File>
+	<File name="..\source\IrrOde\CIrrOdeDampable.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="3094" topLine="39" />
+	</File>
+	<File name="..\source\IrrOde\CIrrOdeDevice.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="15490" topLine="402" />
+	</File>
+	<File name="..\source\IrrOde\CIrrOdeManager.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="324" topLine="7" />
+	</File>
+	<File name="..\source\IrrOde\CIrrOdeSceneNode.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="5545" topLine="158" />
+	</File>
+	<File name="..\source\IrrOde\CIrrOdeSceneNodeFactory.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="781" topLine="8" />
+	</File>
+	<File name="..\source\IrrOde\CIrrOdeSpace.cpp" open="0" top="0" tabpos="9">
+		<Cursor position="92" topLine="0" />
+	</File>
+	<File name="..\source\IrrOde\CIrrOdeSurfaceParameters.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="..\source\IrrOde\CIrrOdeWorld.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="13131" topLine="376" />
+	</File>
+	<File name="..\source\IrrOde\event\CIrrOdeEventActivationChanged.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="..\source\IrrOde\event\CIrrOdeEventBeforeStep.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="..\source\IrrOde\event\CIrrOdeEventBodyCreated.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="..\source\IrrOde\event\CIrrOdeEventBodyMoved.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="794" topLine="3" />
+	</File>
+	<File name="..\source\IrrOde\event\CIrrOdeEventBodyRemoved.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="105" topLine="0" />
+	</File>
+	<File name="..\source\IrrOde\event\CIrrOdeEventClose.cpp" open="0" top="0" tabpos="13">
+		<Cursor position="570" topLine="0" />
+	</File>
+	<File name="..\source\IrrOde\event\CIrrOdeEventInit.cpp" open="0" top="0" tabpos="17">
+		<Cursor position="647" topLine="0" />
+	</File>
+	<File name="..\source\IrrOde\event\CIrrOdeEventRayHit.cpp" open="0" top="0" tabpos="19">
+		<Cursor position="2449" topLine="49" />
+	</File>
+	<File name="..\source\IrrOde\event\CIrrOdeEventStep.cpp" open="0" top="0" tabpos="21">
+		<Cursor position="439" topLine="2" />
+	</File>
+	<File name="..\source\IrrOde\geom\CIrrOdeGeom.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="2549" topLine="80" />
+	</File>
+	<File name="..\source\IrrOde\geom\CIrrOdeGeomBox.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="2563" topLine="44" />
+	</File>
+	<File name="..\source\IrrOde\geom\CIrrOdeGeomCapsule.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="17" topLine="0" />
+	</File>
+	<File name="..\source\IrrOde\geom\CIrrOdeGeomCylinder.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="186" topLine="0" />
+	</File>
+	<File name="..\source\IrrOde\geom\CIrrOdeGeomHeightfield.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="189" topLine="0" />
+	</File>
+	<File name="..\source\IrrOde\geom\CIrrOdeGeomPlane.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="183" topLine="0" />
+	</File>
+	<File name="..\source\IrrOde\geom\CIrrOdeGeomRay.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="649" topLine="0" />
+	</File>
+	<File name="..\source\IrrOde\geom\CIrrOdeGeomSphere.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="184" topLine="0" />
+	</File>
+	<File name="..\source\IrrOde\geom\CIrrOdeGeomTrimesh.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="630" topLine="36" />
+	</File>
+	<File name="..\source\IrrOde\joints\CIrrOdeJoint.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="5535" topLine="141" />
+	</File>
+	<File name="..\source\IrrOde\joints\CIrrOdeJointBallSocket.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="105" topLine="0" />
+	</File>
+	<File name="..\source\IrrOde\joints\CIrrOdeJointFixed.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="100" topLine="0" />
+	</File>
+	<File name="..\source\IrrOde\joints\CIrrOdeJointHinge.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="100" topLine="0" />
+	</File>
+	<File name="..\source\IrrOde\joints\CIrrOdeJointHinge2.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="101" topLine="0" />
+	</File>
+	<File name="..\source\IrrOde\joints\CIrrOdeJointPiston.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="18" topLine="0" />
+	</File>
+	<File name="..\source\IrrOde\joints\CIrrOdeJointSlider.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="101" topLine="0" />
+	</File>
+	<File name="..\source\IrrOde\joints\CIrrOdeJointUniversal.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="104" topLine="0" />
+	</File>
+	<File name="..\source\IrrOde\motors\CIrrOdeMotor.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="2287" topLine="63" />
+	</File>
+	<File name="..\source\IrrOde\motors\CIrrOdeServo.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="1412" topLine="15" />
+	</File>
+</CodeBlocks_layout_file>

@@ -36,16 +36,17 @@
 				<Option projectLinkerOptionsRelation="1" />
 				<Option projectIncludeDirsRelation="1" />
 				<Compiler>
-					<Add directory="/home/Dev/libs/physics/ode-0.11.1/include" />
-					<Add directory="/home/Dev/libs/Irrlicht/include" />
+					<Add directory="../../../../../Dev/libs/physics/ODE/ode-0.11/include" />
+					<Add directory="../../../../../Dev/libs/game/irrlicht/Irrlicht-SVN/include" />
 				</Compiler>
 				<Linker>
 					<Add library="GL" />
 					<Add library="Irrlicht" />
 					<Add library="Xxf86vm" />
 					<Add library="ode" />
-					<Add directory="/home/Dev/libs/physics/ode-0.11.1/ode/src/.libs" />
-					<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
+					<Add library="X11" />
+					<Add directory="../../../../../Dev/libs/physics/ODE/ode-0.11/ode/src/.libs" />
+					<Add directory="../../../../../Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux" />
 				</Linker>
 			</Target>
 		</Build>

@@ -5,8 +5,8 @@
 		<style>
 			body
 			{
-				width: 300px;
-				height: 225px;
+				width: 400px;
+				height: 325px;
 				
 				margin: auto;
 			}
@@ -23,12 +23,35 @@
 		</style>
 	</head>
 	<body template="window">
+
+<ul class="navbar">
+  <li><a href="index.html">Home page</a></li>
+  <li><a href="musings.html">Musings</a></li><br></br>
+  <li><a href="town.html">My town</a></li><br></br>
+  <li><a href="links.html">Links</a></li><br></br>
+</ul><br></br>
+
+<select name="graphics">
+	<option value="bad">Bad</option>
+	<option value="ok">OK</option>
+	<option value="good" selected>good</option>
+</select>
+
 		<div id="title-bar">
 			<span id="title">Dummy Title</span>
 		</div>
+ <input type="checkbox" name="vehicle1" value="Bike"> I have a bike</input><br></br>
+<input type="checkbox" name="vehicle2" value="Car"> I have a car</input><br></br>
+<input type="checkbox" name="vehicle3" value="Boat" checked> I have a boat</input><br></br>
+
+ <button type="button">Click Me!</button> <br></br>
+
+
+
+<img src="clouds.jpg" alt="Italian Trulli"><br></br>
 			GenerateTexture() is used by the font system to convert raw pixel data to a texture.
 			The texture_handle parameter is a reference to a Rocket::Core::TextureHandle type to be set,as in LoadTexture().
-			The raw pixel data is given in source; this is an array of unsigned, 8-bit values in RGBA order.
+			The raw pixel data is given in source; this is an array of unsigned, 8-bit values in RGBA order.<br></br>
 			It is laid out in tightly-packed rows, so is exactly (source_dimensions.x * source_dimensions.y * 4) bytes in size.
 			The source_dimensions variable is set to the dimensions of the raw texture data.
 	</body>

@@ -95,7 +95,7 @@ irr::video::IVideoDriver    *pDrv;
 
   m_iResult=0;
 
-  m_pDevice=createDevice(irr::video::EDT_SOFTWARE,irr::core::dimension2d<irr::s32>(320,200),16,false,false,false,this);
+  m_pDevice=createDevice(irr::video::EDT_SOFTWARE,irr::core::dimension2du(320,200),16,false,false,false,this);
   pGui=m_pDevice->getGUIEnvironment();
   pDrv=m_pDevice->getVideoDriver();
 
@@ -144,7 +144,7 @@ irr::video::IVideoDriver    *pDrv;
   switch (m_pVid->getSelected())
   {
     case 0: m_iDriver=irr::video::EDT_BURNINGSVIDEO; break;
-    case 1: m_iDriver=irr::video::EDT_DIRECT3D8    ; break;
+ //   case 1: m_iDriver=irr::video::EDT_DIRECT3D8    ; break;
     case 2: m_iDriver=irr::video::EDT_DIRECT3D9    ; break;
     case 3: m_iDriver=irr::video::EDT_OPENGL       ; break;
   }

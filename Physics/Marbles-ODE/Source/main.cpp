@@ -15,7 +15,7 @@ irr::IEventReceiver      *pReceiver=NULL;
 
   if (cMenu.showMenu(iLevelTime)==4)
   {
-    pDevice=irr::createDevice(cMenu.getDriver(), irr::core::dimension2d<irr::s32>(cMenu.getResX(),cMenu.getResY()), 16,cMenu.getFullscreen(), true, true,NULL);
+    pDevice=irr::createDevice(cMenu.getDriver(), irr::core::dimension2du(cMenu.getResX(),cMenu.getResY()), 16,cMenu.getFullscreen(), true, true,NULL);
     pReceiver=pDevice->getEventReceiver();
 //    pSound=irr::audio::createIrrKlangDevice();
 

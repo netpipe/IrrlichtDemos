@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="libIrrOde" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../bin/Linux/IrrOde-debug" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="../../_obj_dump/irrOde/libIrrOde/debug" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option host_application="marbles2.exe" />
+				<Option run_host_application_in_terminal="0" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="../../libs/ode-0.11-gcc/lib/DebugSingleDLL/libode_singled.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="../bin/Linux/IrrOde" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="../../_obj_dump/irrOde/libIrrOde/release" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="../../libs/ode-0.11-gcc/lib/ReleaseSingleDLL/libode_single.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="../include/IrrOde" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+			<Add directory="/home/Dev/libs/physics/ODE/ode-0.13/include" />
+		</Compiler>
+		<Linker>
+			<Add library="../../libs/irrlicht-1.7.1/lib/Win32-gcc/libIrrlicht.a" />
+			<Add directory="/home/Dev/libs/physics/ODE/ode-0.13/" />
+		</Linker>
+		<Unit filename="../include/IrrOde/CIrrOdeBody.h" />
+		<Unit filename="../include/IrrOde/CIrrOdeContactParameters.h" />
+		<Unit filename="../include/IrrOde/CIrrOdeDampable.h" />
+		<Unit filename="../include/IrrOde/CIrrOdeDevice.h" />
+		<Unit filename="../include/IrrOde/CIrrOdeManager.h" />
+		<Unit filename="../include/IrrOde/CIrrOdeNullDevice.h" />
+		<Unit filename="../include/IrrOde/CIrrOdeSceneNode.h" />
+		<Unit filename="../include/IrrOde/CIrrOdeSceneNodeFactory.h" />
+		<Unit filename="../include/IrrOde/CIrrOdeSpace.h" />
+		<Unit filename="../include/IrrOde/CIrrOdeSurfaceParameters.h" />
+		<Unit filename="../include/IrrOde/CIrrOdeWorld.h" />
+		<Unit filename="../include/IrrOde/CSerializer.h" />
+		<Unit filename="../include/IrrOde/IIrrOdeContactParameters.h" />
+		<Unit filename="../include/IrrOde/IIrrOdeDevice.h" />
+		<Unit filename="../include/IrrOde/IrrOde.h" />
+		<Unit filename="../include/IrrOde/event/CIrrOdeEventActivationChanged.h" />
+		<Unit filename="../include/IrrOde/event/CIrrOdeEventBeforeStep.h" />
+		<Unit filename="../include/IrrOde/event/CIrrOdeEventBodyCreated.h" />
+		<Unit filename="../include/IrrOde/event/CIrrOdeEventBodyMoved.h" />
+		<Unit filename="../include/IrrOde/event/CIrrOdeEventBodyRemoved.h" />
+		<Unit filename="../include/IrrOde/event/CIrrOdeEventClose.h" />
+		<Unit filename="../include/IrrOde/event/CIrrOdeEventInit.h" />
+		<Unit filename="../include/IrrOde/event/CIrrOdeEventRayHit.h" />
+		<Unit filename="../include/IrrOde/event/CIrrOdeEventStep.h" />
+		<Unit filename="../include/IrrOde/event/IIrrOdeEvent.h" />
+		<Unit filename="../include/IrrOde/event/IIrrOdeEventListener.h" />
+		<Unit filename="../include/IrrOde/geom/CIrrOdeGeom.h" />
+		<Unit filename="../include/IrrOde/geom/CIrrOdeGeomBox.h" />
+		<Unit filename="../include/IrrOde/geom/CIrrOdeGeomCapsule.h" />
+		<Unit filename="../include/IrrOde/geom/CIrrOdeGeomCylinder.h" />
+		<Unit filename="../include/IrrOde/geom/CIrrOdeGeomHeightfield.h" />
+		<Unit filename="../include/IrrOde/geom/CIrrOdeGeomPlane.h" />
+		<Unit filename="../include/IrrOde/geom/CIrrOdeGeomRay.h" />
+		<Unit filename="../include/IrrOde/geom/CIrrOdeGeomSphere.h" />
+		<Unit filename="../include/IrrOde/geom/CIrrOdeGeomTrimesh.h" />
+		<Unit filename="../include/IrrOde/joints/CIrrOdeJoint.h" />
+		<Unit filename="../include/IrrOde/joints/CIrrOdeJointBallSocket.h" />
+		<Unit filename="../include/IrrOde/joints/CIrrOdeJointFixed.h" />
+		<Unit filename="../include/IrrOde/joints/CIrrOdeJointHinge.h" />
+		<Unit filename="../include/IrrOde/joints/CIrrOdeJointHinge2.h" />
+		<Unit filename="../include/IrrOde/joints/CIrrOdeJointPiston.h" />
+		<Unit filename="../include/IrrOde/joints/CIrrOdeJointSlider.h" />
+		<Unit filename="../include/IrrOde/joints/CIrrOdeJointUniversal.h" />
+		<Unit filename="../include/IrrOde/motors/CIrrOdeMotor.h" />
+		<Unit filename="../include/IrrOde/motors/CIrrOdeServo.h" />
+		<Unit filename="../source/IrrOde/CIrrOdeBody.cpp" />
+		<Unit filename="../source/IrrOde/CIrrOdeContactParameters.cpp" />
+		<Unit filename="../source/IrrOde/CIrrOdeDampable.cpp" />
+		<Unit filename="../source/IrrOde/CIrrOdeDevice.cpp" />
+		<Unit filename="../source/IrrOde/CIrrOdeManager.cpp" />
+		<Unit filename="../source/IrrOde/CIrrOdeSceneNode.cpp" />
+		<Unit filename="../source/IrrOde/CIrrOdeSceneNodeFactory.cpp" />
+		<Unit filename="../source/IrrOde/CIrrOdeSpace.cpp" />
+		<Unit filename="../source/IrrOde/CIrrOdeSurfaceParameters.cpp" />
+		<Unit filename="../source/IrrOde/CIrrOdeWorld.cpp" />
+		<Unit filename="../source/IrrOde/event/CIrrOdeEventActivationChanged.cpp" />
+		<Unit filename="../source/IrrOde/event/CIrrOdeEventBeforeStep.cpp" />
+		<Unit filename="../source/IrrOde/event/CIrrOdeEventBodyCreated.cpp" />
+		<Unit filename="../source/IrrOde/event/CIrrOdeEventBodyMoved.cpp" />
+		<Unit filename="../source/IrrOde/event/CIrrOdeEventBodyRemoved.cpp" />
+		<Unit filename="../source/IrrOde/event/CIrrOdeEventClose.cpp" />
+		<Unit filename="../source/IrrOde/event/CIrrOdeEventInit.cpp" />
+		<Unit filename="../source/IrrOde/event/CIrrOdeEventRayHit.cpp" />
+		<Unit filename="../source/IrrOde/event/CIrrOdeEventStep.cpp" />
+		<Unit filename="../source/IrrOde/geom/CIrrOdeGeom.cpp" />
+		<Unit filename="../source/IrrOde/geom/CIrrOdeGeomBox.cpp" />
+		<Unit filename="../source/IrrOde/geom/CIrrOdeGeomCapsule.cpp" />
+		<Unit filename="../source/IrrOde/geom/CIrrOdeGeomCylinder.cpp" />
+		<Unit filename="../source/IrrOde/geom/CIrrOdeGeomHeightfield.cpp" />
+		<Unit filename="../source/IrrOde/geom/CIrrOdeGeomPlane.cpp" />
+		<Unit filename="../source/IrrOde/geom/CIrrOdeGeomRay.cpp" />
+		<Unit filename="../source/IrrOde/geom/CIrrOdeGeomSphere.cpp" />
+		<Unit filename="../source/IrrOde/geom/CIrrOdeGeomTrimesh.cpp" />
+		<Unit filename="../source/IrrOde/joints/CIrrOdeJoint.cpp" />
+		<Unit filename="../source/IrrOde/joints/CIrrOdeJointBallSocket.cpp" />
+		<Unit filename="../source/IrrOde/joints/CIrrOdeJointFixed.cpp" />
+		<Unit filename="../source/IrrOde/joints/CIrrOdeJointHinge.cpp" />
+		<Unit filename="../source/IrrOde/joints/CIrrOdeJointHinge2.cpp" />
+		<Unit filename="../source/IrrOde/joints/CIrrOdeJointPiston.cpp" />
+		<Unit filename="../source/IrrOde/joints/CIrrOdeJointSlider.cpp" />
+		<Unit filename="../source/IrrOde/joints/CIrrOdeJointUniversal.cpp" />
+		<Unit filename="../source/IrrOde/motors/CIrrOdeMotor.cpp" />
+		<Unit filename="../source/IrrOde/motors/CIrrOdeServo.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="..\include\IrrOdeSurfaceEdit\CGUIFileSelector.h" open="0" top="0" tabpos="2">
+		<Cursor position="3938" topLine="113" />
+	</File>
+	<File name="..\source\IrrOdeSurfaceEdit\CGUIFileSelector.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="5447" topLine="137" />
+	</File>
+	<File name="..\source\IrrOdeSurfaceEdit\main.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="24962" topLine="529" />
+	</File>
+	<File name="..\source\IrrOde\CIrrOdeSurfaceParameters.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="598" topLine="14" />
+	</File>
+</CodeBlocks_layout_file>

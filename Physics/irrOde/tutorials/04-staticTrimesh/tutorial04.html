@@ -1,0 +1,90 @@
+<html><html>
+  <head>
+    <title>IrrOde Tutorial 04 - static Trimeshes</title>
+	<style type="text/css">
+
+#mainFrame
+{
+  border: 1px solid #4466FF;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 640px;
+  overflow: auto;
+  padding: 5px;
+  margin: 0px;
+  font-family: Arial;
+  font-size: 10pt;
+  background-color: #CCDDFF;
+  text-align: justify;
+}
+
+img {
+ margin: 5px;
+}
+
+pre {
+  padding: 5px;
+  margin: 5px;
+  background-color: #DDEEFF;
+  border: 1px solid #4466FF;
+  font-size: 10pt;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="mainFrame">
+	  In this tutorial I'll show you how to use a nice new feature in IrrODE. It is now possible to assign more than one surface parameter
+	  set to a static trimesh. It is neither possible to use more than one set for the other collision types like cubes and spheres nor can
+	  a dynamic trimesh, i.e. a trimesh assigned to a body, have more than one.<br /><br />
+	  During development of a game using the IrrODE wrapper I came to the conclusion that it would be nice to have e.g. a complete racetrack
+	  stored in one 3d object. A racetrack normally contains different surfaces, like the road to drive on and some slippery grass aside the
+	  road. Internally a static trimesh is now divided into one ODE trimes for each material found in the 3d file. The screenshot below shows
+	  IrrEdit with an open file of a racetrack that I will discuss in this tutorial.<br />
+	  <img src="pix/racetrack.jpg" alt="a racetrack" /><br />
+	  Once you have modelled your racetrack in a 3d editor and imported the model to IrrEdit you have to assign a trimesh to the model to
+	  continue.<br />
+	  <img src="pix/trimesh.jpg" alt="a static object with a trimesh" /><br /><br />
+	  <div>
+		  <img src="pix/material1.jpg" alt="the first material" align="left" />
+		  The first material didn't change much. You can now assign a name to a material so that it can be used later on. The 
+		  <i>&quot;useDefined&quot;</i> will be explained later, the rest of the parameters didn't change. To get more information about these
+		  you should refer to the <a href="http://opende.sourceforge.net/mediawiki-1.6.10/index.php/Manual_(All)">ODE manual</a>.<br /> If you 
+		  have a named material in your scene (&quot;road&quot; in this case) you can refer to it later on. The names of the attributes of 
+		  materials other than the first have a <i>&quot;mat_&lt;number&gt;&quot;</i> added so that you know which material these surface 
+		  parameters are used for. <img src="pix/material5.jpg" alt="material 5 references another material" align="right" /> As you can see 
+		  from the little screenshot on the right the racetrack from the first screenshot contains at least 5 materials. The 5th material is 
+		  shown in the lower part of the image, and the upper part defines the material to use the parameters of a material named 
+		  <i>&quot;road&quot;</i>. To make IrrODE use already defined surface parameters it is necessary to enter the name of the material to 
+		  be used in the <i>name_mat&lt;number&gt;</i> attribute and to check the <i>&quot;useDefined_mat&lt;number&gt;&quot;</i> checkbox. 
+		  If you told the plugin to use another material the attributes of your referencing material will be hidden, they can only be changed 
+		  in the original location. Be aware that if you define more than one material with the same name as master (i.e. the 
+		  <i>&quot;useDefined_mat&lt;number&gt;&quot;</i> checkbox is not checked in more than one material of the same name) the behaviour is 
+		  undefined.<br /><br />
+	</div>
+	Notice that whenever you create a static trimesh IrrOde will always create a surface parameter set for each material, so if you do
+	only want to have on set of surface parameters for the object you will have to define the parameters in one material and then reference
+	them in all the others. Moreover surface parameters can be referenced from the complete scene, i.e. if you have e.g. more than one object
+	with a road part in it is only necessary to define the parameters once somewhere in your scene file.<br /><br />
+	There is another new feature for static objects, no matter which geom they use: damping. This means that you can specify a surface of
+	any static object to damp colliding dynamic objects.
+	<img src="pix/damping.jpg" align="left" alt="damping" /> The screenshot on the left shows the correspondig attributes that you can set
+	using the <i>IrrOdEdit</i> plugin for IrrEdit. These values are:<br />
+	<ul>
+	  <li><b>damps_mat<i>&lt;num&gt;</i>:</b> this material damps colliding dynamic objects</li>
+	  <li><b>linearDamping_mat<i>&lt;num&gt;</i>:</b> the linear damping that is applied to the object no matter how fast it is</li>
+	  <li><b>angularDamping_mat<i>&lt;num&gt;</i>:</b> the angular damping that is applied to the object no matter how fast it is</li>
+	  <li><b>maxLinearVal_mat<i>&lt;num&gt;</i>:</b> objects with a linear velocity greater than this value will get both the linear
+	    damping defined above and in addition the linear damping defined below applied</li>
+	  <li><b>maxAngularVal_mat<i>&lt;num&gt;</i>:</b> objects with an angular velocity greater than this value will get both the angular
+	    damping defined above and in addition the angular damping defined below applied</li>
+	  <li><b>maxVelLDamping_mat<i>&lt;num&gt;</i>:</b> this is the additional linear damping applied to colliding objects faster than the
+	    maximum linear velocity defined above</li>
+	  <li><b>maxVelADamping_mat<i>&lt;num&gt;</i>:</b> this is the additional angular damping applied to colliding objects faster than the
+	    maximum angular velocity defined above</li>
+	</ul>
+	Note that for the damping values &quot;0&quot; means no damping whereas &quot;1&quot; means full damping. Choose a value between these
+	two for correct behaviour.
+  </body>
+</html>

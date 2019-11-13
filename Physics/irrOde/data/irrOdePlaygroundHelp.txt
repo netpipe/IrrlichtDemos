@@ -1,0 +1,28 @@
+
+
+IrrOdePlayground - help
+
+S = add new sphere
+B = add new box
+C = add new cylinder
+T = add new trimesh
+P = (un)pause simulation
+
+F1 = this help screen
+
+1 = add bridge
+2 = add stack of boxes
+
+Use keys starting with "F2" to add joint object
+
+F4 = add new hinge2 joint
+F5 = add new fixed joint
+F6 = add new ball joint
+F7 = add new hinge joint
+F8 = add new slider joint
+F9 = add new piston joint
+
+Joint Options:
+
+<shift> = add joint to world (1 body only)
+<ctrl>  = add motor to joint 

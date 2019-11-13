@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="IrrODE">
+		<Project filename="IrrOdeCar.cbp">
+			<Depends filename="libIrrOde.cbp" />
+		</Project>
+		<Project filename="irrOde.cbp">
+			<Depends filename="libIrrOde.cbp" />
+		</Project>
+		<Project filename="IrrOdEditExample.cbp">
+			<Depends filename="libIrrOde.cbp" />
+		</Project>
+		<Project filename="helloOdeWorld.cbp">
+			<Depends filename="libIrrOde.cbp" />
+		</Project>
+		<Project filename="irrOdeMarble.cbp">
+			<Depends filename="libIrrOde.cbp" />
+		</Project>
+		<Project filename="libIrrOde.cbp" />
+		<Project filename="IrrOdeSurfaceEdit.cbp" active="1">
+			<Depends filename="libIrrOde.cbp" />
+		</Project>
+	</Workspace>
+</CodeBlocks_workspace_file>
