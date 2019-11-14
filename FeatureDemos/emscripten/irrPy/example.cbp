@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Irrlicht Python" />
+		<Option pch_mode="0" />
+		<Option compiler="emscripten" />
+		<Build>
+			<Target title="default">
+				<Option output="./irrPy.html" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="emscripten" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-D__EMSCRIPTEN__" />
+			<Add option="-D_IRR_EMSCRIPTEN_PLATFORM_" />
+			<Add option="-D_IRR_STATIC_LIB_" />
+			<Add directory="../../../Libs/irrlicht-ogl-es/irrlicht/include" />
+			<Add directory="../../../Libs/Scripting/EmCPython/Python-2.7/Include" />
+			<Add directory="../../../Libs/Scripting/EmCPython/Python-2.7/" />
+		</Compiler>
+		<Linker>
+			<Add option="-s FULL_ES2=1" />
+			<Add option="--preload-file media/" />
+			<Add option="-s FULL_ES2=1" />
+			<Add option="-s DISABLE_EXCEPTION_CATCHING=0" />
+			<Add option="-s NO_EXIT_RUNTIME=1" />
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add library="python2.73" />
+			<Add library="GLESv2" />
+			<Add directory="../../../Libs/irrlicht-ogl-es/irrlicht/lib/Linux" />
+			<Add directory="../../../Libs/Scripting/EmCPython/Python-2.7" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

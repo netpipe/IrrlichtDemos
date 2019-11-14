@@ -7,43 +7,43 @@
 		<Option compiler="msvc8" />
 		<Build>
 			<Target title="Release">
-				<Option output="bin\Release\Havok" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj\Release\" />
+				<Option output="bin/Release/Havok" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
 				<Option type="1" />
-				<Option compiler="msvc8" />
+				<Option compiler="gcc" />
 			</Target>
 		</Build>
 		<Linker>
-			<Add library="F:\IrrlichtStuff\irrlicht-1.4.1\lib\Win32-visualstudio\Irrlicht.lib" />
-			<Add library="F:\IrrlichtStuff\HavokSDK\Lib\win32_net_8-0\release_multithreaded\hkVisualize.lib" />
-			<Add library="F:\IrrlichtStuff\HavokSDK\Lib\win32_net_8-0\release_multithreaded\hkaAnimation.lib" />
-			<Add library="F:\IrrlichtStuff\HavokSDK\Lib\win32_net_8-0\release_multithreaded\hkaInternal.lib" />
-			<Add library="F:\IrrlichtStuff\HavokSDK\Lib\win32_net_8-0\release_multithreaded\hkaRagdoll.lib" />
-			<Add library="F:\IrrlichtStuff\HavokSDK\Lib\win32_net_8-0\release_multithreaded\hkBase.lib" />
-			<Add library="F:\IrrlichtStuff\HavokSDK\Lib\win32_net_8-0\release_multithreaded\hkCompat.lib" />
-			<Add library="F:\IrrlichtStuff\HavokSDK\Lib\win32_net_8-0\release_multithreaded\hkgBridge.lib" />
-			<Add library="F:\IrrlichtStuff\HavokSDK\Lib\win32_net_8-0\release_multithreaded\hkgCommon.lib" />
-			<Add library="F:\IrrlichtStuff\HavokSDK\Lib\win32_net_8-0\release_multithreaded\hkgDx9.lib" />
-			<Add library="F:\IrrlichtStuff\HavokSDK\Lib\win32_net_8-0\release_multithreaded\hkgDx9s.lib" />
-			<Add library="F:\IrrlichtStuff\HavokSDK\Lib\win32_net_8-0\release_multithreaded\hkgOgl.lib" />
-			<Add library="F:\IrrlichtStuff\HavokSDK\Lib\win32_net_8-0\release_multithreaded\hkpCollide.lib" />
-			<Add library="F:\IrrlichtStuff\HavokSDK\Lib\win32_net_8-0\release_multithreaded\hkpConstraintSolver.lib" />
-			<Add library="F:\IrrlichtStuff\HavokSDK\Lib\win32_net_8-0\release_multithreaded\hkpDynamics.lib" />
-			<Add library="F:\IrrlichtStuff\HavokSDK\Lib\win32_net_8-0\release_multithreaded\hkpInternal.lib" />
-			<Add library="F:\IrrlichtStuff\HavokSDK\Lib\win32_net_8-0\release_multithreaded\hkpUtilities.lib" />
-			<Add library="F:\IrrlichtStuff\HavokSDK\Lib\win32_net_8-0\release_multithreaded\hkpVehicle.lib" />
-			<Add library="F:\IrrlichtStuff\HavokSDK\Lib\win32_net_8-0\release_multithreaded\hkSceneData.lib" />
-			<Add library="F:\IrrlichtStuff\HavokSDK\Lib\win32_net_8-0\release_multithreaded\hkSerialize.lib" />
+			<Add library="F:/IrrlichtStuff/irrlicht-1.4.1/lib/Win32-visualstudio/Irrlicht.lib" />
+			<Add library="F:/IrrlichtStuff/HavokSDK/Lib/win32_net_8-0/release_multithreaded/hkVisualize.lib" />
+			<Add library="F:/IrrlichtStuff/HavokSDK/Lib/win32_net_8-0/release_multithreaded/hkaAnimation.lib" />
+			<Add library="F:/IrrlichtStuff/HavokSDK/Lib/win32_net_8-0/release_multithreaded/hkaInternal.lib" />
+			<Add library="F:/IrrlichtStuff/HavokSDK/Lib/win32_net_8-0/release_multithreaded/hkaRagdoll.lib" />
+			<Add library="F:/IrrlichtStuff/HavokSDK/Lib/win32_net_8-0/release_multithreaded/hkBase.lib" />
+			<Add library="F:/IrrlichtStuff/HavokSDK/Lib/win32_net_8-0/release_multithreaded/hkCompat.lib" />
+			<Add library="F:/IrrlichtStuff/HavokSDK/Lib/win32_net_8-0/release_multithreaded/hkgBridge.lib" />
+			<Add library="F:/IrrlichtStuff/HavokSDK/Lib/win32_net_8-0/release_multithreaded/hkgCommon.lib" />
+			<Add library="F:/IrrlichtStuff/HavokSDK/Lib/win32_net_8-0/release_multithreaded/hkgDx9.lib" />
+			<Add library="F:/IrrlichtStuff/HavokSDK/Lib/win32_net_8-0/release_multithreaded/hkgDx9s.lib" />
+			<Add library="F:/IrrlichtStuff/HavokSDK/Lib/win32_net_8-0/release_multithreaded/hkgOgl.lib" />
+			<Add library="F:/IrrlichtStuff/HavokSDK/Lib/win32_net_8-0/release_multithreaded/hkpCollide.lib" />
+			<Add library="F:/IrrlichtStuff/HavokSDK/Lib/win32_net_8-0/release_multithreaded/hkpConstraintSolver.lib" />
+			<Add library="F:/IrrlichtStuff/HavokSDK/Lib/win32_net_8-0/release_multithreaded/hkpDynamics.lib" />
+			<Add library="F:/IrrlichtStuff/HavokSDK/Lib/win32_net_8-0/release_multithreaded/hkpInternal.lib" />
+			<Add library="F:/IrrlichtStuff/HavokSDK/Lib/win32_net_8-0/release_multithreaded/hkpUtilities.lib" />
+			<Add library="F:/IrrlichtStuff/HavokSDK/Lib/win32_net_8-0/release_multithreaded/hkpVehicle.lib" />
+			<Add library="F:/IrrlichtStuff/HavokSDK/Lib/win32_net_8-0/release_multithreaded/hkSceneData.lib" />
+			<Add library="F:/IrrlichtStuff/HavokSDK/Lib/win32_net_8-0/release_multithreaded/hkSerialize.lib" />
 		</Linker>
-		<Unit filename="..\..\..\BrauchbareIncludes\hr_time.cpp" />
-		<Unit filename="..\..\..\BrauchbareIncludes\hr_time.h" />
-		<Unit filename="..\DebugDisplay\DebugDisplayClass.cpp" />
-		<Unit filename="..\DebugDisplay\DebugDisplayClass.h" />
+		<Unit filename="../../../BrauchbareIncludes/hr_time.cpp" />
+		<Unit filename="../../../BrauchbareIncludes/hr_time.h" />
+		<Unit filename="../DebugDisplay/DebugDisplayClass.cpp" />
+		<Unit filename="../DebugDisplay/DebugDisplayClass.h" />
+		<Unit filename="../IrrEvents/IrrEventsClass.cpp" />
+		<Unit filename="../IrrEvents/IrrEventsClass.h" />
 		<Unit filename="HavokClass.cpp" />
 		<Unit filename="HavokClass.h" />
 		<Unit filename="Main.cpp" />
-		<Unit filename="..\IrrEvents\IrrEventsClass.cpp" />
-		<Unit filename="..\IrrEvents\IrrEventsClass.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />
