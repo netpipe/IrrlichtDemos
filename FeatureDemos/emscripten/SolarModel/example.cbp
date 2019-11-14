@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SolarSystem" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./SolarSystem" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+			<Target title="emscripten">
+				<Option output="./SolarSystem.html" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="./" />
+				<Option object_output=".emobjs" />
+				<Option type="1" />
+				<Option compiler="emscripten" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Option projectIncludeDirsRelation="1" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Option projectLibDirsRelation="1" />
+				<Compiler>
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_IRR_EMSCRIPTEN_PLATFORM_" />
+					<Add option="-D__EMSCRIPTEN__" />
+					<Add directory="../../../../EMLibs/irrlicht-ogl-es/irrlicht/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s ALLOW_MEMORY_GROWTH=1" />
+					<Add option="--preload-file media/" />
+					<Add option="-s FULL_ES2=1" />
+					<Add option="-s DISABLE_EXCEPTION_CATCHING=0" />
+					<Add option="-s NO_EXIT_RUNTIME=1" />
+					<Add library="GL" />
+					<Add library="GLESv2" />
+					<Add library="Irrlicht" />
+					<Add library="SDL" />
+					<Add directory="../../../../EMLibs/irrlicht-ogl-es/irrlicht/lib/Linux" />
+				</Linker>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-fPIC" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="GL" />
+			<Add library="Xxf86vm" />
+			<Add library="X11" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+			<Add directory="./" />
+			<Add directory="libf2c" />
+		</Linker>
+		<Unit filename="GameAnimatedMeshObject.cpp" />
+		<Unit filename="GameAnimatedMeshObject.h" />
+		<Unit filename="GameBillboardObject.cpp" />
+		<Unit filename="GameBillboardObject.h" />
+		<Unit filename="GameConfig.cpp" />
+		<Unit filename="GameConfig.h" />
+		<Unit filename="GameCore.cpp" />
+		<Unit filename="GameCore.h" />
+		<Unit filename="GameEventReceiver.cpp" />
+		<Unit filename="GameEventReceiver.h" />
+		<Unit filename="GameGlobals.cpp" />
+		<Unit filename="GameGlobals.h" />
+		<Unit filename="GameLightObject.cpp" />
+		<Unit filename="GameLightObject.h" />
+		<Unit filename="GameMain.cpp" />
+		<Unit filename="GameMain.h" />
+		<Unit filename="GameMap.cpp" />
+		<Unit filename="GameMap.h" />
+		<Unit filename="GameMapDescription.cpp" />
+		<Unit filename="GameMapDescription.h" />
+		<Unit filename="GameMeasurer.cpp" />
+		<Unit filename="GameMeasurer.h" />
+		<Unit filename="GameMeshObject.cpp" />
+		<Unit filename="GameMeshObject.h" />
+		<Unit filename="GameObject.cpp" />
+		<Unit filename="GameObject.h" />
+		<Unit filename="GamePointcloudObject.cpp" />
+		<Unit filename="GamePointcloudObject.h" />
+		<Unit filename="GameSkyBoxObject.cpp" />
+		<Unit filename="GameSkyboxObject.h" />
+		<Unit filename="resource.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

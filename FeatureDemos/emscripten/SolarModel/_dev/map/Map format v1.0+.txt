@@ -1,0 +1,124 @@
+MAP FORMAT:
+===========
+
+Light {
+	Type ELT_xxx ( default: ELT_POINT )
+		( range:
+		ELT_POINT,
+		ELT_DIRECTIONAL ( If this Type used then Object.Position defines the vector of light. )
+		)
+	Radius FLOAT ( default: 100.0 ) ( This value ignored if Type is ELT_DIRECTIONAL. )
+	AmbientColor FLOAT FLOAT FLOAT ( default: 0.0 0.0 0.0 ) ( range: 0.0..1.0 )
+	DiffuseColor FLOAT FLOAT FLOAT ( default: 1.0 1.0 1.0 ) ( range: 0.0..1.0 )
+	SpecularColor FLOAT FLOAT FLOAT ( default: 1.0? 1.0? 1.0? ) ( range: 0.0..1.0 )
+}
+
+Billboard {
+	Size FLOAT FLOAT ( default: 10.0 10.0 )
+}
+
+AnimatedMesh FILEPATH {
+}
+
+SkyBox(*) {
+	Top FILEPATH
+	Bottom FILEPATH
+	Left FILEPATH
+	Right FILEPATH
+	Front FILEPATH
+	Back FILEPATH
+}
+
+Pointcloud {
+	RadiusRange FLOAT FLOAT ( default: 0.0 100.0 )
+	HeightRange FLOAT FLOAT ( default: -10.0 +10.0 )
+	BrightRange INT INT ( default: 150 200 ) ( range: 0..255 )
+	Cloud INT INT STRING INT ( default: 100 10 NONE 1 ) ( range: >0 )
+	(	1 int = point count,
+		2 int = every point will be volumetric model,
+		3 string = textures path with "%i" for texture number,
+		4 int = textures count )
+}
+
+... {
+	Object {
+		Name STRING
+		Parent(*) STRING ( must be Name of another sooner defined object )
+		Position FLOAT FLOAT FLOAT ( default: 0.0 0.0 0.0 )
+		Rotation FLOAT FLOAT FLOAT ( default: 0.0 0.0 0.0 )
+		Scale FLOAT FLOAT FLOAT ( default: 1.0 1.0 1.0 )
+	}
+}
+
+... {
+	Material {
+		CurrentLayer INT ( default: 0 ) ( range: 0..3 )
+		LayerTexture FILEPATH
+		LayerDiffuseColor FLOAT FLOAT FLOAT
+		LayerSpecularColor FLOAT FLOAT FLOAT
+		LayerEmissiveColor FLOAT FLOAT FLOAT
+		Type EMT_xxx ( default: EMT_SOLID )
+			( range:
+			EMT_SOLID,
+			EMT_SOLID_2_LAYER,
+			EMT_LIGHTMAP,
+			EMT_LIGHTMAP_ADD,
+			EMT_LIGHTMAP_M2,
+			EMT_LIGHTMAP_M4,
+			EMT_LIGHTMAP_LIGHTING,
+			EMT_LIGHTMAP_LIGHTING_M2,
+			EMT_LIGHTMAP_LIGHTING_M4,
+			EMT_DETAIL_MAP,
+			EMT_SPHERE_MAP,
+			EMT_REFLECTION_2_LAYER,
+			EMT_TRANSPARENT_ADD_COLOR,
+			EMT_TRANSPARENT_ALPHA_CHANNEL,
+			EMT_TRANSPARENT_ALPHA_CHANNEL_REF,
+			EMT_TRANSPARENT_VERTEX_ALPHA,
+			EMT_TRANSPARENT_REFLECTION_2_LAYER,
+			EMT_NORMAL_MAP_SOLID,
+			EMT_NORMAL_MAP_TRANSPARENT_ADD_COLOR,
+			EMT_NORMAL_MAP_TRANSPARENT_VERTEX_ALPHA,
+			EMT_PARALLAX_MAP_SOLID,
+			EMT_PARALLAX_MAP_TRANSPARENT_ADD_COLOR,
+			EMT_PARALLAX_MAP_TRANSPARENT_VERTEX_ALPHA
+			)
+		Flag EMF_xxx On|Off
+			( flags:
+			EMF_WIREFRAME ( default: Off )
+			EMF_POINTCLOUD ( default: Off )
+			EMF_GOURAUD_SHADING ( default: On )
+			EMF_LIGHTING ( default: On )
+			EMF_ZBUFFER ( default: On )
+			EMF_ZWRITE_ENABLE ( default: On ) ( This flag is ignored, if the material type is a transparent type. )
+			EMF_BACK_FACE_CULLING ( default: On )
+			EMF_BILINEAR_FILTER ( default: On )
+			EMF_TRILINEAR_FILTER ( default: Off ) ( If this flag On, EMF_BILINEAR_FILTER is ignored. )
+			EMF_ANISOTROPIC_FILTER ( default: Off )
+			EMF_FOG_ENABLE ( default: Off )
+			EMF_NORMALIZE_NORMALS ( default: Off )
+			)
+	}
+}
+
+... {
+	RotationAnimator { 
+		Rotation FLOAT FLOAT FLOAT ( default: 0.0 1.0 0.0 ) ( 3.14 is a 1 rotation cycle per 1 second )
+	}
+}
+
+... {
+	FlyCircleAnimator(*) {
+		Center FLOAT FLOAT FLOAT ( default: 0.0 0.0 0.0 )
+		Direction FLOAT FLOAT FLOAT ( default: 0.0 1.0 0.0 ) ( This a vector. Means that "0.5 0.0 0.0" and "1.0 0.0 0.0" are the same. )
+		Radius FLOAT ( default: 100.0 )
+		Speed FLOAT ( default: 0.001 ) ( 3.14 is a 1 rotation cycle per 1 second )
+	}
+}
+
+NOTES:
+======
+
+(*) For SkyBox you cannot use Object, Material or any thing else. SkyBox should be only one object in the scene.
+(*) If you using Object.Parent for an object than it will inherit position of the parent object. This means that all movings, rotations and scales that will be applied to parent object also will be applied to this object.
+(*) If you using FlyCircleAnimator than Object.Position will be ignored.
