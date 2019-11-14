@@ -1,4 +1,5 @@
-#include "sysdep1.h"	/* here to get stat64 on some badly designed Linux systems */
+#include <sysdep1.h0>
+	/* here to get stat64 on some badly designed Linux systems */
 #include "f2c.h"
 #ifdef KR_headers
 #define Const /*nothing*/

@@ -26,7 +26,7 @@
 /*==============================================================================
   Constructor
 ==============================================================================*/
-CEarth::CEarth(IrrlichtDevice *device, core::dimension2d<s32> Res, ICameraSceneNode* _cam)
+CEarth::CEarth(IrrlichtDevice *device, core::dimension2du Res, ICameraSceneNode* _cam)
 {
   cam = _cam;
   forceCam = 0.1f;
@@ -72,7 +72,7 @@ CEarth::CEarth(IrrlichtDevice *device, core::dimension2d<s32> Res, ICameraSceneN
 
     if (then < now)
     {
-      driver->beginScene(true, true, 0);
+      driver->beginScene(true, true,  video::SColor(255,200,200,200));
       //smgr->drawAll();
       guienv->drawAll();
 
@@ -106,7 +106,7 @@ CEarth::CEarth(IrrlichtDevice *device, core::dimension2d<s32> Res, ICameraSceneN
 
     if (then < now)
     {
-      driver->beginScene(true, true, 0);
+      driver->beginScene(true, true,  video::SColor(255,200,200,200));
       //smgr->drawAll();
       guienv->drawAll();
 

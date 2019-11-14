@@ -239,7 +239,12 @@ result = env->addEditBox(L"result", rect<s32>(10, 50, 210, 100));
 
 #ifdef __EMSCRIPTEN__
 	emscripten_set_main_loop(main_loop,0,1);
-#endif
+#else
+while (1){
+main_loop();
+
+}
+
 
 	device->drop();
 

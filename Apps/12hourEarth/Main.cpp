@@ -112,9 +112,32 @@ int main(int argc, char** argv)
 
     // you can't set the clock before 1:00am on the first day
     // I'm still thinking how I could change that
+//u32 timerees = 0;
+// ITimer* timere
+// u32 timeree= device->getTimer()->getRealTimeAndDate().Hour;
+ // int test = timere->Hour();
 
+//                  // Hour of the day, from 0 to 23
+//                 u32 Hour;
+//                 // Minute of the hour, from 0 to 59
+//                 u32 Minute;
+//                 // Second of the minute, due to extra seconds from 0 to 61
+//                 u32 Second;
+//                 // Year of the gregorian calender
+//                 s32 Year;
+//                 // Month of the year, from 1 to 12
+//                 u32 Month;
+//                 // Day of the month, from 1 to 31
+//                 u32 Day;
+//                 // Weekday for the current day
+//                 EWeekday Weekday;
+//                 // Day of the year, from 1 to 366
+//                 u32 Yearday;
+//                 // Whether daylight saving is on
+//                 bool IsDST;
 
-    gameclock.setClock( (device->getTimer()->getDayTimeHour()),(device->getTimer()->getDayTimeMin()),(device->getTimer()->getDayTimeSec()),"AM");
+//subtract dst and set the ampm > 12 hour
+    gameclock.setClock( (device->getTimer()->getRealTimeAndDate().Hour),(device->getTimer()->getRealTimeAndDate().Minute),(device->getTimer()->getRealTimeAndDate().Second),"AM");
 
     while(device->run() && driver)
     {

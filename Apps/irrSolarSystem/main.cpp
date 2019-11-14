@@ -2054,6 +2054,7 @@ void handlePlanetJump()
 		flyCam->updateAbsolutePosition();
 	}
 }
+
 int main()
 {
 	irr::SIrrlichtCreationParameters param;

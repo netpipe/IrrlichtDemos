@@ -1,5 +1,5 @@
 #ifndef SYSDEP_H_INCLUDED
-#include "sysdep1.h"
+#include <sysdep1.h0>
 #endif
 #include "stdio.h"
 #include "errno.h"

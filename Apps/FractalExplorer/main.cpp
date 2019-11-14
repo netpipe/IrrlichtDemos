@@ -106,7 +106,7 @@ int main()
     int screenDepth= dev0->getVideoModeList()->getDesktopDepth();
     dev0->closeDevice();
 
-    IrrlichtDevice* dev= createDevice(EDT_OPENGL, screenRes, screenDepth, true);
+    IrrlichtDevice* dev= createDevice(EDT_OPENGL, screenRes, screenDepth, false);
     ISceneManager* smgr= dev->getSceneManager();
     IVideoDriver* video= dev->getVideoDriver();
     MyEventReceiver* rec= new MyEventReceiver;

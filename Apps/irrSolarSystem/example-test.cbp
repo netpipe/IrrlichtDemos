@@ -19,6 +19,7 @@
 		</VirtualTargets>
 		<Compiler>
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+			<Add directory="libf2c" />
 		</Compiler>
 		<Linker>
 			<Add library="GL" />

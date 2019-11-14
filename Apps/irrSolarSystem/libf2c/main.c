@@ -1,7 +1,7 @@
 /* STARTUP PROCEDURE FOR UNIX FORTRAN PROGRAMS */
 
 #include "stdio.h"
-#include "signal1.h"
+#include "signal1.h0"
 
 #ifndef SIGIOT
 #ifdef SIGABRT

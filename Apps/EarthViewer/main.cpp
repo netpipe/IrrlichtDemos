@@ -37,11 +37,11 @@
 /*==============================================================================
 // get fullscreen resolution
 ==============================================================================*/
-core::dimension2d<s32> getScreenResolution()
+core::dimension2du getScreenResolution()
 {
  IrrlichtDevice *nulldevice = createDevice(video::EDT_NULL);
- core::dimension2d<s32> Res = nulldevice->getVideoModeList()->getDesktopResolution();
- Res = dimension2d<s32> (800,600);
+ core::dimension2du Res = nulldevice->getVideoModeList()->getDesktopResolution();
+ Res = dimension2du (800,600);
  nulldevice -> drop();
  return Res;
 }
@@ -51,7 +51,7 @@ core::dimension2d<s32> getScreenResolution()
 ==============================================================================*/
 int main()
 {
-  core::dimension2d<s32> Res = getScreenResolution();
+  core::dimension2du Res = getScreenResolution();
 
   IrrlichtDevice *device = createDevice(EDT_OPENGL, Res, 32, false, false, false);
   IVideoDriver* driver = device->getVideoDriver();
@@ -79,7 +79,7 @@ int main()
       u32 const now = device->getTimer()->getTime();
       if (then < now)
       {
-        driver->beginScene(true, true, 0);
+        driver->beginScene(true, true,  video::SColor(255,200,200,200));
         earth->render();
         smgr->drawAll();
         driver->endScene();
