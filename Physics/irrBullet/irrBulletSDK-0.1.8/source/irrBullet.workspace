@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="irrBullet Workspace">
+		<Project filename="irrBullet.cbp" />
+		<Project filename="..\examples\HelloWorld\HelloWorld.cbp" />
+		<Project filename="..\examples\RaycastTank\RaycastTank.cbp" />
+		<Project filename="..\examples\Affectors\Affectors.cbp" />
+		<Project filename="..\examples\Collision\Collision.cbp" />
+		<Project filename="..\examples\LiquidBody\LiquidBody.cbp" />
+		<Project filename="..\examples\SoftBody\SoftBody.cbp" />
+		<Project filename="..\examples\LoadScene\LoadScene.cbp" />
+		<Project filename="..\examples\Character\Character.cbp" active="1" />
+	</Workspace>
+</CodeBlocks_workspace_file>

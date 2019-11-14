@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\boxshape.cpp" />
+    <ClCompile Include="..\..\bulletworld.cpp" />
+    <ClCompile Include="..\..\bvhtrianglemeshshape.cpp" />
+    <ClCompile Include="..\..\collisioncallbackinformation.cpp" />
+    <ClCompile Include="..\..\collisionobject.cpp" />
+    <ClCompile Include="..\..\collisionobjectaffector.cpp" />
+    <ClCompile Include="..\..\collisionobjectaffectorattract.cpp" />
+    <ClCompile Include="..\..\collisionobjectaffectordelete.cpp" />
+    <ClCompile Include="..\..\collisionshape.cpp" />
+    <ClCompile Include="..\..\convexhullshape.cpp" />
+    <ClCompile Include="..\..\gimpactmeshshape.cpp" />
+    <ClCompile Include="..\..\irrbullet.cpp" />
+    <ClCompile Include="..\..\irrbulletcommon.cpp" />
+    <ClCompile Include="..\..\liquidbody.cpp" />
+    <ClCompile Include="..\..\motionstate.cpp" />
+    <ClCompile Include="..\..\physicsdebug.cpp" />
+    <ClCompile Include="..\..\raycastvehicle.cpp" />
+    <ClCompile Include="..\..\rigidbody.cpp" />
+    <ClCompile Include="..\..\softbody.cpp" />
+    <ClCompile Include="..\..\sphereshape.cpp" />
+    <ClCompile Include="..\..\trianglemeshshape.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\boxshape.h" />
+    <ClInclude Include="..\..\bulletworld.h" />
+    <ClInclude Include="..\..\bvhtrianglemeshshape.h" />
+    <ClInclude Include="..\..\collisioncallbackinformation.h" />
+    <ClInclude Include="..\..\collisionobject.h" />
+    <ClInclude Include="..\..\collisionobjectaffector.h" />
+    <ClInclude Include="..\..\collisionobjectaffectorattract.h" />
+    <ClInclude Include="..\..\collisionobjectaffectordelete.h" />
+    <ClInclude Include="..\..\collisionshape.h" />
+    <ClInclude Include="..\..\convexhullshape.h" />
+    <ClInclude Include="..\..\gimpactmeshshape.h" />
+    <ClInclude Include="..\..\irrbullet.h" />
+    <ClInclude Include="..\..\irrbulletcommon.h" />
+    <ClInclude Include="..\..\irrbullet_compile_config.h" />
+    <ClInclude Include="..\..\liquidbody.h" />
+    <ClInclude Include="..\..\motionstate.h" />
+    <ClInclude Include="..\..\physicsdebug.h" />
+    <ClInclude Include="..\..\raycastvehicle.h" />
+    <ClInclude Include="..\..\rigidbody.h" />
+    <ClInclude Include="..\..\softbody.h" />
+    <ClInclude Include="..\..\sphereshape.h" />
+    <ClInclude Include="..\..\trianglemeshshape.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{428CA1C4-00B5-44A4-879F-78F7C8D43AA1}</ProjectGuid>
+    <RootNamespace>irrBullet</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Programming\Library\irrBullet\source;C:\Programming\Library\irrlicht-1.7.1\include;C:\Programming\Library\irrBullet\source\bheaders\Bullet;C:\Programming\Library\irrBullet\source\bheaders;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>C:\Programming\Library\irrlicht-1.7.1\lib\Win32-visualstudio;$(LibraryPath)</LibraryPath>
+    <OutDir>..\..\..\lib\win32_visualstudio\2010\Debug</OutDir>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\lib\win32_visualstudio\2010\Release</OutDir>
+    <IncludePath>C:\Programming\Library\irrlicht-1.7.1\include;..\..\bheaders\Bullet;..\..\bheaders;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Programming\Library\irrlicht-1.7.1\lib\Win32-visualstudio;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

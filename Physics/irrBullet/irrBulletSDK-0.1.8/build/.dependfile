@@ -1,0 +1,1449 @@
+../source/physicsdebug.cpp: ../source/physicsdebug.cpp \
+ ../source/physicsdebug.h Bullet/LinearMath/btIDebugDraw.h \
+ ../source/irrbulletcommon.h /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/irrMath.h \
+ /usr/local/include/irrlicht/IrrCompileConfig.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/vector2d.h \
+ /usr/local/include/irrlicht/dimension2d.h \
+ /usr/local/include/irrlicht/plane3d.h \
+ /usr/local/include/irrlicht/aabbox3d.h \
+ /usr/local/include/irrlicht/line3d.h /usr/local/include/irrlicht/rect.h \
+ /usr/local/include/irrlicht/position2d.h \
+ /usr/local/include/irrlicht/irrString.h \
+ /usr/local/include/irrlicht/irrAllocator.h \
+ /usr/local/include/irrlicht/ISceneNode.h \
+ /usr/local/include/irrlicht/IAttributeExchangingObject.h \
+ /usr/local/include/irrlicht/IReferenceCounted.h \
+ /usr/local/include/irrlicht/ESceneNodeTypes.h \
+ /usr/local/include/irrlicht/ECullingTypes.h \
+ /usr/local/include/irrlicht/EDebugSceneTypes.h \
+ /usr/local/include/irrlicht/ISceneNodeAnimator.h \
+ /usr/local/include/irrlicht/ESceneNodeAnimatorTypes.h \
+ /usr/local/include/irrlicht/IEventReceiver.h \
+ /usr/local/include/irrlicht/ILogger.h \
+ /usr/local/include/irrlicht/Keycodes.h \
+ /usr/local/include/irrlicht/ITriangleSelector.h \
+ /usr/local/include/irrlicht/triangle3d.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/SMaterial.h \
+ /usr/local/include/irrlicht/SColor.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/heapsort.h \
+ /usr/local/include/irrlicht/EMaterialTypes.h \
+ /usr/local/include/irrlicht/EMaterialFlags.h \
+ /usr/local/include/irrlicht/SMaterialLayer.h \
+ /usr/local/include/irrlicht/irrList.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ /usr/local/include/irrlicht/line2d.h \
+ /usr/local/include/irrlicht/quaternion.h \
+ /usr/local/include/irrlicht/IXMLReader.h \
+ /usr/local/include/irrlicht/irrXML.h \
+ /usr/local/include/irrlicht/EAttributes.h \
+ /usr/local/include/irrlicht/path.h \
+ /usr/local/include/irrlicht/IrrlichtDevice.h \
+ /usr/local/include/irrlicht/IVideoDriver.h \
+ /usr/local/include/irrlicht/ITexture.h \
+ /usr/local/include/irrlicht/IImage.h \
+ /usr/local/include/irrlicht/EDriverTypes.h \
+ /usr/local/include/irrlicht/IMeshBuffer.h \
+ /usr/local/include/irrlicht/S3DVertex.h \
+ /usr/local/include/irrlicht/SVertexIndex.h \
+ /usr/local/include/irrlicht/EHardwareBufferFlags.h \
+ /usr/local/include/irrlicht/EPrimitiveTypes.h \
+ /usr/local/include/irrlicht/EDriverFeatures.h \
+ /usr/local/include/irrlicht/SExposedVideoData.h \
+ /usr/local/include/irrlicht/EDeviceTypes.h \
+ /usr/local/include/irrlicht/ICursorControl.h \
+ /usr/local/include/irrlicht/IVideoModeList.h \
+ /usr/local/include/irrlicht/ITimer.h \
+ /usr/local/include/irrlicht/IOSOperator.h
+	g++ -Wall -ansi -O3 -D__LINUX__ -I/usr/local/include/irrlicht/ -I/usr/include/Bullet  -c ../source/physicsdebug.cpp -o ../source/physicsdebug.cpp
+../source/boxshape.cpp: ../source/boxshape.cpp \
+ /usr/local/include/irrlicht/ISceneNode.h \
+ /usr/local/include/irrlicht/IAttributeExchangingObject.h \
+ /usr/local/include/irrlicht/IReferenceCounted.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/IrrCompileConfig.h \
+ /usr/local/include/irrlicht/ESceneNodeTypes.h \
+ /usr/local/include/irrlicht/ECullingTypes.h \
+ /usr/local/include/irrlicht/EDebugSceneTypes.h \
+ /usr/local/include/irrlicht/ISceneNodeAnimator.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/irrMath.h \
+ /usr/local/include/irrlicht/ESceneNodeAnimatorTypes.h \
+ /usr/local/include/irrlicht/IEventReceiver.h \
+ /usr/local/include/irrlicht/ILogger.h \
+ /usr/local/include/irrlicht/Keycodes.h \
+ /usr/local/include/irrlicht/irrString.h \
+ /usr/local/include/irrlicht/irrAllocator.h \
+ /usr/local/include/irrlicht/ITriangleSelector.h \
+ /usr/local/include/irrlicht/triangle3d.h \
+ /usr/local/include/irrlicht/line3d.h \
+ /usr/local/include/irrlicht/plane3d.h \
+ /usr/local/include/irrlicht/aabbox3d.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/vector2d.h \
+ /usr/local/include/irrlicht/dimension2d.h \
+ /usr/local/include/irrlicht/rect.h \
+ /usr/local/include/irrlicht/position2d.h \
+ /usr/local/include/irrlicht/SMaterial.h \
+ /usr/local/include/irrlicht/SColor.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/heapsort.h \
+ /usr/local/include/irrlicht/EMaterialTypes.h \
+ /usr/local/include/irrlicht/EMaterialFlags.h \
+ /usr/local/include/irrlicht/SMaterialLayer.h \
+ /usr/local/include/irrlicht/irrList.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ /usr/local/include/irrlicht/line2d.h \
+ /usr/local/include/irrlicht/quaternion.h \
+ /usr/local/include/irrlicht/IXMLReader.h \
+ /usr/local/include/irrlicht/irrXML.h \
+ /usr/local/include/irrlicht/EAttributes.h \
+ /usr/local/include/irrlicht/path.h Bullet/btBulletDynamicsCommon.h \
+ Bullet/btBulletCollisionCommon.h ../source/boxshape.h \
+ ../source/collisionshape.h \
+ BulletCollision/CollisionShapes/btCollisionShape.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/irrString.h ../source/irrbulletcommon.h \
+ /usr/local/include/irrlicht/matrix4.h
+	g++ -Wall -ansi -O3 -D__LINUX__ -I/usr/local/include/irrlicht/ -I/usr/include/Bullet  -c ../source/boxshape.cpp -o ../source/boxshape.cpp
+../source/sphereshape.cpp: ../source/sphereshape.cpp \
+ Bullet/btBulletDynamicsCommon.h Bullet/btBulletCollisionCommon.h \
+ ../source/sphereshape.h ../source/collisionshape.h \
+ BulletCollision/CollisionShapes/btCollisionShape.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/irrMath.h \
+ /usr/local/include/irrlicht/IrrCompileConfig.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/irrString.h \
+ /usr/local/include/irrlicht/irrAllocator.h ../source/irrbulletcommon.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/vector2d.h \
+ /usr/local/include/irrlicht/dimension2d.h \
+ /usr/local/include/irrlicht/plane3d.h \
+ /usr/local/include/irrlicht/aabbox3d.h \
+ /usr/local/include/irrlicht/line3d.h /usr/local/include/irrlicht/rect.h \
+ /usr/local/include/irrlicht/position2d.h \
+ /usr/local/include/irrlicht/irrString.h \
+ /usr/local/include/irrlicht/ISceneNode.h \
+ /usr/local/include/irrlicht/IAttributeExchangingObject.h \
+ /usr/local/include/irrlicht/IReferenceCounted.h \
+ /usr/local/include/irrlicht/ESceneNodeTypes.h \
+ /usr/local/include/irrlicht/ECullingTypes.h \
+ /usr/local/include/irrlicht/EDebugSceneTypes.h \
+ /usr/local/include/irrlicht/ISceneNodeAnimator.h \
+ /usr/local/include/irrlicht/ESceneNodeAnimatorTypes.h \
+ /usr/local/include/irrlicht/IEventReceiver.h \
+ /usr/local/include/irrlicht/ILogger.h \
+ /usr/local/include/irrlicht/Keycodes.h \
+ /usr/local/include/irrlicht/ITriangleSelector.h \
+ /usr/local/include/irrlicht/triangle3d.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/SMaterial.h \
+ /usr/local/include/irrlicht/SColor.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/heapsort.h \
+ /usr/local/include/irrlicht/EMaterialTypes.h \
+ /usr/local/include/irrlicht/EMaterialFlags.h \
+ /usr/local/include/irrlicht/SMaterialLayer.h \
+ /usr/local/include/irrlicht/irrList.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ /usr/local/include/irrlicht/line2d.h \
+ /usr/local/include/irrlicht/quaternion.h \
+ /usr/local/include/irrlicht/IXMLReader.h \
+ /usr/local/include/irrlicht/irrXML.h \
+ /usr/local/include/irrlicht/EAttributes.h \
+ /usr/local/include/irrlicht/path.h \
+ Bullet/BulletCollision/CollisionShapes/btSphereShape.h
+	g++ -Wall -ansi -O3 -D__LINUX__ -I/usr/local/include/irrlicht/ -I/usr/include/Bullet  -c ../source/sphereshape.cpp -o ../source/sphereshape.cpp
+../source/irrbullet.cpp: ../source/irrbullet.cpp ../source/irrbullet.h \
+ ../source/irrbullet_compile_config.h Bullet/btBulletDynamicsCommon.h \
+ Bullet/btBulletCollisionCommon.h \
+ Bullet/BulletCollision/Gimpact/btGImpactCollisionAlgorithm.h \
+ ../source/irrbulletcommon.h /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/irrMath.h \
+ /usr/local/include/irrlicht/IrrCompileConfig.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/vector2d.h \
+ /usr/local/include/irrlicht/dimension2d.h \
+ /usr/local/include/irrlicht/plane3d.h \
+ /usr/local/include/irrlicht/aabbox3d.h \
+ /usr/local/include/irrlicht/line3d.h /usr/local/include/irrlicht/rect.h \
+ /usr/local/include/irrlicht/position2d.h \
+ /usr/local/include/irrlicht/irrString.h \
+ /usr/local/include/irrlicht/irrAllocator.h \
+ /usr/local/include/irrlicht/ISceneNode.h \
+ /usr/local/include/irrlicht/IAttributeExchangingObject.h \
+ /usr/local/include/irrlicht/IReferenceCounted.h \
+ /usr/local/include/irrlicht/ESceneNodeTypes.h \
+ /usr/local/include/irrlicht/ECullingTypes.h \
+ /usr/local/include/irrlicht/EDebugSceneTypes.h \
+ /usr/local/include/irrlicht/ISceneNodeAnimator.h \
+ /usr/local/include/irrlicht/ESceneNodeAnimatorTypes.h \
+ /usr/local/include/irrlicht/IEventReceiver.h \
+ /usr/local/include/irrlicht/ILogger.h \
+ /usr/local/include/irrlicht/Keycodes.h \
+ /usr/local/include/irrlicht/ITriangleSelector.h \
+ /usr/local/include/irrlicht/triangle3d.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/SMaterial.h \
+ /usr/local/include/irrlicht/SColor.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/heapsort.h \
+ /usr/local/include/irrlicht/EMaterialTypes.h \
+ /usr/local/include/irrlicht/EMaterialFlags.h \
+ /usr/local/include/irrlicht/SMaterialLayer.h \
+ /usr/local/include/irrlicht/irrList.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ /usr/local/include/irrlicht/line2d.h \
+ /usr/local/include/irrlicht/quaternion.h \
+ /usr/local/include/irrlicht/IXMLReader.h \
+ /usr/local/include/irrlicht/irrXML.h \
+ /usr/local/include/irrlicht/EAttributes.h \
+ /usr/local/include/irrlicht/path.h ../source/bulletworld.h \
+ ../source/rigidbody.h ../source/collisionobject.h \
+ ../source/collisionshape.h \
+ BulletCollision/CollisionShapes/btCollisionShape.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/irrString.h \
+ BulletCollision/CollisionDispatch/btCollisionObject.h \
+ ../source/collisionobjectaffector.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ BulletDynamics/Dynamics/btRigidBody.h ../source/raycastvehicle.h \
+ BulletDynamics/Vehicle/btRaycastVehicle.h ../source/softbody.h \
+ BulletSoftBody/btSoftBodyHelpers.h BulletSoftBody/btSoftBody.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/S3DVertex.h \
+ /usr/local/include/irrlicht/IMeshBuffer.h \
+ /usr/local/include/irrlicht/S3DVertex.h \
+ /usr/local/include/irrlicht/SVertexIndex.h \
+ /usr/local/include/irrlicht/EHardwareBufferFlags.h \
+ /usr/local/include/irrlicht/EPrimitiveTypes.h ../source/physicsdebug.h \
+ Bullet/LinearMath/btIDebugDraw.h \
+ BulletSoftBody/btSoftRigidDynamicsWorld.h \
+ ../source/collisioncallbackinformation.h \
+ Bullet/BulletCollision/NarrowPhaseCollision/btPersistentManifold.h \
+ ../source/boxshape.h ../source/sphereshape.h \
+ Bullet/BulletCollision/CollisionShapes/btSphereShape.h \
+ ../source/gimpactmeshshape.h BulletCollision/Gimpact/btGImpactShape.h \
+ ../source/trianglemeshshape.h \
+ BulletCollision/CollisionShapes/btTriangleMesh.h \
+ ../source/bvhtrianglemeshshape.h ../source/convexhullshape.h \
+ ../source/motionstate.h Bullet/LinearMath/btDefaultMotionState.h \
+ ../source/collisionobjectaffectordelete.h \
+ ../source/collisionobjectaffectorattract.h ../source/liquidbody.h \
+ /usr/local/include/irrlicht/aabbox3d.h \
+ /usr/local/include/irrlicht/IrrlichtDevice.h \
+ /usr/local/include/irrlicht/IVideoDriver.h \
+ /usr/local/include/irrlicht/ITexture.h \
+ /usr/local/include/irrlicht/IImage.h \
+ /usr/local/include/irrlicht/EDriverTypes.h \
+ /usr/local/include/irrlicht/IMeshBuffer.h \
+ /usr/local/include/irrlicht/EDriverFeatures.h \
+ /usr/local/include/irrlicht/SExposedVideoData.h \
+ /usr/local/include/irrlicht/EDeviceTypes.h \
+ /usr/local/include/irrlicht/ICursorControl.h \
+ /usr/local/include/irrlicht/IVideoModeList.h \
+ /usr/local/include/irrlicht/ITimer.h \
+ /usr/local/include/irrlicht/IOSOperator.h \
+ ../source/kinematiccharactercontroller.h
+	g++ -Wall -ansi -O3 -D__LINUX__ -I/usr/local/include/irrlicht/ -I/usr/include/Bullet  -c ../source/irrbullet.cpp -o ../source/irrbullet.cpp
+../source/irrbulletcommon.cpp: ../source/irrbulletcommon.cpp \
+ Bullet/btBulletDynamicsCommon.h Bullet/btBulletCollisionCommon.h \
+ ../source/raycastvehicle.h ../source/irrbulletcommon.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/irrMath.h \
+ /usr/local/include/irrlicht/IrrCompileConfig.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/vector2d.h \
+ /usr/local/include/irrlicht/dimension2d.h \
+ /usr/local/include/irrlicht/plane3d.h \
+ /usr/local/include/irrlicht/aabbox3d.h \
+ /usr/local/include/irrlicht/line3d.h /usr/local/include/irrlicht/rect.h \
+ /usr/local/include/irrlicht/position2d.h \
+ /usr/local/include/irrlicht/irrString.h \
+ /usr/local/include/irrlicht/irrAllocator.h \
+ /usr/local/include/irrlicht/ISceneNode.h \
+ /usr/local/include/irrlicht/IAttributeExchangingObject.h \
+ /usr/local/include/irrlicht/IReferenceCounted.h \
+ /usr/local/include/irrlicht/ESceneNodeTypes.h \
+ /usr/local/include/irrlicht/ECullingTypes.h \
+ /usr/local/include/irrlicht/EDebugSceneTypes.h \
+ /usr/local/include/irrlicht/ISceneNodeAnimator.h \
+ /usr/local/include/irrlicht/ESceneNodeAnimatorTypes.h \
+ /usr/local/include/irrlicht/IEventReceiver.h \
+ /usr/local/include/irrlicht/ILogger.h \
+ /usr/local/include/irrlicht/Keycodes.h \
+ /usr/local/include/irrlicht/ITriangleSelector.h \
+ /usr/local/include/irrlicht/triangle3d.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/SMaterial.h \
+ /usr/local/include/irrlicht/SColor.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/heapsort.h \
+ /usr/local/include/irrlicht/EMaterialTypes.h \
+ /usr/local/include/irrlicht/EMaterialFlags.h \
+ /usr/local/include/irrlicht/SMaterialLayer.h \
+ /usr/local/include/irrlicht/irrList.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ /usr/local/include/irrlicht/line2d.h \
+ /usr/local/include/irrlicht/quaternion.h \
+ /usr/local/include/irrlicht/IXMLReader.h \
+ /usr/local/include/irrlicht/irrXML.h \
+ /usr/local/include/irrlicht/EAttributes.h \
+ /usr/local/include/irrlicht/path.h \
+ BulletDynamics/Vehicle/btRaycastVehicle.h ../source/collisionobject.h \
+ ../source/collisionshape.h \
+ BulletCollision/CollisionShapes/btCollisionShape.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/irrString.h \
+ BulletCollision/CollisionDispatch/btCollisionObject.h \
+ ../source/collisionobjectaffector.h \
+ /usr/local/include/irrlicht/IAttributes.h
+	g++ -Wall -ansi -O3 -D__LINUX__ -I/usr/local/include/irrlicht/ -I/usr/include/Bullet  -c ../source/irrbulletcommon.cpp -o ../source/irrbulletcommon.cpp
+../source/collisionshape.cpp: ../source/collisionshape.cpp \
+ Bullet/btBulletDynamicsCommon.h Bullet/btBulletCollisionCommon.h \
+ Bullet/BulletCollision/Gimpact/btGImpactCollisionAlgorithm.h \
+ ../source/collisionshape.h \
+ BulletCollision/CollisionShapes/btCollisionShape.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/irrMath.h \
+ /usr/local/include/irrlicht/IrrCompileConfig.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/irrString.h \
+ /usr/local/include/irrlicht/irrAllocator.h ../source/irrbulletcommon.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/vector2d.h \
+ /usr/local/include/irrlicht/dimension2d.h \
+ /usr/local/include/irrlicht/plane3d.h \
+ /usr/local/include/irrlicht/aabbox3d.h \
+ /usr/local/include/irrlicht/line3d.h /usr/local/include/irrlicht/rect.h \
+ /usr/local/include/irrlicht/position2d.h \
+ /usr/local/include/irrlicht/irrString.h \
+ /usr/local/include/irrlicht/ISceneNode.h \
+ /usr/local/include/irrlicht/IAttributeExchangingObject.h \
+ /usr/local/include/irrlicht/IReferenceCounted.h \
+ /usr/local/include/irrlicht/ESceneNodeTypes.h \
+ /usr/local/include/irrlicht/ECullingTypes.h \
+ /usr/local/include/irrlicht/EDebugSceneTypes.h \
+ /usr/local/include/irrlicht/ISceneNodeAnimator.h \
+ /usr/local/include/irrlicht/ESceneNodeAnimatorTypes.h \
+ /usr/local/include/irrlicht/IEventReceiver.h \
+ /usr/local/include/irrlicht/ILogger.h \
+ /usr/local/include/irrlicht/Keycodes.h \
+ /usr/local/include/irrlicht/ITriangleSelector.h \
+ /usr/local/include/irrlicht/triangle3d.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/SMaterial.h \
+ /usr/local/include/irrlicht/SColor.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/heapsort.h \
+ /usr/local/include/irrlicht/EMaterialTypes.h \
+ /usr/local/include/irrlicht/EMaterialFlags.h \
+ /usr/local/include/irrlicht/SMaterialLayer.h \
+ /usr/local/include/irrlicht/irrList.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ /usr/local/include/irrlicht/line2d.h \
+ /usr/local/include/irrlicht/quaternion.h \
+ /usr/local/include/irrlicht/IXMLReader.h \
+ /usr/local/include/irrlicht/irrXML.h \
+ /usr/local/include/irrlicht/EAttributes.h \
+ /usr/local/include/irrlicht/path.h
+	g++ -Wall -ansi -O3 -D__LINUX__ -I/usr/local/include/irrlicht/ -I/usr/include/Bullet  -c ../source/collisionshape.cpp -o ../source/collisionshape.cpp
+../source/rigidbody.cpp: ../source/rigidbody.cpp \
+ Bullet/btBulletDynamicsCommon.h Bullet/btBulletCollisionCommon.h \
+ /usr/local/include/irrlicht/ISceneManager.h \
+ /usr/local/include/irrlicht/IReferenceCounted.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/IrrCompileConfig.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/heapsort.h \
+ /usr/local/include/irrlicht/irrAllocator.h \
+ /usr/local/include/irrlicht/irrMath.h \
+ /usr/local/include/irrlicht/irrString.h \
+ /usr/local/include/irrlicht/path.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/dimension2d.h \
+ /usr/local/include/irrlicht/SColor.h \
+ /usr/local/include/irrlicht/ETerrainElements.h \
+ /usr/local/include/irrlicht/ESceneNodeTypes.h \
+ /usr/local/include/irrlicht/ESceneNodeAnimatorTypes.h \
+ /usr/local/include/irrlicht/EMeshWriterEnums.h \
+ /usr/local/include/irrlicht/SceneParameters.h \
+ /usr/local/include/irrlicht/IGeometryCreator.h \
+ /usr/local/include/irrlicht/IMesh.h \
+ /usr/local/include/irrlicht/SMaterial.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/vector2d.h \
+ /usr/local/include/irrlicht/plane3d.h \
+ /usr/local/include/irrlicht/aabbox3d.h \
+ /usr/local/include/irrlicht/line3d.h /usr/local/include/irrlicht/rect.h \
+ /usr/local/include/irrlicht/position2d.h \
+ /usr/local/include/irrlicht/EMaterialTypes.h \
+ /usr/local/include/irrlicht/EMaterialFlags.h \
+ /usr/local/include/irrlicht/SMaterialLayer.h \
+ /usr/local/include/irrlicht/EHardwareBufferFlags.h \
+ /usr/local/include/irrlicht/IImage.h \
+ /usr/local/include/irrlicht/ISkinnedMesh.h \
+ /usr/local/include/irrlicht/IBoneSceneNode.h \
+ /usr/local/include/irrlicht/ISceneNode.h \
+ /usr/local/include/irrlicht/IAttributeExchangingObject.h \
+ /usr/local/include/irrlicht/ECullingTypes.h \
+ /usr/local/include/irrlicht/EDebugSceneTypes.h \
+ /usr/local/include/irrlicht/ISceneNodeAnimator.h \
+ /usr/local/include/irrlicht/IEventReceiver.h \
+ /usr/local/include/irrlicht/ILogger.h \
+ /usr/local/include/irrlicht/Keycodes.h \
+ /usr/local/include/irrlicht/ITriangleSelector.h \
+ /usr/local/include/irrlicht/triangle3d.h \
+ /usr/local/include/irrlicht/irrList.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ /usr/local/include/irrlicht/line2d.h \
+ /usr/local/include/irrlicht/quaternion.h \
+ /usr/local/include/irrlicht/IXMLReader.h \
+ /usr/local/include/irrlicht/irrXML.h \
+ /usr/local/include/irrlicht/EAttributes.h \
+ /usr/local/include/irrlicht/IAnimatedMesh.h \
+ /usr/local/include/irrlicht/SSkinMeshBuffer.h \
+ /usr/local/include/irrlicht/IMeshBuffer.h \
+ /usr/local/include/irrlicht/S3DVertex.h \
+ /usr/local/include/irrlicht/SVertexIndex.h \
+ /usr/local/include/irrlicht/EPrimitiveTypes.h \
+ /usr/local/include/irrlicht/IFileSystem.h \
+ /usr/local/include/irrlicht/IFileArchive.h \
+ /usr/local/include/irrlicht/IReadFile.h \
+ /usr/local/include/irrlicht/coreutil.h \
+ /usr/local/include/irrlicht/IFileList.h \
+ /usr/local/include/irrlicht/IrrlichtDevice.h \
+ /usr/local/include/irrlicht/IVideoDriver.h \
+ /usr/local/include/irrlicht/ITexture.h \
+ /usr/local/include/irrlicht/EDriverTypes.h \
+ /usr/local/include/irrlicht/EDriverFeatures.h \
+ /usr/local/include/irrlicht/SExposedVideoData.h \
+ /usr/local/include/irrlicht/EDeviceTypes.h \
+ /usr/local/include/irrlicht/ICursorControl.h \
+ /usr/local/include/irrlicht/IVideoModeList.h \
+ /usr/local/include/irrlicht/ITimer.h \
+ /usr/local/include/irrlicht/IOSOperator.h ../source/rigidbody.h \
+ ../source/irrbulletcommon.h /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/ISceneNode.h ../source/collisionobject.h \
+ ../source/collisionshape.h \
+ BulletCollision/CollisionShapes/btCollisionShape.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/irrString.h \
+ BulletCollision/CollisionDispatch/btCollisionObject.h \
+ ../source/collisionobjectaffector.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ BulletDynamics/Dynamics/btRigidBody.h ../source/raycastvehicle.h \
+ BulletDynamics/Vehicle/btRaycastVehicle.h ../source/motionstate.h \
+ Bullet/LinearMath/btDefaultMotionState.h \
+ ../source/irrbullet_compile_config.h ../source/bulletworld.h \
+ ../source/softbody.h BulletSoftBody/btSoftBodyHelpers.h \
+ BulletSoftBody/btSoftBody.h /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/S3DVertex.h \
+ /usr/local/include/irrlicht/IMeshBuffer.h ../source/physicsdebug.h \
+ Bullet/LinearMath/btIDebugDraw.h \
+ BulletSoftBody/btSoftRigidDynamicsWorld.h \
+ ../source/collisioncallbackinformation.h \
+ Bullet/BulletCollision/NarrowPhaseCollision/btPersistentManifold.h
+	g++ -Wall -ansi -O3 -D__LINUX__ -I/usr/local/include/irrlicht/ -I/usr/include/Bullet  -c ../source/rigidbody.cpp -o ../source/rigidbody.cpp
+../source/bvhtrianglemeshshape.cpp: ../source/bvhtrianglemeshshape.cpp \
+ Bullet/btBulletDynamicsCommon.h Bullet/btBulletCollisionCommon.h \
+ ../source/bvhtrianglemeshshape.h ../source/trianglemeshshape.h \
+ ../source/collisionshape.h \
+ BulletCollision/CollisionShapes/btCollisionShape.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/irrMath.h \
+ /usr/local/include/irrlicht/IrrCompileConfig.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/irrString.h \
+ /usr/local/include/irrlicht/irrAllocator.h ../source/irrbulletcommon.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/vector2d.h \
+ /usr/local/include/irrlicht/dimension2d.h \
+ /usr/local/include/irrlicht/plane3d.h \
+ /usr/local/include/irrlicht/aabbox3d.h \
+ /usr/local/include/irrlicht/line3d.h /usr/local/include/irrlicht/rect.h \
+ /usr/local/include/irrlicht/position2d.h \
+ /usr/local/include/irrlicht/irrString.h \
+ /usr/local/include/irrlicht/ISceneNode.h \
+ /usr/local/include/irrlicht/IAttributeExchangingObject.h \
+ /usr/local/include/irrlicht/IReferenceCounted.h \
+ /usr/local/include/irrlicht/ESceneNodeTypes.h \
+ /usr/local/include/irrlicht/ECullingTypes.h \
+ /usr/local/include/irrlicht/EDebugSceneTypes.h \
+ /usr/local/include/irrlicht/ISceneNodeAnimator.h \
+ /usr/local/include/irrlicht/ESceneNodeAnimatorTypes.h \
+ /usr/local/include/irrlicht/IEventReceiver.h \
+ /usr/local/include/irrlicht/ILogger.h \
+ /usr/local/include/irrlicht/Keycodes.h \
+ /usr/local/include/irrlicht/ITriangleSelector.h \
+ /usr/local/include/irrlicht/triangle3d.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/SMaterial.h \
+ /usr/local/include/irrlicht/SColor.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/heapsort.h \
+ /usr/local/include/irrlicht/EMaterialTypes.h \
+ /usr/local/include/irrlicht/EMaterialFlags.h \
+ /usr/local/include/irrlicht/SMaterialLayer.h \
+ /usr/local/include/irrlicht/irrList.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ /usr/local/include/irrlicht/line2d.h \
+ /usr/local/include/irrlicht/quaternion.h \
+ /usr/local/include/irrlicht/IXMLReader.h \
+ /usr/local/include/irrlicht/irrXML.h \
+ /usr/local/include/irrlicht/EAttributes.h \
+ /usr/local/include/irrlicht/path.h \
+ BulletCollision/CollisionShapes/btTriangleMesh.h
+	g++ -Wall -ansi -O3 -D__LINUX__ -I/usr/local/include/irrlicht/ -I/usr/include/Bullet  -c ../source/bvhtrianglemeshshape.cpp -o ../source/bvhtrianglemeshshape.cpp
+../source/motionstate.cpp: ../source/motionstate.cpp \
+ Bullet/btBulletDynamicsCommon.h Bullet/btBulletCollisionCommon.h \
+ ../source/motionstate.h ../source/irrbulletcommon.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/irrMath.h \
+ /usr/local/include/irrlicht/IrrCompileConfig.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/vector2d.h \
+ /usr/local/include/irrlicht/dimension2d.h \
+ /usr/local/include/irrlicht/plane3d.h \
+ /usr/local/include/irrlicht/aabbox3d.h \
+ /usr/local/include/irrlicht/line3d.h /usr/local/include/irrlicht/rect.h \
+ /usr/local/include/irrlicht/position2d.h \
+ /usr/local/include/irrlicht/irrString.h \
+ /usr/local/include/irrlicht/irrAllocator.h \
+ /usr/local/include/irrlicht/ISceneNode.h \
+ /usr/local/include/irrlicht/IAttributeExchangingObject.h \
+ /usr/local/include/irrlicht/IReferenceCounted.h \
+ /usr/local/include/irrlicht/ESceneNodeTypes.h \
+ /usr/local/include/irrlicht/ECullingTypes.h \
+ /usr/local/include/irrlicht/EDebugSceneTypes.h \
+ /usr/local/include/irrlicht/ISceneNodeAnimator.h \
+ /usr/local/include/irrlicht/ESceneNodeAnimatorTypes.h \
+ /usr/local/include/irrlicht/IEventReceiver.h \
+ /usr/local/include/irrlicht/ILogger.h \
+ /usr/local/include/irrlicht/Keycodes.h \
+ /usr/local/include/irrlicht/ITriangleSelector.h \
+ /usr/local/include/irrlicht/triangle3d.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/SMaterial.h \
+ /usr/local/include/irrlicht/SColor.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/heapsort.h \
+ /usr/local/include/irrlicht/EMaterialTypes.h \
+ /usr/local/include/irrlicht/EMaterialFlags.h \
+ /usr/local/include/irrlicht/SMaterialLayer.h \
+ /usr/local/include/irrlicht/irrList.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ /usr/local/include/irrlicht/line2d.h \
+ /usr/local/include/irrlicht/quaternion.h \
+ /usr/local/include/irrlicht/IXMLReader.h \
+ /usr/local/include/irrlicht/irrXML.h \
+ /usr/local/include/irrlicht/EAttributes.h \
+ /usr/local/include/irrlicht/path.h ../source/rigidbody.h \
+ ../source/collisionobject.h ../source/collisionshape.h \
+ BulletCollision/CollisionShapes/btCollisionShape.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/irrString.h \
+ BulletCollision/CollisionDispatch/btCollisionObject.h \
+ ../source/collisionobjectaffector.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ BulletDynamics/Dynamics/btRigidBody.h ../source/raycastvehicle.h \
+ BulletDynamics/Vehicle/btRaycastVehicle.h \
+ Bullet/LinearMath/btDefaultMotionState.h ../source/bulletworld.h \
+ ../source/softbody.h BulletSoftBody/btSoftBodyHelpers.h \
+ BulletSoftBody/btSoftBody.h /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/S3DVertex.h \
+ /usr/local/include/irrlicht/IMeshBuffer.h \
+ /usr/local/include/irrlicht/S3DVertex.h \
+ /usr/local/include/irrlicht/SVertexIndex.h \
+ /usr/local/include/irrlicht/EHardwareBufferFlags.h \
+ /usr/local/include/irrlicht/EPrimitiveTypes.h ../source/physicsdebug.h \
+ Bullet/LinearMath/btIDebugDraw.h \
+ BulletSoftBody/btSoftRigidDynamicsWorld.h \
+ ../source/collisioncallbackinformation.h \
+ Bullet/BulletCollision/NarrowPhaseCollision/btPersistentManifold.h \
+ ../source/irrbullet_compile_config.h \
+ /usr/local/include/irrlicht/ISceneManager.h \
+ /usr/local/include/irrlicht/ETerrainElements.h \
+ /usr/local/include/irrlicht/EMeshWriterEnums.h \
+ /usr/local/include/irrlicht/SceneParameters.h \
+ /usr/local/include/irrlicht/IGeometryCreator.h \
+ /usr/local/include/irrlicht/IMesh.h /usr/local/include/irrlicht/IImage.h \
+ /usr/local/include/irrlicht/ISkinnedMesh.h \
+ /usr/local/include/irrlicht/IBoneSceneNode.h \
+ /usr/local/include/irrlicht/ISceneNode.h \
+ /usr/local/include/irrlicht/IAnimatedMesh.h \
+ /usr/local/include/irrlicht/SSkinMeshBuffer.h \
+ /usr/local/include/irrlicht/IMeshBuffer.h
+	g++ -Wall -ansi -O3 -D__LINUX__ -I/usr/local/include/irrlicht/ -I/usr/include/Bullet  -c ../source/motionstate.cpp -o ../source/motionstate.cpp
+../source/convexhullshape.cpp: ../source/convexhullshape.cpp \
+ /usr/local/include/irrlicht/IMesh.h \
+ /usr/local/include/irrlicht/IReferenceCounted.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/IrrCompileConfig.h \
+ /usr/local/include/irrlicht/SMaterial.h \
+ /usr/local/include/irrlicht/SColor.h \
+ /usr/local/include/irrlicht/irrMath.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/vector2d.h \
+ /usr/local/include/irrlicht/dimension2d.h \
+ /usr/local/include/irrlicht/plane3d.h \
+ /usr/local/include/irrlicht/aabbox3d.h \
+ /usr/local/include/irrlicht/line3d.h /usr/local/include/irrlicht/rect.h \
+ /usr/local/include/irrlicht/position2d.h \
+ /usr/local/include/irrlicht/irrString.h \
+ /usr/local/include/irrlicht/irrAllocator.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/heapsort.h \
+ /usr/local/include/irrlicht/EMaterialTypes.h \
+ /usr/local/include/irrlicht/EMaterialFlags.h \
+ /usr/local/include/irrlicht/SMaterialLayer.h \
+ /usr/local/include/irrlicht/EHardwareBufferFlags.h \
+ /usr/local/include/irrlicht/IMeshBuffer.h \
+ /usr/local/include/irrlicht/S3DVertex.h \
+ /usr/local/include/irrlicht/SVertexIndex.h \
+ /usr/local/include/irrlicht/EPrimitiveTypes.h \
+ Bullet/btBulletDynamicsCommon.h Bullet/btBulletCollisionCommon.h \
+ ../source/collisionshape.h \
+ BulletCollision/CollisionShapes/btCollisionShape.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/irrString.h ../source/irrbulletcommon.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/ISceneNode.h \
+ /usr/local/include/irrlicht/IAttributeExchangingObject.h \
+ /usr/local/include/irrlicht/ESceneNodeTypes.h \
+ /usr/local/include/irrlicht/ECullingTypes.h \
+ /usr/local/include/irrlicht/EDebugSceneTypes.h \
+ /usr/local/include/irrlicht/ISceneNodeAnimator.h \
+ /usr/local/include/irrlicht/ESceneNodeAnimatorTypes.h \
+ /usr/local/include/irrlicht/IEventReceiver.h \
+ /usr/local/include/irrlicht/ILogger.h \
+ /usr/local/include/irrlicht/Keycodes.h \
+ /usr/local/include/irrlicht/ITriangleSelector.h \
+ /usr/local/include/irrlicht/triangle3d.h \
+ /usr/local/include/irrlicht/irrList.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ /usr/local/include/irrlicht/line2d.h \
+ /usr/local/include/irrlicht/quaternion.h \
+ /usr/local/include/irrlicht/IXMLReader.h \
+ /usr/local/include/irrlicht/irrXML.h \
+ /usr/local/include/irrlicht/EAttributes.h \
+ /usr/local/include/irrlicht/path.h ../source/convexhullshape.h
+	g++ -Wall -ansi -O3 -D__LINUX__ -I/usr/local/include/irrlicht/ -I/usr/include/Bullet  -c ../source/convexhullshape.cpp -o ../source/convexhullshape.cpp
+../source/bulletworld.cpp: ../source/bulletworld.cpp \
+ /usr/local/include/irrlicht/IrrlichtDevice.h \
+ /usr/local/include/irrlicht/IReferenceCounted.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/IrrCompileConfig.h \
+ /usr/local/include/irrlicht/dimension2d.h \
+ /usr/local/include/irrlicht/irrMath.h \
+ /usr/local/include/irrlicht/IVideoDriver.h \
+ /usr/local/include/irrlicht/rect.h \
+ /usr/local/include/irrlicht/position2d.h \
+ /usr/local/include/irrlicht/vector2d.h \
+ /usr/local/include/irrlicht/SColor.h \
+ /usr/local/include/irrlicht/ITexture.h \
+ /usr/local/include/irrlicht/IImage.h \
+ /usr/local/include/irrlicht/EDriverTypes.h \
+ /usr/local/include/irrlicht/path.h \
+ /usr/local/include/irrlicht/irrString.h \
+ /usr/local/include/irrlicht/irrAllocator.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/plane3d.h \
+ /usr/local/include/irrlicht/aabbox3d.h \
+ /usr/local/include/irrlicht/line3d.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/heapsort.h \
+ /usr/local/include/irrlicht/SMaterial.h \
+ /usr/local/include/irrlicht/EMaterialTypes.h \
+ /usr/local/include/irrlicht/EMaterialFlags.h \
+ /usr/local/include/irrlicht/SMaterialLayer.h \
+ /usr/local/include/irrlicht/IMeshBuffer.h \
+ /usr/local/include/irrlicht/S3DVertex.h \
+ /usr/local/include/irrlicht/SVertexIndex.h \
+ /usr/local/include/irrlicht/EHardwareBufferFlags.h \
+ /usr/local/include/irrlicht/EPrimitiveTypes.h \
+ /usr/local/include/irrlicht/triangle3d.h \
+ /usr/local/include/irrlicht/EDriverFeatures.h \
+ /usr/local/include/irrlicht/SExposedVideoData.h \
+ /usr/local/include/irrlicht/EDeviceTypes.h \
+ /usr/local/include/irrlicht/IEventReceiver.h \
+ /usr/local/include/irrlicht/ILogger.h \
+ /usr/local/include/irrlicht/Keycodes.h \
+ /usr/local/include/irrlicht/ICursorControl.h \
+ /usr/local/include/irrlicht/IVideoModeList.h \
+ /usr/local/include/irrlicht/ITimer.h \
+ /usr/local/include/irrlicht/IOSOperator.h \
+ /usr/local/include/irrlicht/IGUIEnvironment.h \
+ /usr/local/include/irrlicht/IGUISkin.h \
+ /usr/local/include/irrlicht/IAttributeExchangingObject.h \
+ /usr/local/include/irrlicht/EGUIAlignment.h \
+ /usr/local/include/irrlicht/EMessageBoxFlags.h \
+ /usr/local/include/irrlicht/IXMLReader.h \
+ /usr/local/include/irrlicht/irrXML.h \
+ /usr/local/include/irrlicht/IGUIStaticText.h \
+ /usr/local/include/irrlicht/IGUIElement.h \
+ /usr/local/include/irrlicht/irrList.h \
+ /usr/local/include/irrlicht/EGUIElementTypes.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ /usr/local/include/irrlicht/line2d.h \
+ /usr/local/include/irrlicht/quaternion.h \
+ /usr/local/include/irrlicht/EAttributes.h \
+ Bullet/btBulletDynamicsCommon.h Bullet/btBulletCollisionCommon.h \
+ Bullet/BulletCollision/Gimpact/btGImpactCollisionAlgorithm.h \
+ Bullet/BulletCollision/CollisionDispatch/btGhostObject.h \
+ Bullet/BulletSoftBody/btSoftBodyRigidBodyCollisionConfiguration.h \
+ ../source/liquidbody.h /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/aabbox3d.h ../source/bulletworld.h \
+ ../source/irrbulletcommon.h /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/ISceneNode.h \
+ /usr/local/include/irrlicht/ESceneNodeTypes.h \
+ /usr/local/include/irrlicht/ECullingTypes.h \
+ /usr/local/include/irrlicht/EDebugSceneTypes.h \
+ /usr/local/include/irrlicht/ISceneNodeAnimator.h \
+ /usr/local/include/irrlicht/ESceneNodeAnimatorTypes.h \
+ /usr/local/include/irrlicht/ITriangleSelector.h ../source/rigidbody.h \
+ ../source/collisionobject.h ../source/collisionshape.h \
+ BulletCollision/CollisionShapes/btCollisionShape.h \
+ /usr/local/include/irrlicht/irrString.h \
+ BulletCollision/CollisionDispatch/btCollisionObject.h \
+ ../source/collisionobjectaffector.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ BulletDynamics/Dynamics/btRigidBody.h ../source/raycastvehicle.h \
+ BulletDynamics/Vehicle/btRaycastVehicle.h ../source/softbody.h \
+ BulletSoftBody/btSoftBodyHelpers.h BulletSoftBody/btSoftBody.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/S3DVertex.h \
+ /usr/local/include/irrlicht/IMeshBuffer.h ../source/physicsdebug.h \
+ Bullet/LinearMath/btIDebugDraw.h \
+ BulletSoftBody/btSoftRigidDynamicsWorld.h \
+ ../source/collisioncallbackinformation.h \
+ Bullet/BulletCollision/NarrowPhaseCollision/btPersistentManifold.h \
+ ../source/irrbullet_compile_config.h
+	g++ -Wall -ansi -O3 -D__LINUX__ -I/usr/local/include/irrlicht/ -I/usr/include/Bullet  -c ../source/bulletworld.cpp -o ../source/bulletworld.cpp
+../source/liquidbody.cpp: ../source/liquidbody.cpp ../source/liquidbody.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/irrMath.h \
+ /usr/local/include/irrlicht/IrrCompileConfig.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/aabbox3d.h \
+ /usr/local/include/irrlicht/plane3d.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/line3d.h \
+ /usr/local/include/irrlicht/IrrlichtDevice.h \
+ /usr/local/include/irrlicht/IReferenceCounted.h \
+ /usr/local/include/irrlicht/dimension2d.h \
+ /usr/local/include/irrlicht/IVideoDriver.h \
+ /usr/local/include/irrlicht/rect.h \
+ /usr/local/include/irrlicht/position2d.h \
+ /usr/local/include/irrlicht/vector2d.h \
+ /usr/local/include/irrlicht/SColor.h \
+ /usr/local/include/irrlicht/ITexture.h \
+ /usr/local/include/irrlicht/IImage.h \
+ /usr/local/include/irrlicht/EDriverTypes.h \
+ /usr/local/include/irrlicht/path.h \
+ /usr/local/include/irrlicht/irrString.h \
+ /usr/local/include/irrlicht/irrAllocator.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/aabbox3d.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/heapsort.h \
+ /usr/local/include/irrlicht/SMaterial.h \
+ /usr/local/include/irrlicht/EMaterialTypes.h \
+ /usr/local/include/irrlicht/EMaterialFlags.h \
+ /usr/local/include/irrlicht/SMaterialLayer.h \
+ /usr/local/include/irrlicht/IMeshBuffer.h \
+ /usr/local/include/irrlicht/S3DVertex.h \
+ /usr/local/include/irrlicht/SVertexIndex.h \
+ /usr/local/include/irrlicht/EHardwareBufferFlags.h \
+ /usr/local/include/irrlicht/EPrimitiveTypes.h \
+ /usr/local/include/irrlicht/triangle3d.h \
+ /usr/local/include/irrlicht/EDriverFeatures.h \
+ /usr/local/include/irrlicht/SExposedVideoData.h \
+ /usr/local/include/irrlicht/EDeviceTypes.h \
+ /usr/local/include/irrlicht/IEventReceiver.h \
+ /usr/local/include/irrlicht/ILogger.h \
+ /usr/local/include/irrlicht/Keycodes.h \
+ /usr/local/include/irrlicht/ICursorControl.h \
+ /usr/local/include/irrlicht/IVideoModeList.h \
+ /usr/local/include/irrlicht/ITimer.h \
+ /usr/local/include/irrlicht/IOSOperator.h ../source/bulletworld.h \
+ ../source/irrbulletcommon.h /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/ISceneNode.h \
+ /usr/local/include/irrlicht/IAttributeExchangingObject.h \
+ /usr/local/include/irrlicht/ESceneNodeTypes.h \
+ /usr/local/include/irrlicht/ECullingTypes.h \
+ /usr/local/include/irrlicht/EDebugSceneTypes.h \
+ /usr/local/include/irrlicht/ISceneNodeAnimator.h \
+ /usr/local/include/irrlicht/ESceneNodeAnimatorTypes.h \
+ /usr/local/include/irrlicht/ITriangleSelector.h \
+ /usr/local/include/irrlicht/irrList.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ /usr/local/include/irrlicht/line2d.h \
+ /usr/local/include/irrlicht/quaternion.h \
+ /usr/local/include/irrlicht/IXMLReader.h \
+ /usr/local/include/irrlicht/irrXML.h \
+ /usr/local/include/irrlicht/EAttributes.h ../source/rigidbody.h \
+ ../source/collisionobject.h ../source/collisionshape.h \
+ BulletCollision/CollisionShapes/btCollisionShape.h \
+ /usr/local/include/irrlicht/irrString.h \
+ BulletCollision/CollisionDispatch/btCollisionObject.h \
+ ../source/collisionobjectaffector.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ BulletDynamics/Dynamics/btRigidBody.h ../source/raycastvehicle.h \
+ BulletDynamics/Vehicle/btRaycastVehicle.h ../source/softbody.h \
+ BulletSoftBody/btSoftBodyHelpers.h BulletSoftBody/btSoftBody.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/S3DVertex.h \
+ /usr/local/include/irrlicht/IMeshBuffer.h ../source/physicsdebug.h \
+ Bullet/LinearMath/btIDebugDraw.h \
+ BulletSoftBody/btSoftRigidDynamicsWorld.h \
+ ../source/collisioncallbackinformation.h \
+ Bullet/BulletCollision/NarrowPhaseCollision/btPersistentManifold.h \
+ ../source/irrbullet_compile_config.h
+	g++ -Wall -ansi -O3 -D__LINUX__ -I/usr/local/include/irrlicht/ -I/usr/include/Bullet  -c ../source/liquidbody.cpp -o ../source/liquidbody.cpp
+../source/collisionobject.cpp: ../source/collisionobject.cpp \
+ Bullet/btBulletDynamicsCommon.h Bullet/btBulletCollisionCommon.h \
+ /usr/local/include/irrlicht/ISceneManager.h \
+ /usr/local/include/irrlicht/IReferenceCounted.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/IrrCompileConfig.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/heapsort.h \
+ /usr/local/include/irrlicht/irrAllocator.h \
+ /usr/local/include/irrlicht/irrMath.h \
+ /usr/local/include/irrlicht/irrString.h \
+ /usr/local/include/irrlicht/path.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/dimension2d.h \
+ /usr/local/include/irrlicht/SColor.h \
+ /usr/local/include/irrlicht/ETerrainElements.h \
+ /usr/local/include/irrlicht/ESceneNodeTypes.h \
+ /usr/local/include/irrlicht/ESceneNodeAnimatorTypes.h \
+ /usr/local/include/irrlicht/EMeshWriterEnums.h \
+ /usr/local/include/irrlicht/SceneParameters.h \
+ /usr/local/include/irrlicht/IGeometryCreator.h \
+ /usr/local/include/irrlicht/IMesh.h \
+ /usr/local/include/irrlicht/SMaterial.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/vector2d.h \
+ /usr/local/include/irrlicht/plane3d.h \
+ /usr/local/include/irrlicht/aabbox3d.h \
+ /usr/local/include/irrlicht/line3d.h /usr/local/include/irrlicht/rect.h \
+ /usr/local/include/irrlicht/position2d.h \
+ /usr/local/include/irrlicht/EMaterialTypes.h \
+ /usr/local/include/irrlicht/EMaterialFlags.h \
+ /usr/local/include/irrlicht/SMaterialLayer.h \
+ /usr/local/include/irrlicht/EHardwareBufferFlags.h \
+ /usr/local/include/irrlicht/IImage.h \
+ /usr/local/include/irrlicht/ISkinnedMesh.h \
+ /usr/local/include/irrlicht/IBoneSceneNode.h \
+ /usr/local/include/irrlicht/ISceneNode.h \
+ /usr/local/include/irrlicht/IAttributeExchangingObject.h \
+ /usr/local/include/irrlicht/ECullingTypes.h \
+ /usr/local/include/irrlicht/EDebugSceneTypes.h \
+ /usr/local/include/irrlicht/ISceneNodeAnimator.h \
+ /usr/local/include/irrlicht/IEventReceiver.h \
+ /usr/local/include/irrlicht/ILogger.h \
+ /usr/local/include/irrlicht/Keycodes.h \
+ /usr/local/include/irrlicht/ITriangleSelector.h \
+ /usr/local/include/irrlicht/triangle3d.h \
+ /usr/local/include/irrlicht/irrList.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ /usr/local/include/irrlicht/line2d.h \
+ /usr/local/include/irrlicht/quaternion.h \
+ /usr/local/include/irrlicht/IXMLReader.h \
+ /usr/local/include/irrlicht/irrXML.h \
+ /usr/local/include/irrlicht/EAttributes.h \
+ /usr/local/include/irrlicht/IAnimatedMesh.h \
+ /usr/local/include/irrlicht/SSkinMeshBuffer.h \
+ /usr/local/include/irrlicht/IMeshBuffer.h \
+ /usr/local/include/irrlicht/S3DVertex.h \
+ /usr/local/include/irrlicht/SVertexIndex.h \
+ /usr/local/include/irrlicht/EPrimitiveTypes.h \
+ /usr/local/include/irrlicht/IFileSystem.h \
+ /usr/local/include/irrlicht/IFileArchive.h \
+ /usr/local/include/irrlicht/IReadFile.h \
+ /usr/local/include/irrlicht/coreutil.h \
+ /usr/local/include/irrlicht/IFileList.h \
+ /usr/local/include/irrlicht/IMeshSceneNode.h ../source/bulletworld.h \
+ ../source/irrbulletcommon.h /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/ISceneNode.h ../source/rigidbody.h \
+ ../source/collisionobject.h ../source/collisionshape.h \
+ BulletCollision/CollisionShapes/btCollisionShape.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/irrString.h \
+ BulletCollision/CollisionDispatch/btCollisionObject.h \
+ ../source/collisionobjectaffector.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ BulletDynamics/Dynamics/btRigidBody.h ../source/raycastvehicle.h \
+ BulletDynamics/Vehicle/btRaycastVehicle.h ../source/softbody.h \
+ BulletSoftBody/btSoftBodyHelpers.h BulletSoftBody/btSoftBody.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/S3DVertex.h \
+ /usr/local/include/irrlicht/IMeshBuffer.h ../source/physicsdebug.h \
+ Bullet/LinearMath/btIDebugDraw.h \
+ BulletSoftBody/btSoftRigidDynamicsWorld.h \
+ ../source/collisioncallbackinformation.h \
+ Bullet/BulletCollision/NarrowPhaseCollision/btPersistentManifold.h \
+ ../source/irrbullet_compile_config.h
+	g++ -Wall -ansi -O3 -D__LINUX__ -I/usr/local/include/irrlicht/ -I/usr/include/Bullet  -c ../source/collisionobject.cpp -o ../source/collisionobject.cpp
+../source/collisionobjectaffectordelete.cpp: \
+ ../source/collisionobjectaffectordelete.cpp \
+ ../source/collisionobjectaffectordelete.h \
+ ../source/collisionobjectaffector.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/IrrCompileConfig.h ../source/bulletworld.h \
+ ../source/irrbulletcommon.h /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/irrMath.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/vector2d.h \
+ /usr/local/include/irrlicht/dimension2d.h \
+ /usr/local/include/irrlicht/plane3d.h \
+ /usr/local/include/irrlicht/aabbox3d.h \
+ /usr/local/include/irrlicht/line3d.h /usr/local/include/irrlicht/rect.h \
+ /usr/local/include/irrlicht/position2d.h \
+ /usr/local/include/irrlicht/irrString.h \
+ /usr/local/include/irrlicht/irrAllocator.h \
+ /usr/local/include/irrlicht/ISceneNode.h \
+ /usr/local/include/irrlicht/IAttributeExchangingObject.h \
+ /usr/local/include/irrlicht/IReferenceCounted.h \
+ /usr/local/include/irrlicht/ESceneNodeTypes.h \
+ /usr/local/include/irrlicht/ECullingTypes.h \
+ /usr/local/include/irrlicht/EDebugSceneTypes.h \
+ /usr/local/include/irrlicht/ISceneNodeAnimator.h \
+ /usr/local/include/irrlicht/ESceneNodeAnimatorTypes.h \
+ /usr/local/include/irrlicht/IEventReceiver.h \
+ /usr/local/include/irrlicht/ILogger.h \
+ /usr/local/include/irrlicht/Keycodes.h \
+ /usr/local/include/irrlicht/ITriangleSelector.h \
+ /usr/local/include/irrlicht/triangle3d.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/SMaterial.h \
+ /usr/local/include/irrlicht/SColor.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/heapsort.h \
+ /usr/local/include/irrlicht/EMaterialTypes.h \
+ /usr/local/include/irrlicht/EMaterialFlags.h \
+ /usr/local/include/irrlicht/SMaterialLayer.h \
+ /usr/local/include/irrlicht/irrList.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ /usr/local/include/irrlicht/line2d.h \
+ /usr/local/include/irrlicht/quaternion.h \
+ /usr/local/include/irrlicht/IXMLReader.h \
+ /usr/local/include/irrlicht/irrXML.h \
+ /usr/local/include/irrlicht/EAttributes.h \
+ /usr/local/include/irrlicht/path.h ../source/rigidbody.h \
+ ../source/collisionobject.h ../source/collisionshape.h \
+ BulletCollision/CollisionShapes/btCollisionShape.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/irrString.h \
+ BulletCollision/CollisionDispatch/btCollisionObject.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ BulletDynamics/Dynamics/btRigidBody.h ../source/raycastvehicle.h \
+ BulletDynamics/Vehicle/btRaycastVehicle.h ../source/softbody.h \
+ BulletSoftBody/btSoftBodyHelpers.h BulletSoftBody/btSoftBody.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/S3DVertex.h \
+ /usr/local/include/irrlicht/IMeshBuffer.h \
+ /usr/local/include/irrlicht/S3DVertex.h \
+ /usr/local/include/irrlicht/SVertexIndex.h \
+ /usr/local/include/irrlicht/EHardwareBufferFlags.h \
+ /usr/local/include/irrlicht/EPrimitiveTypes.h ../source/physicsdebug.h \
+ Bullet/LinearMath/btIDebugDraw.h \
+ BulletSoftBody/btSoftRigidDynamicsWorld.h \
+ ../source/collisioncallbackinformation.h \
+ Bullet/BulletCollision/NarrowPhaseCollision/btPersistentManifold.h \
+ ../source/irrbullet_compile_config.h
+	g++ -Wall -ansi -O3 -D__LINUX__ -I/usr/local/include/irrlicht/ -I/usr/include/Bullet  -c ../source/collisionobjectaffectordelete.cpp -o ../source/collisionobjectaffectordelete.cpp
+../source/softbody.cpp: ../source/softbody.cpp ../source/softbody.h \
+ ../source/collisionobject.h ../source/irrbulletcommon.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/irrMath.h \
+ /usr/local/include/irrlicht/IrrCompileConfig.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/vector2d.h \
+ /usr/local/include/irrlicht/dimension2d.h \
+ /usr/local/include/irrlicht/plane3d.h \
+ /usr/local/include/irrlicht/aabbox3d.h \
+ /usr/local/include/irrlicht/line3d.h /usr/local/include/irrlicht/rect.h \
+ /usr/local/include/irrlicht/position2d.h \
+ /usr/local/include/irrlicht/irrString.h \
+ /usr/local/include/irrlicht/irrAllocator.h \
+ /usr/local/include/irrlicht/ISceneNode.h \
+ /usr/local/include/irrlicht/IAttributeExchangingObject.h \
+ /usr/local/include/irrlicht/IReferenceCounted.h \
+ /usr/local/include/irrlicht/ESceneNodeTypes.h \
+ /usr/local/include/irrlicht/ECullingTypes.h \
+ /usr/local/include/irrlicht/EDebugSceneTypes.h \
+ /usr/local/include/irrlicht/ISceneNodeAnimator.h \
+ /usr/local/include/irrlicht/ESceneNodeAnimatorTypes.h \
+ /usr/local/include/irrlicht/IEventReceiver.h \
+ /usr/local/include/irrlicht/ILogger.h \
+ /usr/local/include/irrlicht/Keycodes.h \
+ /usr/local/include/irrlicht/ITriangleSelector.h \
+ /usr/local/include/irrlicht/triangle3d.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/SMaterial.h \
+ /usr/local/include/irrlicht/SColor.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/heapsort.h \
+ /usr/local/include/irrlicht/EMaterialTypes.h \
+ /usr/local/include/irrlicht/EMaterialFlags.h \
+ /usr/local/include/irrlicht/SMaterialLayer.h \
+ /usr/local/include/irrlicht/irrList.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ /usr/local/include/irrlicht/line2d.h \
+ /usr/local/include/irrlicht/quaternion.h \
+ /usr/local/include/irrlicht/IXMLReader.h \
+ /usr/local/include/irrlicht/irrXML.h \
+ /usr/local/include/irrlicht/EAttributes.h \
+ /usr/local/include/irrlicht/path.h ../source/collisionshape.h \
+ BulletCollision/CollisionShapes/btCollisionShape.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/irrString.h \
+ BulletCollision/CollisionDispatch/btCollisionObject.h \
+ ../source/collisionobjectaffector.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ BulletSoftBody/btSoftBodyHelpers.h BulletSoftBody/btSoftBody.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/S3DVertex.h \
+ /usr/local/include/irrlicht/IMeshBuffer.h \
+ /usr/local/include/irrlicht/S3DVertex.h \
+ /usr/local/include/irrlicht/SVertexIndex.h \
+ /usr/local/include/irrlicht/EHardwareBufferFlags.h \
+ /usr/local/include/irrlicht/EPrimitiveTypes.h \
+ /usr/local/include/irrlicht/IMesh.h \
+ /usr/local/include/irrlicht/IMeshSceneNode.h \
+ /usr/local/include/irrlicht/ISceneNode.h \
+ /usr/local/include/irrlicht/ISceneManager.h \
+ /usr/local/include/irrlicht/ETerrainElements.h \
+ /usr/local/include/irrlicht/EMeshWriterEnums.h \
+ /usr/local/include/irrlicht/SceneParameters.h \
+ /usr/local/include/irrlicht/IGeometryCreator.h \
+ /usr/local/include/irrlicht/IMesh.h /usr/local/include/irrlicht/IImage.h \
+ /usr/local/include/irrlicht/ISkinnedMesh.h \
+ /usr/local/include/irrlicht/IBoneSceneNode.h \
+ /usr/local/include/irrlicht/IAnimatedMesh.h \
+ /usr/local/include/irrlicht/SSkinMeshBuffer.h \
+ /usr/local/include/irrlicht/IMeshBuffer.h \
+ /usr/local/include/irrlicht/IMeshManipulator.h \
+ /usr/local/include/irrlicht/SVertexManipulator.h ../source/bulletworld.h \
+ ../source/rigidbody.h BulletDynamics/Dynamics/btRigidBody.h \
+ ../source/raycastvehicle.h BulletDynamics/Vehicle/btRaycastVehicle.h \
+ ../source/physicsdebug.h Bullet/LinearMath/btIDebugDraw.h \
+ BulletSoftBody/btSoftRigidDynamicsWorld.h \
+ ../source/collisioncallbackinformation.h \
+ Bullet/BulletCollision/NarrowPhaseCollision/btPersistentManifold.h \
+ ../source/irrbullet_compile_config.h
+	g++ -Wall -ansi -O3 -D__LINUX__ -I/usr/local/include/irrlicht/ -I/usr/include/Bullet  -c ../source/softbody.cpp -o ../source/softbody.cpp
+../source/trianglemeshshape.cpp: ../source/trianglemeshshape.cpp \
+ /usr/local/include/irrlicht/IMesh.h \
+ /usr/local/include/irrlicht/IReferenceCounted.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/IrrCompileConfig.h \
+ /usr/local/include/irrlicht/SMaterial.h \
+ /usr/local/include/irrlicht/SColor.h \
+ /usr/local/include/irrlicht/irrMath.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/vector2d.h \
+ /usr/local/include/irrlicht/dimension2d.h \
+ /usr/local/include/irrlicht/plane3d.h \
+ /usr/local/include/irrlicht/aabbox3d.h \
+ /usr/local/include/irrlicht/line3d.h /usr/local/include/irrlicht/rect.h \
+ /usr/local/include/irrlicht/position2d.h \
+ /usr/local/include/irrlicht/irrString.h \
+ /usr/local/include/irrlicht/irrAllocator.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/heapsort.h \
+ /usr/local/include/irrlicht/EMaterialTypes.h \
+ /usr/local/include/irrlicht/EMaterialFlags.h \
+ /usr/local/include/irrlicht/SMaterialLayer.h \
+ /usr/local/include/irrlicht/EHardwareBufferFlags.h \
+ /usr/local/include/irrlicht/IMeshBuffer.h \
+ /usr/local/include/irrlicht/S3DVertex.h \
+ /usr/local/include/irrlicht/SVertexIndex.h \
+ /usr/local/include/irrlicht/EPrimitiveTypes.h \
+ Bullet/btBulletDynamicsCommon.h Bullet/btBulletCollisionCommon.h \
+ ../source/trianglemeshshape.h ../source/collisionshape.h \
+ BulletCollision/CollisionShapes/btCollisionShape.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/irrString.h ../source/irrbulletcommon.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/ISceneNode.h \
+ /usr/local/include/irrlicht/IAttributeExchangingObject.h \
+ /usr/local/include/irrlicht/ESceneNodeTypes.h \
+ /usr/local/include/irrlicht/ECullingTypes.h \
+ /usr/local/include/irrlicht/EDebugSceneTypes.h \
+ /usr/local/include/irrlicht/ISceneNodeAnimator.h \
+ /usr/local/include/irrlicht/ESceneNodeAnimatorTypes.h \
+ /usr/local/include/irrlicht/IEventReceiver.h \
+ /usr/local/include/irrlicht/ILogger.h \
+ /usr/local/include/irrlicht/Keycodes.h \
+ /usr/local/include/irrlicht/ITriangleSelector.h \
+ /usr/local/include/irrlicht/triangle3d.h \
+ /usr/local/include/irrlicht/irrList.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ /usr/local/include/irrlicht/line2d.h \
+ /usr/local/include/irrlicht/quaternion.h \
+ /usr/local/include/irrlicht/IXMLReader.h \
+ /usr/local/include/irrlicht/irrXML.h \
+ /usr/local/include/irrlicht/EAttributes.h \
+ /usr/local/include/irrlicht/path.h \
+ BulletCollision/CollisionShapes/btTriangleMesh.h
+	g++ -Wall -ansi -O3 -D__LINUX__ -I/usr/local/include/irrlicht/ -I/usr/include/Bullet  -c ../source/trianglemeshshape.cpp -o ../source/trianglemeshshape.cpp
+../source/kinematiccharactercontroller.cpp: \
+ ../source/kinematiccharactercontroller.cpp \
+ ../source/kinematiccharactercontroller.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/IrrCompileConfig.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/irrMath.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/vector2d.h \
+ /usr/local/include/irrlicht/dimension2d.h \
+ /usr/local/include/irrlicht/plane3d.h \
+ /usr/local/include/irrlicht/aabbox3d.h \
+ /usr/local/include/irrlicht/line3d.h /usr/local/include/irrlicht/rect.h \
+ /usr/local/include/irrlicht/position2d.h \
+ /usr/local/include/irrlicht/irrString.h \
+ /usr/local/include/irrlicht/irrAllocator.h \
+ BulletCollision/CollisionDispatch/btGhostObject.h \
+ BulletDynamics/Character/btKinematicCharacterController.h irrBullet.h
+	g++ -Wall -ansi -O3 -D__LINUX__ -I/usr/local/include/irrlicht/ -I/usr/include/Bullet  -c ../source/kinematiccharactercontroller.cpp -o ../source/kinematiccharactercontroller.cpp
+../source/gimpactmeshshape.cpp: ../source/gimpactmeshshape.cpp \
+ Bullet/btBulletDynamicsCommon.h Bullet/btBulletCollisionCommon.h \
+ Bullet/BulletCollision/Gimpact/btGImpactCollisionAlgorithm.h \
+ ../source/gimpactmeshshape.h ../source/irrbulletcommon.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/irrMath.h \
+ /usr/local/include/irrlicht/IrrCompileConfig.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/vector2d.h \
+ /usr/local/include/irrlicht/dimension2d.h \
+ /usr/local/include/irrlicht/plane3d.h \
+ /usr/local/include/irrlicht/aabbox3d.h \
+ /usr/local/include/irrlicht/line3d.h /usr/local/include/irrlicht/rect.h \
+ /usr/local/include/irrlicht/position2d.h \
+ /usr/local/include/irrlicht/irrString.h \
+ /usr/local/include/irrlicht/irrAllocator.h \
+ /usr/local/include/irrlicht/ISceneNode.h \
+ /usr/local/include/irrlicht/IAttributeExchangingObject.h \
+ /usr/local/include/irrlicht/IReferenceCounted.h \
+ /usr/local/include/irrlicht/ESceneNodeTypes.h \
+ /usr/local/include/irrlicht/ECullingTypes.h \
+ /usr/local/include/irrlicht/EDebugSceneTypes.h \
+ /usr/local/include/irrlicht/ISceneNodeAnimator.h \
+ /usr/local/include/irrlicht/ESceneNodeAnimatorTypes.h \
+ /usr/local/include/irrlicht/IEventReceiver.h \
+ /usr/local/include/irrlicht/ILogger.h \
+ /usr/local/include/irrlicht/Keycodes.h \
+ /usr/local/include/irrlicht/ITriangleSelector.h \
+ /usr/local/include/irrlicht/triangle3d.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/SMaterial.h \
+ /usr/local/include/irrlicht/SColor.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/heapsort.h \
+ /usr/local/include/irrlicht/EMaterialTypes.h \
+ /usr/local/include/irrlicht/EMaterialFlags.h \
+ /usr/local/include/irrlicht/SMaterialLayer.h \
+ /usr/local/include/irrlicht/irrList.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ /usr/local/include/irrlicht/line2d.h \
+ /usr/local/include/irrlicht/quaternion.h \
+ /usr/local/include/irrlicht/IXMLReader.h \
+ /usr/local/include/irrlicht/irrXML.h \
+ /usr/local/include/irrlicht/EAttributes.h \
+ /usr/local/include/irrlicht/path.h \
+ BulletCollision/Gimpact/btGImpactShape.h ../source/trianglemeshshape.h \
+ ../source/collisionshape.h \
+ BulletCollision/CollisionShapes/btCollisionShape.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/irrString.h \
+ BulletCollision/CollisionShapes/btTriangleMesh.h
+	g++ -Wall -ansi -O3 -D__LINUX__ -I/usr/local/include/irrlicht/ -I/usr/include/Bullet  -c ../source/gimpactmeshshape.cpp -o ../source/gimpactmeshshape.cpp
+../source/collisionobjectaffector.cpp: \
+ ../source/collisionobjectaffector.cpp \
+ ../source/collisionobjectaffector.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/IrrCompileConfig.h \
+ ../source/irrbullet_compile_config.h
+	g++ -Wall -ansi -O3 -D__LINUX__ -I/usr/local/include/irrlicht/ -I/usr/include/Bullet  -c ../source/collisionobjectaffector.cpp -o ../source/collisionobjectaffector.cpp
+../source/raycastvehicle.cpp: ../source/raycastvehicle.cpp \
+ Bullet/btBulletDynamicsCommon.h Bullet/btBulletCollisionCommon.h \
+ /usr/local/include/irrlicht/ISceneManager.h \
+ /usr/local/include/irrlicht/IReferenceCounted.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/IrrCompileConfig.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/heapsort.h \
+ /usr/local/include/irrlicht/irrAllocator.h \
+ /usr/local/include/irrlicht/irrMath.h \
+ /usr/local/include/irrlicht/irrString.h \
+ /usr/local/include/irrlicht/path.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/dimension2d.h \
+ /usr/local/include/irrlicht/SColor.h \
+ /usr/local/include/irrlicht/ETerrainElements.h \
+ /usr/local/include/irrlicht/ESceneNodeTypes.h \
+ /usr/local/include/irrlicht/ESceneNodeAnimatorTypes.h \
+ /usr/local/include/irrlicht/EMeshWriterEnums.h \
+ /usr/local/include/irrlicht/SceneParameters.h \
+ /usr/local/include/irrlicht/IGeometryCreator.h \
+ /usr/local/include/irrlicht/IMesh.h \
+ /usr/local/include/irrlicht/SMaterial.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/vector2d.h \
+ /usr/local/include/irrlicht/plane3d.h \
+ /usr/local/include/irrlicht/aabbox3d.h \
+ /usr/local/include/irrlicht/line3d.h /usr/local/include/irrlicht/rect.h \
+ /usr/local/include/irrlicht/position2d.h \
+ /usr/local/include/irrlicht/EMaterialTypes.h \
+ /usr/local/include/irrlicht/EMaterialFlags.h \
+ /usr/local/include/irrlicht/SMaterialLayer.h \
+ /usr/local/include/irrlicht/EHardwareBufferFlags.h \
+ /usr/local/include/irrlicht/IImage.h \
+ /usr/local/include/irrlicht/ISkinnedMesh.h \
+ /usr/local/include/irrlicht/IBoneSceneNode.h \
+ /usr/local/include/irrlicht/ISceneNode.h \
+ /usr/local/include/irrlicht/IAttributeExchangingObject.h \
+ /usr/local/include/irrlicht/ECullingTypes.h \
+ /usr/local/include/irrlicht/EDebugSceneTypes.h \
+ /usr/local/include/irrlicht/ISceneNodeAnimator.h \
+ /usr/local/include/irrlicht/IEventReceiver.h \
+ /usr/local/include/irrlicht/ILogger.h \
+ /usr/local/include/irrlicht/Keycodes.h \
+ /usr/local/include/irrlicht/ITriangleSelector.h \
+ /usr/local/include/irrlicht/triangle3d.h \
+ /usr/local/include/irrlicht/irrList.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ /usr/local/include/irrlicht/line2d.h \
+ /usr/local/include/irrlicht/quaternion.h \
+ /usr/local/include/irrlicht/IXMLReader.h \
+ /usr/local/include/irrlicht/irrXML.h \
+ /usr/local/include/irrlicht/EAttributes.h \
+ /usr/local/include/irrlicht/IAnimatedMesh.h \
+ /usr/local/include/irrlicht/SSkinMeshBuffer.h \
+ /usr/local/include/irrlicht/IMeshBuffer.h \
+ /usr/local/include/irrlicht/S3DVertex.h \
+ /usr/local/include/irrlicht/SVertexIndex.h \
+ /usr/local/include/irrlicht/EPrimitiveTypes.h \
+ /usr/local/include/irrlicht/IFileSystem.h \
+ /usr/local/include/irrlicht/IFileArchive.h \
+ /usr/local/include/irrlicht/IReadFile.h \
+ /usr/local/include/irrlicht/coreutil.h \
+ /usr/local/include/irrlicht/IFileList.h ../source/raycastvehicle.h \
+ ../source/irrbulletcommon.h /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/ISceneNode.h \
+ BulletDynamics/Vehicle/btRaycastVehicle.h ../source/bulletworld.h \
+ ../source/rigidbody.h ../source/collisionobject.h \
+ ../source/collisionshape.h \
+ BulletCollision/CollisionShapes/btCollisionShape.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/irrString.h \
+ BulletCollision/CollisionDispatch/btCollisionObject.h \
+ ../source/collisionobjectaffector.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ BulletDynamics/Dynamics/btRigidBody.h ../source/softbody.h \
+ BulletSoftBody/btSoftBodyHelpers.h BulletSoftBody/btSoftBody.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/S3DVertex.h \
+ /usr/local/include/irrlicht/IMeshBuffer.h ../source/physicsdebug.h \
+ Bullet/LinearMath/btIDebugDraw.h \
+ BulletSoftBody/btSoftRigidDynamicsWorld.h \
+ ../source/collisioncallbackinformation.h \
+ Bullet/BulletCollision/NarrowPhaseCollision/btPersistentManifold.h \
+ ../source/irrbullet_compile_config.h
+	g++ -Wall -ansi -O3 -D__LINUX__ -I/usr/local/include/irrlicht/ -I/usr/include/Bullet  -c ../source/raycastvehicle.cpp -o ../source/raycastvehicle.cpp
+../source/collisioncallbackinformation.cpp: \
+ ../source/collisioncallbackinformation.cpp \
+ ../source/collisioncallbackinformation.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/IrrCompileConfig.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/irrMath.h \
+ /usr/local/include/irrlicht/irrTypes.h ../source/irrbulletcommon.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/vector2d.h \
+ /usr/local/include/irrlicht/dimension2d.h \
+ /usr/local/include/irrlicht/plane3d.h \
+ /usr/local/include/irrlicht/aabbox3d.h \
+ /usr/local/include/irrlicht/line3d.h /usr/local/include/irrlicht/rect.h \
+ /usr/local/include/irrlicht/position2d.h \
+ /usr/local/include/irrlicht/irrString.h \
+ /usr/local/include/irrlicht/irrAllocator.h \
+ /usr/local/include/irrlicht/ISceneNode.h \
+ /usr/local/include/irrlicht/IAttributeExchangingObject.h \
+ /usr/local/include/irrlicht/IReferenceCounted.h \
+ /usr/local/include/irrlicht/ESceneNodeTypes.h \
+ /usr/local/include/irrlicht/ECullingTypes.h \
+ /usr/local/include/irrlicht/EDebugSceneTypes.h \
+ /usr/local/include/irrlicht/ISceneNodeAnimator.h \
+ /usr/local/include/irrlicht/ESceneNodeAnimatorTypes.h \
+ /usr/local/include/irrlicht/IEventReceiver.h \
+ /usr/local/include/irrlicht/ILogger.h \
+ /usr/local/include/irrlicht/Keycodes.h \
+ /usr/local/include/irrlicht/ITriangleSelector.h \
+ /usr/local/include/irrlicht/triangle3d.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/SMaterial.h \
+ /usr/local/include/irrlicht/SColor.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/heapsort.h \
+ /usr/local/include/irrlicht/EMaterialTypes.h \
+ /usr/local/include/irrlicht/EMaterialFlags.h \
+ /usr/local/include/irrlicht/SMaterialLayer.h \
+ /usr/local/include/irrlicht/irrList.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ /usr/local/include/irrlicht/line2d.h \
+ /usr/local/include/irrlicht/quaternion.h \
+ /usr/local/include/irrlicht/IXMLReader.h \
+ /usr/local/include/irrlicht/irrXML.h \
+ /usr/local/include/irrlicht/EAttributes.h \
+ /usr/local/include/irrlicht/path.h \
+ Bullet/BulletCollision/NarrowPhaseCollision/btPersistentManifold.h \
+ Bullet/BulletCollision/CollisionDispatch/btCollisionObject.h \
+ ../source/collisionobject.h ../source/collisionshape.h \
+ BulletCollision/CollisionShapes/btCollisionShape.h \
+ /usr/local/include/irrlicht/irrString.h \
+ BulletCollision/CollisionDispatch/btCollisionObject.h \
+ ../source/collisionobjectaffector.h \
+ /usr/local/include/irrlicht/IAttributes.h ../source/bulletworld.h \
+ ../source/rigidbody.h BulletDynamics/Dynamics/btRigidBody.h \
+ ../source/raycastvehicle.h BulletDynamics/Vehicle/btRaycastVehicle.h \
+ ../source/softbody.h BulletSoftBody/btSoftBodyHelpers.h \
+ BulletSoftBody/btSoftBody.h /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/S3DVertex.h \
+ /usr/local/include/irrlicht/IMeshBuffer.h \
+ /usr/local/include/irrlicht/S3DVertex.h \
+ /usr/local/include/irrlicht/SVertexIndex.h \
+ /usr/local/include/irrlicht/EHardwareBufferFlags.h \
+ /usr/local/include/irrlicht/EPrimitiveTypes.h ../source/physicsdebug.h \
+ Bullet/LinearMath/btIDebugDraw.h \
+ BulletSoftBody/btSoftRigidDynamicsWorld.h \
+ ../source/irrbullet_compile_config.h
+	g++ -Wall -ansi -O3 -D__LINUX__ -I/usr/local/include/irrlicht/ -I/usr/include/Bullet  -c ../source/collisioncallbackinformation.cpp -o ../source/collisioncallbackinformation.cpp
+../source/collisionobjectaffectorattract.cpp: \
+ ../source/collisionobjectaffectorattract.cpp \
+ ../source/collisionobjectaffectorattract.h \
+ ../source/collisionobjectaffector.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/IrrCompileConfig.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/irrMath.h \
+ /usr/local/include/irrlicht/irrTypes.h \
+ /usr/local/include/irrlicht/ISceneNode.h \
+ /usr/local/include/irrlicht/IAttributeExchangingObject.h \
+ /usr/local/include/irrlicht/IReferenceCounted.h \
+ /usr/local/include/irrlicht/ESceneNodeTypes.h \
+ /usr/local/include/irrlicht/ECullingTypes.h \
+ /usr/local/include/irrlicht/EDebugSceneTypes.h \
+ /usr/local/include/irrlicht/ISceneNodeAnimator.h \
+ /usr/local/include/irrlicht/vector3d.h \
+ /usr/local/include/irrlicht/ESceneNodeAnimatorTypes.h \
+ /usr/local/include/irrlicht/IEventReceiver.h \
+ /usr/local/include/irrlicht/ILogger.h \
+ /usr/local/include/irrlicht/Keycodes.h \
+ /usr/local/include/irrlicht/irrString.h \
+ /usr/local/include/irrlicht/irrAllocator.h \
+ /usr/local/include/irrlicht/ITriangleSelector.h \
+ /usr/local/include/irrlicht/triangle3d.h \
+ /usr/local/include/irrlicht/line3d.h \
+ /usr/local/include/irrlicht/plane3d.h \
+ /usr/local/include/irrlicht/aabbox3d.h \
+ /usr/local/include/irrlicht/matrix4.h \
+ /usr/local/include/irrlicht/vector2d.h \
+ /usr/local/include/irrlicht/dimension2d.h \
+ /usr/local/include/irrlicht/rect.h \
+ /usr/local/include/irrlicht/position2d.h \
+ /usr/local/include/irrlicht/SMaterial.h \
+ /usr/local/include/irrlicht/SColor.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/heapsort.h \
+ /usr/local/include/irrlicht/EMaterialTypes.h \
+ /usr/local/include/irrlicht/EMaterialFlags.h \
+ /usr/local/include/irrlicht/SMaterialLayer.h \
+ /usr/local/include/irrlicht/irrList.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ /usr/local/include/irrlicht/line2d.h \
+ /usr/local/include/irrlicht/quaternion.h \
+ /usr/local/include/irrlicht/IXMLReader.h \
+ /usr/local/include/irrlicht/irrXML.h \
+ /usr/local/include/irrlicht/EAttributes.h \
+ /usr/local/include/irrlicht/path.h ../source/bulletworld.h \
+ ../source/irrbulletcommon.h /usr/local/include/irrlicht/matrix4.h \
+ ../source/rigidbody.h ../source/collisionobject.h \
+ ../source/collisionshape.h \
+ BulletCollision/CollisionShapes/btCollisionShape.h \
+ /usr/local/include/irrlicht/irrString.h \
+ BulletCollision/CollisionDispatch/btCollisionObject.h \
+ /usr/local/include/irrlicht/IAttributes.h \
+ BulletDynamics/Dynamics/btRigidBody.h ../source/raycastvehicle.h \
+ BulletDynamics/Vehicle/btRaycastVehicle.h ../source/softbody.h \
+ BulletSoftBody/btSoftBodyHelpers.h BulletSoftBody/btSoftBody.h \
+ /usr/local/include/irrlicht/irrArray.h \
+ /usr/local/include/irrlicht/S3DVertex.h \
+ /usr/local/include/irrlicht/IMeshBuffer.h \
+ /usr/local/include/irrlicht/S3DVertex.h \
+ /usr/local/include/irrlicht/SVertexIndex.h \
+ /usr/local/include/irrlicht/EHardwareBufferFlags.h \
+ /usr/local/include/irrlicht/EPrimitiveTypes.h ../source/physicsdebug.h \
+ Bullet/LinearMath/btIDebugDraw.h \
+ BulletSoftBody/btSoftRigidDynamicsWorld.h \
+ ../source/collisioncallbackinformation.h \
+ Bullet/BulletCollision/NarrowPhaseCollision/btPersistentManifold.h \
+ ../source/irrbullet_compile_config.h \
+ /usr/local/include/irrlicht/IrrlichtDevice.h \
+ /usr/local/include/irrlicht/IVideoDriver.h \
+ /usr/local/include/irrlicht/ITexture.h \
+ /usr/local/include/irrlicht/IImage.h \
+ /usr/local/include/irrlicht/EDriverTypes.h \
+ /usr/local/include/irrlicht/IMeshBuffer.h \
+ /usr/local/include/irrlicht/EDriverFeatures.h \
+ /usr/local/include/irrlicht/SExposedVideoData.h \
+ /usr/local/include/irrlicht/EDeviceTypes.h \
+ /usr/local/include/irrlicht/ICursorControl.h \
+ /usr/local/include/irrlicht/IVideoModeList.h \
+ /usr/local/include/irrlicht/ITimer.h \
+ /usr/local/include/irrlicht/IOSOperator.h \
+ /usr/local/include/irrlicht/IVideoDriver.h \
+ /usr/local/include/irrlicht/SColor.h \
+ /usr/local/include/irrlicht/IMeshSceneNode.h \
+ /usr/local/include/irrlicht/ISceneNode.h
+	g++ -Wall -ansi -O3 -D__LINUX__ -I/usr/local/include/irrlicht/ -I/usr/include/Bullet  -c ../source/collisionobjectaffectorattract.cpp -o ../source/collisionobjectaffectorattract.cpp

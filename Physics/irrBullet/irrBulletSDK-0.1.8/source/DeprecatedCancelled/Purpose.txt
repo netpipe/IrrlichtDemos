@@ -1,0 +1,6 @@
+The purpose of the "DeprecatedCancelled" folder in the irrBullet source folder
+is to act as a container for all the cancelled or deprecated irrBullet features to be 
+placed in case they could be recycled or used as examples for later features.
+
+The license of these files is still the same as the official irrBullet source files. (ZLib)
+

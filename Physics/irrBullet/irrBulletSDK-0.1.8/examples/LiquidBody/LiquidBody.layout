@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Win32 GCC Release" />
+	<File name="liquidbodyexample.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="2974" topLine="84" />
+	</File>
+	<File name="liquidbodyexample.h" open="1" top="0" tabpos="1">
+		<Cursor position="109" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Linux Release" />
+	<File name="../framework/exampleframework.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="14" />
+			<Collapse line="18" />
+			<Collapse line="39" />
+			<Collapse line="81" />
+			<Collapse line="122" />
+			<Collapse line="124" />
+			<Collapse line="197" />
+			<Collapse line="201" />
+			<Collapse line="253" />
+			<Collapse line="277" />
+		</Folding>
+	</File>
+	<EditorTabsLayout layout="029f5dd05dcd1007000b6d3d00000002=*0;RaycastTank:../framework/exampleframework.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=814;besth=348;minw=814;minh=348;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=029f5dd05dcd1007000b6d3d00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+</CodeBlocks_layout_file>
