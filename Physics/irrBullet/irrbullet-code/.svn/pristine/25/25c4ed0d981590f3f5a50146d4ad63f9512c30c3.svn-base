@@ -1,0 +1,27 @@
+################################################################
+# PIM v 0.11 (Powerful Indiviual Makefile)                     #
+# Alternative Makefile for ...                                 #
+################################################################
+
+################################################################
+# Fill in your options here:
+# leave them empty (e.g. 'LINCC =') if you do not desire alternative or additional behaviour
+
+# the compiler command (you may insert the full path here)
+ALT_CC = 
+
+# the ADDITIONAL flags
+ADD_FLAGS = -D__LINUX__
+# the ADDITIONAL compiler flags
+ADD_CFLAGS =
+# the ADDITIONAL libs
+ADD_LIBS =
+
+# in which ADDITIONAL directories shall we search for source code?
+ADD_DIRS =
+
+# ALTERNATIVE outfile for gnu/linux
+ALT_OF =
+
+
+

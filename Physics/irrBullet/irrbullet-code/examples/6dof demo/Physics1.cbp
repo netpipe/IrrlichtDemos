@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PhysicsToy1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="PhysicsToy1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-g" />
+					<Add option="-W" />
+					<Add directory="../../include" />
+					<Add directory="../../include/bheaders" />
+					<Add directory="../../include/bheaders/Bullet" />
+					<Add directory="../../../CodingBucket/irrBullet-0.1.6/include" />
+					<Add directory="../../../CodingBucket/irrBullet-0.1.6/include/bheaders" />
+					<Add directory="../../../CodingBucket/irrBullet-0.1.6/include/bheaders/Bullet" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+					<Add directory="/home/Dev/irrdemos-code/Demos/WIPs/physics/irrbullet/irrbullet-code/source" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.78/src/" />
+					<Add directory="/usr/include/bullet" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="X11" />
+					<Add library="GL" />
+					<Add library="Irrlicht" />
+					<Add library="libirrBullet" />
+					<Add library="BulletDynamics" />
+					<Add library="BulletSoftBody" />
+					<Add library="BulletCollision" />
+					<Add library="LinearMath" />
+					<Add library="Xxf86vm" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux/" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.78/src/" />
+					<Add directory="../../lib/linux/Release" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.78/src/BulletCollision" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.78/src/BulletDynamics" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.78/src/BulletSoftBody" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.78/src/BulletMultiThreaded" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.78/src/LinearMath" />
+				</Linker>
+			</Target>
+			<Target title="Debug">
+				<Option platforms="Windows;" />
+				<Option output="PhysicsToy1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-W" />
+					<Add option="-g" />
+					<Add directory="../../include" />
+					<Add directory="../../include/bheaders" />
+					<Add directory="../../include/bheaders/Bullet" />
+					<Add directory="../../../CodingBucket/irrBullet-0.1.6/include" />
+					<Add directory="../../../CodingBucket/irrBullet-0.1.6/include/bheaders" />
+					<Add directory="../../../CodingBucket/irrBullet-0.1.6/include/bheaders/Bullet" />
+				</Compiler>
+				<Linker>
+					<Add library="../../../CodingBucket/irrBullet-0.1.6/lib/Release/libirrBullet.a" />
+					<Add library="libbulletdynamics.a" />
+					<Add library="libbulletsoftbody.a" />
+					<Add library="libGIMPACTUtils.a" />
+					<Add library="libbulletmath.a" />
+					<Add library="libbulletcollision.a" />
+					<Add library="../../../CodingBucket/irrlicht-1.7.1/lib/Win32-gcc/libIrrlicht.a" />
+					<Add directory="../../../CodingBucket/irrBullet-0.1.6/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="../../../include" />
+			<Add directory="../../../include/bheaders/Bullet" />
+		</Compiler>
+		<Unit filename="../framework/exampleframework.cpp" />
+		<Unit filename="../framework/exampleframework.h" />
+		<Unit filename="helloworldexample.cpp" />
+		<Unit filename="helloworldexample.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+			<AutoVersioning>
+				<Scheme minor_max="10" build_max="0" rev_max="0" rev_rand_max="10" build_times_to_increment_minor="100" />
+				<Settings autoincrement="1" date_declarations="1" use_define="0" update_manifest="0" do_auto_increment="0" ask_to_increment="0" language="C++" svn="0" svn_directory="" header_path="version.h" />
+				<Changes_Log show_changes_editor="0" app_title="released version %M.%m.%b of %p" changeslog_path="ChangesLog.txt" />
+				<Code header_guard="VERSION_H" namespace="AutoVersion" prefix="" />
+			</AutoVersioning>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,48 @@
+################################################################
+# Linux Makefile for irrBullet                                 #
+# Installation Makefile                                        #
+################################################################
+
+################################################################
+# Here are the pathnames and the files. change it!
+
+# installation prefixes for pathnames
+LIB_SRC_PATH=../lib/linux/Release
+LIB_DEST_PATH=/usr/local/lib/
+
+DOC_DEST_PATH=/usr/share/doc/packages/irrBullet
+
+HDR_SRC_PATH=../source/
+HDR_DEST_PATH=/usr/local/include/irrBullet
+
+################################################################
+# NOTE! Please never change anything here.
+# It may damage your computer system otherwise (rm is dangerous)
+
+install_extern:
+
+	# docs
+	mkdir -p ${DOC_DEST_PATH}
+	cp -R ../examples ${DOC_DEST_PATH}
+	cp -R ../doc ${DOC_DEST_PATH}
+	cp -R ../media ${DOC_DEST_PATH}
+	cp -R ../*.txt ${DOC_DEST_PATH}
+	
+	# lib
+	cp ${LIB_SRC_PATH}/libirrBullet.so ${LIB_DEST_PATH}
+	
+	# headers
+	mkdir -p ${HDR_DEST_PATH}
+	cp -R ../source/*.h ${HDR_DEST_PATH}
+	
+	
+uninstall_extern:
+
+	# docs
+	rm -rf /usr/share/doc/packages/irrBullet
+
+	# lib
+	rm -f ${LIB_DEST_PATH}/libirrBullet.so
+	
+	# headers
+	rm -rf /usr/local/include/irrBullet

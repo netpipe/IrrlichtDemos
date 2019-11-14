@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="irrBullet" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option show_notes="0">
+			<notes>
+				<![CDATA[irrBullet 0.1.8 Release:
+	Fixed: small memory leak in IRigidBody
+	Changed: ISoftBody::configureSoftBody()
+	Added: Flag(Aero) to SoftBody example 
+	Added: new irrBullet logo and USA flag texture to media folder
+	Removed: obsolete commented-out code in examples
+	Improved: irrBullet FAQ PDF zoom factor and updated with the new irrBullet logo
+	Improved: VersionInfo.txt structure
+	Added: LoadScene example to irrBullet workspace
+	Fixed: HelloWorld example where columns and rows were mixed up
+	Added: initialize ghost pair cache in irrBulletWorld constructor
+	Added: IKinematicCharacterController class
+	Added: Character example
+	Changed: moved collID deletion to ICollisionObject destructor
+	Improved: added break to irrBulletWorld deletion functions if object is found
+	Fixed: memory leak in ITriangleMeshShape
+	Improved: removed a couple of oddities in IBvhTriangleMeshShape and 		IGImpactMeshShape
+
+
+
+NOTE: irrBullet commercial plan:
+
+- Have a standard free irrBullet version that's free for commercial use and has
+the expected features of a physics library/wrapper
+
+- Have an extension library for irrBullet adding more advanced features (such as
+water simulation, flag simulation, helper functions, etc.) that must be paid for]]>
+			</notes>
+		</Option>
+		<Build>
+			<Target title="Win32 GCC Release">
+				<Option platforms="Windows;" />
+				<Option output="..\lib\win32_gcc\Release\libirrBullet" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj\Release\" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add directory="bheaders" />
+					<Add directory="bheaders\Bullet" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="Win32 GCC Debug">
+				<Option platforms="Windows;" />
+				<Option output="..\lib\win32_gcc\Debug\libirrBulletDebug" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj\Debug\" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add directory="bheaders" />
+					<Add directory="bheaders\Bullet" />
+				</Compiler>
+			</Target>
+			<Target title="Linux Release">
+				<Option platforms="Unix;" />
+				<Option output="..\lib\linux\Release\libirrBullet" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj\Release\" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-DDEF_LINUX" />
+					<Add directory="\usr\include\BulletCollision" />
+					<Add directory="\usr\include\BulletDynamics" />
+					<Add directory="\usr\include\BulletSoftBody" />
+					<Add directory="\usr\include\BulletMultiThreaded" />
+					<Add directory="\usr\include\irrlicht" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="Irrlicht" />
+				</Linker>
+			</Target>
+			<Target title="Linux Debug">
+				<Option platforms="Unix;" />
+				<Option output="..\lib\linux\Debug\libirrBulletDebug" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj\Debug\" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-DDEF_LINUX" />
+					<Add directory="\usr\include\BulletCollision" />
+					<Add directory="\usr\include\BulletDynamics" />
+					<Add directory="\usr\include\BulletSoftBody" />
+					<Add directory="\usr\include\BulletMultiThreaded" />
+					<Add directory="\usr\include\irrlicht" />
+				</Compiler>
+				<Linker>
+					<Add library="Irrlicht" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-O3" />
+			<Add option="-W" />
+			<Add option="-g" />
+			<Add directory="Bullet" />
+			<Add directory="$(#irrlicht.include)" />
+		</Compiler>
+		<Unit filename="boxshape.cpp" />
+		<Unit filename="boxshape.h" />
+		<Unit filename="bulletworld.cpp" />
+		<Unit filename="bulletworld.h" />
+		<Unit filename="bvhtrianglemeshshape.cpp" />
+		<Unit filename="bvhtrianglemeshshape.h" />
+		<Unit filename="collisioncallbackinformation.cpp" />
+		<Unit filename="collisioncallbackinformation.h" />
+		<Unit filename="collisionobject.cpp" />
+		<Unit filename="collisionobject.h" />
+		<Unit filename="collisionobjectaffector.cpp" />
+		<Unit filename="collisionobjectaffector.h" />
+		<Unit filename="collisionobjectaffectorattract.cpp" />
+		<Unit filename="collisionobjectaffectorattract.h" />
+		<Unit filename="collisionobjectaffectordelete.cpp" />
+		<Unit filename="collisionobjectaffectordelete.h" />
+		<Unit filename="collisionshape.cpp" />
+		<Unit filename="collisionshape.h" />
+		<Unit filename="convexhullshape.cpp" />
+		<Unit filename="convexhullshape.h" />
+		<Unit filename="gimpactmeshshape.cpp" />
+		<Unit filename="gimpactmeshshape.h" />
+		<Unit filename="irrbullet.cpp" />
+		<Unit filename="irrbullet.h" />
+		<Unit filename="irrbullet_compile_config.h" />
+		<Unit filename="irrbulletcommon.cpp" />
+		<Unit filename="irrbulletcommon.h" />
+		<Unit filename="kinematiccharactercontroller.cpp" />
+		<Unit filename="kinematiccharactercontroller.h" />
+		<Unit filename="liquidbody.cpp" />
+		<Unit filename="liquidbody.h" />
+		<Unit filename="motionstate.cpp" />
+		<Unit filename="motionstate.h" />
+		<Unit filename="physicsdebug.cpp" />
+		<Unit filename="physicsdebug.h" />
+		<Unit filename="raycastvehicle.cpp" />
+		<Unit filename="raycastvehicle.h" />
+		<Unit filename="rigidbody.cpp" />
+		<Unit filename="rigidbody.h" />
+		<Unit filename="softbody.cpp" />
+		<Unit filename="softbody.h" />
+		<Unit filename="sphereshape.cpp" />
+		<Unit filename="sphereshape.h" />
+		<Unit filename="trianglemeshshape.cpp" />
+		<Unit filename="trianglemeshshape.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

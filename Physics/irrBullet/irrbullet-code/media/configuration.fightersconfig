@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<configuration>
+<!--Fighters Tactical Warfare configuration file-->
+<DefaultAircraft file="Aircraft\HarrierGR3.flm" />
+<DefaultScenery sce="Scenery\RAFConingsby\Britain1.sceneryTW" />
+<DefaultTime time="noon" />
+<AircraftShading shading="true" />
+<CockpitShading cptshading="false" />
+<DefaultPrecip precip="snow" />
+<Labels labels="true" />
+<Bits bits="32" />
+<AA aa="true" />
+<Shadows shadows="false" />
+<Fullscreen fullscreen="true" />
+</configuration>

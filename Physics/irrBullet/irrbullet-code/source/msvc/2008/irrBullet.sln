@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "irrBullet", "irrBullet.vcproj", "{85E076A7-8DEA-4BD4-94E3-CA1C1775815E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{85E076A7-8DEA-4BD4-94E3-CA1C1775815E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{85E076A7-8DEA-4BD4-94E3-CA1C1775815E}.Debug|Win32.Build.0 = Debug|Win32
+		{85E076A7-8DEA-4BD4-94E3-CA1C1775815E}.Release|Win32.ActiveCfg = Release|Win32
+		{85E076A7-8DEA-4BD4-94E3-CA1C1775815E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

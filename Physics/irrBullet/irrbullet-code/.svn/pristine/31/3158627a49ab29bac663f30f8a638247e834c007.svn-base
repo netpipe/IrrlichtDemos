@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Win32 GCC Release" />
+	<File name="helloworldexample.cpp" open="1" top="1" tabpos="4">
+		<Cursor position="2998" topLine="108" />
+	</File>
+	<File name="helloworldexample.h" open="1" top="0" tabpos="5">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="..\framework\exampleframework.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="923" topLine="24" />
+	</File>
+	<File name="..\framework\exampleframework.h" open="1" top="0" tabpos="2">
+		<Cursor position="0" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="../../../../../../agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/source/irrBullet.cbp" />
+		<Project filename="../../../../../../agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/examples/Character/Character-Mine.cbp" />
+		<Project filename="../../../../../../agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/examples/HelloWorld/HelloWorld-Mine.cbp" />
+		<Project filename="../../../../../../agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/examples/Collision/Collision-Mine.cbp" />
+		<Project filename="../../../../../../agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/examples/LiquidBody/LiquidBody-Mine.cbp" />
+		<Project filename="../../../../../../agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/examples/LoadScene/LoadScene-Mine.cbp" />
+		<Project filename="../../../../../../agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/examples/RaycastTank/RaycastTank.cbp" />
+		<Project filename="../../../../../../agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/examples/SoftBody/SoftBody-Mine.cbp" />
+		<Project filename="../../../../../../agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/examples/Affectors/Affectors-Mine.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

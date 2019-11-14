@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Win32 GCC Release" />
+	<File name="boxshape.h" open="1" top="0" tabpos="10">
+		<Cursor position="119" topLine="0" />
+	</File>
+	<File name="bulletworld.cpp" open="1" top="1" tabpos="27">
+		<Cursor position="8471" topLine="265" />
+	</File>
+	<File name="bulletworld.h" open="1" top="0" tabpos="11">
+		<Cursor position="6343" topLine="140" />
+	</File>
+	<File name="bvhtrianglemeshshape.h" open="1" top="0" tabpos="12">
+		<Cursor position="402" topLine="0" />
+	</File>
+	<File name="collisioncallbackinformation.h" open="1" top="0" tabpos="13">
+		<Cursor position="616" topLine="15" />
+	</File>
+	<File name="collisionobject.cpp" open="1" top="0" tabpos="29">
+		<Cursor position="10158" topLine="378" />
+	</File>
+	<File name="collisionobject.h" open="1" top="0" tabpos="14">
+		<Cursor position="1779" topLine="153" />
+	</File>
+	<File name="collisionobjectaffector.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="collisionobjectaffector.h" open="1" top="0" tabpos="8">
+		<Cursor position="790" topLine="9" />
+	</File>
+	<File name="collisionobjectaffectorattract.cpp" open="1" top="0" tabpos="33">
+		<Cursor position="1323" topLine="33" />
+	</File>
+	<File name="collisionobjectaffectorattract.h" open="1" top="0" tabpos="15">
+		<Cursor position="457" topLine="0" />
+	</File>
+	<File name="collisionobjectaffectordelete.h" open="1" top="0" tabpos="16">
+		<Cursor position="465" topLine="0" />
+	</File>
+	<File name="collisionshape.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="722" topLine="7" />
+	</File>
+	<File name="collisionshape.h" open="1" top="0" tabpos="2">
+		<Cursor position="599" topLine="21" />
+	</File>
+	<File name="convexhullshape.h" open="1" top="0" tabpos="17">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="gimpactmeshshape.cpp" open="1" top="0" tabpos="34">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="gimpactmeshshape.h" open="1" top="0" tabpos="18">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="irrbullet.h" open="1" top="0" tabpos="19">
+		<Cursor position="2145" topLine="37" />
+	</File>
+	<File name="irrbullet_compile_config.h" open="1" top="0" tabpos="3">
+		<Cursor position="497" topLine="0" />
+	</File>
+	<File name="irrbulletcommon.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="490" topLine="0" />
+	</File>
+	<File name="irrbulletcommon.h" open="1" top="0" tabpos="6">
+		<Cursor position="649" topLine="6" />
+	</File>
+	<File name="kinematiccharactercontroller.cpp" open="1" top="0" tabpos="32">
+		<Cursor position="2830" topLine="74" />
+	</File>
+	<File name="kinematiccharactercontroller.h" open="1" top="0" tabpos="31">
+		<Cursor position="2415" topLine="53" />
+	</File>
+	<File name="liquidbody.h" open="1" top="0" tabpos="20">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="motionstate.h" open="1" top="0" tabpos="1">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="physicsdebug.h" open="1" top="0" tabpos="21">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="raycastvehicle.cpp" open="1" top="0" tabpos="26">
+		<Cursor position="5863" topLine="165" />
+	</File>
+	<File name="raycastvehicle.h" open="1" top="0" tabpos="22">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="rigidbody.cpp" open="1" top="0" tabpos="28">
+		<Cursor position="14102" topLine="468" />
+	</File>
+	<File name="rigidbody.h" open="1" top="0" tabpos="9">
+		<Cursor position="11905" topLine="262" />
+	</File>
+	<File name="softbody.cpp" open="1" top="0" tabpos="30">
+		<Cursor position="10180" topLine="307" />
+	</File>
+	<File name="softbody.h" open="1" top="0" tabpos="23">
+		<Cursor position="594" topLine="171" />
+	</File>
+	<File name="sphereshape.h" open="1" top="0" tabpos="24">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="trianglemeshshape.h" open="1" top="0" tabpos="25">
+		<Cursor position="394" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>
