@@ -3719,3 +3719,170 @@
 	<vector3d.h>
 	<matrix4.h>
 
+1377828469 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/examples-portable/framework/exampleframework.cpp
+	<irrlicht.h>
+	<bulletworld.h>
+	<rigidbody.h>
+	<boxshape.h>
+	<sphereshape.h>
+	<gimpactmeshshape.h>
+	<raycastvehicle.h>
+	<collisionobjectaffectordelete.h>
+	<collisionobjectaffectorattract.h>
+	"exampleframework.h"
+
+1296583918 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/source/bulletworld.h
+	"irrbulletcommon.h"
+	"rigidbody.h"
+	"softbody.h"
+	"physicsdebug.h"
+	"BulletSoftBody/btSoftRigidDynamicsWorld.h"
+	"collisioncallbackinformation.h"
+	"irrbullet_compile_config.h"
+
+1297536174 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/source/irrbulletcommon.h
+	<matrix4.h>
+	<ISceneNode.h>
+
+1324159226 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/source/rigidbody.h
+	"irrbulletcommon.h"
+	"collisionobject.h"
+	"BulletDynamics/Dynamics/btRigidBody.h"
+	"raycastvehicle.h"
+
+1296233300 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/source/collisionobject.h
+	"irrbulletcommon.h"
+	"collisionshape.h"
+	"BulletCollision/CollisionDispatch/btCollisionObject.h"
+	"collisionobjectaffector.h"
+	<IAttributes.h>
+
+1296575978 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/source/collisionshape.h
+	"BulletCollision/CollisionShapes/btCollisionShape.h"
+	<vector3d.h>
+	<irrTypes.h>
+	<irrString.h>
+	"irrbulletcommon.h"
+
+1324159226 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/source/collisionobjectaffector.h
+	<irrTypes.h>
+
+1296583883 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/source/raycastvehicle.h
+	"irrbulletcommon.h"
+	"BulletDynamics/Vehicle/btRaycastVehicle.h"
+
+1296575092 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/source/softbody.h
+	"collisionobject.h"
+	"BulletSoftBody/btSoftBodyHelpers.h"
+	"BulletSoftBody/btSoftBody.h"
+	<irrTypes.h>
+	<map>
+	<vector>
+	<irrArray.h>
+	<S3DVertex.h>
+	<IMeshBuffer.h>
+
+1427968736 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/source/physicsdebug.h
+	"LinearMath/btIDebugDraw.h"
+	"irrbulletcommon.h"
+
+1427968736 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/source/collisioncallbackinformation.h
+	<irrTypes.h>
+	<vector3d.h>
+	"irrbulletcommon.h"
+	"BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
+
+1297527899 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/source/irrbullet_compile_config.h
+
+1296586882 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/source/boxshape.h
+	"collisionshape.h"
+
+1427968736 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/source/sphereshape.h
+	"collisionshape.h"
+	"BulletCollision/CollisionShapes/btSphereShape.h"
+
+1329965846 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/source/gimpactmeshshape.h
+	"irrbulletcommon.h"
+	"BulletCollision/Gimpact/btGImpactShape.h"
+	"trianglemeshshape.h"
+
+1329964913 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/source/trianglemeshshape.h
+	"collisionshape.h"
+	"BulletCollision/CollisionShapes/btTriangleMesh.h"
+	"irrbulletcommon.h"
+
+1294700224 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/source/collisionobjectaffectordelete.h
+	"collisionobjectaffector.h"
+	<irrTypes.h>
+
+1294700224 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/source/collisionobjectaffectorattract.h
+	"collisionobjectaffector.h"
+	<irrTypes.h>
+	<vector3d.h>
+	<ISceneNode.h>
+
+1377828469 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/examples-portable/framework/exampleframework.h
+	<irrTypes.h>
+	<vector3d.h>
+	<SColor.h>
+	<SMaterial.h>
+	<IEventReceiver.h>
+
+1377828466 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/examples-portable/RaycastTank/main.cpp
+	<irrlicht.h>
+	<iostream>
+	"raycasttankexample.h"
+
+1377828466 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/examples-portable/RaycastTank/raycasttankexample.h
+	"../framework/exampleframework.h"
+	<irrString.h>
+
+1427969148 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/examples-portable/RaycastTank/raycasttankexample.cpp
+	<irrlicht.h>
+	<irrbullet.h>
+	"raycasttankexample.h"
+
+1427968736 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/source/irrbullet.h
+	"irrbullet_compile_config.h"
+	"btBulletDynamicsCommon.h"
+	"btBulletCollisionCommon.h"
+	"BulletCollision/Gimpact/btGImpactCollisionAlgorithm.h"
+	"irrbulletcommon.h"
+	"bulletworld.h"
+	"boxshape.h"
+	"sphereshape.h"
+	"gimpactmeshshape.h"
+	"bvhtrianglemeshshape.h"
+	"convexhullshape.h"
+	"motionstate.h"
+	"raycastvehicle.h"
+	"collisionobjectaffector.h"
+	"collisionobjectaffectordelete.h"
+	"collisionobjectaffectorattract.h"
+	"collisioncallbackinformation.h"
+	"liquidbody.h"
+	"kinematiccharactercontroller.h"
+
+1296584076 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/source/bvhtrianglemeshshape.h
+	"trianglemeshshape.h"
+
+1294700224 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/source/convexhullshape.h
+	"irrbulletcommon.h"
+
+1427968736 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/source/motionstate.h
+	<iostream>
+	"irrbulletcommon.h"
+	"rigidbody.h"
+	"LinearMath/btDefaultMotionState.h"
+
+1296587539 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/source/liquidbody.h
+	<vector3d.h>
+	<irrTypes.h>
+	<aabbox3d.h>
+	<IrrlichtDevice.h>
+
+1326515853 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/irrBullet/irrBulletSDK-0.1.8/source/kinematiccharactercontroller.h
+	<irrTypes.h>
+	<vector3d.h>
+	<matrix4.h>
+

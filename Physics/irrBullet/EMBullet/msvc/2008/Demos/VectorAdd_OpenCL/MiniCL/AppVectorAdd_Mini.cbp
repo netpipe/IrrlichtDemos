@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="AppVectorAdd_Mini" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="../../../../../AppVectorAdd_Mini" prefix_auto="1" extension_auto="1" />
+				<Option object_output="AppVectorAdd_Mini.dir/Debug" />
+				<Option external_deps="../../lib/Debug/libLinearMath.a;../../lib/Debug/libMiniCL.a;../../lib/Debug/libBulletMultiThreaded.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option="-DUSE_MINICL" />
+					<Add option='-DCMAKE_INTDIR=\&quot;Debug\&quot;' />
+					<Add option="-W" />
+					<Add option="-O0" />
+					<Add option="-frtti" />
+					<Add directory="../../../../../Glut" />
+					<Add directory="../../../../../src" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../../Glut" />
+					<Add directory="../../../../../src" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="$(NOINHERIT)" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="winspool" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="..\..\..\lib\Debug\MiniCL" />
+					<Add library="..\..\..\lib\Debug\BulletMultiThreaded" />
+					<Add library="..\..\..\lib\Debug\LinearMath" />
+					<Add library="..\..\lib\Debug\libLinearMath.a" />
+					<Add library="..\..\lib\Debug\libMiniCL.a" />
+					<Add library="..\..\lib\Debug\libBulletMultiThreaded.a" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="../../../../../AppVectorAdd_Mini" prefix_auto="1" extension_auto="1" />
+				<Option object_output="AppVectorAdd_Mini.dir/Release" />
+				<Option external_deps="../../lib/Release/libLinearMath.a;../../lib/Release/libMiniCL.a;../../lib/Release/libBulletMultiThreaded.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option="-DUSE_MINICL" />
+					<Add option='-DCMAKE_INTDIR=\&quot;Release\&quot;' />
+					<Add option="-W" />
+					<Add option="-O2" />
+					<Add option="-frtti" />
+					<Add directory="../../../../../Glut" />
+					<Add directory="../../../../../src" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../../Glut" />
+					<Add directory="../../../../../src" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="$(NOINHERIT)" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="winspool" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="..\..\..\lib\Release\MiniCL" />
+					<Add library="..\..\..\lib\Release\BulletMultiThreaded" />
+					<Add library="..\..\..\lib\Release\LinearMath" />
+					<Add library="..\..\lib\Release\libLinearMath.a" />
+					<Add library="..\..\lib\Release\libMiniCL.a" />
+					<Add library="..\..\lib\Release\libBulletMultiThreaded.a" />
+				</Linker>
+			</Target>
+			<Target title="MinSizeRel Win32">
+				<Option output="../../../../../AppVectorAdd_Mini" prefix_auto="1" extension_auto="1" />
+				<Option object_output="AppVectorAdd_Mini.dir/MinSizeRel" />
+				<Option external_deps="../../lib/MinSizeRel/libLinearMath.a;../../lib/MinSizeRel/libMiniCL.a;../../lib/MinSizeRel/libBulletMultiThreaded.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option="-DUSE_MINICL" />
+					<Add option='-DCMAKE_INTDIR=\&quot;MinSizeRel\&quot;' />
+					<Add option="-W" />
+					<Add option="-O1" />
+					<Add option="-frtti" />
+					<Add directory="../../../../../Glut" />
+					<Add directory="../../../../../src" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../../Glut" />
+					<Add directory="../../../../../src" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="$(NOINHERIT)" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="winspool" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="..\..\..\lib\MinSizeRel\MiniCL" />
+					<Add library="..\..\..\lib\MinSizeRel\BulletMultiThreaded" />
+					<Add library="..\..\..\lib\MinSizeRel\LinearMath" />
+					<Add library="..\..\lib\MinSizeRel\libLinearMath.a" />
+					<Add library="..\..\lib\MinSizeRel\libMiniCL.a" />
+					<Add library="..\..\lib\MinSizeRel\libBulletMultiThreaded.a" />
+				</Linker>
+			</Target>
+			<Target title="RelWithDebInfo Win32">
+				<Option output="../../../../../AppVectorAdd_Mini" prefix_auto="1" extension_auto="1" />
+				<Option object_output="AppVectorAdd_Mini.dir/RelWithDebInfo" />
+				<Option external_deps="../../lib/RelWithDebInfo/libLinearMath.a;../../lib/RelWithDebInfo/libMiniCL.a;../../lib/RelWithDebInfo/libBulletMultiThreaded.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option="-DUSE_MINICL" />
+					<Add option='-DCMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;' />
+					<Add option="-W" />
+					<Add option="-O2" />
+					<Add option="-frtti" />
+					<Add directory="../../../../../Glut" />
+					<Add directory="../../../../../src" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../../Glut" />
+					<Add directory="../../../../../src" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="$(NOINHERIT)" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="winspool" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="..\..\..\lib\RelWithDebInfo\MiniCL" />
+					<Add library="..\..\..\lib\RelWithDebInfo\BulletMultiThreaded" />
+					<Add library="..\..\..\lib\RelWithDebInfo\LinearMath" />
+					<Add library="..\..\lib\RelWithDebInfo\libLinearMath.a" />
+					<Add library="..\..\lib\RelWithDebInfo\libMiniCL.a" />
+					<Add library="..\..\lib\RelWithDebInfo\libBulletMultiThreaded.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="../../../../../Demos/VectorAdd_OpenCL/MiniCL_VectorAdd.cpp" />
+		<Unit filename="../../../../../Demos/VectorAdd_OpenCL/VectorAddKernels.cl" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

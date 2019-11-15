@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveProject path="../../../../../../../WIPs/Physics/irrbullet/irrBullet-2-git/Bullet/bullet/msvc/2008/src/LinearMath/LinearMath.cbp" />
+	<PreferredTarget name="Linux" />
+	<EditorTabsLayout layout="044e0e505dcde76a000c103200000002=1;BulletSoftBody:../../../../src/BulletSoftBody/btDefaultSoftBodySolver.cpp,*2;LinearMath:../../../../src/LinearMath/btQuickprof.cpp,0;BulletDynamics:../../../../src/BulletDynamics/Vehicle/btRaycastVehicle.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=328;besth=326;minw=328;minh=326;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=044e0e505dcde76a000c103200000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+</CodeBlocks_workspace_layout_file>

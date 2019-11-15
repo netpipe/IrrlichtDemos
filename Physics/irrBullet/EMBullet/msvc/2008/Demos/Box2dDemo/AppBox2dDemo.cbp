@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="AppBox2dDemo" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="../../../../AppBox2dDemo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="AppBox2dDemo.dir/Debug" />
+				<Option external_deps="../../lib/Debug/libLinearMath.a;../../lib/Debug/libOpenGLSupport.a;../../lib/Debug/libBulletCollision.a;../../lib/Debug/libBulletDynamics.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;Debug\&quot;' />
+					<Add option="-W" />
+					<Add option="-O0" />
+					<Add option="-frtti" />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+					<Add directory="../../../../Demos/OpenGL" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+					<Add directory="../../../../Demos/OpenGL" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="$(NOINHERIT)" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="winspool" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="..\..\lib\Debug\OpenGLSupport" />
+					<Add library="..\..\lib\Debug\BulletDynamics" />
+					<Add library="..\..\lib\Debug\BulletCollision" />
+					<Add library="..\..\lib\Debug\LinearMath" />
+					<Add library="..\..\..\..\Glut\glut32" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="..\..\lib\Debug\libLinearMath.a" />
+					<Add library="..\..\lib\Debug\libOpenGLSupport.a" />
+					<Add library="..\..\lib\Debug\libBulletCollision.a" />
+					<Add library="..\..\lib\Debug\libBulletDynamics.a" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="../../../../AppBox2dDemo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="AppBox2dDemo.dir/Release" />
+				<Option external_deps="../../lib/Release/libLinearMath.a;../../lib/Release/libOpenGLSupport.a;../../lib/Release/libBulletCollision.a;../../lib/Release/libBulletDynamics.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;Release\&quot;' />
+					<Add option="-W" />
+					<Add option="-O2" />
+					<Add option="-frtti" />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+					<Add directory="../../../../Demos/OpenGL" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+					<Add directory="../../../../Demos/OpenGL" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="$(NOINHERIT)" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="winspool" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="..\..\lib\Release\OpenGLSupport" />
+					<Add library="..\..\lib\Release\BulletDynamics" />
+					<Add library="..\..\lib\Release\BulletCollision" />
+					<Add library="..\..\lib\Release\LinearMath" />
+					<Add library="..\..\..\..\Glut\glut32" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="..\..\lib\Release\libLinearMath.a" />
+					<Add library="..\..\lib\Release\libOpenGLSupport.a" />
+					<Add library="..\..\lib\Release\libBulletCollision.a" />
+					<Add library="..\..\lib\Release\libBulletDynamics.a" />
+				</Linker>
+			</Target>
+			<Target title="MinSizeRel Win32">
+				<Option output="../../../../AppBox2dDemo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="AppBox2dDemo.dir/MinSizeRel" />
+				<Option external_deps="../../lib/MinSizeRel/libLinearMath.a;../../lib/MinSizeRel/libOpenGLSupport.a;../../lib/MinSizeRel/libBulletCollision.a;../../lib/MinSizeRel/libBulletDynamics.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;MinSizeRel\&quot;' />
+					<Add option="-W" />
+					<Add option="-O1" />
+					<Add option="-frtti" />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+					<Add directory="../../../../Demos/OpenGL" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+					<Add directory="../../../../Demos/OpenGL" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="$(NOINHERIT)" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="winspool" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="..\..\lib\MinSizeRel\OpenGLSupport" />
+					<Add library="..\..\lib\MinSizeRel\BulletDynamics" />
+					<Add library="..\..\lib\MinSizeRel\BulletCollision" />
+					<Add library="..\..\lib\MinSizeRel\LinearMath" />
+					<Add library="..\..\..\..\Glut\glut32" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="..\..\lib\MinSizeRel\libLinearMath.a" />
+					<Add library="..\..\lib\MinSizeRel\libOpenGLSupport.a" />
+					<Add library="..\..\lib\MinSizeRel\libBulletCollision.a" />
+					<Add library="..\..\lib\MinSizeRel\libBulletDynamics.a" />
+				</Linker>
+			</Target>
+			<Target title="RelWithDebInfo Win32">
+				<Option output="../../../../AppBox2dDemo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="AppBox2dDemo.dir/RelWithDebInfo" />
+				<Option external_deps="../../lib/RelWithDebInfo/libLinearMath.a;../../lib/RelWithDebInfo/libOpenGLSupport.a;../../lib/RelWithDebInfo/libBulletCollision.a;../../lib/RelWithDebInfo/libBulletDynamics.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;' />
+					<Add option="-W" />
+					<Add option="-O2" />
+					<Add option="-frtti" />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+					<Add directory="../../../../Demos/OpenGL" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+					<Add directory="../../../../Demos/OpenGL" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="$(NOINHERIT)" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="winspool" />
+					<Add library="shell32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="..\..\lib\RelWithDebInfo\OpenGLSupport" />
+					<Add library="..\..\lib\RelWithDebInfo\BulletDynamics" />
+					<Add library="..\..\lib\RelWithDebInfo\BulletCollision" />
+					<Add library="..\..\lib\RelWithDebInfo\LinearMath" />
+					<Add library="..\..\..\..\Glut\glut32" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="..\..\lib\RelWithDebInfo\libLinearMath.a" />
+					<Add library="..\..\lib\RelWithDebInfo\libOpenGLSupport.a" />
+					<Add library="..\..\lib\RelWithDebInfo\libBulletCollision.a" />
+					<Add library="..\..\lib\RelWithDebInfo\libBulletDynamics.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="../../../../Demos/Box2dDemo/Box2dDemo.cpp" />
+		<Unit filename="../../../../Demos/Box2dDemo/Box2dDemo.h" />
+		<Unit filename="../../../../Demos/Box2dDemo/main.cpp" />
+		<Unit filename="../../../bullet.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

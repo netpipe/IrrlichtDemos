@@ -6,290 +6,51 @@
 		<Cursor>
 			<Cursor1 position="399" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="16" />
-			<Collapse line="20" />
-			<Collapse line="83" />
-		</Folding>
-	</File>
-	<File name="collisionshape.cpp" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="391" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="15" />
-			<Collapse line="21" />
-			<Collapse line="50" />
-			<Collapse line="60" />
-			<Collapse line="66" />
-			<Collapse line="73" />
-		</Folding>
-	</File>
-	<File name="convexhullshape.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="399" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="17" />
-			<Collapse line="27" />
-			<Collapse line="37" />
-			<Collapse line="79" />
-		</Folding>
 	</File>
 	<File name="sphereshape.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="423" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="14" />
-		</Folding>
-	</File>
-	<File name="physicsdebug.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="150" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="9" />
-			<Collapse line="29" />
-		</Folding>
-	</File>
-	<File name="motionstate.cpp" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="353" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="16" />
-			<Collapse line="24" />
-			<Collapse line="29" />
-			<Collapse line="35" />
-			<Collapse line="87" />
-		</Folding>
-	</File>
-	<File name="bulletworld.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="545" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="27" />
-			<Collapse line="87" />
-			<Collapse line="101" />
-			<Collapse line="112" />
-			<Collapse line="148" />
-			<Collapse line="158" />
-			<Collapse line="170" />
-			<Collapse line="182" />
-			<Collapse line="194" />
-			<Collapse line="202" />
-			<Collapse line="214" />
-			<Collapse line="225" />
-			<Collapse line="236" />
-			<Collapse line="292" />
-			<Collapse line="320" />
-			<Collapse line="347" />
-			<Collapse line="353" />
-			<Collapse line="360" />
-			<Collapse line="373" />
-			<Collapse line="424" />
-			<Collapse line="429" />
-			<Collapse line="434" />
-			<Collapse line="493" />
-			<Collapse line="504" />
-			<Collapse line="515" />
-			<Collapse line="529" />
-			<Collapse line="543" />
-			<Collapse line="558" />
-			<Collapse line="565" />
-			<Collapse line="571" />
-		</Folding>
-	</File>
-	<File name="bvhtrianglemeshshape.cpp" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="353" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="14" />
-			<Collapse line="25" />
-			<Collapse line="33" />
-		</Folding>
-	</File>
-	<File name="gimpactmeshshape.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="391" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="16" />
-			<Collapse line="27" />
-			<Collapse line="38" />
-			<Collapse line="44" />
-		</Folding>
-	</File>
-	<File name="sphereshape.cpp" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="353" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="14" />
-			<Collapse line="24" />
-			<Collapse line="40" />
-		</Folding>
 	</File>
 	<File name="motionstate.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="467" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="20" />
-		</Folding>
 	</File>
-	<File name="collisioncallbackinformation.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="359" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="11" />
-			<Collapse line="17" />
-			<Collapse line="27" />
-			<Collapse line="38" />
-		</Folding>
-	</File>
-	<File name="collisionobject.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="sphereshape.cpp" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="353" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="18" />
-			<Collapse line="31" />
-			<Collapse line="41" />
-			<Collapse line="52" />
-			<Collapse line="80" />
-			<Collapse line="86" />
-			<Collapse line="92" />
-			<Collapse line="98" />
-			<Collapse line="104" />
-			<Collapse line="110" />
-			<Collapse line="116" />
-			<Collapse line="122" />
-			<Collapse line="128" />
-			<Collapse line="134" />
-			<Collapse line="140" />
-			<Collapse line="146" />
-			<Collapse line="152" />
-			<Collapse line="157" />
-			<Collapse line="162" />
-			<Collapse line="188" />
-			<Collapse line="204" />
-			<Collapse line="211" />
-			<Collapse line="217" />
-			<Collapse line="223" />
-			<Collapse line="231" />
-			<Collapse line="237" />
-			<Collapse line="243" />
-			<Collapse line="249" />
-			<Collapse line="274" />
-			<Collapse line="280" />
-			<Collapse line="286" />
-			<Collapse line="292" />
-			<Collapse line="300" />
-			<Collapse line="308" />
-			<Collapse line="314" />
-			<Collapse line="320" />
-			<Collapse line="326" />
-			<Collapse line="331" />
-			<Collapse line="336" />
-			<Collapse line="350" />
-			<Collapse line="385" />
-		</Folding>
 	</File>
-	<File name="boxshape.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="physicsdebug.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="378" topLine="0" />
+			<Cursor1 position="150" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="15" />
-			<Collapse line="25" />
-			<Collapse line="45" />
-		</Folding>
+	</File>
+	<File name="kinematiccharactercontroller.cpp" open="1" top="1" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="164" topLine="0" />
+		</Cursor>
 	</File>
 	<File name="irrbulletcommon.cpp" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="353" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="14" />
-			<Collapse line="20" />
-			<Collapse line="36" />
-			<Collapse line="72" />
-			<Collapse line="101" />
-			<Collapse line="120" />
-			<Collapse line="126" />
-		</Folding>
-	</File>
-	<File name="collisioncallbackinformation.h" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="486" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="18" />
-			<Collapse line="50" />
-		</Folding>
 	</File>
 	<File name="rigidbody.cpp" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="353" topLine="0" />
 		</Cursor>
 		<Folding>
-			<Collapse line="24" />
-			<Collapse line="73" />
-			<Collapse line="111" />
-			<Collapse line="121" />
-			<Collapse line="144" />
-			<Collapse line="149" />
-			<Collapse line="159" />
-			<Collapse line="165" />
-			<Collapse line="173" />
-			<Collapse line="181" />
-			<Collapse line="187" />
-			<Collapse line="195" />
-			<Collapse line="204" />
-			<Collapse line="212" />
-			<Collapse line="221" />
-			<Collapse line="228" />
-			<Collapse line="237" />
-			<Collapse line="247" />
-			<Collapse line="253" />
-			<Collapse line="259" />
-			<Collapse line="265" />
-			<Collapse line="271" />
-			<Collapse line="277" />
-			<Collapse line="283" />
-			<Collapse line="289" />
-			<Collapse line="295" />
-			<Collapse line="301" />
-			<Collapse line="307" />
-			<Collapse line="313" />
-			<Collapse line="319" />
-			<Collapse line="324" />
-			<Collapse line="337" />
-			<Collapse line="345" />
-			<Collapse line="353" />
-			<Collapse line="361" />
-			<Collapse line="368" />
-			<Collapse line="374" />
-			<Collapse line="380" />
-			<Collapse line="387" />
-			<Collapse line="395" />
-			<Collapse line="403" />
-			<Collapse line="409" />
-			<Collapse line="415" />
-			<Collapse line="421" />
-			<Collapse line="427" />
-			<Collapse line="435" />
-			<Collapse line="441" />
-			<Collapse line="449" />
-			<Collapse line="457" />
-			<Collapse line="463" />
-			<Collapse line="469" />
-			<Collapse line="475" />
+			<Collapse line="235" />
+		</Folding>
+	</File>
+	<File name="raycastvehicle.cpp" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="353" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="37" />
 		</Folding>
 	</File>
 	<File name="irrbullet.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -297,53 +58,58 @@
 			<Cursor1 position="1858" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="raycastvehicle.cpp" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="collisioncallbackinformation.h" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="486" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="bvhtrianglemeshshape.cpp" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="353" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="19" />
-			<Collapse line="40" />
-			<Collapse line="56" />
-			<Collapse line="73" />
-			<Collapse line="82" />
-			<Collapse line="88" />
-			<Collapse line="94" />
-			<Collapse line="100" />
-			<Collapse line="115" />
-			<Collapse line="121" />
-			<Collapse line="127" />
-			<Collapse line="141" />
-			<Collapse line="152" />
-			<Collapse line="169" />
-		</Folding>
 	</File>
-	<File name="kinematiccharactercontroller.cpp" open="1" top="1" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="motionstate.cpp" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="607" topLine="0" />
+			<Cursor1 position="353" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="bulletworld.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="545" topLine="0" />
 		</Cursor>
 		<Folding>
-			<Collapse line="6" />
-			<Collapse line="28" />
-			<Collapse line="33" />
-			<Collapse line="38" />
-			<Collapse line="43" />
-			<Collapse line="48" />
-			<Collapse line="53" />
-			<Collapse line="58" />
-			<Collapse line="63" />
-			<Collapse line="68" />
-			<Collapse line="73" />
-			<Collapse line="78" />
-			<Collapse line="83" />
-			<Collapse line="90" />
-			<Collapse line="98" />
-			<Collapse line="103" />
-			<Collapse line="108" />
-			<Collapse line="113" />
-			<Collapse line="118" />
-			<Collapse line="123" />
+			<Collapse line="200" />
 		</Folding>
 	</File>
-	<EditorTabsLayout layout="024344305bd70f0600163b7300000002=0;irrBullet:boxshape.cpp,1;irrBullet:bulletworld.cpp,2;irrBullet:motionstate.h,3;irrBullet:irrbullet.h,4;irrBullet:sphereshape.h,5;irrBullet:convexhullshape.cpp,6;irrBullet:gimpactmeshshape.cpp,7;irrBullet:collisioncallbackinformation.cpp,8;irrBullet:collisionobject.cpp,9;irrBullet:physicsdebug.h,10;irrBullet:trianglemeshshape.cpp,11;irrBullet:motionstate.cpp,12;irrBullet:collisioncallbackinformation.h,13;irrBullet:rigidbody.cpp,14;irrBullet:irrbulletcommon.cpp,15;irrBullet:bvhtrianglemeshshape.cpp,16;irrBullet:sphereshape.cpp,17;irrBullet:raycastvehicle.cpp,18;irrBullet:collisionshape.cpp,*19;irrBullet:kinematiccharactercontroller.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=814;besth=343;minw=814;minh=343;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=024344305bd70f0600163b7300000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+	<File name="collisionshape.cpp" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="391" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="collisionobject.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="353" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="collisioncallbackinformation.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="359" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="convexhullshape.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="399" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="boxshape.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="378" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="gimpactmeshshape.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="391" topLine="0" />
+		</Cursor>
+	</File>
+	<EditorTabsLayout layout="04041bd05dcdba73000cb22d00000002=0;irrBullet:boxshape.cpp,1;irrBullet:bulletworld.cpp,2;irrBullet:motionstate.h,3;irrBullet:irrbullet.h,4;irrBullet:sphereshape.h,5;irrBullet:convexhullshape.cpp,6;irrBullet:gimpactmeshshape.cpp,7;irrBullet:collisioncallbackinformation.cpp,8;irrBullet:collisionobject.cpp,9;irrBullet:physicsdebug.h,10;irrBullet:trianglemeshshape.cpp,11;irrBullet:motionstate.cpp,12;irrBullet:collisioncallbackinformation.h,13;irrBullet:rigidbody.cpp,14;irrBullet:irrbulletcommon.cpp,15;irrBullet:bvhtrianglemeshshape.cpp,16;irrBullet:sphereshape.cpp,17;irrBullet:raycastvehicle.cpp,18;irrBullet:collisionshape.cpp,*19;irrBullet:kinematiccharactercontroller.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=328;besth=326;minw=328;minh=326;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=04041bd05dcdba73000cb22d00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>

@@ -1,0 +1,574 @@
+# depslib dependency file v1.0
+1267892616 source:c:\dev\agnostic-svn\libs\bullet-2.78\demos\ragdolldemo\main.cpp
+	"RagdollDemo.h"
+	"GlutStuff.h"
+	"GLDebugDrawer.h"
+	"btBulletDynamicsCommon.h"
+
+1267892616 c:\dev\agnostic-svn\libs\bullet-2.78\demos\ragdolldemo\ragdolldemo.h
+	"GlutDemoApplication.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1267892616 c:\dev\agnostic-svn\libs\bullet-2.78\demos\opengl\glutdemoapplication.h
+	"DemoApplication.h"
+
+1298780933 c:\dev\agnostic-svn\libs\bullet-2.78\demos\opengl\demoapplication.h
+	"GlutStuff.h"
+	"GL_ShapeDrawer.h"
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	"LinearMath/btVector3.h"
+	"LinearMath/btMatrix3x3.h"
+	"LinearMath/btTransform.h"
+	"LinearMath/btQuickprof.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1283204783 c:\dev\agnostic-svn\libs\bullet-2.78\demos\opengl\glutstuff.h
+	<windows.h>
+	<OpenGL/OpenGL.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GLUT/glut.h>
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/gl.h>
+	<GL/glut.h>
+	"GL/freeglut_ext.h"
+
+1252345332 c:\dev\agnostic-svn\libs\bullet-2.78\glut\gl\glut.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1247600602 c:\dev\agnostic-svn\libs\bullet-2.78\demos\opengl\gl_shapedrawer.h
+	"LinearMath/btAlignedObjectArray.h"
+	"LinearMath/btVector3.h"
+	"BulletCollision/CollisionShapes/btShapeHull.h"
+
+1296425838 c:\dev\agnostic-svn\libs\bullet-2.78\src\linearmath\btalignedobjectarray.h
+	"btScalar.h"
+	"btAlignedAllocator.h"
+	<memory.h>
+	<string.h>
+	<new>
+
+1302311661 c:\dev\agnostic-svn\libs\bullet-2.78\src\linearmath\btscalar.h
+	<math.h>
+	<stdlib.h>
+	<float.h>
+	<ppcintrinsics.h>
+	<emmintrin.h>
+	<assert.h>
+	<assert.h>
+	<spu_printf.h>
+	<assert.h>
+	<emmintrin.h>
+	<assert.h>
+	<assert.h>
+
+1235001123 c:\dev\agnostic-svn\libs\bullet-2.78\src\linearmath\btalignedallocator.h
+	"btScalar.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\linearmath\btvector3.h
+	"btScalar.h"
+	"btMinMax.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\linearmath\btminmax.h
+	"LinearMath/btScalar.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\btshapehull.h
+	"LinearMath/btAlignedObjectArray.h"
+	"BulletCollision/CollisionShapes/btConvexShape.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\btconvexshape.h
+	"btCollisionShape.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransform.h"
+	"LinearMath/btMatrix3x3.h"
+	"btCollisionMargin.h"
+	"LinearMath/btAlignedAllocator.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\btcollisionshape.h
+	"LinearMath/btTransform.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btMatrix3x3.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\linearmath\bttransform.h
+	"btMatrix3x3.h"
+
+1298780933 c:\dev\agnostic-svn\libs\bullet-2.78\src\linearmath\btmatrix3x3.h
+	"btVector3.h"
+	"btQuaternion.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\linearmath\btquaternion.h
+	"btVector3.h"
+	"btQuadWord.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\linearmath\btquadword.h
+	"btScalar.h"
+	"btMinMax.h"
+	<altivec.h>
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\broadphasecollision\btbroadphaseproxy.h
+	"LinearMath/btScalar.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btAlignedAllocator.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\btcollisionmargin.h
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\linearmath\btquickprof.h
+	<stdio.h>
+	"btScalar.h"
+	"btAlignedAllocator.h"
+	<new>
+
+1231458803 c:\dev\agnostic-svn\libs\bullet-2.78\demos\opengl\gldebugdrawer.h
+	"LinearMath/btIDebugDraw.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\linearmath\btidebugdraw.h
+	"btVector3.h"
+	"btTransform.h"
+
+1242943813 c:\dev\agnostic-svn\libs\bullet-2.78\src\btbulletdynamicscommon.h
+	"btBulletCollisionCommon.h"
+	"BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h"
+	"BulletDynamics/Dynamics/btContinuousDynamicsWorld.h"
+	"BulletDynamics/Dynamics/btSimpleDynamicsWorld.h"
+	"BulletDynamics/Dynamics/btRigidBody.h"
+	"BulletDynamics/ConstraintSolver/btPoint2PointConstraint.h"
+	"BulletDynamics/ConstraintSolver/btHingeConstraint.h"
+	"BulletDynamics/ConstraintSolver/btConeTwistConstraint.h"
+	"BulletDynamics/ConstraintSolver/btGeneric6DofConstraint.h"
+	"BulletDynamics/ConstraintSolver/btSliderConstraint.h"
+	"BulletDynamics/ConstraintSolver/btGeneric6DofSpringConstraint.h"
+	"BulletDynamics/ConstraintSolver/btUniversalConstraint.h"
+	"BulletDynamics/ConstraintSolver/btHinge2Constraint.h"
+	"BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolver.h"
+	"BulletDynamics/Vehicle/btRaycastVehicle.h"
+
+1299965103 c:\dev\agnostic-svn\libs\bullet-2.78\src\btbulletcollisioncommon.h
+	"BulletCollision/CollisionDispatch/btCollisionWorld.h"
+	"BulletCollision/CollisionDispatch/btCollisionObject.h"
+	"BulletCollision/CollisionShapes/btBoxShape.h"
+	"BulletCollision/CollisionShapes/btSphereShape.h"
+	"BulletCollision/CollisionShapes/btCapsuleShape.h"
+	"BulletCollision/CollisionShapes/btCylinderShape.h"
+	"BulletCollision/CollisionShapes/btConeShape.h"
+	"BulletCollision/CollisionShapes/btStaticPlaneShape.h"
+	"BulletCollision/CollisionShapes/btConvexHullShape.h"
+	"BulletCollision/CollisionShapes/btTriangleMesh.h"
+	"BulletCollision/CollisionShapes/btConvexTriangleMeshShape.h"
+	"BulletCollision/CollisionShapes/btBvhTriangleMeshShape.h"
+	"BulletCollision/CollisionShapes/btScaledBvhTriangleMeshShape.h"
+	"BulletCollision/CollisionShapes/btTriangleMeshShape.h"
+	"BulletCollision/CollisionShapes/btTriangleIndexVertexArray.h"
+	"BulletCollision/CollisionShapes/btCompoundShape.h"
+	"BulletCollision/CollisionShapes/btTetrahedronShape.h"
+	"BulletCollision/CollisionShapes/btEmptyShape.h"
+	"BulletCollision/CollisionShapes/btMultiSphereShape.h"
+	"BulletCollision/CollisionShapes/btUniformScalingShape.h"
+	"BulletCollision/CollisionDispatch/btSphereSphereCollisionAlgorithm.h"
+	"BulletCollision/CollisionDispatch/btDefaultCollisionConfiguration.h"
+	"BulletCollision/CollisionDispatch/btCollisionDispatcher.h"
+	"BulletCollision/BroadphaseCollision/btSimpleBroadphase.h"
+	"BulletCollision/BroadphaseCollision/btAxisSweep3.h"
+	"BulletCollision/BroadphaseCollision/btMultiSapBroadphase.h"
+	"BulletCollision/BroadphaseCollision/btDbvtBroadphase.h"
+	"LinearMath/btQuaternion.h"
+	"LinearMath/btTransform.h"
+	"LinearMath/btDefaultMotionState.h"
+	"LinearMath/btQuickprof.h"
+	"LinearMath/btIDebugDraw.h"
+	"LinearMath/btSerializer.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisiondispatch\btcollisionworld.h
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransform.h"
+	"btCollisionObject.h"
+	"btCollisionDispatcher.h"
+	"BulletCollision/BroadphaseCollision/btOverlappingPairCache.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisiondispatch\btcollisionobject.h
+	"LinearMath/btTransform.h"
+	"LinearMath/btMotionState.h"
+	"LinearMath/btAlignedAllocator.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1235001123 c:\dev\agnostic-svn\libs\bullet-2.78\src\linearmath\btmotionstate.h
+	"btTransform.h"
+
+1301956736 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisiondispatch\btcollisiondispatcher.h
+	"BulletCollision/BroadphaseCollision/btDispatcher.h"
+	"BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
+	"BulletCollision/CollisionDispatch/btManifoldResult.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"LinearMath/btAlignedObjectArray.h"
+	"btCollisionCreateFunc.h"
+
+1302311661 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\broadphasecollision\btdispatcher.h
+	"LinearMath/btScalar.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\narrowphasecollision\btpersistentmanifold.h
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransform.h"
+	"btManifoldPoint.h"
+	"LinearMath/btAlignedAllocator.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\narrowphasecollision\btmanifoldpoint.h
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransformUtil.h"
+	"physics_effects/base_level/solver/pfx_constraint_row.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\linearmath\bttransformutil.h
+	"btTransform.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisiondispatch\btmanifoldresult.h
+	"BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
+	"BulletCollision/NarrowPhaseCollision/btDiscreteCollisionDetectorInterface.h"
+	"LinearMath/btTransform.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\narrowphasecollision\btdiscretecollisiondetectorinterface.h
+	"LinearMath/btTransform.h"
+	"LinearMath/btVector3.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisiondispatch\btcollisioncreatefunc.h
+	"LinearMath/btAlignedObjectArray.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\broadphasecollision\btoverlappingpaircache.h
+	"btBroadphaseInterface.h"
+	"btBroadphaseProxy.h"
+	"btOverlappingPairCallback.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\broadphasecollision\btbroadphaseinterface.h
+	"btBroadphaseProxy.h"
+	"LinearMath/btVector3.h"
+
+1219803851 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\broadphasecollision\btoverlappingpaircallback.h
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\btboxshape.h
+	"btPolyhedralConvexShape.h"
+	"btCollisionMargin.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btMinMax.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\btpolyhedralconvexshape.h
+	"LinearMath/btMatrix3x3.h"
+	"btConvexInternalShape.h"
+
+1264563698 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\btconvexinternalshape.h
+	"btConvexShape.h"
+	"LinearMath/btAabbUtil2.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\linearmath\btaabbutil2.h
+	"btTransform.h"
+	"btVector3.h"
+	"btMinMax.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\btsphereshape.h
+	"btConvexInternalShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+
+1266477395 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\btcapsuleshape.h
+	"btConvexInternalShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\btcylindershape.h
+	"btBoxShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"LinearMath/btVector3.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\btconeshape.h
+	"btConvexInternalShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\btstaticplaneshape.h
+	"btConcaveShape.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\btconcaveshape.h
+	"btCollisionShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"btTriangleCallback.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\bttrianglecallback.h
+	"LinearMath/btVector3.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\btconvexhullshape.h
+	"btPolyhedralConvexShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\bttrianglemesh.h
+	"btTriangleIndexVertexArray.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1249950641 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\bttriangleindexvertexarray.h
+	"btStridingMeshInterface.h"
+	"LinearMath/btAlignedObjectArray.h"
+	"LinearMath/btScalar.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\btstridingmeshinterface.h
+	"LinearMath/btVector3.h"
+	"btTriangleCallback.h"
+	"btConcaveShape.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\btconvextrianglemeshshape.h
+	"btPolyhedralConvexShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\btbvhtrianglemeshshape.h
+	"btTriangleMeshShape.h"
+	"btOptimizedBvh.h"
+	"LinearMath/btAlignedAllocator.h"
+	"btTriangleInfoMap.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\bttrianglemeshshape.h
+	"btConcaveShape.h"
+	"btStridingMeshInterface.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\btoptimizedbvh.h
+	"BulletCollision/BroadphaseCollision/btQuantizedBvh.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\broadphasecollision\btquantizedbvh.h
+	<stdio.h>
+	<stdlib.h>
+	"LinearMath/btVector3.h"
+	"LinearMath/btAlignedAllocator.h"
+	"LinearMath/btAlignedAllocator.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1302157414 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\bttriangleinfomap.h
+	"LinearMath/btHashMap.h"
+	"LinearMath/btSerializer.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\linearmath\bthashmap.h
+	"btAlignedObjectArray.h"
+
+1294284378 c:\dev\agnostic-svn\libs\bullet-2.78\src\linearmath\btserializer.h
+	"btScalar.h"
+	"btStackAlloc.h"
+	"btHashMap.h"
+	<memory.h>
+	<string.h>
+
+1235001123 c:\dev\agnostic-svn\libs\bullet-2.78\src\linearmath\btstackalloc.h
+	"btScalar.h"
+	"btAlignedAllocator.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\btscaledbvhtrianglemeshshape.h
+	"BulletCollision/CollisionShapes/btBvhTriangleMeshShape.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\btcompoundshape.h
+	"btCollisionShape.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransform.h"
+	"LinearMath/btMatrix3x3.h"
+	"btCollisionMargin.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\bttetrahedronshape.h
+	"btPolyhedralConvexShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\btemptyshape.h
+	"btConcaveShape.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransform.h"
+	"LinearMath/btMatrix3x3.h"
+	"btCollisionMargin.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\btmultisphereshape.h
+	"btConvexInternalShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"LinearMath/btAlignedObjectArray.h"
+	"LinearMath/btAabbUtil2.h"
+
+1242167325 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisionshapes\btuniformscalingshape.h
+	"btConvexShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisiondispatch\btspherespherecollisionalgorithm.h
+	"btActivatingCollisionAlgorithm.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"BulletCollision/CollisionDispatch/btCollisionCreateFunc.h"
+	"btCollisionDispatcher.h"
+
+1235001123 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisiondispatch\btactivatingcollisionalgorithm.h
+	"BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\broadphasecollision\btcollisionalgorithm.h
+	"LinearMath/btScalar.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1266978503 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisiondispatch\btdefaultcollisionconfiguration.h
+	"btCollisionConfiguration.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\collisiondispatch\btcollisionconfiguration.h
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\broadphasecollision\btsimplebroadphase.h
+	"btOverlappingPairCache.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\broadphasecollision\btaxissweep3.h
+	"LinearMath/btVector3.h"
+	"btOverlappingPairCache.h"
+	"btBroadphaseInterface.h"
+	"btBroadphaseProxy.h"
+	"btOverlappingPairCallback.h"
+	"btDbvtBroadphase.h"
+	<stdio.h>
+
+1265916350 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\broadphasecollision\btdbvtbroadphase.h
+	"BulletCollision/BroadphaseCollision/btDbvt.h"
+	"BulletCollision/BroadphaseCollision/btOverlappingPairCache.h"
+	"LinearMath/btQuickprof.h"
+
+1265485845 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\broadphasecollision\btdbvt.h
+	"LinearMath/btAlignedObjectArray.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransform.h"
+	"LinearMath/btAabbUtil2.h"
+	<emmintrin.h>
+	<memory.h>
+	<string.h>
+
+1243044954 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletcollision\broadphasecollision\btmultisapbroadphase.h
+	"btBroadphaseInterface.h"
+	"LinearMath/btAlignedObjectArray.h"
+	"btOverlappingPairCache.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\linearmath\btdefaultmotionstate.h
+	"btMotionState.h"
+
+1302157414 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletdynamics\dynamics\btdiscretedynamicsworld.h
+	"btDynamicsWorld.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1302196101 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletdynamics\dynamics\btdynamicsworld.h
+	"BulletCollision/CollisionDispatch/btCollisionWorld.h"
+	"BulletDynamics/ConstraintSolver/btContactSolverInfo.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletdynamics\constraintsolver\btcontactsolverinfo.h
+
+1193966069 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletdynamics\dynamics\btcontinuousdynamicsworld.h
+	"btDiscreteDynamicsWorld.h"
+
+1292444179 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletdynamics\dynamics\btsimpledynamicsworld.h
+	"btDynamicsWorld.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletdynamics\dynamics\btrigidbody.h
+	"LinearMath/btAlignedObjectArray.h"
+	"LinearMath/btTransform.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"BulletCollision/CollisionDispatch/btCollisionObject.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletdynamics\constraintsolver\btpoint2pointconstraint.h
+	"LinearMath/btVector3.h"
+	"btJacobianEntry.h"
+	"btTypedConstraint.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletdynamics\constraintsolver\btjacobianentry.h
+	"LinearMath/btVector3.h"
+	"BulletDynamics/Dynamics/btRigidBody.h"
+
+1301770883 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletdynamics\constraintsolver\bttypedconstraint.h
+	"LinearMath/btScalar.h"
+	"btSolverConstraint.h"
+
+1279588174 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletdynamics\constraintsolver\btsolverconstraint.h
+	"LinearMath/btVector3.h"
+	"LinearMath/btMatrix3x3.h"
+	"btJacobianEntry.h"
+	"btSolverBody.h"
+
+1265923856 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletdynamics\constraintsolver\btsolverbody.h
+	"LinearMath/btVector3.h"
+	"LinearMath/btMatrix3x3.h"
+	"BulletDynamics/Dynamics/btRigidBody.h"
+	"LinearMath/btAlignedAllocator.h"
+	"LinearMath/btTransformUtil.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletdynamics\constraintsolver\bthingeconstraint.h
+	"LinearMath/btVector3.h"
+	"btJacobianEntry.h"
+	"btTypedConstraint.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletdynamics\constraintsolver\btconetwistconstraint.h
+	"LinearMath/btVector3.h"
+	"btJacobianEntry.h"
+	"btTypedConstraint.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletdynamics\constraintsolver\btgeneric6dofconstraint.h
+	"LinearMath/btVector3.h"
+	"btJacobianEntry.h"
+	"btTypedConstraint.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletdynamics\constraintsolver\btsliderconstraint.h
+	"LinearMath/btVector3.h"
+	"btJacobianEntry.h"
+	"btTypedConstraint.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletdynamics\constraintsolver\btgeneric6dofspringconstraint.h
+	"LinearMath/btVector3.h"
+	"btTypedConstraint.h"
+	"btGeneric6DofConstraint.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletdynamics\constraintsolver\btuniversalconstraint.h
+	"LinearMath/btVector3.h"
+	"btTypedConstraint.h"
+	"btGeneric6DofConstraint.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletdynamics\constraintsolver\bthinge2constraint.h
+	"LinearMath/btVector3.h"
+	"btTypedConstraint.h"
+	"btGeneric6DofSpringConstraint.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletdynamics\constraintsolver\btsequentialimpulseconstraintsolver.h
+	"btConstraintSolver.h"
+	"btContactConstraint.h"
+	"btSolverBody.h"
+	"btSolverConstraint.h"
+	"btTypedConstraint.h"
+	"BulletCollision/NarrowPhaseCollision/btManifoldPoint.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletdynamics\constraintsolver\btconstraintsolver.h
+	"LinearMath/btScalar.h"
+
+1302311661 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletdynamics\constraintsolver\btcontactconstraint.h
+	"LinearMath/btVector3.h"
+	"btJacobianEntry.h"
+	"btTypedConstraint.h"
+	"BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletdynamics\vehicle\btraycastvehicle.h
+	"BulletDynamics/Dynamics/btRigidBody.h"
+	"BulletDynamics/ConstraintSolver/btTypedConstraint.h"
+	"btVehicleRaycaster.h"
+	"LinearMath/btAlignedObjectArray.h"
+	"btWheelInfo.h"
+	"BulletDynamics/Dynamics/btActionInterface.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletdynamics\vehicle\btvehicleraycaster.h
+	"LinearMath/btVector3.h"
+
+1301678092 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletdynamics\vehicle\btwheelinfo.h
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransform.h"
+
+1283906295 c:\dev\agnostic-svn\libs\bullet-2.78\src\bulletdynamics\dynamics\btactioninterface.h
+	"LinearMath/btScalar.h"
+	"btRigidBody.h"
+
+1267892616 source:c:\dev\agnostic-svn\libs\bullet-2.78\demos\ragdolldemo\ragdolldemo.cpp
+	"btBulletDynamicsCommon.h"
+	"GlutStuff.h"
+	"GL_ShapeDrawer.h"
+	"LinearMath/btIDebugDraw.h"
+	"GLDebugDrawer.h"
+	"RagdollDemo.h"
+

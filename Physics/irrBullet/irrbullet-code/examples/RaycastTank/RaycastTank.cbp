@@ -72,33 +72,27 @@
 					<Add option="-Wall" />
 					<Add option="-DDEF_LINUX" />
 					<Add directory="../../source" />
-					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
-					<Add directory="/home/Dev/libs/physics/bullet-2.78/src/BulletCollision" />
-					<Add directory="/home/Dev/libs/physics/bullet-2.78/src/BulletSoftBody" />
-					<Add directory="/home/Dev/libs/physics/bullet-2.78/src/BulletDynamics" />
-					<Add directory="/home/Dev/libs/physics/bullet-2.78/src/" />
+					<Add directory="/usr/include/irrlicht" />
+					<Add directory="/usr/include/BulletCollision" />
+					<Add directory="/usr/include/BulletSoftBody" />
+					<Add directory="/usr/include/BulletDynamics" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
 					<Add library="../../lib/linux/Release/libirrBullet.a" />
 					<Add library="Irrlicht" />
-					<Add library="BulletDynamics" />
 					<Add library="BulletSoftBody" />
-					<Add library="LinearMath" />
+					<Add library="BulletDynamics" />
 					<Add library="BulletCollision" />
+					<Add library="LinearMath" />
 					<Add library="GL" />
 					<Add library="GLU" />
 					<Add library="Xxf86vm" />
 					<Add library="png" />
 					<Add library="jpeg" />
 					<Add library="bz2" />
-					<Add library="X11" />
+					<Add library="GLESv2" />
 					<Add directory="../../lib/linux" />
-					<Add directory="/home/Dev/libs/physics/bullet-2.78/src/BulletCollision" />
-					<Add directory="/home/Dev/libs/physics/bullet-2.78/src/BulletDynamics" />
-					<Add directory="/home/Dev/libs/physics/bullet-2.78/src/BulletSoftBody" />
-					<Add directory="/home/Dev/libs/physics/bullet-2.78/src/LinearMath" />
-					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
 				</Linker>
 			</Target>
 			<Target title="Linux Debug">
@@ -133,6 +127,104 @@
 					<Add library="jpeg" />
 					<Add library="bz2" />
 					<Add directory="../../lib/linux" />
+				</Linker>
+			</Target>
+			<Target title="emscripten">
+				<Option platforms="Unix;" />
+				<Option output="../../bin/linux/RaycastTank.html" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="../../bin/linux" />
+				<Option object_output="emobj/Debug/" />
+				<Option type="1" />
+				<Option compiler="emscripten" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Option projectIncludeDirsRelation="1" />
+				<Option projectLibDirsRelation="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-DDEF_LINUX" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_IRR_EMSCRIPTEN_PLATFORM_" />
+					<Add option="-D__EMSCRIPTEN__" />
+					<Add directory="../../source" />
+					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/EMLibs/irrlicht-ogl-es/irrlicht/include" />
+					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/srcs" />
+					<Add directory="/home/netpipe/Desktop/EMScripten-AddonBundle/Libs/physics/Bullet/src" />
+				</Compiler>
+				<Linker>
+					<Add option="-s ALLOW_MEMORY_GROWTH=1" />
+					<Add option="--preload-file media/" />
+					<Add option="-s FULL_ES2=1" />
+					<Add option="-s DISABLE_EXCEPTION_CATCHING=0" />
+					<Add option="-s NO_EXIT_RUNTIME=1" />
+					<Add option="-s USE_LIBPNG=1" />
+					<Add option="-s USE_LIBJPEG=1" />
+					<Add option="-s USE_BZIP2=1" />
+					<Add option="-s ERROR_ON_UNDEFINED_SYMBOLS=0" />
+					<Add library="../../lib/linux/Release/libirrBullet.a" />
+					<Add library="Irrlicht" />
+					<Add library="GLESv2" />
+					<Add library="GL" />
+					<Add library="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/upstream/emscripten/tests/bullet/src/.libs/libBulletSoftBody.a" />
+					<Add library="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/upstream/emscripten/tests/bullet/src/.libs/libBulletCollision.a" />
+					<Add library="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/upstream/emscripten/tests/bullet/src/.libs/libBulletDynamics.a" />
+					<Add library="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/upstream/emscripten/tests/bullet/src/.libs/libLinearMath.a" />
+					<Add library="png" />
+					<Add library="jpeg" />
+					<Add library="bz2" />
+					<Add directory="../../lib/linux/Release" />
+					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/msvc/2008/lib/Released" />
+					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/EMLibs/irrlicht-ogl-es/irrlicht/lib/Linux" />
+					<Add directory="/home/netpipe/Desktop/EMScripten-AddonBundle/Libs/physics/Bullet/msvc/2008/lib/Release" />
+				</Linker>
+			</Target>
+			<Target title="emscriptentest">
+				<Option platforms="Unix;" />
+				<Option output="../../bin/linux/RaycastTank.html" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="../../bin/linux" />
+				<Option object_output="emtobj/Debug/" />
+				<Option type="1" />
+				<Option compiler="emscripten" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Option projectIncludeDirsRelation="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-DDEF_LINUX" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_IRR_EMSCRIPTEN_PLATFORM_" />
+					<Add option="-D__EMSCRIPTEN__" />
+					<Add directory="../../source" />
+					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/upstream/emscripten/tests/bullet/src/.libs" />
+					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/EMLibs/irrlicht-ogl-es/irrlicht/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s ALLOW_MEMORY_GROWTH=1" />
+					<Add option="--preload-file media/" />
+					<Add option="-s FULL_ES2=1" />
+					<Add option="-s DISABLE_EXCEPTION_CATCHING=0" />
+					<Add option="-s NO_EXIT_RUNTIME=1" />
+					<Add option="-s USE_LIBPNG=1" />
+					<Add option="-s USE_LIBJPEG=1" />
+					<Add option="-s USE_BZIP2=1" />
+					<Add option="-s ERROR_ON_UNDEFINED_SYMBOLS=0" />
+					<Add library="../../lib/linux/Release/libirrBullet.a" />
+					<Add library="Irrlicht" />
+					<Add library="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/upstream/emscripten/tests/bullet/src/.libs/libBulletSoftBody.a" />
+					<Add library="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/upstream/emscripten/tests/bullet/src/.libs/libBulletCollision.a" />
+					<Add library="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/upstream/emscripten/tests/bullet/src/.libs/libBulletDynamics.a" />
+					<Add library="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/upstream/emscripten/tests/bullet/src/.libs/libLinearMath.a" />
+					<Add library="GL" />
+					<Add library="png" />
+					<Add library="jpeg" />
+					<Add library="bz2" />
+					<Add library="GLESv2" />
+					<Add directory="../../lib/linux" />
+					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/libs/physics/Bullet/bullet/msvc/2008/lib/Released" />
+					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/EMLibs/irrlicht-ogl-es/irrlicht/lib/Linux" />
+					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/upstream/emscripten/tests/bullet/src/.libs" />
 				</Linker>
 			</Target>
 		</Build>

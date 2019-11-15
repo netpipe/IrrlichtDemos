@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="BulletMultiThreaded" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="../../lib/Debug/BulletMultiThreaded" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="BulletMultiThreaded.dir/Debug" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;Debug\&quot;' />
+					<Add option="-W" />
+					<Add option="-O0" />
+					<Add option="-frtti" />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</ResourceCompiler>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="../../lib/Release/BulletMultiThreaded" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="BulletMultiThreaded.dir/Release" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;Release\&quot;' />
+					<Add option="-W" />
+					<Add option="-O2" />
+					<Add option="-frtti" />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</ResourceCompiler>
+			</Target>
+			<Target title="MinSizeRel Win32">
+				<Option output="../../lib/MinSizeRel/BulletMultiThreaded" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="BulletMultiThreaded.dir/MinSizeRel" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;MinSizeRel\&quot;' />
+					<Add option="-W" />
+					<Add option="-O1" />
+					<Add option="-frtti" />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</ResourceCompiler>
+			</Target>
+			<Target title="RelWithDebInfo Win32">
+				<Option output="../../lib/RelWithDebInfo/BulletMultiThreaded" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="BulletMultiThreaded.dir/RelWithDebInfo" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;' />
+					<Add option="-W" />
+					<Add option="-O2" />
+					<Add option="-frtti" />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../src" />
+				</ResourceCompiler>
+			</Target>
+		</Build>
+		<Unit filename="../../../../src/BulletMultiThreaded/PlatformDefinitions.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/PosixThreadSupport.cpp" />
+		<Unit filename="../../../../src/BulletMultiThreaded/PosixThreadSupport.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/PpuAddressSpace.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SequentialThreadSupport.cpp" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SequentialThreadSupport.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuCollisionObjectWrapper.cpp" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuCollisionObjectWrapper.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuCollisionTaskProcess.cpp" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuCollisionTaskProcess.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuContactManifoldCollisionAlgorithm.cpp" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuContactManifoldCollisionAlgorithm.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuDoubleBuffer.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuFakeDma.cpp" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuFakeDma.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuGatheringCollisionDispatcher.cpp" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuGatheringCollisionDispatcher.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuLibspe2Support.cpp" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuLibspe2Support.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuNarrowPhaseCollisionTask/Box.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuNarrowPhaseCollisionTask/SpuCollisionShapes.cpp" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuNarrowPhaseCollisionTask/SpuCollisionShapes.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuNarrowPhaseCollisionTask/SpuContactResult.cpp" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuNarrowPhaseCollisionTask/SpuContactResult.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuNarrowPhaseCollisionTask/SpuConvexPenetrationDepthSolver.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuNarrowPhaseCollisionTask/SpuGatheringCollisionTask.cpp" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuNarrowPhaseCollisionTask/SpuGatheringCollisionTask.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuNarrowPhaseCollisionTask/SpuMinkowskiPenetrationDepthSolver.cpp" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuNarrowPhaseCollisionTask/SpuMinkowskiPenetrationDepthSolver.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuNarrowPhaseCollisionTask/SpuPreferredPenetrationDirections.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuNarrowPhaseCollisionTask/boxBoxDistance.cpp" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuNarrowPhaseCollisionTask/boxBoxDistance.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuSampleTaskProcess.cpp" />
+		<Unit filename="../../../../src/BulletMultiThreaded/SpuSampleTaskProcess.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/Win32ThreadSupport.cpp" />
+		<Unit filename="../../../../src/BulletMultiThreaded/Win32ThreadSupport.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/btGpu3DGridBroadphase.cpp" />
+		<Unit filename="../../../../src/BulletMultiThreaded/btGpu3DGridBroadphase.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/btGpu3DGridBroadphaseSharedCode.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/btGpu3DGridBroadphaseSharedDefs.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/btGpu3DGridBroadphaseSharedTypes.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/btGpuDefines.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/btGpuUtilsSharedCode.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/btGpuUtilsSharedDefs.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/btParallelConstraintSolver.cpp" />
+		<Unit filename="../../../../src/BulletMultiThreaded/btParallelConstraintSolver.h" />
+		<Unit filename="../../../../src/BulletMultiThreaded/btThreadSupportInterface.cpp" />
+		<Unit filename="../../../../src/BulletMultiThreaded/btThreadSupportInterface.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

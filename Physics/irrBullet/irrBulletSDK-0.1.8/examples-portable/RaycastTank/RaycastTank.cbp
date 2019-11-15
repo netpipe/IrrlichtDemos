@@ -87,7 +87,6 @@
 					<Add library="LinearMath" />
 					<Add library="BulletCollision" />
 					<Add library="GL" />
-					<Add library="GLU" />
 					<Add library="Xxf86vm" />
 					<Add library="png" />
 					<Add library="jpeg" />

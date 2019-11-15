@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GLUI" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="../../lib/Debug/GLUI" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="GLUI.dir/Debug" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;Debug\&quot;' />
+					<Add option="-W" />
+					<Add option="-O0" />
+					<Add option="-frtti" />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../Extras/glui" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../Extras/glui" />
+				</ResourceCompiler>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="../../lib/Release/GLUI" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="GLUI.dir/Release" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;Release\&quot;' />
+					<Add option="-W" />
+					<Add option="-O2" />
+					<Add option="-frtti" />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../Extras/glui" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../Extras/glui" />
+				</ResourceCompiler>
+			</Target>
+			<Target title="MinSizeRel Win32">
+				<Option output="../../lib/MinSizeRel/GLUI" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="GLUI.dir/MinSizeRel" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;MinSizeRel\&quot;' />
+					<Add option="-W" />
+					<Add option="-O1" />
+					<Add option="-frtti" />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../Extras/glui" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../Extras/glui" />
+				</ResourceCompiler>
+			</Target>
+			<Target title="RelWithDebInfo Win32">
+				<Option output="../../lib/RelWithDebInfo/GLUI" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="GLUI.dir/RelWithDebInfo" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DUSE_GRAPHICAL_BENCHMARK" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option='-DCMAKE_INTDIR=\&quot;RelWithDebInfo\&quot;' />
+					<Add option="-W" />
+					<Add option="-O2" />
+					<Add option="-frtti" />
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../Extras/glui" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../../../../Glut" />
+					<Add directory="../../../../Extras/glui" />
+				</ResourceCompiler>
+			</Target>
+		</Build>
+		<Unit filename="../../../../Extras/glui/GL" />
+		<Unit filename="../../../../Extras/glui/algebra3.cpp" />
+		<Unit filename="../../../../Extras/glui/algebra3.h" />
+		<Unit filename="../../../../Extras/glui/arcball.cpp" />
+		<Unit filename="../../../../Extras/glui/arcball.h" />
+		<Unit filename="../../../../Extras/glui/glui.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_add_controls.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_bitmap_img_data.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_bitmaps.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_button.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_checkbox.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_column.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_commandline.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_control.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_edittext.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_filebrowser.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_internal.h" />
+		<Unit filename="../../../../Extras/glui/glui_internal_control.h" />
+		<Unit filename="../../../../Extras/glui/glui_list.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_listbox.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_mouse_iaction.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_node.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_panel.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_radio.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_rollout.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_rotation.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_scrollbar.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_separator.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_spinner.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_statictext.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_string.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_textbox.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_translation.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_tree.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_treepanel.cpp" />
+		<Unit filename="../../../../Extras/glui/glui_window.cpp" />
+		<Unit filename="../../../../Extras/glui/quaternion.cpp" />
+		<Unit filename="../../../../Extras/glui/quaternion.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
