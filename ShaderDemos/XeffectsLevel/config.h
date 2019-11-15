@@ -1,0 +1,31 @@
+#ifndef __CONFIG_H_INCLUDED__
+#define __CONFIG_H_INCLUDED__
+
+
+#define SHADER_MAX_POINT_LIGHTS  32
+
+#define SHADER_MAX_DIR_LIGHTS  32
+
+#define SHADER_MAX_SPOT_LIGHTS  16
+
+
+#define PLAYER_MAX_JOINTS  10
+
+
+#define CORE_ANTI_ALIAS  16
+
+#define CORE_WINDOW_WIDTH  1920
+
+#define CORE_WINDOW_HEIGHT  1080
+
+#define CORE_STENCIL_BUFFER  false
+
+#define CORE_FULLSCREEN  true
+
+#define CORE_VSYNC  true
+
+#define MAX_SHADOW_MAPS  4
+
+#define SHADOW_MAP_SIZE  512
+
+#endif

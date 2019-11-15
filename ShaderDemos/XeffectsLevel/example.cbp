@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="BulletSoft Body" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./SoftBody" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
+			<Add directory="../../../LunaLibs/bullet-2.78/src" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="BulletSoftBody" />
+			<Add library="BulletDynamics" />
+			<Add library="BulletCollision" />
+			<Add library="LinearMath" />
+			<Add library="X11" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
+			<Add directory="../../../LunaLibs/bullet-2.78/src/BulletSoftBody" />
+			<Add directory="../../../LunaLibs/bullet-2.78/src/LinearMath" />
+			<Add directory="../../../LunaLibs/bullet-2.78/src/BulletDynamics" />
+			<Add directory="../../../LunaLibs/bullet-2.78/src/BulletCollision" />
+			<Add directory="../../../LunaLibs/bullet-2.78/msvc/2008/lib/Release" />
+		</Linker>
+		<Unit filename="CLightSceneNode.cpp" />
+		<Unit filename="CLightSceneNode.h" />
+		<Unit filename="config.h" />
+		<Unit filename="core.h" />
+		<Unit filename="corereciever.h" />
+		<Unit filename="coreshadercallback.h" />
+		<Unit filename="coreshadowlight.h" />
+		<Unit filename="corezshadercallback.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="vehicle.h" />
+		<Unit filename="xeffects/Source/CScreenQuad.h" />
+		<Unit filename="xeffects/Source/CShaderPre.cpp" />
+		<Unit filename="xeffects/Source/CShaderPre.h" />
+		<Unit filename="xeffects/Source/EffectCB.h" />
+		<Unit filename="xeffects/Source/EffectHandler.cpp" />
+		<Unit filename="xeffects/Source/EffectHandler.h" />
+		<Unit filename="xeffects/Source/EffectShaders.h" />
+		<Unit filename="xeffects/Source/XEffects.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
