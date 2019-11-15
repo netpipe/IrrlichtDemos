@@ -1,0 +1,48 @@
+its having shader issues currently here are a few.
+
+ERROR: 0:17: 'gl_TexCoord' : undeclared identifier
+ERROR: 0:17: 'expression' :  left of '[' is not of type array, matrix, or vector 
+ERROR: 0:17: 'xyz' :  field selection requires structure or vector on left hand side
+ERROR: 0:17: 'assign' : l-value required (can't modify a const)
+ERROR: 0:17: '=' : dimension mismatch
+ERROR: 0:17: 'assign' : cannot convert from 'highp 3-component vector of float' to 'const highp float'
+ERROR: 0:18: 'gl_TexCoord' : undeclared identifier
+ERROR: 0:18: 'expression' :  left of '[' is not of type array, matrix, or vector 
+ERROR: 0:18: 'xy' :  field selection requires structure or vector on left hand side
+ERROR: 0:18: 'assign' : l-value required (can't modify a const)
+ERROR: 0:18: '=' : dimension mismatch
+ERROR: 0:18: 'assign' : cannot convert from 'highp 2-component vector of float' to 'const highp float'
+
+GLSL shader failed to compile
+ERROR: 0:6: 'gl_Vertex' : undeclared identifier
+ERROR: 0:6: 'x' :  field selection requires structure or vector on left hand side
+ERROR: 0:6: 'gl_Vertex' : undeclared identifier
+ERROR: 0:6: 'y' :  field selection requires structure or vector on left hand side
+ERROR: 0:8: 'gl_Vertex' : undeclared identifier
+ERROR: 0:8: 'x' :  field selection requires structure or vector on left hand side
+ERROR: 0:9: 'gl_Vertex' : undeclared identifier
+ERROR: 0:9: 'y' :  field selection requires structure or vector on left hand side
+ERROR: 0:10: 'gl_TexCoord' : undeclared identifier
+ERROR: 0:10: 'expression' :  left of '[' is not of type array, matrix, or vector 
+ERROR: 0:10: 'xy' :  field selection requires structure or vector on left hand side
+ERROR: 0:10: 'assign' : l-value required (can't modify a const)
+ERROR: 0:10: '=' : dimension mismatch
+ERROR: 0:10: 'assign' : cannot convert from 'highp 2-component vector of float' to 'const highp float'
+ERROR: 0:14: 'gl_TexCoord' : undeclared identifier
+ERROR: 0:14: 'expression' :  left of '[' is not of type array, matrix, or vector 
+ERROR: 0:14: 'xyz' :  field selection requires structure or vector on left hand side
+ERROR: 0:14: 'assign' : l-value required (can't modify a const)
+ERROR: 0:14: '=' : dimension mismatch
+ERROR: 0:14: 'assign' : cannot convert from 'highp 3-component vector of float' to 'const highp float'
+ERROR: 0:17: 'gl_TexCoord' : undeclared identifier
+ERROR: 0:17: 'expression' :  left of '[' is not of type array, matrix, or vector 
+ERROR: 0:17: 'xyz' :  field selection requires structure or vector on left hand side
+ERROR: 0:17: 'assign' : l-value required (can't modify a const)
+ERROR: 0:17: '=' : dimension mismatch
+ERROR: 0:17: 'assign' : cannot convert from 'highp 3-component vector of float' to 'const highp float'
+ERROR: 0:18: 'gl_TexCoord' : undeclared identifier
+ERROR: 0:18: 'expression' :  left of '[' is not of type array, matrix, or vector 
+ERROR: 0:18: 'xy' :  field selection requires structure or vector on left hand side
+ERROR: 0:18: 'assign' : l-value required (can't modify a const)
+ERROR: 0:18: '=' : dimension mismatch
+ERROR: 0:18: 'assign' : cannot convert from 'highp 2-component vector of float' to 'const highp float'
