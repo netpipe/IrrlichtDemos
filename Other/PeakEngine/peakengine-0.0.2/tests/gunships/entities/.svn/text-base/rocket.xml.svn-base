@@ -1,0 +1,103 @@
+<?xml version="1.0" standalone="yes"?>
+<entity>
+	<name>Rocket</name>
+	<property name="position" type="alias" value="rocketbody.position" />
+	<property name="rotation" type="alias" value="rocketbody.rotation" />
+	
+	<script place="server">
+	<![CDATA[
+		timetolive = 10000;
+		armed = true;
+		
+		function firerocket()
+			-- Get target
+			helicount = peak.Game:get():getEntityCount("heli");
+			if helicount == 0 then
+				-- No target?
+			else
+				-- Look for best target
+				-- TODO: Also look at distance
+				local bestrotation = 100;
+				for i=0,(helicount-1) do
+					local heli = peak.Game:get():getEntity("heli", i);
+					local helibody = heli:getBody("helibody");
+					local posdifference = peak.Vector3D(-helibody:getPosition().x + rocketbody:getPosition().x,
+						-helibody:getPosition().y + rocketbody:getPosition().y,
+						-helibody:getPosition().z + rocketbody:getPosition().z);
+					local diffrotation = posdifference:getRotation();
+					local currentaxis = peak.Vector3D(0, 0, 1);
+					currentaxis = rocketbody:getRotation():rotateVector(currentaxis);
+					local currentrotation = currentaxis:getRotation();
+					local diffrotation = peak.Vector3D(diffrotation.x - currentrotation.x, diffrotation.y - currentrotation.y, diffrotation.z - currentrotation.z);
+					while diffrotation.x > math.pi do
+						diffrotation.x = diffrotation.x - 2 * math.pi;
+					end
+					if diffrotation.y < 0 then
+						diffrotation.y = -diffrotation.y;
+					end
+					while diffrotation.y > math.pi do
+						diffrotation.y = diffrotation.y - 2 * math.pi;
+					end
+					if diffrotation.y < 0 then
+						diffrotation.y = -diffrotation.y;
+					end
+					if diffrotation.y < 2.0 and diffrotation.y < bestrotation then
+						target = peak.Game:get():getEntity("heli", i);
+						targetbody = target:getBody("helibody");
+						bestrotation = diffrotation.y;
+					end
+				end
+			end
+		end
+
+		function OnUpdate(msecs)
+			local speed = peak.Vector3D(0, 0, -70);
+			if target ~= nil then
+				local posdifference = peak.Vector3D(-targetbody:getPosition().x + rocketbody:getPosition().x,
+					-targetbody:getPosition().y + rocketbody:getPosition().y,
+					-targetbody:getPosition().z + rocketbody:getPosition().z);
+				local diffrotation = posdifference:getRotation();
+				local currentrotation = rocketbody:getRotation();
+		
+				rocketbody:setRotation(currentrotation:slerp(peak.Quaternion(diffrotation), msecs * 0.020));
+				currentrotation = rocketbody:getRotation();
+			end
+			speed = rocketbody:getRotation():rotateVector(speed);
+			rocketbody:setLinearVelocity(speed);
+			
+			timetolive = timetolive - msecs;
+			if timetolive <= 0 then
+				peak.Game:get():deleteEntity(entity);
+			end
+		end
+	]]>
+	</script>
+	
+	<body name="rocketbody" gravity="0/0/0">
+		<!--<shape name="testshape" type="trimesh" mesh="test.obj" />-->
+		<shape name="rocketshape" type="box" size="1/1/1" />
+		<scenenode name="rocketnode" type="mesh" file="rocket.scene.xml" scale="1/1/1" />
+		<scenenode name="rocketfire" type="particlesystem" file="particle.scene.xml" />
+	</body>
+	
+	<link name="collisionlink" type="script" source="rocketbody.Collision" place="server">
+	<![CDATA[
+		if armed == false then
+			return;
+		end
+		otherentity = rocketbody:getCollisionBody():getEntity();
+		if otherentity ~= nil then
+			if otherentity:getScript():isFunction("hit") then
+				-- Damage entity
+				otherentity:getScript():callFunctionI("hit", 30);
+			else
+				-- Entity cannot be damaged
+			end
+		end
+		peak.Game:get():deleteEntity(entity);
+		armed = false;
+	]]>
+	</link>
+	
+</entity>
+

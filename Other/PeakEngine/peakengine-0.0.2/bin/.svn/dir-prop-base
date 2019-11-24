@@ -1,0 +1,27 @@
+K 10
+svn:ignore
+V 280
+peakbin
+alut.dll
+DevIL.dll
+enginetest.exe
+FreeImage.dll
+FreeImagePlus.dll
+guichan.dll
+ILU.dll
+ILUT.dll
+libHorde3D.dll
+libHorde3DUtils.dll
+libPeakEngine.def
+libtolua++.dll
+lua5.1.dll
+lua51.dll
+ogg.dll
+OpenAL32.dll
+PeakEngine.dll
+tolua++.exe
+vorbis.dll
+vorbisenc.dll
+vorbisfile.dll
+
+END

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Irrlicht Pong" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./libPong.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="/home/Dev/libs/Irrlicht/include" />
+			<Add directory="../include" />
+			<Add directory="/home/Dev/libs/net/enet/include" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="enet" />
+			<Add directory="/home/Dev/libs/Irrlicht/lib/gcc" />
+			<Add directory="/home/Dev/libs/net/enet" />
+		</Linker>
+		<Unit filename="core/Client.cpp" />
+		<Unit filename="core/Engine.cpp" />
+		<Unit filename="core/Game.cpp" />
+		<Unit filename="core/Server.cpp" />
+		<Unit filename="entity/ClientEntity.cpp" />
+		<Unit filename="entity/Entity.cpp" />
+		<Unit filename="entity/EntityManager.cpp" />
+		<Unit filename="entity/EntityMap.cpp" />
+		<Unit filename="entity/FloatProperty.cpp" />
+		<Unit filename="entity/IntProperty.cpp" />
+		<Unit filename="entity/Property.cpp" />
+		<Unit filename="entity/QuaternionProperty.cpp" />
+		<Unit filename="entity/ServerEntity.cpp" />
+		<Unit filename="entity/Vector2FProperty.cpp" />
+		<Unit filename="entity/Vector3FProperty.cpp" />
+		<Unit filename="network/LocalConnection.cpp" />
+		<Unit filename="network/NetworkClient.cpp" />
+		<Unit filename="network/NetworkConnection.cpp" />
+		<Unit filename="network/NetworkHost.cpp" />
+		<Unit filename="support/Buffer.cpp" />
+		<Unit filename="support/ConditionVariable.cpp" />
+		<Unit filename="support/Mutex.cpp" />
+		<Unit filename="support/OS.cpp" />
+		<Unit filename="support/ScopedLock.cpp" />
+		<Unit filename="support/Thread.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

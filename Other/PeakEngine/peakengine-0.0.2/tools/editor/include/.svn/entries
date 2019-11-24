@@ -1,0 +1,54 @@
+8
+
+dir
+242
+https://peakengine.svn.sourceforge.net/svnroot/peakengine/tags/0.0.2/tools/editor/include
+https://peakengine.svn.sourceforge.net/svnroot/peakengine
+
+
+
+2008-08-04T23:03:48.888950Z
+196
+phoenix64
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9212497a-f645-0410-acf3-dc9a8a0a84e6
+
+MainWindow.h
+file
+
+
+
+
+2008-08-20T13:30:50.000000Z
+589201577a720c09b3be11397599a2bf
+2008-08-04T23:03:48.888950Z
+196
+phoenix64
+has-props
+
+IrrlichtWidget.h
+file
+
+
+
+
+2008-08-20T13:30:50.000000Z
+0fb10e1dff7875e22a503746c5779710
+2008-08-04T23:03:48.888950Z
+196
+phoenix64
+has-props
+

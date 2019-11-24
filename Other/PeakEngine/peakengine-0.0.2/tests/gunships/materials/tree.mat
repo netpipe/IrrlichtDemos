@@ -1,0 +1,9 @@
+
+[material]
+name=tree
+type=alphachannel
+wireframe=false
+texturecount=1
+texture0=leaf.png
+lighting=false
+backfaces=true

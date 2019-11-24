@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="yes"?>
+<entity>
+	<name>Pavillion Level Mesh</name>
+	<property name="position" type="alias" value="pavilionbody.position" />
+
+	<script>
+	<![CDATA[
+	]]>
+	</script>
+
+	<body name="pavilionbody">
+		<shape name="pavilionshape" type="trimesh" mesh="pavilion.obj" mass="0"  scale="1/1/1" />
+		<scenenode name="pavilionnode" type="mesh" file="pavilion.scene.xml" scale="1/1/1" />
+	</body>
+
+</entity>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/peakengine/!svn/ver/242/tags/0.0.2/tests/test1/shaders
+END
+skybox.shader.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/peakengine/!svn/ver/242/tags/0.0.2/tests/test1/shaders/skybox.shader.xml
+END
+overlay.shader.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/peakengine/!svn/ver/242/tags/0.0.2/tests/test1/shaders/overlay.shader.xml
+END
+parallax.shader.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/peakengine/!svn/ver/242/tags/0.0.2/tests/test1/shaders/parallax.shader.xml
+END

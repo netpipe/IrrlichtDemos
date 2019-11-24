@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/peakengine/!svn/ver/242/tags/0.0.2/tools/editor
+END
+ui.glade
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/peakengine/!svn/ver/242/tags/0.0.2/tools/editor/ui.glade
+END
+ui2.glade
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/peakengine/!svn/ver/242/tags/0.0.2/tools/editor/ui2.glade
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/peakengine/!svn/ver/242/tags/0.0.2/tools/editor/Makefile
+END

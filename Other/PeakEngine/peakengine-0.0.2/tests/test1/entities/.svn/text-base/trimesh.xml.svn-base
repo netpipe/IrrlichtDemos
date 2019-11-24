@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="yes"?>
+<entity>
+	<name>Trimesh</name>
+	<property name="position" type="alias" value="tribody.position" />
+	
+	<body name="tribody">
+		<shape name="trishape" type="trimesh" mesh="rooms.obj" mass="1"  scale="0.8/0.8/0.8" />
+		<scenenode name="trinode" type="mesh" mesh="rooms.obj" material="white" scale="0.8/0.8/0.8" />
+	</body>
+	
+</entity>
+

@@ -1,0 +1,54 @@
+8
+
+dir
+242
+https://peakengine.svn.sourceforge.net/svnroot/peakengine/tags/0.0.2/tests/gunships/levels
+https://peakengine.svn.sourceforge.net/svnroot/peakengine
+
+
+
+2008-08-14T19:30:31.670546Z
+223
+phoenix64
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9212497a-f645-0410-acf3-dc9a8a0a84e6
+
+testlevel.level
+file
+
+
+
+
+2008-08-20T13:31:12.000000Z
+3ec1c7908b35acdd92c7034079b824a6
+2008-08-07T20:31:09.258651Z
+203
+phoenix64
+has-props
+
+city.level
+file
+
+
+
+
+2008-08-20T13:31:12.000000Z
+469acbd6071a2d108671d82847508d16
+2008-08-14T19:30:31.670546Z
+223
+phoenix64
+has-props
+

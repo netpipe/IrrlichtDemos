@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/peakbin.dir/main.o  -o ../bin/peakbin  -L/home/Dev/libs/game/PeakEngines/peakengine-0.0.2/lib -rdynamic ../lib/libpeakengine.so -lenet -ltolua++ -lglfw -lXrandr -lbulletsoftbody -lbulletdynamics -lbulletcollision -lbulletmath -Wl,-rpath,/home/Dev/libs/game/PeakEngines/peakengine-0.0.2/lib 

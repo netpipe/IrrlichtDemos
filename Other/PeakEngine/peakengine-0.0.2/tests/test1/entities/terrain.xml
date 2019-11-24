@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="yes"?>
+<entity>
+	<name>Terrain Level TriMesh</name>
+	<property name="position" type="alias" value="terrainbody.position" />
+
+	<script>
+	<![CDATA[
+	]]>
+	</script>
+
+	<body name="terrainbody">
+		<shape name="terrainshape" type="trimesh" mesh="terrain.obj" mass="0"  scale="5/5/5" />
+		<scenenode name="terrainnode" type="mesh" file="terrain.scene.xml" scale="5/5/5" />
+	</body>
+
+</entity>

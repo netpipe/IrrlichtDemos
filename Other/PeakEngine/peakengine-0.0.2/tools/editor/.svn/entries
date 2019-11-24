@@ -1,0 +1,78 @@
+8
+
+dir
+242
+https://peakengine.svn.sourceforge.net/svnroot/peakengine/tags/0.0.2/tools/editor
+https://peakengine.svn.sourceforge.net/svnroot/peakengine
+
+
+
+2008-08-07T17:47:29.350940Z
+201
+phoenix64
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9212497a-f645-0410-acf3-dc9a8a0a84e6
+
+include
+dir
+
+src
+dir
+
+dep
+dir
+
+ui.glade
+file
+
+
+
+
+2008-08-20T13:30:50.000000Z
+ae9e6470920dae0ca009cf61ddff899e
+2008-07-27T21:14:45.892803Z
+168
+phoenix64
+has-props
+
+obj
+dir
+
+ui2.glade
+file
+
+
+
+
+2008-08-20T13:30:50.000000Z
+28d647d2d50b80cfdc6436a08483c42c
+2008-08-04T23:03:48.888950Z
+196
+phoenix64
+
+Makefile
+file
+
+
+
+
+2008-08-20T13:30:50.000000Z
+c8c24f65180abdce533df8cbdf7dd7e5
+2008-08-04T23:03:48.888950Z
+196
+phoenix64
+has-props
+

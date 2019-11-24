@@ -1,0 +1,4 @@
+<Model name="rocket" geometry="rocket.geo">
+
+	<Mesh name="Cylinder" material="stones.material.xml" tx="-0.00075" ty="0" tz="0.00077" rx="-0" ry="0.093965" rz="0" sx="1" sy="1" sz="1" batchStart="0" batchCount="96" vertRStart="0" vertREnd="64" />
+</Model>

@@ -1,0 +1,4 @@
+<Model name="table" geometry="table.geo">
+
+	<Mesh name="Cube" material="wood.material.xml" tx="0" ty="2.3614" tz="0" sx="2.45944" sy="1" sz="5.47622" batchStart="0" batchCount="804" vertRStart="0" vertREnd="535" />
+</Model>

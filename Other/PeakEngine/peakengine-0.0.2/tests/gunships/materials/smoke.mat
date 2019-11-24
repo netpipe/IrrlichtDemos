@@ -1,0 +1,10 @@
+
+[material]
+name=smoke
+type=add
+wireframe=false
+texturecount=1
+texture0=smoke.png
+lighting=false
+writez=false
+

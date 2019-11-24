@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="yes"?>
+<entity>
+	<name>Simple Table</name>
+	<property name="position" type="alias" value="tablebody.position" />
+	
+
+	<body name="tablebody">
+		<shape name="tableshape" type="trimesh" mesh="table.obj" mass="10"  scale="1/1/1" />
+		<scenenode name="tablenode" type="mesh" file="table.scene.xml" scale="1/1/1" />
+	</body>
+	
+
+</entity>

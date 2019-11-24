@@ -1,0 +1,9 @@
+
+[material]
+name=bark
+type=solid
+wireframe=true
+texturecount=1
+texture0=bark.png
+lighting=false
+backfaces=true
