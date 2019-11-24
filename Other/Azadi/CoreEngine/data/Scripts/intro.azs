@@ -1,0 +1,94 @@
+function intro()
+	captureCursor();
+	loadTexture("splash.png");
+	loadTexture("credits.png");
+	local counter = 0;
+	local timer = 0;
+	prepare2D();
+	
+	-- Splash screen --
+	
+	while (counter < 50) do
+		clearScreen(0, 0, 0, 0);
+		local color = counter / 100;
+		drawTexturedRectWithColor(0.0, 0.0, 1024.0, 768.0, "splash.png", color, color, color);
+		flipBuffers();
+		wait(2);
+		if ((timer + 10) < getTicks()) then
+			timer = getTicks();
+			counter = counter + 1;
+		end
+	end
+
+	counter = 0;
+
+	while (counter < 50) do
+		clearScreen(0, 0, 0, 0);
+		drawTexturedRect(0.0, 0.0, 1024.0, 768.0, "splash.png");
+		flipBuffers();
+		wait(2);
+		if ((timer + 10) < getTicks()) then
+			timer = getTicks();
+			counter = counter + 1;
+		end
+	end
+
+	counter = 100;
+
+	while (counter > 0) do
+		clearScreen(0, 0, 0, 0);
+		local color = counter / 100;
+		drawTexturedRectWithColor(0.0, 0.0, 1024.0, 768.0, "splash.png", color, color, color);
+		flipBuffers();
+		wait(2);
+		if ((timer + 10) < getTicks()) then
+			timer = getTicks();
+			counter = counter - 1;
+		end
+	end
+	
+	-- Credits --
+	
+	counter = 0;
+	
+	while (counter < 100) do
+		clearScreen(0, 0, 0, 0);
+		local color = counter / 100;
+		drawTexturedRectWithColor(0.0, 0.0, 1024.0, 768.0, "credits.png", color, color, color);
+		flipBuffers();
+		wait(2);
+		if ((timer + 10) < getTicks()) then
+			timer = getTicks();
+			counter = counter + 1;
+		end
+	end
+
+	counter = 0;
+
+	while (counter < 100) do
+		clearScreen(0, 0, 0, 0);
+		drawTexturedRect(0.0, 0.0, 1024.0, 768.0, "credits.png");
+		flipBuffers();
+		wait(2);
+		if ((timer + 10) < getTicks()) then
+			timer = getTicks();
+			counter = counter + 1;
+		end
+	end
+
+	counter = 100;
+
+	while (counter > 0) do
+		clearScreen(0, 0, 0, 0);
+		local color = counter / 100;
+		drawTexturedRectWithColor(0.0, 0.0, 1024.0, 768.0, "credits.png", color, color, color);
+		flipBuffers();
+		wait(2);
+		if ((timer + 10) < getTicks()) then
+			timer = getTicks();
+			counter = counter - 1;
+		end
+	end
+
+	returnInt(0);
+end

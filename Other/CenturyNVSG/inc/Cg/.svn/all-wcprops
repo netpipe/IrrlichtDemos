@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/Cg
+END
+cg.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/Cg/cg.h
+END
+cgContextManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/Cg/cgContextManager.h
+END
+cgD3D8.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/Cg/cgD3D8.h
+END
+cgGL.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/Cg/cgGL.h
+END
+cgProgramManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/Cg/cgProgramManager.h
+END
+cg_profiles.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/Cg/cg_profiles.h
+END
+cgD3D9.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/Cg/cgD3D9.h
+END
+cgGL_profiles.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/Cg/cgGL_profiles.h
+END
+cg_enums.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/Cg/cg_enums.h
+END
+cg_bindlocations.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/Cg/cg_bindlocations.h
+END
+cgD3D.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/Cg/cgD3D.h
+END
+cg_errors.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/Cg/cg_errors.h
+END
+cg_datatypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/Cg/cg_datatypes.h
+END
+cgTemplates.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/Cg/cgTemplates.h
+END

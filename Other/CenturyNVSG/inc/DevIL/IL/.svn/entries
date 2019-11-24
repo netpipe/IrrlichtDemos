@@ -1,0 +1,88 @@
+8
+
+dir
+197
+https://secure.cosmodio.net/projects/Azadi/branches/Century%20NVSG/inc/DevIL/IL
+https://secure.cosmodio.net/projects/Azadi
+
+
+
+2007-12-31T04:12:14.846640Z
+187
+clay
+
+
+svn:special svn:externals svn:needs-lock
+
+ilu.h
+file
+
+
+
+
+2007-12-31T02:16:55.000000Z
+244772753ba44b6760158e8346d88ec8
+2007-12-31T04:12:14.846640Z
+187
+clay
+
+ilu_region.h
+file
+
+
+
+
+2007-12-31T02:16:55.000000Z
+82e994fa258f33a6a9d8f2fb76082b69
+2007-12-31T04:12:14.846640Z
+187
+clay
+
+il_wrap.h
+file
+
+
+
+
+2007-12-31T02:16:55.000000Z
+1fb04fa42d962d7e4c30bd6326521944
+2007-12-31T04:12:14.846640Z
+187
+clay
+
+devil_internal_exports.h
+file
+
+
+
+
+2007-12-31T02:16:55.000000Z
+9255a3e36d437beeed3d7c692ccae4bf
+2007-12-31T04:12:14.846640Z
+187
+clay
+
+il.h
+file
+
+
+
+
+2007-12-31T02:16:55.000000Z
+2a0373d65e5cd3288e16cd8641a7263c
+2007-12-31T04:12:14.846640Z
+187
+clay
+
+config.h
+file
+
+
+
+
+2007-12-31T02:16:55.000000Z
+a2340e538abecaa3560334f382da48de
+2007-12-31T04:12:14.846640Z
+187
+clay
+

@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvutil
+END
+MemFunTbl.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvutil/MemFunTbl.h
+END
+BitMask.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvutil/BitMask.h
+END
+RCObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvutil/RCObject.h
+END
+Handle.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvutil/Handle.h
+END
+FileMapping.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvutil/FileMapping.h
+END
+Validated.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvutil/Validated.h
+END
+PlugIn.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvutil/PlugIn.h
+END
+Trace.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvutil/Trace.h
+END
+Trackball.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvutil/Trackball.h
+END
+Tools.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvutil/Tools.h
+END
+Assert.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvutil/Assert.h
+END
+TransformStack.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvutil/TransformStack.h
+END
+ProblemLog.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvutil/ProblemLog.h
+END
+Singleton.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvutil/Singleton.h
+END
+IOLayer.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvutil/IOLayer.h
+END
+Incarnation.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvutil/Incarnation.h
+END
+DbgNew.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvutil/DbgNew.h
+END
+Registry.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvutil/Registry.h
+END
+PlugInCallback.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvutil/PlugInCallback.h
+END
+Allocator.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvutil/Allocator.h
+END
+Log.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvutil/Log.h
+END
+nvutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvutil/nvutil.h
+END
+Conversion.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvutil/Conversion.h
+END
+SWMRSync.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvutil/SWMRSync.h
+END

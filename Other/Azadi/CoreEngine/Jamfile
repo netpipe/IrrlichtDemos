@@ -1,0 +1,17 @@
+TOP = . ;
+SubDir TOP src ;
+Sources = main.cpp 
+	azadi.cpp
+	loadTexture.cpp
+	gui.cpp
+	Drawing.cpp
+	Console.cpp
+	model.cpp
+	filesystem.cpp
+	particle.cpp
+	Console/Message.cpp
+	Particle/particle.cpp
+	;
+Main Azadi : $(Sources) ;
+LINKLIBS on Azadi = -lGL -lGLU -lSDL -lpng ;
+Clean clean : $(Azadi) ;

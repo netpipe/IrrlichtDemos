@@ -1,0 +1,81 @@
+# depslib dependency file v1.0
+1200017071 c:\documents and settings\administrator\desktop\azadi\trunk\coreserver\src\main.cpp
+	"main.h"
+
+1200016835 c:\documents and settings\administrator\desktop\azadi\trunk\coreserver\src\main.h
+	"mainloop.h"
+	"logging/logging.h"
+
+1200017809 c:\documents and settings\administrator\desktop\azadi\trunk\coreserver\src\mainloop.h
+	<unistd.h>
+	<cstdio>
+	<string>
+	<windows.h>
+	"logging/logging.h"
+
+1200016509 c:\documents and settings\administrator\desktop\azadi\trunk\coreserver\src\mainloop.cpp
+	"mainloop.h"
+
+1199129100 c:\documents and settings\administrator\desktop\azadi\trunk\coreserver\src\config\helpers\types\float.cpp
+	"float.h"
+	<sstream>
+
+1199129100 c:\documents and settings\administrator\desktop\azadi\trunk\coreserver\src\config\helpers\types\float.h
+	<string>
+
+1199129100 c:\documents and settings\administrator\desktop\azadi\trunk\coreserver\src\config\helpers\types\integer.cpp
+	"integer.h"
+	<sstream>
+
+1199129100 c:\documents and settings\administrator\desktop\azadi\trunk\coreserver\src\config\helpers\types\integer.h
+	<string>
+
+1199129100 c:\documents and settings\administrator\desktop\azadi\trunk\coreserver\src\config\helpers\types\long.cpp
+	"long.h"
+	<sstream>
+
+1199129100 c:\documents and settings\administrator\desktop\azadi\trunk\coreserver\src\config\helpers\types\long.h
+	<string>
+
+1200016412 c:\documents and settings\administrator\desktop\azadi\trunk\coreserver\src\config\config.cpp
+	"config.h"
+
+1199129101 c:\documents and settings\administrator\desktop\azadi\trunk\coreserver\src\config\config.h
+	<string>
+	<fstream>
+	"Helpers/defaults.h"
+	"properties.h"
+	"Helpers/types.h"
+
+1199129101 c:\documents and settings\administrator\desktop\azadi\trunk\coreserver\src\config\helpers\defaults.h
+
+1199129101 c:\documents and settings\administrator\desktop\azadi\trunk\coreserver\src\config\properties.h
+	<iostream>
+	<fstream>
+	<string>
+	<map>
+	<vector>
+
+1199129100 c:\documents and settings\administrator\desktop\azadi\trunk\coreserver\src\config\helpers\types.h
+	"types/integer.h"
+	"types/float.h"
+	"types/boolean.h"
+	"types/long.h"
+
+1199129100 c:\documents and settings\administrator\desktop\azadi\trunk\coreserver\src\config\helpers\types\boolean.h
+	<string>
+
+1199129101 c:\documents and settings\administrator\desktop\azadi\trunk\coreserver\src\config\properties.cpp
+	"properties.h"
+
+1199129100 c:\documents and settings\administrator\desktop\azadi\trunk\coreserver\src\config\helpers\types\boolean.cpp
+	"boolean.h"
+
+1200017436 c:\documents and settings\administrator\desktop\azadi\trunk\coreserver\src\logging\logging.cpp
+	"logging.h"
+
+1200016966 c:\documents and settings\administrator\desktop\azadi\trunk\coreserver\src\logging\logging.h
+	<string>
+	<fstream>
+	<iostream>
+

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE CodeBlocks_layout_file>
+<CodeBlocks_layout_file>
+	<File name="src\Buildings\Building.cpp" open="0" top="0">
+		<Cursor position="2388" topLine="2"/>
+	</File>
+	<File name="src\Buildings\Building.h" open="0" top="0">
+		<Cursor position="620" topLine="0"/>
+	</File>
+	<File name="src\Headers\Azadi.h" open="0" top="0">
+		<Cursor position="960" topLine="0"/>
+	</File>
+	<File name="src\Headers\Drawing.h" open="0" top="0">
+		<Cursor position="652" topLine="0"/>
+	</File>
+	<File name="src\Headers\Input.h" open="0" top="0">
+		<Cursor position="265" topLine="0"/>
+	</File>
+	<File name="src\Headers\InputObject.h" open="0" top="0">
+		<Cursor position="81" topLine="0"/>
+	</File>
+	<File name="src\Headers\ModelFactory.h" open="0" top="0">
+		<Cursor position="1164" topLine="0"/>
+	</File>
+	<File name="src\Headers\PhysicsObject.h" open="0" top="0">
+		<Cursor position="251" topLine="0"/>
+	</File>
+	<File name="src\LuaEngine.cpp" open="0" top="0">
+		<Cursor position="1334" topLine="58"/>
+	</File>
+	<File name="src\LuaEngine.h" open="0" top="0">
+		<Cursor position="4345" topLine="78"/>
+	</File>
+	<File name="src\LuaFunctions.cpp" open="0" top="0">
+		<Cursor position="8285" topLine="0"/>
+	</File>
+	<File name="src\Units\Unit.cpp" open="0" top="0">
+		<Cursor position="1555" topLine="3"/>
+	</File>
+	<File name="src\Units\Unit.h" open="0" top="0">
+		<Cursor position="817" topLine="0"/>
+	</File>
+	<File name="src\azScriptEngine.h" open="0" top="0">
+		<Cursor position="268" topLine="0"/>
+	</File>
+</CodeBlocks_layout_file>

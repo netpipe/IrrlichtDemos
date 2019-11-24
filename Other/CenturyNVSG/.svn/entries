@@ -1,0 +1,50 @@
+8
+
+dir
+197
+https://secure.cosmodio.net/projects/Azadi/branches/Century%20NVSG
+https://secure.cosmodio.net/projects/Azadi
+
+
+
+2008-01-01T12:56:52.817128Z
+188
+clay
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+15d18298-2238-0410-98d7-a1685df1ef88
+
+CenturyEngine
+dir
+
+build
+file
+
+
+
+
+2008-01-11T04:24:48.000000Z
+8d903476859c11ae27a9080a9374f85e
+2007-12-31T04:12:14.846640Z
+187
+clay
+has-props
+
+inc
+dir
+
+Xlib
+dir
+

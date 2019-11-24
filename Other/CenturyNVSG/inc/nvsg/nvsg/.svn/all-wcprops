@@ -1,0 +1,521 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg
+END
+CullData.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/CullData.h
+END
+PrimitiveAttribute.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/PrimitiveAttribute.h
+END
+LineStrips.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/LineStrips.h
+END
+Material.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/Material.h
+END
+HighlightObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/HighlightObject.h
+END
+DAL.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/DAL.h
+END
+PerspectiveCamera.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/PerspectiveCamera.h
+END
+BlendAttribute.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/BlendAttribute.h
+END
+MapList.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/MapList.h
+END
+MeshedPrimitiveSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/MeshedPrimitiveSet.h
+END
+Lines.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/Lines.h
+END
+Transform.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/Transform.h
+END
+Bitmap.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/Bitmap.h
+END
+GeoNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/GeoNode.h
+END
+PlugInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/PlugInterface.h
+END
+Camera.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/Camera.h
+END
+Triangles.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/Triangles.h
+END
+Billboard.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/Billboard.h
+END
+FramedAnimation.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/FramedAnimation.h
+END
+QuadMeshes.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/QuadMeshes.h
+END
+ChangeCallBack.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/ChangeCallBack.h
+END
+MapObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/MapObject.h
+END
+Object.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/Object.h
+END
+VNVector.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/VNVector.h
+END
+ViewState.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/ViewState.h
+END
+MapArray.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/MapArray.h
+END
+PointAttribute.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/PointAttribute.h
+END
+CoreTypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/CoreTypes.h
+END
+nvsg.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/nvsg.h
+END
+Animation.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/Animation.h
+END
+AnimatedQuads.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/AnimatedQuads.h
+END
+FaceAttribute.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/FaceAttribute.h
+END
+NVSGVersion.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/NVSGVersion.h
+END
+LinuxTypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/LinuxTypes.h
+END
+TextureAttribute.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/TextureAttribute.h
+END
+LightSource.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/LightSource.h
+END
+VolumeTexture.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/VolumeTexture.h
+END
+InterpolatedAnimation.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/InterpolatedAnimation.h
+END
+Group.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/Group.h
+END
+StateSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/StateSet.h
+END
+QuadStrips.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/QuadStrips.h
+END
+Shape.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/Shape.h
+END
+MapMatrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/MapMatrix.h
+END
+IndependentPrimitiveSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/IndependentPrimitiveSet.h
+END
+PlugInterfaceID.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/PlugInterfaceID.h
+END
+StateVariant.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/StateVariant.h
+END
+TriFans.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/TriFans.h
+END
+StatePass.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/StatePass.h
+END
+DirectedLight.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/DirectedLight.h
+END
+LineAttribute.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/LineAttribute.h
+END
+Map.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/Map.h
+END
+SpotLight.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/SpotLight.h
+END
+AnimatedTransform.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/AnimatedTransform.h
+END
+LOD.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/LOD.h
+END
+PointLight.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/PointLight.h
+END
+PrimitiveSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/PrimitiveSet.h
+END
+Node.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/Node.h
+END
+LinearInterpolatedAnimation.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/LinearInterpolatedAnimation.h
+END
+CgFx.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/CgFx.h
+END
+AnimatedTriangles.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/AnimatedTriangles.h
+END
+Path.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/Path.h
+END
+Scene.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/Scene.h
+END
+Pixmap.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/Pixmap.h
+END
+ErrorHandling.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/ErrorHandling.h
+END
+Face.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/Face.h
+END
+StrippedPrimitiveSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/StrippedPrimitiveSet.h
+END
+Switch.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/Switch.h
+END
+OwnedObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/OwnedObject.h
+END
+TextureImage.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/TextureImage.h
+END
+TriStrips.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/TriStrips.h
+END
+SkinnedTriangles.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/SkinnedTriangles.h
+END
+StateAttribute.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/StateAttribute.h
+END
+ParallelCamera.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/ParallelCamera.h
+END
+NBF.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/NBF.h
+END
+nvsgapi.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/nvsgapi.h
+END
+Points.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/Points.h
+END
+Quads.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/Quads.h
+END
+VertexAttributeSet.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/VertexAttributeSet.h
+END
+VolumeNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/VolumeNode.h
+END
+HighlightEdges.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/HighlightEdges.h
+END
+HighlightBox.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/HighlightBox.h
+END
+Drawable.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/Drawable.h
+END
+VolumeBrick.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/VolumeBrick.h
+END
+CallBackServer.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/CallBackServer.h
+END
+MapElement.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/MapElement.h
+END
+DepthAttribute.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvsg/DepthAttribute.h
+END

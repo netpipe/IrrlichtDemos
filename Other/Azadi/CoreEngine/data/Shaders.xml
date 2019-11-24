@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<Shaders>
+	<Program name="Default">
+		<ShaderFile filename="default.avs" />
+		<ShaderFile filename="default.afs" />
+	</Program>
+</Shaders>

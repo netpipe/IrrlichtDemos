@@ -1,0 +1,197 @@
+main.o: main.cpp ../inc/nvsg/nvsg/nvsg.h ../inc/nvsg/nvsgcommon.h \
+  ../inc/nvsg/nvsg/LinuxTypes.h ../inc/nvsg/nvsg/nvsgapi.h \
+  ../inc/nvsg/nvutil/Assert.h ../inc/nvsg/nvsggnudefs.h \
+  ../inc/nvsg/nvutil/Trace.h ../inc/nvsg/nvutil/nvutil.h \
+  ../inc/nvsg/nvutil/Log.h ../inc/nvsg/nvutil/Singleton.h \
+  ../inc/nvsg/nvsg/CgFx.h ../inc/nvsg/nvsg/StateAttribute.h \
+  ../inc/nvsg/nvsg/OwnedObject.h ../inc/nvsg/nvsg/Object.h \
+  ../inc/nvsg/nvsg/CoreTypes.h ../inc/nvsg/nvutil/Handle.h \
+  ../inc/nvsg/nvutil/Allocator.h ../inc/nvsg/nvutil/RCObject.h \
+  ../inc/nvsg/nvutil/SWMRSync.h ../inc/nvsg/nvutil/Conversion.h \
+  ../inc/nvsg/nvsg/DAL.h ../inc/nvsg/nvutil/Incarnation.h ../inc/Cg/cg.h \
+  ../inc/Cg/cg_datatypes.h ../inc/Cg/cg_bindlocations.h \
+  ../inc/Cg/cg_profiles.h ../inc/Cg/cgGL_profiles.h ../inc/Cg/cg_errors.h \
+  ../inc/Cg/cg_enums.h ../inc/nvsg/nvutil/BitMask.h \
+  ../Xlib/GLXRenderArea.h ../inc/nvsg/nvui/RenderArea.h \
+  ../inc/nvsg/nvsg/Scene.h ../inc/nvsg/nvsg/Group.h \
+  ../inc/nvsg/nvsg/Node.h ../inc/nvsg/nvsg/Drawable.h \
+  ../inc/nvsg/nvmath/Sphere3f.h ../inc/nvsg/nvmath/Vec3f.h \
+  ../inc/nvsg/nvmath/nvmath.h ../inc/nvsg/nvmath/Vecnf.h \
+  ../inc/nvsg/nvsg/StateSet.h ../inc/nvsg/nvsg/StateVariant.h \
+  ../inc/nvsg/nvsg/StatePass.h ../inc/nvsg/nvmath/Plane3f.h \
+  ../inc/nvsg/nvsg/ViewState.h ../inc/nvsg/nvsg/Camera.h \
+  ../inc/nvsg/nvsg/CullData.h ../inc/nvsg/nvmath/Vec2f.h \
+  ../inc/nvsg/nvmath/Mat44f.h ../inc/nvsg/nvmath/Mat33f.h \
+  ../inc/nvsg/nvmath/Matnnf.h ../inc/nvsg/nvmath/Vec4f.h \
+  ../inc/nvsg/nvmath/Quatf.h ../inc/nvsg/nvsg/MapList.h \
+  ../inc/nvsg/nvsg/MapObject.h ../inc/nvsg/nvsg/Map.h \
+  ../inc/nvsg/nvtraverser/AppTraverser.h \
+  ../inc/nvsg/nvtraverser/ModelViewTraverser.h \
+  ../inc/nvsg/nvtraverser/Traverser.h ../inc/nvsg/nvsg/VolumeBrick.h \
+  ../inc/nvsg/nvutil/MemFunTbl.h ../inc/nvsg/nvutil/ProblemLog.h \
+  ../inc/nvsg/nvutil/TransformStack.h \
+  ../inc/nvsg/nvtraverser/CullTraverser.h \
+  ../inc/nvsg/nvtraverser/RenderTraverser.h \
+  ../inc/nvsg/nvsg/FaceAttribute.h ../inc/nvsg/nvsg/PrimitiveAttribute.h \
+  ../inc/nvsg/nvsg/LightSource.h ../inc/nvsg/nvmath/Trafo.h \
+  ../inc/nvsg/nvsg/Animation.h ../inc/nvsg/nvsg/PrimitiveSet.h \
+  ../inc/nvsg/nvgl/GLContext.h ../inc/nvsg/nvgl/nvgl.h \
+  ../inc/mesa-gl/GL/gl.h ../inc/nvsg/nvgl/GL/glext.h \
+  ../inc/nvsg/nvgl/GL/glx.h ../inc/nvsg/nvgl/GL/glxtokens.h \
+  ../inc/nvsg/nvgl/glxtypes.h ../inc/nvsg/nvgl/GLStatistics.h \
+  ../inc/nvsg/nvsg/TextureImage.h ../inc/nvsg/nvutil/PlugIn.h \
+  ../inc/nvsg/nvutil/PlugInCallback.h ../inc/nvsg/nvgl/GLFunctions.h \
+  ../inc/nvsg/nvgl/GLObjects.h ../inc/nvsg/nvgl/GL/glx.h SimpleScene.h \
+  ../inc/nvsg/nvsg/PointLight.h ../inc/nvsg/nvsg/PerspectiveCamera.h \
+  ../inc/nvsg/nvui/TrackballCameraManipulator.h \
+  ../inc/nvsg/nvui/Manipulator.h ../inc/nvsg/nvutil/Trackball.h \
+  ../inc/nvsg/nvui/MouseInput.h ../inc/nvsg/nvui/KeyInput.h \
+  ../inc/nvsg/nvsg/PlugInterface.h ../inc/nvsg/nvsg/PlugInterfaceID.h \
+  ../inc/nvsg/nvsg/NVSGVersion.h ../inc/nvsg/nvutil/Tools.h \
+  CVPlugInCallback.h ../Xlib/MessageBox.h SaveScene.h \
+  ExtractGeometryTraverser.h ../inc/nvsg/nvutil/DbgNew.h
+GLXRenderArea.o: ../Xlib/GLXRenderArea.cpp ../Xlib/GLXRenderArea.h \
+  ../inc/nvsg/nvsg/nvsgapi.h ../inc/nvsg/nvsg/LinuxTypes.h \
+  ../inc/nvsg/nvui/RenderArea.h ../inc/nvsg/nvsgcommon.h \
+  ../inc/nvsg/nvutil/Assert.h ../inc/nvsg/nvsggnudefs.h \
+  ../inc/nvsg/nvutil/Trace.h ../inc/nvsg/nvutil/nvutil.h \
+  ../inc/nvsg/nvutil/Log.h ../inc/nvsg/nvutil/Singleton.h \
+  ../inc/nvsg/nvsg/Scene.h ../inc/nvsg/nvsg/CoreTypes.h \
+  ../inc/nvsg/nvutil/Handle.h ../inc/nvsg/nvutil/Allocator.h \
+  ../inc/nvsg/nvutil/RCObject.h ../inc/nvsg/nvutil/SWMRSync.h \
+  ../inc/nvsg/nvutil/Conversion.h ../inc/nvsg/nvsg/Group.h \
+  ../inc/nvsg/nvsg/Node.h ../inc/nvsg/nvsg/Drawable.h \
+  ../inc/nvsg/nvmath/Sphere3f.h ../inc/nvsg/nvmath/Vec3f.h \
+  ../inc/nvsg/nvmath/nvmath.h ../inc/nvsg/nvmath/Vecnf.h \
+  ../inc/nvsg/nvsg/OwnedObject.h ../inc/nvsg/nvsg/Object.h \
+  ../inc/nvsg/nvsg/DAL.h ../inc/nvsg/nvutil/Incarnation.h \
+  ../inc/nvsg/nvsg/StateSet.h ../inc/nvsg/nvsg/StateVariant.h \
+  ../inc/nvsg/nvsg/StatePass.h ../inc/nvsg/nvutil/BitMask.h \
+  ../inc/nvsg/nvmath/Plane3f.h ../inc/nvsg/nvsg/ViewState.h \
+  ../inc/nvsg/nvsg/nvsg.h ../inc/nvsg/nvsg/CgFx.h \
+  ../inc/nvsg/nvsg/StateAttribute.h ../inc/Cg/cg.h \
+  ../inc/Cg/cg_datatypes.h ../inc/Cg/cg_bindlocations.h \
+  ../inc/Cg/cg_profiles.h ../inc/Cg/cgGL_profiles.h ../inc/Cg/cg_errors.h \
+  ../inc/Cg/cg_enums.h ../inc/nvsg/nvsg/Camera.h \
+  ../inc/nvsg/nvsg/CullData.h ../inc/nvsg/nvmath/Vec2f.h \
+  ../inc/nvsg/nvmath/Mat44f.h ../inc/nvsg/nvmath/Mat33f.h \
+  ../inc/nvsg/nvmath/Matnnf.h ../inc/nvsg/nvmath/Vec4f.h \
+  ../inc/nvsg/nvmath/Quatf.h ../inc/nvsg/nvsg/MapList.h \
+  ../inc/nvsg/nvsg/MapObject.h ../inc/nvsg/nvsg/Map.h \
+  ../inc/nvsg/nvtraverser/AppTraverser.h \
+  ../inc/nvsg/nvtraverser/ModelViewTraverser.h \
+  ../inc/nvsg/nvtraverser/Traverser.h ../inc/nvsg/nvsg/VolumeBrick.h \
+  ../inc/nvsg/nvutil/MemFunTbl.h ../inc/nvsg/nvutil/ProblemLog.h \
+  ../inc/nvsg/nvutil/TransformStack.h \
+  ../inc/nvsg/nvtraverser/CullTraverser.h \
+  ../inc/nvsg/nvtraverser/RenderTraverser.h \
+  ../inc/nvsg/nvsg/FaceAttribute.h ../inc/nvsg/nvsg/PrimitiveAttribute.h \
+  ../inc/nvsg/nvsg/LightSource.h ../inc/nvsg/nvmath/Trafo.h \
+  ../inc/nvsg/nvsg/Animation.h ../inc/nvsg/nvsg/PrimitiveSet.h \
+  ../inc/nvsg/nvgl/GLContext.h ../inc/nvsg/nvgl/nvgl.h \
+  ../inc/mesa-gl/GL/gl.h ../inc/nvsg/nvgl/GL/glext.h \
+  ../inc/nvsg/nvgl/GL/glx.h ../inc/nvsg/nvgl/GL/glxtokens.h \
+  ../inc/nvsg/nvgl/glxtypes.h ../inc/nvsg/nvgl/GLStatistics.h \
+  ../inc/nvsg/nvsg/TextureImage.h ../inc/nvsg/nvutil/PlugIn.h \
+  ../inc/nvsg/nvutil/PlugInCallback.h ../inc/nvsg/nvgl/GLFunctions.h \
+  ../inc/nvsg/nvgl/GLObjects.h ../inc/nvsg/nvgl/GL/glx.h \
+  ../inc/nvsg/nvsg/Material.h ../inc/nvsg/nvsg/PointLight.h \
+  ../inc/nvsg/nvsg/PerspectiveCamera.h ../inc/nvsg/nvsg/Transform.h \
+  ../inc/nvsg/nvsg/Triangles.h ../inc/nvsg/nvsg/Face.h \
+  ../inc/nvsg/nvsg/IndependentPrimitiveSet.h ../inc/nvsg/nvsg/GeoNode.h \
+  ../inc/nvsg/nvsg/VertexAttributeSet.h \
+  ../inc/nvsg/nvtraverser/GLTraverser.h ../inc/nvsg/nvgl/GLDALData.h \
+  ../inc/nvsg/nvutil/DbgNew.h
+MessageBox.o: ../Xlib/MessageBox.cpp ../Xlib/MessageBox.h
+SimpleScene.o: SimpleScene.cpp SimpleScene.h ../inc/nvsg/nvsg/nvsgapi.h \
+  ../inc/nvsg/nvsg/LinuxTypes.h ../inc/nvsg/nvsg/CoreTypes.h \
+  ../inc/nvsg/nvutil/Handle.h ../inc/nvsg/nvutil/Allocator.h \
+  ../inc/nvsg/nvsgcommon.h ../inc/nvsg/nvutil/Assert.h \
+  ../inc/nvsg/nvsggnudefs.h ../inc/nvsg/nvutil/Trace.h \
+  ../inc/nvsg/nvutil/nvutil.h ../inc/nvsg/nvutil/Log.h \
+  ../inc/nvsg/nvutil/Singleton.h ../inc/nvsg/nvutil/RCObject.h \
+  ../inc/nvsg/nvutil/SWMRSync.h ../inc/nvsg/nvutil/Conversion.h \
+  ../inc/nvsg/nvmath/nvmath.h ../inc/nvsg/nvmath/Vec3f.h \
+  ../inc/nvsg/nvmath/Vecnf.h ../inc/nvsg/nvsg/Transform.h \
+  ../inc/nvsg/nvmath/Trafo.h ../inc/nvsg/nvmath/Mat44f.h \
+  ../inc/nvsg/nvmath/Mat33f.h ../inc/nvsg/nvmath/Matnnf.h \
+  ../inc/nvsg/nvmath/Vec4f.h ../inc/nvsg/nvmath/Quatf.h \
+  ../inc/nvsg/nvsg/Group.h ../inc/nvsg/nvsg/Node.h \
+  ../inc/nvsg/nvsg/Drawable.h ../inc/nvsg/nvmath/Sphere3f.h \
+  ../inc/nvsg/nvsg/OwnedObject.h ../inc/nvsg/nvsg/Object.h \
+  ../inc/nvsg/nvsg/DAL.h ../inc/nvsg/nvutil/Incarnation.h \
+  ../inc/nvsg/nvsg/StateSet.h ../inc/nvsg/nvsg/StateVariant.h \
+  ../inc/nvsg/nvsg/StatePass.h ../inc/nvsg/nvutil/BitMask.h \
+  ../inc/nvsg/nvmath/Plane3f.h ../inc/nvsg/nvsg/Face.h \
+  ../inc/nvsg/nvsg/Material.h ../inc/nvsg/nvsg/StateAttribute.h \
+  ../inc/nvsg/nvsg/Triangles.h ../inc/nvsg/nvsg/IndependentPrimitiveSet.h \
+  ../inc/nvsg/nvsg/nvsg.h ../inc/nvsg/nvsg/CgFx.h ../inc/Cg/cg.h \
+  ../inc/Cg/cg_datatypes.h ../inc/Cg/cg_bindlocations.h \
+  ../inc/Cg/cg_profiles.h ../inc/Cg/cgGL_profiles.h ../inc/Cg/cg_errors.h \
+  ../inc/Cg/cg_enums.h ../inc/nvsg/nvsg/PrimitiveSet.h \
+  ../inc/nvsg/nvsg/GeoNode.h ../inc/nvsg/nvsg/VertexAttributeSet.h \
+  ../inc/nvsg/nvsg/FaceAttribute.h ../inc/nvsg/nvsg/PrimitiveAttribute.h \
+  ../inc/nvsg/nvsg/Scene.h ../inc/nvsg/nvutil/DbgNew.h
+ExtractGeometryTraverser.o: ExtractGeometryTraverser.cpp \
+  ../inc/nvsg/nvsg/AnimatedTransform.h ../inc/nvsg/nvsgcommon.h \
+  ../inc/nvsg/nvsg/LinuxTypes.h ../inc/nvsg/nvsg/nvsgapi.h \
+  ../inc/nvsg/nvutil/Assert.h ../inc/nvsg/nvsggnudefs.h \
+  ../inc/nvsg/nvutil/Trace.h ../inc/nvsg/nvutil/nvutil.h \
+  ../inc/nvsg/nvutil/Log.h ../inc/nvsg/nvutil/Singleton.h \
+  ../inc/nvsg/nvsg/Transform.h ../inc/nvsg/nvmath/Trafo.h \
+  ../inc/nvsg/nvmath/Mat44f.h ../inc/nvsg/nvmath/Mat33f.h \
+  ../inc/nvsg/nvmath/Matnnf.h ../inc/nvsg/nvmath/Vecnf.h \
+  ../inc/nvsg/nvmath/nvmath.h ../inc/nvsg/nvmath/Vec3f.h \
+  ../inc/nvsg/nvmath/Vec4f.h ../inc/nvsg/nvmath/Quatf.h \
+  ../inc/nvsg/nvsg/Group.h ../inc/nvsg/nvsg/Node.h \
+  ../inc/nvsg/nvsg/Drawable.h ../inc/nvsg/nvmath/Sphere3f.h \
+  ../inc/nvsg/nvsg/OwnedObject.h ../inc/nvsg/nvsg/Object.h \
+  ../inc/nvsg/nvsg/CoreTypes.h ../inc/nvsg/nvutil/Handle.h \
+  ../inc/nvsg/nvutil/Allocator.h ../inc/nvsg/nvutil/RCObject.h \
+  ../inc/nvsg/nvutil/SWMRSync.h ../inc/nvsg/nvutil/Conversion.h \
+  ../inc/nvsg/nvsg/DAL.h ../inc/nvsg/nvutil/Incarnation.h \
+  ../inc/nvsg/nvsg/StateSet.h ../inc/nvsg/nvsg/StateVariant.h \
+  ../inc/nvsg/nvsg/StatePass.h ../inc/nvsg/nvutil/BitMask.h \
+  ../inc/nvsg/nvmath/Plane3f.h ../inc/nvsg/nvsg/Billboard.h \
+  ../inc/nvsg/nvsg/Camera.h ../inc/nvsg/nvsg/CullData.h \
+  ../inc/nvsg/nvmath/Vec2f.h ../inc/nvsg/nvsg/ViewState.h \
+  ../inc/nvsg/nvsg/nvsg.h ../inc/nvsg/nvsg/CgFx.h \
+  ../inc/nvsg/nvsg/StateAttribute.h ../inc/Cg/cg.h \
+  ../inc/Cg/cg_datatypes.h ../inc/Cg/cg_bindlocations.h \
+  ../inc/Cg/cg_profiles.h ../inc/Cg/cgGL_profiles.h ../inc/Cg/cg_errors.h \
+  ../inc/Cg/cg_enums.h ../inc/nvsg/nvsg/MapList.h \
+  ../inc/nvsg/nvsg/MapObject.h ../inc/nvsg/nvsg/Map.h \
+  ../inc/nvsg/nvsg/LOD.h ../inc/nvsg/nvsg/PrimitiveSet.h \
+  ../inc/nvsg/nvsg/Triangles.h ../inc/nvsg/nvsg/Face.h \
+  ../inc/nvsg/nvsg/IndependentPrimitiveSet.h ../inc/nvsg/nvsg/Quads.h \
+  ../inc/nvsg/nvsg/VertexAttributeSet.h ExtractGeometryTraverser.h \
+  ../inc/nvsg/nvtraverser/Traverser.h ../inc/nvsg/nvsg/VolumeBrick.h \
+  ../inc/nvsg/nvutil/MemFunTbl.h ../inc/nvsg/nvutil/ProblemLog.h \
+  ../inc/nvsg/nvutil/TransformStack.h ../inc/nvsg/nvutil/DbgNew.h
+SaveScene.o: SaveScene.cpp ../inc/nvsg/nvsg/CoreTypes.h \
+  ../inc/nvsg/nvutil/Handle.h ../inc/nvsg/nvutil/Allocator.h \
+  ../inc/nvsg/nvsgcommon.h ../inc/nvsg/nvsg/LinuxTypes.h \
+  ../inc/nvsg/nvsg/nvsgapi.h ../inc/nvsg/nvutil/Assert.h \
+  ../inc/nvsg/nvsggnudefs.h ../inc/nvsg/nvutil/Trace.h \
+  ../inc/nvsg/nvutil/nvutil.h ../inc/nvsg/nvutil/Log.h \
+  ../inc/nvsg/nvutil/Singleton.h ../inc/nvsg/nvutil/RCObject.h \
+  ../inc/nvsg/nvutil/SWMRSync.h ../inc/nvsg/nvutil/Conversion.h \
+  ../inc/nvsg/nvsg/PlugInterface.h ../inc/nvsg/nvutil/PlugIn.h \
+  ../inc/nvsg/nvutil/PlugInCallback.h ../inc/nvsg/nvsg/PlugInterfaceID.h \
+  ../inc/nvsg/nvsg/NVSGVersion.h ../inc/nvsg/nvutil/Tools.h \
+  ../inc/nvsg/nvutil/IOLayer.h ../inc/nvsg/nvsg/ErrorHandling.h \
+  ../inc/nvsg/nvgl/nvgl.h ../inc/mesa-gl/GL/gl.h \
+  ../inc/nvsg/nvgl/GL/glext.h ../inc/nvsg/nvgl/GL/glx.h \
+  ../inc/nvsg/nvgl/GL/glxtokens.h ../inc/nvsg/nvgl/glxtypes.h \
+  ../inc/nvsg/nvgl/GLContext.h ../inc/nvsg/nvgl/GLStatistics.h \
+  ../inc/nvsg/nvmath/Vec4f.h ../inc/nvsg/nvmath/Vec3f.h \
+  ../inc/nvsg/nvmath/nvmath.h ../inc/nvsg/nvmath/Vecnf.h \
+  ../inc/nvsg/nvsg/TextureImage.h ../inc/nvsg/nvsg/DAL.h \
+  ../inc/nvsg/nvutil/BitMask.h ../inc/nvsg/nvgl/GLFunctions.h \
+  ../inc/nvsg/nvgl/GLObjects.h ../inc/nvsg/nvsg/Scene.h \
+  ../inc/nvsg/nvsg/Group.h ../inc/nvsg/nvsg/Node.h \
+  ../inc/nvsg/nvsg/Drawable.h ../inc/nvsg/nvmath/Sphere3f.h \
+  ../inc/nvsg/nvsg/OwnedObject.h ../inc/nvsg/nvsg/Object.h \
+  ../inc/nvsg/nvutil/Incarnation.h ../inc/nvsg/nvsg/StateSet.h \
+  ../inc/nvsg/nvsg/StateVariant.h ../inc/nvsg/nvsg/StatePass.h \
+  ../inc/nvsg/nvmath/Plane3f.h ../inc/nvsg/nvutil/DbgNew.h

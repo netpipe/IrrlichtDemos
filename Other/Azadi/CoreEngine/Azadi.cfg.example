@@ -1,0 +1,11 @@
+[Base options]
+GameDir = data
+Extensions = true
+Shaders = true
+PostProcessing = true
+AntiAlias = true
+UseDelay = true
+ScreenWidth = 1024
+ScreenHeight = 768
+Fullscreen = false
+Terrain = true

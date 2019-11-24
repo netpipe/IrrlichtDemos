@@ -1,0 +1,64 @@
+8
+
+dir
+197
+https://secure.cosmodio.net/projects/Azadi/branches/Century%20NVSG/inc/half
+https://secure.cosmodio.net/projects/Azadi
+
+
+
+2007-12-31T04:12:14.846640Z
+187
+clay
+
+
+svn:special svn:externals svn:needs-lock
+
+eLut.h
+file
+
+
+
+
+2007-12-31T02:16:55.000000Z
+f00162fca800e80e23b22b3bf56b0d36
+2007-12-31T04:12:14.846640Z
+187
+clay
+
+half.h
+file
+
+
+
+
+2007-12-31T02:16:55.000000Z
+5d0fe98e231d181a634bf90b435bdad9
+2007-12-31T04:12:14.846640Z
+187
+clay
+
+half.cpp
+file
+
+
+
+
+2007-12-31T02:16:55.000000Z
+5362b7882d8d3b18d8a24981790f0002
+2007-12-31T04:12:14.846640Z
+187
+clay
+
+toFloat.h
+file
+
+
+
+
+2007-12-31T02:16:55.000000Z
+a725d7981c4982bc549fb37d83721f06
+2007-12-31T04:12:14.846640Z
+187
+clay
+

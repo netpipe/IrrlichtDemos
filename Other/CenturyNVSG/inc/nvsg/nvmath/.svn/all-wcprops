@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvmath
+END
+Trafo.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvmath/Trafo.h
+END
+Mat33f.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvmath/Mat33f.h
+END
+nvmath.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvmath/nvmath.h
+END
+Mat44f.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvmath/Mat44f.h
+END
+Sphere3f.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvmath/Sphere3f.h
+END
+Quatf.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvmath/Quatf.h
+END
+Vecnf.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvmath/Vecnf.h
+END
+Matnnf.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvmath/Matnnf.h
+END
+Vec2f.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvmath/Vec2f.h
+END
+Vec3f.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvmath/Vec3f.h
+END
+Vec4f.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvmath/Vec4f.h
+END
+Plane3f.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvmath/Plane3f.h
+END

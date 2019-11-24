@@ -1,0 +1,115 @@
+8
+
+dir
+197
+https://secure.cosmodio.net/projects/Azadi/branches/Century%20NVSG/inc/nvsg/nvgl
+https://secure.cosmodio.net/projects/Azadi
+
+
+
+2007-12-31T04:12:14.846640Z
+187
+clay
+
+
+svn:special svn:externals svn:needs-lock
+
+GLFunctions.h
+file
+
+
+
+
+2007-12-31T02:16:55.000000Z
+9034a8e24852f1675e83fff69959aa32
+2007-12-31T04:12:14.846640Z
+187
+clay
+
+GLObjects.h
+file
+
+
+
+
+2007-12-31T02:16:55.000000Z
+659194e4aa65c1d8982fc397d1424a1d
+2007-12-31T04:12:14.846640Z
+187
+clay
+
+GL
+dir
+
+GLStatistics.h
+file
+
+
+
+
+2007-12-31T02:16:55.000000Z
+4f7e359039d6c62efeb8da295d83e6a3
+2007-12-31T04:12:14.846640Z
+187
+clay
+
+GLDALData.h
+file
+
+
+
+
+2007-12-31T02:16:55.000000Z
+3df5d9f7fadf2e5e2b12c56fa661bf5b
+2007-12-31T04:12:14.846640Z
+187
+clay
+
+glxtypes.h
+file
+
+
+
+
+2007-12-31T02:16:55.000000Z
+afddd4494a923321faffba3e2ac4a681
+2007-12-31T04:12:14.846640Z
+187
+clay
+
+GLCgGLStateCallbacks.h
+file
+
+
+
+
+2007-12-31T02:16:55.000000Z
+398b8ba3a0229daef3e48988f2ae19fc
+2007-12-31T04:12:14.846640Z
+187
+clay
+
+nvgl.h
+file
+
+
+
+
+2007-12-31T02:16:55.000000Z
+a5eb4ccf9c15b34eae73306a3c391c75
+2007-12-31T04:12:14.846640Z
+187
+clay
+
+GLContext.h
+file
+
+
+
+
+2007-12-31T02:16:55.000000Z
+247da4757b3e7b631374099cd17a51d2
+2007-12-31T04:12:14.846640Z
+187
+clay
+

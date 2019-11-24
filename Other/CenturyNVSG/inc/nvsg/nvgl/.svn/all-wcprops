@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvgl
+END
+GLFunctions.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvgl/GLFunctions.h
+END
+GLObjects.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvgl/GLObjects.h
+END
+GLDALData.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvgl/GLDALData.h
+END
+GLStatistics.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvgl/GLStatistics.h
+END
+glxtypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvgl/glxtypes.h
+END
+GLCgGLStateCallbacks.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvgl/GLCgGLStateCallbacks.h
+END
+nvgl.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvgl/nvgl.h
+END
+GLContext.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/projects/Azadi/!svn/ver/187/branches/Century%20NVSG/inc/nvsg/nvgl/GLContext.h
+END

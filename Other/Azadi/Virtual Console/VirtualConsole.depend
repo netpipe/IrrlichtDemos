@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1130160814 c:\documents and settings\aren\desktop\azadi\trunk\virtual console\wx_pch.h
+	<wx/wxprec.h>
+	<wx/wx.h>
+
+1188470074 c:\documents and settings\aren\desktop\azadi\trunk\virtual console\main.cpp
+	<wx/wxprec.h>
+	<wx/wx.h>
+
+1189394844 c:\documents and settings\aren\desktop\azadi\trunk\virtual console\src\main.cpp
+	<wx/wxprec.h>
+	<wx/wx.h>
+

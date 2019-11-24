@@ -1,0 +1,67 @@
+CC = g++
+GCC = gcc
+C_FLAGS=-fPIC -ffast-math -Wall -g -I./src/Lua/
+COMPILE = $(CC) $(C_FLAGS) -c
+CCOMPILE = $(GCC) $(C_FLAGS) -c
+
+L_FLAGS=
+L_INCLUDES=
+
+W_FLAGS=
+
+M_FLAGS=
+
+OBJS := $(patsubst %.cpp, %.o, $(wildcard src/*.cpp))
+OBJS2 := $(patsubst %.cpp, %.o, $(wildcard src/*/*.cpp))
+OBJS3 := $(patsubst %.cpp, %.o, $(wildcard src/*/*/*.cpp))
+OBJS4 := $(patsubst %.c, %.oo, $(wildcard src/*.c))
+OBJS5 := $(patsubst %.c, %.oo, $(wildcard src/*/*.c))
+OBJS6 := $(patsubst %.c, %.oo, $(wildcard src/*/*/*.c))
+
+OBJECTS = $(OBJS) $(OBJS2) $(OBJS3) $(OBJS4) $(OBJS5) $(OBJS6)
+
+HEADS1 := $(patsubst %.h, %.h.gch, $(wildcard src/*.h))
+HEADS2 := $(patsubst %.h, %.h.gch, $(wildcard src/*/*.h))
+HEADS3 := $(patsubst %.h, %.h.gch, $(wildcard src/*/*/*.h))
+
+HEADS = $(HEADS1) $(HEADS2) $(HEADS3)
+
+all: error
+
+precompile: $(HEADS)
+	@echo
+	@echo "        Precompiled the headers"
+	@echo "        Note that this is done only once unless you dist-clean"
+	@echo
+
+error:
+	@echo
+	@echo
+	@echo "        Please run make win, make lin or make mac to build depending on your platform"
+	@echo
+	@echo
+
+win: scEngine-Win
+
+lin: scEngine-Lin
+
+mac: scEngine-Mac
+
+scEngine-Win: $(OBJECTS)
+	$(CC -g -shared -o scriptEngine.dll $(OBJECTS) $(W_FLAGS) -Wl,--stack,67108864
+
+scEngine-Lin: $(OBJECTS)
+	$(CC) -fPIC -g -shared -o scriptEngine.so $(OBJECTS) $(L_FLAGS)
+
+scEngine-Mac: $(OBJECTS)
+	$(CC) -fPIC -g -dynamiclib -o scriptEngine.dylib $(OBJECTS) $(L_FLAGS)
+
+%.oo: %.c
+	$(CCOMPILE) $(L_INCLUDES) $< -o $@
+
+%.o: %.cpp
+	$(COMPILE) $(L_INCLUDES) $< -o $@
+
+clean:
+	rm $(OBJECTS)
+

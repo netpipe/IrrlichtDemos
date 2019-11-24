@@ -7,7 +7,8 @@ using namespace scene;
 using namespace video;
 using namespace io;
 using namespace gui;
-
+#include <stdio.h>
+#include <iostream>
 
 class MyEventReceiver : public IEventReceiver
 {
@@ -95,17 +96,51 @@ int main()
                                                  guienv->getRootGUIElement(), core::recti( 0, 0, 400, 400 ), core::recti( 0, 0, 100, 100 ),-1 );
 
 
-	int ammount =15;
+	int ammount =6;
 
-   for( int k=0; k < ammount; k++ )
-      pf->addItem( driver->getTexture( "stones.jpg" ), L"" );
+stringw stexture;
+
+
+
+   for( int k=0; k < ammount; k++ ){
+   //   pf->addItem( driver->getTexture( "stones.jpg" ), L"" );
+   stexture = "picture";
+stexture += k;
+stexture += ".jpg";
+
+            pf->addItem( driver->getTexture( stexture ), L"" );
+
+
+   }
+
 
 int delay = 0;
 int direction =0;
 int icount=0;
+
+	io::IFileArchive* archive;
+	archive->addFileArchive( "./pics.zip");
+	//		io::IFileSystem* archive ;
+			//io::IFileArchive* archive ;
+//			archive->addFolderFileArchive("media");
+
+			//
+//                std::string fName = app->activity->internalDataPath + files->getFullFileName(x).c_str();
+//                // If the file is not a directory and it doesn't already exist (you can use stat() or directly try fread() to check if the file exists)
+//                if (!files->isDirectory(x) && !Operations::fileExists(fName))
+//
+	printf("testing1");
+	std::cout << "testing2";
+            IFileList* files = (IFileList*)archive->getFileList();
+            for (int x = 0; x < files->getFileCount(); x++)
+            {
+			//std::cout << files->getFileName(x).c_str();
+			}
+
+
 	while(device->run())
 	{
-		if (delay > 80){
+		if (delay > 140){
 			delay=0;
 			if (pf->getcurrent() < ammount-1 & direction == 0){
 					pf->Next(1);

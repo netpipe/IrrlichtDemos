@@ -1,0 +1,108 @@
+
+#
+# Script to build the Linux examples that come with NVSG
+#
+# Arguments:
+#
+# -g <compiler> (default is 'g++')
+# -f - force mtalloc OFF
+# -d - build debug
+# -r - build release
+# -c - clean
+#
+
+NVSG_CPP=g++
+DEBUG_TARGET=1
+CLEAN=""
+PROCESSOR=`uname -p`
+ARCH="x86"
+NO_MTALLOC=0
+
+checkForMtAlloc()
+{
+  if [ "$NO_MTALLOC" == "0" ]; then
+    $NVSG_CPP -v >/tmp/__gcc_opts_ 2>&1
+    grep "enable-libstdcxx-allocator=mt" /tmp/__gcc_opts_ >/dev/null 2>&1
+
+    if [ "$?" == "0" ]; then
+      echo "MTAlloc     :  NOT Required"
+    else
+      echo "MTAlloc     :  Required"
+      export NVSG_CPP_EXTRAFLAGS="$NVSG_CPP_EXTRAFLAGS -include force_mtalloc.h"
+    fi
+
+    rm -f /tmp/__gcc_opts_
+  else
+    echo "MTAlloc     :  Forced Off."
+  fi
+}
+
+checkForGCC4()
+{
+  $NVSG_CPP -v >/tmp/__gcc_opts_ 2>&1
+  grep "gcc version 4" /tmp/__gcc_opts_ >/dev/null 2>&1
+
+  if [ "$?" == "1" ]; then
+    echo "GCC V4.x    :  NO"
+  else
+    echo "GCC V4.x    :  Yes"
+    export NVSG_CPP_EXTRAFLAGS="$NVSG_CPP_EXTRAFLAGS -ffriend-injection"
+  fi
+
+  rm -f /tmp/__gcc_opts_
+}
+
+printArgs()
+{
+  echo ""
+  echo " This is a script to build the Linux examples.  It sets the proper"
+  echo " environment variables to build on your system.  You can override"
+  echo " the automatically detected settings through the following command"
+  echo " line arguments:"
+  echo ""
+  echo " -g <compiler> (default is 'g++')"
+  echo " -d - build debug (the default)"
+  echo " -r - build release"
+  echo " -c - clean"
+	exit
+}
+
+case $PROCESSOR in
+ x86_64) ARCH="amd64";;
+ x86) ARCH="x86";;
+ athlon) ARCH="x86";;
+ ?) ARCH="x86";;
+esac
+
+if [ -n "$1" ]; then
+	while getopts "g:[compiler]fdrc?h" c;
+	do
+		case $c in
+			f) NO_MTALLOC=1;;
+			g) NVSG_CPP=$OPTARG;;
+			d) DEBUG_TARGET=1;;
+			r) DEBUG_TARGET=0;;
+			c) CLEAN=clean;;
+			h) printArgs ;;
+			?) printArgs ;;
+		esac
+	done
+fi
+
+export ARCH
+export NVSG_CPP
+export DEBUG_TARGET
+
+if [ -n "$CLEAN" ]; then
+	echo "Cleaning Examples with:"
+else
+	echo "Building Examples with:"
+fi
+
+echo "Architecture: " $ARCH
+echo "Compiler    : " $NVSG_CPP
+echo "Debug       : " $DEBUG_TARGET
+checkForMtAlloc
+checkForGCC4
+
+make -C CenturyEngine/ $CLEAN

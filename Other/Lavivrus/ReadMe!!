@@ -1,0 +1,10 @@
+Lavivrus Engine Doc
+--------------------------------------------
+
+
+Compile Instructions
+
+
+run this :P
+
+gcc lavivrus.cpp ObjLoader.cpp -I/usr/include/SDL -L/usr/lib64 -lGL -lSDL -lGLU -o Lavivrus  

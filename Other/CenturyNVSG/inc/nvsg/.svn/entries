@@ -1,0 +1,70 @@
+8
+
+dir
+197
+https://secure.cosmodio.net/projects/Azadi/branches/Century%20NVSG/inc/nvsg
+https://secure.cosmodio.net/projects/Azadi
+
+
+
+2007-12-31T04:12:14.846640Z
+187
+clay
+
+
+svn:special svn:externals svn:needs-lock
+
+nvsggnudefs.h
+file
+
+
+
+
+2007-12-31T02:16:55.000000Z
+4abd2e678a049f9d080b049f76028ddf
+2007-12-31T04:12:14.846640Z
+187
+clay
+
+nvutil
+dir
+
+nvui
+dir
+
+nvtraverser
+dir
+
+nvsgwindefs.h
+file
+
+
+
+
+2007-12-31T02:16:55.000000Z
+2e039a10d52cfc63b0787b47afdf1c10
+2007-12-31T04:12:14.846640Z
+187
+clay
+
+nvgl
+dir
+
+nvsgcommon.h
+file
+
+
+
+
+2007-12-31T02:16:55.000000Z
+e143a841005682e10424d0c27b6b793e
+2007-12-31T04:12:14.846640Z
+187
+clay
+
+nvmath
+dir
+
+nvsg
+dir
+

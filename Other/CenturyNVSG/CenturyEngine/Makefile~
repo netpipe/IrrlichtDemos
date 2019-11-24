@@ -1,0 +1,120 @@
+-include force_mtalloc.h
+ARCH          = amd64
+
+DEBUGDEST     = ./dist
+RELEASEDEST   = ./dist
+OBJDIR        = $(RELEASEDEST)
+OBJDIRDBG     = $(DEBUGDEST)
+
+# Set the following as environment variables according to your system!
+#NVSG_WX_CPPFLAGS_DEBUG ?= -I/usr/lib/wx/include/gtkd-2.4 -D_DEBUG -DGTK_NO_CHECK_CASTS -D__WXDEBUG__ -D__WXGTK__ -D_FILE_OFFSET_BITS=64 -D_LARGE_FILES
+#NVSG_WX_CPPFLAGS ?= -I/usr/lib/wx/include/gtk-2.4 -DNDEBUG -DGTK_NO_CHECK_CASTS -D__WXGTK__ -D_FILE_OFFSET_BITS=64 -D_LARGE_FILES
+
+DBGCXXFLAGS  = $(NVSG_CPP_EXTRAFLAGS) -g -DLINUX -D_DEBUG -DGL_GLEXT_LEGACY -O0 -w -include force_mtalloc.h -ffriend-injection
+CXXFLAGS     = $(NVSG_CPP_EXTRAFLAGS) -DLINUX -DNDEBUG -DGL_GLEXT_LEGACY -O3 -w -include force_mtalloc.h -ffriend-injection
+LDFLAGSDBG   = $(NVSG_LD_EXTRAFLAGS) -Wl,--no-undefined -lnvsg -include force_mtalloc.h -ffriend-injection
+LDFLAGS      = $(NVSG_LD_EXTRAFLAGS) -Wl,--no-undefined -lnvsg -include force_mtalloc.h -ffriend-injection
+
+# note: libGL is needed because some functions used in GLwxRAWnd class are inline functions from GLContext.h
+
+NVSG_CPP    ?= g++
+C++          = $(NVSG_CPP)
+
+INC          = -I../inc\
+-I../inc/nvsg\
+-I../inc/mesa-gl\
+-I../inc/nvsg/nvgl\
+-I../Xlib\
+-L./liba
+
+# note: further below we add the necessary wxWidgets headers (release or debug) to Include parameters...
+
+LIBNAME = Century
+
+DESTDIR = $(RELEASEDEST)
+
+CXXFILES = main.cpp\
+           ../Xlib/GLXRenderArea.cpp\
+           ../Xlib/MessageBox.cpp\
+           SimpleScene.cpp\
+           ExtractGeometryTraverser.cpp\
+           SaveScene.cpp
+
+ifeq "$(DEBUG_TARGET)" "1"
+  CXXFLAGS=$(DBGCXXFLAGS)
+  DESTDIR=$(DEBUGDEST)
+  OBJDIR=$(OBJDIRDBG)
+  LDFLAGS=$(LDFLAGSDBG)
+endif
+
+#LDFLAGS += -L$(DESTDIR) -Wl,-rpath-link,$(DESTDIR) -Wl,-rpath,./
+export LD_LIBRARY_PATH += :./:$(DESTDIR)
+
+# Let us not override the -rpath-link value as it is used by nvcc.
+LDFLAGS += -L$(DESTDIR) -Wl,-rpath,./ -Wl,-rpath,$(DESTDIR)
+
+# e.g. nvmath/Vec3f.cpp -> Vec3f.o
+OBJFILES = $(addsuffix .o, $(addprefix $(OBJDIR)/,$(basename $(notdir $(CXXFILES)))))
+
+default : $(LIBNAME)
+
+debug : 
+	$(MAKE) "$(LIBNAME)" "DEBUG_TARGET=1"
+
+################################## 
+# clean up
+#  
+clean : cleandebug cleanrelease
+
+cleandebug : 
+	$(MAKE) cleanrelease "DEBUG_TARGET=1"
+  
+cleanrelease : 
+	@echo "----------------------------------------"
+	@echo "Cleaning:" 
+	@echo "----------------------------------------"
+	@[ -d $(DESTDIR) ] && rm -vf $(DESTDIR)/$(LIBNAME) $(OBJFILES); 
+
+
+################################## 
+# link
+#
+$(LIBNAME) : depend $(OBJFILES) 
+	@echo "----------------------------------------"
+	@echo "Linking: $(LIBNAME)"
+	@echo "----------------------------------------"
+	$(C++) $(INC) $(CXXFLAGS) $(LDFLAGS) $(OBJFILES) -o $(DESTDIR)/$(LIBNAME) 
+
+
+################################## 
+# compile
+# 
+$(OBJDIR)/%.o : %.cpp
+	@echo "----------------------------------------"
+	@echo "Compiling: $<"
+	@echo "----------------------------------------"
+	@ mkdir -p $(OBJDIR)
+	$(C++) $(CXXFLAGS) $(INC) -c $< -o $@
+
+################################## 
+# compile
+# 
+$(OBJDIR)/%.o : ../Xlib/%.cpp
+	@echo "----------------------------------------"
+	@echo "Compiling: $<"
+	@echo "----------------------------------------"
+	@ mkdir -p $(OBJDIR)
+	$(C++) $(CXXFLAGS) $(INC) -c $< -o $@
+
+
+################################## 
+# generate dependencies
+#
+depend  :
+	@echo "----------------------------------------"
+	@echo "Updating: dependencies" 
+	@echo "----------------------------------------"
+	$(C++) -MM $(INC) $(CXXFLAGS) $(CXXFILES) >depend
+
+-include depend
+

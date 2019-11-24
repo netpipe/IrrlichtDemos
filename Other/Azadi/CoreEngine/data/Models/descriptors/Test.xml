@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<Model name="test">
+	<Skeleton filename="./data/Models/data/test/test.xsf" />
+	<Animation name="Jump" file="./data/Models/data/test/test_jump.xaf" />
+	<Mesh name="default" file="./data/Models/data/test/test_model.xmf" />
+	<Material name="default" file="./data/Models/data/test/test_0.xrf" />
+	<MaterialSet thread="default" set="default" mId="default" />
+</Model>

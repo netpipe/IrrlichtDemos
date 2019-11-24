@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Azadi" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="Azadi" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="Azadi" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="GLU" />
+			<Add library="GLEW" />
+			<Add library="openal" />
+			<Add library="SDL" />
+			<Add library="png" />
+			<Add library="z" />
+			<Add library="freetype" />
+			<Add library="vorbisfile" />
+			<Add library="vorbis" />
+			<Add library="ogg" />
+			<Add library="cal3d" />
+		</Linker>
+		<Unit filename="src/Azadi.cpp" />
+		<Unit filename="src/Azadi.h" />
+		<Unit filename="src/Camera/Frustum.cpp" />
+		<Unit filename="src/Camera/Frustum.h" />
+		<Unit filename="src/Compress/Compress.cpp" />
+		<Unit filename="src/Compress/Compress.h" />
+		<Unit filename="src/Config/Helpers/defaults.h" />
+		<Unit filename="src/Config/Helpers/types.h" />
+		<Unit filename="src/Config/Helpers/types/boolean.cpp" />
+		<Unit filename="src/Config/Helpers/types/boolean.h" />
+		<Unit filename="src/Config/Helpers/types/float.cpp" />
+		<Unit filename="src/Config/Helpers/types/float.h" />
+		<Unit filename="src/Config/Helpers/types/integer.cpp" />
+		<Unit filename="src/Config/Helpers/types/integer.h" />
+		<Unit filename="src/Config/Helpers/types/long.cpp" />
+		<Unit filename="src/Config/Helpers/types/long.h" />
+		<Unit filename="src/Config/config.cpp" />
+		<Unit filename="src/Config/config.h" />
+		<Unit filename="src/Config/properties.cpp" />
+		<Unit filename="src/Config/properties.h" />
+		<Unit filename="src/CustomFunctions.h" />
+		<Unit filename="src/Editors/GLSL.cpp" />
+		<Unit filename="src/Editors/GLSL.h" />
+		<Unit filename="src/Encryption/Blowfish.cpp" />
+		<Unit filename="src/Encryption/Blowfish.h" />
+		<Unit filename="src/Encryption/encKeys.h" />
+		<Unit filename="src/FileSystem/FileSystem.cpp" />
+		<Unit filename="src/FileSystem/FileSystem.h" />
+		<Unit filename="src/Fonts/Font.cpp" />
+		<Unit filename="src/Fonts/Font.h" />
+		<Unit filename="src/GUI/Button.cpp" />
+		<Unit filename="src/GUI/Button.h" />
+		<Unit filename="src/GUI/Console.cpp" />
+		<Unit filename="src/GUI/Console.h" />
+		<Unit filename="src/GUI/Console/Message.cpp" />
+		<Unit filename="src/GUI/Console/Message.h" />
+		<Unit filename="src/GUI/Drawing.cpp" />
+		<Unit filename="src/GUI/Drawing.h" />
+		<Unit filename="src/GUI/GUI.cpp" />
+		<Unit filename="src/GUI/GUI.h" />
+		<Unit filename="src/GUI/Menu.cpp" />
+		<Unit filename="src/GUI/Menu.h" />
+		<Unit filename="src/GUI/MouseScrollArea.cpp" />
+		<Unit filename="src/GUI/MouseScrollArea.h" />
+		<Unit filename="src/GUI/Scrollbar.cpp" />
+		<Unit filename="src/GUI/Scrollbar.h" />
+		<Unit filename="src/GUI/TextArea.cpp" />
+		<Unit filename="src/GUI/TextArea.h" />
+		<Unit filename="src/GUI/TextInputArea.cpp" />
+		<Unit filename="src/GUI/TextInputArea.h" />
+		<Unit filename="src/GUI/Window.cpp" />
+		<Unit filename="src/GUI/Window.h" />
+		<Unit filename="src/Input/ConsoleListener.h" />
+		<Unit filename="src/Input/Input.cpp" />
+		<Unit filename="src/Input/Input.h" />
+		<Unit filename="src/Main.cpp" />
+		<Unit filename="src/ModelFactory/CoreModel.cpp" />
+		<Unit filename="src/ModelFactory/CoreModel.h" />
+		<Unit filename="src/ModelFactory/Formats/Obj.cpp" />
+		<Unit filename="src/ModelFactory/Formats/Obj.h" />
+		<Unit filename="src/ModelFactory/InstanceModel.cpp" />
+		<Unit filename="src/ModelFactory/InstanceModel.h" />
+		<Unit filename="src/ModelFactory/ModelFactory.cpp" />
+		<Unit filename="src/ModelFactory/ModelFactory.h" />
+		<Unit filename="src/Net/Client.cpp" />
+		<Unit filename="src/Net/Client.h" />
+		<Unit filename="src/Net/SupraSocket.cpp" />
+		<Unit filename="src/Net/SupraSocket.h" />
+		<Unit filename="src/Particle/Particle.cpp" />
+		<Unit filename="src/Particle/Particle.h" />
+		<Unit filename="src/Particle/ParticleFactory.cpp" />
+		<Unit filename="src/Particle/ParticleFactory.h" />
+		<Unit filename="src/Physics/Forces/Gravity.cpp" />
+		<Unit filename="src/Physics/Physics.cpp" />
+		<Unit filename="src/Physics/Physics.h" />
+		<Unit filename="src/Scenegraph/SceneGraph.cpp" />
+		<Unit filename="src/Scenegraph/SceneGraph.h" />
+		<Unit filename="src/Scripting/Headers/Azadi.h" />
+		<Unit filename="src/Scripting/Headers/Drawing.h" />
+		<Unit filename="src/Scripting/Headers/GUI.h" />
+		<Unit filename="src/Scripting/Headers/ModelFactory.h" />
+		<Unit filename="src/Scripting/Headers/PhysicsObject.h" />
+		<Unit filename="src/Scripting/Headers/SoundFactory.h" />
+		<Unit filename="src/Scripting/Headers/TextureFactory.h" />
+		<Unit filename="src/Scripting/ScriptEngine.cpp" />
+		<Unit filename="src/Scripting/ScriptEngine.h" />
+		<Unit filename="src/Scripting/azScriptEngine.h" />
+		<Unit filename="src/Scripting/luna.h" />
+		<Unit filename="src/Shaders/Shaders.cpp" />
+		<Unit filename="src/Shaders/Shaders.h" />
+		<Unit filename="src/Sound/JukeBox.cpp" />
+		<Unit filename="src/Sound/JukeBox.h" />
+		<Unit filename="src/Sound/Ogg/OggFile.cpp" />
+		<Unit filename="src/Sound/Ogg/OggFile.h" />
+		<Unit filename="src/Sound/SoundFactory.cpp" />
+		<Unit filename="src/Sound/SoundFactory.h" />
+		<Unit filename="src/Sound/SoundLua.cpp" />
+		<Unit filename="src/Sound/SoundSource/SoundSource.cpp" />
+		<Unit filename="src/Sound/SoundSource/SoundSource.h" />
+		<Unit filename="src/Terrain/Terrain.cpp" />
+		<Unit filename="src/Terrain/Terrain.h" />
+		<Unit filename="src/Terrain/simplexnoise1234.cpp" />
+		<Unit filename="src/Terrain/simplexnoise1234.h" />
+		<Unit filename="src/Texture/TextureFactory.cpp" />
+		<Unit filename="src/Texture/TextureFactory.h" />
+		<Unit filename="src/VGUI/MainMenu.cpp" />
+		<Unit filename="src/VGUI/MainMenu.h" />
+		<Unit filename="src/XML/XML.cpp" />
+		<Unit filename="src/XML/XML.h" />
+		<Unit filename="src/XML/tinystr.cpp" />
+		<Unit filename="src/XML/tinystr.h" />
+		<Unit filename="src/XML/tinyxml.cpp" />
+		<Unit filename="src/XML/tinyxml.h" />
+		<Unit filename="src/XML/tinyxmlerror.cpp" />
+		<Unit filename="src/XML/tinyxmlparser.cpp" />
+		<Unit filename="src/beziers.cpp" />
+		<Unit filename="src/beziers.h" />
+		<Unit filename="src/frustum.h" />
+		<Unit filename="src/glmatrix.h" />
+		<Unit filename="src/matrix.h" />
+		<Unit filename="src/quaternion.h" />
+		<Unit filename="src/tilegrid.h" />
+		<Unit filename="src/vector.h" />
+		<Extensions>
+			<code_completion />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

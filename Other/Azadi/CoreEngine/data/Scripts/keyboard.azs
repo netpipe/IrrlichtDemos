@@ -1,0 +1,22 @@
+messages = false;
+usingpost = false;
+
+function keyb_q()
+	if (messages == false) then
+		toggleLayoutItem("Messages", true);
+		messages = true;
+	else
+		toggleLayoutItem("Messages", false);
+		messages = false;
+	end
+end
+
+function keyb_p()
+	if (usingpost == false) then
+		setPostProcessing(true);
+		usingpost = true;
+	else
+		setPostProcessing(false);
+		usingpost = false;
+	end
+end

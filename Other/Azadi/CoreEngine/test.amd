@@ -1,0 +1,6 @@
+# Test Menu file
+<elementname left=10 right=10% top=5 down=40% onMouseOver=funcname onMouseOut= funcname onMouseLeftClick=funcname onMouseRightClick=funcname onMouseMiddleClick=funcname position=relative>
+
+
+
+</elementname>

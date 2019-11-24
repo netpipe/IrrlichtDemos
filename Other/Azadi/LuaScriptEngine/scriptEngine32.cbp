@@ -1,0 +1,393 @@
+<?xml version="1.0"?>
+<!DOCTYPE CodeBlocks_project_file>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="1"/>
+	<Project>
+		<Option title="Lua ScriptEngine32"/>
+		<Option makefile="Makefile"/>
+		<Option makefile_is_custom="0"/>
+		<Option compiler="0"/>
+		<Build>
+			<Target title="default">
+				<Option output="..\CoreEngine\data\scriptEngine32.dll"/>
+				<Option working_dir="."/>
+				<Option object_output=".objs"/>
+				<Option deps_output=".deps"/>
+				<Option type="3"/>
+				<Option compiler="0"/>
+				<Option createStaticLib="1"/>
+				<Compiler>
+					<Add option="-g"/>
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-DBUILD_DLL"/>
+		</Compiler>
+		<Linker>
+			<Add library="winmm"/>
+		</Linker>
+		<Unit filename="src\Buildings\Building.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Buildings\Building.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Headers\Azadi.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Headers\Drawing.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Headers\GUI.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Headers\Input.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Headers\InputObject.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Headers\ModelFactory.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Headers\Physics.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Headers\PhysicsObject.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Headers\SoundFactory.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Headers\TextureFactory.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\LuaEngine.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\LuaEngine.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\LuaFunctions.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lapi.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lapi.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lauxlib.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lauxlib.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lbaselib.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lcode.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lcode.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\ldblib.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\ldebug.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\ldebug.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\ldo.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\ldo.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\ldump.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lfunc.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lfunc.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lgc.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lgc.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\linit.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\liolib.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\llex.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\llex.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\llimits.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lmathlib.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lmem.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lmem.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\loadlib.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lobject.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lobject.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lopcodes.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lopcodes.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\loslib.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lparser.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lparser.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lstate.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lstate.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lstring.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lstring.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lstrlib.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\ltable.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\ltable.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\ltablib.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\ltm.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\ltm.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lua.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\luaconf.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lualib.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lundump.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lundump.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lvm.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lvm.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lzio.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\lzio.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Lua\print.c">
+			<Option compilerVar="CC"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Units\Unit.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\Units\Unit.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\azScriptEngine.h">
+			<Option compilerVar=""/>
+			<Option compile="0"/>
+			<Option link="0"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="src\azScriptExporter.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
