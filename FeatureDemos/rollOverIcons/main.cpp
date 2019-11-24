@@ -60,7 +60,6 @@ private:
 };
 
 
-
 char *p;
 #ifdef __EMSCRIPTEN__
 void main_loop(){
@@ -68,7 +67,7 @@ void main_loop(){
 	device->run();
 		if (delay > 140){
 			delay=0;
-			if (pf->getcurrent() < ammount-1 & direction == 0){
+			if (pf->getcurrent() < icount & direction == 0){
 					pf->Next(1);
 					} else {pf->Next(-1); direction == 1;}
 		} else {delay++;}
@@ -184,8 +183,11 @@ stringw stexture;
     const IFileList *l = fs->getFileArchive(fs->getFileArchiveCount()-1)->getFileList();
     for (u32 i=0; i<l->getFileCount(); i++) {
 		pf->addItem( driver->getTexture( l->getFileName(i).c_str() ), L"" );
+	icount++;
 	//std::cout << "testing2";
     }
+
+    pf->setscale(1.7);
 //    // make it so that files added last are searched first
 //    u32 count = fs->getFileArchiveCount();
 //    if (count > 1) {
