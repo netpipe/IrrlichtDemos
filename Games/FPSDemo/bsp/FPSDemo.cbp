@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="q2view" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Linux">
+				<Option output="FPSDemo" prefix_auto="1" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add directory="/home/Dev/libs/Irrlicht/include" />
+					<Add directory="/home/Dev/libs/scripting/lua-5.1.4/src" />
+					<Add directory="/home/Dev/libs/physics/bullet-SVN/src" />
+					<Add directory="/home/Dev/libs/Irrlicht/source/Irrlicht" />
+					<Add directory="/home/Dev/libs/gui/freetype-2.3.9/include" />
+				</Compiler>
+				<Linker>
+					<Add library="Xxf86vm" />
+					<Add library="GL" />
+					<Add library="glut" />
+					<Add library="openal" />
+					<Add library="vorbisfile" />
+					<Add library="bulletmath" />
+					<Add directory="/home/Dev/libs/Irrlicht/lib/gcc" />
+					<Add directory="/home/Dev/libs/scripting/lua-5.1.4/src" />
+					<Add directory="/home/Dev/libs/physics/bullet-SVN/src" />
+					<Add directory="/home/Dev/libs/gui/freetype-2.3.9/objs/.libs" />
+				</Linker>
+			</Target>
+			<Target title="Debug-Win32">
+				<Option output="bin/Debug/FPSDemo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="D:/Users/Aren Villanueva/Desktop/irrlicht-1.5/include" />
+				</Compiler>
+				<Linker>
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="gdi32" />
+					<Add library="OpenAL32" />
+					<Add library="LinearMath" />
+					<Add directory="D:/Users/Aren Villanueva/Desktop/irrlicht-1.5/lib/Win32-gcc" />
+				</Linker>
+			</Target>
+			<Target title="Release-Win32">
+				<Option output="bin/Release/FPSDemo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="D:/Users/Aren Villanueva/Desktop/irrlicht-1.5/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="gdi32" />
+					<Add library="OpenAL32" />
+					<Add library="LinearMath" />
+					<Add directory="D:/Users/Aren Villanueva/Desktop/irrlicht-1.5/lib/Win32-gcc" />
+				</Linker>
+			</Target>
+			<Target title="Clays">
+				<Option output="bin/Debug/FPSDemo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="C:/Dev/Libs/vorbisogg" />
+					<Add directory="c:/Dev/irrlicht-1.5/include" />
+					<Add directory="C:/Program Files/OpenAL 1.1 SDK" />
+					<Add directory="C:/Dev/libs/lua-5.1.4" />
+					<Add directory="C:/Dev/libs/bullet-2.74/src" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="gdi32" />
+					<Add library="OpenAL32" />
+					<Add directory="C:/Dev/Libs/vorbisogg" />
+					<Add directory="c:/Dev/irrlicht-1.5/lib/Win32-gcc" />
+					<Add directory="C:/Program Files/OpenAL 1.1 SDK/libs/Win32" />
+					<Add directory="C:/Dev/libs/lua-5.1.4" />
+					<Add directory="C:/Dev/libs/bullet-2.74/out/release8/libs" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add library="vorbis" />
+			<Add library="ogg" />
+			<Add library="Irrlicht" />
+			<Add library="bulletdynamics" />
+			<Add library="bulletcollision" />
+			<Add library="lua" />
+			<Add library="freetype" />
+		</Linker>
+		<Unit filename="anorms.h" />
+		<Unit filename="bsp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="button1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="camera.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="camera.h" />
+		<Unit filename="coldet.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="datfile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="door1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="engine.h" />
+		<Unit filename="entity.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="float.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mdl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="model.h" />
+		<Unit filename="mybsp.h" />
+		<Unit filename="pal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pcx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="prog.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="qbsp.h" />
+		<Unit filename="qmdl.h" />
+		<Unit filename="r_bsp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="render.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rogl.h" />
+		<Unit filename="tex.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -46,7 +46,7 @@ virtual IGUIScrollBar* getVerticalScrollBar() const { return 0; }
    void draw();
    void Next( int offset );
    void Prev( int offset );
-
+   s32 getcurrent();
 
    void clear();
    s32 getSelected() const { return activeIndex_; }
@@ -95,6 +95,7 @@ IrrlichtDevice *device;
     virtual s32 getItemAt(s32 xpos, s32 ypos) const;
    s32 activeIndex_;
    s32 lastTimeKey_;
+
    core::array< CNrpImageDescription* > images_;
 
    bool drawBackground_;

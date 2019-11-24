@@ -147,6 +147,11 @@ void CNrp2DPictureFlow::UpdatePositions_()
    }
 }
 
+s32 CNrp2DPictureFlow::getcurrent( )
+{
+return activeIndex_;
+}
+
 void CNrp2DPictureFlow::Prev( int offset )
 {
    activeIndex_ -= offset;

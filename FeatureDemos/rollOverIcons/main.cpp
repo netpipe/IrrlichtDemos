@@ -94,12 +94,23 @@ int main()
    CNrp2DPictureFlow *pf = new CNrp2DPictureFlow( device , guienv,
                                                  guienv->getRootGUIElement(), core::recti( 0, 0, 400, 400 ), core::recti( 0, 0, 100, 100 ),-1 );
 
-   for( int k=0; k < 15; k++ )
+
+	int ammount =15;
+
+   for( int k=0; k < ammount; k++ )
       pf->addItem( driver->getTexture( "stones.jpg" ), L"" );
 
-
+int delay = 0;
+int direction =0;
+int icount=0;
 	while(device->run())
 	{
+		if (delay > 80){
+			delay=0;
+			if (pf->getcurrent() < ammount-1 & direction == 0){
+					pf->Next(1);
+					} else {pf->Next(-1); direction == 1;}
+		} else {delay++;}
 
 		driver->beginScene(true, true, SColor(255,100,101,140));
 
@@ -107,6 +118,7 @@ int main()
 		guienv->drawAll();
 
 		driver->endScene();
+		device->sleep(20);
 	}
 
 

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="FPSDemo25" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Linux">
+				<Option output="FPSDemo" prefix_auto="1" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add directory="/home/Dev/libs/Irrlicht/include" />
+					<Add directory="/home/Dev/libs/scripting/lua-5.1.4/src" />
+					<Add directory="/home/Dev/libs/physics/bullet-SVN/src" />
+					<Add directory="/home/Dev/libs/Irrlicht/source/Irrlicht" />
+					<Add directory="/home/Dev/libs/gui/freetype-2.3.9/include" />
+				</Compiler>
+				<Linker>
+					<Add library="Xxf86vm" />
+					<Add library="GL" />
+					<Add library="glut" />
+					<Add library="openal" />
+					<Add library="vorbisfile" />
+					<Add library="X11" />
+					<Add directory="/home/Dev/libs/Irrlicht/lib/gcc" />
+					<Add directory="/home/Dev/libs/scripting/lua-5.1.4/src" />
+					<Add directory="/home/Dev/libs/physics/bullet-SVN/src" />
+					<Add directory="/home/Dev/libs/gui/freetype-2.3.9/objs/.libs" />
+				</Linker>
+			</Target>
+			<Target title="Debug-Win32">
+				<Option output="bin/Debug/FPSDemo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="D:/Users/Aren Villanueva/Desktop/irrlicht-1.5/include" />
+				</Compiler>
+				<Linker>
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="gdi32" />
+					<Add library="OpenAL32" />
+					<Add library="LinearMath" />
+					<Add directory="D:/Users/Aren Villanueva/Desktop/irrlicht-1.5/lib/Win32-gcc" />
+				</Linker>
+			</Target>
+			<Target title="Release-Win32">
+				<Option output="bin/Release/FPSDemo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="D:/Users/Aren Villanueva/Desktop/irrlicht-1.5/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="gdi32" />
+					<Add library="OpenAL32" />
+					<Add library="LinearMath" />
+					<Add directory="D:/Users/Aren Villanueva/Desktop/irrlicht-1.5/lib/Win32-gcc" />
+				</Linker>
+			</Target>
+			<Target title="Clays">
+				<Option output="bin/Debug/FPSDemo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="C:/Dev/Libs/libvorbis-1.2.3/include" />
+					<Add directory="c:/Dev/irrlicht-1.5/include" />
+					<Add directory="C:/Program Files/OpenAL 1.1 SDK" />
+					<Add directory="C:/Dev/libs/lua-5.1.4" />
+					<Add directory="C:/Dev/libs/bullet-2.74/src" />
+					<Add directory="C:/Dev/Libs/libogg-1.1.4/include" />
+					<Add directory="C:/Dev/Libs/bullet/src" />
+					<Add directory="C:/Dev/Libs/freetype-2.3.9/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="opengl32" />
+					<Add library="OpenAL32" />
+					<Add library="glu32" />
+					<Add library="gdi32" />
+					<Add directory="c:/Dev/irrlicht-1.5/lib/Win32-gcc" />
+					<Add directory="C:/Program Files/OpenAL 1.1 SDK/libs/Win32" />
+					<Add directory="C:/Dev/libs/lua-5.1.4" />
+					<Add directory="C:/Dev/libs/bullet-2.74/out/release8/libs" />
+					<Add directory="C:/Dev/Libs/libogg-1.1.4" />
+					<Add directory="C:/Dev/Libs/bullet/out/release8/libs" />
+					<Add directory="../../Libs/freetype-2.3.9" />
+					<Add directory="C:/Dev/Libs/vorbisogg-1.2.3" />
+					<Add directory="C:/Dev/Libs/libvorbis-1.2.3/win32/VS2005/libvorbis" />
+					<Add directory="C:/Dev/Libs/libvorbis-1.2.3/win32/VS2005/libvorbisfile" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add library="ogg" />
+			<Add library="vorbisfile" />
+			<Add library="vorbis" />
+			<Add library="Irrlicht" />
+			<Add library="BulletDynamics" />
+			<Add library="BulletCollision" />
+			<Add library="LinearMath" />
+			<Add library="lua" />
+			<Add library="freetype" />
+		</Linker>
+		<Unit filename="AgEngine.h" />
+		<Unit filename="CAudioData.h" />
+		<Unit filename="CAudioDevice.cpp" />
+		<Unit filename="CAudioDevice.h" />
+		<Unit filename="CAudioEffect.h" />
+		<Unit filename="CAudioOgg.cpp" />
+		<Unit filename="CAudioOgg.h" />
+		<Unit filename="CAudioSource.cpp" />
+		<Unit filename="CAudioSource.h" />
+		<Unit filename="CAudioStream.cpp" />
+		<Unit filename="CAudioStream.h" />
+		<Unit filename="CBaseEntity.h" />
+		<Unit filename="CBaseScriptedEntity.h" />
+		<Unit filename="CConsole.cpp" />
+		<Unit filename="CConsole.h" />
+		<Unit filename="CDefaultEntityFactory.cpp" />
+		<Unit filename="CDefaultEntityFactory.h" />
+		<Unit filename="CEntityFactory.h" />
+		<Unit filename="CEntityManager.cpp" />
+		<Unit filename="CEntityManager.h" />
+		<Unit filename="CEntityTypes.h" />
+		<Unit filename="CEventEntity.cpp" />
+		<Unit filename="CEventEntity.h" />
+		<Unit filename="CEventManager.cpp" />
+		<Unit filename="CEventManager.h" />
+		<Unit filename="CHUD.h" />
+		<Unit filename="CItemPickupEntity.cpp" />
+		<Unit filename="CItemPickupEntity.h" />
+		<Unit filename="CMapManager.cpp" />
+		<Unit filename="CMapManager.h" />
+		<Unit filename="CPhysicsManager.cpp" />
+		<Unit filename="CPhysicsManager.h" />
+		<Unit filename="CPlayerEntity.cpp" />
+		<Unit filename="CPlayerEntity.h" />
+		<Unit filename="CPositionalAudioEntity.cpp" />
+		<Unit filename="CPositionalAudioEntity.h" />
+		<Unit filename="CScriptManager.cpp" />
+		<Unit filename="CScriptManager.h" />
+		<Unit filename="CWaypointEntity.cpp" />
+		<Unit filename="CWaypointEntity.h" />
+		<Unit filename="DScriptedFunctions.cpp" />
+		<Unit filename="DScriptedFunctions.h" />
+		<Unit filename="Font/CGUITTFont.cpp" />
+		<Unit filename="Font/CGUITTFont.h" />
+		<Unit filename="luna.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
