@@ -4,21 +4,21 @@
 	<ActiveTarget name="Linux" />
 	<File name="main.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3014" topLine="108" />
+			<Cursor1 position="0" topLine="99" />
 		</Cursor>
+		<Folding>
+			<Collapse line="13" />
+		</Folding>
 	</File>
 	<File name="listFileSwitch.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="1139" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="12" />
-		</Folding>
 	</File>
 	<File name="listFileSwitch.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="6327" topLine="0" />
 		</Cursor>
 	</File>
-	<EditorTabsLayout layout="0342d0b05dda9cdf000e777700000002=*0;Irrlicht Example 01 Hello World:main.cpp,1;Irrlicht Example 01 Hello World:listFileSwitch.cpp,2;Irrlicht Example 01 Hello World:listFileSwitch.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=495;besth=346;minw=495;minh=346;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=0342d0b05dda9cdf000e777700000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+	<EditorTabsLayout layout="033c7d505ddabdd00019649000000002=*0;Irrlicht Example 01 Hello World:main.cpp,1;Irrlicht Example 01 Hello World:listFileSwitch.cpp,2;Irrlicht Example 01 Hello World:listFileSwitch.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=495;besth=346;minw=495;minh=346;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=033c7d505ddabdd00019649000000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>

@@ -46,6 +46,7 @@ private:
 
 
 
+char *p;
 
 int main()
 {
@@ -93,28 +94,26 @@ int main()
                                                  guienv->getRootGUIElement(), core::recti( 0, 0, 400, 400 ), core::recti( 0, 0, 100, 100 ),-1 );
 
 
-	int ammount =6;
+	int ammount =7;
 
 stringw stexture;
 
 
-
-   for( int k=0; k < ammount; k++ ){
-		//   pf->addItem( driver->getTexture( "stones.jpg" ), L"" );
-		   stexture = "picture";
-		stexture += k;
-		stexture += ".jpg";
-
-            pf->addItem( driver->getTexture( stexture ), L"" );
-
-
-   }
+// manual picture add from directory
+//   for( int k=0; k < ammount; k++ ){
+//		//   pf->addItem( driver->getTexture( "stones.jpg" ), L"" );
+//		   stexture = "picture";
+//		stexture += k;
+//		stexture += ".jpg";
+//            pf->addItem( driver->getTexture( stexture ), L"" );
+//   }
 
 int delay = 0;
 int direction =0;
 int icount=0;
 
 
+ IFileSystem *fs = device->getFileSystem();
 //	CurrentArchiveList.clear();
 //	IFileSystem *fs = Device->getFileSystem();
 //	for ( i = 0; i != fs->getFileArchiveCount(); ++i )
@@ -123,29 +122,41 @@ int icount=0;
 //	}
 
 //	io::path* testpath;
-	io::IFileArchive* archive;
-	device->getFileSystem()->addFileArchive( "./pics.zip");
+	//io::IFileArchive* archive;
+	//device->getFileSystem()->addFileArchive( "./pics.zip");
 	//device->getFileSystem()->getWorkingDirectory();
 	//		io::IFileSystem* archive ;
 			//io::IFileArchive* archive ;
 //			archive->addFolderFileArchive("media");
 
-			//
 //                std::string fName = app->activity->internalDataPath + files->getFullFileName(x).c_str();
 //                // If the file is not a directory and it doesn't already exist (you can use stat() or directly try fread() to check if the file exists)
 //                if (!files->isDirectory(x) && !Operations::fileExists(fName))
 //
-	printf("testing1");
-	std::cout << "testing2";
 
-	printf(archive->getFileCount());
+    if (! fs->addFileArchive("pictures.zip",
+                             false,     // case-insensitive
+                             false)) { // require full path to get file
+    //    fatalError("ResourceManager: Failed to open resource package \\"%s\"", p);
+	printf("testing1");
+    }
+
+    const IFileList *l = fs->getFileArchive(fs->getFileArchiveCount()-1)->getFileList();
+    for (u32 i=0; i<l->getFileCount(); i++) {
+		pf->addItem( driver->getTexture( l->getFileName(i).c_str() ), L"" );
+	//std::cout << "testing2";
+    }
+//    // make it so that files added last are searched first
+//    u32 count = fs->getFileArchiveCount();
+//    if (count > 1) {
+//        fs->moveFileArchive(count-1, -((s32) count - 1));
+//    }
 
 //            IFileList* files = (IFileList*)archive->getFileList();
 //            for (int x = 0; x < files->getFileCount(); x++)
 //            {
 //			std::cout << files->getFileName(x).c_str();
 //			}
-
 
 	while(device->run())
 	{
@@ -162,7 +173,7 @@ int icount=0;
 		guienv->drawAll();
 
 		driver->endScene();
-		device->sleep(20);
+		device->sleep(10);
 	}
 
 
@@ -171,6 +182,3 @@ int icount=0;
 	return 0;
 }
 
-/*
-That's it. Compile and run.
-**/
