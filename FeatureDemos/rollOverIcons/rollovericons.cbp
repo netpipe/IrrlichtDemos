@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="BulletSoft Body" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./SoftBody" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Option projectIncludeDirsRelation="1" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Option projectLibDirsRelation="1" />
+				<Compiler>
+					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/game/irrlicht/Irrlicht-SVN/include" />
+				</Compiler>
+				<Linker>
+					<Add library="GL" />
+					<Add library="Irrlicht" />
+					<Add library="Xxf86vm" />
+					<Add library="X11" />
+					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux" />
+				</Linker>
+			</Target>
+			<Target title="emscripten">
+				<Option output="./SoftBody.html" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="emscripten" />
+				<Option projectIncludeDirsRelation="1" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Compiler>
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_IRR_EMSCRIPTEN_PLATFORM_" />
+					<Add option="-D__EMSCRIPTEN__" />
+					<Add directory="../../../../irrlicht-ogl-es/irrlicht/include" />
+					<Add directory="../../../Libs/physics/Bullet278/src" />
+					<Add directory="../../../Libs/irrlicht-ogl-es/irrlicht/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s ALLOW_MEMORY_GROWTH=1" />
+					<Add option="--preload-file media/" />
+					<Add option="-s FULL_ES2=1" />
+					<Add option="-s DISABLE_EXCEPTION_CATCHING=0" />
+					<Add option="-s NO_EXIT_RUNTIME=1" />
+					<Add option="-s ASYNCIFY" />
+					<Add library="GLESv2" />
+					<Add library="GL" />
+					<Add library="Irrlicht" />
+					<Add library="BulletSoftBody" />
+					<Add library="BulletDynamics" />
+					<Add library="BulletCollision" />
+					<Add library="LinearMath" />
+					<Add library="SDL" />
+					<Add directory="../../../irrlicht-ogl-es/irrlicht/lib/Linux" />
+					<Add directory="../../../Libs/physics/Bullet278/msvc/2008/lib/Release" />
+					<Add directory="../../../Libs/irrlicht-ogl-es/irrlicht/lib/Linux" />
+					<Add directory="../irrBulletSDK-0.1.8/lib/linux/Release" />
+				</Linker>
+			</Target>
+			<Target title="Copy of emscripten">
+				<Option output="./SoftBody.html" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="emscripten" />
+				<Option projectIncludeDirsRelation="1" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Option projectLibDirsRelation="1" />
+				<Compiler>
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_IRR_EMSCRIPTEN_PLATFORM_" />
+					<Add option="-D__EMSCRIPTEN__" />
+					<Add directory="../../../../irrlicht-ogl-es/irrlicht/include" />
+					<Add directory="/home/netpipe/Desktop/EMScripten-AddonBundle/Libs/physics/Bullet/bullet/src" />
+					<Add directory="../../../Libs/irrlicht-ogl-es/irrlicht/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s ALLOW_MEMORY_GROWTH=1" />
+					<Add option="--preload-file media/" />
+					<Add option="-s FULL_ES2=1" />
+					<Add option="-s DISABLE_EXCEPTION_CATCHING=0" />
+					<Add option="-s NO_EXIT_RUNTIME=1" />
+					<Add option="-s ASYNCIFY" />
+					<Add library="GLESv2" />
+					<Add library="GL" />
+					<Add library="Irrlicht" />
+					<Add library="BulletCollision" />
+					<Add library="BulletSoftBody" />
+					<Add library="BulletDynamics" />
+					<Add library="LinearMath" />
+					<Add library="SDL" />
+					<Add directory="../../../irrlicht-ogl-es/irrlicht/lib/Linux" />
+					<Add directory="/home/netpipe/Desktop/EMScripten-AddonBundle/Libs/physics/Bullet/bullet/msvc/2008/lib/Release" />
+					<Add directory="../../../Libs/irrlicht-ogl-es/irrlicht/lib/Linux" />
+					<Add directory="/home/netpipe/Desktop/EMScripten-AddonBundle/Projects/Irrlicht/irrBulletSDK-0.1.8/lib/linux/Release" />
+				</Linker>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="../../../../irrlicht-ogl-es/irrlicht/include" />
+			<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/upstream/emscripten/tests/bullet/src" />
+			<Add directory="../../../Libs/irrlicht-ogl-es/irrlicht/include" />
+		</Compiler>
+		<Linker>
+			<Add directory="../../../irrlicht-ogl-es/irrlicht/lib/Linux" />
+			<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/upstream/emscripten/tests/bullet/src/.libs" />
+			<Add directory="../../../Libs/irrlicht-ogl-es/irrlicht/lib/Linux" />
+		</Linker>
+		<Unit filename="listFileSwitch.cpp" />
+		<Unit filename="listFileSwitch.h" />
+		<Unit filename="main.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

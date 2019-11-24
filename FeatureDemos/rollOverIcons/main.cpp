@@ -10,6 +10,21 @@ using namespace gui;
 #include <stdio.h>
 #include <iostream>
 
+
+#ifdef __EMSCRIPTEN__
+#include <emscripten.h>
+#endif
+	IrrlichtDevice *device;
+	IVideoDriver* driver;
+	ISceneManager* smgr;
+	IGUIEnvironment* guienv;
+CNrp2DPictureFlow *pf;
+
+
+int delay = 0;
+int direction =0;
+int icount=0;
+	int ammount =7;
 class MyEventReceiver : public IEventReceiver
 {
 public:
@@ -47,23 +62,51 @@ private:
 
 
 char *p;
+#ifdef __EMSCRIPTEN__
+void main_loop(){
+//	CNrp2DPictureFlow *pf=pf2;
+	device->run();
+		if (delay > 140){
+			delay=0;
+			if (pf->getcurrent() < ammount-1 & direction == 0){
+					pf->Next(1);
+					} else {pf->Next(-1); direction == 1;}
+		} else {delay++;}
+
+		driver->beginScene(true, true, SColor(255,100,101,140));
+
+		smgr->drawAll();
+		guienv->drawAll();
+
+		driver->endScene();
+	//	device->sleep(10);
+	//}
+
+}
+#endif // __EMSCRIPTEN__
 
 int main()
 {
-    MyEventReceiver receiver;
-
-	IrrlichtDevice *device =
+	    MyEventReceiver receiver;
+#ifdef __EMSCRIPTEN__
+	device =
+		createDevice( video::EDT_OGLES2, dimension2d<u32>(640, 480), 16,
+			false, false, false, &receiver);
+#else
+	device =
 		createDevice( video::EDT_SOFTWARE, dimension2d<u32>(640, 480), 16,
 			false, false, false, &receiver);
+
+#endif
 
 	if (!device)
 		return 1;
 
 	device->setWindowCaption(L"Hello World! - Irrlicht Engine Demo");
 
-	IVideoDriver* driver = device->getVideoDriver();
-	ISceneManager* smgr = device->getSceneManager();
-	IGUIEnvironment* guienv = device->getGUIEnvironment();
+	driver = device->getVideoDriver();
+	 smgr = device->getSceneManager();
+	 guienv = device->getGUIEnvironment();
 
 	guienv->addStaticText(L"Hello World! This is the Irrlicht Software renderer!",
 		rect<s32>(10,10,260,22), true);
@@ -90,11 +133,11 @@ int main()
 
 	smgr->addCameraSceneNode(0, vector3df(0,10,-10), vector3df(0,5,0));
 
-   CNrp2DPictureFlow *pf = new CNrp2DPictureFlow( device , guienv,
+ pf = new CNrp2DPictureFlow( device , guienv,
                                                  guienv->getRootGUIElement(), core::recti( 0, 0, 400, 400 ), core::recti( 0, 0, 100, 100 ),-1 );
 
 
-	int ammount =7;
+
 
 stringw stexture;
 
@@ -108,9 +151,6 @@ stringw stexture;
 //            pf->addItem( driver->getTexture( stexture ), L"" );
 //   }
 
-int delay = 0;
-int direction =0;
-int icount=0;
 
 
  IFileSystem *fs = device->getFileSystem();
@@ -134,7 +174,7 @@ int icount=0;
 //                if (!files->isDirectory(x) && !Operations::fileExists(fName))
 //
 
-    if (! fs->addFileArchive("pictures.zip",
+    if (! fs->addFileArchive("media/pictures.zip",
                              false,     // case-insensitive
                              false)) { // require full path to get file
     //    fatalError("ResourceManager: Failed to open resource package \\"%s\"", p);
@@ -158,14 +198,17 @@ int icount=0;
 //			std::cout << files->getFileName(x).c_str();
 //			}
 
+#ifdef __EMSCRIPTEN__
+	emscripten_set_main_loop(main_loop,0,1);
+#else
 	while(device->run())
 	{
-		if (delay > 140){
-			delay=0;
-			if (pf->getcurrent() < ammount-1 & direction == 0){
-					pf->Next(1);
-					} else {pf->Next(-1); direction == 1;}
-		} else {delay++;}
+//		if (delay > 140){
+//			delay=0;
+//			if (pf->getcurrent() < ammount-1 & direction == 0){
+//					pf->Next(1);
+//					} else {pf->Next(-1); direction == 1;}
+//		} else {delay++;}
 
 		driver->beginScene(true, true, SColor(255,100,101,140));
 
@@ -175,7 +218,7 @@ int icount=0;
 		driver->endScene();
 		device->sleep(10);
 	}
-
+#endif // __EMSCRIPTEN__
 
 	device->drop();
 
