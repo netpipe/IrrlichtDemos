@@ -38,7 +38,8 @@ public:
    u32 addItem(const wchar_t* text);
    void removeItem(u32 index);
 
-   IGUIScrollBar* getVerticalScrollBar() const = 0 ;
+virtual IGUIScrollBar* getVerticalScrollBar() const { return 0; }
+  // IGUIScrollBar* getVerticalScrollBar() const = 0 ;
  //  IGUIScrollBar* getVerticalScrollBar() const = 0;
    bool OnEvent(const SEvent& event);
 
