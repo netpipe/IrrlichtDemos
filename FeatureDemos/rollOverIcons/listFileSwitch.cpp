@@ -46,10 +46,10 @@ void CNrp2DPictureFlow::UpdateImages_()
 
 
 
-   core::recti tmpRect( AbsoluteRect.getCenter().X - (pictureRect_.getWidth()/2),
-                   AbsoluteRect.getCenter().Y - (scaleimage*pictureRect_.getHeight()/2),
-                   AbsoluteRect.getCenter().X + (scaleimage*pictureRect_.getWidth()/2),
-                   AbsoluteRect.getCenter().Y + (scaleimage*pictureRect_.getHeight()/2) );
+   core::recti tmpRect( AbsoluteRect.getCenter().X - (scalem*pictureRect_.getWidth()/2),
+                   AbsoluteRect.getCenter().Y - (scalem*pictureRect_.getHeight()/2),
+                   AbsoluteRect.getCenter().X + (scalem*pictureRect_.getWidth()/2),
+                   AbsoluteRect.getCenter().Y + (scalem*pictureRect_.getHeight()/2) );
 
    if( activeIndex_ < (int)images_.size() )
       images_[ activeIndex_ ]->rectangle = tmpRect;
@@ -60,8 +60,8 @@ void CNrp2DPictureFlow::UpdateImages_()
    if( activeIndex_ - 1 >= 0 )
       for( int k=max( 0, activeIndex_-1); k >= 0; k-- )
       {
-         offsetx += lRect.getWidth() * (scaleimage - (activeIndex_-k)*0.1f);
-         core::dimension2di sides( scaleimage * lRect.getWidth(), scaleimage * lRect.getHeight() );
+         offsetx += lRect.getWidth() * (scalel - (activeIndex_-k)*0.1f);
+         core::dimension2di sides( scalel * lRect.getWidth(), scalel * lRect.getHeight() );
          lRect = core::recti( AbsoluteRect.getCenter().X - sides.Width/2, AbsoluteRect.getCenter().Y - sides.Height/2,
             AbsoluteRect.getCenter().X + sides.Width/2, AbsoluteRect.getCenter().Y + sides.Height/2 );
          images_[ k ]->rectangle = lRect - core::position2di( offsetx, 0 );
@@ -72,8 +72,8 @@ void CNrp2DPictureFlow::UpdateImages_()
    //right side
    for( int k = min(activeIndex_+1, (int)images_.size()); k < images_.size(); k++ )
    {
-      offsetx += rRect.getWidth() * (scaleimage - (k-activeIndex_)*0.1f);
-      core::dimension2di sides( scaleimage * rRect.getWidth(), scaleimage * rRect.getHeight() );
+      offsetx += rRect.getWidth() * (scaler - (k-activeIndex_)*0.1f);
+      core::dimension2di sides( scaler * rRect.getWidth(), scaler * rRect.getHeight() );
       rRect = core::recti( AbsoluteRect.getCenter().X - sides.Width/2, AbsoluteRect.getCenter().Y - sides.Height/2,
                       AbsoluteRect.getCenter().X + sides.Width/2, AbsoluteRect.getCenter().Y + sides.Height/2 );
       images_[ k ]->rectangle = rRect + core::position2di( offsetx, 0 );
@@ -81,9 +81,14 @@ void CNrp2DPictureFlow::UpdateImages_()
 }
 
 
-void CNrp2DPictureFlow::setscale(float scales){
-scaleimage=scales;
+void CNrp2DPictureFlow::setscale(float scalem1,float scaler1,float scalel1){
+scalem=scalem1;
+scalel=scalel1;
+scaler=scaler1;
+
 }
+
+
 void CNrp2DPictureFlow::draw()
 {
    if( !IsVisible )

@@ -101,13 +101,13 @@ int main()
 	if (!device)
 		return 1;
 
-	device->setWindowCaption(L"Hello World! - Irrlicht Engine Demo");
+	device->setWindowCaption(L"Irrlicht Gallery Rollover Demo");
 
 	driver = device->getVideoDriver();
 	 smgr = device->getSceneManager();
 	 guienv = device->getGUIEnvironment();
 
-	guienv->addStaticText(L"Hello World! This is the Irrlicht Software renderer!",
+	guienv->addStaticText(L"click on a picture then use the keys to navigate.",
 		rect<s32>(10,10,260,22), true);
 
 	//IAnimatedMesh* mesh = smgr->getMesh("untitled.x");
@@ -187,7 +187,10 @@ stringw stexture;
 	//std::cout << "testing2";
     }
 
-    pf->setscale(1.7);
+    //middle,left,right
+    pf->setscale(1.7,1.7,1.7);
+  //  pf->setscale(0.7,1.7,0.7);
+  //  pf->setscale(0.7,1.7,0.7);
 //    // make it so that files added last are searched first
 //    u32 count = fs->getFileArchiveCount();
 //    if (count > 1) {

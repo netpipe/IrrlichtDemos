@@ -71,8 +71,10 @@ virtual IGUIScrollBar* getVerticalScrollBar() const { return 0; }
     //! set all item colors of specified type at given index to color
     virtual void setItemOverrideColor(u32 index, EGUI_LISTBOX_COLOR colorType, video::SColor color) {};
 #endif
-float scaleimage=0.7f;
-void setscale(float);
+float scalem=0.7f;
+float scaler=0.7f;
+float scalel=0.7f;
+void setscale(float,float,float);
 
 private:
 
