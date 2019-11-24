@@ -174,6 +174,7 @@ stringw stexture;
 //                if (!files->isDirectory(x) && !Operations::fileExists(fName))
 //
 
+//webassembly version only seems to work with png's
     if (! fs->addFileArchive("media/pictures.zip",
                              false,     // case-insensitive
                              false)) { // require full path to get file
