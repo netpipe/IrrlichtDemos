@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PeakEngine", "PeakEngine.vcproj", "{906FAF75-BAE4-4362-8189-480464DDDC15}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PeakGraphics", "PeakGraphics.vcproj", "{4C9014C5-F84A-47E2-A729-EA0986CC909C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PeakPhysics", "PeakPhysics.vcproj", "{7DD1B7B6-7C8E-4216-905F-1BD6D52BCE36}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{906FAF75-BAE4-4362-8189-480464DDDC15}.Debug|Win32.ActiveCfg = Debug|Win32
+		{906FAF75-BAE4-4362-8189-480464DDDC15}.Debug|Win32.Build.0 = Debug|Win32
+		{906FAF75-BAE4-4362-8189-480464DDDC15}.Release|Win32.ActiveCfg = Release|Win32
+		{906FAF75-BAE4-4362-8189-480464DDDC15}.Release|Win32.Build.0 = Release|Win32
+		{4C9014C5-F84A-47E2-A729-EA0986CC909C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4C9014C5-F84A-47E2-A729-EA0986CC909C}.Debug|Win32.Build.0 = Debug|Win32
+		{4C9014C5-F84A-47E2-A729-EA0986CC909C}.Release|Win32.ActiveCfg = Release|Win32
+		{4C9014C5-F84A-47E2-A729-EA0986CC909C}.Release|Win32.Build.0 = Release|Win32
+		{7DD1B7B6-7C8E-4216-905F-1BD6D52BCE36}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7DD1B7B6-7C8E-4216-905F-1BD6D52BCE36}.Debug|Win32.Build.0 = Debug|Win32
+		{7DD1B7B6-7C8E-4216-905F-1BD6D52BCE36}.Release|Win32.ActiveCfg = Release|Win32
+		{7DD1B7B6-7C8E-4216-905F-1BD6D52BCE36}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
