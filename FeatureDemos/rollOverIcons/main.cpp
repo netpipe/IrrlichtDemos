@@ -122,8 +122,8 @@ int icount=0;
 //		CurrentArchiveList.push_back ( fs->getFileArchive(i)->getFileList()->getPath() );
 //	}
 
-	io::path* testpath;
-//	io::IFileArchive* archive;
+//	io::path* testpath;
+	io::IFileArchive* archive;
 	device->getFileSystem()->addFileArchive( "./pics.zip");
 	//device->getFileSystem()->getWorkingDirectory();
 	//		io::IFileSystem* archive ;
@@ -137,11 +137,14 @@ int icount=0;
 //
 	printf("testing1");
 	std::cout << "testing2";
-            IFileList* files = (IFileList*)archive->getFileList();
-            for (int x = 0; x < files->getFileCount(); x++)
-            {
-			std::cout << files->getFileName(x).c_str();
-			}
+
+	printf(archive->getFileCount());
+
+//            IFileList* files = (IFileList*)archive->getFileList();
+//            for (int x = 0; x < files->getFileCount(); x++)
+//            {
+//			std::cout << files->getFileName(x).c_str();
+//			}
 
 
 	while(device->run())

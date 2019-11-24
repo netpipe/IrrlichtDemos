@@ -1,0 +1,607 @@
+Defined Preprocessor Switches for your System::
+
+ _IRR_USE_SYSTEM_FOR_FILE_OPERATIONS_
+ _IRR_POSIX_API_
+ __USE_LARGEFILE64
+
+ Name = / with Type = EXT2_SUPER_MAGIC
+ Name = /dev/adsp with Type = unknown
+ Name = /dev/autofs with Type = unknown
+ Name = /dev/block with Type = unknown
+ Name = /dev/bsg with Type = unknown
+ Name = /dev/btrfs-control with Type = unknown
+ Name = /dev/bus with Type = unknown
+ Name = /dev/cdrom with Type = unknown
+ Name = /dev/cdrw with Type = unknown
+ Name = /dev/char with Type = unknown
+ Name = /dev/console with Type = unknown
+ Name = /dev/core with Type = PROC_SUPER_MAGIC
+ Name = /dev/cpu with Type = unknown
+ Name = /dev/cpu_dma_latency with Type = unknown
+ Name = /dev/cuse with Type = unknown
+ Name = /dev/disk with Type = unknown
+ Name = /dev/dri with Type = unknown
+ Name = /dev/drm_dp_aux0 with Type = unknown
+ Name = /dev/drm_dp_aux1 with Type = unknown
+ Name = /dev/dsp with Type = unknown
+ Name = /dev/dvd with Type = unknown
+ Name = /dev/dvdrw with Type = unknown
+ Name = /dev/ecryptfs with Type = unknown
+ Name = /dev/fb0 with Type = unknown
+ Name = /dev/fd with Type = PROC_SUPER_MAGIC
+ Name = /dev/full with Type = unknown
+ Name = /dev/fuse with Type = unknown
+ Name = /dev/hidraw0 with Type = unknown
+ Name = /dev/hidraw3 with Type = unknown
+ Name = /dev/hidraw4 with Type = unknown
+ Name = /dev/hidraw5 with Type = unknown
+ Name = /dev/hidraw6 with Type = unknown
+ Name = /dev/hpet with Type = unknown
+ Name = /dev/hugepages with Type = unknown
+ Name = /dev/hwrng with Type = unknown
+ Name = /dev/i2c-0 with Type = unknown
+ Name = /dev/i2c-1 with Type = unknown
+ Name = /dev/i2c-2 with Type = unknown
+ Name = /dev/i2c-3 with Type = unknown
+ Name = /dev/i2c-4 with Type = unknown
+ Name = /dev/i2c-5 with Type = unknown
+ Name = /dev/i2c-6 with Type = unknown
+ Name = /dev/i2c-7 with Type = unknown
+ Name = /dev/i2c-8 with Type = unknown
+ Name = /dev/i2c-9 with Type = unknown
+ Name = /dev/iio:device0 with Type = unknown
+ Name = /dev/initctl with Type = unknown
+ Name = /dev/input with Type = unknown
+ Name = /dev/kmsg with Type = unknown
+ Name = /dev/kvm with Type = unknown
+ Name = /dev/lightnvm with Type = unknown
+ Name = /dev/log with Type = unknown
+ Name = /dev/loop0 with Type = unknown
+ Name = /dev/loop1 with Type = unknown
+ Name = /dev/loop2 with Type = unknown
+ Name = /dev/loop3 with Type = unknown
+ Name = /dev/loop4 with Type = unknown
+ Name = /dev/loop5 with Type = unknown
+ Name = /dev/loop6 with Type = unknown
+ Name = /dev/loop7 with Type = unknown
+ Name = /dev/loop-control with Type = unknown
+ Name = /dev/mapper with Type = unknown
+ Name = /dev/mcelog with Type = unknown
+ Name = /dev/media0 with Type = unknown
+ Name = /dev/mei0 with Type = unknown
+ Name = /dev/mem with Type = unknown
+ Name = /dev/memory_bandwidth with Type = unknown
+ Name = /dev/mixer with Type = unknown
+ Name = /dev/mqueue with Type = unknown
+ Name = /dev/net with Type = unknown
+ Name = /dev/network_latency with Type = unknown
+ Name = /dev/network_throughput with Type = unknown
+ Name = /dev/null with Type = unknown
+ Name = /dev/port with Type = unknown
+ Name = /dev/ppp with Type = unknown
+ Name = /dev/psaux with Type = unknown
+ Name = /dev/ptmx with Type = unknown
+ Name = /dev/ptp0 with Type = unknown
+ Name = /dev/pts with Type = unknown
+ Name = /dev/random with Type = unknown
+ Name = /dev/rfkill with Type = unknown
+ Name = /dev/rtc with Type = unknown
+ Name = /dev/rtc0 with Type = unknown
+ Name = /dev/sda with Type = unknown
+ Name = /dev/sda1 with Type = unknown
+ Name = /dev/sda2 with Type = unknown
+ Name = /dev/sda3 with Type = unknown
+ Name = /dev/sda4 with Type = unknown
+ Name = /dev/sdb with Type = unknown
+ Name = /dev/sdb1 with Type = unknown
+ Name = /dev/sdb2 with Type = unknown
+ Name = /dev/sdc with Type = unknown
+ Name = /dev/sdd with Type = unknown
+ Name = /dev/sde with Type = unknown
+ Name = /dev/sdf with Type = unknown
+ Name = /dev/sg0 with Type = unknown
+ Name = /dev/sg1 with Type = unknown
+ Name = /dev/sg2 with Type = unknown
+ Name = /dev/sg3 with Type = unknown
+ Name = /dev/sg4 with Type = unknown
+ Name = /dev/sg5 with Type = unknown
+ Name = /dev/sg6 with Type = unknown
+ Name = /dev/sg7 with Type = unknown
+ Name = /dev/shm with Type = unknown
+ Name = /dev/snapshot with Type = unknown
+ Name = /dev/snd with Type = unknown
+ Name = /dev/sr0 with Type = unknown
+ Name = /dev/sr1 with Type = unknown
+ Name = /dev/stderr with Type = unknown
+ Name = /dev/stdin with Type = unknown
+ Name = /dev/stdout with Type = unknown
+ Name = /dev/toshiba_acpi with Type = unknown
+ Name = /dev/tpm0 with Type = unknown
+ Name = /dev/tty with Type = unknown
+ Name = /dev/tty0 with Type = unknown
+ Name = /dev/tty1 with Type = unknown
+ Name = /dev/tty10 with Type = unknown
+ Name = /dev/tty11 with Type = unknown
+ Name = /dev/tty12 with Type = unknown
+ Name = /dev/tty13 with Type = unknown
+ Name = /dev/tty14 with Type = unknown
+ Name = /dev/tty15 with Type = unknown
+ Name = /dev/tty16 with Type = unknown
+ Name = /dev/tty17 with Type = unknown
+ Name = /dev/tty18 with Type = unknown
+ Name = /dev/tty19 with Type = unknown
+ Name = /dev/tty2 with Type = unknown
+ Name = /dev/tty20 with Type = unknown
+ Name = /dev/tty21 with Type = unknown
+ Name = /dev/tty22 with Type = unknown
+ Name = /dev/tty23 with Type = unknown
+ Name = /dev/tty24 with Type = unknown
+ Name = /dev/tty25 with Type = unknown
+ Name = /dev/tty26 with Type = unknown
+ Name = /dev/tty27 with Type = unknown
+ Name = /dev/tty28 with Type = unknown
+ Name = /dev/tty29 with Type = unknown
+ Name = /dev/tty3 with Type = unknown
+ Name = /dev/tty30 with Type = unknown
+ Name = /dev/tty31 with Type = unknown
+ Name = /dev/tty32 with Type = unknown
+ Name = /dev/tty33 with Type = unknown
+ Name = /dev/tty34 with Type = unknown
+ Name = /dev/tty35 with Type = unknown
+ Name = /dev/tty36 with Type = unknown
+ Name = /dev/tty37 with Type = unknown
+ Name = /dev/tty38 with Type = unknown
+ Name = /dev/tty39 with Type = unknown
+ Name = /dev/tty4 with Type = unknown
+ Name = /dev/tty40 with Type = unknown
+ Name = /dev/tty41 with Type = unknown
+ Name = /dev/tty42 with Type = unknown
+ Name = /dev/tty43 with Type = unknown
+ Name = /dev/tty44 with Type = unknown
+ Name = /dev/tty45 with Type = unknown
+ Name = /dev/tty46 with Type = unknown
+ Name = /dev/tty47 with Type = unknown
+ Name = /dev/tty48 with Type = unknown
+ Name = /dev/tty49 with Type = unknown
+ Name = /dev/tty5 with Type = unknown
+ Name = /dev/tty50 with Type = unknown
+ Name = /dev/tty51 with Type = unknown
+ Name = /dev/tty52 with Type = unknown
+ Name = /dev/tty53 with Type = unknown
+ Name = /dev/tty54 with Type = unknown
+ Name = /dev/tty55 with Type = unknown
+ Name = /dev/tty56 with Type = unknown
+ Name = /dev/tty57 with Type = unknown
+ Name = /dev/tty58 with Type = unknown
+ Name = /dev/tty59 with Type = unknown
+ Name = /dev/tty6 with Type = unknown
+ Name = /dev/tty60 with Type = unknown
+ Name = /dev/tty61 with Type = unknown
+ Name = /dev/tty62 with Type = unknown
+ Name = /dev/tty63 with Type = unknown
+ Name = /dev/tty7 with Type = unknown
+ Name = /dev/tty8 with Type = unknown
+ Name = /dev/tty9 with Type = unknown
+ Name = /dev/ttyprintk with Type = unknown
+ Name = /dev/ttyS0 with Type = unknown
+ Name = /dev/ttyS1 with Type = unknown
+ Name = /dev/ttyS10 with Type = unknown
+ Name = /dev/ttyS11 with Type = unknown
+ Name = /dev/ttyS12 with Type = unknown
+ Name = /dev/ttyS13 with Type = unknown
+ Name = /dev/ttyS14 with Type = unknown
+ Name = /dev/ttyS15 with Type = unknown
+ Name = /dev/ttyS16 with Type = unknown
+ Name = /dev/ttyS17 with Type = unknown
+ Name = /dev/ttyS18 with Type = unknown
+ Name = /dev/ttyS19 with Type = unknown
+ Name = /dev/ttyS2 with Type = unknown
+ Name = /dev/ttyS20 with Type = unknown
+ Name = /dev/ttyS21 with Type = unknown
+ Name = /dev/ttyS22 with Type = unknown
+ Name = /dev/ttyS23 with Type = unknown
+ Name = /dev/ttyS24 with Type = unknown
+ Name = /dev/ttyS25 with Type = unknown
+ Name = /dev/ttyS26 with Type = unknown
+ Name = /dev/ttyS27 with Type = unknown
+ Name = /dev/ttyS28 with Type = unknown
+ Name = /dev/ttyS29 with Type = unknown
+ Name = /dev/ttyS3 with Type = unknown
+ Name = /dev/ttyS30 with Type = unknown
+ Name = /dev/ttyS31 with Type = unknown
+ Name = /dev/ttyS4 with Type = unknown
+ Name = /dev/ttyS5 with Type = unknown
+ Name = /dev/ttyS6 with Type = unknown
+ Name = /dev/ttyS7 with Type = unknown
+ Name = /dev/ttyS8 with Type = unknown
+ Name = /dev/ttyS9 with Type = unknown
+ Name = /dev/uhid with Type = unknown
+ Name = /dev/uinput with Type = unknown
+ Name = /dev/urandom with Type = unknown
+ Name = /dev/userio with Type = unknown
+ Name = /dev/v4l with Type = unknown
+ Name = /dev/vboxdrv with Type = unknown
+ Name = /dev/vboxdrvu with Type = unknown
+ Name = /dev/vboxnetctl with Type = unknown
+ Name = /dev/vboxusb with Type = unknown
+ Name = /dev/vcs with Type = unknown
+ Name = /dev/vcs1 with Type = unknown
+ Name = /dev/vcs2 with Type = unknown
+ Name = /dev/vcs3 with Type = unknown
+ Name = /dev/vcs4 with Type = unknown
+ Name = /dev/vcs5 with Type = unknown
+ Name = /dev/vcs6 with Type = unknown
+ Name = /dev/vcsa with Type = unknown
+ Name = /dev/vcsa1 with Type = unknown
+ Name = /dev/vcsa2 with Type = unknown
+ Name = /dev/vcsa3 with Type = unknown
+ Name = /dev/vcsa4 with Type = unknown
+ Name = /dev/vcsa5 with Type = unknown
+ Name = /dev/vcsa6 with Type = unknown
+ Name = /dev/vfio with Type = unknown
+ Name = /dev/vga_arbiter with Type = unknown
+ Name = /dev/vhci with Type = unknown
+ Name = /dev/vhost-net with Type = unknown
+ Name = /dev/vhost-vsock with Type = unknown
+ Name = /dev/video0 with Type = unknown
+ Name = /dev/zero with Type = unknown
+ Name = /media/clay with Type = EXT2_SUPER_MAGIC
+ Name = /media/weby with Type = EXT2_SUPER_MAGIC
+ getDriveCount() = 243
+ (0) ::	getDriveName() = /	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 9248876 KiB	getDriveTotalSpace() = 106473176 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (1) ::	getDriveName() = /dev/adsp	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (2) ::	getDriveName() = /dev/autofs	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (3) ::	getDriveName() = /dev/block	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (4) ::	getDriveName() = /dev/bsg	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (5) ::	getDriveName() = /dev/btrfs-control	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (6) ::	getDriveName() = /dev/bus	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (7) ::	getDriveName() = /dev/cdrom	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (8) ::	getDriveName() = /dev/cdrw	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (9) ::	getDriveName() = /dev/char	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (10) ::	getDriveName() = /dev/console	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (11) ::	getDriveName() = /dev/core	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 0 KiB	getDriveTotalSpace() = 0 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (12) ::	getDriveName() = /dev/cpu	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (13) ::	getDriveName() = /dev/cpu_dma_latency	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (14) ::	getDriveName() = /dev/cuse	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (15) ::	getDriveName() = /dev/disk	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (16) ::	getDriveName() = /dev/dri	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (17) ::	getDriveName() = /dev/drm_dp_aux0	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (18) ::	getDriveName() = /dev/drm_dp_aux1	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (19) ::	getDriveName() = /dev/dsp	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (20) ::	getDriveName() = /dev/dvd	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (21) ::	getDriveName() = /dev/dvdrw	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (22) ::	getDriveName() = /dev/ecryptfs	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (23) ::	getDriveName() = /dev/fb0	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (24) ::	getDriveName() = /dev/fd	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 0 KiB	getDriveTotalSpace() = 0 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (25) ::	getDriveName() = /dev/full	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (26) ::	getDriveName() = /dev/fuse	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (27) ::	getDriveName() = /dev/hidraw0	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (28) ::	getDriveName() = /dev/hidraw3	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (29) ::	getDriveName() = /dev/hidraw4	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (30) ::	getDriveName() = /dev/hidraw5	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (31) ::	getDriveName() = /dev/hidraw6	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (32) ::	getDriveName() = /dev/hpet	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (33) ::	getDriveName() = /dev/hugepages	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 0 KiB	getDriveTotalSpace() = 0 KiB	getDriveOptimalBlockSize() = 2097152 KiB
+ (34) ::	getDriveName() = /dev/hwrng	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (35) ::	getDriveName() = /dev/i2c-0	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (36) ::	getDriveName() = /dev/i2c-1	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (37) ::	getDriveName() = /dev/i2c-2	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (38) ::	getDriveName() = /dev/i2c-3	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (39) ::	getDriveName() = /dev/i2c-4	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (40) ::	getDriveName() = /dev/i2c-5	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (41) ::	getDriveName() = /dev/i2c-6	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (42) ::	getDriveName() = /dev/i2c-7	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (43) ::	getDriveName() = /dev/i2c-8	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (44) ::	getDriveName() = /dev/i2c-9	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (45) ::	getDriveName() = /dev/iio:device0	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (46) ::	getDriveName() = /dev/initctl	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 809572 KiB	getDriveTotalSpace() = 811640 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (47) ::	getDriveName() = /dev/input	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (48) ::	getDriveName() = /dev/kmsg	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (49) ::	getDriveName() = /dev/kvm	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (50) ::	getDriveName() = /dev/lightnvm	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (51) ::	getDriveName() = /dev/log	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 809572 KiB	getDriveTotalSpace() = 811640 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (52) ::	getDriveName() = /dev/loop0	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (53) ::	getDriveName() = /dev/loop1	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (54) ::	getDriveName() = /dev/loop2	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (55) ::	getDriveName() = /dev/loop3	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (56) ::	getDriveName() = /dev/loop4	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (57) ::	getDriveName() = /dev/loop5	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (58) ::	getDriveName() = /dev/loop6	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (59) ::	getDriveName() = /dev/loop7	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (60) ::	getDriveName() = /dev/loop-control	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (61) ::	getDriveName() = /dev/mapper	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (62) ::	getDriveName() = /dev/mcelog	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (63) ::	getDriveName() = /dev/media0	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (64) ::	getDriveName() = /dev/mei0	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (65) ::	getDriveName() = /dev/mem	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (66) ::	getDriveName() = /dev/memory_bandwidth	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (67) ::	getDriveName() = /dev/mixer	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (68) ::	getDriveName() = /dev/mqueue	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 0 KiB	getDriveTotalSpace() = 0 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (69) ::	getDriveName() = /dev/net	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (70) ::	getDriveName() = /dev/network_latency	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (71) ::	getDriveName() = /dev/network_throughput	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (72) ::	getDriveName() = /dev/null	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (73) ::	getDriveName() = /dev/port	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (74) ::	getDriveName() = /dev/ppp	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (75) ::	getDriveName() = /dev/psaux	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (76) ::	getDriveName() = /dev/ptmx	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (77) ::	getDriveName() = /dev/ptp0	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (78) ::	getDriveName() = /dev/pts	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 0 KiB	getDriveTotalSpace() = 0 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (79) ::	getDriveName() = /dev/random	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (80) ::	getDriveName() = /dev/rfkill	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (81) ::	getDriveName() = /dev/rtc	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (82) ::	getDriveName() = /dev/rtc0	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (83) ::	getDriveName() = /dev/sda	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (84) ::	getDriveName() = /dev/sda1	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (85) ::	getDriveName() = /dev/sda2	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (86) ::	getDriveName() = /dev/sda3	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (87) ::	getDriveName() = /dev/sda4	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (88) ::	getDriveName() = /dev/sdb	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (89) ::	getDriveName() = /dev/sdb1	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (90) ::	getDriveName() = /dev/sdb2	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (91) ::	getDriveName() = /dev/sdc	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (92) ::	getDriveName() = /dev/sdd	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (93) ::	getDriveName() = /dev/sde	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (94) ::	getDriveName() = /dev/sdf	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (95) ::	getDriveName() = /dev/sg0	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (96) ::	getDriveName() = /dev/sg1	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (97) ::	getDriveName() = /dev/sg2	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (98) ::	getDriveName() = /dev/sg3	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (99) ::	getDriveName() = /dev/sg4	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (100) ::	getDriveName() = /dev/sg5	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (101) ::	getDriveName() = /dev/sg6	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (102) ::	getDriveName() = /dev/sg7	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (103) ::	getDriveName() = /dev/shm	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 3840980 KiB	getDriveTotalSpace() = 4058196 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (104) ::	getDriveName() = /dev/snapshot	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (105) ::	getDriveName() = /dev/snd	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (106) ::	getDriveName() = /dev/sr0	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (107) ::	getDriveName() = /dev/sr1	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (108) ::	getDriveName() = /dev/stderr	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 0 KiB	getDriveTotalSpace() = 0 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (109) ::	getDriveName() = /dev/stdin	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 0 KiB	getDriveTotalSpace() = 0 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (110) ::	getDriveName() = /dev/stdout	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 0 KiB	getDriveTotalSpace() = 0 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (111) ::	getDriveName() = /dev/toshiba_acpi	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (112) ::	getDriveName() = /dev/tpm0	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (113) ::	getDriveName() = /dev/tty	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (114) ::	getDriveName() = /dev/tty0	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (115) ::	getDriveName() = /dev/tty1	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (116) ::	getDriveName() = /dev/tty10	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (117) ::	getDriveName() = /dev/tty11	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (118) ::	getDriveName() = /dev/tty12	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (119) ::	getDriveName() = /dev/tty13	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (120) ::	getDriveName() = /dev/tty14	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (121) ::	getDriveName() = /dev/tty15	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (122) ::	getDriveName() = /dev/tty16	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (123) ::	getDriveName() = /dev/tty17	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (124) ::	getDriveName() = /dev/tty18	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (125) ::	getDriveName() = /dev/tty19	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (126) ::	getDriveName() = /dev/tty2	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (127) ::	getDriveName() = /dev/tty20	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (128) ::	getDriveName() = /dev/tty21	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (129) ::	getDriveName() = /dev/tty22	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (130) ::	getDriveName() = /dev/tty23	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (131) ::	getDriveName() = /dev/tty24	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (132) ::	getDriveName() = /dev/tty25	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (133) ::	getDriveName() = /dev/tty26	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (134) ::	getDriveName() = /dev/tty27	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (135) ::	getDriveName() = /dev/tty28	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (136) ::	getDriveName() = /dev/tty29	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (137) ::	getDriveName() = /dev/tty3	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (138) ::	getDriveName() = /dev/tty30	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (139) ::	getDriveName() = /dev/tty31	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (140) ::	getDriveName() = /dev/tty32	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (141) ::	getDriveName() = /dev/tty33	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (142) ::	getDriveName() = /dev/tty34	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (143) ::	getDriveName() = /dev/tty35	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (144) ::	getDriveName() = /dev/tty36	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (145) ::	getDriveName() = /dev/tty37	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (146) ::	getDriveName() = /dev/tty38	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (147) ::	getDriveName() = /dev/tty39	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (148) ::	getDriveName() = /dev/tty4	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (149) ::	getDriveName() = /dev/tty40	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (150) ::	getDriveName() = /dev/tty41	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (151) ::	getDriveName() = /dev/tty42	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (152) ::	getDriveName() = /dev/tty43	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (153) ::	getDriveName() = /dev/tty44	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (154) ::	getDriveName() = /dev/tty45	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (155) ::	getDriveName() = /dev/tty46	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (156) ::	getDriveName() = /dev/tty47	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (157) ::	getDriveName() = /dev/tty48	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (158) ::	getDriveName() = /dev/tty49	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (159) ::	getDriveName() = /dev/tty5	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (160) ::	getDriveName() = /dev/tty50	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (161) ::	getDriveName() = /dev/tty51	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (162) ::	getDriveName() = /dev/tty52	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (163) ::	getDriveName() = /dev/tty53	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (164) ::	getDriveName() = /dev/tty54	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (165) ::	getDriveName() = /dev/tty55	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (166) ::	getDriveName() = /dev/tty56	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (167) ::	getDriveName() = /dev/tty57	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (168) ::	getDriveName() = /dev/tty58	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (169) ::	getDriveName() = /dev/tty59	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (170) ::	getDriveName() = /dev/tty6	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (171) ::	getDriveName() = /dev/tty60	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (172) ::	getDriveName() = /dev/tty61	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (173) ::	getDriveName() = /dev/tty62	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (174) ::	getDriveName() = /dev/tty63	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (175) ::	getDriveName() = /dev/tty7	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (176) ::	getDriveName() = /dev/tty8	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (177) ::	getDriveName() = /dev/tty9	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (178) ::	getDriveName() = /dev/ttyprintk	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (179) ::	getDriveName() = /dev/ttyS0	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (180) ::	getDriveName() = /dev/ttyS1	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (181) ::	getDriveName() = /dev/ttyS10	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (182) ::	getDriveName() = /dev/ttyS11	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (183) ::	getDriveName() = /dev/ttyS12	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (184) ::	getDriveName() = /dev/ttyS13	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (185) ::	getDriveName() = /dev/ttyS14	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (186) ::	getDriveName() = /dev/ttyS15	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (187) ::	getDriveName() = /dev/ttyS16	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (188) ::	getDriveName() = /dev/ttyS17	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (189) ::	getDriveName() = /dev/ttyS18	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (190) ::	getDriveName() = /dev/ttyS19	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (191) ::	getDriveName() = /dev/ttyS2	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (192) ::	getDriveName() = /dev/ttyS20	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (193) ::	getDriveName() = /dev/ttyS21	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (194) ::	getDriveName() = /dev/ttyS22	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (195) ::	getDriveName() = /dev/ttyS23	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (196) ::	getDriveName() = /dev/ttyS24	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (197) ::	getDriveName() = /dev/ttyS25	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (198) ::	getDriveName() = /dev/ttyS26	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (199) ::	getDriveName() = /dev/ttyS27	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (200) ::	getDriveName() = /dev/ttyS28	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (201) ::	getDriveName() = /dev/ttyS29	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (202) ::	getDriveName() = /dev/ttyS3	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (203) ::	getDriveName() = /dev/ttyS30	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (204) ::	getDriveName() = /dev/ttyS31	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (205) ::	getDriveName() = /dev/ttyS4	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (206) ::	getDriveName() = /dev/ttyS5	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (207) ::	getDriveName() = /dev/ttyS6	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (208) ::	getDriveName() = /dev/ttyS7	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (209) ::	getDriveName() = /dev/ttyS8	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (210) ::	getDriveName() = /dev/ttyS9	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (211) ::	getDriveName() = /dev/uhid	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (212) ::	getDriveName() = /dev/uinput	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (213) ::	getDriveName() = /dev/urandom	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (214) ::	getDriveName() = /dev/userio	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (215) ::	getDriveName() = /dev/v4l	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (216) ::	getDriveName() = /dev/vboxdrv	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (217) ::	getDriveName() = /dev/vboxdrvu	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (218) ::	getDriveName() = /dev/vboxnetctl	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (219) ::	getDriveName() = /dev/vboxusb	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (220) ::	getDriveName() = /dev/vcs	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (221) ::	getDriveName() = /dev/vcs1	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (222) ::	getDriveName() = /dev/vcs2	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (223) ::	getDriveName() = /dev/vcs3	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (224) ::	getDriveName() = /dev/vcs4	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (225) ::	getDriveName() = /dev/vcs5	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (226) ::	getDriveName() = /dev/vcs6	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (227) ::	getDriveName() = /dev/vcsa	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (228) ::	getDriveName() = /dev/vcsa1	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (229) ::	getDriveName() = /dev/vcsa2	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (230) ::	getDriveName() = /dev/vcsa3	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (231) ::	getDriveName() = /dev/vcsa4	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (232) ::	getDriveName() = /dev/vcsa5	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (233) ::	getDriveName() = /dev/vcsa6	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (234) ::	getDriveName() = /dev/vfio	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (235) ::	getDriveName() = /dev/vga_arbiter	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (236) ::	getDriveName() = /dev/vhci	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (237) ::	getDriveName() = /dev/vhost-net	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (238) ::	getDriveName() = /dev/vhost-vsock	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (239) ::	getDriveName() = /dev/video0	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (240) ::	getDriveName() = /dev/zero	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 4027932 KiB	getDriveTotalSpace() = 4027932 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (241) ::	getDriveName() = /media/clay	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 9248876 KiB	getDriveTotalSpace() = 106473176 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (242) ::	getDriveName() = /media/weby	getDriveType() = ELDT_UNKNOWN	getDriveAvailSpace() = 9248876 KiB	getDriveTotalSpace() = 106473176 KiB	getDriveOptimalBlockSize() = 4096 KiB
+
+ ExeName = 
+ ExePath = .
+
+ P = .
+
+ existDirectory(C:/Windows) = false
+ existDirectory(C:/Windows/System32) = false
+ existDirectory(C:/Windows/System32/cmd.exe) = false
+ existDirectory(/usr) = true
+ existDirectory(/usr/bin) = true
+ existDirectory(/bin/bash) = false
+
+ existFile(C:/Windows) = false
+ existFile(C:/Windows/System32) = false
+ existFile(C:/Windows/System32/cmd.exe) = false
+ existFile(/usr) = false
+ existFile(/usr/bin) = false
+ existFile(/bin/bash) = true
+
+ A = ./Posix_Test/A/A1/A2/A3
+ B = ./Posix_Test/B/B1/B2.txt
+ C = ./Posix_Test/C/C1
+
+ existDirectory(A) = true
+ existDirectory(B) = true
+ existDirectory(C) = true
+
+ removeDirectory(A) = true
+ removeDirectory(B) = true
+ removeDirectory(C) = true
+
+ existDirectory(A) = false
+ existDirectory(B) = false
+ existDirectory(C) = false
+
+ createDirectory(A) = true
+ createDirectory(B) = true
+ createDirectory(C) = true
+
+ existDirectory(A) = true
+ existDirectory(B) = true
+ existDirectory(C) = true
+
+ createDirectory(A) = false
+ createDirectory(B) = false
+ createDirectory(C) = false
+
+ existDirectory(A) = true
+ existDirectory(B) = true
+ existDirectory(C) = true
+
+ removeDirectory(A) = true
+ removeDirectory(B) = true
+ removeDirectory(C) = true
+
+ existDirectory(A) = false
+ existDirectory(B) = false
+ existDirectory(C) = false
+
+ createDirectory(A) = true
+ createDirectory(B) = true
+ createDirectory(C) = true
+
+ existDirectory(A) = true
+ existDirectory(B) = true
+ existDirectory(C) = true
+
+ D = ./copy/A/A1/A2/A3
+ E = ./copy/B/B1/B2.txt
+ F = ./copy/C/C1
+
+ existDirectory(D) = false
+ existDirectory(E) = false
+ existDirectory(F) = false
+
+ removeDirectory(D) = false
+ removeDirectory(E) = false
+ removeDirectory(F) = false
+
+ existDirectory(D) = false
+ existDirectory(E) = false
+ existDirectory(F) = false
+
+ copyDirectory(A,D) = No such file or directory
+false
+ copyDirectory(B,E) = No such file or directory
+false
+ copyDirectory(C,F) = No such file or directory
+false
+
+ existDirectory(D) = false
+ existDirectory(E) = false
+ existDirectory(F) = false
+
+ removeDirectory(D) = false
+ removeDirectory(E) = false
+ removeDirectory(F) = false
+
+ existDirectory(D) = false
+ existDirectory(E) = false
+ existDirectory(F) = false
+
+ copyDirectory(A,D) = No such file or directory
+false
+ copyDirectory(B,E) = No such file or directory
+false
+ copyDirectory(C,F) = No such file or directory
+false
+
+ existDirectory(D) = false
+ existDirectory(E) = false
+ existDirectory(F) = false
+

@@ -1,0 +1,124 @@
+Defined Preprocessor Switches for your System::
+
+ _IRR_USE_SYSTEM_FOR_FILE_OPERATIONS_
+ _IRR_WINDOWS_API_
+
+ getDriveCount() = 10
+ (0) ::	getDriveName() = a:/	getDriveType() = ELDT_REMOVABLE	getDriveAvailSpace() = 0 KiB	getDriveTotalSpace() = 0 KiB	getDriveOptimalBlockSize() = 0 KiB
+ (1) ::	getDriveName() = c:/	getDriveType() = ELDT_FIXED	getDriveAvailSpace() = 610689024 KiB	getDriveTotalSpace() = 3919572992 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (2) ::	getDriveName() = d:/	getDriveType() = ELDT_FIXED	getDriveAvailSpace() = 73924608 KiB	getDriveTotalSpace() = 104853504 KiB	getDriveOptimalBlockSize() = 4096 KiB
+ (3) ::	getDriveName() = e:/	getDriveType() = ELDT_CDROM	getDriveAvailSpace() = 0 KiB	getDriveTotalSpace() = 0 KiB	getDriveOptimalBlockSize() = 0 KiB
+ (4) ::	getDriveName() = f:/	getDriveType() = ELDT_CDROM	getDriveAvailSpace() = 0 KiB	getDriveTotalSpace() = 0 KiB	getDriveOptimalBlockSize() = 0 KiB
+ (5) ::	getDriveName() = g:/	getDriveType() = ELDT_CDROM	getDriveAvailSpace() = 0 KiB	getDriveTotalSpace() = 0 KiB	getDriveOptimalBlockSize() = 0 KiB
+ (6) ::	getDriveName() = h:/	getDriveType() = ELDT_CDROM	getDriveAvailSpace() = 0 KiB	getDriveTotalSpace() = 0 KiB	getDriveOptimalBlockSize() = 0 KiB
+ (7) ::	getDriveName() = i:/	getDriveType() = ELDT_CDROM	getDriveAvailSpace() = 0 KiB	getDriveTotalSpace() = 0 KiB	getDriveOptimalBlockSize() = 0 KiB
+ (8) ::	getDriveName() = j:/	getDriveType() = ELDT_CDROM	getDriveAvailSpace() = 0 KiB	getDriveTotalSpace() = 0 KiB	getDriveOptimalBlockSize() = 0 KiB
+ (9) ::	getDriveName() = o:/	getDriveType() = ELDT_FIXED	getDriveAvailSpace() = 4187738112 KiB	getDriveTotalSpace() = 4099932160 KiB	getDriveOptimalBlockSize() = 4096 KiB
+
+ ExeName = C:/Users/firestarter/Desktop/dev/27.FileSystem/fs.exe
+ ExePath = C:/Users/firestarter/Desktop/dev/27.FileSystem
+
+ P = C:/Users/firestarter/Desktop/dev/27.FileSystem
+
+ existDirectory(C:/Windows) = true
+ existDirectory(C:/Windows/System32) = true
+ existDirectory(C:/Windows/System32/cmd.exe) = false
+ existDirectory(/usr) = false
+ existDirectory(/usr/bin) = false
+ existDirectory(/bin/bash) = false
+
+ existFile(C:/Windows) = false
+ existFile(C:/Windows/System32) = false
+ existFile(C:/Windows/System32/cmd.exe) = true
+ existFile(/usr) = false
+ existFile(/usr/bin) = false
+ existFile(/bin/bash) = false
+
+ A = C:/Users/firestarter/Desktop/dev/27.FileSystem/Windows_Test/A/A1/A2/A3
+ B = C:/Users/firestarter/Desktop/dev/27.FileSystem/Windows_Test/B/B1/B2.txt
+ C = C:/Users/firestarter/Desktop/dev/27.FileSystem/Windows_Test/C/C1
+
+ existDirectory(A) = false
+ existDirectory(B) = false
+ existDirectory(C) = false
+
+ removeDirectory(A) = false
+ removeDirectory(B) = false
+ removeDirectory(C) = false
+
+ existDirectory(A) = false
+ existDirectory(B) = false
+ existDirectory(C) = false
+
+ createDirectory(A) = true
+ createDirectory(B) = true
+ createDirectory(C) = true
+
+ existDirectory(A) = true
+ existDirectory(B) = true
+ existDirectory(C) = true
+
+ createDirectory(A) = false
+ createDirectory(B) = false
+ createDirectory(C) = false
+
+ existDirectory(A) = true
+ existDirectory(B) = true
+ existDirectory(C) = true
+
+ removeDirectory(A) = true
+ removeDirectory(B) = true
+ removeDirectory(C) = true
+
+ existDirectory(A) = false
+ existDirectory(B) = false
+ existDirectory(C) = false
+
+ createDirectory(A) = true
+ createDirectory(B) = true
+ createDirectory(C) = true
+
+ existDirectory(A) = true
+ existDirectory(B) = true
+ existDirectory(C) = true
+
+ D = C:/Users/firestarter/Desktop/dev/27.FileSystem/copy/A/A1/A2/A3
+ E = C:/Users/firestarter/Desktop/dev/27.FileSystem/copy/B/B1/B2.txt
+ F = C:/Users/firestarter/Desktop/dev/27.FileSystem/copy/C/C1
+
+ existDirectory(D) = false
+ existDirectory(E) = false
+ existDirectory(F) = false
+
+ removeDirectory(D) = false
+ removeDirectory(E) = false
+ removeDirectory(F) = false
+
+ existDirectory(D) = false
+ existDirectory(E) = false
+ existDirectory(F) = false
+
+ copyDirectory(A,D) = false
+ copyDirectory(B,E) = false
+ copyDirectory(C,F) = false
+
+ existDirectory(D) = false
+ existDirectory(E) = false
+ existDirectory(F) = false
+
+ removeDirectory(D) = false
+ removeDirectory(E) = false
+ removeDirectory(F) = false
+
+ existDirectory(D) = false
+ existDirectory(E) = false
+ existDirectory(F) = false
+
+ copyDirectory(A,D) = false
+ copyDirectory(B,E) = false
+ copyDirectory(C,F) = false
+
+ existDirectory(D) = false
+ existDirectory(E) = false
+ existDirectory(F) = false
+
