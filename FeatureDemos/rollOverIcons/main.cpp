@@ -87,10 +87,7 @@ int main()
 	//	node->setMaterialTexture( 0, driver->getTexture("../../media/sydney.bmp") );
 //	}
 
-
 	smgr->addCameraSceneNode(0, vector3df(0,10,-10), vector3df(0,5,0));
-
-
 
    CNrp2DPictureFlow *pf = new CNrp2DPictureFlow( device , guienv,
                                                  guienv->getRootGUIElement(), core::recti( 0, 0, 400, 400 ), core::recti( 0, 0, 100, 100 ),-1 );
@@ -103,23 +100,32 @@ stringw stexture;
 
 
    for( int k=0; k < ammount; k++ ){
-   //   pf->addItem( driver->getTexture( "stones.jpg" ), L"" );
-   stexture = "picture";
-stexture += k;
-stexture += ".jpg";
+		//   pf->addItem( driver->getTexture( "stones.jpg" ), L"" );
+		   stexture = "picture";
+		stexture += k;
+		stexture += ".jpg";
 
             pf->addItem( driver->getTexture( stexture ), L"" );
 
 
    }
 
-
 int delay = 0;
 int direction =0;
 int icount=0;
 
-	io::IFileArchive* archive;
-	archive->addFileArchive( "./pics.zip");
+
+//	CurrentArchiveList.clear();
+//	IFileSystem *fs = Device->getFileSystem();
+//	for ( i = 0; i != fs->getFileArchiveCount(); ++i )
+//	{
+//		CurrentArchiveList.push_back ( fs->getFileArchive(i)->getFileList()->getPath() );
+//	}
+
+	io::path* testpath;
+//	io::IFileArchive* archive;
+	device->getFileSystem()->addFileArchive( "./pics.zip");
+	//device->getFileSystem()->getWorkingDirectory();
 	//		io::IFileSystem* archive ;
 			//io::IFileArchive* archive ;
 //			archive->addFolderFileArchive("media");
@@ -134,7 +140,7 @@ int icount=0;
             IFileList* files = (IFileList*)archive->getFileList();
             for (int x = 0; x < files->getFileCount(); x++)
             {
-			//std::cout << files->getFileName(x).c_str();
+			std::cout << files->getFileName(x).c_str();
 			}
 
 

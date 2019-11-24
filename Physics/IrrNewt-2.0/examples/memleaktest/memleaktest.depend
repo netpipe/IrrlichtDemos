@@ -1,0 +1,204 @@
+# depslib dependency file v1.0
+1210970860 source:c:\irrnewt_sdk_0_4\examples\memleaktest\memleaktest_main.cpp
+	"../../include/irrnewt.hpp"
+	"irrlicht.h"
+	<string>
+	<iostream>
+
+1181647684 c:\irrnewt_sdk_0_4\include\irrnewt.hpp
+	<irrlicht.h>
+	<newton.h>
+	"dll_exports.hpp"
+	"hidden.hpp"
+	"world.hpp"
+	"intersection_point.hpp"
+	"tree_body.hpp"
+	"collision.hpp"
+	"irrtonewt.hpp"
+	"material.hpp"
+	"irrnewt_base.hpp"
+	"material_pair.hpp"
+	"material_pair_and_contact.hpp"
+	"body_controller.hpp"
+	"vehicle_simple.hpp"
+	"vehicle_tire.hpp"
+	"pos_rot.hpp"
+	"collision_manager.hpp"
+	"structures.hpp"
+	"ragdoll.hpp"
+	"utils.hpp"
+	"vehicle_car.hpp"
+	"camera_fps.hpp"
+	"joint.hpp"
+	"joint_universal.hpp"
+	"joint_upvector.hpp"
+	"joint_hinge.hpp"
+	"joint_corkscrew.hpp"
+	"joint_slider.hpp"
+	"joint_ball.hpp"
+	"joint_custom.hpp"
+	"joint_custom_gear.hpp"
+
+1172169340 c:\irrnewt_sdk_0_4\include\dll_exports.hpp
+
+1181731210 c:\irrnewt_sdk_0_4\include\hidden.hpp
+	<irrlicht.h>
+	<newton.h>
+	"irrnewt_base.hpp"
+	"dll_exports.hpp"
+
+1180351194 c:\irrnewt_sdk_0_4\include\irrnewt_base.hpp
+	"dll_exports.hpp"
+	"structures.hpp"
+
+1181729830 c:\irrnewt_sdk_0_4\include\structures.hpp
+	<irrlicht.h>
+	<newton.h>
+	"pos_rot.hpp"
+	"irrtonewt.hpp"
+
+1170609618 c:\irrnewt_sdk_0_4\include\pos_rot.hpp
+	<irrlicht.h>
+	"dll_exports.hpp"
+
+1210936723 c:\irrnewt_sdk_0_4\include\irrtonewt.hpp
+	<irrlicht.h>
+
+1181647684 c:\irrnewt_sdk_0_4\include\world.hpp
+	<irrlicht.h>
+	<newton.h>
+	"dll_exports.hpp"
+	"irrtonewt.hpp"
+	"irrnewt_base.hpp"
+	"structures.hpp"
+	"utils.hpp"
+	"collision_manager.hpp"
+	"collision.hpp"
+
+1181742210 c:\irrnewt_sdk_0_4\include\utils.hpp
+	<irrlicht.h>
+	<newton.h>
+	<math.h>
+	"irrnewt_base.hpp"
+	"dll_exports.hpp"
+	"structures.hpp"
+
+1178460600 c:\irrnewt_sdk_0_4\include\collision_manager.hpp
+	<newton.h>
+	"dll_exports.hpp"
+	<irrlicht.h>
+	"irrnewt_base.hpp"
+	"intersection_point.hpp"
+	"stdio.h"
+
+1170433778 c:\irrnewt_sdk_0_4\include\intersection_point.hpp
+	"dll_exports.hpp"
+
+1181741946 c:\irrnewt_sdk_0_4\include\collision.hpp
+	<newton.h>
+	"dll_exports.hpp"
+	<irrlicht.h>
+	"irrnewt_base.hpp"
+	"intersection_point.hpp"
+	"stdio.h"
+
+1181138786 c:\irrnewt_sdk_0_4\include\tree_body.hpp
+	"body.hpp"
+
+1181741988 c:\irrnewt_sdk_0_4\include\body.hpp
+	<stddef.h>
+	<irrlicht.h>
+	<newton.h>
+	"irrtonewt.hpp"
+	"irrnewt_base.hpp"
+	"collision.hpp"
+
+1176915234 c:\irrnewt_sdk_0_4\include\material.hpp
+	"irrnewt_base.hpp"
+	<stddef.h>
+	<irrlicht.h>
+	<newton.h>
+
+1176916674 c:\irrnewt_sdk_0_4\include\material_pair.hpp
+	<stddef.h>
+	<stdio.h>
+	<irrlicht.h>
+	<newton.h>
+	"dll_exports.hpp"
+
+1176917028 c:\irrnewt_sdk_0_4\include\material_pair_and_contact.hpp
+	"contact.hpp"
+	"material_pair.hpp"
+	<newton.h>
+
+1176918176 c:\irrnewt_sdk_0_4\include\contact.hpp
+	"stdio.h"
+	<newton.h>
+	"dll_exports.hpp"
+
+1181733202 c:\irrnewt_sdk_0_4\include\body_controller.hpp
+	"body.hpp"
+
+1181308256 c:\irrnewt_sdk_0_4\include\vehicle_simple.hpp
+	"dll_exports.hpp"
+	"body.hpp"
+	"pos_rot.hpp"
+	"joint.hpp"
+	"structures.hpp"
+
+1170508624 c:\irrnewt_sdk_0_4\include\joint.hpp
+	<irrlicht.h>
+	<newton.h>
+	"dll_exports.hpp"
+	"material_collision_callback.hpp"
+	"irrnewt_base.hpp"
+
+1176916762 c:\irrnewt_sdk_0_4\include\material_collision_callback.hpp
+	<stddef.h>
+	"dll_exports.hpp"
+
+1181308390 c:\irrnewt_sdk_0_4\include\vehicle_tire.hpp
+	"dll_exports.hpp"
+	"vehicle_simple.hpp"
+	"world.hpp"
+
+1181733454 c:\irrnewt_sdk_0_4\include\ragdoll.hpp
+	"irrnewt_base.hpp"
+	"dll_exports.hpp"
+	"body.hpp"
+	<irrlicht.h>
+	<newton.h>
+
+1181308830 c:\irrnewt_sdk_0_4\include\vehicle_car.hpp
+	"dll_exports.hpp"
+	"vehicle_simple.hpp"
+	"vehicle_tire.hpp"
+	"pos_rot.hpp"
+	"joint.hpp"
+	"structures.hpp"
+
+1210423310 c:\irrnewt_sdk_0_4\include\camera_fps.hpp
+	"dll_exports.hpp"
+	"irrnewt_base.hpp"
+	"body_controller.hpp"
+	"stdio.h"
+
+1170510274 c:\irrnewt_sdk_0_4\include\joint_universal.hpp
+	"joint.hpp"
+
+1170510296 c:\irrnewt_sdk_0_4\include\joint_upvector.hpp
+
+1170609618 c:\irrnewt_sdk_0_4\include\joint_hinge.hpp
+
+1170508624 c:\irrnewt_sdk_0_4\include\joint_corkscrew.hpp
+
+1170508624 c:\irrnewt_sdk_0_4\include\joint_slider.hpp
+
+1170508624 c:\irrnewt_sdk_0_4\include\joint_ball.hpp
+
+1181735380 c:\irrnewt_sdk_0_4\include\joint_custom.hpp
+	"joint.hpp"
+
+1181735380 c:\irrnewt_sdk_0_4\include\joint_custom_gear.hpp
+	"joint_custom.hpp"
+

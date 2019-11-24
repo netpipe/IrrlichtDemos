@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="IrrNewt.cbp" active="1" />
+		<Project filename="..\examples\projects\ragdoll.cbp" />
+		<Project filename="..\examples\projects\terrain.cbp" />
+		<Project filename="..\examples\projects\getcollisionpoints.cbp" />
+		<Project filename="..\examples\projects\joints.cbp" />
+		<Project filename="..\examples\projects\closest point.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

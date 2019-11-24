@@ -1,0 +1,30 @@
+# Project: car test
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = car.o $(RES)
+LINKOBJ  = car.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib" ../../bin/win32gcc/libIrrNewt.a ../../../../Games/Battle/bin/libIrrlicht.a "../../../../Program Files/NewtonSDK/sdk/dll/Newton.lib"  
+INCS =  -I"C:/Dev-Cpp/include"  -I"C:/Games/Battle/libraries/irr_rev_2531/trunk/include"  -I"/"  -I"C:/Program Files/NewtonSDK/sdk" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include"  -I"C:/Games/Battle/libraries/irr_rev_2531/trunk/include"  -I"/"  -I"C:/Program Files/NewtonSDK/sdk" 
+BIN  = "car test.exe"
+CXXFLAGS = $(CXXINCS)   -fexpensive-optimizations
+CFLAGS = $(INCS)   -fexpensive-optimizations
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before "car test.exe" all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "car test.exe" $(LIBS)
+
+car.o: car.cpp
+	$(CPP) -c car.cpp -o car.o $(CXXFLAGS)

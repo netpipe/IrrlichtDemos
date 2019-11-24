@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="IrrNewt" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="IrrNewt" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objs" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add directory="C:/Gamedev/IrrNewt/source/" />
+					<Add directory="C:/Gamedev/Irrlicht SVN/2776/include" />
+					<Add directory="C:/Program Files/NewtonSDK/sdk" />
+				</Compiler>
+				<Linker>
+					<Add library="C:/Gamedev/Irrlicht SVN/2776/bin/Win32-gcc/libIrrlicht.a" />
+					<Add library="C:/Program Files/NewtonSDK/sdk/dll/Newton.lib" />
+				</Linker>
+			</Target>
+			<Target title="1.7">
+				<Option output="IrrNewt" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objs" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Option projectIncludeDirsRelation="1" />
+				<Compiler>
+					<Add directory="C:/Gamedev/IrrNewt2/include" />
+					<Add directory="C:/irrlicht-1.7.1/include" />
+					<Add directory="C:/NewtonWin-2.19/sdk" />
+				</Compiler>
+				<Linker>
+					<Add library="C:/irrlicht-1.7.1/lib/Win32-gcc/libIrrlicht.a" />
+					<Add library="C:/NewtonWin-2.19/sdk/x32/dll_vs9/newton.lib" />
+				</Linker>
+			</Target>
+			<Target title="Linux 1.7">
+				<Option output="IrrNewt" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objs" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Option projectIncludeDirsRelation="1" />
+				<Compiler>
+					<Add option="-fPIC" />
+					<Add option="-fpermissive" />
+					<Add directory="include" />
+					<Add directory="/home/Dev/libs/physics/newtonSDK/sdk" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+				</Compiler>
+				<Linker>
+					<Add directory="../newtonSDK/sdk" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+				</Linker>
+			</Target>
+			<Target title="Linux-Static">
+				<Option output="IrrNewt" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="objs" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Option projectIncludeDirsRelation="1" />
+				<Compiler>
+					<Add option="-fpermissive" />
+					<Add directory="include" />
+					<Add directory="/home/Dev/libs/physics/newtonSDK/sdk" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+				</Compiler>
+				<Linker>
+					<Add library="Irrlicht" />
+					<Add library="Newton" />
+					<Add directory="/home/Dev/libs/physics/newtonSDK/sdk" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-DIRRNEWT_DLL_EXPORTS" />
+		</Compiler>
+		<Unit filename="IrrNewt_src/IrrBox/IrrBox.cpp" />
+		<Unit filename="IrrNewt_src/body.cpp" />
+		<Unit filename="IrrNewt_src/body_controller.cpp" />
+		<Unit filename="IrrNewt_src/camera_fps.cpp" />
+		<Unit filename="IrrNewt_src/collision.cpp" />
+		<Unit filename="IrrNewt_src/collision_manager.cpp" />
+		<Unit filename="IrrNewt_src/hidden.cpp" />
+		<Unit filename="IrrNewt_src/joint.cpp" />
+		<Unit filename="IrrNewt_src/material.cpp" />
+		<Unit filename="IrrNewt_src/material_coolision_callback.cpp" />
+		<Unit filename="IrrNewt_src/material_pair.cpp" />
+		<Unit filename="IrrNewt_src/material_pair_and_contact.cpp" />
+		<Unit filename="IrrNewt_src/physics.cpp" />
+		<Unit filename="IrrNewt_src/ragdoll.cpp" />
+		<Unit filename="IrrNewt_src/rand.cpp" />
+		<Unit filename="IrrNewt_src/rand.hpp" />
+		<Unit filename="IrrNewt_src/tree_body.cpp" />
+		<Unit filename="IrrNewt_src/utils.cpp" />
+		<Unit filename="IrrNewt_src/vehicle_car.cpp" />
+		<Unit filename="IrrNewt_src/vehicle_simple.cpp" />
+		<Unit filename="IrrNewt_src/vehicle_tire.cpp" />
+		<Unit filename="IrrNewt_src/world.cpp" />
+		<Unit filename="include/IrrBox.h" />
+		<Unit filename="include/IrrNewt.hpp" />
+		<Unit filename="include/body.hpp" />
+		<Unit filename="include/body_controller.hpp" />
+		<Unit filename="include/camera_fps.hpp" />
+		<Unit filename="include/collision_manager.hpp" />
+		<Unit filename="include/contact.hpp" />
+		<Unit filename="include/dll_exports.hpp" />
+		<Unit filename="include/hidden.hpp" />
+		<Unit filename="include/intersection_point.hpp" />
+		<Unit filename="include/irrnewt_base.hpp" />
+		<Unit filename="include/irrtonewt.hpp" />
+		<Unit filename="include/joint.hpp" />
+		<Unit filename="include/joint_ball.hpp" />
+		<Unit filename="include/joint_corkscrew.hpp" />
+		<Unit filename="include/joint_hinge.hpp" />
+		<Unit filename="include/joint_slider.hpp" />
+		<Unit filename="include/joint_universal.hpp" />
+		<Unit filename="include/joint_upvector.hpp" />
+		<Unit filename="include/material.hpp" />
+		<Unit filename="include/material_collision_callback.hpp" />
+		<Unit filename="include/material_pair.hpp" />
+		<Unit filename="include/material_pair_and_contact.hpp" />
+		<Unit filename="include/physics_math_functions.hpp" />
+		<Unit filename="include/pos_rot.hpp" />
+		<Unit filename="include/ragdoll.hpp" />
+		<Unit filename="include/structures.hpp" />
+		<Unit filename="include/tree_body.hpp" />
+		<Unit filename="include/utils.hpp" />
+		<Unit filename="include/vehicle_car.hpp" />
+		<Unit filename="include/vehicle_simple.hpp" />
+		<Unit filename="include/vehicle_tire.hpp" />
+		<Unit filename="include/world.hpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

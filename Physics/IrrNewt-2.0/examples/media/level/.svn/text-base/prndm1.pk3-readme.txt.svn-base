@@ -1,0 +1,59 @@
+WARNING: I rease from the .pk3 file the file prndm1.aas, prndm1.arena and prndm1.jpg
+You can find the original level with those files here:
+http://planetquake.gamespy.com/View.php?view=Quake3.Detail&id=2172
+
+-----------------------------------------------------------------------
+------------------------------------------------------------------------
+
+Title                   : Coliseum
+
+PK3 Name                : prndm1.pk3
+Date			: March 30, 2005
+Author                  : Peronthious
+Email Address           : peronthious@yahoo.com
+
+Description             : A small q3 map
+
+Deathmatch		: 1v1, Tournament
+Bots			: Route Included (Xaero)
+
+Installation		: Unzip to your baseq3 directory.
+________________________________________________________________________
+
+MAP Information
+
+BSP Name                : maps/prndm1.bsp
+AAS Name		: maps/prndm1.aas
+Arena Name		: scripts/prndm1.arena
+Levelshot		: levelshots/prndm1.jpg
+Textures		: textures/prndm1
+Extra LIGHT		: Yes, with patch shadows enabled.
+Full VIS 		: Yes
+________________________________________________________________________
+
+Construction
+
+Base			: New
+New Textures		: Yes, except for ceiling, walls, and bouncepad (id original)
+New Shaders		: No shaders
+Editor used		: GtkRadiant 1.1.1
+Qutilities		: Q3build
+Other utilities		: Pakscape, Arena Master
+Known Bugs              : none
+________________________________________________________________________
+
+Credits
+
+Thanks to XXFalkor for passing the drawn map (in other word I drew the map, showed it to him, and he said that it was ok)
+________________________________________________________________________
+
+Copyright / Permissions
+
+You MAY NOT use this level as a base to build additional levels.
+
+You MAY use the custom textures. 
+
+You MAY distribute this map (for free) over the Internet.
+
+You MAY NOT distribute this map in any other form without written permission
+from the author.
