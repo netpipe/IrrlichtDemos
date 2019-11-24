@@ -6,6 +6,7 @@
 #include <boost/bind.hpp>
 
 #include <fstream>
+#include <iostream>
 
 //#define test
 #ifdef test
