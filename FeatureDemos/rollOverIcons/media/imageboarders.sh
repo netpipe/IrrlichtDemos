@@ -8,7 +8,7 @@ convert -border 2x2 -bordercolor "#FF0000" old.jpg new.jpg
 
 #command to scale images to proper sizes to use in gallerys and to not display as non power of 2 or black
 mkdir converted
-#find *.jpg | while read i; do name=$(echo $i| cut -d "." -f 1); convert "$i" -geometry 256x256 -extent 256x256 converted/$name.png ; done  
+#find *.jpg | while read i; do name=$(echo $i| cut -d "." -f 1); convert "$i" -geometry 256x256 -extent 256x256 converted/$name.jpg ; done  
 #find *.png | while read i; do name=$(echo $i| cut -d "." -f 1); convert "$i" -geometry 256x256 -extent 256x256 converted/$name.png ; done  
 
 #mogrify -format jpg *.png
