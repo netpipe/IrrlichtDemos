@@ -46,10 +46,10 @@ void CNrp2DPictureFlow::UpdateImages_()
 
 
 
-   core::recti tmpRect( AbsoluteRect.getCenter().X - (scalem*pictureRect_.getWidth()/2),
-                   AbsoluteRect.getCenter().Y - (scalem*pictureRect_.getHeight()/2),
-                   AbsoluteRect.getCenter().X + (scalem*pictureRect_.getWidth()/2),
-                   AbsoluteRect.getCenter().Y + (scalem*pictureRect_.getHeight()/2) );
+   core::recti tmpRect( AbsoluteRect.getCenter().X - (scalem*pictureRect_.getWidth())/2,
+                   AbsoluteRect.getCenter().Y - (scalem*pictureRect_.getHeight())/2,
+                   AbsoluteRect.getCenter().X + (scalem*pictureRect_.getWidth())/2,
+                   AbsoluteRect.getCenter().Y + (scalem*pictureRect_.getHeight())/2) ;
 
    if( activeIndex_ < (int)images_.size() )
       images_[ activeIndex_ ]->rectangle = tmpRect;

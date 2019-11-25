@@ -191,6 +191,7 @@ stringw stexture;
     pf->setscale(1.7,1.7,1.7);
   //  pf->setscale(0.7,1.7,0.7);
   //  pf->setscale(0.7,1.7,0.7);
+  // pf->setscale(1,1.7,0.7);
 //    // make it so that files added last are searched first
 //    u32 count = fs->getFileArchiveCount();
 //    if (count > 1) {
