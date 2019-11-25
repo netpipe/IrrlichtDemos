@@ -1,0 +1,54 @@
+#include "Sound.hpp"
+
+#include <pthread.h>
+
+Sound *Sound::m_sound = NULL;
+Sound Sound::m_default_sound_buffer;
+
+
+
+int Sound::Create(void)
+{
+  //! Load music samples.
+  Output::Instance()->w("Loading samples.\n");
+
+	//!Sound init
+  adevice = agEngine::createDevice(true);
+
+  menuM = agEngine::SoundData::LoadAudio(std::string("media/Sounds/cell_menu.ogg"), false);
+  stage1M = agEngine::SoundData::LoadAudio(std::string("media/Sounds/cell_stage01.ogg"), false);
+  stage2M = agEngine::SoundData::LoadAudio(std::string("media/Sounds/cell_stage02.ogg"), false);
+  stage3M = agEngine::SoundData::LoadAudio(std::string("media/Sounds/cell_stage03.ogg"), false);
+  stage4M = agEngine::SoundData::LoadAudio(std::string("media/Sounds/cell_stage04.ogg"), false);
+  clearM = agEngine::SoundData::LoadAudio(std::string("media/Sounds/cell_cleared.ogg"), false);
+  deadM = agEngine::SoundData::LoadAudio(std::string("media/Sounds/cell_dead.ogg"), false);
+  footS = agEngine::SoundData::LoadAudio(std::string("media/Sounds/sound30m.ogg"), false);
+
+  musicSource = adevice->createASource(NULL);
+  channel1 = adevice->createASource(NULL);
+  channel2 = adevice->createASource(NULL);
+
+  musicSource->setVolume(0.3f);
+  musicSource->setAttenuation(0.0f);
+  musicSource->setLoop(true);
+  musicSource->setPosition(0.0f, 0.0f, 0.0f);
+  musicSource->setRelative(true);
+
+  channel1->setVolume(1.0f);
+  channel1->setLoop(false);
+  channel1->setRelative(true);
+
+  channel2->setVolume(1.0f);
+  channel2->setLoop(false);
+  channel2->setRelative(true);
+}
+
+void Sound::PlayBackgroundMusic(int music)
+{
+  switch(music)
+  {
+    case MUSIC_MENU:
+    {
+		musicSource->stop();
+		musicSource->attachSound(menuM);
+		musicSource->play();
