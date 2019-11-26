@@ -1,0 +1,412 @@
+irrb log 0.4
+
+[blender info]
+             OS: Linux 2.6.35-22-generic #35-Ubuntu SMP Sat Oct 16 20:45:36 UTC 2010
+        Version: 249
+    .blend File: /home/Dev/Agnostic-SF/PowerCell/FKEditor/binary/windmill stage.blend
+    .blend Root: /home/Dev/Agnostic-SF/PowerCell/FKEditor/binary
+ Python Version: 2.6.6 final
+
+[options]
+   Create Scene: True
+ Base Directory: /home/clayton/Desktop/1/
+Scene Directory: /home/clayton/Desktop/1/
+ Mesh Directory: /home/clayton/Desktop/1/mdl/
+Image Directory: /home/clayton/Desktop/1/tex/
+     meshOutDir: mdl
+      texOutDir: tex
+         Binary: False
+ Export Cameras: False
+  Export Lights: False
+ Export Physics: False
+Image Extension: Original
+  Selected Only: False
+   Irrlicht Ver: 1.6
+  iwalktest Env: 
+   imeshcvt Env: 
+  iwalktest Cmd: 
+
+[scene info]
+Scene Name:Scene
+Visible Layers: [1]
+
+[animation info]
+fpsbase: 1.0000
+    fps: 25
+ sFrame: 1
+ eFrame: 250
+
+[ipo info]
+IPO's: [[Ipo "ObIpo.002" (Object)]]
+Key's: []
+curve [IpoCurve "RotX"]
+curve [IpoCurve "RotY"]
+curve [IpoCurve "RotZ"]
+
+[action info]
+
+[object info]
+Object (0): Name=powercell.021, Type=Mesh, Layers=[1]
+Object (1): Name=powercell.020, Type=Mesh, Layers=[1]
+Object (2): Name=powercell.019, Type=Mesh, Layers=[1]
+Object (3): Name=powercell.018, Type=Mesh, Layers=[1]
+Object (4): Name=powercell.017, Type=Mesh, Layers=[1]
+Object (5): Name=powercell.016, Type=Mesh, Layers=[1]
+Object (6): Name=powercell.015, Type=Mesh, Layers=[1]
+Object (7): Name=Lamp.001, Type=Lamp, Layers=[2]
+Object (8): Name=elevator, Type=Mesh, Layers=[1]
+Object (9): Name=powercell.014, Type=Mesh, Layers=[1]
+Object (10): Name=powercell.013, Type=Mesh, Layers=[1]
+Object (11): Name=powercell.012, Type=Mesh, Layers=[1]
+Object (12): Name=powercell.011, Type=Mesh, Layers=[1]
+Object (13): Name=powercell.010, Type=Mesh, Layers=[1]
+Object (14): Name=powercell.009, Type=Mesh, Layers=[1]
+Object (15): Name=powercell.008, Type=Mesh, Layers=[1]
+Object (16): Name=powercell.007, Type=Mesh, Layers=[1]
+Object (17): Name=powercell.006, Type=Mesh, Layers=[1]
+Object (18): Name=powercell.005, Type=Mesh, Layers=[1]
+Object (19): Name=powercell.004, Type=Mesh, Layers=[1]
+Object (20): Name=powercell.003, Type=Mesh, Layers=[1]
+Object (21): Name=powercell.002, Type=Mesh, Layers=[1]
+Object (22): Name=powercell.001, Type=Mesh, Layers=[1]
+Object (23): Name=powercell, Type=Mesh, Layers=[1]
+Object (24): Name=Cube.006, Type=Mesh, Layers=[1]
+Object (25): Name=windmillbase, Type=Mesh, Layers=[1]
+Object (26): Name=windmillblade, Type=Mesh, Layers=[1]
+Object (27): Name=playerstart, Type=Mesh, Layers=[1]
+Object (28): Name=level, Type=Mesh, Layers=[1]
+Object (29): Name=Lamp, Type=Lamp, Layers=[1]
+Object (30): Name=Camera, Type=Camera, Layers=[1]
+
+[Mesh - ob:powercell.021, me:PCell.007]
+Restrict Display: False
+Restrict Render: False
+UV Layers (0): 
+Primary UV Layer: None
+Double Sided: True
+Mesh VertexColors: False
+Mesh Key: None
+Mesh ipo: None
+Modifiers: None
+Armatures: None
+rbflags:14000
+pflags: ['PROP']
+isSoftBody: False
+
+[Buffers]
+Count: 1
+   unassigned : DefaultMaterial
+
+[Mesh - ob:powercell.020, me:PCell.006]
+Restrict Display: False
+Restrict Render: False
+UV Layers (0): 
+Primary UV Layer: None
+Double Sided: True
+Mesh VertexColors: False
+Mesh Key: None
+Mesh ipo: None
+Modifiers: None
+Armatures: None
+rbflags:14000
+pflags: ['PROP']
+isSoftBody: False
+
+[Buffers]
+Count: 1
+   unassigned : DefaultMaterial
+
+[Mesh - ob:powercell.019, me:PCell.005]
+Restrict Display: False
+Restrict Render: False
+UV Layers (0): 
+Primary UV Layer: None
+Double Sided: True
+Mesh VertexColors: False
+Mesh Key: None
+Mesh ipo: None
+Modifiers: None
+Armatures: None
+rbflags:14000
+pflags: ['PROP']
+isSoftBody: False
+
+[Buffers]
+Count: 1
+   unassigned : DefaultMaterial
+
+[Mesh - ob:powercell.018, me:PCell.004]
+Restrict Display: False
+Restrict Render: False
+UV Layers (0): 
+Primary UV Layer: None
+Double Sided: True
+Mesh VertexColors: False
+Mesh Key: None
+Mesh ipo: None
+Modifiers: None
+Armatures: None
+rbflags:14000
+pflags: ['PROP']
+isSoftBody: False
+
+[Buffers]
+Count: 1
+   unassigned : DefaultMaterial
+
+[Mesh - ob:powercell.017, me:PCell.003]
+Restrict Display: False
+Restrict Render: False
+UV Layers (0): 
+Primary UV Layer: None
+Double Sided: True
+Mesh VertexColors: False
+Mesh Key: None
+Mesh ipo: None
+Modifiers: None
+Armatures: None
+rbflags:14000
+pflags: ['PROP']
+isSoftBody: False
+
+[Buffers]
+Count: 1
+   unassigned : DefaultMaterial
+
+[Mesh - ob:powercell.016, me:PCell.002]
+Restrict Display: False
+Restrict Render: False
+UV Layers (0): 
+Primary UV Layer: None
+Double Sided: True
+Mesh VertexColors: False
+Mesh Key: None
+Mesh ipo: None
+Modifiers: None
+Armatures: None
+rbflags:14000
+pflags: ['PROP']
+isSoftBody: False
+
+[Buffers]
+Count: 1
+   unassigned : DefaultMaterial
+
+[Mesh - ob:powercell.015, me:PCell.001]
+Restrict Display: False
+Restrict Render: False
+UV Layers (0): 
+Primary UV Layer: None
+Double Sided: True
+Mesh VertexColors: False
+Mesh Key: None
+Mesh ipo: None
+Modifiers: None
+Armatures: None
+rbflags:14000
+pflags: ['PROP']
+isSoftBody: False
+
+[Buffers]
+Count: 1
+   unassigned : DefaultMaterial
+
+[Mesh - ob:elevator, me:ele]
+Restrict Display: False
+Restrict Render: False
+UV Layers (1): UVTex
+Primary UV Layer: None
+Double Sided: True
+Mesh VertexColors: False
+Mesh Key: None
+Mesh ipo: None
+Modifiers: None
+Armatures: None
+rbflags:14000
+pflags: ['PROP']
+isSoftBody: False
+
+[Image]
+imageName: stone1.png
+org fullFileName: /home/Dev/Agnostic-SF/PowerCell/FKEditor/binary/1/tex/stone1.png
+fullFileName: /home/Dev/Agnostic-SF/PowerCell/FKEditor/binary/1/tex/stone1.png
+dirname: /home/Dev/Agnostic-SF/PowerCell/FKEditor/binary/1/tex
+fileName: stone1.png
+fileExt: 
+bImage.depth: 24
+bImage.source: 1-still
+bImage.packed: 1
+bImage.lib: None
+exists on disk: 0
+result0: tex/stone1.png
+result1: /home/clayton/Desktop/1/tex/stone1.png
+
+[Buffers]
+Count: 1
+   uvmat:stone1.png:00100 : UVMaterial
+
+[Mesh - ob:powercell.014, me:PCell]
+Restrict Display: False
+Restrict Render: False
+UV Layers (0): 
+Primary UV Layer: None
+Double Sided: True
+Mesh VertexColors: False
+Mesh Key: None
+Mesh ipo: None
+Modifiers: None
+Armatures: None
+rbflags:14000
+pflags: ['PROP']
+isSoftBody: False
+
+[Buffers]
+Count: 1
+   unassigned : DefaultMaterial
+
+[Mesh - ob:powercell.013, me:PCell]
+
+[Mesh - ob:powercell.012, me:PCell]
+
+[Mesh - ob:powercell.011, me:PCell]
+
+[Mesh - ob:powercell.010, me:PCell]
+
+[Mesh - ob:powercell.009, me:PCell]
+
+[Mesh - ob:powercell.008, me:PCell]
+
+[Mesh - ob:powercell.007, me:PCell]
+
+[Mesh - ob:powercell.006, me:PCell]
+
+[Mesh - ob:powercell.005, me:PCell]
+
+[Mesh - ob:powercell.004, me:PCell]
+
+[Mesh - ob:powercell.003, me:PCell]
+
+[Mesh - ob:powercell.002, me:PCell]
+
+[Mesh - ob:powercell.001, me:PCell]
+
+[Mesh - ob:powercell, me:PCell]
+
+[Mesh - ob:Cube.006, me:Cube.013]
+Restrict Display: False
+Restrict Render: False
+UV Layers (0): 
+Primary UV Layer: None
+Double Sided: True
+Mesh VertexColors: False
+Mesh Key: None
+Mesh ipo: None
+Modifiers: None
+Armatures: None
+rbflags:14000
+pflags: ['PROP']
+isSoftBody: False
+
+[Buffers]
+Count: 1
+   unassigned : DefaultMaterial
+
+[Mesh - ob:windmillbase, me:windbase]
+Restrict Display: False
+Restrict Render: False
+UV Layers (0): 
+Primary UV Layer: None
+Double Sided: True
+Mesh VertexColors: False
+Mesh Key: None
+Mesh ipo: None
+Modifiers: None
+Armatures: None
+rbflags:14000
+pflags: ['PROP']
+isSoftBody: False
+
+[Buffers]
+Count: 1
+   unassigned : DefaultMaterial
+
+[Mesh - ob:windmillblade, me:windblade]
+Restrict Display: False
+Restrict Render: False
+UV Layers (0): 
+Primary UV Layer: None
+Double Sided: True
+Mesh VertexColors: False
+Mesh Key: None
+Mesh ipo: [Ipo "ObIpo.002" (Object)]
+Modifiers: None
+Armatures: None
+rbflags:14000
+pflags: ['PROP']
+isSoftBody: False
+
+[Buffers]
+Count: 2
+   blender:Material.002:01 : BlenderMaterial
+   blender:Material.001:00 : BlenderMaterial
+
+[Mesh - ob:playerstart, me:Cube]
+Restrict Display: False
+Restrict Render: False
+UV Layers (0): 
+Primary UV Layer: None
+Double Sided: True
+Mesh VertexColors: False
+Mesh Key: None
+Mesh ipo: None
+Modifiers: None
+Armatures: None
+rbflags:14000
+pflags: ['PROP']
+isSoftBody: False
+
+[Buffers]
+Count: 1
+   unassigned : DefaultMaterial
+
+[Mesh - ob:level, me:Plane.001]
+Restrict Display: False
+Restrict Render: False
+UV Layers (2): UVTex, UVTex.001
+Primary UV Layer: None
+Double Sided: True
+Mesh VertexColors: True
+Mesh Key: None
+Mesh ipo: None
+Modifiers: None
+Armatures: None
+rbflags:14000
+pflags: ['PROP']
+isSoftBody: False
+
+[Image]
+imageName: lightmap.002
+org fullFileName: lightmap
+fullFileName: lightmap
+dirname: .
+fileName: lightmap.002
+fileExt: 
+bImage.depth: 32
+bImage.source: 1-still
+bImage.packed: 1
+bImage.lib: None
+exists on disk: 0
+result0: tex/lightmap.002
+result1: /home/clayton/Desktop/1/tex/lightmap.002
+
+[Buffers]
+Count: 1
+   uvmat:stone1.png:lightmap.002:00100 : UVMaterial
+
+[stats]
+Export Complete - 0.30 seconds - 19:41:37 11/29/10
+28 Object(s)
+14 Meshes
+0 Light(s)
+2 Image(s)
+2930/1974 Verts/Tris

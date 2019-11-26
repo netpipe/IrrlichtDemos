@@ -1,0 +1,9 @@
+      <animators>
+         <attributes>
+            <string name="Type" value="followSpline" />
+            <float name="Speed" value="1.000000" />
+            <float name="Tightness" value="0.500000" />
+            <vector3d name="Point1" value="0.000000, 0.000000, 0.000000" />
+            <vector3d name="Point2" value="10.000000, 5.000000, 10.000000" />
+         </attributes>
+      </animators>

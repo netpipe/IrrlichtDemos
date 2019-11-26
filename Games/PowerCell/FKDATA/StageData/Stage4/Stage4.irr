@@ -1,0 +1,560 @@
+<?xml version="1.0"?>
+<!-- Created 11/29/2010 19:41 by irrb v0.4 - "Irrlicht/Blender Exporter" -->
+<irr_scene>
+   <attributes>
+      <string name="Name" value="root"/>
+      <int name="Id" value="-1"/>
+      <vector3d name="Position" value="0.000000, 0.000000, 0.000000"/>
+      <vector3d name="Rotation" value="0.000000, 0.000000, 0.000000"/>
+      <vector3d name="Scale" value="1.000000, 1.000000, 1.000000"/>
+      <colorf name="AmbientLight" value="0.000000, 0.000000, 0.000000 1.000000"/>
+      <bool name="AutomaticCulling" value="true"/>
+      <bool name="DebugDataVisible" value="false"/>
+      <bool name="IsDebugObject" value="false"/>
+      <bool name="Visible" value="true"/>
+   </attributes>
+   <userData>
+      <attributes>
+         <string name="Exporter" value="irrb"/>
+         <string name="Exporter.Version" value="0.4"/>
+         <float name="Gravity" value="-9.800000"/>
+         <int name="OccludesLight" value="0"/>
+         <int name="Physics.Enabled" value="0"/>
+      </attributes>
+   </userData>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="powercell.021"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="-40.354607, 4.840320, 0.686384"/>
+         <vector3d name="Rotation" value="0.000000, -0.000000, 0.000000"/>
+         <vector3d name="Scale" value="0.369023, 0.369023, 0.369023"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/PCell.007.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="powercell.020"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="-40.008221, 4.840320, 13.486698"/>
+         <vector3d name="Rotation" value="0.000000, -0.000000, 0.000000"/>
+         <vector3d name="Scale" value="0.369023, 0.369023, 0.369023"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/PCell.006.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="powercell.019"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="-33.704460, 4.840320, 13.486698"/>
+         <vector3d name="Rotation" value="0.000000, -0.000000, 0.000000"/>
+         <vector3d name="Scale" value="0.369023, 0.369023, 0.369023"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/PCell.005.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="powercell.018"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="-33.704460, 4.840320, 0.686384"/>
+         <vector3d name="Rotation" value="0.000000, -0.000000, 0.000000"/>
+         <vector3d name="Scale" value="0.369023, 0.369023, 0.369023"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/PCell.004.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="powercell.017"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="-33.704460, 4.840320, 8.021963"/>
+         <vector3d name="Rotation" value="0.000000, -0.000000, 0.000000"/>
+         <vector3d name="Scale" value="0.369023, 0.369023, 0.369023"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/PCell.003.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="powercell.016"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="-33.704460, 4.840320, -15.215498"/>
+         <vector3d name="Rotation" value="0.000000, -0.000000, 0.000000"/>
+         <vector3d name="Scale" value="0.369023, 0.369023, 0.369023"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/PCell.002.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="powercell.015"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="-33.704460, 4.840320, -7.289164"/>
+         <vector3d name="Rotation" value="0.000000, -0.000000, 0.000000"/>
+         <vector3d name="Scale" value="0.369023, 0.369023, 0.369023"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/PCell.001.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="elevator"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="51.103142, 0.059847, 9.349292"/>
+         <vector3d name="Rotation" value="0.000000, -0.000000, 0.000000"/>
+         <vector3d name="Scale" value="5.363976, 0.260476, -3.017952"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/ele.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="powercell.014"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="-3.562429, 0.566171, -7.750785"/>
+         <vector3d name="Rotation" value="0.000000, -0.000000, 0.000000"/>
+         <vector3d name="Scale" value="0.369023, 0.369023, 0.369023"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/PCell.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="powercell.013"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="-3.562429, 0.566171, -14.587112"/>
+         <vector3d name="Rotation" value="0.000000, -0.000000, 0.000000"/>
+         <vector3d name="Scale" value="0.369023, 0.369023, 0.369023"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/PCell.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="powercell.012"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="8.334637, 0.566171, -14.587112"/>
+         <vector3d name="Rotation" value="0.000000, -0.000000, 0.000000"/>
+         <vector3d name="Scale" value="0.369023, 0.369023, 0.369023"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/PCell.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="powercell.011"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="-5.763798, 0.646528, 12.790066"/>
+         <vector3d name="Rotation" value="0.000000, -0.000000, 0.000000"/>
+         <vector3d name="Scale" value="0.369023, 0.369023, 0.369023"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/PCell.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="powercell.010"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="-5.763798, 0.646528, 6.205621"/>
+         <vector3d name="Rotation" value="0.000000, -0.000000, 0.000000"/>
+         <vector3d name="Scale" value="0.369023, 0.369023, 0.369023"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/PCell.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="powercell.009"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="-11.480469, 0.646528, 6.205621"/>
+         <vector3d name="Rotation" value="0.000000, -0.000000, 0.000000"/>
+         <vector3d name="Scale" value="0.369023, 0.369023, 0.369023"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/PCell.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="powercell.008"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="-0.191643, 0.646528, 6.205621"/>
+         <vector3d name="Rotation" value="0.000000, -0.000000, 0.000000"/>
+         <vector3d name="Scale" value="0.369023, 0.369023, 0.369023"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/PCell.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="powercell.007"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="5.953216, 6.703567, 6.205621"/>
+         <vector3d name="Rotation" value="0.000000, -0.000000, 0.000000"/>
+         <vector3d name="Scale" value="0.369023, 0.369023, 0.369023"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/PCell.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="powercell.006"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="-6.738307, 6.310141, 6.205621"/>
+         <vector3d name="Rotation" value="0.000000, -0.000000, 0.000000"/>
+         <vector3d name="Scale" value="0.369023, 0.369023, 0.369023"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/PCell.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="powercell.005"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="-6.804821, 6.069605, -7.289164"/>
+         <vector3d name="Rotation" value="0.000000, -0.000000, 0.000000"/>
+         <vector3d name="Scale" value="0.369023, 0.369023, 0.369023"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/PCell.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="powercell.004"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="2.548572, 6.677845, -7.246914"/>
+         <vector3d name="Rotation" value="0.000000, -0.000000, 0.000000"/>
+         <vector3d name="Scale" value="0.369023, 0.369023, 0.369023"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/PCell.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="powercell.003"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="48.580849, 2.667455, 6.964932"/>
+         <vector3d name="Rotation" value="0.000000, -0.000000, 0.000000"/>
+         <vector3d name="Scale" value="0.369023, 0.369023, 0.369023"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/PCell.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="powercell.002"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="51.794117, 1.076526, 11.516645"/>
+         <vector3d name="Rotation" value="0.000000, -0.000000, 0.000000"/>
+         <vector3d name="Scale" value="0.369023, 0.369023, 0.369023"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/PCell.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="powercell.001"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="37.101448, 0.594104, 11.405722"/>
+         <vector3d name="Rotation" value="0.000000, -0.000000, 0.000000"/>
+         <vector3d name="Scale" value="0.369023, 0.369023, 0.369023"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/PCell.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="powercell"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="10.061845, 3.351773, 2.814840"/>
+         <vector3d name="Rotation" value="0.000000, -0.000000, 0.000000"/>
+         <vector3d name="Scale" value="0.369023, 0.369023, 0.369023"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/PCell.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="Cube.006"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="-0.000000, 22.911066, 40.127281"/>
+         <vector3d name="Rotation" value="90.000000, -0.000000, -90.000000"/>
+         <vector3d name="Scale" value="8.080519, 1.094809, 1.094809"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/Cube.013.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="windmillbase"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="0.000000, 22.911066, 40.127281"/>
+         <vector3d name="Rotation" value="90.000000, -0.000000, -90.000000"/>
+         <vector3d name="Scale" value="8.080519, 1.094809, 1.094809"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/windbase.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="animatedMesh">
+      <attributes>
+         <string name="Name" value="windmillblade"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="-0.000000,0, 0"/>
+         <vector3d name="Rotation" value="0.000000, 0.000001, 0.0"/>
+         <vector3d name="Scale" value="1.0, 1.0, 1.0"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/mill.x"/>
+	<bool name="Looping" value="true" />
+	<bool name="ReadOnlyMaterials" value="false" />
+	<float name="FramesPerSecond" value="0.250000" />
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="playerstart"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="16.244814, 3.186879, -19.435629"/>
+         <vector3d name="Rotation" value="0.000000, -0.000000, 0.000000"/>
+         <vector3d name="Scale" value="0.369023, 0.369023, 0.369023"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/Cube.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+   <node type="mesh">
+      <attributes>
+         <string name="Name" value="level"/>
+         <int name="Id" value="-1"/>
+         <vector3d name="Position" value="0.000000, 5.463122, 0.000000"/>
+         <vector3d name="Rotation" value="0.000000, -0.000000, 0.000000"/>
+         <vector3d name="Scale" value="8.872851, 8.872851, 8.872851"/>
+         <bool name="Visible" value="true"/>
+         <enum name="AutomaticCulling" value="frustum_box"/>
+         <bool name="DebugDataVisible" value="false"/>
+         <bool name="IsDebugObject" value="false"/>
+         <bool name="ReadOnlyMaterials" value="false"/>
+         <string name="Mesh" value="mdl/Plane.001.irrmesh"/>
+      </attributes>
+      <userData>
+         <attributes>
+         </attributes>
+      </userData>
+   </node>
+</irr_scene>

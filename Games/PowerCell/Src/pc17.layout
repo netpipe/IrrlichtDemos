@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Release" />
+	<File name="Timer.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Collision.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4785" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="11" />
+			<Collapse line="19" />
+			<Collapse line="25" />
+			<Collapse line="43" />
+			<Collapse line="49" />
+		</Folding>
+	</File>
+	<File name="Sound/SoundSource/SoundSource.cpp" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="9" />
+		</Cursor>
+		<Folding>
+			<Collapse line="3" />
+			<Collapse line="8" />
+			<Collapse line="13" />
+			<Collapse line="18" />
+			<Collapse line="23" />
+			<Collapse line="80" />
+			<Collapse line="99" />
+			<Collapse line="108" />
+			<Collapse line="130" />
+			<Collapse line="136" />
+			<Collapse line="142" />
+			<Collapse line="157" />
+			<Collapse line="164" />
+			<Collapse line="175" />
+		</Folding>
+	</File>
+	<File name="Stage.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Sound/Ogg/OggFile.cpp" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="9" />
+			<Collapse line="33" />
+			<Collapse line="69" />
+			<Collapse line="78" />
+			<Collapse line="87" />
+			<Collapse line="165" />
+			<Collapse line="170" />
+			<Collapse line="175" />
+			<Collapse line="180" />
+			<Collapse line="185" />
+			<Collapse line="190" />
+			<Collapse line="195" />
+			<Collapse line="200" />
+			<Collapse line="205" />
+		</Folding>
+	</File>
+	<File name="Event.cpp" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="3" />
+		</Folding>
+	</File>
+	<File name="Scene.hpp" open="1" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Sound.cpp" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4857" topLine="4" />
+		</Cursor>
+		<Folding>
+			<Collapse line="8" />
+			<Collapse line="16" />
+			<Collapse line="23" />
+			<Collapse line="137" />
+			<Collapse line="155" />
+		</Folding>
+	</File>
+	<File name="Obstacle.hpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="244" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="6" />
+		</Folding>
+	</File>
+	<File name="Globals.hpp" open="1" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="16" />
+		</Cursor>
+		<Folding>
+			<Collapse line="11" />
+			<Collapse line="17" />
+			<Collapse line="28" />
+			<Collapse line="36" />
+		</Folding>
+	</File>
+	<File name="Highscore.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="103" />
+		</Folding>
+	</File>
+	<File name="Sound/SoundLua.cpp" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Sound/SoundFactory.cpp" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5637" topLine="11" />
+		</Cursor>
+		<Folding>
+			<Collapse line="6" />
+			<Collapse line="50" />
+			<Collapse line="63" />
+			<Collapse line="98" />
+			<Collapse line="110" />
+			<Collapse line="122" />
+			<Collapse line="131" />
+			<Collapse line="140" />
+			<Collapse line="149" />
+			<Collapse line="158" />
+			<Collapse line="167" />
+			<Collapse line="176" />
+			<Collapse line="185" />
+			<Collapse line="203" />
+			<Collapse line="212" />
+			<Collapse line="228" />
+			<Collapse line="242" />
+			<Collapse line="271" />
+		</Folding>
+	</File>
+	<File name="Elevator.cpp" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Timer.hpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="6" />
+		</Folding>
+	</File>
+	<File name="Sound/audio.cpp" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Launch.cpp" open="1" top="0" tabpos="22" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7785" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="20" />
+			<Collapse line="54" />
+		</Folding>
+	</File>
+	<File name="matrix.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Sound.hpp" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="757" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Obstacle.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="316" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="36" />
+		</Folding>
+	</File>
+	<File name="Scene.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5079" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="103" />
+		</Folding>
+	</File>
+	<File name="Camera.cpp" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1561" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="6" />
+			<Collapse line="23" />
+		</Folding>
+	</File>
+	<File name="Player.cpp" open="1" top="1" tabpos="23" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="141" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="25" />
+			<Collapse line="43" />
+			<Collapse line="48" />
+			<Collapse line="107" />
+			<Collapse line="121" />
+			<Collapse line="135" />
+			<Collapse line="151" />
+			<Collapse line="188" />
+			<Collapse line="220" />
+			<Collapse line="225" />
+			<Collapse line="229" />
+		</Folding>
+	</File>
+	<EditorTabsLayout layout="25b4c6005bcf4c6f00167e5200000002=0;PowerCell:Collision.cpp,1;PowerCell:Scene.cpp,2;PowerCell:Stage.cpp,3;PowerCell:Obstacle.cpp,4;PowerCell:Obstacle.hpp,5;PowerCell:Timer.cpp,6;PowerCell:Timer.hpp,7;PowerCell:Highscore.cpp,8;PowerCell:matrix.h,9;PowerCell:Elevator.cpp,10;PowerCell:Camera.cpp,11;PowerCell:Event.cpp,12;PowerCell:Sound.cpp,13;PowerCell:Sound.hpp,14;PowerCell:Sound/audio.cpp,15;PowerCell:Sound/SoundSource/SoundSource.cpp,16;PowerCell:Sound/Ogg/OggFile.cpp,17;PowerCell:Sound/SoundFactory.cpp,18;PowerCell:Sound/SoundLua.cpp,19;PowerCell:Scene.hpp,20;PowerCell:Globals.hpp,21;PowerCell:Launch.cpp,*22;PowerCell:Player.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=814;besth=343;minw=814;minh=343;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=25b4c6005bcf4c6f00167e5200000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+</CodeBlocks_layout_file>

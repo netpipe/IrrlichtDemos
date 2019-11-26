@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="FKEditor" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../FKEditor_D" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="Release">
+				<Option output="../FKEditor" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wfatal-errors" />
+			<Add option="-W" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="GL" />
+			<Add library="Xxf86vm" />
+			<Add library="X11" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+		</Linker>
+		<Unit filename="CGUITexturedSkin.cpp" />
+		<Unit filename="CGUITexturedSkin.h" />
+		<Unit filename="CGridSceneNode.cpp" />
+		<Unit filename="CGridSceneNode.h" />
+		<Unit filename="FileLoader.h" />
+		<Unit filename="GuiCreation.h" />
+		<Unit filename="GuiSelectList.h" />
+		<Unit filename="ItemCreation.h" />
+		<Unit filename="ModelFunctions.h" />
+		<Unit filename="SceneManagement.h" />
+		<Unit filename="ToolBox.h" />
+		<Unit filename="animation.h" />
+		<Unit filename="button_events.h" />
+		<Unit filename="combo_events.h" />
+		<Unit filename="configuration.h" />
+		<Unit filename="cursors.h" />
+		<Unit filename="event_receiver.h" />
+		<Unit filename="lighting.h" />
+		<Unit filename="listbox_events.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="menu_events.h" />
+		<Unit filename="mouse_events.h" />
+		<Unit filename="scrollbar_events.h" />
+		<Unit filename="viewports.cpp" />
+		<Unit filename="viewports.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -49,9 +49,9 @@
 					<Add library="GLESv2" />
 					<Add library="GL" />
 					<Add library="Irrlicht" />
+					<Add library="BulletCollision" />
 					<Add library="BulletSoftBody" />
 					<Add library="BulletDynamics" />
-					<Add library="BulletCollision" />
 					<Add library="LinearMath" />
 					<Add library="SDL" />
 					<Add directory="../../../irrlicht-ogl-es/irrlicht/lib/Linux" />
@@ -68,6 +68,7 @@
 				<Option projectResourceIncludeDirsRelation="1" />
 				<Option projectLibDirsRelation="1" />
 				<Compiler>
+					<Add option="-Os" />
 					<Add option="-D_IRR_STATIC_LIB_" />
 					<Add option="-D_IRR_EMSCRIPTEN_PLATFORM_" />
 					<Add option="-D__EMSCRIPTEN__" />
@@ -82,14 +83,11 @@
 					<Add option="-s DISABLE_EXCEPTION_CATCHING=0" />
 					<Add option="-s NO_EXIT_RUNTIME=1" />
 					<Add option="-s ASYNCIFY" />
+					<Add option="-Wl" />
+					<Add option="--gc-sections" />
 					<Add library="GLESv2" />
 					<Add library="GL" />
 					<Add library="Irrlicht" />
-					<Add library="BulletCollision" />
-					<Add library="BulletSoftBody" />
-					<Add library="BulletDynamics" />
-					<Add library="LinearMath" />
-					<Add library="SDL" />
 					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/emscripten-projects/irrlicht-ogl-es/irrlicht/lib/Linux" />
 					<Add directory="/home/netpipe/Desktop/EMScripten-AddonBundle/Libs/physics/Bullet/bullet/msvc/2008/lib/Release" />
 					<Add directory="../../../Libs/irrlicht-ogl-es/irrlicht/lib/Linux" />
@@ -101,6 +99,8 @@
 			<Add alias="All" targets="default;" />
 		</VirtualTargets>
 		<Compiler>
+			<Add option="-ffunction-sections" />
+			<Add option="-fdata-sections" />
 			<Add directory="../../../../irrlicht-ogl-es/irrlicht/include" />
 			<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/upstream/emscripten/tests/bullet/src" />
 			<Add directory="../../../Libs/irrlicht-ogl-es/irrlicht/include" />
