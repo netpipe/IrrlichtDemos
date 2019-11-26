@@ -1,0 +1,11 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v3.3.1078987372)
+
+newmtl $Material_0
+Kd 1 1 1
+Ka 1 1 1
+Ks 1 1 1
+Ke 0 0 0
+illum 1
+map_Kd /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Apps/3DQRCode (copy)/tmp.png
+
