@@ -1,0 +1,108 @@
+# Project: rocket
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = rocket_private.res
+OBJ  = main.o include/Skeleton.o include/BMaths.o include/Init.o include/GameL.o include/EventReceiver.o include/Menu.o include/Player.o include/Polaroid.o include/World.o include/Physic.o include/Rocket.o include/Einstein.o include/SceneNodeAnimatorTA.o include/Hud.o include/Cable.o ../inireader_2_1/source/IniReader/CIniFileReaderIrr.o ../inireader_2_1/source/IniReader/CIniFileReaderStub.o ../inireader_2_1/source/IniReader/IniFileReader.o include/Pole.o include/Flag.o include/Effect.o include/Input.o include/Radar.o include/LightBillboard.o include/Logic.o $(RES)
+LINKOBJ  = main.o include/Skeleton.o include/BMaths.o include/Init.o include/GameL.o include/EventReceiver.o include/Menu.o include/Player.o include/Polaroid.o include/World.o include/Physic.o include/Rocket.o include/Einstein.o include/SceneNodeAnimatorTA.o include/Hud.o include/Cable.o ../inireader_2_1/source/IniReader/CIniFileReaderIrr.o ../inireader_2_1/source/IniReader/CIniFileReaderStub.o ../inireader_2_1/source/IniReader/IniFileReader.o include/Pole.o include/Flag.o include/Effect.o include/Input.o include/Radar.o include/LightBillboard.o include/Logic.o $(RES)
+LIBS =  -L"C:/Programme/Dev-Cpp/lib" -L"C:/Dokumente und Einstellungen/31/Eigene Dateien/Entwicklung/c++/irrlicht-1.4/bin/Win32-gcc" -L"C:/Dokumente und Einstellungen/31/Eigene Dateien/Entwicklung/c++/ode-0.9/lib/releasedll" -L"C:/Dokumente und Einstellungen/31/Eigene Dateien/Entwicklung/c++/TrueAxis/TADll" ../irrKlang-0.9/lib/Win32-gcc/libirrKlang.a ../TrueAxis/TA/taphysics.a ../irrlicht-1.4/lib/Win32-gcc/libIrrlicht.a  
+INCS =  -I"C:/Programme/Dev-Cpp/include"  -I"C:/Dokumente und Einstellungen/31/Eigene Dateien/Entwicklung/c++/irrlicht-1.4/include"  -I"C:/Dokumente und Einstellungen/31/Eigene Dateien/Entwicklung/c++/rocket/include"  -I"C:/Dokumente und Einstellungen/31/Eigene Dateien/Entwicklung/c++/irrKlang-0.9/include"  -I"C:/Dokumente und Einstellungen/31/Eigene Dateien/Entwicklung/c++/TrueAxis/TA/Common"  -I"C:/Dokumente und Einstellungen/31/Eigene Dateien/Entwicklung/c++/TrueAxis/TA/Physics"  -I"C:/Dokumente und Einstellungen/31/Eigene Dateien/Entwicklung/c++/inireader_2_1/include/IniReader" 
+CXXINCS =  -I"C:/Programme/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Programme/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Programme/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Programme/Dev-Cpp/include/c++/3.4.2"  -I"C:/Programme/Dev-Cpp/include"  -I"C:/Dokumente und Einstellungen/31/Eigene Dateien/Entwicklung/c++/irrlicht-1.4/include"  -I"C:/Dokumente und Einstellungen/31/Eigene Dateien/Entwicklung/c++/rocket/include"  -I"C:/Dokumente und Einstellungen/31/Eigene Dateien/Entwicklung/c++/irrKlang-0.9/include"  -I"C:/Dokumente und Einstellungen/31/Eigene Dateien/Entwicklung/c++/TrueAxis/TA/Common"  -I"C:/Dokumente und Einstellungen/31/Eigene Dateien/Entwicklung/c++/TrueAxis/TA/Physics"  -I"C:/Dokumente und Einstellungen/31/Eigene Dateien/Entwicklung/c++/inireader_2_1/include/IniReader" 
+BIN  = rocket.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before rocket.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "rocket.exe" $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+include/Skeleton.o: include/Skeleton.cpp
+	$(CPP) -c include/Skeleton.cpp -o include/Skeleton.o $(CXXFLAGS)
+
+include/BMaths.o: include/BMaths.cpp
+	$(CPP) -c include/BMaths.cpp -o include/BMaths.o $(CXXFLAGS)
+
+include/Init.o: include/Init.cpp
+	$(CPP) -c include/Init.cpp -o include/Init.o $(CXXFLAGS)
+
+include/GameL.o: include/GameL.cpp
+	$(CPP) -c include/GameL.cpp -o include/GameL.o $(CXXFLAGS)
+
+include/EventReceiver.o: include/EventReceiver.cpp
+	$(CPP) -c include/EventReceiver.cpp -o include/EventReceiver.o $(CXXFLAGS)
+
+include/Menu.o: include/Menu.cpp
+	$(CPP) -c include/Menu.cpp -o include/Menu.o $(CXXFLAGS)
+
+include/Player.o: include/Player.cpp
+	$(CPP) -c include/Player.cpp -o include/Player.o $(CXXFLAGS)
+
+include/Polaroid.o: include/Polaroid.cpp
+	$(CPP) -c include/Polaroid.cpp -o include/Polaroid.o $(CXXFLAGS)
+
+include/World.o: include/World.cpp
+	$(CPP) -c include/World.cpp -o include/World.o $(CXXFLAGS)
+
+include/Physic.o: include/Physic.cpp
+	$(CPP) -c include/Physic.cpp -o include/Physic.o $(CXXFLAGS)
+
+include/Rocket.o: include/Rocket.cpp
+	$(CPP) -c include/Rocket.cpp -o include/Rocket.o $(CXXFLAGS)
+
+include/Einstein.o: include/Einstein.cpp
+	$(CPP) -c include/Einstein.cpp -o include/Einstein.o $(CXXFLAGS)
+
+include/SceneNodeAnimatorTA.o: include/SceneNodeAnimatorTA.cpp
+	$(CPP) -c include/SceneNodeAnimatorTA.cpp -o include/SceneNodeAnimatorTA.o $(CXXFLAGS)
+
+include/Hud.o: include/Hud.cpp
+	$(CPP) -c include/Hud.cpp -o include/Hud.o $(CXXFLAGS)
+
+include/Cable.o: include/Cable.cpp
+	$(CPP) -c include/Cable.cpp -o include/Cable.o $(CXXFLAGS)
+
+../inireader_2_1/source/IniReader/CIniFileReaderIrr.o: ../inireader_2_1/source/IniReader/CIniFileReaderIrr.cpp
+	$(CPP) -c ../inireader_2_1/source/IniReader/CIniFileReaderIrr.cpp -o ../inireader_2_1/source/IniReader/CIniFileReaderIrr.o $(CXXFLAGS)
+
+../inireader_2_1/source/IniReader/CIniFileReaderStub.o: ../inireader_2_1/source/IniReader/CIniFileReaderStub.cpp
+	$(CPP) -c ../inireader_2_1/source/IniReader/CIniFileReaderStub.cpp -o ../inireader_2_1/source/IniReader/CIniFileReaderStub.o $(CXXFLAGS)
+
+../inireader_2_1/source/IniReader/IniFileReader.o: ../inireader_2_1/source/IniReader/IniFileReader.cpp
+	$(CPP) -c ../inireader_2_1/source/IniReader/IniFileReader.cpp -o ../inireader_2_1/source/IniReader/IniFileReader.o $(CXXFLAGS)
+
+include/Pole.o: include/Pole.cpp
+	$(CPP) -c include/Pole.cpp -o include/Pole.o $(CXXFLAGS)
+
+include/Flag.o: include/Flag.cpp
+	$(CPP) -c include/Flag.cpp -o include/Flag.o $(CXXFLAGS)
+
+include/Effect.o: include/Effect.cpp
+	$(CPP) -c include/Effect.cpp -o include/Effect.o $(CXXFLAGS)
+
+include/Input.o: include/Input.cpp
+	$(CPP) -c include/Input.cpp -o include/Input.o $(CXXFLAGS)
+
+include/Radar.o: include/Radar.cpp
+	$(CPP) -c include/Radar.cpp -o include/Radar.o $(CXXFLAGS)
+
+include/LightBillboard.o: include/LightBillboard.cpp
+	$(CPP) -c include/LightBillboard.cpp -o include/LightBillboard.o $(CXXFLAGS)
+
+include/Logic.o: include/Logic.cpp
+	$(CPP) -c include/Logic.cpp -o include/Logic.o $(CXXFLAGS)
+
+rocket_private.res: rocket_private.rc 
+	$(WINDRES) -i rocket_private.rc --input-format=rc -o rocket_private.res -O coff 

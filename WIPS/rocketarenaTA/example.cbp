@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Irrlicht Pong" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./Pong" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="/home/Dev/libs/Irrlicht/include" />
+			<Add directory="/home/Dev/libs/Irrlicht/source/Irrlicht" />
+			<Add directory="./include" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
+			<Add directory="include" />
+		</Linker>
+		<Unit filename="include/BMaths.cpp" />
+		<Unit filename="include/BMaths.h" />
+		<Unit filename="include/Cable.cpp" />
+		<Unit filename="include/Cable.h" />
+		<Unit filename="include/Effect.cpp" />
+		<Unit filename="include/Effect.h" />
+		<Unit filename="include/Einstein.cpp" />
+		<Unit filename="include/Einstein.h" />
+		<Unit filename="include/EventReceiver.cpp" />
+		<Unit filename="include/EventReceiver.h" />
+		<Unit filename="include/Flag.cpp" />
+		<Unit filename="include/Flag.h" />
+		<Unit filename="include/GameL.cpp" />
+		<Unit filename="include/GameL.h" />
+		<Unit filename="include/Hud.cpp" />
+		<Unit filename="include/Hud.h" />
+		<Unit filename="include/Hud.hpp" />
+		<Unit filename="include/Init.cpp" />
+		<Unit filename="include/Init.h" />
+		<Unit filename="include/Input.cpp" />
+		<Unit filename="include/Input.h" />
+		<Unit filename="include/LightBillboard.cpp" />
+		<Unit filename="include/LightBillboard.h" />
+		<Unit filename="include/Logic.cpp" />
+		<Unit filename="include/Logic.h" />
+		<Unit filename="include/Menu.cpp" />
+		<Unit filename="include/Menu.h" />
+		<Unit filename="include/Physic.cpp" />
+		<Unit filename="include/Physic.h" />
+		<Unit filename="include/Player.cpp" />
+		<Unit filename="include/Player.h" />
+		<Unit filename="include/Polaroid.cpp" />
+		<Unit filename="include/Polaroid.h" />
+		<Unit filename="include/Pole.cpp" />
+		<Unit filename="include/Pole.h" />
+		<Unit filename="include/Radar.cpp" />
+		<Unit filename="include/Radar.h" />
+		<Unit filename="include/Rocket.cpp" />
+		<Unit filename="include/Rocket.h" />
+		<Unit filename="include/Rocket_old.cpp" />
+		<Unit filename="include/Rocket_old.h" />
+		<Unit filename="include/SceneNodeAnimatorTA.cpp" />
+		<Unit filename="include/SceneNodeAnimatorTA.h" />
+		<Unit filename="include/Skeleton.cpp" />
+		<Unit filename="include/Skeleton.h" />
+		<Unit filename="include/World.cpp" />
+		<Unit filename="include/World.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
