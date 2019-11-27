@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="irrDesertDemo" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Windows">
+				<Option platforms="Windows;" />
+				<Option output="bin\demo" prefix_auto="0" extension_auto="1" />
+				<Option working_dir="bin\" />
+				<Option object_output="objs\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Compiler>
+					<Add option="-fomit-frame-pointer" />
+					<Add option="-O2" />
+					<Add option="-W" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add directory="..\..\lib\Win32-gcc" />
+				</Linker>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="Windows;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-W" />
+			<Add directory="..\..\include" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="irrklang" />
+		</Linker>
+		<Unit filename="event.h" />
+		<Unit filename="irrExt\CCloudSceneNode.cpp" />
+		<Unit filename="irrExt\CCloudSceneNode.h" />
+		<Unit filename="irrExt\CEffectPostProc.cpp" />
+		<Unit filename="irrExt\CEffectPostProc.h" />
+		<Unit filename="irrExt\CGrassPatchSceneNode.cpp" />
+		<Unit filename="irrExt\CGrassPatchSceneNode.h" />
+		<Unit filename="irrExt\CLensFlarePostProc.cpp" />
+		<Unit filename="irrExt\CLensFlarePostProc.h" />
+		<Unit filename="irrExt\CLensFlareSceneNode.cpp" />
+		<Unit filename="irrExt\CLensFlareSceneNode.h" />
+		<Unit filename="irrExt\CRendererPostProc.cpp" />
+		<Unit filename="irrExt\CRendererPostProc.h" />
+		<Unit filename="irrExt\CShaderCallbacks.h" />
+		<Unit filename="irrExt\CSplitPostProc.cpp" />
+		<Unit filename="irrExt\CSplitPostProc.h" />
+		<Unit filename="irrExt\CTransitionPostProc.cpp" />
+		<Unit filename="irrExt\CTransitionPostProc.h" />
+		<Unit filename="irrExt\CWaterPostProc.cpp" />
+		<Unit filename="irrExt\CWaterPostProc.h" />
+		<Unit filename="irrExt\CWindGenerator.h" />
+		<Unit filename="irrExt\ILensFlareSceneNode.h" />
+		<Unit filename="irrExt\IPostProc.cpp" />
+		<Unit filename="irrExt\IPostProc.h" />
+		<Unit filename="irrExt\IWindGenerator.h" />
+		<Unit filename="irrExt\shaders.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="player.cpp" />
+		<Unit filename="player.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
