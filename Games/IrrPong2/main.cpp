@@ -2,6 +2,11 @@
 #include <time.h>
 #include <irrlicht.h>
 #include <iostream>
+
+#ifdef __EMSCRIPTEN__
+#include <emscripten.h>
+#endif
+
 using namespace irr;
 using namespace core;
 using namespace scene;
@@ -9,6 +14,30 @@ using namespace video;
 using namespace io;
 using namespace gui;
 using namespace std;
+
+        ISceneNode *cube;
+        ISceneNode *cube2;
+
+            ISceneNode *ball;
+
+    ISceneNode *collisionhorisontal1;
+    ISceneNode *collisionhorisontal12;
+        ISceneNode *collisionvertical;
+    ISceneNode *collisionvertical2;
+
+
+        IrrlichtDevice *device;
+
+    IVideoDriver* driver;
+    ISceneManager* smgr;
+    IGUIEnvironment* guienv;
+
+
+        int score=0;
+    int hescore=0;
+    float maxvelocity= 0.1f;
+    bool poop=false;
+bool uad =false;
 
 //credits to lilmargin for this codepeice
 bool collision(ISceneNode* one, ISceneNode* two) {
@@ -64,80 +93,8 @@ private:
         bool KeyIsDown[KEY_KEY_CODES_COUNT];
 };
 
-int main(int argc, char** argv)
-{
-    int score=0;
-    int hescore=0;
-    float maxvelocity= 0.1f;
     MyEventReceiver receiver;
-
-    IrrlichtDevice *device =
-        createDevice(EDT_OPENGL, dimension2d<s32>(640, 480), 16,
-            false, false, false, &receiver);
-
-
-    device->setWindowCaption(L"Hello World! - Irrlicht Engine Demo");
-
-
-    IVideoDriver* driver = device->getVideoDriver();
-    ISceneManager* smgr = device->getSceneManager();
-    IGUIEnvironment* guienv = device->getGUIEnvironment();
-
-        ISceneNode *cube=smgr->addCubeSceneNode();
-        ISceneNode *cube2=smgr->addCubeSceneNode();
-     if (cube)
-     {
-    cube->setScale(vector3df(0.5,1,0.1));
-    cube->setPosition(vector3df(39,0,1));
-     }
-     if (cube2)
-     {
-        cube2->setScale(vector3df(0.5,1,0.1));
-        cube2->setPosition(vector3df(-39,0,1));
-     }
-
-    ISceneNode *ball=smgr->addSphereSceneNode();
-
-    if (ball)
-    {
-        ball->setScale(vector3df(0.5,0.5,0.5));
-    }
-
-    ISceneNode *collisionhorisontal1=smgr->addCubeSceneNode();
-    ISceneNode *collisionhorisontal12=smgr->addCubeSceneNode();
-
-    if (collisionhorisontal1)
-    {
-        collisionhorisontal1->setScale(vector3df(10,0.5,0.1));
-        collisionhorisontal1->setPosition(vector3df(0,38,0));
-    }
-
-    if (collisionhorisontal12)
-    {
-        collisionhorisontal12->setScale(vector3df(10,0.5,0.1));
-        collisionhorisontal12->setPosition(vector3df(0,-38,0));
-    }
-
-    ISceneNode *collisionvertical=smgr->addCubeSceneNode();
-    ISceneNode *collisionvertical2=smgr->addCubeSceneNode();
-
-    if (collisionvertical)
-    {
-        collisionvertical->setScale(vector3df(0.5,10,0.1));
-        collisionvertical->setPosition(vector3df(49,0,1));
-    }
-
-     if (collisionvertical2)
-    {
-        collisionvertical2->setScale(vector3df(0.5,10,0.1));
-        collisionvertical2->setPosition(vector3df(-49,0,1));
-    }
-
-    ICameraSceneNode *cam=smgr->addCameraSceneNode(0, vector3df(0,0,50), vector3df(0,0,0));
-bool poop=false;
-bool uad =false;
-    while(device->run())
-    {
+void renderloop(){
         if (cube2)
         {
             vector3df ballps=ball->getPosition();
@@ -260,6 +217,121 @@ bool uad =false;
 //                }
 //            }
 //
+
+}
+
+void main_loop(){
+
+renderloop();
+        driver->beginScene(true, true, SColor(0,200,200,200));
+
+        smgr->drawAll();
+        guienv->drawAll();
+
+        driver->endScene();
+                        core::stringw tmp;
+                        tmp += "Your Score = ";
+                        tmp += score;
+                       // tmp += oldposy.Y;
+                        tmp += " And ";
+                        //tmp += oldposy.Z;
+                        tmp+="Your oponement score is ";
+                       // tmp+=oldroty.X;
+                        tmp += hescore;
+                       // tmp+=oldroty.Y;
+                        tmp += " ";
+                       // tmp+=oldroty.Z;
+
+
+
+                        device->setWindowCaption(tmp.c_str());
+
+
+
+}
+
+int main(int argc, char** argv)
+{
+
+
+#ifdef __EMSCRIPTEN__
+    device =
+        createDevice(EDT_OGLES2, dimension2d<u32>(640, 480), 16,
+            false, false, false, &receiver);
+
+
+#else
+	    device =
+        createDevice(EDT_OPENGL, dimension2d<u32>(640, 480), 16,
+            false, false, false, &receiver);
+
+#endif
+    device->setWindowCaption(L"Hello World! - Irrlicht Engine Demo");
+
+
+    driver = device->getVideoDriver();
+    smgr = device->getSceneManager();
+    guienv = device->getGUIEnvironment();
+
+        cube=smgr->addCubeSceneNode();
+        cube2=smgr->addCubeSceneNode();
+     if (cube)
+     {
+    cube->setScale(vector3df(0.5,1,0.1));
+    cube->setPosition(vector3df(39,0,1));
+     }
+     if (cube2)
+     {
+        cube2->setScale(vector3df(0.5,1,0.1));
+        cube2->setPosition(vector3df(-39,0,1));
+     }
+
+    ball=smgr->addSphereSceneNode();
+
+    if (ball)
+    {
+        ball->setScale(vector3df(0.5,0.5,0.5));
+    }
+
+    collisionhorisontal1=smgr->addCubeSceneNode();
+    collisionhorisontal12=smgr->addCubeSceneNode();
+
+    if (collisionhorisontal1)
+    {
+        collisionhorisontal1->setScale(vector3df(10,0.5,0.1));
+        collisionhorisontal1->setPosition(vector3df(0,38,0));
+    }
+
+    if (collisionhorisontal12)
+    {
+        collisionhorisontal12->setScale(vector3df(10,0.5,0.1));
+        collisionhorisontal12->setPosition(vector3df(0,-38,0));
+    }
+
+    collisionvertical=smgr->addCubeSceneNode();
+    collisionvertical2=smgr->addCubeSceneNode();
+
+    if (collisionvertical)
+    {
+        collisionvertical->setScale(vector3df(0.5,10,0.1));
+        collisionvertical->setPosition(vector3df(49,0,1));
+    }
+
+     if (collisionvertical2)
+    {
+        collisionvertical2->setScale(vector3df(0.5,10,0.1));
+        collisionvertical2->setPosition(vector3df(-49,0,1));
+    }
+
+    ICameraSceneNode *cam=smgr->addCameraSceneNode(0, vector3df(0,0,50), vector3df(0,0,0));
+
+
+#ifdef __EMSCRIPTEN__
+	emscripten_set_main_loop(main_loop,0,1);
+#else
+    while(device->run())
+    {
+renderloop();
         driver->beginScene(true, true, SColor(0,200,200,200));
 
         smgr->drawAll();
@@ -284,7 +356,7 @@ bool uad =false;
                         device->setWindowCaption(tmp.c_str());
 
     }
-
+#endif // __EMSCRIPTEN__
 
     device->drop();
 
