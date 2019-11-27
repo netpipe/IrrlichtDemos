@@ -288,11 +288,11 @@ int create3dQR(){
 		core::vector3df(0.f, 0.f, 0.f),		// position
 		core::vector3df(0.f, 0.f, 0.f),		// rotation
 		//core::vector3df(40.f, 4.4f, 40.f),	// scale
-		core::vector3df(4.f, -0.1f, 4.f),	// scale
+		core::vector3df(14.f, -1.51f, 14.f),	// scale
 		video::SColor ( 255, 255, 255, 255 ),	// vertexColor
-		1,					// maxLOD
+		3,					// maxLOD
 		scene::ETPS_17,				// patchSize
-		0					// smoothFactor
+		1					// smoothFactor
 		);
 
 
@@ -321,7 +321,7 @@ int create3dQR(){
 
 	terrain->scaleTexture(1.0f, 20.0f);
 
-
+ irr::scene::IMeshSceneNode* const cube = smgr->addCubeSceneNode(50.0f, 0, -1, irr::core::vector3df(0, 100, 0.0f));
 
 	//printf ("export stl mesh \n");
 	//assimp.exportMesh(pMesh, "stl", "./qrcode.stl");
@@ -343,7 +343,7 @@ int create3dQR(){
 	// create collision response animator and attach it to the camera
 	scene::ISceneNodeAnimator* anim = smgr->createCollisionResponseAnimator(
 		selector, smgr->getActiveCamera(), core::vector3df(60,100,60),
-		core::vector3df(0,0,0),
+		core::vector3df(0,-500,0),
 		core::vector3df(0,50,0));
 	selector->drop();
 	smgr->getActiveCamera()->addAnimator(anim);
@@ -476,7 +476,7 @@ int main()
 
 	// add camera
 	scene::ICameraSceneNode* camera =
-		smgr->addCameraSceneNodeFPS(0,100.0f,1.2f);
+		smgr->addCameraSceneNodeFPS(0,1000.0f,1.2f);
 
 	camera->setPosition(core::vector3df(2700*2,255*2,2600*2));
 	camera->setTarget(core::vector3df(2397*2,343*2,2700*2));

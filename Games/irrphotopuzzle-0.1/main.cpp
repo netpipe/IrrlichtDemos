@@ -5,7 +5,7 @@
 using namespace irr;
 using namespace std;
 
-// The image is splitted into numTiles.X tiles horizontally and 
+// The image is splitted into numTiles.X tiles horizontally and
 // numTiles.Y tiles vertically.
 core::vector2d<s32> numTiles = core::vector2d<s32>(5, 5);
 core::vector2d<s32> oldNumTiles(numTiles);
@@ -34,42 +34,42 @@ bool scaleImage = true;
 // The whole image is shown for this number of milliseconds.
 u32 showTill = 0;
 
-core::stringc currentFilename = "example.png";
+core::stringc currentFilename = "./media/example.png";
 
 void loadImage(const c8* filename);
 void createTileNumberBox();
 void createSettingsBox();
 
 
-// A Tile is one piece of an image. It has a position in the grid, 
+// A Tile is one piece of an image. It has a position in the grid,
 // a position in the window and a flag indicating that the current
 // position is the original one.
 class Tile
 {
 public:
-  
+
   // Constructor
   Tile(core::vector2d<s32> gpos, core::vector2d<s32> wpos)
     : gridPos(gpos), windowPos(wpos), isfix(false) {}
-  
+
   // Copy constructor
-  Tile(Tile& t) 
+  Tile(Tile& t)
     : gridPos(t.gridPos), windowPos(t.windowPos), isfix(t.isfix) {}
-  
+
   // Returns true if the tile has the correct position and should
   // not me moved anymore.
   bool isFix() { return isfix; }
-  
+
   // Called when the tile is put down. It checks if the position
-  // is correct with a tolerance of 15 pixels. 
-  void putDown() 
+  // is correct with a tolerance of 15 pixels.
+  void putDown()
   {
     if ((gridPos * destTileSize - windowPos).getLength() < 15) {
       windowPos = gridPos * destTileSize;
       isfix = true;
     }
   }
-  
+
   // The position in the grid. Values are in the range 0 to numTiles.
   core::vector2d<s32> gridPos;
 
@@ -91,20 +91,20 @@ core::list<Tile*> tiles;
 
 // A StraightMovingTile moves a tile straight to a destination position.
 // It's implemented as a singleton.
-class StraightMovingTile 
+class StraightMovingTile
 {
 public:
-  static void create(Tile* t) 
+  static void create(Tile* t)
   {
     if (0 == instance) instance = new StraightMovingTile(t);
   }
-  
-  static bool exists() 
+
+  static bool exists()
   {
     if (0 == instance) return false;
     else return true;
   }
-  
+
   static void move()
   {
     if (0 != instance) instance->_move();
@@ -112,7 +112,7 @@ public:
 
 private:
   static StraightMovingTile* instance;
-  
+
   StraightMovingTile(Tile* t)
   {
     myTile = t;
@@ -136,7 +136,7 @@ private:
       myTile->windowPos = pos;
     }
   }
-  
+
   Tile* myTile;
   core::vector2d<s32> startPos;
   core::vector2d<s32> vector;
@@ -170,12 +170,12 @@ public:
 		((*itr)->windowPos.X + destTileSize.X > event.MouseInput.X) &&
 		((*itr)->windowPos.Y + destTileSize.Y > event.MouseInput.Y) &&
 		(false == (*itr)->isFix())) {
-	      // Found the highest tile under the mouse. 
+	      // Found the highest tile under the mouse.
 	      // Move that tile to the end of the list.
-	      carryTile = new Tile(**itr);  
+	      carryTile = new Tile(**itr);
 	      tiles.push_back(carryTile);
 	      tiles.erase(itr);
-	      
+
 	      delta.X = event.MouseInput.X - carryTile->windowPos.X;
 	      delta.Y = event.MouseInput.Y - carryTile->windowPos.Y;
 
@@ -203,13 +203,13 @@ public:
 	  }
 	  if (event.MouseInput.Y < 50 && false == menu->isVisible()) menu->setVisible(true);
 	  if (event.MouseInput.Y > 100 && true == menu->isVisible()) menu->setVisible(false);
-	  
+
 	  break;
 	}
 
       }
-      
-    } 
+
+    }
     if (event.EventType == EET_GUI_EVENT) {
       s32 id = event.GUIEvent.Caller->getID();
 
@@ -219,12 +219,12 @@ public:
 	  if (321 == id) scaleImage = ((gui::IGUICheckBox*)event.GUIEvent.Caller)->isChecked();
 	  break;
 	}
-	
+
       case gui::EGET_MENU_ITEM_SELECTED:
 	{
 	  gui::IGUIContextMenu* menu = (gui::IGUIContextMenu*)event.GUIEvent.Caller;
 	  s32 id = menu->getItemCommandId(menu->getSelectedItem());
-	  
+
 	  if (101 == id) { // Open
 	    env->addFileOpenDialog(L"Please select an image to open.");
 	  }
@@ -260,13 +260,13 @@ public:
 	    }
 	  }
 	  else if (203 == id) { // About
-	    core::dimension2d<s32> dim = device->getVideoDriver()->getScreenSize();
+	    core::dimension2d<u32> dim = device->getVideoDriver()->getScreenSize();
 	    core::stringw str = L"ScreenSize=";
 	    str += dim.Width;
 	    str += " x ";
 	    str += dim.Height;
 	    env->addMessageBox(L"IrrPhotoPuzzle", L"Created by Thomas Wernecke\n\nEmail: irrphotopuzzle@gmail.com");
-	  } 
+	  }
 	  break;
 	}
       case gui::EGET_FILE_SELECTED:
@@ -275,7 +275,7 @@ public:
 	//  currentFilename = core::stringc(dialog->getFilename());
 	//  loadImage(currentFilename.c_str());
 	  break;
-	}  
+	}
       case gui::EGET_SCROLL_BAR_CHANGED:
 	{
 	  if (301 == id) {
@@ -314,8 +314,8 @@ public:
 
 	  break;
 	}
-	    
-      } 
+
+      }
     }
     return false;
   }
@@ -323,7 +323,7 @@ public:
 private:
   // Tile carried as long as the left mouse button is pressed.
   Tile* carryTile;
-  
+
   // Delta between the mouse position and the tile position.
   core::vector2d<s32> delta;
 };
@@ -334,9 +334,9 @@ private:
 
 // Returns a random initial position for a tile in the area between image and
 // window border. Depending on the image and window size this position is right
-// to the image or under it. 
+// to the image or under it.
 core::vector2d<s32> getRandomTilePos() {
-  core::dimension2d<s32> dim = device->getVideoDriver()->getScreenSize();
+  core::dimension2d<u32> dim = device->getVideoDriver()->getScreenSize();
   core::vector2d<s32> vec;
   f32 varX, varY;
   if (dim.Width - destImageSize.Width > dim.Height - destImageSize.Height) {
@@ -348,7 +348,7 @@ core::vector2d<s32> getRandomTilePos() {
     varY = dim.Height - destImageSize.Height - destTileSize.Y;
     vec = core::vector2d<s32>(1+(int) (varX*rand()/(RAND_MAX+1.0)), destImageSize.Height+(int) (varY*rand()/(RAND_MAX+1.0)));
   }
-  
+
   return vec;
 }
 
@@ -356,16 +356,16 @@ core::vector2d<s32> getRandomTilePos() {
 // ---------------------------------------------------------------------
 
 
-// Loads an image, calculates the dependent parameters, creates the tiles and 
+// Loads an image, calculates the dependent parameters, creates the tiles and
 // places them to their initial position.
 void loadImage(const c8* filename)
 {
-  image = driver->getTexture(filename); 
+  image = driver->getTexture(filename);
 
   orgImageSize = image->getOriginalSize();
   destImageSize = orgImageSize;
 
-  core::dimension2d<s32> dim = device->getVideoDriver()->getScreenSize();
+  core::dimension2d<u32> dim = device->getVideoDriver()->getScreenSize();
 
   if (scaleImage) {
     f32 widthScale = (f32)dim.Width / orgImageSize.Width;
@@ -374,7 +374,7 @@ void loadImage(const c8* filename)
   } else scale = 1.0;
 
   destImageSize.Width = (s32)(scale * orgImageSize.Width);
-  destImageSize.Height = (s32)(scale * orgImageSize.Height); 
+  destImageSize.Height = (s32)(scale * orgImageSize.Height);
 
   orgTileSize.X = orgImageSize.Width/numTiles.X;
   orgTileSize.Y = orgImageSize.Height/numTiles.Y;
@@ -403,15 +403,15 @@ void createTileNumberBox()
   gui::IGUIElement* root = env->getRootGUIElement();
   gui::IGUIElement* e = root->getElementFromId(5000, true);
   if (e) e->remove();
-  
+
   gui::IGUIWindow* box = env->addWindow(core::rect<s32>(200,200,400,400),
 					false, L"TileNumberBox", 0, 5000);
-  
+
   env->addStaticText(L"Horizonal tile number:", core::rect<s32>(5,30,150,50), false, true, box, false);
   gui::IGUIScrollBar* scrollbar = env->addScrollBar(true, core::rect<s32>(5,55,190,70), box, 301);
   scrollbar->setPos(numTiles.X);
   scrollbar->setMax(15);
-  
+
   env->addStaticText(L"Vertical tile number:", core::rect<s32>(5,90,150,110), false, true, box, false);
   scrollbar = env->addScrollBar(true, core::rect<s32>(5,115,190,130), box, 302);
   scrollbar->setPos(numTiles.Y);
@@ -444,28 +444,28 @@ void createSettingsBox()
 
 
 int main()
-{  
+{
   MyEventReceiver receiver;
 
   // let user select driver type
-  
+
   video::E_DRIVER_TYPE driverType;
-  
-  printf("Please select the driver you want for this example:\n"	\
-	 " (a) Direct3D 9.0c\n (b) Direct3D 8.1\n (c) OpenGL 1.5\n"	\
-	 " (otherKey) exit\n\n");
 
-  char i;
-  std::cin >> i;
-  
-  switch(i) {
-  case 'a': driverType = video::EDT_DIRECT3D9;break;
-  case 'b': driverType = video::EDT_DIRECT3D8;break;
-  case 'c': driverType = video::EDT_OPENGL;   break;
-  default: return 0;
-  }
+//  printf("Please select the driver you want for this example:\n"	\
+//	 " (a) Direct3D 9.0c\n (b) Direct3D 8.1\n (c) OpenGL 1.5\n"	\
+//	 " (otherKey) exit\n\n");
 
-  device = createDevice(driverType, core::dimension2d<s32>(600, 600), 32, false, false, false, &receiver);
+//  char i;
+//  std::cin >> i;
+//
+//  switch(i) {
+//  case 'a': driverType = video::EDT_DIRECT3D9;break;
+//  case 'b': driverType = video::EDT_DIRECT3D8;break;
+//  case 'c': driverType = video::EDT_OPENGL;   break;
+//  default: return 0;
+//  }
+driverType = video::EDT_OPENGL;
+  device = createDevice(driverType, core::dimension2d<u32>(600, 600), 32, false, false, false, &receiver);
   if (device == 0) return 1; // could not create selected driver.
 
   driver = device->getVideoDriver();
@@ -511,32 +511,32 @@ int main()
 
 
   while(device->run() && driver) {
-    if (device->isWindowActive()) { 
+    if (device->isWindowActive()) {
       u32 now = device->getTimer()->getTime();
       //driver->beginScene(true, true, video::SColor(0,120,102,136));
       driver->beginScene(true, true, video::SColor(0,50,50,255));
-      
+
       if (true == StraightMovingTile::exists()) StraightMovingTile::move();
-      
+
       // Draw the grid.
       for (s32 x=0; x<numTiles.X * destTileSize.X; x+= destTileSize.X) driver->draw2DLine(core::position2d<s32>(x, 0), core::position2d<s32>(x, numTiles.Y * destTileSize.Y));
       for (s32 y=0; y<numTiles.Y * destTileSize.Y; y+= destTileSize.Y) driver->draw2DLine(core::position2d<s32>(0, y), core::position2d<s32>(numTiles.X * destTileSize.X,  y));
-      
+
       // Draw the tiles.
       core::list<Tile*>::Iterator itr = tiles.begin();
       while (itr != tiles.end()) {
-	driver->draw2DImage(image, 
+	driver->draw2DImage(image,
 			    core::rect<s32>((*itr)->windowPos.X, (*itr)->windowPos.Y, destTileSize.X + (*itr)->windowPos.X, destTileSize.Y + (*itr)->windowPos.Y), // destRect
 			    core::rect<s32>(orgTileSize.X * (*itr)->gridPos.X, orgTileSize.Y * (*itr)->gridPos.Y, orgTileSize.X * (1+(*itr)->gridPos.X) , orgTileSize.Y * (1+(*itr)->gridPos.Y) )); // sourceRect
 
 	itr++;
       }
-      
+
       // Draw the whole image
       if (now < showTill) driver->draw2DImage(image, core::rect<s32>(0, 0, destImageSize.Width, destImageSize.Height), core::rect<s32>(0, 0, orgImageSize.Width, orgImageSize.Height));
 
-      env->drawAll(); 
-      
+      env->drawAll();
+
       driver->endScene();
     }
   }
