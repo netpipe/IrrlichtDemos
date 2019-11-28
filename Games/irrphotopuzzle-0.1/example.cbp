@@ -2,30 +2,30 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="Irrlicht Pong" />
+		<Option title="irrPhotoPuzzle" />
 		<Option pch_mode="0" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="windows">
-				<Option output="./Pong" prefix_auto="1" extension_auto="1" />
+				<Option output="./irrPhotoPuzzle" prefix_auto="1" extension_auto="1" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Option projectResourceIncludeDirsRelation="1" />
 			</Target>
 			<Target title="Linux64">
-				<Option output="./Pong" prefix_auto="0" extension_auto="0" />
+				<Option output="./irrPhotoPuzzle" prefix_auto="0" extension_auto="0" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Option projectResourceIncludeDirsRelation="1" />
 			</Target>
 			<Target title="Linux32">
-				<Option output="./Pong" prefix_auto="0" extension_auto="0" />
+				<Option output="./irrPhotoPuzzle" prefix_auto="0" extension_auto="0" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Option projectResourceIncludeDirsRelation="1" />
 			</Target>
 			<Target title="emscripten">
-				<Option output="./Pong.html" prefix_auto="0" extension_auto="0" />
+				<Option output="./irrPhotoPuzzle.html" prefix_auto="0" extension_auto="0" />
 				<Option type="1" />
 				<Option compiler="emscripten" />
 				<Option projectCompilerOptionsRelation="1" />

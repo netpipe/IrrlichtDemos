@@ -2,6 +2,10 @@
 #include <iostream>
 #include <stdlib.h>
 
+#ifdef __EMSCRIPTEN__
+#include <emscripten.h>
+#endif
+
 using namespace irr;
 using namespace std;
 
@@ -441,7 +445,41 @@ void createSettingsBox()
 
 
 // ---------------------------------------------------------------------
+void main_loop(){
 
+
+  device->run();
+   // if (device->isWindowActive()) {
+      u32 now = device->getTimer()->getTime();
+      //driver->beginScene(true, true, video::SColor(0,120,102,136));
+      driver->beginScene(true, true, video::SColor(0,50,50,255));
+
+      if (true == StraightMovingTile::exists()) StraightMovingTile::move();
+
+      // Draw the grid.
+      for (s32 x=0; x<numTiles.X * destTileSize.X; x+= destTileSize.X) driver->draw2DLine(core::position2d<s32>(x, 0), core::position2d<s32>(x, numTiles.Y * destTileSize.Y));
+      for (s32 y=0; y<numTiles.Y * destTileSize.Y; y+= destTileSize.Y) driver->draw2DLine(core::position2d<s32>(0, y), core::position2d<s32>(numTiles.X * destTileSize.X,  y));
+
+      // Draw the tiles.
+      core::list<Tile*>::Iterator itr = tiles.begin();
+      while (itr != tiles.end()) {
+	driver->draw2DImage(image,
+			    core::rect<s32>((*itr)->windowPos.X, (*itr)->windowPos.Y, destTileSize.X + (*itr)->windowPos.X, destTileSize.Y + (*itr)->windowPos.Y), // destRect
+			    core::rect<s32>(orgTileSize.X * (*itr)->gridPos.X, orgTileSize.Y * (*itr)->gridPos.Y, orgTileSize.X * (1+(*itr)->gridPos.X) , orgTileSize.Y * (1+(*itr)->gridPos.Y) )); // sourceRect
+
+	itr++;
+      }
+
+      // Draw the whole image
+      if (now < showTill) driver->draw2DImage(image, core::rect<s32>(0, 0, destImageSize.Width, destImageSize.Height), core::rect<s32>(0, 0, orgImageSize.Width, orgImageSize.Height));
+
+      env->drawAll();
+
+      driver->endScene();
+  //  }
+
+
+}
 
 int main()
 {
@@ -464,10 +502,16 @@ int main()
 //  case 'c': driverType = video::EDT_OPENGL;   break;
 //  default: return 0;
 //  }
+
+#ifdef __EMSCRIPTEN__
+	driverType = video::EDT_OGLES2;
+  device = createDevice(driverType, core::dimension2d<u32>(600, 600), 32, false, false, false, &receiver);
+  if (device == 0) return 1; // could not create selected driver.
+#else
 driverType = video::EDT_OPENGL;
   device = createDevice(driverType, core::dimension2d<u32>(600, 600), 32, false, false, false, &receiver);
   if (device == 0) return 1; // could not create selected driver.
-
+#endif
   driver = device->getVideoDriver();
 
   env = device->getGUIEnvironment();
@@ -478,7 +522,7 @@ driverType = video::EDT_OPENGL;
 
   // gui
   gui::IGUISkin* skin = env->getSkin();
-  gui::IGUIFont* font = env->getFont("fonthaettenschweiler.bmp");
+  gui::IGUIFont* font = env->getFont("./media/fonthaettenschweiler.bmp");
   if (font) skin->setFont(font);
 
   menu = env->addMenu();
@@ -509,6 +553,9 @@ driverType = video::EDT_OPENGL;
     env->getSkin()->setColor((gui::EGUI_DEFAULT_COLOR)i, col);
   }
 
+#ifdef __EMSCRIPTEN__
+	emscripten_set_main_loop(main_loop,0,1);
+#else
 
   while(device->run() && driver) {
     if (device->isWindowActive()) {
@@ -540,6 +587,7 @@ driverType = video::EDT_OPENGL;
       driver->endScene();
     }
   }
+  #endif
   device->drop();
   return 0;
 }

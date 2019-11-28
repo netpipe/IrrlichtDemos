@@ -32,11 +32,10 @@
 		<Unit filename="CParticleSystem2SceneNode.cpp" />
 		<Unit filename="CParticleSystem2SceneNode.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="scrollergame.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="scrollergame.h" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-			<envvars />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
