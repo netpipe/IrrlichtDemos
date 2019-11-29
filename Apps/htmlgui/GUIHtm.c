@@ -84,85 +84,95 @@ void InitGUI(unsigned int port){
 }
 
 void CheckGUI(void){
-    unsigned int DataLen =0;
-    unsigned int idx =0,txtpos =0;
-    char fFound=0;
-    char * End =NULL;
+    unsigned int DataLen = 0;
+    unsigned int idx = 0,txtpos = 0;
+    char fFound = 0;
+    char * End = NULL;
     char * DataSection = NULL;
 
     //"Server: GET"   "HTTP"
-    DataLen =ReadSocket( ReadBuff,5000);
+    DataLen = ReadSocket(ReadBuff, 5000);
 
-    if(DataLen && GuiIndex){
+	End = strstr(ReadBuff ,"HTTP");
+	if(End != NULL ){
+		End[0] = '\0';
+	}
+	printf("Server: %s \n", ReadBuff);
+    
+    if(strstr(ReadBuff, "/favicon.ico")){
+		WriteSocket("HTTP/1.0 404 Not Found\n");
+		CloseTransaction();
+		return;
+	}
 
-        End = strstr(ReadBuff ,"HTTP");
-        if(End != NULL ){
-            End[0] =0;
-        }
-        printf("Server: %s \n", ReadBuff);
-
+	if(DataLen && GuiIndex){
+        
         ///Check for User Command Events;
-        for (idx =0; idx < GuiIndex ;idx++ ){
+        for(idx =0; idx < GuiIndex; idx++){
 
-                if(  strstr(ReadBuff , GuiElement[idx].DataName ) != NULL  ){
+			if(strstr(ReadBuff, GuiElement[idx].DataName) == NULL)
+				continue;
 
-                    if(WIDGET_BUTTON == GuiElement[idx].WidgetType && NULL != GuiElement[idx].EventCallBack){
-                        if( NULL != GuiElement[idx].EventCallBack ){
-	                        GuiElement[idx].EventCallBack( GuiElement[idx].DataName  , ReadBuff);
+			if(WIDGET_BUTTON == GuiElement[idx].WidgetType && NULL != GuiElement[idx].EventCallBack){
+				if(NULL != GuiElement[idx].EventCallBack ){
+					GuiElement[idx].EventCallBack(GuiElement[idx].DataName, ReadBuff);
+				}
 			}
-                    }
 
-                     if(WIDGET_CHECKBOX == GuiElement[idx].WidgetType   ){
-			if( NULL != GuiElement[idx].EventCallBack ){
-                        	GuiElement[idx].EventCallBack( GuiElement[idx].DataName  , ReadBuff);
-                        }
-                    }
+			if(WIDGET_CHECKBOX == GuiElement[idx].WidgetType){
+				if(NULL != GuiElement[idx].EventCallBack){
+					GuiElement[idx].EventCallBack(GuiElement[idx].DataName, ReadBuff);
+				}
+			}
 
-		    if(WIDGET_TEXTINPUT == GuiElement[idx].WidgetType   ){
-			if( NULL != GuiElement[idx].EventCallBack ){
-                                DataSection =  strstr(ReadBuff ,GuiElement[idx].DataName);
-				if(DataSection != NULL ){
-				    DataSection += strlen(GuiElement[idx].DataName);
-                                    DataSection += strlen("="); //skip the '=' present in the form spec.
-		                    for(txtpos = 0; DataSection[txtpos];txtpos++){
-				        if('+' == DataSection[txtpos]){
-						DataSection[txtpos] = ' ' ;
-					}
-				    }
-				    GuiElement[idx].EventCallBack( GuiElement[idx].DataName  , DataSection);
-				}							
-                        }
-                    }
+			if(WIDGET_TEXTINPUT == GuiElement[idx].WidgetType){
+				if(NULL != GuiElement[idx].EventCallBack){
+					DataSection = strstr(ReadBuff, GuiElement[idx].DataName);
+					if(DataSection != NULL ){
+						DataSection += strlen(GuiElement[idx].DataName);
+						DataSection += strlen("="); //skip the '=' present in the form spec.
+						for(txtpos = 0; DataSection[txtpos];txtpos++){
+							if('+' == DataSection[txtpos]){
+								DataSection[txtpos] = ' ' ;
+							}
+						}
+						GuiElement[idx].EventCallBack(GuiElement[idx].DataName, DataSection);
+					}							
+				}
+			}
+			
+			if(WIDGET_IMAGE == GuiElement[idx].WidgetType){
+				WriteSocket("HTTP/1.0 200 OK\n\n");
+				SendBinaryGUI(GuiElement[idx],ReadBuff);
+				fFound=1;
+				break;
+			}
 
-
-                    if(WIDGET_IMAGE == GuiElement[idx].WidgetType){
-                            SendBinaryGUI(GuiElement[idx],ReadBuff);
-                            fFound=1;
-                            break;
-                    }
-
-                    if(WIDGET_HTML_PAGE == GuiElement[idx].WidgetType ){
-                                SendHTMLGUI(GuiElement[idx],ReadBuff);
-                                fFound=1;
-                                break;
-                    }
-                }
+			if(WIDGET_HTML_PAGE == GuiElement[idx].WidgetType ){
+				WriteSocket("HTTP/1.0 200 OK\n");
+				WriteSocket("Content-Type: text/html\n\n");
+				SendHTMLGUI(GuiElement[idx],ReadBuff);
+				fFound=1;
+				break;
+			}
         }
 
         ///if no name may be default page or form without target for html request send default document;
         if(!fFound){
             for (idx =0; idx < GuiIndex;idx++ ){
                 if(WIDGET_HTML_PAGE == GuiElement[idx].WidgetType){
+					WriteSocket("HTTP/1.0 200 OK\n");
+					WriteSocket("Content-Type: text/html\n\n");
                     SendHTMLGUI(GuiElement[idx],ReadBuff);
                     break;
                 }
             }
         }
-	CloseTransaction();
         
+		CloseTransaction();
     }
 
- return;
+	return;
 }
 
 

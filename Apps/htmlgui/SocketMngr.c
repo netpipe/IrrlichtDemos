@@ -46,16 +46,20 @@ int ReadSocket(char *cGetData,unsigned int Len){
         cConnected = CheckConnection();
     }
 
-    if(cInit &&cConnected){
+    if(cInit && cConnected){
 
-       if (( bytesRecv = recv( AcceptSocket, cGetData, Len,0 ))<0){
+	  if (( bytesRecv = recv( AcceptSocket, cGetData, Len,0 )) < 0){
          printf("Can not read message\n");
          CloseTransaction();
       }
+      if(bytesRecv == 0){
+		 printf("Connection closed\n");
+		 CloseTransaction();
+	  }
       if(bytesRecv > 0){
-            cGetData[bytesRecv]=0;
-            *cGetData =   bytesRecv;
-            printf("Server: %s \n",cGetData);
+         cGetData[bytesRecv]=0;
+         //*cGetData =   bytesRecv;
+         printf("Server: %s \n",cGetData);
       }
 
     }
@@ -134,11 +138,13 @@ char CheckConnection(void){
         AcceptSocket = SOCKET_ERROR;
 
         AcceptSocket = accept( m_socket, NULL, NULL );
-
         if ( AcceptSocket != SOCKET_ERROR ) {
             cRet =1;
+            printf( "Client Connected.\n");
         }
-        printf( "Client Connected.\n");
+        else {
+			printf( "Accept error.\n");
+		}
         return cRet;
 }
 

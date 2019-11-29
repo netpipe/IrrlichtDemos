@@ -114,12 +114,12 @@ int main()
 		device->sleep(15);
 
 	}
-
+	
 	device->drop();
-
-        ///HTMGUI
-        ExitGUI();
-        ///HTMGUI
+	
+	///HTMGUI
+	ExitGUI();
+	///HTMGUI
 
 	return 0;
 }

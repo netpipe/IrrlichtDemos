@@ -1,41 +1,35 @@
 <HTML>
 	<HEAD>
+		<link rel="icon" href="data:;base64,iVBORw0KGgo=">
 		<TITLE>
 		</TITLE>
-				<script>
+		<script>
 			function setMyTimer(){
-
-				setTimeout("refresh()",2*1100);
-
+				setTimeout("refresh()", 2*1100);
 			}
-			
 			function refresh(){
-
 				window.location.reload(true)
-
 			}
-
-
 		</script>
 	</HEAD>
 
 	<BODY onload="setMyTimer()">
 
-	<TABLE border=2 >
-          <TR>
-	   <TD bgcolor = '0xFFFFFF' >
-	      <!--HelloImage-->
-	   </TD>
-	   <TD>
-	      <!--XRotate--> 
-		<BR>
-	      <!--YRotate--> 
-	   </TD>
-	  </TR>
-        </TABLE>
+		<TABLE border=2 >
+			<TR>
+				<TD bgcolor = '0xFFFFFF' >
+					<!--HelloImage-->
+				</TD>
+				<TD>
+					<!--XRotate--> 
+					<BR>
+					<!--YRotate--> 
+				</TD>
+			</TR>
+		</TABLE>
 
-	<BR>
-	<!--Exit-->
+		<BR>
+		<!--Exit-->
 
 	</BODY>
 </HTML>
