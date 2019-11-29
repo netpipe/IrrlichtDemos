@@ -1,0 +1,105 @@
+Index: include/GL/glfw.h
+===================================================================
+--- include/GL/glfw.h	(revision 1177)
++++ include/GL/glfw.h	(working copy)
+@@ -341,6 +341,11 @@
+ #define GLFW_AXES                 0x00050002
+ #define GLFW_BUTTONS              0x00050003
+ 
++/* Values for the window move callback. */
++#ifdef _GLFW_WM_MOVE_HACK
++#define	GLFW_MOVE_ENTER			0x00000000
++#define	GLFW_MOVE_EXIT			0x00000001
++#endif //_GLFW_WM_MOVE_HACK
+ 
+ /*************************************************************************
+  * Typedefs
+@@ -353,6 +358,9 @@
+ } GLFWvidmode;
+ 
+ /* Function pointer types */
++#ifdef _GLFW_WM_MOVE_HACK
++typedef void (* GLFWwindowmovefun)(int);
++#endif //_GLFW_WM_MOVE_HACK
+ typedef void (* GLFWwindowsizefun)(int,int);
+ typedef int  (* GLFWwindowclosefun)(void);
+ typedef void (* GLFWwindowrefreshfun)(void);
+@@ -385,6 +393,9 @@
+ GLFWAPI void glfwSwapBuffers( void );
+ GLFWAPI void glfwSwapInterval( int interval );
+ GLFWAPI int  glfwGetWindowParam( int param );
++#ifdef _GLFW_WM_MOVE_HACK
++GLFWAPI void glfwSetWindowMoveCallback( GLFWwindowmovefun cbfun );
++#endif //_GLFW_WM_MOVE_HACK
+ GLFWAPI void glfwSetWindowSizeCallback( GLFWwindowsizefun cbfun );
+ GLFWAPI void glfwSetWindowCloseCallback( GLFWwindowclosefun cbfun );
+ GLFWAPI void glfwSetWindowRefreshCallback( GLFWwindowrefreshfun cbfun );
+Index: lib/win32/platform.h
+===================================================================
+--- lib/win32/platform.h	(revision 1177)
++++ lib/win32/platform.h	(working copy)
+@@ -239,6 +239,9 @@
+ // ========= PLATFORM INDEPENDENT MANDATORY PART =========================
+ 
+     // User callback functions
++#ifdef _GLFW_WM_MOVE_HACK
++	GLFWwindowmovefun	WindowMoveCallback;
++#endif //_GLFW_WM_MOVE_HACK
+     GLFWwindowsizefun    WindowSizeCallback;
+     GLFWwindowclosefun   WindowCloseCallback;
+     GLFWwindowrefreshfun WindowRefreshCallback;
+Index: lib/win32/win32_window.c
+===================================================================
+--- lib/win32/win32_window.c	(revision 1177)
++++ lib/win32/win32_window.c	(working copy)
+@@ -897,6 +897,20 @@
+             return 0;
+         }
+ 
++		// Enter or exit move?
++#ifdef _GLFW_WM_MOVE_HACK
++		case WM_ENTERSIZEMOVE:
++		case WM_EXITSIZEMOVE:
++		{
++			// Call the user-supplied callback, if it exists
++            if( _glfwWin.WindowMoveCallback )
++            {
++				_glfwWin.WindowMoveCallback( uMsg == WM_ENTERSIZEMOVE ? GLFW_MOVE_ENTER : GLFW_MOVE_EXIT );
++            }
++		}break;
++
++#endif //_GLFW_WM_MOVE_HACK
++
+         // Was the window contents damaged?
+         case WM_PAINT:
+         {
+Index: lib/window.c
+===================================================================
+--- lib/window.c	(revision 1177)
++++ lib/window.c	(working copy)
+@@ -646,7 +646,25 @@
+     }
+ }
+ 
++//========================================================================
++// glfwSetWindowSizeCallback() - Set callback function for window move
++// begin and end.
++//========================================================================
++#ifdef _GLFW_WM_MOVE_HACK
++GLFWAPI void glfwSetWindowMoveCallback( GLFWwindowmovefun cbfun )
++{
++    // Is GLFW initialized?
++    if( !_glfwInitialized || !_glfwWin.Opened )
++    {
++        return;
++    }
+ 
++    // Set callback function
++    _glfwWin.WindowMoveCallback = cbfun;
++
++}
++#endif //_GLFW_WM_MOVE_HACK
++
+ //========================================================================
+ // glfwSetWindowSizeCallback() - Set callback function for window size
+ // changes
