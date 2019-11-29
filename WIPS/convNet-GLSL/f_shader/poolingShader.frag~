@@ -1,0 +1,29 @@
+uniform sampler2D textureUnit;
+varying vec2 outUV;
+
+uniform float SCREEN_WIDTH;
+uniform float SCREEN_HEIGHT;
+float texelWidthOffset;
+float texelHeightOffset;
+
+
+vec4 vecPool;
+
+void main()
+{
+ texelWidthOffset = 1.0/SCREEN_WIDTH;
+ texelHeightOffset = 1.0/SCREEN_HEIGHT;
+
+ vecPool.x = texture2D(textureUnit, vec2(2.0 * outUV.x, 2.0 * outUV.y)).r;
+ vecPool.y = texture2D(textureUnit, vec2(2.0 * outUV.x, 2.0 * outUV.y + texelHeightOffset)).r;
+ vecPool.z = texture2D(textureUnit, vec2(2.0 * outUV.x + texelWidthOffset, 2.0 * outUV.y)).r;
+ vecPool.w = texture2D(textureUnit, vec2(2.0 * outUV.x + texelWidthOffset, 2.0 * outUV.y + texelHeightOffset)).r;	
+
+ float maxA = max(vecPool.x, vecPool.y);
+ float maxB = max(vecPool.z, vecPool.w);
+ float maxC = max(maxA, maxB);
+
+ gl_FragColor = vec4(vecPool.x, vecPool.y, vecPool.z, 1.0);
+}
+
+

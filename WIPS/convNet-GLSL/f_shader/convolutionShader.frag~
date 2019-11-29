@@ -1,0 +1,39 @@
+uniform sampler2D grayInputImage;
+varying vec2 outUV;
+uniform mat3 kernelMatrix;
+uniform float SCREEN_WIDTH;
+uniform float SCREEN_HEIGHT;
+
+vec3 colorValue;
+float outputColorValue;
+mat3 pixelMatrix;
+float texelWidthOffset;
+float texelHeightOffset;
+
+void main()
+{
+ texelWidthOffset = 1.0/SCREEN_WIDTH;
+ texelHeightOffset = 1.0/SCREEN_HEIGHT;
+
+ colorValue.x = texture2D(grayInputImage, vec2(outUV.x - texelWidthOffset, outUV.y - texelHeightOffset)).r;
+ colorValue.y = texture2D(grayInputImage, vec2(outUV.x, outUV.y - texelHeightOffset)).r;
+ colorValue.z = texture2D(grayInputImage, vec2(outUV.x + texelWidthOffset, outUV.y - texelHeightOffset)).r;
+ outputColorValue = dot(kernelMatrix[0], colorValue);
+
+ colorValue.x = texture2D(grayInputImage, vec2(outUV.x - texelWidthOffset, outUV.y)).r;
+ colorValue.y = texture2D(grayInputImage, vec2(outUV.x, outUV.y)).r;
+ colorValue.z = texture2D(grayInputImage, vec2(outUV.x + texelWidthOffset, outUV.y)).r;
+ outputColorValue = outputColorValue + dot(kernelMatrix[1], colorValue);
+
+ colorValue.x = texture2D(grayInputImage, vec2(outUV.x - texelWidthOffset, outUV.y + texelHeightOffset)).r;
+ colorValue.y = texture2D(grayInputImage, vec2(outUV.x, outUV.y + texelHeightOffset)).r;
+ colorValue.z = texture2D(grayInputImage, vec2(outUV.x + texelWidthOffset, outUV.y + texelHeightOffset)).r;
+ outputColorValue = outputColorValue + dot(kernelMatrix[2], colorValue);
+
+ outputColorValue = max(0, outputColorValue);
+
+
+ gl_FragColor = vec4(outputColorValue, outputColorValue, outputColorValue, 1.0);
+}
+
+

@@ -1,0 +1,268 @@
+#include <GL/glew.h>
+#include <SDL2/SDL_opengl.h>
+#include "../header/meshLoader.h"
+#include "../header/shader.h"
+#include "../header/matrices.h"
+#include <iostream>
+
+using namespace std;
+
+float SCREEN_WIDTH = 640.0;
+float SCREEN_HEIGHT = 480.0;
+SDL_Window* gWindow;
+SDL_Surface* gScreenSurface;
+matrices pipeline;
+meshLoader* scene;
+mesh* quad;
+
+shader* convShades;
+shader* poolingShades;
+shader* grayShades;
+shader* displayShades;
+
+unsigned int grayFBO, grayImage;
+unsigned int convFBO, convImage;
+unsigned int poolingFBO, poolingImage;
+int fbStatus;
+
+glm::mat3 kernelMatrix;
+
+unsigned int createTexture(int,int);
+
+void init()
+{
+	pipeline.matrixMode(PROJECTION_MATRIX);
+	pipeline.loadIdentity();
+	pipeline.ortho(-1.0, 1.0, -1.0, 1.0, 1, 100);
+	convShades = new shader("../v_shader/convolutionShader.vs","../f_shader/convolutionShader.frag");
+	poolingShades = new shader("../v_shader/poolingShader.vs","../f_shader/poolingShader.frag");
+	grayShades = new shader("../v_shader/grayShader.vs","../f_shader/grayShader.frag");
+	displayShades = new shader("../v_shader/displayShader.vs","../f_shader/displayShader.frag");
+	scene = new meshLoader();
+
+	grayImage = createTexture(SCREEN_WIDTH, SCREEN_HEIGHT);
+	convImage = createTexture(SCREEN_WIDTH, SCREEN_HEIGHT);
+	poolingImage = createTexture(SCREEN_WIDTH/2.0, SCREEN_HEIGHT/2.0);
+
+	glGenFramebuffers(1, &grayFBO);
+	glEnable(GL_TEXTURE_2D);
+	glBindFramebuffer(GL_FRAMEBUFFER,grayFBO);
+	glFramebufferTexture2D(GL_FRAMEBUFFER,GL_COLOR_ATTACHMENT0,GL_TEXTURE_2D,grayImage,0);
+
+	fbStatus = glCheckFramebufferStatus(GL_FRAMEBUFFER);
+	if(fbStatus != GL_FRAMEBUFFER_COMPLETE)
+		std::cout << "Framebuffer is not OK, status=" << fbStatus << std::endl;
+	glBindFramebuffer(GL_FRAMEBUFFER,0);
+
+
+	glGenFramebuffers(1, &convFBO);
+	glEnable(GL_TEXTURE_2D);
+	glBindFramebuffer(GL_FRAMEBUFFER,convFBO);
+	glFramebufferTexture2D(GL_FRAMEBUFFER,GL_COLOR_ATTACHMENT0,GL_TEXTURE_2D,convImage,0);
+
+	fbStatus = glCheckFramebufferStatus(GL_FRAMEBUFFER);
+	if(fbStatus != GL_FRAMEBUFFER_COMPLETE)
+		std::cout << "Framebuffer is not OK, status=" << fbStatus << std::endl;
+	glBindFramebuffer(GL_FRAMEBUFFER,0);
+
+	glGenFramebuffers(1, &poolingFBO);
+	glEnable(GL_TEXTURE_2D);
+	glBindFramebuffer(GL_FRAMEBUFFER,poolingFBO);
+	glFramebufferTexture2D(GL_FRAMEBUFFER,GL_COLOR_ATTACHMENT0,GL_TEXTURE_2D,poolingImage,0);
+
+	fbStatus = glCheckFramebufferStatus(GL_FRAMEBUFFER);
+	if(fbStatus != GL_FRAMEBUFFER_COMPLETE)
+		std::cout << "Framebuffer is not OK, status=" << fbStatus << std::endl;
+	glBindFramebuffer(GL_FRAMEBUFFER,0);
+
+
+	{
+		std::vector<unsigned int> indices;
+		std::vector<vertexData> vertices;
+		vertexData tmp;
+		//1.
+		tmp.position.change(-1.0,1.0,-1.0);
+		tmp.U=0;
+		tmp.V=1;
+		vertices.push_back(tmp);
+		//2.
+		tmp.position.change(-1.0,-1.0,-1.0);
+		tmp.U=0;
+		tmp.V=0;
+		vertices.push_back(tmp);
+		//3.
+		tmp.position.change(1.0,-1.0,-1.0);
+		tmp.U=1;
+		tmp.V=0;
+		vertices.push_back(tmp);
+		//4.
+		tmp.position.change(1.0,1.0,-1.0);
+		tmp.U=1;
+		tmp.V=1;
+		vertices.push_back(tmp);
+		
+		indices.push_back(0);
+		indices.push_back(1);
+		indices.push_back(2);		
+		
+		indices.push_back(0);
+		indices.push_back(2);
+		indices.push_back(3);
+		quad=new mesh(&vertices,&indices);
+	}
+
+	kernelMatrix[0][0]=0.0;	kernelMatrix[0][1]=-1.0;	kernelMatrix[0][2]=0.0;
+	kernelMatrix[1][0]=-1.0;	kernelMatrix[1][1]=5.00;	kernelMatrix[1][2]=-1.0;
+	kernelMatrix[2][0]=0.0;	kernelMatrix[2][1]=-1.0;	kernelMatrix[2][2]=0.0;
+
+}
+
+
+void display()
+{
+
+	//take input image and convert it to grayscale image of required size
+	glClearColor(0.25, 0.25, 0.25, 1);
+	pipeline.matrixMode(MODEL_MATRIX);
+	glBindFramebuffer(GL_FRAMEBUFFER,grayFBO);
+		grayShades->useShader();
+		glClear(GL_COLOR_BUFFER_BIT);
+		pipeline.updateMatrices(grayShades->getProgramId());
+		scene->draw(grayShades->getProgramId());
+		glBindTexture(GL_TEXTURE_2D, 0);
+		grayShades->delShader();
+	glBindFramebuffer(GL_FRAMEBUFFER,0);
+
+	//take grayscale image and convolve
+	glBindFramebuffer(GL_FRAMEBUFFER,convFBO);
+		convShades->useShader();
+		glClear(GL_COLOR_BUFFER_BIT);
+		glActiveTexture(GL_TEXTURE0);
+		glBindTexture(GL_TEXTURE_2D, grayImage);
+
+		glUniform1f(glGetUniformLocation(convShades->getProgramId(),"SCREEN_WIDTH"), SCREEN_WIDTH);
+		glUniform1f(glGetUniformLocation(convShades->getProgramId(),"SCREEN_HEIGHT"), SCREEN_HEIGHT);
+
+		glUniform1i(glGetUniformLocation(convShades->getProgramId(),"grayInputImage"),0);
+		glUniformMatrix3fv(glGetUniformLocation(convShades->getProgramId(),"kernelMatrix"),1,GL_FALSE,&kernelMatrix[0][0]);
+
+		pipeline.updateMatrices(convShades->getProgramId());
+		quad->draw(convShades->getProgramId());
+		glBindTexture(GL_TEXTURE_2D, 0);		
+		convShades->delShader();
+	glBindFramebuffer(GL_FRAMEBUFFER,0);
+
+
+	//use convolved and RELued image, to do max-pooling
+	glBindFramebuffer(GL_FRAMEBUFFER,poolingFBO);
+		poolingShades->useShader();
+		glClear(GL_COLOR_BUFFER_BIT);
+		glActiveTexture(GL_TEXTURE0);
+		glBindTexture(GL_TEXTURE_2D, convImage);
+
+		glUniform1f(glGetUniformLocation(poolingShades->getProgramId(),"SCREEN_WIDTH"), SCREEN_WIDTH);
+		glUniform1f(glGetUniformLocation(poolingShades->getProgramId(),"SCREEN_HEIGHT"), SCREEN_HEIGHT);
+
+		glUniform1i(glGetUniformLocation(poolingShades->getProgramId(),"textureUnit"),0);
+		pipeline.updateMatrices(poolingShades->getProgramId());
+		quad->draw(poolingShades->getProgramId());
+
+		glBindTexture(GL_TEXTURE_2D, 0);
+		poolingShades->delShader();
+	glBindFramebuffer(GL_FRAMEBUFFER,0);
+
+
+
+
+	//display ouput, less changes on produced results
+	glClearColor(1, 0, 0, 1);
+	displayShades->useShader();
+	glClear(GL_COLOR_BUFFER_BIT);
+		glActiveTexture(GL_TEXTURE0);
+		glBindTexture(GL_TEXTURE_2D, convImage);
+		glUniform1i(glGetUniformLocation(displayShades->getProgramId(),"texture0"),0);
+	pipeline.updateMatrices(displayShades->getProgramId());
+	quad->draw(displayShades->getProgramId());
+	displayShades->delShader();
+
+}
+
+
+int main()
+{
+
+	SDL_Init(SDL_INIT_EVERYTHING);
+	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
+	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 0);
+
+	gWindow = SDL_CreateWindow("SDL_COLLIDE", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN | SDL_WINDOW_OPENGL);
+	SDL_GLContext gContext = SDL_GL_CreateContext(gWindow);
+	glewExperimental = GL_TRUE;
+	glewInit();
+	SDL_GL_SetSwapInterval( 1 );
+	gScreenSurface = SDL_GetWindowSurface( gWindow );
+
+	bool running=true;
+	SDL_Event event;	
+	init();
+
+	while(running)
+	{
+		while(SDL_PollEvent(&event))
+		{
+			switch(event.type)
+			{
+				case SDL_QUIT:
+				running = false;
+				break;
+	
+				case SDL_KEYDOWN:
+				switch(event.key.keysym.sym)
+					{
+						case SDLK_ESCAPE:
+							running=false;
+							break;
+						
+					}
+	
+			}
+		}
+
+		display();
+		SDL_GL_SwapWindow(gWindow);
+
+	}
+
+
+	delete grayShades;
+	delete convShades;
+	delete poolingShades;
+	delete displayShades;
+	delete scene;
+	delete quad;
+	SDL_FreeSurface(gScreenSurface);
+	SDL_GL_DeleteContext(gContext);
+	SDL_DestroyWindow(gWindow);
+	SDL_Quit();
+	return 0;
+}
+
+unsigned int createTexture(int w,int h)
+{
+	unsigned int textureId;
+	glEnable(GL_TEXTURE_2D);
+	glGenTextures(1,&textureId);
+	glBindTexture(GL_TEXTURE_2D,textureId);
+	glTexImage2D(GL_TEXTURE_2D,0, GL_RGBA8, w, h, 0, GL_RGBA, GL_FLOAT, NULL);
+	glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_NEAREST);
+	glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_NEAREST);
+	glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_WRAP_S,GL_CLAMP_TO_BORDER);
+	glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_WRAP_T,GL_CLAMP_TO_BORDER);
+	
+	int i;
+	i=glGetError();
+	if(i!=0)
+		std::cout << "Error happened while loading the texture: " << gluErrorString(i) << std::endl;
+	glBindTexture(GL_TEXTURE_2D,0);
+	return textureId;
+}
