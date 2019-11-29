@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="BulletSoft Body" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./SoftBody" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
+			<Add directory="../../../LunaLibs/bullet-2.78/src" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="BulletSoftBody" />
+			<Add library="BulletDynamics" />
+			<Add library="BulletCollision" />
+			<Add library="LinearMath" />
+			<Add library="X11" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
+			<Add directory="../../../LunaLibs/bullet-2.78/src/BulletSoftBody" />
+			<Add directory="../../../LunaLibs/bullet-2.78/src/LinearMath" />
+			<Add directory="../../../LunaLibs/bullet-2.78/src/BulletDynamics" />
+			<Add directory="../../../LunaLibs/bullet-2.78/src/BulletCollision" />
+			<Add directory="../../../LunaLibs/bullet-2.78/msvc/2008/lib/Release" />
+		</Linker>
+		<Unit filename="PostProcessRadialBlur.h" />
+		<Unit filename="include/CCloudSceneNode.h" />
+		<Unit filename="include/CItem.h" />
+		<Unit filename="include/CPlayer.h" />
+		<Unit filename="include/IWindGenerator.h" />
+		<Unit filename="include/Utils.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="shader.h" />
+		<Unit filename="src/CCloudSceneNode.cpp" />
+		<Unit filename="src/CItem.cpp" />
+		<Unit filename="src/CPlayer.cpp" />
+		<Unit filename="src/CWindGenerator.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

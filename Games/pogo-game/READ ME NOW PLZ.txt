@@ -1,0 +1,105 @@
+Coin Jump
+========
+--------------------------------------------------------------------------------------
+Minimum system requirements:
+-Windows
+-Sound output with stereo and two speakers
+(headphones reccomened, please insert them the right ears as at some stage I assumed it was a 3d sound bug rather than the headphones being inverted :o)
+-Shader capable card sm2b+ I think...
+--------------------------------------------------------------------------------------
+My entry is a small game which demonstrates the use of motion for gameplay rather than purely visual purpouses, the art and shaders are just suffcient to make it not ugly and are not the main aim of the entry nor are they indcations of irrlicht's maximum potential. Even though its a small game it needs mastery of some skills before you can start enjoying it, so please read this manual fully to make the learning curve as short as possible.
+--------------------------------------------------------------------------------------
+Aim of the game: Achieve a high score within the time limit, this can be done be collecting coins and or stringing together combos.
+--------------------------------------------------------------------------------------
+Coin types:
+
+Normal coin: Adds a minimum of 200 to your score.
+Special coin: Adds 5000 to your combo holder. Listen carefully to locate it, it also does not spin. This coin respwans to a different location after you have bounced 10 times.
+Evil Coin: This coin silently halves your score, identify it with the direction of its spin.
+--------------------------------------------------------------------------------------
+How to move:
+
+Basics
+You are on a pogostick, you can only change your direction of travel during a bounce. In flight you can only look around to plan your next bounce. Change your view direction with the mouse, looking forwards gives you the maximum horizontal distance, looking up or down makes you travel shorter distances but is ideal for climbing steep gradients.
+
+Advanced
+
+Boost jumping
+Boost jumping is an essential skill in coin jump to reach remote locations and coins, to boost jump click your mouse right *BEFORE* you land. This will make you travel longer distances and will add to your combo holder. String multiple boost jumps together for higher scores, normal jumps and failed attempts at boost jumps break Jump Combos. Each attempt at a boost jump costs 10 score points.
+
+Reverse Jump
+A reverse jump is useful to get coins you barely missed going forwards, look at the ground before you land to excute a backwards jump, this also works with boost jumps.
+
+Wind
+Depending on your wind settings wind will after your trajectory, the effects of wind are stronger at higher altitudes. Plan your movements using the red flag. Beginners should play with 0 wind strength and increase it if they want.
+
+--------------------------------------------------------------------------------------
+Combo types:
+
+Jump Combo:
+Adds the combo holder to your score after you break a string of boost jumps or your combo holder reaches 10000
+
+Coin Air:
+Get multiple coins in one jump
+
+Special Coin:
+Adds 5000 to your combo holder
+
+Y-Spin:
+Rotate the camera quickly in a cricle with you mouse to increase your score duirng flight.
+( Y-axsis)
+-------------------------------------------------------------------------------------
+Tips:
+
+Try and move as fast and as effeciently as possible by either mainting your boost jump string or by getting multiple coins per jump.
+-------------------------------------------------------------------------------------
+At last what you probabbly wanted to read from the start, yet again you might have already run the exe before opening this document!
+How to run:
+click the exe =p
+and press an integer (0 for beginners) and then enter.
+--------------------------------------------------------------------------------------
+
+
+Credits:
+Game created with Free and open source tools. All crossplatform.
+
+Stuff I did:
+Game design
+Coding
+Audio editing sound effects
+Modelling in blender <-had to keep this ultra simple since the ascii irrmesh load times got horrible beyond 10000 polies.
+Animation in blender
+Textures modified from cgtextures in Gimp
+Normal maps made in Insane Bump(my app)
+
+Others:
+Arms amputed from a Make Human model.
+Testing: My sister... 8/
+
+Special thanks:
+Irrlicht
+Irrklang
+Bullet
+Irrb
+Blender
+Gimp
+Audacity
+Bitplanes clouds
+Klasker for the wind gen
+TGM for radial blur, modified
+Irrmesh to bullet code from here
+http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=22764
+Allan green ATI testing
+Nox_firegalaxy ATI testing
+
+Music
+estrayk_-_money.mod modarchive.org
+
+Sounds sourced from:
+http://gmc.yoyogames.com/index.php?showtopic=276657
+http://www.freesound.org/samplesViewSingle.php?id=51717
+http://www.freesound.org/samplesViewSingle.php?id=32864
+http://www.freesound.org/samplesViewSingle.php?id=27281
+http://www.freesound.org/samplesViewSingle.php?id=65152
+http://www.freesound.org/samplesViewSingle.php?id=34202
+http://www.freesound.org/samplesViewSingle.php?id=29811
