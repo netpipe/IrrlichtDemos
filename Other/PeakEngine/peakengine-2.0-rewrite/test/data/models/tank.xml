@@ -1,0 +1,17 @@
+<model name="tank">
+	<scene>
+		<group max="20.0">
+			<mesh name="m1a1.scene.xml"/>
+		</group>
+		<group min="20.0" max="40.0">
+			<mesh name="m1a1_low.scene.xml"/>
+		</group>
+		<group min="40.0">
+			<mesh name="m1a1_low.scene.xml"/>
+		</group>
+	</scene>
+	<physics>
+		<box size="3.7/2.5/10"/>
+	</physics>
+</model>
+
