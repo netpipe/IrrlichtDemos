@@ -1,0 +1,5 @@
+0.0.1 uses irrlicht and ode physics if i remember correctly there was a version with bullet physics between 0.0.1 and 0.0.2 but i've lost the files
+
+0.0.2 uses horde 3D might have seen a dual compiling version too but have since lost the files.
+
+these can be combined for a multi engine framework.
