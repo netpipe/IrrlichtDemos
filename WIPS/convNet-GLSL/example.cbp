@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Irrlicht Pong" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./Pong" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="Xxf86vm" />
+			<Add library="X11" />
+			<Add library="GLEW" />
+			<Add library="SDL2" />
+			<Add library="GLU" />
+			<Add library="SDL2_image" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+		</Linker>
+		<Unit filename="header/cell.h" />
+		<Unit filename="header/hiddenLayer.h" />
+		<Unit filename="header/matrices.h" />
+		<Unit filename="header/mesh.h" />
+		<Unit filename="header/meshData.h" />
+		<Unit filename="header/meshLoader.h" />
+		<Unit filename="header/mlp.h" />
+		<Unit filename="header/mnist.h" />
+		<Unit filename="header/shader.h" />
+		<Unit filename="header/vector3d.h" />
+		<Unit filename="source/cell.cpp" />
+		<Unit filename="source/hiddenLayer.cpp" />
+		<Unit filename="source/main.cpp" />
+		<Unit filename="source/matrices.cpp" />
+		<Unit filename="source/mesh.cpp" />
+		<Unit filename="source/meshLoader.cpp" />
+		<Unit filename="source/mlp.cpp" />
+		<Unit filename="source/mnist.cpp" />
+		<Unit filename="source/shader.cpp" />
+		<Unit filename="source/vector3d.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

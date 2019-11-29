@@ -2,12 +2,13 @@
 #include "../header/mlp.h"
 #include <assert.h>
 #include <fstream>
+#include <math.h>
 
 mlp::mlp(int numIn, int numHid, int numOut, int nCells)			//default constructor for a binomial classifier
 {
 	numInputNode = numIn;
 	numOutputNode = numOut;
-	numHiddenLayer = numHid;	
+	numHiddenLayer = numHid;
 
 	numCell = new unsigned int[numHiddenLayer + 2];
 	numCell[0] = numInputNode;
@@ -68,8 +69,8 @@ mlp::mlp(int numIn, int numHid, int numOut, int nCells)			//default constructor 
 		}
 
   	hiddenLayerObj[numHiddenLayer] = new hiddenLayer(numCell[numHiddenLayer], numCell[numHiddenLayer+1], weights[numHiddenLayer], biasWeights[numHiddenLayer], ioValues[numHiddenLayer], ioValues[numHiddenLayer+1], false);
-	
-	labelPtr = new float[numOutputNode];	
+
+	labelPtr = new float[numOutputNode];
 	for(int i = 0; i < numOutputNode; i++)	labelPtr[i] = 0.0;
 }
 
@@ -78,7 +79,7 @@ float mlp::learnFromMLP(float thresholdValue, int label, int imageID)
 {
   unsigned int iterationCount = 0;
   float evalAccuracy = 0.0;			//assume zero accuracy initially
-	
+
 	for(int i = 0; i < numHiddenLayer+1; i++){
 		hiddenLayerObj[i]->forwardPassLayer(); }
 
@@ -86,7 +87,7 @@ float mlp::learnFromMLP(float thresholdValue, int label, int imageID)
 	for(int i = 0; i < numOutputNode; i++)
 	{
 		errGradient[numHiddenLayer+1][i] = (labelPtr[i] - ioValues[numHiddenLayer+1][i]);
-		if(isnan(errGradient[numHiddenLayer+1][i]) == 1) 
+		if(isnan(errGradient[numHiddenLayer+1][i]) == 1)
 		{
 				std::cout<<" label "<<label;
 			std::cout<<std::endl<<" label "<<labelPtr[i]<<" io "<<ioValues[numHiddenLayer+1][i];
@@ -95,7 +96,7 @@ float mlp::learnFromMLP(float thresholdValue, int label, int imageID)
 		evalAccuracy *= pow(ioValues[numHiddenLayer+1][i], labelPtr[i]);
 	}
 
-	
+
 	//std::cout<<"label "<<label<<" eval "<<evalAccuracy<<" diff "<<(labelPtr[label] - ioValues[numHiddenLayer+1][label])<<std::endl;
 	//evalAccuracy is the maximum value of probability
 
@@ -113,7 +114,7 @@ float mlp::learnFromMLP(float thresholdValue, int label, int imageID)
 	{
 		for(int j = 0; j < numCell[i]; j++)
 		{
-			std::cout<<" for cell i = "<<i<<" j = "<<j<<"  val is "<<ioValues[i][j]<<std::endl;		
+			std::cout<<" for cell i = "<<i<<" j = "<<j<<"  val is "<<ioValues[i][j]<<std::endl;
 
 		}
 
@@ -126,7 +127,7 @@ float mlp::learnFromMLP(float thresholdValue, int label, int imageID)
 	{
 		for(int j = 0; j < numCell[i]; j++)
 		{
-			std::cout<<" for cell i = "<<i<<" j = "<<j<<"  val is "<<errGradient[i][j]<<std::endl;		
+			std::cout<<" for cell i = "<<i<<" j = "<<j<<"  val is "<<errGradient[i][j]<<std::endl;
 
 		}
 

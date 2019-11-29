@@ -1,6 +1,7 @@
 
 #include "../header/hiddenLayer.h"
 #include <assert.h>
+#include <math.h>
 
 hiddenLayer::hiddenLayer(unsigned int numCell_prev, unsigned int numCell_cur, float** weight, float* biasWeight, float* inputVal, float* outputVal, bool isSigmoid)
 {
@@ -40,7 +41,7 @@ void hiddenLayer::forwardPassLayer()
 		 else outputVal[i] = exp(outputVal[i]) / cumulativeSum;
 		 if(isnan(outputVal[i]) == 1) std::cout<<" Softcsum "<<cumulativeSum;
 		 assert(isnan(outputVal[i]) != 1);
-		}		
+		}
 	}
 */
 
@@ -59,6 +60,7 @@ void hiddenLayer::forwardPassLayer()
 		{
 			outputVal[i] = exp(outputVal[i] - maxOut - log(cumulativeSum));
 		 if(isnan(outputVal[i]) == 1) std::cout<<" Softcsum "<<cumulativeSum;
+
 		}
 
 	}
@@ -94,7 +96,7 @@ void hiddenLayer::backwardPassLayer(float* errGradient_prev, float* errGradient_
 				std::cout<<" "<<errGradient_prev[i]<<std::endl;
 
 			}
-		  assert(isnan(errGradient_cur[i]) != 1); 
+		  assert(isnan(errGradient_cur[i]) != 1);
 		  weights[i][j] += stepSize * (errGradient_cur[i] * inputVal[j]);
 		}
 		biasWeights[i] += stepSize * errGradient_cur[i];

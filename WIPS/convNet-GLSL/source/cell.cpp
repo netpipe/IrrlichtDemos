@@ -2,6 +2,7 @@
 #include "../header/cell.h"
 #include <assert.h>
 #include <time.h>
+#include <math.h>
 
 cell::cell(unsigned int numCell_prev, float* weights, float* inputVal, float* outputVal, float biasWeight, bool isSigmoid)
 {
@@ -10,7 +11,7 @@ cell::cell(unsigned int numCell_prev, float* weights, float* inputVal, float* ou
 	cell::inputVal = inputVal;
 	cell::outputVal = outputVal;
 	cell::isSigmoid = isSigmoid;
-	cell::biasWeight = biasWeight;	
+	cell::biasWeight = biasWeight;
 
 /*
 	//initialize weights
@@ -30,7 +31,7 @@ float cell::sigmoid(float varX)
 	if(isnan(res)) std::cout<<" res "<<res;
 	if(isnan(varX)) std::cout<<" X "<<varX;
 	return res;
-	
+
 
 }
 
@@ -47,7 +48,7 @@ void cell::forwardPassCell()
 	 cumulativeSum += weights[i] * inputVal[i];
 	//std::cout<<" cSum "<<cumulativeSum<<std::endl;
 	cumulativeSum += biasWeight;
-	if(isnan(cumulativeSum)) 
+	if(isnan(cumulativeSum))
 		std::cout<<" csum "<<cumulativeSum;
 	assert(isnan(cumulativeSum) != 1);
 	if(isSigmoid) *outputVal = sigmoid(cumulativeSum);
