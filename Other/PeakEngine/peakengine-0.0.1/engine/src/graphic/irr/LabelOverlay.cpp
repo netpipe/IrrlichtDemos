@@ -74,7 +74,7 @@ namespace peak
 		Vector2D position = getAbsolutePosition();
 		Vector2D size = getAbsoluteSize();
 
-		core::dimension2d<s32> windowsize = GraphicsEngine::get()->getDriver()->getCurrentRenderTargetSize();
+		core::dimension2d<u32> windowsize = GraphicsEngine::get()->getDriver()->getCurrentRenderTargetSize();
 		core::rect<s32> textrect(position.x * windowsize.Width,
 			position.y * windowsize.Height,
 			(position.x + size.x) * windowsize.Width,

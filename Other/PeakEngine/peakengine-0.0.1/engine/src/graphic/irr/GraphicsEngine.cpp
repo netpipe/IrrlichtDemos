@@ -67,11 +67,6 @@ namespace peak
 		{
 			param.DriverType = irr::video::EDT_OPENGL;
 		}
-		if (drv == "Direct3D8" || drv == "direct3d8" ||
-				drv == "Direct3d8" || drv == "d3d8" || drv == "DIRECT3D8")
-		{
-			param.DriverType = irr::video::EDT_DIRECT3D8;
-		}
 		if (drv == "Direct3D9" || drv == "direct3d9" ||
 				drv == "Direct3d9" || drv == "d3d9" || drv == "DIRECT3D9")
 		{
@@ -80,7 +75,7 @@ namespace peak
 		if (drv == "Software" || drv == "software" ||
 				drv == "SOFTWARE")
 		{
-			param.DriverType = irr::video::EDT_DIRECT3D8;
+			param.DriverType = irr::video::EDT_SOFTWARE;
 		}
 
 		device = createDeviceEx(param);

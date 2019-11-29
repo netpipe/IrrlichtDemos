@@ -29,6 +29,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <dirent.h>
 #include <fcntl.h>
 #include <string.h>
+#include <fstream>
+#include <unistd.h>
 #else
 #include <windows.h>
 #endif

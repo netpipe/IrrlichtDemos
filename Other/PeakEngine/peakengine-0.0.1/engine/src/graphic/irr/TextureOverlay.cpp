@@ -48,7 +48,7 @@ namespace peak
 		Vector2D center = position + size;
 		float rotation = getAbsoluteRotation();
 
-		core::dimension2d<s32> windowsize = GraphicsEngine::get()->getDriver()->getCurrentRenderTargetSize();
+		core::dimension2d<u32> windowsize = GraphicsEngine::get()->getDriver()->getCurrentRenderTargetSize();
 		float aspectratio = (float)windowsize.Width / windowsize.Height;
 		// Create data to render
 		Vector2D offset = size;

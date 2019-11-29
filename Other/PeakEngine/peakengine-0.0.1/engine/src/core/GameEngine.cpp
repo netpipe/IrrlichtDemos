@@ -37,6 +37,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #include <enet/enet.h>
 #include <ode/ode.h>
+ #include <unistd.h>
 
 #if defined(_MSC_VER) || defined(_WINDOWS_) || defined(_WIN32)
 int gettimeofday(struct timeval* tv, void *timezone)
@@ -60,7 +61,7 @@ namespace peak
 		static GameEngine engine;
 		return &engine;
 	}
-	
+
 	bool GameEngine::run(std::string root)
 	{
 		rootdir = root;
@@ -74,7 +75,7 @@ namespace peak
 		}
 		InputManager::get()->init();
 		SoundEngine::get()->init();
-		
+
 		if (enet_initialize())
 		{
 			LERROR("Could not initialize network.\n");
@@ -90,7 +91,7 @@ namespace peak
 			LERROR("Could not execute startup script.\n");
 			return false;
 		}
-		
+
 		// Main loop
 		bool multithreaded = false;
 		if (multithreaded)
@@ -114,7 +115,7 @@ namespace peak
 				if (frametime < 0) frametime += 1000000;
 				frametime /= 1000;
 				lastframe = currtime;
-				
+
 				if (lastframetime > 1000)
 				{
 					printf("Time: %f\n", lastframetime);
@@ -138,7 +139,7 @@ namespace peak
 				float game = timer.getTime();
 				timer.reset();
 				#endif
-				
+
 				BroadcastClient::doAllWork(frametime);
 				if (!GraphicsEngine::get()->renderFrame(frametime))
 				{
@@ -155,7 +156,7 @@ namespace peak
 		}
 		//InputManager::get()->shutdown();
 		Game::get()->shutdown();
-		
+
 		// Run shutdown script
 		filename = root + "/" + SettingsManager::get()->getString("scripts.shutdown");
 		if (!script.run(filename))
@@ -170,17 +171,17 @@ namespace peak
 		{
 			LERROR("Could not save settings.\n");
 		}
-		
+
 		enet_deinitialize();
-				
+
 		return true;
 	}
-	
+
 	void GameEngine::stopGame(void)
 	{
 		stopengine = true;
 	}
-	
+
 	void GameEngine::setRootDirectory(std::string dir)
 	{
 		rootdir = dir;
@@ -190,7 +191,7 @@ namespace peak
 	{
 		return rootdir;
 	}
-	
+
 	GameEngine::GameEngine()
 	{
 		stopengine = false;
