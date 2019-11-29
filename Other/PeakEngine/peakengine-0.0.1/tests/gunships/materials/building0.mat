@@ -1,0 +1,10 @@
+
+[material]
+name=building0
+type=solid
+wireframe=false
+texturecount=1
+texture0=highrise.jpg
+scale0=40/160
+lighting=false
+

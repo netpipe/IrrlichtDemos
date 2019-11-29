@@ -1,0 +1,9 @@
+
+[material]
+name=line
+type=solid
+wireframe=false
+texturecount=1
+texture0=line.png
+lighting=true
+

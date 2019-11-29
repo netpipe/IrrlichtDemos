@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="enginetest" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../bin/enginetest" prefix_auto="1" extension_auto="1" />
+				<Option working_dir=".." />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="tests/gunships" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../bin/enginetest" prefix_auto="1" extension_auto="1" />
+				<Option working_dir=".." />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="tests/gunships" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="../engine/include" />
+			<Add directory="/home/Dev/libs/physics/ode-0.11/include" />
+		</Compiler>
+		<Linker>
+			<Add library="PeakEngine" />
+			<Add library="enet" />
+			<Add library="tolua++" />
+			<Add library="Xxf86vm" />
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add library="lua" />
+			<Add library="ode" />
+			<Add library="alut" />
+			<Add library="openal" />
+			<Add library="vorbis" />
+			<Add library="ogg" />
+			<Add library="vorbisfile" />
+			<Add library="vorbisenc" />
+			<Add directory="../bin" />
+			<Add directory="/home/Dev/libs/Irrlicht/lib/gcc" />
+			<Add directory="/home/Dev/libs/physics/ode-0.11/ode/src/.libs" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

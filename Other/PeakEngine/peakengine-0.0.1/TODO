@@ -1,0 +1,43 @@
+
+
+TODO:
+========== Milestone 1 ============ (0.0.1)
+- Menus
+- Simple test game
+  - Proper levels
+  - Sound
+  - Better graphics?
+  - LODSceneNode (LOD, Animations, loaded from file)
+
+========== Milestone 2 ============ (0.0.2)
+- Documentation
+- Particle systems
+- GLSL support
+- Optimize Game
+- Character physics
+- Map format
+- Cutscene support (pre rendered / realtime rendered?)
+- Online playing (server publishing?)
+- Networking security (Currently the engine can be crashed remotely?)
+- Scripted HUD?
+- Reworked entity variables
+- XML
+- Lights, Shadows
+
+========== Milestone 3 ============ (0.1.0)
+- RTT
+- 3D-GUI
+- Editor
+- First Person Shooter test
+- Racing game test!
+- Saving/Restroring
+
+More:
+- Server relocation?
+
+Optional:
+- Lightfeather graphics
+- ID generator (to prevent overflows)
+
+BUGS:
+- Engine crashes when broken ini files are used

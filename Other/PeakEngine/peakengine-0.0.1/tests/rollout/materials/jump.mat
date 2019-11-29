@@ -1,0 +1,9 @@
+
+[material]
+name=jump
+type=solid
+wireframe=false
+texturecount=1
+texture0=jump.png
+lighting=true
+

@@ -1,0 +1,9 @@
+
+[material]
+name=speed
+type=solid
+wireframe=false
+texturecount=1
+texture0=speed.png
+lighting=true
+

@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1211580319 source:/home/Dev/libs/game/peakengine/old/peakengine-0.0.1/tests/main.cpp
+	"core/GameEngine.h"
+
+1211580319 /home/Dev/libs/game/peakengine/old/peakengine-0.0.1/engine/include/core/GameEngine.h
+	<string>
+	<time.h>
+	<winsock2.h>
+	<winbase.h>
+	<sys/time.h>
+

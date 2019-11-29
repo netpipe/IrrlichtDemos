@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PeakEngine" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../bin/PeakEngine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-DBUILD_DLL" />
+				</Compiler>
+				<Linker>
+					<Add library="user32" />
+					<Add library="../bin/ode.dll" />
+					<Add library="../bin/lua51.dll" />
+					<Add library="ws2_32" />
+					<Add library="winmm" />
+					<Add library="../bin/alut.dll" />
+					<Add library="C:/Windows/system32/OpenAL32.dll" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="../bin/PeakEngine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-DBUILD_DLL" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="user32" />
+					<Add library="../bin/ode.dll" />
+					<Add library="../bin/lua51.dll" />
+					<Add library="ws2_32" />
+					<Add library="winmm" />
+					<Add library="../bin/alut.dll" />
+					<Add library="C:/Windows/system32/OpenAL32.dll" />
+				</Linker>
+			</Target>
+			<Target title="Linux">
+				<Option output="../bin/libPeakEngine" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-DBUILD_DLL" />
+					<Add option="-D_USE_IRRLICHT_" />
+					<Add directory="/home/Dev/libs/physics/ode-0.11/include" />
+					<Add directory="/home/Dev/libs/Irrlicht/include" />
+				</Compiler>
+				<Linker>
+					<Add library="irrlicht" />
+					<Add library="enet" />
+					<Add library="Xxf86vm" />
+					<Add library="tolua++" />
+					<Add directory="/home/Dev/libs/physics/ode-0.11/ode/src/.libs" />
+					<Add directory="/home/Dev/libs/Irrlicht/lib/gcc" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-D_USE_IRRLICHT_" />
+			<Add option="-D_ENET_1_2_" />
+			<Add directory="include" />
+			<Add directory=".." />
+		</Compiler>
+		<Linker>
+			<Add library="lua" />
+			<Add library="ode" />
+			<Add library="enet" />
+			<Add library="irrlicht" />
+			<Add library="openal" />
+			<Add library="tolua++" />
+			<Add library="winmm" />
+			<Add library="ogg" />
+			<Add library="vorbis" />
+			<Add library="vorbisfile" />
+			<Add library="vorbisenc" />
+			<Add library="alut" />
+			<Add directory="../bin" />
+			<Add directory="../lib" />
+		</Linker>
+		<Unit filename="include/core/Address.h" />
+		<Unit filename="include/core/Buffer.h" />
+		<Unit filename="include/core/Color.h" />
+		<Unit filename="include/core/File.h" />
+		<Unit filename="include/core/FileSystem.h" />
+		<Unit filename="include/core/Game.h" />
+		<Unit filename="include/core/GameEngine.h" />
+		<Unit filename="include/core/IniFile.h" />
+		<Unit filename="include/core/InputManager.h" />
+		<Unit filename="include/core/Keycode.h" />
+		<Unit filename="include/core/Level.h" />
+		<Unit filename="include/core/Logger.h" />
+		<Unit filename="include/core/NetworkData.h" />
+		<Unit filename="include/core/Quaternion.h" />
+		<Unit filename="include/core/ReferenceCounted.h" />
+		<Unit filename="include/core/Script.h" />
+		<Unit filename="include/core/SettingsManager.h" />
+		<Unit filename="include/core/Timer.h" />
+		<Unit filename="include/core/Util.h" />
+		<Unit filename="include/core/Vector2D.h" />
+		<Unit filename="include/core/Vector2DI.h" />
+		<Unit filename="include/core/Vector3D.h" />
+		<Unit filename="include/entity/ClientScriptComponent.h" />
+		<Unit filename="include/entity/Component.h" />
+		<Unit filename="include/entity/Entity.h" />
+		<Unit filename="include/entity/EntityVariables.h" />
+		<Unit filename="include/entity/GraphicsComponent.h" />
+		<Unit filename="include/entity/PhysicsComponent.h" />
+		<Unit filename="include/entity/ServerScriptComponent.h" />
+		<Unit filename="include/graphic/CameraSceneNode.h" />
+		<Unit filename="include/graphic/CubeSceneNode.h" />
+		<Unit filename="include/graphic/FollowingController.h" />
+		<Unit filename="include/graphic/GraphicsEngine.h" />
+		<Unit filename="include/graphic/Image.h" />
+		<Unit filename="include/graphic/LabelOverlay.h" />
+		<Unit filename="include/graphic/Material.h" />
+		<Unit filename="include/graphic/MeshSceneNode.h" />
+		<Unit filename="include/graphic/Overlay.h" />
+		<Unit filename="include/graphic/OverlayManager.h" />
+		<Unit filename="include/graphic/RectangleOverlay.h" />
+		<Unit filename="include/graphic/RotationController.h" />
+		<Unit filename="include/graphic/SceneNode.h" />
+		<Unit filename="include/graphic/SceneNodeController.h" />
+		<Unit filename="include/graphic/SkyBox.h" />
+		<Unit filename="include/graphic/SkyDome.h" />
+		<Unit filename="include/graphic/SphereSceneNode.h" />
+		<Unit filename="include/graphic/Terrain.h" />
+		<Unit filename="include/graphic/TextureOverlay.h" />
+		<Unit filename="include/graphic/irr/InputReceiver.h" />
+		<Unit filename="include/menu/Button.h" />
+		<Unit filename="include/menu/CheckBox.h" />
+		<Unit filename="include/menu/ComboBox.h" />
+		<Unit filename="include/menu/Label.h" />
+		<Unit filename="include/menu/ListBox.h" />
+		<Unit filename="include/menu/Menu.h" />
+		<Unit filename="include/menu/MenuElement.h" />
+		<Unit filename="include/menu/MenuManager.h" />
+		<Unit filename="include/network/BroadcastClient.h" />
+		<Unit filename="include/network/BroadcastHost.h" />
+		<Unit filename="include/network/Connection.h" />
+		<Unit filename="include/network/NetworkClient.h" />
+		<Unit filename="include/network/NetworkHost.h" />
+		<Unit filename="include/physics/Body.h" />
+		<Unit filename="include/physics/Collision.h" />
+		<Unit filename="include/physics/Cube.h" />
+		<Unit filename="include/physics/Cylinder.h" />
+		<Unit filename="include/physics/Geometry.h" />
+		<Unit filename="include/physics/Heightfield.h" />
+		<Unit filename="include/physics/Hinge.h" />
+		<Unit filename="include/physics/Hinge2.h" />
+		<Unit filename="include/physics/Joint.h" />
+		<Unit filename="include/physics/Plane.h" />
+		<Unit filename="include/physics/Ray.h" />
+		<Unit filename="include/physics/Sphere.h" />
+		<Unit filename="include/physics/World.h" />
+		<Unit filename="include/sound/DataSoundSource.h" />
+		<Unit filename="include/sound/Listener.h" />
+		<Unit filename="include/sound/OggVorbisSource.h" />
+		<Unit filename="include/sound/Sound.h" />
+		<Unit filename="include/sound/SoundEngine.h" />
+		<Unit filename="include/sound/SoundFactory.h" />
+		<Unit filename="include/sound/SoundSource.h" />
+		<Unit filename="src/core/Address.cpp" />
+		<Unit filename="src/core/Buffer.cpp" />
+		<Unit filename="src/core/Color.cpp" />
+		<Unit filename="src/core/File.cpp" />
+		<Unit filename="src/core/FileSystem.cpp" />
+		<Unit filename="src/core/Game.cpp" />
+		<Unit filename="src/core/GameEngine.cpp" />
+		<Unit filename="src/core/IniFile.cpp" />
+		<Unit filename="src/core/InputManager.cpp" />
+		<Unit filename="src/core/Keycode.cpp" />
+		<Unit filename="src/core/Level.cpp" />
+		<Unit filename="src/core/Logger.cpp" />
+		<Unit filename="src/core/Quaternion.cpp" />
+		<Unit filename="src/core/Script.cpp" />
+		<Unit filename="src/core/SettingsManager.cpp" />
+		<Unit filename="src/core/Timer.cpp" />
+		<Unit filename="src/core/Util.cpp" />
+		<Unit filename="src/core/Vector2D.cpp" />
+		<Unit filename="src/core/Vector2DI.cpp" />
+		<Unit filename="src/core/Vector3D.cpp" />
+		<Unit filename="src/entity/ClientScriptComponent.cpp" />
+		<Unit filename="src/entity/Entity.cpp" />
+		<Unit filename="src/entity/EntityVariables.cpp" />
+		<Unit filename="src/entity/GraphicsComponent.cpp" />
+		<Unit filename="src/entity/PhysicsComponent.cpp" />
+		<Unit filename="src/entity/ServerScriptComponent.cpp" />
+		<Unit filename="src/graphic/FollowingController.cpp" />
+		<Unit filename="src/graphic/Material.cpp" />
+		<Unit filename="src/graphic/Overlay.cpp" />
+		<Unit filename="src/graphic/OverlayManager.cpp" />
+		<Unit filename="src/graphic/RotationController.cpp" />
+		<Unit filename="src/graphic/SceneNodeController.cpp" />
+		<Unit filename="src/graphic/irr/CameraSceneNode.cpp" />
+		<Unit filename="src/graphic/irr/CubeSceneNode.cpp" />
+		<Unit filename="src/graphic/irr/GraphicsEngine.cpp" />
+		<Unit filename="src/graphic/irr/Image.cpp" />
+		<Unit filename="src/graphic/irr/InputReceiver.cpp" />
+		<Unit filename="src/graphic/irr/LabelOverlay.cpp" />
+		<Unit filename="src/graphic/irr/MeshSceneNode.cpp" />
+		<Unit filename="src/graphic/irr/RectangleOverlay.cpp" />
+		<Unit filename="src/graphic/irr/SceneNode.cpp" />
+		<Unit filename="src/graphic/irr/SkyBox.cpp" />
+		<Unit filename="src/graphic/irr/SkyDome.cpp" />
+		<Unit filename="src/graphic/irr/SphereSceneNode.cpp" />
+		<Unit filename="src/graphic/irr/Terrain.cpp" />
+		<Unit filename="src/graphic/irr/TextureOverlay.cpp" />
+		<Unit filename="src/lua_src.cpp" />
+		<Unit filename="src/menu/Button.cpp" />
+		<Unit filename="src/menu/CheckBox.cpp" />
+		<Unit filename="src/menu/ComboBox.cpp" />
+		<Unit filename="src/menu/Label.cpp" />
+		<Unit filename="src/menu/ListBox.cpp" />
+		<Unit filename="src/menu/Menu.cpp" />
+		<Unit filename="src/menu/MenuElement.cpp" />
+		<Unit filename="src/menu/MenuManager.cpp" />
+		<Unit filename="src/network/BroadcastClient.cpp" />
+		<Unit filename="src/network/BroadcastHost.cpp" />
+		<Unit filename="src/network/Connection.cpp" />
+		<Unit filename="src/network/NetworkClient.cpp" />
+		<Unit filename="src/network/NetworkHost.cpp" />
+		<Unit filename="src/physics/Body.cpp" />
+		<Unit filename="src/physics/Cube.cpp" />
+		<Unit filename="src/physics/Cylinder.cpp" />
+		<Unit filename="src/physics/Geometry.cpp" />
+		<Unit filename="src/physics/Heightfield.cpp" />
+		<Unit filename="src/physics/Hinge.cpp" />
+		<Unit filename="src/physics/Hinge2.cpp" />
+		<Unit filename="src/physics/Joint.cpp" />
+		<Unit filename="src/physics/Plane.cpp" />
+		<Unit filename="src/physics/Ray.cpp" />
+		<Unit filename="src/physics/Sphere.cpp" />
+		<Unit filename="src/physics/World.cpp" />
+		<Unit filename="src/sound/DataSoundSource.cpp" />
+		<Unit filename="src/sound/Listener.cpp" />
+		<Unit filename="src/sound/OggVorbisSource.cpp" />
+		<Unit filename="src/sound/Sound.cpp" />
+		<Unit filename="src/sound/SoundEngine.cpp" />
+		<Unit filename="src/sound/SoundFactory.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
