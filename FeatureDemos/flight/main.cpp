@@ -9,9 +9,9 @@
 
     #ifndef MAIN_CPP_PROPERTIES
     #define MAIN_CPP_PROPERTIES
-    #define IRRLICHT_DIR "/home/Dev/libs/game/Irrlicht-SVN/"
-    #define AIRPLANE_FILE "/home/Dev/libs/game/Irrlicht-SVN/media/dwarf.x"
-    #define AIRPLANE_TEX_FILE "/home/Dev/libs/game/Irrlicht-SVN/media/detailmap3.jpg"
+    #define IRRLICHT_DIR "./"
+    #define AIRPLANE_FILE "../../media/dwarf.x"
+    #define AIRPLANE_TEX_FILE "../../media/detailmap3.jpg"
     #endif
 
     IrrlichtDevice* device = 0;

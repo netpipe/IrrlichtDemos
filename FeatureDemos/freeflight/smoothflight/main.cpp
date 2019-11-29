@@ -98,14 +98,17 @@ int main()
     for(s32 i=0; i<KEY_KEY_CODES_COUNT; i++) keys[i] = false;
     MyEventReceiver wreceiver;
     IrrlichtDevice *device =
-      createDevice(video::EDT_OPENGL, core::dimension2d<s32>(800, 600), 32, false, false, false, &receiver);
+      createDevice(video::EDT_OPENGL, core::dimension2d<s32>(800, 600), 32, false, false, false, &wreceiver);
 
    device->setResizeAble(true);
 
    video::IVideoDriver* driver = device->getVideoDriver();
    scene::ISceneManager* smgr = device->getSceneManager();
 
-   scene::ISceneNode* shuttle = smgr->addSphereSceneNode(); //replace with what ever you want
+   //scene::ISceneNode* shuttle = smgr->addSphereSceneNode(); //replace with what ever you want
+   IAnimatedMesh *mesh = smgr->getMesh("plane.x");
+   ISceneNode *shuttle = smgr->addAnimatedMeshSceneNode(mesh);
+
    if (shuttle)
       shuttle->setMaterialFlag(video::EMF_LIGHTING, false);
 
@@ -124,27 +127,27 @@ int main()
         // direction control
         if(keys[irr::KEY_LEFT])
         {
-            turn(shuttle, 0.01);
+            turn(shuttle, 1.051);
         }
         if(keys[irr::KEY_RIGHT])
         {
-            turn(shuttle, -0.01);
+            turn(shuttle, -1.051);
         }
         if(keys[irr::KEY_UP])
         {
-            pitch(shuttle, 0.01);
+            pitch(shuttle, 1.051);
         }
         if(keys[irr::KEY_DOWN])
         {
-            pitch(shuttle, -0.01);
+            pitch(shuttle, -1.051);
         }
-        if(keys[irr::KEY_COMMA])
+        if(keys[irr::KEY_KEY_A])
         {
-            roll(shuttle, 0.01);
+            roll(shuttle, 1.1051);
         }
-        if(keys[irr::KEY_PERIOD])
+        if(keys[irr::KEY_KEY_D])
         {
-            roll(shuttle, -0.01);
+            roll(shuttle, -1.1051);
         }
 
         // movement control
