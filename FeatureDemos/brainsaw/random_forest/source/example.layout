@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="All" />
+	<File name="CMeshCombiner.cpp" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="11887" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="5" />
+			<Collapse line="41" />
+			<Collapse line="51" />
+			<Collapse line="68" />
+			<Collapse line="134" />
+			<Collapse line="146" />
+			<Collapse line="163" />
+			<Collapse line="168" />
+			<Collapse line="173" />
+			<Collapse line="178" />
+			<Collapse line="185" />
+			<Collapse line="198" />
+			<Collapse line="255" />
+			<Collapse line="393" />
+			<Collapse line="398" />
+			<Collapse line="403" />
+			<Collapse line="408" />
+			<Collapse line="413" />
+			<Collapse line="418" />
+		</Folding>
+	</File>
+	<File name="CRandomForestNode.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="15833" topLine="16" />
+		</Cursor>
+		<Folding>
+			<Collapse line="7" />
+			<Collapse line="16" />
+			<Collapse line="44" />
+			<Collapse line="48" />
+			<Collapse line="89" />
+			<Collapse line="111" />
+			<Collapse line="135" />
+			<Collapse line="149" />
+			<Collapse line="188" />
+			<Collapse line="192" />
+			<Collapse line="196" />
+			<Collapse line="201" />
+			<Collapse line="205" />
+			<Collapse line="211" />
+			<Collapse line="222" />
+			<Collapse line="258" />
+			<Collapse line="264" />
+			<Collapse line="268" />
+			<Collapse line="329" />
+			<Collapse line="364" />
+			<Collapse line="421" />
+			<Collapse line="438" />
+			<Collapse line="448" />
+			<Collapse line="503" />
+			<Collapse line="507" />
+			<Collapse line="514" />
+			<Collapse line="521" />
+			<Collapse line="525" />
+			<Collapse line="532" />
+			<Collapse line="537" />
+			<Collapse line="541" />
+		</Folding>
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="8" />
+			<Collapse line="183" />
+		</Folding>
+	</File>
+	<EditorTabsLayout layout="0410600057b644bd001b97da00000002=0;Irrlicht Pong:main.cpp,1;Irrlicht Pong:CRandomForestNode.cpp,*2;Irrlicht Pong:CMeshCombiner.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=357;besth=716;minw=357;minh=716;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=0410600057b644bd001b97da00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+</CodeBlocks_layout_file>

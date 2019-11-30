@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="release" />
+	<File name="CAdvancedParticleSystemNode.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2910" topLine="86" />
+		</Cursor>
+		<Folding>
+			<Collapse line="532" />
+			<Collapse line="1037" />
+			<Collapse line="1044" />
+		</Folding>
+	</File>
+	<File name="CAdvancedParticleSystemNode.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1025" topLine="4" />
+		</Cursor>
+		<Folding>
+			<Collapse line="26" />
+		</Folding>
+	</File>
+	<EditorTabsLayout layout="02caf6105de1baba00118c7500000002=0;libAdvancedParticle:CAdvancedParticleSystemNode.h,*1;libAdvancedParticle:CAdvancedParticleSystemNode.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=720;besth=296;minw=720;minh=296;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=02caf6105de1baba00118c7500000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+</CodeBlocks_layout_file>

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1374234074 source:d:\mystuff\projects\bb_sandbox\irrrift\basictest\main.cpp
+	<stdio.h>
+	<Win32Project1.h>
+
+1374176779 d:\mystuff\projects\bb_sandbox\irrrift\irrriftdll\win32project1.h
+

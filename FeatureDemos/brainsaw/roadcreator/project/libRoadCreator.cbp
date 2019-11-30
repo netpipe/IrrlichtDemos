@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="libRoadCreator" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="debug">
+				<Option output="..\libRoadCreator" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="..\..\..\_obj_dump\sandbox\RoadCreator\libRoadCreator_debug" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="release">
+				<Option output="..\libRoadCreator" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="..\..\..\_obj_dump\sandbox\RoadCreator\libRoadCreator_release" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="..\include\libRoadCreator" />
+			<Add directory="..\..\..\libs\irrlicht-1.7.2\include" />
+		</Compiler>
+		<Unit filename="..\include\libRoadCreator\CConnection.h" />
+		<Unit filename="..\include\libRoadCreator\CRoadLoader.h" />
+		<Unit filename="..\include\libRoadCreator\CRoadMeshLoader.h" />
+		<Unit filename="..\include\libRoadCreator\CSegment.h" />
+		<Unit filename="..\include\libRoadCreator\CSurface.h" />
+		<Unit filename="..\include\libRoadCreator\CTextureParameters.h" />
+		<Unit filename="..\include\libRoadCreator\INotification.h" />
+		<Unit filename="..\include\libRoadCreator\IRoadPart.h" />
+		<Unit filename="..\source\libRoadCreator\CConnection.cpp" />
+		<Unit filename="..\source\libRoadCreator\CRoadLoader.cpp" />
+		<Unit filename="..\source\libRoadCreator\CRoadMeshLoader.cpp" />
+		<Unit filename="..\source\libRoadCreator\CSegment.cpp" />
+		<Unit filename="..\source\libRoadCreator\CSurface.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

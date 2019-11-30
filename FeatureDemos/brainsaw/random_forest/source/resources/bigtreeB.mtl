@@ -1,0 +1,19 @@
+# File created by luuv TSX
+# Created on: Mon Feb 09 10:09:18 2009 -1
+
+newmtl bigtreeB000
+Ns 0
+Ka 1.000000 1.000000 1.000000
+Kd 0.737255 0.737255 0.737255
+Ks 0.000000 0.000000 0.000000
+d 0.996078
+map_Kd bigtreetex.tga 
+
+newmtl bigtreeB001
+Ns 0
+Ka 1.000000 1.000000 1.000000
+Kd 0.737255 0.737255 0.737255
+Ks 0.000000 0.000000 0.000000
+d 0.996078
+map_Kd bigtreebark.bmp 
+# End

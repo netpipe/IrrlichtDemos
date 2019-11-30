@@ -1,0 +1,2 @@
+- "sceneNode_AdvancedParticleSystemNode.bmp" must be copied to the resources folder of IrrEdit to use the plugin
+- texture.jpg" is the texture for the demo

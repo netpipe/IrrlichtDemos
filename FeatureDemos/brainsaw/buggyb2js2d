@@ -1,0 +1,201 @@
+var initId = 0;
+var world = createWorld();
+var ctx;
+var canvasWidth;
+var canvasHeight;
+var canvasTop;
+var canvasLeft;
+var buggy=null,g_bStepping=false;
+var count=0,gameStarted=false,gameFinished=false,iTimer=0,timerDiv,iLap=1;
+
+function step(cnt) {
+	if (gameStarted && !gameFinished) {
+	 iTimer++;
+	 timerDiv.innerHTML="Racetime: "+(iTimer/100)+" seconds";
+	 if (buggy.m_position.x>6800) {
+		timerDiv.innerHTML="Race finished in "+(iTimer/100)+" seconds!";
+		gameFinished=true;
+		motor.SetMotorTorque(0);
+		motor.SetMotorSpeed(0);
+		motor2.SetMotorTorque(0);
+		motor2.SetMotorSpeed(0);
+		document.getElementById("gameOver").style.visibility="visible";
+		document.getElementById("timesheet").innerHTML+="<b>Lap "+iLap+"</b>: "+(iTimer/100)+"<br />";
+		iLap++;
+	 }
+	}
+
+	var stepping = false;
+	var timeStep = 1.0/60;
+	var iteration = 1;
+	world.Step(timeStep, iteration);
+	ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+	var pos=buggy.GetCenterPosition();
+	drawWorld(world, ctx,pos.x-canvasWidth/2,pos.y-canvasHeight/2);
+	if (g_bStepping) setTimeout('step(' + (cnt || 0) + ')', 10);
+}
+
+var motor=null,motor2,posx=-950,posy=275;
+
+var g_aRampData=new Array(new Array(-700,240),new Array(0,50,150,0,150,50),
+                          new Array(-150,240),new Array(0,50,100,-15,100,50),
+													new Array( 300,240),new Array(0,50,200,-75,200,50),
+													new Array(1500,240),new Array(0,50,150,0,150,50),
+													new Array(1800,240),new Array(0, 0,150,50,0,50),
+													new Array(2200,240),new Array(0,50,350,-100,350,50),
+													new Array(3500,240),new Array(0,50,150,0,150,50),
+													new Array(4500,240),new Array(0,50,350,-100,350,50),
+													new Array(5600,240),new Array(0, 0,150,50,0,50),
+													new Array(5900,240),new Array(0,50,550,-100,550,50));
+
+var g_aBoxData=new Array(new Array(600,228,true,0,0,2.0),new Array(100,62),new Array(750,238,true),new Array(50,52),
+                         new Array(900,248,true,0,0,2.0),new Array(50,42),new Array(1000,258,true),new Array(50,32),
+												 new Array(1100,268,true,0,0,2.0),new Array(50,22),new Array(1200,278,true),new Array(50,12),
+												 new Array(3850,275,false,0,0,0.2),new Array(15,15),
+												 new Array(5200,228,true),new Array(200,62));
+												 
+var g_aSphereData=new Array(new Array(2700,200,90,0.8,true),new Array(2800,225,90,0.8,true),new Array(2900,250,90,0.8,true),
+                            new Array(3000,275,90,0.8,true),new Array(3100,300,90,0.8,true));
+
+function setupWorld(did) {
+	if (!did) did = 0;
+	world=createWorld();
+	
+	buggy=createBox(world,posx,posy,17,5,false,0.005,0.0,1);
+	var jsWheel1=createBall(world,posx-13,posy+5,6,0.9);
+	var jsJoint1=new b2RevoluteJointDef();
+	
+	jsJoint1.anchorPoint.Set(posx-13,posy+5);
+	jsJoint1.body1=buggy;
+	jsJoint1.body2=jsWheel1;
+	jsJoint1.motorTorque=0;
+	jsJoint1.motorSpeed=0;
+	jsJoint1.enableMotor=true;
+	motor=world.CreateJoint(jsJoint1);
+	
+	var jsWheel2=createBall(world,posx+13,posy+5,6,0.9);
+	var jsJoint2=new b2RevoluteJointDef();
+	
+	jsJoint2.anchorPoint.Set(posx+13,posy+5);
+	jsJoint2.body1=buggy;
+	jsJoint2.body2=jsWheel2;
+	jsJoint2.motorTorque=0;
+	jsJoint2.motorSpeed=0;
+	jsJoint2.enableMotor=true;
+	motor2=world.CreateJoint(jsJoint2);
+	
+	for (var i=0; i<g_aRampData.length; i+=2) {
+		var jsRamp=new b2PolyDef(),aPos=g_aRampData[i],aVert=g_aRampData[i+1];
+		jsRamp.vertexCount=aVert.length/2;
+		for (var j=0; j<aVert.length; j+=2) jsRamp.vertices[j/2].Set(aVert[j],aVert[j+1]);
+		jsRamp.friction=0.9;
+		jsRamp.density=0;
+		
+		var jsRampBody=new b2BodyDef();
+		jsRampBody.AddShape(jsRamp);
+		jsRampBody.position.Set(aPos[0],aPos[1]);
+		world.CreateBody(jsRampBody);
+	}
+	
+	for (var i=0; i<g_aBoxData.length; i+=2) {
+		var aPos=g_aBoxData[i],aSize=g_aBoxData[i+1];
+		createBox(world,aPos[0],aPos[1],aSize[0],aSize[1],aPos[2],aPos[3],aPos[4],aPos[5]);
+	}
+	
+	for (var i=0; i<g_aSphereData.length; i++) {
+		var aData=g_aSphereData[i];
+		createBall(world,aData[0],aData[1],aData[2],aData[3],aData[4]);
+	}
+	
+	timerDiv=document.getElementById("timer");
+}
+
+Event.observe(window, 'load', function() {
+	setupWorld();
+	ctx = $('canvas').getContext('2d');
+	var canvasElm = $('canvas');
+	canvasWidth = parseInt(canvasElm.width);
+	canvasHeight = parseInt(canvasElm.height);
+	canvasTop = parseInt(canvasElm.style.top);
+	canvasLeft = parseInt(canvasElm.style.left);
+	Event.observe('canvas', 'click', function(e) {
+	});
+	//step();
+});
+
+document.onkeydown=KeyDownCheck;
+document.onkeyup=KeyUpCheck;
+
+function KeyDownCheck(e) {
+	var KeyID=(window.event) ? event.keyCode : e.keyCode;
+	
+	if (gameFinished) return;
+	
+	if (KeyID==39) {
+		motor.SetMotorTorque(700000);
+		motor.SetMotorSpeed(30);
+		motor2.SetMotorTorque(700000);
+		motor2.SetMotorSpeed(30);
+		if (!gameStarted) {
+			gameStarted=true;
+			g_bStepping=true;
+			step();
+		}
+	}
+	else
+		if (KeyID==37) {
+			motor.SetMotorTorque(700000);
+			motor.SetMotorSpeed(-30);
+			motor2.SetMotorTorque(700000);
+			motor2.SetMotorSpeed(-30);
+			if (!gameStarted) {
+				gameStarted=true;
+				g_bStepping=true;
+				step();
+			}
+		}
+		else
+			if (KeyID==32) {
+				motor.SetMotorTorque(1000);
+				motor.SetMotorSpeed(0);
+				motor2.SetMotorTorque(1000);
+				motor2.SetMotorSpeed(0);
+				if (!gameStarted) {
+					gameStarted=true;
+					g_bStepping=true;
+					step();
+				}
+			}
+}
+
+function KeyUpCheck(e) {
+	var KeyID=(window.event) ? event.keyCode : e.keyCode;
+	if (KeyID==39 || KeyID==37) {
+		motor.SetMotorTorque(0);
+		motor.SetMotorSpeed(0);
+		motor2.SetMotorTorque(0);
+		motor2.SetMotorSpeed(0);
+	}
+}
+
+function startGame() {
+	document.getElementById("about").style.visibility="hidden";
+	document.getElementById("bottom").style.visibility="hidden";
+	document.getElementById("backtomain").style.visibility="visible";
+
+	ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+	var pos=buggy.GetCenterPosition();
+	drawWorld(world, ctx,pos.x-canvasWidth/2,pos.y-canvasHeight/2);
+}
+
+function restart() {
+	document.getElementById("about").style.visibility="visible";
+	document.getElementById("gameOver").style.visibility="hidden";
+	document.getElementById("bottom").style.visibility="visible";
+	document.getElementById("backtomain").style.visibility="hidden";
+	g_bStepping=false;
+	setupWorld();
+	gameStarted=false;
+	gameFinished=false;
+	iTimer=0;
+}

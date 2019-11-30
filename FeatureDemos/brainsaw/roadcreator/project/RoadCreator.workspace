@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="RoadCreator">
+		<Project filename="DemoApplication.cbp">
+			<Depends filename="libRoadCreator.cbp" />
+		</Project>
+		<Project filename="libRoadCreator.cbp" />
+		<Project filename="RoadCreator.cbp" active="1">
+			<Depends filename="libRoadCreator.cbp" />
+		</Project>
+	</Workspace>
+</CodeBlocks_workspace_file>
