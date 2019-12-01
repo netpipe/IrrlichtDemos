@@ -1,6 +1,9 @@
 #include "Globals.hpp"
 #include "Output.hpp"
 
+#ifdef __EMSCRIPTEN__
+#include <emscripten.h>
+#endif
 
 
 IrrlichtDevice *device = 0;
@@ -216,12 +219,39 @@ void GameLoop(void)
   }
 }
 
+void main_loop(){
+
+
+    device->run();
+        Sound::Instance()->PlayAll();
+     // if(device->isWindowActive())
+    //   {
+
+
+                GameLoop();
+        device->getVideoDriver()->beginScene(true, true, SColor(0,200,200,200));
+        device->getSceneManager()->drawAll();
+        device->getGUIEnvironment()->drawAll();
+        device->getVideoDriver()->endScene();
+
+        device->sleep(5,0);
+     //  }
+     // else
+     //  {
+     //   device->sleep(50,0);
+     //  }
+
+}
 
 int main(int argc, char** argv)
 {
     Output::Instance()->w("Creating device.\n");
 
-    device = createDevice(EDT_OPENGL, dimension2du(800, 600), 32, false, true, false, 0);
+    #ifdef __EMSCRIPTEN__
+        device = createDevice(EDT_OGLES2, dimension2du(800, 600), 32, false, true, false, 0);
+    #else
+        device = createDevice(EDT_OPENGL, dimension2du(800, 600), 32, false, true, false, 0);
+    #endif
     device->setWindowCaption(L"PowerCell");
 
     Output::Instance()->w("Passing device to classes.\n");
@@ -262,6 +292,10 @@ int main(int argc, char** argv)
 //device->getCursorControl()->setVisible(false);
 
     Output::Instance()->w("Entering main loop.\n");
+
+    #ifdef __EMSCRIPTEN__
+	emscripten_set_main_loop(main_loop,0,1);
+#else
     while(device->run())
     {        Sound::Instance()->PlayAll();
       if(device->isWindowActive())
@@ -281,6 +315,7 @@ int main(int argc, char** argv)
         device->sleep(50,0);
        }
     }
+    #endif
     //PowerCell::Clear();
     Sound::Instance()->Drop();
     Elevator::Instance()->Clear();
