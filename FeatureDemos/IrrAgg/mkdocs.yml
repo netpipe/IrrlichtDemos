@@ -1,0 +1,7 @@
+site_name: IrrAgg Documentation
+pages:
+- Home: index.md
+- Usage: usage.md
+- API: api.md
+- Examples: examples.md
+theme: cinder

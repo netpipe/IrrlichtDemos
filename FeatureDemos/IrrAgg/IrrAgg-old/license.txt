@@ -1,0 +1,12 @@
+This project is copyright 2017 Nicolaus Anderson.
+
+This code is provided AS-IS without any expressed guarantee of merchantability or fitness.
+In no way will the authors be liable for any damages or loss arising from the usage of this code.
+You are granted permission to use, modify, and redistribute this code for any purpose - personal or commercial - in its original or modified form provided this license and the following conditions remain in full force.
+
+	1) The authors of this code are not to be misrepresented. You must not claim that you wrote this code.
+
+	2) All modifications of the code should be clearly marked.
+
+
+The projects upon which this code is dependent are subject to their own licenses. Please see the license files of those projects for details.
