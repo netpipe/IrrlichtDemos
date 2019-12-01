@@ -33,22 +33,9 @@ CTheoraPlayer * test;
 int init;
 //   CTheoraPlayer iTheoraPlayer(device);
 
-   bool loaded=0;
-
-
-//int render(CTheoraPlayer * test){
-//
-//test.update(frameDeltaTime);
-//
-//}
-
 void main_loop()
 {
 
-if (!loaded){
-//         iTheoraPlayer.load("./media/truk_kartochniy.ogg", true);
-loaded=1;
-}
 
       const irr::u32 now = timer->getTime();
       const irr::u32 frameDeltaTime = now - then;
@@ -56,9 +43,8 @@ loaded=1;
       then = now;
 	device->run();
 
-
-test->update(frameDeltaTime);
-//render();
+    test->update(frameDeltaTime);
+    //render();
 
 	driver->beginScene(true, true, video::SColor(255,200,200,200));
 	guienv->drawAll();
@@ -111,6 +97,7 @@ device = irr::createDevice(irr::video::EDT_OPENGL, irr::core::dimension2du(800, 
 
    #ifdef __EMSCRIPTEN__
       CTheoraPlayer iTheoraPlayer(device);
+        iTheoraPlayer.load("./media/truk_kartochniy.ogg", true);
       test=&iTheoraPlayer;
         guienv = device->getGUIEnvironment();
    guienv->addImage(iTheoraPlayer.getTexture(), irr::core::position2di(0,0));
@@ -126,6 +113,7 @@ device = irr::createDevice(irr::video::EDT_OPENGL, irr::core::dimension2du(800, 
 #else
 
    CTheoraPlayer iTheoraPlayer(device);
+     iTheoraPlayer.load("./media/truk_kartochniy.ogg", true);
 test=&iTheoraPlayer;
   guienv = device->getGUIEnvironment();
    guienv->addImage(iTheoraPlayer.getTexture(), irr::core::position2di(0,0));

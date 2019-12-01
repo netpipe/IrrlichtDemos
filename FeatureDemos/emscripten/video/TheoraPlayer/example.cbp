@@ -16,6 +16,7 @@
 				<Option output="./test.html" prefix_auto="0" extension_auto="0" />
 				<Option type="1" />
 				<Option compiler="emscripten" />
+				<Option projectLinkerOptionsRelation="1" />
 				<Option projectResourceIncludeDirsRelation="1" />
 				<Compiler>
 					<Add directory="/home/Dev/libs/Scripting/emsdk/emscripten-projects/irrlicht-ogl-es/irrlicht/include" />
@@ -26,6 +27,11 @@
 					<Add directory="../../libs/Ogg/include" />
 				</Compiler>
 				<Linker>
+					<Add option="-s ALLOW_MEMORY_GROWTH=1" />
+					<Add option="--preload-file media/" />
+					<Add option="-s FULL_ES2=1" />
+					<Add option="-s DISABLE_EXCEPTION_CATCHING=0" />
+					<Add option="-s NO_EXIT_RUNTIME=1" />
 					<Add library="Irrlicht" />
 					<Add library="GLESv2" />
 					<Add library="GL" />
@@ -62,6 +68,11 @@
 					<Add directory="../../../../../EMLibs/media/Ogg/include" />
 				</Compiler>
 				<Linker>
+					<Add option="-s ALLOW_MEMORY_GROWTH=1" />
+					<Add option="--preload-file media/" />
+					<Add option="-s FULL_ES2=1" />
+					<Add option="-s DISABLE_EXCEPTION_CATCHING=0" />
+					<Add option="-s NO_EXIT_RUNTIME=1" />
 					<Add library="Irrlicht" />
 					<Add library="GLESv2" />
 					<Add library="GL" />
@@ -86,25 +97,11 @@
 			<Add alias="All" targets="default;" />
 		</VirtualTargets>
 		<Compiler>
-			<Add option="-s FULL_ES2=1" />
-			<Add option="-D_IRR_EMSCRIPTEN_PLATFORM_" />
-			<Add option="-D_IRR_STATIC_LIB_" />
-			<Add option="-D__EMSCRIPTEN__" />
-			<Add directory="/home/Dev/libs/Scripting/emsdk/emscripten-projects/irrlicht-ogl-es/irrlicht/include" />
+			<Add directory="../../../../../../../Dev/libs/game/irrlicht/Irrlicht-SVN/include" />
 			<Add directory="src" />
-			<Add directory="../../libs/theora/include" />
-			<Add directory="../../libs/libtheoraplayer/include" />
-			<Add directory="/usr/include/AL" />
-			<Add directory="../../libs/Ogg/include" />
 		</Compiler>
 		<Linker>
-			<Add option="-s ALLOW_MEMORY_GROWTH=1" />
-			<Add option="--preload-file media/" />
-			<Add option="-s FULL_ES2=1" />
-			<Add option="-s DISABLE_EXCEPTION_CATCHING=0" />
-			<Add option="-s NO_EXIT_RUNTIME=1" />
 			<Add library="Irrlicht" />
-			<Add library="GLESv2" />
 			<Add library="GL" />
 			<Add library="ogg" />
 			<Add library="vorbis" />
@@ -112,14 +109,10 @@
 			<Add library="theora" />
 			<Add library="theoraplayer" />
 			<Add library="SDL" />
-			<Add library="openal" />
-			<Add library="common" />
-			<Add library="ex-common" />
-			<Add directory="/home/Dev/libs/Scripting/emsdk/emscripten-projects/irrlicht-ogl-es/irrlicht/lib/Linux" />
-			<Add directory="../../libs/libtheoraplayer" />
-			<Add directory="../../libs/theora/" />
-			<Add directory="../../libs/Ogg" />
-			<Add directory="../../libs/Vorbis" />
+			<Add library="X11" />
+			<Add library="Xxf86vm" />
+			<Add directory="../../../../../../../Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux" />
+			<Add directory="../../../../../EMLibs/media/libtheoraplayer/src/.libs" />
 		</Linker>
 		<Unit filename="CTheoraPlayer.cpp" />
 		<Unit filename="CTheoraPlayer.h" />
