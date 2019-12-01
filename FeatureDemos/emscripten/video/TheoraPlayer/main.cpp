@@ -6,11 +6,11 @@ using namespace scene;
 using namespace core;
 using namespace video;
 
-
-IrrlichtDevice *device = irr::createDevice(irr::video::EDT_OGLES2, irr::core::dimension2du(800, 600));
+IrrlichtDevice *device;
 video::IVideoDriver* driver;
 scene::ISceneManager* smgr;
 gui::IGUIEnvironment* guienv;
+CTheoraPlayer * test;
 
    irr::ITimer* timer;
    irr::u32 then;
@@ -31,14 +31,24 @@ gui::IGUIEnvironment* guienv;
 #include <emscripten.h>
 #endif
 int init;
-   CTheoraPlayer iTheoraPlayer(device);
+//   CTheoraPlayer iTheoraPlayer(device);
+
+   bool loaded=0;
+
+
+//int render(CTheoraPlayer * test){
+//
+//test.update(frameDeltaTime);
+//
+//}
 
 void main_loop()
 {
 
-
-         iTheoraPlayer.load("./media/truk_kartochniy.ogg", true);
-
+if (!loaded){
+//         iTheoraPlayer.load("./media/truk_kartochniy.ogg", true);
+loaded=1;
+}
 
       const irr::u32 now = timer->getTime();
       const irr::u32 frameDeltaTime = now - then;
@@ -46,7 +56,9 @@ void main_loop()
       then = now;
 	device->run();
 
-      iTheoraPlayer.update(frameDeltaTime);
+
+test->update(frameDeltaTime);
+//render();
 
 	driver->beginScene(true, true, video::SColor(255,200,200,200));
 	guienv->drawAll();
@@ -54,16 +66,20 @@ void main_loop()
 	driver->endScene();
 }
 
+
 int main()
 {
+  #ifdef __EMSCRIPTEN__
+device = irr::createDevice(irr::video::EDT_OGLES2, irr::core::dimension2du(800, 600));
+#else
+device = irr::createDevice(irr::video::EDT_OPENGL, irr::core::dimension2du(800, 600));
+#endif
 //    device = irr::createDevice(irr::video::EDT_OGLES2, irr::core::dimension2du(800, 600));
     driver = device->getVideoDriver();
 
 
 
 
-  guienv = device->getGUIEnvironment();
-   guienv->addImage(iTheoraPlayer.getTexture(), irr::core::position2di(0,0));
 
  smgr = device->getSceneManager();
 
@@ -75,9 +91,6 @@ int main()
   iCameraSceneNode->setRotation(core::vector3df(20,90,0));
   iCameraSceneNode->setPosition(core::vector3df(0,0,-200));
 
-  scene::ISceneNode* iCubeSceneNode;
-  iCubeSceneNode = smgr->addCubeSceneNode(50);
-  iCubeSceneNode->setMaterialTexture(0, iTheoraPlayer.getTexture()); // set material of cube to render target
 
    // video::ITexture* texture = driver->getTexture("h.jpg");
   //iCubeSceneNode->setMaterialTexture(0, texture);
@@ -85,23 +98,45 @@ int main()
   irr::scene::ISceneNodeAnimator* anim = smgr->createRotationAnimator(
     core::vector3df(0.3f, 0.3f,0));
 
+
+
+    timer = device->getTimer();
+   then = timer->getTime();
+
+  // iTheoraPlayer.setDevice(device);
+//  guienv = device->getGUIEnvironment();
+//   guienv->addImage(iTheoraPlayer.getTexture(), irr::core::position2di(0,0));
+
+
+
+   #ifdef __EMSCRIPTEN__
+      CTheoraPlayer iTheoraPlayer(device);
+      test=&iTheoraPlayer;
+        guienv = device->getGUIEnvironment();
+   guienv->addImage(iTheoraPlayer.getTexture(), irr::core::position2di(0,0));
+  scene::ISceneNode* iCubeSceneNode;
+  iCubeSceneNode = smgr->addCubeSceneNode(50);
+  iCubeSceneNode->setMaterialTexture(0, iTheoraPlayer.getTexture()); // set material of cube to render target
   iCubeSceneNode->setPosition(core::vector3df(0,0,0));
   iCubeSceneNode->setMaterialFlag(video::EMF_LIGHTING, false); // disable dynamic lighting
   iCubeSceneNode->addAnimator(anim);
   anim->drop();
 
-    timer = device->getTimer();
-   then = timer->getTime();
-
-   iTheoraPlayer.setDevice(device);
-
-
-
-   #ifdef __EMSCRIPTEN__
 	emscripten_set_main_loop(main_loop,0,1);
 #else
 
+   CTheoraPlayer iTheoraPlayer(device);
+test=&iTheoraPlayer;
+  guienv = device->getGUIEnvironment();
+   guienv->addImage(iTheoraPlayer.getTexture(), irr::core::position2di(0,0));
+  scene::ISceneNode* iCubeSceneNode;
+  iCubeSceneNode = smgr->addCubeSceneNode(50);
+  iCubeSceneNode->setMaterialTexture(0, iTheoraPlayer.getTexture()); // set material of cube to render target
 
+  iCubeSceneNode->setPosition(core::vector3df(0,0,0));
+  iCubeSceneNode->setMaterialFlag(video::EMF_LIGHTING, false); // disable dynamic lighting
+  iCubeSceneNode->addAnimator(anim);
+  anim->drop();
 
    while (device->run())
    {
@@ -110,7 +145,8 @@ int main()
 
       then = now;
 
-      iTheoraPlayer.update(frameDeltaTime);
+      test->update(frameDeltaTime);
+     // iTheoraPlayer.update(frameDeltaTime);
 
       driver->beginScene();
 

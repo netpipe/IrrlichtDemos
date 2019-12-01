@@ -1,8 +1,8 @@
 #ifndef CLASS_AUDIO_INTERFACE_OPEN_AL_H_INC
 #define CLASS_AUDIO_INTERFACE_OPEN_AL_H_INC
 
-#include <al.h>
-#include <alc.h>
+#include <AL/al.h>
+#include <AL/alc.h>
 #include <TheoraAudioInterface.h>
 #include <TheoraTimer.h>
 #include <TheoraVideoClip.h>

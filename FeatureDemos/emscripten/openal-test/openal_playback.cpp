@@ -11,6 +11,7 @@
 #include <stdint.h>
 #include <unistd.h>
 #include <math.h>
+
 #ifdef __EMSCRIPTEN__
 #include <emscripten.h>
 #endif

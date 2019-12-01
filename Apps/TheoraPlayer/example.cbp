@@ -24,14 +24,13 @@
 			<Add library="Irrlicht" />
 			<Add library="Xxf86vm" />
 			<Add library="theora" />
+			<Add library="X11" />
+			<Add library="ogg" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
 		</Linker>
 		<Unit filename="CTheoraPlayer.cpp" />
 		<Unit filename="CTheoraPlayer.h" />
 		<Unit filename="main.cpp" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
