@@ -15,21 +15,10 @@ CTheoraPlayer * test;
    irr::ITimer* timer;
    irr::u32 then;
 
-//SIrrlichtCreationParameters	params;
-//params = SIrrlichtCreationParameters();
-//	params.DriverType = video::EDT_OGLES2;
-//	params.WindowSize = core::dimension2d<u32>(640, 480);
-//	params.Bits = 16;
-//	params.Fullscreen = false;
-//	params.Stencilbuffer = false;
-//	params.Vsync = false;
-//	params.EventReceiver = 0;
-//	params.OGLES2ShaderPath = std::string("media/Shaders/").c_str();
-//	device = createDeviceEx(params);
-
 #ifdef __EMSCRIPTEN__
 #include <emscripten.h>
 #endif
+#include <iostream>
 int init;
 //   CTheoraPlayer iTheoraPlayer(device);
 
@@ -43,23 +32,41 @@ void main_loop()
       then = now;
 	device->run();
 
-    test->update(frameDeltaTime);
+	  test->update(frameDeltaTime);
     //render();
 
+
+
 	driver->beginScene(true, true, video::SColor(255,200,200,200));
+
 	guienv->drawAll();
 	smgr->drawAll();
+
 	driver->endScene();
 }
 
 
 int main()
 {
+
+//  SIrrlichtCreationParameters	params;
+//params = SIrrlichtCreationParameters();
+//	params.DriverType = video::EDT_OGLES2;
+//	params.WindowSize = core::dimension2d<u32>(640, 480);
+//	params.Bits = 16;
+//	params.Fullscreen = false;
+//	params.Stencilbuffer = false;
+//	params.Vsync = false;
+//	params.EventReceiver = 0;
+//	params.OGLES2ShaderPath = std::string("media/Shaders/").c_str();
+//	device = createDeviceEx(params);
+
   #ifdef __EMSCRIPTEN__
 device = irr::createDevice(irr::video::EDT_OGLES2, irr::core::dimension2du(800, 600));
 #else
 device = irr::createDevice(irr::video::EDT_OPENGL, irr::core::dimension2du(800, 600));
 #endif
+
 //    device = irr::createDevice(irr::video::EDT_OGLES2, irr::core::dimension2du(800, 600));
     driver = device->getVideoDriver();
 
