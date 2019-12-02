@@ -1,0 +1,3 @@
+/home/netpipe/Desktop/irrtum/CMakeFiles/rebuild_cache.dir
+/home/netpipe/Desktop/irrtum/CMakeFiles/irrtum.dir
+/home/netpipe/Desktop/irrtum/CMakeFiles/edit_cache.dir

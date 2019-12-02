@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG  -rdynamic CMakeFiles/irrtum.dir/pngwrite.c.o CMakeFiles/irrtum.dir/graybitmap.cpp.o CMakeFiles/irrtum.dir/irrtum.cpp.o CMakeFiles/irrtum.dir/intervallist.cpp.o CMakeFiles/irrtum.dir/color.cpp.o CMakeFiles/irrtum.dir/main.cpp.o  -o bin/irrtum -lz -lpng -lz -lfreetype -lpopt -lpng -lfreetype -lpopt 

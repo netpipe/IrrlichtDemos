@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Irrlicht Pong" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./Pong" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+			<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/freetype-2.3.9/include" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="GL" />
+			<Add library="Xxf86vm" />
+			<Add library="X11" />
+			<Add library="freetype" />
+			<Add library="popt" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+			<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/freetype-2.3.9/2" />
+		</Linker>
+		<Unit filename="color.cpp" />
+		<Unit filename="color.h" />
+		<Unit filename="common.h" />
+		<Unit filename="common_c.h" />
+		<Unit filename="graybitmap.cpp" />
+		<Unit filename="graybitmap.h" />
+		<Unit filename="intervallist.cpp" />
+		<Unit filename="intervallist.h" />
+		<Unit filename="irrtum.cpp" />
+		<Unit filename="irrtum.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="pngwrite.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pngwrite.h" />
+		<Unit filename="rect.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

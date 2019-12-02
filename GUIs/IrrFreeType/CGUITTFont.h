@@ -53,6 +53,7 @@ public:
 	//! constructor
 	CGUITTFont(video::IVideoDriver* Driver);
 
+	//void draw2(const wchar_t* text, const core::rect<s32>& position, video::SColor color, bool hcenter=false, bool vcenter=false, const core::rect<s32>* clip=0);
 	//! destructor
 	virtual ~CGUITTFont();
 
@@ -60,10 +61,17 @@ public:
 	bool attach(CGUITTFace *Face,u32 size);
 
 	//! draws an text and clips it to the specified rectangle if wanted
-	virtual void draw(const wchar_t* text, const core::rect<s32>& position, video::SColor color, bool hcenter=false, bool vcenter=false, const core::rect<s32>* clip=0);
+	//void draw() const {return;} ;
+	virtual void draw(const core::stringw& text, const core::rect<s32>& position, video::SColor color, bool hcenter=false, bool vcenter=false, const core::rect<s32>* clip=0) {return;} ;
+		 void draw2(const core::stringw& text, const core::rect<s32>& position, video::SColor color, bool hcenter=false, bool vcenter=false, const core::rect<s32>* clip=0) ;
+
+	//virtual void draw(const core::stringw& text, const core::rect<s32>& position,
+	//	video::SColor color, bool hcenter=false, bool vcenter=false,
+	//	const core::rect<s32>* clip=0) = 0;
+	virtual void setInvisibleCharacters( const wchar_t *s ) {return;};
 
 	//! returns the dimension of a text
-	virtual core::dimension2d<s32> getDimension(const wchar_t* text) const;
+	virtual core::dimension2d<u32> getDimension(const wchar_t* text) const;
 
 	//! Calculates the index of the character in the text which is on a specific position.
 	virtual s32 getCharacterFromPos(const wchar_t* text, s32 pixel_x) const;

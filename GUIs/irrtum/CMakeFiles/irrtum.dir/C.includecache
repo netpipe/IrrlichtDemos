@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/netpipe/Desktop/irrtum/common_c.h
+stdint.h
+-
+stdlib.h
+-
+string.h
+-
+assert.h
+-
+png.h
+-
+ft2build.h
+-
+
+/home/netpipe/Desktop/irrtum/pngwrite.c
+common_c.h
+/home/netpipe/Desktop/irrtum/common_c.h
+pngwrite.h
+/home/netpipe/Desktop/irrtum/pngwrite.h
+stdio.h
+-
+setjmp.h
+-
+errno.h
+-
+
+/home/netpipe/Desktop/irrtum/pngwrite.h
+
+/usr/include/freetype2/freetype/config/ftheader.h
+
+/usr/include/freetype2/ft2build.h
+freetype/config/ftheader.h
+-
+

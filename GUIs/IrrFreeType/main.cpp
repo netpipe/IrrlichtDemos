@@ -180,7 +180,7 @@ public:
 int main()
 
 {
-	Device = createDevice(EDT_OPENGL, dimension2d<s32>(640, 480), 32, false, false, 0);
+	Device = createDevice(EDT_OPENGL, dimension2d<u32>(640, 480), 32, false, false, 0);
 	IVideoDriver *Driver = Device->getVideoDriver();
 	IGUIEnvironment* env = Device->getGUIEnvironment();
 
