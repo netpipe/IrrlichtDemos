@@ -1,0 +1,58 @@
+void CArty::explode(f32 X, f32 Z, u8 nbBarrels, u8 caliber)
+{
+  //printf("desired impact (%.2f,%.2f)\n", X, Z);
+
+  //elevation around impact. This array can be stored as raw image:
+  static const char eai[25]={
+    0,  1,  1,  1, 0,
+    1, -1, -1, -1, 1,
+    1, -1, -2, -1, 1, // <- impact point vertex will be lowered by -2 units
+    1, -1, -1, -1, 1,
+    0,  1,  1,  1, 0
+  };
+
+  //ok lets get terrain vertices
+  video::S3DVertex2TCoords* verts = map->getTerrainVertices();
+
+  for (u8 n=0; n<_nbBarrels; n++)
+  {
+    //arty shells are always deviated
+    u16 d;
+    d = rand()%2000;
+    f32 nX = (f32)((rand()%2) == 0) ? d : -d;
+    nX += X;
+
+    d = rand()%2000;
+    f32 nZ = (f32)((rand()%2) == 0) ? d : -d;
+    nZ += Z;
+
+    //printf("barrel %d (%.2f,%.2f)\n", n, nX,nZ);
+
+    //nearest vertice on terrain
+    s32 x = (s32)(nX / map->header->terrainScaleX);
+    s32 z = (s32)(nZ / map->header->terrainScaleZ);
+
+    //from the array above its origin is 2 verts left top of impact
+    //so always drop arty at least 2 vertices from borders
+    x -= 2;
+    z -= 2;
+
+    //apply the crater transformation
+    int cpt = 0;
+    for (u8 v=0; v<5; v++)
+      for (u8 u=0; u<5; u++)
+      {
+        s32 index = (x+u) * map->header->terrainPixels + (z+v);
+        verts[index].Pos.Y += eai[cpt++];
+      }
+
+    // force terrain render buffer to reload
+    terrain->setPosition(terrain->getPosition());
+
+    //emit particles...
+
+  }
+  //shaking...
+
+  //play sound...
+}

@@ -1,0 +1,114 @@
+    // This will return a structure containing the 3D coordinate of the mouse and the object the ray collided with
+    MousePick App::getMousePosition3D(int id)
+    {
+        position2d<s32> pos=device->getCursorControl()->getPosition();
+           
+            // For the ray test, we should hide the player
+            Player::getInstance()->getObject()->getNode()->setVisible(false);
+     
+        line3df ray = smgr->getSceneCollisionManager()->getRayFromScreenCoordinates(pos, smgr->getActiveCamera());
+     
+        core::vector3df intersection;
+        core::triangle3df hitTriangle;
+     
+        ISceneNode* tempNode = smgr->getSceneCollisionManager()->getSceneNodeAndCollisionPointFromRay(ray,
+                                                                                                      intersection,
+                                                                                                      hitTriangle,
+                                                                                                      id);
+        MousePick result;
+            // Show back the player once the ray test is done
+            Player::getInstance()->getObject()->getNode()->setVisible(true);
+     
+     
+        if(tempNode!=NULL)
+        {
+            result.pickedPos = intersection;
+            result.pickedNode = tempNode;
+     
+            return result;
+        }
+        else
+        {
+            result.pickedPos = vector3df(0,0,0);
+            result.pickedNode = NULL;
+     
+            return result;
+        }
+    }
+     
+    // This will draw a circle(2) from based on the position of the mouse 3D position. Each corner point will be checked with the terrain manager for the height (ray test)
+    void App::drawBrush()
+    {
+                  // Get the radius info from the GUI slider
+            f32 radius = GUIManager::getInstance()->getScrollBarValue(SC_ID_TERRAIN_BRUSH_RADIUS);
+     
+                  // Get the current position of the mouse in 3D
+            vector3df position = this->getMousePosition3D(100).pickedPos;
+            if (position==vector3df(0,0,0))
+                    return;
+     
+            SMaterial m;
+            m.Lighting=false;
+            driver->setMaterial(m);
+            driver->setTransform(video::ETS_WORLD, core::matrix4());
+     
+     
+            // Render the size of the brush.
+            f32 framesize = 3;
+            int step=10;
+            for (int i=0; i<(360); i=i+step)
+            {
+                    float degInRad = i*DEG2RAD;
+                    vector3df pos=position;
+                    pos.X+=cos(degInRad)*radius;
+                    pos.Z+=sin(degInRad)*radius;
+     
+                                // Check with the terrain manager the height of the terrain at the x,z position (ray collision test)
+                    pos.Y=TerrainManager::getInstance()->getHeightAt(pos)+2;
+     
+                    float degInRad2 = (i+step)*DEG2RAD;
+                    vector3df pos2=position;
+                    pos2.X+=cos(degInRad2)*radius;
+                    pos2.Z+=sin(degInRad2)*radius;
+                    pos2.Y=TerrainManager::getInstance()->getHeightAt(pos2)+2;
+                    //driver->draw3DLine(pos,pos2,video::SColor(255,255,255,0));
+     
+                    vector3df pos3=position;
+                    pos3.X+=cos(degInRad)*(radius+framesize);
+                    pos3.Z+=sin(degInRad)*(radius+framesize);
+                    pos3.Y=pos.Y;
+     
+                    vector3df pos4=position;
+                    pos4.X+=cos(degInRad2)*(radius+framesize);
+                    pos4.Z+=sin(degInRad2)*(radius+framesize);
+                    pos4.Y=pos2.Y;
+     
+                    driver->draw3DTriangle(triangle3df(pos4,pos3,pos),video::SColor(128,255,255,128));
+                    driver->draw3DTriangle(triangle3df(pos,pos2,pos4),video::SColor(128,255,255,128));
+     
+            }
+     
+     
+            radius=5;
+            step=30;
+            for (int i=0; i<(360-step); i=i+step)
+            {
+          float degInRad = i*DEG2RAD;
+              vector3df pos=position;
+              pos.X+=cos(degInRad)*radius;
+              pos.Z+=sin(degInRad)*radius;
+              pos.Y=TerrainManager::getInstance()->getHeightAt(pos)+2;
+     
+     
+              float degInRad2 = (i+step)*DEG2RAD;
+              vector3df pos2=position;
+              pos2.X+=cos(degInRad2)*radius;
+              pos2.Z+=sin(degInRad2)*radius;
+              pos2.Y=TerrainManager::getInstance()->getHeightAt(pos2)+2;
+              driver->draw3DLine(pos,pos2,video::SColor(255,255,255,255));
+            }
+     
+            // Center circle for the brush give the center
+     
+     
+    }
