@@ -1,0 +1,96 @@
+# 3ds Max Wavefront OBJ Exporter v0.94b - (c)2007 guruware
+# File Created: 25.06.2008 20:24:42
+
+newmtl mat_04
+	Ns 22.0000
+	Ni 1.0000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.2600 0.2600 0.2600
+	Ke 0.0000 0.0000 0.0000
+	map_Ka ./farmhouse3/cr.jpg
+	map_Kd ./farmhouse3/cr.jpg
+
+newmtl mat_02
+	Ns 26.0000
+	Ni 1.0000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.5000 0.5000 0.5000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka ./farmhouse3/naturestones2k.jpg
+	map_Kd ./farmhouse3/naturestones2k.jpg
+
+newmtl mat_05
+	Ns 0.0000
+	Ni 1.0000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka ./farmhouse3/md34.jpg
+	map_Kd ./farmhouse3/md34.jpg
+
+newmtl mat_01
+	Ns 12.0000
+	Ni 1.0000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.5100 0.5100 0.5100
+	Ke 0.0000 0.0000 0.0000
+	map_Ka ./farmhouse3/wood_lichen.jpg
+	map_Kd ./farmhouse3/wood_lichen.jpg
+
+newmtl mat_03
+	Ns 6.0000
+	Ni 1.0000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.0900 0.0900 0.0900
+	Ke 0.0000 0.0000 0.0000
+	map_Ka ./farmhouse3/mr8.jpg
+	map_Kd ./farmhouse3/mr8.jpg
+
+newmtl mat_06
+	Ns 0.0000
+	Ni 1.0000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka ./farmhouse3/msw32.jpg
+	map_Kd ./farmhouse3/msw32.jpg
+
+newmtl wire_188188188
+	Ns 32
+	d 1
+	Tr 1
+	Tf 1 1 1
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.7373 0.7373 0.7373
+	Ks 0.3500 0.3500 0.3500

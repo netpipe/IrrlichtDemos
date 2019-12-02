@@ -1,0 +1,35 @@
+
+A very concisive despription. Hope it helps and if in doubt, google :) .
+
+-Download heightmaps
+  -http://srtm.csi.cgiar.org/
+    -ftp://srtm.csi.cgiar.org/SRTM_V41/SRTM_Data_GeoTiff/ - all files
+    -http://srtm.csi.cgiar.org/SELECTION/inputCoord.asp - table
+
+-Download colormap
+  -http://www.gelib.com/terrain-maps.htm - colormap
+
+-Converte heightmap DEM(tiff) 
+  -http://www.tt-forums.net/viewtopic.php?f=29&t=47666
+  - Short: Start the 3DEM program. 
+    -file type: choose geotiff. Choose File.
+    -From the menu select Color Scale - Shaded Relief. Change the Shade Depth to 0%. 
+    -From the menu select Color Scale - Modify Scale. Press Load File button. Load the grayscale.dat file. ocean = (0,0,0).(if needed, set new scales and save)
+    -From Menu, choose Geo Coordinates - Lat-Lon Off.
+    -press f6 -> map scale=1
+    -Now from the menu choose File - Save Map Image. Leave default type as bmp. Then save to wherever you want.
+
+-join images heightmap
+  -nice montage srtm_36_02.bmp srtm_37_02.bmp srtm_38_02.bmp srtm_36_03.bmp srtm_37_03.bmp srtm_38_03.bmp -mode Concatenate -tile 3x3 heightmap.bmp
+  
+-divide heightmap
+  -./overlapcrop.sh -s 129x129 -o 1x1 -m matrix srmt_37_02_cut.bmp heightmap.bmp
+
+-join images colormap
+  -nice montage May_18_04.tif May_19_04.tif May_18_05.tif May_19_05.tif -mode Concatenate -tile 2x2 color.tif
+
+-colormap will be bigger than heightmap, so cut it to the same size/position (I used gimp).
+
+-divide colormap (as heightmap).
+
+Note: might want to convert colormap to jpg (with loss) or png (bigger files)
