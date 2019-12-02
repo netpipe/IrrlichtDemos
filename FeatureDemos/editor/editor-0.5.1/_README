@@ -1,0 +1,47 @@
+
+ATTENTION: Read game-README first !!!
+
+NOTE: In 0.3.2 version of OSRPG Map Editor 0.3 corresponds to OMF 0.3 (highest
+supported format version), and 2 to Editor enchancements (around the format)
+
+---------------------------------------------------------------------
+Notes for Windows users
+---------------------------------------------------------------------
+
+You must create HOME environment variable, that one should point to your
+home directory (e.g., C:/Documents and Settings/root).
+ATTENTION: path must be with FORWARD slash (UNIX style), NOT BACKWARD slash!
+And WITHOUT ENDING slash!
+
+You can set environment variables in MyComputer->Advanced->EnvironmentVariables
+
+---------------------------------------------------------------------
+Notes for all users
+---------------------------------------------------------------------
+
+Inside your home directory you must create such directory structure:
+
+$(HOME)/.config/osrpg/editor/
+
+and place there file named exactly as "settings"
+There you must write the path to data directory in the way:
+
+DATA_DIR=path/to/data/directory/
+
+It's most likely should point to maggun project's data directory.
+For my system the file
+
+$(HOME)/.config/osrpg/editor/settings
+
+contains:
+
+DATA_DIR=/home/kornerr/OSRPG/branches/maggun/data/
+
+(ENDING slash is obligatory!)
+
+---------------------------------------------------------------------
+Requirements
+---------------------------------------------------------------------
+
+Irrlicht SVN revision 267 to be able to compile
+

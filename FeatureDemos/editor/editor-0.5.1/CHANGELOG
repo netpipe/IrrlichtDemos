@@ -1,0 +1,24 @@
+
+27 Oct 2006
+
+Added Collision property to a mesh. Now meshes can be uncollidable.
+Added SkyBox and SkyDome.
+Moved to OMF 0.4.
+
+05 Nov 2006
+
+Added support for ball-socket, hinge, slider, universal, hinge2, fixed joints.
+Basic implementation of ball-socket joint (OMFJointBallSocket) in the editor.
+Initial gravity now has 3 dimensions.
+Added "script_name" to OMFMesh.
+Added "collision_model_file" to OMFMesh.
+Moved to OMF 0.5.
+
+06 Nov 2006
+
+When creating ball-socket joint it's anchor is initially has cam position.
+Lines now point to joined nodes correctly and look pretty good.
+Now when you delete a mesh all related joints are deleted.
+Edit ball-socket joint window now looks better.
+Added axes instead of a cross.
+

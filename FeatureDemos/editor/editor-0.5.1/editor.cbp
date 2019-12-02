@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="OSRPG Map Editor 0.5.1" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="editor" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="/home/Dev/libs/Irrlicht/include" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="GL" />
+			<Add library="X11" />
+			<Add directory="/home/Dev/libs/Irrlicht/lib/gcc" />
+		</Linker>
+		<Unit filename="src/core.cpp" />
+		<Unit filename="src/core.h" />
+		<Unit filename="src/gui/add_mesh.cpp" />
+		<Unit filename="src/gui/add_mesh.h" />
+		<Unit filename="src/gui/edit_joint_bs.cpp" />
+		<Unit filename="src/gui/edit_joint_bs.h" />
+		<Unit filename="src/gui/edit_joint_hinge.cpp" />
+		<Unit filename="src/gui/edit_joint_hinge.h" />
+		<Unit filename="src/gui/edit_light.cpp" />
+		<Unit filename="src/gui/edit_light.h" />
+		<Unit filename="src/gui/edit_mesh.cpp" />
+		<Unit filename="src/gui/edit_mesh.h" />
+		<Unit filename="src/gui/edit_place_tag.cpp" />
+		<Unit filename="src/gui/edit_place_tag.h" />
+		<Unit filename="src/gui/edit_zone.cpp" />
+		<Unit filename="src/gui/edit_zone.h" />
+		<Unit filename="src/gui/main_menu.cpp" />
+		<Unit filename="src/gui/main_menu.h" />
+		<Unit filename="src/gui/open.cpp" />
+		<Unit filename="src/gui/open.h" />
+		<Unit filename="src/gui/properties.cpp" />
+		<Unit filename="src/gui/properties.h" />
+		<Unit filename="src/gui/save_as.cpp" />
+		<Unit filename="src/gui/save_as.h" />
+		<Unit filename="src/map/format.h" />
+		<Unit filename="src/map/item.cpp" />
+		<Unit filename="src/map/item.h" />
+		<Unit filename="src/map/joint_ball_socket.cpp" />
+		<Unit filename="src/map/joint_ball_socket.h" />
+		<Unit filename="src/map/joint_hinge.cpp" />
+		<Unit filename="src/map/joint_hinge.h" />
+		<Unit filename="src/map/light.cpp" />
+		<Unit filename="src/map/light.h" />
+		<Unit filename="src/map/mesh.cpp" />
+		<Unit filename="src/map/mesh.h" />
+		<Unit filename="src/map/place_tag.cpp" />
+		<Unit filename="src/map/place_tag.h" />
+		<Unit filename="src/map/scene.cpp" />
+		<Unit filename="src/map/scene.h" />
+		<Unit filename="src/map/sky.cpp" />
+		<Unit filename="src/map/sky.h" />
+		<Unit filename="src/map/zone.cpp" />
+		<Unit filename="src/map/zone.h" />
+		<Unit filename="src/misc/events.h" />
+		<Unit filename="src/misc/help.cpp" />
+		<Unit filename="src/misc/help.h" />
+		<Unit filename="src/registry.cpp" />
+		<Unit filename="src/registry.h" />
+		<Unit filename="src/settings.cpp" />
+		<Unit filename="src/settings.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
