@@ -1,19 +1,58 @@
 <HTML>
 	<HEAD>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
 		<link rel="icon" href="data:;base64,iVBORw0KGgo=">
 		<TITLE>
 		</TITLE>
 		<script>
+			var timeoutHandle;
 			function setMyTimer(){
-				setTimeout("refresh()", 2*1100);
+				timeoutHandle = setTimeout("refresh()", 1000 / 25 /*25 fps*/);
 			}
 			function refresh(){
-				window.location.reload(true)
+				var img = document.getElementById("img");
+				img.addEventListener("error", function(ev){
+					exit();
+				});
+				var imgSrc = img.src;
+				if(imgSrc.indexOf('?') > -1)
+					imgSrc = imgSrc.split('?')[0];
+				img.src = imgSrc + '?' + (new Date()).getTime();
+				setMyTimer();
+			}
+			function exit(){
+				clearTimeout(timeoutHandle);
+			}
+			function init(){
+				var formsCollection = document.getElementsByTagName("form");
+				for(var i=0; i < formsCollection.length; i++)
+				{
+					formsCollection[i].addEventListener("submit", function(ev){
+						var frm = ev.target;
+						ev.preventDefault();
+						var getData = '?';
+						var formElements = frm.elements;
+						for(var i=0; i< formElements.length; i++){
+							if(formElements[i].type == 'submit')
+								continue;
+							if(i > 0)
+								getData += '&';
+							getData += formElements[i].name + '=' + formElements[i].value;
+							if(formElements[i].value == 'Exit')
+								exit();
+						}
+						var xhr = new XMLHttpRequest();
+						//alert('frm.name: ' + frm.name + '   frm.method: ' + frm.method + '   frm.action:' + frm.action + getData);
+						xhr.open(frm.method, frm.action + getData, false);
+						xhr.send();
+					});
+				}
+				setMyTimer();
 			}
 		</script>
 	</HEAD>
 
-	<BODY onload="setMyTimer()">
+	<BODY onload="init()">
 
 		<TABLE border=2 >
 			<TR>

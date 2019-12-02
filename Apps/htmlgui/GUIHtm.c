@@ -184,7 +184,7 @@ static void WriteImage( strGuiElement GuiDef  ){
     //int iRet=0;
     //char * cGetData = NULL;
     char cBuff[200];
-    sprintf(cBuff,"<IMG src='%s'  name ='SatPath.bmp' border=0>",GuiDef.DataName);
+    sprintf(cBuff,"<IMG id='img' src='%s'  name ='SatPath.bmp' border=0>",GuiDef.DataName);
     WriteSocket(cBuff);
 
     return;

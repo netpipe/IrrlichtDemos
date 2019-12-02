@@ -29,7 +29,7 @@ static char fExit =0,VRotate=0,ORotate=0 ;
 #define NO_FUNCTION_BEFORE_REWRITE_WIDGET NULL
 ///HTMGUI
 
-video::ITexture* rt =NULL;
+video::ITexture* rt = NULL;
 IVideoDriver* driver = NULL;
 
 
@@ -75,44 +75,39 @@ int main()
 	}
 
 	smgr->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,5,0));
-
-
+	
+	rt = driver->addRenderTargetTexture(core::dimension2d<s32>(256,256), "RTT1");
 	while(device->run())
 	{
 		///HTMGUI
 		CheckGUI();
-		if(fExit){
+		if(fExit)
 			break;
+		if(VRotate){
+			VRotate =0;
+			vector3df objRot = node->getRotation();
+			objRot.Y += 20.5f;
+			node->setRotation(objRot);
 		}
-                if(VRotate){
-                   VRotate =0;
-                   vector3df objRot = node->getRotation();
-                    objRot.Y += 20.5f;
-                    node->setRotation(objRot);
-                 }
-                if(ORotate){
-                   ORotate =0;
-                   vector3df objRot = node->getRotation();
-                    objRot.Z += 20.5f;
-                    node->setRotation(objRot);
-                 }
+		if(ORotate){
+			ORotate =0;
+			vector3df objRot = node->getRotation();
+			objRot.Z += 20.5f;
+			node->setRotation(objRot);
+		}
 		///HTMGUI
-
-		rt = driver->addRenderTargetTexture(core::dimension2d<s32>(256,256), "RTT1");
+		
 		driver->setRenderTarget(rt, true, true, video::SColor(0,0,0,255));
-
-
 		driver->beginScene(true, true, SColor(255,100,101,140));
 		smgr->drawAll();
 		driver->endScene();
 
-                video::IImage* image = driver->createImageFromData (rt->getColorFormat(),rt->getSize(),rt->lock(),true);
-                rt->unlock();
-                driver->writeImageToFile(image,"Hello.bmp");
-                image->drop();
+		video::IImage* image = driver->createImageFromData(rt->getColorFormat(), rt->getSize(), rt->lock(), true, false);
+		rt->unlock();
+		driver->writeImageToFile(image,"Hello.bmp");
+		image->drop();
 
 		device->sleep(15);
-
 	}
 	
 	device->drop();
