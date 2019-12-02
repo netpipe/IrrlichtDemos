@@ -1,0 +1,3985 @@
+# depslib dependency file v1.0
+1319619990 source:f:\repositorio\imagemixer 1.0.0\imagemixer\source\im_channel_operators.cpp
+	"IM_Globals.h"
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+	"IM_Channel_Pool.h"
+	"IM_Exception.h"
+	<cstring>
+	<cmath>
+
+1287902580 
+
+1320300742 f:\repositorio\imagemixer 1.0.0\imagemixer\include\im_channel.h
+
+1319570098 f:\repositorio\imagemixer 1.0.0\imagemixer\source\im_channel_implementation.h
+	"IM_Channel_Pool.h"
+
+1319570098 l_Pool.h"
+
+1319554509 f:\repositorio\imagemixer 1.0.0\imagemixer\source\im_globals.h
+
+1319554384 f:\repositorio\imagemixer 1.0.0\imagemixer\source\im_channel_pool.h
+
+1319868680 source:f:\repositorio\imagemixer 1.0.0\imagemixer\main.cpp
+	<ImageMixer>
+
+1331066327 r>
+
+1319615392 f:\repositorio\imagemixer 1.0.0\imagemixer\include\im_image.h
+
+1319620676 source:f:\repositorio\imagemixer 1.0.0\imagemixer\source\im_image_operators.cpp
+	"IM_Image.h"
+	"IM_Channel.h"
+	"IM_Image_Implementation.h"
+	"IM_Exception.h"
+	<Irrlicht.h>
+
+1321965439 h>
+
+1319613161 f:\repositorio\imagemixer 1.0.0\imagemixer\source\im_image_implementation.h
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+	"IM_Globals.h"
+	<IImage.h>
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iimage.h
+	"IReferenceCounted.h"
+	"position2d.h"
+	"rect.h"
+	"SColor.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ireferencecounted.h
+	"irrTypes.h"
+
+1287902578 h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\irrtypes.h
+	"IrrCompileConfig.h"
+	<wchar.h>
+	<crtdbg.h>
+	"assert.h"
+	<stdlib.h>
+	<crtdbg.h>
+
+1319274960 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\irrcompileconfig.h
+	<stdio.h>
+	<xtl.h>
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\position2d.h
+	"vector2d.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\vector2d.h
+	"irrMath.h"
+	"dimension2d.h"
+
+1287902578 2d.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\irrmath.h
+	"IrrCompileConfig.h"
+	"irrTypes.h"
+	<math.h>
+	<float.h>
+	<stdlib.h>
+	<limits.h>
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\dimension2d.h
+	"irrTypes.h"
+	"irrMath.h"
+
+1287902580 "
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\rect.h
+	"irrTypes.h"
+	"dimension2d.h"
+	"position2d.h"
+
+1287902580 d.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\scolor.h
+	"irrTypes.h"
+	"irrMath.h"
+
+1319554509 source:f:\repositorio\imagemixer 1.0.0\imagemixer\source\im_globals.cpp
+	"IM_Globals.h"
+
+1321965428 s.h"
+
+1287913300 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\irrlicht.h
+	"IrrCompileConfig.h"
+	"aabbox3d.h"
+	"CDynamicMeshBuffer.h"
+	"CIndexBuffer.h"
+	"CMeshBuffer.h"
+	"coreutil.h"
+	"CVertexBuffer.h"
+	"dimension2d.h"
+	"ECullingTypes.h"
+	"EDebugSceneTypes.h"
+	"EDriverFeatures.h"
+	"EDriverTypes.h"
+	"EGUIAlignment.h"
+	"EGUIElementTypes.h"
+	"EHardwareBufferFlags.h"
+	"EMaterialFlags.h"
+	"EMaterialTypes.h"
+	"EMeshWriterEnums.h"
+	"EMessageBoxFlags.h"
+	"ESceneNodeAnimatorTypes.h"
+	"ESceneNodeTypes.h"
+	"ETerrainElements.h"
+	"fast_atof.h"
+	"heapsort.h"
+	"IAnimatedMesh.h"
+	"IAnimatedMeshMD2.h"
+	"IAnimatedMeshMD3.h"
+	"IAnimatedMeshSceneNode.h"
+	"IAttributeExchangingObject.h"
+	"IAttributes.h"
+	"IBillboardSceneNode.h"
+	"IBillboardTextSceneNode.h"
+	"IBoneSceneNode.h"
+	"ICameraSceneNode.h"
+	"ICursorControl.h"
+	"IDummyTransformationSceneNode.h"
+	"IDynamicMeshBuffer.h"
+	"IEventReceiver.h"
+	"IFileList.h"
+	"IFileSystem.h"
+	"IGeometryCreator.h"
+	"IGPUProgrammingServices.h"
+	"IGUIButton.h"
+	"IGUICheckBox.h"
+	"IGUIColorSelectDialog.h"
+	"IGUIComboBox.h"
+	"IGUIContextMenu.h"
+	"IGUIEditBox.h"
+	"IGUIElement.h"
+	"IGUIElementFactory.h"
+	"IGUIEnvironment.h"
+	"IGUIFileOpenDialog.h"
+	"IGUIFont.h"
+	"IGUIFontBitmap.h"
+	"IGUIImage.h"
+	"IGUIInOutFader.h"
+	"IGUIListBox.h"
+	"IGUIMeshViewer.h"
+	"IGUIScrollBar.h"
+	"IGUISkin.h"
+	"IGUISpinBox.h"
+	"IGUISpriteBank.h"
+	"IGUIStaticText.h"
+	"IGUITabControl.h"
+	"IGUITable.h"
+	"IGUIToolbar.h"
+	"IGUIWindow.h"
+	"IGUITreeView.h"
+	"IImage.h"
+	"IImageLoader.h"
+	"IImageWriter.h"
+	"IIndexBuffer.h"
+	"ILightSceneNode.h"
+	"ILogger.h"
+	"IMaterialRenderer.h"
+	"IMaterialRendererServices.h"
+	"IMesh.h"
+	"IMeshBuffer.h"
+	"IMeshCache.h"
+	"IMeshLoader.h"
+	"IMeshManipulator.h"
+	"IMeshSceneNode.h"
+	"IMeshWriter.h"
+	"IMetaTriangleSelector.h"
+	"IOSOperator.h"
+	"IParticleSystemSceneNode.h"
+	"IQ3LevelMesh.h"
+	"IQ3Shader.h"
+	"IReadFile.h"
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"IrrlichtDevice.h"
+	"irrList.h"
+	"irrMap.h"
+	"irrMath.h"
+	"irrString.h"
+	"irrTypes.h"
+	"path.h"
+	"irrXML.h"
+	"ISceneCollisionManager.h"
+	"ISceneManager.h"
+	"ISceneNode.h"
+	"ISceneNodeAnimator.h"
+	"ISceneNodeAnimatorCameraFPS.h"
+	"ISceneNodeAnimatorCameraMaya.h"
+	"ISceneNodeAnimatorCollisionResponse.h"
+	"ISceneNodeAnimatorFactory.h"
+	"ISceneNodeFactory.h"
+	"ISceneUserDataSerializer.h"
+	"IShaderConstantSetCallBack.h"
+	"IShadowVolumeSceneNode.h"
+	"ISkinnedMesh.h"
+	"ITerrainSceneNode.h"
+	"ITextSceneNode.h"
+	"ITexture.h"
+	"ITimer.h"
+	"ITriangleSelector.h"
+	"IVertexBuffer.h"
+	"IVideoDriver.h"
+	"IVideoModeList.h"
+	"IVolumeLightSceneNode.h"
+	"IWriteFile.h"
+	"IXMLReader.h"
+	"IXMLWriter.h"
+	"ILightManager.h"
+	"Keycodes.h"
+	"line2d.h"
+	"line3d.h"
+	"matrix4.h"
+	"plane3d.h"
+	"position2d.h"
+	"quaternion.h"
+	"rect.h"
+	"S3DVertex.h"
+	"SAnimatedMesh.h"
+	"SceneParameters.h"
+	"SColor.h"
+	"SExposedVideoData.h"
+	"SIrrCreationParameters.h"
+	"SKeyMap.h"
+	"SLight.h"
+	"SMaterial.h"
+	"SMesh.h"
+	"SMeshBuffer.h"
+	"SMeshBufferLightMap.h"
+	"SMeshBufferTangents.h"
+	"SParticle.h"
+	"SSharedMeshBuffer.h"
+	"SSkinMeshBuffer.h"
+	"SVertexIndex.h"
+	"SViewFrustum.h"
+	"triangle3d.h"
+	"vector2d.h"
+	"vector3d.h"
+	"SIrrCreationParameters.h"
+
+1287913300 ionParameters.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\aabbox3d.h
+	"irrMath.h"
+	"plane3d.h"
+	"line3d.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\plane3d.h
+	"irrMath.h"
+	"vector3d.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\vector3d.h
+	"irrMath.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\line3d.h
+	"irrTypes.h"
+	"vector3d.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\cdynamicmeshbuffer.h
+	"IDynamicMeshBuffer.h"
+	"CVertexBuffer.h"
+	"CIndexBuffer.h"
+
+1287902580 fer.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\idynamicmeshbuffer.h
+	"IMeshBuffer.h"
+	"IVertexBuffer.h"
+	"IIndexBuffer.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\imeshbuffer.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+	"aabbox3d.h"
+	"S3DVertex.h"
+	"SVertexIndex.h"
+	"EHardwareBufferFlags.h"
+	"EPrimitiveTypes.h"
+
+1287902580 eTypes.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\smaterial.h
+	"SColor.h"
+	"matrix4.h"
+	"irrArray.h"
+	"irrMath.h"
+	"EMaterialTypes.h"
+	"EMaterialFlags.h"
+	"SMaterialLayer.h"
+
+1287902580 Layer.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\matrix4.h
+	"irrMath.h"
+	"vector3d.h"
+	"vector2d.h"
+	"plane3d.h"
+	"aabbox3d.h"
+	"rect.h"
+	"irrString.h"
+	<windows.h>
+
+1321365974 >
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\irrstring.h
+	"irrTypes.h"
+	"irrAllocator.h"
+	"irrMath.h"
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\irrallocator.h
+	"irrTypes.h"
+	<new>
+	<memory.h>
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\irrarray.h
+	"irrTypes.h"
+	"heapsort.h"
+	"irrAllocator.h"
+	"irrMath.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\heapsort.h
+	"irrTypes.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ematerialtypes.h
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ematerialflags.h
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\smateriallayer.h
+	"matrix4.h"
+	"irrAllocator.h"
+
+1287902578 tor.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\s3dvertex.h
+	"vector3d.h"
+	"vector2d.h"
+	"SColor.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\svertexindex.h
+	"irrTypes.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ehardwarebufferflags.h
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\eprimitivetypes.h
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ivertexbuffer.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"S3DVertex.h"
+
+1287902580 .h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iindexbuffer.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"SVertexIndex.h"
+
+1287902580 dex.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\cvertexbuffer.h
+	"IVertexBuffer.h"
+
+1287902580 ffer.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\cindexbuffer.h
+	"IIndexBuffer.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\cmeshbuffer.h
+	"irrArray.h"
+	"IMeshBuffer.h"
+
+1287902580 er.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\coreutil.h
+	"irrString.h"
+	"path.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\path.h
+	"irrString.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ecullingtypes.h
+	"irrTypes.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\edebugscenetypes.h
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\edriverfeatures.h
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\edrivertypes.h
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\eguialignment.h
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\eguielementtypes.h
+	"irrTypes.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\emeshwriterenums.h
+	"irrTypes.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\emessageboxflags.h
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\escenenodeanimatortypes.h
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\escenenodetypes.h
+	"irrTypes.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\eterrainelements.h
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\fast_atof.h
+	"irrMath.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ianimatedmesh.h
+	"aabbox3d.h"
+	"IMesh.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\imesh.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+	"EHardwareBufferFlags.h"
+
+1287902580 BufferFlags.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ianimatedmeshmd2.h
+	"IAnimatedMesh.h"
+
+1287902578 Mesh.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ianimatedmeshmd3.h
+	"IAnimatedMesh.h"
+	"IQ3Shader.h"
+	"quaternion.h"
+
+1287902578 n.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iq3shader.h
+	"irrArray.h"
+	"fast_atof.h"
+	"IFileSystem.h"
+	"IVideoDriver.h"
+	"coreutil.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ifilesystem.h
+	"IReferenceCounted.h"
+	"IXMLReader.h"
+	"IFileArchive.h"
+
+1287902580 ive.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ixmlreader.h
+	"IReferenceCounted.h"
+	"irrXML.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\irrxml.h
+	<stdio.h>
+	"IrrCompileConfig.h"
+	<irrXML.h>
+	<string>
+	<irrXML.h>
+	<irrXML.h>
+	<irrXML.h>
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ifilearchive.h
+	"IReadFile.h"
+	"IFileList.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ireadfile.h
+	"IReferenceCounted.h"
+	"coreutil.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ifilelist.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ivideodriver.h
+	"rect.h"
+	"SColor.h"
+	"ITexture.h"
+	"irrArray.h"
+	"matrix4.h"
+	"plane3d.h"
+	"dimension2d.h"
+	"position2d.h"
+	"SMaterial.h"
+	"IMeshBuffer.h"
+	"triangle3d.h"
+	"EDriverTypes.h"
+	"EDriverFeatures.h"
+	"SExposedVideoData.h"
+
+1287902580 ideoData.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\itexture.h
+	"IReferenceCounted.h"
+	"IImage.h"
+	"dimension2d.h"
+	"EDriverTypes.h"
+	"path.h"
+	"matrix4.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\triangle3d.h
+	"vector3d.h"
+	"line3d.h"
+	"plane3d.h"
+	"aabbox3d.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\sexposedvideodata.h
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\quaternion.h
+	"irrTypes.h"
+	"irrMath.h"
+	"matrix4.h"
+	"vector3d.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ianimatedmeshscenenode.h
+	"ISceneNode.h"
+	"IBoneSceneNode.h"
+	"IAnimatedMeshMD2.h"
+	"IAnimatedMeshMD3.h"
+
+1287902578 MeshMD3.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iscenenode.h
+	"IAttributeExchangingObject.h"
+	"ESceneNodeTypes.h"
+	"ECullingTypes.h"
+	"EDebugSceneTypes.h"
+	"ISceneNodeAnimator.h"
+	"ITriangleSelector.h"
+	"SMaterial.h"
+	"irrString.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"irrList.h"
+	"IAttributes.h"
+
+1287902580 es.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iattributeexchangingobject.h
+	"IReferenceCounted.h"
+
+1287902580 eCounted.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iscenenodeanimator.h
+	"IReferenceCounted.h"
+	"vector3d.h"
+	"ESceneNodeAnimatorTypes.h"
+	"IAttributeExchangingObject.h"
+	"IEventReceiver.h"
+
+1287902580 eiver.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ieventreceiver.h
+	"ILogger.h"
+	"Keycodes.h"
+	"irrString.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ilogger.h
+	"IReferenceCounted.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\keycodes.h
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\itriangleselector.h
+	"IReferenceCounted.h"
+	"triangle3d.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"line3d.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\irrlist.h
+	"irrTypes.h"
+	"irrAllocator.h"
+	"irrMath.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iattributes.h
+	"IReferenceCounted.h"
+	"SColor.h"
+	"vector3d.h"
+	"vector2d.h"
+	"line2d.h"
+	"line3d.h"
+	"triangle3d.h"
+	"position2d.h"
+	"rect.h"
+	"matrix4.h"
+	"quaternion.h"
+	"plane3d.h"
+	"triangle3d.h"
+	"line2d.h"
+	"line3d.h"
+	"irrString.h"
+	"irrArray.h"
+	"IXMLReader.h"
+	"EAttributes.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\line2d.h
+	"irrTypes.h"
+	"vector2d.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\eattributes.h
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ibonescenenode.h
+	"ISceneNode.h"
+
+1287902578 e.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ibillboardscenenode.h
+	"ISceneNode.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ibillboardtextscenenode.h
+	"IBillboardSceneNode.h"
+
+1287902578 dSceneNode.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\icamerascenenode.h
+	"ISceneNode.h"
+	"IEventReceiver.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\icursorcontrol.h
+	"IReferenceCounted.h"
+	"position2d.h"
+	"rect.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\idummytransformationscenenode.h
+	"ISceneNode.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\igeometrycreator.h
+	"IReferenceCounted.h"
+	"IMesh.h"
+	"IImage.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\igpuprogrammingservices.h
+	"EShaderTypes.h"
+	"EMaterialTypes.h"
+	"EPrimitiveTypes.h"
+	"path.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\eshadertypes.h
+	"irrTypes.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguibutton.h
+	"IGUIElement.h"
+
+1287902580 nt.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguielement.h
+	"IAttributeExchangingObject.h"
+	"irrList.h"
+	"rect.h"
+	"irrString.h"
+	"IEventReceiver.h"
+	"EGUIElementTypes.h"
+	"EGUIAlignment.h"
+	"IAttributes.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguicheckbox.h
+	"IGUIElement.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguicolorselectdialog.h
+	"IGUIElement.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguicombobox.h
+	"IGUIElement.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguicontextmenu.h
+	"IGUIElement.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguieditbox.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguielementfactory.h
+	"IReferenceCounted.h"
+	"EGUIElementTypes.h"
+
+1287902580 ntTypes.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguienvironment.h
+	"IReferenceCounted.h"
+	"IGUISkin.h"
+	"rect.h"
+	"EMessageBoxFlags.h"
+	"IEventReceiver.h"
+	"IXMLReader.h"
+	"path.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguiskin.h
+	"IAttributeExchangingObject.h"
+	"EGUIAlignment.h"
+	"SColor.h"
+	"rect.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguifileopendialog.h
+	"IGUIElement.h"
+	"path.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguifont.h
+	"IReferenceCounted.h"
+	"SColor.h"
+	"rect.h"
+	"irrString.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguifontbitmap.h
+	"IGUIFont.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguiimage.h
+	"IGUIElement.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguiinoutfader.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguilistbox.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguimeshviewer.h
+	"IGUIElement.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguiscrollbar.h
+	"IGUIElement.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguispinbox.h
+	"IGUIElement.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguispritebank.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"SColor.h"
+	"rect.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguistatictext.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguitabcontrol.h
+	"IGUIElement.h"
+	"SColor.h"
+	"IGUISkin.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguitable.h
+	"IGUIElement.h"
+	"irrTypes.h"
+	"SColor.h"
+	"IGUISkin.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguitoolbar.h
+	"IGUIElement.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguiwindow.h
+	"IGUIElement.h"
+	"EMessageBoxFlags.h"
+
+1287902580 oxFlags.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguitreeview.h
+	"IGUIElement.h"
+	"IGUIImageList.h"
+	"irrTypes.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iguiimagelist.h
+	"IGUIElement.h"
+	"rect.h"
+	"irrTypes.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iimageloader.h
+	"IReferenceCounted.h"
+	"IImage.h"
+	"path.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iimagewriter.h
+	"IReferenceCounted.h"
+	"irrString.h"
+	"coreutil.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ilightscenenode.h
+	"ISceneNode.h"
+	"SLight.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\slight.h
+	"SColor.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\imaterialrenderer.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+	"S3DVertex.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\imaterialrendererservices.h
+	"SMaterial.h"
+	"S3DVertex.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\imeshcache.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\imeshloader.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\imeshmanipulator.h
+	"IReferenceCounted.h"
+	"vector3d.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"IAnimatedMesh.h"
+	"IMeshBuffer.h"
+	"SVertexManipulator.h"
+
+1287902578 nipulator.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\svertexmanipulator.h
+	"S3DVertex.h"
+	"SColor.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\imeshscenenode.h
+	"ISceneNode.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\imeshwriter.h
+	"IReferenceCounted.h"
+	"EMeshWriterEnums.h"
+
+1287902578 erEnums.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\imetatriangleselector.h
+	"ITriangleSelector.h"
+
+1287902580 Selector.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iosoperator.h
+	"IReferenceCounted.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iparticlesystemscenenode.h
+	"ISceneNode.h"
+	"IParticleAnimatedMeshSceneNodeEmitter.h"
+	"IParticleBoxEmitter.h"
+	"IParticleCylinderEmitter.h"
+	"IParticleMeshEmitter.h"
+	"IParticleRingEmitter.h"
+	"IParticleSphereEmitter.h"
+	"IParticleAttractionAffector.h"
+	"IParticleFadeOutAffector.h"
+	"IParticleGravityAffector.h"
+	"IParticleRotationAffector.h"
+	"dimension2d.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iparticleanimatedmeshscenenodeemitter.h
+	"IParticleEmitter.h"
+	"IAnimatedMeshSceneNode.h"
+
+1287902578 MeshSceneNode.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iparticleemitter.h
+	"IAttributeExchangingObject.h"
+	"SParticle.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\sparticle.h
+	"vector3d.h"
+	"dimension2d.h"
+	"SColor.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iparticleboxemitter.h
+	"IParticleEmitter.h"
+	"aabbox3d.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iparticlecylinderemitter.h
+	"IParticleEmitter.h"
+
+1287902578 Emitter.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iparticlemeshemitter.h
+	"IParticleEmitter.h"
+	"IMesh.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iparticleringemitter.h
+	"IParticleEmitter.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iparticlesphereemitter.h
+	"IParticleEmitter.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iparticleattractionaffector.h
+	"IParticleAffector.h"
+
+1287902580 Affector.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iparticleaffector.h
+	"IAttributeExchangingObject.h"
+	"SParticle.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iparticlefadeoutaffector.h
+	"IParticleAffector.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iparticlegravityaffector.h
+	"IParticleAffector.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iparticlerotationaffector.h
+	"IParticleAffector.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iq3levelmesh.h
+	"IAnimatedMesh.h"
+	"IQ3Shader.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\irrlichtdevice.h
+	"IReferenceCounted.h"
+	"dimension2d.h"
+	"IVideoDriver.h"
+	"EDriverTypes.h"
+	"EDeviceTypes.h"
+	"IEventReceiver.h"
+	"ICursorControl.h"
+	"IVideoModeList.h"
+	"ITimer.h"
+	"IOSOperator.h"
+
+1287902580 or.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\edevicetypes.h
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ivideomodelist.h
+	"IReferenceCounted.h"
+	"dimension2d.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\itimer.h
+	"IReferenceCounted.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\irrmap.h
+	"irrTypes.h"
+	"irrMath.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iscenecollisionmanager.h
+	"IReferenceCounted.h"
+	"vector3d.h"
+	"triangle3d.h"
+	"position2d.h"
+	"line3d.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iscenemanager.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"irrString.h"
+	"path.h"
+	"vector3d.h"
+	"dimension2d.h"
+	"SColor.h"
+	"ETerrainElements.h"
+	"ESceneNodeTypes.h"
+	"ESceneNodeAnimatorTypes.h"
+	"EMeshWriterEnums.h"
+	"SceneParameters.h"
+	"IGeometryCreator.h"
+	"ISkinnedMesh.h"
+
+1287902578 esh.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\sceneparameters.h
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iskinnedmesh.h
+	"irrArray.h"
+	"IBoneSceneNode.h"
+	"IAnimatedMesh.h"
+	"SSkinMeshBuffer.h"
+
+1287902578 Buffer.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\sskinmeshbuffer.h
+	"IMeshBuffer.h"
+	"S3DVertex.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iscenenodeanimatorcamerafps.h
+	"ISceneNodeAnimator.h"
+	"IEventReceiver.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iscenenodeanimatorcameramaya.h
+	"ISceneNodeAnimator.h"
+
+1287902580 eAnimator.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iscenenodeanimatorcollisionresponse.h
+	"ISceneNode.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iscenenodeanimatorfactory.h
+	"IReferenceCounted.h"
+	"ESceneNodeAnimatorTypes.h"
+
+1287902578 eAnimatorTypes.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iscenenodefactory.h
+	"IReferenceCounted.h"
+	"ESceneNodeTypes.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\isceneuserdataserializer.h
+	"IReferenceCounted.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ishaderconstantsetcallback.h
+	"IReferenceCounted.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ishadowvolumescenenode.h
+	"ISceneNode.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iterrainscenenode.h
+	"ETerrainElements.h"
+	"ISceneNode.h"
+	"IDynamicMeshBuffer.h"
+	"irrArray.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\itextscenenode.h
+	"ISceneNode.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ivolumelightscenenode.h
+	"ISceneNode.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\iwritefile.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ixmlwriter.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"irrString.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ilightmanager.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\sanimatedmesh.h
+	"IAnimatedMesh.h"
+	"IMesh.h"
+	"aabbox3d.h"
+	"irrArray.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\sirrcreationparameters.h
+	"EDriverTypes.h"
+	"EDeviceTypes.h"
+	"dimension2d.h"
+	"ILogger.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\skeymap.h
+	"Keycodes.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\smesh.h
+	"IMesh.h"
+	"IMeshBuffer.h"
+	"aabbox3d.h"
+	"irrArray.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\smeshbuffer.h
+	"CMeshBuffer.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\smeshbufferlightmap.h
+	"CMeshBuffer.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\smeshbuffertangents.h
+	"CMeshBuffer.h"
+
+1287902580 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\ssharedmeshbuffer.h
+	"irrArray.h"
+	"IMeshBuffer.h"
+
+1287902578 f:\repositorio\imagemixer 1.0.0\irrlicht - static no gl\include\sviewfrustum.h
+	"plane3d.h"
+	"vector3d.h"
+	"line3d.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"IVideoDriver.h"
+
+1287902578 ver.h"
+
+1319554563 source:f:\repositorio\imagemixer 1.0.0\imagemixer\source\im_channel_pool.cpp
+	"IM_Channel_Pool.h"
+	<IM_Globals.h>
+	<list>
+
+1319554563 s.h>
+
+1319620523 source:f:\repositorio\imagemixer 1.0.0\imagemixer\source\im_exception.cpp
+	"IM_Exception.h"
+	<iostream>
+
+1319439908 f:\repositorio\imagemixer 1.0.0\imagemixer\include\im_exception.h
+
+1319619713 f:\repositorio\imagemixer 1.0.0\imagemixer\include\imagemixer
+	<IM_Exception.h>
+	<IM_Options.h>
+	<IM_Mask.h>
+	<IM_Channel.h>
+	<IM_Image.h>
+
+1319615865 f:\repositorio\imagemixer 1.0.0\imagemixer\include\im_options.h
+
+1319619480 source:f:\repositorio\imagemixer 1.0.0\imagemixer\source\im_options.cpp
+	"IM_Exception.h"
+	"IM_Options.h"
+	"IM_Globals.h"
+	"IM_Bool_Pool.h"
+	"IM_Channel_Pool.h"
+
+1319554563 source:f:\repositorio\imagemixer 1.0.0\imagemixer\source\im_bool_pool.cpp
+	"IM_Bool_Pool.h"
+	<IM_Globals.h>
+	<list>
+
+1319554407 f:\repositorio\imagemixer 1.0.0\imagemixer\source\im_bool_pool.h
+
+1319575707 f:\repositorio\imagemixer 1.0.0\imagemixer\include\im_mask.h
+
+1319618653 source:f:\repositorio\imagemixer 1.0.0\imagemixer\source\im_mask_operators.cpp
+	"IM_Globals.h"
+	"IM_Exception.h"
+	"IM_Mask.h"
+	"IM_Mask_Implementation.h"
+	<cstring>
+
+1319570584 f:\repositorio\imagemixer 1.0.0\imagemixer\source\im_mask_implementation.h
+	"IM_Bool_Pool.h"
+
+1319570584 ool.h"
+
+1319868680 source:f:\repositorio\imagemixer 1.0.0\imagemixer\source\im_channel_logic.cpp
+	"IM_Globals.h"
+	"IM_Math.h"
+	"IM_Mask.h"
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+
+1320498810 l_Implementation.h"
+
+1310971496 f:\repositorio\imagemixer 1.0.0\imagemixer\source\im_math.h
+	<irrMath.h>
+	<S3DVertex.h>
+
+1310971496 .h>
+
+1319554563 source:c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\source\im_bool_pool.cpp
+	"IM_Bool_Pool.h"
+	<IM_Globals.h>
+	<list>
+
+1319554407 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\source\im_bool_pool.h
+
+1321965428 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\source\im_globals.h
+	<SColor.h>
+
+1320506700 source:c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\source\im_channel_logic.cpp
+	"IM_Globals.h"
+	"IM_Math.h"
+	"IM_Mask.h"
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+
+1310971496 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\source\im_math.h
+	<irrMath.h>
+	<S3DVertex.h>
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\irrmath.h
+	"IrrCompileConfig.h"
+	"irrTypes.h"
+	<math.h>
+	<float.h>
+	<stdlib.h>
+	<limits.h>
+
+1319274960 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\irrcompileconfig.h
+	<stdio.h>
+	<xtl.h>
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\irrtypes.h
+	"IrrCompileConfig.h"
+	<wchar.h>
+	<crtdbg.h>
+	"assert.h"
+	<stdlib.h>
+	<crtdbg.h>
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\s3dvertex.h
+	"vector3d.h"
+	"vector2d.h"
+	"SColor.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\vector3d.h
+	"irrMath.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\vector2d.h
+	"irrMath.h"
+	"dimension2d.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\dimension2d.h
+	"irrTypes.h"
+	"irrMath.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\scolor.h
+	"irrTypes.h"
+	"irrMath.h"
+
+1323526128 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\include\im_mask.h
+
+1323526073 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\include\im_channel.h
+
+1319570098 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\source\im_channel_implementation.h
+	"IM_Channel_Pool.h"
+
+1319554384 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\source\im_channel_pool.h
+
+1321693629 source:c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\source\im_channel_masked.cpp
+	"IM_Globals.h"
+	"IM_Mask.h"
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+	"IM_Channel_Pool.h"
+	"IM_Exception.h"
+	<cstring>
+	<cmath>
+
+1323526128 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\include\im_exception.h
+
+1320506437 source:c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\source\im_channel_operators.cpp
+	"IM_Globals.h"
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+	"IM_Channel_Pool.h"
+	"IM_Exception.h"
+	<cstring>
+	<cmath>
+
+1319554563 source:c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\source\im_channel_pool.cpp
+	"IM_Channel_Pool.h"
+	<IM_Globals.h>
+	<list>
+
+1319620523 source:c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\source\im_exception.cpp
+	"IM_Exception.h"
+	<iostream>
+
+1321965428 source:c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\source\im_globals.cpp
+	"IM_Globals.h"
+
+1321684443 source:c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\source\im_image_operators.cpp
+	"IM_Image.h"
+	"IM_Channel.h"
+	"IM_Image_Implementation.h"
+	"IM_Exception.h"
+	<Irrlicht.h>
+
+1323526128 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\include\im_image.h
+
+1319613161 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\source\im_image_implementation.h
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+	"IM_Globals.h"
+	<IImage.h>
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iimage.h
+	"IReferenceCounted.h"
+	"position2d.h"
+	"rect.h"
+	"SColor.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ireferencecounted.h
+	"irrTypes.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\position2d.h
+	"vector2d.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\rect.h
+	"irrTypes.h"
+	"dimension2d.h"
+	"position2d.h"
+
+1287913300 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\irrlicht.h
+	"IrrCompileConfig.h"
+	"aabbox3d.h"
+	"CDynamicMeshBuffer.h"
+	"CIndexBuffer.h"
+	"CMeshBuffer.h"
+	"coreutil.h"
+	"CVertexBuffer.h"
+	"dimension2d.h"
+	"ECullingTypes.h"
+	"EDebugSceneTypes.h"
+	"EDriverFeatures.h"
+	"EDriverTypes.h"
+	"EGUIAlignment.h"
+	"EGUIElementTypes.h"
+	"EHardwareBufferFlags.h"
+	"EMaterialFlags.h"
+	"EMaterialTypes.h"
+	"EMeshWriterEnums.h"
+	"EMessageBoxFlags.h"
+	"ESceneNodeAnimatorTypes.h"
+	"ESceneNodeTypes.h"
+	"ETerrainElements.h"
+	"fast_atof.h"
+	"heapsort.h"
+	"IAnimatedMesh.h"
+	"IAnimatedMeshMD2.h"
+	"IAnimatedMeshMD3.h"
+	"IAnimatedMeshSceneNode.h"
+	"IAttributeExchangingObject.h"
+	"IAttributes.h"
+	"IBillboardSceneNode.h"
+	"IBillboardTextSceneNode.h"
+	"IBoneSceneNode.h"
+	"ICameraSceneNode.h"
+	"ICursorControl.h"
+	"IDummyTransformationSceneNode.h"
+	"IDynamicMeshBuffer.h"
+	"IEventReceiver.h"
+	"IFileList.h"
+	"IFileSystem.h"
+	"IGeometryCreator.h"
+	"IGPUProgrammingServices.h"
+	"IGUIButton.h"
+	"IGUICheckBox.h"
+	"IGUIColorSelectDialog.h"
+	"IGUIComboBox.h"
+	"IGUIContextMenu.h"
+	"IGUIEditBox.h"
+	"IGUIElement.h"
+	"IGUIElementFactory.h"
+	"IGUIEnvironment.h"
+	"IGUIFileOpenDialog.h"
+	"IGUIFont.h"
+	"IGUIFontBitmap.h"
+	"IGUIImage.h"
+	"IGUIInOutFader.h"
+	"IGUIListBox.h"
+	"IGUIMeshViewer.h"
+	"IGUIScrollBar.h"
+	"IGUISkin.h"
+	"IGUISpinBox.h"
+	"IGUISpriteBank.h"
+	"IGUIStaticText.h"
+	"IGUITabControl.h"
+	"IGUITable.h"
+	"IGUIToolbar.h"
+	"IGUIWindow.h"
+	"IGUITreeView.h"
+	"IImage.h"
+	"IImageLoader.h"
+	"IImageWriter.h"
+	"IIndexBuffer.h"
+	"ILightSceneNode.h"
+	"ILogger.h"
+	"IMaterialRenderer.h"
+	"IMaterialRendererServices.h"
+	"IMesh.h"
+	"IMeshBuffer.h"
+	"IMeshCache.h"
+	"IMeshLoader.h"
+	"IMeshManipulator.h"
+	"IMeshSceneNode.h"
+	"IMeshWriter.h"
+	"IMetaTriangleSelector.h"
+	"IOSOperator.h"
+	"IParticleSystemSceneNode.h"
+	"IQ3LevelMesh.h"
+	"IQ3Shader.h"
+	"IReadFile.h"
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"IrrlichtDevice.h"
+	"irrList.h"
+	"irrMap.h"
+	"irrMath.h"
+	"irrString.h"
+	"irrTypes.h"
+	"path.h"
+	"irrXML.h"
+	"ISceneCollisionManager.h"
+	"ISceneManager.h"
+	"ISceneNode.h"
+	"ISceneNodeAnimator.h"
+	"ISceneNodeAnimatorCameraFPS.h"
+	"ISceneNodeAnimatorCameraMaya.h"
+	"ISceneNodeAnimatorCollisionResponse.h"
+	"ISceneNodeAnimatorFactory.h"
+	"ISceneNodeFactory.h"
+	"ISceneUserDataSerializer.h"
+	"IShaderConstantSetCallBack.h"
+	"IShadowVolumeSceneNode.h"
+	"ISkinnedMesh.h"
+	"ITerrainSceneNode.h"
+	"ITextSceneNode.h"
+	"ITexture.h"
+	"ITimer.h"
+	"ITriangleSelector.h"
+	"IVertexBuffer.h"
+	"IVideoDriver.h"
+	"IVideoModeList.h"
+	"IVolumeLightSceneNode.h"
+	"IWriteFile.h"
+	"IXMLReader.h"
+	"IXMLWriter.h"
+	"ILightManager.h"
+	"Keycodes.h"
+	"line2d.h"
+	"line3d.h"
+	"matrix4.h"
+	"plane3d.h"
+	"position2d.h"
+	"quaternion.h"
+	"rect.h"
+	"S3DVertex.h"
+	"SAnimatedMesh.h"
+	"SceneParameters.h"
+	"SColor.h"
+	"SExposedVideoData.h"
+	"SIrrCreationParameters.h"
+	"SKeyMap.h"
+	"SLight.h"
+	"SMaterial.h"
+	"SMesh.h"
+	"SMeshBuffer.h"
+	"SMeshBufferLightMap.h"
+	"SMeshBufferTangents.h"
+	"SParticle.h"
+	"SSharedMeshBuffer.h"
+	"SSkinMeshBuffer.h"
+	"SVertexIndex.h"
+	"SViewFrustum.h"
+	"triangle3d.h"
+	"vector2d.h"
+	"vector3d.h"
+	"SIrrCreationParameters.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\aabbox3d.h
+	"irrMath.h"
+	"plane3d.h"
+	"line3d.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\plane3d.h
+	"irrMath.h"
+	"vector3d.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\line3d.h
+	"irrTypes.h"
+	"vector3d.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\cdynamicmeshbuffer.h
+	"IDynamicMeshBuffer.h"
+	"CVertexBuffer.h"
+	"CIndexBuffer.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\idynamicmeshbuffer.h
+	"IMeshBuffer.h"
+	"IVertexBuffer.h"
+	"IIndexBuffer.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\imeshbuffer.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+	"aabbox3d.h"
+	"S3DVertex.h"
+	"SVertexIndex.h"
+	"EHardwareBufferFlags.h"
+	"EPrimitiveTypes.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\smaterial.h
+	"SColor.h"
+	"matrix4.h"
+	"irrArray.h"
+	"irrMath.h"
+	"EMaterialTypes.h"
+	"EMaterialFlags.h"
+	"SMaterialLayer.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\matrix4.h
+	"irrMath.h"
+	"vector3d.h"
+	"vector2d.h"
+	"plane3d.h"
+	"aabbox3d.h"
+	"rect.h"
+	"irrString.h"
+	<windows.h>
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\irrstring.h
+	"irrTypes.h"
+	"irrAllocator.h"
+	"irrMath.h"
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\irrallocator.h
+	"irrTypes.h"
+	<new>
+	<memory.h>
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\irrarray.h
+	"irrTypes.h"
+	"heapsort.h"
+	"irrAllocator.h"
+	"irrMath.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\heapsort.h
+	"irrTypes.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ematerialtypes.h
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ematerialflags.h
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\smateriallayer.h
+	"matrix4.h"
+	"irrAllocator.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\svertexindex.h
+	"irrTypes.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ehardwarebufferflags.h
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\eprimitivetypes.h
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ivertexbuffer.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"S3DVertex.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iindexbuffer.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"SVertexIndex.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\cvertexbuffer.h
+	"IVertexBuffer.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\cindexbuffer.h
+	"IIndexBuffer.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\cmeshbuffer.h
+	"irrArray.h"
+	"IMeshBuffer.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\coreutil.h
+	"irrString.h"
+	"path.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\path.h
+	"irrString.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ecullingtypes.h
+	"irrTypes.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\edebugscenetypes.h
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\edriverfeatures.h
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\edrivertypes.h
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\eguialignment.h
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\eguielementtypes.h
+	"irrTypes.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\emeshwriterenums.h
+	"irrTypes.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\emessageboxflags.h
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\escenenodeanimatortypes.h
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\escenenodetypes.h
+	"irrTypes.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\eterrainelements.h
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\fast_atof.h
+	"irrMath.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ianimatedmesh.h
+	"aabbox3d.h"
+	"IMesh.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\imesh.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+	"EHardwareBufferFlags.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ianimatedmeshmd2.h
+	"IAnimatedMesh.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ianimatedmeshmd3.h
+	"IAnimatedMesh.h"
+	"IQ3Shader.h"
+	"quaternion.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iq3shader.h
+	"irrArray.h"
+	"fast_atof.h"
+	"IFileSystem.h"
+	"IVideoDriver.h"
+	"coreutil.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ifilesystem.h
+	"IReferenceCounted.h"
+	"IXMLReader.h"
+	"IFileArchive.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ixmlreader.h
+	"IReferenceCounted.h"
+	"irrXML.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\irrxml.h
+	<stdio.h>
+	"IrrCompileConfig.h"
+	<irrXML.h>
+	<string>
+	<irrXML.h>
+	<irrXML.h>
+	<irrXML.h>
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ifilearchive.h
+	"IReadFile.h"
+	"IFileList.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ireadfile.h
+	"IReferenceCounted.h"
+	"coreutil.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ifilelist.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ivideodriver.h
+	"rect.h"
+	"SColor.h"
+	"ITexture.h"
+	"irrArray.h"
+	"matrix4.h"
+	"plane3d.h"
+	"dimension2d.h"
+	"position2d.h"
+	"SMaterial.h"
+	"IMeshBuffer.h"
+	"triangle3d.h"
+	"EDriverTypes.h"
+	"EDriverFeatures.h"
+	"SExposedVideoData.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\itexture.h
+	"IReferenceCounted.h"
+	"IImage.h"
+	"dimension2d.h"
+	"EDriverTypes.h"
+	"path.h"
+	"matrix4.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\triangle3d.h
+	"vector3d.h"
+	"line3d.h"
+	"plane3d.h"
+	"aabbox3d.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\sexposedvideodata.h
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\quaternion.h
+	"irrTypes.h"
+	"irrMath.h"
+	"matrix4.h"
+	"vector3d.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ianimatedmeshscenenode.h
+	"ISceneNode.h"
+	"IBoneSceneNode.h"
+	"IAnimatedMeshMD2.h"
+	"IAnimatedMeshMD3.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iscenenode.h
+	"IAttributeExchangingObject.h"
+	"ESceneNodeTypes.h"
+	"ECullingTypes.h"
+	"EDebugSceneTypes.h"
+	"ISceneNodeAnimator.h"
+	"ITriangleSelector.h"
+	"SMaterial.h"
+	"irrString.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"irrList.h"
+	"IAttributes.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iattributeexchangingobject.h
+	"IReferenceCounted.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iscenenodeanimator.h
+	"IReferenceCounted.h"
+	"vector3d.h"
+	"ESceneNodeAnimatorTypes.h"
+	"IAttributeExchangingObject.h"
+	"IEventReceiver.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ieventreceiver.h
+	"ILogger.h"
+	"Keycodes.h"
+	"irrString.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ilogger.h
+	"IReferenceCounted.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\keycodes.h
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\itriangleselector.h
+	"IReferenceCounted.h"
+	"triangle3d.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"line3d.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\irrlist.h
+	"irrTypes.h"
+	"irrAllocator.h"
+	"irrMath.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iattributes.h
+	"IReferenceCounted.h"
+	"SColor.h"
+	"vector3d.h"
+	"vector2d.h"
+	"line2d.h"
+	"line3d.h"
+	"triangle3d.h"
+	"position2d.h"
+	"rect.h"
+	"matrix4.h"
+	"quaternion.h"
+	"plane3d.h"
+	"triangle3d.h"
+	"line2d.h"
+	"line3d.h"
+	"irrString.h"
+	"irrArray.h"
+	"IXMLReader.h"
+	"EAttributes.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\line2d.h
+	"irrTypes.h"
+	"vector2d.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\eattributes.h
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ibonescenenode.h
+	"ISceneNode.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ibillboardscenenode.h
+	"ISceneNode.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ibillboardtextscenenode.h
+	"IBillboardSceneNode.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\icamerascenenode.h
+	"ISceneNode.h"
+	"IEventReceiver.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\icursorcontrol.h
+	"IReferenceCounted.h"
+	"position2d.h"
+	"rect.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\idummytransformationscenenode.h
+	"ISceneNode.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\igeometrycreator.h
+	"IReferenceCounted.h"
+	"IMesh.h"
+	"IImage.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\igpuprogrammingservices.h
+	"EShaderTypes.h"
+	"EMaterialTypes.h"
+	"EPrimitiveTypes.h"
+	"path.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\eshadertypes.h
+	"irrTypes.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguibutton.h
+	"IGUIElement.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguielement.h
+	"IAttributeExchangingObject.h"
+	"irrList.h"
+	"rect.h"
+	"irrString.h"
+	"IEventReceiver.h"
+	"EGUIElementTypes.h"
+	"EGUIAlignment.h"
+	"IAttributes.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguicheckbox.h
+	"IGUIElement.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguicolorselectdialog.h
+	"IGUIElement.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguicombobox.h
+	"IGUIElement.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguicontextmenu.h
+	"IGUIElement.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguieditbox.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguielementfactory.h
+	"IReferenceCounted.h"
+	"EGUIElementTypes.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguienvironment.h
+	"IReferenceCounted.h"
+	"IGUISkin.h"
+	"rect.h"
+	"EMessageBoxFlags.h"
+	"IEventReceiver.h"
+	"IXMLReader.h"
+	"path.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguiskin.h
+	"IAttributeExchangingObject.h"
+	"EGUIAlignment.h"
+	"SColor.h"
+	"rect.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguifileopendialog.h
+	"IGUIElement.h"
+	"path.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguifont.h
+	"IReferenceCounted.h"
+	"SColor.h"
+	"rect.h"
+	"irrString.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguifontbitmap.h
+	"IGUIFont.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguiimage.h
+	"IGUIElement.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguiinoutfader.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguilistbox.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguimeshviewer.h
+	"IGUIElement.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguiscrollbar.h
+	"IGUIElement.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguispinbox.h
+	"IGUIElement.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguispritebank.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"SColor.h"
+	"rect.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguistatictext.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguitabcontrol.h
+	"IGUIElement.h"
+	"SColor.h"
+	"IGUISkin.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguitable.h
+	"IGUIElement.h"
+	"irrTypes.h"
+	"SColor.h"
+	"IGUISkin.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguitoolbar.h
+	"IGUIElement.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguiwindow.h
+	"IGUIElement.h"
+	"EMessageBoxFlags.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguitreeview.h
+	"IGUIElement.h"
+	"IGUIImageList.h"
+	"irrTypes.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iguiimagelist.h
+	"IGUIElement.h"
+	"rect.h"
+	"irrTypes.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iimageloader.h
+	"IReferenceCounted.h"
+	"IImage.h"
+	"path.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iimagewriter.h
+	"IReferenceCounted.h"
+	"irrString.h"
+	"coreutil.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ilightscenenode.h
+	"ISceneNode.h"
+	"SLight.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\slight.h
+	"SColor.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\imaterialrenderer.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+	"S3DVertex.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\imaterialrendererservices.h
+	"SMaterial.h"
+	"S3DVertex.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\imeshcache.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\imeshloader.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\imeshmanipulator.h
+	"IReferenceCounted.h"
+	"vector3d.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"IAnimatedMesh.h"
+	"IMeshBuffer.h"
+	"SVertexManipulator.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\svertexmanipulator.h
+	"S3DVertex.h"
+	"SColor.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\imeshscenenode.h
+	"ISceneNode.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\imeshwriter.h
+	"IReferenceCounted.h"
+	"EMeshWriterEnums.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\imetatriangleselector.h
+	"ITriangleSelector.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iosoperator.h
+	"IReferenceCounted.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iparticlesystemscenenode.h
+	"ISceneNode.h"
+	"IParticleAnimatedMeshSceneNodeEmitter.h"
+	"IParticleBoxEmitter.h"
+	"IParticleCylinderEmitter.h"
+	"IParticleMeshEmitter.h"
+	"IParticleRingEmitter.h"
+	"IParticleSphereEmitter.h"
+	"IParticleAttractionAffector.h"
+	"IParticleFadeOutAffector.h"
+	"IParticleGravityAffector.h"
+	"IParticleRotationAffector.h"
+	"dimension2d.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iparticleanimatedmeshscenenodeemitter.h
+	"IParticleEmitter.h"
+	"IAnimatedMeshSceneNode.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iparticleemitter.h
+	"IAttributeExchangingObject.h"
+	"SParticle.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\sparticle.h
+	"vector3d.h"
+	"dimension2d.h"
+	"SColor.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iparticleboxemitter.h
+	"IParticleEmitter.h"
+	"aabbox3d.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iparticlecylinderemitter.h
+	"IParticleEmitter.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iparticlemeshemitter.h
+	"IParticleEmitter.h"
+	"IMesh.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iparticleringemitter.h
+	"IParticleEmitter.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iparticlesphereemitter.h
+	"IParticleEmitter.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iparticleattractionaffector.h
+	"IParticleAffector.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iparticleaffector.h
+	"IAttributeExchangingObject.h"
+	"SParticle.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iparticlefadeoutaffector.h
+	"IParticleAffector.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iparticlegravityaffector.h
+	"IParticleAffector.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iparticlerotationaffector.h
+	"IParticleAffector.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iq3levelmesh.h
+	"IAnimatedMesh.h"
+	"IQ3Shader.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\irrlichtdevice.h
+	"IReferenceCounted.h"
+	"dimension2d.h"
+	"IVideoDriver.h"
+	"EDriverTypes.h"
+	"EDeviceTypes.h"
+	"IEventReceiver.h"
+	"ICursorControl.h"
+	"IVideoModeList.h"
+	"ITimer.h"
+	"IOSOperator.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\edevicetypes.h
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ivideomodelist.h
+	"IReferenceCounted.h"
+	"dimension2d.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\itimer.h
+	"IReferenceCounted.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\irrmap.h
+	"irrTypes.h"
+	"irrMath.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iscenecollisionmanager.h
+	"IReferenceCounted.h"
+	"vector3d.h"
+	"triangle3d.h"
+	"position2d.h"
+	"line3d.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iscenemanager.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"irrString.h"
+	"path.h"
+	"vector3d.h"
+	"dimension2d.h"
+	"SColor.h"
+	"ETerrainElements.h"
+	"ESceneNodeTypes.h"
+	"ESceneNodeAnimatorTypes.h"
+	"EMeshWriterEnums.h"
+	"SceneParameters.h"
+	"IGeometryCreator.h"
+	"ISkinnedMesh.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\sceneparameters.h
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iskinnedmesh.h
+	"irrArray.h"
+	"IBoneSceneNode.h"
+	"IAnimatedMesh.h"
+	"SSkinMeshBuffer.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\sskinmeshbuffer.h
+	"IMeshBuffer.h"
+	"S3DVertex.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iscenenodeanimatorcamerafps.h
+	"ISceneNodeAnimator.h"
+	"IEventReceiver.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iscenenodeanimatorcameramaya.h
+	"ISceneNodeAnimator.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iscenenodeanimatorcollisionresponse.h
+	"ISceneNode.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iscenenodeanimatorfactory.h
+	"IReferenceCounted.h"
+	"ESceneNodeAnimatorTypes.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iscenenodefactory.h
+	"IReferenceCounted.h"
+	"ESceneNodeTypes.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\isceneuserdataserializer.h
+	"IReferenceCounted.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ishaderconstantsetcallback.h
+	"IReferenceCounted.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ishadowvolumescenenode.h
+	"ISceneNode.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iterrainscenenode.h
+	"ETerrainElements.h"
+	"ISceneNode.h"
+	"IDynamicMeshBuffer.h"
+	"irrArray.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\itextscenenode.h
+	"ISceneNode.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ivolumelightscenenode.h
+	"ISceneNode.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\iwritefile.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ixmlwriter.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"irrString.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ilightmanager.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\sanimatedmesh.h
+	"IAnimatedMesh.h"
+	"IMesh.h"
+	"aabbox3d.h"
+	"irrArray.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\sirrcreationparameters.h
+	"EDriverTypes.h"
+	"EDeviceTypes.h"
+	"dimension2d.h"
+	"ILogger.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\skeymap.h
+	"Keycodes.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\smesh.h
+	"IMesh.h"
+	"IMeshBuffer.h"
+	"aabbox3d.h"
+	"irrArray.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\smeshbuffer.h
+	"CMeshBuffer.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\smeshbufferlightmap.h
+	"CMeshBuffer.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\smeshbuffertangents.h
+	"CMeshBuffer.h"
+
+1287902580 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\ssharedmeshbuffer.h
+	"irrArray.h"
+	"IMeshBuffer.h"
+
+1287902578 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\irrlicht - static no gl\include\sviewfrustum.h
+	"plane3d.h"
+	"vector3d.h"
+	"line3d.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"IVideoDriver.h"
+
+1320507727 source:c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\source\im_mask_operators.cpp
+	"IM_Globals.h"
+	"IM_Exception.h"
+	"IM_Mask.h"
+	"IM_Mask_Implementation.h"
+	<cstring>
+
+1319570584 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\source\im_mask_implementation.h
+	"IM_Bool_Pool.h"
+
+1321965439 source:c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\source\im_options.cpp
+	"IM_Exception.h"
+	"IM_Options.h"
+	"IM_Globals.h"
+	"IM_Bool_Pool.h"
+	"IM_Channel_Pool.h"
+	<Irrlicht.h>
+
+1323526129 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\include\im_options.h
+
+1331066327 source:c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\main.cpp
+	<ImageMixer>
+
+1323526129 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\include\imagemixer
+	<IM_Exception.h>
+	<IM_Options.h>
+	<IM_Mask.h>
+	<IM_Channel.h>
+	<IM_Image.h>
+	<IM_Functions.h>
+	<IM_ColorMatrix.h>
+	<IM_MatrixChannel.h>
+	<IM_Operators.h>
+
+1323526129 ors.h>
+
+1320498810 source:c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\source\im_channel_interpolators.cpp
+	"IM_Globals.h"
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+
+1320675264 source:c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\source\im_image_interpolators.cpp
+	"IM_Image.h"
+	"IM_Mask.h"
+	"IM_Channel.h"
+	"IM_Image_Implementation.h"
+	<cmath>
+
+1320675264 Implementation.h"
+
+1321365932 source:c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\source\im_color_matrix.cpp
+	"IM_Globals.h"
+	"IM_Image.h"
+	"IM_Mask.h"
+	"IM_Channel.h"
+	"IM_ColorMatrix.h"
+	<cstring>
+	<irrMath.h>
+
+1323526129 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\include\im_operators.h
+
+1323526128 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\include\im_functions.h
+
+1320822957 source:c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\source\im_functions.cpp
+	"IM_Globals.h"
+	"IM_Channel.h"
+	"IM_Functions.h"
+	<cmath>
+
+1320822957 ons.h"
+
+1323526128 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\include\im_colormatrix.h
+
+1321365974 source:c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\source\im_matrix_channel.cpp
+	"IM_Globals.h"
+	"IM_Channel.h"
+	"IM_Exception.h"
+	"IM_Image.h"
+	"IM_Mask.h"
+	"IM_ColorMatrix.h"
+	"IM_MatrixChannel.h"
+	"IM_MatrixImplementation.h"
+	<cstring>
+	<irrMath.h>
+
+1323526129 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\include\im_matrixchannel.h
+
+1321288274 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\source\im_matriximplementation.h
+	"IM_Channel.h"
+
+1321288274 l.h"
+
+1321291165 c:\users\dario\documents\repositorio2\imagemixer 1.0.0\imagemixer\include\im_matrixoperators.h
+
+1366662406 source:/home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/main.cpp
+	<ImageMixer>
+
+1366662674 /home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/include/ImageMixer
+	<IM_Exception.h>
+	<IM_Options.h>
+	<IM_Mask.h>
+	<IM_Channel.h>
+	<IM_Image.h>
+	<IM_Functions.h>
+	<IM_ColorMatrix.h>
+	<IM_MatrixChannel.h>
+	<IM_Operators.h>
+
+1366662723 /home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/include/IM_Exception.h
+
+1366662730 /home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/include/IM_Options.h
+
+1366662734 /home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/include/IM_Mask.h
+
+1366662738 /home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/include/IM_Channel.h
+
+1366662743 /home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/include/IM_Image.h
+
+1366662755 /home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/include/IM_Functions.h
+
+1366662759 /home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/include/IM_ColorMatrix.h
+
+1366662764 /home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/include/IM_MatrixChannel.h
+
+1363352263 /home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/include/IM_Operators.h
+
+1363352263 source:/home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/source/IM_Bool_Pool.cpp
+	"IM_Bool_Pool.h"
+	<IM_Globals.h>
+	<list>
+
+1363352263 /home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/source/IM_Bool_Pool.h
+
+1363352263 /home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/source/IM_Globals.h
+	<SColor.h>
+
+1574563391 /home/Dev/libs/game/Irrlicht-SVN/include/SColor.h
+	"irrTypes.h"
+	"irrMath.h"
+
+1514384332 /home/Dev/libs/game/Irrlicht-SVN/include/irrTypes.h
+	"IrrCompileConfig.h"
+	<limits.h>
+	<wchar.h>
+	<crtdbg.h>
+	"assert.h"
+	<stdlib.h>
+	<crtdbg.h>
+
+1574686284 /home/Dev/libs/game/Irrlicht-SVN/include/IrrCompileConfig.h
+	<stdio.h>
+	<xtl.h>
+	<tchar.h>
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/irrMath.h
+	"IrrCompileConfig.h"
+	"irrTypes.h"
+	<math.h>
+	<float.h>
+	<stdlib.h>
+	<limits.h>
+
+1363352263 source:/home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/source/IM_Channel_Interpolators.cpp
+	"IM_Globals.h"
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+
+1363352263 /home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/source/IM_Channel_Implementation.h
+	"IM_Channel_Pool.h"
+
+1363352263 /home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/source/IM_Channel_Pool.h
+
+1363352263 source:/home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/source/IM_Channel_Logic.cpp
+	"IM_Globals.h"
+	"IM_Math.h"
+	"IM_Mask.h"
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+
+1363352263 /home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/source/IM_Math.h
+	<irrMath.h>
+	<S3DVertex.h>
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/S3DVertex.h
+	"vector3d.h"
+	"vector2d.h"
+	"SColor.h"
+
+1568095854 /home/Dev/libs/game/Irrlicht-SVN/include/vector3d.h
+	"irrMath.h"
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/vector2d.h
+	"irrMath.h"
+	"dimension2d.h"
+
+1553911456 /home/Dev/libs/game/Irrlicht-SVN/include/dimension2d.h
+	"irrTypes.h"
+	"irrMath.h"
+
+1363352263 source:/home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/source/IM_Channel_Masked.cpp
+	"IM_Globals.h"
+	"IM_Mask.h"
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+	"IM_Channel_Pool.h"
+	"IM_Exception.h"
+	<cstring>
+	<cmath>
+
+1363352263 source:/home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/source/IM_Channel_Operators.cpp
+	"IM_Globals.h"
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+	"IM_Channel_Pool.h"
+	"IM_Exception.h"
+	<cstring>
+	<cmath>
+
+1363352263 source:/home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/source/IM_Channel_Pool.cpp
+	"IM_Channel_Pool.h"
+	<IM_Globals.h>
+	<list>
+
+1363352263 source:/home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/source/IM_Color_Matrix.cpp
+	"IM_Globals.h"
+	"IM_Image.h"
+	"IM_Mask.h"
+	"IM_Channel.h"
+	"IM_ColorMatrix.h"
+	<cstring>
+	<irrMath.h>
+
+1363352263 source:/home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/source/IM_Exception.cpp
+	"IM_Exception.h"
+	<iostream>
+
+1363352263 source:/home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/source/IM_Functions.cpp
+	"IM_Globals.h"
+	"IM_Channel.h"
+	"IM_Functions.h"
+	<cmath>
+
+1363352263 source:/home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/source/IM_Globals.cpp
+	"IM_Globals.h"
+
+1363352263 source:/home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/source/IM_Image_Interpolators.cpp
+	"IM_Image.h"
+	"IM_Mask.h"
+	"IM_Channel.h"
+	"IM_Image_Implementation.h"
+	<cmath>
+
+1363352263 /home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/source/IM_Image_Implementation.h
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+	"IM_Globals.h"
+	<IImage.h>
+
+1574563391 /home/Dev/libs/game/Irrlicht-SVN/include/IImage.h
+	"IReferenceCounted.h"
+	"position2d.h"
+	"rect.h"
+	"SColor.h"
+	"irrAllocator.h"
+	<string.h>
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IReferenceCounted.h
+	"irrTypes.h"
+	"leakHunter.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/leakHunter.h
+	"IrrCompileConfig.h"
+	"irrArray.h"
+
+1568095854 /home/Dev/libs/game/Irrlicht-SVN/include/irrArray.h
+	"irrTypes.h"
+	"heapsort.h"
+	"irrAllocator.h"
+	"irrMath.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/heapsort.h
+	"irrTypes.h"
+
+1496717987 /home/Dev/libs/game/Irrlicht-SVN/include/irrAllocator.h
+	"irrTypes.h"
+	<new>
+	<memory.h>
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/position2d.h
+	"vector2d.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/rect.h
+	"irrTypes.h"
+	"dimension2d.h"
+	"position2d.h"
+
+1366662829 source:/home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/source/IM_Image_Operators.cpp
+	"IM_Image.h"
+	"IM_Channel.h"
+	"IM_Image_Implementation.h"
+	"IM_Exception.h"
+	<irrlicht.h>
+
+1514384332 /home/Dev/libs/game/Irrlicht-SVN/include/irrlicht.h
+	"IrrCompileConfig.h"
+	"aabbox3d.h"
+	"CDynamicMeshBuffer.h"
+	"CIndexBuffer.h"
+	"CMeshBuffer.h"
+	"coreutil.h"
+	"CVertexBuffer.h"
+	"IProfiler.h"
+	"dimension2d.h"
+	"ECullingTypes.h"
+	"EDebugSceneTypes.h"
+	"EDriverFeatures.h"
+	"EDriverTypes.h"
+	"EGUIAlignment.h"
+	"EGUIElementTypes.h"
+	"EHardwareBufferFlags.h"
+	"EMaterialFlags.h"
+	"EMaterialTypes.h"
+	"EMeshWriterEnums.h"
+	"EMessageBoxFlags.h"
+	"ESceneNodeAnimatorTypes.h"
+	"ESceneNodeTypes.h"
+	"ETerrainElements.h"
+	"fast_atof.h"
+	"heapsort.h"
+	"IAnimatedMesh.h"
+	"IAnimatedMeshMD2.h"
+	"IAnimatedMeshMD3.h"
+	"IAnimatedMeshSceneNode.h"
+	"IAttributeExchangingObject.h"
+	"IAttributes.h"
+	"IBillboardSceneNode.h"
+	"IBillboardTextSceneNode.h"
+	"IBoneSceneNode.h"
+	"ICameraSceneNode.h"
+	"IContextManager.h"
+	"ICursorControl.h"
+	"IDummyTransformationSceneNode.h"
+	"IDynamicMeshBuffer.h"
+	"IEventReceiver.h"
+	"IFileList.h"
+	"IFileSystem.h"
+	"IGeometryCreator.h"
+	"IGPUProgrammingServices.h"
+	"IGUIButton.h"
+	"IGUICheckBox.h"
+	"IGUIColorSelectDialog.h"
+	"IGUIComboBox.h"
+	"IGUIContextMenu.h"
+	"IGUIEditBox.h"
+	"IGUIElement.h"
+	"IGUIElementFactory.h"
+	"IGUIEnvironment.h"
+	"IGUIFileOpenDialog.h"
+	"IGUIFont.h"
+	"IGUIFontBitmap.h"
+	"IGUIImage.h"
+	"IGUIInOutFader.h"
+	"IGUIListBox.h"
+	"IGUIMeshViewer.h"
+	"IGUIScrollBar.h"
+	"IGUISkin.h"
+	"IGUISpinBox.h"
+	"IGUISpriteBank.h"
+	"IGUIStaticText.h"
+	"IGUITabControl.h"
+	"IGUITable.h"
+	"IGUIToolbar.h"
+	"IGUIWindow.h"
+	"IGUITreeView.h"
+	"IGUIProfiler.h"
+	"IImage.h"
+	"IImageLoader.h"
+	"IImageWriter.h"
+	"IIndexBuffer.h"
+	"ILightSceneNode.h"
+	"ILogger.h"
+	"IMaterialRenderer.h"
+	"IMaterialRendererServices.h"
+	"IMesh.h"
+	"IMeshBuffer.h"
+	"IMeshCache.h"
+	"IMeshLoader.h"
+	"IMeshManipulator.h"
+	"IMeshSceneNode.h"
+	"IMeshWriter.h"
+	"IOctreeSceneNode.h"
+	"IColladaMeshWriter.h"
+	"IMetaTriangleSelector.h"
+	"IOSOperator.h"
+	"IParticleSystemSceneNode.h"
+	"IQ3LevelMesh.h"
+	"IQ3Shader.h"
+	"IReadFile.h"
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"IRandomizer.h"
+	"IRenderTarget.h"
+	"IrrlichtDevice.h"
+	"irrList.h"
+	"irrMap.h"
+	"irrMath.h"
+	"irrString.h"
+	"irrTypes.h"
+	"path.h"
+	"irrXML.h"
+	"ISceneCollisionManager.h"
+	"ISceneLoader.h"
+	"ISceneManager.h"
+	"ISceneNode.h"
+	"ISceneNodeAnimator.h"
+	"ISceneNodeAnimatorCameraFPS.h"
+	"ISceneNodeAnimatorCameraMaya.h"
+	"ISceneNodeAnimatorCollisionResponse.h"
+	"ISceneNodeAnimatorFactory.h"
+	"ISceneNodeFactory.h"
+	"ISceneUserDataSerializer.h"
+	"IShaderConstantSetCallBack.h"
+	"IShadowVolumeSceneNode.h"
+	"ISkinnedMesh.h"
+	"ITerrainSceneNode.h"
+	"ITextSceneNode.h"
+	"ITexture.h"
+	"ITimer.h"
+	"ITriangleSelector.h"
+	"IVertexBuffer.h"
+	"IVideoDriver.h"
+	"IVideoModeList.h"
+	"IVolumeLightSceneNode.h"
+	"IWriteFile.h"
+	"IXMLReader.h"
+	"IXMLWriter.h"
+	"ILightManager.h"
+	"Keycodes.h"
+	"line2d.h"
+	"line3d.h"
+	"matrix4.h"
+	"plane3d.h"
+	"position2d.h"
+	"quaternion.h"
+	"rect.h"
+	"S3DVertex.h"
+	"SAnimatedMesh.h"
+	"SceneParameters.h"
+	"SColor.h"
+	"SExposedVideoData.h"
+	"SIrrCreationParameters.h"
+	"SKeyMap.h"
+	"SLight.h"
+	"SMaterial.h"
+	"SMesh.h"
+	"SMeshBuffer.h"
+	"SMeshBufferLightMap.h"
+	"SMeshBufferTangents.h"
+	"SParticle.h"
+	"SSharedMeshBuffer.h"
+	"SSkinMeshBuffer.h"
+	"SVertexIndex.h"
+	"SViewFrustum.h"
+	"triangle3d.h"
+	"vector2d.h"
+	"vector3d.h"
+	"SIrrCreationParameters.h"
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/aabbox3d.h
+	"irrMath.h"
+	"plane3d.h"
+	"line3d.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/plane3d.h
+	"irrMath.h"
+	"vector3d.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/line3d.h
+	"irrTypes.h"
+	"vector3d.h"
+
+1568095854 /home/Dev/libs/game/Irrlicht-SVN/include/CDynamicMeshBuffer.h
+	"IDynamicMeshBuffer.h"
+	"CVertexBuffer.h"
+	"CIndexBuffer.h"
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/IDynamicMeshBuffer.h
+	"IMeshBuffer.h"
+	"IVertexBuffer.h"
+	"IIndexBuffer.h"
+
+1568095854 /home/Dev/libs/game/Irrlicht-SVN/include/IMeshBuffer.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+	"aabbox3d.h"
+	"S3DVertex.h"
+	"SVertexIndex.h"
+	"EHardwareBufferFlags.h"
+	"EPrimitiveTypes.h"
+
+1568095855 /home/Dev/libs/game/Irrlicht-SVN/include/SMaterial.h
+	"SColor.h"
+	"matrix4.h"
+	"irrArray.h"
+	"irrMath.h"
+	"EMaterialTypes.h"
+	"EMaterialFlags.h"
+	"SMaterialLayer.h"
+
+1568095854 /home/Dev/libs/game/Irrlicht-SVN/include/matrix4.h
+	"irrMath.h"
+	"vector3d.h"
+	"vector2d.h"
+	"plane3d.h"
+	"aabbox3d.h"
+	"rect.h"
+	"irrString.h"
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/irrString.h
+	"irrTypes.h"
+	"irrAllocator.h"
+	"irrMath.h"
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
+1568095855 /home/Dev/libs/game/Irrlicht-SVN/include/EMaterialTypes.h
+
+1574563396 /home/Dev/libs/game/Irrlicht-SVN/include/EMaterialFlags.h
+
+1553911456 /home/Dev/libs/game/Irrlicht-SVN/include/SMaterialLayer.h
+	"matrix4.h"
+	"irrAllocator.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/SVertexIndex.h
+	"irrTypes.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/EHardwareBufferFlags.h
+
+1494856607 /home/Dev/libs/game/Irrlicht-SVN/include/EPrimitiveTypes.h
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IVertexBuffer.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"S3DVertex.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IIndexBuffer.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"SVertexIndex.h"
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/CVertexBuffer.h
+	"IVertexBuffer.h"
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/CIndexBuffer.h
+	"IIndexBuffer.h"
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/CMeshBuffer.h
+	"irrArray.h"
+	"IMeshBuffer.h"
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/coreutil.h
+	"irrString.h"
+	"path.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/path.h
+	"irrString.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/ECullingTypes.h
+	"irrTypes.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/EDebugSceneTypes.h
+
+1574563391 /home/Dev/libs/game/Irrlicht-SVN/include/EDriverFeatures.h
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/EDriverTypes.h
+	"irrTypes.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/EGUIAlignment.h
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/EGUIElementTypes.h
+	"irrTypes.h"
+
+1526733493 /home/Dev/libs/game/Irrlicht-SVN/include/EMeshWriterEnums.h
+	"irrTypes.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/EMessageBoxFlags.h
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/ESceneNodeAnimatorTypes.h
+
+1494856606 /home/Dev/libs/game/Irrlicht-SVN/include/ESceneNodeTypes.h
+	"irrTypes.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/ETerrainElements.h
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/fast_atof.h
+	"irrMath.h"
+	"irrString.h"
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/IAnimatedMesh.h
+	"aabbox3d.h"
+	"IMesh.h"
+
+1568095854 /home/Dev/libs/game/Irrlicht-SVN/include/IMesh.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+	"EHardwareBufferFlags.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IAnimatedMeshMD2.h
+	"IAnimatedMesh.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IAnimatedMeshMD3.h
+	"IAnimatedMesh.h"
+	"IQ3Shader.h"
+	"quaternion.h"
+	"irrpack.h"
+	"irrunpack.h"
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/IQ3Shader.h
+	"irrArray.h"
+	"fast_atof.h"
+	"IFileSystem.h"
+	"IVideoDriver.h"
+	"coreutil.h"
+
+1553911456 /home/Dev/libs/game/Irrlicht-SVN/include/IFileSystem.h
+	"IReferenceCounted.h"
+	"IXMLReader.h"
+	"IXMLWriter.h"
+	"IFileArchive.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IXMLReader.h
+	"IReferenceCounted.h"
+	"irrXML.h"
+
+1553911456 /home/Dev/libs/game/Irrlicht-SVN/include/irrXML.h
+	<stdio.h>
+	"IrrCompileConfig.h"
+	"irrArray.h"
+	"irrString.h"
+	<irrXML.h>
+	<string>
+	<irrXML.h>
+	<irrXML.h>
+	<irrXML.h>
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IFileArchive.h
+	"IReadFile.h"
+	"IFileList.h"
+
+1568095854 /home/Dev/libs/game/Irrlicht-SVN/include/IReadFile.h
+	"IReferenceCounted.h"
+	"coreutil.h"
+	"EReadFileType.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IFileList.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1574563391 /home/Dev/libs/game/Irrlicht-SVN/include/IVideoDriver.h
+	"rect.h"
+	"SColor.h"
+	"ITexture.h"
+	"irrArray.h"
+	"matrix4.h"
+	"plane3d.h"
+	"dimension2d.h"
+	"position2d.h"
+	"IMeshBuffer.h"
+	"triangle3d.h"
+	"EDriverTypes.h"
+	"EDriverFeatures.h"
+	"SExposedVideoData.h"
+	"SOverrideMaterial.h"
+
+1574563396 /home/Dev/libs/game/Irrlicht-SVN/include/ITexture.h
+	"IReferenceCounted.h"
+	"IImage.h"
+	"dimension2d.h"
+	"EDriverTypes.h"
+	"path.h"
+	"matrix4.h"
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/triangle3d.h
+	"vector3d.h"
+	"line3d.h"
+	"plane3d.h"
+	"aabbox3d.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/SExposedVideoData.h
+
+1568095854 /home/Dev/libs/game/Irrlicht-SVN/include/quaternion.h
+	"irrTypes.h"
+	"irrMath.h"
+	"matrix4.h"
+	"vector3d.h"
+
+1445553015 /home/Dev/libs/game/Irrlicht-SVN/include/irrpack.h
+
+1445553015 /home/Dev/libs/game/Irrlicht-SVN/include/irrunpack.h
+
+1574563391 /home/Dev/libs/game/Irrlicht-SVN/include/IAnimatedMeshSceneNode.h
+	"ISceneNode.h"
+	"IBoneSceneNode.h"
+	"IAnimatedMeshMD2.h"
+	"IAnimatedMeshMD3.h"
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneNode.h
+	"IAttributeExchangingObject.h"
+	"ESceneNodeTypes.h"
+	"ECullingTypes.h"
+	"EDebugSceneTypes.h"
+	"ISceneNodeAnimator.h"
+	"ITriangleSelector.h"
+	"SMaterial.h"
+	"irrString.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"irrList.h"
+	"IAttributes.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IAttributeExchangingObject.h
+	"IReferenceCounted.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneNodeAnimator.h
+	"IReferenceCounted.h"
+	"vector3d.h"
+	"ESceneNodeAnimatorTypes.h"
+	"IAttributeExchangingObject.h"
+	"IAttributes.h"
+	"IEventReceiver.h"
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/IEventReceiver.h
+	"ILogger.h"
+	"Keycodes.h"
+	"irrString.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/ILogger.h
+	"IReferenceCounted.h"
+
+1494856606 /home/Dev/libs/game/Irrlicht-SVN/include/Keycodes.h
+
+1496717987 /home/Dev/libs/game/Irrlicht-SVN/include/ITriangleSelector.h
+	"IReferenceCounted.h"
+	"triangle3d.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"line3d.h"
+	"irrArray.h"
+
+1540152605 /home/Dev/libs/game/Irrlicht-SVN/include/irrList.h
+	"irrTypes.h"
+	"irrAllocator.h"
+	"irrMath.h"
+
+1553911456 /home/Dev/libs/game/Irrlicht-SVN/include/IAttributes.h
+	"IReferenceCounted.h"
+	"SColor.h"
+	"vector3d.h"
+	"vector2d.h"
+	"line2d.h"
+	"line3d.h"
+	"triangle3d.h"
+	"position2d.h"
+	"rect.h"
+	"dimension2d.h"
+	"matrix4.h"
+	"quaternion.h"
+	"plane3d.h"
+	"triangle3d.h"
+	"line2d.h"
+	"line3d.h"
+	"irrString.h"
+	"irrArray.h"
+	"IXMLReader.h"
+	"IXMLWriter.h"
+	"EAttributes.h"
+	"path.h"
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/line2d.h
+	"irrTypes.h"
+	"vector2d.h"
+
+1433162418 /home/Dev/libs/game/Irrlicht-SVN/include/EAttributes.h
+
+1568095854 /home/Dev/libs/game/Irrlicht-SVN/include/IBoneSceneNode.h
+	"ISceneNode.h"
+
+1494856606 /home/Dev/libs/game/Irrlicht-SVN/include/IBillboardSceneNode.h
+	"ISceneNode.h"
+
+1494856607 /home/Dev/libs/game/Irrlicht-SVN/include/IBillboardTextSceneNode.h
+	"IBillboardSceneNode.h"
+
+1574563391 /home/Dev/libs/game/Irrlicht-SVN/include/ICameraSceneNode.h
+	"ISceneNode.h"
+	"IEventReceiver.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/ICursorControl.h
+	"IReferenceCounted.h"
+	"position2d.h"
+	"rect.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IDummyTransformationSceneNode.h
+	"ISceneNode.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGeometryCreator.h
+	"IReferenceCounted.h"
+	"IMesh.h"
+	"IImage.h"
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/IGPUProgrammingServices.h
+	"EShaderTypes.h"
+	"EMaterialTypes.h"
+	"EPrimitiveTypes.h"
+	"path.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/EShaderTypes.h
+	"irrTypes.h"
+
+1514384332 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIButton.h
+	"IGUIElement.h"
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIElement.h
+	"IAttributeExchangingObject.h"
+	"irrList.h"
+	"rect.h"
+	"irrString.h"
+	"IEventReceiver.h"
+	"EGUIElementTypes.h"
+	"EGUIAlignment.h"
+	"IAttributes.h"
+	"IGUIEnvironment.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGUICheckBox.h
+	"IGUIElement.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIColorSelectDialog.h
+	"IGUIElement.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIComboBox.h
+	"IGUIElement.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIContextMenu.h
+	"IGUIElement.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIEditBox.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIElementFactory.h
+	"IReferenceCounted.h"
+	"EGUIElementTypes.h"
+
+1553911456 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIEnvironment.h
+	"IReferenceCounted.h"
+	"IGUISkin.h"
+	"rect.h"
+	"EMessageBoxFlags.h"
+	"EFocusFlags.h"
+	"IEventReceiver.h"
+	"IXMLReader.h"
+	"IXMLWriter.h"
+	"path.h"
+
+1540152605 /home/Dev/libs/game/Irrlicht-SVN/include/IGUISkin.h
+	"IAttributeExchangingObject.h"
+	"EGUIAlignment.h"
+	"SColor.h"
+	"rect.h"
+
+1455454597 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIFileOpenDialog.h
+	"IGUIElement.h"
+	"path.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIFont.h
+	"IReferenceCounted.h"
+	"SColor.h"
+	"rect.h"
+	"irrString.h"
+
+1568095854 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIFontBitmap.h
+	"IGUIFont.h"
+
+1514384331 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIImage.h
+	"IGUIElement.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIInOutFader.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIListBox.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIMeshViewer.h
+	"IGUIElement.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIScrollBar.h
+	"IGUIElement.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGUISpinBox.h
+	"IGUIElement.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IGUISpriteBank.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"SColor.h"
+	"rect.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIStaticText.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IGUITabControl.h
+	"IGUIElement.h"
+	"SColor.h"
+	"IGUISkin.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IGUITable.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIToolbar.h
+	"IGUIElement.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIWindow.h
+	"IGUIElement.h"
+	"EMessageBoxFlags.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IGUITreeView.h
+	"IGUIElement.h"
+	"IGUIImageList.h"
+	"irrTypes.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIImageList.h
+	"IGUIElement.h"
+	"rect.h"
+	"irrTypes.h"
+
+1514384331 /home/Dev/libs/game/Irrlicht-SVN/include/IImageLoader.h
+	"IReferenceCounted.h"
+	"IImage.h"
+	"ITexture.h"
+	"path.h"
+	"irrArray.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IImageWriter.h
+	"IReferenceCounted.h"
+	"irrString.h"
+	"coreutil.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/ILightSceneNode.h
+	"ISceneNode.h"
+	"SLight.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/SLight.h
+	"SColor.h"
+
+1544224167 /home/Dev/libs/game/Irrlicht-SVN/include/IMaterialRenderer.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+	"S3DVertex.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IMaterialRendererServices.h
+	"SMaterial.h"
+	"S3DVertex.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IMeshCache.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IMeshLoader.h
+	"IReferenceCounted.h"
+	"path.h"
+	"IMeshTextureLoader.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IMeshManipulator.h
+	"IReferenceCounted.h"
+	"vector3d.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"IAnimatedMesh.h"
+	"IMeshBuffer.h"
+	"SVertexManipulator.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/SVertexManipulator.h
+	"S3DVertex.h"
+	"SColor.h"
+
+1574563396 /home/Dev/libs/game/Irrlicht-SVN/include/IMeshSceneNode.h
+	"ISceneNode.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IMeshWriter.h
+	"IReferenceCounted.h"
+	"EMeshWriterEnums.h"
+
+1553911456 /home/Dev/libs/game/Irrlicht-SVN/include/IColladaMeshWriter.h
+	"IMeshWriter.h"
+	"ISceneNode.h"
+	"IAnimatedMesh.h"
+	"SMaterial.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IMetaTriangleSelector.h
+	"ITriangleSelector.h"
+
+1494856607 /home/Dev/libs/game/Irrlicht-SVN/include/IOSOperator.h
+	"IReferenceCounted.h"
+	"irrString.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleSystemSceneNode.h
+	"ISceneNode.h"
+	"IParticleAnimatedMeshSceneNodeEmitter.h"
+	"IParticleBoxEmitter.h"
+	"IParticleCylinderEmitter.h"
+	"IParticleMeshEmitter.h"
+	"IParticleRingEmitter.h"
+	"IParticleSphereEmitter.h"
+	"IParticleAttractionAffector.h"
+	"IParticleFadeOutAffector.h"
+	"IParticleGravityAffector.h"
+	"IParticleRotationAffector.h"
+	"dimension2d.h"
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleAnimatedMeshSceneNodeEmitter.h
+	"IParticleEmitter.h"
+	"IAnimatedMeshSceneNode.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleEmitter.h
+	"IAttributeExchangingObject.h"
+	"SParticle.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/SParticle.h
+	"vector3d.h"
+	"dimension2d.h"
+	"SColor.h"
+
+1568095854 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleBoxEmitter.h
+	"IParticleEmitter.h"
+	"aabbox3d.h"
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleCylinderEmitter.h
+	"IParticleEmitter.h"
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleMeshEmitter.h
+	"IParticleEmitter.h"
+	"IMesh.h"
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleRingEmitter.h
+	"IParticleEmitter.h"
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleSphereEmitter.h
+	"IParticleEmitter.h"
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleAttractionAffector.h
+	"IParticleAffector.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleAffector.h
+	"IAttributeExchangingObject.h"
+	"SParticle.h"
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleFadeOutAffector.h
+	"IParticleAffector.h"
+
+1568095854 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleGravityAffector.h
+	"IParticleAffector.h"
+
+1568095854 /home/Dev/libs/game/Irrlicht-SVN/include/IParticleRotationAffector.h
+	"IParticleAffector.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IQ3LevelMesh.h
+	"IAnimatedMesh.h"
+	"IQ3Shader.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IRandomizer.h
+	"IReferenceCounted.h"
+
+1574563396 /home/Dev/libs/game/Irrlicht-SVN/include/IrrlichtDevice.h
+	"IReferenceCounted.h"
+	"dimension2d.h"
+	"IVideoDriver.h"
+	"EDriverTypes.h"
+	"EDeviceTypes.h"
+	"IEventReceiver.h"
+	"ICursorControl.h"
+	"IVideoModeList.h"
+	"ITimer.h"
+	"IOSOperator.h"
+
+1568095854 /home/Dev/libs/game/Irrlicht-SVN/include/EDeviceTypes.h
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IVideoModeList.h
+	"IReferenceCounted.h"
+	"dimension2d.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/ITimer.h
+	"IReferenceCounted.h"
+
+1540152605 /home/Dev/libs/game/Irrlicht-SVN/include/irrMap.h
+	"irrTypes.h"
+	"irrMath.h"
+
+1482754352 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneCollisionManager.h
+	"IReferenceCounted.h"
+	"vector3d.h"
+	"triangle3d.h"
+	"position2d.h"
+	"line3d.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneLoader.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1575261496 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneManager.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"irrString.h"
+	"path.h"
+	"vector3d.h"
+	"dimension2d.h"
+	"SColor.h"
+	"ETerrainElements.h"
+	"ESceneNodeTypes.h"
+	"ESceneNodeAnimatorTypes.h"
+	"EMeshWriterEnums.h"
+	"SceneParameters.h"
+	"IGeometryCreator.h"
+	"ISkinnedMesh.h"
+	"IXMLWriter.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/SceneParameters.h
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/ISkinnedMesh.h
+	"irrArray.h"
+	"IBoneSceneNode.h"
+	"IAnimatedMesh.h"
+	"SSkinMeshBuffer.h"
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/SSkinMeshBuffer.h
+	"IMeshBuffer.h"
+	"S3DVertex.h"
+
+1494856605 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneNodeAnimatorCameraFPS.h
+	"ISceneNodeAnimator.h"
+	"IEventReceiver.h"
+	"irrArray.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneNodeAnimatorCameraMaya.h
+	"ISceneNodeAnimator.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneNodeAnimatorCollisionResponse.h
+	"ISceneNode.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneNodeAnimatorFactory.h
+	"IReferenceCounted.h"
+	"ESceneNodeAnimatorTypes.h"
+
+1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneNodeFactory.h
+	"IReferenceCounted.h"
+	"ESceneNodeTypes.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneUserDataSerializer.h
+	"IReferenceCounted.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IShaderConstantSetCallBack.h
+	"IReferenceCounted.h"
+
+1574563391 /home/Dev/libs/game/Irrlicht-SVN/include/IShadowVolumeSceneNode.h
+	"ISceneNode.h"
+
+1526733493 /home/Dev/libs/game/Irrlicht-SVN/include/ITerrainSceneNode.h
+	"ETerrainElements.h"
+	"ISceneNode.h"
+	"IDynamicMeshBuffer.h"
+	"irrArray.h"
+
+1494856607 /home/Dev/libs/game/Irrlicht-SVN/include/ITextSceneNode.h
+	"ISceneNode.h"
+
+1568095854 /home/Dev/libs/game/Irrlicht-SVN/include/IVolumeLightSceneNode.h
+	"ISceneNode.h"
+
+1506216577 /home/Dev/libs/game/Irrlicht-SVN/include/IWriteFile.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1553911456 /home/Dev/libs/game/Irrlicht-SVN/include/IXMLWriter.h
+	"IReferenceCounted.h"
+	"irrXML.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/ILightManager.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/SAnimatedMesh.h
+	"IAnimatedMesh.h"
+	"IMesh.h"
+	"aabbox3d.h"
+	"irrArray.h"
+
+1574563391 /home/Dev/libs/game/Irrlicht-SVN/include/SIrrCreationParameters.h
+	"EDriverTypes.h"
+	"EDeviceTypes.h"
+	"dimension2d.h"
+	"ILogger.h"
+	"position2d.h"
+
+1494856606 /home/Dev/libs/game/Irrlicht-SVN/include/SKeyMap.h
+	"Keycodes.h"
+
+1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/SMesh.h
+	"IMesh.h"
+	"IMeshBuffer.h"
+	"aabbox3d.h"
+	"irrArray.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/SMeshBuffer.h
+	"CMeshBuffer.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/SMeshBufferLightMap.h
+	"CMeshBuffer.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/SMeshBufferTangents.h
+	"CMeshBuffer.h"
+
+1568095854 /home/Dev/libs/game/Irrlicht-SVN/include/SSharedMeshBuffer.h
+	"irrArray.h"
+	"IMeshBuffer.h"
+
+1553911456 /home/Dev/libs/game/Irrlicht-SVN/include/SViewFrustum.h
+	"plane3d.h"
+	"vector3d.h"
+	"line3d.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"IVideoDriver.h"
+
+1363352263 source:/home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/source/IM_Mask_Operators.cpp
+	"IM_Globals.h"
+	"IM_Exception.h"
+	"IM_Mask.h"
+	"IM_Mask_Implementation.h"
+	<cstring>
+
+1363352263 /home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/source/IM_Mask_Implementation.h
+	"IM_Bool_Pool.h"
+
+1363352263 source:/home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/source/IM_Matrix_Channel.cpp
+	"IM_Globals.h"
+	"IM_Channel.h"
+	"IM_Exception.h"
+	"IM_Image.h"
+	"IM_Mask.h"
+	"IM_ColorMatrix.h"
+	"IM_MatrixChannel.h"
+	"IM_MatrixImplementation.h"
+	<cstring>
+	<irrMath.h>
+
+1363352263 /home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/source/IM_MatrixImplementation.h
+	"IM_Channel.h"
+
+1366663256 source:/home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/source/IM_Options.cpp
+	"IM_Exception.h"
+	"IM_Options.h"
+	"IM_Globals.h"
+	"IM_Bool_Pool.h"
+	"IM_Channel_Pool.h"
+	<irrlicht.h>
+
+1366662406 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/main.cpp
+	<ImageMixer>
+
+1366662674 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/include/ImageMixer
+	<IM_Exception.h>
+	<IM_Options.h>
+	<IM_Mask.h>
+	<IM_Channel.h>
+	<IM_Image.h>
+	<IM_Functions.h>
+	<IM_ColorMatrix.h>
+	<IM_MatrixChannel.h>
+	<IM_Operators.h>
+
+1366662723 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_Exception.h
+
+1366662730 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_Options.h
+
+1366662734 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_Mask.h
+
+1366662738 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_Channel.h
+
+1366662743 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_Image.h
+
+1366662755 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_Functions.h
+
+1366662759 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_ColorMatrix.h
+
+1366662764 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_MatrixChannel.h
+
+1363352263 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_Operators.h
+
+1363352263 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Bool_Pool.cpp
+	"IM_Bool_Pool.h"
+	<IM_Globals.h>
+	<list>
+
+1363352263 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Bool_Pool.h
+
+1363352263 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Globals.h
+	<SColor.h>
+
+1363352263 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Channel_Interpolators.cpp
+	"IM_Globals.h"
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+
+1363352263 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Channel_Implementation.h
+	"IM_Channel_Pool.h"
+
+1363352263 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Channel_Pool.h
+
+1363352263 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Channel_Logic.cpp
+	"IM_Globals.h"
+	"IM_Math.h"
+	"IM_Mask.h"
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+
+1363352263 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Math.h
+	<irrMath.h>
+	<S3DVertex.h>
+
+1363352263 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Channel_Masked.cpp
+	"IM_Globals.h"
+	"IM_Mask.h"
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+	"IM_Channel_Pool.h"
+	"IM_Exception.h"
+	<cstring>
+	<cmath>
+
+1363352263 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Channel_Operators.cpp
+	"IM_Globals.h"
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+	"IM_Channel_Pool.h"
+	"IM_Exception.h"
+	<cstring>
+	<cmath>
+
+1363352263 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Channel_Pool.cpp
+	"IM_Channel_Pool.h"
+	<IM_Globals.h>
+	<list>
+
+1363352263 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Color_Matrix.cpp
+	"IM_Globals.h"
+	"IM_Image.h"
+	"IM_Mask.h"
+	"IM_Channel.h"
+	"IM_ColorMatrix.h"
+	<cstring>
+	<irrMath.h>
+
+1363352263 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Exception.cpp
+	"IM_Exception.h"
+	<iostream>
+
+1363352263 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Functions.cpp
+	"IM_Globals.h"
+	"IM_Channel.h"
+	"IM_Functions.h"
+	<cmath>
+
+1363352263 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Globals.cpp
+	"IM_Globals.h"
+
+1363352263 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Image_Interpolators.cpp
+	"IM_Image.h"
+	"IM_Mask.h"
+	"IM_Channel.h"
+	"IM_Image_Implementation.h"
+	<cmath>
+
+1363352263 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Image_Implementation.h
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+	"IM_Globals.h"
+	<IImage.h>
+
+1366662829 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Image_Operators.cpp
+	"IM_Image.h"
+	"IM_Channel.h"
+	"IM_Image_Implementation.h"
+	"IM_Exception.h"
+	<irrlicht.h>
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IMeshTextureLoader.h
+	"path.h"
+	"IReferenceCounted.h"
+
+1363352263 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Mask_Operators.cpp
+	"IM_Globals.h"
+	"IM_Exception.h"
+	"IM_Mask.h"
+	"IM_Mask_Implementation.h"
+	<cstring>
+
+1363352263 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Mask_Implementation.h
+	"IM_Bool_Pool.h"
+
+1363352263 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Matrix_Channel.cpp
+	"IM_Globals.h"
+	"IM_Channel.h"
+	"IM_Exception.h"
+	"IM_Image.h"
+	"IM_Mask.h"
+	"IM_ColorMatrix.h"
+	"IM_MatrixChannel.h"
+	"IM_MatrixImplementation.h"
+	<cstring>
+	<irrMath.h>
+
+1363352263 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_MatrixImplementation.h
+	"IM_Channel.h"
+
+1366663256 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Options.cpp
+	"IM_Exception.h"
+	"IM_Options.h"
+	"IM_Globals.h"
+	"IM_Bool_Pool.h"
+	"IM_Channel_Pool.h"
+	<irrlicht.h>
+
+1366662406 source:/mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/main.cpp
+	<ImageMixer>
+
+1366662674 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/include/ImageMixer
+	<IM_Exception.h>
+	<IM_Options.h>
+	<IM_Mask.h>
+	<IM_Channel.h>
+	<IM_Image.h>
+	<IM_Functions.h>
+	<IM_ColorMatrix.h>
+	<IM_MatrixChannel.h>
+	<IM_Operators.h>
+
+1366662723 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_Exception.h
+
+1366662730 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_Options.h
+
+1366662734 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_Mask.h
+
+1366662738 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_Channel.h
+
+1366662743 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_Image.h
+
+1366662755 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_Functions.h
+
+1366662759 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_ColorMatrix.h
+
+1366662764 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_MatrixChannel.h
+
+1363352263 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_Operators.h
+
+1363352263 source:/mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Bool_Pool.cpp
+	"IM_Bool_Pool.h"
+	<IM_Globals.h>
+	<list>
+
+1363352263 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Bool_Pool.h
+
+1363352263 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Globals.h
+	<SColor.h>
+
+1363352263 source:/mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Channel_Interpolators.cpp
+	"IM_Globals.h"
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+
+1363352263 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Channel_Implementation.h
+	"IM_Channel_Pool.h"
+
+1363352263 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Channel_Pool.h
+
+1363352263 source:/mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Channel_Logic.cpp
+	"IM_Globals.h"
+	"IM_Math.h"
+	"IM_Mask.h"
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+
+1363352263 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Math.h
+	<irrMath.h>
+	<S3DVertex.h>
+
+1363352263 source:/mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Channel_Masked.cpp
+	"IM_Globals.h"
+	"IM_Mask.h"
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+	"IM_Channel_Pool.h"
+	"IM_Exception.h"
+	<cstring>
+	<cmath>
+
+1363352263 source:/mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Channel_Operators.cpp
+	"IM_Globals.h"
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+	"IM_Channel_Pool.h"
+	"IM_Exception.h"
+	<cstring>
+	<cmath>
+
+1363352263 source:/mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Channel_Pool.cpp
+	"IM_Channel_Pool.h"
+	<IM_Globals.h>
+	<list>
+
+1363352263 source:/mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Color_Matrix.cpp
+	"IM_Globals.h"
+	"IM_Image.h"
+	"IM_Mask.h"
+	"IM_Channel.h"
+	"IM_ColorMatrix.h"
+	<cstring>
+	<irrMath.h>
+
+1363352263 source:/mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Exception.cpp
+	"IM_Exception.h"
+	<iostream>
+
+1363352263 source:/mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Functions.cpp
+	"IM_Globals.h"
+	"IM_Channel.h"
+	"IM_Functions.h"
+	<cmath>
+
+1363352263 source:/mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Globals.cpp
+	"IM_Globals.h"
+
+1363352263 source:/mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Image_Interpolators.cpp
+	"IM_Image.h"
+	"IM_Mask.h"
+	"IM_Channel.h"
+	"IM_Image_Implementation.h"
+	<cmath>
+
+1363352263 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Image_Implementation.h
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+	"IM_Globals.h"
+	<IImage.h>
+
+1366662829 source:/mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Image_Operators.cpp
+	"IM_Image.h"
+	"IM_Channel.h"
+	"IM_Image_Implementation.h"
+	"IM_Exception.h"
+	<irrlicht.h>
+
+1433162418 /home/Dev/libs/game/Irrlicht-SVN/include/IProfiler.h
+	"IrrCompileConfig.h"
+	"irrString.h"
+	"irrArray.h"
+	"ITimer.h"
+	<limits.h>
+
+1574563391 /home/Dev/libs/game/Irrlicht-SVN/include/SOverrideMaterial.h
+	"SMaterial.h"
+
+1553911456 /home/Dev/libs/game/Irrlicht-SVN/include/IContextManager.h
+	"SExposedVideoData.h"
+	"SIrrCreationParameters.h"
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/EFocusFlags.h
+
+1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIProfiler.h
+	"IGUIElement.h"
+
+1494856606 /home/Dev/libs/game/Irrlicht-SVN/include/IOctreeSceneNode.h
+	"IMeshSceneNode.h"
+
+1540152605 /home/Dev/libs/game/Irrlicht-SVN/include/IRenderTarget.h
+	"IReferenceCounted.h"
+	"EDriverTypes.h"
+	"irrArray.h"
+
+1363352263 source:/mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Mask_Operators.cpp
+	"IM_Globals.h"
+	"IM_Exception.h"
+	"IM_Mask.h"
+	"IM_Mask_Implementation.h"
+	<cstring>
+
+1363352263 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Mask_Implementation.h
+	"IM_Bool_Pool.h"
+
+1363352263 source:/mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Matrix_Channel.cpp
+	"IM_Globals.h"
+	"IM_Channel.h"
+	"IM_Exception.h"
+	"IM_Image.h"
+	"IM_Mask.h"
+	"IM_ColorMatrix.h"
+	"IM_MatrixChannel.h"
+	"IM_MatrixImplementation.h"
+	<cstring>
+	<irrMath.h>
+
+1363352263 /mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_MatrixImplementation.h
+	"IM_Channel.h"
+
+1531895408 source:/mnt/usb-Seagate_Expansion_NA82CB2L-0:0-part1/tecan/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Options.cpp
+	"IM_Exception.h"
+	"IM_Options.h"
+	"IM_Globals.h"
+	"IM_Bool_Pool.h"
+	"IM_Channel_Pool.h"
+	<irrlicht.h>
+
+1366662406 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/main.cpp
+	<ImageMixer>
+
+1366662674 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/include/ImageMixer
+	<IM_Exception.h>
+	<IM_Options.h>
+	<IM_Mask.h>
+	<IM_Channel.h>
+	<IM_Image.h>
+	<IM_Functions.h>
+	<IM_ColorMatrix.h>
+	<IM_MatrixChannel.h>
+	<IM_Operators.h>
+
+1366662723 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_Exception.h
+
+1366662730 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_Options.h
+
+1366662734 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_Mask.h
+
+1366662738 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_Channel.h
+
+1366662743 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_Image.h
+
+1366662755 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_Functions.h
+
+1366662759 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_ColorMatrix.h
+
+1366662764 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_MatrixChannel.h
+
+1363352263 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/include/IM_Operators.h
+
+1363352263 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Bool_Pool.cpp
+	"IM_Bool_Pool.h"
+	<IM_Globals.h>
+	<list>
+
+1363352263 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Bool_Pool.h
+
+1363352263 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Globals.h
+	<SColor.h>
+
+1363352263 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Channel_Interpolators.cpp
+	"IM_Globals.h"
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+
+1363352263 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Channel_Implementation.h
+	"IM_Channel_Pool.h"
+
+1363352263 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Channel_Pool.h
+
+1363352263 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Channel_Logic.cpp
+	"IM_Globals.h"
+	"IM_Math.h"
+	"IM_Mask.h"
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+
+1363352263 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Math.h
+	<irrMath.h>
+	<S3DVertex.h>
+
+1363352263 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Channel_Masked.cpp
+	"IM_Globals.h"
+	"IM_Mask.h"
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+	"IM_Channel_Pool.h"
+	"IM_Exception.h"
+	<cstring>
+	<cmath>
+
+1363352263 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Channel_Operators.cpp
+	"IM_Globals.h"
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+	"IM_Channel_Pool.h"
+	"IM_Exception.h"
+	<cstring>
+	<cmath>
+
+1363352263 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Channel_Pool.cpp
+	"IM_Channel_Pool.h"
+	<IM_Globals.h>
+	<list>
+
+1363352263 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Color_Matrix.cpp
+	"IM_Globals.h"
+	"IM_Image.h"
+	"IM_Mask.h"
+	"IM_Channel.h"
+	"IM_ColorMatrix.h"
+	<cstring>
+	<irrMath.h>
+
+1363352263 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Exception.cpp
+	"IM_Exception.h"
+	<iostream>
+
+1363352263 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Functions.cpp
+	"IM_Globals.h"
+	"IM_Channel.h"
+	"IM_Functions.h"
+	<cmath>
+
+1363352263 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Globals.cpp
+	"IM_Globals.h"
+
+1363352263 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Image_Interpolators.cpp
+	"IM_Image.h"
+	"IM_Mask.h"
+	"IM_Channel.h"
+	"IM_Image_Implementation.h"
+	<cmath>
+
+1363352263 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Image_Implementation.h
+	"IM_Channel.h"
+	"IM_Channel_Implementation.h"
+	"IM_Globals.h"
+	<IImage.h>
+
+1366662829 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Image_Operators.cpp
+	"IM_Image.h"
+	"IM_Channel.h"
+	"IM_Image_Implementation.h"
+	"IM_Exception.h"
+	<irrlicht.h>
+
+1574563391 /home/Dev/libs/game/Irrlicht-SVN/include/EReadFileType.h
+	"irrTypes.h"
+
+1363352263 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Mask_Operators.cpp
+	"IM_Globals.h"
+	"IM_Exception.h"
+	"IM_Mask.h"
+	"IM_Mask_Implementation.h"
+	<cstring>
+
+1363352263 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Mask_Implementation.h
+	"IM_Bool_Pool.h"
+
+1363352263 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Matrix_Channel.cpp
+	"IM_Globals.h"
+	"IM_Channel.h"
+	"IM_Exception.h"
+	"IM_Image.h"
+	"IM_Mask.h"
+	"IM_ColorMatrix.h"
+	"IM_MatrixChannel.h"
+	"IM_MatrixImplementation.h"
+	<cstring>
+	<irrMath.h>
+
+1363352263 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_MatrixImplementation.h
+	"IM_Channel.h"
+
+1531895511 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/GUI/free-image-mixer-1-0-0-source/source/IM_Options.cpp
+	"IM_Exception.h"
+	"IM_Options.h"
+	"IM_Globals.h"
+	"IM_Bool_Pool.h"
+	"IM_Channel_Pool.h"
+	<irrlicht.h>
+

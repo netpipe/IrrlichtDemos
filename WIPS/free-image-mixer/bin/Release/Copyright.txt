@@ -1,0 +1,20 @@
+All images in this folder are textures licensed Under Creative Commons 3.0 Share alike Attribution
+license by Various authors. So you are permitted to use, modify and redistribute all the textures
+under the license terms (please read the license at creativecommons.org )
+
+
+Note:
+
+I have resized and edited a bit all the textures in order to reduce memory size and to make them seamless.
+So if you want ULTRA HIGH RESOLUTION textures, you need to visit the deviant art page of their authors and search
+for the required textures.
+
+
+Thanks to Wess4u (you can find it on deviantart)
+
+texture01.jpg  -- Wess4u -- high frequency detail texture of a cement wall
+texture02.jpg  -- Wess4u -- high frequency detail texture of ground
+texture03.jpg  -- Wess4u -- high frequency detail texture plus medium frequency details.
+
+who kindli gave me some textures for do nice tests at times of pre-release.
+

@@ -1,0 +1,1 @@
+Fixed a bug that didn't allow to print text correctly. (in the Exception class)

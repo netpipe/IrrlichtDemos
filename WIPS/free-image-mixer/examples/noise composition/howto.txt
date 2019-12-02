@@ -1,0 +1,20 @@
+How to do noise composition?
+
+1)Draw some random lines
+2)save the image
+3)Resize the image to 1/4 (halves width and height)
+4)copy the resized image 4 times to fill a new image
+5)copy and paste little pieces to cover the seams (there will be 1 vertical seem and 1 horizontal seem in the center of the image)
+6)repeat how many times you like from 2)
+
+Than start from the first image and apply a gaussian blur for example 25. Reduce gaussian blur 
+for each image.
+
+1st image blur size 25
+2nd image blur size 10
+3rd image blur size 5
+4th image blur size 1
+5th image blur size nothing.
+
+Than just apply the script in main.cpp wich combines the images with different weights. Changin
+The pattern and blur size can cause different and nice noises to appears.

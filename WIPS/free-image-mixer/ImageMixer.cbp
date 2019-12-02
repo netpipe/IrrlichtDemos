@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ImageMixer" />
+		<Option pch_mode="2" />
+		<Option default_target="app_rel" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option platforms="Windows;" />
+				<Option output="lib/ImageMixer_d" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/Debug" />
+				<Option object_output="obj/Debug/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Os" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-DDLL_EXPORT" />
+					<Add directory="../irrlicht - static NO gl/include" />
+				</Compiler>
+				<Linker>
+					<Add library="lib/libIrrlichtLight_d.dll.a" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="cmd /c del bin\Debug\ImageMixer_d.dll" />
+					<Add after="cmd /c move lib\ImageMixer_d.dll bin\Debug\ImageMixer_d.dll" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release">
+				<Option platforms="Windows;" />
+				<Option output="lib/ImageMixer" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/Release" />
+				<Option object_output="obj/Release/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-w" />
+					<Add option="-DDLL_EXPORT" />
+					<Add directory="../irrlicht - static NO gl/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="lib/libIrrlichtLight.dll.a" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="cmd /c del bin\Release\ImageMixer.dll" />
+					<Add after="cmd /c move lib\ImageMixer.dll bin\Release\ImageMixer.dll" />
+				</ExtraCommands>
+			</Target>
+			<Target title="app_dbg">
+				<Option platforms="Windows;" />
+				<Option output="bin/Debug/MixerApp_d" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/Debug" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Os" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-DDLL_IMPORT" />
+				</Compiler>
+				<Linker>
+					<Add library="lib/libImageMixer_d.dll.a" />
+				</Linker>
+			</Target>
+			<Target title="app_rel">
+				<Option platforms="Windows;" />
+				<Option output="bin/Release/MixerApp" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/Release" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-DDLL_IMPORT" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="lib/libImageMixer.dll.a" />
+				</Linker>
+			</Target>
+			<Target title="Linux">
+				<Option platforms="Unix;" />
+				<Option output="bin/Release/MixerApp" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/Release" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-fPIC" />
+					<Add option="-DDLL_IMPORT" />
+					<Add directory="/home/clayton/Desktop/ACollection/free-image-mixer-1-0-0-source/lib/FreeImage/Source" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+					<Add directory="source" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="Irrlicht" />
+					<Add library="GL" />
+					<Add library="Xxf86vm" />
+					<Add library="X11" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+				</Linker>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="all" targets="Debug;Release;app_dbg;app_rel;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="include" />
+			<Add directory="source" />
+		</Compiler>
+		<Unit filename="include/IM_Channel.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Linux" />
+		</Unit>
+		<Unit filename="include/IM_ColorMatrix.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Linux" />
+		</Unit>
+		<Unit filename="include/IM_Exception.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Linux" />
+		</Unit>
+		<Unit filename="include/IM_Functions.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Linux" />
+		</Unit>
+		<Unit filename="include/IM_Image.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Linux" />
+		</Unit>
+		<Unit filename="include/IM_Mask.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Linux" />
+		</Unit>
+		<Unit filename="include/IM_MatrixChannel.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Linux" />
+		</Unit>
+		<Unit filename="include/IM_Operators.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Linux" />
+		</Unit>
+		<Unit filename="include/IM_Options.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Linux" />
+		</Unit>
+		<Unit filename="include/ImageMixer">
+			<Option target="Linux" />
+		</Unit>
+		<Unit filename="main.cpp">
+			<Option target="app_dbg" />
+			<Option target="app_rel" />
+			<Option target="Linux" />
+		</Unit>
+		<Unit filename="source/IM_Bool_Pool.cpp" />
+		<Unit filename="source/IM_Bool_Pool.h" />
+		<Unit filename="source/IM_Channel_Implementation.h" />
+		<Unit filename="source/IM_Channel_Interpolators.cpp" />
+		<Unit filename="source/IM_Channel_Logic.cpp" />
+		<Unit filename="source/IM_Channel_Masked.cpp" />
+		<Unit filename="source/IM_Channel_Operators.cpp" />
+		<Unit filename="source/IM_Channel_Pool.cpp" />
+		<Unit filename="source/IM_Channel_Pool.h" />
+		<Unit filename="source/IM_Color_Matrix.cpp" />
+		<Unit filename="source/IM_Exception.cpp" />
+		<Unit filename="source/IM_Functions.cpp" />
+		<Unit filename="source/IM_Globals.cpp" />
+		<Unit filename="source/IM_Globals.h" />
+		<Unit filename="source/IM_Image_Implementation.h" />
+		<Unit filename="source/IM_Image_Interpolators.cpp" />
+		<Unit filename="source/IM_Image_Operators.cpp" />
+		<Unit filename="source/IM_Mask_Implementation.h" />
+		<Unit filename="source/IM_Mask_Operators.cpp" />
+		<Unit filename="source/IM_Math.h" />
+		<Unit filename="source/IM_MatrixImplementation.h" />
+		<Unit filename="source/IM_Matrix_Channel.cpp" />
+		<Unit filename="source/IM_Options.cpp" />
+		<Unit filename="source/IM_Utils.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

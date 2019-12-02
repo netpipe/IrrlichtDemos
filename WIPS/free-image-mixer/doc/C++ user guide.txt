@@ -1,0 +1,53 @@
+This is a short guide intended to be of help for C++ programmers.
+
+FIM api is very simple to use. First of all FreeImageMixer is not
+thread safe(was not tested with multythreading). Originally
+it was designed to be Multithreaded but since most common operations
+are done in very short times I removed MT in favour of a more stable package.
+
+This is a tipicall Mixer program:
+
+#include <IM_Exception.h>
+#include <IM_Options.h>
+#include <IM_Mask.h>
+#include <IM_Channel.h>
+#include <IM_Image.h>
+#include <IM_Functions.h>
+#include <IM_ColorMatrix.h>
+#include <IM_MatrixChannel.h>
+#include <IM_Operators.h>
+
+
+using namespace mixer;											
+int main()                                                      
+{                                                               
+Options options;                                                
+options.setSize(X_SIZE,Y_SIZE);    // without that memory will not be allocated.
+                                                                
+    try                                                         
+    {                                                           
+		Channel R,G,B;                 //now exceptions should be thrown only in 2 cases. You forget "setSize" or you have not enough RAM
+		Image   myPicture;             //Image mixer can use up to 300-400 MB or RAM depending on the size of the images.
+		myPicture.load("clouds.png");  //if the file is not existing some text is printed to the screen but the program will run normally
+                                       // (but instead of using 1 image all the channels are filled with default values. like all ones or all zeros).
+		myPicture.getRGB(R,G,B);
+		
+		//... etc.
+
+
+    }									 						
+    catch(Exception & exception)	//if something fails into ImageMixer something will be printed to the screen						
+    {															
+        exception.print();										
+    }															
+    catch(...)                    //usually happens only if you run out of RAM memory.
+    {                                                           
+        Exception ex("A unknown exception has been thrown");    
+        ex.print();                                             
+    }                                                           
+    return 0;	   //return  //memory will be deallocated here(unless you will run out of RAM) that's why "options" is not inside try block.
+							 //because we want always to deallocate allocated memory.
+}
+
+Image mixer was thinked just to "do some work" and not for being integrated in other applications. 
+So writing simple programs is very simple, but using it in complex programs may be an hell.
