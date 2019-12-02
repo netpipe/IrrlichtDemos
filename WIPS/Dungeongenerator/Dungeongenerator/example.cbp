@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Irrlicht Pong" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./Pong" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-fpermissive" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="X11" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+		</Linker>
+		<Unit filename="Architekt.cpp" />
+		<Unit filename="Architekt.h" />
+		<Unit filename="Architekt_Structs_Initialisierung.cpp" />
+		<Unit filename="Architekt_Verbindungen.cpp" />
+		<Unit filename="CGUIFileOpenDialog_Modified.cpp" />
+		<Unit filename="CGUIFileOpenDialog_Modified.h" />
+		<Unit filename="COBJMeshWriter_Modified.cpp" />
+		<Unit filename="COBJMeshWriter_Modified.h" />
+		<Unit filename="DreiecksMesh.cpp" />
+		<Unit filename="DreiecksMesh.h" />
+		<Unit filename="DreiecksMesh_LOD.cpp" />
+		<Unit filename="DreiecksMesh_Structs_Initialisierung.cpp" />
+		<Unit filename="Dungeongenerator.vcxproj" />
+		<Unit filename="Dungeongenerator.vcxproj.filters" />
+		<Unit filename="EventReceiver.cpp" />
+		<Unit filename="EventReceiver.h" />
+		<Unit filename="FraktalGenerator.cpp" />
+		<Unit filename="FraktalGenerator.h" />
+		<Unit filename="GUI.cpp" />
+		<Unit filename="GUI.h" />
+		<Unit filename="GangShaderCallback.h" />
+		<Unit filename="Hilfsfunktionen.h" />
+		<Unit filename="HoehlenShaderCallback.h" />
+		<Unit filename="Optionen.h" />
+		<Unit filename="Optionen_Anwenden.cpp" />
+		<Unit filename="Optionen_Dateizugriff.cpp" />
+		<Unit filename="Optionen_Dateizugriff_Einstellungen.cpp" />
+		<Unit filename="Optionen_GUI_aktualisieren.cpp" />
+		<Unit filename="Optionen_GUI_merken.cpp" />
+		<Unit filename="Spline.cpp" />
+		<Unit filename="Spline.h" />
+		<Unit filename="Spline_Detailobjekte_Visibility.cpp" />
+		<Unit filename="Spline_Structs_Initialisierung.cpp" />
+		<Unit filename="SubSzene.cpp" />
+		<Unit filename="SubSzene.h" />
+		<Unit filename="Szene.cpp" />
+		<Unit filename="Szene.h" />
+		<Unit filename="VoxelRaum.cpp" />
+		<Unit filename="VoxelRaum.h" />
+		<Unit filename="Zeitmesser.h" />
+		<Unit filename="ZufallsGenerator.h" />
+		<Unit filename="example.cbp" />
+		<Unit filename="main.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

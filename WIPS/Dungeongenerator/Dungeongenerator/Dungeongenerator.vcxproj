@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2F8B06B3-9439-46CF-BD9E-6F78228A4822}</ProjectGuid>
+    <RootNamespace>Dungeongenerator</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>J:\Masterarbeit\Bibliotheken\irrlicht-1.7.3\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>J:\Masterarbeit\Bibliotheken\irrlicht-1.7.3\lib\Win32-visualstudio;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>J:\Masterarbeit\Bibliotheken\irrlicht-1.7.3\include;$(IncludePath)</IncludePath>
+    <LibraryPath>J:\Masterarbeit\Bibliotheken\irrlicht-1.7.3\lib\Win32-visualstudio;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Architekt.cpp" />
+    <ClCompile Include="Architekt_Structs_Initialisierung.cpp" />
+    <ClCompile Include="Architekt_Verbindungen.cpp" />
+    <ClCompile Include="CGUIFileOpenDialog_Modified.cpp" />
+    <ClCompile Include="DreiecksMesh.cpp" />
+    <ClCompile Include="DreiecksMesh_LOD.cpp" />
+    <ClCompile Include="DreiecksMesh_Structs_Initialisierung.cpp" />
+    <ClCompile Include="Optionen_Dateizugriff_Einstellungen.cpp" />
+    <ClCompile Include="Optionen_GUI_merken.cpp" />
+    <ClCompile Include="Spline.cpp" />
+    <ClCompile Include="EventReceiver.cpp" />
+    <ClCompile Include="FraktalGenerator.cpp" />
+    <ClCompile Include="GUI.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="COBJMeshWriter_Modified.cpp" />
+    <ClCompile Include="Optionen_Anwenden.cpp" />
+    <ClCompile Include="Optionen_Dateizugriff.cpp" />
+    <ClCompile Include="Optionen_GUI_aktualisieren.cpp" />
+    <ClCompile Include="Spline_Detailobjekte_Visibility.cpp" />
+    <ClCompile Include="Spline_Structs_Initialisierung.cpp" />
+    <ClCompile Include="SubSzene.cpp" />
+    <ClCompile Include="Szene.cpp" />
+    <ClCompile Include="VoxelRaum.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Architekt.h" />
+    <ClInclude Include="CGUIFileOpenDialog_Modified.h" />
+    <ClInclude Include="GangShaderCallback.h" />
+    <ClInclude Include="HoehlenShaderCallback.h" />
+    <ClInclude Include="Spline.h" />
+    <ClInclude Include="EventReceiver.h" />
+    <ClInclude Include="GUI.h" />
+    <ClInclude Include="COBJMeshWriter_Modified.h" />
+    <ClInclude Include="DreiecksMesh.h" />
+    <ClInclude Include="FraktalGenerator.h" />
+    <ClInclude Include="Hilfsfunktionen.h" />
+    <ClInclude Include="Optionen.h" />
+    <ClInclude Include="SubSzene.h" />
+    <ClInclude Include="Szene.h" />
+    <ClInclude Include="VoxelRaum.h" />
+    <ClInclude Include="Zeitmesser.h" />
+    <ClInclude Include="ZufallsGenerator.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

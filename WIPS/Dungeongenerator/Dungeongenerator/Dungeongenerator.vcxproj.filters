@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="A_Hauptdateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="C_Hilfsfunktionen">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="C_Hilfsfunktionen\ZufallsGenerator">
+      <UniqueIdentifier>{aa4bbb22-b964-4b50-8ca1-41eec4ce264e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="X_IrrlichtExtensions">
+      <UniqueIdentifier>{c46c6b5b-e4fa-42ea-aec7-9e3ddb822d55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="B_InputOutput">
+      <UniqueIdentifier>{35fcb599-b49f-4e82-b8c9-9d361da5183d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="B_InputOutput\GUI">
+      <UniqueIdentifier>{f968df4b-342d-441d-87ee-9c2e78900a9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="B_InputOutput\EventReceiver">
+      <UniqueIdentifier>{f5902d29-debe-41f5-b5ca-e6ce146295d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="B_InputOutput\Optionen">
+      <UniqueIdentifier>{cd448c86-4923-4a21-946e-76a2c4530f1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="B_InputOutput\Szene">
+      <UniqueIdentifier>{2a6d96fc-f806-4228-b747-7bd5c79a4765}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="X_IrrlichtExtensions\CGUIFileOpenDialog_Modified">
+      <UniqueIdentifier>{671a63a7-fb01-48bc-9e52-fa8124e0b7b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="F_Generator_Hoehle">
+      <UniqueIdentifier>{f023c23c-2580-47e6-9935-d3b18a33225e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="F_Generator_Hoehle\FraktalGenerator">
+      <UniqueIdentifier>{c56c5616-870b-4159-b8e7-0026df74f173}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="F_Generator_Hoehle\Voxelraum">
+      <UniqueIdentifier>{8f49d28b-9d0b-4c38-970a-35d01d5b1cff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="F_Generator_Hoehle\DreiecksMesh">
+      <UniqueIdentifier>{c0f335fb-beb6-48c7-b487-d9900c63b94e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="G_Generator_Gaenge_Raeume">
+      <UniqueIdentifier>{1adc4e50-154a-444a-912a-c103877fa27a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="G_Generator_Gaenge_Raeume\Spline">
+      <UniqueIdentifier>{64b8b4a2-0970-4600-9917-d69b1f111e05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="G_Generator_Gaenge_Raeume\SubSzene">
+      <UniqueIdentifier>{36807539-b989-4ed7-b9c7-777fd5b5c92c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="X_IrrlichtExtensions\COBJMeshWriter_Modified">
+      <UniqueIdentifier>{e7f8b7fc-5bb0-4254-a60d-bda0e6fa0cef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="G_Generator_Gaenge_Raeume\Architekt">
+      <UniqueIdentifier>{c1a2d33f-500a-452b-acdb-b1f192423dd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="X_IrrlichtExtensions\ShaderCallback">
+      <UniqueIdentifier>{7381c303-1595-44c0-8a52-2a1b80755b7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C_Hilfsfunktionen\Zeitmessung">
+      <UniqueIdentifier>{b1c54745-c42d-4806-a4a6-5496dc8292cc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>A_Hauptdateien</Filter>
+    </ClCompile>
+    <ClCompile Include="VoxelRaum.cpp">
+      <Filter>F_Generator_Hoehle\Voxelraum</Filter>
+    </ClCompile>
+    <ClCompile Include="FraktalGenerator.cpp">
+      <Filter>F_Generator_Hoehle\FraktalGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="EventReceiver.cpp">
+      <Filter>B_InputOutput\EventReceiver</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI.cpp">
+      <Filter>B_InputOutput\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Szene.cpp">
+      <Filter>B_InputOutput\Szene</Filter>
+    </ClCompile>
+    <ClCompile Include="CGUIFileOpenDialog_Modified.cpp">
+      <Filter>X_IrrlichtExtensions\CGUIFileOpenDialog_Modified</Filter>
+    </ClCompile>
+    <ClCompile Include="Optionen_Dateizugriff.cpp">
+      <Filter>B_InputOutput\Optionen</Filter>
+    </ClCompile>
+    <ClCompile Include="Optionen_Anwenden.cpp">
+      <Filter>B_InputOutput\Optionen</Filter>
+    </ClCompile>
+    <ClCompile Include="COBJMeshWriter_Modified.cpp">
+      <Filter>X_IrrlichtExtensions\COBJMeshWriter_Modified</Filter>
+    </ClCompile>
+    <ClCompile Include="Spline.cpp">
+      <Filter>G_Generator_Gaenge_Raeume\Spline</Filter>
+    </ClCompile>
+    <ClCompile Include="SubSzene.cpp">
+      <Filter>G_Generator_Gaenge_Raeume\SubSzene</Filter>
+    </ClCompile>
+    <ClCompile Include="Architekt.cpp">
+      <Filter>G_Generator_Gaenge_Raeume\Architekt</Filter>
+    </ClCompile>
+    <ClCompile Include="DreiecksMesh_Structs_Initialisierung.cpp">
+      <Filter>F_Generator_Hoehle\DreiecksMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="DreiecksMesh_LOD.cpp">
+      <Filter>F_Generator_Hoehle\DreiecksMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Architekt_Verbindungen.cpp">
+      <Filter>G_Generator_Gaenge_Raeume\Architekt</Filter>
+    </ClCompile>
+    <ClCompile Include="Spline_Detailobjekte_Visibility.cpp">
+      <Filter>G_Generator_Gaenge_Raeume\Spline</Filter>
+    </ClCompile>
+    <ClCompile Include="Architekt_Structs_Initialisierung.cpp">
+      <Filter>G_Generator_Gaenge_Raeume\Architekt</Filter>
+    </ClCompile>
+    <ClCompile Include="Optionen_GUI_merken.cpp">
+      <Filter>B_InputOutput\Optionen</Filter>
+    </ClCompile>
+    <ClCompile Include="Optionen_GUI_aktualisieren.cpp">
+      <Filter>B_InputOutput\Optionen</Filter>
+    </ClCompile>
+    <ClCompile Include="DreiecksMesh.cpp">
+      <Filter>F_Generator_Hoehle\DreiecksMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Optionen_Dateizugriff_Einstellungen.cpp">
+      <Filter>B_InputOutput\Optionen</Filter>
+    </ClCompile>
+    <ClCompile Include="Spline_Structs_Initialisierung.cpp">
+      <Filter>G_Generator_Gaenge_Raeume\Spline</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Hilfsfunktionen.h">
+      <Filter>C_Hilfsfunktionen</Filter>
+    </ClInclude>
+    <ClInclude Include="VoxelRaum.h">
+      <Filter>F_Generator_Hoehle\Voxelraum</Filter>
+    </ClInclude>
+    <ClInclude Include="FraktalGenerator.h">
+      <Filter>F_Generator_Hoehle\FraktalGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="ZufallsGenerator.h">
+      <Filter>C_Hilfsfunktionen\ZufallsGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="DreiecksMesh.h">
+      <Filter>F_Generator_Hoehle\DreiecksMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Optionen.h">
+      <Filter>B_InputOutput\Optionen</Filter>
+    </ClInclude>
+    <ClInclude Include="EventReceiver.h">
+      <Filter>B_InputOutput\EventReceiver</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI.h">
+      <Filter>B_InputOutput\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Szene.h">
+      <Filter>B_InputOutput\Szene</Filter>
+    </ClInclude>
+    <ClInclude Include="CGUIFileOpenDialog_Modified.h">
+      <Filter>X_IrrlichtExtensions\CGUIFileOpenDialog_Modified</Filter>
+    </ClInclude>
+    <ClInclude Include="COBJMeshWriter_Modified.h">
+      <Filter>X_IrrlichtExtensions\COBJMeshWriter_Modified</Filter>
+    </ClInclude>
+    <ClInclude Include="Spline.h">
+      <Filter>G_Generator_Gaenge_Raeume\Spline</Filter>
+    </ClInclude>
+    <ClInclude Include="SubSzene.h">
+      <Filter>G_Generator_Gaenge_Raeume\SubSzene</Filter>
+    </ClInclude>
+    <ClInclude Include="Architekt.h">
+      <Filter>G_Generator_Gaenge_Raeume\Architekt</Filter>
+    </ClInclude>
+    <ClInclude Include="HoehlenShaderCallback.h">
+      <Filter>X_IrrlichtExtensions\ShaderCallback</Filter>
+    </ClInclude>
+    <ClInclude Include="GangShaderCallback.h">
+      <Filter>X_IrrlichtExtensions\ShaderCallback</Filter>
+    </ClInclude>
+    <ClInclude Include="Zeitmesser.h">
+      <Filter>C_Hilfsfunktionen\Zeitmessung</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
