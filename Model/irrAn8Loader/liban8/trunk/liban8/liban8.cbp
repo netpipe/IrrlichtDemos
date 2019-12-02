@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="liban8" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="lib" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="Debug Win32" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+			</Target>
+			<Target title="Release Win32">
+				<Option output="lib" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="Release Win32" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+			</Target>
+			<Target title="Linux">
+				<Option output="liban8" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="./" />
+		</Compiler>
+		<Unit filename="AN8X.cpp" />
+		<Unit filename="AN8X.h" />
+		<Unit filename="AN8XMath_Matrix.cpp" />
+		<Unit filename="AN8XMath_Quaternion.cpp" />
+		<Unit filename="AN8X_Cube.cpp" />
+		<Unit filename="AN8X_Cylinder.cpp" />
+		<Unit filename="AN8X_Math.cpp" />
+		<Unit filename="AN8X_SkinnedMeshHelper.cpp" />
+		<Unit filename="AN8X_Sphere.cpp" />
+		<Unit filename="An8Attribute.cpp" />
+		<Unit filename="An8Bone.cpp" />
+		<Unit filename="An8BooleanKey.cpp" />
+		<Unit filename="An8Camera.cpp" />
+		<Unit filename="An8Controller.cpp" />
+		<Unit filename="An8Cube.cpp" />
+		<Unit filename="An8Cylinder.cpp" />
+		<Unit filename="An8Description.cpp" />
+		<Unit filename="An8Dof.cpp" />
+		<Unit filename="An8Element.cpp" />
+		<Unit filename="An8Environment.cpp" />
+		<Unit filename="An8Face.cpp" />
+		<Unit filename="An8FaceIndice.cpp" />
+		<Unit filename="An8Figure.cpp" />
+		<Unit filename="An8FigureElement.cpp" />
+		<Unit filename="An8File.cpp" />
+		<Unit filename="An8Film.cpp" />
+		<Unit filename="An8FloatKey.cpp" />
+		<Unit filename="An8Group.cpp" />
+		<Unit filename="An8Header.cpp" />
+		<Unit filename="An8Image.cpp" />
+		<Unit filename="An8Influence.cpp" />
+		<Unit filename="An8JointAngle.cpp" />
+		<Unit filename="An8Light.cpp" />
+		<Unit filename="An8Lighting.cpp" />
+		<Unit filename="An8Loader.h" />
+		<Unit filename="An8Material.cpp" />
+		<Unit filename="An8Mesh.cpp" />
+		<Unit filename="An8MorphOffset.cpp" />
+		<Unit filename="An8MorphOffsets.cpp" />
+		<Unit filename="An8MorphTarget.cpp" />
+		<Unit filename="An8NamedObject.cpp" />
+		<Unit filename="An8Null.cpp" />
+		<Unit filename="An8Object.cpp" />
+		<Unit filename="An8ObjectElement.cpp" />
+		<Unit filename="An8PointKey.cpp" />
+		<Unit filename="An8QKey.cpp" />
+		<Unit filename="An8Scene.cpp" />
+		<Unit filename="An8Sequence.cpp" />
+		<Unit filename="An8Sphere.cpp" />
+		<Unit filename="An8TexGen.cpp" />
+		<Unit filename="An8Texture.cpp" />
+		<Unit filename="An8Track.cpp" />
+		<Unit filename="An8UtilVector.cpp" />
+		<Unit filename="An8VertexWeight.cpp" />
+		<Unit filename="An8WeightValue.cpp" />
+		<Unit filename="An8Weights.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -7,7 +7,7 @@
 		<script>
 			var timeoutHandle;
 			function setMyTimer(){
-				timeoutHandle = setTimeout("refresh()", 1000 / 25 /*25 fps*/);
+				timeoutHandle = setTimeout("refresh()", 1000 / 10 /*25 fps*/);
 			}
 			function refresh(){
 				var img = document.getElementById("img");

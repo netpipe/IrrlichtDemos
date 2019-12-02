@@ -1,0 +1,5373 @@
+header {
+  version { "0.97 beta" }
+  build { "2008.03.18" }
+}
+environment {
+  grid { 1 10 50 50 }
+  framerate { 24 }
+  film {
+    size { 400 300 }
+    ratio { 4 3 }
+  }
+}
+texture { "planche"
+  file { "C:\\Gregory\\Perso\\Abysse\\Mario kart\\planche.bmp" }
+}
+texture { "carre"
+  file { "C:\\Gregory\\Perso\\Abysse\\Mario kart\\carre.bmp" }
+}
+object { "quad"
+  material { "material01"
+    surface {
+      /* RGB chunk no longer used */
+      rgb { 224 224 224 }
+      lockambiantdiffuse { }
+      ambiant {
+        rgb { 224 224 224 }
+        factor { 0.30000 }
+      }
+      diffuse {
+        rgb { 224 224 224 }
+        factor { 0.70000 }
+        texturename { "planche" }
+        textureparams {
+          blendmode { decal }
+          alphamode { none }
+        }
+      }
+      specular {
+        rgb { 255 255 255 }
+        factor { 0.20000 }
+      }
+      phongsize { 32 }
+    }
+  }
+  material { "material02"
+    surface {
+      /* RGB chunk no longer used */
+      rgb { 224 224 224 }
+      lockambiantdiffuse { }
+      ambiant {
+        rgb { 224 224 224 }
+        factor { 0.30000 }
+      }
+      diffuse {
+        rgb { 224 224 224 }
+        factor { 0.70000 }
+        texturename { "carre" }
+        textureparams {
+          blendmode { decal }
+          alphamode { none }
+        }
+      }
+      specular {
+        rgb { 255 255 255 }
+        factor { 0.20000 }
+      }
+      phongsize { 30 }
+    }
+  }
+  material { "material03"
+    surface {
+      /* RGB chunk no longer used */
+      rgb { 253 84 79 }
+      lockambiantdiffuse { }
+      ambiant {
+        rgb { 253 84 79 }
+        factor { 0.30000 }
+      }
+      diffuse {
+        rgb { 253 84 79 }
+        factor { 0.70000 }
+      }
+      specular {
+        rgb { 255 255 255 }
+        factor { 0.20000 }
+      }
+      phongsize { 32 }
+    }
+  }
+  image {
+    name { "image01" }
+    file { 
+      "C:\\Gregory\\Perso\\Abysse\\Mario kart\\SuperMarioKartMapMushroomCup3.jpg"
+      }
+    base {
+      origin { (-10 -30 0) }
+      orientation { (-0.70711 0 0 0.70711) }
+    }
+    size { 600 700 }
+  }
+  mesh {
+    name { "mesh23" }
+    base {
+      origin { (60 0 -220) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 60) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 1) (0 1) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 2) (3 3) (1 1) )
+    }
+  }
+  mesh {
+    name { "mesh26" }
+    base {
+      origin { (-20 0 -220) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 60)
+    }
+    texcoords {
+      (0 1) (0 1) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 2) (3 3) (1 1) )
+    }
+  }
+  mesh {
+    name { "mesh68" }
+    base {
+      origin { (60 0 -260) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 1) (0 1) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 2) (3 3) (1 1) )
+    }
+  }
+  mesh {
+    name { "quad_simple" }
+    base {
+      origin { (260 0 260) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh63" }
+    base {
+      origin { (240 0 260) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    texgen {
+      mode { "planar" }
+      scale { 4.0291 3.6402 }
+      center { (0 0 0) }
+      up { (0 0 1) }
+      forward { (0 1 0) }
+    }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh02" }
+    base {
+      origin { (260 0 220) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh03" }
+    base {
+      origin { (260 0 180) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh11" }
+    base {
+      origin { (260 0 300) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh04" }
+    base {
+      origin { (260 0 140) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh05" }
+    base {
+      origin { (260 0 100) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh10" }
+    base {
+      origin { (260 0 60) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh01" }
+    base {
+      origin { (260 0 20) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh06" }
+    base {
+      origin { (260 0 -20) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh07" }
+    base {
+      origin { (260 0 -60) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh12" }
+    base {
+      origin { (260 0 -100) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh13" }
+    base {
+      origin { (260 0 -140) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh15" }
+    base {
+      origin { (260 0 -180) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh24" }
+    base {
+      origin { (60 0 300) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh55" }
+    base {
+      origin { (20 0 300) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh56" }
+    base {
+      origin { (20 0 260) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh57" }
+    base {
+      origin { (60 0 260) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh58" }
+    base {
+      origin { (60 0 220) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh59" }
+    base {
+      origin { (20 0 220) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh60" }
+    base {
+      origin { (20 0 180) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh61" }
+    base {
+      origin { (60 0 180) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh32" }
+    base {
+      origin { (-260 0 180) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh43" }
+    base {
+      origin { (-260 0 140) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh44" }
+    base {
+      origin { (-260 0 100) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh45" }
+    base {
+      origin { (-260 0 60) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh46" }
+    base {
+      origin { (-260 0 20) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh47" }
+    base {
+      origin { (-260 0 -20) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh33" }
+    base {
+      origin { (-260 0 -60) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh39" }
+    base {
+      origin { (-260 0 -100) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh40" }
+    base {
+      origin { (-260 0 -140) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh41" }
+    base {
+      origin { (-260 0 -180) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh42" }
+    base {
+      origin { (-260 0 -220) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh48" }
+    base {
+      origin { (-260 0 -260) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh62" }
+    base {
+      origin { (-100 0 180) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh27" }
+    base {
+      origin { (-220 0 -220) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh28" }
+    base {
+      origin { (-180 0 -220) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh29" }
+    base {
+      origin { (-140 0 -220) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh30" }
+    base {
+      origin { (-100 0 -220) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh31" }
+    base {
+      origin { (-60 0 -220) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh34" }
+    base {
+      origin { (-60 0 -260) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh35" }
+    base {
+      origin { (-100 0 -260) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh36" }
+    base {
+      origin { (-140 0 -260) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh37" }
+    base {
+      origin { (-180 0 -260) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh67" }
+    base {
+      origin { (-220 0 -260) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh09" }
+    base {
+      origin { (20 0 -180) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh14" }
+    base {
+      origin { (20 0 -220) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh16" }
+    base {
+      origin { (100 0 -260) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh17" }
+    base {
+      origin { (100 0 -220) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh18" }
+    base {
+      origin { (140 0 -220) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh19" }
+    base {
+      origin { (140 0 -260) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh20" }
+    base {
+      origin { (180 0 -260) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh21" }
+    base {
+      origin { (180 0 -220) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh22" }
+    base {
+      origin { (220 0 -220) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh25" }
+    base {
+      origin { (220 0 -260) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh38" }
+    base {
+      origin { (260 0 -260) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh69" }
+    base {
+      origin { (260 0 -220) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh51" }
+    base {
+      origin { (220 0 300) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh52" }
+    base {
+      origin { (180 0 300) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh53" }
+    base {
+      origin { (140 0 300) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh54" }
+    base {
+      origin { (100 0 300) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh64" }
+    base {
+      origin { (-20 0 180) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh65" }
+    base {
+      origin { (-60 0 180) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh08" }
+    base {
+      origin { (-140 0 180) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh49" }
+    base {
+      origin { (-180 0 180) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh50" }
+    base {
+      origin { (-220 0 180) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (-20 0 -20) (-20 0 20) (20 0 -20) (20 0 20)
+    }
+    texcoords {
+      (0 0) (2 0) (2 2) (0 2)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (2 1) (3 2) (1 3) )
+    }
+  }
+  mesh {
+    name { "mesh66" }
+    base {
+      origin { (240 0 220) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh70" }
+    base {
+      origin { (280 0 220) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh71" }
+    base {
+      origin { (280 0 260) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh72" }
+    base {
+      origin { (280 0 180) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh73" }
+    base {
+      origin { (240 0 180) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh74" }
+    base {
+      origin { (240 0 140) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh75" }
+    base {
+      origin { (280 0 140) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh76" }
+    base {
+      origin { (280 0 100) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh77" }
+    base {
+      origin { (240 0 100) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh78" }
+    base {
+      origin { (240 0 60) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh79" }
+    base {
+      origin { (280 0 60) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh80" }
+    base {
+      origin { (280 0 20) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh81" }
+    base {
+      origin { (240 0 20) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh82" }
+    base {
+      origin { (240 0 -20) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh83" }
+    base {
+      origin { (240 0 -60) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh84" }
+    base {
+      origin { (240 0 -100) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh85" }
+    base {
+      origin { (240 0 -140) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh86" }
+    base {
+      origin { (240 0 -180) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh87" }
+    base {
+      origin { (280 0 -20) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh88" }
+    base {
+      origin { (280 0 -60) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh89" }
+    base {
+      origin { (280 0 -100) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh90" }
+    base {
+      origin { (280 0 -140) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh91" }
+    base {
+      origin { (280 0 -180) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh92" }
+    base {
+      origin { (280 0 -220) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh93" }
+    base {
+      origin { (280 0 -260) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh94" }
+    base {
+      origin { (280 0 300) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh95" }
+    base {
+      origin { (80 0 260) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh96" }
+    base {
+      origin { (80 0 220) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh97" }
+    base {
+      origin { (80 0 180) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh98" }
+    base {
+      origin { (0 0 300) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh99" }
+    base {
+      origin { (0 0 260) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh100" }
+    base {
+      origin { (0 0 220) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh101" }
+    base {
+      origin { (-240 0 140) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh102" }
+    base {
+      origin { (-280 0 180) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh103" }
+    base {
+      origin { (-280 0 140) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh104" }
+    base {
+      origin { (-280 0 100) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh105" }
+    base {
+      origin { (-280 0 60) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh106" }
+    base {
+      origin { (-280 0 20) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh107" }
+    base {
+      origin { (-280 0 -20) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh108" }
+    base {
+      origin { (-280 0 -60) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh109" }
+    base {
+      origin { (-240 0 -100) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh110" }
+    base {
+      origin { (-240 0 -20) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh111" }
+    base {
+      origin { (-240 0 20) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh112" }
+    base {
+      origin { (-240 0 60) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh113" }
+    base {
+      origin { (-240 0 100) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh114" }
+    base {
+      origin { (-240 0 -60) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh115" }
+    base {
+      origin { (-240 0 -140) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh116" }
+    base {
+      origin { (-240 0 -180) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh117" }
+    base {
+      origin { (-280 0 -100) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh118" }
+    base {
+      origin { (-280 0 -140) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh119" }
+    base {
+      origin { (-280 0 -180) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh120" }
+    base {
+      origin { (-280 0 -220) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh121" }
+    base {
+      origin { (-280 0 -260) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh122" }
+    base {
+      origin { (-220 0 -200) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh123" }
+    base {
+      origin { (-180 0 -200) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh124" }
+    base {
+      origin { (-100 0 -200) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh125" }
+    base {
+      origin { (-140 0 -200) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh126" }
+    base {
+      origin { (-60 0 -200) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh127" }
+    base {
+      origin { (-60 0 -280) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh128" }
+    base {
+      origin { (-100 0 -280) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh129" }
+    base {
+      origin { (-140 0 -280) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh130" }
+    base {
+      origin { (-180 0 -280) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh131" }
+    base {
+      origin { (-220 0 -280) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh132" }
+    base {
+      origin { (-260 0 -280) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh133" }
+    base {
+      origin { (20 0 -240) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh134" }
+    base {
+      origin { (20 0 -160) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh135" }
+    base {
+      origin { (100 0 -280) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh136" }
+    base {
+      origin { (140 0 -280) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh137" }
+    base {
+      origin { (180 0 -280) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh138" }
+    base {
+      origin { (220 0 -280) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh139" }
+    base {
+      origin { (260 0 -280) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh140" }
+    base {
+      origin { (220 0 -200) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh141" }
+    base {
+      origin { (180 0 -200) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh142" }
+    base {
+      origin { (140 0 -200) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh143" }
+    base {
+      origin { (100 0 -200) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh144" }
+    base {
+      origin { (260 0 320) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh145" }
+    base {
+      origin { (220 0 320) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh146" }
+    base {
+      origin { (180 0 320) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh147" }
+    base {
+      origin { (140 0 320) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh148" }
+    base {
+      origin { (100 0 320) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh149" }
+    base {
+      origin { (60 0 320) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh150" }
+    base {
+      origin { (20 0 320) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh151" }
+    base {
+      origin { (100 0 280) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh152" }
+    base {
+      origin { (140 0 280) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh153" }
+    base {
+      origin { (180 0 280) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh154" }
+    base {
+      origin { (220 0 280) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh155" }
+    base {
+      origin { (60 0 160) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh156" }
+    base {
+      origin { (20 0 160) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh157" }
+    base {
+      origin { (-20 0 160) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh158" }
+    base {
+      origin { (-60 0 160) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh159" }
+    base {
+      origin { (-100 0 160) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh160" }
+    base {
+      origin { (-20 0 200) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh161" }
+    base {
+      origin { (-60 0 200) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh162" }
+    base {
+      origin { (-100 0 200) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh163" }
+    base {
+      origin { (-140 0 200) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh164" }
+    base {
+      origin { (-180 0 200) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh165" }
+    base {
+      origin { (-220 0 200) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh166" }
+    base {
+      origin { (-260 0 200) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh167" }
+    base {
+      origin { (-220 0 160) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh168" }
+    base {
+      origin { (-180 0 160) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  mesh {
+    name { "mesh169" }
+    base {
+      origin { (-140 0 160) }
+      orientation { (0 0.70711 0 0.70711) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 12 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -3 -20) (-2 -3 20) (-2 3 -20) (-2 3 20) (2 -3 -20) (2 -3 20) (2 3 -20)
+      (2 3 20)
+    }
+    texcoords {
+      (0 0) (0 0) (10 0) (10 1) (0 1) (1 0) (1 1) (1 1) (0 0) (1 0) (1 10) 
+      (0 10)
+    }
+    faces {
+      4 4 0 -1 ( (0 1) (4 5) (6 6) (2 4) )
+      4 4 0 -1 ( (1 1) (3 5) (7 6) (5 4) )
+      4 4 0 -1 ( (0 8) (2 9) (3 10) (1 11) )
+      4 4 0 -1 ( (4 1) (5 2) (7 3) (6 4) )
+      4 4 0 -1 ( (2 8) (6 9) (7 10) (3 11) )
+      4 4 0 -1 ( (0 1) (1 2) (5 3) (4 4) )
+    }
+  }
+  cylinder {
+    name { "cylinder01" }
+    base {
+      origin { (240 0 160) }
+      orientation { (0 0 -0.00076 1) }
+    }
+    material { "material02" }
+    length { 30 }
+    diameter { 1 }
+    topdiameter { 1 }
+    longlat { 4 4 }
+    capend { }
+    capstart { }
+  }
+  cylinder {
+    name { "cylinder02" }
+    base {
+      origin { (280 0 160) }
+      orientation { (0 0 -0.00076 1) }
+    }
+    material { "material02" }
+    length { 30 }
+    diameter { 1 }
+    topdiameter { 1 }
+    longlat { 4 4 }
+    capend { }
+    capstart { }
+  }
+  cube {
+    name { "cube01" }
+    base {
+      origin { (260 27 160) }
+    }
+    material { " -- default --" }
+    scale { 42 5 0.10000 }
+    divisions { 1 1 1 }
+  }
+  mesh {
+    name { "meshcube" }
+    base {
+      origin { (78 1 -280) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    texgen {
+      mode { "planar" }
+      scale { 4 4 }
+      center { (0 0 0) }
+      up { (0 0 1) }
+      forward { (0 1 0) }
+    }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh170" }
+    base {
+      origin { (78 1 -276) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh171" }
+    base {
+      origin { (74 1 -272) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh172" }
+    base {
+      origin { (70 1 -268) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh173" }
+    base {
+      origin { (66 1 -264) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh174" }
+    base {
+      origin { (62 1 -260) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh175" }
+    base {
+      origin { (58 1 -256) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh176" }
+    base {
+      origin { (54 1 -252) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh177" }
+    base {
+      origin { (50 1 -248) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh178" }
+    base {
+      origin { (46 1 -244) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh179" }
+    base {
+      origin { (42 1 -240) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh180" }
+    base {
+      origin { (78 1 -200) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh181" }
+    base {
+      origin { (74 1 -196) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh182" }
+    base {
+      origin { (70 1 -192) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh183" }
+    base {
+      origin { (66 1 -188) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh184" }
+    base {
+      origin { (62 1 -184) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh185" }
+    base {
+      origin { (58 1 -180) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh186" }
+    base {
+      origin { (54 1 -176) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh187" }
+    base {
+      origin { (50 1 -172) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh188" }
+    base {
+      origin { (46 1 -168) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh189" }
+    base {
+      origin { (42 1 -164) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh190" }
+    base {
+      origin { (-2 1 -164) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh191" }
+    base {
+      origin { (-38 1 -200) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh192" }
+    base {
+      origin { (-34 1 -196) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh193" }
+    base {
+      origin { (-30 1 -192) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh194" }
+    base {
+      origin { (-26 1 -188) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh195" }
+    base {
+      origin { (-22 1 -184) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh196" }
+    base {
+      origin { (-18 1 -180) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh197" }
+    base {
+      origin { (-14 1 -176) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh198" }
+    base {
+      origin { (-10 1 -172) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+  mesh {
+    name { "mesh199" }
+    base {
+      origin { (-6 1 -168) }
+    }
+    material { "material02" }
+    smoothangle { 45 }
+    /* 8 points, 6 faces, 8 uvCoords */
+    materiallist {
+      materialname { "material02" }
+    }
+    points {
+      (-2 -2 -2) (-2 -2 2) (-2 2 -2) (-2 2 2) (2 -2 -2) (2 -2 2) (2 2 -2) 
+      (2 2 2)
+    }
+    texcoords {
+      (0 0) (0 0) (0 1) (0 1) (1 0) (1 0) (1 1) (1 1)
+    }
+    faces {
+      4 4 0 -1 ( (0 0) (4 4) (6 6) (2 2) )
+      4 4 0 -1 ( (1 0) (3 4) (7 6) (5 2) )
+      4 4 0 -1 ( (0 0) (2 4) (3 6) (1 2) )
+      4 4 0 -1 ( (4 0) (5 4) (7 6) (6 2) )
+      4 4 0 -1 ( (2 2) (6 6) (7 4) (3 0) )
+      4 4 0 -1 ( (0 0) (1 4) (5 6) (4 2) )
+    }
+  }
+}
+scene { "scene01"
+  frames { 72 }
+  groundgrid { 0 }
+  shadowbias { 0.00100 }
+  background { 153 153 153 }
+  camera { "camera01"
+    loc { (330 100 410) }
+    orientation { (-0.04877 0.93733 -0.14632 -0.31244) }
+    fov { 60 }
+    number { 1 }
+    controller { "active"
+      track {
+        booleankey { 0 0 "T" }
+      }
+    } 
+  }
+  objectelement { "eobject01" "quad"
+    loc { (0 0 0) }
+  }
+}

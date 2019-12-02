@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX
+END
+glew.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/glew.c
+END
+GLGXUtil.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGXUtil.cpp
+END
+GLGX_DDSImage.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGX_DDSImage.h
+END
+glew.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/glew.h
+END
+GLGX_TGAImage.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGX_TGAImage.h
+END
+GLGXImage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGXImage.cpp
+END
+GLGX.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGX.h
+END
+GLGX_lodepng.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGX_lodepng.cpp
+END
+GLGXMath.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGXMath.cpp
+END
+GLGXMath_Quaternion.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGXMath_Quaternion.cpp
+END
+GLGX_Win32Image.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGX_Win32Image.cpp
+END
+GLGXTexture.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGXTexture.h
+END
+GLGXGLUtil.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGXGLUtil.h
+END
+GLGXSetup.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGXSetup.h
+END
+GLGXFont_1_1.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGXFont_1_1.cpp
+END
+GLGXShader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGXShader.cpp
+END
+gl3.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/gl3.h
+END
+GLGXMath_Vec2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGXMath_Vec2.cpp
+END
+GLGXMath_Vec3.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGXMath_Vec3.cpp
+END
+glxew.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/glxew.h
+END
+GLGXMath_Vec4.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGXMath_Vec4.cpp
+END
+GLGXFont.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGXFont.h
+END
+GLGX_DDSImage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGX_DDSImage.cpp
+END
+GLGX_TGAImage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGX_TGAImage.cpp
+END
+GLGXMath_Matrix.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGXMath_Matrix.cpp
+END
+GLGXUtil.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGXUtil.h
+END
+GLGX_lodepng.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGX_lodepng.h
+END
+GLGXMath.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGXMath.h
+END
+GLGXTexture.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGXTexture.cpp
+END
+GLGXGLUtil.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGXGLUtil.cpp
+END
+GLGXFont.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGXFont.cpp
+END
+wglew.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/wglew.h
+END
+GLGX_Win32Image.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGX_Win32Image.h
+END
+GLGX_DevILImage.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGX_DevILImage.h
+END
+GLGXShader.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/GLGX/GLGXShader.h
+END

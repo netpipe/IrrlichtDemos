@@ -1,0 +1,190 @@
+# depslib dependency file v1.0
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Attribute.cpp
+	"An8Loader.h"
+
+1302756913 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Loader.h
+	<stdlib.h>
+	<string.h>
+	<string>
+	<vector>
+	"AN8X.h"
+
+1302331522 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/AN8X.h
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Bone.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8BooleanKey.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Camera.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Controller.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Cube.cpp
+	"An8Loader.h"
+	<math.h>
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Cylinder.cpp
+	"An8Loader.h"
+	<math.h>
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Description.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Dof.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Element.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Environment.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Face.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8FaceIndice.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Figure.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8FigureElement.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8File.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Film.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8FloatKey.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Group.cpp
+	"An8Loader.h"
+	<math.h>
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Header.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Image.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Influence.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8JointAngle.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Light.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Lighting.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Material.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Mesh.cpp
+	"An8Loader.h"
+	<math.h>
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8MorphOffset.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8MorphOffsets.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8MorphTarget.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8NamedObject.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Null.cpp
+	"An8Loader.h"
+
+1302756891 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Object.cpp
+	"An8Loader.h"
+	<math.h>
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8ObjectElement.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8PointKey.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8QKey.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Scene.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Sequence.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Sphere.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8TexGen.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Texture.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Track.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8UtilVector.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8VertexWeight.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8Weights.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/An8WeightValue.cpp
+	"An8Loader.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/AN8X.cpp
+	"AN8X.h"
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/AN8X_Cube.cpp
+	"An8Loader.h"
+	<math.h>
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/AN8X_Cylinder.cpp
+	"An8Loader.h"
+	<math.h>
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/AN8X_Math.cpp
+	"AN8X.h"
+	<math.h>
+
+1302756788 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/AN8X_SkinnedMeshHelper.cpp
+	"AN8X.h"
+	"An8Loader.h"
+	<math.h>
+	<algorithm>
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/AN8X_Sphere.cpp
+	"An8Loader.h"
+	<math.h>
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/AN8XMath_Matrix.cpp
+	"AN8X.h"
+	<math.h>
+
+1302331522 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Model/irrAn8Loader/liban8/trunk/liban8/AN8XMath_Quaternion.cpp
+	"AN8X.h"
+	<math.h>
+

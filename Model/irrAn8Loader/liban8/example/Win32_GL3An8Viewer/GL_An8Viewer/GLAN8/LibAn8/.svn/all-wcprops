@@ -1,0 +1,341 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8
+END
+An8TexGen.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8TexGen.cpp
+END
+An8MorphOffset.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8MorphOffset.cpp
+END
+An8Scene.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Scene.cpp
+END
+An8Material.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Material.cpp
+END
+AN8X_SkinnedMeshHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/AN8X_SkinnedMeshHelper.cpp
+END
+An8Texture.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Texture.cpp
+END
+An8PointKey.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8PointKey.cpp
+END
+An8Track.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Track.cpp
+END
+AN8XMath_Matrix.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/AN8XMath_Matrix.cpp
+END
+AN8X_Cube.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/AN8X_Cube.cpp
+END
+An8Light.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Light.cpp
+END
+An8Influence.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Influence.cpp
+END
+An8Sequence.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Sequence.cpp
+END
+An8Cylinder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Cylinder.cpp
+END
+An8QKey.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8QKey.cpp
+END
+An8Weights.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Weights.cpp
+END
+An8Loader.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Loader.h
+END
+AN8X.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/AN8X.h
+END
+An8File.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8File.cpp
+END
+AN8X_Math.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/AN8X_Math.cpp
+END
+An8ObjectElement.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8ObjectElement.cpp
+END
+An8Figure.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Figure.cpp
+END
+An8Image.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Image.cpp
+END
+An8Bone.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Bone.cpp
+END
+An8WeightValue.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8WeightValue.cpp
+END
+An8VertexWeight.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8VertexWeight.cpp
+END
+An8Sphere.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Sphere.cpp
+END
+An8Film.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Film.cpp
+END
+An8Header.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Header.cpp
+END
+An8BooleanKey.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8BooleanKey.cpp
+END
+An8Camera.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Camera.cpp
+END
+An8Element.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Element.cpp
+END
+An8JointAngle.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8JointAngle.cpp
+END
+An8FigureElement.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8FigureElement.cpp
+END
+An8Group.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Group.cpp
+END
+An8Mesh.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Mesh.cpp
+END
+An8MorphTarget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8MorphTarget.cpp
+END
+An8Face.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Face.cpp
+END
+AN8X_Cylinder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/AN8X_Cylinder.cpp
+END
+An8UtilVector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8UtilVector.cpp
+END
+An8Attribute.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Attribute.cpp
+END
+An8Environment.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Environment.cpp
+END
+An8Lighting.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Lighting.cpp
+END
+An8Object.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Object.cpp
+END
+AN8X.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/AN8X.cpp
+END
+An8Dof.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Dof.cpp
+END
+An8FaceIndice.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8FaceIndice.cpp
+END
+An8Null.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Null.cpp
+END
+An8NamedObject.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8NamedObject.cpp
+END
+AN8X_Sphere.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/AN8X_Sphere.cpp
+END
+An8FloatKey.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8FloatKey.cpp
+END
+An8Cube.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Cube.cpp
+END
+An8MorphOffsets.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8MorphOffsets.cpp
+END
+An8Description.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Description.cpp
+END
+An8Controller.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/An8Controller.cpp
+END
+AN8XMath_Quaternion.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/liban8/!svn/ver/4/example/Win32_GL3An8Viewer/GL_An8Viewer/GLAN8/LibAn8/AN8XMath_Quaternion.cpp
+END
