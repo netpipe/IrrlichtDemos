@@ -1,0 +1,2 @@
+del *.BMP
+del *.png

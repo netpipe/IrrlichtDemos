@@ -1,0 +1,4 @@
+Step 3. Before include irrlicht.h write "#define _IRR_STATIC_LIB_" 
+
+
+#define _IRR_STATIC_LIB_
