@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Example With Irrlicht" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Win32">
+				<Option platforms="Windows;" />
+				<Option output="bin/win32-gcc/example" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/win32-gcc" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="Irrlicht" />
+					<Add library="desteer" />
+				</Linker>
+			</Target>
+			<Target title="Linux">
+				<Option platforms="Unix;" />
+				<Option output="bin/Example With Irrlicht" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-L/usr/X11R6/lib" />
+					<Add option="-L../../lib/Linux" />
+					<Add option="-lGL" />
+					<Add option="-lXxf86vm" />
+					<Add option="-lXext" />
+					<Add option="-lX11" />
+					<Add option="-ldl" />
+					<Add option="-lpthread" />
+					<Add library="../../../LikeMagic-All/irrlicht/lib/Linux/libIrrlicht.a" />
+					<Add library="../../lib/" />
+					<Add library="../../../irrlicht/lib/Linux/libIrrlicht.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="include" />
+			<Add directory="../../include" />
+			<Add directory="../irrlicht/include" />
+		</Compiler>
+		<Linker>
+			<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux" />
+			<Add directory="../../lib/" />
+		</Linker>
+		<Unit filename="source/BaseIncludes.hpp" />
+		<Unit filename="source/BasicDemo.hpp" />
+		<Unit filename="source/IrrlichtBaseEntity.hpp" />
+		<Unit filename="source/IrrlichtMobileEntity.cpp" />
+		<Unit filename="source/IrrlichtMobileEntity.hpp" />
+		<Unit filename="source/ObstacleAvoidanceDemo.hpp" />
+		<Unit filename="source/ResPath.hpp" />
+		<Unit filename="source/main.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

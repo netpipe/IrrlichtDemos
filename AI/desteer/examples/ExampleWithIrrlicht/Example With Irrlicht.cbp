@@ -73,9 +73,13 @@
 			<Add directory="../../include" />
 			<Add directory="include" />
 		</Compiler>
+		<Unit filename="source/BaseIncludes.hpp" />
+		<Unit filename="source/BasicDemo.hpp" />
 		<Unit filename="source/IrrlichtBaseEntity.hpp" />
 		<Unit filename="source/IrrlichtMobileEntity.cpp" />
 		<Unit filename="source/IrrlichtMobileEntity.hpp" />
+		<Unit filename="source/ObstacleAvoidanceDemo.hpp" />
+		<Unit filename="source/ResPath.hpp" />
 		<Unit filename="source/main.cpp" />
 		<Extensions />
 	</Project>

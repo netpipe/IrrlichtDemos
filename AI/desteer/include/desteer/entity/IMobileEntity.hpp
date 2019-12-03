@@ -11,31 +11,23 @@ class ISteeringController;
 namespace desteer {
 namespace entity {
 
-//TODO: change this to be an actual abstract class and make MobileEntity, which has the stuff to derive from.
 class IMobileEntity : public IBaseEntity, public IEntitySpace
 {
-protected:
-	float _mass;
-	float _maxForce;
-	float _maxSpeed;
-	//float _maxTurnRate;
-
-	irr::core::vector3df _velocity;
-
 public:
-    float Mass() const { return _mass; };
-	void SetMass(float mass) { _mass = mass; };
 
-	float MaxForce() const { return _maxForce; };
-	void SetMaxForce(float maxForce) { _maxForce = maxForce; };
+    virtual float Mass() const = 0;
+	virtual void SetMass(float mass) = 0;
 
-	float MaxSpeed() const { return _maxSpeed; };
-	void SetMaxSpeed(float maxSpeed) { _maxSpeed = maxSpeed; };
+	virtual float MaxForce() const = 0;
+	virtual void SetMaxForce(float maxForce) = 0;
 
-	//inline float MaxTurnRate() const { return _maxTurnRate; };
-	//inline void SetMaxTurnRate(float maxTurnRate) { _maxTurnRate = maxTurnRate; };
+	virtual float MaxSpeed() const = 0;
+	virtual void SetMaxSpeed(float maxSpeed) = 0;
 
-    virtual irr::core::vector3df Velocity() const {return _velocity;};
+	//virtual float MaxTurnRate() const = 0;
+	//virtual void SetMaxTurnRate(float maxTurnRate) = 0;
+
+    virtual irr::core::vector3df Velocity() const = 0;
 
     virtual void SetSteering(controller::ISteeringController * controller) = 0;
 };

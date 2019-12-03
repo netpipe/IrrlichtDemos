@@ -1,12 +1,14 @@
 #include "desteer/behavior/FleeBehavior.hpp"
 
+#include <cassert>
+
 using namespace desteer;
 using namespace behavior;
 using namespace entity;
 using namespace irr;
 using namespace core;
 
-FleeBehavior::FleeBehavior(irr::core::vector3df target, float fleeDistance)
+FleeBehavior::FleeBehavior(irr::core::vector3df target, float fleeDistance) : _mob(NULL)
 {
     _target = target;
     _fleeDistance = fleeDistance;
@@ -24,6 +26,8 @@ void FleeBehavior::SetTarget(vector3df target)
 
 vector3df FleeBehavior::Calculate()
 {
+    assert(_mob != NULL);
+
     //if fleedistance = -1, flee always.  -1 means infinite distance;
     if(_fleeDistance == -1 || _target.getDistanceFromSQ(_mob->Position()) < _fleeDistance * _fleeDistance)
     {

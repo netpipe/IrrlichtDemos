@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB62D0FB13DE45DC00905498 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB62D0FA13DE45DB00905498 /* MainMenu.xib */; };
+		CB62D0FF13DE4D3400905498 /* grid.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = CBC620FC13DD138B0048B5C9 /* grid.png */; };
+		CB62D10013DE4D3400905498 /* grid2.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = CBC620FD13DD138B0048B5C9 /* grid2.png */; };
+		CB62D10113DE4D3400905498 /* v1-solid.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = CBC620FE13DD138B0048B5C9 /* v1-solid.png */; };
+		CB62D10213DE4D3400905498 /* v1.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = CBC620FF13DD138B0048B5C9 /* v1.png */; };
+		CB62D10313DE4D3400905498 /* v2-solid.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = CBC6210013DD138B0048B5C9 /* v2-solid.png */; };
+		CB62D10413DE4D3400905498 /* v2.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = CBC6210113DD138B0048B5C9 /* v2.png */; };
+		CB62D10513DE4D3400905498 /* wall.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = CBC6210213DD138B0048B5C9 /* wall.jpg */; };
+		CBC6207613DD034F0048B5C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC6207513DD034F0048B5C9 /* Cocoa.framework */; };
+		CBC6208013DD034F0048B5C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBC6207E13DD034F0048B5C9 /* InfoPlist.strings */; };
+		CBC6208613DD034F0048B5C9 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CBC6208413DD034F0048B5C9 /* Credits.rtf */; };
+		CBC6209213DD03740048B5C9 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC6209013DD03740048B5C9 /* GLUT.framework */; };
+		CBC6209313DD03740048B5C9 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC6209113DD03740048B5C9 /* IOKit.framework */; };
+		CBC6209513DD038C0048B5C9 /* libIrrlicht_mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC6209413DD038C0048B5C9 /* libIrrlicht_mac.a */; };
+		CBC6209713DD039C0048B5C9 /* libdesteer-mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC6209613DD039C0048B5C9 /* libdesteer-mac.a */; };
+		CBC6209913DD03A50048B5C9 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC6209813DD03A50048B5C9 /* Carbon.framework */; };
+		CBC6209F13DD03FA0048B5C9 /* IrrlichtMobileEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBC6209C13DD03FA0048B5C9 /* IrrlichtMobileEntity.cpp */; };
+		CBC620A013DD03FA0048B5C9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBC6209E13DD03FA0048B5C9 /* main.cpp */; };
+		CBC620D413DD0CB30048B5C9 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC620D313DD0CB30048B5C9 /* OpenGL.framework */; };
+		CBC6210C13DD27F70048B5C9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC6210B13DD27F70048B5C9 /* CoreFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB62D0FE13DE4D2300905498 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/media;
+			dstSubfolderSpec = 1;
+			files = (
+				CB62D0FF13DE4D3400905498 /* grid.png in CopyFiles */,
+				CB62D10013DE4D3400905498 /* grid2.png in CopyFiles */,
+				CB62D10113DE4D3400905498 /* v1-solid.png in CopyFiles */,
+				CB62D10213DE4D3400905498 /* v1.png in CopyFiles */,
+				CB62D10313DE4D3400905498 /* v2-solid.png in CopyFiles */,
+				CB62D10413DE4D3400905498 /* v2.png in CopyFiles */,
+				CB62D10513DE4D3400905498 /* wall.jpg in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CB62D0FA13DE45DB00905498 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		CBC6207113DD034E0048B5C9 /* Example With Irrlicht.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example With Irrlicht.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBC6207513DD034F0048B5C9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CBC6207813DD034F0048B5C9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CBC6207913DD034F0048B5C9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CBC6207A13DD034F0048B5C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CBC6207D13DD034F0048B5C9 /* Example With Irrlicht-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Example With Irrlicht-Info.plist"; sourceTree = "<group>"; };
+		CBC6207F13DD034F0048B5C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CBC6208313DD034F0048B5C9 /* Example With Irrlicht-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example With Irrlicht-Prefix.pch"; sourceTree = "<group>"; };
+		CBC6208513DD034F0048B5C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CBC6209013DD03740048B5C9 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = SDKs/MacOSX10.7.sdk/System/Library/Frameworks/GLUT.framework; sourceTree = DEVELOPER_DIR; };
+		CBC6209113DD03740048B5C9 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = SDKs/MacOSX10.7.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
+		CBC6209413DD038C0048B5C9 /* libIrrlicht_mac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIrrlicht_mac.a; path = "../lib/irrlicht-mac/libIrrlicht_mac.a"; sourceTree = "<group>"; };
+		CBC6209613DD039C0048B5C9 /* libdesteer-mac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libdesteer-mac.a"; path = "../../../lib/libdesteer-mac.a"; sourceTree = "<group>"; };
+		CBC6209813DD03A50048B5C9 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = SDKs/MacOSX10.7.sdk/System/Library/Frameworks/Carbon.framework; sourceTree = DEVELOPER_DIR; };
+		CBC6209B13DD03FA0048B5C9 /* IrrlichtBaseEntity.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IrrlichtBaseEntity.hpp; path = ../../source/IrrlichtBaseEntity.hpp; sourceTree = "<group>"; };
+		CBC6209C13DD03FA0048B5C9 /* IrrlichtMobileEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IrrlichtMobileEntity.cpp; path = ../../source/IrrlichtMobileEntity.cpp; sourceTree = "<group>"; };
+		CBC6209D13DD03FA0048B5C9 /* IrrlichtMobileEntity.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IrrlichtMobileEntity.hpp; path = ../../source/IrrlichtMobileEntity.hpp; sourceTree = "<group>"; };
+		CBC6209E13DD03FA0048B5C9 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../source/main.cpp; sourceTree = "<group>"; };
+		CBC620D313DD0CB30048B5C9 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = SDKs/MacOSX10.7.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
+		CBC620FC13DD138B0048B5C9 /* grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grid.png; path = ../../media/grid.png; sourceTree = "<group>"; };
+		CBC620FD13DD138B0048B5C9 /* grid2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grid2.png; path = ../../media/grid2.png; sourceTree = "<group>"; };
+		CBC620FE13DD138B0048B5C9 /* v1-solid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "v1-solid.png"; path = "../../media/v1-solid.png"; sourceTree = "<group>"; };
+		CBC620FF13DD138B0048B5C9 /* v1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = v1.png; path = ../../media/v1.png; sourceTree = "<group>"; };
+		CBC6210013DD138B0048B5C9 /* v2-solid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "v2-solid.png"; path = "../../media/v2-solid.png"; sourceTree = "<group>"; };
+		CBC6210113DD138B0048B5C9 /* v2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = v2.png; path = ../../media/v2.png; sourceTree = "<group>"; };
+		CBC6210213DD138B0048B5C9 /* wall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wall.jpg; path = ../../media/wall.jpg; sourceTree = "<group>"; };
+		CBC6210B13DD27F70048B5C9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = SDKs/MacOSX10.7.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		CBC6210F13DD36F70048B5C9 /* ResPath.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ResPath.hpp; path = ../../source/ResPath.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBC6206E13DD034E0048B5C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBC6210C13DD27F70048B5C9 /* CoreFoundation.framework in Frameworks */,
+				CBC620D413DD0CB30048B5C9 /* OpenGL.framework in Frameworks */,
+				CBC6209913DD03A50048B5C9 /* Carbon.framework in Frameworks */,
+				CBC6209713DD039C0048B5C9 /* libdesteer-mac.a in Frameworks */,
+				CBC6209513DD038C0048B5C9 /* libIrrlicht_mac.a in Frameworks */,
+				CBC6209213DD03740048B5C9 /* GLUT.framework in Frameworks */,
+				CBC6209313DD03740048B5C9 /* IOKit.framework in Frameworks */,
+				CBC6207613DD034F0048B5C9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBC6206413DD03380048B5C9 = {
+			isa = PBXGroup;
+			children = (
+				CBC6207B13DD034F0048B5C9 /* Example With Irrlicht */,
+				CBC6207413DD034F0048B5C9 /* Frameworks */,
+				CBC6207213DD034E0048B5C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBC6207213DD034E0048B5C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBC6207113DD034E0048B5C9 /* Example With Irrlicht.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBC6207413DD034F0048B5C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBC6209613DD039C0048B5C9 /* libdesteer-mac.a */,
+				CBC6209413DD038C0048B5C9 /* libIrrlicht_mac.a */,
+				CBC6210B13DD27F70048B5C9 /* CoreFoundation.framework */,
+				CBC620D313DD0CB30048B5C9 /* OpenGL.framework */,
+				CBC6209813DD03A50048B5C9 /* Carbon.framework */,
+				CBC6209013DD03740048B5C9 /* GLUT.framework */,
+				CBC6209113DD03740048B5C9 /* IOKit.framework */,
+				CBC6207513DD034F0048B5C9 /* Cocoa.framework */,
+				CBC6207713DD034F0048B5C9 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBC6207713DD034F0048B5C9 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBC6207813DD034F0048B5C9 /* AppKit.framework */,
+				CBC6207913DD034F0048B5C9 /* CoreData.framework */,
+				CBC6207A13DD034F0048B5C9 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CBC6207B13DD034F0048B5C9 /* Example With Irrlicht */ = {
+			isa = PBXGroup;
+			children = (
+				CBC6210A13DD13930048B5C9 /* media */,
+				CBC6209A13DD03DB0048B5C9 /* src */,
+				CBC6207C13DD034F0048B5C9 /* Supporting Files */,
+			);
+			path = "Example With Irrlicht";
+			sourceTree = "<group>";
+		};
+		CBC6207C13DD034F0048B5C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB62D0FA13DE45DB00905498 /* MainMenu.xib */,
+				CBC6207D13DD034F0048B5C9 /* Example With Irrlicht-Info.plist */,
+				CBC6207E13DD034F0048B5C9 /* InfoPlist.strings */,
+				CBC6208313DD034F0048B5C9 /* Example With Irrlicht-Prefix.pch */,
+				CBC6208413DD034F0048B5C9 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBC6209A13DD03DB0048B5C9 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CBC6210F13DD36F70048B5C9 /* ResPath.hpp */,
+				CBC6209B13DD03FA0048B5C9 /* IrrlichtBaseEntity.hpp */,
+				CBC6209C13DD03FA0048B5C9 /* IrrlichtMobileEntity.cpp */,
+				CBC6209D13DD03FA0048B5C9 /* IrrlichtMobileEntity.hpp */,
+				CBC6209E13DD03FA0048B5C9 /* main.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		CBC6210A13DD13930048B5C9 /* media */ = {
+			isa = PBXGroup;
+			children = (
+				CBC620FC13DD138B0048B5C9 /* grid.png */,
+				CBC620FD13DD138B0048B5C9 /* grid2.png */,
+				CBC620FE13DD138B0048B5C9 /* v1-solid.png */,
+				CBC620FF13DD138B0048B5C9 /* v1.png */,
+				CBC6210013DD138B0048B5C9 /* v2-solid.png */,
+				CBC6210113DD138B0048B5C9 /* v2.png */,
+				CBC6210213DD138B0048B5C9 /* wall.jpg */,
+			);
+			name = media;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBC6207013DD034E0048B5C9 /* Example With Irrlicht */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBC6208D13DD034F0048B5C9 /* Build configuration list for PBXNativeTarget "Example With Irrlicht" */;
+			buildPhases = (
+				CBC6206D13DD034E0048B5C9 /* Sources */,
+				CBC6206E13DD034E0048B5C9 /* Frameworks */,
+				CBC6206F13DD034E0048B5C9 /* Resources */,
+				CB62D0FE13DE4D2300905498 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Example With Irrlicht";
+			productName = "Example With Irrlicht";
+			productReference = CBC6207113DD034E0048B5C9 /* Example With Irrlicht.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBC6206613DD03380048B5C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = MySelf;
+			};
+			buildConfigurationList = CBC6206913DD03380048B5C9 /* Build configuration list for PBXProject "Mac Example With Irrlicht" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CBC6206413DD03380048B5C9;
+			productRefGroup = CBC6207213DD034E0048B5C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBC6207013DD034E0048B5C9 /* Example With Irrlicht */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBC6206F13DD034E0048B5C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBC6208013DD034F0048B5C9 /* InfoPlist.strings in Resources */,
+				CBC6208613DD034F0048B5C9 /* Credits.rtf in Resources */,
+				CB62D0FB13DE45DC00905498 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBC6206D13DD034E0048B5C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBC6209F13DD03FA0048B5C9 /* IrrlichtMobileEntity.cpp in Sources */,
+				CBC620A013DD03FA0048B5C9 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CBC6207E13DD034F0048B5C9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBC6207F13DD034F0048B5C9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CBC6208413DD034F0048B5C9 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBC6208513DD034F0048B5C9 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBC6206B13DD03380048B5C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		CBC6206C13DD03380048B5C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		CBC6208E13DD034F0048B5C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Example With Irrlicht/Example With Irrlicht-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Example With Irrlicht/Example With Irrlicht-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${SOURCE_ROOT}/../lib/irrlicht-mac\"",
+					"\"${SOURCE_ROOT}/../../../lib\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-L/usr/X11R6/lib";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"${SOURCE_ROOT}/../include\"/** \"${SOURCE_ROOT}/../../../include\"/**";
+				WARNING_LDFLAGS = (
+					"-lXxf86vm",
+					"-L/usr/X11R6/lib",
+					"-lXext",
+					"-lX11",
+					"-ldl",
+					"-ldl",
+					"-lpthread",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CBC6208F13DD034F0048B5C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Example With Irrlicht/Example With Irrlicht-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Example With Irrlicht/Example With Irrlicht-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${SOURCE_ROOT}/../lib/irrlicht-mac\"",
+					"\"${SOURCE_ROOT}/../../../lib\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = "-L/usr/X11R6/lib";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"${SOURCE_ROOT}/../include\"/** \"${SOURCE_ROOT}/../../../include\"/**";
+				WARNING_LDFLAGS = (
+					"-lXxf86vm",
+					"-L/usr/X11R6/lib",
+					"-lXext",
+					"-lX11",
+					"-ldl",
+					"-ldl",
+					"-lpthread",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBC6206913DD03380048B5C9 /* Build configuration list for PBXProject "Mac Example With Irrlicht" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBC6206B13DD03380048B5C9 /* Debug */,
+				CBC6206C13DD03380048B5C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBC6208D13DD034F0048B5C9 /* Build configuration list for PBXNativeTarget "Example With Irrlicht" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBC6208E13DD034F0048B5C9 /* Debug */,
+				CBC6208F13DD034F0048B5C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBC6206613DD03380048B5C9 /* Project object */;
+}

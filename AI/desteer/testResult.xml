@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding='ISO-8859-1' standalone='yes' ?>
+<TestRun>
+  <SuccessfulTests>
+    <Test id="1">
+      <Name>Local to World Vector Transformations::with heading on postive z-axis</Name>
+    </Test>
+    <Test id="2">
+      <Name>Local to World Vector Transformations::with heading on negative z-axis</Name>
+    </Test>
+    <Test id="3">
+      <Name>Local to World Vector Transformations::with heading on postive z-axis with position offset (0,0,5)</Name>
+    </Test>
+    <Test id="4">
+      <Name>Local to World Vector Transformations::with heading on postive z-axis with position offset</Name>
+    </Test>
+    <Test id="5">
+      <Name>Local to World Vector Transformations::with heading on postive z-axis with position offset</Name>
+    </Test>
+    <Test id="6">
+      <Name>Local to World Vector Transformations::with heading on postive z-axis with position offset</Name>
+    </Test>
+    <Test id="1">
+      <Name>World to Local Vector Transformations::with heading on postive z-axis</Name>
+    </Test>
+    <Test id="2">
+      <Name>World to Local Vector Transformations::with heading on negative z-axis</Name>
+    </Test>
+    <Test id="3">
+      <Name>World to Local Vector Transformations::with heading on postive z-axis with position offset (0,0,5)</Name>
+    </Test>
+    <Test id="4">
+      <Name>World to Local Vector Transformations::with heading on postive z-axis with position offset</Name>
+    </Test>
+    <Test id="5">
+      <Name>World to Local Vector Transformations::with heading on postive z-axis with position offset</Name>
+    </Test>
+    <Test id="6">
+      <Name>World to Local Vector Transformations::with heading on postive z-axis with position offset</Name>
+    </Test>
+  </SuccessfulTests>
+  <Statistics>
+    <Tests>12</Tests>
+    <FailuresTotal>0</FailuresTotal>
+    <Errors>0</Errors>
+    <Failures>0</Failures>
+  </Statistics>
+</TestRun>

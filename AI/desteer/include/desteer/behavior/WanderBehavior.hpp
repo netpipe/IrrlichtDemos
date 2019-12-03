@@ -12,6 +12,7 @@ private:
     float _wanderRadius;
     float _wanderDistance;
     float _wanderJitter;
+    irr::core::vector3df _wanderTarget;
 
 public:
     WanderBehavior(float wanderRadius = 10, float wanderDistance = 20, float wanderJitter = 10 );

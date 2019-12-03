@@ -5,6 +5,7 @@
 #ifndef __IRR_POINT_3D_H_INCLUDED__
 #define __IRR_POINT_3D_H_INCLUDED__
 
+#include <iostream>
 #include "irrMath.h"
 
 namespace irr
@@ -56,6 +57,8 @@ namespace core
 		vector3d<T>& operator/=(const vector3d<T>& other) { X/=other.X; Y/=other.Y; Z/=other.Z; return *this; }
 		vector3d<T> operator/(const T v) const { T i=(T)1.0/v; return vector3d<T>(X * i, Y * i, Z * i); }
 		vector3d<T>& operator/=(const T v) { T i=(T)1.0/v; X*=i; Y*=i; Z*=i; return *this; }
+
+//        friend std::ostream& operator << (std::ostream &out,const vector3d<f32> &v);
 
 		//! sort in order X, Y, Z. Equality with rounding tolerance.
 		bool operator<=(const vector3d<T>&other) const
@@ -420,6 +423,11 @@ namespace core
 	//! Function multiplying a scalar and a vector component-wise.
 	template<class S, class T>
 	vector3d<T> operator*(const S scalar, const vector3d<T>& vector) { return vector*scalar; }
+
+//	std::ostream& operator<< (std::ostream &out, const vector3d<f32> &v){
+//        out << "<" << v.X << ", " << v.Y << ", " << v.Z << ">";
+//        return out;
+//    }
 
 } // end namespace core
 } // end namespace irr

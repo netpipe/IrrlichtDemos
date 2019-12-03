@@ -1,0 +1,20 @@
+# Ignore intermediate build files.
+*.o.d
+*.o
+*.lo
+*.a
+*.la
+*.lai
+*.lib
+
+#don't ignore example libs
+!examples/**/lib/*
+!examples/**/lib/**/*
+!examples/**/bin/**/*
+
+#ignore test result files
+tests/bin/*.xml
+
+# Ignore crap codeblocks files
+*.depend
+*.layout

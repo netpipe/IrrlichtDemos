@@ -6,7 +6,7 @@ using namespace entity;
 using namespace irr;
 using namespace core;
 
-SeekBehavior::SeekBehavior(vector3df target, IMobileEntity * mob)
+SeekBehavior::SeekBehavior(IMobileEntity * mob,vector3df target)
 {
     _target = target;
     _mob = mob;

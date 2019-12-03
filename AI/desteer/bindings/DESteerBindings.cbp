@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="DESteerBindings" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="libDESteerBindings" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="libDESteerBindings" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-fexceptions" />
+			<Add option="--std=c++0x" />
+			<Add option="-Werror=return-type" />
+			<Add option="-fdiagnostics-show-option" />
+			<Add option="-Wno-unused-variable" />
+			<Add option="-Wno-unused-parameter" />
+			<Add option="-Wno-deprecated" />
+			<Add option="-Wno-ignored-qualifiers" />
+			<Add directory="../../boost" />
+			<Add directory="../../LikeMagic/Include" />
+			<Add directory="../../io/_build/headers" />
+			<Add directory="Include" />
+			<Add directory="../../desteer/include" />
+		</Compiler>
+		<Unit filename="Include/Bindings/DESteer/Bindings.hpp" />
+		<Unit filename="Include/Bindings/DESteer/Protos.hpp" />
+		<Unit filename="Include/Bindings/DESteer/ScriptedBaseEntity.hpp" />
+		<Unit filename="Include/Bindings/DESteer/ScriptedEntitySpace.hpp" />
+		<Unit filename="Include/Bindings/DESteer/ScriptedMobileEntity.hpp" />
+		<Unit filename="Script/DESteerBindings.io" />
+		<Unit filename="Source/Bindings.cpp" />
+		<Unit filename="Source/Protos.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

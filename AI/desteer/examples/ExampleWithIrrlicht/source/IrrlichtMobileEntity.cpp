@@ -39,7 +39,6 @@ vector3df IrrlichtMobileEntity::ForwardVector() const
 void IrrlichtMobileEntity::SetForwardVector(irr::core::vector3df forward)
 {
      _node->setRotation(forward.getHorizontalAngle());
-
 }
 
 vector3df IrrlichtMobileEntity::SideVector() const
@@ -50,6 +49,11 @@ vector3df IrrlichtMobileEntity::SideVector() const
 void IrrlichtMobileEntity::SetSideVector(irr::core::vector3df side)
 {
     return;
+}
+
+vector3df IrrlichtMobileEntity::SteeringVector() const
+{
+    return _steeringForce;
 }
 
 vector3df IrrlichtMobileEntity::transformWorldVectToLocal(irr::core::vector3df vec)
@@ -75,8 +79,8 @@ void IrrlichtMobileEntity::Update(float timeElapsed)
     //_steering->Calculate() = steering force
     //divided by mass = acceleration
     //times time = velocity
-
-    _velocity += (_steering->Calculate()/_mass) * timeElapsed;
+    _steeringForce = _steering->Calculate()/_mass * timeElapsed;
+    _velocity += _steeringForce;
 
     //truncate velocity to max speed
     _velocity.setLength(irr::core::min_(_velocity.getLength(),_maxSpeed));

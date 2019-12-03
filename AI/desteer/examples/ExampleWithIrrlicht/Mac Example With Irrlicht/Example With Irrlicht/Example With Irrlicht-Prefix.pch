@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Example With Irrlicht' target in the 'Example With Irrlicht' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

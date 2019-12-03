@@ -1,6 +1,15 @@
 #pragma once
+#ifdef __APPLE__
+
 #include "irrlicht.h"
+#include "IBaseEntity.hpp"
+
+#else
+
+#include "irrlicht/irrlicht.h"
 #include "desteer/entity/IBaseEntity.hpp"
+
+#endif
 
 namespace desteer{
 namespace entity {
