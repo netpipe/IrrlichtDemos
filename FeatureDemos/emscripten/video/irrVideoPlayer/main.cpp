@@ -96,7 +96,7 @@ int main(int argc, char *argv[])
     MyEventReceiver receiver;
 
 #ifdef __EMSCRIPTEN__
-    device = createDevice( video::EDT_OGLESv2, dimension2d<u32>(640, 480), 32, false, false, false, &receiver);
+    device = createDevice( video::EDT_OGLES2, dimension2d<u32>(640, 480), 32, false, false, false, &receiver);
 #else
     device = createDevice( video::EDT_OPENGL, dimension2d<u32>(640, 480), 32, false, false, false, &receiver);
 #endif
