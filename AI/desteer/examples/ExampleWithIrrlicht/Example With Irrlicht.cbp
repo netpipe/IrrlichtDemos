@@ -8,8 +8,8 @@
 		<Build>
 			<Target title="Debug">
 				<Option platforms="Windows;" />
-				<Option output="bin/Example With Irrlicht" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="bin" />
+				<Option output="bin/Release/example" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/Release" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -18,7 +18,8 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/Example With Irrlicht" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/example" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/Release" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -42,8 +43,8 @@
 			</Target>
 			<Target title="Debug-Linux">
 				<Option platforms="Unix;" />
-				<Option output="bin/Example With Irrlicht" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="bin" />
+				<Option output="bin/Release/example" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/Release" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
