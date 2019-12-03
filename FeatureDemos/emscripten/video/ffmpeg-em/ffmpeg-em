@@ -12,11 +12,13 @@ downloading=false
 patching=false
 buildinglibs=false
 compileffmpeg=false
+buildexamples=true
 static="disabled" #"enabled" #build static librarys for ffmpeg
 shared="enabled"
 mp4build=false
 #if ( $mp4build )
 webmbuild=true
+buildexamples=true
 
 installing=false
 
@@ -73,7 +75,7 @@ if ( $buildinglibs ) then
 		patch -p1 < ../freetype-asmjs.patch
 	fi
 	#patch -p1 < ../freetype-asmjs.patch
-	emconfigure ./configure	--prefix="$PWD/dist"  CFLAGS="-O3" --host=x86-none-linux 	--build=x86_64 	"--$static-static" --without-zlib 	--without-bzip2 --without-png --without-harfbuzz 
+	emconfigure ./configure	--prefix="$PWD/dist"  CFLAGS="-O3" --host=x86-none-linux --build=x86_64 "--$static-static" --without-zlib --without-bzip2 --without-png --without-harfbuzz 
 	emmake make -j2 && emmake make install
 	cp -r ./dist/lib64 ./dist/lib
 	cp -rf dist ../
@@ -135,9 +137,9 @@ else
 #build ffmpeg
 ###################################################################################
 if [[ $static == "enabled" ]]; then
-PRE_JS="build/pre.js"
-POST_JS_SYNC="build/post-sync.js"
-POST_JS_WORKER="build/post-worker.js"
+PRE_JS="./build/pre.js"
+POST_JS_SYNC="./post-sync.js"
+POST_JS_WORKER="./build/post-worker.js"
 
 COMMON_FILTERS="aresample scale crop overlay"
 COMMON_DEMUXERS="matroska ogg avi mov flv mpegps image2 mp3 concat"
@@ -160,9 +162,9 @@ MP4_SHARED_DEPS="build/lame/dist/lib/libmp3lame.so build/x264/dist/lib/libx264.s
 
 else
 ###################################################################################
-PRE_JS='build/pre.js'
-POST_JS_SYNC='build/post-sync.js'
-POST_JS_WORKER='build/post-worker.js'
+PRE_JS="$PWD/pre.js"
+POST_JS_SYNC="$PWD/post-sync.js"
+POST_JS_WORKER="$PWD/post-worker.js"
 
 COMMON_FILTERS='aresample scale crop overlay'
 COMMON_DEMUXERS='matroska ogg avi mov flv mpegps image2 mp3 concat'
@@ -170,18 +172,18 @@ COMMON_DECODERS='vp8 vp9 theora mpeg2video mpeg4 h264 hevc png mjpeg vorbis opus
 
 WEBM_MUXERS='webm ogg null image2'
 WEBM_ENCODERS='libvpx_vp8 libopus mjpeg'
-FFMPEG_WEBM_BC='build/ffmpeg-webm/ffmpeg.bc'
+FFMPEG_WEBM_BC='../build/ffmpeg-webm/ffmpeg.bc'
 LIBASS_PC_PATH='../freetype/dist/lib/pkgconfig:../fribidi/dist/lib/pkgconfig'
 FFMPEG_WEBM_PC_PATH_="$LIBASS_PC_PATH:../libass/dist/lib/pkgconfig:../opus/dist/lib/pkgconfig"
 FFMPEG_WEBM_PC_PATH="$FFMPEG_WEBM_PC_PATH_"
-LIBASS_DEPS='build/fribidi/dist/lib/libfribidi.so build/freetype/dist/lib/libfreetype.so'
-WEBM_SHARED_DEPS="$LIBASS_DEPS build/libass/dist/lib/libass.so build/opus/dist/lib/libopus.so build/libvpx/dist/lib/libvpx.so"
+LIBASS_DEPS='../build/fribidi/dist/lib/libfribidi.so ../build/freetype/dist/lib/libfreetype.so'
+WEBM_SHARED_DEPS="$LIBASS_DEPS ../build/libass/dist/lib/libass.so ../build/opus/dist/lib/libopus.so ../build/libvpx/dist/lib/libvpx.so"
 
 MP4_MUXERS='mp4 mp3 null'
 MP4_ENCODERS='libx264 libmp3lame aac'
-FFMPEG_MP4_BC='build/ffmpeg-mp4/ffmpeg.bc'
+FFMPEG_MP4_BC='../build/ffmpeg-mp4/ffmpeg.bc'
 FFMPEG_MP4_PC_PATH='../x264/dist/lib/pkgconfig'
-MP4_SHARED_DEPS='build/lame/dist/lib/libmp3lame.a build/x264/dist/lib/libx264.so'
+MP4_SHARED_DEPS='../build/lame/dist/lib/libmp3lame.a ../build/x264/dist/lib/libx264.so'
 fi
 
 
@@ -239,32 +241,26 @@ if ( $compileffmpeg ); then
 		emmake make -j2 && cp ffmpeg ffmpeg.bc
 		cd ..
 
-
+														#might not be html file but a js rather.
 		EMCC_COMMON_ARGS="--closure 1 -s TOTAL_MEMORY=67108864 -O3 --memory-init-file 0 --pre-js $PRE_JS -o test.html" # -s OUTLINING_LIMIT=20000
 
 	fi #mp4build
 fi #compileffmpeg
 ###################################################################################
-	if [[ $buildexamples == false ]]; then
-		#if ( $buildwebm ) then
-			emcc $FFMPEG_WEBM_BC $WEBM_SHARED_DEPS \
-				--post-js $POST_JS_SYNC \
-				$EMCC_COMMON_ARGS
+	if [[ $buildexamples == true ]]; then
+		if ( $buildwebm ) then
+			emcc "$FFMPEG_WEBM_BC" "$WEBM_SHARED_DEPS"  "$EMCC_COMMON_ARGS" --post-js "$POST_JS_SYNC" 
+			emcc "$FFMPEG_WEBM_BC" "$WEBM_SHARED_DEPS"  --post-js "$POST_JS_WORKER" "$EMCC_COMMON_ARGS"
+		fi
+		if ( $buildwebm1 ) then
+			emcc "$FFMPEG_WEBM_BC" "$WEBM_SHARED_DEPS" --post-js "$POST_JS_SYNC" "$EMCC_COMMON_ARGS"
+			emcc "$FFMPEG_WEBM_BC" "$WEBM_SHARED_DEPS"  --post-js "$POST_JS_WORKER" "$EMCC_COMMON_ARGS"
+		fi
 
-			emcc $FFMPEG_WEBM_BC $WEBM_SHARED_DEPS \
-				--post-js $POST_JS_WORKER \
-				$EMCC_COMMON_ARGS
-		#fi
-
-		#if  ( $mp4build ) then
-			emcc $FFMPEG_MP4_BC $MP4_SHARED_DEPS \
-				--post-js $POST_JS_SYNC \
-				$EMCC_COMMON_ARGS
-
-			emcc $FFMPEG_MP4_BC $MP4_SHARED_DEPS \
-				--post-js $POST_JS_WORKER \
-				$EMCC_COMMON_ARGS
-		#fi
+		if  ( $mp4build ) then
+			emcc "$FFMPEG_MP4_BC $MP4_SHARED_DEPS --post-js $POST_JS_SYNC $EMCC_COMMON_ARGS"
+			emcc "$FFMPEG_MP4_BC $MP4_SHARED_DEPS --post-js $POST_JS_WORKER $EMCC_COMMON_ARGS"
+		fi
 	fi
 ###################################################################################
 fi
