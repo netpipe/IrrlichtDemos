@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="desteer" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="lib/desteer" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="lib/DESteer" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/Release/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-O3" />
+					<Add option="-fPIC" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-fPIC" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="include" />
+		</Compiler>
+		<Unit filename="include/desteer/Types.hpp" />
+		<Unit filename="include/desteer/behavior/ArriveBehavior.hpp" />
+		<Unit filename="include/desteer/behavior/EvadeBehavior.hpp" />
+		<Unit filename="include/desteer/behavior/FleeBehavior.hpp" />
+		<Unit filename="include/desteer/behavior/HideBehavior.hpp" />
+		<Unit filename="include/desteer/behavior/ISteeringBehavior.hpp" />
+		<Unit filename="include/desteer/behavior/InterposeBehavior.hpp" />
+		<Unit filename="include/desteer/behavior/ObstacleAvoidanceBehavior.hpp" />
+		<Unit filename="include/desteer/behavior/PursuitBehavior.hpp" />
+		<Unit filename="include/desteer/behavior/SeekBehavior.hpp" />
+		<Unit filename="include/desteer/behavior/WanderBehavior.hpp" />
+		<Unit filename="include/desteer/controller/ISteeringController.hpp" />
+		<Unit filename="include/desteer/controller/ModularSteeringController.hpp" />
+		<Unit filename="include/desteer/controller/SimpleSteeringController.hpp" />
+		<Unit filename="include/desteer/entity/IBaseEntity.hpp" />
+		<Unit filename="include/desteer/entity/IEntitySpace.hpp" />
+		<Unit filename="include/desteer/entity/IMobileEntity.hpp" />
+		<Unit filename="source/ArriveBehavior.cpp" />
+		<Unit filename="source/EvadeBehavior.cpp" />
+		<Unit filename="source/FleeBehavior.cpp" />
+		<Unit filename="source/HideBehavior.cpp" />
+		<Unit filename="source/InterposeBehavior.cpp" />
+		<Unit filename="source/ModularSteeringController.cpp" />
+		<Unit filename="source/ObstacleAvoidanceBehavior.cpp" />
+		<Unit filename="source/PursuitBehavior.cpp" />
+		<Unit filename="source/SeekBehavior.cpp" />
+		<Unit filename="source/SimpleSteeringController.cpp" />
+		<Unit filename="source/WanderBehavior.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

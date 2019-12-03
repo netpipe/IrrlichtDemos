@@ -1,0 +1,126 @@
+# depslib dependency file v1.0
+1306637004 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/source/ArriveBehavior.cpp
+	"desteer/behavior/ArriveBehavior.hpp"
+
+1306637004 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/include/desteer/behavior/ArriveBehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1306637004 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/include/desteer/behavior/ISteeringBehavior.hpp
+	"desteer/entity/IMobileEntity.hpp"
+
+1306637004 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/include/desteer/entity/IMobileEntity.hpp
+	"desteer/entity/IBaseEntity.hpp"
+	"desteer/entity/IEntitySpace.hpp"
+
+1306637004 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/include/desteer/entity/IBaseEntity.hpp
+	"irrvector/vector3d.h"
+
+1306637004 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/include/irrvector/vector3d.h
+	"irrMath.h"
+
+1306637004 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/include/irrvector/irrMath.h
+	"irrTypes.h"
+	<math.h>
+	<float.h>
+	<stdlib.h>
+	<limits.h>
+
+1306637004 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/include/irrvector/irrTypes.h
+	<wchar.h>
+	<crtdbg.h>
+	"assert.h"
+	<stdlib.h>
+	<crtdbg.h>
+
+1306637004 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/include/desteer/entity/IEntitySpace.hpp
+	"irrvector/vector3d.h"
+
+1306637004 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/source/EvadeBehavior.cpp
+	"desteer/behavior/EvadeBehavior.hpp"
+
+1306637004 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/include/desteer/behavior/EvadeBehavior.hpp
+	"desteer/behavior/ISteeringBehavior.hpp"
+	"desteer/behavior/FleeBehavior.hpp"
+
+1306637004 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/include/desteer/behavior/FleeBehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1306637004 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/source/FleeBehavior.cpp
+	"desteer/behavior/FleeBehavior.hpp"
+
+1306637004 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/source/HideBehavior.cpp
+	"desteer/behavior/HideBehavior.hpp"
+
+1306637004 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/include/desteer/behavior/HideBehavior.hpp
+	"ISteeringBehavior.hpp"
+	"desteer/Types.hpp"
+	"desteer/behavior/EvadeBehavior.hpp"
+	"desteer/behavior/ArriveBehavior.hpp"
+
+1306637004 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/include/desteer/Types.hpp
+	<vector>
+	<iterator>
+	"desteer/entity/IMobileEntity.hpp"
+	"desteer/behavior/ISteeringBehavior.hpp"
+
+1306637004 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/source/InterposeBehavior.cpp
+	"desteer/behavior/InterposeBehavior.hpp"
+
+1306637004 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/include/desteer/behavior/InterposeBehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1306637004 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/source/ModularSteeringController.cpp
+	"desteer/controller/ModularSteeringController.hpp"
+
+1306637004 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/include/desteer/controller/ModularSteeringController.hpp
+	"ISteeringController.hpp"
+	"desteer/Types.hpp"
+	"desteer/entity/IMobileEntity.hpp"
+	"desteer/behavior/ISteeringBehavior.hpp"
+
+1306637004 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/include/desteer/controller/ISteeringController.hpp
+	"irrvector/vector3d.h"
+	"desteer/Types.hpp"
+	"desteer/entity/IMobileEntity.hpp"
+
+1306637004 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/source/ObstacleAvoidanceBehavior.cpp
+	"desteer/behavior/ObstacleAvoidanceBehavior.hpp"
+
+1306637004 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/include/desteer/behavior/ObstacleAvoidanceBehavior.hpp
+	"ISteeringBehavior.hpp"
+	"desteer/Types.hpp"
+
+1306637004 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/source/PursuitBehavior.cpp
+	"desteer/behavior/PursuitBehavior.hpp"
+
+1306637004 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/include/desteer/behavior/PursuitBehavior.hpp
+	"desteer/behavior/ISteeringBehavior.hpp"
+	"desteer/behavior/SeekBehavior.hpp"
+
+1306637004 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/include/desteer/behavior/SeekBehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1306637004 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/source/SeekBehavior.cpp
+	"desteer/behavior/SeekBehavior.hpp"
+
+1306637004 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/source/SimpleSteeringController.cpp
+	"desteer/controller/SimpleSteeringController.hpp"
+	"desteer/Types.hpp"
+
+1306637004 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/include/desteer/controller/SimpleSteeringController.hpp
+	"desteer/controller/ISteeringController.hpp"
+	"desteer/behavior/SeekBehavior.hpp"
+	"desteer/behavior/FleeBehavior.hpp"
+	"desteer/behavior/WanderBehavior.hpp"
+	"desteer/behavior/PursuitBehavior.hpp"
+	"desteer/behavior/EvadeBehavior.hpp"
+	"desteer/behavior/ArriveBehavior.hpp"
+	"desteer/behavior/HideBehavior.hpp"
+	"desteer/behavior/ObstacleAvoidanceBehavior.hpp"
+
+1306637004 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/include/desteer/behavior/WanderBehavior.hpp
+	"ISteeringBehavior.hpp"
+
+1306637004 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/AI-Quake/AI/desteer/source/WanderBehavior.cpp
+	"desteer/behavior/WanderBehavior.hpp"
+
