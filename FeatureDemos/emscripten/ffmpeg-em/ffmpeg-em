@@ -1,0 +1,266 @@
+#!/bin/bash
+# Compile FFmpeg and all its dependencies to JavaScript.
+# You need emsdk environment installed and activated, see:
+# <https://kripken.github.io/emscripten-site/docs/getting_started/downloads.html>.
+#credits to Original author https://github.com/Kagami/ffmpeg.js.git
+#remoded version NetPipe v1
+
+#place all files into build folder then put the makefile outside of it if desired
+
+patching=false
+buildinglibs=false
+downloading=false
+static="disabled" #"enabled" #build static librarys for ffmpeg
+shared="enabled"
+
+mp4build=false
+#if ( $mp4build )
+	webmbuild=true
+
+
+installing=true
+if ( $installing ) then
+#package lib files up from dist directorys
+echo "welcome to ffmpeg-em edition"
+fi
+
+if ( $downloading ) then
+	rm build/opus/dist -r -f
+	rm build/freetype/dist -r -f
+	rm build/fribidi/dist -r -f
+	rm build/libass/dist -r -f
+	rm build/libvpx/dist -r -f
+	rm build/lame/dist  -r -f
+	rm build/x264/dist -r -f
+
+	#-cd build/ffmpeg-webm
+	#-cd build/ffmpeg-mp4 
+	mkdir build
+	cd build
+	git clone --depth 3 https://chromium.googlesource.com/webm/libvpx
+	git clone --depth 3 https://github.com/xiph/opus.git
+	git clone --depth 3 https://github.com/libass/libass.git
+	git clone --depth 3 https://github.com/behdad/fribidi.git
+	git clone --depth 3 https://github.com/rbrito/lame.git
+	git clone --depth 3 https://git.videolan.org/git/x264.git
+	git clone --depth 3 https://git.savannah.gnu.org/git/freetype/freetype2.git
+	git clone --depth 3 https://git.ffmpeg.org/ffmpeg.git
+	cp ffmpeg ffmpeg-mp4
+	mv ffmpeg ffmpeg-webm
+fi
+
+if ( $buildinglibs ) then
+	cd ../build/opus && ./autogen.sh
+	cd ..
+	cd ../build/opus
+	emconfigure ./configure CFLAGS=-O3 --prefix="$PWD/dist" "--$static-static" --disable-doc --disable-extra-programs --disable-asm	--disable-rtcd --disable-intrinsics
+	emmake make -j2 && emmake make install
+	cp -r ./dist/lib64 ./dist/lib
+	cp -rf dist ../
+	cd ..
+
+	#cd build/freetype && ./autogen.sh
+	cd ../build/freetype
+	#git reset --hard
+	if ( $patching ) then
+		patch -p1 < ../freetype-asmjs.patch
+	fi
+	#patch -p1 < ../freetype-asmjs.patch
+	emconfigure ./configure	--prefix="$PWD/dist"  CFLAGS="-O3" --host=x86-none-linux 	--build=x86_64 	"--$static-static" --without-zlib 	--without-bzip2 --without-png --without-harfbuzz 
+	emmake make -j2 && emmake make install
+	cp -r ./dist/lib64 ./dist/lib
+	cp -rf dist ../
+	cd ..
+
+
+	cd ../build/fribidi && ./bootstrap
+	if ( $patching)
+	then
+		#git reset --hard && \
+		patch -p1 < ../fribidi-make.patch
+	fi
+	emconfigure ./configure CFLAGS=-O3 NM=llvm-nm --prefix="$PWD/dist" --disable-dependency-tracking --disable-debug --without-glib "--$static-static"
+	emmake make -j2 && emmake make install
+	cp -r ./dist/lib64 ./dist/lib
+	cp -rf dist ../
+	cd ..
+
+
+	#cd build/libass && ./autogen.sh
+	cd ../build/libass
+	EM_PKG_CONFIG_PATH=$LIBASS_PC_PATH  emconfigure ./configure --prefix="$PWD/dist" CFLAGS="-O3" "--$static-static" --disable-enca --disable-fontconfig --disable-require-system-font-provider --disable-harfbuzz --disable-asm FRIBIDI_CFLAGS='-I../../fribidi/dist/include/fribidi' FRIBIDI_LIBS='-L../../fribidi/dist/lib64 -lfribidi' CXXFLAGS='-I../../fribidi/dist/include' CFLAGS='-I../../fribidi/dist/include' LDFLAGS='-L../../fribidi/dist/lib64'
+	emmake make -j2 && emmake make install
+	cp -r ./dist/lib64 ./dist/lib
+	cp -rf dist ../
+	cd ..
+	
+
+	cd ../build/libvpx
+	emconfigure ./configure --prefix="$PWD/dist" --target=generic-gnu --disable-dependency-tracking --disable-multithread --disable-runtime-cpu-detect "--$shared-shared" "--$static-static" --disable-examples --disable-docs --disable-unit-tests --disable-webm-io --disable-libyuv --disable-vp8-decoder --disable-vp9
+	emmake make -j2 && emmake make install
+	cp -r ./dist/lib64 ./dist/lib
+	cp -rf dist ../
+	cd ..
+
+
+	cd ../build/lame
+	if ( $patching ) then
+		patch -p1 < ../lame-configure.patch
+	fi
+	emconfigure ./configure --prefix="$PWD/dist" --host=x86-none-linux "--$static-static" --disable-gtktest --disable-analyzer-hooks --disable-decoder--disable-frontend 
+	emmake make -j2 && emmake make install
+	cp -r ./dist/lib64 ./dist/lib
+	cp -rf dist ../
+	cd ..
+
+
+	cd ../build/x264
+	#git reset --hard && \
+	if ( patching ) then
+		patch -p1 < ../x264-configure.patch 
+	fi
+	emconfigure ./configure --prefix="$PWD/dist" --extra-cflags="-Wno-unknown-warning-option" --host=x86-none-linux --disable-cli "--$shared-shared" "--$static-static" --disable-opencl --disable-thread --disable-asm --disable-avs --disable-swscale --disable-lavf --disable-ffms --disable-gpac --disable-lsmash
+	emmake make -j2 && emmake make install
+	cp -r ./dist/lib64 ./dist/lib
+	cp -rf dist ../
+	cd ..
+else
+
+#build ffmpeg
+if ( $static=="enabled" ) then
+PRE_JS="build/pre.js"
+POST_JS_SYNC="build/post-sync.js"
+POST_JS_WORKER="build/post-worker.js"
+
+COMMON_FILTERS="aresample scale crop overlay"
+COMMON_DEMUXERS="matroska ogg avi mov flv mpegps image2 mp3 concat"
+COMMON_DECODERS="vp8 vp9 theora mpeg2video mpeg4 h264 hevc png mjpeg vorbis opus mp3 ac3 aac ass ssa srt webvtt"
+
+WEBM_MUXERS="webm ogg null image2"
+WEBM_ENCODERS="libvpx_vp8 libopus mjpeg"
+FFMPEG_WEBM_BC="build/ffmpeg-webm/ffmpeg.bc"
+LIBASS_PC_PATH="../freetype/dist/lib/pkgconfig:../fribidi/dist/lib/pkgconfig"
+FFMPEG_WEBM_PC_PATH_="$LIBASS_PC_PATH:../libass/dist/lib/pkgconfig:../opus/dist/lib/pkgconfig"
+FFMPEG_WEBM_PC_PATH="$FFMPEG_WEBM_PC_PATH_"
+LIBASS_DEPS="build/fribidi/dist/lib/libfribidi.so build/freetype/dist/lib/libfreetype.so"
+WEBM_SHARED_DEPS="$LIBASS_DEPS build/libass/dist/lib/libass.so	build/opus/dist/lib/libopus.so build/libvpx/dist/lib/libvpx.so"
+
+MP4_MUXERS="mp4 mp3 null"
+MP4_ENCODERS="libx264 libmp3lame aac"
+FFMPEG_MP4_BC="build/ffmpeg-mp4/ffmpeg.bc"
+FFMPEG_MP4_PC_PATH="../x264/dist/lib/pkgconfig"
+MP4_SHARED_DEPS="build/lame/dist/lib/libmp3lame.so build/x264/dist/lib/libx264.so"
+else
+
+PRE_JS='build/pre.js'
+POST_JS_SYNC='build/post-sync.js'
+POST_JS_WORKER='build/post-worker.js'
+
+COMMON_FILTERS='aresample scale crop overlay'
+COMMON_DEMUXERS='matroska ogg avi mov flv mpegps image2 mp3 concat'
+COMMON_DECODERS='vp8 vp9 theora mpeg2video mpeg4 h264 hevc png mjpeg vorbis opus mp3 ac3 aac ass ssa srt webvtt'
+
+WEBM_MUXERS='webm ogg null image2'
+WEBM_ENCODERS='libvpx_vp8 libopus mjpeg'
+FFMPEG_WEBM_BC='build/ffmpeg-webm/ffmpeg.bc'
+LIBASS_PC_PATH='../freetype/dist/lib/pkgconfig:../fribidi/dist/lib/pkgconfig'
+FFMPEG_WEBM_PC_PATH_="$LIBASS_PC_PATH:../libass/dist/lib/pkgconfig:../opus/dist/lib/pkgconfig"
+FFMPEG_WEBM_PC_PATH="$FFMPEG_WEBM_PC_PATH_"
+LIBASS_DEPS='build/fribidi/dist/lib/libfribidi.so build/freetype/dist/lib/libfreetype.so'
+WEBM_SHARED_DEPS="$LIBASS_DEPS build/libass/dist/lib/libass.so build/opus/dist/lib/libopus.so build/libvpx/dist/lib/libvpx.so"
+
+MP4_MUXERS='mp4 mp3 null'
+MP4_ENCODERS='libx264 libmp3lame aac'
+FFMPEG_MP4_BC='build/ffmpeg-mp4/ffmpeg.bc'
+FFMPEG_MP4_PC_PATH='../x264/dist/lib/pkgconfig'
+MP4_SHARED_DEPS='build/lame/dist/lib/libmp3lame.a build/x264/dist/lib/libx264.so'
+fi
+
+
+FFMPEG_COMMON_ARGS='--cc=emcc --enable-cross-compile --target-os=none --arch=x86 --disable-runtime-cpudetect --disable-asm --disable-fast-unaligned --disable-pthreads --disable-w32threads --disable-os2threads --disable-debug --disable-stripping --disable-all --enable-ffmpeg --enable-avcodec --enable-avformat --enable-avutil --enable-swresample --enable-swscale --enable-avfilter --disable-network --disable-d3d11va --disable-dxva2 --disable-vaapi --disable-vda --disable-vdpau --enable-decoder=vp8 --enable-decoder=vp9 --enable-decoder=theora --enable-decoder=mpeg2video --enable-decoder=mpeg4 --enable-decoder=h264 --enable-decoder=hevc --enable-decoder=png --enable-decoder=mjpeg --enable-decoder=vorbis --enable-decoder=opus --enable-decoder=mp3 --enable-decoder=ac3 --enable-decoder=aac --enable-decoder=ass --enable-decoder=ssa --enable-decoder=srt --enable-decoder=webvtt --enable-demuxer=matroska --enable-demuxer=ogg --enable-demuxer=avi --enable-demuxer=mov --enable-demuxer=flv --enable-demuxer=mpegps --enable-demuxer=image2 --enable-demuxer=mp3 --enable-demuxer=concat --enable-protocol=file --enable-filter=aresample --enable-filter=scale --enable-filter=crop --enable-filter=overlay --disable-bzlib --disable-iconv --disable-libxcb --disable-lzma --disable-sdl --disable-securetransport --disable-xlib --disable-zlib'
+
+if ( $buildwebm ) then
+	echo "building webm"
+	cd ../build/ffmpeg-webm
+	git reset --hard
+	patch -p1 < ../ffmpeg-disable-arc4random.patch
+	patch -p1 < ../ffmpeg-default-font.patch
+	patch -p1 < ../ffmpeg-disable-monotonic.patch
+	LIBASS_PC_PATH='../freetype/dist/lib/pkgconfig:../fribidi/dist/lib/pkgconfig'
+	FFMPEG_WEBM_PC_PATH_="$LIBASS_PC_PATH:../libass/dist/lib/pkgconfig:../opus/dist/lib/pkgconfig"
+	FFMPEG_WEBM_PC_PATH=$FFMPEG_WEBM_PC_PATH_
+	EM_PKG_CONFIG_PATH=$FFMPEG_WEBM_PC_PATH
+	export PKG_CONFIG_PATH=../dist/include/pkgconfig
+	emconfigure ./configure "$FFMPEG_COMMON_ARGS --enable-encoder=libvpx_vp8 --enable-encoder=libopus --enable-encoder=mjpeg--enable-muxer=webm  --enable-muxer=ogg --enable-muxer=null --enable-muxer=image2--enable-filter=subtitles --enable-libass --enable-libopus --enable-libvpx --extra-cflags='-I../libvpx/dist/include' --extra-ldflags='-L../libvpx/dist/lib'"
+
+
+	#testing from console with all commands pasted in.
+	#emconfigure ./configure "--cc=emcc --enable-cross-compile --target-os=none --arch=x86 --disable-runtime-cpudetect --disable-asm --disable-fast-unaligned --disable-pthreads --disable-w32threads --disable-os2threads --disable-debug --disable-stripping --disable-all --enable-ffmpeg --enable-avcodec --enable-avformat --enable-avutil --enable-swresample --enable-swscale --enable-avfilter --disable-network --disable-d3d11va --disable-dxva2 --disable-vaapi --disable-vda --disable-vdpau --enable-decoder=vp8 --enable-decoder=vp9 --enable-decoder=theora --enable-decoder=mpeg2video --enable-decoder=mpeg4 --enable-decoder=h264 --enable-decoder=hevc --enable-decoder=png --enable-decoder=mjpeg --enable-decoder=vorbis --enable-decoder=opus --enable-decoder=mp3 --enable-decoder=ac3 --enable-decoder=aac --enable-decoder=ass --enable-decoder=ssa --enable-decoder=srt --enable-decoder=webvtt --enable-demuxer=matroska --enable-demuxer=ogg --enable-demuxer=avi --enable-demuxer=mov --enable-demuxer=flv --enable-demuxer=mpegps --enable-demuxer=image2 --enable-demuxer=mp3 --enable-demuxer=concat --enable-protocol=file --enable-filter=aresample --enable-filter=scale --enable-filter=crop --enable-filter=overlay --disable-bzlib --disable-iconv --disable-libxcb --disable-lzma --disable-sdl --disable-securetransport --disable-xlib --disable-zlib --enable-encoder=libvpx_vp8 --enable-encoder=libopus --enable-encoder=mjpeg --enable-muxer=webm  --enable-muxer=ogg --enable-muxer=null --enable-muxer=image2--enable-filter=subtitles --enable-libass --enable-libopus --enable-libvpx --extra-cflags='-I../libvpx/dist/include -I../dist/include' --extra-ldflags='-L../libvpx/dist/lib -L../dist/lib'"
+
+
+
+	emmake make -j2
+	emranlib libavfilter/libavfilter.a 
+	emranlib libavformat/libavformat.a 
+	emranlib libavcodec/libavcodec.a
+	emranlib libswresample/libswresample.a 
+	emranlib libswscale/libswscale.a
+	emranlib libavutil/libavutil.a 
+	emmake make -j2 && cp ffmpeg ffmpeg.bc
+
+	cd ..
+fi
+
+
+if  ( $mp4build ) then
+	echo "building mp4"
+	cd ../build/ffmpeg-mp4 
+	#git reset --hard && \
+	patch -p1 < ../ffmpeg-disable-arc4random.patch 
+	patch -p1 < ../ffmpeg-disable-monotonic.patch 
+	EM_PKG_CONFIG_PATH="$FFMPEG_MP4_PC_PATH" emconfigure "./configure $FFMPEG_COMMON_ARGS --enable-encoder=libx264 --enable-encoder=libmp3lame --enable-encoder=aac --enable-muxer=mp4 --enable-muxer=mp3 --enable-muxer=null	--enable-gpl --enable-libmp3lame --enable-libx264 --extra-cflags='-I../lame/dist/include -I../dist/include' --extra-ldflags='-L../lame/dist/lib -L../dist/lib'"
+	emmake make -j2
+	emranlib libavfilter/libavfilter.a 
+	emranlib libavformat/libavformat.a 
+	emranlib libavcodec/libavcodec.a
+	emranlib libswresample/libswresample.a
+	emranlib libswscale/libswscale.a
+	emranlib libavutil/libavutil.a
+
+	emmake make -j2 && cp ffmpeg ffmpeg.bc
+	cd ..
+
+
+	EMCC_COMMON_ARGS="--closure 1 -s TOTAL_MEMORY=67108864 -O3 --memory-init-file 0 --pre-js $PRE_JS -o test.html" # -s OUTLINING_LIMIT=20000
+
+
+
+
+fi
+
+	if ( $buildexamples ) then
+		#if ( $buildwebm ) then
+			emcc $FFMPEG_WEBM_BC $WEBM_SHARED_DEPS \
+				--post-js $POST_JS_SYNC \
+				$EMCC_COMMON_ARGS
+
+			emcc $FFMPEG_WEBM_BC $WEBM_SHARED_DEPS \
+				--post-js $POST_JS_WORKER \
+				$EMCC_COMMON_ARGS
+		#fi
+
+		#if  ( $mp4build ) then
+			emcc $FFMPEG_MP4_BC $MP4_SHARED_DEPS \
+				--post-js $POST_JS_SYNC \
+				$EMCC_COMMON_ARGS
+
+			emcc $FFMPEG_MP4_BC $MP4_SHARED_DEPS \
+				--post-js $POST_JS_WORKER \
+				$EMCC_COMMON_ARGS
+		#fi
+fi
+
+fi
+
+
+
