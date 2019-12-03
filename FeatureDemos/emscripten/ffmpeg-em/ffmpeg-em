@@ -18,13 +18,13 @@ mp4build=false
 #if ( $mp4build )
 webmbuild=true
 
-installing=true
+installing=false
 
 ###################################################################################
 #################    Main Build
 ###################################################################################
 
-if ( $installing ) then
+if ( $installing ); then
 #package lib files up from dist directorys
 echo "welcome to ffmpeg-em edition"
 fi
@@ -69,7 +69,7 @@ if ( $buildinglibs ) then
 	#cd build/freetype && ./autogen.sh
 	cd ../build/freetype
 	#git reset --hard
-	if ( $patching ) then
+	if ( $patching ); then
 		patch -p1 < ../freetype-asmjs.patch
 	fi
 	#patch -p1 < ../freetype-asmjs.patch
@@ -81,8 +81,7 @@ if ( $buildinglibs ) then
 
 ########################################
 	cd ../build/fribidi && ./bootstrap
-	if ( $patching)
-	then
+	if ( $patching);	then
 		#git reset --hard && \
 		patch -p1 < ../fribidi-make.patch
 	fi
@@ -135,7 +134,7 @@ else
 ###################################################################################
 #build ffmpeg
 ###################################################################################
-if ( $static=="enabled" ) then
+if [[ $static == "enabled" ]]; then
 PRE_JS="build/pre.js"
 POST_JS_SYNC="build/post-sync.js"
 POST_JS_WORKER="build/post-worker.js"
@@ -188,8 +187,8 @@ fi
 
 FFMPEG_COMMON_ARGS='--cc=emcc --enable-cross-compile --target-os=none --arch=x86 --disable-runtime-cpudetect --disable-asm --disable-fast-unaligned --disable-pthreads --disable-w32threads --disable-os2threads --disable-debug --disable-stripping --disable-all --enable-ffmpeg --enable-avcodec --enable-avformat --enable-avutil --enable-swresample --enable-swscale --enable-avfilter --disable-network --disable-d3d11va --disable-dxva2 --disable-vaapi --disable-vda --disable-vdpau --enable-decoder=vp8 --enable-decoder=vp9 --enable-decoder=theora --enable-decoder=mpeg2video --enable-decoder=mpeg4 --enable-decoder=h264 --enable-decoder=hevc --enable-decoder=png --enable-decoder=mjpeg --enable-decoder=vorbis --enable-decoder=opus --enable-decoder=mp3 --enable-decoder=ac3 --enable-decoder=aac --enable-decoder=ass --enable-decoder=ssa --enable-decoder=srt --enable-decoder=webvtt --enable-demuxer=matroska --enable-demuxer=ogg --enable-demuxer=avi --enable-demuxer=mov --enable-demuxer=flv --enable-demuxer=mpegps --enable-demuxer=image2 --enable-demuxer=mp3 --enable-demuxer=concat --enable-protocol=file --enable-filter=aresample --enable-filter=scale --enable-filter=crop --enable-filter=overlay --disable-bzlib --disable-iconv --disable-libxcb --disable-lzma --disable-sdl --disable-securetransport --disable-xlib --disable-zlib'
 ###################################################################################
-if ( $compileffmpeg ) then
-	if ( $buildwebm ) then
+if ( $compileffmpeg ); then
+	if ( $buildwebm ); then
 		echo "building webm"
 		cd ../build/ffmpeg-webm
 		git reset --hard
@@ -222,7 +221,7 @@ if ( $compileffmpeg ) then
 	fi #build ffmpeg-webm
 
 
-	if  ( $mp4build ) then
+	if  ( $mp4build ); then
 		echo "building mp4"
 		cd ../build/ffmpeg-mp4 
 		#git reset --hard && \
@@ -246,7 +245,7 @@ if ( $compileffmpeg ) then
 	fi #mp4build
 fi #compileffmpeg
 ###################################################################################
-	if ( $buildexamples ) then
+	if [[ $buildexamples == false ]]; then
 		#if ( $buildwebm ) then
 			emcc $FFMPEG_WEBM_BC $WEBM_SHARED_DEPS \
 				--post-js $POST_JS_SYNC \
