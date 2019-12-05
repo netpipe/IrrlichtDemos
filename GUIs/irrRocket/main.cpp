@@ -23,6 +23,20 @@
 
 #include "CIrrRocketGUI.h"
 
+
+#ifdef __EMSCRIPTEN__
+#include <emscripten.h>
+#endif
+
+
+    irr::IrrlichtDevice *device;
+
+    irr::scene::ISceneManager* smgr;
+    irr::video::IVideoDriver* driver;
+    irr::scene::ISceneNode* node;
+    CIrrRocketGUI *gui;
+
+
 irr::core::rect<irr::s32> getOnScreenRect(irr::scene::ISceneNode* node, irr::scene::ISceneCollisionManager* csmgr)
 {
     irr::core::aabbox3df box = node->getTransformedBoundingBox();
@@ -39,19 +53,77 @@ irr::core::rect<irr::s32> getOnScreenRect(irr::scene::ISceneNode* node, irr::sce
         b.addInternalPoint(spos[i]);
     return b;
 }
+void main_loop(){
 
+  device->run();
+
+            driver->beginScene(true, true, irr::video::SColor(255,0,0,200));
+            smgr->drawAll();
+
+            irr::video::SMaterial mat;
+            mat.Lighting = false;
+            driver->setMaterial(mat);
+            driver->setTransform(irr::video::ETS_WORLD, irr::core::IdentityMatrix);
+            {
+                irr::core::vector3df p1(-20,0,-10);
+                irr::core::vector3df p2(-20,0,10);
+                irr::core::vector3df p3(20,0,10);
+                irr::core::vector3df p4(20,0,-10);
+
+                irr::core::matrix4 mat;
+                irr::core::vector3df rot = smgr->getActiveCamera()->getRotation();
+                rot.X = 0;
+                rot.Z = 0;
+                mat.setRotationDegrees(rot);
+
+
+                irr::core::line3df ray = smgr->getSceneCollisionManager()->getRayFromScreenCoordinates(irr::core::vector2di(512, 384));
+                irr::core::plane3df plane(irr::core::vector3df(0), irr::core::vector3df(0,1,0));
+                irr::core::vector3df out;
+                if (plane.getIntersectionWithLine(ray.start, ray.getVector(), out))
+                {
+                    mat.setTranslation(out);
+
+                    mat.transformVect(p1);
+                    mat.transformVect(p2);
+                    mat.transformVect(p3);
+                    mat.transformVect(p4);
+
+                    irr::core::triangle3df t1(p1, p2, p3);
+                    irr::core::triangle3df t2(p3, p4, p1);
+
+                    driver->draw3DTriangle(t1);
+                    driver->draw3DTriangle(t2);
+
+                    irr::core::aabbox3df box = node->getTransformedBoundingBox();
+
+                    irr::core::rect<irr::s32> b = getOnScreenRect(node, smgr->getSceneCollisionManager());
+
+                    driver->draw3DBox(box);
+
+                    driver->draw2DRectangleOutline(b);
+                }
+            }
+
+
+            gui->run();
+            driver->endScene();
+
+
+    }
 int main()
 {
-    irr::IrrlichtDevice *device = irr::createDevice(irr::video::EDT_OPENGL, irr::core::dimension2d<irr::u32>(1024,768));
 
-    irr::scene::ISceneManager* smgr = device->getSceneManager();
-    irr::video::IVideoDriver* driver = device->getVideoDriver();
+    device = irr::createDevice(irr::video::EDT_OPENGL, irr::core::dimension2d<irr::u32>(1024,768));
+
+     smgr = device->getSceneManager();
+    driver = device->getVideoDriver();
 
     //events e(context);
     //device->setEventReceiver(&e);
 
 
-    irr::scene::ISceneNode* node = smgr->addCubeSceneNode(10);
+    node = smgr->addCubeSceneNode(10);
 
  //   smgr->addCameraSceneNodeFPS();
     smgr->addCameraSceneNode();
@@ -61,11 +133,16 @@ int main()
  //  camera = smgr->addCameraSceneNode(Center,irr::core::vector3df(-14.0f,14.0f,-14.0f),irr::core::vector3df(0,0,0));
  //  camera->setProjectionMatrix(MyMatrix);
 
-    CIrrRocketGUI gui(device);
+    CIrrRocketGUI gui2(device);
+    gui=&gui2;
 
 
 
 
+
+#ifdef __EMSCRIPTEN__
+	emscripten_set_main_loop(main_loop,0,1);
+#else
     while(device->run())
     {
         if (device->isWindowActive())
@@ -119,13 +196,13 @@ int main()
             }
 
 
-            gui.run();
+            gui->run();
             driver->endScene();
         }
         else
             device->yield();
     }
-
+#endif // __EMSCRIPTEN__
     device->drop();
     return 0;
 }
