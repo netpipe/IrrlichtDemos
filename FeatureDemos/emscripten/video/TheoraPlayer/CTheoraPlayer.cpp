@@ -2,11 +2,22 @@
 #include "CTheoraPlayer.h"
 #include <irrlicht.h>
 #include <iostream>
+using namespace irr;
+using namespace scene;
+using namespace video;
+using namespace core;
+using namespace io;
+using namespace gui;
 
 CTheoraPlayer::CTheoraPlayer(irr::IrrlichtDevice* device) :
 iIrrDevice(device), iIrrVideoDriver(device->getVideoDriver()), iTexture(0),
 iImage(0), iVideoFile(0), iTheoraPacketsCount(0), iState(ETPS_IDLE)
 {
+
+      iIrrVideoDriver->getMaterial2D().TextureLayer[0].TextureWrapU = (E_TEXTURE_CLAMP)1;
+iIrrVideoDriver->getMaterial2D().TextureLayer[0].TextureWrapV = (E_TEXTURE_CLAMP)1;
+iIrrVideoDriver->getMaterial2D().TextureLayer[1].TextureWrapU = ETC_CLAMP_TO_EDGE;
+iIrrVideoDriver->getMaterial2D().TextureLayer[1].TextureWrapV = ETC_CLAMP_TO_EDGE;
    // create blank texture
    iBlankTexture = iIrrVideoDriver->addTexture(irr::core::dimension2du(1, 1), "CTheoraPlayerBlankTexture");
 
@@ -16,6 +27,8 @@ iImage(0), iVideoFile(0), iTheoraPacketsCount(0), iState(ETPS_IDLE)
       memset(data, 0xFF, iBlankTexture->getPitch()*iBlankTexture->getSize().Height);
       iBlankTexture->unlock();
    }
+
+
 }
 
 CTheoraPlayer::~CTheoraPlayer()

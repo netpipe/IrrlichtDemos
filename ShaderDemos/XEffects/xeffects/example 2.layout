@@ -1,13 +1,55 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="../Source/CShaderPre.cpp" open="1" top="0" tabpos="3">
-		<Cursor position="0" topLine="20" />
+	<File name="../Source/effectWrapper.h" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="577" topLine="17" />
+		</Cursor>
+		<Folding>
+			<Collapse line="48" />
+			<Collapse line="167" />
+		</Folding>
 	</File>
-	<File name="../Source/effectWrapper.cpp" open="1" top="0" tabpos="2">
-		<Cursor position="0" topLine="416" />
+	<File name="../Source/example2.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1384" topLine="0" />
+		</Cursor>
 	</File>
-	<File name="../Source/example2.cpp" open="1" top="1" tabpos="1">
-		<Cursor position="4710" topLine="132" />
+	<File name="../Source/CShaderPre.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="12" />
+			<Collapse line="22" />
+			<Collapse line="162" />
+			<Collapse line="191" />
+			<Collapse line="201" />
+			<Collapse line="207" />
+			<Collapse line="278" />
+			<Collapse line="295" />
+		</Folding>
 	</File>
+	<File name="../Source/effectWrapper.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="213" topLine="8" />
+		</Cursor>
+		<Folding>
+			<Collapse line="17" />
+			<Collapse line="195" />
+			<Collapse line="208" />
+			<Collapse line="213" />
+			<Collapse line="219" />
+			<Collapse line="225" />
+			<Collapse line="233" />
+			<Collapse line="243" />
+			<Collapse line="249" />
+			<Collapse line="257" />
+			<Collapse line="445" />
+			<Collapse line="447" />
+			<Collapse line="473" />
+		</Folding>
+	</File>
+	<EditorTabsLayout layout="027c15505de68c650018152400000002=0;Xeffects example 2:../Source/example2.cpp,1;Xeffects example 2:../Source/effectWrapper.cpp,2;Xeffects example 2:../Source/CShaderPre.cpp,*3;Xeffects example 2:../Source/effectWrapper.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=460;besth=296;minw=460;minh=296;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=027c15505de68c650018152400000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>

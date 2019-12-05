@@ -25,6 +25,10 @@
 #pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
 
+#ifdef __EMSCRIPTEN__
+#include <emscripten.h>
+#endif
+
 using namespace irr;
 
 using namespace core;
@@ -32,6 +36,16 @@ using namespace scene;
 using namespace video;
 using namespace io;
 using namespace gui;
+
+	IrrlichtDevice *device;
+
+//	if (!device)
+//		return;
+
+	IVideoDriver* driver;
+	ISceneManager* smgr;
+	IGUIEnvironment* guienv;
+
 
 // Enumerations for the gui elements
 enum GUI_ELEMENTS
@@ -204,20 +218,37 @@ private:
 	SAppContext & Context;
 };
 
+void main_loop(){
+		device->run();
+
+		driver->beginScene(true, true, SColor(255,100,101,140));
+
+		smgr->drawAll();
+		guienv->drawAll();
+
+		driver->endScene();
+}
 
 int main()
 {
+	#ifdef __EMSCRIPTEN__
 	// Create a opengl device
-	IrrlichtDevice *device =
+	device =
+		createDevice( video::EDT_OGLES2, dimension2d<u32>(640, 480), 32,
+			false, false, false, 0);
+	#else
+		device =
 		createDevice( video::EDT_OPENGL, dimension2d<u32>(640, 480), 32,
 			false, false, false, 0);
+
+	#endif
 
 //	if (!device)
 //		return;
 
-	IVideoDriver* driver = device->getVideoDriver();
-	ISceneManager* smgr = device->getSceneManager();
-	IGUIEnvironment* guienv = device->getGUIEnvironment();
+	driver = device->getVideoDriver();
+	smgr = device->getSceneManager();
+	guienv = device->getGUIEnvironment();
 
 	// Font and skin setup (file arial10.xml and arial100.png are loaded)
 	guienv->createSkin(EGST_WINDOWS_METALLIC);
@@ -313,6 +344,10 @@ int main()
 	device->setEventReceiver(&receiver);
 
 	// Main loop
+
+	#ifdef __EMSCRIPTEN__
+	emscripten_set_main_loop(main_loop,0,1);
+#else
 	while(device->run())
 	{
 		driver->beginScene(true, true, SColor(255,100,101,140));
@@ -322,7 +357,7 @@ int main()
 
 		driver->endScene();
 	}
-
+#endif // __EMSCRIPTEN__
 
 
 }
