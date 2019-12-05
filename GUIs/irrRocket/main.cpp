@@ -113,9 +113,11 @@ void main_loop(){
     }
 int main()
 {
-
+#ifdef __EMSCRIPTEN__
+    device = irr::createDevice(irr::video::EDT_OGLES2, irr::core::dimension2d<irr::u32>(1024,768));
+#else
     device = irr::createDevice(irr::video::EDT_OPENGL, irr::core::dimension2d<irr::u32>(1024,768));
-
+#endif
      smgr = device->getSceneManager();
     driver = device->getVideoDriver();
 
