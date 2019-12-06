@@ -42,8 +42,6 @@
 					<Add library="theoraplayer" />
 					<Add library="SDL" />
 					<Add library="openal" />
-					<Add library="common" />
-					<Add library="ex-common" />
 					<Add directory="/home/Dev/libs/Scripting/emsdk/emscripten-projects/irrlicht-ogl-es/irrlicht/lib/Linux" />
 					<Add directory="../../libs/libtheoraplayer" />
 					<Add directory="../../libs/theora/" />
@@ -84,8 +82,6 @@
 					<Add library="theoraplayer" />
 					<Add library="SDL" />
 					<Add library="openal" />
-					<Add library="common" />
-					<Add library="ex-common" />
 					<Add directory="/home/Dev/libs/Scripting/emsdk/emscripten-projects/irrlicht-ogl-es/irrlicht/lib/Linux" />
 					<Add directory="../../../../../EMLibs/media/libtheoraplayer" />
 					<Add directory="../../../../../EMLibs/media/theora/" />

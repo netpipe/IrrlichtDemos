@@ -2,6 +2,7 @@
 #define VECTOR3_H
 
 #include "matrix.h"
+#include <math.h>
 
 #ifndef PIOVER180
 #define PIOVER180 0.0174532925f

@@ -1,4 +1,5 @@
 #include "SoundFactory.h"
+#include <unistd.h>
 
 SoundFactory* SoundFactory::instance = NULL;
 

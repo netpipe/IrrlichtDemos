@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="/usr/include/freetype2/freetype" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="/usr/include/freetype2/freetype" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -30,6 +32,14 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add directory="../../../../../../Dev/libs/GUI/freetype-2.5.5/include1" />
+			<Add directory="/usr/include/freetype2/" />
+			<Add directory="../../../../LunaLibs/bullet-2.78/src/BulletCollision" />
+			<Add directory="../../../../LunaLibs/bullet-2.78/src/BulletDynamics" />
+			<Add directory="../../../../LunaLibs/bullet-2.78/src/BulletSoftBody" />
+			<Add directory="../../../../LunaLibs/bullet-2.78/src/LinearMath" />
+			<Add directory="../../../../LunaLibs/bullet-2.78/src/" />
+			<Add directory="/usr/include/libpng16" />
 		</Compiler>
 		<Linker>
 			<Add library="GL" />
@@ -44,6 +54,10 @@
 			<Add library="vorbis" />
 			<Add library="ogg" />
 			<Add library="cal3d" />
+			<Add directory="../../../../LunaLibs/bullet-2.78/src/BulletCollision" />
+			<Add directory="../../../../LunaLibs/bullet-2.78/src/BulletDynamics" />
+			<Add directory="../../../../LunaLibs/bullet-2.78/src/BulletSoftBody" />
+			<Add directory="../../../../LunaLibs/bullet-2.78/src/LinearMath" />
 		</Linker>
 		<Unit filename="src/Azadi.cpp" />
 		<Unit filename="src/Azadi.h" />
@@ -83,8 +97,6 @@
 		<Unit filename="src/GUI/Console/Message.h" />
 		<Unit filename="src/GUI/Drawing.cpp" />
 		<Unit filename="src/GUI/Drawing.h" />
-		<Unit filename="src/GUI/GUI.cpp" />
-		<Unit filename="src/GUI/GUI.h" />
 		<Unit filename="src/GUI/Menu.cpp" />
 		<Unit filename="src/GUI/Menu.h" />
 		<Unit filename="src/GUI/MouseScrollArea.cpp" />
@@ -117,11 +129,11 @@
 		<Unit filename="src/Particle/Particle.h" />
 		<Unit filename="src/Particle/ParticleFactory.cpp" />
 		<Unit filename="src/Particle/ParticleFactory.h" />
-		<Unit filename="src/Physics/Forces/Gravity.cpp" />
 		<Unit filename="src/Physics/Physics.cpp" />
 		<Unit filename="src/Physics/Physics.h" />
-		<Unit filename="src/Scenegraph/SceneGraph.cpp" />
-		<Unit filename="src/Scenegraph/SceneGraph.h" />
+		<Unit filename="src/Scenegraph/BaseNode.cpp" />
+		<Unit filename="src/Scenegraph/BaseNode.h" />
+		<Unit filename="src/Scenegraph/Nodes.h" />
 		<Unit filename="src/Scripting/Headers/Azadi.h" />
 		<Unit filename="src/Scripting/Headers/Drawing.h" />
 		<Unit filename="src/Scripting/Headers/GUI.h" />
@@ -152,8 +164,6 @@
 		<Unit filename="src/Texture/TextureFactory.h" />
 		<Unit filename="src/VGUI/MainMenu.cpp" />
 		<Unit filename="src/VGUI/MainMenu.h" />
-		<Unit filename="src/XML/XML.cpp" />
-		<Unit filename="src/XML/XML.h" />
 		<Unit filename="src/XML/tinystr.cpp" />
 		<Unit filename="src/XML/tinystr.h" />
 		<Unit filename="src/XML/tinyxml.cpp" />
@@ -168,8 +178,6 @@
 		<Unit filename="src/quaternion.h" />
 		<Unit filename="src/tilegrid.h" />
 		<Unit filename="src/vector.h" />
-		<Extensions>
-			<code_completion />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

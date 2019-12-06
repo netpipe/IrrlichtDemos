@@ -14,10 +14,10 @@ iIrrDevice(device), iIrrVideoDriver(device->getVideoDriver()), iTexture(0),
 iImage(0), iVideoFile(0), iTheoraPacketsCount(0), iState(ETPS_IDLE)
 {
 
-      iIrrVideoDriver->getMaterial2D().TextureLayer[0].TextureWrapU = (E_TEXTURE_CLAMP)1;
-iIrrVideoDriver->getMaterial2D().TextureLayer[0].TextureWrapV = (E_TEXTURE_CLAMP)1;
-iIrrVideoDriver->getMaterial2D().TextureLayer[1].TextureWrapU = ETC_CLAMP_TO_EDGE;
-iIrrVideoDriver->getMaterial2D().TextureLayer[1].TextureWrapV = ETC_CLAMP_TO_EDGE;
+//      iIrrVideoDriver->getMaterial2D().TextureLayer[0].TextureWrapU = (E_TEXTURE_CLAMP)1;
+//iIrrVideoDriver->getMaterial2D().TextureLayer[0].TextureWrapV = (E_TEXTURE_CLAMP)1;
+//iIrrVideoDriver->getMaterial2D().TextureLayer[1].TextureWrapU = ETC_CLAMP_TO_EDGE;
+//iIrrVideoDriver->getMaterial2D().TextureLayer[1].TextureWrapV = ETC_CLAMP_TO_EDGE;
    // create blank texture
    iBlankTexture = iIrrVideoDriver->addTexture(irr::core::dimension2du(1, 1), "CTheoraPlayerBlankTexture");
 

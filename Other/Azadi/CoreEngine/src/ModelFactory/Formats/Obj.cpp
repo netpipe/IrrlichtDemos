@@ -1,4 +1,5 @@
 #include "Obj.h"
+#include <string.h>
 
 void ModelTypes::Obj::load(const std::string &filename)
 {

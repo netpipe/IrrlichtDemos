@@ -1,4 +1,5 @@
 #include "FileSystem.h"
+#include <string.h>
 
 FileSystem::FileSystem(const std::string &filename, char *flags)
 {

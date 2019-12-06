@@ -3,9 +3,9 @@
 #include <cstdio>
 
 #ifdef __OSX__
-#include <libpng/png.h>c
+#include <libpng/png.h>
 #else
-#include <png.h>
+#include "png/png.h"
 #endif
 
 TextureFactory* TextureFactory::instance = NULL;

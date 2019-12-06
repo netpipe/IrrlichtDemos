@@ -1,4 +1,6 @@
 #include "BaseNode.h"
+#include <vector>
+#include <iostream>
 
 void SceneGraphNodes::BaseNode::prepRemove()
 {
@@ -29,12 +31,12 @@ void SceneGraphNodes::BaseNode::addChild(BaseNode *child)
 
 bool SceneGraphNodes::BaseNode::childExists(BaseNode *child)
 {
-    return ((find(children.begin(), children.end(), child)) != children.end());
+    return ((std::find(children.begin(), children.end(), child)) != children.end());
 }
 
 void SceneGraphNodes::BaseNode::removeChild(BaseNode *child)
 {
-    std::vector<BaseNode*>::iterator it = find(children.begin(), children.end(), child);
+    std::vector<BaseNode*>::iterator it = std::find(children.begin(), children.end(), child);
     if (it != children.end())
     {
         (*it)->prepRemove();
