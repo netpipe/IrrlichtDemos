@@ -77,6 +77,11 @@ namespace peak
 		{
 			param.DriverType = irr::video::EDT_SOFTWARE;
 		}
+				if (drv == "ogles" || drv == "GLES2" ||
+				drv == "gles")
+		{
+			param.DriverType = irr::video::EDT_OGLES2;
+		}
 
 		device = createDeviceEx(param);
 		if (!device) return false;

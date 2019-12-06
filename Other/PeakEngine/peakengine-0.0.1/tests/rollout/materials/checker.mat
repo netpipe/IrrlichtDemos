@@ -1,9 +1,0 @@
-
-[material]
-name=checker
-type=solid
-wireframe=false
-texturecount=1
-texture0=checker.png
-lighting=true
-

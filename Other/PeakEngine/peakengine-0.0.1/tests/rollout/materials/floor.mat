@@ -1,9 +1,0 @@
-
-[material]
-name=floor
-type=solid
-wireframe=false
-texturecount=1
-texture0=floor.png
-lighting=true
-

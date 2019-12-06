@@ -1,9 +1,0 @@
-
-[material]
-name=wood
-type=solid
-wireframe=false
-texturecount=1
-texture0=wood.png
-lighting=true
-

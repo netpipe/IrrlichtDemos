@@ -1,9 +1,0 @@
-
-[material]
-name=heli
-type=solid
-wireframe=false
-texturecount=1
-texture0=apache.jpg
-lighting=false
-backfaces=true

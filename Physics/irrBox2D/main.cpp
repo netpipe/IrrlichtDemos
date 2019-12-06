@@ -108,7 +108,7 @@ class bwBody
             b2Vec2 position = body->GetPosition();
             float32 angle = body->GetAngle();
 
-            draw2DImage(device->getVideoDriver(), device->getVideoDriver()->getTexture("crate.png"),
+            draw2DImage(device->getVideoDriver(), device->getVideoDriver()->getTexture("./media/crate.png"),
                 rect<irr::s32>(0,0,120,120), position2d<s32>(position.x-10,position.y-10),
                 position2d<s32>(position.x,position.y), angle*RADTODEG, vector2df(0.18,0.18),
                 false, SColor(255,255,255,255));

@@ -76,6 +76,126 @@
 					<Add library="tolua++" />
 				</Linker>
 			</Target>
+			<Target title="emscripten">
+				<Option output="../bin/PeakEngine" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../bin" />
+				<Option object_output="emobj/" />
+				<Option type="1" />
+				<Option compiler="emscripten" />
+				<Option use_console_runner="0" />
+				<Option projectCompilerOptionsRelation="1" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Option projectIncludeDirsRelation="1" />
+				<Option projectLibDirsRelation="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-D_USE_IRRLICHT_" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_IRR_EMSCRIPTEN_PLATFORM_" />
+					<Add option="-D__EMSCRIPTEN__" />
+					<Add directory="../../../../../EMLibs/irrlicht-ogl-es/irrlicht/include" />
+					<Add directory="../../../../../EMLibs/Physics/ode-0.13/include" />
+					<Add directory="include" />
+					<Add directory=".." />
+					<Add directory="../../../../../EMLibs/scripting/lua-5.1.4/src" />
+					<Add directory="../../../../../EMLibs/toluapp/include" />
+					<Add directory="../../../../../EMLibs/net/enet-1.2/include" />
+					<Add directory="../../../../../EMLibs/media/Ogg/include" />
+					<Add directory="../../../../../EMLibs/media/theora/include" />
+					<Add directory="../../../../../EMLibs/media/openal-soft/include" />
+					<Add directory="../../../../../EMLibs/media/freealut/include" />
+					<Add directory="../../../../../EMLibs/media/Vorbis/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add option="unix" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s ALLOW_MEMORY_GROWTH=1" />
+					<Add option="--preload-file media/" />
+					<Add option="-s FULL_ES2=1" />
+					<Add option="-s DISABLE_EXCEPTION_CATCHING=0" />
+					<Add option="-s NO_EXIT_RUNTIME=1" />
+					<Add library="Irrlicht" />
+					<Add library="enet" />
+					<Add library="tolua++" />
+					<Add library="lua" />
+					<Add library="ode" />
+					<Add library="openal" />
+					<Add library="winmm" />
+					<Add library="ogg" />
+					<Add library="vorbis" />
+					<Add library="vorbisfile" />
+					<Add library="vorbisenc" />
+					<Add library="alut" />
+					<Add directory="../../../../../EMLibs/irrlicht-ogl-es/irrlicht/lib/Linux" />
+					<Add directory="../../../../../EMLibs/Physics/ode-0.13/ode/src/.libs" />
+				</Linker>
+			</Target>
+			<Target title="emscripten2">
+				<Option output="../bin/PeakEngine" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="../bin" />
+				<Option object_output="emobj/" />
+				<Option type="1" />
+				<Option compiler="emscripten" />
+				<Option use_console_runner="0" />
+				<Option projectCompilerOptionsRelation="1" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Option projectIncludeDirsRelation="1" />
+				<Option projectLibDirsRelation="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-D_USE_IRRLICHT_" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_IRR_EMSCRIPTEN_PLATFORM_" />
+					<Add option="-D__EMSCRIPTEN__" />
+					<Add directory="../../../../../EMLibs/irrlicht-ogl-es/irrlicht/include" />
+					<Add directory="../../../../../EMLibs/Physics/ode-0.13/include" />
+					<Add directory="include" />
+					<Add directory=".." />
+					<Add directory="../../../../../EMLibs/scripting/lua-5.1.4/src" />
+					<Add directory="../../../../../EMLibs/toluapp/include" />
+					<Add directory="../../../../../EMLibs/net/enet-1.2/include" />
+					<Add directory="../../../../../EMLibs/media/Ogg/include" />
+					<Add directory="../../../../../EMLibs/media/theora/include" />
+					<Add directory="../../../../../EMLibs/media/openal-soft/include" />
+					<Add directory="../../../../../EMLibs/media/freealut/include" />
+					<Add directory="../../../../../EMLibs/media/Vorbis/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add option="unix" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s ALLOW_MEMORY_GROWTH=1" />
+					<Add option="--preload-file /media/" />
+					<Add option="-s FULL_ES2=1" />
+					<Add option="-s DISABLE_EXCEPTION_CATCHING=0" />
+					<Add option="-s NO_EXIT_RUNTIME=1" />
+					<Add library="Irrlicht" />
+					<Add library="enet" />
+					<Add library="lua" />
+					<Add library="tolua++" />
+					<Add library="ode" />
+					<Add library="openal" />
+					<Add library="ogg" />
+					<Add library="vorbis" />
+					<Add library="vorbisfile" />
+					<Add library="alut" />
+					<Add library="common" />
+					<Add library="ex-common" />
+					<Add directory="../../../../../EMLibs/irrlicht-ogl-es/irrlicht/lib/Linux" />
+					<Add directory="../../../../../EMLibs/Physics/ode-0.13/ode/src/.libs" />
+					<Add directory="../../../../../EMLibs/scripting/lua-5.1.4/src" />
+					<Add directory="../../../../../EMLibs/toluapp/lib" />
+					<Add directory="../../../../../EMLibs/net/enet-1.2" />
+					<Add directory="../../../../../EMLibs/media/Ogg/" />
+					<Add directory="../../../../../EMLibs/media/theora/" />
+					<Add directory="../../../../../EMLibs/media/openal-soft" />
+					<Add directory="../../../../../EMLibs/media/freealut/src/.libs" />
+					<Add directory="../../../../../EMLibs/media/Vorbis" />
+				</Linker>
+			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-D_USE_IRRLICHT_" />
@@ -232,6 +352,7 @@
 		<Unit filename="src/graphic/irr/Terrain.cpp" />
 		<Unit filename="src/graphic/irr/TextureOverlay.cpp" />
 		<Unit filename="src/lua_src.cpp" />
+		<Unit filename="src/main.cpp" />
 		<Unit filename="src/menu/Button.cpp" />
 		<Unit filename="src/menu/CheckBox.cpp" />
 		<Unit filename="src/menu/ComboBox.cpp" />
