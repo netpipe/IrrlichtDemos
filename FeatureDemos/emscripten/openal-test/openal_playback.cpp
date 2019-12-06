@@ -144,7 +144,7 @@ int main() {
   alGenBuffers(1, buffers);
 
 #ifdef __EMSCRIPTEN__
-  FILE* source = fopen("media/bling.wav", "rb");
+  FILE* source = fopen("./media/bling.wav", "rb");
 #else
   FILE* source = fopen("sounds/audio.wav", "rb");
 #endif
