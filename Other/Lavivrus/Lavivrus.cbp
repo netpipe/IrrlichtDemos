@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Lavivrus" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./Pong" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="Xxf86vm" />
+			<Add library="X11" />
+			<Add library="SDL" />
+			<Add library="GLU" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+		</Linker>
+		<Unit filename="CSystems.h" />
+		<Unit filename="Lavivrus.h" />
+		<Unit filename="ObjLoader.cpp" />
+		<Unit filename="ObjLoader.h" />
+		<Unit filename="Physics.h" />
+		<Unit filename="lavivrus.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
