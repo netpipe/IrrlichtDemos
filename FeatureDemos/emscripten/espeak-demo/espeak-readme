@@ -1,1 +1,8 @@
 https://github.com/kripken/speak.js.git compile espeak from here then link to it.
+
+#after it compiles
+#search for line 
+#      var Module = {
+#and add 
+#arguments: ['-h','-waudio.wav','-ven/en-us', '-f"/usr/speak.txt'],
+#to test.html
