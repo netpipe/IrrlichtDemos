@@ -8,26 +8,53 @@
 
 #place all files into build folder then put the makefile outside of it if desired
 ###################################################################################
-downloading=false
-patching=false
-
-compileffmpeg=0
-buildexamples=1
-static="disabled" #"enabled" #build static librarys for ffmpeg
-shared="enabled"
+compileffmpeg=1
+buildexamples=0
 
 mp4build=0
 webmbuild=1
-buildexamples=1
-buildinglibs=1
-#LIBS might add checker later to see if there is lib already in the dist folder
-opus=0
-fribidi=0
-freetype=0
-libass=0
-vpx=0
-lame=0
+
+buildinglibs=0
+downloading=0
+patching=0
+static="disabled" #"enabled" #build static librarys for ffmpeg
+shared="enabled"
+#LIBS might add checker later to see if there is lib already in the dist folder+
+
+
+opus=1
+fribidi=1
+freetype=1
+libass=1
+vpx=1
+lame=1
 x264=1
+
+checkrebuild=0
+if (( $checkrebuild )); then
+	if -f  test "../build/opus/dist/lib" ; then
+		opus=0
+	fi
+	if -f  test "../build/fribidi/dist/lib" ; then
+		fribidi=0
+	fi
+	if -f  test "../build/freetype/dist/lib" ; then
+		freetype=0
+	fi
+	if -f  test "../build/libass/dist/lib" ; then
+		libass=0
+	fi
+	if -f  test "../build/vpx/dist/lib" ; then
+		vpx=0
+	fi
+	if -f  test "../build/lame/dist/lib" ; then
+		lame=0
+	fi
+	if -f  test "../build/x264/dist/lib" ; then
+		x264=0
+	fi
+fi
+
 
 installing=1
 ###################################################################################
@@ -228,7 +255,7 @@ fi
 FFMPEG_COMMON_ARGS='--cc=emcc --enable-cross-compile --target-os=none --arch=x86 --disable-runtime-cpudetect --disable-asm --disable-fast-unaligned --disable-pthreads --disable-w32threads --disable-os2threads --disable-debug --disable-stripping --disable-all --enable-ffmpeg --enable-avcodec --enable-avformat --enable-avutil --enable-swresample --enable-swscale --enable-avfilter --disable-network --disable-d3d11va --disable-dxva2 --disable-vaapi --disable-vda --disable-vdpau --enable-decoder=vp8 --enable-decoder=vp9 --enable-decoder=theora --enable-decoder=mpeg2video --enable-decoder=mpeg4 --enable-decoder=h264 --enable-decoder=hevc --enable-decoder=png --enable-decoder=mjpeg --enable-decoder=vorbis --enable-decoder=opus --enable-decoder=mp3 --enable-decoder=ac3 --enable-decoder=aac --enable-decoder=ass --enable-decoder=ssa --enable-decoder=srt --enable-decoder=webvtt --enable-demuxer=matroska --enable-demuxer=ogg --enable-demuxer=avi --enable-demuxer=mov --enable-demuxer=flv --enable-demuxer=mpegps --enable-demuxer=image2 --enable-demuxer=mp3 --enable-demuxer=concat --enable-protocol=file --enable-filter=aresample --enable-filter=scale --enable-filter=crop --enable-filter=overlay --disable-bzlib --disable-iconv --disable-libxcb --disable-lzma --disable-sdl --disable-securetransport --disable-xlib --disable-zlib'
 ###################################################################################
 if (( $compileffmpeg )); then
-	if (( $buildwebm )); then
+	if (( $webmbuild )); then
 	echo "Building ffmpeg-webm"
 	echo "########################################"
 		cd ../build/ffmpeg-webm
