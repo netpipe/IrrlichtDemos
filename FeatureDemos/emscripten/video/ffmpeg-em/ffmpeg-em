@@ -10,25 +10,25 @@
 ###################################################################################
 downloading=false
 patching=false
-buildinglibs=false
-compileffmpeg=false
-buildexamples=true
+
+compileffmpeg=0
+buildexamples=1
 static="disabled" #"enabled" #build static librarys for ffmpeg
 shared="enabled"
-mp4build=false
-#if (( $mp4build )
-webmbuild=true
-buildexamples=true
 
-
-
+mp4build=0
+webmbuild=1
+buildexamples=1
+buildinglibs=1
+#LIBS might add checker later to see if there is lib already in the dist folder
 opus=0
 fribidi=0
 freetype=0
 libass=0
 vpx=0
-lame=0 
-x264=0
+lame=0
+x264=1
+
 installing=1
 ###################################################################################
 #################    Main Build
@@ -66,91 +66,111 @@ fi
 
 ########################################
 if (( $buildinglibs )); then
-if (( $opus )); then
-	cd ../build/opus && ./autogen.sh
-	cd ..
-	cd ../build/opus
-	emconfigure ./configure CFLAGS=-O3 --prefix="$PWD/dist" "--$static-static" --disable-doc --disable-extra-programs --disable-asm	--disable-rtcd --disable-intrinsics
-	emmake make -j2 && emmake make install
-	cp -r ./dist/lib64 ./dist/lib
-	cp -rf dist ../
-	cd ..
-fi
-########################################
-if (( $freetype )); then
-	#cd build/freetype && ./autogen.sh
-	cd ../build/freetype
-	#git reset --hard
-	if (( $patching )); then
-		patch -p1 < ../freetype-asmjs.patch
+		echo "Building LIBS"
+		echo "########################################"
+	if (( $opus )); then
+		echo "Building Opus"
+		echo "########################################"
+		cd ../build/opus && ./autogen.sh
+		cd ..
+		cd ../build/opus
+		emconfigure ./configure CFLAGS=-O3 --prefix="$PWD/dist" --$static-static --disable-doc --disable-extra-programs --disable-asm	--disable-rtcd --disable-intrinsics
+		emmake make -j2 && emmake make install
+		cp -r ./dist/lib64 ./dist/lib
+		cp -rf dist ../
+		cd ..
 	fi
-	#patch -p1 < ../freetype-asmjs.patch
-	emconfigure ./configure	--prefix="$PWD/dist"  CFLAGS="-O3" --host=x86-none-linux --build=x86_64 "--$static-static" --without-zlib --without-bzip2 --without-png --without-harfbuzz 
-	emmake make -j2 && emmake make install
-	cp -r ./dist/lib64 ./dist/lib
-	cp -rf dist ../
-	cd ..
-fi
-########################################
-if (( $fribidi )); then
-	cd ../build/fribidi && ./bootstrap
-	if (( $patching));	then
-		#git reset --hard && \
-		patch -p1 < ../fribidi-make.patch
-	fi
-	emconfigure ./configure CFLAGS=-O3 --prefix="$PWD/dist" --disable-dependency-tracking --disable-debug --without-glib "--$static-static"
-	#emconfigure ./configure CFLAGS=-O3 NM=llvm-nm --prefix="$PWD/dist" --disable-dependency-tracking --disable-debug --without-glib "--$static-static"
-	emmake make -j2 && emmake make install
-	cp -r ./dist/lib64 ./dist/lib
-	cp -rf dist ../
-	cd ..
-fi
-########################################
-if (( $libass )); then
-	#cd build/libass && ./autogen.sh
-	cd ../build/libass
-	EM_PKG_CONFIG_PATH=$LIBASS_PC_PATH  emconfigure ./configure --prefix="$PWD/dist" CFLAGS="-O3" "--$static-static" --disable-enca --disable-fontconfig --disable-require-system-font-provider --disable-harfbuzz --disable-asm FRIBIDI_CFLAGS='-I../../fribidi/dist/include/fribidi' FRIBIDI_LIBS='-L../../fribidi/dist/lib64 -lfribidi' CXXFLAGS='-I../../fribidi/dist/include' CFLAGS='-I../../fribidi/dist/include' LDFLAGS='-L../../fribidi/dist/lib64'
-	emmake make -j2 && emmake make install
-	cp -r ./dist/lib64 ./dist/lib
-	cp -rf dist ../
-	cd ..
-fi
-########################################
-if (( $vpx )); then
-	cd ../build/libvpx
-	emconfigure ./configure --prefix="$PWD/dist" --target=generic-gnu --disable-dependency-tracking --disable-multithread --disable-runtime-cpu-detect "--$shared-shared" "--$static-static" --disable-examples --disable-docs --disable-unit-tests --disable-webm-io --disable-libyuv --disable-vp8-decoder --disable-vp9
-	emmake make -j2 && emmake make install
-	cp -r ./dist/lib64 ./dist/lib
-	cp -rf dist ../
-	cd ..
-fi
-########################################
-if (( $lame )); then
-	cd ../build/lame
-	if (( $patching )); then
-		patch -p1 < ../lame-configure.patch
-	fi
-	emconfigure ./configure --prefix="$PWD/dist" --host=x86-none-linux "--$static-static" --disable-gtktest --disable-analyzer-hooks --disable-decoder--disable-frontend 
-	emmake make -j2 && emmake make install
-	cp -r ./dist/lib64 ./dist/lib
-	cp -rf dist ../
-	cd ..
-fi
-#######################################
-if (( $x264 )); then
-	cd ../build/x264
-	#git reset --hard && \
-	if (( patching )); then
-		patch -p1 < ../x264-configure.patch 
-	fi
-	emconfigure ./configure --prefix="$PWD/dist" --extra-cflags="-Wno-unknown-warning-option" --host=x86-none-linux --disable-cli "--$shared-shared" "--$static-static" --disable-opencl --disable-thread --disable-asm --disable-avs --disable-swscale --disable-lavf --disable-ffms --disable-gpac --disable-lsmash
-	emmake make -j2 && emmake make install
-	cp -r ./dist/lib64 ./dist/lib
-	cp -rf dist ../
-	cd ..
-fi
 
-else
+########################################
+	if (( $freetype )); then
+		echo "Building Opus"
+		echo "########################################"
+		#cd build/freetype && ./autogen.sh
+		cd ../build/freetype
+		#git reset --hard
+		if (( $patching )); then
+			patch -p1 < ../freetype-asmjs.patch
+		fi
+		#patch -p1 < ../freetype-asmjs.patch
+		emconfigure ./configure	--prefix="$PWD/dist"  CFLAGS="-O3" --host=x86-none-linux --build=x86_64 --$static-static --without-zlib --without-bzip2 --without-png --without-harfbuzz 
+		emmake make -j2 && emmake make install
+		cp -r ./dist/lib64 ./dist/lib
+		cp -rf dist ../
+		cd ..
+	fi
+
+########################################
+	if (( $fribidi )); then
+		echo "Building fribidi"
+		echo "########################################"
+		cd ../build/fribidi && ./bootstrap
+		if (( $patching));	then
+			#git reset --hard && \
+			patch -p1 < ../fribidi-make.patch
+		fi
+		emconfigure ./configure CFLAGS=-O3 --prefix="$PWD/dist" --disable-dependency-tracking --disable-debug --without-glib --$static-static
+		#emconfigure ./configure CFLAGS=-O3 NM=llvm-nm --prefix="$PWD/dist" --disable-dependency-tracking --disable-debug --without-glib "--$static-static"
+		emmake make -j2 && emmake make install
+		cp -r ./dist/lib64 ./dist/lib
+		cp -rf dist ../
+		cd ..
+	fi
+
+########################################
+	if (( $libass )); then
+		echo "Building libass"
+		echo "########################################"
+		#cd build/libass && ./autogen.sh
+		cd ../build/libass
+		EM_PKG_CONFIG_PATH=$LIBASS_PC_PATH  emconfigure ./configure --prefix="$PWD/dist" CFLAGS="-O3" --$static-static --disable-enca --disable-fontconfig --disable-require-system-font-provider --disable-harfbuzz --disable-asm FRIBIDI_CFLAGS='-I../../fribidi/dist/include/fribidi' FRIBIDI_LIBS='-L../../fribidi/dist/lib64 -lfribidi' CXXFLAGS='-I../../fribidi/dist/include' CFLAGS='-I../../fribidi/dist/include' LDFLAGS='-L../../fribidi/dist/lib64'
+		emmake make -j2 && emmake make install
+		cp -r ./dist/lib64 ./dist/lib
+		cp -rf dist ../
+		cd ..
+	fi
+
+########################################
+	if (( $vpx )); then
+		echo "Building libvpx"
+		echo "########################################"
+		cd ../build/libvpx
+		emconfigure ./configure --prefix="$PWD/dist" --target=generic-gnu --disable-dependency-tracking --disable-multithread --disable-runtime-cpu-detect --$shared-shared --$static-static --disable-examples --disable-docs --disable-unit-tests --disable-webm-io --disable-libyuv --disable-vp8-decoder --disable-vp9
+		emmake make -j2 && emmake make install
+		cp -r ./dist/lib64 ./dist/lib
+		cp -rf dist ../
+		cd ..
+	fi
+########################################
+	if (( $lame )); then
+		echo "Building lame"
+		echo "########################################"
+		cd ../build/lame
+		if (( $patching )); then
+			patch -p1 < ../lame-configure.patch
+		fi
+		emconfigure ./configure --prefix="$PWD/dist" --host=x86-none-linux --$static-static --disable-gtktest --disable-analyzer-hooks --disable-decoder--disable-frontend 
+		emmake make -j2 && emmake make install
+		cp -r ./dist/lib64 ./dist/lib
+		cp -rf dist ../
+		cd ..
+	fi
+#######################################
+	if (( $x264 )); then
+		echo "Building x264"
+		echo "########################################"
+		cd ../build/x264
+		if (( patching )); then
+			#git reset --hard 
+			patch -p1 < ../x264-configure.patch 
+		fi
+		emconfigure ./configure --prefix="$PWD/dist" --extra-cflags="-Wno-unknown-warning-option" --host=x86-none-linux --disable-cli --$shared-shared --$static-static --disable-opencl --disable-thread --disable-asm --disable-avs --disable-swscale --disable-lavf --disable-ffms --disable-gpac --disable-lsmash
+		emmake make -j2 && emmake make install
+		cp -r ./dist/lib64 ./dist/lib
+		cp -rf dist ../
+		cd ..
+	fi
+
+fi
 ###################################################################################
 #build ffmpeg
 ###################################################################################
@@ -209,7 +229,8 @@ FFMPEG_COMMON_ARGS='--cc=emcc --enable-cross-compile --target-os=none --arch=x86
 ###################################################################################
 if (( $compileffmpeg )); then
 	if (( $buildwebm )); then
-		echo "building webm"
+	echo "Building ffmpeg-webm"
+	echo "########################################"
 		cd ../build/ffmpeg-webm
 		git reset --hard
 		patch -p1 < ../ffmpeg-disable-arc4random.patch
@@ -242,7 +263,8 @@ if (( $compileffmpeg )); then
 
 
 	if  (( $mp4build )); then
-		echo "building mp4"
+	echo "Building ffmpeg-mp4"
+	echo "########################################"
 		cd ../build/ffmpeg-mp4 
 		#git reset --hard && \
 		patch -p1 < ../ffmpeg-disable-arc4random.patch 
@@ -281,7 +303,6 @@ if (( $compileffmpeg )); then
 		fi
 	fi
 ###################################################################################
-fi
 
 
 
