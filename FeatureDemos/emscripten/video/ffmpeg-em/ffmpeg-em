@@ -98,7 +98,8 @@ if (( $fribidi )); then
 		#git reset --hard && \
 		patch -p1 < ../fribidi-make.patch
 	fi
-	emconfigure ./configure CFLAGS=-O3 NM=llvm-nm --prefix="$PWD/dist" --disable-dependency-tracking --disable-debug --without-glib "--$static-static"
+	emconfigure ./configure CFLAGS=-O3 --prefix="$PWD/dist" --disable-dependency-tracking --disable-debug --without-glib "--$static-static"
+	#emconfigure ./configure CFLAGS=-O3 NM=llvm-nm --prefix="$PWD/dist" --disable-dependency-tracking --disable-debug --without-glib "--$static-static"
 	emmake make -j2 && emmake make install
 	cp -r ./dist/lib64 ./dist/lib
 	cp -rf dist ../
