@@ -307,12 +307,13 @@ fftMeasure (int nframes, int overlap, float *indata)
 
       for (k=0; k<=fftSize/2; k++) {
 	long qpd;
-	float
-	  real = creal(fftOut[k]),
-	  imag = cimag(fftOut[k]),
-	  magnitude = 20.*log10(2.*sqrt(real*real + imag*imag)/fftSize),
-	  phase = atan2(imag, real),
-	  tmp, freq;
+
+	float real = creal(fftOut[k]);
+	  float imag = cimag(fftOut[k]);
+	  float magnitude = 20.*log10(2.*sqrt(real*real + imag*imag)/fftSize),
+	  float phase = atan2(imag, real),
+	  float tmp;
+	  float freq;
 
         /* compute phase difference */
         tmp = phase - fftLastPhase[k];

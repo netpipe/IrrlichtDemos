@@ -1,4 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="All" />
+	<File name="tuneit.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7632" topLine="156" />
+		</Cursor>
+		<Folding>
+			<Collapse line="56" />
+			<Collapse line="63" />
+			<Collapse line="145" />
+			<Collapse line="159" />
+			<Collapse line="167" />
+			<Collapse line="177" />
+			<Collapse line="222" />
+			<Collapse line="233" />
+		</Folding>
+	</File>
+	<File name="Font/CGUITTFont.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1382" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Font/CGUITTFont.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6237" topLine="0" />
+		</Cursor>
+	</File>
+	<EditorTabsLayout layout="040f29505dec5757001087c000000002=*0;irrTune:tuneit.cpp,1;irrTune:Font/CGUITTFont.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=488;besth=296;minw=488;minh=296;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=040f29505dec5757001087c000000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>

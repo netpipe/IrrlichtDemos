@@ -90,7 +90,7 @@ void CGUITTGlyph::cache(u32 idx_, FT_Face face_, video::IVideoDriver* driver_)
 				memset(texd,0,imgw*imgh*sizeof(u32));
 				u32 *texp = texd;
 				offset = size - bits.rows;
-				bool cflag = (driver_->getDriverType() == video::EDT_DIRECT3D8);
+				bool cflag = (driver_->getDriverType() == video::EDT_DIRECT3D9);
 				for (int i = 0;i < bits.rows;i++)
 				{
 					u32 *rowp = texp;
@@ -120,7 +120,7 @@ void CGUITTGlyph::cache(u32 idx_, FT_Face face_, video::IVideoDriver* driver_)
 				}
 				c8 name[128];
 //				sprintf_s(name,"TTFontGlyph%d",idx_);
-				video::IImage *img = driver_->createImageFromData(video::ECF_A8R8G8B8,core::dimension2d<s32>(imgw,imgh),texd);
+				video::IImage *img = driver_->createImageFromData(video::ECF_A8R8G8B8,core::dimension2d<u32>(imgw,imgh),texd);
 				bool flg16 = driver_->getTextureCreationFlag(video::ETCF_ALWAYS_16_BIT);
 				bool flg32 = driver_->getTextureCreationFlag(video::ETCF_ALWAYS_32_BIT);
 				driver_->setTextureCreationFlag(video::ETCF_ALWAYS_16_BIT,false);
@@ -195,7 +195,7 @@ void CGUITTGlyph::cache(u32 idx_, FT_Face face_, video::IVideoDriver* driver_)
 		}
 		c8 name[128];
 //		sprintf_s(name,"TTFontGlyph%d_16",idx_);
-		video::IImage *img = driver_->createImageFromData(video::ECF_A1R5G5B5,core::dimension2d<s32>(imgw16,imgh16),texd16);
+		video::IImage *img = driver_->createImageFromData(video::ECF_A1R5G5B5,core::dimension2d<u32>(imgw16,imgh16),texd16);
 		tex16 = driver_->addTexture(name,img);
 		img->drop();
 		driver_->makeColorKeyTexture(tex16,video::SColor(0,0,0,0));
@@ -297,9 +297,9 @@ u32 CGUITTFont::getGlyphByChar(wchar_t c) const
 }
 
 //! returns the dimension of a text
-core::dimension2d<s32> CGUITTFont::getDimension(const wchar_t* text) const
+core::dimension2d<u32> CGUITTFont::getDimension(const wchar_t* text) const
 {
-	core::dimension2d<s32> dim(0, Glyphs[0]->size);
+	core::dimension2d<u32> dim(0, Glyphs[0]->size);
 
 	for(const wchar_t* p = text; *p; ++p){
 		dim.Width += getWidthFromCharacter(*p);

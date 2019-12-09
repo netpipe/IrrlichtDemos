@@ -14,6 +14,7 @@
 				<Option projectResourceIncludeDirsRelation="1" />
 				<Compiler>
 					<Add option="-Wextra" />
+					<Add option="-std=gnu++14" />
 				</Compiler>
 			</Target>
 		</Build>
@@ -21,8 +22,9 @@
 			<Add alias="All" targets="default;" />
 		</VirtualTargets>
 		<Compiler>
-			<Add directory="/home/Dev/libs/Irrlicht/include" />
-			<Add directory="/home/Dev/libs/gui/freetype-2.3.9/include" />
+			<Add option="-std=c++11" />
+			<Add directory="../../../LunaLibs/Irrlicht/include" />
+			<Add directory="../../../LunaLibs/freetype-2.3.9/include" />
 		</Compiler>
 		<Linker>
 			<Add option="-ljack" />
@@ -33,8 +35,8 @@
 			<Add library="Irrlicht" />
 			<Add library="freetype" />
 			<Add library="X11" />
-			<Add directory="/home/Dev/libs/Irrlicht/lib/gcc" />
-			<Add directory="/home/Dev/libs/gui/freetype-2.3.9/objs/.libs" />
+			<Add directory="../../../LunaLibs/Irrlicht/lib/Linux" />
+			<Add directory="../../../LunaLibs/freetype-2.3.9" />
 		</Linker>
 		<Unit filename="CGUIBar.cpp" />
 		<Unit filename="CGUIBar.h" />
@@ -42,9 +44,6 @@
 		<Unit filename="Font/CGUITTFont.cpp" />
 		<Unit filename="Font/CGUITTFont.h" />
 		<Unit filename="tuneit.cpp" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

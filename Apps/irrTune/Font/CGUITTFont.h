@@ -1,7 +1,7 @@
 #ifndef __C_GUI_TTFONT_H_INCLUDED__
 #define __C_GUI_TTFONT_H_INCLUDED__
 
-#include <ft2build.h>
+#include <freetype2/ft2build.h>
 #include <freetype/freetype.h>
 #include <irrlicht.h>
 
@@ -63,7 +63,7 @@ public:
 	virtual void draw(const wchar_t* text, const core::rect<s32>& position, video::SColor color, bool hcenter=false, bool vcenter=false, const core::rect<s32>* clip=0);
 
 	//! returns the dimension of a text
-	virtual core::dimension2d<s32> getDimension(const wchar_t* text) const;
+	virtual core::dimension2d<u32> getDimension(const wchar_t* text) const;
 
 	//! Calculates the index of the character in the text which is on a specific position.
 	virtual s32 getCharacterFromPos(const wchar_t* text, s32 pixel_x) const;
