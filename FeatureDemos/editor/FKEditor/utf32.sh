@@ -1,5 +1,7 @@
 #!/bin/sh
 
+#use this on irrlicht meshes exported from 64bit blender or irrlicht itself to be able to easily import into blender or irrlicht. iirc
+
 if test $# = 0
 then
         echo usage: utf32to8 source [target]
