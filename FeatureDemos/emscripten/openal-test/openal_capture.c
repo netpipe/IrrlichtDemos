@@ -50,7 +50,8 @@ EMSCRIPTEN_KEEPALIVE
 #endif
 void end_test(int result) {
 #ifdef __EMSCRIPTEN__
-    REPORT_RESULT(result);
+   // REPORT_RESULT(result);
+    exit(result);
 #else
     exit(result);
 #endif
@@ -101,12 +102,12 @@ static void iter(void *papp) {
         if(state != AL_STOPPED)
             return;
 #endif
-   
+
         alDeleteSources(1, &app->source);
         alDeleteBuffers(1, &app->buffer);
         alcMakeContextCurrent(NULL);
         alcDestroyContext(app->context);
-        alcCloseDevice(app->playback_device); 
+        alcCloseDevice(app->playback_device);
         end_test(EXIT_SUCCESS);
     }
 
@@ -136,7 +137,7 @@ static void iter(void *papp) {
     // This was here to see if alcCaptureSamples() would reset the number of
     // available captured samples as a side-effect.
     // Turns out, it does (on Linux with OpenAL-Soft).
-    // That's important to know because this behaviour, while reasonably 
+    // That's important to know because this behaviour, while reasonably
     // expected, isn't documented anywhere.
     /*
     {
@@ -237,10 +238,10 @@ static void ignite() {
     );
     if(!app.capture_device) {
         ALCenum err = alcGetError(app.capture_device);
-        fprintf(stderr, 
+        fprintf(stderr,
             "alcCaptureOpenDevice(\"%s\", sample_rate=%u, format=%s, "
-            "buffer_size=%u) failed with ALC error %x (%s)\n", 
-            app.capture_device_name, 
+            "buffer_size=%u) failed with ALC error %x (%s)\n",
+            app.capture_device_name,
             (unsigned) app.sample_rate, alformat_string(app.format),
             (unsigned) app.buffer_size,
             (unsigned) err, alcGetString(NULL, err)
@@ -285,16 +286,17 @@ int main() {
         "allow audio capture when asked by the browser.\n"
         "No sample should be captured until that moment.\n"
     );
-    EM_ASM(
-        var btn = document.createElement('input');
-        btn.type = 'button';
-        btn.name = btn.value = 'Start recording';
-        btn.onclick = function() {
-            _ignite();
-            document.body.removeChild(btn);
-        };
-        document.body.appendChild(btn);
-    );
+//    EM_ASM(
+//        var btn = document.createElement('input');
+//        btn.type = 'button';
+//        btn.name = btn.value = 'Start recording';
+//        btn.onclick = function() {
+//            _ignite();
+//            document.body.removeChild(btn);
+//        };
+//        document.body.appendChild(btn);
+//    );
+    ignite();
 #else
     printf("Press [Enter] when you're ready.\n");
     getchar();

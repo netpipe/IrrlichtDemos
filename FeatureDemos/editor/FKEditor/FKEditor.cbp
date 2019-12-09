@@ -49,6 +49,7 @@
 					<Add option="-s FULL_ES2=1" />
 					<Add option="-s DISABLE_EXCEPTION_CATCHING=0" />
 					<Add option="-s NO_EXIT_RUNTIME=1" />
+					<Add option="-s ASYNCIFY" />
 					<Add library="Irrlicht" />
 					<Add library="GL" />
 					<Add library="GLESv2" />

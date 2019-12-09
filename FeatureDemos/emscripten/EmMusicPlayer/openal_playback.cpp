@@ -146,7 +146,7 @@ int main() {
   alGenBuffers(1, buffers);
 
 
-  convert ("./media/bling.wav","./media/bling2.wav")
+  convert ("./media/bling.wav","./media/bling2.wav");
 #ifdef __EMSCRIPTEN__
   FILE* source = fopen("./media/bling.wav", "rb");
 #else
