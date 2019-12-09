@@ -1,6 +1,10 @@
 #include <irrlicht.h>
 #include <iostream>
 
+#ifdef __EMSCRIPTEN__
+#include <emscripten.h>
+#endif
+
 using namespace irr;
 using namespace core;
 using namespace gui;
@@ -88,10 +92,91 @@ files fileRequest; // use the filerequest class inside this program.
 
 #include "event_receiver.h"  // treatment of the events
 
+int Render(){
+
+    Device->run();
+
+        if (Device->isWindowActive())
+        {
+            if (refresh)
+            {
+                setCursor();
+                if (viewp.currentview==1) viewp.drawViewPorts(viewp.viewscale2,viewp.viewscale3,viewp.viewscale4,0);
+                else viewp.drawSingle(viewp.currentview);
+            }
+    Device->sleep(30,0);
+            if (refreshanimwin) refreshAnimWin();
+            //printf ("Currentview: %i\n",currentview);
+            core::stringw result="";
+            core::stringw str(L"FPS: ");
+//            str.append(core::stringw(Device->getFPS()));
+            if (Model && (Model->getType() ==   ESNT_OCTREE))
+            {
+                io::IAttributes* attribs = Device->getFileSystem()->createEmptyAttributes();
+                if (attribs)
+                {
+                    // get the mesh name out
+                    Model->serializeAttributes(attribs);
+                    core::stringc name = attribs->getAttributeAsString("Mesh");
+                    attribs->drop();
+                    // get the animated mesh for the object
+                    scene::IAnimatedMesh* mesh = Device->getSceneManager()->getMesh(name.c_str());
+                    ModelMs=mesh;
+                }
+                if (ModelMs)
+                {
+                    str += L" | Tris: ";
+                    if (ModelPoly(ModelMs)>0) str.append(core::stringw(ModelPoly(ModelMs)));
+                    else  str+="Unknown |";
+                    if (ModelMs) str.append(checkModel(ModelMs));
+                    str+="| OCTTREE";
+                }
+
+            }
+            if (Model)
+            {
+                if ((Model->getType() ==   ESNT_ANIMATED_MESH))
+                {
+                    str += L" | Tris: ";
+                    if (ModelPoly(ModelMs)>0)
+                    {
+                        str.append(core::stringw(ModelPoly(ModelMs)));
+                        str+=" |";
+                    }
+                    else  str+="Unknown |";
+                    if (ModelMs) str.append(checkModel(ModelMs));
+                    int currentFRM = (int)Model->getFrameNr();
+                    if (ModelMs->getFrameCount()>0)
+                    {
+                        str+=L"| Frame:";
+                        str.append((core::stringw)currentFRM);
+                        str+="/";
+                        str.append((core::stringw) (int) (ModelMs->getFrameCount()-1));
+                    }
+                    //if (ModelMesh[selNode]) str.append((core::stringw)(int)(ModelMesh[selNode]->getFrameCount()-1));
+                }
+            }
+            fpstext->setText(str.c_str());
+            //fpstext->setText(s.c_str());
+        }
+        else
+            Device->sleep(500,0);
+  //  }
+
+    }
+
+    void main_loop(){
+    Render();
+
+
+    }
 int main()
 {
-
-    driverType = video::EDT_OPENGL;
+#ifdef __EMSCRIPTEN__
+    driverType = video::EDT_OGLES2;
+    #else
+      driverType = video::EDT_OPENGL;
+    #endif
     MyEventReceiver receiver;
 
     Device = createDevice(driverType, dimension2du(1024, 768), 32,
@@ -159,6 +244,13 @@ int main()
     appPath = Device->getFileSystem()->getWorkingDirectory();
     //appPath+="\\ ";
     Device->getSceneManager()->getRootSceneNode()->setName("root"); // Name the root node (Matching IRREdit)
+#ifdef __EMSCRIPTEN__
+	emscripten_set_main_loop(main_loop,0,1);
+#else
+//    while (1)
+//    {
+//    Render();
+//    }
     while (Device->run() && driver)
     {
         if (Device->isWindowActive())
@@ -227,7 +319,7 @@ int main()
         else
             Device->sleep(500,0);
     }
-
+#endif
     Device->drop();
     return 0;
 }
