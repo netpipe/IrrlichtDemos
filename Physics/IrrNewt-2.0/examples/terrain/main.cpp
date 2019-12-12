@@ -120,7 +120,7 @@ int main()
 	switch(i)
 	{
 		case 'a': driverType = video::EDT_DIRECT3D9;break;
-		case 'b': driverType = video::EDT_DIRECT3D8;break;
+//		case 'b': driverType = video::EDT_DIRECT3D8;break;
 		case 'c': driverType = video::EDT_OPENGL;   break;
 
 		case 'd': driverType = video::EDT_SOFTWARE; break;
@@ -271,7 +271,7 @@ int main()
 		//update physics
 		p_world->update();
 
-		driver->beginScene(true, true, 0 );
+		driver->beginScene(true, true, video::SColor(255,200,200,200));
 
 		smgr->drawAll();
 

@@ -1,6 +1,6 @@
 #include "../../include/IrrNewt.hpp"
 #include <string>
-#include <direct.h>
+//#include <direct.h>
 #include <sstream>
 #include <vector>
 #include <iostream>
@@ -180,7 +180,7 @@ void CreatePin(core::vector3df pos) {
 
 	if(set_pin_linear_damping)
 		pin_body->setLinearDamping(pin_linear_damping);
-	
+
 	pins.push_back(pin_body);
 }
 
@@ -196,7 +196,7 @@ public:
 		) {
 
 		/*
-		irr::f32 value=-(rigell_speed*100); 
+		irr::f32 value=-(rigell_speed*100);
 		rigell_node->updateAbsolutePosition();
 
 		core::vector3df force=rigell_p_node->FRIgetDirectionPositionY(core::vector3df(
@@ -211,7 +211,7 @@ public:
 		if(body0==rigell_p_node) sphere_body=body1;
 		else sphere_body=body0;
 
-	
+
 		//improve dimension of sphere body by creating a new bigger sphere
 		scene::ISceneNode* temp_sphere=smgr->addSphereSceneNode(fire_cube_size*2.8);
 		temp_sphere->setPosition(sphere_body->getPosition());
@@ -244,7 +244,7 @@ public:
 			0,
 			0));
 		}
-		
+
 
 		rigell_p_node->addForce(force);
 		*/
@@ -356,7 +356,7 @@ E_GAME_PHASE game_phase=EGP_NORMAL;
 
 class MyEventReceiver:public IEventReceiver {
 public:
-	virtual bool OnEvent(SEvent event) {
+	bool OnEvent(const SEvent event) {
 		can_move=true;
 	if(event.EventType == EET_KEY_INPUT_EVENT) {
 		if(event.KeyInput.PressedDown == true) {
@@ -411,7 +411,7 @@ public:
 				down=false;
 				//rigell_p_node->setVelocityDirection(0,'u');
 			}
-			
+
 			if(event.KeyInput.Key==KEY_KEY_A) {
 				left=false;
 			}
@@ -432,8 +432,8 @@ public:
 			}
 
 			if(event.KeyInput.Key==KEY_KEY_C)
-				p_world->getUtils()->launchCube();
-			
+//				p_world->getUtils()->launchCube();
+
 
 			//get the ball!!!
 			if(event.KeyInput.Key==KEY_KEY_G) {
@@ -504,7 +504,7 @@ public:
 					//sphere_node->updateAbsolutePosition();
 
 					//to fall the sphere
-					
+
 					irr::newton::SIntersectionPoint int_point;
 					core::line3d<f32> line(
 						sphere_node->getPosition(),
@@ -513,12 +513,12 @@ public:
 
 					int_point=p_world->getCollisionManager()->getCollisionFirstPointEx(
 						line);
-									
+
 					if(int_point.body!=NULL) {
 						int_point.point.Y+=(sphere_p_node->getShapeSize().Y/2)+0.01;
 						sphere_p_node->setPosition(int_point.point);
 					}
-					
+
 					sphere_node->updateAbsolutePosition();
 					//sphere_p_node->posRotScaleAsNode();
 
@@ -539,7 +539,7 @@ public:
 					core::vector3df force = rigell_p_node->FRIgetDirectionPositionY(
 						core::vector3df(sphere_force,0,0));
 					sphere_p_node->addForce(force);
-					
+
 				}
 
 				else{
@@ -553,7 +553,7 @@ public:
 
 	return false;
 	}
-}my_event_receiver;
+};
 
 //-----------------END OF EVENT RECEIVER--------------------------
 
@@ -568,7 +568,7 @@ void GetDeviceSettings() {
 	switch(i)
 	{
 		case 'a': device_settings.DriverType = video::EDT_DIRECT3D9;break;
-		case 'b': device_settings.DriverType = video::EDT_DIRECT3D8;break;
+//		case 'b': device_settings.DriverType = video::EDT_DIRECT3D8;break;
 		case 'c': device_settings.DriverType = video::EDT_OPENGL;   break;
 		default: exit(0);
 	}
@@ -594,14 +594,14 @@ int main(int argc, char** argv) {
 
 	GetDeviceSettings();
 	device=createDeviceEx(device_settings);
-	
-	//change working dir
-	std::string c = device->getFileSystem()->getWorkingDirectory();
-	c += "/../../";
-	device->getLogger()->log(c.c_str());
-	_chdir(c.c_str());
 
-	device->setEventReceiver(&my_event_receiver);
+	//change working dir
+	//std::string c = device->getFileSystem()->getWorkingDirectory();
+	//c += "/../../";
+	//device->getLogger()->log(c.c_str());
+	//_chdir(c.c_str());
+  //  MyEventReceiver my_event_receiver;
+	//device->setEventReceiver(&my_event_receiver);
 	smgr=device->getSceneManager();
 	driver=device->getVideoDriver();
 
@@ -615,9 +615,9 @@ int main(int argc, char** argv) {
 	//world_mesh=smgr->getMeshManipulator()->createMeshWithTangents(world_mesh);
 	//smgr->getMeshManipulator()->makePlanarTextureMapping(world_mesh,0.015f);
 	//smgr->getMeshManipulator()->flipSurfaces(world_mesh);
-	
+
 	scene::ISceneNode* world_node=
-		smgr->addOctTreeSceneNode(world_mesh);
+		smgr->addOctreeSceneNode(world_mesh);
 
 	world_node->setScale(core::vector3df(2,2,2));
 
@@ -639,13 +639,13 @@ int main(int argc, char** argv) {
 		14.4911f,
 		80.6005f,
 		175.138f));
-	
+
 	rigell_node->setRotation(core::vector3df(
 		0,
 		-90,
 		0));
-		
-		
+
+
 	//try to scale the model and see that IrrNewt automatically
 	//calculate the correct size of the shape
 	//rigell_node->setScale(core::vector3df(8,2,8));
@@ -672,22 +672,22 @@ int main(int argc, char** argv) {
 	device->getCursorControl()->setVisible(false);
 
 	//INI PHYSICS
-	
+
 	driver->beginScene(true,true,video::SColor(255,0,0,0));
 	smgr->drawAll();
 	driver->endScene();
 	driver->beginScene(true,true,video::SColor(255,0,0,0));
 	driver->endScene();
-		
+
 	p_world=irr::newton::createPhysicsWorld(device);
 
 	//rigell
 	irr::newton::SBodyFromNode character_data;
 	character_data.Type=newton::EBT_PRIMITIVE_CHAMFER_CYLINDER;
 	character_data.Node=rigell_node;
-	character_data.Mesh=smgr->getMesh("media\\rigell.md2")->getMesh(0);			
+	character_data.Mesh=smgr->getMesh("media\\rigell.md2")->getMesh(0);
 	character_data.BodyOffsetFromNode.setScale(core::vector3df(1.0f,1.0f,2.0f));
-		
+
 	rigell_p_node=
 		p_world->createCharacterController(
 		p_world->createBody(
@@ -698,7 +698,7 @@ int main(int argc, char** argv) {
 	rigell_p_node->calculateMomentOfInertia();
 	rigell_p_node->setRotationUpdate(false);
 	rigell_p_node->setContinuousCollisionMode(true);
-	
+
 
 	//rotation constraint. avoid that the body rotate on x and z
 	irr::newton::SJointUpVector upVectorData;
@@ -711,7 +711,7 @@ int main(int argc, char** argv) {
 	upVectorData.PinDir.set(1.0f,0.0f,1.0f);
 	rigell_p_node_up_vector_joint=
 		p_world->createJoint(upVectorData);
-	
+
 	//create the bowling ball
 	newton::SBodyFromNode sphereData;
 	sphereData.Node = sphere_node;
@@ -738,7 +738,7 @@ int main(int argc, char** argv) {
 		);
 
 	}
-		
+
 	//materials!!
 	character_material=p_world->createMaterial();
 	pin_material=p_world->createMaterial();
@@ -746,7 +746,7 @@ int main(int argc, char** argv) {
 	temp_fire_material=p_world->createMaterial();
 	irr::newton::IMaterial* level_material=p_world->createMaterial();
 	fire_material=p_world->createMaterial();
-	
+
 	rigell_p_node->setMaterial(character_material);
 	sphere_p_node->setMaterial(ball_material);
 	level_p_node->setMaterial(level_material);
@@ -827,7 +827,7 @@ int main(int argc, char** argv) {
 	device->postEventFromUser(event);
 	camera->setPosition(cam_pos);
 
-	//create another balzing sphere	
+	//create another balzing sphere
 	cam_pos=camera->getPosition();
 	camera->setPosition(core::vector3df(0,100,250));
 	event.EventType=EET_KEY_INPUT_EVENT;
@@ -835,7 +835,7 @@ int main(int argc, char** argv) {
 	event.KeyInput.Key=KEY_KEY_F;
 	device->postEventFromUser(event);
 	camera->setPosition(cam_pos);
-	
+
 
 	//simulate the pression of the 'g' key
 	//to get the sphere
@@ -843,7 +843,7 @@ int main(int argc, char** argv) {
 	event.KeyInput.PressedDown=false;
 	event.KeyInput.Key=KEY_KEY_G;
 	device->postEventFromUser(event);
-	
+
 	while(device->run()) {
 
 		if(device->isWindowActive()) {
@@ -858,14 +858,14 @@ int main(int argc, char** argv) {
 
 	core::vector3df rigell_rotation=rigell_node->getRotation();
 
-	if(right&&!high_rotation) 
+	if(right&&!high_rotation)
 		rigell_rotation.Y+=rigell_rotation_speed;
-	if(left&&!high_rotation) 
+	if(left&&!high_rotation)
 		rigell_rotation.Y-=rigell_rotation_speed;
 
-	if(right&&high_rotation) 
+	if(right&&high_rotation)
 		rigell_rotation.Y+=rigell_high_rotation_speed;
-	if(left&&high_rotation) 
+	if(left&&high_rotation)
 		rigell_rotation.Y-=rigell_high_rotation_speed;
 
 	rigell_node->setRotation(rigell_rotation);
@@ -874,9 +874,9 @@ int main(int argc, char** argv) {
 	core::vector3df velocity=core::vector3df();
 
 	if(up)
-		velocity+=rigell_p_node->FRIgetDirectionPositionY(core::vector3df(rigell_speed,0,0));	
+		velocity+=rigell_p_node->FRIgetDirectionPositionY(core::vector3df(rigell_speed,0,0));
 	if(down)
-		velocity+=rigell_p_node->FRIgetDirectionPositionY(core::vector3df(-rigell_speed,0,0));	
+		velocity+=rigell_p_node->FRIgetDirectionPositionY(core::vector3df(-rigell_speed,0,0));
 
 	rigell_p_node->setVelocity(velocity);
 
@@ -900,7 +900,7 @@ int main(int argc, char** argv) {
 #ifndef COMPILE_WITH_1_3
 		material.Texture1 = 0;
 #else
-		material.Textures[0] = 0;
+///		material.Textures[0] = 0;
 #endif
 
 		material.Lighting = false;
@@ -919,10 +919,10 @@ int main(int argc, char** argv) {
 		line.end.Y-=shape_size.Y;
 
 		driver->draw3DLine(
-			line.start, line.end, video::SColor(255, 255, 255, 0)); 
+			line.start, line.end, video::SColor(255, 255, 255, 0));
 
 		//END OF DRAW THE AIM LINE
-		
+
 		/*
 		core::stringc message;
 		message+=p_world->getTimeElapsed();
@@ -932,13 +932,13 @@ int main(int argc, char** argv) {
 		message+=rigell_p_node->getNetAppliedForce().Z;
 		message+=" ";
 		device->getLogger()->log(message.c_str());
-		*/		  
-			
-		driver->endScene();		
+		*/
+
+		driver->endScene();
 
 		}//isWindowActive
 	}
-	
+
 	device->drop();
 	return 0;
 }

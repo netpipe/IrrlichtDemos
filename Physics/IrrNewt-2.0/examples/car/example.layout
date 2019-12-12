@@ -4,8 +4,8 @@
 	<ActiveTarget name="Linux-static" />
 	<File name="car.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3818" topLine="127" />
+			<Cursor1 position="1635" topLine="46" />
 		</Cursor>
 	</File>
-	<EditorTabsLayout layout="0530d1a0551e1d4a002b556700000002=*0;Irrlicht Pong:car.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=432;besth=730;minw=432;minh=730;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=0530d1a0551e1d4a002b556700000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+	<EditorTabsLayout layout="040612605df051b10013d8c500000002=*0;Irrlicht Pong:car.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=814;besth=328;minw=814;minh=328;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=040612605df051b10013d8c500000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>

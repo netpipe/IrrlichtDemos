@@ -29,7 +29,7 @@ bool fps_cam=true;
 //see irrlicht examples
 class MyeventReceiver:public IEventReceiver {
 public:
-	virtual bool OnEvent(const SEvent& event) {
+	 bool OnEvent(const SEvent& event) {
 	if(event.EventType == EET_KEY_INPUT_EVENT) {
 		if(event.KeyInput.PressedDown == false) {
 
@@ -54,7 +54,7 @@ public:
 	}
 	return false;
 	}
-}my_event_receiver;
+};
 
 
 int main(int argc, char** argv) {
@@ -63,10 +63,10 @@ int main(int argc, char** argv) {
 	deviceSettings.DriverType = video::EDT_OPENGL;
 	deviceSettings.Bits = 16;
 	deviceSettings.Fullscreen = false;
-	deviceSettings.WindowSize = core::dimension2d<s32>(640,480);
+	deviceSettings.WindowSize = core::dimension2d<u32>(640,480);
 	device = createDeviceEx(deviceSettings);
 
-
+MyeventReceiver my_event_receiver;
 	//set event receiver
 	device->setEventReceiver(&my_event_receiver);
 	//get scene manager to avoid to write device->getSceneManager every time
@@ -88,7 +88,7 @@ int main(int argc, char** argv) {
 
 
 	//create the scene node
-	scene::ISceneNode* world_node =	smgr->addOctTreeSceneNode(world_mesh_anim);
+	scene::ISceneNode* world_node =	smgr->addOctreeSceneNode(world_mesh_anim);
 
 	world_node->setMaterialFlag(video::EMF_LIGHTING, false);
 
@@ -113,16 +113,16 @@ int main(int argc, char** argv) {
 	scene::ISceneNode* sphere_node = smgr->addSphereSceneNode(22);
 
 	//the node is not affected by lights
-	//sphere_node->setMaterialFlag(video::EMF_LIGHTING, false);
+	sphere_node->setMaterialFlag(video::EMF_LIGHTING, false);
 
 	//scale the sphere to make it an ellipsoid
-	//sphere_node->setScale(core::vector3df(1.0f,1.0f,1.0f));
+	sphere_node->setScale(core::vector3df(1.0f,1.0f,1.0f));
 
 	//set a texture on it
-	//sphere_node->setMaterialTexture(0,driver->getTexture("media/wheel_texture.jpg"));
+	sphere_node->setMaterialTexture(0,driver->getTexture("media/wheel_texture.jpg"));
 
 	//set position of the ellipsoid
-	//sphere_node->setPosition(core::vector3df(1469.6f,300.474f,1363.34f));
+	sphere_node->setPosition(core::vector3df(1469.6f,300.474f,1363.34f));
 
 	//create an FPS camera
 	camera = smgr->addCameraSceneNodeFPS();
@@ -140,16 +140,16 @@ int main(int argc, char** argv) {
 	//then create a body relative to the sphere scene node
 	//let's instantiate a irr::newton::SBodyFromNode object
 	//to store our body data (like mass, node, mesh,exc..)
-	//irr::newton::SBodyFromNode sphereData;
+	irr::newton::SBodyFromNode sphereData;
 	//set the node attached to the body as the sphere scene node
-	//sphereData.Node = sphere_node;
-	//sphereData.Type = newton::EBT_PRIMITIVE_ELLIPSOID;
+	sphereData.Node = sphere_node;
+	sphereData.Type = newton::EBT_PRIMITIVE_ELLIPSOID;
 
-//	sphereData.BodyOffsetFromSceneNode.setScale(core::vector3df(1,2,1));
+	sphereData.BodyOffsetFromNode.setScale(core::vector3df(1,2,1));
 
 
 	//create the body relative to the sphere
-//	sphere_body = p_world->createBody(sphereData);
+	sphere_body = p_world->createBody(sphereData);
 
 
 	//let's create the body for our map
@@ -162,7 +162,7 @@ int main(int argc, char** argv) {
 
 		//update physics
 		//it's very important that you cann this function inside game loop
-		//p_world->update();
+		p_world->update();
 
 		//clear z buffer
 		driver->beginScene(true,true,video::SColor(0,0,0,0));
