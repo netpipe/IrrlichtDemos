@@ -33,13 +33,13 @@
 				<Compiler>
 					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
 					<Add directory="../../include" />
-					<Add directory="../../libs/newton-dynamics-2.32/coreLibrary_200/source/newton" />
+					<Add directory="../../libs/newtonSDK/sdk" />
 				</Compiler>
 				<Linker>
 					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
-					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Physics/IrrNewt-2.0/libs/newton-dynamics-2.32/coreLibrary_200/projets/linux64" />
 					<Add directory="./" />
 					<Add directory="../../" />
+					<Add directory="../../libs/newtonSDK/sdk" />
 				</Linker>
 			</Target>
 		</Build>

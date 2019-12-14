@@ -24,6 +24,7 @@
 			</Target>
 			<Target title="Linux-static">
 				<Option output="./Pong" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="../" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Option projectResourceIncludeDirsRelation="1" />
@@ -58,7 +59,7 @@
 			<Add directory="/home/Dev/libs/physics/newtonSDK/sdk" />
 			<Add directory="../../" />
 		</Linker>
-		<Unit filename="main.cpp" />
+		<Unit filename="hello world.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

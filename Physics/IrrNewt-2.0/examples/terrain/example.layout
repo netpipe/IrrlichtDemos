@@ -7,8 +7,9 @@
 			<Cursor1 position="1594" topLine="13" />
 		</Cursor>
 		<Folding>
-			<Collapse line="104" />
+			<Collapse line="21" />
+			<Collapse line="48" />
 		</Folding>
 	</File>
-	<EditorTabsLayout layout="045842505df47b1e0010895f00000002=*0;Irrlicht Pong:main.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=741;besth=296;minw=741;minh=296;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=045842505df47b1e0010895f00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+	<EditorTabsLayout layout="03aa0c005df47e4a0010266f00000002=*0;Irrlicht Pong:main.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=741;besth=296;minw=741;minh=296;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03aa0c005df47e4a0010266f00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>

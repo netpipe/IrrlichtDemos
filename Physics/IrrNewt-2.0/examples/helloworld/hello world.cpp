@@ -30,7 +30,7 @@ bool fps_cam=true;
 //see irrlicht examples
 class MyeventReceiver:public IEventReceiver {
 public:
-	virtual bool OnEvent(SEvent event) {
+	virtual bool OnEvent(const SEvent &event) {
 	if(event.EventType == EET_KEY_INPUT_EVENT) {
 		if(event.KeyInput.PressedDown == false) {
 
@@ -48,14 +48,14 @@ public:
 
 			//launch a cube
 			if(event.KeyInput.Key==KEY_KEY_C)
-				p_world->getUtils()->launchCube();
+				p_world->getUtils()->launchCube(5);
 
 
 		}
 	}
 	return false;
 	}
-}my_event_receiver;
+};
 
 
 
@@ -70,7 +70,7 @@ void GetDeviceSettings() {
 	switch(i)
 	{
 		case 'a': deviceSettings.DriverType = video::EDT_DIRECT3D9;break;
-		case 'b': deviceSettings.DriverType = video::EDT_DIRECT3D8;break;
+//		case 'b': deviceSettings.DriverType = video::EDT_DIRECT3D8;break;
 		case 'c': deviceSettings.DriverType = video::EDT_OPENGL;   break;
 		default: exit(0);
 	}
@@ -87,8 +87,8 @@ int main(int argc, char** argv) {
 	device = createDeviceEx(deviceSettings);
 
 	//change working dir
-	device->getFileSystem()->changeWorkingDirectoryTo("../../");
-
+	//device->getFileSystem()->changeWorkingDirectoryTo("../../");
+MyeventReceiver my_event_receiver;
 	//set event receiver
 	device->setEventReceiver(&my_event_receiver);
 	//get scene manager to avoid to write device->getSceneManager every time
@@ -110,7 +110,7 @@ int main(int argc, char** argv) {
 
 
 	//create the scene node
-	scene::ISceneNode* world_node =	smgr->addOctTreeSceneNode(world_mesh_anim);
+	scene::ISceneNode* world_node =	smgr->addOctreeSceneNode(world_mesh_anim);
 
 	world_node->setMaterialFlag(video::EMF_LIGHTING, false);
 

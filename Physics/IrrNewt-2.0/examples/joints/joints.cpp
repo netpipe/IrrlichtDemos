@@ -1,5 +1,5 @@
 //include irrnewt header
-#include "..\\..\\include\\irrnewt.hpp"
+#include "IrrNewt.hpp"
 
 #include <string>
 #include <direct.h>

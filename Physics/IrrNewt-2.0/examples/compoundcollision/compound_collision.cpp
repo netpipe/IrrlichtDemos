@@ -2,10 +2,10 @@
 This example illustrates materials and shapes. Read hello world example first
 */
 
-#include "..\\..\\include\\irrnewt.hpp"
+#include "IrrNewt.hpp"
 
 #include <string>
-#include <direct.h>
+//#include <direct.h>
 #include "irrlicht.h"
 #pragma comment(lib,"irrlicht.lib")
 using namespace irr;
@@ -31,25 +31,25 @@ public:
 			//to positiong nodes and\or adda  force to they
 			if(event.KeyInput.Key==KEY_KEY_A)
 				rigell_p_node->addForce(core::vector3df(0,150,-150));
-			
+
 
 			if(event.KeyInput.Key==KEY_KEY_S)
 				rigell_p_node->setPosition(camera->getPosition());
 
 
-			if(event.KeyInput.Key==KEY_SPACE) 
+			if(event.KeyInput.Key==KEY_SPACE)
 				debug_info=!debug_info;
-			
+
 			//launch a cube
-			if(event.KeyInput.Key == KEY_KEY_C) 
-				p_world->getUtils()->launchCube();		
+			if(event.KeyInput.Key == KEY_KEY_C)
+				p_world->getUtils()->launchCube(5);
 
 
 		}
 	}
 	return false;
 	}
-}my_event_receiver;
+};
 
 core::array<newton::ICollision*> createCollisions() {
 
@@ -84,7 +84,7 @@ core::array<newton::ICollision*> createCollisions() {
 	collisions.push_back(p_world->createCollision(rigellData));
 
 	//collision2
-	
+
 	rigellData.Type = newton::EBT_PRIMITIVE_ELLIPSOID;
 	rigellData.BodyOffsetFromNode.setTranslation(core::vector3df(0, offsety , 0 ));
 	collisions.push_back(p_world->createCollision(rigellData));
@@ -111,17 +111,17 @@ core::array<newton::ICollision*> createCollisions() {
 
 int main(int argc, char** argv) {
 	//change working dir
-	_chdir("../../");
-
-	device=createDevice(video::EDT_DIRECT3D9);
-	device->setEventReceiver(&my_event_receiver);
+	//_chdir("../../");
+//MyeventReceiver my_event_receiver;
+	device=createDevice(video::EDT_OPENGL);
+//	device->setEventReceiver(&my_event_receiver);
 	smgr=device->getSceneManager();
 	driver=device->getVideoDriver();
 
 	//load a bsp quake map
 	device->getFileSystem()->addZipFileArchive("media/level/map-20kdm2.pk3");
 	scene::IAnimatedMesh* world_mesh = smgr->getMesh("20kdm2.bsp");
-	scene::ISceneNode* world_node =	smgr->addOctTreeSceneNode(world_mesh->getMesh(0));
+	scene::ISceneNode* world_node =	smgr->addOctreeSceneNode(world_mesh->getMesh(0));
 	world_node->setPosition(core::vector3df(45,0,0));
 	scene::ITriangleSelector* world_tri_selector=smgr->createOctTreeTriangleSelector(world_mesh->getMesh(0),world_node);
 
