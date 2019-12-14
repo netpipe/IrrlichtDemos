@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/blockplanet/!svn/ver/77/tools/TexGen/resources
+END
+texgen_dev_perlin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/blockplanet/!svn/ver/67/tools/TexGen/resources/texgen_dev_perlin.xml
+END
+texgen_dev_colourize.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/blockplanet/!svn/ver/73/tools/TexGen/resources/texgen_dev_colourize.xml
+END
+texgen_gen.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/blockplanet/!svn/ver/66/tools/TexGen/resources/texgen_gen.xml
+END
+default.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/blockplanet/!svn/ver/77/tools/TexGen/resources/default.xml
+END
+texgen_dev_colourize2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/blockplanet/!svn/ver/73/tools/TexGen/resources/texgen_dev_colourize2.xml
+END
+texgen_dev_gradient.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/blockplanet/!svn/ver/67/tools/TexGen/resources/texgen_dev_gradient.xml
+END
+texgen_link.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/blockplanet/!svn/ver/74/tools/TexGen/resources/texgen_link.xml
+END
+texgen_conv.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/blockplanet/!svn/ver/66/tools/TexGen/resources/texgen_conv.xml
+END

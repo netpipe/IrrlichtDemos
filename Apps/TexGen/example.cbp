@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Irrlicht Pong" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./Pong" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-fpermissive" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+			<Add directory="/home/Dev/libs/GUI/freetype-2.5.5/include" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="X11" />
+			<Add library="freetype" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+			<Add directory="/home/Dev/libs/GUI/freetype-2.5.5objs" />
+		</Linker>
+		<Unit filename="C3DPerlinNoise.cpp" />
+		<Unit filename="C3DPerlinNoise.h" />
+		<Unit filename="CGUITTFont.cpp" />
+		<Unit filename="CGUITTFont.h" />
+		<Unit filename="DeviceBlend.cpp" />
+		<Unit filename="DeviceBlend.h" />
+		<Unit filename="DeviceColourize.cpp" />
+		<Unit filename="DeviceColourize.h" />
+		<Unit filename="DeviceColourize2.cpp" />
+		<Unit filename="DeviceColourize2.h" />
+		<Unit filename="DeviceGradient.cpp" />
+		<Unit filename="DeviceGradient.h" />
+		<Unit filename="DevicePerlin.cpp" />
+		<Unit filename="DevicePerlin.h" />
+		<Unit filename="Editor.cpp" />
+		<Unit filename="Editor.h" />
+		<Unit filename="GUIColourSelect.cpp" />
+		<Unit filename="GUIColourSelect.h" />
+		<Unit filename="GUIData.h" />
+		<Unit filename="GUIEditorControl.cpp" />
+		<Unit filename="GUIEditorControl.h" />
+		<Unit filename="IEditorDevice.cpp" />
+		<Unit filename="IEditorDevice.h" />
+		<Unit filename="IImageProcess.cpp" />
+		<Unit filename="IImageProcess.h" />
+		<Unit filename="ImgBlend.cpp" />
+		<Unit filename="ImgBlend.h" />
+		<Unit filename="ImgColourize.cpp" />
+		<Unit filename="ImgColourize.h" />
+		<Unit filename="ImgColourize2.cpp" />
+		<Unit filename="ImgColourize2.h" />
+		<Unit filename="ImgGradient.cpp" />
+		<Unit filename="ImgGradient.h" />
+		<Unit filename="ImgPerlinNoise.cpp" />
+		<Unit filename="ImgPerlinNoise.h" />
+		<Unit filename="TexGen.cpp" />
+		<Unit filename="TexGen.h" />
+		<Unit filename="TextureFactory.cpp" />
+		<Unit filename="TextureFactory.h" />
+		<Unit filename="ToolWindow.cpp" />
+		<Unit filename="ToolWindow.h" />
+		<Unit filename="Workspace.cpp" />
+		<Unit filename="Workspace.h" />
+		<Unit filename="resource.h" />
+		<Unit filename="stdafx.cpp" />
+		<Unit filename="stdafx.h" />
+		<Unit filename="targetver.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

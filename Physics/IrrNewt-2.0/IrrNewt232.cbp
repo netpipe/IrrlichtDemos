@@ -75,13 +75,14 @@
 				<Compiler>
 					<Add option="-fpermissive" />
 					<Add directory="include" />
-					<Add directory="/home/Dev/libs/physics/Newton/newton-dynamics-2.32/coreLibrary_200/source/newton" />
+					<Add directory="/home/Dev/libs/physics/Newton/newton-dynamics-2.32/coreLibrary_200/source/newtond" />
 					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+					<Add directory="libs/newton-dynamics-2.32/coreLibrary_200/source/newton" />
 				</Compiler>
 				<Linker>
 					<Add library="Irrlicht" />
 					<Add library="Newton" />
-					<Add directory="/home/Dev/libs/physics/newtonSDK/sdk" />
+					<Add directory="libs/newton-dynamics-2.32/coreLibrary_200/projets/linux64" />
 					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
 				</Linker>
 			</Target>

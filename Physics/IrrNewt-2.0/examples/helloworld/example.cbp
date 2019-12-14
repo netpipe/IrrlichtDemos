@@ -40,6 +40,24 @@
 					<Add directory="../../" />
 				</Linker>
 			</Target>
+			<Target title="Linux-static232">
+				<Option output="./Pong" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="../" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Compiler>
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+					<Add directory="../../include" />
+					<Add directory="../../libs/newton-dynamics-2.32/coreLibrary_200/source/newton" />
+				</Compiler>
+				<Linker>
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+					<Add directory="../../libs/newton-dynamics-2.32/coreLibrary_200/projets/linux64" />
+					<Add directory="./" />
+					<Add directory="../../" />
+				</Linker>
+			</Target>
 		</Build>
 		<VirtualTargets>
 			<Add alias="All" targets="Linux-Dynamic;" />
