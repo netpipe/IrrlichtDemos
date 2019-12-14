@@ -75,14 +75,16 @@
 				<Compiler>
 					<Add option="-fpermissive" />
 					<Add directory="include" />
-					<Add directory="/home/Dev/libs/physics/newtonSDK/sdk" />
+					<Add directory="/home/Dev/libs/physics/newtonSDK/sdkd" />
 					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+					<Add directory="libs/newtonSDK/sdk" />
 				</Compiler>
 				<Linker>
 					<Add library="Irrlicht" />
 					<Add library="Newton" />
-					<Add directory="/home/Dev/libs/physics/newtonSDK/sdk" />
+					<Add directory="/home/Dev/libs/physics/newtonSDK/sdkd" />
 					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+					<Add directory="libs/newtonSDK/sdk" />
 				</Linker>
 			</Target>
 		</Build>
@@ -145,9 +147,6 @@
 		<Unit filename="include/vehicle_tire.hpp" />
 		<Unit filename="include/world.hpp" />
 		<Extensions>
-			<code_completion />
-			<envvars />
-			<debugger />
 			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>

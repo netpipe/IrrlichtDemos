@@ -13,6 +13,7 @@
 #define _dAnimationClip_
 #include <dClassInfo.h>
 
+
 class TiXmlElement;
 class dPoseGenerator;
 

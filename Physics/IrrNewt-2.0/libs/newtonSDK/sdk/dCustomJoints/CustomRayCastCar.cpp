@@ -38,12 +38,12 @@ CustomRayCastCar::CustomRayCastCar(int maxTireCount, const dMatrix& cordenateSyt
 	m_tires = new Tire[maxTireCount];
 
 	m_curSpeed = 0.0f;
-	m_aerodynamicDrag = 0.1f; 
-	m_aerodynamicDownForce = 0.1f; 
+	m_aerodynamicDrag = 0.1f;
+	m_aerodynamicDownForce = 0.1f;
 
-	dFloat Ixx; 
-	dFloat Iyy; 
-	dFloat Izz; 
+	dFloat Ixx;
+	dFloat Iyy;
+	dFloat Izz;
 	NewtonBodyGetMassMatrix(m_body0, &m_mass, &Ixx, &Iyy, &Izz);
 
 	// register the callback for tire integration
@@ -140,9 +140,9 @@ void CustomRayCastCar::SetTireBrake (int index, dFloat torque)
 
 void CustomRayCastCar::AddSingleSuspensionTire (
 	void *userData,
-	const dVector& localPosition, 
+	const dVector& localPosition,
 	dFloat mass,
-	dFloat radius, 
+	dFloat radius,
 	dFloat width,
 	dFloat suspensionLength,
 	dFloat springConst,
@@ -157,45 +157,46 @@ void CustomRayCastCar::AddSingleSuspensionTire (
 	m_tires[m_tiresCount].m_tireAxelVeloc = dVector (0.0f, 0.0f, 0.0f, 1.0f);
 	m_tires[m_tiresCount].m_torque = 0.0f;
 	m_tires[m_tiresCount].m_turnforce = 0.0f;
-	m_tires[m_tiresCount].m_harpoint = m_localFrame.UntransformVector(localPosition);              
+	m_tires[m_tiresCount].m_harpoint = m_localFrame.UntransformVector(localPosition);
 	m_tires[m_tiresCount].m_localAxis = m_localFrame.UnrotateVector(dVector (0.0f, 0.0f, 1.0f, 0.0f));
 	m_tires[m_tiresCount].m_localAxis.m_w = 0.0f;
 	m_tires[m_tiresCount].m_userData = userData;
 	m_tires[m_tiresCount].m_angularVelocity = 0.0f;
 	m_tires[m_tiresCount].m_spinAngle = 0.0f;
 	m_tires[m_tiresCount].m_steerAngle = 0.0f;
-	
+
 	m_tires[m_tiresCount].m_posit = suspensionLength;
 	m_tires[m_tiresCount].m_suspensionLength = suspensionLength;
 	m_tires[m_tiresCount].m_tireLoad = 0.0f;
 	m_tires[m_tiresCount].m_breakTorque = 0.0f;
 	m_tires[m_tiresCount].m_localSuspentionSpeed = 0.0f;
-	
+
 	m_tires[m_tiresCount].m_springConst = springConst;
 	m_tires[m_tiresCount].m_springDamper = springDamper;
 	m_tires[m_tiresCount].m_groundFriction = 1.0f;
 
-	m_tires[m_tiresCount].m_tireUseConvexCastMode = castMode; 
+	m_tires[m_tiresCount].m_tireUseConvexCastMode = castMode;
 //	m_tires[m_tiresCount].m_tireJacobianRowIndex = -1;
 
 	// make a convex shape to represent the tire collision
 	#define TIRE_SHAPE_SIZE 12
 	dVector shapePoints[TIRE_SHAPE_SIZE * 2];
 	for (int i = 0; i < TIRE_SHAPE_SIZE; i ++) {
-		shapePoints[i].m_x = -width * 0.5f;	
+		shapePoints[i].m_x = -width * 0.5f;
 		shapePoints[i].m_y = radius * dCos (2.0f * 3.1416 * dFloat(i)/ dFloat(TIRE_SHAPE_SIZE));
 		shapePoints[i].m_z = radius * dSin (2.0f * 3.1416 * dFloat(i)/ dFloat(TIRE_SHAPE_SIZE));
 		shapePoints[i + TIRE_SHAPE_SIZE].m_x = -shapePoints[i].m_x;
 		shapePoints[i + TIRE_SHAPE_SIZE].m_y = shapePoints[i].m_y;
 		shapePoints[i + TIRE_SHAPE_SIZE].m_z = shapePoints[i].m_z;
 	}
-	m_tires[m_tiresCount].m_shape = NewtonCreateConvexHull (m_world, TIRE_SHAPE_SIZE * 2, &shapePoints[0].m_x, sizeof (dVector), 0.0f, NULL);
+	const dFloat *offsetMatrix;
+	m_tires[m_tiresCount].m_shape = NewtonCreateConvexHull (m_world, TIRE_SHAPE_SIZE * 2, &shapePoints[0].m_x, sizeof (dVector), 0.0f, NULL,offsetMatrix);
 
 	// calculate the tire geometrical parameters
 	m_tires[m_tiresCount].m_radius = radius;
 //	m_tires[m_tiresCount].m_radiusInv  = 1.0f / m_tires[m_tiresCount].m_radius;
-	m_tires[m_tiresCount].m_mass = mass;	
-	m_tires[m_tiresCount].m_massInv = 1.0f / m_tires[m_tiresCount].m_mass;	
+	m_tires[m_tiresCount].m_mass = mass;
+	m_tires[m_tiresCount].m_massInv = 1.0f / m_tires[m_tiresCount].m_mass;
 	m_tires[m_tiresCount].m_Ixx = mass * radius * radius / 2.0f;
 	m_tires[m_tiresCount].m_IxxInv = 1.0f / m_tires[m_tiresCount].m_Ixx;
 	SetTireMaxRPS (m_tiresCount, 150.0f / radius);
@@ -259,11 +260,11 @@ void CustomRayCastCar::CalculateTireCollision (Tire& tire, const dMatrix& suspen
 	}
 	static dFloat RayCast (const NewtonBody* body, const dFloat* normal, int collisionID, void* userData, dFloat intersetParam)
 	{
-	  RayCastInfo& caster = *((RayCastInfo*) userData); 
+	  RayCastInfo& caster = *((RayCastInfo*) userData);
 	  // if this body is not the vehicle, see if a close hit
 	  if (body != caster.m_me) {
 	    if (intersetParam < caster.m_param) {
-	      // this is a close hit, record the information. 
+	      // this is a close hit, record the information.
 		  caster.m_param = intersetParam;
 		  caster.m_hitBody = body;
 		  caster.m_contactID = collisionID;
@@ -281,16 +282,16 @@ void CustomRayCastCar::CalculateTireCollision (Tire& tire, const dMatrix& suspen
   RayCastInfo info (m_body0);
   // extend the ray by the radius of the tire
   dFloat dist (tire.m_suspensionLength + tire.m_radius);
-  dVector destination (suspensionMatrixInGlobalSpace.TransformVector(m_localFrame.m_up.Scale (-dist)));	
+  dVector destination (suspensionMatrixInGlobalSpace.TransformVector(m_localFrame.m_up.Scale (-dist)));
   // cast a ray to the world ConvexCastPrefilter
   NewtonWorldRayCast(m_world, &suspensionMatrixInGlobalSpace.m_posit[0], &destination[0], RayCastInfo::RayCast, &info, &ConvexCastPrefilter);
   // if the ray hit something, it means the tire has some traction
   if (info.m_hitBody) {
     dFloat intesectionDist;
 
-  tire.m_contactPoint = suspensionMatrixInGlobalSpace.m_posit + (destination - suspensionMatrixInGlobalSpace.m_posit).Scale (info.m_param); 
+  tire.m_contactPoint = suspensionMatrixInGlobalSpace.m_posit + (destination - suspensionMatrixInGlobalSpace.m_posit).Scale (info.m_param);
   tire.m_contactNormal = info.m_normal;
-  // TO DO: get the material properties for tire frictions on different roads 
+  // TO DO: get the material properties for tire frictions on different roads
 
   intesectionDist = dist * info.m_param - tire.m_radius;
   if (intesectionDist > tire.m_suspensionLength) {
@@ -324,14 +325,14 @@ void CustomRayCastCar::SubmitConstrainst(dFloat timestep, int threadIndex)
 {
 	dFloat invTimestep;
 	dMatrix bodyMatrix;
-	dMatrix suspensionMatrices[VEHICLE_MAX_TIRE_COUNT];  
+	dMatrix suspensionMatrices[VEHICLE_MAX_TIRE_COUNT];
 
 	// get the simulation time
 	invTimestep = 1.0f / timestep ;
 
 	// get the vehicle global matrix, and use it in several calculations
 	NewtonBodyGetMatrix(m_body0, &bodyMatrix[0][0]);
-	dMatrix chassisMatrix (m_localFrame * bodyMatrix);  
+	dMatrix chassisMatrix (m_localFrame * bodyMatrix);
 
 	// calculate all suspension matrices in global space and tire collision
 	for (int i = 0; i < m_tiresCount; i ++) {
@@ -360,13 +361,13 @@ void CustomRayCastCar::SubmitConstrainst(dFloat timestep, int threadIndex)
 		// calculate the linear velocity of the tire at the ground contact
 		tire.m_tireAxelPosit = (chassisMatrix.TransformVector(tire.m_harpoint - m_localFrame.m_up.Scale (tire.m_posit)));
 	    tire.m_localAxelPosit = (tire.m_tireAxelPosit - chassisMatrix.m_posit);
-		tire.m_tireAxelVeloc = (m_chassisVelocity + m_chassisOmega * tire.m_localAxelPosit); 
+		tire.m_tireAxelVeloc = (m_chassisVelocity + m_chassisOmega * tire.m_localAxelPosit);
 
 
 	    dVector lateralPin (chassisMatrix.RotateVector (tire.m_localAxis));
 	    dVector longitudinalPin (chassisMatrix.m_up * lateralPin);
 	    tire.m_longitudinalDir = longitudinalPin;
-	    tire.m_lateralDir = lateralPin; 
+	    tire.m_lateralDir = lateralPin;
 		if (tire.m_posit < tire.m_suspensionLength)  {
 			dFloat speed;
             // TO DO: need to calculate the velocity if the other body at the point
@@ -402,7 +403,7 @@ void CustomRayCastCar::SubmitConstrainst(dFloat timestep, int threadIndex)
               m_chassisForce += chassisMatrix.m_right.Scale(tire.m_turnforce*60);
 			}
 			if (tire.m_groundFriction!=0) {
-			  ApplyTractionAndSteer(m_chassisForce,tire.m_tireAxelPosit); 
+			  ApplyTractionAndSteer(m_chassisForce,tire.m_tireAxelPosit);
 			  ApplyTireFrictionModel(chassisMatrix, timestep);
 			}
 		} else {
@@ -417,8 +418,8 @@ void CustomRayCastCar::SubmitConstrainst(dFloat timestep, int threadIndex)
 	}
 	// set the current vehicle speed
 	m_curSpeed = bodyMatrix[0] % m_chassisVelocity;
-	if (m_curSpeed>0) { 
-      m_tiresRollSide = 0; 
+	if (m_curSpeed>0) {
+      m_tiresRollSide = 0;
 	} else {
       m_tiresRollSide = 1;
 	}
@@ -440,7 +441,7 @@ void CustomRayCastCar::ApplyTiresTorqueVisual(Tire& tire, dFloat timestep, int t
 	  // where V is the tire Axel velocity
 	  // W is the tire local angular velocity
 	  // R is the tire radius
-	  // dir is the longitudinal direction of of the tire.		
+	  // dir is the longitudinal direction of of the tire.
 	  dFloat tireLinearSpeed;
 	  dFloat tireContactSpeed;
 	  tireLinearSpeed = tire.m_tireAxelVeloc % tire.m_longitudinalDir;
@@ -460,8 +461,8 @@ void CustomRayCastCar::ApplyTiresTorqueVisual(Tire& tire, dFloat timestep, int t
 	  tire.m_angularVelocity  += torque * tire.m_IxxInv * timestep;
 	}
 	// integrate tire angular velocity and rotation
-	tire.m_spinAngle = dMod (tire.m_spinAngle + tire.m_angularVelocity * timestep, 3.1416f * 2.0f); 
-	// reset tire torque to zero after integration; 
+	tire.m_spinAngle = dMod (tire.m_spinAngle + tire.m_angularVelocity * timestep, 3.1416f * 2.0f);
+	// reset tire torque to zero after integration;
 	tire.m_torque = 0.0f;
 }
 
@@ -505,7 +506,7 @@ void CustomRayCastCar::ApplyVelocityCorrection(const dMatrix& chassisMatrix)
   vt.m_y = (vlo.m_y) - vl * vDir.m_y;
   vt.m_z = (vlo.m_z) - vl * vDir.m_z;
 
-  m_chassisVelocity = vt; 
+  m_chassisVelocity = vt;
 }
 
 void CustomRayCastCar::ApplyTractionAndSteer(const dVector& vForce, const dVector& vPoint)
@@ -549,12 +550,12 @@ CustomRayCastCar::CustomRayCastCar(int maxTireCount, const dMatrix& cordenateSyt
 	m_tires = new Tire[maxTireCount];
 
 	m_curSpeed = 0.0f;
-	m_aerodynamicDrag = 0.1f; 
-	m_aerodynamicDownForce = 0.1f; 
+	m_aerodynamicDrag = 0.1f;
+	m_aerodynamicDownForce = 0.1f;
 
-	dFloat Ixx; 
-	dFloat Iyy; 
-	dFloat Izz; 
+	dFloat Ixx;
+	dFloat Iyy;
+	dFloat Izz;
 	NewtonBodyGetMassMatrix(m_body0, &m_mass, &Ixx, &Iyy, &Izz);
 
 	// register the callback for tire integration
@@ -646,9 +647,9 @@ void CustomRayCastCar::SetTireBrake (int index, dFloat torque)
 
 void CustomRayCastCar::AddSingleSuspensionTire (
 	void *userData,
-	const dVector& localPosition, 
+	const dVector& localPosition,
 	dFloat mass,
-	dFloat radius, 
+	dFloat radius,
 	dFloat width,
 	dFloat suspensionLength,
 	dFloat springConst,
@@ -658,32 +659,32 @@ void CustomRayCastCar::AddSingleSuspensionTire (
 	// calculate the tire local base pose matrix
 	dMatrix bodyMatrix;
 	m_tires[m_tiresCount].m_torque = 0.0f;
-	m_tires[m_tiresCount].m_harpoint = m_localFrame.UntransformVector(localPosition);              
+	m_tires[m_tiresCount].m_harpoint = m_localFrame.UntransformVector(localPosition);
 	m_tires[m_tiresCount].m_localAxis = m_localFrame.UnrotateVector(dVector (0.0f, 0.0f, 1.0f, 0.0f));
 	m_tires[m_tiresCount].m_localAxis.m_w = 0.0f;
 	m_tires[m_tiresCount].m_userData = userData;
 	m_tires[m_tiresCount].m_angularVelocity = 0.0f;
 	m_tires[m_tiresCount].m_spinAngle = 0.0f;
 	m_tires[m_tiresCount].m_steerAngle = 0.0f;
-	
+
 	m_tires[m_tiresCount].m_posit = suspensionLength;
 	m_tires[m_tiresCount].m_suspensionLength = suspensionLength;
 	m_tires[m_tiresCount].m_tireLoad = 0.0f;
 	m_tires[m_tiresCount].m_breakTorque = 0.0f;
 	m_tires[m_tiresCount].m_localSuspentionSpeed = 0.0f;
-	
+
 	m_tires[m_tiresCount].m_springConst = springConst;
 	m_tires[m_tiresCount].m_springDamper = springDamper;
 	m_tires[m_tiresCount].m_groundFriction = 1.0f;
 
-	m_tires[m_tiresCount].m_tireUseConvexCastMode = castMode; 
+	m_tires[m_tiresCount].m_tireUseConvexCastMode = castMode;
 //	m_tires[m_tiresCount].m_tireJacobianRowIndex = -1;
 
 	// make a convex shape to represent the tire collision
 	#define TIRE_SHAPE_SIZE 12
 	dVector shapePoints[TIRE_SHAPE_SIZE * 2];
 	for (int i = 0; i < TIRE_SHAPE_SIZE; i ++) {
-		shapePoints[i].m_x = -width * 0.5f;	
+		shapePoints[i].m_x = -width * 0.5f;
 		shapePoints[i].m_y = radius * dCos (2.0f * 3.141592 * dFloat(i)/ dFloat(TIRE_SHAPE_SIZE));
 		shapePoints[i].m_z = radius * dSin (2.0f * 3.141592 * dFloat(i)/ dFloat(TIRE_SHAPE_SIZE));
 		shapePoints[i + TIRE_SHAPE_SIZE].m_x = -shapePoints[i].m_x;
@@ -695,8 +696,8 @@ void CustomRayCastCar::AddSingleSuspensionTire (
 	// calculate the tire geometrical parameters
 	m_tires[m_tiresCount].m_radius = radius;
 //	m_tires[m_tiresCount].m_radiusInv  = 1.0f / m_tires[m_tiresCount].m_radius;
-	m_tires[m_tiresCount].m_mass = mass;	
-	m_tires[m_tiresCount].m_massInv = 1.0f / m_tires[m_tiresCount].m_mass;	
+	m_tires[m_tiresCount].m_mass = mass;
+	m_tires[m_tiresCount].m_massInv = 1.0f / m_tires[m_tiresCount].m_mass;
 	m_tires[m_tiresCount].m_Ixx = mass * radius * radius / 2.0f;
 	m_tires[m_tiresCount].m_IxxInv = 1.0f / m_tires[m_tiresCount].m_Ixx;
 	SetTireMaxRPS (m_tiresCount, 150.0f / radius);
@@ -742,10 +743,10 @@ unsigned CustomRayCastCar::ConvexCastPrefilter(const NewtonBody* body, const New
 	NewtonBody* me;
 
 	// for now just collide with static data.m_bodies
-	dFloat mass; 
-	dFloat Ixx; 
-	dFloat Iyy; 
-	dFloat Izz; 
+	dFloat mass;
+	dFloat Ixx;
+	dFloat Iyy;
+	dFloat Izz;
 	NewtonBodyGetMassMatrix(body, &mass, &Ixx, &Iyy, &Izz);
 	if (mass > 0.0f) {
 		return 0;
@@ -760,7 +761,7 @@ unsigned CustomRayCastCar::ConvexCastPrefilter(const NewtonBody* body, const New
 
 void CustomRayCastCar::CalculateTireCollision (Tire& tire, const dMatrix& suspensionMatrixInGlobalSpace) const
 {
-	if (tire.m_tireUseConvexCastMode) { 
+	if (tire.m_tireUseConvexCastMode) {
 		NewtonWorldConvexCastReturnInfo info;
 		dVector destination (suspensionMatrixInGlobalSpace.TransformVector(m_localFrame.m_up.Scale (-tire.m_suspensionLength)));
 
@@ -771,7 +772,7 @@ void CustomRayCastCar::CalculateTireCollision (Tire& tire, const dMatrix& suspen
 			tire.m_posit = info.m_intersectionParam * tire.m_suspensionLength;
 			tire.m_contactPoint = info.m_point;
 			tire.m_contactNormal = info.m_normal;
-			// TO DO: get the material properties for tire frictions on different roads 
+			// TO DO: get the material properties for tire frictions on different roads
 			//dTrace (("%f\n", info.m_intersectionParam));
 
 			switch (info.m_contactID)
@@ -811,12 +812,12 @@ void CustomRayCastCar::CalculateTireCollision (Tire& tire, const dMatrix& suspen
 
 			static dFloat RayCast (const NewtonBody* body, const dFloat* normal, int collisionID, void* userData, dFloat intersetParam)
 			{
-				RayCastInfo& caster = *((RayCastInfo*) userData); 
+				RayCastInfo& caster = *((RayCastInfo*) userData);
 
 				// if this body is not the vehicle, see if a close hit
 				if (body != caster.m_me) {
 					if (intersetParam < caster.m_param) {
-						// this is a close hit, record the information. 
+						// this is a close hit, record the information.
 						caster.m_param = intersetParam;
 						caster.m_hitBody = body;
 						caster.m_contactID = collisionID;
@@ -837,7 +838,7 @@ void CustomRayCastCar::CalculateTireCollision (Tire& tire, const dMatrix& suspen
 
 		// extend the ray by the radius of the tire
 		dFloat dist (tire.m_suspensionLength + tire.m_radius);
-		dVector destination (suspensionMatrixInGlobalSpace.TransformVector(m_localFrame.m_up.Scale (-dist)));	
+		dVector destination (suspensionMatrixInGlobalSpace.TransformVector(m_localFrame.m_up.Scale (-dist)));
 
 		// cast a ray to the world
 		NewtonWorldRayCast(m_world, &suspensionMatrixInGlobalSpace.m_posit[0], &destination[0], RayCastInfo::RayCast, &info, ConvexCastPrefilter);
@@ -847,9 +848,9 @@ void CustomRayCastCar::CalculateTireCollision (Tire& tire, const dMatrix& suspen
 			dFloat intesectionDist;
 
 
-			tire.m_contactPoint = suspensionMatrixInGlobalSpace.m_posit + (destination - suspensionMatrixInGlobalSpace.m_posit).Scale (info.m_param); 
+			tire.m_contactPoint = suspensionMatrixInGlobalSpace.m_posit + (destination - suspensionMatrixInGlobalSpace.m_posit).Scale (info.m_param);
 			tire.m_contactNormal = info.m_normal;
-			// TO DO: get the material properties for tire frictions on different roads 
+			// TO DO: get the material properties for tire frictions on different roads
 
 			intesectionDist = dist * info.m_param - tire.m_radius;
 			if (intesectionDist > tire.m_suspensionLength) {
@@ -888,14 +889,14 @@ void CustomRayCastCar::SubmitConstrainst(dFloat timestep, int threadIndex)
 {
 //	dFloat invTimestep;
 	dMatrix bodyMatrix;
-	dMatrix suspensionMatrices[VEHICLE_MAX_TIRE_COUNT];  
+	dMatrix suspensionMatrices[VEHICLE_MAX_TIRE_COUNT];
 
 	// get the simulation time
 //	invTimestep = 1.0f / timestep ;
 
 	// get the vehicle global matrix, and use it in several calculations
 	NewtonBodyGetMatrix(m_body0, &bodyMatrix[0][0]);
-	dMatrix chassisMatrix (m_localFrame * bodyMatrix);  
+	dMatrix chassisMatrix (m_localFrame * bodyMatrix);
 
 	// calculate all suspension matrices in global space and tire collision
 	for (int i = 0; i < m_tiresCount; i ++) {
@@ -923,7 +924,7 @@ void CustomRayCastCar::SubmitConstrainst(dFloat timestep, int threadIndex)
 
 
 
-#define SOLVER_ERROR_2					 (1.0e-2f) 
+#define SOLVER_ERROR_2					 (1.0e-2f)
 #define TIRE_FRICTION					 (1.2f)
 //#define TIRE_FRICTION					 (1.0f)
 
@@ -989,7 +990,7 @@ void CustomRayCastCar::ApplySuspensionForces (const dMatrix& chassisMatrix, dFlo
 	dVector globalOmega;
 	dVector torque (0.0f, 0.0f, 0.0f, 0.0f);
 	dVector force (0.0f, 0.0f, 0.0f, 0.0f);
-	
+
 	// get the chassis instantaneous linear and angular velocity in the local space of the chassis
 	NewtonBodyGetOmega(m_body0, &globalOmega[0]);
 	NewtonBodyGetVelocity(m_body0, &globalVeloc[0]);
@@ -1003,7 +1004,7 @@ void CustomRayCastCar::ApplySuspensionForces (const dMatrix& chassisMatrix, dFlo
 
 	// calculate all suspension forces due to spring and damper
 	for (int i = 0; i < m_tiresCount; i ++) {
-		
+
 		Tire& tire = m_tires[i];
 
 		tire.m_tireLoad = dFloat (0.0f);
@@ -1012,7 +1013,7 @@ void CustomRayCastCar::ApplySuspensionForces (const dMatrix& chassisMatrix, dFlo
 			// calculate the linear velocity of the tire at the ground contact
 			dVector tireAxelPosit (chassisMatrix.TransformVector(tire.m_harpoint - m_localFrame.m_up.Scale (tire.m_posit)));
 			dVector localAxelPosit (tireAxelPosit - chassisMatrix.m_posit);
-			dVector tireAxelVeloc (globalVeloc + globalOmega * localAxelPosit); 		
+			dVector tireAxelVeloc (globalVeloc + globalOmega * localAxelPosit);
 
 			// TO DO: need to calculate the velocity if the other body at the point
 			// for now assume the ground is a static body
@@ -1054,8 +1055,8 @@ void CustomRayCastCar::ApplyTireForces (const dMatrix& chassisMatrix, dFloat tim
 	RayCastCarPhysicsData data;
 
 	// initialize workld bod physics data
-	data.m_bodies[0].m_force = dVector (0.0f, 0.0f, 0.0f, 0.0f); 
-	data.m_bodies[0].m_torque = dVector (0.0f, 0.0f, 0.0f, 0.0f); 
+	data.m_bodies[0].m_force = dVector (0.0f, 0.0f, 0.0f, 0.0f);
+	data.m_bodies[0].m_torque = dVector (0.0f, 0.0f, 0.0f, 0.0f);
 	data.m_bodies[0].m_invInertia = GetZeroMatrix();
 	data.m_bodies[0].m_invMass = 0.0f;
 
@@ -1075,13 +1076,13 @@ void CustomRayCastCar::ApplyTireForces (const dMatrix& chassisMatrix, dFloat tim
 	for (int i = 0; i < m_tiresCount; i ++) {
 		Tire& tire = m_tires[i];
 
-		// calculate the tire pin directions 
+		// calculate the tire pin directions
 		dVector rightDir (chassisMatrix.RotateVector (tire.m_localAxis));
 		dVector frontDir (chassisMatrix.m_up * rightDir);
 		tire.m_longitudinalDir = frontDir;
-		tire.m_lateralDir = rightDir; 
+		tire.m_lateralDir = rightDir;
 
-		// save tire dynamic data			
+		// save tire dynamic data
 		data.m_bodies[i + 2].m_com = chassisMatrix.TransformVector (tire.m_harpoint - m_localFrame.m_up.Scale (tire.m_posit));
 		data.m_bodies[i + 2].m_invMass = tire.m_massInv;
 		data.m_bodies[i + 2].m_force = m_gravity.Scale(tire.m_mass);
@@ -1096,11 +1097,11 @@ void CustomRayCastCar::ApplyTireForces (const dMatrix& chassisMatrix, dFloat tim
 			data.m_body0[rows] = 1;
 			data.m_body1[rows] = i + 2;
 
-			RayCastCarPhysicsData::Jacobian &jacobian0 = data.m_Jt[rows].m_jacobian_IM0; 
+			RayCastCarPhysicsData::Jacobian &jacobian0 = data.m_Jt[rows].m_jacobian_IM0;
 			jacobian0.m_linear = frontDir;
 			jacobian0.m_angular = (data.m_bodies[i + 2].m_com - chassisMatrix.m_posit) * jacobian0.m_linear;
 
-			RayCastCarPhysicsData::Jacobian &jacobian1 = data.m_Jt[rows].m_jacobian_IM1; 
+			RayCastCarPhysicsData::Jacobian &jacobian1 = data.m_Jt[rows].m_jacobian_IM1;
 			jacobian1.m_linear = frontDir.Scale (-1.0f);
 			jacobian1.m_angular = dVector (0.0f, 0.0f, 0.0f, 0.0f);
 
@@ -1116,11 +1117,11 @@ void CustomRayCastCar::ApplyTireForces (const dMatrix& chassisMatrix, dFloat tim
 			data.m_body0[rows] = 1;
 			data.m_body1[rows] = i + 2;
 
-			RayCastCarPhysicsData::Jacobian &jacobian0 = data.m_Jt[rows].m_jacobian_IM0; 
+			RayCastCarPhysicsData::Jacobian &jacobian0 = data.m_Jt[rows].m_jacobian_IM0;
 			jacobian0.m_linear = rightDir;
 			jacobian0.m_angular = (data.m_bodies[i + 2].m_com - chassisMatrix.m_posit) * jacobian0.m_linear;
 
-			RayCastCarPhysicsData::Jacobian &jacobian1 = data.m_Jt[rows].m_jacobian_IM1; 
+			RayCastCarPhysicsData::Jacobian &jacobian1 = data.m_Jt[rows].m_jacobian_IM1;
 			jacobian1.m_linear = rightDir.Scale (-1.0f);
 			jacobian1.m_angular = dVector (0.0f, 0.0f, 0.0f, 0.0f);
 
@@ -1137,11 +1138,11 @@ void CustomRayCastCar::ApplyTireForces (const dMatrix& chassisMatrix, dFloat tim
 			data.m_body0[rows] = 1;
 			data.m_body1[rows] = i + 2;
 
-			RayCastCarPhysicsData::Jacobian &jacobian0 = data.m_Jt[rows].m_jacobian_IM0; 
+			RayCastCarPhysicsData::Jacobian &jacobian0 = data.m_Jt[rows].m_jacobian_IM0;
 			jacobian0.m_linear = dVector (0.0f, 0.0f, 0.0f, 0.0f);
 			jacobian0.m_angular = frontDir;
 
-			RayCastCarPhysicsData::Jacobian &jacobian1 = data.m_Jt[rows].m_jacobian_IM1; 
+			RayCastCarPhysicsData::Jacobian &jacobian1 = data.m_Jt[rows].m_jacobian_IM1;
 			jacobian1.m_linear = dVector (0.0f, 0.0f, 0.0f, 0.0f);
 			jacobian1.m_angular = frontDir.Scale (-1.0f);
 
@@ -1157,11 +1158,11 @@ void CustomRayCastCar::ApplyTireForces (const dMatrix& chassisMatrix, dFloat tim
 			data.m_body0[rows] = 1;
 			data.m_body1[rows] = i + 2;
 
-			RayCastCarPhysicsData::Jacobian &jacobian0 = data.m_Jt[rows].m_jacobian_IM0; 
+			RayCastCarPhysicsData::Jacobian &jacobian0 = data.m_Jt[rows].m_jacobian_IM0;
 			jacobian0.m_linear = dVector (0.0f, 0.0f, 0.0f, 0.0f);
 			jacobian0.m_angular = chassisMatrix.m_up;
 
-			RayCastCarPhysicsData::Jacobian &jacobian1 = data.m_Jt[rows].m_jacobian_IM1; 
+			RayCastCarPhysicsData::Jacobian &jacobian1 = data.m_Jt[rows].m_jacobian_IM1;
 			jacobian1.m_linear = dVector (0.0f, 0.0f, 0.0f, 0.0f);
 			jacobian1.m_angular = chassisMatrix.m_up.Scale (-1.0f);
 
@@ -1196,11 +1197,11 @@ void CustomRayCastCar::ApplyTireForces (const dMatrix& chassisMatrix, dFloat tim
 				data.m_body0[rows] = 0;
 				data.m_body1[rows] = i + 2;
 
-				RayCastCarPhysicsData::Jacobian &jacobian0 = data.m_Jt[rows].m_jacobian_IM0; 
+				RayCastCarPhysicsData::Jacobian &jacobian0 = data.m_Jt[rows].m_jacobian_IM0;
 				jacobian0.m_linear = dVector (0.0f, 0.0f, 0.0f, 0.0f);
 				jacobian0.m_angular = dVector (0.0f, 0.0f, 0.0f, 0.0f);
 
-				RayCastCarPhysicsData::Jacobian &jacobian1 = data.m_Jt[rows].m_jacobian_IM1; 
+				RayCastCarPhysicsData::Jacobian &jacobian1 = data.m_Jt[rows].m_jacobian_IM1;
 				jacobian1.m_linear = tire.m_longitudinalDir;
 				jacobian1.m_angular = (tire.m_contactPoint - data.m_bodies[i + 2].m_com) * jacobian1.m_linear;
 
@@ -1216,11 +1217,11 @@ void CustomRayCastCar::ApplyTireForces (const dMatrix& chassisMatrix, dFloat tim
 				data.m_body0[rows] = 0;
 				data.m_body1[rows] = i + 2;
 
-				RayCastCarPhysicsData::Jacobian &jacobian0 = data.m_Jt[rows].m_jacobian_IM0; 
+				RayCastCarPhysicsData::Jacobian &jacobian0 = data.m_Jt[rows].m_jacobian_IM0;
 				jacobian0.m_linear = dVector (0.0f, 0.0f, 0.0f, 0.0f);
 				jacobian0.m_angular = dVector (0.0f, 0.0f, 0.0f, 0.0f);
 
-				RayCastCarPhysicsData::Jacobian &jacobian1 = data.m_Jt[rows].m_jacobian_IM1; 
+				RayCastCarPhysicsData::Jacobian &jacobian1 = data.m_Jt[rows].m_jacobian_IM1;
 				jacobian1.m_linear = tire.m_lateralDir;
 				jacobian1.m_angular = (tire.m_contactPoint - data.m_bodies[i + 2].m_com) * jacobian1.m_linear;
 
@@ -1230,7 +1231,7 @@ void CustomRayCastCar::ApplyTireForces (const dMatrix& chassisMatrix, dFloat tim
 				data.m_maxForceLimit[rows] =   tire.m_tireLoad * TIRE_FRICTION;
 				rows ++;
 			}
-		} 
+		}
 
 
 		if ((tire.m_breakTorque > 0.0f) || (dAbs (tire.m_angularVelocity) > tire.m_maxTireRPS)) {
@@ -1248,7 +1249,7 @@ void CustomRayCastCar::ApplyTireForces (const dMatrix& chassisMatrix, dFloat tim
 				data.m_minForceLimit[rows] = -1.0e10f;
 				data.m_maxForceLimit[rows] =  1.0e10f;;
 			}
-				
+
 		} else {
 			dFloat val;
 			data.m_accel[rows] = tire.m_angularVelocity * invTimestep * 0.3f;
@@ -1258,8 +1259,8 @@ void CustomRayCastCar::ApplyTireForces (const dMatrix& chassisMatrix, dFloat tim
 		}
 		data.m_body0[rows] = 1;
 		data.m_body1[rows] = i + 2;
-		RayCastCarPhysicsData::Jacobian &jacobian0 = data.m_Jt[rows].m_jacobian_IM0; 
-		RayCastCarPhysicsData::Jacobian &jacobian1 = data.m_Jt[rows].m_jacobian_IM1; 
+		RayCastCarPhysicsData::Jacobian &jacobian0 = data.m_Jt[rows].m_jacobian_IM0;
+		RayCastCarPhysicsData::Jacobian &jacobian1 = data.m_Jt[rows].m_jacobian_IM1;
 		jacobian0.m_linear = dVector (0.0f, 0.0f, 0.0f, 0.0f);
 		jacobian0.m_angular = tire.m_lateralDir;
 		jacobian1.m_linear = dVector (0.0f, 0.0f, 0.0f, 0.0f);
@@ -1278,10 +1279,10 @@ void CustomRayCastCar::ApplyTireForces (const dMatrix& chassisMatrix, dFloat tim
 		j0 = data.m_body0[i];
 		j1 = data.m_body1[i];
 
-		RayCastCarPhysicsData::Jacobian &jacobian0 = data.m_Jt[i].m_jacobian_IM0; 
-		RayCastCarPhysicsData::Jacobian &jacobian1 = data.m_Jt[i].m_jacobian_IM1; 
-		RayCastCarPhysicsData::Jacobian &jacobianInvM0 = data.m_JinvMass[i].m_jacobian_IM0; 
-		RayCastCarPhysicsData::Jacobian &jacobianInvM1 = data.m_JinvMass[i].m_jacobian_IM1; 
+		RayCastCarPhysicsData::Jacobian &jacobian0 = data.m_Jt[i].m_jacobian_IM0;
+		RayCastCarPhysicsData::Jacobian &jacobian1 = data.m_Jt[i].m_jacobian_IM1;
+		RayCastCarPhysicsData::Jacobian &jacobianInvM0 = data.m_JinvMass[i].m_jacobian_IM0;
+		RayCastCarPhysicsData::Jacobian &jacobianInvM1 = data.m_JinvMass[i].m_jacobian_IM1;
 
 		jacobianInvM0.m_linear = jacobian0.m_linear.Scale (data.m_bodies[j0].m_invMass);
 		jacobianInvM0.m_angular = data.m_bodies[j0].m_invInertia.UnrotateVector (jacobian0.m_angular);
@@ -1348,7 +1349,7 @@ void CustomRayCastCar::ApplyTireForces (const dMatrix& chassisMatrix, dFloat tim
 				i0 = data.m_body0[j];
 				i1 = data.m_body1[j];
 
-				val = data.m_deltaForce[j]; 
+				val = data.m_deltaForce[j];
 				data.m_y[i0].m_linear  += data.m_Jt[j].m_jacobian_IM0.m_linear.Scale (val);
 				data.m_y[i0].m_angular += data.m_Jt[j].m_jacobian_IM0.m_angular.Scale (val);
 
@@ -1364,7 +1365,7 @@ void CustomRayCastCar::ApplyTireForces (const dMatrix& chassisMatrix, dFloat tim
 
 				i0 = data.m_body0[j];
 				i1 = data.m_body1[j];
-				
+
 				acc  = ((data.m_JinvMass[j].m_jacobian_IM0.m_linear % data.m_y[i0].m_linear) + (data.m_JinvMass[j].m_jacobian_IM0.m_angular % data.m_y[i0].m_angular));
 				acc += ((data.m_JinvMass[j].m_jacobian_IM1.m_linear % data.m_y[i1].m_linear) + (data.m_JinvMass[j].m_jacobian_IM1.m_angular % data.m_y[i1].m_angular));
 				acc += data.m_deltaForce[j] * data.m_diagDamp[j];
@@ -1372,7 +1373,7 @@ void CustomRayCastCar::ApplyTireForces (const dMatrix& chassisMatrix, dFloat tim
 				data.m_deltaAccel[j] = acc;
 				akDen += (acc * data.m_deltaForce[j]);
 			}
-			
+
 
 //			_ASSERTE (akDen >= dFloat (0.0f));
 			akDen = (akDen > 1.0e-16f) ? akDen : 1.0e-16f;
@@ -1458,10 +1459,10 @@ void CustomRayCastCar::ApplyTireForces (const dMatrix& chassisMatrix, dFloat tim
 
 		i0 = data.m_body0[i];
 		i1 = data.m_body1[i];
-		force = data.m_force[i]; 
+		force = data.m_force[i];
 
-		RayCastCarPhysicsData::Jacobian &jacobian0 = data.m_Jt[i].m_jacobian_IM0; 
-		RayCastCarPhysicsData::Jacobian &jacobian1 = data.m_Jt[i].m_jacobian_IM1; 
+		RayCastCarPhysicsData::Jacobian &jacobian0 = data.m_Jt[i].m_jacobian_IM0;
+		RayCastCarPhysicsData::Jacobian &jacobian1 = data.m_Jt[i].m_jacobian_IM1;
 
 		data.m_bodies[i0].m_force += jacobian0.m_linear.Scale (force);
 		data.m_bodies[i0].m_torque += jacobian0.m_angular.Scale (force);
@@ -1480,7 +1481,7 @@ void CustomRayCastCar::ApplyTireForces (const dMatrix& chassisMatrix, dFloat tim
 //if (tire.m_angularVelocity >  100.0) tire.m_angularVelocity = 100.0f;
 //if (tire.m_angularVelocity < -100.0) tire.m_angularVelocity = -100.0f;
 
-		tire.m_spinAngle = dMod (tire.m_spinAngle + tire.m_angularVelocity * timestep, 3.141592f * 2.0f); 
+		tire.m_spinAngle = dMod (tire.m_spinAngle + tire.m_angularVelocity * timestep, 3.141592f * 2.0f);
 	}
 
 	// apply the net force and torque to the car chassis.
@@ -1495,14 +1496,14 @@ void CustomRayCastCar::SubmitConstrainst(dFloat timestep, int threadIndex)
 {
 	dFloat invTimestep;
 	dMatrix bodyMatrix;
-	dMatrix suspensionMatrices[VEHICLE_MAX_TIRE_COUNT];  
+	dMatrix suspensionMatrices[VEHICLE_MAX_TIRE_COUNT];
 
 	// get the simulation time
 	invTimestep = 1.0f / timestep ;
 
 	// get the vehicle global matrix, and use it in several calculations
 	NewtonBodyGetMatrix(m_body0, &bodyMatrix[0][0]);
-	dMatrix chassisMatrix (m_localFrame * bodyMatrix);  
+	dMatrix chassisMatrix (m_localFrame * bodyMatrix);
 
 	// calculate all suspension matrices in global space and tire collision
 	for (int i = 0; i < m_tiresCount; i ++) {
@@ -1537,7 +1538,7 @@ void CustomRayCastCar::SubmitConstrainst(dFloat timestep, int threadIndex)
 			// calculate the linear velocity of the tire at the ground contact
 			dVector tireAxelPosit (chassisMatrix.TransformVector(tire.m_harpoint - m_localFrame.m_up.Scale (tire.m_posit)));
 			dVector localAxelPosit (tireAxelPosit - chassisMatrix.m_posit);
-			dVector tireAxelVeloc (globalVeloc + globalOmega * localAxelPosit); 		
+			dVector tireAxelVeloc (globalVeloc + globalOmega * localAxelPosit);
 
 			// TO DO: need to calculate the velocity if the other body at the point
 			// for now assume the ground is a static body
@@ -1591,7 +1592,7 @@ void CustomRayCastCar::SubmitConstrainst(dFloat timestep, int threadIndex)
 
 
 void CustomRayCastCar::ApplyTireFrictionModel(
-	Tire& tire, 
+	Tire& tire,
 	const dMatrix& chassisMatrix,
 	const dVector& tireAxelVeloc,
 	const dVector& tireAxelPosit,
@@ -1603,21 +1604,21 @@ void CustomRayCastCar::ApplyTireFrictionModel(
 	dVector lateralPin (chassisMatrix.RotateVector (tire.m_localAxis));
 	dVector longitudinalPin (chassisMatrix.m_up * lateralPin);
 	tire.m_longitudinalDir = longitudinalPin;
-	tire.m_lateralDir = lateralPin; 
+	tire.m_lateralDir = lateralPin;
 
 	// TO DO: need to subtract the velocity at the contact point of the hit body
 	// for now assume the ground is a static body
 	dVector hitBodyContactVeloc (0, 0, 0, 0);
 
 	// calculate relative velocity at the tire center
-	dVector tireAxelRelativeVelocity (tireAxelVeloc - hitBodyContactVeloc); 
+	dVector tireAxelRelativeVelocity (tireAxelVeloc - hitBodyContactVeloc);
 
 	// now calculate relative velocity a velocity at contact point
 
 	dVector tireAngularVelocity (lateralPin.Scale (tire.m_angularVelocity));
 	dVector tireRadius (tire.m_contactPoint - tireAxelPosit);
-	dVector tireContactVelocity (tireAngularVelocity * tireRadius);	
-	dVector tireContactRelativeVelocity (tireAxelRelativeVelocity + tireContactVelocity); 
+	dVector tireContactVelocity (tireAngularVelocity * tireRadius);
+	dVector tireContactRelativeVelocity (tireAxelRelativeVelocity + tireContactVelocity);
 	tire.m_tireRadius = tireRadius;
 
 
@@ -1627,7 +1628,7 @@ void CustomRayCastCar::ApplyTireFrictionModel(
 		//		dFloat tireRelativeSpeed;
 		//		dFloat lateralForceMagnitud;
 
-		//these tire is coasting, so the lateral friction dominates the behaviors  
+		//these tire is coasting, so the lateral friction dominates the behaviors
 
 		dFloat invMag2;
 		dFloat frictionCircleMag;
@@ -1648,7 +1649,7 @@ void CustomRayCastCar::ApplyTireFrictionModel(
 		NewtonUserJointAddLinearRow (m_joint, &tireAxelPosit[0], &tireAxelPosit[0], &lateralPin[0]);
 		NewtonUserJointSetRowMaximumFriction(m_joint,  lateralFrictionForceMag);
 		NewtonUserJointSetRowMinimumFriction(m_joint, -lateralFrictionForceMag);
-		longitudinalForceIndex ++; 
+		longitudinalForceIndex ++;
 
 		// apply longitudinal friction force and acceleration
 		longitudinalAcceleration = -(tireContactRelativeVelocity % longitudinalPin) * invTimestep;
@@ -1679,7 +1680,7 @@ void CustomRayCastCar::IntegrateTires (dFloat timestep, int threadIndex)
 
 	dMatrix bodyMatrix;
 	NewtonBodyGetMatrix(m_body0, &bodyMatrix[0][0]);
-	dMatrix chassisMatrix (m_localFrame * bodyMatrix);  
+	dMatrix chassisMatrix (m_localFrame * bodyMatrix);
 
 	dVector globalVeloc;
 	dVector globalOmega;
@@ -1692,7 +1693,7 @@ void CustomRayCastCar::IntegrateTires (dFloat timestep, int threadIndex)
 
 		if (tire.m_tireJacobianRowIndex == -1){
 			dFloat torque;
-			//this is free rolling tire 
+			//this is free rolling tire
 			//just apply just integrate the torque and apply some angular damp
 			torque = tire.m_torque - tire.m_angularVelocity * tire.m_Ixx * 0.1f;
 			tire.m_angularVelocity  += torque * tire.m_IxxInv * timestep;
@@ -1711,7 +1712,7 @@ void CustomRayCastCar::IntegrateTires (dFloat timestep, int threadIndex)
 
 				dVector tireAxelPosit (chassisMatrix.TransformVector(tire.m_harpoint - chassisMatrix.m_up.Scale (tire.m_posit)));
 				dVector localAxelPosit (tireAxelPosit - chassisMatrix.m_posit);
-				dVector tireAxelVeloc (globalVeloc + globalOmega * localAxelPosit); 		
+				dVector tireAxelVeloc (globalVeloc + globalOmega * localAxelPosit);
 
 				dFloat tireLinearSpeed;
 				dFloat tireContactSpeed;
@@ -1734,9 +1735,9 @@ void CustomRayCastCar::IntegrateTires (dFloat timestep, int threadIndex)
 		}
 
 		// integrate tire angular velocity and rotation
-		tire.m_spinAngle = dMod (tire.m_spinAngle + tire.m_angularVelocity * timestep, 3.141592f * 2.0f); 
+		tire.m_spinAngle = dMod (tire.m_spinAngle + tire.m_angularVelocity * timestep, 3.141592f * 2.0f);
 
-		// reset tire torque to zero after integration; 
+		// reset tire torque to zero after integration;
 		tire.m_torque = 0.0f;
 	}
 }
