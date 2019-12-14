@@ -712,7 +712,7 @@ irr::f32 irr::newton::IWorld::getTimeStep() {
 }
 
 irr::s32 irr::newton::IWorld::getNewtonVersion() {
-	return NewtonWorldGetVersion(this->world);
+	return NewtonWorldGetVersion();
 }
 
 //get all bodies

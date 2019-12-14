@@ -53,12 +53,22 @@ irr::newton::ITreeBody::ITreeBody(
 	core::vector3df scale_value = node->getScale();
 
 	this->node->updateAbsolutePosition();
+#define test
+#ifdef test
+		const dFloat* matrix;
+	// create a ridid body to represent the world
+	this->body = NewtonCreateBody(
+		iWorld->getNewtonWorld(),
+		this->collision->getNewtonCollision() ,matrix);
+		#else
+
+
 
 	// create a ridid body to represent the world
 	this->body = NewtonCreateBody(
 		iWorld->getNewtonWorld(),
 		this->collision->getNewtonCollision() );
-
+#endif
 	//now we can call this->getNewtonWorld() and this->getWorld()
 
 //  don't release collision!!!
