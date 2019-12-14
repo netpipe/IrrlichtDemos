@@ -82,9 +82,10 @@ public:
 					debug_info=!debug_info;
 					return true;
 
-	//		case irr::KEY_KEY_C:
-//				p_world->getUtils()->launchCube();
-	//			return true;
+			case irr::KEY_KEY_C:
+				p_world->getUtils()->launchCube(5);
+			//	p_world->getUtils()->launchCube();
+				return true;
 
 			}
 		}

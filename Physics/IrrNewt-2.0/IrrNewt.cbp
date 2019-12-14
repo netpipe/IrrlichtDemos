@@ -87,6 +87,53 @@
 					<Add directory="libs/newtonSDK/sdk" />
 				</Linker>
 			</Target>
+			<Target title="dev-notforuse">
+				<Option output="IrrNewt" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="objs" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Option projectIncludeDirsRelation="1" />
+				<Compiler>
+					<Add option="-fpermissive" />
+					<Add directory="include" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+					<Add directory="libs/newton-dynamics-2.32/coreLibrary_200/source/newton" />
+				</Compiler>
+				<Linker>
+					<Add library="Irrlicht" />
+					<Add library="Newton" />
+					<Add directory="/home/Dev/libs/physics/newtonSDK/sdkd" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+					<Add directory="libs/newton-dynamics-2.32/coreLibrary_200/projets/linux64" />
+				</Linker>
+			</Target>
+			<Target title="emscripten">
+				<Option output="IrrNewt" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="objs" />
+				<Option type="2" />
+				<Option compiler="emscripten" />
+				<Option createDefFile="1" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Option projectIncludeDirsRelation="1" />
+				<Compiler>
+					<Add option="-fpermissive" />
+					<Add directory="include" />
+					<Add directory="/home/Dev/libs/physics/newtonSDK/sdkd" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+					<Add directory="libs/newtonSDK/sdk" />
+				</Compiler>
+				<Linker>
+					<Add library="Irrlicht" />
+					<Add library="Newton" />
+					<Add directory="/home/Dev/libs/physics/newtonSDK/sdkd" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+					<Add directory="libs/newtonSDK/sdk" />
+				</Linker>
+			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-DIRRNEWT_DLL_EXPORTS" />

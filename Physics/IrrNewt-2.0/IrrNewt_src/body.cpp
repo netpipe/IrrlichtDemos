@@ -128,12 +128,18 @@ void irr::newton::IBody::Create(newton::IWorld* world, f32 mass) {
 //	this->CreateCollision(this->box_size, offset, mesh);
 //	this->collision = this->getWorld->createCollision(data);
 
+//#define test //testing newer 2.35 newton
+#ifdef test
 
-
+const dFloat* const matrix;
+	//create body
+	this->body = NewtonCreateBody(world->getNewtonWorld(), this->collision->getNewtonCollision(),matrix );
+	NewtonBodySetUserData(this->body, this);
+#else
 	//create body
 	this->body = NewtonCreateBody(world->getNewtonWorld(), this->collision->getNewtonCollision() );
 	NewtonBodySetUserData(this->body, this);
-
+#endif
 //      don't release collision object!!!
 //		this->collision->release();
 

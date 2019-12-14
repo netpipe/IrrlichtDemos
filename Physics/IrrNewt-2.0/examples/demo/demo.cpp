@@ -42,7 +42,7 @@ const float pin_level_kinematic_friction=0.1f;
 
 //GENERAL VARIABLES
 const s32 resolution_x = 800,resolution_y = 600;
-const bool fullscreen_mode = true;
+const bool fullscreen_mode = false;
 
 IrrlichtDevice* device;
 video::IVideoDriver* driver;
@@ -160,7 +160,7 @@ void CreatePin(core::vector3df pos) {
 
 	scene::ISceneNode* pin_node=smgr->addCubeSceneNode(20);
 	pin_node->setMaterialTexture(0,
-		driver->getTexture("media\\wheel_texture.jpg"));
+		driver->getTexture("media/wheel_texture.jpg"));
 	pin_node->setMaterialFlag(video::EMF_LIGHTING,false);
 	pin_node->setPosition(pos);
 
@@ -310,7 +310,7 @@ void CreateFire(core::vector3df pos) {
 	paf->drop();
 
 	ps->setMaterialFlag(video::EMF_LIGHTING, false);
-	ps->setMaterialTexture(0,driver->getTexture("media\\fire.jpg"));
+	ps->setMaterialTexture(0,driver->getTexture("media/fire.jpg"));
 	ps->setMaterialType(video::EMT_TRANSPARENT_VERTEX_ALPHA);
 
 	scene::IParticleEmitter* em = ps->createBoxEmitter(
@@ -630,10 +630,10 @@ int main(int argc, char** argv) {
 	world_node->getMaterial(0).SpecularColor.set(0,0,0,0);
 
 	//load a model
-	scene::IAnimatedMesh* rigell_mesh = smgr->getMesh("media\\rigell.md2");
+	scene::IAnimatedMesh* rigell_mesh = smgr->getMesh("media/rigell.md2");
 	rigell_node =smgr->addAnimatedMeshSceneNode(rigell_mesh);
 	rigell_node->setMaterialFlag(video::EMF_LIGHTING,false);
-	rigell_node->setMaterialTexture(0,driver->getTexture("media\\rigell.jpg"));
+	rigell_node->setMaterialTexture(0,driver->getTexture("media/rigell.jpg"));
 
 	rigell_node->setPosition(core::vector3df(
 		14.4911f,
@@ -657,7 +657,7 @@ int main(int argc, char** argv) {
 		sphere_size);
 	sphere_node->setMaterialFlag(video::EMF_LIGHTING,false);
 	sphere_node->setMaterialTexture(
-		0,driver->getTexture("media\\bowling_ball_texture.jpg"));
+		0,driver->getTexture("media/bowling_ball_texture.jpg"));
 	sphere_node->setPosition(core::vector3df(
 		7.03517f,
 		61.707f,
@@ -685,7 +685,7 @@ int main(int argc, char** argv) {
 	irr::newton::SBodyFromNode character_data;
 	character_data.Type=newton::EBT_PRIMITIVE_CHAMFER_CYLINDER;
 	character_data.Node=rigell_node;
-	character_data.Mesh=smgr->getMesh("media\\rigell.md2")->getMesh(0);
+	character_data.Mesh=smgr->getMesh("media/rigell.md2")->getMesh(0);
 	character_data.BodyOffsetFromNode.setScale(core::vector3df(1.0f,1.0f,2.0f));
 
 	rigell_p_node=
