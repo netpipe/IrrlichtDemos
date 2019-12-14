@@ -113,7 +113,7 @@
 			<Target title="emscripten">
 				<Option output="IrrNewt" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
-				<Option object_output="objs" />
+				<Option object_output=".emobjs" />
 				<Option type="2" />
 				<Option compiler="emscripten" />
 				<Option createDefFile="1" />

@@ -31,11 +31,11 @@
 					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
 					<Add directory="../../include" />
 					<Add directory="/home/Dev/Agnostic-SF/FrontWarrior/IrrNewt/examples/car/" />
-					<Add directory="../../../newtonSDK/sdk" />
+					<Add directory="../../libs/newtonSDK/sdk" />
 				</Compiler>
 				<Linker>
 					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
-					<Add directory="../../../newtonSDK/sdk" />
+					<Add directory="../../libs/newtonSDK/sdk" />
 					<Add directory="./" />
 					<Add directory="../../" />
 				</Linker>

@@ -75,7 +75,7 @@ int main(int argc, char** argv) {
 	//get model mesh
 	scene::IMesh* world_mesh = smgr->getMesh("media/level/20kdm2.bsp")->getMesh(0);
 	//create the scene node
-	scene::ISceneNode* world_node =	smgr->addOctTreeSceneNode(world_mesh);
+	scene::ISceneNode* world_node =	smgr->addOctreeSceneNode(world_mesh);
 	//position the scene node
 	world_node->setPosition(core::vector3df(45,0,0));
 
