@@ -426,8 +426,12 @@ int main()
 	//int generateMaze( );
 	//-m 0 -w 40 -h 40 -a 2 -o -t 1 rectangular_BFS
 	//../src/mazegen -m 4 -s 20 -a 0 -o circularhexagon_Kruskal
-
-	  char *argv1[]={"test","--help"};
+	char *argv1[]={"appname","-m","0","-w","40","-h","40","-a" ,"2","-o" ,"maze","-t","0","test"};//rectangular_BFS
+//	char *argv1[]={"appname","-m","1","-s","20","-a", "0","-o" ,"maze","-t","0","hexagonal_Kruskal"};//hexagonal_Kruskal
+	//char *argv1[]={"appname","-m","2","-s","20","-a", "1","-o" ,"maze","-t","0","honeycomb_DFS"};//honeycomb_DFS
+	//char *argv1[]={"appname","-m","3","-s","20","-a", "1","-o" ,"maze","-t","0","circular_DFS"};//circular_DFS
+	//	char *argv1[]={"appname","-m","4","-s","20","-a", "0","-o" ,"maze","-t","0","circularhexagon_Kruskal"};//circularhexagon_Kruskal
+	//  char *argv1[]={"test","--help"};
 	   int argc1 = sizeof(argv1) / sizeof(char*) - 1;
 	//../src/mazegen -m 0 -w 40 -h 40 -a 2 -o -t 1 rectangular_BFS
 	//../src/mazegen -m 1 -s 20 -a 0 -o -t 0 hexagonal_Kruskal
