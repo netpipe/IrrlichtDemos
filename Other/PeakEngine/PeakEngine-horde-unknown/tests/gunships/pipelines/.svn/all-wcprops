@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/peakengine/!svn/ver/246/trunk/tests/gunships/pipelines
+END
+deferred.pipeline.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/peakengine/!svn/ver/246/trunk/tests/gunships/pipelines/deferred.pipeline.xml
+END
+forward.pipeline.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/peakengine/!svn/ver/246/trunk/tests/gunships/pipelines/forward.pipeline.xml
+END

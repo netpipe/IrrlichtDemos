@@ -1,0 +1,5 @@
+<Material>
+	<Shader source="parallax.shader.xml"/>
+
+	<TexUnit unit="0" map="truck.tga" />
+</Material>

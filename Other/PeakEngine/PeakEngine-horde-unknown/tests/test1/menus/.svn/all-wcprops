@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/peakengine/!svn/ver/286/trunk/tests/test1/menus
+END
+main.ini
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/peakengine/!svn/ver/225/trunk/tests/test1/menus/main.ini
+END
+main.lua
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/peakengine/!svn/ver/286/trunk/tests/test1/menus/main.lua
+END
+fixedfont.png
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/peakengine/!svn/ver/225/trunk/tests/test1/menus/fixedfont.png
+END
+mouse.png
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/peakengine/!svn/ver/261/trunk/tests/test1/menus/mouse.png
+END
+settings.ini
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/peakengine/!svn/ver/225/trunk/tests/test1/menus/settings.ini
+END

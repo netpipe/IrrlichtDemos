@@ -1,0 +1,64 @@
+
+TO BE REWORKED
+
+================================================================================
+
+Blockers:
+- Crashes on Windows+MSVC?
+
+
+TODO:
+========== Milestone 1 ============ (0.0.1)
+Released.
+
+========== Milestone 2 ============ (0.0.2)
+Released.
+
+========== 0.0.3 ============
+- Optimize networking
+- Complete keyboard input
+- Global object management
+- Fix EventData
+
+========== Milestone 3 ============ (0.1.0)
+- Load physic trimeshes with Horde3D
+- Rewrite menus to use properties/events
+- Material parameters
+- Rewrite quaternion code
+
+- LODSceneNode (LOD, Animations, loaded from file)
+- Optimize Game
+- Cutscene support (pre rendered / realtime rendered?)
+- Online playing (server publishing?)
+- Networking security (Currently the engine can be crashed remotely?)
+- Scripted HUD?
+- Shadows
+- Loading screen + resource management
+- Overlay clipping?
+
+- RTT
+- 3D-GUI
+- Editor
+- First Person Shooter test
+- Saving/Restoring
+- File transfer
+- Chat system
+- Automatic update?
+- Encryption
+- Compression
+- Unicode?
+- Dedicated server?
+
+More:
+- Server relocation?
+
+Optional:
+- ID generator (to prevent overflows)
+
+BUGS:
+- Application doesn't shutdown properly
+- Networkhost cannot always be created (because sockets are not deleted on shutdown sometimes)
+- Engine crashes when broken ini files are used
+- Window should be created in GraphicsEngine
+- Full Screen Mode doesn't work properly on windows
+

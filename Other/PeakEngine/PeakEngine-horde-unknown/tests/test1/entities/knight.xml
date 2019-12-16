@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes"?>
+<entity>
+	<name>Animated knight</name>
+	<script>
+	<![CDATA[
+		function OnCreate()
+			knight:pushAnimation("knight_attack.anim");
+			knight:pushAnimation("knight_order.anim");
+			knight:setPosition(peak.Vector3D(0, 0, 70));
+		end
+	]]>
+	</script>	
+	<scenenode name="knight" type="mesh" file="knight.scene.xml" scale="1/1/1" />
+</entity>

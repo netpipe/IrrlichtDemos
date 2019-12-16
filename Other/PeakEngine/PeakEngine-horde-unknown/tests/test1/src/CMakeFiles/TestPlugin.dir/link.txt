@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC   -shared -Wl,-soname,libTestPlugin.so -o ../plugins/libTestPlugin.so CMakeFiles/TestPlugin.dir/Plugin.o CMakeFiles/TestPlugin.dir/Player.o CMakeFiles/TestPlugin.dir/lua_plugin.o ../../../lib/libpeakengine.so -Wl,-rpath,/home/Dev/libs/game/PeakEngine/lib 

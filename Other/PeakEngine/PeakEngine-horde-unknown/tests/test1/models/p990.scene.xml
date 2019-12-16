@@ -1,0 +1,4 @@
+<Model name="p990" geometry="p990.geo">
+
+	<Mesh name="p990_game" material="p990.material.xml" tx="0" ty="3" tz="0" sx="0.5" sy="0.5" sz="0.5" batchStart="0" batchCount="14448" vertRStart="0" vertREnd="5740" />
+</Model>

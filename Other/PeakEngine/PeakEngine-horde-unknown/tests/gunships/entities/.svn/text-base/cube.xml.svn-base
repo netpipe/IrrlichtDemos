@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<entity>
+	<name>Test</name>
+	<property name="position" type="alias" value="testbody.position" />
+	
+	<script place="server">
+	<![CDATA[
+		function activate()
+			zlink:setActive(true);
+		end
+	]]>
+	</script>
+	
+	<body name="testbody">
+		<shape name="testshape" type="box" size="1/1/1" />
+		<scenenode name="testnode" type="mesh" file="cube.scene.xml" scale="1/1/1" />
+	</body>
+	
+	<link type="direct" source="testbody.rotation.y" target="global.compass" />
+	
+	<!--<link name="zlink" type="script" source="input.KeyPressed" filter="FORWARD/BACK" place="server" active="false">
+		local speed = (FORWARD - BACK) * 5;
+		velocity = testbody:getLinearVelocity();
+		velocity.z = speed;
+		testbody:setLinearVelocity();
+	</link>-->
+	
+</entity>
+

@@ -1,0 +1,4 @@
+<Model name="smilie" geometry="smilie.geo">
+
+	<Mesh name="Cube" material="smilie.material.xml" batchStart="0" batchCount="2616" vertRStart="0" vertREnd="1725" />
+</Model>

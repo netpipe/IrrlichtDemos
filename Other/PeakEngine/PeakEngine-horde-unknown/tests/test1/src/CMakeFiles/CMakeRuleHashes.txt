@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+4fcc003a4a18f2546b99e3db56dae4ff lua_plugin.cpp

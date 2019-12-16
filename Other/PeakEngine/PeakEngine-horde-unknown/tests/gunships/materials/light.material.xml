@@ -1,0 +1,9 @@
+<Material>
+	<TexUnit unit="0" map="cityterrain2.png" allowCompression="false" />
+	<TexUnit unit="1" map="water_bump.tga" />
+	<TexUnit unit="2" map="skybox2.jpg" type="CUBE" />
+	<TexUnit unit="3" map="waternormal.png" />
+	<TexUnit unit="4" map="water.png" />
+	<Uniform name="time" />
+	<Shader source="deferredLighting.shader.xml"/>
+</Material>

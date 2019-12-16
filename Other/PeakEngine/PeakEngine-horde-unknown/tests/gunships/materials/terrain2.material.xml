@@ -1,0 +1,11 @@
+<Material>
+	<Shader source="terrain2.shader.xml"/>
+	
+	<TexUnit unit="0" map="cityterrain2.png" allowCompression="false" />
+	<TexUnit unit="1" map="sand.jpg" />
+	<TexUnit unit="2" map="grass.jpg" />
+	<TexUnit unit="3" map="beach.jpg" />
+	<TexUnit unit="4" map="mix.png" />
+	
+	<Uniform name="sunDir" a="1.0" b="-1.0" c="0.0" />
+</Material>

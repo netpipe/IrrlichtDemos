@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes"?>
+<entity>
+	<name>Chair</name>
+	<property name="position" type="alias" value="chairbody.position" />
+
+	<script>
+	<![CDATA[
+	]]>
+	</script>
+
+	<body name="chairbody">
+		<shape name="chairshape" type="trimesh" mesh="chair.obj" mass="2"  scale="0.4/0.4/0.4" />
+		<scenenode name="chairnode" type="mesh" file="chair.scene.xml" scale="0.4/0.4/0.4" />
+	</body>
+
+
+	<link type="direct" source="chairbody.rotation.y" target="global.compass" />
+
+<!--	<link name="zlink" type="script" source="input.KeyChanged" filter="forward/back/left/right" place="server">
+		chairbody:setForce(peak.Vector3D((right - left) * 3000, 0, (forward - back) * 3000));
+		--chairbody:setLinearVelocity(peak.Vector3D((right - left) * 3, 0, (forward - back) * 3));
+	</link>		-->
+
+</entity>

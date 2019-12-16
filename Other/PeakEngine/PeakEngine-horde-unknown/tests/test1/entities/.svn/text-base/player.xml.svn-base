@@ -1,0 +1,144 @@
+<?xml version="1.0" standalone="yes"?>
+<entity base="character">
+	<name>Player with character physics</name>
+	
+	<body name="playerbody" deactivation="false" >
+		<scenenode name="playernode" type="mesh" file="smilie.scene.xml" scale="1/1/1" />
+		<shape name="playershape" type="trimesh" mesh="smilie.obj" sclae="1/1/1" />
+	</body>
+
+	<property name="position" type="alias" value="playerbody.position" />
+	<property name="rotation" type="vector3" reliable="false"/>
+
+	<script>
+	<![CDATA[
+		script = entity:getScript();
+		callback = peak.RayCallback:new();
+		callback:create(script, "RayCallback");
+		
+		function RayCallback()
+			distance = callback:getInfo().lambda;
+			if (distance < 0.5) then
+				-- Reset player position
+				local pos = playerbody:getPosition();
+				pos.y = pos.y + (0.5 - distance);
+				playerbody:setPosition(pos);
+				vel = playerbody:getLinearVelocity();
+				vel.y = 0;
+				playerbody:setLinearVelocity(vel);
+				
+				
+				-- Move player
+				-- TODO: Don't walk through walls. Directly setting the velocity is bad.
+				if (peak.Game:get():isServer()) then
+					newvel = peak.Vector3D((right - left) * 25, 0, (back - forward) * 25);
+					rot = rotation:getVector3D();
+					newvel:rotateXZ(-rot.y);
+					playerbody:setLinearVelocity(newvel);
+				end
+				playerbody:setAngularVelocity(peak.Vector3D(0, 0, 0));
+			end
+		end
+		
+		function OnUpdate(msecs)
+			pos = position:getVector3D();
+			callback:setRay(pos, peak.Vector3D(pos.x, pos.y - 1, pos.z));
+		end
+	]]>
+	</script>
+	<script place="server">
+	<![CDATA[
+		forward = 0;
+		back = 0;
+		left = 0;
+		right = 0;
+	]]>
+	</script>
+	<script place="local">
+	<![CDATA[
+		camera = peak.GraphicsEngine:get():getStandardCamera();
+		rifle = peak.MeshSceneNode:new("p990.scene.xml", false, camera);
+		rifle:setRotation(peak.Vector3D(0, math.pi, 0));
+		rifle:setPosition(peak.Vector3D(0.3, -0.3, -1));
+		rifle:setScale(peak.Vector3D(0.13, 0.13, 0.13));
+	
+		overlay = peak.TextureOverlay:new("crosshair.material.xml");
+		overlay:setPosition(peak.Vector2D(0.4, 0.4));
+		overlay:setSize(peak.Vector2D(0.2, 0.2));
+			
+		playernode:setVisible(false);
+		
+		light = peak.Light:new("somelight", "light.material.xml");
+		light:setPosition(peak.Vector3D(0, 40, 0));
+		light:setRotation(peak.Vector3D(-3.14 / 2, 0, 0));
+
+	]]>
+	</script>
+
+
+
+	<link name="zlink" type="script" source="input.KeyChanged" filter="forward/back" owneronly="true" place="server">
+		entity:setMovement(forward, back, left, right);
+	</link>
+	<link name="xlink" type="script" source="input.KeyChanged" filter="left/right" owneronly="true" place="server">
+		entity:setMovement(forward, back, left, right);
+	</link>
+	<link name="mouselink" type="script" source="input.MouseMoved" place="local">
+	<![CDATA[
+		rot = rotation:getVector3D();
+		rot.y = rot.y - X * 0.01;
+		rot.x = rot.x - Y * 0.01;
+		rotation:set(rot);
+	]]>
+	</link>
+	<link name="rotationbodylink" type="script" source="rotation" >
+	<![CDATA[
+		rot = rotation:getVector3D();
+		rot.x = 0;
+		rot.z = 0;
+		playerbody:setRotation(peak.Quaternion(rot));	
+	]]>
+	</link>
+	<link name="positionlink" type="script" source="position">
+	<![CDATA[
+		if camera ~= nil then
+			pos = position:getVector3D();
+			-- Calculate offset
+			pos.y = pos.y + 7;
+			cameraposprop = camera:getProperty("position");
+			cameraposprop:set(pos);
+		end
+	]]>	
+	</link>
+	<link name="rotationlink" type="script" source="rotation" place="local">
+	<![CDATA[
+		if camera ~= nil then
+			camera:setRotation(rotation:getVector3D());
+		end
+	]]>
+	</link>
+	
+	<link name="shootlink" type="script" source="input.KeyChanged" filter="shoot" owneronly="true" place="server">
+	<![CDATA[
+		if shoot ~= 0 then
+			--newcube = peak.Game:get():createEntity("flyingcube", 0);
+			newcube = peak.Game:get():createEntity("cube", 0);
+			cubescript = newcube:getScript();
+
+			pos = position:getVector3D();
+			cubescript:callFunctionFFF("GivePosition", pos.x, pos.y, pos.z);
+
+			rot = rotation:getVector3D();
+			cubescript:callFunctionFFF("GiveRotation", rot.x, rot.y, 0);
+
+			cubescript:callFunction("Shoot");
+			oldcube = newcube;
+		end	
+
+		shoot = 0;
+
+	]]>
+	</link>
+
+</entity>
+

@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/peakengine/!svn/ver/277/trunk/tests/test1/materials
+END
+knight.material.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/peakengine/!svn/ver/247/trunk/tests/test1/materials/knight.material.xml
+END
+truck.material.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/peakengine/!svn/ver/247/trunk/tests/test1/materials/truck.material.xml
+END
+crosshair.material.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/peakengine/!svn/ver/238/trunk/tests/test1/materials/crosshair.material.xml
+END
+plane.material.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/peakengine/!svn/ver/225/trunk/tests/test1/materials/plane.material.xml
+END
+p990.material.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/peakengine/!svn/ver/259/trunk/tests/test1/materials/p990.material.xml
+END
+particle.material.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/peakengine/!svn/ver/255/trunk/tests/test1/materials/particle.material.xml
+END
+terrain.material.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/peakengine/!svn/ver/276/trunk/tests/test1/materials/terrain.material.xml
+END
+skin.material.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/peakengine/!svn/ver/225/trunk/tests/test1/materials/skin.material.xml
+END
+font.material.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/peakengine/!svn/ver/225/trunk/tests/test1/materials/font.material.xml
+END
+light.material.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/peakengine/!svn/ver/276/trunk/tests/test1/materials/light.material.xml
+END
+wood.material.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/peakengine/!svn/ver/277/trunk/tests/test1/materials/wood.material.xml
+END
+stones.material.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/peakengine/!svn/ver/276/trunk/tests/test1/materials/stones.material.xml
+END
+skybox.material.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/peakengine/!svn/ver/225/trunk/tests/test1/materials/skybox.material.xml
+END
+testoverlay.material.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/peakengine/!svn/ver/225/trunk/tests/test1/materials/testoverlay.material.xml
+END
+globalSettings.material.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/peakengine/!svn/ver/225/trunk/tests/test1/materials/globalSettings.material.xml
+END
+smilie.material.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/peakengine/!svn/ver/254/trunk/tests/test1/materials/smilie.material.xml
+END

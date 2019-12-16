@@ -1,0 +1,224 @@
+<Shader>
+	<Context id="AMBIENT">
+		<RenderConfig writeDepth="false" blendMode="REPLACE" />
+		
+		<VertexShader>
+			<InsCode code="utilityLib/vertCommon.glsl" />
+			<DefCode>
+			<![CDATA[
+				varying vec2 texCoords;
+				uniform vec4 time;
+				varying float waveTime;
+				
+				void main( void )
+				{
+					texCoords = gl_MultiTexCoord0.st;
+					gl_Position = gl_ProjectionMatrix * gl_Vertex;
+					waveTime = time.x;
+				}
+			]]>
+			</DefCode>
+		</VertexShader>
+		
+		<FragmentShader>
+			<InsCode code="utilityLib/fragDeferredRead.glsl" />
+			<DefCode>
+			<![CDATA[
+				uniform samplerCube tex7;
+				uniform samplerCube tex2;
+				uniform sampler2D tex0, tex1, tex3, tex4;
+				varying vec2 texCoords;
+				uniform sampler2D tex11;
+				uniform vec3 viewer;
+				varying mat3 tsbMat;
+				varying vec3 eyeTS;
+				varying float waveTime;
+				
+				const float Eta = 0.67;          // Ratio of indices of refraction (air -> glass)
+				const float FresnelPower = 50.0; // Controls degree of reflectivity at grazing angles
+				const float F  = ((1.0 - Eta) * (1.0 - Eta)) / ((1.0 + Eta) * (1.0 + Eta));
+				
+				const float waterheight = 3.0;
+				const vec3 watercolor = vec3(0.3, 0.82, 0.67);
+				const float wavescale = 40.0;
+				const float waveheight = 7.0;
+				
+				vec3 getIntersection(vec3 viewer, vec3 target)
+				{
+					vec3 viewdir = normalize(target - viewer);
+					
+					// Get intersection with water (approximated)
+					vec3 waterposition = viewer - (target - viewer) / (getPos(texCoords) - viewer).y * (viewer.y - waterheight);
+					// Get "real" intersection
+					float height = texture2D(tex4, waterposition.xz / 5.0 / wavescale + vec2(0.0, waveTime / 10.0)).r * waveheight;
+					float factor = (max(min(viewdir.y * -10.0, 1.0), 0.5) - 0.5) * 2;
+					waterposition = viewer - (target - viewer) / (target - viewer).y * (viewer.y - waterheight - height * factor);
+					float height2 = texture2D(tex4, waterposition.xz / 5.0 / wavescale + vec2(0.0, waveTime / 10.0)).r * waveheight;
+					height = (height + height2) * 0.5;
+					waterposition = viewer - (target - viewer) / (target - viewer).y * (viewer.y - waterheight - height * factor);
+					
+					return waterposition;
+				}
+				vec3 getIntersection2(vec3 viewer, vec3 target)
+				{
+					vec3 viewdir = normalize(target - viewer);
+					
+					// Get intersection with water (approximated)
+					vec3 waterposition = viewer - (target - viewer) / (getPos(texCoords) - viewer).y * (viewer.y - waterheight - waveheight);
+					// Get "real" intersection
+					float height = texture2D(tex4, waterposition.xz / 5.0 / wavescale + vec2(0.0, waveTime / 10.0)).r * waveheight;
+					float factor = (max(min(viewdir.y * -10.0, 1.0), 0.5) - 0.5) * 2;
+					waterposition = viewer - (target - viewer) / (target - viewer).y * (viewer.y - waterheight - height * factor);
+					float height2 = texture2D(tex4, waterposition.xz / 5.0 / wavescale + vec2(0.0, waveTime / 10.0)).r * waveheight;
+					height = (height + height2) * 0.5;
+					waterposition = viewer - (target - viewer) / (target - viewer).y * (viewer.y - waterheight - height * factor);
+					
+					return waterposition;
+				}
+				
+				vec3 getWaterColor(vec3 color)
+				{
+					vec3 target = getPos(texCoords);
+					vec3 viewdir = normalize(target - viewer);
+					float targetdist = distance(getPos(texCoords), viewer);
+					// Check if camera under water
+					if (viewer.y < texture2D(tex4, viewer.xz / 5.0 / wavescale + vec2(0.0, waveTime / 10.0)).r * waveheight + waterheight)
+					{
+						if (((viewer.y < waterheight) && (getPos(texCoords).y <= viewer.y)) || (viewdir.y < 0))
+						{
+							return watercolor * min(targetdist / 20.0, 1.0) + color * (1 - min(targetdist / 20.0, 1.0));
+						}
+						vec3 waterposition = getIntersection(viewer, target);
+						float waterdist = distance(waterposition, viewer);
+						if (waterdist > targetdist)
+						{
+							waterdist = targetdist;
+						}
+						return watercolor * min(waterdist / 20.0, 1.0) + color * (1 - min(waterdist / 20.0, 1.0));
+					}
+					if (((viewer.y > waveheight + waterheight) && (getPos(texCoords).y >= viewer.y)) || (viewdir.y > 0))
+					{
+						return color;
+					}
+					
+					// Get bottom point
+					vec3 waterposition = vec3(0.0, 0.0, 0.0);
+					if (viewdir.y < 0)
+					{
+						vec3 farpoint = viewer - (target - viewer) / (getPos(texCoords) - viewer).y * (viewer.y - waterheight);
+						vec3 nearpoint = viewer;
+						if (viewer.y > waveheight + waterheight)
+						{
+							nearpoint = viewer - (target - viewer) / (getPos(texCoords) - viewer).y * (viewer.y - waterheight - waveheight);
+						}
+						
+						waterposition = getIntersection(nearpoint, farpoint);
+						if (waterposition == vec3(0.0, 0.0, 0.0))
+						{
+							return color;
+						}
+					}
+					else
+					{
+						vec3 farpoint = viewer - (target - viewer) / (getPos(texCoords) - viewer).y * (viewer.y - waterheight - waveheight);
+						vec3 nearpoint = viewer;
+						if (viewer.y < waterheight)
+						{
+							nearpoint = viewer - (target - viewer) / (getPos(texCoords) - viewer).y * (viewer.y - waterheight);
+						}
+						
+						waterposition = getIntersection(nearpoint, farpoint);
+						if (waterposition == vec3(0.0, 0.0, 0.0))
+						{
+							return color;
+						}
+					}
+					
+					if (distance(waterposition, viewer) < distance(getPos(texCoords), viewer))
+					{
+						// Get normal
+						float terrainheight = texture2D(tex0, (waterposition.xz + vec2(257, 257)) / 512).r * 256 + texture2D(tex0, (waterposition.xz + vec2(257, 257)) / 512).r;
+						float depth = distance(getPos(texCoords), viewer) - distance(waterposition, viewer);
+						vec3 wavenormal = texture2D(tex3, waterposition.xz / 5.0 / wavescale + vec2(0.0, waveTime / 10.0)).rgb * 2.0 - 1.0;
+						wavenormal += (texture2D( tex1, waterposition.xz / 20.0 ).rgb * 2.0 - 1.0);
+						wavenormal = normalize(wavenormal);
+						
+						vec3 lightdir = normalize(vec3(1.0, 1.0,0.0));
+						
+						float specular = max(min(dot(reflect(viewdir * vec3(-1.0, 1.0, -1.0), wavenormal), lightdir) * 10 - 7, 1.0), 0.0);
+						
+						// Get water color
+						float ratio = F + (1.0 - F) * pow((1.0 - dot(-viewdir * vec3(-1.0, 1.0, 1.0), wavenormal.xzy)), FresnelPower);
+						ratio = max(min(ratio, 1.0), 0.0);
+						vec3 mixed = mix(textureCube(tex2, reflect(viewdir * vec3(-1.0, 1.0, -1.0), wavenormal) * vec3(-1.0, 1.0, 1.0)).rgb, watercolor, 1 - ratio) + specular;
+						return mixed * min(depth / 3, 1.0) + color * (1 - min(depth / 3, 1.0));
+					}
+					else
+					{
+						return color;
+					}
+				}
+				
+				void main( void )
+				{
+					if( getMatID( texCoords ) == 0.0 )	// Background
+					{
+						gl_FragColor.rgb = vec3( 0, 0, 0 );
+					}
+					else if( getMatID( texCoords ) == 2.0 )	// Sky
+					{
+						gl_FragColor.rgb = getWaterColor(getAlbedo(texCoords));
+					}
+					else
+					{
+						gl_FragColor.rgb = getWaterColor(getAlbedo( texCoords ) * textureCube( tex7, getNormal( texCoords ) ).rgb);
+						
+					}
+				}
+			]]>
+			</DefCode>
+		</FragmentShader>
+	</Context>
+	
+	
+	<Context id="LIGHTING">
+		<RenderConfig writeDepth="false" blendMode="ADD" />
+		
+		<VertexShader>
+			<DefCode>
+			<![CDATA[
+				varying vec2 texCoords;
+				
+				void main( void )
+				{
+					texCoords = gl_MultiTexCoord0.st;
+					gl_Position = gl_ProjectionMatrix * gl_Vertex;
+				}
+			]]>
+			</DefCode>
+		</VertexShader>
+		
+		<FragmentShader>
+			<InsCode code="utilityLib/fragLighting.glsl" />
+			<InsCode code="utilityLib/fragDeferredRead.glsl" />
+			<DefCode>
+			<![CDATA[
+				varying vec2 texCoords;
+				
+				void main( void )
+				{
+					if( getMatID( texCoords ) == 1.0 )	// Standard phong material
+					{
+						float vsPos = (gl_ModelViewMatrix * vec4( getPos( texCoords ), 1.0 )).z;
+						
+						gl_FragColor.rgb =
+							calcPhongSpotLight( getPos( texCoords ), getNormal( texCoords ),
+												getAlbedo( texCoords ), getSpecMask( texCoords ), 16.0, -vsPos, 0.3 );
+					}
+					else discard;
+				}
+			]]>
+			</DefCode>
+		</FragmentShader>
+	</Context>
+</Shader>actor

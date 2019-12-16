@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/peakengine/!svn/ver/249/trunk/tests/gunships/shaders
+END
+building1.shader.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/peakengine/!svn/ver/246/trunk/tests/gunships/shaders/building1.shader.xml
+END
+skybox.shader.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/peakengine/!svn/ver/246/trunk/tests/gunships/shaders/skybox.shader.xml
+END
+overlay.shader.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/peakengine/!svn/ver/225/trunk/tests/gunships/shaders/overlay.shader.xml
+END
+particle.shader.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/peakengine/!svn/ver/225/trunk/tests/gunships/shaders/particle.shader.xml
+END
+parallax.shader.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/peakengine/!svn/ver/225/trunk/tests/gunships/shaders/parallax.shader.xml
+END
+terrain.shader.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/peakengine/!svn/ver/225/trunk/tests/gunships/shaders/terrain.shader.xml
+END
+deferredLighting.shader.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/peakengine/!svn/ver/249/trunk/tests/gunships/shaders/deferredLighting.shader.xml
+END
+terrain2.shader.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/peakengine/!svn/ver/246/trunk/tests/gunships/shaders/terrain2.shader.xml
+END

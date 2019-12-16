@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/peakengine/!svn/ver/286/trunk/tests/test1
+END
+startup.lua
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/peakengine/!svn/ver/257/trunk/tests/test1/startup.lua
+END
+server.lua
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/peakengine/!svn/ver/259/trunk/tests/test1/server.lua
+END
+shutdown.lua
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/peakengine/!svn/ver/225/trunk/tests/test1/shutdown.lua
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/peakengine/!svn/ver/257/trunk/tests/test1/CMakeLists.txt
+END
+client.lua
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/peakengine/!svn/ver/225/trunk/tests/test1/client.lua
+END
+settings.ini
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/peakengine/!svn/ver/259/trunk/tests/test1/settings.ini
+END

@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 55
+lua_plugin.cpp
+cmake_install.cmake
+CMakeFiles
+Makefile
+
+END

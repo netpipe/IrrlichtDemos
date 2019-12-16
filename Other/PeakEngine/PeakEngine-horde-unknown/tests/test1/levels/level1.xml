@@ -1,0 +1,9 @@
+
+<?xml version="1.0" standalone="yes"?>
+<level>
+	<name>Level 1</name>	
+	<scenenode name="skybox" type="mesh" file="skybox.scene.xml" scale="128/128/128" />
+	<scenenode name="particle" type="particlesystem" file="particle.scene.xml" scale="32/32/32" />
+	
+</level>
+

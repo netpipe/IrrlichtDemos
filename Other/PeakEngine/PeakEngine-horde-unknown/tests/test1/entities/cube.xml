@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="yes"?>
+<entity>
+	<name>Cube and Shootable</name>
+	
+	<property name="position" type="alias" value="cubebody.position" />
+	
+	<script>
+	<![CDATA[	
+		function GivePosition(x, y, z)
+			pos = peak.Vector3D(x, y, z);
+			pos.y = pos.y + 7;
+		end
+		
+		function GiveRotation(x, y, z)
+			rot = peak.Vector3D(x, y, z);
+		end
+
+		function Shoot()
+			cubebody:setRotation(peak.Quaternion(rot));
+			rot.y = -rot.y;
+			sposrel = peak.Vector3D(0, 0 , -3);
+			sposrel:rotate(rot);
+			spos = peak.Vector3D(pos.x + sposrel.x, pos.y + sposrel.y, pos.z + sposrel.z);
+			cubebody:setPosition(spos);		
+			shootvel = peak.Vector3D(0, 0, -80);
+			shootvel:rotate(rot);
+			cubebody:setLinearVelocity(shootvel);
+		end
+	]]>
+	</script>
+
+	<body name="cubebody">
+		<scenenode name="cubenode" type="mesh" file="cube.scene.xml" scale="4/4/4" />
+		<shape name="cubeshape" type="box" mass="60" size="4/4/4" />
+	</body>
+
+
+</entity>
+

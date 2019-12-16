@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/peakengine/!svn/ver/276/trunk/tests/test1/shaders
+END
+skybox.shader.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/peakengine/!svn/ver/225/trunk/tests/test1/shaders/skybox.shader.xml
+END
+skinning.shader.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/peakengine/!svn/ver/255/trunk/tests/test1/shaders/skinning.shader.xml
+END
+standard.shader.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/peakengine/!svn/ver/247/trunk/tests/test1/shaders/standard.shader.xml
+END
+overlay.shader.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/peakengine/!svn/ver/225/trunk/tests/test1/shaders/overlay.shader.xml
+END
+skinning_metal.shader.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/peakengine/!svn/ver/247/trunk/tests/test1/shaders/skinning_metal.shader.xml
+END
+particle.shader.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/peakengine/!svn/ver/255/trunk/tests/test1/shaders/particle.shader.xml
+END
+parallax.shader.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/peakengine/!svn/ver/225/trunk/tests/test1/shaders/parallax.shader.xml
+END
+deferredLighting.shader.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/peakengine/!svn/ver/276/trunk/tests/test1/shaders/deferredLighting.shader.xml
+END

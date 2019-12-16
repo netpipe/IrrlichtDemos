@@ -1,0 +1,4 @@
+<Emitter name="ParticleSystem1" material="particle.material.xml" effect="particle.effect.xml"
+		 maxCount="500" respawnCount="-1" delay="2" emissionRate="50" spreadAngle="360"
+		 forceX="0" forceY="1.5" forceZ="0" />
+

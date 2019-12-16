@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<entity>
+	<name>Sphere</name>
+	<property name="position" type="alias" value="spherebody.position" />
+
+	<body name="spherebody">
+		<shape name="sphereshape" type="sphere" radius="1" mass="0.1" />
+		<scenenode name="spherenode" type="sphere" material="white" />
+	</body>
+
+</entity>

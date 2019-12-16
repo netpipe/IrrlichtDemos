@@ -1,0 +1,1 @@
+/usr/bin/c++   -g  -fPIC CMakeFiles/peakbin.dir/main.o  -o ../bin/peakbin -rdynamic -L/home/Dev/libs/game/PeakEngine/lib ../lib/libpeakengine.so -lenet -llua -ltolua++ -lHorde3D -lHorde3DUtils -lGL -lglfw -lBulletSoftBody -lBulletDynamics -lBulletCollision -lLinearMath -Wl,-rpath,/home/Dev/libs/game/PeakEngine/lib 

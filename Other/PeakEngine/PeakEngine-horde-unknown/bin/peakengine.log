@@ -1,0 +1,17 @@
+I: 10/24/09 20:14:34: GameEngine.cpp:74: PeakEngine starting.
+D: 10/24/09 20:14:34: InputManager.cpp:68: Action: forward: 0x57.
+D: 10/24/09 20:14:34: InputManager.cpp:68: Action: back: 0x53.
+D: 10/24/09 20:14:34: InputManager.cpp:68: Action: left: 0x41.
+D: 10/24/09 20:14:34: InputManager.cpp:68: Action: right: 0x44.
+D: 10/24/09 20:14:34: InputManager.cpp:68: Action: up: 0x20.
+D: 10/24/09 20:14:34: InputManager.cpp:68: Action: down: 0x43.
+D: 10/24/09 20:14:34: InputManager.cpp:68: Action: shoot1: 0x01.
+D: 10/24/09 20:14:34: InputManager.cpp:68: Action: shoot2: 0x02.
+D: 10/24/09 20:14:34: InputManager.cpp:68: Action: quitgame: 0x1B.
+E: 10/24/09 20:14:34: MenuManager.cpp:67: Mouse pointer not found.
+D: 10/24/09 20:14:34: Menu.cpp:61: Loading menu "main".
+E: 10/24/09 20:14:34: SoundFactory.cpp:57: File sounds/bgm2.ogg, extension: ogg
+E: 10/24/09 20:14:34: OggVorbisSource.cpp:89: Loading file.
+D: 10/24/09 20:16:44: Menu.cpp:61: Loading menu "serverlist".
+E: 10/24/09 20:16:44: BroadcastClient.cpp:65: Started broadcast client (27273).
+E: 10/24/09 20:16:44: BroadcastClient.cpp:127: Sending.

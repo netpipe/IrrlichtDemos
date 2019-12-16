@@ -37,7 +37,7 @@ namespace peak
 		entity = 0;
 
 		networkid = 0;
-		
+
 		collisionevent = new Event;
 		addEvent("Collision", collisionevent);
 	}
@@ -62,7 +62,7 @@ namespace peak
 
 		addProperty("position", new Vector3DProperty("position"));
 		addProperty("rotation", new QuaternionProperty("rotation"));
-		
+
 		this->world = world;
 		this->shape = shape;
 		this->autodeactivation = autodeactivation;
@@ -119,9 +119,9 @@ namespace peak
 		if (!autodeactivation)
 		{
 			// Reenable body
-			body->activate(true);
+///			body->activate(true);
 		}
-		
+
 		Property *position = getProperty("position");
 		position->disableUpdates();
 		Vector3D pos = getPosition();
@@ -145,7 +145,7 @@ namespace peak
 	{
 		return bodies;
 	}
-	
+
 	void Body::collideWith(Body *other)
 	{
 		collisionbody = other;
@@ -155,7 +155,7 @@ namespace peak
 	{
 		return collisionbody;
 	}
-	
+
 	void Body::setEntity(Entity *entity)
 	{
 		this->entity = entity;
@@ -169,7 +169,7 @@ namespace peak
 	{
 		return body;
 	}
-	
+
 	Shape *Body::getShape()
 	{
 		return shape;

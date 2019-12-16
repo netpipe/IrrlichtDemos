@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/peakengine/!svn/ver/225/trunk/tests/test1/pipelines
+END
+forward.pipeline.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/peakengine/!svn/ver/225/trunk/tests/test1/pipelines/forward.pipeline.xml
+END

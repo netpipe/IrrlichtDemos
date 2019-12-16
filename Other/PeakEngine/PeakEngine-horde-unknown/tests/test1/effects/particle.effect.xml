@@ -1,0 +1,12 @@
+<ParticleConfig lifeMin="5.0" lifeMax="10.0">
+		
+		<ChannelOverLife channel="moveVel" startMin="9.0" startMax="9.0" endRate="0.5" />
+		<ChannelOverLife channel="rotVel" startMin="32" startMax="64" endRate="0.57" />
+		<ChannelOverLife channel="size" startMin="1.2" startMax="1.2" endRate="2.0" />
+		
+		<ChannelOverLife channel="colR" startMin="0.2" startMax="0.2" endRate="1.0" />
+		<ChannelOverLife channel="colG" startMin="0.2" startMax="0.2" endRate="1.0" />
+		<ChannelOverLife channel="colB" startMin="0.2" startMax="0.2" endRate="1.0" />
+		<ChannelOverLife channel="colA" startMin="1.0" startMax="1.0" endRate="1.0" />
+		
+</ParticleConfig>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/peakengine/!svn/ver/250/trunk/tests/gunships/levels
+END
+city.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/peakengine/!svn/ver/250/trunk/tests/gunships/levels/city.xml
+END
+testlevel.level
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/peakengine/!svn/ver/225/trunk/tests/gunships/levels/testlevel.level
+END
+city.level
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/peakengine/!svn/ver/225/trunk/tests/gunships/levels/city.level
+END

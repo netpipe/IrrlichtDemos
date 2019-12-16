@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/Dev/libs/game/PeakEngine/tests/main.cpp
+Horde3D.h
+-
+Horde3DUtils.h
+-
+GL/glfw.h
+-
+core/GameEngine.h
+/home/Dev/libs/game/PeakEngine/tests/core/GameEngine.h
+
+/usr/local/include/horde3d/Horde3D.h
+
+/usr/local/include/horde3d/Horde3DUtils.h
+Horde3D.h
+/usr/local/include/horde3d/Horde3D.h
+
+tests/../engine/include/core/Config.h
+
+tests/../engine/include/core/GameEngine.h
+core/Config.h
+tests/../engine/include/core/core/Config.h
+string
+-
+time.h
+-
+winsock2.h
+-
+winbase.h
+-
+sys/time.h
+-
+

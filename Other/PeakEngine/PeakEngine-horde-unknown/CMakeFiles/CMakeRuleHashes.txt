@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+4182f27c294970aabd4ae26f2672e6f2 engine/src/lua_peak.cpp
+7e1e33c2c944f69ff7188e44be3e6f7b tests/test1/src/lua_plugin.cpp

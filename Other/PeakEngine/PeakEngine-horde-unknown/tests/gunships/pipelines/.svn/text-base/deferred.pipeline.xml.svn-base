@@ -1,0 +1,29 @@
+<!-- Deferred Shading Pipeline -->
+<Pipeline>
+	<Setup>
+		<RenderTarget id="GBUFFER" depthBuf="true" numColBufs="3" format="RGBA16F" scale="1.0" />
+	</Setup>
+	
+	<CommandQueue>
+		<Stage id="Attribpass">
+			<SwitchTarget target="GBUFFER" />
+			<ClearTarget depthBuf="true" colBuf0="true" />
+			<DrawGeometry context="ATTRIBPASS" />
+		</Stage>
+		
+		<Stage id="Lighting" link="globalSettings.material.xml">
+			<SwitchTarget target="" />
+			<ClearTarget colBuf0="true" />
+			<BindBuffer texUnit="8" target="GBUFFER" bufIndex="0" />
+			<BindBuffer texUnit="9" target="GBUFFER" bufIndex="1" />
+			<BindBuffer texUnit="10" target="GBUFFER" bufIndex="2" />
+			
+			<DrawQuad material="light.material.xml" context="AMBIENT" />
+			<DoDeferredLightLoop />
+		</Stage>
+		
+		<Stage id="Overlays">
+			<DrawOverlays context="OVERLAY" />
+		</Stage>
+	</CommandQueue>
+</Pipeline>

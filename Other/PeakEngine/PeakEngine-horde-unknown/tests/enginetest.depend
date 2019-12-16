@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1243885429 source:/home/Dev/libs/game/PeakEngine/tests/main.cpp
+	<Horde3D.h>
+	<Horde3DUtils.h>
+	<GL/glfw.h>
+	"core/GameEngine.h"
+
+1237215058 /home/Dev/libs/game/Horde3D_SDK_1.0.0_Beta3/Horde3D/Bindings/C++/Horde3D.h
+
+1237215058 /home/Dev/libs/game/Horde3D_SDK_1.0.0_Beta3/Horde3D/Bindings/C++/Horde3DUtils.h
+	"Horde3D.h"
+
+1243885431 /home/Dev/libs/game/PeakEngine/engine/include/core/GameEngine.h
+	"core/Config.h"
+	<string>
+	<time.h>
+	<winsock2.h>
+	<winbase.h>
+	<sys/time.h>
+
+1243885431 /home/Dev/libs/game/PeakEngine/engine/include/core/Config.h
+
+1243885429 source:/home/Dev/libs/game/PeakEngines/PeakEngine/tests/main.cpp
+	<Horde3D.h>
+	<Horde3DUtils.h>
+	<GL/glfw.h>
+	"core/GameEngine.h"
+
+1496986814 /home/Dev/libs/game/Horde3d/Horde3D-git/Horde3D/Bindings/C++/Horde3D.h
+
+1496986814 /home/Dev/libs/game/Horde3d/Horde3D-git/Horde3D/Bindings/C++/Horde3DUtils.h
+	"Horde3D.h"
+
+1243885431 /home/Dev/libs/game/PeakEngines/PeakEngine/engine/include/core/GameEngine.h
+	"core/Config.h"
+	<string>
+	<time.h>
+	<winsock2.h>
+	<winbase.h>
+	<sys/time.h>
+
+1243885431 /home/Dev/libs/game/PeakEngines/PeakEngine/engine/include/core/Config.h
+
