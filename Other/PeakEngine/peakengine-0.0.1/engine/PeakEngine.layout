@@ -2,46 +2,35 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Linux" />
-	<File name="src/sound/SoundEngine.cpp" open="1" top="0" tabpos="22" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1231" topLine="2" />
-		</Cursor>
-	</File>
 	<File name="src/physics/Joint.cpp" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
+		<Folding>
+			<Collapse line="25" />
+		</Folding>
 	</File>
 	<File name="src/physics/Heightfield.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="31" />
-		</Folding>
 	</File>
 	<File name="src/network/Connection.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="24" />
-		</Folding>
 	</File>
 	<File name="src/network/BroadcastHost.cpp" open="1" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="1405" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="28" />
-		</Folding>
 	</File>
-	<File name="src/menu/ComboBox.cpp" open="0" top="0" tabpos="22" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/network/BroadcastClient.cpp" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
+			<Cursor1 position="1649" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/menu/CheckBox.cpp" open="0" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/menu/ComboBox.cpp" open="0" top="0" tabpos="22" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
@@ -55,10 +44,6 @@
 		<Cursor>
 			<Cursor1 position="152" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="7" />
-			<Collapse line="14" />
-		</Folding>
 	</File>
 	<File name="src/graphic/irr/TextureOverlay.cpp" open="0" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
@@ -75,115 +60,37 @@
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/graphic/irr/SkyBox.cpp" open="0" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
 	<File name="src/graphic/irr/MeshSceneNode.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="28" />
-		</Folding>
 	</File>
 	<File name="src/graphic/irr/InputReceiver.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/graphic/irr/LabelOverlay.cpp" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/graphic/irr/GraphicsEngine.cpp" open="1" top="0" tabpos="24" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2718" topLine="3" />
-		</Cursor>
-		<Folding>
-			<Collapse line="35" />
-		</Folding>
-	</File>
 	<File name="src/graphic/SceneNodeController.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
+		<Folding>
+			<Collapse line="24" />
+		</Folding>
 	</File>
 	<File name="src/graphic/irr/SkyDome.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="29" />
-		</Folding>
-	</File>
-	<File name="src/graphic/irr/Image.cpp" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/core/Quaternion.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/graphic/irr/CubeSceneNode.cpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/graphic/irr/RectangleOverlay.cpp" open="0" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include/core/Game.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="6" />
 		</Cursor>
 	</File>
 	<File name="src/graphic/irr/SceneNode.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="31" />
-		</Folding>
 	</File>
-	<File name="src/graphic/FollowingController.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/graphic/irr/Image.cpp" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="27" />
-		</Folding>
-	</File>
-	<File name="src/menu/Label.cpp" open="0" top="0" tabpos="23" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include/physics/World.h" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1107" topLine="4" />
-		</Cursor>
-		<Folding>
-			<Collapse line="31" />
-		</Folding>
-	</File>
-	<File name="include/core/Script.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1163" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="36" />
-		</Folding>
-	</File>
-	<File name="include/core/GameEngine.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="14" />
 		</Cursor>
 	</File>
 	<File name="src/core/Vector3D.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -191,27 +98,9 @@
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/core/GameEngine.cpp" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include/core/Script.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1542" topLine="16" />
-		</Cursor>
-		<Folding>
-			<Collapse line="43" />
-		</Folding>
-	</File>
-	<File name="include/graphic/irr/InputReceiver.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/menu/ListBox.cpp" open="0" top="0" tabpos="24" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/network/BroadcastClient.cpp" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1649" topLine="0" />
+			<Cursor1 position="1163" topLine="0" />
 		</Cursor>
 		<Folding>
 			<Collapse line="28" />
@@ -226,53 +115,145 @@
 		<Cursor>
 			<Cursor1 position="322" topLine="0" />
 		</Cursor>
-	</File>
-	<File name="include/graphic/GraphicsEngine.h" open="1" top="0" tabpos="23" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1420" topLine="6" />
-		</Cursor>
 		<Folding>
-			<Collapse line="48" />
+			<Collapse line="26" />
 		</Folding>
 	</File>
-	<File name="include/network/NetworkHost.h" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include/physics/World.h" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1119" topLine="0" />
+			<Cursor1 position="1107" topLine="3" />
 		</Cursor>
-		<Folding>
-			<Collapse line="29" />
-		</Folding>
 	</File>
 	<File name="src/sound/OggVorbisSource.cpp" open="1" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="1065" topLine="5" />
 		</Cursor>
+		<Folding>
+			<Collapse line="37" />
+		</Folding>
 	</File>
-	<File name="src/menu/MenuElement.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include/graphic/GraphicsEngine.h" open="1" top="0" tabpos="23" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1187" topLine="2" />
+			<Cursor1 position="1420" topLine="5" />
+		</Cursor>
+		<Folding>
+			<Collapse line="28" />
+		</Folding>
+	</File>
+	<File name="src/core/Quaternion.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/graphic/irr/LabelOverlay.cpp" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/graphic/irr/GraphicsEngine.cpp" open="1" top="0" tabpos="24" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2718" topLine="2" />
+		</Cursor>
+	</File>
+	<File name="src/sound/SoundEngine.cpp" open="1" top="0" tabpos="22" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1231" topLine="1" />
 		</Cursor>
 		<Folding>
 			<Collapse line="32" />
 		</Folding>
 	</File>
+	<File name="src/menu/CheckBox.cpp" open="0" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/graphic/FollowingController.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include/core/Game.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="6" />
+		</Cursor>
+		<Folding>
+			<Collapse line="34" />
+		</Folding>
+	</File>
+	<File name="src/menu/MenuElement.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1187" topLine="1" />
+		</Cursor>
+	</File>
 	<File name="src/core/FileSystem.cpp" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="1302" topLine="7" />
 		</Cursor>
+		<Folding>
+			<Collapse line="38" />
+		</Folding>
+	</File>
+	<File name="src/core/Logger.cpp" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1131" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/menu/ListBox.cpp" open="0" top="0" tabpos="24" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/graphic/irr/SkyBox.cpp" open="0" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include/graphic/irr/InputReceiver.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include/network/NetworkHost.h" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1119" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include/core/GameEngine.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="14" />
+		</Cursor>
+		<Folding>
+			<Collapse line="43" />
+		</Folding>
+	</File>
+	<File name="src/graphic/irr/RectangleOverlay.cpp" open="0" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/menu/Label.cpp" open="0" top="0" tabpos="23" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/core/GameEngine.cpp" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1542" topLine="16" />
+		</Cursor>
+		<Folding>
+			<Collapse line="57" />
+		</Folding>
 	</File>
 	<File name="src/core/InputManager.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/core/Logger.cpp" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/graphic/irr/CubeSceneNode.cpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1131" topLine="0" />
+			<Cursor1 position="0" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="27" />
-		</Folding>
 	</File>
-	<EditorTabsLayout layout="034c6d505df79372001486ae00000002=0;PeakEngine:src/menu/MenuElement.cpp,1;PeakEngine:src/physics/Heightfield.cpp,2;PeakEngine:src/network/Connection.cpp,3;PeakEngine:src/graphic/irr/MeshSceneNode.cpp,4;PeakEngine:src/graphic/irr/SkyDome.cpp,5;PeakEngine:src/graphic/irr/SceneNode.cpp,6;PeakEngine:src/graphic/FollowingController.cpp,7;PeakEngine:src/graphic/SceneNodeController.cpp,8;PeakEngine:include/core/Game.h,9;PeakEngine:include/core/GameEngine.h,10;PeakEngine:src/core/FileSystem.cpp,11;PeakEngine:include/core/Script.h,12;PeakEngine:include/network/NetworkHost.h,13;PeakEngine:include/physics/World.h,14;PeakEngine:src/core/GameEngine.cpp,15;PeakEngine:src/physics/Joint.cpp,16;PeakEngine:src/core/Address.cpp,17;PeakEngine:src/core/Logger.cpp,18;PeakEngine:src/network/BroadcastClient.cpp,19;PeakEngine:src/network/BroadcastHost.cpp,20;PeakEngine:src/sound/OggVorbisSource.cpp,21;PeakEngine:src/sound/SoundEngine.cpp,22;PeakEngine:include/graphic/GraphicsEngine.h,23;PeakEngine:src/graphic/irr/GraphicsEngine.cpp,*24;PeakEngine:src/main.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=328;besth=318;minw=328;minh=318;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=034c6d505df79372001486ae00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+	<EditorTabsLayout layout="02d490905df794be0013e34800000002=0;PeakEngine:src/menu/MenuElement.cpp,1;PeakEngine:src/physics/Heightfield.cpp,2;PeakEngine:src/network/Connection.cpp,3;PeakEngine:src/graphic/irr/MeshSceneNode.cpp,4;PeakEngine:src/graphic/irr/SkyDome.cpp,5;PeakEngine:src/graphic/irr/SceneNode.cpp,6;PeakEngine:src/graphic/FollowingController.cpp,7;PeakEngine:src/graphic/SceneNodeController.cpp,8;PeakEngine:include/core/Game.h,9;PeakEngine:include/core/GameEngine.h,10;PeakEngine:src/core/FileSystem.cpp,11;PeakEngine:include/core/Script.h,12;PeakEngine:include/network/NetworkHost.h,13;PeakEngine:include/physics/World.h,14;PeakEngine:src/core/GameEngine.cpp,15;PeakEngine:src/physics/Joint.cpp,16;PeakEngine:src/core/Address.cpp,17;PeakEngine:src/core/Logger.cpp,18;PeakEngine:src/network/BroadcastClient.cpp,19;PeakEngine:src/network/BroadcastHost.cpp,20;PeakEngine:src/sound/OggVorbisSource.cpp,21;PeakEngine:src/sound/SoundEngine.cpp,22;PeakEngine:include/graphic/GraphicsEngine.h,23;PeakEngine:src/graphic/irr/GraphicsEngine.cpp,*24;PeakEngine:src/main.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=328;besth=326;minw=328;minh=326;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=02d490905df794be0013e34800000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>
