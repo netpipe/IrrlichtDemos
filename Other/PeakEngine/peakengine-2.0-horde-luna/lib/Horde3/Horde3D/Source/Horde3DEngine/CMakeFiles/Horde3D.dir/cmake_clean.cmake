@@ -26,7 +26,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Horde3D.dir/__/__/__/Extensions/Terrain/Source/terrain.cpp.o"
   "CMakeFiles/Horde3D.dir/__/__/__/Extensions/Terrain/Source/extension.cpp.o"
   "libHorde3D.pdb"
-  "libHorde3D.so"
+  "libHorde3D.a"
 )
 
 # Per-language clean rules from dependency scanning.

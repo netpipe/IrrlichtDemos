@@ -116,9 +116,10 @@ Knight_EXTERNAL_OBJECTS =
 Horde3D/Binaries/Linux/Knight: Horde3D/Samples/Knight/CMakeFiles/Knight.dir/app.cpp.o
 Horde3D/Binaries/Linux/Knight: Horde3D/Samples/Knight/CMakeFiles/Knight.dir/main.cpp.o
 Horde3D/Binaries/Linux/Knight: Horde3D/Samples/Knight/CMakeFiles/Knight.dir/build.make
-Horde3D/Binaries/Linux/Knight: Horde3D/Source/Horde3DUtils/libHorde3DUtils.so
+Horde3D/Binaries/Linux/Knight: Horde3D/Source/Horde3DEngine/libHorde3D.a
+Horde3D/Binaries/Linux/Knight: Horde3D/Source/Horde3DUtils/libHorde3DUtils.a
 Horde3D/Binaries/Linux/Knight: Horde3D/Dependencies/Source/glfw/libglfw.a
-Horde3D/Binaries/Linux/Knight: Horde3D/Source/Horde3DEngine/libHorde3D.so
+Horde3D/Binaries/Linux/Knight: Horde3D/Source/Horde3DEngine/libHorde3D.a
 Horde3D/Binaries/Linux/Knight: Horde3D/Samples/Knight/CMakeFiles/Knight.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../Binaries/Linux/Knight"
 	cd /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Samples/Knight && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Knight.dir/link.txt --verbose=$(VERBOSE)

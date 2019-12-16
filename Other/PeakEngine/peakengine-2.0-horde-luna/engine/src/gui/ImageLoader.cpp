@@ -1,11 +1,12 @@
-
+#ifndef IMAGELOAD_H
+#define  IMAGELOAD_H
 #include "gui/ImageLoader.h"
 
 #include <FreeImagePlus.h>
 #include <guichan/opengl/openglimage.hpp>
 #include <unistd.h>
 #include <stdio.h>
-int main (){};
+//int main (){};
 namespace peak
 {
 	ImageLoader::ImageLoader()
@@ -79,3 +80,4 @@ namespace peak
 	}
 }
 
+#endif // IMAGELOAD_H

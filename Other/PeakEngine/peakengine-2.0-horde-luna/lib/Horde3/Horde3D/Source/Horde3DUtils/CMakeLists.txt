@@ -3,7 +3,7 @@ include_directories(../Shared)
 include_directories(../../Bindings/C++)
 
 
-add_library(Horde3DUtils SHARED
+add_library(Horde3DUtils STATIC
 	main.cpp
 	)
 	

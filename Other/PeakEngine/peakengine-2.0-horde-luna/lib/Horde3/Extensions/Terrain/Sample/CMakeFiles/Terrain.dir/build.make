@@ -116,9 +116,10 @@ Terrain_EXTERNAL_OBJECTS =
 Horde3D/Binaries/Linux/Terrain: Extensions/Terrain/Sample/CMakeFiles/Terrain.dir/app.o
 Horde3D/Binaries/Linux/Terrain: Extensions/Terrain/Sample/CMakeFiles/Terrain.dir/main.o
 Horde3D/Binaries/Linux/Terrain: Extensions/Terrain/Sample/CMakeFiles/Terrain.dir/build.make
-Horde3D/Binaries/Linux/Terrain: Horde3D/Source/Horde3DUtils/libHorde3DUtils.so
+Horde3D/Binaries/Linux/Terrain: Horde3D/Source/Horde3DEngine/libHorde3D.a
+Horde3D/Binaries/Linux/Terrain: Horde3D/Source/Horde3DUtils/libHorde3DUtils.a
 Horde3D/Binaries/Linux/Terrain: Horde3D/Dependencies/Source/glfw/libglfw.a
-Horde3D/Binaries/Linux/Terrain: Horde3D/Source/Horde3DEngine/libHorde3D.so
+Horde3D/Binaries/Linux/Terrain: Horde3D/Source/Horde3DEngine/libHorde3D.a
 Horde3D/Binaries/Linux/Terrain: Extensions/Terrain/Sample/CMakeFiles/Terrain.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../../Horde3D/Binaries/Linux/Terrain"
 	cd /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Extensions/Terrain/Sample && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Terrain.dir/link.txt --verbose=$(VERBOSE)

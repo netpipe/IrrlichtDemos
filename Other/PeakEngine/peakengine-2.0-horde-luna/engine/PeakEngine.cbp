@@ -108,10 +108,92 @@
 			</Target>
 			<Target title="whole">
 				<Option output="../bin/PeakEngine" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../" />
 				<Option object_output="obj/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option use_console_runner="0" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Option projectIncludeDirsRelation="1" />
+				<Option projectLibDirsRelation="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add directory="../lib/lua-5.1.4/src" />
+					<Add directory="../lib/guichan-0.8.1/include" />
+					<Add directory="../lib/enet/include" />
+					<Add directory="../lib/glfw/include/" />
+					<Add directory="../lib/Horde3/Horde3D/Source" />
+					<Add directory="../lib/Horde3/Horde3D/Source/Shared" />
+					<Add directory="../lib/Horde3/Horde3D/Source/Horde3DEngine" />
+					<Add directory="../lib/Horde3/Horde3D/Bindings/C++" />
+					<Add directory="../lib/tolua++-1.0.93/include" />
+					<Add directory="../lib/FreeImage/Wrapper/FreeImagePlus" />
+					<Add directory="../../../../../LunaLibs/bullet3-2.86.1/srcd" />
+					<Add directory="../lib/FreeImage/Sourced" />
+					<Add directory="include" />
+					<Add directory=".." />
+					<Add directory="include/lua" />
+					<Add directory="include/ALUT" />
+					<Add directory="include/bullets" />
+					<Add directory="include/support" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="GL" />
+					<Add library="guichan_opengl" />
+					<Add library="guichan" />
+					<Add library="Xxf86vm" />
+					<Add library="lua" />
+					<Add library="tolua++" />
+					<Add library="freeimage" />
+					<Add library="FreeImagePlus" />
+					<Add library="glfw" />
+					<Add library="openjpeg" />
+					<Add library="enet" />
+					<Add library="openal" />
+					<Add library="ogg" />
+					<Add library="vorbis" />
+					<Add library="vorbisfile" />
+					<Add library="vorbisenc" />
+					<Add library="BulletSoftBody" />
+					<Add library="BulletDynamics" />
+					<Add library="BulletCollision" />
+					<Add library="LinearMath" />
+					<Add library="Horde3D" />
+					<Add library="Horde3DUtils" />
+					<Add library="alut" />
+					<Add library="pthread" />
+					<Add library="X11" />
+					<Add library="Xrandr" />
+					<Add directory="./lib/enet" />
+					<Add directory="../lib/lua-5.1.4/src" />
+					<Add directory="../lib/Horde3/Horde3D/Source/Horde3DEngine" />
+					<Add directory="../lib/Horde3/Horde3D/Source/Horde3DUtils" />
+					<Add directory="../lib/tolua++-1.0.93/src/lib" />
+					<Add directory="../../../../../LunaLibs/bullet3-2.86.1/src/BulletCollisiond" />
+					<Add directory="../../../../../LunaLibs/bullet3-2.86.1/src/BulletDynamicsd" />
+					<Add directory="../../../../../LunaLibs/bullet3-2.86.1/src/BulletSoftBodyd" />
+					<Add directory="../../../../../LunaLibs/bullet3-2.86.1/src/LinearMathd" />
+					<Add directory="../lib/guichan-0.8.1/src/.libs" />
+					<Add directory="../lib/FreeImage/Distd" />
+					<Add directory="../lib/OpenJPEG_v1_3/bin" />
+					<Add directory="../lib/FreeImage/Wrapper/FreeImagePlus" />
+					<Add directory="../lib/glfw/lib/x11" />
+					<Add directory="../bin" />
+					<Add directory="../lib" />
+					<Add directory="../lib/guichan-0.8.1/src/opengl/.libs" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletCollision" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletDynamics" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletSoftBody" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/LinearMath" />
+				</Linker>
+			</Target>
+			<Target title="Copy of whole">
+				<Option output="../bin/PeakEngine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
 				<Option projectLinkerOptionsRelation="1" />
 				<Option projectIncludeDirsRelation="1" />
 				<Option projectLibDirsRelation="1" />
@@ -306,6 +388,7 @@
 		<Unit filename="include/support/tinyxml.h" />
 		<Unit filename="main.cpp">
 			<Option target="whole" />
+			<Option target="Copy of whole" />
 		</Unit>
 		<Unit filename="src/core/Address.cpp" />
 		<Unit filename="src/core/Buffer.cpp" />

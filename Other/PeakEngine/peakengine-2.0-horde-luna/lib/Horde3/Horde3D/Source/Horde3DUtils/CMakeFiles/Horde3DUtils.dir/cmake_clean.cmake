@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Horde3DUtils.dir/main.cpp.o"
   "libHorde3DUtils.pdb"
-  "libHorde3DUtils.so"
+  "libHorde3DUtils.a"
 )
 
 # Per-language clean rules from dependency scanning.

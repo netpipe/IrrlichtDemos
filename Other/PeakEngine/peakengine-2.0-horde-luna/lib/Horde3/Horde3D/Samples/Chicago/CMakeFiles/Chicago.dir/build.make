@@ -142,9 +142,10 @@ Horde3D/Binaries/Linux/Chicago: Horde3D/Samples/Chicago/CMakeFiles/Chicago.dir/a
 Horde3D/Binaries/Linux/Chicago: Horde3D/Samples/Chicago/CMakeFiles/Chicago.dir/crowd.cpp.o
 Horde3D/Binaries/Linux/Chicago: Horde3D/Samples/Chicago/CMakeFiles/Chicago.dir/main.cpp.o
 Horde3D/Binaries/Linux/Chicago: Horde3D/Samples/Chicago/CMakeFiles/Chicago.dir/build.make
-Horde3D/Binaries/Linux/Chicago: Horde3D/Source/Horde3DUtils/libHorde3DUtils.so
+Horde3D/Binaries/Linux/Chicago: Horde3D/Source/Horde3DEngine/libHorde3D.a
+Horde3D/Binaries/Linux/Chicago: Horde3D/Source/Horde3DUtils/libHorde3DUtils.a
 Horde3D/Binaries/Linux/Chicago: Horde3D/Dependencies/Source/glfw/libglfw.a
-Horde3D/Binaries/Linux/Chicago: Horde3D/Source/Horde3DEngine/libHorde3D.so
+Horde3D/Binaries/Linux/Chicago: Horde3D/Source/Horde3DEngine/libHorde3D.a
 Horde3D/Binaries/Linux/Chicago: Horde3D/Samples/Chicago/CMakeFiles/Chicago.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../../Binaries/Linux/Chicago"
 	cd /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Samples/Chicago && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Chicago.dir/link.txt --verbose=$(VERBOSE)

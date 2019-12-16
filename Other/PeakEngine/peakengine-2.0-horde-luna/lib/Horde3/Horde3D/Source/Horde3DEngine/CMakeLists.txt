@@ -57,7 +57,7 @@ set(HORDE3D_SOURCES
 
 add_definitions(-DCMAKE )
 
-add_library(Horde3D SHARED
+add_library(Horde3D STATIC
 	${HORDE3D_SOURCES}
 	)
 

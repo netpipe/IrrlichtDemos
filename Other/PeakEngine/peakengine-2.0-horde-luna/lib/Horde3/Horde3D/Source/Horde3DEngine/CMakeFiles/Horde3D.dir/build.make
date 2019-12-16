@@ -713,39 +713,40 @@ Horde3D_OBJECTS = \
 # External object files for target Horde3D
 Horde3D_EXTERNAL_OBJECTS =
 
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egAnimatables.cpp.o
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egAnimation.cpp.o
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egCamera.cpp.o
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egCom.cpp.o
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egExtensions.cpp.o
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egGeometry.cpp.o
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egLight.cpp.o
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egMain.cpp.o
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egMaterial.cpp.o
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egModel.cpp.o
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egModules.cpp.o
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egParticle.cpp.o
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egPipeline.cpp.o
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egPrimitives.cpp.o
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egRendererBase.cpp.o
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egRenderer.cpp.o
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egResource.cpp.o
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egScene.cpp.o
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egSceneGraphRes.cpp.o
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egShader.cpp.o
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egTextures.cpp.o
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/utImage.cpp.o
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/utOpenGL.cpp.o
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/__/Shared/utXMLParser.cpp.o
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/__/__/__/Extensions/Terrain/Source/terrain.cpp.o
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/__/__/__/Extensions/Terrain/Source/extension.cpp.o
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/build.make
-Horde3D/Source/Horde3DEngine/libHorde3D.so: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX shared library libHorde3D.so"
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egAnimatables.cpp.o
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egAnimation.cpp.o
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egCamera.cpp.o
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egCom.cpp.o
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egExtensions.cpp.o
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egGeometry.cpp.o
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egLight.cpp.o
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egMain.cpp.o
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egMaterial.cpp.o
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egModel.cpp.o
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egModules.cpp.o
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egParticle.cpp.o
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egPipeline.cpp.o
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egPrimitives.cpp.o
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egRendererBase.cpp.o
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egRenderer.cpp.o
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egResource.cpp.o
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egScene.cpp.o
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egSceneGraphRes.cpp.o
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egShader.cpp.o
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/egTextures.cpp.o
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/utImage.cpp.o
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/utOpenGL.cpp.o
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/__/Shared/utXMLParser.cpp.o
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/__/__/__/Extensions/Terrain/Source/terrain.cpp.o
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/__/__/__/Extensions/Terrain/Source/extension.cpp.o
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/build.make
+Horde3D/Source/Horde3DEngine/libHorde3D.a: Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX static library libHorde3D.a"
+	cd /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Source/Horde3DEngine && $(CMAKE_COMMAND) -P CMakeFiles/Horde3D.dir/cmake_clean_target.cmake
 	cd /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Source/Horde3DEngine && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Horde3D.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/build: Horde3D/Source/Horde3DEngine/libHorde3D.so
+Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/build: Horde3D/Source/Horde3DEngine/libHorde3D.a
 
 .PHONY : Horde3D/Source/Horde3DEngine/CMakeFiles/Horde3D.dir/build
 
