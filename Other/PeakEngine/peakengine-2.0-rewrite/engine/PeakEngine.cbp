@@ -78,6 +78,9 @@
 					<Add directory="../../../../../emscripten-projects/glfw/include" />
 					<Add directory="../../../../../emscripten-projects/net/enet-1.2/include" />
 					<Add directory="../../../../../emscripten-projects/scripting/toluapp/include" />
+					<Add directory="../../../../../emscripten-projects/GUI/guichan/include" />
+					<Add directory="src/FreeImagePlus" />
+					<Add directory="../../../../../emscripten-projects/media/FreeImage/Source" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -169,6 +172,14 @@
 		<Unit filename="include/support/rect.h" />
 		<Unit filename="include/support/vector2d.h" />
 		<Unit filename="include/support/vector3d.h" />
+		<Unit filename="src/FreeImagePlus/FreeImagePlus.h" />
+		<Unit filename="src/FreeImagePlus/src/FreeImagePlus.cpp" />
+		<Unit filename="src/FreeImagePlus/src/fipImage.cpp" />
+		<Unit filename="src/FreeImagePlus/src/fipMemoryIO.cpp" />
+		<Unit filename="src/FreeImagePlus/src/fipMetadataFind.cpp" />
+		<Unit filename="src/FreeImagePlus/src/fipMultiPage.cpp" />
+		<Unit filename="src/FreeImagePlus/src/fipTag.cpp" />
+		<Unit filename="src/FreeImagePlus/src/fipWinImage.cpp" />
 		<Unit filename="src/core/Address.cpp" />
 		<Unit filename="src/core/Buffer.cpp" />
 		<Unit filename="src/core/Color.cpp" />

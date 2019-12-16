@@ -31,13 +31,13 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <cstdlib>
 #include <guichan.hpp>
 
-#include <FreeImagePlus.h>
+#include "../FreeImagePlus/FreeImagePlus.h"
 
 namespace peak
 {
-	
+
 	void (*keycb)(Keycode key, bool pressed) = 0;
-	
+
 	static void GLFWCALL keyPressListener(int key, int action)
 	{
 		if (!keycb) return;
@@ -101,7 +101,7 @@ namespace peak
 			};
 		}
 	}
-	
+
 	GraphicsEngine::GraphicsEngine()
 	{
 		lastfps = 0;
@@ -161,7 +161,7 @@ namespace peak
 		Horde3D::setNodeTransform(camera, 6, 10, -6, -45, 180-45, 0, 1, 1, 1 );
 		cameranode = new SceneNode;
 		cameranode->create(camera);
-		
+
 		// Test model
 		ResHandle modelres = Horde3D::addResource(ResourceTypes::SceneGraph, "tank_low2.scene.xml", 0);
 		Horde3DUtils::loadResourcesFromDisk(GameEngine::get()->getRootDirectory().c_str());
@@ -171,7 +171,7 @@ namespace peak
 		// Set light position and radius
 		Horde3D::setNodeTransform( light, 0, 20, 0, -90, 0, 0, 1, 1, 1 );
 		Horde3D::setNodeParamf( light, LightNodeParams::Radius, 50.0f );
-		
+
 		timesincefps = 0;
 
 		return true;
@@ -197,7 +197,7 @@ namespace peak
 			glfwSetWindowTitle(title);
 			timesincefps = 0;
 		}
-		
+
 		Horde3D::render(camera);
 		saveMessages();
 
@@ -210,12 +210,12 @@ namespace peak
 	{
 		Horde3DUtils::dumpMessages();
 	}
-	
+
 	SceneNode *GraphicsEngine::getDefaultCamera(void)
 	{
 		return cameranode;
 	}
-	
+
 	void GraphicsEngine::setKeyCallback(void (*cb)(Keycode key, bool pressed))
 	{
 		keycb = cb;
