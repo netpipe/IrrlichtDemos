@@ -21,9 +21,9 @@
 					<Add directory="../lib/Horde3/Horde3D/Bindings/C++" />
 					<Add directory="../lib/glfw/include/" />
 					<Add directory="../lib/tolua++-1.0.93/include" />
-					<Add directory="../lib/FreeImage/Dist" />
+					<Add directory="../lib/FreeImage/Source" />
 					<Add directory="../../../../../LunaLibs/bullet-2.78/src" />
-					<Add directory="../lib/FreeImage" />
+					<Add directory="../lib/FreeImage/Dist" />
 				</Compiler>
 				<Linker>
 					<Add library="guichan" />
@@ -128,14 +128,15 @@
 					<Add directory="../lib/glfw/include/" />
 					<Add directory="../lib/tolua++-1.0.93/include" />
 					<Add directory="../lib/FreeImage/Wrapper/FreeImagePlus" />
-					<Add directory="../../../../../LunaLibs/bullet-2.78/src" />
-					<Add directory="../lib/FreeImage" />
+					<Add directory="../../../../../LunaLibs/bullet3-2.86.1/srcd" />
+					<Add directory="../lib/FreeImage/Sourced" />
 					<Add directory="include" />
 					<Add directory=".." />
 					<Add directory="include/lua" />
 					<Add directory="include/ALUT" />
 					<Add directory="include/bullets" />
 					<Add directory="include/support" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -162,22 +163,27 @@
 					<Add library="Horde3DUtils" />
 					<Add library="alut" />
 					<Add library="guichan_opengl" />
-					<Add directory="/home/Dev/libs/net/enet" />
+					<Add directory="./lib/enet" />
 					<Add directory="../lib/lua-5.1.4/src" />
 					<Add directory="../lib/glfw/lib/x11" />
 					<Add directory="../lib/Horde3/Horde3D/Source/Horde3DEngine" />
 					<Add directory="../lib/Horde3/Horde3D/Source/Horde3DUtils" />
 					<Add directory="../lib/tolua++-1.0.93/src/lib" />
-					<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletCollision" />
-					<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletDynamics" />
-					<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletSoftBody" />
-					<Add directory="../../../../../LunaLibs/bullet-2.78/src/LinearMath" />
+					<Add directory="../../../../../LunaLibs/bullet3-2.86.1/src/BulletCollisiond" />
+					<Add directory="../../../../../LunaLibs/bullet3-2.86.1/src/BulletDynamicsd" />
+					<Add directory="../../../../../LunaLibs/bullet3-2.86.1/src/BulletSoftBodyd" />
+					<Add directory="../../../../../LunaLibs/bullet3-2.86.1/src/LinearMathd" />
 					<Add directory="../lib/guichan-0.8.1/src/.libs" />
-					<Add directory="../lib/FreeImage/Dist" />
+					<Add directory="../lib/FreeImage/Distd" />
 					<Add directory="../lib/OpenJPEG_v1_3/bin" />
 					<Add directory="../lib/FreeImage/Wrapper/FreeImagePlus" />
 					<Add directory="../bin" />
 					<Add directory="../lib" />
+					<Add directory="../lib/guichan-0.8.1/src/opengl/.libs" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletCollision" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletDynamics" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletSoftBody" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/LinearMath" />
 				</Linker>
 			</Target>
 		</Build>
