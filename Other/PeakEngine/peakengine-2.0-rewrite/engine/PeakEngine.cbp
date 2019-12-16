@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PeakEngine" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../bin/PeakEngine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-DBUILD_DLL" />
+				</Compiler>
+				<Linker>
+					<Add library="user32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before=".\src\tolua.bat" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release">
+				<Option output="../bin/PeakEngine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-DBUILD_DLL" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="user32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before=".\src\tolua.bat" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Linux">
+				<Option output="../bin/PeakEngine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-DBUILD_DLL" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="user32" />
+				</Linker>
+			</Target>
+			<Target title="emscripten">
+				<Option output="../bin/PeakEngine" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/" />
+				<Option type="2" />
+				<Option compiler="emscripten" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-DBUILD_DLL" />
+					<Add directory="../../../../../emscripten-projects/Horde3D_em/Horde3D/Bindings/C++" />
+					<Add directory="../../../../../emscripten-projects/scripting/lua-5.1.4/src" />
+					<Add directory="../../../../../emscripten-projects/glfw/include" />
+					<Add directory="../../../../../emscripten-projects/net/enet-1.2/include" />
+					<Add directory="../../../../../emscripten-projects/scripting/toluapp/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="user32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-D_ENET_1_2_" />
+			<Add directory="include" />
+			<Add directory=".." />
+			<Add directory="include/lua" />
+			<Add directory="include/ALUT" />
+			<Add directory="include/bullet" />
+			<Add directory="include/support" />
+		</Compiler>
+		<Linker>
+			<Add library="glfw" />
+			<Add library="../bin/lua51.dll" />
+			<Add library="enet" />
+			<Add library="../bin/OpenAL32.dll" />
+			<Add library="../bin/libtolua++.dll" />
+			<Add library="winmm" />
+			<Add library="ws2_32" />
+			<Add library="ogg" />
+			<Add library="vorbis" />
+			<Add library="vorbisfile" />
+			<Add library="vorbisenc" />
+			<Add library="../bin/alut.dll" />
+			<Add library="bulletsoftbody" />
+			<Add library="bulletdynamics" />
+			<Add library="bulletcollision" />
+			<Add library="bulletmath" />
+			<Add library="../bin/libHorde3D.dll" />
+			<Add library="../bin/libHorde3DUtils.dll" />
+			<Add library="guichan" />
+			<Add library="FreeImagePlus" />
+			<Add library="OpenGL32" />
+			<Add library="FreeImage" />
+			<Add directory="../bin" />
+			<Add directory="../lib" />
+		</Linker>
+		<Unit filename="include/core/Address.h" />
+		<Unit filename="include/core/Buffer.h" />
+		<Unit filename="include/core/Color.h" />
+		<Unit filename="include/core/Entity.h" />
+		<Unit filename="include/core/File.h" />
+		<Unit filename="include/core/FileSystem.h" />
+		<Unit filename="include/core/Game.h" />
+		<Unit filename="include/core/GameEngine.h" />
+		<Unit filename="include/core/IniFile.h" />
+		<Unit filename="include/core/Keycode.h" />
+		<Unit filename="include/core/Logger.h" />
+		<Unit filename="include/core/Model.h" />
+		<Unit filename="include/core/Object3D.h" />
+		<Unit filename="include/core/Quaternion.h" />
+		<Unit filename="include/core/SettingsManager.h" />
+		<Unit filename="include/core/Util.h" />
+		<Unit filename="include/core/Vector2D.h" />
+		<Unit filename="include/core/Vector2DI.h" />
+		<Unit filename="include/core/Vector3D.h" />
+		<Unit filename="include/graphics/GraphicsEngine.h" />
+		<Unit filename="include/graphics/SceneNode.h" />
+		<Unit filename="include/network/BroadcastClient.h" />
+		<Unit filename="include/network/BroadcastHost.h" />
+		<Unit filename="include/network/Connection.h" />
+		<Unit filename="include/network/NetworkClient.h" />
+		<Unit filename="include/network/NetworkHost.h" />
+		<Unit filename="include/physics/Body.h" />
+		<Unit filename="include/physics/Box.h" />
+		<Unit filename="include/physics/Callback.h" />
+		<Unit filename="include/physics/Heightfield.h" />
+		<Unit filename="include/physics/Plane.h" />
+		<Unit filename="include/physics/RayCallback.h" />
+		<Unit filename="include/physics/Shape.h" />
+		<Unit filename="include/physics/Sphere.h" />
+		<Unit filename="include/physics/Trimesh.h" />
+		<Unit filename="include/physics/World.h" />
+		<Unit filename="include/support/IrrCompileConfig.h" />
+		<Unit filename="include/support/aabbox3d.h" />
+		<Unit filename="include/support/dimension2d.h" />
+		<Unit filename="include/support/irrMath.h" />
+		<Unit filename="include/support/irrTypes.h" />
+		<Unit filename="include/support/line3d.h" />
+		<Unit filename="include/support/matrix4.h" />
+		<Unit filename="include/support/plane3d.h" />
+		<Unit filename="include/support/position2d.h" />
+		<Unit filename="include/support/quaternion.h" />
+		<Unit filename="include/support/rect.h" />
+		<Unit filename="include/support/vector2d.h" />
+		<Unit filename="include/support/vector3d.h" />
+		<Unit filename="src/core/Address.cpp" />
+		<Unit filename="src/core/Buffer.cpp" />
+		<Unit filename="src/core/Color.cpp" />
+		<Unit filename="src/core/Entity.cpp" />
+		<Unit filename="src/core/File.cpp" />
+		<Unit filename="src/core/FileSystem.cpp" />
+		<Unit filename="src/core/Game.cpp" />
+		<Unit filename="src/core/GameEngine.cpp" />
+		<Unit filename="src/core/IniFile.cpp" />
+		<Unit filename="src/core/Keycode.cpp" />
+		<Unit filename="src/core/Logger.cpp" />
+		<Unit filename="src/core/Model.cpp" />
+		<Unit filename="src/core/Object3D.cpp" />
+		<Unit filename="src/core/Quaternion.cpp" />
+		<Unit filename="src/core/SettingsManager.cpp" />
+		<Unit filename="src/core/Util.cpp" />
+		<Unit filename="src/core/Vector2D.cpp" />
+		<Unit filename="src/core/Vector2DI.cpp" />
+		<Unit filename="src/core/Vector3D.cpp" />
+		<Unit filename="src/graphics/GraphicsEngine.cpp" />
+		<Unit filename="src/graphics/SceneNode.cpp" />
+		<Unit filename="src/network/BroadcastClient.cpp" />
+		<Unit filename="src/network/BroadcastHost.cpp" />
+		<Unit filename="src/network/Connection.cpp" />
+		<Unit filename="src/network/NetworkClient.cpp" />
+		<Unit filename="src/network/NetworkHost.cpp" />
+		<Unit filename="src/physics/Body.cpp" />
+		<Unit filename="src/physics/Box.cpp" />
+		<Unit filename="src/physics/Callback.cpp" />
+		<Unit filename="src/physics/Heightfield.cpp" />
+		<Unit filename="src/physics/Plane.cpp" />
+		<Unit filename="src/physics/RayCallback.cpp" />
+		<Unit filename="src/physics/Shape.cpp" />
+		<Unit filename="src/physics/Sphere.cpp" />
+		<Unit filename="src/physics/Trimesh.cpp" />
+		<Unit filename="src/physics/World.cpp" />
+		<Extensions>
+			<AutoVersioning>
+				<Scheme minor_max="10" build_max="0" rev_max="0" rev_rand_max="10" build_times_to_increment_minor="100" />
+				<Settings autoincrement="1" date_declarations="1" use_define="0" update_manifest="1" do_auto_increment="0" ask_to_increment="0" language="C++" svn="0" svn_directory="" header_path="version.h" />
+				<Changes_Log show_changes_editor="0" app_title="released version %M.%m.%b of %p" changeslog_path="ChangesLog.txt" />
+				<Code header_guard="VERSION_H" namespace="AutoVersion" prefix="" />
+			</AutoVersioning>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
