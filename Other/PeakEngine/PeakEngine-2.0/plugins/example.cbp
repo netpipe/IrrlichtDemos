@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Irrlicht Pong" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./libPong.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+			<Target title="emscripten">
+				<Option output="./libPong.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option type="2" />
+				<Option compiler="emscripten" />
+				<Option projectIncludeDirsRelation="1" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Option projectLibDirsRelation="1" />
+				<Compiler>
+					<Add directory="../../../../../emscripten-projects/irrlicht-ogl-es-2019dec/include" />
+					<Add directory="../include" />
+					<Add directory="../../../../../LunaLibs/net/enet-1.2.1/include" />
+					<Add directory="physics/include" />
+					<Add directory="graphics/include" />
+				</Compiler>
+				<Linker>
+					<Add directory="../../../../../emscripten-projects/irrlicht-ogl-es-2019dec/source/Irrlicht" />
+					<Add directory="../../../../../emscripten-projects/net/enet-1.2" />
+				</Linker>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="../../../../../LunaLibs/irrlicht-1.8.4/include" />
+			<Add directory="../include" />
+			<Add directory="../../../../../LunaLibs/net/enet-1.2.1/include" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="enet" />
+			<Add directory="/home/Dev/libs/Irrlicht/lib/gcc" />
+			<Add directory="/home/Dev/libs/net/enet" />
+		</Linker>
+		<Unit filename="graphics/include/PeakGraphics.hpp" />
+		<Unit filename="graphics/include/peakgraphics/Graphics.hpp" />
+		<Unit filename="graphics/include/peakgraphics/InputReceiver.hpp" />
+		<Unit filename="graphics/include/peakgraphics/KeyCode.hpp" />
+		<Unit filename="graphics/include/peakgraphics/Loadable.hpp" />
+		<Unit filename="graphics/include/peakgraphics/menu/LoadingScreen.hpp" />
+		<Unit filename="graphics/include/peakgraphics/menu/Menu.hpp" />
+		<Unit filename="graphics/include/peakgraphics/menu/MenuButton.hpp" />
+		<Unit filename="graphics/include/peakgraphics/menu/MenuElement.hpp" />
+		<Unit filename="graphics/include/peakgraphics/menu/MenuImage.hpp" />
+		<Unit filename="graphics/include/peakgraphics/menu/MenuInputListener.hpp" />
+		<Unit filename="graphics/include/peakgraphics/scene/CameraSceneNode.hpp" />
+		<Unit filename="graphics/include/peakgraphics/scene/GroupSceneNode.hpp" />
+		<Unit filename="graphics/include/peakgraphics/scene/Model.hpp" />
+		<Unit filename="graphics/include/peakgraphics/scene/ModelSceneNode.hpp" />
+		<Unit filename="graphics/include/peakgraphics/scene/RootSceneNode.hpp" />
+		<Unit filename="graphics/include/peakgraphics/scene/SceneNode.hpp" />
+		<Unit filename="graphics/include/peakgraphics/scene/TerrainSceneNode.hpp" />
+		<Unit filename="graphics/src/Graphics.cpp" />
+		<Unit filename="graphics/src/Loadable.cpp" />
+		<Unit filename="graphics/src/menu/Menu.cpp" />
+		<Unit filename="graphics/src/menu/MenuButton.cpp" />
+		<Unit filename="graphics/src/menu/MenuElement.cpp" />
+		<Unit filename="graphics/src/menu/MenuImage.cpp" />
+		<Unit filename="graphics/src/scene/CameraSceneNode.cpp" />
+		<Unit filename="graphics/src/scene/GroupSceneNode.cpp" />
+		<Unit filename="graphics/src/scene/ModelSceneNode.cpp" />
+		<Unit filename="graphics/src/scene/RootSceneNode.cpp" />
+		<Unit filename="graphics/src/scene/SceneNode.cpp" />
+		<Unit filename="graphics/src/scene/TerrainSceneNode.cpp" />
+		<Unit filename="physics/include/PeakPhysics.hpp" />
+		<Unit filename="physics/include/peakphysics/Body.hpp" />
+		<Unit filename="physics/include/peakphysics/Box.hpp" />
+		<Unit filename="physics/include/peakphysics/Capsule.hpp" />
+		<Unit filename="physics/include/peakphysics/CharacterController.hpp" />
+		<Unit filename="physics/include/peakphysics/Heightfield.hpp" />
+		<Unit filename="physics/include/peakphysics/Physics.hpp" />
+		<Unit filename="physics/include/peakphysics/Plane.hpp" />
+		<Unit filename="physics/include/peakphysics/Shape.hpp" />
+		<Unit filename="physics/src/Body.cpp" />
+		<Unit filename="physics/src/Box.cpp" />
+		<Unit filename="physics/src/Capsule.cpp" />
+		<Unit filename="physics/src/CharacterController.cpp" />
+		<Unit filename="physics/src/Heightfield.cpp" />
+		<Unit filename="physics/src/Physics.cpp" />
+		<Unit filename="physics/src/Plane.cpp" />
+		<Unit filename="physics/src/Shape.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

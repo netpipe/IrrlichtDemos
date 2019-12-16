@@ -39,6 +39,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <enet/enet.h>
 #include <GL/glfw.h>
 
+#include <unistd.h>
+
 #if defined(_MSC_VER) || defined(_WINDOWS_) || defined(_WIN32)
 int gettimeofday(struct timeval* tv, void *timezone)
 {
@@ -66,7 +68,7 @@ namespace peak
 	{
 		// Needed for timer
 		glfwInit();
-		
+
 		rootdir = root;
 		// Load settings
 		Logger::get()->setFile("peakengine.log");
@@ -123,7 +125,7 @@ namespace peak
 				{
 					frametime = 0;
 				}
-				
+
 				if (frametime > 100) frametime = 100;
 				// Update physics
 				lastframetime += frametime;

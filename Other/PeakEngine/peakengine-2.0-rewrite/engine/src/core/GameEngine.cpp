@@ -29,7 +29,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #include <enet/enet.h>
 #include <GL/glfw.h>
-
+#include <unistd.h>
 namespace peak
 {
 	GameEngine *GameEngine::get(void)
@@ -42,7 +42,7 @@ namespace peak
 	{
 		// Needed for timer
 		glfwInit();
-		
+
 		rootdir = root;
 		// Load settings
 		Logger::get()->setFile("peakengine.log");
@@ -58,9 +58,9 @@ namespace peak
 			LERROR("Could not initialize network.\n");
 			return false;
 		}
-		
+
 		GraphicsEngine::get()->init();
-		
+
 		// Test initialization
 		if (!Game::get()->init())
 		{
@@ -73,7 +73,7 @@ namespace peak
 			Entity *test1 = Game::get()->createEntity("cube", 0);
 			//test1 = Game::get()->createEntity("cube", 0);
 		}
-		
+
 		// Main loop
 		float waittime = 0.02;
 		float lastframetime = 0.02;
@@ -93,7 +93,7 @@ namespace peak
 			lastframetime = currenttime - lastframe;
 			printf("Frame time: %f\n", lastframetime);
 		}
-		
+
 		// Shut down rest of the engine
 		if (!SettingsManager::get()->save())
 		{

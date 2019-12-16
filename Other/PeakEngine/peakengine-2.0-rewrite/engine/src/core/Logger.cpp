@@ -22,7 +22,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include "core/Logger.h"
 
 #include <cstdarg>
-
+#include <ctime>
 namespace peak
 {
 	void printTimestamp(FILE *file)
@@ -83,7 +83,7 @@ namespace peak
 			}
 		}
 	}
-	
+
 	Logger *Logger::get(void)
 	{
 		static Logger logger;
@@ -92,14 +92,14 @@ namespace peak
 	Logger::~Logger()
 	{
 	}
-	
+
 	bool Logger::write(ELoggingLevel level, std::string format, ...)
 	{
 		if ((level < consolelevel) && ((level < filelevel) || !file))
 		{
 			return false;
 		}
-		
+
 		std::va_list args;
 		if (level >= consolelevel)
 		{
@@ -146,7 +146,7 @@ namespace peak
 	{
 		return write(level, msg);
 	}
-	
+
 	bool Logger::setFile(std::string filename)
 	{
 		if (file)
@@ -183,7 +183,7 @@ namespace peak
 			return false;
 		}
 	}
-	
+
 	void Logger::setTimestamps(bool enabled)
 	{
 		consoletimestamps = enabled;
@@ -205,7 +205,7 @@ namespace peak
 	{
 		return filetimestamps;
 	}
-	
+
 	void Logger::setPrefix(EPrefixType type)
 	{
 		consoleprefix = type;
@@ -227,7 +227,7 @@ namespace peak
 	{
 		return fileprefix;
 	}
-	
+
 	void Logger::setMinimalConsoleLevel(ELoggingLevel level)
 	{
 		consolelevel = ELL_Warning;
@@ -244,12 +244,12 @@ namespace peak
 	{
 		return filelevel;
 	}
-	
+
 	Logger::Logger()
 	{
 		filename = "";
 		file = 0;
-		
+
 		consoletimestamps = false;
 		filetimestamps = true;
 		consoleprefix = EPT_None;

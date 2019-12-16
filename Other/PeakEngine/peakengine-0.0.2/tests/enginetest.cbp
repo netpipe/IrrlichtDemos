@@ -7,7 +7,7 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="..\bin\enginetest" prefix_auto="1" extension_auto="1" />
+				<Option output="../bin/enginetest" prefix_auto="1" extension_auto="1" />
 				<Option working_dir=".." />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -17,7 +17,7 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="..\bin\enginetest" prefix_auto="1" extension_auto="1" />
+				<Option output="../bin/enginetest" prefix_auto="1" extension_auto="1" />
 				<Option working_dir=".." />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -29,19 +29,29 @@
 					<Add option="-s" />
 				</Linker>
 			</Target>
+			<Target title="emscripten">
+				<Option output="../bin/enginetest.html" prefix_auto="0" extension_auto="0" />
+				<Option working_dir=".." />
+				<Option type="1" />
+				<Option compiler="emscripten" />
+				<Option parameters="tests/gunships" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
-			<Add directory="..\engine\include" />
+			<Add directory="../engine/include" />
 		</Compiler>
 		<Linker>
 			<Add library="PeakEngine" />
-			<Add directory="..\bin" />
+			<Add directory="../bin" />
 		</Linker>
 		<Unit filename="main.cpp" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
