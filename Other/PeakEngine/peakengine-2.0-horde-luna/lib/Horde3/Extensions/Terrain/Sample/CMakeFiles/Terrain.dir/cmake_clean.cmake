@@ -1,4 +1,4 @@
-FILE(REMOVE_RECURSE
+file(REMOVE_RECURSE
   "CMakeFiles/Terrain.dir/app.o"
   "CMakeFiles/Terrain.dir/main.o"
   "../../../Horde3D/Binaries/Linux/Terrain.pdb"
@@ -6,6 +6,6 @@ FILE(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-FOREACH(lang CXX)
-  INCLUDE(CMakeFiles/Terrain.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)
+foreach(lang CXX)
+  include(CMakeFiles/Terrain.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

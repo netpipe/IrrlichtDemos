@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,31 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/enable.c
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/enable.c
 internal.h
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/internal.h
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/internal.h
 
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/fullscreen.c
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/fullscreen.c
 internal.h
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/internal.h
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/internal.h
 
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/glext.c
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/glext.c
 internal.h
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/internal.h
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/internal.h
 
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/image.c
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/image.c
 internal.h
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/internal.h
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/internal.h
 
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/init.c
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/init.c
 internal.h
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/internal.h
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/internal.h
 
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/input.c
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/input.c
 internal.h
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/internal.h
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/internal.h
 
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/internal.h
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/internal.h
 stdlib.h
 -
 string.h
@@ -38,51 +38,51 @@ string.h
 stdio.h
 -
 platform.h
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/platform.h
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/platform.h
 
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/joystick.c
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/joystick.c
 internal.h
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/internal.h
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/internal.h
 
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/stream.c
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/stream.c
 internal.h
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/internal.h
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/internal.h
 
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/tga.c
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/tga.c
 internal.h
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/internal.h
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/internal.h
 
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/thread.c
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/thread.c
 internal.h
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/internal.h
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/internal.h
 
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/time.c
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/time.c
 internal.h
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/internal.h
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/internal.h
 
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/window.c
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/window.c
 internal.h
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/internal.h
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/internal.h
 
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/x11_enable.c
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/x11_enable.c
 internal.h
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/internal.h
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/internal.h
 
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/x11_fullscreen.c
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/x11_fullscreen.c
 internal.h
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/internal.h
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/internal.h
 
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/x11_glext.c
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/x11_glext.c
 internal.h
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/internal.h
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/internal.h
 
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/x11_init.c
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/x11_init.c
 internal.h
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/internal.h
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/internal.h
 
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/x11_joystick.c
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/x11_joystick.c
 internal.h
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/internal.h
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/internal.h
 sys/ioctl.h
 -
 fcntl.h
@@ -90,21 +90,31 @@ fcntl.h
 errno.h
 -
 
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/x11_keysym2unicode.c
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/x11_keysym2unicode.c
 internal.h
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/internal.h
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/internal.h
 
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/x11_thread.c
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/x11_thread.c
 internal.h
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/internal.h
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/internal.h
 
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/x11_time.c
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/x11_time.c
 internal.h
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/internal.h
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/internal.h
 
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/x11_window.c
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/x11_window.c
 internal.h
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/internal.h
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Dependencies/Source/glfw/x11/internal.h
+
+Horde3D/Dependencies/Include/glfw.h
+OpenGL/gl.h
+-
+OpenGL/glu.h
+-
+GL/gl.h
+-
+GL/glu.h
+-
 
 Horde3D/Dependencies/Source/glfw/./internal.h
 stdlib.h
@@ -115,16 +125,6 @@ stdio.h
 -
 platform.h
 Horde3D/Dependencies/Source/glfw/./platform.h
-
-Horde3D/Dependencies/Source/glfw/./x11/../../../Include/glfw.h
-OpenGL/gl.h
--
-OpenGL/glu.h
--
-GL/gl.h
--
-GL/glu.h
--
 
 Horde3D/Dependencies/Source/glfw/./x11/platform.h
 sys/time.h
@@ -142,7 +142,7 @@ X11/Xatom.h
 GL/glx.h
 -
 ../../../Include/glfw.h
-Horde3D/Dependencies/Source/glfw/./x11/../../../Include/glfw.h
+Horde3D/Dependencies/Source/Include/glfw.h
 pthread.h
 -
 sched.h

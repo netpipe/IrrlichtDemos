@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Source/Horde3DUtils/main.cpp
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Source/Horde3DUtils/main.cpp
 Horde3D.h
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Source/Horde3DUtils/Horde3D.h
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Source/Horde3DUtils/Horde3D.h
 utPlatform.h
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Source/Horde3DUtils/utPlatform.h
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Source/Horde3DUtils/utPlatform.h
 utMath.h
-/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Source/Horde3DUtils/utMath.h
+/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/Horde3/Horde3D/Source/Horde3DUtils/utMath.h
 math.h
 -
 windows.h

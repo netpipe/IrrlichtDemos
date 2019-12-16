@@ -25,10 +25,13 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include "core/Util.h"
 #include "core/GameEngine.h"
 
-//#include <Horde3D.h>
-//#include <Horde3DUtils.h>
-#include "../support/Framework.h"
 
+#ifdef __EMSCRIPTEN__
+#include "../support/Framework.h"
+#else
+#include <Horde3D.h>
+#include <Horde3DUtils.h>
+#endif
 namespace peak
 {
 	LabelOverlay::LabelOverlay(std::string label, std::string font, Overlay *parent) : Overlay(parent)

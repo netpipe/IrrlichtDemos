@@ -1,4 +1,4 @@
-FILE(REMOVE_RECURSE
+file(REMOVE_RECURSE
   "CMakeFiles/glfw.dir/enable.c.o"
   "CMakeFiles/glfw.dir/fullscreen.c.o"
   "CMakeFiles/glfw.dir/glext.c.o"
@@ -25,6 +25,6 @@ FILE(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-FOREACH(lang C)
-  INCLUDE(CMakeFiles/glfw.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)
+foreach(lang C)
+  include(CMakeFiles/glfw.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

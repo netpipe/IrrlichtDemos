@@ -1,4 +1,4 @@
-FILE(REMOVE_RECURSE
+file(REMOVE_RECURSE
   "CMakeFiles/ColladaConv.dir/converter.cpp.o"
   "CMakeFiles/ColladaConv.dir/daeMain.cpp.o"
   "CMakeFiles/ColladaConv.dir/main.cpp.o"
@@ -10,6 +10,6 @@ FILE(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-FOREACH(lang CXX)
-  INCLUDE(CMakeFiles/ColladaConv.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)
+foreach(lang CXX)
+  include(CMakeFiles/ColladaConv.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

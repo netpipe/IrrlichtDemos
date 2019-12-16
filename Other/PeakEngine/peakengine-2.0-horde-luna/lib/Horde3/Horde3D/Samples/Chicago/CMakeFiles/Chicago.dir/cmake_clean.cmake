@@ -1,4 +1,4 @@
-FILE(REMOVE_RECURSE
+file(REMOVE_RECURSE
   "CMakeFiles/Chicago.dir/app.cpp.o"
   "CMakeFiles/Chicago.dir/crowd.cpp.o"
   "CMakeFiles/Chicago.dir/main.cpp.o"
@@ -7,6 +7,6 @@ FILE(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-FOREACH(lang CXX)
-  INCLUDE(CMakeFiles/Chicago.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)
+foreach(lang CXX)
+  include(CMakeFiles/Chicago.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

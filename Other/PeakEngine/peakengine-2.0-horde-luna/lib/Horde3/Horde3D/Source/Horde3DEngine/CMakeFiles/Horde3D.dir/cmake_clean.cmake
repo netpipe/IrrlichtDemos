@@ -1,4 +1,4 @@
-FILE(REMOVE_RECURSE
+file(REMOVE_RECURSE
   "CMakeFiles/Horde3D.dir/egAnimatables.cpp.o"
   "CMakeFiles/Horde3D.dir/egAnimation.cpp.o"
   "CMakeFiles/Horde3D.dir/egCamera.cpp.o"
@@ -30,6 +30,6 @@ FILE(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-FOREACH(lang CXX)
-  INCLUDE(CMakeFiles/Horde3D.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)
+foreach(lang CXX)
+  include(CMakeFiles/Horde3D.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
