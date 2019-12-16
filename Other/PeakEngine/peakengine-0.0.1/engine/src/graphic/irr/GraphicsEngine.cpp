@@ -80,7 +80,11 @@ namespace peak
 				if (drv == "ogles" || drv == "GLES2" ||
 				drv == "gles")
 		{
+
+#ifdef __EMSCRIPTEN__
+
 			param.DriverType = irr::video::EDT_OGLES2;
+#endif
 		}
 
 		device = createDeviceEx(param);

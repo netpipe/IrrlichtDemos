@@ -54,7 +54,7 @@ namespace peak
 			 * \return Pointer to the game engine
 			 */
 			static GameEngine *get(void);
-			
+
 			/**
 			 * \brief Initializes the other parts of the engine and starts the game.
 			 *
@@ -63,12 +63,12 @@ namespace peak
 			 * \return Returns false if there have been errors, else returns true.
 			 */
 			bool run(std::string root);
-			
+
 			/**
 			 * \brief Stops the game forcefully at the next frame
 			 */
 			void stopGame(void);
-			
+
 			/**
 			 * \brief Sets the root directory.
 			 *
@@ -83,9 +83,9 @@ namespace peak
 			std::string getRootDirectory(void);
 		private:
 			GameEngine();
-			
+
 			std::string rootdir;
-			
+
 			bool stopengine;
 
 			timeval lastframe;

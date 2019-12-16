@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="eNet Lib" />
+		<Option pch_mode="2" />
+		<Option compiler="emscripten" />
+		<Build>
+			<Target title="Linux">
+				<Option output="enet" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option type="2" />
+				<Option compiler="emscripten" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-fPIC" />
+					<Add option="-DHAS_SOCKLEN_T" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_MBCS" />
+					<Add option="-D_LIB" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Win32 Release">
+				<Option output="enet" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="Release" />
+				<Option type="2" />
+				<Option compiler="emscripten" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-W" />
+					<Add option="-fexceptions" />
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_MBCS" />
+					<Add option="-D_LIB" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Win32 Debug">
+				<Option output="enet" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="Debug" />
+				<Option type="2" />
+				<Option compiler="emscripten" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-W" />
+					<Add option="-fexceptions" />
+					<Add option="-g" />
+					<Add option="-DWIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_MBCS" />
+					<Add option="-D_LIB" />
+					<Add option="-mcpu=pentiumpro -D_M_IX86=600" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-fPIC" />
+		</Compiler>
+		<Linker>
+			<Add directory="../../zlib-1.2.3" />
+		</Linker>
+		<Unit filename="callbacks.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="host.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="include/enet/callbacks.h" />
+		<Unit filename="include/enet/enet.h" />
+		<Unit filename="include/enet/list.h" />
+		<Unit filename="include/enet/protocol.h" />
+		<Unit filename="include/enet/time.h" />
+		<Unit filename="include/enet/types.h" />
+		<Unit filename="include/enet/unix.h" />
+		<Unit filename="include/enet/utility.h" />
+		<Unit filename="include/enet/win32.h" />
+		<Unit filename="list.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="packet.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="peer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="protocol.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="unix.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="win32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
