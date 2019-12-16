@@ -28,7 +28,8 @@ int main(int argc, char **argv)
 	else
 	{
 		// Run engine
-		return !peak::GameEngine::get()->run(argv[1]);
+		//return !peak::GameEngine::get()->run(argv[1]);
 	}
+	return !peak::GameEngine::get()->run("./data/");
 }
 
