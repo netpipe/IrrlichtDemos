@@ -1,0 +1,8 @@
+<Material>
+	<Shader source="terrain.shader.xml"/>
+	
+	<TexUnit unit="0" map="terrain/heightmap.tga" allowCompression="false" />
+	<TexUnit unit="1" map="terrain/detail.jpg" />
+	
+	<Uniform name="sunDir" a="1.0" b="-1.0" c="0.0" />
+</Material>

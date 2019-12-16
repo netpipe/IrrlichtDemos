@@ -1,0 +1,17 @@
+[psys]
+material=fire
+direction=0/0.02/0
+size=0.3/0.3
+minspeed=80
+maxspeed=160
+minttl=1100
+maxttl=1100
+type=point
+maxrotation=45
+affectors=1
+
+[affector0]
+type=gravity
+gravity=0/-300/0
+time=1100
+

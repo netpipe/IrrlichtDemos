@@ -1,0 +1,4 @@
+<Model name="apache" geometry="apache.geo">
+
+	<Mesh name="apache" material="stones.material.xml" rx="0" ry="-180" rz="-0" sx="0.001" sy="0.001" sz="0.001" batchStart="0" batchCount="11472" vertRStart="0" vertREnd="11471" />
+</Model>

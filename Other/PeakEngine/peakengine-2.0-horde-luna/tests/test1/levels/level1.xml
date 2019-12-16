@@ -1,0 +1,7 @@
+
+<?xml version="1.0" standalone="yes"?>
+<level>
+	<name>Level 1</name>	
+	<scenenode name="skybox" type="mesh" file="skybox.scene.xml" scale="128/128/128" />
+</level>
+

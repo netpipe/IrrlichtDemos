@@ -1,0 +1,245 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Horde3D Log</title>
+<style type="text/css">
+body, html {
+background: #000000;
+width: 1000px;
+font-family: Arial;
+font-size: 16px;
+color: #C0C0C0;
+}
+h1 {
+color : #FFFFFF;
+border-bottom : 1px dotted #888888;
+}
+.box {
+border : 1px dotted #818286;
+padding : 5px;
+margin: 5px;
+width: 950px;
+background-color : #292929;
+}
+.err {
+color: #EE1100;
+font-weight: bold
+}
+.warn {
+color: #FFCC00;
+font-weight: bold
+}
+.info {
+color: #C0C0C0;
+}
+.debug {
+color: #CCA0A0;
+}
+</style>
+</head>
+
+<body>
+<h1>Horde3D Log</h1>
+<h3>Horde3D 1.0.0 Beta1</h3>
+<div class="box">
+<table>
+<tr>
+<td width="100">0.000</td>
+<td class="info">Initializing OpenGL renderer using OGL '3.0.0 NVIDIA 185.18.04' by 'NVIDIA Corporation' on 'GeForce 8600 GT/PCI/SSE2'</td>
+</tr>
+<tr>
+<td width="100">0.040</td>
+<td class="info">Adding Pipeline resource 'forward.pipeline.xml'</td>
+</tr>
+<tr>
+<td width="100">0.040</td>
+<td class="info">Adding Material resource 'light.material.xml'</td>
+</tr>
+<tr>
+<td width="100">0.040</td>
+<td class="info">Loading resource 'forward.pipeline.xml'</td>
+</tr>
+<tr>
+<td width="100">0.040</td>
+<td class="info">Adding Material resource 'globalSettings.material.xml'</td>
+</tr>
+<tr>
+<td width="100">0.040</td>
+<td class="info">Loading resource 'light.material.xml'</td>
+</tr>
+<tr>
+<td width="100">0.040</td>
+<td class="warn">Resource 'light.material.xml' of type 4: No data loaded (file not found?)</td>
+</tr>
+<tr>
+<td width="100">0.040</td>
+<td class="info">Loading resource 'globalSettings.material.xml'</td>
+</tr>
+<tr>
+<td width="100">0.040</td>
+<td class="info">Adding TextureCube resource 'ambientMap.png'</td>
+</tr>
+<tr>
+<td width="100">0.040</td>
+<td class="info">Loading resource 'ambientMap.png'</td>
+</tr>
+<tr>
+<td width="100">0.060</td>
+<td class="info">Adding Group node ''</td>
+</tr>
+<tr>
+<td width="100">0.060</td>
+<td class="info">Adding Camera node 'Camera'</td>
+</tr>
+<tr>
+<td width="100">0.190</td>
+<td class="info">Adding Group node ''</td>
+</tr>
+<tr>
+<td width="100">0.190</td>
+<td class="info">Adding SceneGraph resource 'terrain.scene.xml'</td>
+</tr>
+<tr>
+<td width="100">0.190</td>
+<td class="info">Loading resource 'terrain.scene.xml'</td>
+</tr>
+<tr>
+<td width="100">0.190</td>
+<td class="info">Adding Texture2D resource 'heightmap.png'</td>
+</tr>
+<tr>
+<td width="100">0.190</td>
+<td class="info">Adding Material resource 'terrain.material.xml'</td>
+</tr>
+<tr>
+<td width="100">0.190</td>
+<td class="info">Loading resource 'heightmap.png'</td>
+</tr>
+<tr>
+<td width="100">0.630</td>
+<td class="info">Loading resource 'terrain.material.xml'</td>
+</tr>
+<tr>
+<td width="100">0.630</td>
+<td class="info">Adding Shader resource 'terrain.shader.xml'</td>
+</tr>
+<tr>
+<td width="100">0.630</td>
+<td class="info">Adding Texture2D resource 'grass.jpg'</td>
+</tr>
+<tr>
+<td width="100">0.630</td>
+<td class="info">Loading resource 'terrain.shader.xml'</td>
+</tr>
+<tr>
+<td width="100">0.630</td>
+<td class="info">Adding Code resource 'utilityLib/vertCommon.glsl'</td>
+</tr>
+<tr>
+<td width="100">0.630</td>
+<td class="info">Adding Code resource 'utilityLib/fragDeferredWrite.glsl'</td>
+</tr>
+<tr>
+<td width="100">0.630</td>
+<td class="info">Adding Code resource 'utilityLib/fragLighting.glsl'</td>
+</tr>
+<tr>
+<td width="100">0.630</td>
+<td class="info">Loading resource 'grass.jpg'</td>
+</tr>
+<tr>
+<td width="100">0.710</td>
+<td class="info">Loading resource 'utilityLib/vertCommon.glsl'</td>
+</tr>
+<tr>
+<td width="100">0.710</td>
+<td class="info">Shader resource 'terrain.shader.xml': Compiling shader context 'SHADOWMAP'</td>
+</tr>
+<tr>
+<td width="100">0.720</td>
+<td class="info">Shader resource 'terrain.shader.xml': Compiling shader context 'AMBIENT'</td>
+</tr>
+<tr>
+<td width="100">0.730</td>
+<td class="info">Loading resource 'utilityLib/fragDeferredWrite.glsl'</td>
+</tr>
+<tr>
+<td width="100">0.730</td>
+<td class="info">Shader resource 'terrain.shader.xml': Compiling shader context 'ATTRIBPASS'</td>
+</tr>
+<tr>
+<td width="100">0.740</td>
+<td class="info">Loading resource 'utilityLib/fragLighting.glsl'</td>
+</tr>
+<tr>
+<td width="100">0.740</td>
+<td class="info">Shader resource 'terrain.shader.xml': Compiling shader context 'LIGHTING'</td>
+</tr>
+<tr>
+<td width="100">0.760</td>
+<td class="info">Adding nodes from SceneGraph resource 'terrain.scene.xml'</td>
+</tr>
+<tr>
+<td width="100">3.470</td>
+<td class="info">Adding Group node ''</td>
+</tr>
+<tr>
+<td width="100">3.470</td>
+<td class="info">Adding SceneGraph resource 'skybox.scene.xml'</td>
+</tr>
+<tr>
+<td width="100">3.470</td>
+<td class="info">Loading resource 'skybox.scene.xml'</td>
+</tr>
+<tr>
+<td width="100">3.470</td>
+<td class="info">Adding Geometry resource 'skybox.geo'</td>
+</tr>
+<tr>
+<td width="100">3.470</td>
+<td class="info">Adding Material resource 'skybox.material.xml'</td>
+</tr>
+<tr>
+<td width="100">3.470</td>
+<td class="info">Loading resource 'skybox.geo'</td>
+</tr>
+<tr>
+<td width="100">3.470</td>
+<td class="info">Loading resource 'skybox.material.xml'</td>
+</tr>
+<tr>
+<td width="100">3.470</td>
+<td class="info">Adding Shader resource 'skybox.shader.xml'</td>
+</tr>
+<tr>
+<td width="100">3.470</td>
+<td class="info">Adding TextureCube resource 'skybox.jpg'</td>
+</tr>
+<tr>
+<td width="100">3.470</td>
+<td class="info">Loading resource 'skybox.shader.xml'</td>
+</tr>
+<tr>
+<td width="100">3.470</td>
+<td class="info">Adding Code resource 'utilityLib/fragDeferred.glsl'</td>
+</tr>
+<tr>
+<td width="100">3.470</td>
+<td class="info">Shader resource 'skybox.shader.xml': Compiling shader context 'AMBIENT'</td>
+</tr>
+<tr>
+<td width="100">3.470</td>
+<td class="info">Loading resource 'skybox.jpg'</td>
+</tr>
+<tr>
+<td width="100">4.750</td>
+<td class="info">Loading resource 'utilityLib/fragDeferred.glsl'</td>
+</tr>
+<tr>
+<td width="100">4.750</td>
+<td class="info">Shader resource 'skybox.shader.xml': Compiling shader context 'ATTRIBPASS'</td>
+</tr>
+<tr>
+<td width="100">4.750</td>
+<td class="info">Adding nodes from SceneGraph resource 'skybox.scene.xml'</td>
+</tr>

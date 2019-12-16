@@ -1,0 +1,39 @@
+
+<?xml version="1.0" standalone="yes"?>
+<level>
+	<name>Test city</name>
+	
+	<scenenode name="terrain1" type="mesh" file="terrain.scene.xml" position="-256/0/-256" scale="512/256/512" />
+	<shape name="terrain1" type="heightfield" file="cityterrain2.png" position="-256/0/-256" scale="512/256/512" />
+	<!--<terrain name="terrain1" physics="true" heightmap="cityterrain2.png" colormap="mix.jpg" detail0="grass.jpg" detail1="beach.jpg" detail2="sand.jpg" />-->
+	
+	<scenenode name="pine1" type="mesh" file="pine.scene.xml" position="0/10/0" scale="1/1/1" />
+	
+	<pointgroup name="spawnpoints1">
+		<point position="0/10/-60" rotation="0/0/0" />
+		<point position="5/10/-65" rotation="0/0/0" />
+		<point position="-5/10/-65" rotation="0/0/0" />
+	</pointgroup>
+	<pointgroup name="spawnpoints2">
+		<point position="0/10/60" rotation="0/180/0" />
+		<point position="5/10/65" rotation="0/180/0" />
+		<point position="-5/10/65" rotation="0/180/0" />
+	</pointgroup>
+	
+	<scenenode name="skybox" type="mesh" file="skybox.scene.xml" scale="512/512/512" />
+	
+	<entity name="testentity1" type="cube" position="0/50/50" />
+	
+	<script place="server">
+	<![CDATA[
+		function getSpawnPoint(team)
+			if team == 1 then
+				-- ...
+			else
+				-- ...
+			end
+		end
+	]]>
+	</script>
+</level>
+

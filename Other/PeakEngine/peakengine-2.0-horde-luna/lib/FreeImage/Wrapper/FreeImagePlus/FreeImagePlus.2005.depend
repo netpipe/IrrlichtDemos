@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1227058716 source:/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/FreeImage/Wrapper/FreeImagePlus/src/fipImage.cpp
+	"FreeImagePlus.h"
+
+1227058716 /home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/FreeImage/Wrapper/FreeImagePlus/FreeImagePlus.h
+	<windows.h>
+	"FreeImage.h"
+
+1227058711 /home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/FreeImage/Source/FreeImage.h
+	<wchar.h>
+	<inttypes.h>
+
+1227058716 source:/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/FreeImage/Wrapper/FreeImagePlus/src/fipMemoryIO.cpp
+	"FreeImagePlus.h"
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<stdio.h>
+
+1227058716 source:/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/FreeImage/Wrapper/FreeImagePlus/src/fipMetadataFind.cpp
+	"FreeImagePlus.h"
+
+1227058716 source:/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/FreeImage/Wrapper/FreeImagePlus/src/fipMultiPage.cpp
+	"FreeImagePlus.h"
+
+1227058716 source:/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/FreeImage/Wrapper/FreeImagePlus/src/fipTag.cpp
+	<string.h>
+	"FreeImagePlus.h"
+
+1227058716 source:/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/FreeImage/Wrapper/FreeImagePlus/src/fipWinImage.cpp
+	"FreeImagePlus.h"
+
+1227058716 source:/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/FreeImage/Wrapper/FreeImagePlus/src/FreeImagePlus.cpp
+	<windows.h>
+	"FreeImagePlus.h"
+

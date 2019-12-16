@@ -1,0 +1,4 @@
+<Model name="chair" geometry="chair.geo">
+
+	<Mesh name="Cube" material="plane.material.xml" tx="0" ty="7.1575" tz="0" sx="4.03171" sy="0.46213" sz="4.03171" batchStart="0" batchCount="1164" vertRStart="0" vertREnd="401" />
+</Model>

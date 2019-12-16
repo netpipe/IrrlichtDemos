@@ -1,0 +1,11 @@
+prefix=@PREFIX@
+exec_prefix=@PREFIX@
+libdir=@PREFIX@/lib
+includedir=@PREFIX@/include
+
+Name: GLFW
+Description: A portable framework for OpenGL development
+Version: 2.6.0
+URL: http://glfw.sourceforge.net/
+Libs: -L${libdir} -lglfw  -L/usr/X11R6/lib -lGL -lX11 -lXrandr -pthread -lm
+Cflags: -I${includedir} -pthread 

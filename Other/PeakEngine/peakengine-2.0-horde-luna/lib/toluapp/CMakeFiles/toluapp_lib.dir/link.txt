@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC   -shared -Wl,-soname,libtoluapp.so -o libtoluapp.so CMakeFiles/toluapp_lib.dir/src/lib/tolua_event.c.o CMakeFiles/toluapp_lib.dir/src/lib/tolua_is.c.o CMakeFiles/toluapp_lib.dir/src/lib/tolua_map.c.o CMakeFiles/toluapp_lib.dir/src/lib/tolua_push.c.o CMakeFiles/toluapp_lib.dir/src/lib/tolua_to.c.o -Wl,-rpath,:::::::::::::: -llua -lm 

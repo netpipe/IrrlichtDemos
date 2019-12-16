@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PeakEngine" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Linux">
+				<Option output="../bin/test" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../bin" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add directory="/home/Dev/libs/lua-5.1.4/src" />
+					<Add directory="/home/Dev/libs/guichan-0.8.1/include" />
+					<Add directory="/home/Dev/libs/enet/include" />
+					<Add directory="/home/Dev/libs/peakengine/old/Horde3/Horde3D/Source" />
+					<Add directory="/home/Dev/libs/peakengine/old/Horde3/Horde3D/Source/Horde3DEngine" />
+					<Add directory="/home/Dev/libs/peakengine/old/Horde3/Horde3D/Bindings/C++" />
+					<Add directory="/home/Dev/libs/glfw/include/" />
+					<Add directory="/home/Dev/libs/peakengine/lib/tolua++-1.0.92/include" />
+					<Add directory="/home/Dev/libs/peakengine/lib/FreeImage/Dist" />
+					<Add directory="/home/Dev/libs/bullet/src" />
+				</Compiler>
+				<Linker>
+					<Add library="Xxf86vm" />
+					<Add library="GL" />
+					<Add directory="/home/Dev/libs/enet" />
+					<Add directory="/home/Dev/libs/lua-5.1.4/src" />
+					<Add directory="/home/Dev/libs/glfw/lib/x11" />
+					<Add directory="/home/Dev/libs/peakengine/old/Horde3/Horde3D/Source/Horde3DEngine" />
+					<Add directory="/home/Dev/libs/peakengine/old/Horde3/Horde3D/Source/Horde3DUtils" />
+					<Add directory="/home/Dev/libs/peakengine/lib/tolua++-1.0.92/lib" />
+					<Add directory="/home/Dev/libs/peakengine/lib/FreeImage" />
+					<Add directory="/home/Dev/libs/bullet/src/BulletCollision" />
+					<Add directory="/home/Dev/libs/bullet/src/BulletDynamics" />
+					<Add directory="/home/Dev/libs/bullet/src/BulletSoftBody" />
+					<Add directory="/home/Dev/libs/bullet/src/LinearMath" />
+					<Add directory="/home/Dev/libs/guichan-0.8.1/src/.libs" />
+				</Linker>
+			</Target>
+			<Target title="Debug">
+				<Option output="../bin/test" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-DBUILD_DLL" />
+				</Compiler>
+				<Linker>
+					<Add library="user32" />
+					<Add library="ws2_32" />
+					<Add library="winmm" />
+					<Add library="../bin/alut.dll" />
+					<Add library="../bin/OpenAL32.dll" />
+					<Add library="../bin/lua51.dll" />
+					<Add library="../bin/libtolua++.dll" />
+					<Add library="../bin/libHorde3D.dll" />
+					<Add library="../bin/libHorde3DUtils.dll" />
+					<Add library="OpenGL32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before=".\src\tolua.bat" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release">
+				<Option output="../bin/test" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-DBUILD_DLL" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="user32" />
+					<Add library="ws2_32" />
+					<Add library="winmm" />
+					<Add library="../bin/alut.dll" />
+					<Add library="../bin/OpenAL32.dll" />
+					<Add library="../bin/lua51.dll" />
+					<Add library="../bin/libtolua++.dll" />
+					<Add library="../bin/libHorde3D.dll" />
+					<Add library="../bin/libHorde3DUtils.dll" />
+					<Add library="OpenGL32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before=".\src\tolua.bat" />
+				</ExtraCommands>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-D_ENET_1_2_" />
+			<Add directory="include" />
+			<Add directory=".." />
+			<Add directory="include/lua" />
+			<Add directory="include/ALUT" />
+			<Add directory="include/bullet" />
+			<Add directory="include/support" />
+			<Add directory="../engine/include" />
+		</Compiler>
+		<Linker>
+			<Add library="glfw" />
+			<Add library="enet" />
+			<Add library="openal" />
+			<Add library="tolua++" />
+			<Add library="ogg" />
+			<Add library="vorbis" />
+			<Add library="vorbisfile" />
+			<Add library="vorbisenc" />
+			<Add library="bulletsoftbody" />
+			<Add library="bulletdynamics" />
+			<Add library="bulletcollision" />
+			<Add library="bulletmath" />
+			<Add library="Horde3D" />
+			<Add library="Horde3DUtils" />
+			<Add library="guichan" />
+			<Add library="freeimageplus" />
+			<Add library="PeakEngine" />
+			<Add directory="../bin" />
+			<Add directory="../lib" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+			<AutoVersioning>
+				<Scheme minor_max="10" build_max="0" rev_max="0" rev_rand_max="10" build_times_to_increment_minor="100" />
+				<Settings autoincrement="1" date_declarations="1" do_auto_increment="0" ask_to_increment="0" language="C++" svn="0" svn_directory="" header_path="version.h" />
+				<Changes_Log show_changes_editor="0" app_title="released version %M.%m.%b of %p" changeslog_path="ChangesLog.txt" />
+			</AutoVersioning>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

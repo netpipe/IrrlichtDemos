@@ -1,0 +1,17 @@
+[psys]
+material=smoke
+direction=0/0/0
+size=5/5
+minspeed=80
+maxspeed=160
+minttl=1100
+maxttl=1100
+type=point
+maxrotation=0
+affectors=1
+
+[affector0]
+type=fadeout
+color=0/0/0
+time=1100
+

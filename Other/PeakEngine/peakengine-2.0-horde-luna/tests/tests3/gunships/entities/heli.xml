@@ -1,0 +1,175 @@
+<?xml version="1.0" standalone="yes"?>
+<entity>
+	<name>Apache</name>
+
+	<!--<property name="position" type="vector3" />
+	<property name="rotation" type="vector3" />-->
+	<property name="position" type="alias" value="helibody.position" />
+	<property name="rotation" type="alias" value="helibody.rotation" />
+	<property name="team" type="integer" />
+	<property name="hitpoints" type="integer" value="100" />
+
+	<script place="server">
+	<![CDATA[
+		forward = 0;
+		back = 0;
+		left = 0;
+		right = 0;
+		down = 0;
+		up = 0;
+		cooldown = 0;
+		dead = false;
+		hitpoints:set(100);
+		helirotation = peak.Vector3D();
+
+		function respawn()
+			local spawnpoints = peak.Level:get():getPointGroup("spawnpoints"..team:getInt());
+			helirotation = peak.Vector3D(0, 0, 0);
+			if spawnpoints ~= nil then
+				local pointindex = math.random(0, spawnpoints:getPointCount() - 1);
+				local spawnpoint = spawnpoints:getPoint(pointindex);
+				helibody:setPosition(spawnpoints:getPoint(pointindex));
+				if spawnpoints:getRotationCount() >= pointindex then
+					helirotation.y = spawnpoints:getRotation(pointindex).y;
+				end
+			end
+			helibody:setAngularVelocity(peak.Vector3D(0, 0, 0));
+			helibody:setLinearVelocity(peak.Vector3D(0, 0, 0));
+			helibody:setGravity(peak.Vector3D(0, 0, 0));
+			hitpoints:set(100);
+			dead = false;
+		end
+
+		function OnUpdate(msecs)
+			cooldown = cooldown + msecs;
+			
+			if dead == true then
+				return;
+			end
+			helibody:clearForces();
+			-- Apply force to helicopter to move it
+			local currentspeed = helibody:getLinearVelocity();
+			currentspeed:rotateXZ(helirotation.y);
+			local wantedspeed = peak.Vector3D((right - left) * 50, (up - down) * 30, (back - forward) * 50);
+			local force = peak.Vector3D((wantedspeed.x - currentspeed.x), (wantedspeed.y - currentspeed.y), (wantedspeed.z - currentspeed.z));
+			force:rotateXZ(-helirotation.y);
+			
+			-- Tilt helicopter when moving
+			if helirotation.z * 4 < left - right then
+				helirotation.z = helirotation.z + 0.001 * msecs;
+			end
+			if helirotation.z * 4 > left - right then
+				helirotation.z = helirotation.z -  0.001 * msecs;
+			end
+			if helirotation.x * 4 < back - forward then
+				helirotation.x = helirotation.x + 0.001 * msecs;
+			end
+			if helirotation.x * 4 > back - forward then
+				helirotation.x = helirotation.x - 0.001 * msecs;
+			end
+			
+			helibody:setAngularVelocity(peak.Vector3D(0, 0, 0));
+			helibody:setRotation(peak.Quaternion(helirotation));
+			helibody:setForce(force);
+		end
+		
+		function hit(damage)
+			hitpoints:set(hitpoints:getInt() - damage);
+			if hitpoints:getInt() <= 0 then
+				dead = true;
+				helibody:setGravity();
+			end
+		end
+	]]>
+	</script>
+	<script place="local">
+	<![CDATA[
+		camera = peak.GraphicsEngine:get():getStandardCamera();
+		camcontroller = peak.FollowingController:new();
+		camcontroller:setSceneNode(camera);
+		camcontroller:setTarget(helinode);
+		camcontroller:setDistance(peak.Vector3D(0, 0.8, 3));
+		
+		rotorrotation = peak.RotationController:new();
+		rotorrotation:setSceneNode(mainrotor);
+		rotorrotation:setRotationSpeed(peak.Vector3D(0, 20, 0));
+		auxrotorrotation = peak.RotationController:new();
+		auxrotorrotation:setSceneNode(auxrotor);
+		auxrotorrotation:setRotationSpeed(peak.Vector3D(20, 0, 0));
+		
+		function OnDestroy()
+			camcontroller:delete();
+			rotorrotation:delete();
+			auxrotorrotation:delete();
+		end
+	]]>
+	</script>
+	<body name="helibody" gravity="0/0/0">
+		<!--<shape name="helishape" type="trimesh" mesh="apache.obj" mass="1" />-->
+		<shape name="testshape" type="box" size="1/1/1" />
+		<scenenode name="helinode" type="mesh" file="apache.scene.xml">
+			<scenenode name="mainrotor" type="mesh" file="mainrotor.scene.xml" position="0/0.137/0.249">
+			</scenenode>
+			<scenenode name="auxrotor" type="mesh" file="auxrotor.scene.xml" position="0.100/0.135/1.205">
+			</scenenode>
+		</scenenode>
+	</body>
+	<!--<scenenode name="camera" type="camera" />-->
+
+	<link name="zlink" type="script" source="input.KeyChanged" owneronly="true" filter="forward/back" place="server">
+	</link>
+	<link name="xlink" type="script" source="input.KeyChanged" owneronly="true" filter="left/right" place="server">
+	</link>
+	<link name="ylink" type="script" source="input.KeyChanged" owneronly="true" filter="down/up" place="server">
+	</link>
+	<link name="mouselink" type="script" source="input.MouseMoved" owneronly="true" place="server">
+	<![CDATA[
+		if not dead then
+			helirotation.y = helirotation.y - X * 0.01;
+			helibody:setRotation(peak.Quaternion(helirotation));
+			helibody:setAngularVelocity(peak.Vector3D(0, 0, 0));
+		end
+	]]>
+	</link>
+	<link name="teamlink" type="script" source="team" place="server">
+	<![CDATA[
+		respawn();
+	]]>
+	</link>
+	<link name="rocketlink" type="script" source="input.KeyChanged" owneronly="true" filter="shoot2" place="server">
+	<![CDATA[
+		if shoot2 == 1 then
+			if not dead then
+				if cooldown > 1000 then
+					rocket = peak.Game:get():createEntity("rocket", entity:getOwner());
+					local rocketposition = helibody:getPosition();
+					local rocketdistance = peak.Quaternion(helirotation):rotateVector(peak.Vector3D(0, 0, -5));
+					rocketposition.x = rocketposition.x + rocketdistance.x;
+					rocketposition.y = rocketposition.y + rocketdistance.y;
+					rocketposition.z = rocketposition.z + rocketdistance.z;
+					rocket:setPosition(rocketposition);
+					rocket:getProperty("rotation"):set(peak.Quaternion(helirotation));
+					rocket:getScript():callFunction("firerocket");
+					cooldown = 0;
+				end
+			else
+				respawn();
+			end
+		end
+	]]>
+	</link>
+	
+	<overlay name="hitpointlabel" type="label" owneronly="true" position="0.1/0.1" size="0.2/0.05" font="font.material.xml" label="HP: " />
+	<link name="hitpointlink" type="script" source="hitpoints" place="local">
+	<![CDATA[
+		hitpointlabel:setLabel("HP: "..hitpoints:getInt());
+	]]>
+	</link>
+	<overlay name="teamlabel" type="label" owneronly="true" position="0.1/0.2" size="0.2/0.05" font="font.material.xml" label="Team: " />
+	<link name="teamlink2" type="script" source="team" place="local">
+	<![CDATA[
+		teamlabel:setLabel("Team: "..team:getInt());
+	]]>
+	</link>
+</entity>
+

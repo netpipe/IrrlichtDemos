@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="enginetest" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../bin/enginetest" prefix_auto="1" extension_auto="1" />
+				<Option working_dir=".." />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="tests/gunships" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../bin/enginetest" prefix_auto="1" extension_auto="1" />
+				<Option working_dir=".." />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="tests/gunships" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="Linux">
+				<Option output="../bin/enginetest" prefix_auto="1" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="/home/Dev/libs/peakengine/old/Horde3/Horde3D/Bindings/C++" />
+					<Add directory="/home/Dev/libs/glfw/include" />
+					<Add directory="/home/Dev/libs/enet/include" />
+					<Add directory="/home/Dev/libs/peakengine/lib/tolua++-1.0.92/include" />
+					<Add directory="/home/Dev/libs/lua-5.1.4/src" />
+					<Add directory="/home/Dev/libs/peakengine/lib/FreeImage/Dist" />
+					<Add directory="/home/Dev/libs/Irrlicht/include" />
+				</Compiler>
+				<Linker>
+					<Add library="GL" />
+					<Add library="Xxf86vm" />
+					<Add library="glfw" />
+					<Add library="enet" />
+					<Add library="lua" />
+					<Add library="tolua++" />
+					<Add library="freeimageplus" />
+					<Add library="Irrlicht" />
+					<Add library="Horde3D" />
+					<Add library="Horde3DUtils" />
+					<Add directory="/home/Dev/libs/glfw/lib/x11" />
+					<Add directory="/home/Dev/libs/peakengine/old/Horde3/Horde3D/Source/Horde3DEngine" />
+					<Add directory="/home/Dev/libs/peakengine/old/Horde3/Horde3D/Source/Horde3DUtils" />
+					<Add directory="/home/Dev/libs/enet" />
+					<Add directory="/home/Dev/libs/peakengine/lib/tolua++-1.0.92/lib" />
+					<Add directory="/home/Dev/libs/lua-5.1.4/src" />
+					<Add directory="/home/Dev/libs/peakengine/lib/FreeImage" />
+					<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="../engine/include" />
+		</Compiler>
+		<Linker>
+			<Add library="PeakEngine" />
+			<Add directory="../bin" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

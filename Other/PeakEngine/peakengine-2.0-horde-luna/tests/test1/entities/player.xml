@@ -1,0 +1,122 @@
+<?xml version="1.0" standalone="yes"?>
+<entity>
+	<name>Player with character physics</name>
+
+	<property name="position" type="alias" value="playerbody.position" />
+	<property name="rotation" type="vector3" reliable="false"/>
+
+	<script place="server">
+	<![CDATA[
+	
+		-- TODO: Implement character ray callbacks here
+		
+		forward = 0;
+		back = 0;
+		left = 0;
+		right = 0;
+
+		function OnUpdate(msecs)
+			speed = peak.Vector3D((right - left) * 0.005 * msecs, 0, (forward - back) * 0.005 * msecs);
+			speed:rotate(playerbody:getRotation():getEuler());
+			
+			rot = rotation:getVector3D();
+			--[[local currentspeed = playerbody:getLinearVelocity();
+			currentspeed:rotateXZ(rot.y);
+			local wantedspeed = peak.Vector3D((right - left) * 50, 0, (back - forward) * 50);
+			local force = peak.Vector3D((wantedspeed.x - currentspeed.x), (wantedspeed.y - currentspeed.y), (wantedspeed.z - currentspeed.z));
+			force:rotateXZ(-rot.y);
+			
+			playerbody:setAngularVelocity(peak.Vector3D(0, 0, 0));
+			playerbody:setForce(force);]]--
+			
+			oldvel = playerbody:getLinearVelocity();
+			newvel = peak.Vector3D((right - left) * 50, oldvel.y, (back - forward) * 50);
+			newvel:rotateXZ(-rot.y);
+			playerbody:setLinearVelocity(newvel);
+			playerbody:setAngularVelocity(peak.Vector3D(0, 0, 0));
+			
+		end
+	]]>
+	</script>
+	<script place="local">
+	<![CDATA[
+		camera = peak.GraphicsEngine:get():getStandardCamera();
+	
+		function OnCreate()
+			overlay = peak.TextureOverlay:new("crosshair.material.xml");
+			overlay:setPosition(peak.Vector2D(0.4, 0.4));
+			overlay:setSize(peak.Vector2D(0.2, 0.2));
+		end
+	]]>
+	</script>
+
+	<body name="playerbody">
+		<scenenode name="playernode" type="mesh" file="smilie.scene.xml" scale="1/1/1" />
+		<shape name="playershape" type="trimesh" mesh="smilie.obj" sclae="1/1/1" />
+	</body>
+
+	<link name="zlink" type="script" source="input.KeyChanged" filter="forward/back" owneronly="true" place="server">
+	</link>
+	<link name="xlink" type="script" source="input.KeyChanged" filter="left/right" owneronly="true" place="server">
+	</link>
+	<link name="mouselink" type="script" source="input.MouseMoved" place="local">
+	<![CDATA[
+		rot = rotation:getVector3D();
+		rot.y = rot.y - X * 0.01;
+		rot.x = rot.x - Y * 0.01;
+		rotation:set(rot);
+	]]>
+	</link>
+	<link name="rotationbodylink" type="script" source="rotation" >
+	<![CDATA[
+		rot = rotation:getVector3D();
+		rot.x = 0;
+		rot.z = 0;
+		playerbody:setRotation(peak.Quaternion(rot));	
+	]]>
+	</link>
+	<link name="positionlink" type="script" source="position">
+	<![CDATA[
+		if camera ~= nil then
+			pos = position:getVector3D();
+			-- Calculate offset
+			pos.y = pos.y + 7;
+			cameraposprop = camera:getProperty("position");
+			cameraposprop:set(pos);
+		end
+	]]>	
+	</link>
+	<link name="rotationlink" type="script" source="rotation" place="local">
+	<![CDATA[
+		if camera ~= nil then
+			camera:setRotation(rotation:getVector3D());
+		end
+	]]>
+	</link>
+	
+	
+	
+	<link name="shootlink" type="script" source="input.KeyChanged" filter="shoot" owneronly="true" place="server">
+	<![CDATA[
+		if shoot ~= 0 then
+			--newcube = peak.Game:get():createEntity("flyingcube", 0);
+			newcube = peak.Game:get():createEntity("cube", 0);
+			cubescript = newcube:getScript();
+
+			pos = position:getVector3D();
+			cubescript:callFunctionFFF("GivePosition", pos.x, pos.y, pos.z);
+
+			rot = rotation:getVector3D();
+			cubescript:callFunctionFFF("GiveRotation", rot.x, rot.y, 0);
+
+			cubescript:callFunction("Shoot");
+			oldcube = newcube;
+		end	
+
+		shoot = 0;
+
+	]]>
+	</link>
+
+</entity>
+

@@ -1,0 +1,34 @@
+This file contains any messages produced by compilers while
+running ./compile.sh, to aid debugging if ./compile.sh makes a mistake.
+
+./compile.sh: checking whether we are using GNU C
+./compile.sh: cc -E conftest.c
+./compile.sh: Checking for X11 RandR support
+./compile.sh: gcc -c  -Dlinux -I/usr/X11R6/include conftest.c 1>&5
+./compile.sh: Checking for pthread support
+./compile.sh: gcc -o conftest  -Dlinux -I/usr/X11R6/include -D_GLFW_HAS_XRANDR -pthread  -L/usr/X11R6/lib conftest.c -lGL -lX11 -lXrandr -pthread 1>&5
+./compile.sh: Checking for sched_yield support
+./compile.sh: gcc -c  -Dlinux -I/usr/X11R6/include -D_GLFW_HAS_XRANDR -pthread -D_GLFW_HAS_PTHREAD conftest.c 1>&5
+./compile.sh: Checking for glXGetProcAddress support
+./compile.sh: gcc -o conftest  -Dlinux -I/usr/X11R6/include -D_GLFW_HAS_XRANDR -pthread -D_GLFW_HAS_PTHREAD -D_GLFW_HAS_SCHED_YIELD  -L/usr/X11R6/lib conftest.c -lGL -lX11 -lXrandr -pthread 1>&5
+./compile.sh: gcc -o conftest  -Dlinux -I/usr/X11R6/include -D_GLFW_HAS_XRANDR -pthread -D_GLFW_HAS_PTHREAD -D_GLFW_HAS_SCHED_YIELD  -L/usr/X11R6/lib conftest.c -lGL -lX11 -lXrandr -pthread 1>&5
+./compile.sh: gcc -o conftest  -Dlinux -I/usr/X11R6/include -D_GLFW_HAS_XRANDR -pthread -D_GLFW_HAS_PTHREAD -D_GLFW_HAS_SCHED_YIELD  -L/usr/X11R6/lib conftest.c -lGL -lX11 -lXrandr -pthread 1>&5
+conftest.c: In function ‘main’:
+conftest.c:4: warning: cast to pointer from integer of different size
+/tmp/cc26j1Ph.o: In function `main':
+conftest.c:(.text+0x13): undefined reference to `glXGetProcAddressEXT'
+collect2: ld returned 1 exit status
+./compile.sh: failed program was:
+#include <X11/Xlib.h>
+#include <GL/glx.h>
+#include <GL/gl.h>
+int main() {void *ptr=(void*)glXGetProcAddressEXT("glFun"); return 0;}
+./compile.sh: Checking for dlopen support
+./compile.sh: gcc -o conftest  -Dlinux -I/usr/X11R6/include -D_GLFW_HAS_XRANDR -pthread -D_GLFW_HAS_PTHREAD -D_GLFW_HAS_SCHED_YIELD -D_GLFW_HAS_GLXGETPROCADDRESS -D_GLFW_HAS_GLXGETPROCADDRESSARB  -L/usr/X11R6/lib conftest.c -lGL -lX11 -lXrandr -pthread 1>&5
+./compile.sh: Checking for sysconf support
+./compile.sh: gcc -o conftest  -Dlinux -I/usr/X11R6/include -D_GLFW_HAS_XRANDR -pthread -D_GLFW_HAS_PTHREAD -D_GLFW_HAS_SCHED_YIELD -D_GLFW_HAS_GLXGETPROCADDRESS -D_GLFW_HAS_GLXGETPROCADDRESSARB -D_GLFW_HAS_DLOPEN  -L/usr/X11R6/lib conftest.c -lGL -lX11 -lXrandr -pthread 1>&5
+./compile.sh: Checking for sysctl support
+./compile.sh: gcc -E conftest.c
+./compile.sh: Creating ./lib/x11/Makefile.x11...
+./compile.sh: Creating ./examples/Makefile.x11...
+./compile.sh: Creating ./lib/x11/libglfw.pc.in...

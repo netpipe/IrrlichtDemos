@@ -1,0 +1,78 @@
+<Shader>
+	<!--
+	<Context id="SHADOWMAP">
+		<VertexShader>
+			<InsCode code="utilityLib/vertParticle.glsl" />
+			<DefCode>
+			<![CDATA[
+				uniform vec4 lightPos;
+				varying float dist;
+				
+				void main(void)
+				{
+					vec4 vsPos = calcParticleViewPos();
+					vec4 pos = gl_ModelViewMatrixInverse * vsPos;
+					dist = length( lightPos.xyz - pos.xyz ) / lightPos.w;
+					
+					gl_Position = gl_ProjectionMatrix * vsPos;
+				}
+			]]>
+			</DefCode>
+		</VertexShader>
+		
+		<FragmentShader>
+			<DefCode>
+			<![CDATA[
+				uniform float shadowBias;
+				varying float dist;
+				
+				void main( void )
+				{
+					gl_FragDepth = dist + shadowBias;
+				}
+			]]>
+			</DefCode>
+		</FragmentShader>
+	</Context>
+	-->
+	
+	
+	<Context id="TRANSLUCENT">
+		<RenderConfig writeDepth="false" blendMode="ADD_BLENDED" />
+		
+		<VertexShader>
+			<InsCode code="utilityLib/vertParticle.glsl" />
+			<DefCode>
+			<![CDATA[
+				varying vec4 color;
+				varying vec2 texCoord;
+				attribute vec2 texCoords0;
+	
+				void main(void)
+				{
+					color = getParticleColor();
+					texCoord = texCoords0;
+					gl_Position = gl_ProjectionMatrix * calcParticleViewPos();
+				}
+			]]>
+			</DefCode>
+		</VertexShader>
+		
+		<FragmentShader>
+			<DefCode>
+			<![CDATA[
+				uniform sampler2D tex0;
+				varying vec4 color;
+				varying vec2 texCoord;
+
+				void main( void )
+				{
+					vec4 albedo = texture2D( tex0, texCoord );
+					
+					gl_FragColor = albedo * color;
+				}
+			]]>
+			</DefCode>
+		</FragmentShader>
+	</Context>
+</Shader>

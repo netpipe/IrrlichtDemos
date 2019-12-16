@@ -1,0 +1,6 @@
+<Material>
+	<Shader source="postHDR.shader.xml"/>
+	
+	<Uniform name="hdrParams" a="2.0" b="0.6" c="0.06" />
+	<Uniform name="blurParams" a="0.0" />
+</Material>

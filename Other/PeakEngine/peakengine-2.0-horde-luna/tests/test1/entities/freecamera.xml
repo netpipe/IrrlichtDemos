@@ -1,0 +1,83 @@
+<?xml version="1.0" standalone="yes"?>
+<entity>
+	<name>Free Camera</name>
+
+	<property name="position" type="vector3" />
+	<property name="rotation" type="vector3" />
+
+	<script place="local">
+	<![CDATA[
+		forward = 0;
+		back = 0;
+		left = 0;
+		right = 0;
+
+		function OnCreate()
+			camera:setRotation(peak.Vector3D(0.0, 0.0, 0.0));
+			camera:setPosition(peak.Vector3D(0.0, 10.0, 0.0));
+
+			overlay = peak.TextureOverlay:new("crosshair.material.xml");
+			overlay:setPosition(peak.Vector2D(0.4, 0.4));
+			overlay:setSize(peak.Vector2D(0.2, 0.2));
+		end
+
+		function OnUpdate(msecs)
+			speed = peak.Vector3D((right - left) * 0.005 * msecs, 0, (forward - back) * 0.005 * msecs);
+			speed:rotate(camera:getRotationEuler());
+			speed.x = -speed.x; -- FIXME
+			pos = position:getVector3D();
+			pos.x = pos.x - speed.x*5.0;
+			pos.y = pos.y - speed.y*5.0;
+			pos.z = pos.z - speed.z*5.0;
+			position:set(pos);
+		end
+	]]>
+	</script>
+
+	<scenenode name="camera" type="camera" />
+
+	<link name="zlink" type="script" source="input.KeyChanged" filter="forward/back" place="local">
+	</link>
+	<link name="xlink" type="script" source="input.KeyChanged" filter="left/right" place="local">
+	</link>
+	<link name="mouselink" type="script" source="input.MouseMoved" place="local">
+	<![CDATA[
+		--[[rotation = camera:getRotationEuler();
+		rotation.y = rotation.y - X * 0.01;
+		rotation.x = rotation.x - Y * 0.01;
+		camera:setRotation(rotation);--]]
+		rot = rotation:getVector3D();
+		rot.y = rot.y - X * 0.01;
+		rot.x = rot.x - Y * 0.01;
+		rotation:set(rot);
+	]]>
+	</link>
+	<link name="positionlink" type="direct" source="position" target="camera.position" />
+	<link name="rotationlink" type="script" source="rotation">
+	<![CDATA[
+		camera:setRotation(rotation:getVector3D());
+	]]>
+	</link>
+	<link name="shootlink" type="script" source="input.KeyChanged" filter="shoot" place="local">
+	<![CDATA[
+		if shoot ~= 0 then
+			newcube = peak.Game:get():createEntity("flyingcube", 0);
+			cubescript = newcube:getScript();
+
+			pos = position:getVector3D();
+			cubescript:callFunctionFFF("GivePosition", pos.x, pos.y, pos.z);
+
+			rot = rotation:getVector3D();
+			cubescript:callFunctionFFF("GiveRotation", rot.x, rot.y, 0);
+
+			cubescript:callFunction("Shoot");
+			oldcube = newcube;
+		end	
+
+		shoot = 0;
+
+	]]>
+	</link>
+
+</entity>
+

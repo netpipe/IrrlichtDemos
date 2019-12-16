@@ -1,0 +1,11 @@
+[psys]
+material=fire
+direction=0/0.007/0
+size=2/2
+minspeed=40
+maxspeed=80
+minttl=600
+maxttl=1000
+type=point
+maxrotation=10
+

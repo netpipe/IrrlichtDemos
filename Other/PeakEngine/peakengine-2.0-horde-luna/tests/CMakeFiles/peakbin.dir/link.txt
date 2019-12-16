@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/peakbin.dir/main.o  -o ../bin/peakbin  -L/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib -Wl,-rpath,/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib ../lib/libpeakengine.so -lenet -ltolua++ -llua -lglfw -lXrandr -lBulletSoftBody -lBulletDynamics -lBulletCollision -lLinearMath 

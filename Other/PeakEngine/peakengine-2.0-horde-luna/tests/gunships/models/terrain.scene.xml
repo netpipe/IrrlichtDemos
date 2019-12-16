@@ -1,0 +1,2 @@
+<Terrain name="Terrain" sx="128.0" sy="256.0" sz="128.0" heightmap="cityterrain2.png" material="terrain2.material.xml" />
+

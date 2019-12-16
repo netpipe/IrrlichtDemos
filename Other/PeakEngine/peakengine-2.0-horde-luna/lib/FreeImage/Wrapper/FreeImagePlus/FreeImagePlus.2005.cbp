@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="FreeImagePlus" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release Win32">
+				<Option output="./FreeImagePlus" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-fPIC" />
+					<Add directory="." />
+					<Add directory="../../Source" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="." />
+					<Add directory="../../Source" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="../../Dist/libfreeimage.a" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="copy         Release\FreeImagePlus.lib         dist\" />
+					<Add after="copy         Release\FreeImagePlus.dll         dist\" />
+					<Add after="copy         FreeImagePlus.h         dist\" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug Win32">
+				<Option output="Debug/FreeImagePlusd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-D_DEBUG" />
+					<Add option="-DWIN32" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-D_USRDLL" />
+					<Add option="-DFIP_EXPORTS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-W" />
+					<Add option="-g" />
+					<Add option="-O0" />
+					<Add directory="." />
+					<Add directory="../../Source" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="." />
+					<Add directory="../../Source" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="../../Dist/FreeImaged" />
+					<Add library="odbc32" />
+					<Add library="odbccp32" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="copy         Debug\FreeImagePlusd.lib         dist\&#x0D;&#x0A;&#x0D;&#x0A;copy         Debug\FreeImagePlusd.dll         dist\&#x0D;&#x0A;&#x0D;&#x0A;copy         FreeImagePlus.h         dist\&#x0D;&#x0A;&#x0D;&#x0A;" />
+				</ExtraCommands>
+			</Target>
+		</Build>
+		<Unit filename="FreeImagePlus.h" />
+		<Unit filename="src/FreeImagePlus.cpp" />
+		<Unit filename="src/fipImage.cpp" />
+		<Unit filename="src/fipMemoryIO.cpp" />
+		<Unit filename="src/fipMetadataFind.cpp" />
+		<Unit filename="src/fipMultiPage.cpp" />
+		<Unit filename="src/fipTag.cpp" />
+		<Unit filename="src/fipWinImage.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

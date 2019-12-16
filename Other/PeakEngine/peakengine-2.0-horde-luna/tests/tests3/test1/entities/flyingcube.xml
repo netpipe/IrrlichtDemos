@@ -1,0 +1,65 @@
+<?xml version="1.0" standalone="yes"?>
+<entity>
+	<name>Fyling Cube/Ray Callback tester and Shootable</name>
+
+
+	<script place="local">
+	<![CDATA[
+		function OnCreate()
+			script = entity:getScript();
+			callback = peak.RayCallback:new();
+			callback:create(peak.Vector3D(0,-1,0) , peak.Vector3D(0,-2.5,0), script, "Callback");
+		end
+
+		
+		-- TODO: Handle this with links
+		function GivePosition(x, y, z)
+			pos = peak.Vector3D(x, y, z);
+		end
+		
+		function GiveRotation(x, y, z)
+			rot = peak.Vector3D(x, y, z);
+		end
+
+		function Shoot()
+			dontclear = 1;
+			cubebody:setPosition(pos);
+			cubebody:setRotation(peak.Quaternion(rot));
+
+			rot.y = -rot.y;
+			shootvel = peak.Vector3D(0, 0, -120);
+			shootvel:rotate(rot);
+			cubebody:setLinearVelocity(shootvel);
+		end
+			
+
+		function OnUpdate(msecs)
+			pos = cubebody:getPosition();
+			callback:setRay(peak.Vector3D(pos.x, pos.y - 1, pos.z), peak.Vector3D(pos.x, pos.y - 2.5, pos.z));
+		end
+
+		function Callback()
+			if clear == 1 then
+				cubebody:setAngularVelocity(peak.Vector3D(0, 0, 0));
+				cubebody:setRotation(peak.Quaternion(peak.Vector3D(0, 0, 0)));
+				clear = 0;
+			else
+				clear = 1;
+			end
+
+			vel = cubebody:getLinearVelocity();
+			cubebody:setLinearVelocity(peak.Vector3D(0, 50, 0));
+			
+
+		end
+	]]>
+	</script>
+
+	<body name="cubebody">
+		<scenenode name="cubenode" type="mesh" file="cube.scene.xml" scale="2/2/2" />
+		<shape name="cubeshape" type="box" mass="1" size="2/2/2" />
+	</body>
+
+
+</entity>
+

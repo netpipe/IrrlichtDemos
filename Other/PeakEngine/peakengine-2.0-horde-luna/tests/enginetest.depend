@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1227058705 source:/home/Dev/libs/peakengine/old/PeakEngine-lunarepo/tests/main.cpp
+	<Horde3D.h>
+	<Horde3DUtils.h>
+	<GL/glfw.h>
+	"core/GameEngine.h"
+
+1221408165 /home/Dev/libs/peakengine/old/Horde3/Horde3D/Bindings/C++/Horde3D.h
+
+1221408165 /home/Dev/libs/peakengine/old/Horde3/Horde3D/Bindings/C++/Horde3DUtils.h
+	"Horde3D.h"
+
+1180086995 /home/Dev/libs/glfw/include/GL/glfw.h
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1227058706 /home/Dev/libs/peakengine/old/PeakEngine-lunarepo/engine/include/core/GameEngine.h
+	"core/Config.h"
+	<string>
+	<time.h>
+	<winsock2.h>
+	<winbase.h>
+	<sys/time.h>
+
+1227058706 /home/Dev/libs/peakengine/old/PeakEngine-lunarepo/engine/include/core/Config.h
+

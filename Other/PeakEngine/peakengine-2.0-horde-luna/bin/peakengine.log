@@ -1,0 +1,7 @@
+I: 06/01/09 15:25:53: GameEngine.cpp:73: PeakEngine starting.
+D: 06/01/09 15:25:53: InputManager.cpp:68: Action: forward: 0x57.
+D: 06/01/09 15:25:53: InputManager.cpp:68: Action: back: 0x53.
+D: 06/01/09 15:25:53: InputManager.cpp:68: Action: left: 0x41.
+D: 06/01/09 15:25:53: InputManager.cpp:68: Action: right: 0x44.
+D: 06/01/09 15:25:53: InputManager.cpp:68: Action: shoot: 0x20.
+D: 06/01/09 15:25:53: InputManager.cpp:68: Action: quitgame: 0x1B.

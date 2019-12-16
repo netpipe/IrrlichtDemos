@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC    -shared -Wl,-soname,libHorde3DUtils.so -o libHorde3DUtils.so CMakeFiles/Horde3DUtils.dir/main.cpp.o ../Horde3DEngine/libHorde3D.so -lGL -Wl,-rpath,/home/Dev/libs/game/PeakEngines/PeakEngine/old/peakengine-luna/lib/Horde3/Horde3D/Source/Horde3DEngine: 

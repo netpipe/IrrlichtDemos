@@ -1,0 +1,15 @@
+What's New for FreeImage.NET
+
+* : fixed
+- : removed
+! : changed
++ : added
+
+July 25, 2008 - 1.02
++ [Jean-Philippe Goerke] Improved handling of XMP metadata in MetadataTag.cs: Key is now set to "XMLPacket" not changeable if Model is FREE_IMAGE_MDMODEL.FIMD_XMP.
+
+July 01, 2008 - 1.01
++ [Jean-Philippe Goerke] Added methods Quantize and GetQuantizedInstance to the FreeImageBitmap class
+
+November 12, 2007 - 1.00
++ [Jean-Philippe Goerke] Initial release

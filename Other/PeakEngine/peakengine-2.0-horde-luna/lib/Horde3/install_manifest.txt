@@ -1,0 +1,5 @@
+/usr/local/lib/libHorde3D.so
+/usr/local/lib/libHorde3DUtils.so
+/usr/local/include/horde3d/Horde3D.h
+/usr/local/include/horde3d/Horde3DUtils.h
+/usr/local/include/horde3d/Horde3DTerrain.h
