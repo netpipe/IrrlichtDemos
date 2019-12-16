@@ -1,4 +1,0 @@
-<Model name="muzzleflash" geometry="muzzleflash.geo">
-
-	<Mesh name="Plane" material="muzzleflash.material.xml" batchStart="0" batchCount="36" vertRStart="0" vertREnd="31" />
-</Model>

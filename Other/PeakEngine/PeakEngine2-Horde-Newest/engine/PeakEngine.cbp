@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PeakEngine" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Linux">
+				<Option output="../bin/PeakEngine" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="../lib/lua-5.1.4/src" />
+					<Add directory="../lib/guichan-0.8.1/include" />
+					<Add directory="../lib/enet/include" />
+					<Add directory="../lib/Horde3/Horde3D/Source" />
+					<Add directory="../lib/Horde3/Horde3D/Source/Shared" />
+					<Add directory="../lib/Horde3/Horde3D/Source/Horde3DEngine" />
+					<Add directory="../lib/Horde3/Horde3D/Bindings/C++" />
+					<Add directory="../lib/glfw/include/" />
+					<Add directory="../lib/tolua++-1.0.93/include" />
+					<Add directory="../lib/FreeImage/Source" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src" />
+					<Add directory="../lib/FreeImage/Dist" />
+				</Compiler>
+				<Linker>
+					<Add library="guichan" />
+					<Add library="Xxf86vm" />
+					<Add library="GL" />
+					<Add library="lua" />
+					<Add library="tolua++" />
+					<Add library="freeimage" />
+					<Add library="glfw" />
+					<Add library="openjpeg" />
+					<Add directory="/home/Dev/libs/net/enet" />
+					<Add directory="../lib/lua-5.1.4/src" />
+					<Add directory="../lib/glfw/lib/x11" />
+					<Add directory="../lib/Horde3/Horde3D/Source/Horde3DEngine" />
+					<Add directory="../lib/Horde3/Horde3D/Source/Horde3DUtils" />
+					<Add directory="../lib/tolua++-1.0.93/src/lib" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletCollision" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletDynamics" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletSoftBody" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/LinearMath" />
+					<Add directory="../lib/guichan-0.8.1/src/.libs" />
+					<Add directory="../lib/FreeImage/Dist" />
+					<Add directory="../lib/OpenJPEG_v1_3/bin" />
+				</Linker>
+			</Target>
+			<Target title="Debug">
+				<Option output="../bin/PeakEngine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-DBUILD_DLL" />
+				</Compiler>
+				<Linker>
+					<Add library="user32" />
+					<Add library="ws2_32" />
+					<Add library="winmm" />
+					<Add library="../bin/alut.dll" />
+					<Add library="../bin/OpenAL32.dll" />
+					<Add library="../bin/lua51.dll" />
+					<Add library="../bin/libtolua++.dll" />
+					<Add library="../bin/libHorde3D.dll" />
+					<Add library="../bin/libHorde3DUtils.dll" />
+					<Add library="OpenGL32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before=".\src\tolua.bat" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release">
+				<Option output="../bin/PeakEngine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-DBUILD_DLL" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="user32" />
+					<Add library="ws2_32" />
+					<Add library="winmm" />
+					<Add library="../bin/alut.dll" />
+					<Add library="../bin/OpenAL32.dll" />
+					<Add library="../bin/lua51.dll" />
+					<Add library="../bin/libtolua++.dll" />
+					<Add library="../bin/libHorde3D.dll" />
+					<Add library="../bin/libHorde3DUtils.dll" />
+					<Add library="OpenGL32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before=".\src\tolua.bat" />
+				</ExtraCommands>
+			</Target>
+			<Target title="whole">
+				<Option output="../bin/PeakEngine" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Option projectIncludeDirsRelation="1" />
+				<Option projectLibDirsRelation="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add directory="../lib/lua-5.1.4/src" />
+					<Add directory="../lib/guichan-0.8.1/include" />
+					<Add directory="../lib/enet/include" />
+					<Add directory="../lib/glfw/include/" />
+					<Add directory="../lib/Horde3/Horde3D/Source" />
+					<Add directory="../lib/Horde3/Horde3D/Source/Shared" />
+					<Add directory="../lib/Horde3/Horde3D/Source/Horde3DEngine" />
+					<Add directory="../lib/Horde3/Horde3D/Bindings/C++" />
+					<Add directory="../lib/tolua++-1.0.93/include" />
+					<Add directory="../lib/FreeImage/Wrapper/FreeImagePlus" />
+					<Add directory="../../../../../LunaLibs/bullet3-2.86.1/srcd" />
+					<Add directory="../lib/FreeImage/Sourced" />
+					<Add directory="include" />
+					<Add directory=".." />
+					<Add directory="include/lua" />
+					<Add directory="include/ALUT" />
+					<Add directory="include/bullets" />
+					<Add directory="include/support" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="GL" />
+					<Add library="guichan_opengl" />
+					<Add library="guichan" />
+					<Add library="Xxf86vm" />
+					<Add library="lua" />
+					<Add library="tolua++" />
+					<Add library="freeimage" />
+					<Add library="FreeImagePlus" />
+					<Add library="glfw" />
+					<Add library="openjpeg" />
+					<Add library="enet" />
+					<Add library="openal" />
+					<Add library="ogg" />
+					<Add library="vorbis" />
+					<Add library="vorbisfile" />
+					<Add library="vorbisenc" />
+					<Add library="BulletSoftBody" />
+					<Add library="BulletDynamics" />
+					<Add library="BulletCollision" />
+					<Add library="LinearMath" />
+					<Add library="Horde3D" />
+					<Add library="Horde3DUtils" />
+					<Add library="alut" />
+					<Add library="pthread" />
+					<Add library="X11" />
+					<Add library="Xrandr" />
+					<Add directory="./lib/enet" />
+					<Add directory="../lib/lua-5.1.4/src" />
+					<Add directory="../lib/Horde3/Horde3D/Source/Horde3DEngine" />
+					<Add directory="../lib/Horde3/Horde3D/Source/Horde3DUtils" />
+					<Add directory="../lib/tolua++-1.0.93/src/lib" />
+					<Add directory="../../../../../LunaLibs/bullet3-2.86.1/src/BulletCollisiond" />
+					<Add directory="../../../../../LunaLibs/bullet3-2.86.1/src/BulletDynamicsd" />
+					<Add directory="../../../../../LunaLibs/bullet3-2.86.1/src/BulletSoftBodyd" />
+					<Add directory="../../../../../LunaLibs/bullet3-2.86.1/src/LinearMathd" />
+					<Add directory="../lib/guichan-0.8.1/src/.libs" />
+					<Add directory="../lib/FreeImage/Distd" />
+					<Add directory="../lib/OpenJPEG_v1_3/bin" />
+					<Add directory="../lib/FreeImage/Wrapper/FreeImagePlus" />
+					<Add directory="../lib/glfw/lib/x11" />
+					<Add directory="../bin" />
+					<Add directory="../lib" />
+					<Add directory="../lib/guichan-0.8.1/src/opengl/.libs" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletCollision" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletDynamics" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletSoftBody" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/LinearMath" />
+				</Linker>
+			</Target>
+			<Target title="Copy of whole">
+				<Option output="../bin/PeakEngine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Option projectIncludeDirsRelation="1" />
+				<Option projectLibDirsRelation="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add directory="../lib/lua-5.1.4/src" />
+					<Add directory="../lib/guichan-0.8.1/include" />
+					<Add directory="../lib/enet/include" />
+					<Add directory="../lib/Horde3/Horde3D/Source" />
+					<Add directory="../lib/Horde3/Horde3D/Source/Shared" />
+					<Add directory="../lib/Horde3/Horde3D/Source/Horde3DEngine" />
+					<Add directory="../lib/Horde3/Horde3D/Bindings/C++" />
+					<Add directory="../lib/glfw/include/" />
+					<Add directory="../lib/tolua++-1.0.93/include" />
+					<Add directory="../lib/FreeImage/Wrapper/FreeImagePlus" />
+					<Add directory="../../../../../LunaLibs/bullet3-2.86.1/srcd" />
+					<Add directory="../lib/FreeImage/Sourced" />
+					<Add directory="include" />
+					<Add directory=".." />
+					<Add directory="include/lua" />
+					<Add directory="include/ALUT" />
+					<Add directory="include/bullets" />
+					<Add directory="include/support" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="guichan" />
+					<Add library="Xxf86vm" />
+					<Add library="GL" />
+					<Add library="lua" />
+					<Add library="tolua++" />
+					<Add library="freeimage" />
+					<Add library="FreeImagePlus" />
+					<Add library="glfw" />
+					<Add library="openjpeg" />
+					<Add library="enet" />
+					<Add library="openal" />
+					<Add library="ogg" />
+					<Add library="vorbis" />
+					<Add library="vorbisfile" />
+					<Add library="vorbisenc" />
+					<Add library="BulletCollision" />
+					<Add library="BulletDynamics" />
+					<Add library="BulletSoftBody" />
+					<Add library="LinearMath" />
+					<Add library="Horde3D" />
+					<Add library="Horde3DUtils" />
+					<Add library="alut" />
+					<Add library="guichan_opengl" />
+					<Add directory="./lib/enet" />
+					<Add directory="../lib/lua-5.1.4/src" />
+					<Add directory="../lib/glfw/lib/x11" />
+					<Add directory="../lib/Horde3/Horde3D/Source/Horde3DEngine" />
+					<Add directory="../lib/Horde3/Horde3D/Source/Horde3DUtils" />
+					<Add directory="../lib/tolua++-1.0.93/src/lib" />
+					<Add directory="../../../../../LunaLibs/bullet3-2.86.1/src/BulletCollisiond" />
+					<Add directory="../../../../../LunaLibs/bullet3-2.86.1/src/BulletDynamicsd" />
+					<Add directory="../../../../../LunaLibs/bullet3-2.86.1/src/BulletSoftBodyd" />
+					<Add directory="../../../../../LunaLibs/bullet3-2.86.1/src/LinearMathd" />
+					<Add directory="../lib/guichan-0.8.1/src/.libs" />
+					<Add directory="../lib/FreeImage/Distd" />
+					<Add directory="../lib/OpenJPEG_v1_3/bin" />
+					<Add directory="../lib/FreeImage/Wrapper/FreeImagePlus" />
+					<Add directory="../bin" />
+					<Add directory="../lib" />
+					<Add directory="../lib/guichan-0.8.1/src/opengl/.libs" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletCollision" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletDynamics" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletSoftBody" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/LinearMath" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-D_ENET_1_2_" />
+			<Add directory="include" />
+			<Add directory=".." />
+			<Add directory="include/lua" />
+			<Add directory="include/ALUT" />
+			<Add directory="include/bullets" />
+			<Add directory="include/support" />
+		</Compiler>
+		<Linker>
+			<Add library="glfw" />
+			<Add library="enet" />
+			<Add library="openal" />
+			<Add library="ogg" />
+			<Add library="vorbis" />
+			<Add library="vorbisfile" />
+			<Add library="vorbisenc" />
+			<Add library="BulletCollision" />
+			<Add library="BulletDynamics" />
+			<Add library="BulletSoftBody" />
+			<Add library="LinearMath" />
+			<Add library="Horde3D" />
+			<Add library="Horde3DUtils" />
+			<Add library="guichan" />
+			<Add library="alut" />
+			<Add directory="../bin" />
+			<Add directory="../lib" />
+		</Linker>
+		<Unit filename="include/core/Address.h" />
+		<Unit filename="include/core/Buffer.h" />
+		<Unit filename="include/core/Color.h" />
+		<Unit filename="include/core/Config.h" />
+		<Unit filename="include/core/DirectLink.h" />
+		<Unit filename="include/core/Entity.h" />
+		<Unit filename="include/core/Event.h" />
+		<Unit filename="include/core/EventRemoteLink.h" />
+		<Unit filename="include/core/EventScriptLink.h" />
+		<Unit filename="include/core/File.h" />
+		<Unit filename="include/core/FileSystem.h" />
+		<Unit filename="include/core/Game.h" />
+		<Unit filename="include/core/GameEngine.h" />
+		<Unit filename="include/core/GameObject.h" />
+		<Unit filename="include/core/IniFile.h" />
+		<Unit filename="include/core/InputManager.h" />
+		<Unit filename="include/core/Keycode.h" />
+		<Unit filename="include/core/Level.h" />
+		<Unit filename="include/core/Link.h" />
+		<Unit filename="include/core/Logger.h" />
+		<Unit filename="include/core/NetworkData.h" />
+		<Unit filename="include/core/Property.h" />
+		<Unit filename="include/core/PropertyScriptLink.h" />
+		<Unit filename="include/core/Quaternion.h" />
+		<Unit filename="include/core/ReferenceCounted.h" />
+		<Unit filename="include/core/Script.h" />
+		<Unit filename="include/core/SettingsManager.h" />
+		<Unit filename="include/core/Timer.h" />
+		<Unit filename="include/core/Util.h" />
+		<Unit filename="include/core/Vector2D.h" />
+		<Unit filename="include/core/Vector2DI.h" />
+		<Unit filename="include/core/Vector3D.h" />
+		<Unit filename="include/graphics/CameraSceneNode.h" />
+		<Unit filename="include/graphics/FollowingController.h" />
+		<Unit filename="include/graphics/GraphicsEngine.h" />
+		<Unit filename="include/graphics/Image.h" />
+		<Unit filename="include/graphics/ImpostorManager.h" />
+		<Unit filename="include/graphics/LabelOverlay.h" />
+		<Unit filename="include/graphics/Light.h" />
+		<Unit filename="include/graphics/Material.h" />
+		<Unit filename="include/graphics/MeshSceneNode.h" />
+		<Unit filename="include/graphics/ModelSceneNode.h" />
+		<Unit filename="include/graphics/Overlay.h" />
+		<Unit filename="include/graphics/OverlayManager.h" />
+		<Unit filename="include/graphics/ParticleSystem.h" />
+		<Unit filename="include/graphics/RectangleOverlay.h" />
+		<Unit filename="include/graphics/RotationController.h" />
+		<Unit filename="include/graphics/SceneNode.h" />
+		<Unit filename="include/graphics/SceneNodeController.h" />
+		<Unit filename="include/graphics/Terrain.h" />
+		<Unit filename="include/graphics/TextureOverlay.h" />
+		<Unit filename="include/gui/GUIInput.h" />
+		<Unit filename="include/gui/ImageLoader.h" />
+		<Unit filename="include/menu/Button.h" />
+		<Unit filename="include/menu/CheckBox.h" />
+		<Unit filename="include/menu/ComboBox.h" />
+		<Unit filename="include/menu/Label.h" />
+		<Unit filename="include/menu/ListBox.h" />
+		<Unit filename="include/menu/ListBoxListener.h" />
+		<Unit filename="include/menu/ListModel.h" />
+		<Unit filename="include/menu/Menu.h" />
+		<Unit filename="include/menu/MenuElement.h" />
+		<Unit filename="include/menu/MenuManager.h" />
+		<Unit filename="include/network/BroadcastClient.h" />
+		<Unit filename="include/network/BroadcastHost.h" />
+		<Unit filename="include/network/Connection.h" />
+		<Unit filename="include/network/NetworkClient.h" />
+		<Unit filename="include/network/NetworkHost.h" />
+		<Unit filename="include/physics/Body.h" />
+		<Unit filename="include/physics/Box.h" />
+		<Unit filename="include/physics/Callback.h" />
+		<Unit filename="include/physics/Heightfield.h" />
+		<Unit filename="include/physics/Plane.h" />
+		<Unit filename="include/physics/RayCallback.h" />
+		<Unit filename="include/physics/Shape.h" />
+		<Unit filename="include/physics/Sphere.h" />
+		<Unit filename="include/physics/Trimesh.h" />
+		<Unit filename="include/physics/World.h" />
+		<Unit filename="include/sound/DataSoundSource.h" />
+		<Unit filename="include/sound/Listener.h" />
+		<Unit filename="include/sound/OggVorbisSource.h" />
+		<Unit filename="include/sound/Sound.h" />
+		<Unit filename="include/sound/SoundEngine.h" />
+		<Unit filename="include/sound/SoundFactory.h" />
+		<Unit filename="include/sound/SoundSource.h" />
+		<Unit filename="include/support/cd_wavefront.h" />
+		<Unit filename="include/support/float_math.h" />
+		<Unit filename="include/support/tinystr.h" />
+		<Unit filename="include/support/tinyxml.h" />
+		<Unit filename="src/core/Address.cpp" />
+		<Unit filename="src/core/Buffer.cpp" />
+		<Unit filename="src/core/Color.cpp" />
+		<Unit filename="src/core/DirectLink.cpp" />
+		<Unit filename="src/core/Entity.cpp" />
+		<Unit filename="src/core/EntityFactory.cpp" />
+		<Unit filename="src/core/Event.cpp" />
+		<Unit filename="src/core/EventRemoteLink.cpp" />
+		<Unit filename="src/core/EventScriptLink.cpp" />
+		<Unit filename="src/core/File.cpp" />
+		<Unit filename="src/core/FileSystem.cpp" />
+		<Unit filename="src/core/Game.cpp" />
+		<Unit filename="src/core/GameEngine.cpp" />
+		<Unit filename="src/core/GameObject.cpp" />
+		<Unit filename="src/core/IniFile.cpp" />
+		<Unit filename="src/core/InputManager.cpp" />
+		<Unit filename="src/core/Keycode.cpp" />
+		<Unit filename="src/core/Level.cpp" />
+		<Unit filename="src/core/Link.cpp" />
+		<Unit filename="src/core/Logger.cpp" />
+		<Unit filename="src/core/Plugin.cpp" />
+		<Unit filename="src/core/Property.cpp" />
+		<Unit filename="src/core/PropertyScriptLink.cpp" />
+		<Unit filename="src/core/Quaternion.cpp" />
+		<Unit filename="src/core/Script.cpp" />
+		<Unit filename="src/core/SettingsManager.cpp" />
+		<Unit filename="src/core/Timer.cpp" />
+		<Unit filename="src/core/Util.cpp" />
+		<Unit filename="src/core/Vector2D.cpp" />
+		<Unit filename="src/core/Vector2DI.cpp" />
+		<Unit filename="src/core/Vector3D.cpp" />
+		<Unit filename="src/graphics/CameraSceneNode.cpp" />
+		<Unit filename="src/graphics/FollowingController.cpp" />
+		<Unit filename="src/graphics/GraphicsEngine.cpp" />
+		<Unit filename="src/graphics/Image.cpp" />
+		<Unit filename="src/graphics/ImpostorManager.cpp" />
+		<Unit filename="src/graphics/LabelOverlay.cpp" />
+		<Unit filename="src/graphics/Light.cpp" />
+		<Unit filename="src/graphics/Material.cpp" />
+		<Unit filename="src/graphics/MeshSceneNode.cpp" />
+		<Unit filename="src/graphics/ModelSceneNode.cpp" />
+		<Unit filename="src/graphics/Overlay.cpp" />
+		<Unit filename="src/graphics/OverlayManager.cpp" />
+		<Unit filename="src/graphics/ParticleSystem.cpp" />
+		<Unit filename="src/graphics/RotationController.cpp" />
+		<Unit filename="src/graphics/SceneNode.cpp" />
+		<Unit filename="src/graphics/SceneNodeController.cpp" />
+		<Unit filename="src/graphics/Terrain.cpp" />
+		<Unit filename="src/graphics/TextureOverlay.cpp" />
+		<Unit filename="src/graphics/irr/InputReceiver.cpp" />
+		<Unit filename="src/graphics/irr/RectangleOverlay.cpp" />
+		<Unit filename="src/gui/GUIInput.cpp" />
+		<Unit filename="src/gui/ImageLoader.cpp" />
+		<Unit filename="src/menu/Button.cpp" />
+		<Unit filename="src/menu/CheckBox.cpp" />
+		<Unit filename="src/menu/ComboBox.cpp" />
+		<Unit filename="src/menu/Label.cpp" />
+		<Unit filename="src/menu/ListBox.cpp" />
+		<Unit filename="src/menu/Menu.cpp" />
+		<Unit filename="src/menu/MenuElement.cpp" />
+		<Unit filename="src/menu/MenuManager.cpp" />
+		<Unit filename="src/network/BroadcastClient.cpp" />
+		<Unit filename="src/network/BroadcastHost.cpp" />
+		<Unit filename="src/network/Connection.cpp" />
+		<Unit filename="src/network/NetworkClient.cpp" />
+		<Unit filename="src/network/NetworkHost.cpp" />
+		<Unit filename="src/physics/Body.cpp" />
+		<Unit filename="src/physics/Box.cpp" />
+		<Unit filename="src/physics/Callback.cpp" />
+		<Unit filename="src/physics/Heightfield.cpp" />
+		<Unit filename="src/physics/Plane.cpp" />
+		<Unit filename="src/physics/RayCallback.cpp" />
+		<Unit filename="src/physics/Shape.cpp" />
+		<Unit filename="src/physics/Sphere.cpp" />
+		<Unit filename="src/physics/Trimesh.cpp" />
+		<Unit filename="src/physics/World.cpp" />
+		<Unit filename="src/sound/DataSoundSource.cpp" />
+		<Unit filename="src/sound/Listener.cpp" />
+		<Unit filename="src/sound/OggVorbisSource.cpp" />
+		<Unit filename="src/sound/Sound.cpp" />
+		<Unit filename="src/sound/SoundEngine.cpp" />
+		<Unit filename="src/sound/SoundFactory.cpp" />
+		<Unit filename="src/support/cd_wavefront.cpp" />
+		<Unit filename="src/support/float_math.cpp" />
+		<Unit filename="src/support/tinystr.cpp" />
+		<Unit filename="src/support/tinyxml.cpp" />
+		<Unit filename="src/support/tinyxmlerror.cpp" />
+		<Unit filename="src/support/tinyxmlparser.cpp" />
+		<Extensions>
+			<AutoVersioning>
+				<Scheme minor_max="10" build_max="0" rev_max="0" rev_rand_max="10" build_times_to_increment_minor="100" />
+				<Settings autoincrement="1" date_declarations="1" use_define="0" update_manifest="0" do_auto_increment="0" ask_to_increment="0" language="C++" svn="0" svn_directory="" header_path="version.h" />
+				<Changes_Log show_changes_editor="0" app_title="released version %M.%m.%b of %p" changeslog_path="ChangesLog.txt" />
+				<Code header_guard="VERSION_H" namespace="AutoVersion" prefix="" />
+			</AutoVersioning>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,1 +1,0 @@
-/usr/bin/c++  -fPIC   -shared -Wl,-soname,libArizona.so -o /home/Dev/libs/game/PeakEngine/tests/FPS/data/plugins/libArizona.so CMakeFiles/Arizona.dir/Plugin.o CMakeFiles/Arizona.dir/lua_src.o CMakeFiles/Arizona.dir/Player.o CMakeFiles/Arizona.dir/lua_plugin.o 

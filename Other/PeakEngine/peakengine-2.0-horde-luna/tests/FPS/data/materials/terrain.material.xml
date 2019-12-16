@@ -1,8 +1,0 @@
-<Material>
-	<Shader source="terrain.shader.xml"/>
-	
-	<TexUnit unit="0" map="heightmap.png" allowCompression="false" />
-	<TexUnit unit="1" map="grass.jpg" />
-	
-	<Uniform name="sunDir" a="1.0" b="-1.0" c="0.0" />
-</Material>

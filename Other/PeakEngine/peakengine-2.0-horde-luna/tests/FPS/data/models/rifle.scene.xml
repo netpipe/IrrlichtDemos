@@ -1,4 +1,0 @@
-<Model name="rifle" geometry="rifle.geo">
-
-	<Mesh name="Cube" material="rifle.material.xml" sx="1" sy="0.7147" sz="0.56016" tx="2.45696" ty="1.29788" tz="-1.26494" batchStart="0" batchCount="6825" vertRStart="0" vertREnd="5171" />
-</Model>

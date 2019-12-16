@@ -1,5 +1,0 @@
-<Material>
-	<Shader source="overlay.shader.xml"/>
-	
-	<TexUnit unit="0" map="font.tga" />
-</Material>

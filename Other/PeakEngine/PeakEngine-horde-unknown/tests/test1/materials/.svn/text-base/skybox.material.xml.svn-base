@@ -1,5 +1,0 @@
-<Material>
-	<Shader source="skybox.shader.xml"/>
-	
-	<TexUnit unit="0" map="skybox.jpg" type="CUBE" />
-</Material>

@@ -1,5 +1,0 @@
-<Material class="Translucent">
-	<Shader source="add.shader.xml" />
-
-	<TexUnit unit="0" map="muzzleflash.png" />
-</Material>
