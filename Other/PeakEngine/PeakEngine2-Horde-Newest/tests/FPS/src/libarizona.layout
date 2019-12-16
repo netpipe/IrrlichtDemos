@@ -1,10 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Linux" />
-	<File name="Player.h" open="1" top="0" tabpos="1">
-		<Cursor position="1122" topLine="1" />
+	<File name="lua_src.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="170" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="22" />
+			<Collapse line="29" />
+			<Collapse line="39" />
+			<Collapse line="49" />
+			<Collapse line="77" />
+			<Collapse line="105" />
+			<Collapse line="134" />
+			<Collapse line="170" />
+			<Collapse line="203" />
+			<Collapse line="242" />
+			<Collapse line="275" />
+			<Collapse line="303" />
+			<Collapse line="331" />
+			<Collapse line="360" />
+			<Collapse line="396" />
+			<Collapse line="428" />
+			<Collapse line="467" />
+		</Folding>
 	</File>
-	<File name="Weapon.cpp" open="1" top="1" tabpos="2">
-		<Cursor position="1221" topLine="4" />
+	<File name="Weapon.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1264" topLine="13" />
+		</Cursor>
+		<Folding>
+			<Collapse line="38" />
+			<Collapse line="46" />
+		</Folding>
 	</File>
+	<File name="Player.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="30" />
+			<Collapse line="50" />
+		</Folding>
+	</File>
+	<EditorTabsLayout layout="039605205df803f8001029e700000002=0;libarizona:Player.h,*1;libarizona:Weapon.cpp,2;libarizona:lua_src.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=328;besth=326;minw=328;minh=326;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=039605205df803f8001029e700000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>

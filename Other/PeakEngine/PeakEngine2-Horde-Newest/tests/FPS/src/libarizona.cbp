@@ -7,7 +7,7 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/libarizona" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/arizona" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="3" />
 				<Option compiler="gcc" />
@@ -26,7 +26,7 @@
 				</ExtraCommands>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/libarizona" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/arizona" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="3" />
 				<Option compiler="gcc" />
@@ -43,11 +43,23 @@
 				</Linker>
 			</Target>
 			<Target title="Linux">
-				<Option output="bin/libarizona" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/arizona" prefix_auto="1" extension_auto="1" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option createDefFile="1" />
 				<Option createStaticLib="1" />
+				<Compiler>
+					<Add directory="../../../lib/tolua++-1.0.93/include" />
+					<Add directory="../../../lib/lua-5.1.4/src" />
+					<Add directory="../../../engine/include" />
+				</Compiler>
+				<Linker>
+					<Add library="PeakEngine" />
+					<Add library="tolua++" />
+					<Add library="lua" />
+					<Add directory="../../../bin" />
+					<Add directory="../../../lib" />
+				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
@@ -69,9 +81,6 @@
 		<Unit filename="Weapon.h" />
 		<Unit filename="lua_src.cpp" />
 		<Extensions>
-			<code_completion />
-			<envvars />
-			<debugger />
 			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>
