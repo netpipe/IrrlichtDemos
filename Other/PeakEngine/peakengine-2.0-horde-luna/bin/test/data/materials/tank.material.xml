@@ -1,0 +1,5 @@
+<Material>
+	<Shader source="standard.shader.xml" />
+
+	<TexUnit unit="0" map="tank.png" />
+</Material>

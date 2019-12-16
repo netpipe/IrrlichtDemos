@@ -1,6 +1,6 @@
 /*
 ** Lua binding: peak
-** Generated automatically by tolua++-1.0.92 on Mon Jun  1 10:45:59 2009.
+** Generated automatically by tolua++-1.0.92 on Mon Dec 16 15:47:18 2019.
 */
 
 #ifndef __cplusplus
@@ -84,511 +84,511 @@ TOLUA_API int  tolua_peak_open (lua_State* tolua_S);
 static int tolua_collect_peak__EventRemoteLink (lua_State* tolua_S)
 {
  peak::EventRemoteLink* self = (peak::EventRemoteLink*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__FileSystem (lua_State* tolua_S)
 {
  peak::FileSystem* self = (peak::FileSystem*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_std__wstring (lua_State* tolua_S)
 {
  std::wstring* self = (std::wstring*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__IntProperty (lua_State* tolua_S)
 {
  peak::IntProperty* self = (peak::IntProperty*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Body (lua_State* tolua_S)
 {
  peak::Body* self = (peak::Body*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Trimesh (lua_State* tolua_S)
 {
  peak::Trimesh* self = (peak::Trimesh*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Connection (lua_State* tolua_S)
 {
  peak::Connection* self = (peak::Connection*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Game (lua_State* tolua_S)
 {
  peak::Game* self = (peak::Game*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Property (lua_State* tolua_S)
 {
  peak::Property* self = (peak::Property*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__CameraSceneNode (lua_State* tolua_S)
 {
  peak::CameraSceneNode* self = (peak::CameraSceneNode*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__GameObject (lua_State* tolua_S)
 {
  peak::GameObject* self = (peak::GameObject*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_std__vector_std__string_ (lua_State* tolua_S)
 {
  std::vector<std::string>* self = (std::vector<std::string>*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Vector3DProperty (lua_State* tolua_S)
 {
  peak::Vector3DProperty* self = (peak::Vector3DProperty*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Level (lua_State* tolua_S)
 {
  peak::Level* self = (peak::Level*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Heightfield (lua_State* tolua_S)
 {
  peak::Heightfield* self = (peak::Heightfield*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__PointGroup (lua_State* tolua_S)
 {
  peak::PointGroup* self = (peak::PointGroup*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Entity (lua_State* tolua_S)
 {
  peak::Entity* self = (peak::Entity*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Event (lua_State* tolua_S)
 {
  peak::Event* self = (peak::Event*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__EventData (lua_State* tolua_S)
 {
  peak::EventData* self = (peak::EventData*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Menu (lua_State* tolua_S)
 {
  peak::Menu* self = (peak::Menu*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__SoundSource (lua_State* tolua_S)
 {
  peak::SoundSource* self = (peak::SoundSource*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__DirectLink (lua_State* tolua_S)
 {
  peak::DirectLink* self = (peak::DirectLink*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__OverlayManager (lua_State* tolua_S)
 {
  peak::OverlayManager* self = (peak::OverlayManager*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Buffer (lua_State* tolua_S)
 {
  peak::Buffer* self = (peak::Buffer*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Link (lua_State* tolua_S)
 {
  peak::Link* self = (peak::Link*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__MeshSceneNode (lua_State* tolua_S)
 {
  peak::MeshSceneNode* self = (peak::MeshSceneNode*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Vector3D (lua_State* tolua_S)
 {
  peak::Vector3D* self = (peak::Vector3D*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Color (lua_State* tolua_S)
 {
  peak::Color* self = (peak::Color*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__BroadcastHost (lua_State* tolua_S)
 {
  peak::BroadcastHost* self = (peak::BroadcastHost*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__ParameterList (lua_State* tolua_S)
 {
  peak::ParameterList* self = (peak::ParameterList*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Vector2DI (lua_State* tolua_S)
 {
  peak::Vector2DI* self = (peak::Vector2DI*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Sphere (lua_State* tolua_S)
 {
  peak::Sphere* self = (peak::Sphere*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__File (lua_State* tolua_S)
 {
  peak::File* self = (peak::File*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__FollowingController (lua_State* tolua_S)
 {
  peak::FollowingController* self = (peak::FollowingController*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__RayCallback (lua_State* tolua_S)
 {
  peak::RayCallback* self = (peak::RayCallback*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Quaternion (lua_State* tolua_S)
 {
  peak::Quaternion* self = (peak::Quaternion*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Image (lua_State* tolua_S)
 {
  peak::Image* self = (peak::Image*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__SoundFactory (lua_State* tolua_S)
 {
  peak::SoundFactory* self = (peak::SoundFactory*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__TextureOverlay (lua_State* tolua_S)
 {
  peak::TextureOverlay* self = (peak::TextureOverlay*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__MenuElement (lua_State* tolua_S)
 {
  peak::MenuElement* self = (peak::MenuElement*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Listener (lua_State* tolua_S)
 {
  peak::Listener* self = (peak::Listener*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__PropertyScriptLink (lua_State* tolua_S)
 {
  peak::PropertyScriptLink* self = (peak::PropertyScriptLink*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__SoundEngine (lua_State* tolua_S)
 {
  peak::SoundEngine* self = (peak::SoundEngine*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Terrain (lua_State* tolua_S)
 {
  peak::Terrain* self = (peak::Terrain*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Overlay (lua_State* tolua_S)
 {
  peak::Overlay* self = (peak::Overlay*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Sound (lua_State* tolua_S)
 {
  peak::Sound* self = (peak::Sound*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__ListBox (lua_State* tolua_S)
 {
  peak::ListBox* self = (peak::ListBox*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Vector2D (lua_State* tolua_S)
 {
  peak::Vector2D* self = (peak::Vector2D*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__MenuManager (lua_State* tolua_S)
 {
  peak::MenuManager* self = (peak::MenuManager*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Box (lua_State* tolua_S)
 {
  peak::Box* self = (peak::Box*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__LabelOverlay (lua_State* tolua_S)
 {
  peak::LabelOverlay* self = (peak::LabelOverlay*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Script (lua_State* tolua_S)
 {
  peak::Script* self = (peak::Script*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__RotationController (lua_State* tolua_S)
 {
  peak::RotationController* self = (peak::RotationController*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Callback (lua_State* tolua_S)
 {
  peak::Callback* self = (peak::Callback*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__EventScriptLink (lua_State* tolua_S)
 {
  peak::EventScriptLink* self = (peak::EventScriptLink*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Light (lua_State* tolua_S)
 {
  peak::Light* self = (peak::Light*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Shape (lua_State* tolua_S)
 {
  peak::Shape* self = (peak::Shape*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_std__vector_float_ (lua_State* tolua_S)
 {
  std::vector<float>* self = (std::vector<float>*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__SceneNode (lua_State* tolua_S)
 {
  peak::SceneNode* self = (peak::SceneNode*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__SceneNodeController (lua_State* tolua_S)
 {
  peak::SceneNodeController* self = (peak::SceneNodeController*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Parameter (lua_State* tolua_S)
 {
  peak::Parameter* self = (peak::Parameter*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__World (lua_State* tolua_S)
 {
  peak::World* self = (peak::World*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Address (lua_State* tolua_S)
 {
  peak::Address* self = (peak::Address*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Timer (lua_State* tolua_S)
 {
  peak::Timer* self = (peak::Timer*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Plane (lua_State* tolua_S)
 {
  peak::Plane* self = (peak::Plane*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Logger (lua_State* tolua_S)
 {
  peak::Logger* self = (peak::Logger*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__CollisionInfo (lua_State* tolua_S)
 {
  peak::CollisionInfo* self = (peak::CollisionInfo*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__ShapeData (lua_State* tolua_S)
 {
  peak::ShapeData* self = (peak::ShapeData*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__ParticleSystem (lua_State* tolua_S)
 {
  peak::ParticleSystem* self = (peak::ParticleSystem*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__BroadcastClient (lua_State* tolua_S)
 {
  peak::BroadcastClient* self = (peak::BroadcastClient*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__QuaternionProperty (lua_State* tolua_S)
 {
  peak::QuaternionProperty* self = (peak::QuaternionProperty*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__Vector2DProperty (lua_State* tolua_S)
 {
  peak::Vector2DProperty* self = (peak::Vector2DProperty*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 
 static int tolua_collect_peak__ClientInfo (lua_State* tolua_S)
 {
  peak::ClientInfo* self = (peak::ClientInfo*) tolua_tousertype(tolua_S,1,0);
-	delete self;
+	Mtolua_delete(self);
 	return 0;
 }
 #endif
@@ -702,8 +702,8 @@ static int tolua_peak_peak_Buffer_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Buffer* tolua_ret = (peak::Buffer*)  new peak::Buffer();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Buffer");
+   peak::Buffer* tolua_ret = (peak::Buffer*)  Mtolua_new((peak::Buffer)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Buffer");
   }
  }
  return 1;
@@ -730,8 +730,9 @@ static int tolua_peak_peak_Buffer_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Buffer* tolua_ret = (peak::Buffer*)  new peak::Buffer();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Buffer");
+   peak::Buffer* tolua_ret = (peak::Buffer*)  Mtolua_new((peak::Buffer)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Buffer");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -758,8 +759,8 @@ static int tolua_peak_peak_Buffer_new01(lua_State* tolua_S)
  {
   unsigned int size = ((unsigned int)  tolua_tonumber(tolua_S,2,0));
   {
-   peak::Buffer* tolua_ret = (peak::Buffer*)  new peak::Buffer(size);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Buffer");
+   peak::Buffer* tolua_ret = (peak::Buffer*)  Mtolua_new((peak::Buffer)(size));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Buffer");
   }
  }
  return 1;
@@ -783,8 +784,9 @@ static int tolua_peak_peak_Buffer_new01_local(lua_State* tolua_S)
  {
   unsigned int size = ((unsigned int)  tolua_tonumber(tolua_S,2,0));
   {
-   peak::Buffer* tolua_ret = (peak::Buffer*)  new peak::Buffer(size);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Buffer");
+   peak::Buffer* tolua_ret = (peak::Buffer*)  Mtolua_new((peak::Buffer)(size));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Buffer");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -810,8 +812,8 @@ static int tolua_peak_peak_Buffer_new02(lua_State* tolua_S)
   void* data = ((void*)  tolua_touserdata(tolua_S,2,0));
   unsigned int size = ((unsigned int)  tolua_tonumber(tolua_S,3,0));
   {
-   peak::Buffer* tolua_ret = (peak::Buffer*)  new peak::Buffer(data,size);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Buffer");
+   peak::Buffer* tolua_ret = (peak::Buffer*)  Mtolua_new((peak::Buffer)(data,size));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Buffer");
   }
  }
  return 1;
@@ -837,8 +839,9 @@ static int tolua_peak_peak_Buffer_new02_local(lua_State* tolua_S)
   void* data = ((void*)  tolua_touserdata(tolua_S,2,0));
   unsigned int size = ((unsigned int)  tolua_tonumber(tolua_S,3,0));
   {
-   peak::Buffer* tolua_ret = (peak::Buffer*)  new peak::Buffer(data,size);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Buffer");
+   peak::Buffer* tolua_ret = (peak::Buffer*)  Mtolua_new((peak::Buffer)(data,size));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Buffer");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -854,7 +857,7 @@ static int tolua_peak_peak_Buffer_new03(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertable(tolua_S,1,"peak::Buffer",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"const peak::Buffer",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"const peak::Buffer",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -862,8 +865,8 @@ static int tolua_peak_peak_Buffer_new03(lua_State* tolua_S)
  {
   const peak::Buffer* buf = ((const peak::Buffer*)  tolua_tousertype(tolua_S,2,0));
   {
-   peak::Buffer* tolua_ret = (peak::Buffer*)  new peak::Buffer(*buf);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Buffer");
+   peak::Buffer* tolua_ret = (peak::Buffer*)  Mtolua_new((peak::Buffer)(*buf));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Buffer");
   }
  }
  return 1;
@@ -879,7 +882,7 @@ static int tolua_peak_peak_Buffer_new03_local(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertable(tolua_S,1,"peak::Buffer",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"const peak::Buffer",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"const peak::Buffer",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -887,8 +890,9 @@ static int tolua_peak_peak_Buffer_new03_local(lua_State* tolua_S)
  {
   const peak::Buffer* buf = ((const peak::Buffer*)  tolua_tousertype(tolua_S,2,0));
   {
-   peak::Buffer* tolua_ret = (peak::Buffer*)  new peak::Buffer(*buf);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Buffer");
+   peak::Buffer* tolua_ret = (peak::Buffer*)  Mtolua_new((peak::Buffer)(*buf));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Buffer");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -913,9 +917,9 @@ static int tolua_peak_peak_Buffer_delete00(lua_State* tolua_S)
  {
   peak::Buffer* self = (peak::Buffer*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -944,7 +948,7 @@ static int tolua_peak_peak_Buffer_setSize00(lua_State* tolua_S)
   peak::Buffer* self = (peak::Buffer*)  tolua_tousertype(tolua_S,1,0);
   unsigned int size = ((unsigned int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setSize'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setSize'", NULL);
 #endif
   {
    self->setSize(size);
@@ -975,7 +979,7 @@ static int tolua_peak_peak_Buffer_getSize00(lua_State* tolua_S)
  {
   peak::Buffer* self = (peak::Buffer*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getSize'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getSize'", NULL);
 #endif
   {
    unsigned int tolua_ret = (unsigned int)  self->getSize();
@@ -1007,7 +1011,7 @@ static int tolua_peak_peak_Buffer_getDataSize00(lua_State* tolua_S)
  {
   peak::Buffer* self = (peak::Buffer*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getDataSize'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getDataSize'", NULL);
 #endif
   {
    unsigned int tolua_ret = (unsigned int)  self->getDataSize();
@@ -1039,7 +1043,7 @@ static int tolua_peak_peak_Buffer_getPosition00(lua_State* tolua_S)
  {
   peak::Buffer* self = (peak::Buffer*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPosition'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPosition'", NULL);
 #endif
   {
    unsigned int tolua_ret = (unsigned int)  self->getPosition();
@@ -1075,7 +1079,7 @@ static int tolua_peak_peak_Buffer_setPosition00(lua_State* tolua_S)
   unsigned int position = ((unsigned int)  tolua_tonumber(tolua_S,2,0));
   bool relative = ((bool)  tolua_toboolean(tolua_S,3,false));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPosition'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPosition'", NULL);
 #endif
   {
    self->setPosition(position,relative);
@@ -1110,7 +1114,7 @@ static int tolua_peak_peak_Buffer_readData00(lua_State* tolua_S)
   void* dest = ((void*)  tolua_touserdata(tolua_S,2,0));
   unsigned int size = ((unsigned int)  tolua_tonumber(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'readData'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'readData'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->readData(dest,size);
@@ -1148,7 +1152,7 @@ static int tolua_peak_peak_Buffer_writeData00(lua_State* tolua_S)
   unsigned int size = ((unsigned int)  tolua_tonumber(tolua_S,3,0));
   bool resize = ((bool)  tolua_toboolean(tolua_S,4,true));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'writeData'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'writeData'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->writeData(source,size,resize);
@@ -1182,7 +1186,7 @@ static int tolua_peak_peak_Buffer_writeInt00(lua_State* tolua_S)
   peak::Buffer* self = (peak::Buffer*)  tolua_tousertype(tolua_S,1,0);
   int value = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'writeInt'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'writeInt'", NULL);
 #endif
   {
    self->writeInt(value);
@@ -1213,7 +1217,7 @@ static int tolua_peak_peak_Buffer_readInt00(lua_State* tolua_S)
  {
   peak::Buffer* self = (peak::Buffer*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'readInt'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'readInt'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->readInt();
@@ -1247,7 +1251,7 @@ static int tolua_peak_peak_Buffer_writeFloat00(lua_State* tolua_S)
   peak::Buffer* self = (peak::Buffer*)  tolua_tousertype(tolua_S,1,0);
   float value = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'writeFloat'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'writeFloat'", NULL);
 #endif
   {
    self->writeFloat(value);
@@ -1278,7 +1282,7 @@ static int tolua_peak_peak_Buffer_readFloat00(lua_State* tolua_S)
  {
   peak::Buffer* self = (peak::Buffer*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'readFloat'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'readFloat'", NULL);
 #endif
   {
    float tolua_ret = (float)  self->readFloat();
@@ -1312,7 +1316,7 @@ static int tolua_peak_peak_Buffer_writeString00(lua_State* tolua_S)
   peak::Buffer* self = (peak::Buffer*)  tolua_tousertype(tolua_S,1,0);
   std::string str = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'writeString'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'writeString'", NULL);
 #endif
   {
    self->writeString(str);
@@ -1343,7 +1347,7 @@ static int tolua_peak_peak_Buffer_readString00(lua_State* tolua_S)
  {
   peak::Buffer* self = (peak::Buffer*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'readString'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'readString'", NULL);
 #endif
   {
    std::string tolua_ret = (std::string)  self->readString();
@@ -1377,7 +1381,7 @@ static int tolua_peak_peak_Buffer_writeByte00(lua_State* tolua_S)
   peak::Buffer* self = (peak::Buffer*)  tolua_tousertype(tolua_S,1,0);
   unsigned char value = ((unsigned char)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'writeByte'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'writeByte'", NULL);
 #endif
   {
    self->writeByte(value);
@@ -1408,7 +1412,7 @@ static int tolua_peak_peak_Buffer_readByte00(lua_State* tolua_S)
  {
   peak::Buffer* self = (peak::Buffer*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'readByte'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'readByte'", NULL);
 #endif
   {
    unsigned char tolua_ret = (unsigned char)  self->readByte();
@@ -1442,7 +1446,7 @@ static int tolua_peak_peak_Buffer_writeWord00(lua_State* tolua_S)
   peak::Buffer* self = (peak::Buffer*)  tolua_tousertype(tolua_S,1,0);
   short value = ((short)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'writeWord'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'writeWord'", NULL);
 #endif
   {
    self->writeWord(value);
@@ -1473,7 +1477,7 @@ static int tolua_peak_peak_Buffer_readWord00(lua_State* tolua_S)
  {
   peak::Buffer* self = (peak::Buffer*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'readWord'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'readWord'", NULL);
 #endif
   {
    short tolua_ret = (short)  self->readWord();
@@ -1507,7 +1511,7 @@ static int tolua_peak_peak_Buffer_writeBool00(lua_State* tolua_S)
   peak::Buffer* self = (peak::Buffer*)  tolua_tousertype(tolua_S,1,0);
   bool flag = ((bool)  tolua_toboolean(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'writeBool'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'writeBool'", NULL);
 #endif
   {
    self->writeBool(flag);
@@ -1538,7 +1542,7 @@ static int tolua_peak_peak_Buffer_readBool00(lua_State* tolua_S)
  {
   peak::Buffer* self = (peak::Buffer*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'readBool'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'readBool'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->readBool();
@@ -1562,7 +1566,7 @@ static int tolua_peak_peak_Buffer_writeVector2D00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Buffer",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector2D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector2D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -1572,7 +1576,7 @@ static int tolua_peak_peak_Buffer_writeVector2D00(lua_State* tolua_S)
   peak::Buffer* self = (peak::Buffer*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector2D v = *((peak::Vector2D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'writeVector2D'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'writeVector2D'", NULL);
 #endif
   {
    self->writeVector2D(v);
@@ -1603,17 +1607,19 @@ static int tolua_peak_peak_Buffer_readVector2D00(lua_State* tolua_S)
  {
   peak::Buffer* self = (peak::Buffer*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'readVector2D'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'readVector2D'", NULL);
 #endif
   {
    peak::Vector2D tolua_ret = (peak::Vector2D)  self->readVector2D();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector2D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2D");
+    void* tolua_obj = Mtolua_new((peak::Vector2D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector2D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -1635,7 +1641,7 @@ static int tolua_peak_peak_Buffer_writeVector3D00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Buffer",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -1645,7 +1651,7 @@ static int tolua_peak_peak_Buffer_writeVector3D00(lua_State* tolua_S)
   peak::Buffer* self = (peak::Buffer*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector3D v = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'writeVector3D'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'writeVector3D'", NULL);
 #endif
   {
    self->writeVector3D(v);
@@ -1676,17 +1682,19 @@ static int tolua_peak_peak_Buffer_readVector3D00(lua_State* tolua_S)
  {
   peak::Buffer* self = (peak::Buffer*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'readVector3D'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'readVector3D'", NULL);
 #endif
   {
    peak::Vector3D tolua_ret = (peak::Vector3D)  self->readVector3D();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -1708,7 +1716,7 @@ static int tolua_peak_peak_Buffer_writeQuaternion00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Buffer",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Quaternion",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Quaternion",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -1718,7 +1726,7 @@ static int tolua_peak_peak_Buffer_writeQuaternion00(lua_State* tolua_S)
   peak::Buffer* self = (peak::Buffer*)  tolua_tousertype(tolua_S,1,0);
   peak::Quaternion q = *((peak::Quaternion*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'writeQuaternion'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'writeQuaternion'", NULL);
 #endif
   {
    self->writeQuaternion(q);
@@ -1749,17 +1757,19 @@ static int tolua_peak_peak_Buffer_readQuaternion00(lua_State* tolua_S)
  {
   peak::Buffer* self = (peak::Buffer*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'readQuaternion'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'readQuaternion'", NULL);
 #endif
   {
    peak::Quaternion tolua_ret = (peak::Quaternion)  self->readQuaternion();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Quaternion(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Quaternion");
+    void* tolua_obj = Mtolua_new((peak::Quaternion)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Quaternion");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Quaternion));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Quaternion");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Quaternion");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -1789,7 +1799,7 @@ static int tolua_peak_peak_Buffer_getData00(lua_State* tolua_S)
  {
   peak::Buffer* self = (peak::Buffer*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getData'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getData'", NULL);
 #endif
   {
    char* tolua_ret = (char*)  self->getData();
@@ -1821,7 +1831,7 @@ static int tolua_peak_peak_Buffer_clear00(lua_State* tolua_S)
  {
   peak::Buffer* self = (peak::Buffer*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'clear'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'clear'", NULL);
 #endif
   {
    self->clear();
@@ -1851,8 +1861,8 @@ static int tolua_peak_peak_Address_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Address* tolua_ret = (peak::Address*)  new peak::Address();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Address");
+   peak::Address* tolua_ret = (peak::Address*)  Mtolua_new((peak::Address)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Address");
   }
  }
  return 1;
@@ -1879,8 +1889,9 @@ static int tolua_peak_peak_Address_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Address* tolua_ret = (peak::Address*)  new peak::Address();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Address");
+   peak::Address* tolua_ret = (peak::Address*)  Mtolua_new((peak::Address)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Address");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -1899,7 +1910,7 @@ static int tolua_peak_peak_Address_new01(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertable(tolua_S,1,"peak::Address",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"const peak::Address",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"const peak::Address",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -1907,8 +1918,8 @@ static int tolua_peak_peak_Address_new01(lua_State* tolua_S)
  {
   const peak::Address* addr = ((const peak::Address*)  tolua_tousertype(tolua_S,2,0));
   {
-   peak::Address* tolua_ret = (peak::Address*)  new peak::Address(*addr);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Address");
+   peak::Address* tolua_ret = (peak::Address*)  Mtolua_new((peak::Address)(*addr));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Address");
   }
  }
  return 1;
@@ -1924,7 +1935,7 @@ static int tolua_peak_peak_Address_new01_local(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertable(tolua_S,1,"peak::Address",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"const peak::Address",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"const peak::Address",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -1932,8 +1943,9 @@ static int tolua_peak_peak_Address_new01_local(lua_State* tolua_S)
  {
   const peak::Address* addr = ((const peak::Address*)  tolua_tousertype(tolua_S,2,0));
   {
-   peak::Address* tolua_ret = (peak::Address*)  new peak::Address(*addr);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Address");
+   peak::Address* tolua_ret = (peak::Address*)  Mtolua_new((peak::Address)(*addr));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Address");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -1957,8 +1969,8 @@ static int tolua_peak_peak_Address_new02(lua_State* tolua_S)
  {
   std::string addr = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   {
-   peak::Address* tolua_ret = (peak::Address*)  new peak::Address(addr);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Address");
+   peak::Address* tolua_ret = (peak::Address*)  Mtolua_new((peak::Address)(addr));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Address");
   }
  }
  return 1;
@@ -1982,8 +1994,9 @@ static int tolua_peak_peak_Address_new02_local(lua_State* tolua_S)
  {
   std::string addr = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   {
-   peak::Address* tolua_ret = (peak::Address*)  new peak::Address(addr);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Address");
+   peak::Address* tolua_ret = (peak::Address*)  Mtolua_new((peak::Address)(addr));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Address");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -2007,8 +2020,8 @@ static int tolua_peak_peak_Address_new03(lua_State* tolua_S)
  {
   const char* addr = ((const char*)  tolua_tostring(tolua_S,2,0));
   {
-   peak::Address* tolua_ret = (peak::Address*)  new peak::Address(addr);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Address");
+   peak::Address* tolua_ret = (peak::Address*)  Mtolua_new((peak::Address)(addr));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Address");
   }
  }
  return 1;
@@ -2032,8 +2045,9 @@ static int tolua_peak_peak_Address_new03_local(lua_State* tolua_S)
  {
   const char* addr = ((const char*)  tolua_tostring(tolua_S,2,0));
   {
-   peak::Address* tolua_ret = (peak::Address*)  new peak::Address(addr);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Address");
+   peak::Address* tolua_ret = (peak::Address*)  Mtolua_new((peak::Address)(addr));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Address");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -2065,8 +2079,8 @@ static int tolua_peak_peak_Address_new04(lua_State* tolua_S)
   unsigned char ip4 = ((unsigned char)  tolua_tonumber(tolua_S,5,0));
   unsigned short port = ((unsigned short)  tolua_tonumber(tolua_S,6,0));
   {
-   peak::Address* tolua_ret = (peak::Address*)  new peak::Address(ip1,ip2,ip3,ip4,port);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Address");
+   peak::Address* tolua_ret = (peak::Address*)  Mtolua_new((peak::Address)(ip1,ip2,ip3,ip4,port));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Address");
   }
  }
  return 1;
@@ -2098,8 +2112,9 @@ static int tolua_peak_peak_Address_new04_local(lua_State* tolua_S)
   unsigned char ip4 = ((unsigned char)  tolua_tonumber(tolua_S,5,0));
   unsigned short port = ((unsigned short)  tolua_tonumber(tolua_S,6,0));
   {
-   peak::Address* tolua_ret = (peak::Address*)  new peak::Address(ip1,ip2,ip3,ip4,port);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Address");
+   peak::Address* tolua_ret = (peak::Address*)  Mtolua_new((peak::Address)(ip1,ip2,ip3,ip4,port));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Address");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -2124,9 +2139,9 @@ static int tolua_peak_peak_Address_delete00(lua_State* tolua_S)
  {
   peak::Address* self = (peak::Address*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -2155,7 +2170,7 @@ static int tolua_peak_peak_Address_setAddress00(lua_State* tolua_S)
   peak::Address* self = (peak::Address*)  tolua_tousertype(tolua_S,1,0);
   unsigned int addr = ((unsigned int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setAddress'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setAddress'", NULL);
 #endif
   {
    self->setAddress(addr);
@@ -2186,7 +2201,7 @@ static int tolua_peak_peak_Address_getAddress00(lua_State* tolua_S)
  {
   peak::Address* self = (peak::Address*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getAddress'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getAddress'", NULL);
 #endif
   {
    unsigned int tolua_ret = (unsigned int)  self->getAddress();
@@ -2226,7 +2241,7 @@ static int tolua_peak_peak_Address_setAddress01(lua_State* tolua_S)
   unsigned char ip4 = ((unsigned char)  tolua_tonumber(tolua_S,5,0));
   unsigned short port = ((unsigned short)  tolua_tonumber(tolua_S,6,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setAddress'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setAddress'", NULL);
 #endif
   {
    self->setAddress(ip1,ip2,ip3,ip4,port);
@@ -2254,7 +2269,7 @@ static int tolua_peak_peak_Address_setAddress02(lua_State* tolua_S)
   peak::Address* self = (peak::Address*)  tolua_tousertype(tolua_S,1,0);
   std::string addr = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setAddress'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setAddress'", NULL);
 #endif
   {
    self->setAddress(addr);
@@ -2284,7 +2299,7 @@ static int tolua_peak_peak_Address_getAddressString00(lua_State* tolua_S)
   peak::Address* self = (peak::Address*)  tolua_tousertype(tolua_S,1,0);
   bool port = ((bool)  tolua_toboolean(tolua_S,2,true));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getAddressString'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getAddressString'", NULL);
 #endif
   {
    std::string tolua_ret = (std::string)  self->getAddressString(port);
@@ -2318,7 +2333,7 @@ static int tolua_peak_peak_Address_setPort00(lua_State* tolua_S)
   peak::Address* self = (peak::Address*)  tolua_tousertype(tolua_S,1,0);
   unsigned short port = ((unsigned short)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPort'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPort'", NULL);
 #endif
   {
    self->setPort(port);
@@ -2349,7 +2364,7 @@ static int tolua_peak_peak_Address_getPort00(lua_State* tolua_S)
  {
   peak::Address* self = (peak::Address*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPort'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPort'", NULL);
 #endif
   {
    unsigned short tolua_ret = (unsigned short)  self->getPort();
@@ -2380,8 +2395,8 @@ static int tolua_peak_peak_Vector3D_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Vector3D* tolua_ret = (peak::Vector3D*)  new peak::Vector3D();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Vector3D");
+   peak::Vector3D* tolua_ret = (peak::Vector3D*)  Mtolua_new((peak::Vector3D)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Vector3D");
   }
  }
  return 1;
@@ -2408,8 +2423,9 @@ static int tolua_peak_peak_Vector3D_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Vector3D* tolua_ret = (peak::Vector3D*)  new peak::Vector3D();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Vector3D");
+   peak::Vector3D* tolua_ret = (peak::Vector3D*)  Mtolua_new((peak::Vector3D)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -2440,8 +2456,8 @@ static int tolua_peak_peak_Vector3D_new01(lua_State* tolua_S)
   float y = ((float)  tolua_tonumber(tolua_S,3,0));
   float z = ((float)  tolua_tonumber(tolua_S,4,0));
   {
-   peak::Vector3D* tolua_ret = (peak::Vector3D*)  new peak::Vector3D(x,y,z);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Vector3D");
+   peak::Vector3D* tolua_ret = (peak::Vector3D*)  Mtolua_new((peak::Vector3D)(x,y,z));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Vector3D");
   }
  }
  return 1;
@@ -2469,8 +2485,9 @@ static int tolua_peak_peak_Vector3D_new01_local(lua_State* tolua_S)
   float y = ((float)  tolua_tonumber(tolua_S,3,0));
   float z = ((float)  tolua_tonumber(tolua_S,4,0));
   {
-   peak::Vector3D* tolua_ret = (peak::Vector3D*)  new peak::Vector3D(x,y,z);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Vector3D");
+   peak::Vector3D* tolua_ret = (peak::Vector3D*)  Mtolua_new((peak::Vector3D)(x,y,z));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -2495,9 +2512,9 @@ static int tolua_peak_peak_Vector3D_delete00(lua_State* tolua_S)
  {
   peak::Vector3D* self = (peak::Vector3D*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -2526,7 +2543,7 @@ static int tolua_peak_peak_Vector3D_rotateXZ00(lua_State* tolua_S)
   peak::Vector3D* self = (peak::Vector3D*)  tolua_tousertype(tolua_S,1,0);
   float radians = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'rotateXZ'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'rotateXZ'", NULL);
 #endif
   {
    self->rotateXZ(radians);
@@ -2559,7 +2576,7 @@ static int tolua_peak_peak_Vector3D_rotateYZ00(lua_State* tolua_S)
   peak::Vector3D* self = (peak::Vector3D*)  tolua_tousertype(tolua_S,1,0);
   float radians = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'rotateYZ'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'rotateYZ'", NULL);
 #endif
   {
    self->rotateYZ(radians);
@@ -2592,7 +2609,7 @@ static int tolua_peak_peak_Vector3D_rotateXY00(lua_State* tolua_S)
   peak::Vector3D* self = (peak::Vector3D*)  tolua_tousertype(tolua_S,1,0);
   float radians = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'rotateXY'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'rotateXY'", NULL);
 #endif
   {
    self->rotateXY(radians);
@@ -2615,7 +2632,7 @@ static int tolua_peak_peak_Vector3D_rotate00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Vector3D",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -2625,7 +2642,7 @@ static int tolua_peak_peak_Vector3D_rotate00(lua_State* tolua_S)
   peak::Vector3D* self = (peak::Vector3D*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector3D rotation = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'rotate'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'rotate'", NULL);
 #endif
   {
    self->rotate(rotation);
@@ -2656,17 +2673,19 @@ static int tolua_peak_peak_Vector3D_getRotation00(lua_State* tolua_S)
  {
   peak::Vector3D* self = (peak::Vector3D*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getRotation'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getRotation'", NULL);
 #endif
   {
    peak::Vector3D tolua_ret = (peak::Vector3D)  self->getRotation();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -2696,7 +2715,7 @@ static int tolua_peak_peak_Vector3D_getLengthSq00(lua_State* tolua_S)
  {
   peak::Vector3D* self = (peak::Vector3D*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getLengthSq'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getLengthSq'", NULL);
 #endif
   {
    float tolua_ret = (float)  self->getLengthSq();
@@ -2817,8 +2836,8 @@ static int tolua_peak_peak_Vector2D_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Vector2D* tolua_ret = (peak::Vector2D*)  new peak::Vector2D();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Vector2D");
+   peak::Vector2D* tolua_ret = (peak::Vector2D*)  Mtolua_new((peak::Vector2D)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Vector2D");
   }
  }
  return 1;
@@ -2845,8 +2864,9 @@ static int tolua_peak_peak_Vector2D_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Vector2D* tolua_ret = (peak::Vector2D*)  new peak::Vector2D();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Vector2D");
+   peak::Vector2D* tolua_ret = (peak::Vector2D*)  Mtolua_new((peak::Vector2D)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Vector2D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -2875,8 +2895,8 @@ static int tolua_peak_peak_Vector2D_new01(lua_State* tolua_S)
   float x = ((float)  tolua_tonumber(tolua_S,2,0));
   float y = ((float)  tolua_tonumber(tolua_S,3,0));
   {
-   peak::Vector2D* tolua_ret = (peak::Vector2D*)  new peak::Vector2D(x,y);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Vector2D");
+   peak::Vector2D* tolua_ret = (peak::Vector2D*)  Mtolua_new((peak::Vector2D)(x,y));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Vector2D");
   }
  }
  return 1;
@@ -2902,8 +2922,9 @@ static int tolua_peak_peak_Vector2D_new01_local(lua_State* tolua_S)
   float x = ((float)  tolua_tonumber(tolua_S,2,0));
   float y = ((float)  tolua_tonumber(tolua_S,3,0));
   {
-   peak::Vector2D* tolua_ret = (peak::Vector2D*)  new peak::Vector2D(x,y);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Vector2D");
+   peak::Vector2D* tolua_ret = (peak::Vector2D*)  Mtolua_new((peak::Vector2D)(x,y));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Vector2D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -2930,7 +2951,7 @@ static int tolua_peak_peak_Vector2D_rotate00(lua_State* tolua_S)
   peak::Vector2D* self = (peak::Vector2D*)  tolua_tousertype(tolua_S,1,0);
   float rotation = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'rotate'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'rotate'", NULL);
 #endif
   {
    self->rotate(rotation);
@@ -3020,8 +3041,8 @@ static int tolua_peak_peak_Vector2DI_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Vector2DI* tolua_ret = (peak::Vector2DI*)  new peak::Vector2DI();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Vector2DI");
+   peak::Vector2DI* tolua_ret = (peak::Vector2DI*)  Mtolua_new((peak::Vector2DI)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Vector2DI");
   }
  }
  return 1;
@@ -3048,8 +3069,9 @@ static int tolua_peak_peak_Vector2DI_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Vector2DI* tolua_ret = (peak::Vector2DI*)  new peak::Vector2DI();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Vector2DI");
+   peak::Vector2DI* tolua_ret = (peak::Vector2DI*)  Mtolua_new((peak::Vector2DI)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Vector2DI");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -3078,8 +3100,8 @@ static int tolua_peak_peak_Vector2DI_new01(lua_State* tolua_S)
   int x = ((int)  tolua_tonumber(tolua_S,2,0));
   int y = ((int)  tolua_tonumber(tolua_S,3,0));
   {
-   peak::Vector2DI* tolua_ret = (peak::Vector2DI*)  new peak::Vector2DI(x,y);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Vector2DI");
+   peak::Vector2DI* tolua_ret = (peak::Vector2DI*)  Mtolua_new((peak::Vector2DI)(x,y));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Vector2DI");
   }
  }
  return 1;
@@ -3105,8 +3127,9 @@ static int tolua_peak_peak_Vector2DI_new01_local(lua_State* tolua_S)
   int x = ((int)  tolua_tonumber(tolua_S,2,0));
   int y = ((int)  tolua_tonumber(tolua_S,3,0));
   {
-   peak::Vector2DI* tolua_ret = (peak::Vector2DI*)  new peak::Vector2DI(x,y);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Vector2DI");
+   peak::Vector2DI* tolua_ret = (peak::Vector2DI*)  Mtolua_new((peak::Vector2DI)(x,y));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Vector2DI");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -3190,8 +3213,8 @@ static int tolua_peak_peak_Color_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Color* tolua_ret = (peak::Color*)  new peak::Color();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Color");
+   peak::Color* tolua_ret = (peak::Color*)  Mtolua_new((peak::Color)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Color");
   }
  }
  return 1;
@@ -3218,8 +3241,9 @@ static int tolua_peak_peak_Color_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Color* tolua_ret = (peak::Color*)  new peak::Color();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Color");
+   peak::Color* tolua_ret = (peak::Color*)  Mtolua_new((peak::Color)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Color");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -3246,8 +3270,8 @@ static int tolua_peak_peak_Color_new01(lua_State* tolua_S)
  {
   unsigned int color = ((unsigned int)  tolua_tonumber(tolua_S,2,0));
   {
-   peak::Color* tolua_ret = (peak::Color*)  new peak::Color(color);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Color");
+   peak::Color* tolua_ret = (peak::Color*)  Mtolua_new((peak::Color)(color));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Color");
   }
  }
  return 1;
@@ -3271,8 +3295,9 @@ static int tolua_peak_peak_Color_new01_local(lua_State* tolua_S)
  {
   unsigned int color = ((unsigned int)  tolua_tonumber(tolua_S,2,0));
   {
-   peak::Color* tolua_ret = (peak::Color*)  new peak::Color(color);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Color");
+   peak::Color* tolua_ret = (peak::Color*)  Mtolua_new((peak::Color)(color));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Color");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -3302,8 +3327,8 @@ static int tolua_peak_peak_Color_new02(lua_State* tolua_S)
   unsigned char b = ((unsigned char)  tolua_tonumber(tolua_S,4,0));
   unsigned char a = ((unsigned char)  tolua_tonumber(tolua_S,5,255));
   {
-   peak::Color* tolua_ret = (peak::Color*)  new peak::Color(r,g,b,a);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Color");
+   peak::Color* tolua_ret = (peak::Color*)  Mtolua_new((peak::Color)(r,g,b,a));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Color");
   }
  }
  return 1;
@@ -3333,8 +3358,9 @@ static int tolua_peak_peak_Color_new02_local(lua_State* tolua_S)
   unsigned char b = ((unsigned char)  tolua_tonumber(tolua_S,4,0));
   unsigned char a = ((unsigned char)  tolua_tonumber(tolua_S,5,255));
   {
-   peak::Color* tolua_ret = (peak::Color*)  new peak::Color(r,g,b,a);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Color");
+   peak::Color* tolua_ret = (peak::Color*)  Mtolua_new((peak::Color)(r,g,b,a));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Color");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -3359,7 +3385,7 @@ static int tolua_peak_peak_Color_getRed00(lua_State* tolua_S)
  {
   peak::Color* self = (peak::Color*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getRed'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getRed'", NULL);
 #endif
   {
    unsigned char tolua_ret = (unsigned char)  self->getRed();
@@ -3391,7 +3417,7 @@ static int tolua_peak_peak_Color_getGreen00(lua_State* tolua_S)
  {
   peak::Color* self = (peak::Color*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getGreen'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getGreen'", NULL);
 #endif
   {
    unsigned char tolua_ret = (unsigned char)  self->getGreen();
@@ -3423,7 +3449,7 @@ static int tolua_peak_peak_Color_getBlue00(lua_State* tolua_S)
  {
   peak::Color* self = (peak::Color*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getBlue'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getBlue'", NULL);
 #endif
   {
    unsigned char tolua_ret = (unsigned char)  self->getBlue();
@@ -3455,7 +3481,7 @@ static int tolua_peak_peak_Color_getAlpha00(lua_State* tolua_S)
  {
   peak::Color* self = (peak::Color*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getAlpha'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getAlpha'", NULL);
 #endif
   {
    unsigned char tolua_ret = (unsigned char)  self->getAlpha();
@@ -3489,7 +3515,7 @@ static int tolua_peak_peak_Color_setRed00(lua_State* tolua_S)
   peak::Color* self = (peak::Color*)  tolua_tousertype(tolua_S,1,0);
   unsigned char red = ((unsigned char)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setRed'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setRed'", NULL);
 #endif
   {
    self->setRed(red);
@@ -3522,7 +3548,7 @@ static int tolua_peak_peak_Color_setGreen00(lua_State* tolua_S)
   peak::Color* self = (peak::Color*)  tolua_tousertype(tolua_S,1,0);
   unsigned char green = ((unsigned char)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setGreen'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setGreen'", NULL);
 #endif
   {
    self->setGreen(green);
@@ -3555,7 +3581,7 @@ static int tolua_peak_peak_Color_setBlue00(lua_State* tolua_S)
   peak::Color* self = (peak::Color*)  tolua_tousertype(tolua_S,1,0);
   unsigned char blue = ((unsigned char)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setBlue'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setBlue'", NULL);
 #endif
   {
    self->setBlue(blue);
@@ -3588,7 +3614,7 @@ static int tolua_peak_peak_Color_setAlpha00(lua_State* tolua_S)
   peak::Color* self = (peak::Color*)  tolua_tousertype(tolua_S,1,0);
   unsigned char alpha = ((unsigned char)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setAlpha'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setAlpha'", NULL);
 #endif
   {
    self->setAlpha(alpha);
@@ -3627,7 +3653,7 @@ static int tolua_peak_peak_Color_set00(lua_State* tolua_S)
   unsigned char b = ((unsigned char)  tolua_tonumber(tolua_S,4,0));
   unsigned char a = ((unsigned char)  tolua_tonumber(tolua_S,5,255));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'", NULL);
 #endif
   {
    self->set(r,g,b,a);
@@ -3658,7 +3684,7 @@ static int tolua_peak_peak_Color_set01(lua_State* tolua_S)
   peak::Color* self = (peak::Color*)  tolua_tousertype(tolua_S,1,0);
   unsigned int color = ((unsigned int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'", NULL);
 #endif
   {
    self->set(color);
@@ -3686,7 +3712,7 @@ static int tolua_peak_peak_Color_get00(lua_State* tolua_S)
  {
   peak::Color* self = (peak::Color*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'get'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'get'", NULL);
 #endif
   {
    unsigned int tolua_ret = (unsigned int)  self->get();
@@ -3717,8 +3743,8 @@ static int tolua_peak_peak_Quaternion_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Quaternion* tolua_ret = (peak::Quaternion*)  new peak::Quaternion();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Quaternion");
+   peak::Quaternion* tolua_ret = (peak::Quaternion*)  Mtolua_new((peak::Quaternion)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Quaternion");
   }
  }
  return 1;
@@ -3745,8 +3771,9 @@ static int tolua_peak_peak_Quaternion_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Quaternion* tolua_ret = (peak::Quaternion*)  new peak::Quaternion();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Quaternion");
+   peak::Quaternion* tolua_ret = (peak::Quaternion*)  Mtolua_new((peak::Quaternion)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Quaternion");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -3779,8 +3806,8 @@ static int tolua_peak_peak_Quaternion_new01(lua_State* tolua_S)
   float z = ((float)  tolua_tonumber(tolua_S,4,0));
   float w = ((float)  tolua_tonumber(tolua_S,5,0));
   {
-   peak::Quaternion* tolua_ret = (peak::Quaternion*)  new peak::Quaternion(x,y,z,w);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Quaternion");
+   peak::Quaternion* tolua_ret = (peak::Quaternion*)  Mtolua_new((peak::Quaternion)(x,y,z,w));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Quaternion");
   }
  }
  return 1;
@@ -3810,8 +3837,9 @@ static int tolua_peak_peak_Quaternion_new01_local(lua_State* tolua_S)
   float z = ((float)  tolua_tonumber(tolua_S,4,0));
   float w = ((float)  tolua_tonumber(tolua_S,5,0));
   {
-   peak::Quaternion* tolua_ret = (peak::Quaternion*)  new peak::Quaternion(x,y,z,w);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Quaternion");
+   peak::Quaternion* tolua_ret = (peak::Quaternion*)  Mtolua_new((peak::Quaternion)(x,y,z,w));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Quaternion");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -3839,8 +3867,8 @@ static int tolua_peak_peak_Quaternion_new02(lua_State* tolua_S)
   float y = ((float)  tolua_tonumber(tolua_S,3,0));
   float z = ((float)  tolua_tonumber(tolua_S,4,0));
   {
-   peak::Quaternion* tolua_ret = (peak::Quaternion*)  new peak::Quaternion(x,y,z);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Quaternion");
+   peak::Quaternion* tolua_ret = (peak::Quaternion*)  Mtolua_new((peak::Quaternion)(x,y,z));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Quaternion");
   }
  }
  return 1;
@@ -3868,8 +3896,9 @@ static int tolua_peak_peak_Quaternion_new02_local(lua_State* tolua_S)
   float y = ((float)  tolua_tonumber(tolua_S,3,0));
   float z = ((float)  tolua_tonumber(tolua_S,4,0));
   {
-   peak::Quaternion* tolua_ret = (peak::Quaternion*)  new peak::Quaternion(x,y,z);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Quaternion");
+   peak::Quaternion* tolua_ret = (peak::Quaternion*)  Mtolua_new((peak::Quaternion)(x,y,z));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Quaternion");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -3885,7 +3914,7 @@ static int tolua_peak_peak_Quaternion_new03(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertable(tolua_S,1,"peak::Quaternion",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -3893,8 +3922,8 @@ static int tolua_peak_peak_Quaternion_new03(lua_State* tolua_S)
  {
   peak::Vector3D euler = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
   {
-   peak::Quaternion* tolua_ret = (peak::Quaternion*)  new peak::Quaternion(euler);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Quaternion");
+   peak::Quaternion* tolua_ret = (peak::Quaternion*)  Mtolua_new((peak::Quaternion)(euler));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Quaternion");
   }
  }
  return 1;
@@ -3910,7 +3939,7 @@ static int tolua_peak_peak_Quaternion_new03_local(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertable(tolua_S,1,"peak::Quaternion",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -3918,8 +3947,9 @@ static int tolua_peak_peak_Quaternion_new03_local(lua_State* tolua_S)
  {
   peak::Vector3D euler = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
   {
-   peak::Quaternion* tolua_ret = (peak::Quaternion*)  new peak::Quaternion(euler);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Quaternion");
+   peak::Quaternion* tolua_ret = (peak::Quaternion*)  Mtolua_new((peak::Quaternion)(euler));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Quaternion");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -3943,8 +3973,8 @@ static int tolua_peak_peak_Quaternion_new04(lua_State* tolua_S)
  {
   float q = ((float)  tolua_tonumber(tolua_S,2,0));
   {
-   peak::Quaternion* tolua_ret = (peak::Quaternion*)  new peak::Quaternion(&q);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Quaternion");
+   peak::Quaternion* tolua_ret = (peak::Quaternion*)  Mtolua_new((peak::Quaternion)(&q));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Quaternion");
    tolua_pushnumber(tolua_S,(lua_Number)q);
   }
  }
@@ -3969,8 +3999,9 @@ static int tolua_peak_peak_Quaternion_new04_local(lua_State* tolua_S)
  {
   float q = ((float)  tolua_tonumber(tolua_S,2,0));
   {
-   peak::Quaternion* tolua_ret = (peak::Quaternion*)  new peak::Quaternion(&q);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Quaternion");
+   peak::Quaternion* tolua_ret = (peak::Quaternion*)  Mtolua_new((peak::Quaternion)(&q));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Quaternion");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
    tolua_pushnumber(tolua_S,(lua_Number)q);
   }
  }
@@ -3996,17 +4027,19 @@ static int tolua_peak_peak_Quaternion_getEuler00(lua_State* tolua_S)
  {
   peak::Quaternion* self = (peak::Quaternion*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getEuler'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getEuler'", NULL);
 #endif
   {
    peak::Vector3D tolua_ret = (peak::Vector3D)  self->getEuler();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -4028,7 +4061,7 @@ static int tolua_peak_peak_Quaternion_rotateVector00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Quaternion",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -4038,17 +4071,19 @@ static int tolua_peak_peak_Quaternion_rotateVector00(lua_State* tolua_S)
   peak::Quaternion* self = (peak::Quaternion*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector3D vector = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'rotateVector'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'rotateVector'", NULL);
 #endif
   {
    peak::Vector3D tolua_ret = (peak::Vector3D)  self->rotateVector(vector);
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -4070,7 +4105,7 @@ static int tolua_peak_peak_Quaternion_slerp00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Quaternion",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Quaternion",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Quaternion",0,&tolua_err)) ||
      !tolua_isnumber(tolua_S,3,0,&tolua_err) ||
      !tolua_isnoobj(tolua_S,4,&tolua_err)
  )
@@ -4082,17 +4117,19 @@ static int tolua_peak_peak_Quaternion_slerp00(lua_State* tolua_S)
   peak::Quaternion other = *((peak::Quaternion*)  tolua_tousertype(tolua_S,2,0));
   float value = ((float)  tolua_tonumber(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'slerp'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'slerp'", NULL);
 #endif
   {
    peak::Quaternion tolua_ret = (peak::Quaternion)  self->slerp(other,value);
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Quaternion(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Quaternion");
+    void* tolua_obj = Mtolua_new((peak::Quaternion)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Quaternion");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Quaternion));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Quaternion");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Quaternion");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -4114,7 +4151,7 @@ static int tolua_peak_peak_Quaternion_getDifference00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Quaternion",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Quaternion",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Quaternion",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -4124,7 +4161,7 @@ static int tolua_peak_peak_Quaternion_getDifference00(lua_State* tolua_S)
   peak::Quaternion* self = (peak::Quaternion*)  tolua_tousertype(tolua_S,1,0);
   peak::Quaternion* q2 = ((peak::Quaternion*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getDifference'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getDifference'", NULL);
 #endif
   {
    float tolua_ret = (float)  self->getDifference(*q2);
@@ -4277,8 +4314,8 @@ static int tolua_peak_peak_Parameter_new00(lua_State* tolua_S)
  {
   double value = ((double)  tolua_tonumber(tolua_S,2,0));
   {
-   peak::Parameter* tolua_ret = (peak::Parameter*)  new peak::Parameter(value);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Parameter");
+   peak::Parameter* tolua_ret = (peak::Parameter*)  Mtolua_new((peak::Parameter)(value));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Parameter");
   }
  }
  return 1;
@@ -4307,8 +4344,9 @@ static int tolua_peak_peak_Parameter_new00_local(lua_State* tolua_S)
  {
   double value = ((double)  tolua_tonumber(tolua_S,2,0));
   {
-   peak::Parameter* tolua_ret = (peak::Parameter*)  new peak::Parameter(value);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Parameter");
+   peak::Parameter* tolua_ret = (peak::Parameter*)  Mtolua_new((peak::Parameter)(value));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Parameter");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -4337,8 +4375,8 @@ static int tolua_peak_peak_Parameter_new01(lua_State* tolua_S)
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   void* ptr = ((void*)  tolua_touserdata(tolua_S,3,0));
   {
-   peak::Parameter* tolua_ret = (peak::Parameter*)  new peak::Parameter(name,ptr);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Parameter");
+   peak::Parameter* tolua_ret = (peak::Parameter*)  Mtolua_new((peak::Parameter)(name,ptr));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Parameter");
   }
  }
  return 1;
@@ -4364,8 +4402,9 @@ static int tolua_peak_peak_Parameter_new01_local(lua_State* tolua_S)
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   void* ptr = ((void*)  tolua_touserdata(tolua_S,3,0));
   {
-   peak::Parameter* tolua_ret = (peak::Parameter*)  new peak::Parameter(name,ptr);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Parameter");
+   peak::Parameter* tolua_ret = (peak::Parameter*)  Mtolua_new((peak::Parameter)(name,ptr));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Parameter");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -4390,7 +4429,7 @@ static int tolua_peak_peak_Parameter_isPointer00(lua_State* tolua_S)
  {
   peak::Parameter* self = (peak::Parameter*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isPointer'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isPointer'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->isPointer();
@@ -4422,7 +4461,7 @@ static int tolua_peak_peak_Parameter_getValue00(lua_State* tolua_S)
  {
   peak::Parameter* self = (peak::Parameter*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getValue'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getValue'", NULL);
 #endif
   {
    double tolua_ret = (double)  self->getValue();
@@ -4454,7 +4493,7 @@ static int tolua_peak_peak_Parameter_getClassName00(lua_State* tolua_S)
  {
   peak::Parameter* self = (peak::Parameter*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getClassName'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getClassName'", NULL);
 #endif
   {
    std::string tolua_ret = (std::string)  self->getClassName();
@@ -4486,7 +4525,7 @@ static int tolua_peak_peak_Parameter_getPointer00(lua_State* tolua_S)
  {
   peak::Parameter* self = (peak::Parameter*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPointer'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPointer'", NULL);
 #endif
   {
    void* tolua_ret = (void*)  self->getPointer();
@@ -4517,8 +4556,8 @@ static int tolua_peak_peak_ParameterList_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::ParameterList* tolua_ret = (peak::ParameterList*)  new peak::ParameterList();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::ParameterList");
+   peak::ParameterList* tolua_ret = (peak::ParameterList*)  Mtolua_new((peak::ParameterList)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::ParameterList");
   }
  }
  return 1;
@@ -4545,8 +4584,9 @@ static int tolua_peak_peak_ParameterList_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::ParameterList* tolua_ret = (peak::ParameterList*)  new peak::ParameterList();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::ParameterList");
+   peak::ParameterList* tolua_ret = (peak::ParameterList*)  Mtolua_new((peak::ParameterList)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::ParameterList");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -4574,9 +4614,9 @@ static int tolua_peak_peak_ParameterList_delete00(lua_State* tolua_S)
  {
   peak::ParameterList* self = (peak::ParameterList*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -4595,7 +4635,7 @@ static int tolua_peak_peak_ParameterList_add00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::ParameterList",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Parameter",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Parameter",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -4605,7 +4645,7 @@ static int tolua_peak_peak_ParameterList_add00(lua_State* tolua_S)
   peak::ParameterList* self = (peak::ParameterList*)  tolua_tousertype(tolua_S,1,0);
   peak::Parameter* parameter = ((peak::Parameter*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'add'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'add'", NULL);
 #endif
   {
    self->add(*parameter);
@@ -4635,8 +4675,8 @@ static int tolua_peak_peak_Script_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Script* tolua_ret = (peak::Script*)  new peak::Script();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Script");
+   peak::Script* tolua_ret = (peak::Script*)  Mtolua_new((peak::Script)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Script");
   }
  }
  return 1;
@@ -4663,8 +4703,9 @@ static int tolua_peak_peak_Script_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Script* tolua_ret = (peak::Script*)  new peak::Script();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Script");
+   peak::Script* tolua_ret = (peak::Script*)  Mtolua_new((peak::Script)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Script");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -4692,9 +4733,9 @@ static int tolua_peak_peak_Script_delete00(lua_State* tolua_S)
  {
   peak::Script* self = (peak::Script*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -4723,7 +4764,7 @@ static int tolua_peak_peak_Script_run00(lua_State* tolua_S)
   peak::Script* self = (peak::Script*)  tolua_tousertype(tolua_S,1,0);
   std::string filename = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'run'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'run'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->run(filename);
@@ -4757,7 +4798,7 @@ static int tolua_peak_peak_Script_runString00(lua_State* tolua_S)
   peak::Script* self = (peak::Script*)  tolua_tousertype(tolua_S,1,0);
   std::string data = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'runString'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'runString'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->runString(data);
@@ -4791,7 +4832,7 @@ static int tolua_peak_peak_Script_callFunction00(lua_State* tolua_S)
   peak::Script* self = (peak::Script*)  tolua_tousertype(tolua_S,1,0);
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'callFunction'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'callFunction'", NULL);
 #endif
   {
    self->callFunction(name);
@@ -4814,7 +4855,7 @@ static int tolua_peak_peak_Script_callFunction01(lua_State* tolua_S)
  if (
      !tolua_isusertype(tolua_S,1,"peak::Script",0,&tolua_err) ||
      !tolua_iscppstring(tolua_S,2,0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,3,"peak::ParameterList",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,3,&tolua_err) || !tolua_isusertype(tolua_S,3,"peak::ParameterList",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,4,&tolua_err)
  )
   goto tolua_lerror;
@@ -4824,7 +4865,7 @@ static int tolua_peak_peak_Script_callFunction01(lua_State* tolua_S)
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   peak::ParameterList* parameters = ((peak::ParameterList*)  tolua_tousertype(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'callFunction'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'callFunction'", NULL);
 #endif
   {
    self->callFunction(name,*parameters);
@@ -4856,7 +4897,7 @@ static int tolua_peak_peak_Script_callFunctionI00(lua_State* tolua_S)
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   int arg1 = ((int)  tolua_tonumber(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'callFunctionI'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'callFunctionI'", NULL);
 #endif
   {
    self->callFunctionI(name,arg1);
@@ -4893,7 +4934,7 @@ static int tolua_peak_peak_Script_callFunctionII00(lua_State* tolua_S)
   int arg1 = ((int)  tolua_tonumber(tolua_S,3,0));
   int arg2 = ((int)  tolua_tonumber(tolua_S,4,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'callFunctionII'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'callFunctionII'", NULL);
 #endif
   {
    self->callFunctionII(name,arg1,arg2);
@@ -4932,7 +4973,7 @@ static int tolua_peak_peak_Script_callFunctionIII00(lua_State* tolua_S)
   int arg2 = ((int)  tolua_tonumber(tolua_S,4,0));
   int arg3 = ((int)  tolua_tonumber(tolua_S,5,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'callFunctionIII'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'callFunctionIII'", NULL);
 #endif
   {
    self->callFunctionIII(name,arg1,arg2,arg3);
@@ -4971,7 +5012,7 @@ static int tolua_peak_peak_Script_callFunctionFFF00(lua_State* tolua_S)
   float arg2 = ((float)  tolua_tonumber(tolua_S,4,0));
   float arg3 = ((float)  tolua_tonumber(tolua_S,5,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'callFunctionFFF'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'callFunctionFFF'", NULL);
 #endif
   {
    self->callFunctionFFF(name,arg1,arg2,arg3);
@@ -5004,7 +5045,7 @@ static int tolua_peak_peak_Script_callIntFunction00(lua_State* tolua_S)
   peak::Script* self = (peak::Script*)  tolua_tousertype(tolua_S,1,0);
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'callIntFunction'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'callIntFunction'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->callIntFunction(name);
@@ -5038,7 +5079,7 @@ static int tolua_peak_peak_Script_callFloatFunction00(lua_State* tolua_S)
   peak::Script* self = (peak::Script*)  tolua_tousertype(tolua_S,1,0);
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'callFloatFunction'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'callFloatFunction'", NULL);
 #endif
   {
    float tolua_ret = (float)  self->callFloatFunction(name);
@@ -5072,7 +5113,7 @@ static int tolua_peak_peak_Script_isFunction00(lua_State* tolua_S)
   peak::Script* self = (peak::Script*)  tolua_tousertype(tolua_S,1,0);
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isFunction'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isFunction'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->isFunction(name);
@@ -5103,8 +5144,8 @@ static int tolua_peak_peak_World_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::World* tolua_ret = (peak::World*)  new peak::World();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::World");
+   peak::World* tolua_ret = (peak::World*)  Mtolua_new((peak::World)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::World");
   }
  }
  return 1;
@@ -5131,8 +5172,9 @@ static int tolua_peak_peak_World_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::World* tolua_ret = (peak::World*)  new peak::World();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::World");
+   peak::World* tolua_ret = (peak::World*)  Mtolua_new((peak::World)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::World");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -5160,9 +5202,9 @@ static int tolua_peak_peak_World_delete00(lua_State* tolua_S)
  {
   peak::World* self = (peak::World*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -5189,7 +5231,7 @@ static int tolua_peak_peak_World_init00(lua_State* tolua_S)
  {
   peak::World* self = (peak::World*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->init();
@@ -5221,7 +5263,7 @@ static int tolua_peak_peak_World_destroy00(lua_State* tolua_S)
  {
   peak::World* self = (peak::World*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->destroy();
@@ -5255,7 +5297,7 @@ static int tolua_peak_peak_World_setNetworkID00(lua_State* tolua_S)
   peak::World* self = (peak::World*)  tolua_tousertype(tolua_S,1,0);
   int id = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setNetworkID'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setNetworkID'", NULL);
 #endif
   {
    self->setNetworkID(id);
@@ -5286,7 +5328,7 @@ static int tolua_peak_peak_World_getNetworkID00(lua_State* tolua_S)
  {
   peak::World* self = (peak::World*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getNetworkID'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getNetworkID'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->getNetworkID();
@@ -5320,7 +5362,7 @@ static int tolua_peak_peak_World_getWorld00(lua_State* tolua_S)
   int id = ((int)  tolua_tonumber(tolua_S,2,0));
   {
    peak::World* tolua_ret = (peak::World*)  peak::World::getWorld(id);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::World");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::World");
   }
  }
  return 1;
@@ -5350,7 +5392,7 @@ static int tolua_peak_peak_World_setSynchronized00(lua_State* tolua_S)
   peak::World* self = (peak::World*)  tolua_tousertype(tolua_S,1,0);
   bool sync = ((bool)  tolua_toboolean(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setSynchronized'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setSynchronized'", NULL);
 #endif
   {
    self->setSynchronized(sync);
@@ -5381,7 +5423,7 @@ static int tolua_peak_peak_World_getSynchronized00(lua_State* tolua_S)
  {
   peak::World* self = (peak::World*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getSynchronized'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getSynchronized'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->getSynchronized();
@@ -5415,7 +5457,7 @@ static int tolua_peak_peak_World_addBody00(lua_State* tolua_S)
   peak::World* self = (peak::World*)  tolua_tousertype(tolua_S,1,0);
   peak::Body* body = ((peak::Body*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'addBody'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'addBody'", NULL);
 #endif
   {
    self->addBody(body);
@@ -5448,7 +5490,7 @@ static int tolua_peak_peak_World_removeBody00(lua_State* tolua_S)
   peak::World* self = (peak::World*)  tolua_tousertype(tolua_S,1,0);
   peak::Body* body = ((peak::Body*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'removeBody'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'removeBody'", NULL);
 #endif
   {
    self->removeBody(body);
@@ -5483,7 +5525,7 @@ static int tolua_peak_peak_World_addSynchronizedBody00(lua_State* tolua_S)
   peak::Body* body = ((peak::Body*)  tolua_tousertype(tolua_S,2,0));
   int id = ((int)  tolua_tonumber(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'addSynchronizedBody'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'addSynchronizedBody'", NULL);
 #endif
   {
    self->addSynchronizedBody(body,id);
@@ -5516,7 +5558,7 @@ static int tolua_peak_peak_World_update00(lua_State* tolua_S)
   peak::World* self = (peak::World*)  tolua_tousertype(tolua_S,1,0);
   peak::Buffer* data = ((peak::Buffer*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'update'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'update'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->update(data);
@@ -5550,7 +5592,7 @@ static int tolua_peak_peak_World_sendUpdates00(lua_State* tolua_S)
   peak::World* self = (peak::World*)  tolua_tousertype(tolua_S,1,0);
   float msecs = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'sendUpdates'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'sendUpdates'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->sendUpdates(msecs);
@@ -5602,8 +5644,8 @@ static int tolua_peak_peak_World_castRay00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::World",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,3,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
+     (tolua_isvaluenil(tolua_S,3,&tolua_err) || !tolua_isusertype(tolua_S,3,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,4,&tolua_err)
  )
   goto tolua_lerror;
@@ -5614,17 +5656,19 @@ static int tolua_peak_peak_World_castRay00(lua_State* tolua_S)
   peak::Vector3D rayfrom = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
   peak::Vector3D rayto = *((peak::Vector3D*)  tolua_tousertype(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'castRay'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'castRay'", NULL);
 #endif
   {
    peak::CollisionInfo tolua_ret = (peak::CollisionInfo)  self->castRay(rayfrom,rayto);
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::CollisionInfo(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::CollisionInfo");
+    void* tolua_obj = Mtolua_new((peak::CollisionInfo)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::CollisionInfo");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::CollisionInfo));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::CollisionInfo");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::CollisionInfo");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -5656,7 +5700,7 @@ static int tolua_peak_peak_World_doWork00(lua_State* tolua_S)
   peak::World* self = (peak::World*)  tolua_tousertype(tolua_S,1,0);
   float msecs = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'doWork'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'doWork'", NULL);
 #endif
   {
    self->doWork(msecs);
@@ -5715,8 +5759,8 @@ static int tolua_peak_peak_Entity_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Entity* tolua_ret = (peak::Entity*)  new peak::Entity();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Entity");
+   peak::Entity* tolua_ret = (peak::Entity*)  Mtolua_new((peak::Entity)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Entity");
   }
  }
  return 1;
@@ -5743,8 +5787,9 @@ static int tolua_peak_peak_Entity_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Entity* tolua_ret = (peak::Entity*)  new peak::Entity();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Entity");
+   peak::Entity* tolua_ret = (peak::Entity*)  Mtolua_new((peak::Entity)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Entity");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -5772,9 +5817,9 @@ static int tolua_peak_peak_Entity_delete00(lua_State* tolua_S)
  {
   peak::Entity* self = (peak::Entity*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -5805,7 +5850,7 @@ static int tolua_peak_peak_Entity_load00(lua_State* tolua_S)
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   peak::Buffer* data = ((peak::Buffer*)  tolua_tousertype(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'load'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'load'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->load(name,data);
@@ -5839,7 +5884,7 @@ static int tolua_peak_peak_Entity_setOwner00(lua_State* tolua_S)
   peak::Entity* self = (peak::Entity*)  tolua_tousertype(tolua_S,1,0);
   int owner = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setOwner'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setOwner'", NULL);
 #endif
   {
    self->setOwner(owner);
@@ -5870,7 +5915,7 @@ static int tolua_peak_peak_Entity_getOwner00(lua_State* tolua_S)
  {
   peak::Entity* self = (peak::Entity*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getOwner'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getOwner'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->getOwner();
@@ -5904,7 +5949,7 @@ static int tolua_peak_peak_Entity_setLocal00(lua_State* tolua_S)
   peak::Entity* self = (peak::Entity*)  tolua_tousertype(tolua_S,1,0);
   bool local = ((bool)  tolua_toboolean(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setLocal'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setLocal'", NULL);
 #endif
   {
    self->setLocal(local);
@@ -5935,7 +5980,7 @@ static int tolua_peak_peak_Entity_isLocal00(lua_State* tolua_S)
  {
   peak::Entity* self = (peak::Entity*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isLocal'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isLocal'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->isLocal();
@@ -5969,7 +6014,7 @@ static int tolua_peak_peak_Entity_setID00(lua_State* tolua_S)
   peak::Entity* self = (peak::Entity*)  tolua_tousertype(tolua_S,1,0);
   int id = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setID'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setID'", NULL);
 #endif
   {
    self->setID(id);
@@ -6000,7 +6045,7 @@ static int tolua_peak_peak_Entity_getID00(lua_State* tolua_S)
  {
   peak::Entity* self = (peak::Entity*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getID'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getID'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->getID();
@@ -6034,7 +6079,7 @@ static int tolua_peak_peak_Entity_writeStartData00(lua_State* tolua_S)
   peak::Entity* self = (peak::Entity*)  tolua_tousertype(tolua_S,1,0);
   peak::Buffer* data = ((peak::Buffer*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'writeStartData'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'writeStartData'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->writeStartData(data);
@@ -6058,7 +6103,7 @@ static int tolua_peak_peak_Entity_setPosition00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Entity",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -6068,7 +6113,7 @@ static int tolua_peak_peak_Entity_setPosition00(lua_State* tolua_S)
   peak::Entity* self = (peak::Entity*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector3D position = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPosition'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPosition'", NULL);
 #endif
   {
    self->setPosition(position);
@@ -6099,7 +6144,7 @@ static int tolua_peak_peak_Entity_getName00(lua_State* tolua_S)
  {
   peak::Entity* self = (peak::Entity*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getName'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getName'", NULL);
 #endif
   {
    std::string tolua_ret = (std::string)  self->getName();
@@ -6133,11 +6178,11 @@ static int tolua_peak_peak_Entity_getBody00(lua_State* tolua_S)
   peak::Entity* self = (peak::Entity*)  tolua_tousertype(tolua_S,1,0);
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getBody'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getBody'", NULL);
 #endif
   {
    peak::Body* tolua_ret = (peak::Body*)  self->getBody(name);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Body");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Body");
   }
  }
  return 1;
@@ -6167,11 +6212,11 @@ static int tolua_peak_peak_Entity_getSceneNode00(lua_State* tolua_S)
   peak::Entity* self = (peak::Entity*)  tolua_tousertype(tolua_S,1,0);
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getSceneNode'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getSceneNode'", NULL);
 #endif
   {
    peak::SceneNode* tolua_ret = (peak::SceneNode*)  self->getSceneNode(name);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::SceneNode");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::SceneNode");
   }
  }
  return 1;
@@ -6199,11 +6244,11 @@ static int tolua_peak_peak_Entity_getScript00(lua_State* tolua_S)
  {
   peak::Entity* self = (peak::Entity*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getScript'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getScript'", NULL);
 #endif
   {
    peak::Script* tolua_ret = (peak::Script*)  self->getScript();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Script");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Script");
   }
  }
  return 1;
@@ -6232,8 +6277,8 @@ static int tolua_peak_peak_Connection_new00(lua_State* tolua_S)
  {
   ENetPeer* peer = ((ENetPeer*)  tolua_tousertype(tolua_S,2,0));
   {
-   peak::Connection* tolua_ret = (peak::Connection*)  new peak::Connection(peer);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Connection");
+   peak::Connection* tolua_ret = (peak::Connection*)  Mtolua_new((peak::Connection)(peer));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Connection");
   }
  }
  return 1;
@@ -6262,8 +6307,9 @@ static int tolua_peak_peak_Connection_new00_local(lua_State* tolua_S)
  {
   ENetPeer* peer = ((ENetPeer*)  tolua_tousertype(tolua_S,2,0));
   {
-   peak::Connection* tolua_ret = (peak::Connection*)  new peak::Connection(peer);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Connection");
+   peak::Connection* tolua_ret = (peak::Connection*)  Mtolua_new((peak::Connection)(peer));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Connection");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -6291,9 +6337,9 @@ static int tolua_peak_peak_Connection_delete00(lua_State* tolua_S)
  {
   peak::Connection* self = (peak::Connection*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -6320,7 +6366,7 @@ static int tolua_peak_peak_Connection_destroy00(lua_State* tolua_S)
  {
   peak::Connection* self = (peak::Connection*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'", NULL);
 #endif
   {
    self->destroy();
@@ -6351,7 +6397,7 @@ static int tolua_peak_peak_Connection_disconnect00(lua_State* tolua_S)
  {
   peak::Connection* self = (peak::Connection*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'disconnect'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'disconnect'", NULL);
 #endif
   {
    self->disconnect();
@@ -6382,7 +6428,7 @@ static int tolua_peak_peak_Connection_isConnected00(lua_State* tolua_S)
  {
   peak::Connection* self = (peak::Connection*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isConnected'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isConnected'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->isConnected();
@@ -6414,7 +6460,7 @@ static int tolua_peak_peak_Connection_hasNewData00(lua_State* tolua_S)
  {
   peak::Connection* self = (peak::Connection*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'hasNewData'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'hasNewData'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->hasNewData();
@@ -6446,11 +6492,11 @@ static int tolua_peak_peak_Connection_readData00(lua_State* tolua_S)
  {
   peak::Connection* self = (peak::Connection*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'readData'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'readData'", NULL);
 #endif
   {
    peak::Buffer* tolua_ret = (peak::Buffer*)  self->readData();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Buffer");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Buffer");
   }
  }
  return 1;
@@ -6482,7 +6528,7 @@ static int tolua_peak_peak_Connection_sendData00(lua_State* tolua_S)
   peak::Buffer* data = ((peak::Buffer*)  tolua_tousertype(tolua_S,2,0));
   bool reliable = ((bool)  tolua_toboolean(tolua_S,3,true));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'sendData'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'sendData'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->sendData(data,reliable);
@@ -6516,7 +6562,7 @@ static int tolua_peak_peak_Connection_injectData00(lua_State* tolua_S)
   peak::Connection* self = (peak::Connection*)  tolua_tousertype(tolua_S,1,0);
   peak::Buffer* data = ((peak::Buffer*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'injectData'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'injectData'", NULL);
 #endif
   {
    self->injectData(data);
@@ -6547,11 +6593,11 @@ static int tolua_peak_peak_Connection_getPeer00(lua_State* tolua_S)
  {
   peak::Connection* self = (peak::Connection*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPeer'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPeer'", NULL);
 #endif
   {
    ENetPeer* tolua_ret = (ENetPeer*)  self->getPeer();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"ENetPeer");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"ENetPeer");
   }
  }
  return 1;
@@ -6578,8 +6624,8 @@ static int tolua_peak_peak_BroadcastHost_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::BroadcastHost* tolua_ret = (peak::BroadcastHost*)  new peak::BroadcastHost();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::BroadcastHost");
+   peak::BroadcastHost* tolua_ret = (peak::BroadcastHost*)  Mtolua_new((peak::BroadcastHost)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::BroadcastHost");
   }
  }
  return 1;
@@ -6606,8 +6652,9 @@ static int tolua_peak_peak_BroadcastHost_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::BroadcastHost* tolua_ret = (peak::BroadcastHost*)  new peak::BroadcastHost();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::BroadcastHost");
+   peak::BroadcastHost* tolua_ret = (peak::BroadcastHost*)  Mtolua_new((peak::BroadcastHost)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::BroadcastHost");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -6635,9 +6682,9 @@ static int tolua_peak_peak_BroadcastHost_delete00(lua_State* tolua_S)
  {
   peak::BroadcastHost* self = (peak::BroadcastHost*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -6666,7 +6713,7 @@ static int tolua_peak_peak_BroadcastHost_init00(lua_State* tolua_S)
   peak::BroadcastHost* self = (peak::BroadcastHost*)  tolua_tousertype(tolua_S,1,0);
   int port = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->init(port);
@@ -6698,7 +6745,7 @@ static int tolua_peak_peak_BroadcastHost_shutdown00(lua_State* tolua_S)
  {
   peak::BroadcastHost* self = (peak::BroadcastHost*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'shutdown'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'shutdown'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->shutdown();
@@ -6732,7 +6779,7 @@ static int tolua_peak_peak_BroadcastHost_setInfo00(lua_State* tolua_S)
   peak::BroadcastHost* self = (peak::BroadcastHost*)  tolua_tousertype(tolua_S,1,0);
   std::string info = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setInfo'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setInfo'", NULL);
 #endif
   {
    self->setInfo(info);
@@ -6763,7 +6810,7 @@ static int tolua_peak_peak_BroadcastHost_getInfo00(lua_State* tolua_S)
  {
   peak::BroadcastHost* self = (peak::BroadcastHost*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getInfo'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getInfo'", NULL);
 #endif
   {
    std::string tolua_ret = (std::string)  self->getInfo();
@@ -6795,7 +6842,7 @@ static int tolua_peak_peak_BroadcastHost_doWork00(lua_State* tolua_S)
  {
   peak::BroadcastHost* self = (peak::BroadcastHost*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'doWork'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'doWork'", NULL);
 #endif
   {
    self->doWork();
@@ -6820,7 +6867,7 @@ static int tolua_peak_peak_ClientInfo_new00(lua_State* tolua_S)
      !tolua_isusertable(tolua_S,1,"peak::ClientInfo",0,&tolua_err) ||
      !tolua_isusertype(tolua_S,2,"peak::Connection",0,&tolua_err) ||
      !tolua_isnumber(tolua_S,3,0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,4,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,4,&tolua_err) || !tolua_isusertype(tolua_S,4,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,5,&tolua_err)
  )
   goto tolua_lerror;
@@ -6831,8 +6878,8 @@ static int tolua_peak_peak_ClientInfo_new00(lua_State* tolua_S)
   int owner = ((int)  tolua_tonumber(tolua_S,3,0));
   peak::Vector3D focus = *((peak::Vector3D*)  tolua_tousertype(tolua_S,4,0));
   {
-   peak::ClientInfo* tolua_ret = (peak::ClientInfo*)  new peak::ClientInfo(conn,owner,focus);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::ClientInfo");
+   peak::ClientInfo* tolua_ret = (peak::ClientInfo*)  Mtolua_new((peak::ClientInfo)(conn,owner,focus));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::ClientInfo");
   }
  }
  return 1;
@@ -6854,7 +6901,7 @@ static int tolua_peak_peak_ClientInfo_new00_local(lua_State* tolua_S)
      !tolua_isusertable(tolua_S,1,"peak::ClientInfo",0,&tolua_err) ||
      !tolua_isusertype(tolua_S,2,"peak::Connection",0,&tolua_err) ||
      !tolua_isnumber(tolua_S,3,0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,4,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,4,&tolua_err) || !tolua_isusertype(tolua_S,4,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,5,&tolua_err)
  )
   goto tolua_lerror;
@@ -6865,8 +6912,9 @@ static int tolua_peak_peak_ClientInfo_new00_local(lua_State* tolua_S)
   int owner = ((int)  tolua_tonumber(tolua_S,3,0));
   peak::Vector3D focus = *((peak::Vector3D*)  tolua_tousertype(tolua_S,4,0));
   {
-   peak::ClientInfo* tolua_ret = (peak::ClientInfo*)  new peak::ClientInfo(conn,owner,focus);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::ClientInfo");
+   peak::ClientInfo* tolua_ret = (peak::ClientInfo*)  Mtolua_new((peak::ClientInfo)(conn,owner,focus));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::ClientInfo");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -6886,7 +6934,7 @@ static int tolua_get_peak__ClientInfo_conn_ptr(lua_State* tolua_S)
 #ifndef TOLUA_RELEASE
   if (!self) tolua_error(tolua_S,"invalid 'self' in accessing variable 'conn'",NULL);
 #endif
-  tolua_pushusertype(tolua_S,(void*)self->conn,"peak::Connection");
+   tolua_pushusertype(tolua_S,(void*)self->conn,"peak::Connection");
  return 1;
 }
 #endif //#ifndef TOLUA_DISABLE
@@ -6946,7 +6994,7 @@ static int tolua_get_peak__ClientInfo_focus(lua_State* tolua_S)
 #ifndef TOLUA_RELEASE
   if (!self) tolua_error(tolua_S,"invalid 'self' in accessing variable 'focus'",NULL);
 #endif
-  tolua_pushusertype(tolua_S,(void*)&self->focus,"peak::Vector3D");
+   tolua_pushusertype(tolua_S,(void*)&self->focus,"peak::Vector3D");
  return 1;
 }
 #endif //#ifndef TOLUA_DISABLE
@@ -6959,7 +7007,7 @@ static int tolua_set_peak__ClientInfo_focus(lua_State* tolua_S)
 #ifndef TOLUA_RELEASE
   tolua_Error tolua_err;
   if (!self) tolua_error(tolua_S,"invalid 'self' in accessing variable 'focus'",NULL);
-  if (!tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err))
+  if ((tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)))
    tolua_error(tolua_S,"#vinvalid type in variable assignment.",&tolua_err);
 #endif
   self->focus = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0))
@@ -6984,7 +7032,7 @@ static int tolua_peak_peak_Game_get00(lua_State* tolua_S)
  {
   {
    peak::Game* tolua_ret = (peak::Game*)  peak::Game::get();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Game");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Game");
   }
  }
  return 1;
@@ -7012,9 +7060,9 @@ static int tolua_peak_peak_Game_delete00(lua_State* tolua_S)
  {
   peak::Game* self = (peak::Game*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -7043,7 +7091,7 @@ static int tolua_peak_peak_Game_init00(lua_State* tolua_S)
   peak::Game* self = (peak::Game*)  tolua_tousertype(tolua_S,1,0);
   bool client = ((bool)  tolua_toboolean(tolua_S,2,true));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->init(client);
@@ -7066,7 +7114,7 @@ static int tolua_peak_peak_Game_init01(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Game",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Address",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Address",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -7075,7 +7123,7 @@ static int tolua_peak_peak_Game_init01(lua_State* tolua_S)
   peak::Game* self = (peak::Game*)  tolua_tousertype(tolua_S,1,0);
   peak::Address addr = *((peak::Address*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->init(addr);
@@ -7104,7 +7152,7 @@ static int tolua_peak_peak_Game_shutdown00(lua_State* tolua_S)
  {
   peak::Game* self = (peak::Game*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'shutdown'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'shutdown'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->shutdown();
@@ -7136,7 +7184,7 @@ static int tolua_peak_peak_Game_stopGame00(lua_State* tolua_S)
  {
   peak::Game* self = (peak::Game*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'stopGame'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'stopGame'", NULL);
 #endif
   {
    self->stopGame();
@@ -7167,7 +7215,7 @@ static int tolua_peak_peak_Game_isServer00(lua_State* tolua_S)
  {
   peak::Game* self = (peak::Game*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isServer'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isServer'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->isServer();
@@ -7199,7 +7247,7 @@ static int tolua_peak_peak_Game_isClient00(lua_State* tolua_S)
  {
   peak::Game* self = (peak::Game*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isClient'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isClient'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->isClient();
@@ -7233,7 +7281,7 @@ static int tolua_peak_peak_Game_setVisible00(lua_State* tolua_S)
   peak::Game* self = (peak::Game*)  tolua_tousertype(tolua_S,1,0);
   bool visible = ((bool)  tolua_toboolean(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setVisible'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setVisible'", NULL);
 #endif
   {
    self->setVisible(visible);
@@ -7264,7 +7312,7 @@ static int tolua_peak_peak_Game_isVisible00(lua_State* tolua_S)
  {
   peak::Game* self = (peak::Game*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isVisible'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isVisible'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->isVisible();
@@ -7288,7 +7336,7 @@ static int tolua_peak_peak_Game_setFocus00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Game",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -7298,7 +7346,7 @@ static int tolua_peak_peak_Game_setFocus00(lua_State* tolua_S)
   peak::Game* self = (peak::Game*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector3D focus = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setFocus'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setFocus'", NULL);
 #endif
   {
    self->setFocus(focus);
@@ -7329,17 +7377,19 @@ static int tolua_peak_peak_Game_getFocus00(lua_State* tolua_S)
  {
   peak::Game* self = (peak::Game*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getFocus'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getFocus'", NULL);
 #endif
   {
    peak::Vector3D tolua_ret = (peak::Vector3D)  self->getFocus();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -7369,7 +7419,7 @@ static int tolua_peak_peak_Game_getClientCount00(lua_State* tolua_S)
  {
   peak::Game* self = (peak::Game*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getClientCount'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getClientCount'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->getClientCount();
@@ -7403,17 +7453,19 @@ static int tolua_peak_peak_Game_getClientFocus00(lua_State* tolua_S)
   peak::Game* self = (peak::Game*)  tolua_tousertype(tolua_S,1,0);
   int client = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getClientFocus'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getClientFocus'", NULL);
 #endif
   {
    peak::Vector3D tolua_ret = (peak::Vector3D)  self->getClientFocus(client);
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -7445,11 +7497,11 @@ static int tolua_peak_peak_Game_getClientConnection00(lua_State* tolua_S)
   peak::Game* self = (peak::Game*)  tolua_tousertype(tolua_S,1,0);
   int client = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getClientConnection'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getClientConnection'", NULL);
 #endif
   {
    peak::Connection* tolua_ret = (peak::Connection*)  self->getClientConnection(client);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Connection");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Connection");
   }
  }
  return 1;
@@ -7477,11 +7529,11 @@ static int tolua_peak_peak_Game_getServerConnection00(lua_State* tolua_S)
  {
   peak::Game* self = (peak::Game*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getServerConnection'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getServerConnection'", NULL);
 #endif
   {
    peak::Connection* tolua_ret = (peak::Connection*)  self->getServerConnection();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Connection");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Connection");
   }
  }
  return 1;
@@ -7513,11 +7565,11 @@ static int tolua_peak_peak_Game_createEntity00(lua_State* tolua_S)
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   int owner = ((int)  tolua_tonumber(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'createEntity'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'createEntity'", NULL);
 #endif
   {
    peak::Entity* tolua_ret = (peak::Entity*)  self->createEntity(name,owner);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Entity");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Entity");
   }
  }
  return 1;
@@ -7547,11 +7599,11 @@ static int tolua_peak_peak_Game_getEntity00(lua_State* tolua_S)
   peak::Game* self = (peak::Game*)  tolua_tousertype(tolua_S,1,0);
   int id = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getEntity'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getEntity'", NULL);
 #endif
   {
    peak::Entity* tolua_ret = (peak::Entity*)  self->getEntity(id);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Entity");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Entity");
   }
  }
  return 1;
@@ -7583,7 +7635,7 @@ static int tolua_peak_peak_Game_deleteEntity00(lua_State* tolua_S)
   peak::Entity* entity = ((peak::Entity*)  tolua_tousertype(tolua_S,2,0));
   bool now = ((bool)  tolua_toboolean(tolua_S,3,false));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'deleteEntity'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'deleteEntity'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->deleteEntity(entity,now);
@@ -7617,7 +7669,7 @@ static int tolua_peak_peak_Game_getEntityCount00(lua_State* tolua_S)
   peak::Game* self = (peak::Game*)  tolua_tousertype(tolua_S,1,0);
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getEntityCount'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getEntityCount'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->getEntityCount(name);
@@ -7651,11 +7703,11 @@ static int tolua_peak_peak_Game_getEntity01(lua_State* tolua_S)
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   int index = ((int)  tolua_tonumber(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getEntity'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getEntity'", NULL);
 #endif
   {
    peak::Entity* tolua_ret = (peak::Entity*)  self->getEntity(name,index);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Entity");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Entity");
   }
  }
  return 1;
@@ -7680,11 +7732,11 @@ static int tolua_peak_peak_Game_getWorld00(lua_State* tolua_S)
  {
   peak::Game* self = (peak::Game*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getWorld'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getWorld'", NULL);
 #endif
   {
    peak::World* tolua_ret = (peak::World*)  self->getWorld();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::World");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::World");
   }
  }
  return 1;
@@ -7714,7 +7766,7 @@ static int tolua_peak_peak_Game_doWork00(lua_State* tolua_S)
   peak::Game* self = (peak::Game*)  tolua_tousertype(tolua_S,1,0);
   float msecs = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'doWork'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'doWork'", NULL);
 #endif
   {
    self->doWork(msecs);
@@ -7745,11 +7797,11 @@ static int tolua_peak_peak_Game_getServerScript00(lua_State* tolua_S)
  {
   peak::Game* self = (peak::Game*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getServerScript'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getServerScript'", NULL);
 #endif
   {
    peak::Script* tolua_ret = (peak::Script*)  self->getServerScript();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Script");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Script");
   }
  }
  return 1;
@@ -7777,11 +7829,11 @@ static int tolua_peak_peak_Game_getClientScript00(lua_State* tolua_S)
  {
   peak::Game* self = (peak::Game*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getClientScript'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getClientScript'", NULL);
 #endif
   {
    peak::Script* tolua_ret = (peak::Script*)  self->getClientScript();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Script");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Script");
   }
  }
  return 1;
@@ -7809,7 +7861,7 @@ static int tolua_peak_peak_Logger_get00(lua_State* tolua_S)
  {
   {
    peak::Logger* tolua_ret = (peak::Logger*)  peak::Logger::get();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Logger");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Logger");
   }
  }
  return 1;
@@ -7837,9 +7889,9 @@ static int tolua_peak_peak_Logger_delete00(lua_State* tolua_S)
  {
   peak::Logger* self = (peak::Logger*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -7870,7 +7922,7 @@ static int tolua_peak_peak_Logger_log00(lua_State* tolua_S)
   peak::ELoggingLevel level = ((peak::ELoggingLevel) (int)  tolua_tonumber(tolua_S,2,0));
   std::string msg = ((std::string)  tolua_tocppstring(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'log'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'log'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->log(level,msg);
@@ -7904,7 +7956,7 @@ static int tolua_peak_peak_Logger_setFile00(lua_State* tolua_S)
   peak::Logger* self = (peak::Logger*)  tolua_tousertype(tolua_S,1,0);
   std::string filename = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setFile'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setFile'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->setFile(filename);
@@ -7936,7 +7988,7 @@ static int tolua_peak_peak_Logger_getFile00(lua_State* tolua_S)
  {
   peak::Logger* self = (peak::Logger*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getFile'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getFile'", NULL);
 #endif
   {
    std::string tolua_ret = (std::string)  self->getFile();
@@ -7968,7 +8020,7 @@ static int tolua_peak_peak_Logger_clearFile00(lua_State* tolua_S)
  {
   peak::Logger* self = (peak::Logger*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'clearFile'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'clearFile'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->clearFile();
@@ -8002,7 +8054,7 @@ static int tolua_peak_peak_Logger_setTimestamps00(lua_State* tolua_S)
   peak::Logger* self = (peak::Logger*)  tolua_tousertype(tolua_S,1,0);
   bool enabled = ((bool)  tolua_toboolean(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setTimestamps'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setTimestamps'", NULL);
 #endif
   {
    self->setTimestamps(enabled);
@@ -8035,7 +8087,7 @@ static int tolua_peak_peak_Logger_setConsoleTimestamps00(lua_State* tolua_S)
   peak::Logger* self = (peak::Logger*)  tolua_tousertype(tolua_S,1,0);
   bool enabled = ((bool)  tolua_toboolean(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setConsoleTimestamps'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setConsoleTimestamps'", NULL);
 #endif
   {
    self->setConsoleTimestamps(enabled);
@@ -8066,7 +8118,7 @@ static int tolua_peak_peak_Logger_getConsoleTimestamps00(lua_State* tolua_S)
  {
   peak::Logger* self = (peak::Logger*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getConsoleTimestamps'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getConsoleTimestamps'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->getConsoleTimestamps();
@@ -8100,7 +8152,7 @@ static int tolua_peak_peak_Logger_setFileTimestamps00(lua_State* tolua_S)
   peak::Logger* self = (peak::Logger*)  tolua_tousertype(tolua_S,1,0);
   bool enabled = ((bool)  tolua_toboolean(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setFileTimestamps'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setFileTimestamps'", NULL);
 #endif
   {
    self->setFileTimestamps(enabled);
@@ -8131,7 +8183,7 @@ static int tolua_peak_peak_Logger_getFileTimestamps00(lua_State* tolua_S)
  {
   peak::Logger* self = (peak::Logger*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getFileTimestamps'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getFileTimestamps'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->getFileTimestamps();
@@ -8165,7 +8217,7 @@ static int tolua_peak_peak_Logger_setPrefix00(lua_State* tolua_S)
   peak::Logger* self = (peak::Logger*)  tolua_tousertype(tolua_S,1,0);
   peak::EPrefixType type = ((peak::EPrefixType) (int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPrefix'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPrefix'", NULL);
 #endif
   {
    self->setPrefix(type);
@@ -8198,7 +8250,7 @@ static int tolua_peak_peak_Logger_setConsolePrefix00(lua_State* tolua_S)
   peak::Logger* self = (peak::Logger*)  tolua_tousertype(tolua_S,1,0);
   peak::EPrefixType type = ((peak::EPrefixType) (int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setConsolePrefix'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setConsolePrefix'", NULL);
 #endif
   {
    self->setConsolePrefix(type);
@@ -8229,7 +8281,7 @@ static int tolua_peak_peak_Logger_getConsolePrefix00(lua_State* tolua_S)
  {
   peak::Logger* self = (peak::Logger*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getConsolePrefix'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getConsolePrefix'", NULL);
 #endif
   {
    peak::EPrefixType tolua_ret = (peak::EPrefixType)  self->getConsolePrefix();
@@ -8263,7 +8315,7 @@ static int tolua_peak_peak_Logger_setFilePrefix00(lua_State* tolua_S)
   peak::Logger* self = (peak::Logger*)  tolua_tousertype(tolua_S,1,0);
   peak::EPrefixType type = ((peak::EPrefixType) (int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setFilePrefix'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setFilePrefix'", NULL);
 #endif
   {
    self->setFilePrefix(type);
@@ -8294,7 +8346,7 @@ static int tolua_peak_peak_Logger_getFilePrefix00(lua_State* tolua_S)
  {
   peak::Logger* self = (peak::Logger*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getFilePrefix'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getFilePrefix'", NULL);
 #endif
   {
    peak::EPrefixType tolua_ret = (peak::EPrefixType)  self->getFilePrefix();
@@ -8328,7 +8380,7 @@ static int tolua_peak_peak_Logger_setMinimalConsoleLevel00(lua_State* tolua_S)
   peak::Logger* self = (peak::Logger*)  tolua_tousertype(tolua_S,1,0);
   peak::ELoggingLevel level = ((peak::ELoggingLevel) (int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setMinimalConsoleLevel'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setMinimalConsoleLevel'", NULL);
 #endif
   {
    self->setMinimalConsoleLevel(level);
@@ -8359,7 +8411,7 @@ static int tolua_peak_peak_Logger_getMinimalConsoleLevel00(lua_State* tolua_S)
  {
   peak::Logger* self = (peak::Logger*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getMinimalConsoleLevel'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getMinimalConsoleLevel'", NULL);
 #endif
   {
    peak::ELoggingLevel tolua_ret = (peak::ELoggingLevel)  self->getMinimalConsoleLevel();
@@ -8393,7 +8445,7 @@ static int tolua_peak_peak_Logger_setMinimalFileLevel00(lua_State* tolua_S)
   peak::Logger* self = (peak::Logger*)  tolua_tousertype(tolua_S,1,0);
   peak::ELoggingLevel level = ((peak::ELoggingLevel) (int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setMinimalFileLevel'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setMinimalFileLevel'", NULL);
 #endif
   {
    self->setMinimalFileLevel(level);
@@ -8424,7 +8476,7 @@ static int tolua_peak_peak_Logger_getMinimalFileLevel00(lua_State* tolua_S)
  {
   peak::Logger* self = (peak::Logger*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getMinimalFileLevel'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getMinimalFileLevel'", NULL);
 #endif
   {
    peak::ELoggingLevel tolua_ret = (peak::ELoggingLevel)  self->getMinimalFileLevel();
@@ -8455,8 +8507,8 @@ static int tolua_peak_peak_Event_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Event* tolua_ret = (peak::Event*)  new peak::Event();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Event");
+   peak::Event* tolua_ret = (peak::Event*)  Mtolua_new((peak::Event)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Event");
   }
  }
  return 1;
@@ -8483,8 +8535,9 @@ static int tolua_peak_peak_Event_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Event* tolua_ret = (peak::Event*)  new peak::Event();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Event");
+   peak::Event* tolua_ret = (peak::Event*)  Mtolua_new((peak::Event)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Event");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -8512,9 +8565,9 @@ static int tolua_peak_peak_Event_delete00(lua_State* tolua_S)
  {
   peak::Event* self = (peak::Event*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -8543,7 +8596,7 @@ static int tolua_peak_peak_Event_trigger00(lua_State* tolua_S)
   peak::Event* self = (peak::Event*)  tolua_tousertype(tolua_S,1,0);
   peak::EventData* data = ((peak::EventData*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'trigger'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'trigger'", NULL);
 #endif
   {
    self->trigger(data);
@@ -8574,11 +8627,11 @@ static int tolua_peak_peak_Event_getData00(lua_State* tolua_S)
  {
   peak::Event* self = (peak::Event*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getData'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getData'", NULL);
 #endif
   {
    peak::EventData* tolua_ret = (peak::EventData*)  self->getData();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::EventData");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::EventData");
   }
  }
  return 1;
@@ -8608,7 +8661,7 @@ static int tolua_peak_peak_Event_addLink00(lua_State* tolua_S)
   peak::Event* self = (peak::Event*)  tolua_tousertype(tolua_S,1,0);
   peak::Link* link = ((peak::Link*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'addLink'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'addLink'", NULL);
 #endif
   {
    self->addLink(link);
@@ -8641,7 +8694,7 @@ static int tolua_peak_peak_Event_removeLink00(lua_State* tolua_S)
   peak::Event* self = (peak::Event*)  tolua_tousertype(tolua_S,1,0);
   peak::Link* link = ((peak::Link*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'removeLink'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'removeLink'", NULL);
 #endif
   {
    self->removeLink(link);
@@ -8672,7 +8725,7 @@ static int tolua_peak_peak_InputManager_get00(lua_State* tolua_S)
  {
   {
    peak::InputManager* tolua_ret = (peak::InputManager*)  peak::InputManager::get();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::InputManager");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::InputManager");
   }
  }
  return 1;
@@ -8700,7 +8753,7 @@ static int tolua_peak_peak_InputManager_init00(lua_State* tolua_S)
  {
   peak::InputManager* self = (peak::InputManager*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->init();
@@ -8732,7 +8785,7 @@ static int tolua_peak_peak_InputManager_shutdown00(lua_State* tolua_S)
  {
   peak::InputManager* self = (peak::InputManager*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'shutdown'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'shutdown'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->shutdown();
@@ -8768,7 +8821,7 @@ static int tolua_peak_peak_InputManager_keyboardEvent00(lua_State* tolua_S)
   peak::Keycode code = ((peak::Keycode) (int)  tolua_tonumber(tolua_S,2,0));
   bool pressed = ((bool)  tolua_toboolean(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'keyboardEvent'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'keyboardEvent'", NULL);
 #endif
   {
    self->keyboardEvent(code,pressed);
@@ -8803,7 +8856,7 @@ static int tolua_peak_peak_InputManager_mouseMoved00(lua_State* tolua_S)
   float x = ((float)  tolua_tonumber(tolua_S,2,0));
   float y = ((float)  tolua_tonumber(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'mouseMoved'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'mouseMoved'", NULL);
 #endif
   {
    self->mouseMoved(x,y);
@@ -8836,7 +8889,7 @@ static int tolua_peak_peak_InputManager_setInputEnabled00(lua_State* tolua_S)
   peak::InputManager* self = (peak::InputManager*)  tolua_tousertype(tolua_S,1,0);
   bool enabled = ((bool)  tolua_toboolean(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setInputEnabled'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setInputEnabled'", NULL);
 #endif
   {
    self->setInputEnabled(enabled);
@@ -8867,7 +8920,7 @@ static int tolua_peak_peak_InputManager_getInputEnabled00(lua_State* tolua_S)
  {
   peak::InputManager* self = (peak::InputManager*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getInputEnabled'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getInputEnabled'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->getInputEnabled();
@@ -8901,7 +8954,7 @@ static int tolua_peak_peak_InputManager_doWork00(lua_State* tolua_S)
   peak::InputManager* self = (peak::InputManager*)  tolua_tousertype(tolua_S,1,0);
   float msecs = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'doWork'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'doWork'", NULL);
 #endif
   {
    self->doWork(msecs);
@@ -8966,8 +9019,8 @@ static int tolua_peak_peak_File_new00(lua_State* tolua_S)
   peak::EFileMode mode = ((peak::EFileMode) (int)  tolua_tonumber(tolua_S,3,0));
   bool binary = ((bool)  tolua_toboolean(tolua_S,4,false));
   {
-   peak::File* tolua_ret = (peak::File*)  new peak::File(filename,mode,binary);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::File");
+   peak::File* tolua_ret = (peak::File*)  Mtolua_new((peak::File)(filename,mode,binary));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::File");
   }
  }
  return 1;
@@ -9000,8 +9053,9 @@ static int tolua_peak_peak_File_new00_local(lua_State* tolua_S)
   peak::EFileMode mode = ((peak::EFileMode) (int)  tolua_tonumber(tolua_S,3,0));
   bool binary = ((bool)  tolua_toboolean(tolua_S,4,false));
   {
-   peak::File* tolua_ret = (peak::File*)  new peak::File(filename,mode,binary);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::File");
+   peak::File* tolua_ret = (peak::File*)  Mtolua_new((peak::File)(filename,mode,binary));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::File");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -9029,9 +9083,9 @@ static int tolua_peak_peak_File_delete00(lua_State* tolua_S)
  {
   peak::File* self = (peak::File*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -9062,7 +9116,7 @@ static int tolua_peak_peak_File_read00(lua_State* tolua_S)
   char* buffer = ((char*)  tolua_tostring(tolua_S,2,0));
   int length = ((int)  tolua_tonumber(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'read'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'read'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->read(buffer,length);
@@ -9096,7 +9150,7 @@ static int tolua_peak_peak_File_read01(lua_State* tolua_S)
   peak::Buffer* buffer = ((peak::Buffer*)  tolua_tousertype(tolua_S,2,0));
   int length = ((int)  tolua_tonumber(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'read'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'read'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->read(buffer,length);
@@ -9125,7 +9179,7 @@ static int tolua_peak_peak_File_readLine00(lua_State* tolua_S)
  {
   peak::File* self = (peak::File*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'readLine'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'readLine'", NULL);
 #endif
   {
    std::string tolua_ret = (std::string)  self->readLine();
@@ -9161,7 +9215,7 @@ static int tolua_peak_peak_File_write00(lua_State* tolua_S)
   const char* buffer = ((const char*)  tolua_tostring(tolua_S,2,0));
   int length = ((int)  tolua_tonumber(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'write'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'write'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->write(buffer,length);
@@ -9195,7 +9249,7 @@ static int tolua_peak_peak_File_write01(lua_State* tolua_S)
   peak::Buffer* buffer = ((peak::Buffer*)  tolua_tousertype(tolua_S,2,0));
   int length = ((int)  tolua_tonumber(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'write'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'write'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->write(buffer,length);
@@ -9224,7 +9278,7 @@ static int tolua_peak_peak_File_eof00(lua_State* tolua_S)
  {
   peak::File* self = (peak::File*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'eof'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'eof'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->eof();
@@ -9256,7 +9310,7 @@ static int tolua_peak_peak_File_getPosition00(lua_State* tolua_S)
  {
   peak::File* self = (peak::File*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPosition'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPosition'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->getPosition();
@@ -9292,7 +9346,7 @@ static int tolua_peak_peak_File_setPosition00(lua_State* tolua_S)
   int pos = ((int)  tolua_tonumber(tolua_S,2,0));
   bool end = ((bool)  tolua_toboolean(tolua_S,3,false));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPosition'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPosition'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->setPosition(pos,end);
@@ -9326,7 +9380,7 @@ static int tolua_peak_peak_File_movePosition00(lua_State* tolua_S)
   peak::File* self = (peak::File*)  tolua_tousertype(tolua_S,1,0);
   int pos = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'movePosition'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'movePosition'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->movePosition(pos);
@@ -9358,7 +9412,7 @@ static int tolua_peak_peak_FileSystem_get00(lua_State* tolua_S)
  {
   {
    peak::FileSystem* tolua_ret = (peak::FileSystem*)  peak::FileSystem::get();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::FileSystem");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::FileSystem");
   }
  }
  return 1;
@@ -9386,9 +9440,9 @@ static int tolua_peak_peak_FileSystem_delete00(lua_State* tolua_S)
  {
   peak::FileSystem* self = (peak::FileSystem*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -9415,7 +9469,7 @@ static int tolua_peak_peak_FileSystem_init00(lua_State* tolua_S)
  {
   peak::FileSystem* self = (peak::FileSystem*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->init();
@@ -9447,7 +9501,7 @@ static int tolua_peak_peak_FileSystem_shutdown00(lua_State* tolua_S)
  {
   peak::FileSystem* self = (peak::FileSystem*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'shutdown'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'shutdown'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->shutdown();
@@ -9481,7 +9535,7 @@ static int tolua_peak_peak_FileSystem_setRoot00(lua_State* tolua_S)
   peak::FileSystem* self = (peak::FileSystem*)  tolua_tousertype(tolua_S,1,0);
   std::string path = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setRoot'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setRoot'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->setRoot(path);
@@ -9515,7 +9569,7 @@ static int tolua_peak_peak_FileSystem_addOverlay00(lua_State* tolua_S)
   peak::FileSystem* self = (peak::FileSystem*)  tolua_tousertype(tolua_S,1,0);
   std::string path = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'addOverlay'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'addOverlay'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->addOverlay(path);
@@ -9553,11 +9607,11 @@ static int tolua_peak_peak_FileSystem_openFile00(lua_State* tolua_S)
   peak::EFileMode mode = ((peak::EFileMode) (int)  tolua_tonumber(tolua_S,3,0));
   bool binary = ((bool)  tolua_toboolean(tolua_S,4,false));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'openFile'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'openFile'", NULL);
 #endif
   {
    peak::File* tolua_ret = (peak::File*)  self->openFile(path,mode,binary);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::File");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::File");
   }
  }
  return 1;
@@ -9587,7 +9641,7 @@ static int tolua_peak_peak_FileSystem_getFileExists00(lua_State* tolua_S)
   peak::FileSystem* self = (peak::FileSystem*)  tolua_tousertype(tolua_S,1,0);
   std::string path = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getFileExists'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getFileExists'", NULL);
 #endif
   {
    std::string tolua_ret = (std::string)  self->getFileExists(path);
@@ -9625,17 +9679,19 @@ static int tolua_peak_peak_FileSystem_listFiles00(lua_State* tolua_S)
   std::string extension = ((std::string)  tolua_tocppstring(tolua_S,3,""));
   bool recursive = ((bool)  tolua_toboolean(tolua_S,4,false));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'listFiles'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'listFiles'", NULL);
 #endif
   {
    std::vector<std::string> tolua_ret = (std::vector<std::string>)  self->listFiles(directory,extension,recursive);
    {
 #ifdef __cplusplus
-    void* tolua_obj = new std::vector<std::string>(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"std::vector<std::string>");
+    void* tolua_obj = Mtolua_new((std::vector<std::string>)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"std::vector<std::string>");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(std::vector<std::string>));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"std::vector<std::string>");
+     tolua_pushusertype(tolua_S,tolua_obj,"std::vector<std::string>");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -9664,8 +9720,8 @@ static int tolua_peak_peak_Timer_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Timer* tolua_ret = (peak::Timer*)  new peak::Timer();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Timer");
+   peak::Timer* tolua_ret = (peak::Timer*)  Mtolua_new((peak::Timer)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Timer");
   }
  }
  return 1;
@@ -9692,8 +9748,9 @@ static int tolua_peak_peak_Timer_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Timer* tolua_ret = (peak::Timer*)  new peak::Timer();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Timer");
+   peak::Timer* tolua_ret = (peak::Timer*)  Mtolua_new((peak::Timer)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Timer");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -9721,9 +9778,9 @@ static int tolua_peak_peak_Timer_delete00(lua_State* tolua_S)
  {
   peak::Timer* self = (peak::Timer*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -9750,7 +9807,7 @@ static int tolua_peak_peak_Timer_start00(lua_State* tolua_S)
  {
   peak::Timer* self = (peak::Timer*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'start'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'start'", NULL);
 #endif
   {
    self->start();
@@ -9781,7 +9838,7 @@ static int tolua_peak_peak_Timer_stop00(lua_State* tolua_S)
  {
   peak::Timer* self = (peak::Timer*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'stop'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'stop'", NULL);
 #endif
   {
    self->stop();
@@ -9812,7 +9869,7 @@ static int tolua_peak_peak_Timer_reset00(lua_State* tolua_S)
  {
   peak::Timer* self = (peak::Timer*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'reset'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'reset'", NULL);
 #endif
   {
    self->reset();
@@ -9845,7 +9902,7 @@ static int tolua_peak_peak_Timer_setTime00(lua_State* tolua_S)
   peak::Timer* self = (peak::Timer*)  tolua_tousertype(tolua_S,1,0);
   float time = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setTime'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setTime'", NULL);
 #endif
   {
    self->setTime(time);
@@ -9876,7 +9933,7 @@ static int tolua_peak_peak_Timer_getTime00(lua_State* tolua_S)
  {
   peak::Timer* self = (peak::Timer*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getTime'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getTime'", NULL);
 #endif
   {
    float tolua_ret = (float)  self->getTime();
@@ -9914,7 +9971,7 @@ static int tolua_peak_peak_Timer_addCallback00(lua_State* tolua_S)
   peak::Script* script = ((peak::Script*)  tolua_tousertype(tolua_S,3,0));
   std::string function = ((std::string)  tolua_tocppstring(tolua_S,4,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'addCallback'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'addCallback'", NULL);
 #endif
   {
    self->addCallback(time,script,function);
@@ -9964,7 +10021,7 @@ static int tolua_get_peak__TimerCallback_timer_ptr(lua_State* tolua_S)
 #ifndef TOLUA_RELEASE
   if (!self) tolua_error(tolua_S,"invalid 'self' in accessing variable 'timer'",NULL);
 #endif
-  tolua_pushusertype(tolua_S,(void*)self->timer,"peak::Timer");
+   tolua_pushusertype(tolua_S,(void*)self->timer,"peak::Timer");
  return 1;
 }
 #endif //#ifndef TOLUA_DISABLE
@@ -10024,7 +10081,7 @@ static int tolua_get_peak__TimerCallback_script_ptr(lua_State* tolua_S)
 #ifndef TOLUA_RELEASE
   if (!self) tolua_error(tolua_S,"invalid 'self' in accessing variable 'script'",NULL);
 #endif
-  tolua_pushusertype(tolua_S,(void*)self->script,"peak::Script");
+   tolua_pushusertype(tolua_S,(void*)self->script,"peak::Script");
  return 1;
 }
 #endif //#ifndef TOLUA_DISABLE
@@ -10252,11 +10309,13 @@ static int tolua_peak_peak_toVector3D00(lua_State* tolua_S)
    peak::Vector3D tolua_ret = (peak::Vector3D)  peak::toVector3D(str);
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -10289,11 +10348,13 @@ static int tolua_peak_peak_toVector2D00(lua_State* tolua_S)
    peak::Vector2D tolua_ret = (peak::Vector2D)  peak::toVector2D(str);
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector2D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2D");
+    void* tolua_obj = Mtolua_new((peak::Vector2D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector2D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -10326,11 +10387,13 @@ static int tolua_peak_peak_toVector2DI00(lua_State* tolua_S)
    peak::Vector2DI tolua_ret = (peak::Vector2DI)  peak::toVector2DI(str);
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector2DI(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2DI");
+    void* tolua_obj = Mtolua_new((peak::Vector2DI)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2DI");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector2DI));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2DI");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2DI");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -10456,7 +10519,7 @@ static int tolua_peak_peak_toString03(lua_State* tolua_S)
 {
  tolua_Error tolua_err;
  if (
-     !tolua_isusertype(tolua_S,1,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,1,&tolua_err) || !tolua_isusertype(tolua_S,1,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,2,&tolua_err)
  )
   goto tolua_lerror;
@@ -10480,7 +10543,7 @@ static int tolua_peak_peak_toString04(lua_State* tolua_S)
 {
  tolua_Error tolua_err;
  if (
-     !tolua_isusertype(tolua_S,1,"peak::Vector2D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,1,&tolua_err) || !tolua_isusertype(tolua_S,1,"peak::Vector2D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,2,&tolua_err)
  )
   goto tolua_lerror;
@@ -10504,7 +10567,7 @@ static int tolua_peak_peak_toString05(lua_State* tolua_S)
 {
  tolua_Error tolua_err;
  if (
-     !tolua_isusertype(tolua_S,1,"peak::Vector2DI",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,1,&tolua_err) || !tolua_isusertype(tolua_S,1,"peak::Vector2DI",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,2,&tolua_err)
  )
   goto tolua_lerror;
@@ -10541,11 +10604,13 @@ static int tolua_peak_peak_toWString00(lua_State* tolua_S)
    std::wstring tolua_ret = (std::wstring)  peak::toWString(s);
    {
 #ifdef __cplusplus
-    void* tolua_obj = new std::wstring(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"std::wstring");
+    void* tolua_obj = Mtolua_new((std::wstring)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"std::wstring");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(std::wstring));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"std::wstring");
+     tolua_pushusertype(tolua_S,tolua_obj,"std::wstring");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -10684,7 +10749,7 @@ static int tolua_peak_peak_correct00(lua_State* tolua_S)
 #ifndef TOLUA_RELEASE
  tolua_Error tolua_err;
  if (
-     !tolua_isusertype(tolua_S,1,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,1,&tolua_err) || !tolua_isusertype(tolua_S,1,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,2,&tolua_err)
  )
   goto tolua_lerror;
@@ -10722,8 +10787,8 @@ static int tolua_peak_peak_SceneNode_new00(lua_State* tolua_S)
  {
   peak::SceneNode* parent = ((peak::SceneNode*)  tolua_tousertype(tolua_S,2,0));
   {
-   peak::SceneNode* tolua_ret = (peak::SceneNode*)  new peak::SceneNode(parent);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::SceneNode");
+   peak::SceneNode* tolua_ret = (peak::SceneNode*)  Mtolua_new((peak::SceneNode)(parent));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::SceneNode");
   }
  }
  return 1;
@@ -10752,8 +10817,9 @@ static int tolua_peak_peak_SceneNode_new00_local(lua_State* tolua_S)
  {
   peak::SceneNode* parent = ((peak::SceneNode*)  tolua_tousertype(tolua_S,2,0));
   {
-   peak::SceneNode* tolua_ret = (peak::SceneNode*)  new peak::SceneNode(parent);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::SceneNode");
+   peak::SceneNode* tolua_ret = (peak::SceneNode*)  Mtolua_new((peak::SceneNode)(parent));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::SceneNode");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -10781,9 +10847,9 @@ static int tolua_peak_peak_SceneNode_delete00(lua_State* tolua_S)
  {
   peak::SceneNode* self = (peak::SceneNode*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -10816,7 +10882,7 @@ static int tolua_peak_peak_SceneNode_setPosition00(lua_State* tolua_S)
   float y = ((float)  tolua_tonumber(tolua_S,3,0));
   float z = ((float)  tolua_tonumber(tolua_S,4,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPosition'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPosition'", NULL);
 #endif
   {
    self->setPosition(x,y,z);
@@ -10853,7 +10919,7 @@ static int tolua_peak_peak_SceneNode_setRotation00(lua_State* tolua_S)
   float y = ((float)  tolua_tonumber(tolua_S,3,0));
   float z = ((float)  tolua_tonumber(tolua_S,4,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setRotation'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setRotation'", NULL);
 #endif
   {
    self->setRotation(x,y,z);
@@ -10890,7 +10956,7 @@ static int tolua_peak_peak_SceneNode_setRotation01(lua_State* tolua_S)
   float y = ((float)  tolua_tonumber(tolua_S,4,0));
   float z = ((float)  tolua_tonumber(tolua_S,5,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setRotation'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setRotation'", NULL);
 #endif
   {
    self->setRotation(w,x,y,z);
@@ -10909,7 +10975,7 @@ static int tolua_peak_peak_SceneNode_setPosition01(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::SceneNode",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -10918,7 +10984,7 @@ static int tolua_peak_peak_SceneNode_setPosition01(lua_State* tolua_S)
   peak::SceneNode* self = (peak::SceneNode*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector3D newpos = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPosition'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPosition'", NULL);
 #endif
   {
    self->setPosition(newpos);
@@ -10937,7 +11003,7 @@ static int tolua_peak_peak_SceneNode_setRotation02(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::SceneNode",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -10946,7 +11012,7 @@ static int tolua_peak_peak_SceneNode_setRotation02(lua_State* tolua_S)
   peak::SceneNode* self = (peak::SceneNode*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector3D newrot = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setRotation'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setRotation'", NULL);
 #endif
   {
    self->setRotation(newrot);
@@ -10965,7 +11031,7 @@ static int tolua_peak_peak_SceneNode_setRotation03(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::SceneNode",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Quaternion",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Quaternion",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -10974,7 +11040,7 @@ static int tolua_peak_peak_SceneNode_setRotation03(lua_State* tolua_S)
   peak::SceneNode* self = (peak::SceneNode*)  tolua_tousertype(tolua_S,1,0);
   peak::Quaternion newrot = *((peak::Quaternion*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setRotation'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setRotation'", NULL);
 #endif
   {
    self->setRotation(newrot);
@@ -11002,17 +11068,19 @@ static int tolua_peak_peak_SceneNode_getPosition00(lua_State* tolua_S)
  {
   peak::SceneNode* self = (peak::SceneNode*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPosition'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPosition'", NULL);
 #endif
   {
    peak::Vector3D tolua_ret = (peak::Vector3D)  self->getPosition();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -11042,17 +11110,19 @@ static int tolua_peak_peak_SceneNode_getRotationEuler00(lua_State* tolua_S)
  {
   peak::SceneNode* self = (peak::SceneNode*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getRotationEuler'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getRotationEuler'", NULL);
 #endif
   {
    peak::Vector3D tolua_ret = (peak::Vector3D)  self->getRotationEuler();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -11082,17 +11152,19 @@ static int tolua_peak_peak_SceneNode_getRotation00(lua_State* tolua_S)
  {
   peak::SceneNode* self = (peak::SceneNode*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getRotation'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getRotation'", NULL);
 #endif
   {
    peak::Quaternion tolua_ret = (peak::Quaternion)  self->getRotation();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Quaternion(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Quaternion");
+    void* tolua_obj = Mtolua_new((peak::Quaternion)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Quaternion");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Quaternion));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Quaternion");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Quaternion");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -11114,7 +11186,7 @@ static int tolua_peak_peak_SceneNode_setScale00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::SceneNode",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -11124,7 +11196,7 @@ static int tolua_peak_peak_SceneNode_setScale00(lua_State* tolua_S)
   peak::SceneNode* self = (peak::SceneNode*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector3D newscale = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setScale'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setScale'", NULL);
 #endif
   {
    self->setScale(newscale);
@@ -11157,7 +11229,7 @@ static int tolua_peak_peak_SceneNode_setParent00(lua_State* tolua_S)
   peak::SceneNode* self = (peak::SceneNode*)  tolua_tousertype(tolua_S,1,0);
   peak::SceneNode* newparent = ((peak::SceneNode*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setParent'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setParent'", NULL);
 #endif
   {
    self->setParent(newparent);
@@ -11188,11 +11260,11 @@ static int tolua_peak_peak_SceneNode_getParent00(lua_State* tolua_S)
  {
   peak::SceneNode* self = (peak::SceneNode*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getParent'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getParent'", NULL);
 #endif
   {
    peak::SceneNode* tolua_ret = (peak::SceneNode*)  self->getParent();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::SceneNode");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::SceneNode");
   }
  }
  return 1;
@@ -11222,7 +11294,7 @@ static int tolua_peak_peak_SceneNode_setVisible00(lua_State* tolua_S)
   peak::SceneNode* self = (peak::SceneNode*)  tolua_tousertype(tolua_S,1,0);
   bool flag = ((bool)  tolua_toboolean(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setVisible'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setVisible'", NULL);
 #endif
   {
    self->setVisible(flag);
@@ -11253,7 +11325,7 @@ static int tolua_peak_peak_SceneNode_isVisible00(lua_State* tolua_S)
  {
   peak::SceneNode* self = (peak::SceneNode*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isVisible'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isVisible'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->isVisible();
@@ -11277,8 +11349,8 @@ static int tolua_peak_peak_SceneNode_getBoundingBox00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::SceneNode",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,3,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
+     (tolua_isvaluenil(tolua_S,3,&tolua_err) || !tolua_isusertype(tolua_S,3,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,4,&tolua_err)
  )
   goto tolua_lerror;
@@ -11289,7 +11361,7 @@ static int tolua_peak_peak_SceneNode_getBoundingBox00(lua_State* tolua_S)
   peak::Vector3D* min = ((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
   peak::Vector3D* max = ((peak::Vector3D*)  tolua_tousertype(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getBoundingBox'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getBoundingBox'", NULL);
 #endif
   {
    self->getBoundingBox(*min,*max);
@@ -11319,8 +11391,8 @@ static int tolua_peak_peak_Shape_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Shape* tolua_ret = (peak::Shape*)  new peak::Shape();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Shape");
+   peak::Shape* tolua_ret = (peak::Shape*)  Mtolua_new((peak::Shape)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Shape");
   }
  }
  return 1;
@@ -11347,8 +11419,9 @@ static int tolua_peak_peak_Shape_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Shape* tolua_ret = (peak::Shape*)  new peak::Shape();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Shape");
+   peak::Shape* tolua_ret = (peak::Shape*)  Mtolua_new((peak::Shape)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Shape");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -11376,9 +11449,9 @@ static int tolua_peak_peak_Shape_delete00(lua_State* tolua_S)
  {
   peak::Shape* self = (peak::Shape*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -11405,7 +11478,7 @@ static int tolua_peak_peak_Shape_destroy00(lua_State* tolua_S)
  {
   peak::Shape* self = (peak::Shape*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->destroy();
@@ -11437,7 +11510,7 @@ static int tolua_peak_peak_Shape_getMass00(lua_State* tolua_S)
  {
   peak::Shape* self = (peak::Shape*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getMass'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getMass'", NULL);
 #endif
   {
    float tolua_ret = (float)  self->getMass();
@@ -11469,17 +11542,19 @@ static int tolua_peak_peak_Shape_getInertia00(lua_State* tolua_S)
  {
   peak::Shape* self = (peak::Shape*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getInertia'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getInertia'", NULL);
 #endif
   {
    peak::Vector3D tolua_ret = (peak::Vector3D)  self->getInertia();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -11502,7 +11577,7 @@ static int tolua_peak_peak_Shape_getBoundingSphere00(lua_State* tolua_S)
  if (
      !tolua_isusertype(tolua_S,1,"peak::Shape",0,&tolua_err) ||
      !tolua_isnumber(tolua_S,2,0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,3,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,3,&tolua_err) || !tolua_isusertype(tolua_S,3,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,4,&tolua_err)
  )
   goto tolua_lerror;
@@ -11513,7 +11588,7 @@ static int tolua_peak_peak_Shape_getBoundingSphere00(lua_State* tolua_S)
   float radius = ((float)  tolua_tonumber(tolua_S,2,0));
   peak::Vector3D* center = ((peak::Vector3D*)  tolua_tousertype(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getBoundingSphere'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getBoundingSphere'", NULL);
 #endif
   {
    self->getBoundingSphere(radius,*center);
@@ -11544,8 +11619,8 @@ static int tolua_peak_peak_Body_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Body* tolua_ret = (peak::Body*)  new peak::Body();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Body");
+   peak::Body* tolua_ret = (peak::Body*)  Mtolua_new((peak::Body)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Body");
   }
  }
  return 1;
@@ -11572,8 +11647,9 @@ static int tolua_peak_peak_Body_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Body* tolua_ret = (peak::Body*)  new peak::Body();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Body");
+   peak::Body* tolua_ret = (peak::Body*)  Mtolua_new((peak::Body)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Body");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -11601,9 +11677,9 @@ static int tolua_peak_peak_Body_delete00(lua_State* tolua_S)
  {
   peak::Body* self = (peak::Body*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -11636,7 +11712,7 @@ static int tolua_peak_peak_Body_create00(lua_State* tolua_S)
   peak::Shape* shape = ((peak::Shape*)  tolua_tousertype(tolua_S,3,0));
   bool autodeactivation = ((bool)  tolua_toboolean(tolua_S,4,true));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->create(world,shape,autodeactivation);
@@ -11668,7 +11744,7 @@ static int tolua_peak_peak_Body_destroy00(lua_State* tolua_S)
  {
   peak::Body* self = (peak::Body*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->destroy();
@@ -11692,7 +11768,7 @@ static int tolua_peak_peak_Body_setPosition00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Body",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -11702,7 +11778,7 @@ static int tolua_peak_peak_Body_setPosition00(lua_State* tolua_S)
   peak::Body* self = (peak::Body*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector3D position = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPosition'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPosition'", NULL);
 #endif
   {
    self->setPosition(position);
@@ -11733,17 +11809,19 @@ static int tolua_peak_peak_Body_getPosition00(lua_State* tolua_S)
  {
   peak::Body* self = (peak::Body*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPosition'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPosition'", NULL);
 #endif
   {
    peak::Vector3D tolua_ret = (peak::Vector3D)  self->getPosition();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -11765,7 +11843,7 @@ static int tolua_peak_peak_Body_setRotation00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Body",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Quaternion",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Quaternion",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -11775,7 +11853,7 @@ static int tolua_peak_peak_Body_setRotation00(lua_State* tolua_S)
   peak::Body* self = (peak::Body*)  tolua_tousertype(tolua_S,1,0);
   peak::Quaternion rotation = *((peak::Quaternion*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setRotation'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setRotation'", NULL);
 #endif
   {
    self->setRotation(rotation);
@@ -11806,17 +11884,19 @@ static int tolua_peak_peak_Body_getRotation00(lua_State* tolua_S)
  {
   peak::Body* self = (peak::Body*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getRotation'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getRotation'", NULL);
 #endif
   {
    peak::Quaternion tolua_ret = (peak::Quaternion)  self->getRotation();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Quaternion(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Quaternion");
+    void* tolua_obj = Mtolua_new((peak::Quaternion)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Quaternion");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Quaternion));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Quaternion");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Quaternion");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -11838,7 +11918,7 @@ static int tolua_peak_peak_Body_setForce00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Body",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -11848,7 +11928,7 @@ static int tolua_peak_peak_Body_setForce00(lua_State* tolua_S)
   peak::Body* self = (peak::Body*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector3D force = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setForce'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setForce'", NULL);
 #endif
   {
    self->setForce(force);
@@ -11870,8 +11950,8 @@ static int tolua_peak_peak_Body_setForce01(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Body",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,3,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
+     (tolua_isvaluenil(tolua_S,3,&tolua_err) || !tolua_isusertype(tolua_S,3,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,4,&tolua_err)
  )
   goto tolua_lerror;
@@ -11881,7 +11961,7 @@ static int tolua_peak_peak_Body_setForce01(lua_State* tolua_S)
   peak::Vector3D force = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
   peak::Vector3D relativeposition = *((peak::Vector3D*)  tolua_tousertype(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setForce'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setForce'", NULL);
 #endif
   {
    self->setForce(force,relativeposition);
@@ -11909,7 +11989,7 @@ static int tolua_peak_peak_Body_clearForces00(lua_State* tolua_S)
  {
   peak::Body* self = (peak::Body*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'clearForces'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'clearForces'", NULL);
 #endif
   {
    self->clearForces();
@@ -11932,7 +12012,7 @@ static int tolua_peak_peak_Body_setLinearVelocity00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Body",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -11942,7 +12022,7 @@ static int tolua_peak_peak_Body_setLinearVelocity00(lua_State* tolua_S)
   peak::Body* self = (peak::Body*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector3D linearvel = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setLinearVelocity'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setLinearVelocity'", NULL);
 #endif
   {
    self->setLinearVelocity(linearvel);
@@ -11973,17 +12053,19 @@ static int tolua_peak_peak_Body_getLinearVelocity00(lua_State* tolua_S)
  {
   peak::Body* self = (peak::Body*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getLinearVelocity'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getLinearVelocity'", NULL);
 #endif
   {
    peak::Vector3D tolua_ret = (peak::Vector3D)  self->getLinearVelocity();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -12005,7 +12087,7 @@ static int tolua_peak_peak_Body_setAngularVelocity00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Body",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -12015,7 +12097,7 @@ static int tolua_peak_peak_Body_setAngularVelocity00(lua_State* tolua_S)
   peak::Body* self = (peak::Body*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector3D angularvel = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setAngularVelocity'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setAngularVelocity'", NULL);
 #endif
   {
    self->setAngularVelocity(angularvel);
@@ -12046,17 +12128,19 @@ static int tolua_peak_peak_Body_getAngularVelocity00(lua_State* tolua_S)
  {
   peak::Body* self = (peak::Body*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getAngularVelocity'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getAngularVelocity'", NULL);
 #endif
   {
    peak::Vector3D tolua_ret = (peak::Vector3D)  self->getAngularVelocity();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -12086,7 +12170,7 @@ static int tolua_peak_peak_Body_setGravity00(lua_State* tolua_S)
  {
   peak::Body* self = (peak::Body*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setGravity'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setGravity'", NULL);
 #endif
   {
    self->setGravity();
@@ -12108,7 +12192,7 @@ static int tolua_peak_peak_Body_setGravity01(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Body",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -12117,7 +12201,7 @@ static int tolua_peak_peak_Body_setGravity01(lua_State* tolua_S)
   peak::Body* self = (peak::Body*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector3D gravity = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setGravity'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setGravity'", NULL);
 #endif
   {
    self->setGravity(gravity);
@@ -12145,17 +12229,19 @@ static int tolua_peak_peak_Body_getGravity00(lua_State* tolua_S)
  {
   peak::Body* self = (peak::Body*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getGravity'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getGravity'", NULL);
 #endif
   {
    peak::Vector3D tolua_ret = (peak::Vector3D)  self->getGravity();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -12187,7 +12273,7 @@ static int tolua_peak_peak_Body_setID00(lua_State* tolua_S)
   peak::Body* self = (peak::Body*)  tolua_tousertype(tolua_S,1,0);
   int id = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setID'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setID'", NULL);
 #endif
   {
    self->setID(id);
@@ -12218,7 +12304,7 @@ static int tolua_peak_peak_Body_getID00(lua_State* tolua_S)
  {
   peak::Body* self = (peak::Body*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getID'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getID'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->getID();
@@ -12250,11 +12336,11 @@ static int tolua_peak_peak_Body_getCollisionBody00(lua_State* tolua_S)
  {
   peak::Body* self = (peak::Body*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getCollisionBody'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getCollisionBody'", NULL);
 #endif
   {
    peak::Body* tolua_ret = (peak::Body*)  self->getCollisionBody();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Body");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Body");
   }
  }
  return 1;
@@ -12284,7 +12370,7 @@ static int tolua_peak_peak_Body_setEntity00(lua_State* tolua_S)
   peak::Body* self = (peak::Body*)  tolua_tousertype(tolua_S,1,0);
   peak::Entity* entity = ((peak::Entity*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setEntity'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setEntity'", NULL);
 #endif
   {
    self->setEntity(entity);
@@ -12315,11 +12401,11 @@ static int tolua_peak_peak_Body_getEntity00(lua_State* tolua_S)
  {
   peak::Body* self = (peak::Body*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getEntity'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getEntity'", NULL);
 #endif
   {
    peak::Entity* tolua_ret = (peak::Entity*)  self->getEntity();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Entity");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Entity");
   }
  }
  return 1;
@@ -12347,11 +12433,11 @@ static int tolua_peak_peak_Body_getShape00(lua_State* tolua_S)
  {
   peak::Body* self = (peak::Body*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getShape'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getShape'", NULL);
 #endif
   {
    peak::Shape* tolua_ret = (peak::Shape*)  self->getShape();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Shape");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Shape");
   }
  }
  return 1;
@@ -12378,8 +12464,8 @@ static int tolua_peak_peak_Terrain_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Terrain* tolua_ret = (peak::Terrain*)  new peak::Terrain();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Terrain");
+   peak::Terrain* tolua_ret = (peak::Terrain*)  Mtolua_new((peak::Terrain)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Terrain");
   }
  }
  return 1;
@@ -12406,8 +12492,9 @@ static int tolua_peak_peak_Terrain_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Terrain* tolua_ret = (peak::Terrain*)  new peak::Terrain();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Terrain");
+   peak::Terrain* tolua_ret = (peak::Terrain*)  Mtolua_new((peak::Terrain)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Terrain");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -12435,9 +12522,9 @@ static int tolua_peak_peak_Terrain_delete00(lua_State* tolua_S)
  {
   peak::Terrain* self = (peak::Terrain*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -12478,7 +12565,7 @@ static int tolua_peak_peak_Terrain_create00(lua_State* tolua_S)
   std::string detail2 = ((std::string)  tolua_tocppstring(tolua_S,7,0));
   std::string detail3 = ((std::string)  tolua_tocppstring(tolua_S,8,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->create(heightmap,physics,colormap,detail0,detail1,detail2,detail3);
@@ -12510,7 +12597,7 @@ static int tolua_peak_peak_Terrain_destroy00(lua_State* tolua_S)
  {
   peak::Terrain* self = (peak::Terrain*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->destroy();
@@ -12545,8 +12632,8 @@ static int tolua_peak_peak_ShapeData_new00(lua_State* tolua_S)
   peak::Body* body = ((peak::Body*)  tolua_tousertype(tolua_S,2,0));
   peak::Shape* shape = ((peak::Shape*)  tolua_tousertype(tolua_S,3,0));
   {
-   peak::ShapeData* tolua_ret = (peak::ShapeData*)  new peak::ShapeData(body,shape);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::ShapeData");
+   peak::ShapeData* tolua_ret = (peak::ShapeData*)  Mtolua_new((peak::ShapeData)(body,shape));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::ShapeData");
   }
  }
  return 1;
@@ -12577,8 +12664,9 @@ static int tolua_peak_peak_ShapeData_new00_local(lua_State* tolua_S)
   peak::Body* body = ((peak::Body*)  tolua_tousertype(tolua_S,2,0));
   peak::Shape* shape = ((peak::Shape*)  tolua_tousertype(tolua_S,3,0));
   {
-   peak::ShapeData* tolua_ret = (peak::ShapeData*)  new peak::ShapeData(body,shape);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::ShapeData");
+   peak::ShapeData* tolua_ret = (peak::ShapeData*)  Mtolua_new((peak::ShapeData)(body,shape));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::ShapeData");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -12598,7 +12686,7 @@ static int tolua_get_peak__ShapeData_body_ptr(lua_State* tolua_S)
 #ifndef TOLUA_RELEASE
   if (!self) tolua_error(tolua_S,"invalid 'self' in accessing variable 'body'",NULL);
 #endif
-  tolua_pushusertype(tolua_S,(void*)self->body,"peak::Body");
+   tolua_pushusertype(tolua_S,(void*)self->body,"peak::Body");
  return 1;
 }
 #endif //#ifndef TOLUA_DISABLE
@@ -12628,7 +12716,7 @@ static int tolua_get_peak__ShapeData_shape_ptr(lua_State* tolua_S)
 #ifndef TOLUA_RELEASE
   if (!self) tolua_error(tolua_S,"invalid 'self' in accessing variable 'shape'",NULL);
 #endif
-  tolua_pushusertype(tolua_S,(void*)self->shape,"peak::Shape");
+   tolua_pushusertype(tolua_S,(void*)self->shape,"peak::Shape");
  return 1;
 }
 #endif //#ifndef TOLUA_DISABLE
@@ -12665,8 +12753,8 @@ static int tolua_peak_peak_PointGroup_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::PointGroup* tolua_ret = (peak::PointGroup*)  new peak::PointGroup();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::PointGroup");
+   peak::PointGroup* tolua_ret = (peak::PointGroup*)  Mtolua_new((peak::PointGroup)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::PointGroup");
   }
  }
  return 1;
@@ -12693,8 +12781,9 @@ static int tolua_peak_peak_PointGroup_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::PointGroup* tolua_ret = (peak::PointGroup*)  new peak::PointGroup();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::PointGroup");
+   peak::PointGroup* tolua_ret = (peak::PointGroup*)  Mtolua_new((peak::PointGroup)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::PointGroup");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -12722,9 +12811,9 @@ static int tolua_peak_peak_PointGroup_delete00(lua_State* tolua_S)
  {
   peak::PointGroup* self = (peak::PointGroup*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -12743,7 +12832,7 @@ static int tolua_peak_peak_PointGroup_addPoint00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::PointGroup",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -12753,7 +12842,7 @@ static int tolua_peak_peak_PointGroup_addPoint00(lua_State* tolua_S)
   peak::PointGroup* self = (peak::PointGroup*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector3D point = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'addPoint'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'addPoint'", NULL);
 #endif
   {
    self->addPoint(point);
@@ -12784,7 +12873,7 @@ static int tolua_peak_peak_PointGroup_getPointCount00(lua_State* tolua_S)
  {
   peak::PointGroup* self = (peak::PointGroup*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPointCount'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPointCount'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->getPointCount();
@@ -12818,17 +12907,19 @@ static int tolua_peak_peak_PointGroup_getPoint00(lua_State* tolua_S)
   peak::PointGroup* self = (peak::PointGroup*)  tolua_tousertype(tolua_S,1,0);
   int index = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPoint'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPoint'", NULL);
 #endif
   {
    peak::Vector3D tolua_ret = (peak::Vector3D)  self->getPoint(index);
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -12860,7 +12951,7 @@ static int tolua_peak_peak_PointGroup_deletePoint00(lua_State* tolua_S)
   peak::PointGroup* self = (peak::PointGroup*)  tolua_tousertype(tolua_S,1,0);
   int index = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'deletePoint'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'deletePoint'", NULL);
 #endif
   {
    self->deletePoint(index);
@@ -12883,7 +12974,7 @@ static int tolua_peak_peak_PointGroup_addRotation00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::PointGroup",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -12893,7 +12984,7 @@ static int tolua_peak_peak_PointGroup_addRotation00(lua_State* tolua_S)
   peak::PointGroup* self = (peak::PointGroup*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector3D rotation = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'addRotation'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'addRotation'", NULL);
 #endif
   {
    self->addRotation(rotation);
@@ -12924,7 +13015,7 @@ static int tolua_peak_peak_PointGroup_getRotationCount00(lua_State* tolua_S)
  {
   peak::PointGroup* self = (peak::PointGroup*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getRotationCount'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getRotationCount'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->getRotationCount();
@@ -12958,17 +13049,19 @@ static int tolua_peak_peak_PointGroup_getRotation00(lua_State* tolua_S)
   peak::PointGroup* self = (peak::PointGroup*)  tolua_tousertype(tolua_S,1,0);
   int index = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getRotation'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getRotation'", NULL);
 #endif
   {
    peak::Vector3D tolua_ret = (peak::Vector3D)  self->getRotation(index);
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -13000,7 +13093,7 @@ static int tolua_peak_peak_PointGroup_deleteRotation00(lua_State* tolua_S)
   peak::PointGroup* self = (peak::PointGroup*)  tolua_tousertype(tolua_S,1,0);
   int index = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'deleteRotation'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'deleteRotation'", NULL);
 #endif
   {
    self->deleteRotation(index);
@@ -13031,7 +13124,7 @@ static int tolua_peak_peak_Level_get00(lua_State* tolua_S)
  {
   {
    peak::Level* tolua_ret = (peak::Level*)  peak::Level::get();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Level");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Level");
   }
  }
  return 1;
@@ -13059,9 +13152,9 @@ static int tolua_peak_peak_Level_delete00(lua_State* tolua_S)
  {
   peak::Level* self = (peak::Level*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -13094,7 +13187,7 @@ static int tolua_peak_peak_Level_init00(lua_State* tolua_S)
   bool server = ((bool)  tolua_toboolean(tolua_S,3,0));
   bool client = ((bool)  tolua_toboolean(tolua_S,4,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->init(name,server,client);
@@ -13126,7 +13219,7 @@ static int tolua_peak_peak_Level_destroy00(lua_State* tolua_S)
  {
   peak::Level* self = (peak::Level*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->destroy();
@@ -13160,11 +13253,11 @@ static int tolua_peak_peak_Level_getPointGroup00(lua_State* tolua_S)
   peak::Level* self = (peak::Level*)  tolua_tousertype(tolua_S,1,0);
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPointGroup'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPointGroup'", NULL);
 #endif
   {
    peak::PointGroup* tolua_ret = (peak::PointGroup*)  self->getPointGroup(name);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::PointGroup");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::PointGroup");
   }
  }
  return 1;
@@ -13192,11 +13285,11 @@ static int tolua_peak_peak_Level_getScript00(lua_State* tolua_S)
  {
   peak::Level* self = (peak::Level*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getScript'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getScript'", NULL);
 #endif
   {
    peak::Script* tolua_ret = (peak::Script*)  self->getScript();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Script");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Script");
   }
  }
  return 1;
@@ -13224,7 +13317,7 @@ static int tolua_peak_peak_Level_getLevelCount00(lua_State* tolua_S)
  {
   peak::Level* self = (peak::Level*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getLevelCount'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getLevelCount'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->getLevelCount();
@@ -13258,7 +13351,7 @@ static int tolua_peak_peak_Level_getLevelName00(lua_State* tolua_S)
   peak::Level* self = (peak::Level*)  tolua_tousertype(tolua_S,1,0);
   int index = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getLevelName'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getLevelName'", NULL);
 #endif
   {
    std::string tolua_ret = (std::string)  self->getLevelName(index);
@@ -13290,7 +13383,7 @@ static int tolua_peak_peak_SettingsManager_get00(lua_State* tolua_S)
  {
   {
    peak::SettingsManager* tolua_ret = (peak::SettingsManager*)  peak::SettingsManager::get();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::SettingsManager");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::SettingsManager");
   }
  }
  return 1;
@@ -13318,7 +13411,7 @@ static int tolua_peak_peak_SettingsManager_load00(lua_State* tolua_S)
  {
   peak::SettingsManager* self = (peak::SettingsManager*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'load'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'load'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->load();
@@ -13350,7 +13443,7 @@ static int tolua_peak_peak_SettingsManager_save00(lua_State* tolua_S)
  {
   peak::SettingsManager* self = (peak::SettingsManager*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'save'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'save'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->save();
@@ -13384,7 +13477,7 @@ static int tolua_peak_peak_SettingsManager_getString00(lua_State* tolua_S)
   peak::SettingsManager* self = (peak::SettingsManager*)  tolua_tousertype(tolua_S,1,0);
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getString'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getString'", NULL);
 #endif
   {
    std::string tolua_ret = (std::string)  self->getString(name);
@@ -13418,7 +13511,7 @@ static int tolua_peak_peak_SettingsManager_getBool00(lua_State* tolua_S)
   peak::SettingsManager* self = (peak::SettingsManager*)  tolua_tousertype(tolua_S,1,0);
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getBool'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getBool'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->getBool(name);
@@ -13452,7 +13545,7 @@ static int tolua_peak_peak_SettingsManager_getInt00(lua_State* tolua_S)
   peak::SettingsManager* self = (peak::SettingsManager*)  tolua_tousertype(tolua_S,1,0);
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getInt'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getInt'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->getInt(name);
@@ -13486,17 +13579,19 @@ static int tolua_peak_peak_SettingsManager_getWString00(lua_State* tolua_S)
   peak::SettingsManager* self = (peak::SettingsManager*)  tolua_tousertype(tolua_S,1,0);
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getWString'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getWString'", NULL);
 #endif
   {
    std::wstring tolua_ret = (std::wstring)  self->getWString(name);
    {
 #ifdef __cplusplus
-    void* tolua_obj = new std::wstring(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"std::wstring");
+    void* tolua_obj = Mtolua_new((std::wstring)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"std::wstring");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(std::wstring));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"std::wstring");
+     tolua_pushusertype(tolua_S,tolua_obj,"std::wstring");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -13528,17 +13623,19 @@ static int tolua_peak_peak_SettingsManager_getVector2D00(lua_State* tolua_S)
   peak::SettingsManager* self = (peak::SettingsManager*)  tolua_tousertype(tolua_S,1,0);
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getVector2D'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getVector2D'", NULL);
 #endif
   {
    peak::Vector2D tolua_ret = (peak::Vector2D)  self->getVector2D(name);
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector2D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2D");
+    void* tolua_obj = Mtolua_new((peak::Vector2D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector2D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -13570,17 +13667,19 @@ static int tolua_peak_peak_SettingsManager_getVector2DI00(lua_State* tolua_S)
   peak::SettingsManager* self = (peak::SettingsManager*)  tolua_tousertype(tolua_S,1,0);
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getVector2DI'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getVector2DI'", NULL);
 #endif
   {
    peak::Vector2DI tolua_ret = (peak::Vector2DI)  self->getVector2DI(name);
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector2DI(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2DI");
+    void* tolua_obj = Mtolua_new((peak::Vector2DI)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2DI");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector2DI));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2DI");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2DI");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -13612,17 +13711,19 @@ static int tolua_peak_peak_SettingsManager_getVector3D00(lua_State* tolua_S)
   peak::SettingsManager* self = (peak::SettingsManager*)  tolua_tousertype(tolua_S,1,0);
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getVector3D'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getVector3D'", NULL);
 #endif
   {
    peak::Vector3D tolua_ret = (peak::Vector3D)  self->getVector3D(name);
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -13656,7 +13757,7 @@ static int tolua_peak_peak_SettingsManager_setString00(lua_State* tolua_S)
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   std::string value = ((std::string)  tolua_tocppstring(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setString'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setString'", NULL);
 #endif
   {
    self->setString(name,value);
@@ -13691,7 +13792,7 @@ static int tolua_peak_peak_SettingsManager_setBool00(lua_State* tolua_S)
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   bool value = ((bool)  tolua_toboolean(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setBool'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setBool'", NULL);
 #endif
   {
    self->setBool(name,value);
@@ -13726,7 +13827,7 @@ static int tolua_peak_peak_SettingsManager_setInt00(lua_State* tolua_S)
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   int value = ((int)  tolua_tonumber(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setInt'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setInt'", NULL);
 #endif
   {
    self->setInt(name,value);
@@ -13750,7 +13851,7 @@ static int tolua_peak_peak_SettingsManager_setVector2D00(lua_State* tolua_S)
  if (
      !tolua_isusertype(tolua_S,1,"peak::SettingsManager",0,&tolua_err) ||
      !tolua_iscppstring(tolua_S,2,0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,3,"peak::Vector2D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,3,&tolua_err) || !tolua_isusertype(tolua_S,3,"peak::Vector2D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,4,&tolua_err)
  )
   goto tolua_lerror;
@@ -13761,7 +13862,7 @@ static int tolua_peak_peak_SettingsManager_setVector2D00(lua_State* tolua_S)
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   peak::Vector2D value = *((peak::Vector2D*)  tolua_tousertype(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setVector2D'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setVector2D'", NULL);
 #endif
   {
    self->setVector2D(name,value);
@@ -13785,7 +13886,7 @@ static int tolua_peak_peak_SettingsManager_setVector2DI00(lua_State* tolua_S)
  if (
      !tolua_isusertype(tolua_S,1,"peak::SettingsManager",0,&tolua_err) ||
      !tolua_iscppstring(tolua_S,2,0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,3,"peak::Vector2DI",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,3,&tolua_err) || !tolua_isusertype(tolua_S,3,"peak::Vector2DI",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,4,&tolua_err)
  )
   goto tolua_lerror;
@@ -13796,7 +13897,7 @@ static int tolua_peak_peak_SettingsManager_setVector2DI00(lua_State* tolua_S)
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   peak::Vector2DI value = *((peak::Vector2DI*)  tolua_tousertype(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setVector2DI'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setVector2DI'", NULL);
 #endif
   {
    self->setVector2DI(name,value);
@@ -13820,7 +13921,7 @@ static int tolua_peak_peak_SettingsManager_setVector3D00(lua_State* tolua_S)
  if (
      !tolua_isusertype(tolua_S,1,"peak::SettingsManager",0,&tolua_err) ||
      !tolua_iscppstring(tolua_S,2,0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,3,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,3,&tolua_err) || !tolua_isusertype(tolua_S,3,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,4,&tolua_err)
  )
   goto tolua_lerror;
@@ -13831,7 +13932,7 @@ static int tolua_peak_peak_SettingsManager_setVector3D00(lua_State* tolua_S)
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   peak::Vector3D value = *((peak::Vector3D*)  tolua_tousertype(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setVector3D'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setVector3D'", NULL);
 #endif
   {
    self->setVector3D(name,value);
@@ -13864,17 +13965,19 @@ static int tolua_peak_peak_SettingsManager_getItemList00(lua_State* tolua_S)
   peak::SettingsManager* self = (peak::SettingsManager*)  tolua_tousertype(tolua_S,1,0);
   std::string section = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getItemList'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getItemList'", NULL);
 #endif
   {
    std::vector<std::string> tolua_ret = (std::vector<std::string>)  self->getItemList(section);
    {
 #ifdef __cplusplus
-    void* tolua_obj = new std::vector<std::string>(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"std::vector<std::string>");
+    void* tolua_obj = Mtolua_new((std::vector<std::string>)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"std::vector<std::string>");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(std::vector<std::string>));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"std::vector<std::string>");
+     tolua_pushusertype(tolua_S,tolua_obj,"std::vector<std::string>");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -13906,7 +14009,7 @@ static int tolua_peak_peak_SettingsManager_deleteSetting00(lua_State* tolua_S)
   peak::SettingsManager* self = (peak::SettingsManager*)  tolua_tousertype(tolua_S,1,0);
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'deleteSetting'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'deleteSetting'", NULL);
 #endif
   {
    self->deleteSetting(name);
@@ -13939,7 +14042,7 @@ static int tolua_peak_peak_SettingsManager_doesExist00(lua_State* tolua_S)
   peak::SettingsManager* self = (peak::SettingsManager*)  tolua_tousertype(tolua_S,1,0);
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'doesExist'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'doesExist'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->doesExist(name);
@@ -13970,8 +14073,8 @@ static int tolua_peak_peak_Link_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Link* tolua_ret = (peak::Link*)  new peak::Link();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Link");
+   peak::Link* tolua_ret = (peak::Link*)  Mtolua_new((peak::Link)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Link");
   }
  }
  return 1;
@@ -13998,8 +14101,9 @@ static int tolua_peak_peak_Link_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Link* tolua_ret = (peak::Link*)  new peak::Link();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Link");
+   peak::Link* tolua_ret = (peak::Link*)  Mtolua_new((peak::Link)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Link");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -14027,9 +14131,9 @@ static int tolua_peak_peak_Link_delete00(lua_State* tolua_S)
  {
   peak::Link* self = (peak::Link*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -14056,7 +14160,7 @@ static int tolua_peak_peak_Link_create00(lua_State* tolua_S)
  {
   peak::Link* self = (peak::Link*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->create();
@@ -14088,7 +14192,7 @@ static int tolua_peak_peak_Link_destroy00(lua_State* tolua_S)
  {
   peak::Link* self = (peak::Link*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->destroy();
@@ -14122,7 +14226,7 @@ static int tolua_peak_peak_Link_setActive00(lua_State* tolua_S)
   peak::Link* self = (peak::Link*)  tolua_tousertype(tolua_S,1,0);
   bool active = ((bool)  tolua_toboolean(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setActive'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setActive'", NULL);
 #endif
   {
    self->setActive(active);
@@ -14153,7 +14257,7 @@ static int tolua_peak_peak_Link_isActive00(lua_State* tolua_S)
  {
   peak::Link* self = (peak::Link*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isActive'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isActive'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->isActive();
@@ -14186,8 +14290,8 @@ static int tolua_peak_peak_Overlay_new00(lua_State* tolua_S)
  {
   peak::Overlay* parent = ((peak::Overlay*)  tolua_tousertype(tolua_S,2,0));
   {
-   peak::Overlay* tolua_ret = (peak::Overlay*)  new peak::Overlay(parent);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Overlay");
+   peak::Overlay* tolua_ret = (peak::Overlay*)  Mtolua_new((peak::Overlay)(parent));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Overlay");
   }
  }
  return 1;
@@ -14216,8 +14320,9 @@ static int tolua_peak_peak_Overlay_new00_local(lua_State* tolua_S)
  {
   peak::Overlay* parent = ((peak::Overlay*)  tolua_tousertype(tolua_S,2,0));
   {
-   peak::Overlay* tolua_ret = (peak::Overlay*)  new peak::Overlay(parent);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Overlay");
+   peak::Overlay* tolua_ret = (peak::Overlay*)  Mtolua_new((peak::Overlay)(parent));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Overlay");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -14245,9 +14350,9 @@ static int tolua_peak_peak_Overlay_delete00(lua_State* tolua_S)
  {
   peak::Overlay* self = (peak::Overlay*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -14276,7 +14381,7 @@ static int tolua_peak_peak_Overlay_setParent00(lua_State* tolua_S)
   peak::Overlay* self = (peak::Overlay*)  tolua_tousertype(tolua_S,1,0);
   peak::Overlay* overlay = ((peak::Overlay*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setParent'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setParent'", NULL);
 #endif
   {
    self->setParent(overlay);
@@ -14307,11 +14412,11 @@ static int tolua_peak_peak_Overlay_getParent00(lua_State* tolua_S)
  {
   peak::Overlay* self = (peak::Overlay*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getParent'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getParent'", NULL);
 #endif
   {
    peak::Overlay* tolua_ret = (peak::Overlay*)  self->getParent();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Overlay");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Overlay");
   }
  }
  return 1;
@@ -14331,7 +14436,7 @@ static int tolua_peak_peak_Overlay_setPosition00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Overlay",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector2D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector2D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -14341,7 +14446,7 @@ static int tolua_peak_peak_Overlay_setPosition00(lua_State* tolua_S)
   peak::Overlay* self = (peak::Overlay*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector2D position = *((peak::Vector2D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPosition'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPosition'", NULL);
 #endif
   {
    self->setPosition(position);
@@ -14372,17 +14477,19 @@ static int tolua_peak_peak_Overlay_getPosition00(lua_State* tolua_S)
  {
   peak::Overlay* self = (peak::Overlay*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPosition'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPosition'", NULL);
 #endif
   {
    peak::Vector2D tolua_ret = (peak::Vector2D)  self->getPosition();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector2D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2D");
+    void* tolua_obj = Mtolua_new((peak::Vector2D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector2D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -14404,7 +14511,7 @@ static int tolua_peak_peak_Overlay_setSize00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Overlay",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector2D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector2D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -14414,7 +14521,7 @@ static int tolua_peak_peak_Overlay_setSize00(lua_State* tolua_S)
   peak::Overlay* self = (peak::Overlay*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector2D size = *((peak::Vector2D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setSize'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setSize'", NULL);
 #endif
   {
    self->setSize(size);
@@ -14445,17 +14552,19 @@ static int tolua_peak_peak_Overlay_getSize00(lua_State* tolua_S)
  {
   peak::Overlay* self = (peak::Overlay*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getSize'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getSize'", NULL);
 #endif
   {
    peak::Vector2D tolua_ret = (peak::Vector2D)  self->getSize();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector2D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2D");
+    void* tolua_obj = Mtolua_new((peak::Vector2D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector2D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -14487,7 +14596,7 @@ static int tolua_peak_peak_Overlay_setRotation00(lua_State* tolua_S)
   peak::Overlay* self = (peak::Overlay*)  tolua_tousertype(tolua_S,1,0);
   float rotation = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setRotation'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setRotation'", NULL);
 #endif
   {
    self->setRotation(rotation);
@@ -14518,7 +14627,7 @@ static int tolua_peak_peak_Overlay_getRotation00(lua_State* tolua_S)
  {
   peak::Overlay* self = (peak::Overlay*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getRotation'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getRotation'", NULL);
 #endif
   {
    float tolua_ret = (float)  self->getRotation();
@@ -14552,7 +14661,7 @@ static int tolua_peak_peak_Overlay_setClipChildren00(lua_State* tolua_S)
   peak::Overlay* self = (peak::Overlay*)  tolua_tousertype(tolua_S,1,0);
   bool clipchildren = ((bool)  tolua_toboolean(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setClipChildren'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setClipChildren'", NULL);
 #endif
   {
    self->setClipChildren(clipchildren);
@@ -14583,7 +14692,7 @@ static int tolua_peak_peak_Overlay_getClipChildren00(lua_State* tolua_S)
  {
   peak::Overlay* self = (peak::Overlay*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getClipChildren'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getClipChildren'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->getClipChildren();
@@ -14607,7 +14716,7 @@ static int tolua_peak_peak_Overlay_setAbsolutePosition00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Overlay",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector2D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector2D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -14617,7 +14726,7 @@ static int tolua_peak_peak_Overlay_setAbsolutePosition00(lua_State* tolua_S)
   peak::Overlay* self = (peak::Overlay*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector2D position = *((peak::Vector2D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setAbsolutePosition'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setAbsolutePosition'", NULL);
 #endif
   {
    self->setAbsolutePosition(position);
@@ -14648,17 +14757,19 @@ static int tolua_peak_peak_Overlay_getAbsolutePosition00(lua_State* tolua_S)
  {
   peak::Overlay* self = (peak::Overlay*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getAbsolutePosition'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getAbsolutePosition'", NULL);
 #endif
   {
    peak::Vector2D tolua_ret = (peak::Vector2D)  self->getAbsolutePosition();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector2D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2D");
+    void* tolua_obj = Mtolua_new((peak::Vector2D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector2D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -14680,7 +14791,7 @@ static int tolua_peak_peak_Overlay_setAbsoluteSize00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Overlay",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector2D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector2D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -14690,7 +14801,7 @@ static int tolua_peak_peak_Overlay_setAbsoluteSize00(lua_State* tolua_S)
   peak::Overlay* self = (peak::Overlay*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector2D size = *((peak::Vector2D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setAbsoluteSize'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setAbsoluteSize'", NULL);
 #endif
   {
    self->setAbsoluteSize(size);
@@ -14721,17 +14832,19 @@ static int tolua_peak_peak_Overlay_getAbsoluteSize00(lua_State* tolua_S)
  {
   peak::Overlay* self = (peak::Overlay*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getAbsoluteSize'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getAbsoluteSize'", NULL);
 #endif
   {
    peak::Vector2D tolua_ret = (peak::Vector2D)  self->getAbsoluteSize();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector2D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2D");
+    void* tolua_obj = Mtolua_new((peak::Vector2D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector2D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -14763,7 +14876,7 @@ static int tolua_peak_peak_Overlay_setAbsoluteRotation00(lua_State* tolua_S)
   peak::Overlay* self = (peak::Overlay*)  tolua_tousertype(tolua_S,1,0);
   float rotation = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setAbsoluteRotation'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setAbsoluteRotation'", NULL);
 #endif
   {
    self->setAbsoluteRotation(rotation);
@@ -14794,7 +14907,7 @@ static int tolua_peak_peak_Overlay_getAbsoluteRotation00(lua_State* tolua_S)
  {
   peak::Overlay* self = (peak::Overlay*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getAbsoluteRotation'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getAbsoluteRotation'", NULL);
 #endif
   {
    float tolua_ret = (float)  self->getAbsoluteRotation();
@@ -14825,8 +14938,8 @@ static int tolua_peak_peak_GameObject_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::GameObject* tolua_ret = (peak::GameObject*)  new peak::GameObject();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::GameObject");
+   peak::GameObject* tolua_ret = (peak::GameObject*)  Mtolua_new((peak::GameObject)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::GameObject");
   }
  }
  return 1;
@@ -14853,8 +14966,9 @@ static int tolua_peak_peak_GameObject_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::GameObject* tolua_ret = (peak::GameObject*)  new peak::GameObject();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::GameObject");
+   peak::GameObject* tolua_ret = (peak::GameObject*)  Mtolua_new((peak::GameObject)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::GameObject");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -14882,9 +14996,9 @@ static int tolua_peak_peak_GameObject_delete00(lua_State* tolua_S)
  {
   peak::GameObject* self = (peak::GameObject*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -14913,11 +15027,11 @@ static int tolua_peak_peak_GameObject_getProperty00(lua_State* tolua_S)
   peak::GameObject* self = (peak::GameObject*)  tolua_tousertype(tolua_S,1,0);
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getProperty'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getProperty'", NULL);
 #endif
   {
    peak::Property* tolua_ret = (peak::Property*)  self->getProperty(name);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Property");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Property");
   }
  }
  return 1;
@@ -14947,11 +15061,11 @@ static int tolua_peak_peak_GameObject_getEvent00(lua_State* tolua_S)
   peak::GameObject* self = (peak::GameObject*)  tolua_tousertype(tolua_S,1,0);
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getEvent'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getEvent'", NULL);
 #endif
   {
    peak::Event* tolua_ret = (peak::Event*)  self->getEvent(name);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Event");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Event");
   }
  }
  return 1;
@@ -14979,9 +15093,9 @@ static int tolua_peak_peak_Property_delete00(lua_State* tolua_S)
  {
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -15010,7 +15124,7 @@ static int tolua_peak_peak_Property_setName00(lua_State* tolua_S)
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setName'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setName'", NULL);
 #endif
   {
    self->setName(name);
@@ -15041,7 +15155,7 @@ static int tolua_peak_peak_Property_getName00(lua_State* tolua_S)
  {
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getName'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getName'", NULL);
 #endif
   {
    std::string tolua_ret = (std::string)  self->getName();
@@ -15073,7 +15187,7 @@ static int tolua_peak_peak_Property_getType00(lua_State* tolua_S)
  {
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getType'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getType'", NULL);
 #endif
   {
    peak::PropertyType tolua_ret = (peak::PropertyType)  self->getType();
@@ -15097,7 +15211,7 @@ static int tolua_peak_peak_Property_set00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Property",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -15107,7 +15221,7 @@ static int tolua_peak_peak_Property_set00(lua_State* tolua_S)
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector3D v = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'", NULL);
 #endif
   {
    self->set(v);
@@ -15138,17 +15252,19 @@ static int tolua_peak_peak_Property_getVector3D00(lua_State* tolua_S)
  {
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getVector3D'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getVector3D'", NULL);
 #endif
   {
    peak::Vector3D tolua_ret = (peak::Vector3D)  self->getVector3D();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -15169,7 +15285,7 @@ static int tolua_peak_peak_Property_set01(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Property",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector2D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector2D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -15178,7 +15294,7 @@ static int tolua_peak_peak_Property_set01(lua_State* tolua_S)
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector2D v = *((peak::Vector2D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'", NULL);
 #endif
   {
    self->set(v);
@@ -15206,17 +15322,19 @@ static int tolua_peak_peak_Property_getVector2D00(lua_State* tolua_S)
  {
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getVector2D'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getVector2D'", NULL);
 #endif
   {
    peak::Vector2D tolua_ret = (peak::Vector2D)  self->getVector2D();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector2D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2D");
+    void* tolua_obj = Mtolua_new((peak::Vector2D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector2D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -15237,7 +15355,7 @@ static int tolua_peak_peak_Property_set02(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Property",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Quaternion",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Quaternion",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -15246,7 +15364,7 @@ static int tolua_peak_peak_Property_set02(lua_State* tolua_S)
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
   peak::Quaternion q = *((peak::Quaternion*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'", NULL);
 #endif
   {
    self->set(q);
@@ -15274,17 +15392,19 @@ static int tolua_peak_peak_Property_getQuaternion00(lua_State* tolua_S)
  {
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getQuaternion'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getQuaternion'", NULL);
 #endif
   {
    peak::Quaternion tolua_ret = (peak::Quaternion)  self->getQuaternion();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Quaternion(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Quaternion");
+    void* tolua_obj = Mtolua_new((peak::Quaternion)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Quaternion");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Quaternion));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Quaternion");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Quaternion");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -15314,7 +15434,7 @@ static int tolua_peak_peak_Property_set03(lua_State* tolua_S)
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
   bool b = ((bool)  tolua_toboolean(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'", NULL);
 #endif
   {
    self->set(b);
@@ -15342,7 +15462,7 @@ static int tolua_peak_peak_Property_getBool00(lua_State* tolua_S)
  {
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getBool'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getBool'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->getBool();
@@ -15374,7 +15494,7 @@ static int tolua_peak_peak_Property_set04(lua_State* tolua_S)
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
   int i = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'", NULL);
 #endif
   {
    self->set(i);
@@ -15402,7 +15522,7 @@ static int tolua_peak_peak_Property_getInt00(lua_State* tolua_S)
  {
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getInt'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getInt'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->getInt();
@@ -15434,7 +15554,7 @@ static int tolua_peak_peak_Property_set05(lua_State* tolua_S)
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
   float f = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'", NULL);
 #endif
   {
    self->set(f);
@@ -15462,7 +15582,7 @@ static int tolua_peak_peak_Property_getFloat00(lua_State* tolua_S)
  {
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getFloat'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getFloat'", NULL);
 #endif
   {
    float tolua_ret = (float)  self->getFloat();
@@ -15486,7 +15606,7 @@ static int tolua_peak_peak_Property_set06(lua_State* tolua_S)
  if (
      !tolua_isusertype(tolua_S,1,"peak::Property",0,&tolua_err) ||
      !tolua_iscppstring(tolua_S,2,0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,3,"std::vector<float>",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,3,&tolua_err) || !tolua_isusertype(tolua_S,3,"std::vector<float>",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,4,&tolua_err)
  )
   goto tolua_lerror;
@@ -15496,7 +15616,7 @@ static int tolua_peak_peak_Property_set06(lua_State* tolua_S)
   std::string members = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   std::vector<float> value = *((std::vector<float>*)  tolua_tousertype(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'", NULL);
 #endif
   {
    self->set(members,value);
@@ -15526,17 +15646,19 @@ static int tolua_peak_peak_Property_getValueArray00(lua_State* tolua_S)
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
   std::string members = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getValueArray'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getValueArray'", NULL);
 #endif
   {
    std::vector<float> tolua_ret = (std::vector<float>)  self->getValueArray(members);
    {
 #ifdef __cplusplus
-    void* tolua_obj = new std::vector<float>(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"std::vector<float>");
+    void* tolua_obj = Mtolua_new((std::vector<float>)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"std::vector<float>");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(std::vector<float>));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"std::vector<float>");
+     tolua_pushusertype(tolua_S,tolua_obj,"std::vector<float>");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -15566,7 +15688,7 @@ static int tolua_peak_peak_Property_set07(lua_State* tolua_S)
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
   peak::Property* p = ((peak::Property*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'", NULL);
 #endif
   {
    self->set(p);
@@ -15596,7 +15718,7 @@ static int tolua_peak_peak_Property_serialize00(lua_State* tolua_S)
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
   peak::Buffer* buffer = ((peak::Buffer*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'serialize'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'serialize'", NULL);
 #endif
   {
    self->serialize(buffer);
@@ -15629,7 +15751,7 @@ static int tolua_peak_peak_Property_deserialize00(lua_State* tolua_S)
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
   peak::Buffer* buffer = ((peak::Buffer*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'deserialize'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'deserialize'", NULL);
 #endif
   {
    self->deserialize(buffer);
@@ -15662,7 +15784,7 @@ static int tolua_peak_peak_Property_setGameObject00(lua_State* tolua_S)
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
   peak::GameObject* object = ((peak::GameObject*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setGameObject'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setGameObject'", NULL);
 #endif
   {
    self->setGameObject(object);
@@ -15693,11 +15815,11 @@ static int tolua_peak_peak_Property_getGameObject00(lua_State* tolua_S)
  {
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getGameObject'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getGameObject'", NULL);
 #endif
   {
    peak::GameObject* tolua_ret = (peak::GameObject*)  self->getGameObject();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::GameObject");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::GameObject");
   }
  }
  return 1;
@@ -15727,7 +15849,7 @@ static int tolua_peak_peak_Property_addLink00(lua_State* tolua_S)
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
   peak::Link* link = ((peak::Link*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'addLink'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'addLink'", NULL);
 #endif
   {
    self->addLink(link);
@@ -15760,7 +15882,7 @@ static int tolua_peak_peak_Property_removeLink00(lua_State* tolua_S)
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
   peak::Link* link = ((peak::Link*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'removeLink'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'removeLink'", NULL);
 #endif
   {
    self->removeLink(link);
@@ -15791,7 +15913,7 @@ static int tolua_peak_peak_Property_update00(lua_State* tolua_S)
  {
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'update'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'update'", NULL);
 #endif
   {
    self->update();
@@ -15822,7 +15944,7 @@ static int tolua_peak_peak_Property_disableUpdates00(lua_State* tolua_S)
  {
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'disableUpdates'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'disableUpdates'", NULL);
 #endif
   {
    self->disableUpdates();
@@ -15853,7 +15975,7 @@ static int tolua_peak_peak_Property_enableUpdates00(lua_State* tolua_S)
  {
   peak::Property* self = (peak::Property*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'enableUpdates'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'enableUpdates'", NULL);
 #endif
   {
    self->enableUpdates();
@@ -15885,8 +16007,8 @@ static int tolua_peak_peak_Vector3DProperty_new00(lua_State* tolua_S)
  {
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,""));
   {
-   peak::Vector3DProperty* tolua_ret = (peak::Vector3DProperty*)  new peak::Vector3DProperty(name);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Vector3DProperty");
+   peak::Vector3DProperty* tolua_ret = (peak::Vector3DProperty*)  Mtolua_new((peak::Vector3DProperty)(name));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Vector3DProperty");
   }
  }
  return 1;
@@ -15915,8 +16037,9 @@ static int tolua_peak_peak_Vector3DProperty_new00_local(lua_State* tolua_S)
  {
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,""));
   {
-   peak::Vector3DProperty* tolua_ret = (peak::Vector3DProperty*)  new peak::Vector3DProperty(name);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Vector3DProperty");
+   peak::Vector3DProperty* tolua_ret = (peak::Vector3DProperty*)  Mtolua_new((peak::Vector3DProperty)(name));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Vector3DProperty");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -15944,7 +16067,7 @@ static int tolua_peak_peak_Vector3DProperty_getType00(lua_State* tolua_S)
  {
   peak::Vector3DProperty* self = (peak::Vector3DProperty*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getType'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getType'", NULL);
 #endif
   {
    peak::PropertyType tolua_ret = (peak::PropertyType)  self->getType();
@@ -15968,7 +16091,7 @@ static int tolua_peak_peak_Vector3DProperty_set00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Vector3DProperty",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -15978,7 +16101,7 @@ static int tolua_peak_peak_Vector3DProperty_set00(lua_State* tolua_S)
   peak::Vector3DProperty* self = (peak::Vector3DProperty*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector3D v = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'", NULL);
 #endif
   {
    self->set(v);
@@ -16009,17 +16132,19 @@ static int tolua_peak_peak_Vector3DProperty_getVector3D00(lua_State* tolua_S)
  {
   peak::Vector3DProperty* self = (peak::Vector3DProperty*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getVector3D'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getVector3D'", NULL);
 #endif
   {
    peak::Vector3D tolua_ret = (peak::Vector3D)  self->getVector3D();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -16041,7 +16166,7 @@ static int tolua_peak_peak_Vector3DProperty_set01(lua_State* tolua_S)
  if (
      !tolua_isusertype(tolua_S,1,"peak::Vector3DProperty",0,&tolua_err) ||
      !tolua_iscppstring(tolua_S,2,0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,3,"std::vector<float>",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,3,&tolua_err) || !tolua_isusertype(tolua_S,3,"std::vector<float>",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,4,&tolua_err)
  )
   goto tolua_lerror;
@@ -16051,7 +16176,7 @@ static int tolua_peak_peak_Vector3DProperty_set01(lua_State* tolua_S)
   std::string members = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   std::vector<float> value = *((std::vector<float>*)  tolua_tousertype(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'", NULL);
 #endif
   {
    self->set(members,value);
@@ -16081,17 +16206,19 @@ static int tolua_peak_peak_Vector3DProperty_getValueArray00(lua_State* tolua_S)
   peak::Vector3DProperty* self = (peak::Vector3DProperty*)  tolua_tousertype(tolua_S,1,0);
   std::string members = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getValueArray'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getValueArray'", NULL);
 #endif
   {
    std::vector<float> tolua_ret = (std::vector<float>)  self->getValueArray(members);
    {
 #ifdef __cplusplus
-    void* tolua_obj = new std::vector<float>(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"std::vector<float>");
+    void* tolua_obj = Mtolua_new((std::vector<float>)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"std::vector<float>");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(std::vector<float>));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"std::vector<float>");
+     tolua_pushusertype(tolua_S,tolua_obj,"std::vector<float>");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -16121,7 +16248,7 @@ static int tolua_peak_peak_Vector3DProperty_set02(lua_State* tolua_S)
   peak::Vector3DProperty* self = (peak::Vector3DProperty*)  tolua_tousertype(tolua_S,1,0);
   peak::Property* p = ((peak::Property*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'", NULL);
 #endif
   {
    self->set(p);
@@ -16151,7 +16278,7 @@ static int tolua_peak_peak_Vector3DProperty_serialize00(lua_State* tolua_S)
   peak::Vector3DProperty* self = (peak::Vector3DProperty*)  tolua_tousertype(tolua_S,1,0);
   peak::Buffer* buffer = ((peak::Buffer*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'serialize'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'serialize'", NULL);
 #endif
   {
    self->serialize(buffer);
@@ -16184,7 +16311,7 @@ static int tolua_peak_peak_Vector3DProperty_deserialize00(lua_State* tolua_S)
   peak::Vector3DProperty* self = (peak::Vector3DProperty*)  tolua_tousertype(tolua_S,1,0);
   peak::Buffer* buffer = ((peak::Buffer*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'deserialize'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'deserialize'", NULL);
 #endif
   {
    self->deserialize(buffer);
@@ -16216,8 +16343,8 @@ static int tolua_peak_peak_Vector2DProperty_new00(lua_State* tolua_S)
  {
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,""));
   {
-   peak::Vector2DProperty* tolua_ret = (peak::Vector2DProperty*)  new peak::Vector2DProperty(name);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Vector2DProperty");
+   peak::Vector2DProperty* tolua_ret = (peak::Vector2DProperty*)  Mtolua_new((peak::Vector2DProperty)(name));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Vector2DProperty");
   }
  }
  return 1;
@@ -16246,8 +16373,9 @@ static int tolua_peak_peak_Vector2DProperty_new00_local(lua_State* tolua_S)
  {
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,""));
   {
-   peak::Vector2DProperty* tolua_ret = (peak::Vector2DProperty*)  new peak::Vector2DProperty(name);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Vector2DProperty");
+   peak::Vector2DProperty* tolua_ret = (peak::Vector2DProperty*)  Mtolua_new((peak::Vector2DProperty)(name));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Vector2DProperty");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -16275,7 +16403,7 @@ static int tolua_peak_peak_Vector2DProperty_getType00(lua_State* tolua_S)
  {
   peak::Vector2DProperty* self = (peak::Vector2DProperty*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getType'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getType'", NULL);
 #endif
   {
    peak::PropertyType tolua_ret = (peak::PropertyType)  self->getType();
@@ -16299,7 +16427,7 @@ static int tolua_peak_peak_Vector2DProperty_set00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Vector2DProperty",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector2D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector2D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -16309,7 +16437,7 @@ static int tolua_peak_peak_Vector2DProperty_set00(lua_State* tolua_S)
   peak::Vector2DProperty* self = (peak::Vector2DProperty*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector2D v = *((peak::Vector2D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'", NULL);
 #endif
   {
    self->set(v);
@@ -16340,17 +16468,19 @@ static int tolua_peak_peak_Vector2DProperty_getVector2D00(lua_State* tolua_S)
  {
   peak::Vector2DProperty* self = (peak::Vector2DProperty*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getVector2D'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getVector2D'", NULL);
 #endif
   {
    peak::Vector2D tolua_ret = (peak::Vector2D)  self->getVector2D();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector2D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2D");
+    void* tolua_obj = Mtolua_new((peak::Vector2D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector2D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -16372,7 +16502,7 @@ static int tolua_peak_peak_Vector2DProperty_set01(lua_State* tolua_S)
  if (
      !tolua_isusertype(tolua_S,1,"peak::Vector2DProperty",0,&tolua_err) ||
      !tolua_iscppstring(tolua_S,2,0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,3,"std::vector<float>",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,3,&tolua_err) || !tolua_isusertype(tolua_S,3,"std::vector<float>",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,4,&tolua_err)
  )
   goto tolua_lerror;
@@ -16382,7 +16512,7 @@ static int tolua_peak_peak_Vector2DProperty_set01(lua_State* tolua_S)
   std::string members = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   std::vector<float> value = *((std::vector<float>*)  tolua_tousertype(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'", NULL);
 #endif
   {
    self->set(members,value);
@@ -16412,17 +16542,19 @@ static int tolua_peak_peak_Vector2DProperty_getValueArray00(lua_State* tolua_S)
   peak::Vector2DProperty* self = (peak::Vector2DProperty*)  tolua_tousertype(tolua_S,1,0);
   std::string members = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getValueArray'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getValueArray'", NULL);
 #endif
   {
    std::vector<float> tolua_ret = (std::vector<float>)  self->getValueArray(members);
    {
 #ifdef __cplusplus
-    void* tolua_obj = new std::vector<float>(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"std::vector<float>");
+    void* tolua_obj = Mtolua_new((std::vector<float>)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"std::vector<float>");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(std::vector<float>));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"std::vector<float>");
+     tolua_pushusertype(tolua_S,tolua_obj,"std::vector<float>");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -16452,7 +16584,7 @@ static int tolua_peak_peak_Vector2DProperty_set02(lua_State* tolua_S)
   peak::Vector2DProperty* self = (peak::Vector2DProperty*)  tolua_tousertype(tolua_S,1,0);
   peak::Property* p = ((peak::Property*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'", NULL);
 #endif
   {
    self->set(p);
@@ -16482,7 +16614,7 @@ static int tolua_peak_peak_Vector2DProperty_serialize00(lua_State* tolua_S)
   peak::Vector2DProperty* self = (peak::Vector2DProperty*)  tolua_tousertype(tolua_S,1,0);
   peak::Buffer* buffer = ((peak::Buffer*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'serialize'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'serialize'", NULL);
 #endif
   {
    self->serialize(buffer);
@@ -16515,7 +16647,7 @@ static int tolua_peak_peak_Vector2DProperty_deserialize00(lua_State* tolua_S)
   peak::Vector2DProperty* self = (peak::Vector2DProperty*)  tolua_tousertype(tolua_S,1,0);
   peak::Buffer* buffer = ((peak::Buffer*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'deserialize'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'deserialize'", NULL);
 #endif
   {
    self->deserialize(buffer);
@@ -16547,8 +16679,8 @@ static int tolua_peak_peak_QuaternionProperty_new00(lua_State* tolua_S)
  {
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,""));
   {
-   peak::QuaternionProperty* tolua_ret = (peak::QuaternionProperty*)  new peak::QuaternionProperty(name);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::QuaternionProperty");
+   peak::QuaternionProperty* tolua_ret = (peak::QuaternionProperty*)  Mtolua_new((peak::QuaternionProperty)(name));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::QuaternionProperty");
   }
  }
  return 1;
@@ -16577,8 +16709,9 @@ static int tolua_peak_peak_QuaternionProperty_new00_local(lua_State* tolua_S)
  {
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,""));
   {
-   peak::QuaternionProperty* tolua_ret = (peak::QuaternionProperty*)  new peak::QuaternionProperty(name);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::QuaternionProperty");
+   peak::QuaternionProperty* tolua_ret = (peak::QuaternionProperty*)  Mtolua_new((peak::QuaternionProperty)(name));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::QuaternionProperty");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -16606,7 +16739,7 @@ static int tolua_peak_peak_QuaternionProperty_getType00(lua_State* tolua_S)
  {
   peak::QuaternionProperty* self = (peak::QuaternionProperty*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getType'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getType'", NULL);
 #endif
   {
    peak::PropertyType tolua_ret = (peak::PropertyType)  self->getType();
@@ -16630,7 +16763,7 @@ static int tolua_peak_peak_QuaternionProperty_set00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::QuaternionProperty",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Quaternion",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Quaternion",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -16640,7 +16773,7 @@ static int tolua_peak_peak_QuaternionProperty_set00(lua_State* tolua_S)
   peak::QuaternionProperty* self = (peak::QuaternionProperty*)  tolua_tousertype(tolua_S,1,0);
   peak::Quaternion q = *((peak::Quaternion*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'", NULL);
 #endif
   {
    self->set(q);
@@ -16671,17 +16804,19 @@ static int tolua_peak_peak_QuaternionProperty_getQuaternion00(lua_State* tolua_S
  {
   peak::QuaternionProperty* self = (peak::QuaternionProperty*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getQuaternion'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getQuaternion'", NULL);
 #endif
   {
    peak::Quaternion tolua_ret = (peak::Quaternion)  self->getQuaternion();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Quaternion(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Quaternion");
+    void* tolua_obj = Mtolua_new((peak::Quaternion)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Quaternion");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Quaternion));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Quaternion");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Quaternion");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -16703,7 +16838,7 @@ static int tolua_peak_peak_QuaternionProperty_set01(lua_State* tolua_S)
  if (
      !tolua_isusertype(tolua_S,1,"peak::QuaternionProperty",0,&tolua_err) ||
      !tolua_iscppstring(tolua_S,2,0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,3,"std::vector<float>",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,3,&tolua_err) || !tolua_isusertype(tolua_S,3,"std::vector<float>",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,4,&tolua_err)
  )
   goto tolua_lerror;
@@ -16713,7 +16848,7 @@ static int tolua_peak_peak_QuaternionProperty_set01(lua_State* tolua_S)
   std::string members = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   std::vector<float> value = *((std::vector<float>*)  tolua_tousertype(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'", NULL);
 #endif
   {
    self->set(members,value);
@@ -16743,17 +16878,19 @@ static int tolua_peak_peak_QuaternionProperty_getValueArray00(lua_State* tolua_S
   peak::QuaternionProperty* self = (peak::QuaternionProperty*)  tolua_tousertype(tolua_S,1,0);
   std::string members = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getValueArray'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getValueArray'", NULL);
 #endif
   {
    std::vector<float> tolua_ret = (std::vector<float>)  self->getValueArray(members);
    {
 #ifdef __cplusplus
-    void* tolua_obj = new std::vector<float>(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"std::vector<float>");
+    void* tolua_obj = Mtolua_new((std::vector<float>)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"std::vector<float>");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(std::vector<float>));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"std::vector<float>");
+     tolua_pushusertype(tolua_S,tolua_obj,"std::vector<float>");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -16783,7 +16920,7 @@ static int tolua_peak_peak_QuaternionProperty_set02(lua_State* tolua_S)
   peak::QuaternionProperty* self = (peak::QuaternionProperty*)  tolua_tousertype(tolua_S,1,0);
   peak::Property* p = ((peak::Property*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'", NULL);
 #endif
   {
    self->set(p);
@@ -16813,7 +16950,7 @@ static int tolua_peak_peak_QuaternionProperty_serialize00(lua_State* tolua_S)
   peak::QuaternionProperty* self = (peak::QuaternionProperty*)  tolua_tousertype(tolua_S,1,0);
   peak::Buffer* buffer = ((peak::Buffer*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'serialize'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'serialize'", NULL);
 #endif
   {
    self->serialize(buffer);
@@ -16846,7 +16983,7 @@ static int tolua_peak_peak_QuaternionProperty_deserialize00(lua_State* tolua_S)
   peak::QuaternionProperty* self = (peak::QuaternionProperty*)  tolua_tousertype(tolua_S,1,0);
   peak::Buffer* buffer = ((peak::Buffer*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'deserialize'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'deserialize'", NULL);
 #endif
   {
    self->deserialize(buffer);
@@ -16878,8 +17015,8 @@ static int tolua_peak_peak_IntProperty_new00(lua_State* tolua_S)
  {
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,""));
   {
-   peak::IntProperty* tolua_ret = (peak::IntProperty*)  new peak::IntProperty(name);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::IntProperty");
+   peak::IntProperty* tolua_ret = (peak::IntProperty*)  Mtolua_new((peak::IntProperty)(name));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::IntProperty");
   }
  }
  return 1;
@@ -16908,8 +17045,9 @@ static int tolua_peak_peak_IntProperty_new00_local(lua_State* tolua_S)
  {
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,""));
   {
-   peak::IntProperty* tolua_ret = (peak::IntProperty*)  new peak::IntProperty(name);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::IntProperty");
+   peak::IntProperty* tolua_ret = (peak::IntProperty*)  Mtolua_new((peak::IntProperty)(name));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::IntProperty");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -16937,7 +17075,7 @@ static int tolua_peak_peak_IntProperty_getType00(lua_State* tolua_S)
  {
   peak::IntProperty* self = (peak::IntProperty*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getType'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getType'", NULL);
 #endif
   {
    peak::PropertyType tolua_ret = (peak::PropertyType)  self->getType();
@@ -16971,7 +17109,7 @@ static int tolua_peak_peak_IntProperty_set00(lua_State* tolua_S)
   peak::IntProperty* self = (peak::IntProperty*)  tolua_tousertype(tolua_S,1,0);
   int i = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'", NULL);
 #endif
   {
    self->set(i);
@@ -17002,7 +17140,7 @@ static int tolua_peak_peak_IntProperty_getInt00(lua_State* tolua_S)
  {
   peak::IntProperty* self = (peak::IntProperty*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getInt'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getInt'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->getInt();
@@ -17034,7 +17172,7 @@ static int tolua_peak_peak_IntProperty_set01(lua_State* tolua_S)
   peak::IntProperty* self = (peak::IntProperty*)  tolua_tousertype(tolua_S,1,0);
   float f = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'", NULL);
 #endif
   {
    self->set(f);
@@ -17062,7 +17200,7 @@ static int tolua_peak_peak_IntProperty_getFloat00(lua_State* tolua_S)
  {
   peak::IntProperty* self = (peak::IntProperty*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getFloat'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getFloat'", NULL);
 #endif
   {
    float tolua_ret = (float)  self->getFloat();
@@ -17094,7 +17232,7 @@ static int tolua_peak_peak_IntProperty_set02(lua_State* tolua_S)
   peak::IntProperty* self = (peak::IntProperty*)  tolua_tousertype(tolua_S,1,0);
   peak::Property* p = ((peak::Property*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'", NULL);
 #endif
   {
    self->set(p);
@@ -17124,7 +17262,7 @@ static int tolua_peak_peak_IntProperty_serialize00(lua_State* tolua_S)
   peak::IntProperty* self = (peak::IntProperty*)  tolua_tousertype(tolua_S,1,0);
   peak::Buffer* buffer = ((peak::Buffer*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'serialize'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'serialize'", NULL);
 #endif
   {
    self->serialize(buffer);
@@ -17157,7 +17295,7 @@ static int tolua_peak_peak_IntProperty_deserialize00(lua_State* tolua_S)
   peak::IntProperty* self = (peak::IntProperty*)  tolua_tousertype(tolua_S,1,0);
   peak::Buffer* buffer = ((peak::Buffer*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'deserialize'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'deserialize'", NULL);
 #endif
   {
    self->deserialize(buffer);
@@ -17187,8 +17325,8 @@ static int tolua_peak_peak_DirectLink_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::DirectLink* tolua_ret = (peak::DirectLink*)  new peak::DirectLink();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::DirectLink");
+   peak::DirectLink* tolua_ret = (peak::DirectLink*)  Mtolua_new((peak::DirectLink)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::DirectLink");
   }
  }
  return 1;
@@ -17215,8 +17353,9 @@ static int tolua_peak_peak_DirectLink_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::DirectLink* tolua_ret = (peak::DirectLink*)  new peak::DirectLink();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::DirectLink");
+   peak::DirectLink* tolua_ret = (peak::DirectLink*)  Mtolua_new((peak::DirectLink)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::DirectLink");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -17244,9 +17383,9 @@ static int tolua_peak_peak_DirectLink_delete00(lua_State* tolua_S)
  {
   peak::DirectLink* self = (peak::DirectLink*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -17277,7 +17416,7 @@ static int tolua_peak_peak_DirectLink_create00(lua_State* tolua_S)
   peak::Property* source = ((peak::Property*)  tolua_tousertype(tolua_S,2,0));
   peak::Property* target = ((peak::Property*)  tolua_tousertype(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->create(source,target);
@@ -17309,7 +17448,7 @@ static int tolua_peak_peak_DirectLink_destroy00(lua_State* tolua_S)
  {
   peak::DirectLink* self = (peak::DirectLink*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->destroy();
@@ -17341,7 +17480,7 @@ static int tolua_peak_peak_DirectLink_update00(lua_State* tolua_S)
  {
   peak::DirectLink* self = (peak::DirectLink*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'update'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'update'", NULL);
 #endif
   {
    self->update();
@@ -17373,8 +17512,8 @@ static int tolua_peak_peak_EventData_new00(lua_State* tolua_S)
  {
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   {
-   peak::EventData* tolua_ret = (peak::EventData*)  new peak::EventData(name);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::EventData");
+   peak::EventData* tolua_ret = (peak::EventData*)  Mtolua_new((peak::EventData)(name));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::EventData");
   }
  }
  return 1;
@@ -17403,8 +17542,9 @@ static int tolua_peak_peak_EventData_new00_local(lua_State* tolua_S)
  {
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   {
-   peak::EventData* tolua_ret = (peak::EventData*)  new peak::EventData(name);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::EventData");
+   peak::EventData* tolua_ret = (peak::EventData*)  Mtolua_new((peak::EventData)(name));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::EventData");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -17432,9 +17572,9 @@ static int tolua_peak_peak_EventData_delete00(lua_State* tolua_S)
  {
   peak::EventData* self = (peak::EventData*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -17461,7 +17601,7 @@ static int tolua_peak_peak_EventData_getName00(lua_State* tolua_S)
  {
   peak::EventData* self = (peak::EventData*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getName'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getName'", NULL);
 #endif
   {
    std::string tolua_ret = (std::string)  self->getName();
@@ -17497,7 +17637,7 @@ static int tolua_peak_peak_EventData_set00(lua_State* tolua_S)
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   float value = ((float)  tolua_tonumber(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'", NULL);
 #endif
   {
    self->set(name,value);
@@ -17528,7 +17668,7 @@ static int tolua_peak_peak_EventData_set01(lua_State* tolua_S)
   peak::EventData* self = (peak::EventData*)  tolua_tousertype(tolua_S,1,0);
   peak::Buffer* buffer = ((peak::Buffer*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'set'", NULL);
 #endif
   {
    self->set(buffer);
@@ -17558,7 +17698,7 @@ static int tolua_peak_peak_EventData_apply00(lua_State* tolua_S)
   peak::EventData* self = (peak::EventData*)  tolua_tousertype(tolua_S,1,0);
   peak::Script* script = ((peak::Script*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'apply'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'apply'", NULL);
 #endif
   {
    self->apply(script);
@@ -17589,7 +17729,7 @@ static int tolua_peak_peak_EventData_apply01(lua_State* tolua_S)
   peak::EventData* self = (peak::EventData*)  tolua_tousertype(tolua_S,1,0);
   peak::Buffer* buffer = ((peak::Buffer*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'apply'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'apply'", NULL);
 #endif
   {
    self->apply(buffer);
@@ -17616,8 +17756,8 @@ static int tolua_peak_peak_EventScriptLink_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::EventScriptLink* tolua_ret = (peak::EventScriptLink*)  new peak::EventScriptLink();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::EventScriptLink");
+   peak::EventScriptLink* tolua_ret = (peak::EventScriptLink*)  Mtolua_new((peak::EventScriptLink)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::EventScriptLink");
   }
  }
  return 1;
@@ -17644,8 +17784,9 @@ static int tolua_peak_peak_EventScriptLink_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::EventScriptLink* tolua_ret = (peak::EventScriptLink*)  new peak::EventScriptLink();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::EventScriptLink");
+   peak::EventScriptLink* tolua_ret = (peak::EventScriptLink*)  Mtolua_new((peak::EventScriptLink)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::EventScriptLink");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -17673,9 +17814,9 @@ static int tolua_peak_peak_EventScriptLink_delete00(lua_State* tolua_S)
  {
   peak::EventScriptLink* self = (peak::EventScriptLink*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -17710,7 +17851,7 @@ static int tolua_peak_peak_EventScriptLink_create00(lua_State* tolua_S)
   std::string function = ((std::string)  tolua_tocppstring(tolua_S,4,0));
   std::string filter = ((std::string)  tolua_tocppstring(tolua_S,5,""));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->create(source,script,function,filter);
@@ -17742,7 +17883,7 @@ static int tolua_peak_peak_EventScriptLink_destroy00(lua_State* tolua_S)
  {
   peak::EventScriptLink* self = (peak::EventScriptLink*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->destroy();
@@ -17776,7 +17917,7 @@ static int tolua_peak_peak_EventScriptLink_update00(lua_State* tolua_S)
   peak::EventScriptLink* self = (peak::EventScriptLink*)  tolua_tousertype(tolua_S,1,0);
   peak::EventData* data = ((peak::EventData*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'update'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'update'", NULL);
 #endif
   {
    self->update(data);
@@ -17805,7 +17946,7 @@ static int tolua_peak_peak_EventScriptLink_update01(lua_State* tolua_S)
  {
   peak::EventScriptLink* self = (peak::EventScriptLink*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'update'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'update'", NULL);
 #endif
   {
    self->update();
@@ -17832,8 +17973,8 @@ static int tolua_peak_peak_EventRemoteLink_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::EventRemoteLink* tolua_ret = (peak::EventRemoteLink*)  new peak::EventRemoteLink();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::EventRemoteLink");
+   peak::EventRemoteLink* tolua_ret = (peak::EventRemoteLink*)  Mtolua_new((peak::EventRemoteLink)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::EventRemoteLink");
   }
  }
  return 1;
@@ -17860,8 +18001,9 @@ static int tolua_peak_peak_EventRemoteLink_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::EventRemoteLink* tolua_ret = (peak::EventRemoteLink*)  new peak::EventRemoteLink();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::EventRemoteLink");
+   peak::EventRemoteLink* tolua_ret = (peak::EventRemoteLink*)  Mtolua_new((peak::EventRemoteLink)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::EventRemoteLink");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -17889,9 +18031,9 @@ static int tolua_peak_peak_EventRemoteLink_delete00(lua_State* tolua_S)
  {
   peak::EventRemoteLink* self = (peak::EventRemoteLink*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -17928,7 +18070,7 @@ static int tolua_peak_peak_EventRemoteLink_create00(lua_State* tolua_S)
   std::string filter = ((std::string)  tolua_tocppstring(tolua_S,5,0));
   bool reliable = ((bool)  tolua_toboolean(tolua_S,6,true));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->create(source,entityid,link,filter,reliable);
@@ -17960,7 +18102,7 @@ static int tolua_peak_peak_EventRemoteLink_destroy00(lua_State* tolua_S)
  {
   peak::EventRemoteLink* self = (peak::EventRemoteLink*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->destroy();
@@ -17992,7 +18134,7 @@ static int tolua_peak_peak_EventRemoteLink_update00(lua_State* tolua_S)
  {
   peak::EventRemoteLink* self = (peak::EventRemoteLink*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'update'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'update'", NULL);
 #endif
   {
    self->update();
@@ -18022,8 +18164,8 @@ static int tolua_peak_peak_PropertyScriptLink_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::PropertyScriptLink* tolua_ret = (peak::PropertyScriptLink*)  new peak::PropertyScriptLink();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::PropertyScriptLink");
+   peak::PropertyScriptLink* tolua_ret = (peak::PropertyScriptLink*)  Mtolua_new((peak::PropertyScriptLink)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::PropertyScriptLink");
   }
  }
  return 1;
@@ -18050,8 +18192,9 @@ static int tolua_peak_peak_PropertyScriptLink_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::PropertyScriptLink* tolua_ret = (peak::PropertyScriptLink*)  new peak::PropertyScriptLink();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::PropertyScriptLink");
+   peak::PropertyScriptLink* tolua_ret = (peak::PropertyScriptLink*)  Mtolua_new((peak::PropertyScriptLink)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::PropertyScriptLink");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -18079,9 +18222,9 @@ static int tolua_peak_peak_PropertyScriptLink_delete00(lua_State* tolua_S)
  {
   peak::PropertyScriptLink* self = (peak::PropertyScriptLink*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -18114,7 +18257,7 @@ static int tolua_peak_peak_PropertyScriptLink_create00(lua_State* tolua_S)
   peak::Script* script = ((peak::Script*)  tolua_tousertype(tolua_S,3,0));
   std::string function = ((std::string)  tolua_tocppstring(tolua_S,4,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->create(source,script,function);
@@ -18146,7 +18289,7 @@ static int tolua_peak_peak_PropertyScriptLink_destroy00(lua_State* tolua_S)
  {
   peak::PropertyScriptLink* self = (peak::PropertyScriptLink*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->destroy();
@@ -18178,7 +18321,7 @@ static int tolua_peak_peak_PropertyScriptLink_update00(lua_State* tolua_S)
  {
   peak::PropertyScriptLink* self = (peak::PropertyScriptLink*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'update'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'update'", NULL);
 #endif
   {
    self->update();
@@ -18208,8 +18351,8 @@ static int tolua_peak_peak_BroadcastClient_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::BroadcastClient* tolua_ret = (peak::BroadcastClient*)  new peak::BroadcastClient();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::BroadcastClient");
+   peak::BroadcastClient* tolua_ret = (peak::BroadcastClient*)  Mtolua_new((peak::BroadcastClient)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::BroadcastClient");
   }
  }
  return 1;
@@ -18236,8 +18379,9 @@ static int tolua_peak_peak_BroadcastClient_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::BroadcastClient* tolua_ret = (peak::BroadcastClient*)  new peak::BroadcastClient();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::BroadcastClient");
+   peak::BroadcastClient* tolua_ret = (peak::BroadcastClient*)  Mtolua_new((peak::BroadcastClient)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::BroadcastClient");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -18265,9 +18409,9 @@ static int tolua_peak_peak_BroadcastClient_delete00(lua_State* tolua_S)
  {
   peak::BroadcastClient* self = (peak::BroadcastClient*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -18296,7 +18440,7 @@ static int tolua_peak_peak_BroadcastClient_start00(lua_State* tolua_S)
   peak::BroadcastClient* self = (peak::BroadcastClient*)  tolua_tousertype(tolua_S,1,0);
   int port = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'start'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'start'", NULL);
 #endif
   {
    self->start(port);
@@ -18327,7 +18471,7 @@ static int tolua_peak_peak_BroadcastClient_stop00(lua_State* tolua_S)
  {
   peak::BroadcastClient* self = (peak::BroadcastClient*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'stop'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'stop'", NULL);
 #endif
   {
    self->stop();
@@ -18358,7 +18502,7 @@ static int tolua_peak_peak_BroadcastClient_clearList00(lua_State* tolua_S)
  {
   peak::BroadcastClient* self = (peak::BroadcastClient*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'clearList'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'clearList'", NULL);
 #endif
   {
    self->clearList();
@@ -18389,7 +18533,7 @@ static int tolua_peak_peak_BroadcastClient_getServerCount00(lua_State* tolua_S)
  {
   peak::BroadcastClient* self = (peak::BroadcastClient*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getServerCount'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getServerCount'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->getServerCount();
@@ -18423,7 +18567,7 @@ static int tolua_peak_peak_BroadcastClient_getServerInfo00(lua_State* tolua_S)
   peak::BroadcastClient* self = (peak::BroadcastClient*)  tolua_tousertype(tolua_S,1,0);
   int index = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getServerInfo'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getServerInfo'", NULL);
 #endif
   {
    std::string tolua_ret = (std::string)  self->getServerInfo(index);
@@ -18457,17 +18601,19 @@ static int tolua_peak_peak_BroadcastClient_getServerAddress00(lua_State* tolua_S
   peak::BroadcastClient* self = (peak::BroadcastClient*)  tolua_tousertype(tolua_S,1,0);
   int index = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getServerAddress'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getServerAddress'", NULL);
 #endif
   {
    peak::Address tolua_ret = (peak::Address)  self->getServerAddress(index);
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Address(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Address");
+    void* tolua_obj = Mtolua_new((peak::Address)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Address");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Address));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Address");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Address");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -18501,7 +18647,7 @@ static int tolua_peak_peak_BroadcastClient_setCallback00(lua_State* tolua_S)
   peak::Script* script = ((peak::Script*)  tolua_tousertype(tolua_S,2,0));
   std::string function = ((std::string)  tolua_tocppstring(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setCallback'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setCallback'", NULL);
 #endif
   {
    self->setCallback(script,function);
@@ -18534,7 +18680,7 @@ static int tolua_peak_peak_BroadcastClient_doWork00(lua_State* tolua_S)
   peak::BroadcastClient* self = (peak::BroadcastClient*)  tolua_tousertype(tolua_S,1,0);
   float msecs = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'doWork'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'doWork'", NULL);
 #endif
   {
    self->doWork(msecs);
@@ -18595,8 +18741,8 @@ static int tolua_peak_peak_CameraSceneNode_new00(lua_State* tolua_S)
  {
   peak::SceneNode* parent = ((peak::SceneNode*)  tolua_tousertype(tolua_S,2,0));
   {
-   peak::CameraSceneNode* tolua_ret = (peak::CameraSceneNode*)  new peak::CameraSceneNode(parent);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::CameraSceneNode");
+   peak::CameraSceneNode* tolua_ret = (peak::CameraSceneNode*)  Mtolua_new((peak::CameraSceneNode)(parent));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::CameraSceneNode");
   }
  }
  return 1;
@@ -18625,8 +18771,9 @@ static int tolua_peak_peak_CameraSceneNode_new00_local(lua_State* tolua_S)
  {
   peak::SceneNode* parent = ((peak::SceneNode*)  tolua_tousertype(tolua_S,2,0));
   {
-   peak::CameraSceneNode* tolua_ret = (peak::CameraSceneNode*)  new peak::CameraSceneNode(parent);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::CameraSceneNode");
+   peak::CameraSceneNode* tolua_ret = (peak::CameraSceneNode*)  Mtolua_new((peak::CameraSceneNode)(parent));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::CameraSceneNode");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -18654,9 +18801,9 @@ static int tolua_peak_peak_CameraSceneNode_delete00(lua_State* tolua_S)
  {
   peak::CameraSceneNode* self = (peak::CameraSceneNode*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -18685,7 +18832,7 @@ static int tolua_peak_peak_CameraSceneNode_setNearValue00(lua_State* tolua_S)
   peak::CameraSceneNode* self = (peak::CameraSceneNode*)  tolua_tousertype(tolua_S,1,0);
   float nearvalue = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setNearValue'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setNearValue'", NULL);
 #endif
   {
    self->setNearValue(nearvalue);
@@ -18716,7 +18863,7 @@ static int tolua_peak_peak_CameraSceneNode_getNearValue00(lua_State* tolua_S)
  {
   peak::CameraSceneNode* self = (peak::CameraSceneNode*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getNearValue'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getNearValue'", NULL);
 #endif
   {
    float tolua_ret = (float)  self->getNearValue();
@@ -18750,7 +18897,7 @@ static int tolua_peak_peak_CameraSceneNode_setFarValue00(lua_State* tolua_S)
   peak::CameraSceneNode* self = (peak::CameraSceneNode*)  tolua_tousertype(tolua_S,1,0);
   float nearvalue = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setFarValue'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setFarValue'", NULL);
 #endif
   {
    self->setFarValue(nearvalue);
@@ -18781,7 +18928,7 @@ static int tolua_peak_peak_CameraSceneNode_getFarValue00(lua_State* tolua_S)
  {
   peak::CameraSceneNode* self = (peak::CameraSceneNode*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getFarValue'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getFarValue'", NULL);
 #endif
   {
    float tolua_ret = (float)  self->getFarValue();
@@ -18815,7 +18962,7 @@ static int tolua_peak_peak_CameraSceneNode_setOrthogonal00(lua_State* tolua_S)
   peak::CameraSceneNode* self = (peak::CameraSceneNode*)  tolua_tousertype(tolua_S,1,0);
   bool orthogonal = ((bool)  tolua_toboolean(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setOrthogonal'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setOrthogonal'", NULL);
 #endif
   {
    self->setOrthogonal(orthogonal);
@@ -18846,7 +18993,7 @@ static int tolua_peak_peak_CameraSceneNode_isOrthogonal00(lua_State* tolua_S)
  {
   peak::CameraSceneNode* self = (peak::CameraSceneNode*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isOrthogonal'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isOrthogonal'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->isOrthogonal();
@@ -18880,7 +19027,7 @@ static int tolua_peak_peak_CameraSceneNode_setFOV00(lua_State* tolua_S)
   peak::CameraSceneNode* self = (peak::CameraSceneNode*)  tolua_tousertype(tolua_S,1,0);
   float fov = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setFOV'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setFOV'", NULL);
 #endif
   {
    self->setFOV(fov);
@@ -18911,7 +19058,7 @@ static int tolua_peak_peak_CameraSceneNode_getFOV00(lua_State* tolua_S)
  {
   peak::CameraSceneNode* self = (peak::CameraSceneNode*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getFOV'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getFOV'", NULL);
 #endif
   {
    float tolua_ret = (float)  self->getFOV();
@@ -18945,7 +19092,7 @@ static int tolua_peak_peak_CameraSceneNode_setAspectRatio00(lua_State* tolua_S)
   peak::CameraSceneNode* self = (peak::CameraSceneNode*)  tolua_tousertype(tolua_S,1,0);
   float ratio = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setAspectRatio'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setAspectRatio'", NULL);
 #endif
   {
    self->setAspectRatio(ratio);
@@ -18976,7 +19123,7 @@ static int tolua_peak_peak_CameraSceneNode_getAspectRatio00(lua_State* tolua_S)
  {
   peak::CameraSceneNode* self = (peak::CameraSceneNode*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getAspectRatio'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getAspectRatio'", NULL);
 #endif
   {
    float tolua_ret = (float)  self->getAspectRatio();
@@ -19008,7 +19155,7 @@ static int tolua_peak_peak_CameraSceneNode_render00(lua_State* tolua_S)
  {
   peak::CameraSceneNode* self = (peak::CameraSceneNode*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'render'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'render'", NULL);
 #endif
   {
    self->render();
@@ -19039,7 +19186,7 @@ static int tolua_peak_peak_GraphicsEngine_get00(lua_State* tolua_S)
  {
   {
    peak::GraphicsEngine* tolua_ret = (peak::GraphicsEngine*)  peak::GraphicsEngine::get();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::GraphicsEngine");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::GraphicsEngine");
   }
  }
  return 1;
@@ -19067,7 +19214,7 @@ static int tolua_peak_peak_GraphicsEngine_init00(lua_State* tolua_S)
  {
   peak::GraphicsEngine* self = (peak::GraphicsEngine*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->init();
@@ -19099,7 +19246,7 @@ static int tolua_peak_peak_GraphicsEngine_shutdown00(lua_State* tolua_S)
  {
   peak::GraphicsEngine* self = (peak::GraphicsEngine*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'shutdown'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'shutdown'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->shutdown();
@@ -19133,7 +19280,7 @@ static int tolua_peak_peak_GraphicsEngine_renderFrame00(lua_State* tolua_S)
   peak::GraphicsEngine* self = (peak::GraphicsEngine*)  tolua_tousertype(tolua_S,1,0);
   float msecs = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'renderFrame'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'renderFrame'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->renderFrame(msecs);
@@ -19165,11 +19312,11 @@ static int tolua_peak_peak_GraphicsEngine_getStandardCamera00(lua_State* tolua_S
  {
   peak::GraphicsEngine* self = (peak::GraphicsEngine*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getStandardCamera'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getStandardCamera'", NULL);
 #endif
   {
    peak::CameraSceneNode* tolua_ret = (peak::CameraSceneNode*)  self->getStandardCamera();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::CameraSceneNode");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::CameraSceneNode");
   }
  }
  return 1;
@@ -19197,7 +19344,7 @@ static int tolua_peak_peak_GraphicsEngine_saveMessages00(lua_State* tolua_S)
  {
   peak::GraphicsEngine* self = (peak::GraphicsEngine*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'saveMessages'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'saveMessages'", NULL);
 #endif
   {
    self->saveMessages();
@@ -19227,8 +19374,8 @@ static int tolua_peak_peak_Image_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Image* tolua_ret = (peak::Image*)  new peak::Image();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Image");
+   peak::Image* tolua_ret = (peak::Image*)  Mtolua_new((peak::Image)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Image");
   }
  }
  return 1;
@@ -19255,8 +19402,9 @@ static int tolua_peak_peak_Image_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Image* tolua_ret = (peak::Image*)  new peak::Image();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Image");
+   peak::Image* tolua_ret = (peak::Image*)  Mtolua_new((peak::Image)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Image");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -19283,8 +19431,8 @@ static int tolua_peak_peak_Image_new01(lua_State* tolua_S)
  {
   std::string imagename = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   {
-   peak::Image* tolua_ret = (peak::Image*)  new peak::Image(imagename);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Image");
+   peak::Image* tolua_ret = (peak::Image*)  Mtolua_new((peak::Image)(imagename));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Image");
   }
  }
  return 1;
@@ -19308,8 +19456,9 @@ static int tolua_peak_peak_Image_new01_local(lua_State* tolua_S)
  {
   std::string imagename = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   {
-   peak::Image* tolua_ret = (peak::Image*)  new peak::Image(imagename);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Image");
+   peak::Image* tolua_ret = (peak::Image*)  Mtolua_new((peak::Image)(imagename));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Image");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -19334,9 +19483,9 @@ static int tolua_peak_peak_Image_delete00(lua_State* tolua_S)
  {
   peak::Image* self = (peak::Image*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -19363,17 +19512,19 @@ static int tolua_peak_peak_Image_getDimension00(lua_State* tolua_S)
  {
   peak::Image* self = (peak::Image*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getDimension'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getDimension'", NULL);
 #endif
   {
    peak::Vector2DI tolua_ret = (peak::Vector2DI)  self->getDimension();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector2DI(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2DI");
+    void* tolua_obj = Mtolua_new((peak::Vector2DI)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2DI");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector2DI));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2DI");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2DI");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -19405,7 +19556,7 @@ static int tolua_peak_peak_Image_load00(lua_State* tolua_S)
   peak::Image* self = (peak::Image*)  tolua_tousertype(tolua_S,1,0);
   std::string imagename = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'load'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'load'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->load(imagename);
@@ -19429,7 +19580,7 @@ static int tolua_peak_peak_Image_getPixel00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Image",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector2DI",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector2DI",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -19439,17 +19590,19 @@ static int tolua_peak_peak_Image_getPixel00(lua_State* tolua_S)
   peak::Image* self = (peak::Image*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector2DI pixel = *((peak::Vector2DI*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPixel'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPixel'", NULL);
 #endif
   {
    peak::Color tolua_ret = (peak::Color)  self->getPixel(pixel);
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Color(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Color");
+    void* tolua_obj = Mtolua_new((peak::Color)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Color");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Color));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Color");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Color");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -19481,17 +19634,19 @@ static int tolua_peak_peak_Image_getPixel01(lua_State* tolua_S)
   float x = ((float)  tolua_tonumber(tolua_S,2,0));
   float y = ((float)  tolua_tonumber(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPixel'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPixel'", NULL);
 #endif
   {
    peak::Color tolua_ret = (peak::Color)  self->getPixel(x,y);
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Color(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Color");
+    void* tolua_obj = Mtolua_new((peak::Color)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Color");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Color));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Color");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Color");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -19523,8 +19678,8 @@ static int tolua_peak_peak_MeshSceneNode_new00(lua_State* tolua_S)
   bool animated = ((bool)  tolua_toboolean(tolua_S,3,false));
   peak::SceneNode* parent = ((peak::SceneNode*)  tolua_tousertype(tolua_S,4,0));
   {
-   peak::MeshSceneNode* tolua_ret = (peak::MeshSceneNode*)  new peak::MeshSceneNode(mesh,animated,parent);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::MeshSceneNode");
+   peak::MeshSceneNode* tolua_ret = (peak::MeshSceneNode*)  Mtolua_new((peak::MeshSceneNode)(mesh,animated,parent));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::MeshSceneNode");
   }
  }
  return 1;
@@ -19557,8 +19712,9 @@ static int tolua_peak_peak_MeshSceneNode_new00_local(lua_State* tolua_S)
   bool animated = ((bool)  tolua_toboolean(tolua_S,3,false));
   peak::SceneNode* parent = ((peak::SceneNode*)  tolua_tousertype(tolua_S,4,0));
   {
-   peak::MeshSceneNode* tolua_ret = (peak::MeshSceneNode*)  new peak::MeshSceneNode(mesh,animated,parent);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::MeshSceneNode");
+   peak::MeshSceneNode* tolua_ret = (peak::MeshSceneNode*)  Mtolua_new((peak::MeshSceneNode)(mesh,animated,parent));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::MeshSceneNode");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -19586,9 +19742,9 @@ static int tolua_peak_peak_MeshSceneNode_delete00(lua_State* tolua_S)
  {
   peak::MeshSceneNode* self = (peak::MeshSceneNode*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -19615,7 +19771,7 @@ static int tolua_peak_peak_MeshSceneNode_getEndFrame00(lua_State* tolua_S)
  {
   peak::MeshSceneNode* self = (peak::MeshSceneNode*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getEndFrame'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getEndFrame'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->getEndFrame();
@@ -19647,7 +19803,7 @@ static int tolua_peak_peak_MeshSceneNode_getFrameNr00(lua_State* tolua_S)
  {
   peak::MeshSceneNode* self = (peak::MeshSceneNode*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getFrameNr'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getFrameNr'", NULL);
 #endif
   {
    float tolua_ret = (float)  self->getFrameNr();
@@ -19679,7 +19835,7 @@ static int tolua_peak_peak_MeshSceneNode_getStartFrame00(lua_State* tolua_S)
  {
   peak::MeshSceneNode* self = (peak::MeshSceneNode*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getStartFrame'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getStartFrame'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->getStartFrame();
@@ -19713,7 +19869,7 @@ static int tolua_peak_peak_MeshSceneNode_setLoopMode00(lua_State* tolua_S)
   peak::MeshSceneNode* self = (peak::MeshSceneNode*)  tolua_tousertype(tolua_S,1,0);
   bool flag = ((bool)  tolua_toboolean(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setLoopMode'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setLoopMode'", NULL);
 #endif
   {
    self->setLoopMode(flag);
@@ -19746,7 +19902,7 @@ static int tolua_peak_peak_MeshSceneNode_setAnimationSpeed00(lua_State* tolua_S)
   peak::MeshSceneNode* self = (peak::MeshSceneNode*)  tolua_tousertype(tolua_S,1,0);
   float speed = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setAnimationSpeed'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setAnimationSpeed'", NULL);
 #endif
   {
    self->setAnimationSpeed(speed);
@@ -19779,7 +19935,7 @@ static int tolua_peak_peak_MeshSceneNode_pushAnimation00(lua_State* tolua_S)
   peak::MeshSceneNode* self = (peak::MeshSceneNode*)  tolua_tousertype(tolua_S,1,0);
   std::string animation = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'pushAnimation'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'pushAnimation'", NULL);
 #endif
   {
    self->pushAnimation(animation);
@@ -19810,7 +19966,7 @@ static int tolua_peak_peak_MeshSceneNode_popAnimation00(lua_State* tolua_S)
  {
   peak::MeshSceneNode* self = (peak::MeshSceneNode*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'popAnimation'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'popAnimation'", NULL);
 #endif
   {
    self->popAnimation();
@@ -19844,8 +20000,8 @@ static int tolua_peak_peak_TextureOverlay_new00(lua_State* tolua_S)
   std::string filename = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   peak::Overlay* parent = ((peak::Overlay*)  tolua_tousertype(tolua_S,3,0));
   {
-   peak::TextureOverlay* tolua_ret = (peak::TextureOverlay*)  new peak::TextureOverlay(filename,parent);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::TextureOverlay");
+   peak::TextureOverlay* tolua_ret = (peak::TextureOverlay*)  Mtolua_new((peak::TextureOverlay)(filename,parent));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::TextureOverlay");
   }
  }
  return 1;
@@ -19876,8 +20032,9 @@ static int tolua_peak_peak_TextureOverlay_new00_local(lua_State* tolua_S)
   std::string filename = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   peak::Overlay* parent = ((peak::Overlay*)  tolua_tousertype(tolua_S,3,0));
   {
-   peak::TextureOverlay* tolua_ret = (peak::TextureOverlay*)  new peak::TextureOverlay(filename,parent);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::TextureOverlay");
+   peak::TextureOverlay* tolua_ret = (peak::TextureOverlay*)  Mtolua_new((peak::TextureOverlay)(filename,parent));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::TextureOverlay");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -19905,9 +20062,9 @@ static int tolua_peak_peak_TextureOverlay_delete00(lua_State* tolua_S)
  {
   peak::TextureOverlay* self = (peak::TextureOverlay*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -19934,7 +20091,7 @@ static int tolua_peak_peak_TextureOverlay_notifySizeChanged00(lua_State* tolua_S
  {
   peak::TextureOverlay* self = (peak::TextureOverlay*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'notifySizeChanged'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'notifySizeChanged'", NULL);
 #endif
   {
    self->notifySizeChanged();
@@ -19965,7 +20122,7 @@ static int tolua_peak_peak_TextureOverlay_render00(lua_State* tolua_S)
  {
   peak::TextureOverlay* self = (peak::TextureOverlay*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'render'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'render'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->render();
@@ -20002,8 +20159,8 @@ static int tolua_peak_peak_LabelOverlay_new00(lua_State* tolua_S)
   std::string font = ((std::string)  tolua_tocppstring(tolua_S,3,""));
   peak::Overlay* parent = ((peak::Overlay*)  tolua_tousertype(tolua_S,4,0));
   {
-   peak::LabelOverlay* tolua_ret = (peak::LabelOverlay*)  new peak::LabelOverlay(label,font,parent);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::LabelOverlay");
+   peak::LabelOverlay* tolua_ret = (peak::LabelOverlay*)  Mtolua_new((peak::LabelOverlay)(label,font,parent));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::LabelOverlay");
   }
  }
  return 1;
@@ -20036,8 +20193,9 @@ static int tolua_peak_peak_LabelOverlay_new00_local(lua_State* tolua_S)
   std::string font = ((std::string)  tolua_tocppstring(tolua_S,3,""));
   peak::Overlay* parent = ((peak::Overlay*)  tolua_tousertype(tolua_S,4,0));
   {
-   peak::LabelOverlay* tolua_ret = (peak::LabelOverlay*)  new peak::LabelOverlay(label,font,parent);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::LabelOverlay");
+   peak::LabelOverlay* tolua_ret = (peak::LabelOverlay*)  Mtolua_new((peak::LabelOverlay)(label,font,parent));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::LabelOverlay");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -20065,9 +20223,9 @@ static int tolua_peak_peak_LabelOverlay_delete00(lua_State* tolua_S)
  {
   peak::LabelOverlay* self = (peak::LabelOverlay*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -20096,7 +20254,7 @@ static int tolua_peak_peak_LabelOverlay_setLabel00(lua_State* tolua_S)
   peak::LabelOverlay* self = (peak::LabelOverlay*)  tolua_tousertype(tolua_S,1,0);
   std::string label = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setLabel'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setLabel'", NULL);
 #endif
   {
    self->setLabel(label);
@@ -20127,7 +20285,7 @@ static int tolua_peak_peak_LabelOverlay_getLabel00(lua_State* tolua_S)
  {
   peak::LabelOverlay* self = (peak::LabelOverlay*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getLabel'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getLabel'", NULL);
 #endif
   {
    std::string tolua_ret = (std::string)  self->getLabel();
@@ -20159,7 +20317,7 @@ static int tolua_peak_peak_LabelOverlay_render00(lua_State* tolua_S)
  {
   peak::LabelOverlay* self = (peak::LabelOverlay*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'render'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'render'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->render();
@@ -20191,7 +20349,7 @@ static int tolua_peak_peak_OverlayManager_get00(lua_State* tolua_S)
  {
   {
    peak::OverlayManager* tolua_ret = (peak::OverlayManager*)  peak::OverlayManager::get();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::OverlayManager");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::OverlayManager");
   }
  }
  return 1;
@@ -20219,9 +20377,9 @@ static int tolua_peak_peak_OverlayManager_delete00(lua_State* tolua_S)
  {
   peak::OverlayManager* self = (peak::OverlayManager*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -20248,7 +20406,7 @@ static int tolua_peak_peak_OverlayManager_init00(lua_State* tolua_S)
  {
   peak::OverlayManager* self = (peak::OverlayManager*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->init();
@@ -20280,7 +20438,7 @@ static int tolua_peak_peak_OverlayManager_shutdown00(lua_State* tolua_S)
  {
   peak::OverlayManager* self = (peak::OverlayManager*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'shutdown'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'shutdown'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->shutdown();
@@ -20312,11 +20470,11 @@ static int tolua_peak_peak_OverlayManager_getRootOverlay00(lua_State* tolua_S)
  {
   peak::OverlayManager* self = (peak::OverlayManager*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getRootOverlay'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getRootOverlay'", NULL);
 #endif
   {
    peak::Overlay* tolua_ret = (peak::Overlay*)  self->getRootOverlay();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Overlay");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Overlay");
   }
  }
  return 1;
@@ -20344,7 +20502,7 @@ static int tolua_peak_peak_OverlayManager_render00(lua_State* tolua_S)
  {
   peak::OverlayManager* self = (peak::OverlayManager*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'render'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'render'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->render();
@@ -20376,9 +20534,9 @@ static int tolua_peak_peak_SceneNodeController_delete00(lua_State* tolua_S)
  {
   peak::SceneNodeController* self = (peak::SceneNodeController*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -20407,7 +20565,7 @@ static int tolua_peak_peak_SceneNodeController_setSceneNode00(lua_State* tolua_S
   peak::SceneNodeController* self = (peak::SceneNodeController*)  tolua_tousertype(tolua_S,1,0);
   peak::SceneNode* node = ((peak::SceneNode*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setSceneNode'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setSceneNode'", NULL);
 #endif
   {
    self->setSceneNode(node);
@@ -20438,11 +20596,11 @@ static int tolua_peak_peak_SceneNodeController_getSceneNode00(lua_State* tolua_S
  {
   peak::SceneNodeController* self = (peak::SceneNodeController*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getSceneNode'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getSceneNode'", NULL);
 #endif
   {
    peak::SceneNode* tolua_ret = (peak::SceneNode*)  self->getSceneNode();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::SceneNode");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::SceneNode");
   }
  }
  return 1;
@@ -20501,7 +20659,7 @@ static int tolua_peak_peak_SceneNodeController_doWork00(lua_State* tolua_S)
   peak::SceneNodeController* self = (peak::SceneNodeController*)  tolua_tousertype(tolua_S,1,0);
   float msecs = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'doWork'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'doWork'", NULL);
 #endif
   {
    self->doWork(msecs);
@@ -20531,8 +20689,8 @@ static int tolua_peak_peak_FollowingController_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::FollowingController* tolua_ret = (peak::FollowingController*)  new peak::FollowingController();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::FollowingController");
+   peak::FollowingController* tolua_ret = (peak::FollowingController*)  Mtolua_new((peak::FollowingController)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::FollowingController");
   }
  }
  return 1;
@@ -20559,8 +20717,9 @@ static int tolua_peak_peak_FollowingController_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::FollowingController* tolua_ret = (peak::FollowingController*)  new peak::FollowingController();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::FollowingController");
+   peak::FollowingController* tolua_ret = (peak::FollowingController*)  Mtolua_new((peak::FollowingController)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::FollowingController");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -20588,9 +20747,9 @@ static int tolua_peak_peak_FollowingController_delete00(lua_State* tolua_S)
  {
   peak::FollowingController* self = (peak::FollowingController*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -20619,7 +20778,7 @@ static int tolua_peak_peak_FollowingController_setTarget00(lua_State* tolua_S)
   peak::FollowingController* self = (peak::FollowingController*)  tolua_tousertype(tolua_S,1,0);
   peak::SceneNode* target = ((peak::SceneNode*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setTarget'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setTarget'", NULL);
 #endif
   {
    self->setTarget(target);
@@ -20650,11 +20809,11 @@ static int tolua_peak_peak_FollowingController_getTarget00(lua_State* tolua_S)
  {
   peak::FollowingController* self = (peak::FollowingController*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getTarget'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getTarget'", NULL);
 #endif
   {
    peak::SceneNode* tolua_ret = (peak::SceneNode*)  self->getTarget();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::SceneNode");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::SceneNode");
   }
  }
  return 1;
@@ -20674,7 +20833,7 @@ static int tolua_peak_peak_FollowingController_setDistance00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::FollowingController",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -20684,7 +20843,7 @@ static int tolua_peak_peak_FollowingController_setDistance00(lua_State* tolua_S)
   peak::FollowingController* self = (peak::FollowingController*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector3D distance = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setDistance'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setDistance'", NULL);
 #endif
   {
    self->setDistance(distance);
@@ -20715,17 +20874,19 @@ static int tolua_peak_peak_FollowingController_getDistance00(lua_State* tolua_S)
  {
   peak::FollowingController* self = (peak::FollowingController*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getDistance'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getDistance'", NULL);
 #endif
   {
    peak::Vector3D tolua_ret = (peak::Vector3D)  self->getDistance();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -20747,7 +20908,7 @@ static int tolua_peak_peak_FollowingController_setRotation00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::FollowingController",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -20757,7 +20918,7 @@ static int tolua_peak_peak_FollowingController_setRotation00(lua_State* tolua_S)
   peak::FollowingController* self = (peak::FollowingController*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector3D rotation = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setRotation'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setRotation'", NULL);
 #endif
   {
    self->setRotation(rotation);
@@ -20788,17 +20949,19 @@ static int tolua_peak_peak_FollowingController_getRotation00(lua_State* tolua_S)
  {
   peak::FollowingController* self = (peak::FollowingController*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getRotation'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getRotation'", NULL);
 #endif
   {
    peak::Vector3D tolua_ret = (peak::Vector3D)  self->getRotation();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -20830,7 +20993,7 @@ static int tolua_peak_peak_FollowingController_setMode00(lua_State* tolua_S)
   peak::FollowingController* self = (peak::FollowingController*)  tolua_tousertype(tolua_S,1,0);
   peak::FollowingControllerMode mode = ((peak::FollowingControllerMode) (int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setMode'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setMode'", NULL);
 #endif
   {
    self->setMode(mode);
@@ -20861,7 +21024,7 @@ static int tolua_peak_peak_FollowingController_getMode00(lua_State* tolua_S)
  {
   peak::FollowingController* self = (peak::FollowingController*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getMode'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getMode'", NULL);
 #endif
   {
    peak::FollowingControllerMode tolua_ret = (peak::FollowingControllerMode)  self->getMode();
@@ -20892,8 +21055,8 @@ static int tolua_peak_peak_RotationController_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::RotationController* tolua_ret = (peak::RotationController*)  new peak::RotationController();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::RotationController");
+   peak::RotationController* tolua_ret = (peak::RotationController*)  Mtolua_new((peak::RotationController)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::RotationController");
   }
  }
  return 1;
@@ -20920,8 +21083,9 @@ static int tolua_peak_peak_RotationController_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::RotationController* tolua_ret = (peak::RotationController*)  new peak::RotationController();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::RotationController");
+   peak::RotationController* tolua_ret = (peak::RotationController*)  Mtolua_new((peak::RotationController)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::RotationController");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -20949,9 +21113,9 @@ static int tolua_peak_peak_RotationController_delete00(lua_State* tolua_S)
  {
   peak::RotationController* self = (peak::RotationController*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -20970,7 +21134,7 @@ static int tolua_peak_peak_RotationController_setRotationSpeed00(lua_State* tolu
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::RotationController",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -20980,7 +21144,7 @@ static int tolua_peak_peak_RotationController_setRotationSpeed00(lua_State* tolu
   peak::RotationController* self = (peak::RotationController*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector3D speed = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setRotationSpeed'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setRotationSpeed'", NULL);
 #endif
   {
    self->setRotationSpeed(speed);
@@ -21011,17 +21175,19 @@ static int tolua_peak_peak_RotationController_getRotationSpeed00(lua_State* tolu
  {
   peak::RotationController* self = (peak::RotationController*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getRotationSpeed'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getRotationSpeed'", NULL);
 #endif
   {
    peak::Vector3D tolua_ret = (peak::Vector3D)  self->getRotationSpeed();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -21053,7 +21219,7 @@ static int tolua_peak_peak_RotationController_doWork00(lua_State* tolua_S)
   peak::RotationController* self = (peak::RotationController*)  tolua_tousertype(tolua_S,1,0);
   float msecs = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'doWork'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'doWork'", NULL);
 #endif
   {
    self->doWork(msecs);
@@ -21085,8 +21251,8 @@ static int tolua_peak_peak_Light_new00(lua_State* tolua_S)
  {
   peak::SceneNode* parent = ((peak::SceneNode*)  tolua_tousertype(tolua_S,2,0));
   {
-   peak::Light* tolua_ret = (peak::Light*)  new peak::Light(parent);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Light");
+   peak::Light* tolua_ret = (peak::Light*)  Mtolua_new((peak::Light)(parent));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Light");
   }
  }
  return 1;
@@ -21115,8 +21281,9 @@ static int tolua_peak_peak_Light_new00_local(lua_State* tolua_S)
  {
   peak::SceneNode* parent = ((peak::SceneNode*)  tolua_tousertype(tolua_S,2,0));
   {
-   peak::Light* tolua_ret = (peak::Light*)  new peak::Light(parent);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Light");
+   peak::Light* tolua_ret = (peak::Light*)  Mtolua_new((peak::Light)(parent));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Light");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -21144,9 +21311,9 @@ static int tolua_peak_peak_Light_delete00(lua_State* tolua_S)
  {
   peak::Light* self = (peak::Light*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -21175,7 +21342,7 @@ static int tolua_peak_peak_Light_setType00(lua_State* tolua_S)
   peak::Light* self = (peak::Light*)  tolua_tousertype(tolua_S,1,0);
   peak::LightType type = ((peak::LightType) (int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setType'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setType'", NULL);
 #endif
   {
    self->setType(type);
@@ -21206,7 +21373,7 @@ static int tolua_peak_peak_Light_getType00(lua_State* tolua_S)
  {
   peak::Light* self = (peak::Light*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getType'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getType'", NULL);
 #endif
   {
    peak::LightType tolua_ret = (peak::LightType)  self->getType();
@@ -21241,8 +21408,8 @@ static int tolua_peak_peak_ParticleSystem_new00(lua_State* tolua_S)
   std::string filename = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   peak::SceneNode* parent = ((peak::SceneNode*)  tolua_tousertype(tolua_S,3,0));
   {
-   peak::ParticleSystem* tolua_ret = (peak::ParticleSystem*)  new peak::ParticleSystem(filename,parent);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::ParticleSystem");
+   peak::ParticleSystem* tolua_ret = (peak::ParticleSystem*)  Mtolua_new((peak::ParticleSystem)(filename,parent));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::ParticleSystem");
   }
  }
  return 1;
@@ -21273,8 +21440,9 @@ static int tolua_peak_peak_ParticleSystem_new00_local(lua_State* tolua_S)
   std::string filename = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   peak::SceneNode* parent = ((peak::SceneNode*)  tolua_tousertype(tolua_S,3,0));
   {
-   peak::ParticleSystem* tolua_ret = (peak::ParticleSystem*)  new peak::ParticleSystem(filename,parent);
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::ParticleSystem");
+   peak::ParticleSystem* tolua_ret = (peak::ParticleSystem*)  Mtolua_new((peak::ParticleSystem)(filename,parent));
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::ParticleSystem");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -21302,9 +21470,9 @@ static int tolua_peak_peak_ParticleSystem_delete00(lua_State* tolua_S)
  {
   peak::ParticleSystem* self = (peak::ParticleSystem*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -21330,8 +21498,8 @@ static int tolua_peak_peak_Box_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Box* tolua_ret = (peak::Box*)  new peak::Box();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Box");
+   peak::Box* tolua_ret = (peak::Box*)  Mtolua_new((peak::Box)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Box");
   }
  }
  return 1;
@@ -21358,8 +21526,9 @@ static int tolua_peak_peak_Box_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Box* tolua_ret = (peak::Box*)  new peak::Box();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Box");
+   peak::Box* tolua_ret = (peak::Box*)  Mtolua_new((peak::Box)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Box");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -21387,9 +21556,9 @@ static int tolua_peak_peak_Box_delete00(lua_State* tolua_S)
  {
   peak::Box* self = (peak::Box*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -21408,7 +21577,7 @@ static int tolua_peak_peak_Box_create00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Box",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnumber(tolua_S,3,1,&tolua_err) ||
      !tolua_isnoobj(tolua_S,4,&tolua_err)
  )
@@ -21420,7 +21589,7 @@ static int tolua_peak_peak_Box_create00(lua_State* tolua_S)
   peak::Vector3D dimensions = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
   float mass = ((float)  tolua_tonumber(tolua_S,3,0.0f));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->create(dimensions,mass);
@@ -21451,8 +21620,8 @@ static int tolua_peak_peak_Plane_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Plane* tolua_ret = (peak::Plane*)  new peak::Plane();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Plane");
+   peak::Plane* tolua_ret = (peak::Plane*)  Mtolua_new((peak::Plane)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Plane");
   }
  }
  return 1;
@@ -21479,8 +21648,9 @@ static int tolua_peak_peak_Plane_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Plane* tolua_ret = (peak::Plane*)  new peak::Plane();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Plane");
+   peak::Plane* tolua_ret = (peak::Plane*)  Mtolua_new((peak::Plane)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Plane");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -21508,9 +21678,9 @@ static int tolua_peak_peak_Plane_delete00(lua_State* tolua_S)
  {
   peak::Plane* self = (peak::Plane*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -21537,7 +21707,7 @@ static int tolua_peak_peak_Plane_create00(lua_State* tolua_S)
  {
   peak::Plane* self = (peak::Plane*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->create();
@@ -21560,7 +21730,7 @@ static int tolua_peak_peak_Plane_create01(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Plane",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnumber(tolua_S,3,1,&tolua_err) ||
      !tolua_isnoobj(tolua_S,4,&tolua_err)
  )
@@ -21571,7 +21741,7 @@ static int tolua_peak_peak_Plane_create01(lua_State* tolua_S)
   peak::Vector3D normal = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
   float constant = ((float)  tolua_tonumber(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->create(normal,constant);
@@ -21591,9 +21761,9 @@ static int tolua_peak_peak_Plane_create02(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Plane",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnumber(tolua_S,3,0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,4,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,4,&tolua_err) || !tolua_isusertype(tolua_S,4,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,5,&tolua_err)
  )
   goto tolua_lerror;
@@ -21604,7 +21774,7 @@ static int tolua_peak_peak_Plane_create02(lua_State* tolua_S)
   float constant = ((float)  tolua_tonumber(tolua_S,3,0));
   peak::Vector3D position = *((peak::Vector3D*)  tolua_tousertype(tolua_S,4,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->create(normal,constant,position);
@@ -21632,8 +21802,8 @@ static int tolua_peak_peak_Trimesh_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Trimesh* tolua_ret = (peak::Trimesh*)  new peak::Trimesh();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Trimesh");
+   peak::Trimesh* tolua_ret = (peak::Trimesh*)  Mtolua_new((peak::Trimesh)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Trimesh");
   }
  }
  return 1;
@@ -21660,8 +21830,9 @@ static int tolua_peak_peak_Trimesh_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Trimesh* tolua_ret = (peak::Trimesh*)  new peak::Trimesh();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Trimesh");
+   peak::Trimesh* tolua_ret = (peak::Trimesh*)  Mtolua_new((peak::Trimesh)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Trimesh");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -21689,9 +21860,9 @@ static int tolua_peak_peak_Trimesh_delete00(lua_State* tolua_S)
  {
   peak::Trimesh* self = (peak::Trimesh*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -21722,7 +21893,7 @@ static int tolua_peak_peak_Trimesh_create00(lua_State* tolua_S)
   std::string modelfile = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   float mass = ((float)  tolua_tonumber(tolua_S,3,0.0f));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'", NULL);
 #endif
   {
    self->create(modelfile,mass);
@@ -21746,7 +21917,7 @@ static int tolua_peak_peak_Trimesh_create01(lua_State* tolua_S)
      !tolua_isusertype(tolua_S,1,"peak::Trimesh",0,&tolua_err) ||
      !tolua_iscppstring(tolua_S,2,0,&tolua_err) ||
      !tolua_isnumber(tolua_S,3,0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,4,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,4,&tolua_err) || !tolua_isusertype(tolua_S,4,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,5,&tolua_err)
  )
   goto tolua_lerror;
@@ -21757,7 +21928,7 @@ static int tolua_peak_peak_Trimesh_create01(lua_State* tolua_S)
   float mass = ((float)  tolua_tonumber(tolua_S,3,0));
   peak::Vector3D scale = *((peak::Vector3D*)  tolua_tousertype(tolua_S,4,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'", NULL);
 #endif
   {
    self->create(modelfile,mass,scale);
@@ -21785,7 +21956,7 @@ static int tolua_peak_peak_Trimesh_destroy00(lua_State* tolua_S)
  {
   peak::Trimesh* self = (peak::Trimesh*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->destroy();
@@ -21816,8 +21987,8 @@ static int tolua_peak_peak_Sphere_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Sphere* tolua_ret = (peak::Sphere*)  new peak::Sphere();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Sphere");
+   peak::Sphere* tolua_ret = (peak::Sphere*)  Mtolua_new((peak::Sphere)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Sphere");
   }
  }
  return 1;
@@ -21844,8 +22015,9 @@ static int tolua_peak_peak_Sphere_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Sphere* tolua_ret = (peak::Sphere*)  new peak::Sphere();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Sphere");
+   peak::Sphere* tolua_ret = (peak::Sphere*)  Mtolua_new((peak::Sphere)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Sphere");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -21873,9 +22045,9 @@ static int tolua_peak_peak_Sphere_delete00(lua_State* tolua_S)
  {
   peak::Sphere* self = (peak::Sphere*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -21906,7 +22078,7 @@ static int tolua_peak_peak_Sphere_create00(lua_State* tolua_S)
   float radius = ((float)  tolua_tonumber(tolua_S,2,0));
   float mass = ((float)  tolua_tonumber(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'", NULL);
 #endif
   {
    self->create(radius,mass);
@@ -21937,7 +22109,7 @@ static int tolua_peak_peak_Sphere_destroy00(lua_State* tolua_S)
  {
   peak::Sphere* self = (peak::Sphere*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->destroy();
@@ -21968,8 +22140,8 @@ static int tolua_peak_peak_Callback_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Callback* tolua_ret = (peak::Callback*)  new peak::Callback();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Callback");
+   peak::Callback* tolua_ret = (peak::Callback*)  Mtolua_new((peak::Callback)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Callback");
   }
  }
  return 1;
@@ -21996,8 +22168,9 @@ static int tolua_peak_peak_Callback_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Callback* tolua_ret = (peak::Callback*)  new peak::Callback();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Callback");
+   peak::Callback* tolua_ret = (peak::Callback*)  Mtolua_new((peak::Callback)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Callback");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -22025,9 +22198,9 @@ static int tolua_peak_peak_Callback_delete00(lua_State* tolua_S)
  {
   peak::Callback* self = (peak::Callback*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -22054,7 +22227,7 @@ static int tolua_peak_peak_Callback_create00(lua_State* tolua_S)
  {
   peak::Callback* self = (peak::Callback*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->create();
@@ -22086,7 +22259,7 @@ static int tolua_peak_peak_Callback_destroy00(lua_State* tolua_S)
  {
   peak::Callback* self = (peak::Callback*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->destroy();
@@ -22118,7 +22291,7 @@ static int tolua_peak_peak_Callback_update00(lua_State* tolua_S)
  {
   peak::Callback* self = (peak::Callback*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'update'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'update'", NULL);
 #endif
   {
    self->update();
@@ -22176,7 +22349,7 @@ static int tolua_peak_peak_Callback_getType00(lua_State* tolua_S)
  {
   peak::Callback* self = (peak::Callback*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getType'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getType'", NULL);
 #endif
   {
    peak::CallbackType tolua_ret = (peak::CallbackType)  self->getType();
@@ -22207,8 +22380,8 @@ static int tolua_peak_peak_CollisionInfo_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::CollisionInfo* tolua_ret = (peak::CollisionInfo*)  new peak::CollisionInfo();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::CollisionInfo");
+   peak::CollisionInfo* tolua_ret = (peak::CollisionInfo*)  Mtolua_new((peak::CollisionInfo)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::CollisionInfo");
   }
  }
  return 1;
@@ -22235,8 +22408,9 @@ static int tolua_peak_peak_CollisionInfo_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::CollisionInfo* tolua_ret = (peak::CollisionInfo*)  new peak::CollisionInfo();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::CollisionInfo");
+   peak::CollisionInfo* tolua_ret = (peak::CollisionInfo*)  Mtolua_new((peak::CollisionInfo)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::CollisionInfo");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -22286,7 +22460,7 @@ static int tolua_get_peak__CollisionInfo_point(lua_State* tolua_S)
 #ifndef TOLUA_RELEASE
   if (!self) tolua_error(tolua_S,"invalid 'self' in accessing variable 'point'",NULL);
 #endif
-  tolua_pushusertype(tolua_S,(void*)&self->point,"peak::Vector3D");
+   tolua_pushusertype(tolua_S,(void*)&self->point,"peak::Vector3D");
  return 1;
 }
 #endif //#ifndef TOLUA_DISABLE
@@ -22299,7 +22473,7 @@ static int tolua_set_peak__CollisionInfo_point(lua_State* tolua_S)
 #ifndef TOLUA_RELEASE
   tolua_Error tolua_err;
   if (!self) tolua_error(tolua_S,"invalid 'self' in accessing variable 'point'",NULL);
-  if (!tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err))
+  if ((tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)))
    tolua_error(tolua_S,"#vinvalid type in variable assignment.",&tolua_err);
 #endif
   self->point = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0))
@@ -22316,7 +22490,7 @@ static int tolua_get_peak__CollisionInfo_object_ptr(lua_State* tolua_S)
 #ifndef TOLUA_RELEASE
   if (!self) tolua_error(tolua_S,"invalid 'self' in accessing variable 'object'",NULL);
 #endif
-  tolua_pushusertype(tolua_S,(void*)self->object,"peak::Body");
+   tolua_pushusertype(tolua_S,(void*)self->object,"peak::Body");
  return 1;
 }
 #endif //#ifndef TOLUA_DISABLE
@@ -22353,8 +22527,8 @@ static int tolua_peak_peak_RayCallback_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::RayCallback* tolua_ret = (peak::RayCallback*)  new peak::RayCallback();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::RayCallback");
+   peak::RayCallback* tolua_ret = (peak::RayCallback*)  Mtolua_new((peak::RayCallback)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::RayCallback");
   }
  }
  return 1;
@@ -22381,8 +22555,9 @@ static int tolua_peak_peak_RayCallback_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::RayCallback* tolua_ret = (peak::RayCallback*)  new peak::RayCallback();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::RayCallback");
+   peak::RayCallback* tolua_ret = (peak::RayCallback*)  Mtolua_new((peak::RayCallback)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::RayCallback");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -22410,9 +22585,9 @@ static int tolua_peak_peak_RayCallback_delete00(lua_State* tolua_S)
  {
   peak::RayCallback* self = (peak::RayCallback*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -22431,8 +22606,8 @@ static int tolua_peak_peak_RayCallback_create00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::RayCallback",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,3,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
+     (tolua_isvaluenil(tolua_S,3,&tolua_err) || !tolua_isusertype(tolua_S,3,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isusertype(tolua_S,4,"peak::Script",0,&tolua_err) ||
      !tolua_iscppstring(tolua_S,5,0,&tolua_err) ||
      !tolua_isnoobj(tolua_S,6,&tolua_err)
@@ -22447,7 +22622,7 @@ static int tolua_peak_peak_RayCallback_create00(lua_State* tolua_S)
   peak::Script* script = ((peak::Script*)  tolua_tousertype(tolua_S,4,0));
   std::string callbackname = ((std::string)  tolua_tocppstring(tolua_S,5,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->create(rayto,rayfrom,script,callbackname);
@@ -22479,7 +22654,7 @@ static int tolua_peak_peak_RayCallback_destroy00(lua_State* tolua_S)
  {
   peak::RayCallback* self = (peak::RayCallback*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->destroy();
@@ -22511,7 +22686,7 @@ static int tolua_peak_peak_RayCallback_update00(lua_State* tolua_S)
  {
   peak::RayCallback* self = (peak::RayCallback*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'update'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'update'", NULL);
 #endif
   {
    self->update();
@@ -22542,7 +22717,7 @@ static int tolua_peak_peak_RayCallback_isCollision00(lua_State* tolua_S)
  {
   peak::RayCallback* self = (peak::RayCallback*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isCollision'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isCollision'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->isCollision();
@@ -22566,8 +22741,8 @@ static int tolua_peak_peak_RayCallback_setRay00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::RayCallback",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,3,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
+     (tolua_isvaluenil(tolua_S,3,&tolua_err) || !tolua_isusertype(tolua_S,3,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,4,&tolua_err)
  )
   goto tolua_lerror;
@@ -22578,7 +22753,7 @@ static int tolua_peak_peak_RayCallback_setRay00(lua_State* tolua_S)
   peak::Vector3D rayto = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
   peak::Vector3D rayfrom = *((peak::Vector3D*)  tolua_tousertype(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setRay'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setRay'", NULL);
 #endif
   {
    self->setRay(rayto,rayfrom);
@@ -22611,17 +22786,19 @@ static int tolua_peak_peak_RayCallback_getRay00(lua_State* tolua_S)
   peak::RayCallback* self = (peak::RayCallback*)  tolua_tousertype(tolua_S,1,0);
   bool index = ((bool)  tolua_toboolean(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getRay'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getRay'", NULL);
 #endif
   {
    peak::Vector3D tolua_ret = (peak::Vector3D)  self->getRay(index);
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -22643,7 +22820,7 @@ static int tolua_peak_peak_RayCallback_setInfo00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::RayCallback",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::CollisionInfo",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::CollisionInfo",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -22653,7 +22830,7 @@ static int tolua_peak_peak_RayCallback_setInfo00(lua_State* tolua_S)
   peak::RayCallback* self = (peak::RayCallback*)  tolua_tousertype(tolua_S,1,0);
   peak::CollisionInfo info = *((peak::CollisionInfo*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setInfo'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setInfo'", NULL);
 #endif
   {
    self->setInfo(info);
@@ -22684,17 +22861,19 @@ static int tolua_peak_peak_RayCallback_getInfo00(lua_State* tolua_S)
  {
   peak::RayCallback* self = (peak::RayCallback*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getInfo'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getInfo'", NULL);
 #endif
   {
    peak::CollisionInfo tolua_ret = (peak::CollisionInfo)  self->getInfo();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::CollisionInfo(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::CollisionInfo");
+    void* tolua_obj = Mtolua_new((peak::CollisionInfo)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::CollisionInfo");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::CollisionInfo));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::CollisionInfo");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::CollisionInfo");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -22723,8 +22902,8 @@ static int tolua_peak_peak_Heightfield_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Heightfield* tolua_ret = (peak::Heightfield*)  new peak::Heightfield();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Heightfield");
+   peak::Heightfield* tolua_ret = (peak::Heightfield*)  Mtolua_new((peak::Heightfield)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Heightfield");
   }
  }
  return 1;
@@ -22751,8 +22930,9 @@ static int tolua_peak_peak_Heightfield_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Heightfield* tolua_ret = (peak::Heightfield*)  new peak::Heightfield();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Heightfield");
+   peak::Heightfield* tolua_ret = (peak::Heightfield*)  Mtolua_new((peak::Heightfield)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Heightfield");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -22780,9 +22960,9 @@ static int tolua_peak_peak_Heightfield_delete00(lua_State* tolua_S)
  {
   peak::Heightfield* self = (peak::Heightfield*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -22813,7 +22993,7 @@ static int tolua_peak_peak_Heightfield_create00(lua_State* tolua_S)
   std::string heightmap = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   float mass = ((float)  tolua_tonumber(tolua_S,3,0.0f));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->create(heightmap,mass);
@@ -22838,7 +23018,7 @@ static int tolua_peak_peak_Heightfield_create01(lua_State* tolua_S)
      !tolua_isusertype(tolua_S,1,"peak::Heightfield",0,&tolua_err) ||
      !tolua_iscppstring(tolua_S,2,0,&tolua_err) ||
      !tolua_isnumber(tolua_S,3,0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,4,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,4,&tolua_err) || !tolua_isusertype(tolua_S,4,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,5,&tolua_err)
  )
   goto tolua_lerror;
@@ -22849,7 +23029,7 @@ static int tolua_peak_peak_Heightfield_create01(lua_State* tolua_S)
   float mass = ((float)  tolua_tonumber(tolua_S,3,0));
   peak::Vector3D scale = *((peak::Vector3D*)  tolua_tousertype(tolua_S,4,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'create'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->create(heightmap,mass,scale);
@@ -22878,7 +23058,7 @@ static int tolua_peak_peak_Heightfield_destroy00(lua_State* tolua_S)
  {
   peak::Heightfield* self = (peak::Heightfield*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->destroy();
@@ -22909,8 +23089,8 @@ static int tolua_peak_peak_Menu_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Menu* tolua_ret = (peak::Menu*)  new peak::Menu();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Menu");
+   peak::Menu* tolua_ret = (peak::Menu*)  Mtolua_new((peak::Menu)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Menu");
   }
  }
  return 1;
@@ -22937,8 +23117,9 @@ static int tolua_peak_peak_Menu_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Menu* tolua_ret = (peak::Menu*)  new peak::Menu();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Menu");
+   peak::Menu* tolua_ret = (peak::Menu*)  Mtolua_new((peak::Menu)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Menu");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -22966,9 +23147,9 @@ static int tolua_peak_peak_Menu_delete00(lua_State* tolua_S)
  {
   peak::Menu* self = (peak::Menu*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -22997,7 +23178,7 @@ static int tolua_peak_peak_Menu_init00(lua_State* tolua_S)
   peak::Menu* self = (peak::Menu*)  tolua_tousertype(tolua_S,1,0);
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->init(name);
@@ -23029,7 +23210,7 @@ static int tolua_peak_peak_Menu_destroy00(lua_State* tolua_S)
  {
   peak::Menu* self = (peak::Menu*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->destroy();
@@ -23061,7 +23242,7 @@ static int tolua_peak_peak_Menu_getName00(lua_State* tolua_S)
  {
   peak::Menu* self = (peak::Menu*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getName'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getName'", NULL);
 #endif
   {
    std::string tolua_ret = (std::string)  self->getName();
@@ -23093,7 +23274,7 @@ static int tolua_peak_peak_Menu_show00(lua_State* tolua_S)
  {
   peak::Menu* self = (peak::Menu*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'show'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'show'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->show();
@@ -23125,7 +23306,7 @@ static int tolua_peak_peak_Menu_hide00(lua_State* tolua_S)
  {
   peak::Menu* self = (peak::Menu*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'hide'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'hide'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->hide();
@@ -23159,7 +23340,7 @@ static int tolua_peak_peak_Menu_pressButton00(lua_State* tolua_S)
   peak::Menu* self = (peak::Menu*)  tolua_tousertype(tolua_S,1,0);
   int id = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'pressButton'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'pressButton'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->pressButton(id);
@@ -23195,7 +23376,7 @@ static int tolua_peak_peak_Menu_setCheckBox00(lua_State* tolua_S)
   int id = ((int)  tolua_tonumber(tolua_S,2,0));
   bool value = ((bool)  tolua_toboolean(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setCheckBox'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setCheckBox'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->setCheckBox(id,value);
@@ -23231,7 +23412,7 @@ static int tolua_peak_peak_Menu_setListBox00(lua_State* tolua_S)
   int id = ((int)  tolua_tonumber(tolua_S,2,0));
   int selected = ((int)  tolua_tonumber(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setListBox'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setListBox'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->setListBox(id,selected);
@@ -23265,11 +23446,11 @@ static int tolua_peak_peak_Menu_getListBox00(lua_State* tolua_S)
   peak::Menu* self = (peak::Menu*)  tolua_tousertype(tolua_S,1,0);
   int id = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getListBox'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getListBox'", NULL);
 #endif
   {
    peak::ListBox* tolua_ret = (peak::ListBox*)  self->getListBox(id);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::ListBox");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::ListBox");
   }
  }
  return 1;
@@ -23299,11 +23480,11 @@ static int tolua_peak_peak_Menu_getButton00(lua_State* tolua_S)
   peak::Menu* self = (peak::Menu*)  tolua_tousertype(tolua_S,1,0);
   int id = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getButton'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getButton'", NULL);
 #endif
   {
    peak::Button* tolua_ret = (peak::Button*)  self->getButton(id);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Button");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Button");
   }
  }
  return 1;
@@ -23333,11 +23514,11 @@ static int tolua_peak_peak_Menu_getLabel00(lua_State* tolua_S)
   peak::Menu* self = (peak::Menu*)  tolua_tousertype(tolua_S,1,0);
   int id = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getLabel'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getLabel'", NULL);
 #endif
   {
    peak::Label* tolua_ret = (peak::Label*)  self->getLabel(id);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Label");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Label");
   }
  }
  return 1;
@@ -23367,11 +23548,11 @@ static int tolua_peak_peak_Menu_getElement00(lua_State* tolua_S)
   peak::Menu* self = (peak::Menu*)  tolua_tousertype(tolua_S,1,0);
   int id = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getElement'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getElement'", NULL);
 #endif
   {
    peak::MenuElement* tolua_ret = (peak::MenuElement*)  self->getElement(id);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::MenuElement");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::MenuElement");
   }
  }
  return 1;
@@ -23399,11 +23580,11 @@ static int tolua_peak_peak_Menu_getScript00(lua_State* tolua_S)
  {
   peak::Menu* self = (peak::Menu*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getScript'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getScript'", NULL);
 #endif
   {
    peak::Script* tolua_ret = (peak::Script*)  self->getScript();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Script");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Script");
   }
  }
  return 1;
@@ -23431,7 +23612,7 @@ static int tolua_peak_peak_MenuManager_get00(lua_State* tolua_S)
  {
   {
    peak::MenuManager* tolua_ret = (peak::MenuManager*)  peak::MenuManager::get();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::MenuManager");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::MenuManager");
   }
  }
  return 1;
@@ -23459,9 +23640,9 @@ static int tolua_peak_peak_MenuManager_delete00(lua_State* tolua_S)
  {
   peak::MenuManager* self = (peak::MenuManager*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -23490,7 +23671,7 @@ static int tolua_peak_peak_MenuManager_loadMenu00(lua_State* tolua_S)
   peak::MenuManager* self = (peak::MenuManager*)  tolua_tousertype(tolua_S,1,0);
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'loadMenu'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'loadMenu'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->loadMenu(name);
@@ -23524,7 +23705,7 @@ static int tolua_peak_peak_MenuManager_unloadMenu00(lua_State* tolua_S)
   peak::MenuManager* self = (peak::MenuManager*)  tolua_tousertype(tolua_S,1,0);
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'unloadMenu'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'unloadMenu'", NULL);
 #endif
   {
    self->unloadMenu(name);
@@ -23555,7 +23736,7 @@ static int tolua_peak_peak_MenuManager_unloadMenu01(lua_State* tolua_S)
   peak::MenuManager* self = (peak::MenuManager*)  tolua_tousertype(tolua_S,1,0);
   peak::Menu* menu = ((peak::Menu*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'unloadMenu'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'unloadMenu'", NULL);
 #endif
   {
    self->unloadMenu(menu);
@@ -23583,7 +23764,7 @@ static int tolua_peak_peak_MenuManager_getMenuCount00(lua_State* tolua_S)
  {
   peak::MenuManager* self = (peak::MenuManager*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getMenuCount'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getMenuCount'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->getMenuCount();
@@ -23617,11 +23798,11 @@ static int tolua_peak_peak_MenuManager_getMenu00(lua_State* tolua_S)
   peak::MenuManager* self = (peak::MenuManager*)  tolua_tousertype(tolua_S,1,0);
   int index = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getMenu'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getMenu'", NULL);
 #endif
   {
    peak::Menu* tolua_ret = (peak::Menu*)  self->getMenu(index);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Menu");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Menu");
   }
  }
  return 1;
@@ -23649,11 +23830,11 @@ static int tolua_peak_peak_MenuManager_getMenu01(lua_State* tolua_S)
   peak::MenuManager* self = (peak::MenuManager*)  tolua_tousertype(tolua_S,1,0);
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getMenu'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getMenu'", NULL);
 #endif
   {
    peak::Menu* tolua_ret = (peak::Menu*)  self->getMenu(name);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Menu");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Menu");
   }
  }
  return 1;
@@ -23678,11 +23859,11 @@ static int tolua_peak_peak_MenuManager_getCurrentMenu00(lua_State* tolua_S)
  {
   peak::MenuManager* self = (peak::MenuManager*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getCurrentMenu'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getCurrentMenu'", NULL);
 #endif
   {
    peak::Menu* tolua_ret = (peak::Menu*)  self->getCurrentMenu();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Menu");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Menu");
   }
  }
  return 1;
@@ -23710,7 +23891,7 @@ static int tolua_peak_peak_MenuManager_init00(lua_State* tolua_S)
  {
   peak::MenuManager* self = (peak::MenuManager*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->init();
@@ -23742,7 +23923,7 @@ static int tolua_peak_peak_MenuManager_shutdown00(lua_State* tolua_S)
  {
   peak::MenuManager* self = (peak::MenuManager*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'shutdown'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'shutdown'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->shutdown();
@@ -23776,7 +23957,7 @@ static int tolua_peak_peak_MenuManager_activateMenu00(lua_State* tolua_S)
   peak::MenuManager* self = (peak::MenuManager*)  tolua_tousertype(tolua_S,1,0);
   std::string name = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'activateMenu'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'activateMenu'", NULL);
 #endif
   {
    self->activateMenu(name);
@@ -23807,7 +23988,7 @@ static int tolua_peak_peak_MenuManager_activateMenu01(lua_State* tolua_S)
   peak::MenuManager* self = (peak::MenuManager*)  tolua_tousertype(tolua_S,1,0);
   peak::Menu* menu = ((peak::Menu*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'activateMenu'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'activateMenu'", NULL);
 #endif
   {
    self->activateMenu(menu);
@@ -23835,9 +24016,9 @@ static int tolua_peak_peak_MenuElement_delete00(lua_State* tolua_S)
  {
   peak::MenuElement* self = (peak::MenuElement*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -23868,7 +24049,7 @@ static int tolua_peak_peak_MenuElement_init00(lua_State* tolua_S)
   peak::Menu* menu = ((peak::Menu*)  tolua_tousertype(tolua_S,2,0));
   peak::MenuElement* parent = ((peak::MenuElement*)  tolua_tousertype(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->init(menu,parent);
@@ -23900,7 +24081,7 @@ static int tolua_peak_peak_MenuElement_destroy00(lua_State* tolua_S)
  {
   peak::MenuElement* self = (peak::MenuElement*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->destroy();
@@ -23924,7 +24105,7 @@ static int tolua_peak_peak_MenuElement_setPosition00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::MenuElement",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector2D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector2D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -23934,7 +24115,7 @@ static int tolua_peak_peak_MenuElement_setPosition00(lua_State* tolua_S)
   peak::MenuElement* self = (peak::MenuElement*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector2D position = *((peak::Vector2D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPosition'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPosition'", NULL);
 #endif
   {
    self->setPosition(position);
@@ -23965,17 +24146,19 @@ static int tolua_peak_peak_MenuElement_getPosition00(lua_State* tolua_S)
  {
   peak::MenuElement* self = (peak::MenuElement*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPosition'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPosition'", NULL);
 #endif
   {
    peak::Vector2D tolua_ret = (peak::Vector2D)  self->getPosition();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector2D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2D");
+    void* tolua_obj = Mtolua_new((peak::Vector2D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector2D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -23997,7 +24180,7 @@ static int tolua_peak_peak_MenuElement_setSize00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::MenuElement",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector2D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector2D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -24007,7 +24190,7 @@ static int tolua_peak_peak_MenuElement_setSize00(lua_State* tolua_S)
   peak::MenuElement* self = (peak::MenuElement*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector2D size = *((peak::Vector2D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setSize'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setSize'", NULL);
 #endif
   {
    self->setSize(size);
@@ -24038,17 +24221,19 @@ static int tolua_peak_peak_MenuElement_getSize00(lua_State* tolua_S)
  {
   peak::MenuElement* self = (peak::MenuElement*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getSize'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getSize'", NULL);
 #endif
   {
    peak::Vector2D tolua_ret = (peak::Vector2D)  self->getSize();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector2D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2D");
+    void* tolua_obj = Mtolua_new((peak::Vector2D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector2D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector2D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector2D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -24080,7 +24265,7 @@ static int tolua_peak_peak_MenuElement_setID00(lua_State* tolua_S)
   peak::MenuElement* self = (peak::MenuElement*)  tolua_tousertype(tolua_S,1,0);
   int id = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setID'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setID'", NULL);
 #endif
   {
    self->setID(id);
@@ -24111,7 +24296,7 @@ static int tolua_peak_peak_MenuElement_getID00(lua_State* tolua_S)
  {
   peak::MenuElement* self = (peak::MenuElement*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getID'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getID'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->getID();
@@ -24143,7 +24328,7 @@ static int tolua_peak_peak_MenuElement_show00(lua_State* tolua_S)
  {
   peak::MenuElement* self = (peak::MenuElement*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'show'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'show'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->show();
@@ -24175,7 +24360,7 @@ static int tolua_peak_peak_MenuElement_hide00(lua_State* tolua_S)
  {
   peak::MenuElement* self = (peak::MenuElement*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'hide'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'hide'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->hide();
@@ -24207,7 +24392,7 @@ static int tolua_peak_peak_MenuElement_getType00(lua_State* tolua_S)
  {
   peak::MenuElement* self = (peak::MenuElement*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getType'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getType'", NULL);
 #endif
   {
    peak::EMenuElementType tolua_ret = (peak::EMenuElementType)  self->getType();
@@ -24239,11 +24424,11 @@ static int tolua_peak_peak_MenuElement_getWidget00(lua_State* tolua_S)
  {
   peak::MenuElement* self = (peak::MenuElement*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getWidget'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getWidget'", NULL);
 #endif
   {
    gcn::Widget* tolua_ret = (gcn::Widget*)  self->getWidget();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"gcn::Widget");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"gcn::Widget");
   }
  }
  return 1;
@@ -24270,8 +24455,8 @@ static int tolua_peak_peak_ListBox_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::ListBox* tolua_ret = (peak::ListBox*)  new peak::ListBox();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::ListBox");
+   peak::ListBox* tolua_ret = (peak::ListBox*)  Mtolua_new((peak::ListBox)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::ListBox");
   }
  }
  return 1;
@@ -24298,8 +24483,9 @@ static int tolua_peak_peak_ListBox_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::ListBox* tolua_ret = (peak::ListBox*)  new peak::ListBox();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::ListBox");
+   peak::ListBox* tolua_ret = (peak::ListBox*)  Mtolua_new((peak::ListBox)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::ListBox");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -24327,9 +24513,9 @@ static int tolua_peak_peak_ListBox_delete00(lua_State* tolua_S)
  {
   peak::ListBox* self = (peak::ListBox*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -24360,7 +24546,7 @@ static int tolua_peak_peak_ListBox_init00(lua_State* tolua_S)
   peak::Menu* menu = ((peak::Menu*)  tolua_tousertype(tolua_S,2,0));
   peak::MenuElement* parent = ((peak::MenuElement*)  tolua_tousertype(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->init(menu,parent);
@@ -24392,7 +24578,7 @@ static int tolua_peak_peak_ListBox_show00(lua_State* tolua_S)
  {
   peak::ListBox* self = (peak::ListBox*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'show'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'show'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->show();
@@ -24424,7 +24610,7 @@ static int tolua_peak_peak_ListBox_hide00(lua_State* tolua_S)
  {
   peak::ListBox* self = (peak::ListBox*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'hide'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'hide'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->hide();
@@ -24458,7 +24644,7 @@ static int tolua_peak_peak_ListBox_choose00(lua_State* tolua_S)
   peak::ListBox* self = (peak::ListBox*)  tolua_tousertype(tolua_S,1,0);
   int index = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'choose'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'choose'", NULL);
 #endif
   {
    self->choose(index);
@@ -24489,7 +24675,7 @@ static int tolua_peak_peak_ListBox_getSelected00(lua_State* tolua_S)
  {
   peak::ListBox* self = (peak::ListBox*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getSelected'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getSelected'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->getSelected();
@@ -24525,7 +24711,7 @@ static int tolua_peak_peak_ListBox_addItem00(lua_State* tolua_S)
   std::string label = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   int index = ((int)  tolua_tonumber(tolua_S,3,-1));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'addItem'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'addItem'", NULL);
 #endif
   {
    self->addItem(label,index);
@@ -24558,7 +24744,7 @@ static int tolua_peak_peak_ListBox_deleteItem00(lua_State* tolua_S)
   peak::ListBox* self = (peak::ListBox*)  tolua_tousertype(tolua_S,1,0);
   int index = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'deleteItem'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'deleteItem'", NULL);
 #endif
   {
    self->deleteItem(index);
@@ -24589,7 +24775,7 @@ static int tolua_peak_peak_ListBox_getItemCount00(lua_State* tolua_S)
  {
   peak::ListBox* self = (peak::ListBox*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getItemCount'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getItemCount'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->getItemCount();
@@ -24623,7 +24809,7 @@ static int tolua_peak_peak_ListBox_getItem00(lua_State* tolua_S)
   peak::ListBox* self = (peak::ListBox*)  tolua_tousertype(tolua_S,1,0);
   int index = ((int)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getItem'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getItem'", NULL);
 #endif
   {
    std::string tolua_ret = (std::string)  self->getItem(index);
@@ -24655,7 +24841,7 @@ static int tolua_peak_peak_ListBox_clearItems00(lua_State* tolua_S)
  {
   peak::ListBox* self = (peak::ListBox*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'clearItems'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'clearItems'", NULL);
 #endif
   {
    self->clearItems();
@@ -24686,7 +24872,7 @@ static int tolua_peak_peak_ListBox_updateItems00(lua_State* tolua_S)
  {
   peak::ListBox* self = (peak::ListBox*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'updateItems'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'updateItems'", NULL);
 #endif
   {
    self->updateItems();
@@ -24719,7 +24905,7 @@ static int tolua_peak_peak_ListBox_setAction00(lua_State* tolua_S)
   peak::ListBox* self = (peak::ListBox*)  tolua_tousertype(tolua_S,1,0);
   std::string action = ((std::string)  tolua_tocppstring(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setAction'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setAction'", NULL);
 #endif
   {
    self->setAction(action);
@@ -24750,7 +24936,7 @@ static int tolua_peak_peak_ListBox_getAction00(lua_State* tolua_S)
  {
   peak::ListBox* self = (peak::ListBox*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getAction'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getAction'", NULL);
 #endif
   {
    std::string tolua_ret = (std::string)  self->getAction();
@@ -24782,7 +24968,7 @@ static int tolua_peak_peak_ListBox_getType00(lua_State* tolua_S)
  {
   peak::ListBox* self = (peak::ListBox*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getType'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getType'", NULL);
 #endif
   {
    peak::EMenuElementType tolua_ret = (peak::EMenuElementType)  self->getType();
@@ -24813,8 +24999,8 @@ static int tolua_peak_peak_Sound_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Sound* tolua_ret = (peak::Sound*)  new peak::Sound();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Sound");
+   peak::Sound* tolua_ret = (peak::Sound*)  Mtolua_new((peak::Sound)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Sound");
   }
  }
  return 1;
@@ -24841,8 +25027,9 @@ static int tolua_peak_peak_Sound_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Sound* tolua_ret = (peak::Sound*)  new peak::Sound();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Sound");
+   peak::Sound* tolua_ret = (peak::Sound*)  Mtolua_new((peak::Sound)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Sound");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -24870,9 +25057,9 @@ static int tolua_peak_peak_Sound_delete00(lua_State* tolua_S)
  {
   peak::Sound* self = (peak::Sound*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -24901,7 +25088,7 @@ static int tolua_peak_peak_Sound_init00(lua_State* tolua_S)
   peak::Sound* self = (peak::Sound*)  tolua_tousertype(tolua_S,1,0);
   peak::SoundSource* source = ((peak::SoundSource*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->init(source);
@@ -24933,7 +25120,7 @@ static int tolua_peak_peak_Sound_destroy00(lua_State* tolua_S)
  {
   peak::Sound* self = (peak::Sound*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'destroy'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->destroy();
@@ -24965,11 +25152,11 @@ static int tolua_peak_peak_Sound_getSource00(lua_State* tolua_S)
  {
   peak::Sound* self = (peak::Sound*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getSource'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getSource'", NULL);
 #endif
   {
    peak::SoundSource* tolua_ret = (peak::SoundSource*)  self->getSource();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::SoundSource");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::SoundSource");
   }
  }
  return 1;
@@ -24999,7 +25186,7 @@ static int tolua_peak_peak_Sound_setLooped00(lua_State* tolua_S)
   peak::Sound* self = (peak::Sound*)  tolua_tousertype(tolua_S,1,0);
   bool looped = ((bool)  tolua_toboolean(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setLooped'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setLooped'", NULL);
 #endif
   {
    self->setLooped(looped);
@@ -25030,7 +25217,7 @@ static int tolua_peak_peak_Sound_getLooped00(lua_State* tolua_S)
  {
   peak::Sound* self = (peak::Sound*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getLooped'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getLooped'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->getLooped();
@@ -25064,7 +25251,7 @@ static int tolua_peak_peak_Sound_setCleanUp00(lua_State* tolua_S)
   peak::Sound* self = (peak::Sound*)  tolua_tousertype(tolua_S,1,0);
   bool cleanup = ((bool)  tolua_toboolean(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setCleanUp'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setCleanUp'", NULL);
 #endif
   {
    self->setCleanUp(cleanup);
@@ -25095,7 +25282,7 @@ static int tolua_peak_peak_Sound_getCleanUp00(lua_State* tolua_S)
  {
   peak::Sound* self = (peak::Sound*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getCleanUp'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getCleanUp'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->getCleanUp();
@@ -25129,7 +25316,7 @@ static int tolua_peak_peak_Sound_setPaused00(lua_State* tolua_S)
   peak::Sound* self = (peak::Sound*)  tolua_tousertype(tolua_S,1,0);
   bool paused = ((bool)  tolua_toboolean(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPaused'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPaused'", NULL);
 #endif
   {
    self->setPaused(paused);
@@ -25160,7 +25347,7 @@ static int tolua_peak_peak_Sound_isPaused00(lua_State* tolua_S)
  {
   peak::Sound* self = (peak::Sound*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isPaused'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isPaused'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->isPaused();
@@ -25194,7 +25381,7 @@ static int tolua_peak_peak_Sound_setPlaying00(lua_State* tolua_S)
   peak::Sound* self = (peak::Sound*)  tolua_tousertype(tolua_S,1,0);
   bool playing = ((bool)  tolua_toboolean(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPlaying'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPlaying'", NULL);
 #endif
   {
    self->setPlaying(playing);
@@ -25225,7 +25412,7 @@ static int tolua_peak_peak_Sound_isPlaying00(lua_State* tolua_S)
  {
   peak::Sound* self = (peak::Sound*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isPlaying'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isPlaying'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->isPlaying();
@@ -25259,7 +25446,7 @@ static int tolua_peak_peak_Sound_setVolume00(lua_State* tolua_S)
   peak::Sound* self = (peak::Sound*)  tolua_tousertype(tolua_S,1,0);
   float volume = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setVolume'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setVolume'", NULL);
 #endif
   {
    self->setVolume(volume);
@@ -25290,7 +25477,7 @@ static int tolua_peak_peak_Sound_getVolume00(lua_State* tolua_S)
  {
   peak::Sound* self = (peak::Sound*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getVolume'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getVolume'", NULL);
 #endif
   {
    float tolua_ret = (float)  self->getVolume();
@@ -25314,7 +25501,7 @@ static int tolua_peak_peak_Sound_setPosition00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Sound",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -25324,7 +25511,7 @@ static int tolua_peak_peak_Sound_setPosition00(lua_State* tolua_S)
   peak::Sound* self = (peak::Sound*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector3D pos = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPosition'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPosition'", NULL);
 #endif
   {
    self->setPosition(pos);
@@ -25355,17 +25542,19 @@ static int tolua_peak_peak_Sound_getPosition00(lua_State* tolua_S)
  {
   peak::Sound* self = (peak::Sound*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPosition'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPosition'", NULL);
 #endif
   {
    peak::Vector3D tolua_ret = (peak::Vector3D)  self->getPosition();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -25387,7 +25576,7 @@ static int tolua_peak_peak_Sound_setVelocity00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Sound",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -25397,7 +25586,7 @@ static int tolua_peak_peak_Sound_setVelocity00(lua_State* tolua_S)
   peak::Sound* self = (peak::Sound*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector3D vel = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setVelocity'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setVelocity'", NULL);
 #endif
   {
    self->setVelocity(vel);
@@ -25428,17 +25617,19 @@ static int tolua_peak_peak_Sound_getVelocity00(lua_State* tolua_S)
  {
   peak::Sound* self = (peak::Sound*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getVelocity'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getVelocity'", NULL);
 #endif
   {
    peak::Vector3D tolua_ret = (peak::Vector3D)  self->getVelocity();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -25470,7 +25661,7 @@ static int tolua_peak_peak_Sound_setRelativeToListener00(lua_State* tolua_S)
   peak::Sound* self = (peak::Sound*)  tolua_tousertype(tolua_S,1,0);
   bool rel = ((bool)  tolua_toboolean(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setRelativeToListener'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setRelativeToListener'", NULL);
 #endif
   {
    self->setRelativeToListener(rel);
@@ -25501,7 +25692,7 @@ static int tolua_peak_peak_Sound_isRelativeToListener00(lua_State* tolua_S)
  {
   peak::Sound* self = (peak::Sound*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isRelativeToListener'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isRelativeToListener'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->isRelativeToListener();
@@ -25537,7 +25728,7 @@ static int tolua_peak_peak_Sound_attachToSceneNode00(lua_State* tolua_S)
   peak::SceneNode* node = ((peak::SceneNode*)  tolua_tousertype(tolua_S,2,0));
   bool adjustspeed = ((bool)  tolua_toboolean(tolua_S,3,false));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'attachToSceneNode'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'attachToSceneNode'", NULL);
 #endif
   {
    self->attachToSceneNode(node,adjustspeed);
@@ -25570,7 +25761,7 @@ static int tolua_peak_peak_Sound_doWork00(lua_State* tolua_S)
   peak::Sound* self = (peak::Sound*)  tolua_tousertype(tolua_S,1,0);
   float msecs = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'doWork'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'doWork'", NULL);
 #endif
   {
    self->doWork(msecs);
@@ -25600,8 +25791,8 @@ static int tolua_peak_peak_Listener_new00(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Listener* tolua_ret = (peak::Listener*)  new peak::Listener();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Listener");
+   peak::Listener* tolua_ret = (peak::Listener*)  Mtolua_new((peak::Listener)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Listener");
   }
  }
  return 1;
@@ -25628,8 +25819,9 @@ static int tolua_peak_peak_Listener_new00_local(lua_State* tolua_S)
 #endif
  {
   {
-   peak::Listener* tolua_ret = (peak::Listener*)  new peak::Listener();
-   tolua_pushusertype_and_takeownership(tolua_S,(void *)tolua_ret,"peak::Listener");
+   peak::Listener* tolua_ret = (peak::Listener*)  Mtolua_new((peak::Listener)());
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Listener");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
   }
  }
  return 1;
@@ -25657,9 +25849,9 @@ static int tolua_peak_peak_Listener_delete00(lua_State* tolua_S)
  {
   peak::Listener* self = (peak::Listener*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -25678,7 +25870,7 @@ static int tolua_peak_peak_Listener_setPosition00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Listener",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -25688,7 +25880,7 @@ static int tolua_peak_peak_Listener_setPosition00(lua_State* tolua_S)
   peak::Listener* self = (peak::Listener*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector3D pos = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPosition'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPosition'", NULL);
 #endif
   {
    self->setPosition(pos);
@@ -25719,17 +25911,19 @@ static int tolua_peak_peak_Listener_getPosition00(lua_State* tolua_S)
  {
   peak::Listener* self = (peak::Listener*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPosition'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPosition'", NULL);
 #endif
   {
    peak::Vector3D tolua_ret = (peak::Vector3D)  self->getPosition();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -25751,7 +25945,7 @@ static int tolua_peak_peak_Listener_setVelocity00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Listener",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Vector3D",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -25761,7 +25955,7 @@ static int tolua_peak_peak_Listener_setVelocity00(lua_State* tolua_S)
   peak::Listener* self = (peak::Listener*)  tolua_tousertype(tolua_S,1,0);
   peak::Vector3D vel = *((peak::Vector3D*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setVelocity'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setVelocity'", NULL);
 #endif
   {
    self->setVelocity(vel);
@@ -25792,17 +25986,19 @@ static int tolua_peak_peak_Listener_getVelocity00(lua_State* tolua_S)
  {
   peak::Listener* self = (peak::Listener*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getVelocity'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getVelocity'", NULL);
 #endif
   {
    peak::Vector3D tolua_ret = (peak::Vector3D)  self->getVelocity();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Vector3D(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+    void* tolua_obj = Mtolua_new((peak::Vector3D)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Vector3D));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Vector3D");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Vector3D");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -25824,7 +26020,7 @@ static int tolua_peak_peak_Listener_setRotation00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"peak::Listener",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"peak::Quaternion",0,&tolua_err) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"peak::Quaternion",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -25834,7 +26030,7 @@ static int tolua_peak_peak_Listener_setRotation00(lua_State* tolua_S)
   peak::Listener* self = (peak::Listener*)  tolua_tousertype(tolua_S,1,0);
   peak::Quaternion rot = *((peak::Quaternion*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setRotation'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setRotation'", NULL);
 #endif
   {
    self->setRotation(rot);
@@ -25865,17 +26061,19 @@ static int tolua_peak_peak_Listener_getRotation00(lua_State* tolua_S)
  {
   peak::Listener* self = (peak::Listener*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getRotation'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getRotation'", NULL);
 #endif
   {
    peak::Quaternion tolua_ret = (peak::Quaternion)  self->getRotation();
    {
 #ifdef __cplusplus
-    void* tolua_obj = new peak::Quaternion(tolua_ret);
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Quaternion");
+    void* tolua_obj = Mtolua_new((peak::Quaternion)(tolua_ret));
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Quaternion");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #else
     void* tolua_obj = tolua_copy(tolua_S,(void*)&tolua_ret,sizeof(peak::Quaternion));
-    tolua_pushusertype_and_takeownership(tolua_S,tolua_obj,"peak::Quaternion");
+     tolua_pushusertype(tolua_S,tolua_obj,"peak::Quaternion");
+    tolua_register_gc(tolua_S,lua_gettop(tolua_S));
 #endif
    }
   }
@@ -25911,7 +26109,7 @@ static int tolua_peak_peak_Listener_attachToSceneNode00(lua_State* tolua_S)
   bool rotation = ((bool)  tolua_toboolean(tolua_S,3,false));
   bool adjustspeed = ((bool)  tolua_toboolean(tolua_S,4,false));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'attachToSceneNode'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'attachToSceneNode'", NULL);
 #endif
   {
    self->attachToSceneNode(node,rotation,adjustspeed);
@@ -25944,7 +26142,7 @@ static int tolua_peak_peak_Listener_doWork00(lua_State* tolua_S)
   peak::Listener* self = (peak::Listener*)  tolua_tousertype(tolua_S,1,0);
   float msecs = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'doWork'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'doWork'", NULL);
 #endif
   {
    self->doWork(msecs);
@@ -25975,9 +26173,9 @@ static int tolua_peak_peak_SoundSource_delete00(lua_State* tolua_S)
  {
   peak::SoundSource* self = (peak::SoundSource*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -26004,7 +26202,7 @@ static int tolua_peak_peak_SoundSource_getLength00(lua_State* tolua_S)
  {
   peak::SoundSource* self = (peak::SoundSource*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getLength'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getLength'", NULL);
 #endif
   {
    int tolua_ret = (int)  self->getLength();
@@ -26036,7 +26234,7 @@ static int tolua_peak_peak_SoundSource_isSeekable00(lua_State* tolua_S)
  {
   peak::SoundSource* self = (peak::SoundSource*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isSeekable'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isSeekable'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->isSeekable();
@@ -26068,7 +26266,7 @@ static int tolua_peak_peak_SoundSource_isStreamed00(lua_State* tolua_S)
  {
   peak::SoundSource* self = (peak::SoundSource*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isStreamed'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'isStreamed'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->isStreamed();
@@ -26100,7 +26298,7 @@ static int tolua_peak_peak_SoundEngine_get00(lua_State* tolua_S)
  {
   {
    peak::SoundEngine* tolua_ret = (peak::SoundEngine*)  peak::SoundEngine::get();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::SoundEngine");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::SoundEngine");
   }
  }
  return 1;
@@ -26128,9 +26326,9 @@ static int tolua_peak_peak_SoundEngine_delete00(lua_State* tolua_S)
  {
   peak::SoundEngine* self = (peak::SoundEngine*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -26157,7 +26355,7 @@ static int tolua_peak_peak_SoundEngine_init00(lua_State* tolua_S)
  {
   peak::SoundEngine* self = (peak::SoundEngine*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'init'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->init();
@@ -26189,7 +26387,7 @@ static int tolua_peak_peak_SoundEngine_shutdown00(lua_State* tolua_S)
  {
   peak::SoundEngine* self = (peak::SoundEngine*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'shutdown'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'shutdown'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->shutdown();
@@ -26221,7 +26419,7 @@ static int tolua_peak_peak_SoundEngine_running00(lua_State* tolua_S)
  {
   peak::SoundEngine* self = (peak::SoundEngine*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'running'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'running'", NULL);
 #endif
   {
    bool tolua_ret = (bool)  self->running();
@@ -26261,11 +26459,11 @@ static int tolua_peak_peak_SoundEngine_play2D00(lua_State* tolua_S)
   bool looped = ((bool)  tolua_toboolean(tolua_S,4,false));
   bool cleanup = ((bool)  tolua_toboolean(tolua_S,5,true));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'play2D'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'play2D'", NULL);
 #endif
   {
    peak::Sound* tolua_ret = (peak::Sound*)  self->play2D(filename,paused,looped,cleanup);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Sound");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Sound");
   }
  }
  return 1;
@@ -26299,11 +26497,11 @@ static int tolua_peak_peak_SoundEngine_play2D01(lua_State* tolua_S)
   bool looped = ((bool)  tolua_toboolean(tolua_S,4,false));
   bool cleanup = ((bool)  tolua_toboolean(tolua_S,5,true));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'play2D'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'play2D'", NULL);
 #endif
   {
    peak::Sound* tolua_ret = (peak::Sound*)  self->play2D(source,paused,looped,cleanup);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Sound");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Sound");
   }
  }
  return 1;
@@ -26336,11 +26534,11 @@ static int tolua_peak_peak_SoundEngine_play3D00(lua_State* tolua_S)
   bool looped = ((bool)  tolua_toboolean(tolua_S,4,false));
   bool cleanup = ((bool)  tolua_toboolean(tolua_S,5,true));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'play3D'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'play3D'", NULL);
 #endif
   {
    peak::Sound* tolua_ret = (peak::Sound*)  self->play3D(filename,paused,looped,cleanup);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Sound");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Sound");
   }
  }
  return 1;
@@ -26374,11 +26572,11 @@ static int tolua_peak_peak_SoundEngine_play3D01(lua_State* tolua_S)
   bool looped = ((bool)  tolua_toboolean(tolua_S,4,false));
   bool cleanup = ((bool)  tolua_toboolean(tolua_S,5,true));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'play3D'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'play3D'", NULL);
 #endif
   {
    peak::Sound* tolua_ret = (peak::Sound*)  self->play3D(source,paused,looped,cleanup);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Sound");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Sound");
   }
  }
  return 1;
@@ -26403,11 +26601,11 @@ static int tolua_peak_peak_SoundEngine_getListener00(lua_State* tolua_S)
  {
   peak::SoundEngine* self = (peak::SoundEngine*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getListener'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getListener'", NULL);
 #endif
   {
    peak::Listener* tolua_ret = (peak::Listener*)  self->getListener();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Listener");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::Listener");
   }
  }
  return 1;
@@ -26437,7 +26635,7 @@ static int tolua_peak_peak_SoundEngine_doWork00(lua_State* tolua_S)
   peak::SoundEngine* self = (peak::SoundEngine*)  tolua_tousertype(tolua_S,1,0);
   float msecs = ((float)  tolua_tonumber(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'doWork'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'doWork'", NULL);
 #endif
   {
    self->doWork(msecs);
@@ -26468,7 +26666,7 @@ static int tolua_peak_peak_SoundFactory_get00(lua_State* tolua_S)
  {
   {
    peak::SoundFactory* tolua_ret = (peak::SoundFactory*)  peak::SoundFactory::get();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::SoundFactory");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::SoundFactory");
   }
  }
  return 1;
@@ -26496,9 +26694,9 @@ static int tolua_peak_peak_SoundFactory_delete00(lua_State* tolua_S)
  {
   peak::SoundFactory* self = (peak::SoundFactory*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'delete'", NULL);
 #endif
-  delete self;
+  Mtolua_delete(self);
  }
  return 0;
 #ifndef TOLUA_RELEASE
@@ -26529,11 +26727,11 @@ static int tolua_peak_peak_SoundFactory_getFile00(lua_State* tolua_S)
   std::string filename = ((std::string)  tolua_tocppstring(tolua_S,2,0));
   bool streamed = ((bool)  tolua_toboolean(tolua_S,3,false));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getFile'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getFile'", NULL);
 #endif
   {
    peak::SoundSource* tolua_ret = (peak::SoundSource*)  self->getFile(filename,streamed);
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::SoundSource");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::SoundSource");
   }
  }
  return 1;
@@ -26561,11 +26759,11 @@ static int tolua_peak_peak_SoundFactory_getHelloWorld00(lua_State* tolua_S)
  {
   peak::SoundFactory* self = (peak::SoundFactory*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getHelloWorld'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getHelloWorld'", NULL);
 #endif
   {
    peak::SoundSource* tolua_ret = (peak::SoundSource*)  self->getHelloWorld();
-   tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::SoundSource");
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"peak::SoundSource");
   }
  }
  return 1;
@@ -26595,7 +26793,7 @@ static int tolua_peak_peak_SoundFactory_removeSource00(lua_State* tolua_S)
   peak::SoundFactory* self = (peak::SoundFactory*)  tolua_tousertype(tolua_S,1,0);
   peak::SoundSource* source = ((peak::SoundSource*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'removeSource'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in function 'removeSource'", NULL);
 #endif
   {
    self->removeSource(source);

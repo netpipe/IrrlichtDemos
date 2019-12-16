@@ -1,0 +1,4 @@
+<Model name="tank_low2" geometry="tank_low2.geo">
+
+	<Mesh name="Mesh" material="tank.material.xml" batchStart="0" batchCount="19617" vertRStart="0" vertREnd="17385" />
+</Model>
