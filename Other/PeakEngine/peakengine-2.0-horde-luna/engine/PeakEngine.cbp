@@ -161,6 +161,7 @@
 					<Add library="Horde3D" />
 					<Add library="Horde3DUtils" />
 					<Add library="alut" />
+					<Add library="guichan_opengl" />
 					<Add directory="/home/Dev/libs/net/enet" />
 					<Add directory="../lib/lua-5.1.4/src" />
 					<Add directory="../lib/glfw/lib/x11" />
