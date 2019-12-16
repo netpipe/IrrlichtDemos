@@ -20,7 +20,7 @@
 #define HAVE_SDL_SDL_H 1
 
 /* Define to 1 if you have the <SDL/SDL_image.h> header file. */
-/* #undef HAVE_SDL_SDL_IMAGE_H */
+#define HAVE_SDL_SDL_IMAGE_H 1
 
 /* Define to 1 if you have the <stdint.h> header file. */
 #define HAVE_STDINT_H 1
@@ -43,6 +43,9 @@
 /* Define to 1 if you have the <unistd.h> header file. */
 #define HAVE_UNISTD_H 1
 
+/* Define to the sub-directory where libtool stores uninstalled libraries. */
+#define LT_OBJDIR ".libs/"
+
 /* Name of package */
 #define PACKAGE "guichan"
 
@@ -57,6 +60,9 @@
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "guichan"
+
+/* Define to the home page for this package. */
+#define PACKAGE_URL ""
 
 /* Define to the version of this package. */
 #define PACKAGE_VERSION "0.8.1"

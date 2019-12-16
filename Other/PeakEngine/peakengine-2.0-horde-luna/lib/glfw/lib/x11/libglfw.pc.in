@@ -7,5 +7,5 @@ Name: GLFW
 Description: A portable framework for OpenGL development
 Version: 2.6.0
 URL: http://glfw.sourceforge.net/
-Libs: -L${libdir} -lglfw  -L/usr/X11R6/lib -lGL -lX11 -lXrandr -pthread -lm
+Libs: -L${libdir} -lglfw  -lGL -lX11 -lXrandr -pthread -ldl -lm
 Cflags: -I${includedir} -pthread 

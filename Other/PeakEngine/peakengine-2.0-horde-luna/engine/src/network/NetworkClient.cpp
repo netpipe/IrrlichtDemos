@@ -34,7 +34,7 @@ namespace peak
 	NetworkClient::~NetworkClient()
 	{
 	}
-	
+
 	Connection *NetworkClient::init(void)
 	{
 		return 0;
@@ -45,19 +45,19 @@ namespace peak
 		ENetAddress address;
 		address.host = ENET_HOST_ANY;
 		address.port = ENET_PORT_ANY;
-		host = enet_host_create(NULL, 1, 0, 0);
+		host = enet_host_create(NULL, 1, 0, 0,0);
 		if (!host)
 		{
 			return 0;
 		}
-		
-		
+
+
 		// Create network peer
 		//ENetAddress address;
 		enet_address_set_host(&address, addr.getAddressString(false).c_str());
 		address.port = addr.getPort();
 		LINFO("Client: Address: %X:%d\n", address.host, address.port);
-		peer = enet_host_connect(host, &address, 2);
+		peer = enet_host_connect(host, &address, 2,0);
 		if (!peer)
 		{
 			enet_host_destroy(host);
@@ -87,7 +87,7 @@ namespace peak
 			host = 0;
 		}
 	}
-	
+
 	bool NetworkClient::isConnected(void)
 	{
 		return (conn != 0);
@@ -96,13 +96,13 @@ namespace peak
 	{
 		return conn;
 	}
-	
+
 	bool NetworkClient::doWork(void)
 	{
 		if (!host)
 			return false;
-		
-		
+
+
 		// Receive data
 		ENetEvent event;
 		while (enet_host_service(host, &event, 0) > 0)
@@ -133,7 +133,7 @@ namespace peak
 				break;
 			}
 		}
-		
+
 		return true;
 	}
 }

@@ -131,3 +131,5 @@ BOOL fipTag::setValue(const void *value) {
 const char* fipTag::toString(FREE_IMAGE_MDMODEL model, char *Make) const {
 	return FreeImage_TagToString(model, _tag, Make);
 }
+
+

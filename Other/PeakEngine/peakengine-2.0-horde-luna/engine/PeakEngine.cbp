@@ -8,10 +8,9 @@
 		<Build>
 			<Target title="Linux">
 				<Option output="../bin/PeakEngine" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="../bin" />
-				<Option type="1" />
+				<Option working_dir="" />
+				<Option type="2" />
 				<Option compiler="gcc" />
-				<Option use_console_runner="0" />
 				<Compiler>
 					<Add directory="../lib/lua-5.1.4/src" />
 					<Add directory="../lib/guichan-0.8.1/include" />
@@ -23,30 +22,31 @@
 					<Add directory="../lib/glfw/include/" />
 					<Add directory="../lib/tolua++-1.0.93/include" />
 					<Add directory="../lib/FreeImage/Dist" />
-					<Add directory="../lib/physics/bullet/src" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src" />
 					<Add directory="../lib/FreeImage" />
-					<Add directory="../lib/FreeImage/Wrapper/FreeImagePlus" />
 				</Compiler>
 				<Linker>
 					<Add library="guichan" />
 					<Add library="Xxf86vm" />
 					<Add library="GL" />
-					<Add library="lua5.1" />
-					<Add library="tolua++5.1" />
-					<Add library="FreeImagePlus" />
-					<Add library="guichan_opengl" />
+					<Add library="lua" />
+					<Add library="tolua++" />
+					<Add library="freeimage" />
+					<Add library="glfw" />
+					<Add library="openjpeg" />
 					<Add directory="/home/Dev/libs/net/enet" />
-					<Add directory="../lib/scripting/lua-5.1.4/src" />
+					<Add directory="../lib/lua-5.1.4/src" />
 					<Add directory="../lib/glfw/lib/x11" />
 					<Add directory="../lib/Horde3/Horde3D/Source/Horde3DEngine" />
 					<Add directory="../lib/Horde3/Horde3D/Source/Horde3DUtils" />
-					<Add directory="../lib/tolua++-1.0.92/lib" />
-					<Add directory="../lib/bullet/src/BulletCollision" />
-					<Add directory="../lib/physics/bullet/src/BulletDynamics" />
-					<Add directory="../lib/physics/bullet/src/BulletSoftBody" />
-					<Add directory="../lib/physics/bullet/src/LinearMath" />
+					<Add directory="../lib/tolua++-1.0.93/src/lib" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletCollision" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletDynamics" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletSoftBody" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/LinearMath" />
 					<Add directory="../lib/guichan-0.8.1/src/.libs" />
 					<Add directory="../lib/FreeImage/Dist" />
+					<Add directory="../lib/OpenJPEG_v1_3/bin" />
 				</Linker>
 			</Target>
 			<Target title="Debug">
@@ -106,6 +106,79 @@
 					<Add before=".\src\tolua.bat" />
 				</ExtraCommands>
 			</Target>
+			<Target title="whole">
+				<Option output="../bin/PeakEngine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Option projectIncludeDirsRelation="1" />
+				<Option projectLibDirsRelation="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add directory="../lib/lua-5.1.4/src" />
+					<Add directory="../lib/guichan-0.8.1/include" />
+					<Add directory="../lib/enet/include" />
+					<Add directory="../lib/Horde3/Horde3D/Source" />
+					<Add directory="../lib/Horde3/Horde3D/Source/Shared" />
+					<Add directory="../lib/Horde3/Horde3D/Source/Horde3DEngine" />
+					<Add directory="../lib/Horde3/Horde3D/Bindings/C++" />
+					<Add directory="../lib/glfw/include/" />
+					<Add directory="../lib/tolua++-1.0.93/include" />
+					<Add directory="../lib/FreeImage/Wrapper/FreeImagePlus" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src" />
+					<Add directory="../lib/FreeImage" />
+					<Add directory="include" />
+					<Add directory=".." />
+					<Add directory="include/lua" />
+					<Add directory="include/ALUT" />
+					<Add directory="include/bullets" />
+					<Add directory="include/support" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="guichan" />
+					<Add library="Xxf86vm" />
+					<Add library="GL" />
+					<Add library="lua" />
+					<Add library="tolua++" />
+					<Add library="freeimage" />
+					<Add library="FreeImagePlus" />
+					<Add library="glfw" />
+					<Add library="openjpeg" />
+					<Add library="enet" />
+					<Add library="openal" />
+					<Add library="ogg" />
+					<Add library="vorbis" />
+					<Add library="vorbisfile" />
+					<Add library="vorbisenc" />
+					<Add library="BulletCollision" />
+					<Add library="BulletDynamics" />
+					<Add library="BulletSoftBody" />
+					<Add library="LinearMath" />
+					<Add library="Horde3D" />
+					<Add library="Horde3DUtils" />
+					<Add library="alut" />
+					<Add directory="/home/Dev/libs/net/enet" />
+					<Add directory="../lib/lua-5.1.4/src" />
+					<Add directory="../lib/glfw/lib/x11" />
+					<Add directory="../lib/Horde3/Horde3D/Source/Horde3DEngine" />
+					<Add directory="../lib/Horde3/Horde3D/Source/Horde3DUtils" />
+					<Add directory="../lib/tolua++-1.0.93/src/lib" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletCollision" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletDynamics" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletSoftBody" />
+					<Add directory="../../../../../LunaLibs/bullet-2.78/src/LinearMath" />
+					<Add directory="../lib/guichan-0.8.1/src/.libs" />
+					<Add directory="../lib/FreeImage/Dist" />
+					<Add directory="../lib/OpenJPEG_v1_3/bin" />
+					<Add directory="../lib/FreeImage/Wrapper/FreeImagePlus" />
+					<Add directory="../bin" />
+					<Add directory="../lib" />
+				</Linker>
+			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-D_ENET_1_2_" />
@@ -113,7 +186,7 @@
 			<Add directory=".." />
 			<Add directory="include/lua" />
 			<Add directory="include/ALUT" />
-			<Add directory="include/bullet" />
+			<Add directory="include/bullets" />
 			<Add directory="include/support" />
 		</Compiler>
 		<Linker>
@@ -124,9 +197,9 @@
 			<Add library="vorbis" />
 			<Add library="vorbisfile" />
 			<Add library="vorbisenc" />
-			<Add library="BulletSoftBody" />
-			<Add library="BulletDynamics" />
 			<Add library="BulletCollision" />
+			<Add library="BulletDynamics" />
+			<Add library="BulletSoftBody" />
 			<Add library="LinearMath" />
 			<Add library="Horde3D" />
 			<Add library="Horde3DUtils" />
@@ -171,6 +244,7 @@
 		<Unit filename="include/graphics/FollowingController.h" />
 		<Unit filename="include/graphics/GraphicsEngine.h" />
 		<Unit filename="include/graphics/Image.h" />
+		<Unit filename="include/graphics/ImpostorManager.h" />
 		<Unit filename="include/graphics/LabelOverlay.h" />
 		<Unit filename="include/graphics/Light.h" />
 		<Unit filename="include/graphics/Material.h" />
@@ -223,6 +297,9 @@
 		<Unit filename="include/support/float_math.h" />
 		<Unit filename="include/support/tinystr.h" />
 		<Unit filename="include/support/tinyxml.h" />
+		<Unit filename="main.cpp">
+			<Option target="whole" />
+		</Unit>
 		<Unit filename="src/core/Address.cpp" />
 		<Unit filename="src/core/Buffer.cpp" />
 		<Unit filename="src/core/Color.cpp" />

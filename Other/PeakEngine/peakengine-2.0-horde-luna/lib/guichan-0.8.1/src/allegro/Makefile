@@ -76,38 +76,38 @@ DIST_SOURCES = $(libguichan_allegro_la_SOURCES)
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/unit41/Desktop/guichan-0.8.1/missing --run aclocal-1.10
-AMTAR = ${SHELL} /home/unit41/Desktop/guichan-0.8.1/missing --run tar
+ACLOCAL = aclocal-1.15
+AMTAR = $${TAR-tar}
 AR = ar
 AS = as
-AUTOCONF = ${SHELL} /home/unit41/Desktop/guichan-0.8.1/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/unit41/Desktop/guichan-0.8.1/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/unit41/Desktop/guichan-0.8.1/missing --run automake-1.10
+AUTOCONF = autoconf
+AUTOHEADER = autoheader
+AUTOMAKE = automake-1.15
 AWK = gawk
 CC = gcc
-CCDEPMODE = depmode=gcc3
+CCDEPMODE = depmode=none
 CFLAGS = -g -O2
 CPP = gcc -E
-CPPFLAGS = 
+CPPFLAGS =  -I/usr/include/SDL -D_GNU_SOURCE=1 -D_REENTRANT
 CXX = g++
 CXXCPP = g++ -E
-CXXDEPMODE = depmode=gcc3
+CXXDEPMODE = depmode=none
 CXXFLAGS = -g -O2 -Wall -Wno-unused -DGUICHAN_BUILD
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
 DLLTOOL = dlltool
-ECHO = echo
+ECHO = @ECHO@
 ECHO_C = 
 ECHO_N = -n
 ECHO_T = 
 EGREP = /usr/bin/grep -E
 EXEEXT = 
-F77 = 
-FFLAGS = 
+F77 = @F77@
+FFLAGS = @FFLAGS@
 GREP = /usr/bin/grep
 GUICHAN_BINARY_AGE = 0
-GUICHAN_EXTRADIRS =  opengl
+GUICHAN_EXTRADIRS =  opengl sdl
 GUICHAN_INTERFACE_AGE = 0
 GUICHAN_MAJOR_VERSION = 0
 GUICHAN_MICRO_VERSION = 1
@@ -130,8 +130,8 @@ LT_AGE = 0
 LT_CURRENT = 1
 LT_RELEASE = 0.8.1
 LT_REVISION = 0
-MAKEINFO = ${SHELL} /home/unit41/Desktop/guichan-0.8.1/missing --run makeinfo
-MKDIR_P = /bin/mkdir -p
+MAKEINFO = makeinfo
+MKDIR_P = /usr/bin/mkdir -p
 OBJDUMP = objdump
 OBJEXT = o
 PACKAGE = guichan
@@ -146,18 +146,18 @@ SET_MAKE =
 SHELL = /bin/sh
 STRIP = strip
 VERSION = 0.8.1
-abs_builddir = /home/unit41/Desktop/guichan-0.8.1/src/allegro
-abs_srcdir = /home/unit41/Desktop/guichan-0.8.1/src/allegro
-abs_top_builddir = /home/unit41/Desktop/guichan-0.8.1
-abs_top_srcdir = /home/unit41/Desktop/guichan-0.8.1
+abs_builddir = /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/guichan-0.8.1/src/allegro
+abs_srcdir = /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/guichan-0.8.1/src/allegro
+abs_top_builddir = /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/guichan-0.8.1
+abs_top_srcdir = /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/guichan-0.8.1
 ac_ct_CC = gcc
 ac_ct_CXX = g++
-ac_ct_F77 = 
+ac_ct_F77 = @ac_ct_F77@
 am__include = include
 am__leading_dot = .
 am__quote = 
-am__tar = ${AMTAR} chof - "$$tardir"
-am__untar = ${AMTAR} xf -
+am__tar = $${TAR-tar} chof - "$$tardir"
+am__untar = $${TAR-tar} xf -
 bindir = ${exec_prefix}/bin
 build = x86_64-unknown-linux-gnu
 build_alias = 
@@ -178,13 +178,13 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = $(SHELL) /home/unit41/Desktop/guichan-0.8.1/install-sh
-libdir = ${exec_prefix}/lib
-libexecdir = ${exec_prefix}/libexec
+install_sh = ${SHELL} /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Other/PeakEngine/peakengine-2.0-horde-luna/lib/guichan-0.8.1/install-sh
+libdir = ${exec_prefix}/lib64
+libexecdir = ${exec_prefix}/lib
 localedir = ${datarootdir}/locale
 localstatedir = ${prefix}/var
 mandir = ${datarootdir}/man
-mkdir_p = /bin/mkdir -p
+mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pdfdir = ${docdir}
 prefix = /usr/local
@@ -289,25 +289,25 @@ include ./$(DEPDIR)/allegroimageloader.Plo
 include ./$(DEPDIR)/allegroinput.Plo
 
 .cpp.o:
-	$(CXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
-	mv -f $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
-#	source='$<' object='$@' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXXCOMPILE) -c -o $@ $<
+#	$(CXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
+#	mv -f $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
+	source='$<' object='$@' libtool=no \
+	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+	$(CXXCOMPILE) -c -o $@ $<
 
 .cpp.obj:
-	$(CXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ `$(CYGPATH_W) '$<'`
-	mv -f $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
-#	source='$<' object='$@' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXXCOMPILE) -c -o $@ `$(CYGPATH_W) '$<'`
+#	$(CXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ `$(CYGPATH_W) '$<'`
+#	mv -f $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
+	source='$<' object='$@' libtool=no \
+	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+	$(CXXCOMPILE) -c -o $@ `$(CYGPATH_W) '$<'`
 
 .cpp.lo:
-	$(LTCXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
-	mv -f $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Plo
-#	source='$<' object='$@' libtool=yes \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(LTCXXCOMPILE) -c -o $@ $<
+#	$(LTCXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
+#	mv -f $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Plo
+	source='$<' object='$@' libtool=yes \
+	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+	$(LTCXXCOMPILE) -c -o $@ $<
 
 mostlyclean-libtool:
 	-rm -f *.lo

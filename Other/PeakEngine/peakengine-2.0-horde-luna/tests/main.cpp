@@ -1,9 +1,9 @@
 
-#ifndef WIN32
+//#ifndef WIN32
 #include <Horde3D.h>
 #include <Horde3DUtils.h>
 #include <GL/glfw.h>
-#endif
+//#endif
 
 #include "core/GameEngine.h"
 

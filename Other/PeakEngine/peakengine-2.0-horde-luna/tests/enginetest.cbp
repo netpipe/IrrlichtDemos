@@ -27,6 +27,7 @@
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
+					<Add library="freeimageplus" />
 				</Linker>
 			</Target>
 			<Target title="Linux">
@@ -34,13 +35,13 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
-					<Add directory="/home/Dev/libs/peakengine/old/Horde3/Horde3D/Bindings/C++" />
-					<Add directory="/home/Dev/libs/glfw/include" />
-					<Add directory="/home/Dev/libs/enet/include" />
-					<Add directory="/home/Dev/libs/peakengine/lib/tolua++-1.0.92/include" />
-					<Add directory="/home/Dev/libs/lua-5.1.4/src" />
-					<Add directory="/home/Dev/libs/peakengine/lib/FreeImage/Dist" />
-					<Add directory="/home/Dev/libs/Irrlicht/include" />
+					<Add directory="../lib/Horde3/Horde3D/Bindings/C++" />
+					<Add directory="../lib/glfw/include" />
+					<Add directory="../lib/enet/include" />
+					<Add directory="../lib/tolua++-1.0.93/include" />
+					<Add directory="../lib/lua-5.1.4/src" />
+					<Add directory="../lib/FreeImage/Dist" />
+					<Add directory="../../../../../LunaLibs/irrlicht-1.8.4/include" />
 				</Compiler>
 				<Linker>
 					<Add library="GL" />
@@ -49,18 +50,19 @@
 					<Add library="enet" />
 					<Add library="lua" />
 					<Add library="tolua++" />
-					<Add library="freeimageplus" />
 					<Add library="Irrlicht" />
 					<Add library="Horde3D" />
 					<Add library="Horde3DUtils" />
-					<Add directory="/home/Dev/libs/glfw/lib/x11" />
-					<Add directory="/home/Dev/libs/peakengine/old/Horde3/Horde3D/Source/Horde3DEngine" />
-					<Add directory="/home/Dev/libs/peakengine/old/Horde3/Horde3D/Source/Horde3DUtils" />
-					<Add directory="/home/Dev/libs/enet" />
-					<Add directory="/home/Dev/libs/peakengine/lib/tolua++-1.0.92/lib" />
-					<Add directory="/home/Dev/libs/lua-5.1.4/src" />
-					<Add directory="/home/Dev/libs/peakengine/lib/FreeImage" />
-					<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
+					<Add library="guichan_opengl" />
+					<Add library="guichan" />
+					<Add directory="../lib/glfw/lib/x11" />
+					<Add directory="../lib/Horde3/Horde3D/Source/Horde3DEngine" />
+					<Add directory="../lib/Horde3/Horde3D/Source/Horde3DUtils" />
+					<Add directory="../lib/enet" />
+					<Add directory="../lib/tolua++-1.0.93/lib" />
+					<Add directory="../lib/lua-5.1.4/src" />
+					<Add directory="../lib/peakengine/lib/FreeImage" />
+					<Add directory="../../../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 				</Linker>
 			</Target>
 		</Build>
@@ -73,9 +75,6 @@
 			<Add directory="../bin" />
 		</Linker>
 		<Unit filename="main.cpp" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

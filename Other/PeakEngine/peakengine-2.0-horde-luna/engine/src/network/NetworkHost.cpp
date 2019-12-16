@@ -34,14 +34,14 @@ namespace peak
 	NetworkHost::~NetworkHost()
 	{
 	}
-	
+
 	bool NetworkHost::init(int port)
 	{
 		// Create network host
 		ENetAddress address;
 		address.host = ENET_HOST_ANY;
 		address.port = port;
-		host = enet_host_create(&address, 32, 200000, 20000);
+		host = enet_host_create(&address, 32, 200000, 20000,0);
 		if (!host)
 		{
 			LERROR("Could not create network host.\n");
@@ -64,14 +64,14 @@ namespace peak
 		host = 0;
 		return true;
 	}
-	
+
 	Connection *NetworkHost::getNewConnection(void)
 	{
 		if (newconnections.empty())
 		{
 			return 0;
 		}
-		
+
 		Connection *conn = newconnections.front();
 		newconnections.pop();
 		return conn;
@@ -89,13 +89,13 @@ namespace peak
 			}
 		}
 	}
-	
+
 	bool NetworkHost::doWork(void)
 	{
 		if (!host)
 			return false;
-		
-		
+
+
 		// Receive data
 		ENetEvent event;
 		while (enet_host_service(host, &event, 0) > 0)

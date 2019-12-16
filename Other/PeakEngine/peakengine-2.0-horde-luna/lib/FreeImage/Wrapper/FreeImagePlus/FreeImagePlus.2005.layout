@@ -1,9 +1,55 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Release Win32" />
-	<File name="FreeImagePlus.h" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/fipWinImage.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
+			<Cursor1 position="13610" topLine="47" />
 		</Cursor>
 	</File>
+	<File name="src/fipTag.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3554" topLine="37" />
+		</Cursor>
+	</File>
+	<File name="src/fipMultiPage.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="21" />
+		</Cursor>
+	</File>
+	<File name="src/fipMetadataFind.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1878" topLine="2" />
+		</Cursor>
+	</File>
+	<File name="FreeImagePlus.h" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="48486" topLine="142" />
+		</Cursor>
+		<Folding>
+			<Collapse line="76" />
+			<Collapse line="100" />
+			<Collapse line="883" />
+			<Collapse line="1049" />
+			<Collapse line="1161" />
+			<Collapse line="1295" />
+			<Collapse line="1475" />
+		</Folding>
+	</File>
+	<File name="src/fipMemoryIO.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2498" topLine="21" />
+		</Cursor>
+	</File>
+	<File name="src/FreeImagePlus.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1552" topLine="5" />
+		</Cursor>
+	</File>
+	<File name="src/fipImage.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="20997" topLine="205" />
+		</Cursor>
+	</File>
+	<EditorTabsLayout layout="03e32e305df7c34b00118cf700000002=*0;FreeImagePlus:FreeImagePlus.h,1;FreeImagePlus:src/fipImage.cpp,2;FreeImagePlus:src/fipMemoryIO.cpp,3;FreeImagePlus:src/fipMetadataFind.cpp,4;FreeImagePlus:src/FreeImagePlus.cpp,5;FreeImagePlus:src/fipWinImage.cpp,6;FreeImagePlus:src/fipTag.cpp,7;FreeImagePlus:src/fipMultiPage.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=814;besth=348;minw=814;minh=348;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03e32e305df7c34b00118cf700000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>

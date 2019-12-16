@@ -4,29 +4,42 @@ running ./compile.sh, to aid debugging if ./compile.sh makes a mistake.
 ./compile.sh: checking whether we are using GNU C
 ./compile.sh: cc -E conftest.c
 ./compile.sh: Checking for X11 RandR support
-./compile.sh: gcc -c  -Dlinux -I/usr/X11R6/include conftest.c 1>&5
+./compile.sh: gcc -c  -Dlinux  conftest.c 1>&5
 ./compile.sh: Checking for pthread support
-./compile.sh: gcc -o conftest  -Dlinux -I/usr/X11R6/include -D_GLFW_HAS_XRANDR -pthread  -L/usr/X11R6/lib conftest.c -lGL -lX11 -lXrandr -pthread 1>&5
+./compile.sh: gcc -o conftest  -Dlinux  -D_GLFW_HAS_XRANDR -pthread  conftest.c -lGL -lX11 -lXrandr -pthread 1>&5
 ./compile.sh: Checking for sched_yield support
-./compile.sh: gcc -c  -Dlinux -I/usr/X11R6/include -D_GLFW_HAS_XRANDR -pthread -D_GLFW_HAS_PTHREAD conftest.c 1>&5
+./compile.sh: gcc -c  -Dlinux  -D_GLFW_HAS_XRANDR -pthread -D_GLFW_HAS_PTHREAD conftest.c 1>&5
 ./compile.sh: Checking for glXGetProcAddress support
-./compile.sh: gcc -o conftest  -Dlinux -I/usr/X11R6/include -D_GLFW_HAS_XRANDR -pthread -D_GLFW_HAS_PTHREAD -D_GLFW_HAS_SCHED_YIELD  -L/usr/X11R6/lib conftest.c -lGL -lX11 -lXrandr -pthread 1>&5
-./compile.sh: gcc -o conftest  -Dlinux -I/usr/X11R6/include -D_GLFW_HAS_XRANDR -pthread -D_GLFW_HAS_PTHREAD -D_GLFW_HAS_SCHED_YIELD  -L/usr/X11R6/lib conftest.c -lGL -lX11 -lXrandr -pthread 1>&5
-./compile.sh: gcc -o conftest  -Dlinux -I/usr/X11R6/include -D_GLFW_HAS_XRANDR -pthread -D_GLFW_HAS_PTHREAD -D_GLFW_HAS_SCHED_YIELD  -L/usr/X11R6/lib conftest.c -lGL -lX11 -lXrandr -pthread 1>&5
+./compile.sh: gcc -o conftest  -Dlinux  -D_GLFW_HAS_XRANDR -pthread -D_GLFW_HAS_PTHREAD -D_GLFW_HAS_SCHED_YIELD  conftest.c -lGL -lX11 -lXrandr -pthread 1>&5
+./compile.sh: gcc -o conftest  -Dlinux  -D_GLFW_HAS_XRANDR -pthread -D_GLFW_HAS_PTHREAD -D_GLFW_HAS_SCHED_YIELD  conftest.c -lGL -lX11 -lXrandr -pthread 1>&5
+./compile.sh: gcc -o conftest  -Dlinux  -D_GLFW_HAS_XRANDR -pthread -D_GLFW_HAS_PTHREAD -D_GLFW_HAS_SCHED_YIELD  conftest.c -lGL -lX11 -lXrandr -pthread 1>&5
 conftest.c: In function ‘main’:
-conftest.c:4: warning: cast to pointer from integer of different size
-/tmp/cc26j1Ph.o: In function `main':
+conftest.c:4:30: warning: implicit declaration of function ‘glXGetProcAddressEXT’; did you mean ‘glXGetProcAddress’? [-Wimplicit-function-declaration]
+ int main() {void *ptr=(void*)glXGetProcAddressEXT("glFun"); return 0;}
+                              ^~~~~~~~~~~~~~~~~~~~
+                              glXGetProcAddress
+conftest.c:4:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ int main() {void *ptr=(void*)glXGetProcAddressEXT("glFun"); return 0;}
+                       ^
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /tmp/ccZP4qTO.o: in function `main':
 conftest.c:(.text+0x13): undefined reference to `glXGetProcAddressEXT'
-collect2: ld returned 1 exit status
+collect2: error: ld returned 1 exit status
 ./compile.sh: failed program was:
 #include <X11/Xlib.h>
 #include <GL/glx.h>
 #include <GL/gl.h>
 int main() {void *ptr=(void*)glXGetProcAddressEXT("glFun"); return 0;}
 ./compile.sh: Checking for dlopen support
-./compile.sh: gcc -o conftest  -Dlinux -I/usr/X11R6/include -D_GLFW_HAS_XRANDR -pthread -D_GLFW_HAS_PTHREAD -D_GLFW_HAS_SCHED_YIELD -D_GLFW_HAS_GLXGETPROCADDRESS -D_GLFW_HAS_GLXGETPROCADDRESSARB  -L/usr/X11R6/lib conftest.c -lGL -lX11 -lXrandr -pthread 1>&5
+./compile.sh: gcc -o conftest  -Dlinux  -D_GLFW_HAS_XRANDR -pthread -D_GLFW_HAS_PTHREAD -D_GLFW_HAS_SCHED_YIELD -D_GLFW_HAS_GLXGETPROCADDRESS -D_GLFW_HAS_GLXGETPROCADDRESSARB  conftest.c -lGL -lX11 -lXrandr -pthread 1>&5
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /tmp/ccpESyXT.o: undefined reference to symbol 'dlopen@@GLIBC_2.2.5'
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /lib64/libdl.so.2: error adding symbols: DSO missing from command line
+collect2: error: ld returned 1 exit status
+./compile.sh: failed program was:
+#include <dlfcn.h>
+int main() {void *l=dlopen("libGL.so",RTLD_LAZY|RTLD_GLOBAL); return 0;}
+./compile.sh: gcc -o conftest  -Dlinux  -D_GLFW_HAS_XRANDR -pthread -D_GLFW_HAS_PTHREAD -D_GLFW_HAS_SCHED_YIELD -D_GLFW_HAS_GLXGETPROCADDRESS -D_GLFW_HAS_GLXGETPROCADDRESSARB  conftest.c -lGL -lX11 -lXrandr -pthread -ldl 1>&5
 ./compile.sh: Checking for sysconf support
-./compile.sh: gcc -o conftest  -Dlinux -I/usr/X11R6/include -D_GLFW_HAS_XRANDR -pthread -D_GLFW_HAS_PTHREAD -D_GLFW_HAS_SCHED_YIELD -D_GLFW_HAS_GLXGETPROCADDRESS -D_GLFW_HAS_GLXGETPROCADDRESSARB -D_GLFW_HAS_DLOPEN  -L/usr/X11R6/lib conftest.c -lGL -lX11 -lXrandr -pthread 1>&5
+./compile.sh: gcc -o conftest  -Dlinux  -D_GLFW_HAS_XRANDR -pthread -D_GLFW_HAS_PTHREAD -D_GLFW_HAS_SCHED_YIELD -D_GLFW_HAS_GLXGETPROCADDRESS -D_GLFW_HAS_GLXGETPROCADDRESSARB -D_GLFW_HAS_DLOPEN  conftest.c -lGL -lX11 -lXrandr -pthread -ldl 1>&5
 ./compile.sh: Checking for sysctl support
 ./compile.sh: gcc -E conftest.c
 ./compile.sh: Creating ./lib/x11/Makefile.x11...

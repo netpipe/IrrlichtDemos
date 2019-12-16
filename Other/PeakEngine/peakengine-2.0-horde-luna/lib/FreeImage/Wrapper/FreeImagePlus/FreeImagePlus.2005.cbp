@@ -8,11 +8,11 @@
 		<Build>
 			<Target title="Release Win32">
 				<Option output="./FreeImagePlus" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
 				<Option object_output="Release" />
-				<Option type="3" />
+				<Option type="2" />
 				<Option compiler="gcc" />
 				<Option createDefFile="1" />
-				<Option createStaticLib="1" />
 				<Compiler>
 					<Add option="-O2" />
 					<Add option="-fPIC" />
@@ -34,11 +34,11 @@
 			</Target>
 			<Target title="Debug Win32">
 				<Option output="Debug/FreeImagePlusd" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
 				<Option object_output="Debug" />
-				<Option type="3" />
+				<Option type="2" />
 				<Option compiler="gcc" />
 				<Option createDefFile="1" />
-				<Option createStaticLib="1" />
 				<Compiler>
 					<Add option="-D_DEBUG" />
 					<Add option="-DWIN32" />
@@ -74,10 +74,6 @@
 		<Unit filename="src/fipMultiPage.cpp" />
 		<Unit filename="src/fipTag.cpp" />
 		<Unit filename="src/fipWinImage.cpp" />
-		<Extensions>
-			<code_completion />
-			<envvars />
-			<debugger />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

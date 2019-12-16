@@ -51,7 +51,8 @@ namespace peak
 		ENetAddress address;
 		address.host = ENET_HOST_ANY;
 		address.port = ENET_PORT_ANY;
-		socket = enet_socket_create(ENET_SOCKET_TYPE_DATAGRAM, &address);
+///		socket = enet_socket_create(ENET_SOCKET_TYPE_DATAGRAM, &address);
+socket = enet_socket_create(ENET_SOCKET_TYPE_DATAGRAM);
 		// enet 1.2 needs ENET_SOCKOPT_NONBLOCK, enet 1.1 does not provide it.
 		#ifdef _ENET_1_2_
 		enet_socket_set_option(socket, ENET_SOCKOPT_NONBLOCK, 1);

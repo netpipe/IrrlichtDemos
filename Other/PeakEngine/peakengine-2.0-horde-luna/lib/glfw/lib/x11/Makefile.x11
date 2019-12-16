@@ -2,11 +2,11 @@
 # Automatically generated Makefile for GLFW
 ##########################################################################
 CC           = gcc
-CFLAGS       = -c -I. -I..  -Dlinux -I/usr/X11R6/include -D_GLFW_HAS_XRANDR -pthread -D_GLFW_HAS_PTHREAD -D_GLFW_HAS_SCHED_YIELD -D_GLFW_HAS_GLXGETPROCADDRESS -D_GLFW_HAS_GLXGETPROCADDRESSARB -D_GLFW_HAS_DLOPEN -D_GLFW_HAS_SYSCONF -Os -Wall
-CFLAGS_SPEED = -c -I. -I..  -Dlinux -I/usr/X11R6/include -D_GLFW_HAS_XRANDR -pthread -D_GLFW_HAS_PTHREAD -D_GLFW_HAS_SCHED_YIELD -D_GLFW_HAS_GLXGETPROCADDRESS -D_GLFW_HAS_GLXGETPROCADDRESSARB -D_GLFW_HAS_DLOPEN -D_GLFW_HAS_SYSCONF -O3 -ffast-math -Wall
+CFLAGS       = -c -I. -I..  -Dlinux  -D_GLFW_HAS_XRANDR -pthread -D_GLFW_HAS_PTHREAD -D_GLFW_HAS_SCHED_YIELD -D_GLFW_HAS_GLXGETPROCADDRESS -D_GLFW_HAS_GLXGETPROCADDRESSARB -D_GLFW_HAS_DLOPEN -D_GLFW_HAS_SYSCONF -Os -Wall
+CFLAGS_SPEED = -c -I. -I..  -Dlinux  -D_GLFW_HAS_XRANDR -pthread -D_GLFW_HAS_PTHREAD -D_GLFW_HAS_SCHED_YIELD -D_GLFW_HAS_GLXGETPROCADDRESS -D_GLFW_HAS_GLXGETPROCADDRESSARB -D_GLFW_HAS_DLOPEN -D_GLFW_HAS_SYSCONF -O3 -ffast-math -Wall
 LDFLAGS      = -shared
-LFLAGS       =  -L/usr/X11R6/lib
-LIBS         = -lGL -lX11 -lXrandr -pthread
+LFLAGS       = 
+LIBS         = -lGL -lX11 -lXrandr -pthread -ldl
  
 
 ##########################################################################

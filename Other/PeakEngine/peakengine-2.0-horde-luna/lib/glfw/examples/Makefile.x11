@@ -2,8 +2,8 @@
 # Automatically generated Makefile for GLFW
 ##########################################################################
 CC     = gcc
-CFLAGS = -I../include -I/usr/X11R6/include -O3 -ffast-math -Wall
-LFLAGS = ../lib/x11/libglfw.a  -L/usr/X11R6/lib -lGLU -lGL -lX11 -lXrandr -pthread -lm
+CFLAGS = -I../include  -O3 -ffast-math -Wall
+LFLAGS = ../lib/x11/libglfw.a  -lGLU -lGL -lX11 -lXrandr -pthread -ldl -lm
  
 
 # Default: Build all tests

@@ -40,7 +40,9 @@ namespace peak
 		ENetAddress bcaddr;
 		bcaddr.host = ENET_HOST_ANY;
 		bcaddr.port = 14141;
-		bcastsocket = enet_socket_create(ENET_SOCKET_TYPE_DATAGRAM, &bcaddr);
+	//	bcastsocket = enet_socket_create(ENET_SOCKET_TYPE_DATAGRAM, &bcaddr);
+			bcastsocket = enet_socket_create(ENET_SOCKET_TYPE_DATAGRAM);
+
 		// FIXME: enet 1.2 needs ENET_SOCKOPT_NONBLOCK, enet 1.1 does not provide it.
 		#ifdef _ENET_1_2_
 		enet_socket_set_option(bcastsocket, ENET_SOCKOPT_NONBLOCK, 1);
