@@ -58,11 +58,10 @@
 				<Option projectResourceIncludeDirsRelation="1" />
 				<Option projectLibDirsRelation="1" />
 				<Compiler>
-					<Add directory="/home/Dev/libs/Scripting/emsdk/emscripten-projects/irrlicht-ogl-es/irrlicht/include" />
+					<Add directory="../../../../../LunaLibs/irrlicht-ogl-es-2019dec/include" />
 					<Add directory="src" />
 					<Add directory="../../../../../EMLibs/media/theora/include" />
 					<Add directory="../../../../../EMLibs/media/libtheoraplayer/include" />
-					<Add directory="../../../../../EMLibs/media/openal-soft/include" />
 					<Add directory="../../../../../EMLibs/media/Ogg/include" />
 				</Compiler>
 				<Linker>
@@ -82,7 +81,7 @@
 					<Add library="theoraplayer" />
 					<Add library="SDL" />
 					<Add library="openal" />
-					<Add directory="/home/Dev/libs/Scripting/emsdk/emscripten-projects/irrlicht-ogl-es/irrlicht/lib/Linux" />
+					<Add directory="../../../../../LunaLibs/irrlicht-ogl-es-2019dec/lib/Linux" />
 					<Add directory="../../../../../EMLibs/media/libtheoraplayer" />
 					<Add directory="../../../../../EMLibs/media/theora/" />
 					<Add directory="../../../../../EMLibs/media/Ogg" />
