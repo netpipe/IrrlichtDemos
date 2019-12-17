@@ -293,12 +293,12 @@ int main()
 
 	smgr->addSkyBoxSceneNode
 	(
-		driver->getTexture("../media/irrlicht2_up.jpg"),
-		driver->getTexture("../media/irrlicht2_dn.jpg"),
-		driver->getTexture("../media/irrlicht2_lf.jpg"),
-		driver->getTexture("../media/irrlicht2_rt.jpg"),
-		driver->getTexture("../media/irrlicht2_ft.jpg"),
-		driver->getTexture("../media/irrlicht2_bk.jpg")
+		driver->getTexture("../../media/irrlicht2_up.jpg"),
+		driver->getTexture("../../media/irrlicht2_dn.jpg"),
+		driver->getTexture("../../media/irrlicht2_lf.jpg"),
+		driver->getTexture("../../media/irrlicht2_rt.jpg"),
+		driver->getTexture("../../media/irrlicht2_ft.jpg"),
+		driver->getTexture("../../media/irrlicht2_bk.jpg")
 	);
 
 	driver->setTextureCreationFlag(video::ETCF_CREATE_MIP_MAPS, true);
@@ -309,7 +309,7 @@ int main()
 	// setup fairy:
 	fairy = smgr->addEmptySceneNode();
 
-	scene::IAnimatedMesh* amesh = smgr->getMesh("../media/faerie.md2");
+	scene::IAnimatedMesh* amesh = smgr->getMesh("../../media/faerie.md2");
 	scene::IAnimatedMeshSceneNode* fairyAnimatedMeshSceneNode = smgr->addAnimatedMeshSceneNode(amesh, fairy);
 
 	if (!fairyAnimatedMeshSceneNode)
@@ -323,7 +323,7 @@ int main()
 	fairyAnimatedMeshSceneNode->setScale(core::vector3df(2.5f));
 	fairyAnimatedMeshSceneNode->setRotation(core::vector3df(0.0f, -90.0f, 0.0f));
 
-	fairyAnimatedMeshSceneNode->setMaterialTexture(0, driver->getTexture("../media/faerie2.bmp"));
+	fairyAnimatedMeshSceneNode->setMaterialTexture(0, driver->getTexture("../../media/faerie2.bmp"));
 	fairyAnimatedMeshSceneNode->setMaterialFlag(video::EMF_LIGHTING, false);
 	if (fairyAnimatedMeshSceneNode)
 		fairyAnimatedMeshSceneNode->setMD2Animation(scene::EMAT_STAND);
@@ -334,7 +334,7 @@ int main()
 	cube = smgr->addCubeSceneNode();
 	cube->setScale(core::vector3df(2.0f));
 	cube->setPosition(core::vector3df(250.0f, 0.0f, 250.0f));
-	cube->setMaterialTexture(0, driver->getTexture("../media/wall.bmp"));
+	cube->setMaterialTexture(0, driver->getTexture("../../media/wall.bmp"));
 	cube->setMaterialFlag(video::EMF_LIGHTING, false);
 
 	////////////////////////////////////////////////////////////////////////////
