@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="IRRBasicDemo" />
+		<Option pch_mode="0" />
+		<Option default_target="Linux" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Win32">
+				<Option output="../bin/IRRBasicDemo" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="../bin" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+			<Target title="Linux">
+				<Option output="../bin/IRRBasicDemo" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="../bin" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="Win32;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+			<Add directory="/home/Dev/libs/game/SparkEngine/SPARK-SVN/include" />
+			<Add directory="/home/Dev/libs/gui/freetype-2.3.9/include" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="GL" />
+			<Add library="Xxf86vm" />
+			<Add library="SPARK" />
+			<Add library="SPARK_IRR" />
+			<Add library="SDL" />
+			<Add library="GLU" />
+			<Add library="glut" />
+			<Add library="ftgl" />
+			<Add library="freetype" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+			<Add directory="/home/Dev/libs/game/SparkEngine/SPARK-SVN/lib/Linux/static" />
+			<Add directory="/home/Dev/libs/gui/freetype-2.3.9/objs/.libs" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

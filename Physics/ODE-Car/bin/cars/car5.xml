@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<car>
+  <collada path="car.dae"/>
+  <clean model="car_05_clean"
+         glass_model="car_05_clean_glass"
+         diffuse_map="car_clean.png"
+         position="0.0 -0.006 0.0"
+         scale="10.0 10.0 10.0"
+         mass="1.0"/>
+  <damaged model="car_05_damaged" 
+           diffuse_map="car_damaged.png"/>
+  <wheels model="cleanwheel_F_L"
+          diffuse_map="general_map.png"
+          f_l_wheel="0.306 -0.198 -0.619"
+          b_l_wheel="0.327 -0.198 0.538"
+          f_r_wheel="-0.306 -0.198 -0.619"
+          b_r_wheel="-0.327 -0.198 0.538"
+          mass="0.2"/>
+</car>
