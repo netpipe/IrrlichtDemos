@@ -65,7 +65,7 @@ int main()
 
 //	CEventReceiver *_EventReceiver = new CEventReceiver();
 
-	_device = createDevice(driverType, core::dimension2di(800, 600),
+	_device = createDevice(driverType, core::dimension2du(800, 600),
 		32, false, false, false, 0);
 
 	video::IVideoDriver* _driver = _device->getVideoDriver();
@@ -169,7 +169,7 @@ int main()
 	parallaxplane->setMaterialTexture(1, _driver->getTexture("rockwall_height.bmp"));
 	parallaxplane->setMaterialType((E_MATERIAL_TYPE)parallax);
 
-	CReflectedWater *water = new CReflectedWater("ReflectedWater", _device, _scene, -1, 180, 100, dimension2di(512,512));
+	CReflectedWater *water = new CReflectedWater("ReflectedWater", _device, _scene, -1, 180, 100, dimension2du(512,512));
 	ISceneNode *waternode = water->m_waternode;
 	waternode->setPosition(vector3df(0, 50, -3000));
 	water->m_WaveDisplacement /= 1.5f;

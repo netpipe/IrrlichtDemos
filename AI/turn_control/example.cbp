@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="Reflective Water" />
+		<Option title="Irrlicht Pong" />
 		<Option pch_mode="0" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="default">
-				<Option output="./ReflectiveQater" prefix_auto="0" extension_auto="0" />
+				<Option output="./Pong" prefix_auto="0" extension_auto="0" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Option projectResourceIncludeDirsRelation="1" />
@@ -17,20 +17,18 @@
 			<Add alias="All" targets="default;" />
 		</VirtualTargets>
 		<Compiler>
-			<Add option="-W" />
-			<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
 		</Compiler>
 		<Linker>
-			<Add library="GL" />
 			<Add library="Irrlicht" />
+			<Add library="GL" />
 			<Add library="Xxf86vm" />
 			<Add library="X11" />
-			<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
 		</Linker>
-		<Unit filename="CReflectedWater.cpp" />
-		<Unit filename="CReflectedWater.h" />
-		<Unit filename="CReflectedWater_ShaderCode.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="turn_control.cpp" />
+		<Unit filename="turn_control.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

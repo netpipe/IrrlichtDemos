@@ -7,7 +7,7 @@
 #include "CReflectedWater_ShaderCode.h"
 
 CReflectedWater::CReflectedWater(const irr::c8 *name, IrrlichtDevice *device, scene::ISceneManager* smgr,
-                                 s32 id, f32 tileSize, s32 tileCount, core::dimension2di RenderTargetSize)
+                                 s32 id, f32 tileSize, s32 tileCount, core::dimension2du RenderTargetSize)
 {
     m_device   = device;
     m_smgr      = smgr;
@@ -61,7 +61,7 @@ CReflectedWater::CReflectedWater(const irr::c8 *name, IrrlichtDevice *device, sc
     m_waternode->setMaterialFlag(video::EMF_LIGHTING, false);
     m_waternode->setMaterialFlag(video::EMF_FOG_ENABLE, false);
 
-    m_rt = _driver->createRenderTargetTexture(RenderTargetSize);
+    m_rt = _driver->addRenderTargetTexture(RenderTargetSize);
     m_waternode->setMaterialTexture(0, m_rt);
 
     scene::ICameraSceneNode *camera = smgr->getActiveCamera();
