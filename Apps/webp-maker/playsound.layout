@@ -2,47 +2,35 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Linux64" />
-	<File name="img2webp.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="4270" topLine="30" />
-		</Cursor>
-		<Folding>
-			<Collapse line="35" />
-			<Collapse line="72" />
-			<Collapse line="90" />
-		</Folding>
-	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="6120" topLine="175" />
-		</Cursor>
-		<Folding>
-			<Collapse line="50" />
-			<Collapse line="58" />
-			<Collapse line="69" />
-		</Folding>
-	</File>
 	<File name="example_util.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="3969" topLine="11" />
 		</Cursor>
 		<Folding>
-			<Collapse line="25" />
-			<Collapse line="36" />
-			<Collapse line="40" />
-			<Collapse line="52" />
-			<Collapse line="65" />
-			<Collapse line="74" />
-			<Collapse line="85" />
+			<Collapse line="125" />
 		</Folding>
 	</File>
 	<File name="example_util.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="616" topLine="0" />
 		</Cursor>
+	</File>
+	<File name="img2webp.h" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4270" topLine="12" />
+		</Cursor>
 		<Folding>
-			<Collapse line="19" />
+			<Collapse line="125" />
 		</Folding>
 	</File>
-	<EditorTabsLayout layout="046e92505df9d52c0010322d00000002=0;webp:example_util.h,1;webp:example_util.c,2;webp:main.cpp,3;webp:img2webp.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=328;besth=326;minw=328;minh=326;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=046e92505df9d52c0010322d00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+	<File name="main.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6086" topLine="61" />
+		</Cursor>
+		<Folding>
+			<Collapse line="34" />
+			<Collapse line="90" />
+		</Folding>
+	</File>
+	<EditorTabsLayout layout="0411f8005df9d95e00107e6100000002=0;webp:example_util.h,1;webp:example_util.c,2;webp:main.cpp,*3;webp:img2webp.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=551;besth=326;minw=551;minh=326;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=0411f8005df9d95e00107e6100000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>
