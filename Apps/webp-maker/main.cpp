@@ -12,7 +12,7 @@ and a pointer to a listbox.
 */
 #include <irrlicht.h>
 #include "driverChoice.h"
-#include "exampleHelper.h"
+//#include "exampleHelper.h"
 
 using namespace irr;
 
@@ -25,6 +25,25 @@ using namespace gui;
 #ifdef _MSC_VER
 #pragma comment(lib, "Irrlicht.lib")
 #endif
+
+#include "img2webp.h"
+
+#include "IrrCompileConfig.h"
+#include "path.h"
+
+namespace irr
+{
+
+static io::path getExampleMediaPath()
+{
+#if defined (_IRR_IPHONE_PLATFORM_) || defined (_IRR_ANDROID_PLATFORM_) || defined (_IRR_OSX_PLATFORM_)
+	return io::path("media/");
+#else
+	return io::path("../../media/");
+#endif
+}
+
+} // end namespace irr
 
 // Declare a structure to hold some context for the event receiver so that it
 // has it available inside its OnEvent() method.
@@ -187,8 +206,15 @@ OK, now for the more interesting part. First, create the Irrlicht device. As in
 some examples before, we ask the user which driver he wants to use for this
 example.
 */
-int main()
+int main(int argc, const char* argv[])
 {
+	//     ./img2webp -loop 1 out.jpg -mixed -d 80 -o out.webp
+	char *argv1[]={"test","-loop","1","img.jpg","-mixed","-d","80","-o" ,"out.webp","test"};// maybe extra param too to help
+	int argc1 = sizeof(argv1) / sizeof(char*) - 1;
+//int IMG2WEBP(int argc, const char* argv[])
+
+IMG2WEBP(argc,argv);
+
 	// ask user for driver
 	video::E_DRIVER_TYPE driverType=driverChoiceConsole();
 	if (driverType==video::EDT_COUNT)
@@ -284,6 +310,8 @@ int main()
 	/*
 	That's all, we only have to draw everything.
 	*/
+
+
 
 	while(device->run() && driver)
 	if (device->isWindowActive())

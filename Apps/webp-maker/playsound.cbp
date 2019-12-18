@@ -52,6 +52,7 @@
 					<Add directory="../../../emscripten-projects/SDL/SDL_sound/src" />
 					<Add directory="../../../emscripten-projects/media/libwebp" />
 					<Add directory="../../../emscripten-projects/media/libwebp/src" />
+					<Add directory="../../../EMLibs/irrlicht-ogl-es/irrlicht/include" />
 				</Compiler>
 				<ResourceCompiler>
 					<Add directory="include" />
@@ -61,14 +62,17 @@
 					<Add library="imagedec" />
 					<Add library="imageenc" />
 					<Add library="imageioutil" />
+					<Add library="Irrlicht" />
 					<Add directory="../../../emscripten-projects/SDL/SDL_sound/src" />
 					<Add directory="../../../emscripten-projects/media/libwebp" />
+					<Add directory="../../../EMLibs/irrlicht-ogl-es/irrlicht/lib/Linux" />
 				</Linker>
 			</Target>
 			<Target title="Linux64">
 				<Option output="player" prefix_auto="1" extension_auto="1" />
 				<Option type="1" />
 				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="1" />
 				<Compiler>
 					<Add option="-Wall" />
 					<Add option="-g" />
@@ -77,6 +81,7 @@
 					<Add directory="include" />
 					<Add directory="../../../LunaLibs/media/libwebp" />
 					<Add directory="../../../LunaLibs/media/libwebp/src" />
+					<Add directory="../../../../../Dev/libs/game/irrlicht/Irrlicht-SVN/include" />
 				</Compiler>
 				<ResourceCompiler>
 					<Add directory="include" />
@@ -94,7 +99,15 @@
 					<Add library="jpeg" />
 					<Add library="png" />
 					<Add library="tiff" />
+					<Add library="Irrlicht" />
+					<Add library="X11" />
+					<Add library="SDL2" />
+					<Add library="SDL_sound" />
+					<Add library="m" />
+					<Add library="GL" />
+					<Add library="Xxf86vm" />
 					<Add directory="../../../LunaLibs/media/libwebp" />
+					<Add directory="../../../../../Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux" />
 				</Linker>
 			</Target>
 		</Build>
@@ -112,9 +125,8 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="example_util.h" />
-		<Unit filename="img2webp.c">
-			<Option compilerVar="CC" />
-		</Unit>
+		<Unit filename="img2webp.h" />
+		<Unit filename="main.cpp" />
 		<Unit filename="unicode.h" />
 		<Unit filename="unicode_gif.h" />
 		<Extensions />
