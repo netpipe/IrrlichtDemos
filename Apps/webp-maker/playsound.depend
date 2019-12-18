@@ -1,0 +1,150 @@
+# depslib dependency file v1.0
+1576539371 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Apps/untitled folder 2/example_util.c
+	"./example_util.h"
+	<assert.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"webp/mux_types.h"
+	"../imageio/imageio_util.h"
+
+1576647668 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Apps/untitled folder 2/example_util.h
+	<webp/types.h>
+	<webp/mux_types.h>
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/media/libwebp/src/webp/types.h
+	<stddef.h>
+	<inttypes.h>
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/media/libwebp/src/webp/mux_types.h
+	<string.h>
+	"./types.h"
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Apps/untitled folder 2/imageio/imageio_util.h
+	<stdio.h>
+	"webp/types.h"
+
+1576647869 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Apps/untitled folder 2/img2webp.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"webp/config.h"
+	"example_util.h"
+	<imageio/image_dec.h>
+	<imageio/imageio_util.h>
+	"stopwatch.h"
+	"unicode.h"
+	<webp/encode.h>
+	<webp/mux.h>
+
+1576539379 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/media/libwebp/src/webp/config.h
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/media/libwebp/imageio/image_dec.h
+	"webp/types.h"
+	"webp/config.h"
+	"./metadata.h"
+	"./jpegdec.h"
+	"./pngdec.h"
+	"./pnmdec.h"
+	"./tiffdec.h"
+	"./webpdec.h"
+	"./wicdec.h"
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/media/libwebp/imageio/metadata.h
+	"webp/types.h"
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/media/libwebp/imageio/jpegdec.h
+	"webp/types.h"
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/media/libwebp/imageio/pngdec.h
+	"webp/types.h"
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/media/libwebp/imageio/pnmdec.h
+	"webp/types.h"
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/media/libwebp/imageio/tiffdec.h
+	"webp/types.h"
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/media/libwebp/imageio/webpdec.h
+	"webp/decode.h"
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/media/libwebp/src/webp/decode.h
+	"./types.h"
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/media/libwebp/imageio/wicdec.h
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/media/libwebp/imageio/imageio_util.h
+	<stdio.h>
+	"webp/types.h"
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Apps/untitled folder 2/stopwatch.h
+	"webp/types.h"
+	<windows.h>
+	<string.h>
+	<sys/time.h>
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Apps/untitled folder 2/unicode.h
+	<wchar.h>
+	<windows.h>
+	<shellapi.h>
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/media/libwebp/src/webp/encode.h
+	"./types.h"
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/media/libwebp/src/webp/mux.h
+	"./mux_types.h"
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/emscripten-projects/media/libwebp/src/webp/types.h
+	<stddef.h>
+	<inttypes.h>
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/emscripten-projects/media/libwebp/src/webp/mux_types.h
+	<string.h>
+	"./types.h"
+
+1576553005 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/emscripten-projects/media/libwebp/src/webp/config.h
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/emscripten-projects/media/libwebp/imageio/image_dec.h
+	"webp/types.h"
+	"webp/config.h"
+	"./metadata.h"
+	"./jpegdec.h"
+	"./pngdec.h"
+	"./pnmdec.h"
+	"./tiffdec.h"
+	"./webpdec.h"
+	"./wicdec.h"
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/emscripten-projects/media/libwebp/imageio/metadata.h
+	"webp/types.h"
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/emscripten-projects/media/libwebp/imageio/jpegdec.h
+	"webp/types.h"
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/emscripten-projects/media/libwebp/imageio/pngdec.h
+	"webp/types.h"
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/emscripten-projects/media/libwebp/imageio/pnmdec.h
+	"webp/types.h"
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/emscripten-projects/media/libwebp/imageio/tiffdec.h
+	"webp/types.h"
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/emscripten-projects/media/libwebp/imageio/webpdec.h
+	"webp/decode.h"
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/emscripten-projects/media/libwebp/src/webp/decode.h
+	"./types.h"
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/emscripten-projects/media/libwebp/imageio/wicdec.h
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/emscripten-projects/media/libwebp/imageio/imageio_util.h
+	<stdio.h>
+	"webp/types.h"
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/emscripten-projects/media/libwebp/src/webp/encode.h
+	"./types.h"
+
+1576539371 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/emscripten-projects/media/libwebp/src/webp/mux.h
+	"./mux_types.h"
+

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="webp" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="player" prefix_auto="1" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-O0" />
+					<Add option="-DLIBOGG_EXPORTS" />
+					<Add directory="include" />
+					<Add directory="../../../LunaLibs/media/libwebp" />
+					<Add directory="../../../LunaLibs/media/libwebp/src" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="pthread" />
+					<Add library="imageioutil" />
+					<Add library="imageenc" />
+					<Add library="imagedec" />
+					<Add library="exampleutil" />
+					<Add library="webpmux" />
+					<Add library="webpdecoder" />
+					<Add library="webpdemux" />
+					<Add library="webp" />
+					<Add library="jpeg" />
+					<Add library="png" />
+					<Add library="tiff" />
+					<Add directory="../../../LunaLibs/media/libwebp" />
+				</Linker>
+			</Target>
+			<Target title="emscripten">
+				<Option output="player.html" prefix_auto="0" extension_auto="0" />
+				<Option object_output=".emobjs" />
+				<Option type="1" />
+				<Option compiler="emscripten" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-O0" />
+					<Add option="-DLIBOGG_EXPORTS" />
+					<Add directory="include" />
+					<Add directory="../../../emscripten-projects/SDL/SDL_sound/src" />
+					<Add directory="../../../emscripten-projects/media/libwebp" />
+					<Add directory="../../../emscripten-projects/media/libwebp/src" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="webp" />
+					<Add library="imagedec" />
+					<Add library="imageenc" />
+					<Add library="imageioutil" />
+					<Add directory="../../../emscripten-projects/SDL/SDL_sound/src" />
+					<Add directory="../../../emscripten-projects/media/libwebp" />
+				</Linker>
+			</Target>
+			<Target title="Linux64">
+				<Option output="player" prefix_auto="1" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-O0" />
+					<Add option="-DLIBOGG_EXPORTS" />
+					<Add directory="include" />
+					<Add directory="../../../LunaLibs/media/libwebp" />
+					<Add directory="../../../LunaLibs/media/libwebp/src" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="pthread" />
+					<Add library="imageioutil" />
+					<Add library="imageenc" />
+					<Add library="imagedec" />
+					<Add library="exampleutil" />
+					<Add library="webpmux" />
+					<Add library="webpdecoder" />
+					<Add library="webpdemux" />
+					<Add library="webp" />
+					<Add library="jpeg" />
+					<Add library="png" />
+					<Add library="tiff" />
+					<Add directory="../../../LunaLibs/media/libwebp" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-fPIC" />
+			<Add directory="../src" />
+		</Compiler>
+		<Linker>
+			<Add library="SDL2" />
+			<Add library="SDL_sound" />
+			<Add library="m" />
+			<Add directory="../src" />
+		</Linker>
+		<Unit filename="example_util.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="example_util.h" />
+		<Unit filename="img2webp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="unicode.h" />
+		<Unit filename="unicode_gif.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
