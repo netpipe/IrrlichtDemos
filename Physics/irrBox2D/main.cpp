@@ -194,8 +194,8 @@ IrrlichtDevice *device = 0;
 b2Vec2 gravity(0.0f, 10.0f);
 bool doSleep = true;
 
-b2World world(gravity,doSleep); //box2d 2.1.2
-//b2World world(gravity);
+//b2World world(gravity,doSleep); //box2d 2.1.2
+b2World world(gravity);
    bwBody* bww;
 
 class MyEventReceiver : public IEventReceiver
@@ -259,9 +259,11 @@ void rendermain(){
    }
 #ifdef __EMSCRIPTEN__
    void main_loop(){
-      EM_ASM({
-  console.log('I received: ' + $0);
-}, 100);
+
+   EM_ASM({
+      console.log('I received: ' + $0);
+   }, 100);
+
    rendermain();
    }
    #endif
@@ -313,9 +315,9 @@ int main()
 
    bww = new bwBody(groundBox, groundBody, device);
 
-   for(int i=0; i < 11; i++)
+   for(int i=0; i < 5; i++)
    {
-        for(int j=0; j < 8; j++)
+        for(int j=0; j < 3; j++)
         {
             createRigidBox(world,vector2d<s32>(110+(i*45), 230-(j*20)), device);
         }
