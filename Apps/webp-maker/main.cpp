@@ -312,7 +312,7 @@ IMG2WEBP(argc,argv);
 	*/
 
 
-
+// emscripten_run_script("saveFileFromMemoryFSToDisk('images/image.jpg','image.jpg')");
 	while(device->run() && driver)
 	if (device->isWindowActive())
 	{
