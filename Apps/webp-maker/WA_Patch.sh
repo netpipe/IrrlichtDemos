@@ -29,3 +29,39 @@ sed -i '/pattern/a <script src="FileSaver.js"> <\/script>
          saveAs(blob, localFSname);
       }
     <\/script>' file.html
+
+
+   <script src="FileSaver.js"> </script>
+    <script>
+      function saveFileFromMemoryFSToDisk(memoryFSname,localFSname)     // This can be called by C++ code
+      {
+         var data=FS.readFile(memoryFSname);
+         var blob;
+         var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+         if(isSafari) {
+            blob = new Blob([data.buffer], {type: "application/octet-stream"});
+         } else {
+            blob = new Blob([data.buffer], {type: "application/octet-binary"});
+         }
+         saveAs(blob, localFSname);
+      }
+
+      function sendHTTP(url,params)     // This can be called by C++ code
+      {
+			sendForm(url,params);
+      }
+
+      function sendFILE(url,params)     // This can be called by C++ code
+      {
+         var data=FS.readFile(memoryFSname);
+         var blob;
+         var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+         if(isSafari) {
+            blob = new Blob([data.buffer], {type: "application/octet-stream"});
+         } else {
+            blob = new Blob([data.buffer], {type: "application/octet-binary"});
+         }
+        // saveAs(blob, localFSname);
+		//send to http code possibly using sendForm
+		sendForm(url,blob);
+      }
