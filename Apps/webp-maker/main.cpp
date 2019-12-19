@@ -31,6 +31,17 @@ using namespace gui;
 #include "IrrCompileConfig.h"
 #include "path.h"
 
+#ifdef __EMSCRIPTEN__
+#include <emscripten.h>
+#endif
+
+
+	video::IVideoDriver* driver;
+	IGUIEnvironment* env;
+		IrrlichtDevice * device;
+
+
+
 namespace irr
 {
 
@@ -201,6 +212,38 @@ private:
 };
 
 
+
+
+void main_loop(){
+
+//EM_JS(void, call_alert, (), {
+//  alert('hello world!');
+//  throw 'all done';
+//});
+
+  EM_ASM(
+    var btn = document.createElement('input');
+    btn.type = 'button';
+    btn.name = btn.value = 'OK';
+    btn.onclick = function() {
+      _test_finished();
+    };
+    document.body.appendChild(btn);
+  );
+
+// emscripten_run_script("sendHTTP('www.netpipe.ca/test.php','v1=1&v2=2&v3=3&name=binny')");
+// emscripten_run_script("saveFileFromMemoryFSToDisk('images/image.jpg','image.jpg')");
+	device->run();
+	//if (device->isWindowActive())
+	//{
+		driver->beginScene(video::ECBF_COLOR | video::ECBF_DEPTH, SColor(0,200,200,200));
+
+		env->drawAll();
+
+		driver->endScene();
+	//}
+
+	}
 /*
 OK, now for the more interesting part. First, create the Irrlicht device. As in
 some examples before, we ask the user which driver he wants to use for this
@@ -214,15 +257,25 @@ int main(int argc, const char* argv[])
 	int argc1 = sizeof(argv1) / sizeof(char*) - 1;
 //int IMG2WEBP(int argc, const char* argv[])
 
+
+
 IMG2WEBP(argc1,argv1);
 //IMG2WEBP(argc,argv);
 	// ask user for driver
+
+#ifdef __EMSCRIPTEN__
+	emscripten_set_main_loop(main_loop,0,1);
+#endif
+
+
+
 	video::E_DRIVER_TYPE driverType=driverChoiceConsole();
 	if (driverType==video::EDT_COUNT)
 		return 1;
 
 	// create device and exit if creation failed
-	IrrlichtDevice * device = createDevice(driverType, core::dimension2d<u32>(640, 480));
+
+	IrrlichtDevice * device = createDevice(EDT_OPENGL, core::dimension2d<u32>(640, 480));
 
 	if (device == 0)
 		return 1; // could not create selected driver.
@@ -233,8 +286,8 @@ IMG2WEBP(argc1,argv1);
 	device->setWindowCaption(L"Irrlicht Engine - User Interface Demo");
 	device->setResizable(true);
 
-	video::IVideoDriver* driver = device->getVideoDriver();
-	IGUIEnvironment* env = device->getGUIEnvironment();
+	 driver = device->getVideoDriver();
+	 env = device->getGUIEnvironment();
 
 	const io::path mediaPath = getExampleMediaPath();
 
@@ -311,9 +364,9 @@ IMG2WEBP(argc1,argv1);
 	/*
 	That's all, we only have to draw everything.
 	*/
-
-// emscripten_run_script("sendHTTP('www.netpipe.ca/test.php','v1=1&v2=2&v3=3&name=binny')");
-// emscripten_run_script("saveFileFromMemoryFSToDisk('images/image.jpg','image.jpg')");
+#ifdef __EMSCRIPTEN__
+	emscripten_set_main_loop(main_loop,0,1);
+#else
 	while(device->run() && driver)
 	if (device->isWindowActive())
 	{
@@ -323,6 +376,7 @@ IMG2WEBP(argc1,argv1);
 
 		driver->endScene();
 	}
+#endif
 
 	device->drop();
 

@@ -5,6 +5,9 @@
 #include <Box2D/Common/b2Math.h>
 #include <GL/gl.h>
 
+#ifdef __EMSCRIPTEN__
+#include <emscripten.h>
+#endif
 
 using namespace irr;
 using namespace core;
@@ -12,6 +15,17 @@ using namespace scene;
 using namespace video;
 using namespace io;
 using namespace gui;
+
+   IVideoDriver* driver ;
+   ISceneManager* smgr ;
+   IGUIEnvironment* guienv ;
+   ITimer* timer;
+   f32 DeltaTime;
+   f32 TimeStamp;
+   float32 timeStep;
+      int32 velocityIterations;
+   int32 positionIterations;
+
 
 // draw2DImage source from Lonesome Ducky
 void draw2DImage(irr::video::IVideoDriver *driver, irr::video::ITexture* texture,
@@ -116,11 +130,11 @@ class bwBody
             device->getVideoDriver()->draw2DLine(position2d<s32>(position.x,position.y),
                 position2d<s32>(position.x-10,position.y-10), SColor(255, 0, 255, 0));
 
-            const b2Mat22 mat(angle);
+            ///const b2Mat22 mat(angle);
             for(int i=0; i < shape.GetVertexCount(); i++)
             {
-                //const b2Vec2 vec = body->GetWorldPoint(shape.GetVertex(i));
-                const b2Vec2 vec = body->GetWorldPoint(b2Mul(mat,shape.GetVertex(i)));
+                const b2Vec2 vec = body->GetWorldPoint(shape.GetVertex(i));
+                ///const b2Vec2 vec = body->GetWorldPoint(b2Mul(mat,shape.GetVertex(i)));
 
 
                 // This wireframe drawing is incorrect - Cobra
@@ -179,7 +193,10 @@ IrrlichtDevice *device = 0;
 
 b2Vec2 gravity(0.0f, 10.0f);
 bool doSleep = true;
-b2World world(gravity, doSleep);
+
+b2World world(gravity,doSleep); //box2d 2.1.2
+//b2World world(gravity);
+   bwBody* bww;
 
 class MyEventReceiver : public IEventReceiver
 {
@@ -209,7 +226,45 @@ public:
    }
 };
 
+void rendermain(){
 
+   device->run();
+ //  {
+      driver->beginScene(true, true, SColor(255,100,101,140));
+
+      DeltaTime = timer->getTime() - TimeStamp;
+        TimeStamp = timer->getTime();
+
+      // Instruct the world to perform a single step of simulation.
+      // It is generally best to keep the time step and iterations fixed.
+      world.Step(DeltaTime*timeStep, velocityIterations, positionIterations);
+
+      // Clear applied body forces. We didn't apply any forces, but you
+      // should know about this function.
+      world.ClearForces();
+
+      for(int i=0; i < bodies.size(); i++)
+      {
+          bodies[i]->update();
+      }
+
+      bww->update();
+
+      smgr->drawAll();
+      guienv->drawAll();
+
+      driver->endScene();
+  // }
+
+   }
+#ifdef __EMSCRIPTEN__
+   void main_loop(){
+      EM_ASM({
+  console.log('I received: ' + $0);
+}, 100);
+   rendermain();
+   }
+   #endif
 int main()
 {
     MyEventReceiver receiver;
@@ -222,10 +277,10 @@ int main()
    device->setWindowCaption(L"Irrlicht/Box2D Sample");
 
 
-   IVideoDriver* driver = device->getVideoDriver();
-   ISceneManager* smgr = device->getSceneManager();
-   IGUIEnvironment* guienv = device->getGUIEnvironment();
-   ITimer* timer = device->getTimer();
+    driver = device->getVideoDriver();
+    smgr = device->getSceneManager();
+    guienv = device->getGUIEnvironment();
+   timer = device->getTimer();
 
 
    guienv->addStaticText(L"Box2D integrated with Irrlicht",
@@ -256,7 +311,7 @@ int main()
    // Add the ground fixture to the ground body.
    groundBody->CreateFixture(&groundBox, 0.0f);
 
-   bwBody* bww = new bwBody(groundBox, groundBody, device);
+   bww = new bwBody(groundBox, groundBody, device);
 
    for(int i=0; i < 11; i++)
    {
@@ -270,44 +325,23 @@ int main()
    // Prepare for simulation. Typically we use a time step of 1/60 of a
    // second (60Hz) and 10 iterations. This provides a high quality simulation
    // in most game scenarios.
-   float32 timeStep = 1.0f / 250.0f;
-   int32 velocityIterations = 6;
-   int32 positionIterations = 2;
+   timeStep = 1.0f / 250.0f;
+   velocityIterations = 6;
+   positionIterations = 2;
 
 
-    f32 TimeStamp = timer->getTime();
-   f32 DeltaTime = timer->getTime() - TimeStamp;
+    TimeStamp = timer->getTime();
+   DeltaTime = timer->getTime() - TimeStamp;
 
 
-
+#ifdef __EMSCRIPTEN__
+	emscripten_set_main_loop(main_loop,0,1);
+#else
    while(device->run())
    {
-      driver->beginScene(true, true, SColor(255,100,101,140));
-
-      DeltaTime = timer->getTime() - TimeStamp;
-        TimeStamp = timer->getTime();
-
-      // Instruct the world to perform a single step of simulation.
-      // It is generally best to keep the time step and iterations fixed.
-      world.Step(DeltaTime*timeStep, velocityIterations, positionIterations);
-
-      // Clear applied body forces. We didn't apply any forces, but you
-      // should know about this function.
-      world.ClearForces();
-
-      for(int i=0; i < bodies.size(); i++)
-      {
-          bodies[i]->update();
-      }
-
-      bww->update();
-
-      smgr->drawAll();
-      guienv->drawAll();
-
-      driver->endScene();
+rendermain();
    }
-
+#endif
    for(int i=0; i < bodies.size(); i++)
     {
         delete bodies[i];
