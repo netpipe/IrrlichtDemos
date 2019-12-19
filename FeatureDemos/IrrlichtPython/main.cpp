@@ -1,10 +1,18 @@
-#include<irrlicht.h>
-#include<python/Python.h>
-#include<stdio.h>
-#include<vector>
-#include<string.h>
-#include<stdlib.h>
+#include <irrlicht.h>
+#include <Python.h>
+#include <stdio.h>
+#include <vector>
+#include <string.h>
+#include <stdlib.h>
 
+
+#ifdef __EMSCRIPTEN__
+#include <emscripten.h>
+#include <libtar.h>
+#endif
+
+
+#include <fcntl.h>
 using namespace std;
 
 using namespace irr;
@@ -21,6 +29,9 @@ IGUIEnvironment * guienv;
 IGUIFont * default_font;
 vector<ITexture *> texture_array; //Our array of textures
 
+//
+void main_loop();
+//
 static PyObject * PyIrr_LoadTexture(PyObject * self,PyObject * args)
 {
 	//Watch this, tricky,remember to pass string ADDRESS to PyArg_ParseTuple
@@ -137,36 +148,83 @@ void ExecuteScript(irr::core::string<char> scriptname)
 	the namespace in which the string class I wanted was to be found*/
 };
 
+void main_loop()
+{
+	device->run();
+
+    driver->beginScene(true, true, SColor(250, 253, 0, 0));
+     ExecuteScript("./media/script2.pys");
+      smgr->drawAll();
+      	guienv->drawAll();
+
+	//manager->drawAll();
+	driver->endScene();
+
+}
+
+
 int main(int argc,char **argv)
 {
-	Py_Initialize(); //Initialize Python
+#ifdef __EMSCRIPTEN__
+	TAR* tar;
+	if (tar_open(&tar, "./media/pydata.tar", NULL, O_RDONLY, 0, 0) != 0) {
+		fprintf(stderr, "Error: failed to open pydata.tar\n");
+		exit(1);
+	}
+	if (tar_extract_all(tar, (char*) "/") != 0) {
+		fprintf(stderr, "Error: failed to extract pydata.tar\n");
+		exit(1);
+	}
+	tar_close(tar);
 
+	//Py_Initialize(); //Initialize Python
+	setenv("PYTHONHOME", "/", 0);
+//
+	//Py_InitializeEx(0);
 	//Irrlicht specific stuff
-	device = createDevice(EDT_OPENGL,dimension2d<s32>(800,600),32,false,false,false,0);
+
+	device = createDevice(EDT_OGLES2,dimension2du(800,600),32,false,false,false,0);
+#else
+	device = createDevice(EDT_OPENGL,dimension2d<u32>(800,600),32,false,false,false,0);
+#endif
+
+
+	Py_Initialize(); //Initialize Python
 	//If you want, you can change the name to something a bit more mature(spoilsport >_<)
 	device->setWindowCaption(L"Irrlicht And Python Together Forever (Eww...)");
 	driver = device->getVideoDriver();
 	smgr = device->getSceneManager();
 	guienv = device->getGUIEnvironment();
 	smgr->addCameraSceneNodeFPS();
-	default_font = guienv->getFont("app_font.bmp");
+	default_font = guienv->getFont("./media/app_font.bmp");
+
+	//PyRun_SimpleString("print \"Hello from Python\"");
+	//Py_Finalize();
+
 
 	init_irr(); //Initialize our module
 
-	ExecuteScript("script.pys"); //Using our handy dandy script execution function
+	ExecuteScript("./media/script.pys"); //Using our handy dandy script execution function
 
+	  #ifdef __EMSCRIPTEN__
+	emscripten_set_main_loop(main_loop,0,1);
+  #else
 	while(device->run())
 	{
 		driver->beginScene(true,true,SColor(255,0,0,0));
 			/*This script is responsible for printing my on the screen, it has to
 			be redrawn every frame, hence it goes in the renderloop (general rule, people)*/
-		    ExecuteScript("script2.pys");
+		    ExecuteScript("./media/script2.pys");
 		    smgr->drawAll();
 			guienv->drawAll();
 		driver->endScene();
 	};
+#endif
+//emscripten_exit_with_live_runtime();
 
 	Py_Finalize(); //Shut down the Python interpreter
 	device->drop(); //Close down Irrlicht
 	return 0;
 };
+
+
