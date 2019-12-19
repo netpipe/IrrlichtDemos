@@ -209,12 +209,13 @@ example.
 int main(int argc, const char* argv[])
 {
 	//     ./img2webp -loop 1 out.jpg -mixed -d 80 -o out.webp
-	char *argv1[]={"test","-loop","1","img.jpg","-mixed","-d","80","-o" ,"out.webp","test"};// maybe extra param too to help
+	//const char *argv1[]={"test","-h","test"};
+	const char *argv1[]={"test","-loop","1","img.jpg","-mixed","-d","80","-o" ,"out.webp","test"};// maybe extra param too to help
 	int argc1 = sizeof(argv1) / sizeof(char*) - 1;
 //int IMG2WEBP(int argc, const char* argv[])
 
-IMG2WEBP(argc,argv);
-
+IMG2WEBP(argc1,argv1);
+//IMG2WEBP(argc,argv);
 	// ask user for driver
 	video::E_DRIVER_TYPE driverType=driverChoiceConsole();
 	if (driverType==video::EDT_COUNT)
@@ -311,7 +312,7 @@ IMG2WEBP(argc,argv);
 	That's all, we only have to draw everything.
 	*/
 
-
+// emscripten_run_script("sendHTTP('www.netpipe.ca/test.php','v1=1&v2=2&v3=3&name=binny')");
 // emscripten_run_script("saveFileFromMemoryFSToDisk('images/image.jpg','image.jpg')");
 	while(device->run() && driver)
 	if (device->isWindowActive())

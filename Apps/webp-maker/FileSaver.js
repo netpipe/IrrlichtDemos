@@ -62,12 +62,12 @@
     xhr.send();
   }
 
-function sendForm(url, name, opts) {
+function sendForm(url, opts) {
 	var http = new XMLHttpRequest();
 	//var url = 'get_data.php';
 	var url = url
 	//var params = 'orem=ipsum&name=binny';
-	var params = opts
+	//var params = opts
 	http.open('POST', url, true);
 
 	//Send the proper header information along with the request
