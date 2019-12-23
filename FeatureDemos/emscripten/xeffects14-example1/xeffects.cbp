@@ -87,17 +87,24 @@
 			<Add option="-D_IRR_STATIC_LIB_" />
 			<Add option="-D_IRR_EMSCRIPTEN_PLATFORM_" />
 			<Add option="-D__EMSCRIPTEN__" />
-			<Add directory="../../../../irrlicht-ogl-es/irrlicht/include" />
+			<Add directory="../../../../emscripten-projects/irrlicht-ogl-es-2019dec/include" />
 			<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/upstream/emscripten/tests/bullet/src" />
-			<Add directory="../../../Libs/irrlicht-ogl-es/irrlicht/include" />
 		</Compiler>
 		<ResourceCompiler>
 			<Add option="-s FULL_ES2=1" />
 		</ResourceCompiler>
 		<Linker>
-			<Add directory="../../../irrlicht-ogl-es/irrlicht/lib/Linux" />
+			<Add option="-s ALLOW_MEMORY_GROWTH=1" />
+			<Add option="--preload-file media/" />
+			<Add option="-s FULL_ES2=1" />
+			<Add option="-s DISABLE_EXCEPTION_CATCHING=0" />
+			<Add option="-s NO_EXIT_RUNTIME=1" />
+			<Add library="GLESv2" />
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add library="SDL" />
 			<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/upstream/emscripten/tests/bullet/src/.libs" />
-			<Add directory="../../../Libs/irrlicht-ogl-es/irrlicht/lib/Linux" />
+			<Add directory="../../../../emscripten-projects/irrlicht-ogl-es-2019dec/lib/Linux" />
 		</Linker>
 		<Unit filename="CScreenQuad.h" />
 		<Unit filename="CShaderPre.cpp" />
@@ -108,9 +115,6 @@
 		<Unit filename="EffectShaders.h" />
 		<Unit filename="XEffects.h" />
 		<Unit filename="emxeffect-demo.cpp" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
