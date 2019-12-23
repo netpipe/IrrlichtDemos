@@ -1,0 +1,55 @@
+### Options for the band type: "Man", "Woman", "Pop", "Traditional", "Rock", "Dj", "Drummers", "Santa"
+### Options for the show type: "Slow", "Normal", "Fast"
+### Options for the lyrics color: "White", "Red", "Green", "Blue", "Yellow", "Purple"
+### Options for the lyrics size: "1" to "6" 
+### Options for the Internal sounds: "On", "Off" 
+### Options for the clock: "On", "Off" 
+
+<Band:Santa>
+<Show:Slow>
+<LyricsColor:Purple>
+<LyricsSize:1>
+<Sounds:Off>
+<Clock:On>
+
+### The next lines are the lyrics. The format is exactly the same as the common ".srt" subtitles files.
+### So you should be able to create/edit/synchronize them in a external subtitle editor software.
+
+00:00:03,000 --> 00:00:13,000
+Merry Christmas!
+
+Kevin MacLeod
+www.incompetech.com
+
+00:00:13,000 --> 00:00:23,000
+Frohe Weihnachten!
+
+00:00:23,000 --> 00:00:33,000
+Joyeux Noël!
+
+00:00:33,000 --> 00:00:43,000
+Buon Natale!
+
+00:00:43,000 --> 00:00:53,000
+Feliz Natal!
+
+00:00:53,000 --> 00:01:03,000
+Vrolijk Kerstfeest!
+
+00:01:03,000 --> 00:01:13,000
+God Jul!
+
+00:01:13,000 --> 00:01:23,000
+Veselé Vánoce!
+
+00:01:23,000 --> 00:01:33,000
+Mutlu Noeller!
+
+00:01:33,000 --> 00:01:43,000
+Geseënde Kersfees!
+
+00:01:43,000 --> 00:01:53,000
+Feliz Navidad!
+
+00:01:53,000 --> 00:02:08,000
+Wesolych Swiat!

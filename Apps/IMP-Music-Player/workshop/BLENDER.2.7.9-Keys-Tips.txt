@@ -1,0 +1,63 @@
+
+--------------------------------------------------------------------
+Exporting 3D Models (meshes) for Irrlicht:
+--------------------------------------------------------------------
+
+1) For static meshes:
+We can use 3DMAX or BLENDER to export ".OBJ" files - ".OBJ" exporter is native in 3DMAX and BLENDER
+a) Always remove full paths from ".MTL" file, keep only textures names and extensions
+Example: "C:\full\long\path\to\texture.jpg" should be "texture.jpg"
+
+2) For animated meshes: (Option 1)
+We can use 3DMAX or BLENDER to export ".MD3" files (Quake meshes) - To export ".MD3" we need plugins for 3DMAX and BLENDER
+a) Animations are hardcoded (not bones animated)
+
+3) For animated meshes: (Option 2)
+We use BLENDER to export ".X" files (DirectX)
+a) Animations have bones
+
+
+--------------------------------------------------------------------
+Blender Keys & Tips:
+--------------------------------------------------------------------
+
+• IN BLENDER OBJECTS:
+
+For all objects: (Same convention in the UV editor as in the 3D viewport)
+G = translate
+R = rotate
+S = scale
+
+Selecting Objects:
+B = box selection
+A = select all
+
+Placing 3D Cursor to center of the world:
+Shift + S
+
+
+• IN BLENDER UV MAPPING:
+
+1) Select mesh faces
+2) Press U (menu) --> "Project from view (bounds)"
+
+
+
+• IN BLENDER BONES:
+
+ALT G - reset all translations
+ALT R - reset all rotations
+ALT S - reset all scales
+
+
+
+• IN BLENDER ANIMATION:
+
+Insert keyframe: I
+Deleting keyframes: Alt + I
+
+OR
+Select Object --> Space key --> type "Remove Animation"
+
+
+

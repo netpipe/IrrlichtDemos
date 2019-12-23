@@ -1,0 +1,36 @@
+### Options for the band type: "Man", "Woman", "Pop", "Traditional", "Rock", "Dj", "Drummers", "Santa"
+### Options for the show type: "Slow", "Normal", "Fast"
+### Options for the lyrics color: "White", "Red", "Green", "Blue", "Yellow", "Purple"
+### Options for the lyrics size: "1", "2", "3", "4", "5", "6" 
+### Options for the Internal sounds: "On", "Off" 
+### Options for the clock: "On", "Off" 
+
+<Band:Man>
+<Show:Slow>
+<LyricsColor:Purple>
+<LyricsSize:1>
+<Sounds:On>
+<Clock:Off>
+
+### The next lines are the lyrics. The format is exactly the same as the common ".srt" subtitles files.
+### So you should be able to create/edit/synchronize them in a external subtitle editor software.
+
+00:00:01,000 --> 00:00:03,000  
+Welcome to Irrlicht Music Player
+
+(English)
+
+00:00:03,000 --> 00:00:06,000
+You can add your own musics and lyrics too
+
+(English)
+
+00:00:06,000 --> 00:00:08,000
+We hope that you enjoy our live concert
+
+(English)
+
+00:00:09,000 --> 00:00:10,000
+Have Fun!
+
+(English)

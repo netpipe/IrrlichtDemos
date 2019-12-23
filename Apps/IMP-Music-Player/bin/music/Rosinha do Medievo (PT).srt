@@ -1,0 +1,72 @@
+### Options for the band type: "Man", "Woman", "Pop", "Traditional", "Rock", "Dj", "Drummers", "Santa"
+### Options for the show type: "Slow", "Normal", "Fast"
+### Options for the lyrics color: "White", "Red", "Green", "Blue", "Yellow", "Purple"
+### Options for the lyrics size: "1" to "6" 
+### Options for the Internal sounds: "On", "Off" 
+### Options for the clock: "On", "Off" 
+
+<Band:Traditional>
+<Show:Normal>
+<LyricsColor:Purple>
+<LyricsSize:1>
+<Sounds:On>
+<Clock:Off>
+
+### The next lines are the lyrics. The format is exactly the same as the common ".srt" subtitles files.
+### So you should be able to create/edit/synchronize them in a external subtitle editor software.
+
+00:00:03,000 --> 00:00:13,000
+Andarilhos
+
+www.andarilhos.com
+
+00:00:13,000 --> 00:00:22,000
+Traditional Portuguese Music
+
+www.andarilhos.com
+
+00:00:22,000 --> 00:00:35,000
+Many thanks to Vasco Monterroso for share with us
+this fantastic track from the "Caminho Velho" album!
+
+www.andarilhos.com
+
+00:00:39,000 --> 00:00:46,000
+Ó Rosinha, ó Rosinha do meio
+Vem comigo malhar o centeio
+
+00:00:46,000 --> 00:00:52,000
+O centeio, o centeio a cevada
+Ó Rosinha minha namorada
+
+00:01:17,000 --> 00:01:23,000
+Ó Rosinha toma a teu cuidado
+Que o centeio quer ser bem malhado
+
+00:01:23,000 --> 00:01:30,000
+O centeio, o centeio a cevada
+Ó Rosinha minha namorada
+
+00:01:54,000 --> 00:02:02,000
+Ó Rosinha varre essa eira
+Que o centeio não quer poeira
+
+00:02:18,000 --> 00:02:30,000
+Rosa, ó Rosinha, ó Rosa do meio
+Rosa, ó Rosinha vai malhar centeio
+
+00:02:30,000 --> 00:02:37,000
+E depois do centeio malhado
+Só me tenho, Rosinha, por teu namorado
+
+00:02:37,000 --> 00:02:46,000
+Ó Rosinha trás o teu charme
+Que esta noite vamos ao baile
+
+00:03:10,000 --> 00:03:16,000
+Ó Rosinha, ó Rosinha do meio
+Vem comigo malhar o centeio
+
+00:03:16,000 --> 00:03:23,000
+O centeio, o centeio a cevada
+Ó Rosinha minha namorada

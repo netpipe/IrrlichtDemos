@@ -1,0 +1,32 @@
+### Options for the band type: "Man", "Woman", "Pop", "Traditional", "Rock", "Dj", "Drummers", "Santa"
+### Options for the show type: "Slow", "Normal", "Fast"
+### Options for the lyrics color: "White", "Red", "Green", "Blue", "Yellow", "Purple"
+### Options for the lyrics size: "1" to "6" 
+### Options for the Internal sounds: "On", "Off" 
+### Options for the clock: "On", "Off" 
+
+<Band:Drummers>
+<Show:Normal>
+<LyricsColor:Purple>
+<LyricsSize:1>
+<Sounds:On>
+<Clock:Off>
+
+### The next lines are the lyrics. The format is exactly the same as the common ".srt" subtitles files.
+### So you should be able to create/edit/synchronize them in a external subtitle editor software.
+
+00:00:03,000 --> 00:00:13,000
+Tocándar
+
+www.tocandar.com
+
+00:00:13,000 --> 00:00:22,000
+Traditional Portuguese Music
+
+www.tocandar.com
+
+00:00:22,000 --> 00:00:42,000
+Many thanks to Prof. Paulo Tojeira, for share with us
+this great track from the "Tocándar" album!
+
+www.tocandar.com

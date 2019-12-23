@@ -1,0 +1,113 @@
+### Options for the band type: "Man", "Woman", "Pop", "Traditional", "Rock", "Dj", "Drummers", "Santa"
+### Options for the show type: "Slow", "Normal", "Fast"
+### Options for the lyrics color: "White", "Red", "Green", "Blue", "Yellow", "Purple"
+### Options for the lyrics size: "1" to "6" 
+### Options for the Internal sounds: "On", "Off" 
+### Options for the clock: "On", "Off" 
+
+<Band:Traditional>
+<Show:Slow>
+<LyricsColor:Purple>
+<LyricsSize:1>
+<Sounds:On>
+<Clock:Off>
+
+### The next lines are the lyrics. The format is exactly the same as the common ".srt" subtitles files.
+### So you should be able to create/edit/synchronize them in a external subtitle editor software.
+
+00:00:05,000 --> 00:00:12,000
+Little Drummer Boy
+(Popular Christmas Song)
+Boney M
+
+00:00:17,000 --> 00:00:26,000
+Come, they told me
+Pa rum pum pum pum
+
+00:00:28,000 --> 00:00:35,000
+Our newborn King to see
+Pa rum pum pum pum
+
+00:00:37,000 --> 00:00:44,000
+Our finest gifts we´ll bring
+Pa rum pum pum pum
+
+00:00:46,000 --> 00:00:55,000
+To lay before the King
+Pa rum pum pum pum - rum pum pum pum - rum pum pum pum
+
+00:00:58,000 --> 00:01:05,000
+So, to honour Him
+Pa rum pum pum pum
+
+00:01:07,000 --> 00:01:09,000
+When we come
+
+00:01:15,000 --> 00:01:22,000
+Baby Jesus
+Pa rum pum pum pum
+
+00:01:24,000 --> 00:01:31,000
+I am a poor boy too
+Pa rum pum pum pum
+
+00:01:33,000 --> 00:01:39,000
+I have no gift to bring
+Pa rum pum pum pum 
+
+00:01:41,000 --> 00:01:52,000
+That's fit to give a King
+Pa rum pum pum pum - rum pum pum pum - rum pum pum pum
+
+00:01:54,000 --> 00:02:00,000
+Shall I play for you?
+Pa rum pum pum pum
+
+00:02:02,000 --> 00:02:05,000
+On my drum?
+
+00:02:11,000 --> 00:02:17,000
+Mary nodded
+Pa rum pum pum pum
+
+00:02:20,000 --> 00:02:27,000
+The ox and lamb kept time
+Pa rum pum pum pum
+
+00:02:29,000 --> 00:02:35,000
+I played my drum for Him
+Pa rum pum pum pum
+
+00:02:37,000 --> 00:02:48,000
+I played my best for Him
+Pa rum pum pum pum - rum pum pum pum - rum pum pum pum
+
+00:02:50,000 --> 00:02:56,000
+Then He smiled at me
+Pa rum pum pum pum
+
+00:02:58,000 --> 00:03:01,000
+Me and my drum
+
+00:03:07,000 --> 00:03:14,000
+Mary nodded
+Pa rum pum pum pum
+
+00:03:16,000 --> 00:03:22,000
+The ox and lamb kept time
+Pa rum pum pum pum
+
+00:03:24,000 --> 00:03:31,000
+I played my drum for Him
+Pa rum pum pum pum
+
+00:03:33,000 --> 00:03:43,000
+I played my best for Him
+Pa rum pum pum pum - rum pum pum pum - rum pum pum pum
+
+00:03:45,000 --> 00:03:52,000
+Then He smiled at me
+Pa rum pum pum pum
+
+00:03:54,000 --> 00:03:58,000
+Me and my drum

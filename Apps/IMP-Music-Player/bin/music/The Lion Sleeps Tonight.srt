@@ -1,0 +1,78 @@
+### Options for the band type: "Man", "Woman", "Pop", "Traditional", "Rock", "Dj", "Drummers", "Santa"
+### Options for the show type: "Slow", "Normal", "Fast"
+### Options for the lyrics color: "White", "Red", "Green", "Blue", "Yellow", "Purple"
+### Options for the lyrics size: "1" to "6" 
+### Options for the Internal sounds: "On", "Off" 
+### Options for the clock: "On", "Off" 
+
+<Band:Pop>
+<Show:Normal>
+<LyricsColor:Purple>
+<LyricsSize:1>
+<Sounds:On>
+<Clock:Off> 
+
+### The next lines are the lyrics. The format is exactly the same as the common ".srt" subtitles files.
+### So you should be able to create/edit/synchronize them in a external subtitle editor software.
+
+00:00:04,000 --> 00:00:10,000
+The Lion Sleeps Tonight
+(Popular Christmas Song)
+
+The Tokens (1961)
+
+00:00:17,000 --> 00:00:24,000
+(A-wimoweh, a-wimoweh, a-wimoweh, a-wimoweh)
+(A-wimoweh, a-wimoweh, a-wimoweh, a-wimoweh)
+
+00:00:25,000 --> 00:00:32,000
+(A-wimoweh, a-wimoweh, a-wimoweh, a-wimoweh)
+(A-wimoweh, a-wimoweh, a-wimoweh, a-wimoweh)
+
+00:00:33,000 --> 00:00:40,000
+In the jungle, the mighty jungle
+The lion sleeps tonight
+
+00:00:41,000 --> 00:00:48,000
+In the jungle, the quiet jungle
+The lion sleeps tonight
+
+00:00:49,000 --> 00:00:55,000
+(A-wimoweh, a-wimoweh, a-wimoweh, a-wimoweh)
+(A-wimoweh, a-wimoweh, a-wimoweh, a-wimoweh)
+
+00:00:56,000 --> 00:01:03,000
+(A-wimoweh, a-wimoweh, a-wimoweh, a-wimoweh)
+(A-wimoweh, a-wimoweh, a-wimoweh, a-wimoweh)
+
+00:01:04,000 --> 00:01:11,000
+Near the village, the peaceful village
+The lion sleeps tonight
+
+00:01:12,000 --> 00:01:19,000
+Near the village, the quiet village
+The lion sleeps tonight
+
+00:01:20,000 --> 00:01:27,000
+(A-wimoweh, a-wimoweh, a-wimoweh, a-wimoweh)
+(A-wimoweh, a-wimoweh, a-wimoweh, a-wimoweh)
+
+00:01:28,000 --> 00:01:35,000
+(A-wimoweh, a-wimoweh, a-wimoweh, a-wimoweh)
+(A-wimoweh, a-wimoweh, a-wimoweh, a-wimoweh)
+
+00:01:51,000 --> 00:01:58,000
+Hush my darling, don't fear my darling
+The lion sleeps tonight
+
+00:01:59,000 --> 00:02:06,000
+Hush my darling, don't fear my darling
+The lion sleeps tonight
+
+00:02:07,000 --> 00:02:13,000
+(A-wimoweh, a-wimoweh, a-wimoweh, a-wimoweh)
+(A-wimoweh, a-wimoweh, a-wimoweh, a-wimoweh)
+
+00:02:14,000 --> 00:02:22,000
+(A-wimoweh, a-wimoweh, a-wimoweh, a-wimoweh)
+(A-wimoweh, a-wimoweh, a-wimoweh, a-wimoweh)

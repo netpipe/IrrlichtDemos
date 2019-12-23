@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Irrlicht-Music-Player" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/IMP-DEBUG" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/IMP-START" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="Linux">
+				<Option output="bin/IMP-DEBUG" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Emscripten">
+				<Option output="bin/IMP-DEBUG" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../../../emscripten-projects/irrlicht-ogl-es-2019dec/include" />
+					<Add directory="../../../emscripten-projects/media/audiere/audiere/src/" />
+				</Compiler>
+				<Linker>
+					<Add library="audiere" />
+					<Add library="pthread" />
+					<Add library="ogg" />
+					<Add library="vorbis" />
+					<Add library="vorbisfile" />
+					<Add library="vorbisenc" />
+					<Add library="GL" />
+					<Add library="Irrlicht" />
+					<Add directory="../../../emscripten-projects/irrlicht-ogl-es-2019dec/include" />
+					<Add directory="../../../emscripten-projects/media/audiere/audiere/src/.libs" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="bin" />
+			<Add directory="resources" />
+			<Add directory="libraries/irrlicht-1.8.4/include" />
+			<Add directory="libraries/audiere-1.9.4-win32/include2" />
+			<Add directory="libraries/KissFFT-1.3.0" />
+			<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/irrlicht-1.8.4/include" />
+			<Add directory="libraries/audiere/audiere/src" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="bin" />
+			<Add directory="resources" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-static-libstdc++" />
+			<Add option="-static-libgcc" />
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="X11" />
+			<Add library="audiere" />
+			<Add library="pthread" />
+			<Add library="ogg" />
+			<Add library="vorbis" />
+			<Add library="vorbisfile" />
+			<Add library="vorbisenc" />
+			<Add directory="resources" />
+			<Add directory="libraries/irrlicht-1.8.4/lib/Win32-gcc" />
+			<Add directory="libraries/audiere-1.9.4-win32/libd" />
+			<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/irrlicht-1.8.4/lib/Linux" />
+			<Add directory="libraries/audiere/audiere/src/.libs" />
+			<Add directory="/usr/lib" />
+			<Add directory="/usr/lib64/" />
+		</Linker>
+		<Unit filename="imp-headers.h" />
+		<Unit filename="imp-main.cpp" />
+		<Unit filename="imp-resources.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="libraries/irrlicht-extras/CLoadingBar.cpp" />
+		<Unit filename="libraries/irrlicht-extras/CLoadingBar.h" />
+		<Unit filename="libraries/irrlicht-extras/Clock/CClockSceneNode.cpp" />
+		<Unit filename="libraries/irrlicht-extras/Clock/CClockSceneNode.h" />
+		<Unit filename="libraries/irrlicht-extras/Clock/CGUIClock.cpp" />
+		<Unit filename="libraries/irrlicht-extras/Clock/CGUIClock.h" />
+		<Unit filename="libraries/irrlicht-extras/PostProcess/CEffectPostProc.cpp" />
+		<Unit filename="libraries/irrlicht-extras/PostProcess/CEffectPostProc.h" />
+		<Unit filename="libraries/irrlicht-extras/PostProcess/CLensFlarePostProc.cpp" />
+		<Unit filename="libraries/irrlicht-extras/PostProcess/CLensFlarePostProc.h" />
+		<Unit filename="libraries/irrlicht-extras/PostProcess/CRendererPostProc.cpp" />
+		<Unit filename="libraries/irrlicht-extras/PostProcess/CRendererPostProc.h" />
+		<Unit filename="libraries/irrlicht-extras/PostProcess/CShaderCallbacks.h" />
+		<Unit filename="libraries/irrlicht-extras/PostProcess/CSplitPostProc.cpp" />
+		<Unit filename="libraries/irrlicht-extras/PostProcess/CSplitPostProc.h" />
+		<Unit filename="libraries/irrlicht-extras/PostProcess/CTransitionPostProc.cpp" />
+		<Unit filename="libraries/irrlicht-extras/PostProcess/CTransitionPostProc.h" />
+		<Unit filename="libraries/irrlicht-extras/PostProcess/CWaterPostProc.cpp" />
+		<Unit filename="libraries/irrlicht-extras/PostProcess/CWaterPostProc.h" />
+		<Unit filename="libraries/irrlicht-extras/PostProcess/IPostProc.cpp" />
+		<Unit filename="libraries/irrlicht-extras/PostProcess/IPostProc.h" />
+		<Unit filename="libraries/irrlicht-extras/PostProcess/shaders.h" />
+		<Unit filename="libraries/irrlicht-extras/XEffects.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

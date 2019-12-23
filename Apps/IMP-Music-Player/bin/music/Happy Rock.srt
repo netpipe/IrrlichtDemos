@@ -1,0 +1,94 @@
+### Options for the band type: "Man", "Woman", "Pop", "Traditional", "Rock", "Dj", "Drummers", "Santa"
+### Options for the show type: "Slow", "Normal", "Fast"
+### Options for the lyrics color: "White", "Red", "Green", "Blue", "Yellow", "Purple"
+### Options for the lyrics size: "1" to "6" 
+### Options for the Internal sounds: "On", "Off" 
+### Options for the clock: "On", "Off" 
+
+<Band:Rock>
+<Show:Fast>
+<LyricsColor:Purple>
+<LyricsSize:1>
+<Sounds:On>
+<Clock:Off>
+
+### The next lines are the lyrics. The format is exactly the same as the common ".srt" subtitles files.
+### So you should be able to create/edit/synchronize them in a external subtitle editor software.
+
+00:00:01,000 --> 00:00:02,000
+Bensound
+www.bensound.com
+
+00:00:03,000 --> 00:00:04,000
+Bensound
+www.bensound.com
+
+00:00:05,000 --> 00:00:06,000
+Bensound
+www.bensound.com
+
+00:00:07,000 --> 00:00:08,000
+Bensound
+www.bensound.com
+
+00:00:09,000 --> 00:00:10,000
+Bensound
+www.bensound.com
+
+00:00:11,000 --> 00:00:12,000
+Bensound
+www.bensound.com
+
+00:00:13,000 --> 00:00:14,000
+Bensound
+www.bensound.com
+
+00:00:26,000 --> 00:00:36,000
+You can easily display your lyrics or messages here too
+
+00:00:39,000 --> 00:00:52,000
+Browse the "music" directory and edit the ".srt" example files there
+They are simply text files, you can even use "notepad" to open them
+
+00:00:53,000 --> 00:01:02,000
+Surprise someone that you love! For example...
+Add your own recorded voice and texts, and... let the magic happen... 
+
+00:01:05,000 --> 00:01:12,000
+Happy Birthday Anna!
+
+00:01:15,000 --> 00:01:22,000
+Merry Christmas Anna!
+
+00:01:25,000 --> 00:01:29,000
+From John to Anna with love!
+
+00:01:32,000 --> 00:01:36,000
+What!?... Still sit in your chair?...
+
+00:01:36,000 --> 00:01:37,000
+Jump!...
+
+00:01:37,000 --> 00:01:38,000
+Dance!...
+
+00:01:38,000 --> 00:01:39,000
+Jump!...
+
+00:01:39,000 --> 00:01:40,000
+Dance!...
+
+00:01:40,000 --> 00:01:41,000
+Jump!...
+
+00:01:41,000 --> 00:01:42,000
+Dance!...
+
+00:01:42,000 --> 00:01:43,000
+Jump!...
+
+00:01:43,000 --> 00:01:44,000
+Dance!...
+
+00:01:44,000 --> 00:01:45,000
+Quiet!...

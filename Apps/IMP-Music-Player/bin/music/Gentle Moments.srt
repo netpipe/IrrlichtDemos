@@ -1,0 +1,30 @@
+### Options for the band type: "Man", "Woman", "Pop", "Traditional", "Rock", "Dj", "Drummers", "Santa"
+### Options for the show type: "Slow", "Normal", "Fast"
+### Options for the lyrics color: "White", "Red", "Green", "Blue", "Yellow", "Purple"
+### Options for the lyrics size: "1" to "6" 
+### Options for the Internal sounds: "On", "Off" 
+### Options for the clock: "On", "Off" 
+
+<Band:Pop>
+<Show:Slow>
+<LyricsColor:Purple>
+<LyricsSize:1> 
+<Sounds:On>
+<Clock:Off>
+
+### The next lines are the lyrics. The format is exactly the same as the common ".srt" subtitles files.
+### So you should be able to create/edit/synchronize them in a external subtitle editor software.
+
+00:00:05,000 --> 00:00:16,000
+Gentle Moments
+(Orchestral/Instrumental)
+
+www.freesfx.co.uk
+
+00:00:16,000 --> 00:00:24,000
+Composer: Jack Blyth
+
+www.freesfx.co.uk
+
+00:00:24,000 --> 00:00:26,000 
+www.freesfx.co.uk

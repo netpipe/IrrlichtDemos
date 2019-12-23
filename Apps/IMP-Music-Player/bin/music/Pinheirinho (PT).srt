@@ -1,0 +1,65 @@
+### Options for the band type: "Man", "Woman", "Pop", "Traditional", "Rock", "Dj", "Drummers", "Santa"
+### Options for the show type: "Slow", "Normal", "Fast"
+### Options for the lyrics color: "White", "Red", "Green", "Blue", "Yellow", "Purple"
+### Options for the lyrics size: "1" to "6" 
+### Options for the Internal sounds: "On", "Off" 
+### Options for the clock: "On", "Off" 
+
+<Band:Santa>
+<Show:Normal>
+<LyricsColor:Purple>
+<LyricsSize:1>
+<Sounds:On>
+<Clock:Off> 
+
+### The next lines are the lyrics. The format is exactly the same as the common ".srt" subtitles files.
+### So you should be able to create/edit/synchronize them in a external subtitle editor software.
+
+00:00:02,000 --> 00:00:06,000
+Pinheirinho
+
+Copyright © Edições Convite à Música Lda
+
+00:00:06,000 --> 00:00:15,000
+Pinheirinho, pinheirinho, de ramos verdinhos
+P´ra enfeitar, p´ra enfeitar, lindos presentinhos
+
+Copyright © Edições Convite à Música Lda
+
+00:00:15,000 --> 00:00:25,000
+Pinheirinho, pinheirinho, de ramos verdinhos
+P´ra enfeitar, p´ra enfeitar, lindos presentinhos
+
+Copyright © Edições Convite à Música Lda
+
+00:00:25,000 --> 00:00:35,000
+Uma bola aqui, um laço acolá
+luzinhas que tremem, que lindo que está
+
+00:00:35,000 --> 00:00:44,000
+Olha o Pai Natal, de barbas branquinhas
+Traz o saco cheio, cheio de prendinhas
+
+00:00:44,000 --> 00:00:53,000
+Pinheirinho, pinheirinho, de ramos verdinhos
+P´ra enfeitar, p´ra enfeitar, lindos presentinhos
+
+00:00:53,000 --> 00:01:03,000
+Pinheirinho, pinheirinho, de ramos verdinhos
+P´ra enfeitar, p´ra enfeitar, lindos presentinhos
+
+00:01:03,000 --> 00:01:12,000
+Uma bola aqui, um laço acolá
+luzinhas que tremem, que lindo que está
+
+00:01:12,000 --> 00:01:23,000
+Olha o Pai Natal, de barbas branquinhas
+Traz o saco cheio, cheio de prendinhas
+
+00:01:23,000 --> 00:01:33,000
+Pinheirinho, pinheirinho, de ramos verdinhos
+P´ra enfeitar, p´ra enfeitar, lindos presentinhos
+
+00:01:33,000 --> 00:01:42,000
+Pinheirinho, pinheirinho, de ramos verdinhos
+P´ra enfeitar, p´ra enfeitar, lindos presentinhos

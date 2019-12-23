@@ -1,0 +1,46 @@
+### Options for the band type: "Man", "Woman", "Pop", "Traditional", "Rock", "Dj", "Drummers", "Santa"
+### Options for the show type: "Slow", "Normal", "Fast"
+### Options for the lyrics color: "White", "Red", "Green", "Blue", "Yellow", "Purple"
+### Options for the lyrics size: "1" to "6" 
+### Options for the Internal sounds: "On", "Off" 
+### Options for the clock: "On", "Off" 
+
+<Band:Woman>
+<Show:Normal>
+<LyricsColor:Purple>
+<LyricsSize:1>
+<Sounds:On>
+<Clock:Off>
+
+### The next lines are the lyrics. The format is exactly the same as the common ".srt" subtitles files.
+### So you should be able to create/edit/synchronize them in a external subtitle editor software.
+
+00:00:01,000 --> 00:00:05,000
+It큦 your birthday
+
+Monk Turner and Fascinoma
+Free Music Archive - CC BY
+
+00:00:05,000 --> 00:00:09,000
+Happy birthday
+
+Monk Turner and Fascinoma
+Free Music Archive - CC BY
+
+00:00:09,000 --> 00:00:14,000
+It큦 your birthday
+
+Monk Turner and Fascinoma
+Free Music Archive - CC BY
+
+00:00:14,000 --> 00:00:18,000
+Happy birthday
+
+00:00:18,000 --> 00:00:22,000
+It큦 a great day
+
+00:00:22,000 --> 00:00:27,000
+That큦 what we say
+
+00:00:27,000 --> 00:00:33,000
+Happy birthday... to you!

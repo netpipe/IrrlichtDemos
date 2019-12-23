@@ -1,0 +1,40 @@
+### Options for the band type: "Man", "Woman", "Pop", "Traditional", "Rock", "Dj", "Drummers", "Santa"
+### Options for the show type: "Slow", "Normal", "Fast"
+### Options for the lyrics color: "White", "Red", "Green", "Blue", "Yellow", "Purple"
+### Options for the lyrics size: "1" to "6" 
+### Options for the Internal sounds: "On", "Off" 
+### Options for the clock: "On", "Off" 
+
+<Band:Pop>
+<Show:Slow>
+<LyricsColor:Purple>
+<LyricsSize:1>
+<Sounds:Off>
+<Clock:On>
+
+### The next lines are the lyrics. The format is exactly the same as the common ".srt" subtitles files.
+### So you should be able to create/edit/synchronize them in a external subtitle editor software.
+
+00:00:05,000 --> 00:00:14,000
+And if you want to send the kids to bed, try this...
+
+00:00:16,000 --> 00:00:35,000
+Add soft musics, or your own recorded stories, in an directory.
+Select your directory. (Use the "D" key)
+Set the play mode to "List Loop". (Use the "P" key)
+
+00:00:37,000 --> 00:00:52,000
+Set the show mode to "Slow". (Use the "S" key)
+
+00:00:54,000 --> 00:01:05,000
+You may want to change the music pitch a little... (Use the Pitch "Scroll Bar")
+
+00:01:07,000 --> 00:01:16,000
+You may want to turn off the sounds, like clapping, etc... (Use the "O" key)
+
+00:01:19,000 --> 00:01:25,000
+And... Shhh... Good Night!...
+
+00:01:28,000 --> 00:01:41,000
+Purple Planet Music
+www.purple-planet.com

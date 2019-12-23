@@ -1,0 +1,41 @@
+### Options for the band type: "Man", "Woman", "Pop", "Traditional", "Rock", "Dj", "Drummers", "Santa"
+### Options for the show type: "Slow", "Normal", "Fast"
+### Options for the lyrics color: "White", "Red", "Green", "Blue", "Yellow", "Purple"
+### Options for the lyrics size: "1" to "6" 
+### Options for the Internal sounds: "On", "Off" 
+### Options for the clock: "On", "Off" 
+
+<Band:Pop>
+<Show:Normal>
+<LyricsColor:Purple>
+<LyricsSize:1>
+<Sounds:On>
+<Clock:Off>
+
+### The next lines are the lyrics. The format is exactly the same as the common ".srt" subtitles files.
+### So you should be able to create/edit/synchronize them in a external subtitle editor software.
+
+00:00:03,000 --> 00:00:13,000
+Bensound
+www.bensound.com
+
+00:00:16,000 --> 00:00:23,000
+Add your musics, or your own recorded voice,
+and create your own lyrics files!
+
+00:00:26,000 --> 00:00:36,000
+You can use IMP as a karaoke player...
+
+00:00:39,000 --> 00:00:49,000
+You can use IMP to create videoclips for your music...
+
+00:00:52,000 --> 00:01:00,000
+You can use IMP as an Jukebox...
+
+00:01:03,000 --> 00:01:18,000
+IMP can be highly customized. Just edit or replace the images
+(the same is valid for any other file) inside the "world.zip" by your own files.
+
+00:01:22,000 --> 00:01:32,000
+For example, edit the image "band_pop.jpg" as you wish,
+to change the clothes and the appearance for this band.
