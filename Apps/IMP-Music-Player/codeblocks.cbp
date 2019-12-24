@@ -99,11 +99,13 @@
 			<Add directory="/usr/lib" />
 			<Add directory="/usr/lib64/" />
 		</Linker>
+		<Unit filename="events.h" />
 		<Unit filename="imp-headers.h" />
 		<Unit filename="imp-main.cpp" />
 		<Unit filename="imp-resources.rc">
 			<Option compilerVar="WINDRES" />
 		</Unit>
+		<Unit filename="init.h" />
 		<Unit filename="libraries/irrlicht-extras/CLoadingBar.cpp" />
 		<Unit filename="libraries/irrlicht-extras/CLoadingBar.h" />
 		<Unit filename="libraries/irrlicht-extras/Clock/CClockSceneNode.cpp" />
