@@ -2,6 +2,10 @@
 #include <irrlicht.h>
 #include "Jetpac.h"
 
+#ifdef __EMSCRIPTEN__
+#include <emscripten.h>
+#endif
+
 using namespace irr;
 using namespace core;
 using namespace scene;
@@ -729,7 +733,7 @@ public:
 	void loadResources()
 	{
 		// add archive
-		device->getFileSystem()->addZipFileArchive("smedia.zip");
+		device->getFileSystem()->addZipFileArchive("./media/smedia.zip");
 		//device->getFileSystem()->addZipFileArchive("santa-jetpack.zip");
 		device->getFileSystem()->changeWorkingDirectoryTo("media") ;
 
@@ -775,15 +779,41 @@ public:
 	}
 
 
+void main_loop(){
+		if (!device->run())
+				{
+					setState(STATE_QUIT);
+				}
+				else
+				{
+					driver->beginScene(true, true, SColor(0,0,0,0));
+					if (State != STATE_MENU)
+						smgr->drawAll();
 
+					env->drawAll();
+					driver->endScene();
+					if (State != STATE_MENU)
+					{
+						logicAndCollisions();
+						spawnThings();
+					}
+					device->yield();
+				}
+				}
 
 int main(){
 
 
 		unsigned int w=800, h=600;
 		device =
-			createDevice( video::EDT_OPENGL, dimension2du(w, h), 32,
+		#ifdef __EMSCRIPTEN__
+			createDevice( video::EDT_OGLES2, dimension2du(w, h), 32,
 				false, false, false, 0);
+				#else
+
+							createDevice( video::EDT_OPENGL, dimension2du(w, h), 32,
+				false, false, false, 0);
+				#endif
 
 		device->setWindowCaption(L"JetPac");
 
@@ -840,7 +870,9 @@ int main(){
 		setState(STATE_MENU);
 
 		u32 now = device->getTimer()->getTime();
-
+#ifdef __EMSCRIPTEN__
+	emscripten_set_main_loop(main_loop,0,1);
+#else
 		while(State != STATE_QUIT)
 		{
 			//bool active = device->isWindowActive();
@@ -871,7 +903,7 @@ int main(){
 				device->sleep(1,0);
 			//}
 		}
-
+#endif
 
 
 

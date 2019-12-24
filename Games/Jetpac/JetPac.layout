@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
-	<ActiveTarget name="All" />
-	<File name="main.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<ActiveTarget name="default" />
+	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="15805" topLine="130" />
+			<Cursor1 position="16979" topLine="749" />
+		</Cursor>
+	</File>
+	<File name="Jetpac.h" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9412" topLine="274" />
 		</Cursor>
 		<Folding>
-			<Collapse line="46" />
-			<Collapse line="89" />
-			<Collapse line="106" />
-			<Collapse line="114" />
-			<Collapse line="133" />
-			<Collapse line="199" />
-			<Collapse line="250" />
-			<Collapse line="649" />
-			<Collapse line="779" />
+			<Collapse line="23" />
+			<Collapse line="35" />
+			<Collapse line="287" />
+			<Collapse line="358" />
+			<Collapse line="383" />
 		</Folding>
 	</File>
-	<EditorTabsLayout layout="017156e05e016357001acee700000002=*0;JetPac:main.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=328;besth=326;minw=328;minh=326;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=017156e05e016357001acee700000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+	<EditorTabsLayout layout="02d48d505e016530000fdb0200000002=0;JetPac:main.cpp,*1;JetPac:Jetpac.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=328;besth=326;minw=328;minh=326;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=02d48d505e016530000fdb0200000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>

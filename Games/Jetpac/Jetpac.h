@@ -427,6 +427,9 @@ public:
         //Rocket Exhaust
 		Particles = mgr->addParticleSystemSceneNode(false, this);
 		Particles->setParticleSize(core::dimension2df(0.05f,0.05f));
+//		Particles->setMinParticleStart(core::dimension2df(0.05f,0.05f));
+//		Particles->setMaxParticleStart(core::dimension2df(0.05f,0.05f));
+
 		Particles->setParticlesAreGlobal(false);
 
 		IParticleEmitter *e= Particles->createPointEmitter(vector3df(0,-0.002f,0), 50, 200,
