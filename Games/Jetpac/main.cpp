@@ -729,8 +729,9 @@ public:
 	void loadResources()
 	{
 		// add archive
-		device->getFileSystem()->addZipFileArchive("media.zip");
-//		device->getFileSystem->changeWorkingDirectoryTo("/media") ;
+		device->getFileSystem()->addZipFileArchive("smedia.zip");
+		//device->getFileSystem()->addZipFileArchive("santa-jetpack.zip");
+		device->getFileSystem()->changeWorkingDirectoryTo("media") ;
 
 		// load font
 		font = env->getFont("arialb.xml");

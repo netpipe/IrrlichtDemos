@@ -147,7 +147,7 @@ public:
 		Bill = mgr->addMeshSceneNode(billboardMesh, this, -1, pos, vector3df(0,0,0));
 		setScale(scale);
 		updateAbsolutePosition();
-		Bill->setMaterialType(EMT_TRANSPARENT_ALPHA_CHANNEL);
+		Bill->setMaterialType(EMT_TRANSPARENT_ALPHA_CHANNEL_REF);
 		Bill->setMaterialTexture(0, textures);
 		Box = Bill->getTransformedBoundingBox();
 		Box.MaxEdge -= getPosition();
