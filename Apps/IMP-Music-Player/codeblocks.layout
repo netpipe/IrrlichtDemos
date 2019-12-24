@@ -2,27 +2,9 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Release" />
-	<File name="events.h" open="1" top="1" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="audio.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="108338" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="7" />
-			<Collapse line="42" />
-			<Collapse line="65" />
-			<Collapse line="104" />
-			<Collapse line="142" />
-			<Collapse line="164" />
-			<Collapse line="176" />
-			<Collapse line="191" />
-			<Collapse line="225" />
-			<Collapse line="240" />
-			<Collapse line="257" />
-		</Folding>
-	</File>
-	<File name="libraries/irrlicht-extras/PostProcess/shaders.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="42326" topLine="137" />
+			<Cursor1 position="0" topLine="18" />
 		</Cursor>
 	</File>
 	<File name="libraries/irrlicht-extras/PostProcess/IPostProc.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -30,8 +12,159 @@
 			<Cursor1 position="1385" topLine="0" />
 		</Cursor>
 		<Folding>
-			<Collapse line="26" />
+			<Collapse line="3" />
+			<Collapse line="7" />
+			<Collapse line="11" />
+			<Collapse line="90" />
+			<Collapse line="101" />
+			<Collapse line="107" />
+			<Collapse line="119" />
+			<Collapse line="129" />
+			<Collapse line="181" />
+			<Collapse line="191" />
+			<Collapse line="208" />
+			<Collapse line="233" />
+			<Collapse line="240" />
+			<Collapse line="245" />
+			<Collapse line="252" />
+			<Collapse line="270" />
+			<Collapse line="276" />
+			<Collapse line="289" />
+			<Collapse line="297" />
+			<Collapse line="304" />
 		</Folding>
+	</File>
+	<File name="libraries/irrlicht-extras/PostProcess/CWaterPostProc.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1880" topLine="31" />
+		</Cursor>
+	</File>
+	<File name="libraries/irrlicht-extras/Clock/CClockSceneNode.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2663" topLine="64" />
+		</Cursor>
+	</File>
+	<File name="libraries/irrlicht-extras/PostProcess/CEffectPostProc.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="373" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="3" />
+			<Collapse line="471" />
+			<Collapse line="496" />
+			<Collapse line="518" />
+			<Collapse line="522" />
+			<Collapse line="609" />
+			<Collapse line="638" />
+			<Collapse line="669" />
+			<Collapse line="684" />
+			<Collapse line="690" />
+			<Collapse line="790" />
+		</Folding>
+	</File>
+	<File name="libraries/irrlicht-extras/PostProcess/shaders.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="42326" topLine="137" />
+		</Cursor>
+	</File>
+	<File name="libraries/irrlicht-extras/PostProcess/CLensFlarePostProc.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3683" topLine="74" />
+		</Cursor>
+	</File>
+	<File name="libraries/irrlicht-extras/CLoadingBar.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="885" topLine="33" />
+		</Cursor>
+	</File>
+	<File name="events.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="108338" topLine="30" />
+		</Cursor>
+		<Folding>
+			<Collapse line="276" />
+			<Collapse line="338" />
+			<Collapse line="422" />
+			<Collapse line="439" />
+			<Collapse line="457" />
+			<Collapse line="462" />
+			<Collapse line="484" />
+			<Collapse line="506" />
+			<Collapse line="544" />
+			<Collapse line="557" />
+			<Collapse line="573" />
+			<Collapse line="603" />
+			<Collapse line="612" />
+			<Collapse line="616" />
+			<Collapse line="625" />
+			<Collapse line="635" />
+			<Collapse line="649" />
+			<Collapse line="665" />
+			<Collapse line="717" />
+			<Collapse line="735" />
+			<Collapse line="741" />
+			<Collapse line="750" />
+			<Collapse line="764" />
+			<Collapse line="802" />
+			<Collapse line="850" />
+			<Collapse line="889" />
+			<Collapse line="928" />
+			<Collapse line="944" />
+			<Collapse line="1018" />
+			<Collapse line="1044" />
+			<Collapse line="1129" />
+			<Collapse line="1147" />
+			<Collapse line="1244" />
+			<Collapse line="1399" />
+			<Collapse line="1418" />
+			<Collapse line="1434" />
+			<Collapse line="1445" />
+			<Collapse line="1485" />
+			<Collapse line="1492" />
+			<Collapse line="1518" />
+			<Collapse line="1534" />
+			<Collapse line="1547" />
+			<Collapse line="1581" />
+			<Collapse line="1597" />
+			<Collapse line="1633" />
+			<Collapse line="1661" />
+			<Collapse line="1673" />
+			<Collapse line="1706" />
+			<Collapse line="1732" />
+			<Collapse line="1735" />
+			<Collapse line="1738" />
+			<Collapse line="1741" />
+			<Collapse line="1744" />
+			<Collapse line="1748" />
+			<Collapse line="1752" />
+			<Collapse line="1759" />
+			<Collapse line="1780" />
+			<Collapse line="1794" />
+			<Collapse line="1812" />
+			<Collapse line="1834" />
+			<Collapse line="1867" />
+			<Collapse line="1889" />
+			<Collapse line="1907" />
+			<Collapse line="1977" />
+			<Collapse line="2029" />
+			<Collapse line="2075" />
+			<Collapse line="2081" />
+		</Folding>
+	</File>
+	<File name="imp-headers.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3440" topLine="58" />
+		</Cursor>
+	</File>
+	<File name="imp-main.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="69782" topLine="1845" />
+		</Cursor>
+	</File>
+	<File name="libraries/irrlicht-extras/Clock/CGUIClock.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4520" topLine="100" />
+		</Cursor>
 	</File>
 	<File name="imp-resources.rc" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
@@ -43,91 +176,10 @@
 			<Cursor1 position="527" topLine="0" />
 		</Cursor>
 		<Folding>
-			<Collapse line="3" />
+			<Collapse line="47" />
+			<Collapse line="55" />
+			<Collapse line="60" />
 		</Folding>
 	</File>
-	<File name="imp-headers.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3440" topLine="58" />
-		</Cursor>
-	</File>
-	<File name="imp-main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="86142" topLine="977" />
-		</Cursor>
-		<Folding>
-			<Collapse line="279" />
-			<Collapse line="286" />
-			<Collapse line="294" />
-			<Collapse line="304" />
-			<Collapse line="315" />
-			<Collapse line="326" />
-			<Collapse line="336" />
-			<Collapse line="345" />
-			<Collapse line="354" />
-			<Collapse line="363" />
-			<Collapse line="378" />
-			<Collapse line="394" />
-			<Collapse line="406" />
-			<Collapse line="417" />
-			<Collapse line="425" />
-			<Collapse line="437" />
-			<Collapse line="475" />
-			<Collapse line="623" />
-			<Collapse line="634" />
-			<Collapse line="659" />
-			<Collapse line="669" />
-			<Collapse line="713" />
-			<Collapse line="895" />
-			<Collapse line="918" />
-			<Collapse line="943" />
-			<Collapse line="963" />
-			<Collapse line="985" />
-			<Collapse line="1007" />
-			<Collapse line="1029" />
-			<Collapse line="1052" />
-			<Collapse line="1071" />
-			<Collapse line="1099" />
-			<Collapse line="1126" />
-			<Collapse line="1230" />
-			<Collapse line="1534" />
-			<Collapse line="1624" />
-			<Collapse line="1737" />
-		</Folding>
-	</File>
-	<File name="libraries/irrlicht-extras/Clock/CGUIClock.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="4520" topLine="100" />
-		</Cursor>
-	</File>
-	<File name="libraries/irrlicht-extras/PostProcess/CEffectPostProc.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="373" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="561" />
-			<Collapse line="579" />
-		</Folding>
-	</File>
-	<File name="libraries/irrlicht-extras/Clock/CClockSceneNode.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2663" topLine="64" />
-		</Cursor>
-	</File>
-	<File name="libraries/irrlicht-extras/PostProcess/CLensFlarePostProc.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3683" topLine="74" />
-		</Cursor>
-	</File>
-	<File name="libraries/irrlicht-extras/PostProcess/CWaterPostProc.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1880" topLine="31" />
-		</Cursor>
-	</File>
-	<File name="libraries/irrlicht-extras/CLoadingBar.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="885" topLine="33" />
-		</Cursor>
-	</File>
-	<EditorTabsLayout layout="02d28da05e0127070014c67d00000002=0;Irrlicht-Music-Player:imp-main.cpp,1;Irrlicht-Music-Player:imp-headers.h,2;Irrlicht-Music-Player:libraries/irrlicht-extras/PostProcess/CEffectPostProc.cpp,3;Irrlicht-Music-Player:libraries/irrlicht-extras/PostProcess/shaders.h,4;Irrlicht-Music-Player:libraries/irrlicht-extras/PostProcess/IPostProc.cpp,5;Irrlicht-Music-Player:libraries/irrlicht-extras/PostProcess/CTransitionPostProc.cpp,*6;Irrlicht-Music-Player:events.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=814;besth=348;minw=814;minh=348;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=02d28da05e0127070014c67d00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+	<EditorTabsLayout layout="02ae2d505e015ce10011a97000000002=*0;Irrlicht-Music-Player:imp-main.cpp,1;Irrlicht-Music-Player:imp-headers.h,2;Irrlicht-Music-Player:libraries/irrlicht-extras/PostProcess/CEffectPostProc.cpp,3;Irrlicht-Music-Player:libraries/irrlicht-extras/PostProcess/shaders.h,4;Irrlicht-Music-Player:libraries/irrlicht-extras/PostProcess/IPostProc.cpp,5;Irrlicht-Music-Player:libraries/irrlicht-extras/PostProcess/CTransitionPostProc.cpp,6;Irrlicht-Music-Player:events.h,7;Irrlicht-Music-Player:audio.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=814;besth=348;minw=814;minh=348;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=02ae2d505e015ce10011a97000000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>

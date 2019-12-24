@@ -99,6 +99,7 @@
 			<Add directory="/usr/lib" />
 			<Add directory="/usr/lib64/" />
 		</Linker>
+		<Unit filename="audio.h" />
 		<Unit filename="events.h" />
 		<Unit filename="imp-headers.h" />
 		<Unit filename="imp-main.cpp" />
@@ -106,6 +107,7 @@
 			<Option compilerVar="WINDRES" />
 		</Unit>
 		<Unit filename="init.h" />
+		<Unit filename="kiss.h" />
 		<Unit filename="libraries/irrlicht-extras/CLoadingBar.cpp" />
 		<Unit filename="libraries/irrlicht-extras/CLoadingBar.h" />
 		<Unit filename="libraries/irrlicht-extras/Clock/CClockSceneNode.cpp" />
