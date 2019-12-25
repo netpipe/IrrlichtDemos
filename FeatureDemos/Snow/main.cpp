@@ -131,14 +131,35 @@ mesh = smgr->getMesh("media/IrrlichtLogo.3ds");
 	scene::IAnimatedMeshSceneNode* anodes = 0;
 
 	anodes = smgr->addAnimatedMeshSceneNode(mesh);
-	anodes->setPosition(core::vector3df(-50,100,-60));
-	anodes->setScale(core::vector3df(-35,35,-36));
+	anodes->setPosition(core::vector3df(-50,130,-60));
+	anodes->setScale(core::vector3df(-25,25,-26));
 		//anodes->setScale(core::vector3df(-75,75,-76));
 		anodes->setRotation(vector3df(-90,0,180));
 	anodes->setMaterialTexture(0, driver->getTexture("media/IrrlichtLogoTexture.png"));
 	anodes->setMaterialFlag(video::EMF_LIGHTING, false);
 
+mesh = smgr->getMesh("media/merrychristmas.3ds");
+	scene::IAnimatedMeshSceneNode* anodess = 0;
 
+	anodess = smgr->addAnimatedMeshSceneNode(mesh);
+	anodess->setPosition(core::vector3df(0,100,-111));
+	anodess->setScale(core::vector3df(-15,15,-16));
+		//anodes->setScale(core::vector3df(-75,75,-76));
+		anodess->setRotation(vector3df(-90,0,180));
+	//anodess->setMaterialTexture(0, driver->getTexture("media/IrrlichtLogoTexture.png"));
+	anodess->setMaterialFlag(video::EMF_LIGHTING, false);
+
+
+	mesh = smgr->getMesh("media/logs.3ds");
+	scene::IAnimatedMeshSceneNode* logs = 0;
+
+	logs = smgr->addAnimatedMeshSceneNode(mesh);
+	logs->setPosition(core::vector3df(0,10,-100));
+	logs->setScale(core::vector3df(-5,5,-5));
+		//anodes->setScale(core::vector3df(-75,75,-76));
+		logs->setRotation(vector3df(-90,0,180));
+	//logs->setMaterialTexture(0, driver->getTexture("media/IrrlichtLogoTexture.png"));
+	logs->setMaterialFlag(video::EMF_LIGHTING, true);
 
 
 	// create sky box
