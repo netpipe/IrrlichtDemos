@@ -19,11 +19,15 @@ int main()
 {
 
 	IrrlichtDevice *device = createDevice(video::EDT_OPENGL,
-		core::dimension2d<s32>(640, 480),
+		core::dimension2d<u32>(640, 480),
 		16, false, true );
 
 	video::IVideoDriver* driver = device->getVideoDriver();
 	scene::ISceneManager* smgr = device->getSceneManager();
+
+
+	scene::ILightSceneNode * lightNode  = smgr->addLightSceneNode(0, core::vector3df(0,0,0),
+		video::SColorf(1.0f, 0.6f, 0.7f, 1.0f), 800.0f);
 
 	scene::ISceneNode* node = 0;
 
@@ -39,6 +43,7 @@ int main()
 	node->setMaterialTexture(0,	driver->getTexture("media/snow.bmp"));
 
 	node->setMaterialFlag(video::EMF_LIGHTING, false);
+
 
 
 	//try snow
@@ -65,9 +70,9 @@ int main()
 	ps->addAffector(paf);
 	paf->drop();
 
-	ps->setMaterialFlag(video::EMF_LIGHTING, false);
+	ps->setMaterialFlag(video::EMF_LIGHTING, true);
 	ps->setMaterialTexture(0, driver->getTexture("media/snowparticle.bmp"));
-	ps->setMaterialType(video::EMT_TRANSPARENT_VERTEX_ALPHA);
+	ps->setMaterialType(video::EMT_TRANSPARENT_ADD_COLOR);
 
 
 	mesh = smgr->getMesh("media/snowman.3ds");

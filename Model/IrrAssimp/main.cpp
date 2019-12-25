@@ -15,7 +15,6 @@ using namespace gui;
 #pragma comment(lib, "Irrlicht.lib")
 #pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
-	IrrAssimp assimp(smgr);
 
 int main()
 {
@@ -25,6 +24,8 @@ int main()
 
 	if (!device)
 		return 1;
+
+
 
 	device->setWindowCaption(L"IrrAssimp Demo");
 
@@ -36,13 +37,12 @@ int main()
 		rect<s32>(10,10,260,22), true);
 
     // The assimp loader can be used in a separate system and not directly as a meshLoader to give the choice of the loader to use (Irrlicht or Assimp) to the user
-//	IrrAssimp assimp(smgr);
-    IAnimatedMesh* mesh = assimp.getMesh("Media/ninja.b3d");
+	IrrAssimp assimp(smgr);
+    IAnimatedMesh* mesh = assimp.getMesh("Media/textures/Christmas 2012e2.blend.x");
 
     // It can also be used as a classic mesh loader :
     // smgr->addExternalMeshLoader(new IrrAssimpImport(smgr));
     // IAnimatedMesh* mesh = smgr->getMesh("Media/dwarf.x");
-
 
 	if (!mesh)
 	{
@@ -52,7 +52,7 @@ int main()
 	}
 
     // Export with assimp
-	assimp.exportMesh(mesh, "obj", "Media/exportNinja.obj");
+//	assimp.exportMesh(mesh, "obj", "Media/exportNinja.obj");
 
 	IAnimatedMeshSceneNode* node = smgr->addAnimatedMeshSceneNode(mesh);
 	if (node)
