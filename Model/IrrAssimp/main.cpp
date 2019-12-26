@@ -38,7 +38,8 @@ int main()
 
     // The assimp loader can be used in a separate system and not directly as a meshLoader to give the choice of the loader to use (Irrlicht or Assimp) to the user
 	IrrAssimp assimp(smgr);
-    IAnimatedMesh* mesh = assimp.getMesh("Media/textures/Christmas 2012e2.blend.x");
+   IAnimatedMesh* mesh = assimp.getMesh("Media/textures/Christmas 2012e2.dae");
+//    IAnimatedMesh* mesh = assimp.getMesh("Media/xmas/Scene.irr");
 
     // It can also be used as a classic mesh loader :
     // smgr->addExternalMeshLoader(new IrrAssimpImport(smgr));
