@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>mainrotor.ac</path>
+
+  <animation>
+    <object-name>rotor1</object-name>
+    <object-name>rotor2</object-name>
+    <object-name>rotor3</object-name>
+    <object-name>rotor4</object-name>
+    <object-name>rotor5</object-name>
+    <object-name>rotor6</object-name>
+    <object-name>rotor7</object-name>
+    <object-name>rotor8</object-name>
+    <object-name>rotor9</object-name>
+    <object-name>rotor10</object-name>
+    <object-name>rotor11</object-name>
+    <object-name>rotor12</object-name>
+    <object-name>rotor13</object-name>
+    <object-name>rotor14</object-name>
+    <object-name>rotor15</object-name>
+    <object-name>rotor16</object-name>
+    <object-name>rotor17</object-name>
+    <object-name>rotor18</object-name>
+    <object-name>rotor19</object-name>
+  </animation>
+
+  <!-- Blades -->
+  <model>
+    <name>Blade1</name>
+    <path>Aircraft/UH-1/Models/MainRotor/blade1.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.594 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Blade2</name>
+    <path>Aircraft/UH-1/Models/MainRotor/blade2.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.594 </z-m>
+      <heading-deg> 180.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <animation>
+    <name>rotorcomplet</name>
+    <object-name>rotor5</object-name>
+    <object-name>Blade1</object-name>
+    <object-name>Blade2</object-name>
+  </animation>
+
+  <!-- Rotation du rotor -->
+  <animation>
+    <type>rotate</type>
+    <object-name>rotorcomplet</object-name>
+    <property>rotors/main/roll-deg</property>
+    <center>
+       <x-m> 0.000 </x-m>
+       <y-m> 0.000 </y-m>
+       <z-m> 0.589 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>rotor7</object-name>
+    <property>rotors/bar/roll-deg</property>
+    <center>
+       <x-m> 0.000 </x-m>
+       <y-m> 0.000 </y-m>
+       <z-m> 0.589 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>rotorcomplet</object-name>
+    <property>rotors/main/yaw-deg</property>
+    <center>
+       <x-m> 0.000 </x-m>
+       <y-m> 0.000 </y-m>
+       <z-m> 0.589 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>rotor7</object-name>
+    <property>rotors/bar/yaw-deg</property>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>Ensemble</name>
+    <object-name>rotorcomplet</object-name>
+    <object-name>rotor3</object-name>
+    <object-name>rotor4</object-name>
+    <object-name>rotor5</object-name>
+    <object-name>rotor6</object-name>
+    <object-name>rotor7</object-name>
+    <object-name>rotor8</object-name>
+    <object-name>rotor9</object-name>
+    <object-name>rotor10</object-name>
+    <object-name>rotor11</object-name>
+    <object-name>rotor12</object-name>
+    <object-name>rotor13</object-name>
+    <object-name>rotor14</object-name>
+    <object-name>rotor15</object-name>
+    <object-name>rotor16</object-name>
+    <object-name>rotor17</object-name>
+    <object-name>rotor18</object-name>
+    <object-name>rotor19</object-name>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>Ensemble</object-name>
+    <property>rotors/main/rpm</property>
+    <factor> 1 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>chronograph.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>knob</object-name>
+    <object-name>button</object-name>
+    <object-name>time-offset-left</object-name> 
+    <object-name>time-offset-right</object-name> 
+    <object-name>chronometer-button</object-name> 
+    <object-name>face</object-name>
+    <object-name>disk</object-name>
+    <object-name>HourHand</object-name>
+    <object-name>MinuteHand</object-name>
+    <object-name>ElapsedMinutesHand</object-name>
+    <object-name>SecondHand</object-name> 
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>knob</object-name>
+    <object-name>button</object-name>
+    <object-name>face</object-name>
+    <object-name>HourHand</object-name>
+    <object-name>MinuteHand</object-name>
+    <object-name>ElapsedMinutesHand</object-name>
+    <object-name>SecondHand</object-name> 
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>HourHand</object-name>
+    <property>instrumentation/clock/indicated-sec</property>
+    <factor>0.00833333333333333</factor>
+    <axis> 
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>MinuteHand</object-name>
+    <property>instrumentation/clock/indicated-sec</property>
+    <factor>0.1</factor>
+    <axis> 
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>SecondHand</object-name>
+    <property>instrumentation/clock/elapsed-sec</property>
+    <factor>6</factor>
+    <axis> 
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>ElapsedMinutesHand</object-name>
+    <property>instrumentation/clock/elapsed-sec</property>
+    <factor>0.1</factor>
+    <axis> 
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Clock Setting Knob -->
+  <animation>
+    <name>time-offset-left-fine</name>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>time-offset-left</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.2</interval-sec>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/clock/offset-sec</property>
+        <step>-60</step>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <name>time-offset-left-hours</name>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>time-offset-left</object-name>
+    <action>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.2</interval-sec>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/clock/offset-sec</property>
+        <step>-3600</step>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <name>time-offset-right-fine</name>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>time-offset-right</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.2</interval-sec>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/clock/offset-sec</property>
+        <step>60</step>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <name>time-offset-right-hours</name>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>time-offset-right</object-name>
+    <action>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.2</interval-sec>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/clock/offset-sec</property>
+        <step>3600</step>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- Chronometer Start Stop Button -->
+  <animation>
+    <name>start-stop-reset</name>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>chronometer-button</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>chronograph.click()</script>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>

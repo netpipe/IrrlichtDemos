@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">Swiss Huey</name>
+        <texture>Liveries/Swiss-huey.png</texture>
+	 
+        <diffuse>
+          <red>   0.8 </red>
+          <green> 0.8 </green>
+          <blue>  0.8 </blue>
+        </diffuse>
+
+        <ambient>
+           <red>  1.0 </red>
+          <green> 1.0 </green>
+          <blue>  1.0 </blue>
+        </ambient>
+
+        <specular>
+          <red>   1.0 </red>
+          <green> 1.0 </green>
+          <blue>  1.0 </blue>
+        </specular>
+
+        <emission>
+          <red>   0.0 </red>
+          <green> 0.0 </green>
+          <blue>  0.0 </blue>
+        </emission>
+<!--
+        <transparency>
+          <alpha> 0.0 </alpha>
+        </transparency>
+
+        <shininess>10</shininess>
+-->
+      </livery>
+    </model>
+  </sim>
+
+</PropertyList>
+

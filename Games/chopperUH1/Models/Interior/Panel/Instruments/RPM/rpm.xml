@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>rpm.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>Lneedle</object-name>
+    <object-name>Rneedle</object-name>
+    <object-name>visses</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>Lneedle</object-name>
+    <object-name>Rneedle</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Lneedle</object-name>
+    <property>rotors/main/rpm</property>
+    <interpolation>
+      <entry><ind>   0 </ind><dep> -260 </dep></entry>
+      <entry><ind> 162 </ind><dep> -105 </dep></entry>
+      <entry><ind> 324 </ind><dep>   40 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Rneedle</object-name>
+    <property>rotors/main/rpm</property>
+    <interpolation>
+      <entry><ind>   0 </ind><dep> -260 </dep></entry>
+      <entry><ind> 162 </ind><dep> -105 </dep></entry>
+      <entry><ind> 324 </ind><dep>   40 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

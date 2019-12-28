@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <submodel>
+    <name>Rocket impact smoke</name>
+    <model>Aircraft/UH-1/Models/Effects/rocket/smoke-impact.xml</model>
+    <speed> 0 </speed>
+    <repeat>false</repeat>
+    <delay> 0 </delay>
+    <count> 0 </count>
+    <x-offset> 0 </x-offset>
+    <y-offset> 0 </y-offset>
+    <z-offset> 0 </z-offset>
+    <yaw-offset> 0 </yaw-offset>
+    <pitch-offset> 0 </pitch-offset>
+    <wind>false</wind>
+    <buoyancy> 32 </buoyancy>
+    <life> 180 </life>
+  </submodel>
+
+</PropertyList>

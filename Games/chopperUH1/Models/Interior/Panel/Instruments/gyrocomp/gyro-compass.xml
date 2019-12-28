@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>gyro-compass.ac</path>
+	
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>needle1</object-name>
+    <object-name>needle2</object-name>
+    <object-name>gyrobug</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>asi-needle1</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+<!--
+  <animation>
+    <type>texmultiple</type>
+    <object-name>GyroFace</object-name>
+    <transform>
+      <subtype>texrotate</subtype>
+      <property>instrumentation/heading-indicator/indicated-heading-deg</property>
+      <center>
+        <x> 0.9023 </x>
+        <y> 0.9004 </y>
+        <z> 0.0000 </z>
+      </center>
+      <axis>
+        <x>  0 </x>
+        <y>  0 </y>
+        <z> -1 </z>
+      </axis>
+    </transform>
+    <transform>
+      <subtype>texrotate</subtype>
+      <property>instrumentation/heading-indicator/offset-deg</property>
+      <center>
+        <x> 0.9023 </x>
+        <y> 0.9004 </y>
+        <z> 0.0000 </z>
+      </center>
+      <axis>
+        <x> 0 </x>
+        <y> 0 </y>
+        <z> 1 </z>
+      </axis>
+    </transform>
+  </animation>
+
+<animation>
+	<name>NeedlesWithCard1</name>
+	<type>rotate</type>
+	<object-name>GyroNeedle1</object-name>
+	<object-name>GyroNeedle2</object-name>
+	<property>instrumentation/heading-indicator/indicated-heading-deg</property>
+	<factor>1</factor>
+	<axis>
+		<x>1</x>
+	</axis>
+</animation>
+
+<animation>
+	<name>NeedlesWithCard2</name>
+	<type>rotate</type>
+	<object-name>NeedlesWithCard1</object-name>
+	<property>instrumentation/heading-indicator/offset-deg</property>
+	<factor>1</factor>
+	<axis>
+		<x>-1</x>
+	</axis>
+</animation>
+
+ FIXME the needle names are reversed in the .ac file. oops. 
+<animation>
+	<type>rotate</type>
+	<object-name>GyroNeedle2</object-name>
+	<property>sim/model/jrb-usn/gyro-needle-heading[0]</property>
+	<factor>1</factor>
+	<axis>
+		<x>-1</x>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>GyroNeedle1</object-name>
+	<property>sim/model/jrb-usn/gyro-needle-heading[1]</property>
+	<factor>1</factor>
+	<axis>
+		<x>-1</x>
+	</axis>
+</animation>
+
+
+<animation>
+	<type>rotate</type>
+	<object-name>GyroBug</object-name>
+	<property>instrumentation/heading-indicator/indicated-heading-deg</property>
+	<factor>1</factor>
+	<axis>
+		<x>1</x>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>GyroBug</object-name>
+	<property>instrumentation/heading-indicator/offset-deg</property>
+	<factor>1</factor>
+	<axis>
+		<x>-1</x>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>GyroBug</object-name>
+	<property>sim/model/jrb-usn/gyro-heading-bug</property>
+	<factor>1</factor>
+	<axis>
+		<x>-1</x>
+	</axis>
+</animation>
+-->
+
+</PropertyList>

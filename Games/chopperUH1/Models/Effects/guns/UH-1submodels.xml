@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <!-- gun tracers are taken from the bo105. -->
+  <!-- smoke textures are taken from the DavePack. I've emailed Dave Culp previously about this matter, 
+       and he said that I could go ahead and use it, and release it as GPL -->
+
+  <!-- gun numbers 1 and 2. Gun 1 is the gun on the extreme left from Pilot view. Gun 2 is the one on the extreme right. -->
+  <!-- Rocket launchers 1 and 2. Rocket launcher 1 is on the left from Pilot view. Rocket launcher 2 is the one on the right -->
+  
+  <!-- gun 1, codes -->
+  <submodel>
+    <name>gun1-tracer</name>
+    <model>Aircraft/UH-1/Models/Effects/guns/tracer.xml</model>
+    <trigger>/controls/armament/gun-fire</trigger>
+    <speed>2750.0</speed>
+    <repeat>true</repeat>
+    <delay>0.15</delay>
+    <count>-1</count>
+    <x-offset> 15.436 </x-offset>  <!-- -4.705 m => 15.436 ft -->
+    <y-offset>  6.863 </y-offset>  <!-- -2.092 m =>  6.863 ft -->
+    <z-offset> -4.872 </z-offset>  <!-- -1.485 m => -4.872 ft -->
+    <yaw-offset>0.0</yaw-offset>
+    <pitch-offset>0</pitch-offset>
+    <life>2.0</life>
+    <wind>false</wind>
+    <weight>0.1</weight>
+    <cd>0.193</cd>
+    <eda>0.00136354</eda> 
+  </submodel>
+
+  <submodel>
+    <name>gun1-bullet</name>
+    <model>Models/Geometry/null.ac</model>
+    <trigger>/controls/armament/gun-fire</trigger>
+    <speed>2750.0</speed>
+    <repeat>true</repeat>
+    <delay>0</delay>
+    <count>-1</count>
+    <x-offset> 15.436 </x-offset>  <!-- -4.705 m => 15.436 ft -->
+    <y-offset>  6.863 </y-offset>  <!-- -2.092 m =>  6.863 ft -->
+    <z-offset> -4.872 </z-offset>  <!-- -1.485 m => -4.872 ft -->
+    <pitch-offset>0</pitch-offset>
+    <life>10.0</life>
+    <wind>false</wind>
+    <weight>0.1069</weight>
+    <cd>0.193</cd>
+    <eda>0.00136354</eda> 
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/bullet</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/UH-1/Models/Effects/guns/bullet-submodel.xml</submodel-path>
+  </submodel>
+  <!-- END of gun 1, codes -->
+
+  <!-- gun 2, codes -->
+  <submodel>
+    <name>gun2-tracer</name>
+    <model>Aircraft/UH-1/Models/Effects/guns/tracer.xml</model>
+    <trigger>/controls/armament/gun-fire</trigger>
+    <speed>2750.0</speed>
+    <repeat>true</repeat>
+    <delay>0.15</delay>
+    <count>-1</count>
+    <x-offset> 15.436 </x-offset>  <!-- -4.705 m => 15.436 ft -->
+    <y-offset> -6.863 </y-offset>  <!--  2.092 m => -6.863 ft -->
+    <z-offset> -4.872 </z-offset>  <!-- -1.485 m => -4.872 ft -->
+    <yaw-offset>0.0</yaw-offset>
+    <pitch-offset>0</pitch-offset>
+    <life>2.0</life>
+    <wind>false</wind>
+    <weight>0.1</weight>
+    <cd>0.193</cd>
+    <eda>0.00136354</eda> 
+  </submodel>
+
+  <submodel>
+    <name>gun2-bullet</name>
+    <model>Models/Geometry/null.ac</model>
+    <trigger>/controls/armament/gun-fire</trigger>
+    <speed>2750.0</speed>
+    <repeat>true</repeat>
+    <delay>0</delay>
+    <count>-1</count>
+    <x-offset> 15.436 </x-offset>  <!-- -4.705 m => 15.436 ft -->
+    <y-offset> -6.863 </y-offset>  <!--  2.092 m => -6.863 ft -->
+    <z-offset> -4.872 </z-offset>  <!-- -1.485 m => -4.872 ft -->
+    <pitch-offset>0</pitch-offset>
+    <life>10.0</life>
+    <wind>false</wind>
+    <weight>0.1069</weight>
+    <cd>0.193</cd>
+    <eda>0.00136354</eda> 
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/bullet</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/UH-1/Models/Effects/guns/bullet-submodel.xml</submodel-path>
+  </submodel>
+  <!-- END of gun 2, codes -->
+
+  <!-- Smoke From Guns -->
+  <submodel> 
+    <name>gun1-smoke</name>
+    <model>Aircraft/UH-1/Models/Effects/guns/smoke.xml</model>
+    <trigger>controls/armament/gun-fire</trigger>
+    <speed>10</speed>
+    <repeat>true</repeat>
+    <delay>0.0375</delay>
+    <count>1200</count>
+    <x-offset> 12.929 </x-offset>  <!-- -3.941 m => 12.929 ft -->
+    <y-offset>  6.860 </y-offset>  <!-- -2.091 m =>  6.860 ft -->
+    <z-offset> -5.000 </z-offset>  <!-- -1.524 m => -5.000 ft -->
+    <yaw-offset>0.0</yaw-offset>
+    <pitch-offset>0.0</pitch-offset>
+    <eda>10</eda>
+    <wind>true</wind>
+    <buoyancy>33</buoyancy>
+    <life>1</life>
+  </submodel>
+
+  <submodel> 
+    <name>gun2-smoke</name>
+    <model>Aircraft/UH-1/Models/Effects/guns/smoke.xml</model>
+    <trigger>controls/armament/gun-fire</trigger>
+    <speed>10</speed>
+    <repeat>true</repeat>
+    <delay>0.0375</delay>
+    <count>1200</count>
+    <x-offset> 12.929 </x-offset>  <!-- -3.941 m => 12.929 ft -->
+    <y-offset> -6.860 </y-offset>  <!--  2.091 m => -6.860 ft -->
+    <z-offset> -5.000 </z-offset>  <!-- -1.524 m => -5.000 ft -->
+    <yaw-offset>0.0</yaw-offset>
+    <pitch-offset>0.0</pitch-offset>
+    <eda>10</eda>
+    <wind>true</wind>
+    <buoyancy>33</buoyancy>
+    <life>1</life>
+  </submodel>
+  <!-- end of smoke from guns, codes-->
+
+  <!-- rocket codes -->
+  <rocket>
+    <model>Aircraft/UH-1/Models/Effects/rocket/wp.xml</model>
+    <x>-4.753</x>
+    <speed>820</speed>
+    <pitch>0</pitch><!--2?-->
+    <cd>0</cd>
+    <weight>0.000001</weight>
+    <eda>0.000001</eda>
+    <life>10</life>
+    <impact>/sim/ai/aircraft/impact/rocket</impact>
+    <submodel-path>Aircraft/UH-1/Models/Effects/rocket/rocket-submodels.xml</submodel-path>
+  </rocket>
+  
+  <submodel>
+    <name>rocket1</name>
+    <model alias="../../rocket/model"/>
+    <trigger>/controls/armament/rocket1-fire</trigger>
+    <speed alias="../../rocket/speed"/>
+    <repeat>false</repeat>
+    <delay>0.1</delay>
+    <count>-1</count>
+    <x-offset alias="../../rocket/x"/>
+    <y-offset>  4.783 </y-offset>  <!-- -1.458 m => -4.783 ft -->
+    <z-offset> -5.072 </z-offset>  <!-- -1.546 m => -5.072 ft -->
+    <yaw-offset>0</yaw-offset>
+    <pitch-offset alias="../../rocket/pitch"/>
+    <cd alias="../../rocket/cd"/>
+    <weight alias="../../rocket/weight"/>
+    <eda alias="../../rocket/eda"/>
+    <life alias="../../rocket/life"/>
+    <aero-stabilised>true</aero-stabilised>
+    <collision>true</collision>
+    <impact>true</impact>
+    <impact-reports alias="../../rocket/impact"/>
+    <submodel-path alias="../../rocket/submodel-path"/>
+  </submodel>
+	
+  <submodel>
+    <name>rocket2</name>
+    <model alias="../../rocket/model"/>
+    <trigger>/controls/armament/rocket2-fire</trigger>
+    <speed alias="../../rocket/speed"/>
+    <repeat>false</repeat>
+    <delay>0.1</delay>
+    <count>-1</count>
+    <x-offset alias="../../rocket/x"/>
+    <y-offset> -4.783 </y-offset>  <!--  1.458 m =>  4.783 ft -->
+    <z-offset> -5.072 </z-offset>  <!-- -1.546 m => -5.072 ft -->
+    <yaw-offset>0</yaw-offset>
+    <pitch-offset alias="../../rocket/pitch"/>
+    <cd alias="../../rocket/cd"/>
+    <weight alias="../../rocket/weight"/>
+    <eda alias="../../rocket/eda"/>
+    <life alias="../../rocket/life"/>
+    <aero-stabilised>true</aero-stabilised>
+    <collision>true</collision>
+    <impact>true</impact>
+    <impact-reports alias="../../rocket/impact"/>
+    <submodel-path alias="../../rocket/submodel-path"/>
+  </submodel>
+  <!--end of rocket codes -->
+  
+</PropertyList>
+

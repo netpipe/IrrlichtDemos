@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>rad-alt.ac</path>
+	
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <object-name>bug</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <object-name>bug</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+	
+  <animation>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>position/gear-agl-ft</property>
+    <interpolation>
+      <entry><ind>    0 </ind><dep>   0 </dep></entry>
+      <entry><ind>  200 </ind><dep> 212 </dep></entry>
+      <entry><ind> 1000 </ind><dep> 272 </dep></entry>
+      <entry><ind> 5000 </ind><dep> 320 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>bug</object-name>
+    <property>sim/model/jrb-usn/radar-altitude-decision-height</property>
+    <interpolation>
+      <entry><ind>    0 </ind><dep>   0 </dep></entry>
+      <entry><ind>  200 </ind><dep> 212 </dep></entry>
+      <entry><ind> 1000 </ind><dep> 272 </dep></entry>
+      <entry><ind> 5000 </ind><dep> 320 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <panel>
+    <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/radaralt/rad-alt-hotspots.xml</path>
+    <bottom-right>
+      <x-m>  0.009 </x-m>
+      <y-m>  0.041 </y-m>
+      <z-m> -0.041 </z-m>
+    </bottom-right>
+    <bottom-left>
+      <x-m>  0.009 </x-m>
+      <y-m> -0.041 </y-m>
+      <z-m> -0.041 </z-m>
+    </bottom-left>
+    <top-left>
+      <x-m>  0.009 </x-m>
+      <y-m> -0.041 </y-m>
+      <z-m>  0.041 </z-m>
+    </top-left>
+  </panel>
+
+</PropertyList>
+

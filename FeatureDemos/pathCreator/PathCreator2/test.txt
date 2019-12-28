@@ -1,0 +1,4 @@
+core::array<core::vector3df> points;
+points.push_back(core::vector3df(4.06035,-11.3594,69.4162));
+points.push_back(core::vector3df(101.953,-21.2696,353.853));
+points.push_back(core::vector3df(83.0834,118.533,596.368));

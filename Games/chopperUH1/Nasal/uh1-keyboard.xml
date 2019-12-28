@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <key n="6">
+    <name>Ctrl-f</name>
+    <desc>Surprise</desc>
+    <binding>
+     <command>nasal</command>
+     <script>uh1.theRightMusic.toggle();</script>
+    </binding>
+  </key>
+  
+  <key n="101">
+    <name>e</name>
+    <desc>Sprayer</desc>
+    <binding>
+     <command>property-assign</command>
+     <property>controls/armament/trigger</property>
+     <value>true</value>
+    </binding>
+    <mod-up>
+     <binding>
+      <command>property-assign</command>
+      <property>controls/armament/trigger</property>
+      <value>false</value>
+     </binding> 
+    </mod-up>
+  </key>
+
+  <!-- gun trigger key, codes -->  
+  <key n="127">
+    <name>Delete </name>
+    <desc>Gun Trigger</desc> 
+    <binding>
+     <command>property-assign</command>
+     <property>controls/armament/trigger</property>
+     <value>true</value>
+    </binding>
+    <mod-up>
+     <binding>
+      <command>property-assign</command>
+      <property>controls/armament/trigger</property>
+      <value>false</value>
+     </binding> 
+    </mod-up>
+  </key>
+  <!-- end of gun trigger key, codes -->
+
+  <!-- port side rocket trigger key, codes -->  
+  <key n="91">
+    <name>[</name>
+    <desc>portside rocket Trigger</desc> 
+    <binding>
+     <command>property-assign</command>
+     <property>controls/armament/trigger1</property>
+     <value>true</value>
+    </binding>
+    <mod-up>
+     <binding>
+      <command>property-assign</command>
+      <property>controls/armament/trigger1</property>
+      <value>false</value>
+     </binding> 
+    </mod-up>
+  </key> 
+  <!-- end of port side rocket trigger key, codes -->
+
+  <!-- starboard side rocket trigger key, codes -->  
+  <key n="93">
+    <name>]</name>
+    <desc>starboard rocket Trigger</desc> 
+    <binding>
+     <command>property-assign</command>
+     <property>controls/armament/trigger2</property>
+     <value>true</value>
+    </binding>
+    <mod-up>
+     <binding>
+      <command>property-assign</command>
+      <property>controls/armament/trigger2</property>
+      <value>false</value>
+     </binding> 
+    </mod-up>
+  </key>
+  <!-- end of starboard side rocket trigger key, codes -->
+
+  <key n="78">
+    <name>N</name>
+    <desc>Toggle rotor brake</desc>
+    <binding>
+      <command>nasal</command>
+      <script>
+        var p = "/controls/rotor/brake";
+        setprop(p, !getprop(p));
+      </script>
+    </binding>
+  </key>
+
+  <key n="110">
+    <name>n</name>
+    <desc>Apply rotor brake</desc>
+    <binding>
+      <command>nasal</command>
+      <script>interpolate("/controls/rotor/brake", 1.0, 2)</script>
+    </binding>
+    <mod-up>
+      <binding>
+        <command>nasal</command>
+        <script>interpolate("/controls/rotor/brake", 0.0, 2)</script>
+      </binding>
+    </mod-up>
+  </key>
+
+  <key n="123">
+    <name>{</name>
+    <desc>Shutdown Engines</desc>
+    <binding>
+      <command>nasal</command>
+      <script>uh1.engines(0)</script>
+    </binding>
+  </key>
+
+  <key n="125">
+    <name>}</name>
+    <desc>Start Engines</desc>
+    <binding>
+      <command>nasal</command>
+      <script>uh1.engines(1)</script>
+    </binding>
+  </key>
+
+</PropertyList>
+

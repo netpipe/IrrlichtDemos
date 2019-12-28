@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>wp.ac</path>
+
+  <animation>
+    <type>dist-scale</type>
+    <object-name>flame</object-name>
+    <interpolation>
+      <entry><ind>     0 </ind><dep> 1 </dep></entry>
+      <entry><ind>    40 </ind><dep> 1 </dep></entry>
+      <entry><ind> 16000 </ind><dep> 4 </dep></entry>
+    </interpolation>
+  </animation>	
+	
+</PropertyList>

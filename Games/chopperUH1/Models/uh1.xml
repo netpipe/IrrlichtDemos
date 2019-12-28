@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>uh1.ac</path>
+
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/UH-1/Models/Liveries", 10);
+
+      var self = cmdarg();
+
+      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
+      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      
+      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
+      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
+    
+      crew_door.alias(float_0);
+      passenger_door.alias(float_1);
+    </load>
+
+    <unload>
+      livery_update.stop();
+      crew_door.unalias();
+      passenger_door.unalias();
+    </unload>
+  </nasal>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>fuselage</object-name>
+    <object-name>enginecowl</object-name>
+    <object-name>enginecowl2</object-name>
+    <object-name>elevatortrim</object-name>
+    <object-name>frontdoorleft</object-name>
+    <object-name>frontdoorright</object-name>
+    <object-name>sidedoorleft</object-name>
+    <object-name>sidedoorright</object-name>
+    <object-name>slidedoorleft</object-name>
+    <object-name>slidedoorright</object-name>
+    <object-name>wirecutter_down</object-name>
+    <object-name>wirecutter_up</object-name>
+    <object-name>air</object-name>
+    <object-name>RHwiper</object-name>
+    <object-name>LHwiper</object-name>
+    <object-name>skid</object-name>
+    <object-name>leftside</object-name>
+    <object-name>rightside</object-name>
+    <object-name>leftslide</object-name>
+    <object-name>rightslide</object-name>
+    <object-name>frontcharnieres</object-name>
+    <object-name>charnieres</object-name>
+    <object-name>enginecowl3</object-name>
+    <object-name>enginecowl4</object-name>
+
+    <object-name>trous</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>vitres</object-name>
+    <object-name>frontdoorglasleft</object-name>
+    <object-name>frontdoorglasright</object-name>
+    <object-name>sidedoorglasleft</object-name>
+    <object-name>sidedoorglasright</object-name>
+    <object-name>slidedoorglasleft</object-name>
+    <object-name>slidedoorglasright</object-name>
+    <object-name>beacon</object-name>
+    <object-name>taillighttrs</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>enginecowl</object-name>
+    <object-name>enginecowl2</object-name>
+    <object-name>elevatortrim</object-name>
+    <object-name>frontdoorleft</object-name>
+    <object-name>frontdoorright</object-name>
+    <object-name>sidedoorleft</object-name>
+    <object-name>sidedoorright</object-name>
+    <object-name>slidedoorleft</object-name>
+    <object-name>slidedoorright</object-name>
+    <object-name>wirecutter_down</object-name>
+    <object-name>wirecutter_up</object-name>
+    <object-name>air</object-name>
+    <object-name>RHwiper</object-name>
+    <object-name>LHwiper</object-name>
+    <object-name>skid</object-name>
+    <object-name>leftside</object-name>
+    <object-name>rightside</object-name>
+    <object-name>leftslide</object-name>
+    <object-name>rightslide</object-name>
+    <object-name>frontcharnieres</object-name>
+    <object-name>charnieres</object-name>
+    <object-name>enginecowl3</object-name>
+    <object-name>enginecowl4</object-name>
+
+    <object-name>trous</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+
+    <diffuse>
+      <red-prop>diffuse/red</red-prop>
+      <green-prop>diffuse/green</green-prop>
+      <blue-prop>diffuse/blue</blue-prop>
+    </diffuse>
+
+    <ambient>
+      <red-prop>ambient/red</red-prop>
+      <green-prop>ambient/green</green-prop>
+      <blue-prop>ambient/blue</blue-prop>
+    </ambient>
+
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+    <!--
+    <shininess>
+      <shininess-prop>shininess</shininess-prop>
+    </shininess>
+    -->
+  </animation>
+  
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>enginecowl</object-name>
+    <object-name>enginecowl2</object-name>
+    <object-name>elevatortrim</object-name>
+    <object-name>frontdoorleft</object-name>
+    <object-name>frontdoorright</object-name>
+    <object-name>sidedoorleft</object-name>
+    <object-name>sidedoorright</object-name>
+    <object-name>slidedoorleft</object-name>
+    <object-name>slidedoorright</object-name>
+    <object-name>wirecutter_down</object-name>
+    <object-name>wirecutter_up</object-name>
+    <object-name>air</object-name>
+    <object-name>RHwiper</object-name>
+    <object-name>LHwiper</object-name>
+    <object-name>skid</object-name>
+    <object-name>leftside</object-name>
+    <object-name>rightside</object-name>
+    <object-name>leftslide</object-name>
+    <object-name>rightslide</object-name>
+    <object-name>frontcharnieres</object-name>
+    <object-name>charnieres</object-name>
+    <object-name>enginecowl3</object-name>
+    <object-name>enginecowl4</object-name>
+  </effect>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitres</object-name>
+    <object-name>frontdoorglasleft</object-name>
+    <object-name>frontdoorglasright</object-name>
+    <object-name>sidedoorglasleft</object-name>
+    <object-name>sidedoorglasright</object-name>
+    <object-name>slidedoorglasleft</object-name>
+    <object-name>slidedoorglasright</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitres</object-name>
+    <object-name>frontdoorglasleft</object-name>
+    <object-name>frontdoorglasright</object-name>
+    <object-name>sidedoorglasleft</object-name>
+    <object-name>sidedoorglasright</object-name>
+    <object-name>slidedoorglasleft</object-name>
+    <object-name>slidedoorglasright</object-name>
+    <object-name>beacon</object-name>
+    <object-name>taillighttrs</object-name>
+  </animation>
+
+  <!-- Une ombre pour OSG -->
+  <model>
+    <path>Aircraft/UH-1/Models/shadow.xml</path>
+    <offsets>
+      <x-m> -1.299 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.600 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Interieur -->
+  <model>
+    <path>Aircraft/UH-1/Models/Interior/interior.xml</path>
+  </model>
+
+  <!-- Sprayer -->
+  <model>
+    <path>Aircraft/UH-1/Models/Sprayer/sprayer.xml</path>
+    <offsets>
+      <x-m> -6.053 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.705 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Guns -->
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/guns/guns.xml</path>
+    <offsets>
+      <x-m> -4.162 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.490 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Rotor principale -->
+  <model>
+    <path>Aircraft/UH-1/Models/MainRotor/mainrotor.xml</path>
+    <offsets>
+      <x-m> -4.767 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  1.000 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Rotor de queue -->
+  <model>
+    <path>Aircraft/UH-1/Models/TailRotor/tailrotor.xml</path>
+    <offsets>
+      <x-m>  4.271 </x-m>
+      <y-m> -0.473 </y-m>
+      <z-m>  1.555 </z-m>
+      <roll-deg>   90 </roll-deg>
+    </offsets>
+  </model>
+
+  <!--Door-Animation-->
+  <animation>
+    <type>pick</type>
+    <object-name>frontdoorright</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>uh1.rightFrontDoor.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+ 
+  <animation>
+    <type>pick</type>
+    <object-name>frontdoorleft</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+         <command>nasal</command>
+         <script>uh1.leftFrontDoor.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+ 
+  <animation>
+    <type>pick</type>
+    <object-name>sidedoorright</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+         <command>nasal</command>
+         <script>uh1.rightSideDoor.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>sidedoorleft</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+         <command>nasal</command>
+         <script>uh1.leftSideDoor.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+ 
+  <animation>
+    <type>pick</type>
+    <object-name>slidedoorright</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+         <command>nasal</command>
+         <script>uh1.rightSlideDoor.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+ 
+  <animation>
+    <type>pick</type>
+    <object-name>slidedoorleft</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+         <command>nasal</command>
+         <script>uh1.leftSlideDoor.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+ 
+  <animation>
+    <name>LeftFrontDoor</name>
+    <object-name>frontdoorleft</object-name>
+    <object-name>frontdoorglasleft</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>LeftFrontDoor</object-name>
+    <property>sim/model/door-positions/leftFrontDoor/position-norm</property>
+    <factor> -80 </factor>
+    <axis>
+      <x1-m> -7.284 </x1-m>
+      <y1-m> -0.853 </y1-m>
+      <z1-m> -1.285 </z1-m>
+      <x2-m> -7.288 </x2-m>
+      <y2-m> -0.887 </y2-m>
+      <z2-m> -0.777 </z2-m>
+    </axis>
+  </animation>
+ 
+  <animation>
+    <name>RightFrontDoor</name>
+    <object-name>frontdoorright</object-name>
+    <object-name>frontdoorglasright</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RightFrontDoor</object-name>
+    <property>sim/model/door-positions/rightFrontDoor/position-norm</property>
+    <factor> 80 </factor>
+    <axis>
+      <x1-m> -7.284 </x1-m>
+      <y1-m>  0.853 </y1-m>
+      <z1-m> -1.285 </z1-m>
+      <x2-m> -7.288 </x2-m>
+      <y2-m>  0.887 </y2-m>
+      <z2-m> -0.777 </z2-m>
+    </axis>
+  </animation>
+ 
+  <animation>
+    <name>LeftDoor</name>
+    <object-name>sidedoorleft</object-name>
+    <object-name>sidedoorglasleft</object-name>
+    <object-name>leftside</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>LeftDoor</object-name>
+    <property>sim/model/door-positions/leftSideDoor/position-norm</property>
+    <factor> -80 </factor>
+    <center>
+      <x-m> -6.107 </x-m>
+      <y-m> -1.120 </y-m>
+      <z-m> -0.608 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+ 
+  <animation>
+    <name>RightDoor</name>
+    <object-name>sidedoorright</object-name>
+    <object-name>sidedoorglasright</object-name>
+    <object-name>rightside</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RightDoor</object-name>
+    <property>sim/model/door-positions/rightSideDoor/position-norm</property>
+    <factor> 80 </factor>
+    <center>
+      <x-m> -6.107 </x-m>
+      <y-m>  1.120 </y-m>
+      <z-m> -0.608 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+ 
+  <animation>
+    <name>LeftSlide</name>
+    <object-name>slidedoorleft</object-name>
+    <object-name>slidedoorglasleft</object-name>
+    <object-name>leftslide</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>LeftSlide</object-name>
+    <property>sim/model/door-positions/leftSlideDoor/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0.000 </dep></entry>
+      <entry><ind> 0.1 </ind><dep> -0.075 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -0.170 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+	
+  <animation>
+    <type>rotate</type>
+    <object-name>LeftSlide</object-name>
+    <property>sim/model/door-positions/leftSlideDoor/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 0.1 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> 15 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -5.656 </x-m>
+      <y-m>  6.182 </y-m>
+      <z-m> -0.789 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+ </animation>
+
+  <animation>
+    <name>RightSlide</name>
+    <object-name>slidedoorright</object-name>
+    <object-name>slidedoorglasright</object-name>
+    <object-name>rightslide</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>RightSlide</object-name>
+    <property>sim/model/door-positions/rightSlideDoor/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> 0.000 </dep></entry>
+      <entry><ind> 0.1 </ind><dep> 0.075 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> 0.170 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+ 
+  <animation>
+    <type>rotate</type>
+    <object-name>RightSlide</object-name>
+    <property>sim/model/door-positions/rightSlideDoor/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 0.1 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -15 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -5.656 </x-m>
+      <y-m> -6.182 </y-m>
+      <z-m> -0.789 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+ 
+  <!-- Gouverne de profondeur -->
+  <animation>
+    <type>rotate</type>
+    <object-name>elevatortrim</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <interpolation>
+      <entry><ind> -0.75 </ind><dep>  -1.5 </dep></entry>
+      <entry><ind>  0.00 </ind><dep>   0.0 </dep></entry>
+      <entry><ind>  0.75 </ind><dep>   1.5 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  1.201 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.106 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Ajout des effets lumineux -->
+  <model>
+    <path>Aircraft/UH-1/Models/lights/beacon.xml</path>
+    <offsets>
+      <x-m> -2.574 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.833 </z-m>
+    </offsets>
+  </model>
+
+  <!--
+  <model>
+    <path>Aircraft/UH-1/Models/lights/RedLight.xml</path>
+    <offsets>
+      <x-m> 3.629 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.168 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/lights/RedLight.xml</path>
+    <offsets>
+      <x-m> -6.075 </x-m>
+      <y-m> -1.178 </y-m>
+      <z-m>  0.087 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/lights/GreenLight.xml</path>
+    <offsets>
+      <x-m> -6.075 </x-m>
+      <y-m>  1.178 </y-m>
+      <z-m>  0.087 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/lights/WhiteLight.xml</path>
+    <offsets>
+      <x-m> -8.641 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.356 </z-m>
+    </offsets>
+  </model>
+  -->
+
+</PropertyList>
+

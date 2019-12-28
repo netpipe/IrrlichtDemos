@@ -1,0 +1,34 @@
+# Blender MTL File: ''
+# Material Count: 3
+newmtl DefaultWhite_texture.png
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.640000 0.640000 0.640000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd texture.png
+map_d texture.png
+
+
+newmtl beacon
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.000000 0.000000
+Ks 0.320000 0.320000 0.320000
+Ni 1.000000
+d 0.500000
+illum 2
+
+
+newmtl transparent
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.320000 0.320000 0.320000
+Ni 1.000000
+d 0.500000
+illum 2
+
+

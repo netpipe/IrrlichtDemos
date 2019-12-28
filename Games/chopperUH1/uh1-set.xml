@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+************************************************************************
+UH 1 simulation config.
+
+************************************************************************
+-->
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <description>Bell UH 1 "Huey"</description>
+    <author>BARANGER Emmanuel (FMD/3D), Heiko Schulz (3D/FDM), Simon Lister (3D), Maik Justus (FDM, sound)</author>
+    <status>alpha</status>
+    <license>GPL v2</license>
+
+    <flight-model>yasim</flight-model>
+    <aero>uh1</aero>
+    <fuel-fraction>0.5</fuel-fraction>
+
+    <startup>
+      <splash-texture>Aircraft/UH-1/uh1-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path>Aircraft/UH-1/Sounds/uh1-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/UH-1/Models/uh1.xml</path>
+      <hide-guns type="bool">false</hide-guns>
+      <hide-sprayer type="bool">false</hide-sprayer>
+      <uh1>
+        <state type="int">0</state>
+        <engine type="float">0.0</engine>
+        <rotor-step-deg type="float">-1.0</rotor-step-deg>
+      </uh1>
+    </model>
+
+    <submodels>
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/UH-1/Models/Effects/guns/UH-1submodels.xml</path>
+    </submodels>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int type="int" n="0">  0 </int>                                      <!-- 0 immat -->
+        <int type="int" n="1">  0 </int>                                      <!-- 1 immat -->
+        <int type="int" n="2">  0 </int>                                      <!-- 2 immat -->
+        <int type="int" n="3">  0 </int>                                      <!-- 3 immat -->
+        <int type="int" n="4">  0 </int>                                      <!-- 4 immat -->
+        <int type="int" n="5">  0 </int>                                      <!-- 5 immat -->
+        <int type="bool" n="6"> 1 </int>                                      <!-- 6 smoke/bomb/torpedo -->
+        <int type="int" n="7">  0 </int>                                      <!-- 7 color -->
+        <int n="8" alias="/systems/electrical/outputs/nav-lights">  0 </int>  <!-- 8 nav-lights -->
+        <int n="9" alias="/sim/model/lights/beacon/state">  false </int>      <!-- 9 strobe-lights -->
+        <int n="10" alias="/controls/electric/key-pos">  0 </int>             <!-- 10 key position -->
+        <float n="2" alias="/position/gear-agl-m">  0 </float>                <!-- 11 altitude for MP shadow -->
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>  
+      </generic>
+    </multiplay>
+
+    <weight n="0">
+      <name>Pilot</name>
+      <weight-lb>180</weight-lb>
+      <max-lb>300</max-lb>
+    </weight>
+
+    <weight n="1">
+      <name>Co-Pilot</name>
+      <weight-lb>180</weight-lb>
+      <max-lb>300</max-lb>
+    </weight>
+
+    <weight n="2">
+      <name>Right Passenger</name>
+      <weight-lb>0</weight-lb>
+      <max-lb>300</max-lb>
+    </weight>
+
+    <weight n="3">
+      <name>Middle Passenger</name>
+      <weight-lb>0</weight-lb>
+      <max-lb>300</max-lb>
+    </weight>
+
+    <weight n="4">
+      <name>Left Passenger</name>
+      <weight-lb>0</weight-lb>
+      <max-lb>300</max-lb>
+    </weight>
+
+    <weight n="5">
+      <name>Load</name>
+      <weight-lb>1700</weight-lb>
+      <max-lb>3200</max-lb>
+    </weight>
+
+    <help>
+      <title>Bell UH 1 "Huey"</title>
+      <line></line>
+      <line>To open and close the doors just click on it!</line>
+      <key>
+        <name>Delete</name>
+        <desc>Fire the miniguns</desc>
+      </key>
+      <key>
+        <name>e</name>
+        <desc>Sprayer</desc>
+      </key>
+      <key>
+        <name>[</name>
+        <desc>port side Fire rockets</desc>
+      </key>
+      <key>
+        <name>]</name>
+        <desc>starboard side Fire rockets</desc>
+      </key>
+      <key>
+        <name>N</name>
+        <desc>Toggle rotor brake</desc>
+      </key>
+      <key>
+        <name>n</name>
+        <desc>Apply rotor brake</desc>
+      </key>
+      <key>
+        <name>}</name>
+        <desc>Start Engines</desc>
+      </key>
+      <key>
+        <name>{</name>
+        <desc>Shutdown Engines</desc>
+      </key>
+      <key>
+        <name>Ctrl+f</name>
+        <desc>Surprise</desc>
+      </key>
+    </help>
+
+    <flight-recorder>
+      <replay-config type="int">0</replay-config>
+      <config n="0" include="/Aircraft/Generic/flightrecorder/generic-helicopter.xml">
+        <!-- Add some custom properties -->
+        <signal>
+          <type>int</type>
+          <property type="string">/sim/model/uh1/state</property>
+        </signal>
+        <signal>
+          <type>int</type>
+          <property type="string">/controls/engines/engine/magnetos</property>
+        </signal>
+      </config>
+    </flight-recorder>
+
+    <menubar include="Dialogs/uh1-menu.xml"/>
+
+  </sim>
+
+  <controls>
+    <engines>
+      <engine n="0">
+        <magnetos>0</magnetos>
+      </engine>
+    </engines>
+    <gear>
+      <brake-parking>1</brake-parking>
+    </gear>
+    <rotor>
+      <reltarget>1</reltarget>
+      <maxreltorque>1</maxreltorque>
+    </rotor>
+    <armament>
+      <trigger>0</trigger>
+      <trigger1>0</trigger1>
+      <trigger2>0</trigger2>
+    </armament>
+  </controls>
+
+  <instrumentation>
+    <gsdi>
+      <serviceable type="bool">true</serviceable>
+      <enabled type="bool">true</enabled>
+    </gsdi>
+  </instrumentation>
+
+  <input>
+    <keyboard include="Nasal/uh1-keyboard.xml"/>
+  </input>
+
+  <rotors>
+    <main>
+      <rpm type="double">0</rpm>
+      <cone-deg type="double">0</cone-deg>
+      <cone1-deg type="double">0</cone1-deg>
+      <cone2-deg type="double">0</cone2-deg>
+      <cone3-deg type="double">0</cone3-deg>
+      <cone4-deg type="double">0</cone4-deg>
+    </main>
+    <bar>
+      <roll-deg type="float">0</roll-deg>
+      <yaw-deg type="float">0</yaw-deg>
+    </bar>
+    <bar2>
+      <roll-deg type="float">0</roll-deg>
+      <yaw-deg type="float">0</yaw-deg>
+    </bar2>
+  </rotors>
+
+  <orientation>
+    <roll-rate-degps type="float">0</roll-rate-degps>
+  </orientation>
+
+  <nasal>
+    <uh1>
+      <file>Aircraft/UH-1/Nasal/doors.nas</file>
+      <file>Aircraft/UH-1/Nasal/uh1.nas</file>
+      <file>Aircraft/UH-1/Nasal/light.nas</file>
+      <file>Aircraft/UH-1/Nasal/liveries.nas</file>
+    </uh1>
+    <chronograph>
+      <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/chronograph/chronograph.nas</path>
+    </chronograph>
+    <guns>
+      <file>Aircraft/UH-1/Nasal/guns.nas</file>
+    </guns>
+  </nasal>
+
+</PropertyList>
+

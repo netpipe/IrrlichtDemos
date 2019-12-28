@@ -1,0 +1,46 @@
+Chronograph
+-----------
+
+Time offset adjustable with bottom left button, LMB change minutes, MMB change
+hours.*
+The time offset will be saved between two Flightgear sessions.
+
+At start the second hand is locked on zero. Click on the upper right button
+starts the second hand and a chronometer minutes hand. Click again on the
+upper right button stops the chronometer. Click again resets the chronometer
+to zero.
+
+
+Setting up :
+------------
+
+- Include the model in your model file.
+
+	<model> 
+		<path>Aircraft/Instruments-3d/chronograph/chronograph.xml</path>
+		<offsets> 
+			<x-m>xxx</x-m>
+			<y-m>xxx</y-m>
+			<z-m>xxx</z-m>
+		</offsets>
+	</model>
+
+
+- Declare chronograph.nas in your foo-set.xml file. Write something like:
+	</nasal>
+		<chronograph>
+			<file>Aircraft/foo/Nasal/chronograph.nas</file>
+		</chronograph>
+	</nasal>
+
+
+- Open chronograph.nas and uncomment chrono_loop() and the following settimer()
+if update_chrono() has to be launched standalone.
+Otherwise launch foo_chronograph.update_chrono() from a centralized loop which
+will save some CPU cycles.
+See chronograph.nas line 48.
+
+That's it.
+
+
+* LMB Left Mouse Button, MMB midle mouse button.

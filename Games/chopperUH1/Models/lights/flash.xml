@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>flash.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+
+    <!-- Objets transparents -->
+    <object-name>flash</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>flash</object-name>
+  </animation>
+<!--
+  <animation>
+    <type>select</type>
+    <object-name>lumiereG</object-name>
+    <object-name>lumiereD</object-name>
+    <condition>
+      <not-equals>
+        <property>systems/electrical/outputs/landing-lights</property>
+        <value>0</value>
+      </not-equals>
+    </condition>
+  </animation>
+-->
+  <animation>
+    <type>flash</type>
+    <object-name>flash</object-name>
+    <center>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+    <power>2</power>
+    <factor>2</factor>
+    <offset>0</offset>
+    <two-sides type="bool">false</two-sides>
+    <min>0.5</min>
+    <max>2</max>
+  </animation>
+
+</PropertyList>

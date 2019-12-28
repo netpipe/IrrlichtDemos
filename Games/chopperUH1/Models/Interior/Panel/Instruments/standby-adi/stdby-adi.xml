@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>stdby-adi.ac</path>
+
+  <animation>
+    <object-name>support</object-name>
+    <object-name>fond</object-name>
+    <object-name>bkg</object-name>
+    <object-name>back</object-name>
+    <object-name>button</object-name>
+    <object-name>ring</object-name>
+    <object-name>bank-index</object-name>
+    <object-name>scale</object-name>
+    <object-name>drum</object-name>
+    <object-name>plane</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>ring</object-name>
+    <object-name>bank-index</object-name>
+    <object-name>scale</object-name>
+    <object-name>drum</object-name>
+    <object-name>plane</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+
+  <animation>
+    <type>rotate</type>
+    <object-name>drum</object-name>
+    <property>orientation/roll-deg</property>
+    <center>
+      <x-m> -0.0113 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m>  0.0000 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>drum</object-name>
+    <property>orientation/pitch-deg</property>
+    <factor>1.5</factor>
+    <center>
+      <x-m> -0.0117 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m>  0.0000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>ring</object-name>
+    <property>orientation/roll-deg</property>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>bank-index</object-name>
+    <property>orientation/roll-deg</property>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

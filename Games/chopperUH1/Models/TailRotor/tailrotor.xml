@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>tailrotor.ac</path>
+
+  <animation>
+    <object-name>rotortail</object-name>
+    <object-name>rotortail1</object-name>
+    <object-name>rotortail2</object-name>
+  </animation>
+
+  <!-- Blades -->
+  <model>
+    <name>Blade1</name>
+    <path>Aircraft/UH-1/Models/TailRotor/blade.xml</path>
+  </model>
+
+  <model>
+    <name>Blade2</name>
+    <path>Aircraft/UH-1/Models/TailRotor/blade.xml</path>
+    <offsets>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+      <heading-deg> 180.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Mécanisme -->
+  <animation>
+    <type>translate</type>
+    <object-name>rotortail2</object-name>
+    <property>/rotors/tail/blade/incidence-deg</property>
+    <factor>0.002</factor>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>rotorcomplet</name>
+    <object-name>rotortail</object-name>
+    <object-name>rotortail2</object-name>
+    <object-name>Blade1</object-name>
+    <object-name>Blade2</object-name>
+  </animation>
+
+  <!-- Rotation du rotor -->
+  <animation>
+    <type>rotate</type>
+    <object-name>rotorcomplet</object-name>
+    <property>/rotors/tail/blade[0]/position-deg</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>spin</type>
+    <object-name>rotorcomplet</object-name>
+    <property>rotors/tail/rpm</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

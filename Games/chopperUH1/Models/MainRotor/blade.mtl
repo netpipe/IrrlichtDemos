@@ -1,0 +1,38 @@
+# Blender MTL File: ''
+# Material Count: 3
+newmtl DefaultWhite.007_colors.png
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.320000 0.320000 0.320000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd colors.png
+map_d colors.png
+
+
+newmtl DefaultWhite.008_colors.png
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.320000 0.320000 0.320000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd colors.png
+map_d colors.png
+
+
+newmtl DefaultWhite.009_prop.png
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.320000 0.320000 0.320000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd prop.png
+map_d prop.png
+
+

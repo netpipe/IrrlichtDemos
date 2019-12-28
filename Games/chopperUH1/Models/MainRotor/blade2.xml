@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <!-- Chaque pales est formée de 4 parties
+  
+       Axe 0               Axe 1               Axe 2               Axe 3
+         +______blade1_______+_______blade2______+______blade3_______+_____blade4________
+      center
+        of
+       rotor 
+
+  -->
+  <path>blade.ac</path>
+
+  <animation>
+    <object-name>axe</object-name>
+    <object-name>blade1</object-name>
+    <object-name>blade2</object-name>
+    <object-name>blade3</object-name>
+    <object-name>blade4</object-name>
+
+    <!-- Transparence -->
+    <object-name>propblur1</object-name>
+    <object-name>propblur2</object-name>
+    <object-name>propblur3</object-name>
+    <object-name>propblur4</object-name>
+    <object-name>propdisc1</object-name>
+    <object-name>propdisc2</object-name>
+    <object-name>propdisc3</object-name>
+    <object-name>propdisc4</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>propblur1</object-name>
+    <object-name>propblur2</object-name>
+    <object-name>propblur3</object-name>
+    <object-name>propblur4</object-name>
+    <object-name>propdisc1</object-name>
+    <object-name>propdisc2</object-name>
+    <object-name>propdisc3</object-name>
+    <object-name>propdisc4</object-name>
+  </animation>
+
+  <!-- Sélection blade/blur/disc main rotor-->
+  <animation>
+    <type>select</type>
+    <object-name>propdisc1</object-name>
+    <object-name>propdisc2</object-name>
+    <object-name>propdisc3</object-name>
+    <object-name>propdisc4</object-name>
+    <condition>
+      <greater-than>
+        <property>rotors/main/rpm</property>
+        <value>150</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>propblur1</object-name>
+    <object-name>propblur2</object-name>
+    <object-name>propblur3</object-name>
+    <object-name>propblur4</object-name>
+    <condition>
+      <and>
+        <greater-than>
+          <property>rotors/main/rpm</property>
+          <value>60</value>
+        </greater-than>
+        <less-than>
+          <property>rotors/main/rpm</property>
+          <value>150.001</value>
+        </less-than>
+      </and>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>blade1</object-name>
+    <object-name>blade2</object-name>
+    <object-name>blade3</object-name>
+    <object-name>blade4</object-name>
+    <condition>
+      <less-than>
+        <property>rotors/main/rpm</property>
+        <value>150</value>
+      </less-than>
+    </condition>
+  </animation>
+
+  <!-- Axe 3 de pliage des pâles pour le cône -->
+  <animation>
+    <type>rotate</type>
+    <object-name>blade4</object-name>
+    <object-name>propblur4</object-name>
+    <object-name>propdisc4</object-name>
+    <property>rotors/main/cone4-deg</property>
+    <factor> -1 </factor>
+    <center>
+       <x-m>  5.767 </x-m>
+       <y-m> -0.073 </y-m>
+       <z-m>  0.004 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Axe 2 de pliage des pâles pour le cône -->
+  <animation>
+    <type>rotate</type>
+    <object-name>blade4</object-name>
+    <object-name>propblur4</object-name>
+    <object-name>propdisc4</object-name>
+    <object-name>blade3</object-name>
+    <object-name>propblur3</object-name>
+    <object-name>propdisc3</object-name>
+    <property>rotors/main/cone3-deg</property>
+    <factor> -1 </factor>
+    <center>
+       <x-m>  4.226 </x-m>
+       <y-m> -0.139 </y-m>
+       <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Axe 1 de pliage des pâles pour le cône -->
+  <animation>
+    <type>rotate</type>
+    <object-name>blade4</object-name>
+    <object-name>propblur4</object-name>
+    <object-name>propdisc4</object-name>
+    <object-name>blade3</object-name>
+    <object-name>propblur3</object-name>
+    <object-name>propdisc3</object-name>
+    <object-name>blade2</object-name>
+    <object-name>propblur2</object-name>
+    <object-name>propdisc2</object-name>
+    <property>rotors/main/cone2-deg</property>
+    <factor> -1 </factor>
+    <center>
+       <x-m>  2.674 </x-m>
+       <y-m> -0.136 </y-m>
+       <z-m> -0.002 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Axe 0 de pliage des pâles pour le cône -->
+  <animation>
+    <type>rotate</type>
+    <object-name>blade4</object-name>
+    <object-name>propblur4</object-name>
+    <object-name>propdisc4</object-name>
+    <object-name>blade3</object-name>
+    <object-name>propblur3</object-name>
+    <object-name>propdisc3</object-name>
+    <object-name>blade2</object-name>
+    <object-name>propblur2</object-name>
+    <object-name>propdisc2</object-name>
+    <object-name>blade1</object-name>
+    <object-name>propblur1</object-name>
+    <object-name>propdisc1</object-name>
+    <object-name>axe</object-name>
+    <property>rotors/main/cone1-deg</property>
+    <factor> -1 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Incidence de la pale -->
+  <animation>
+    <type>rotate</type>
+    <object-name>axe</object-name>
+    <object-name>blade1</object-name>
+    <object-name>blade2</object-name>
+    <object-name>blade3</object-name>
+    <object-name>blade4</object-name>
+    <property>rotors/main/blade[1]/incidence-deg</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

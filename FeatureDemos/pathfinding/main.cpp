@@ -729,7 +729,7 @@ int main()
 
 		npcPathControl->update();
 
-		driver->beginScene(true, true, 0);
+		driver->beginScene(true, true, video::SColor(255,200,200,200));
 
 
 		smgr->drawAll();

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>puff-impact.ac</path>
+
+  <animation>
+    <type>billboard</type>
+    <object-name>puff</object-name>
+    <spherical>true</spherical>
+  </animation>
+
+  <animation>
+    <type>blend</type>
+    <object-name>puff</object-name>
+    <property>sim/time/elapsed-sec</property>
+    <factor>0.1</factor>
+    <min>0</min>
+    <max>0.8</max>
+  </animation>
+
+  <animation>
+    <type>scale</type>
+    <object-name>puff</object-name>
+    <use-personality>true</use-personality>
+    <property>sim/time/elapsed-sec</property>
+    <x-min> 0 </x-min>
+    <y-min> 0 </y-min>
+    <z-min> 0 </z-min>
+    <x-max> 2 </x-max>
+    <y-max> 2 </y-max>
+    <z-max> 2 </z-max>
+    <x-factor> 4 </x-factor>
+    <y-factor> 4 </y-factor>
+    <z-factor> 4 </z-factor>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>puff2</object-name>
+    <emission>
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>billboard</type>
+    <object-name>puff2</object-name>
+    <spherical>true</spherical>
+  </animation>
+
+  <animation>
+    <type>blend</type>
+    <object-name>puff2</object-name>
+    <property>sim/time/elapsed-sec</property>
+    <factor>0.01</factor>
+    <min>0</min>
+    <max>1</max>
+  </animation>
+
+  <animation>
+    <type>scale</type>
+    <object-name>puff2</object-name>
+    <use-personality>true</use-personality>
+    <property>sim/time/elapsed-sec</property>
+    <x-min> 0 </x-min>
+    <y-min> 0 </y-min>
+    <z-min> 0 </z-min>
+    <x-max> 2 </x-max>
+    <y-max> 2 </y-max>
+    <z-max> 2 </z-max>
+    <x-factor> 0.2 </x-factor>
+    <y-factor> 0.2 </y-factor>
+    <z-factor> 0.2 </z-factor>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>puff2</object-name>
+    <emission>
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>billboard</type>
+    <object-name>fire</object-name>
+    <spherical>true</spherical>
+    </animation>
+    <animation>
+    <type>scale</type>
+    <object-name>fire</object-name>
+    <property>sim/time/elapsed-sec</property>
+    <x-min> 0 </x-min>
+    <y-min> 0 </y-min>
+    <z-min> 0 </z-min>
+    <x-max> 2 </x-max>
+    <y-max> 2 </y-max>
+    <z-max> 2 </z-max>
+    <x-factor> 0.8 </x-factor>
+    <y-factor> 0.8 </y-factor>
+    <z-factor> 0.8 </z-factor>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fire</object-name>
+    <emission>
+      <red>   1.0 </red>
+      <green> 1.0 </green>
+      <blue>  0.9 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>blend</type>
+    <object-name>fire</object-name>
+    <property>sim/time/elapsed-sec</property>
+    <factor>0.002</factor>
+    <min>0.0</min>
+    <max>1</max>
+  </animation>
+
+</PropertyList>

@@ -2,63 +2,29 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="release" />
+	<File name="CParticleExplosionEmitter.h" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="949" topLine="30" />
+		</Cursor>
+	</File>
 	<File name="CAdvancedParticleSystemNode.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1547" topLine="16" />
+			<Cursor1 position="1547" topLine="4" />
 		</Cursor>
 		<Folding>
-			<Collapse line="372" />
+			<Collapse line="26" />
 		</Folding>
-	</File>
-	<File name="CParticleExplosionEmitter.h" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="976" topLine="32" />
-		</Cursor>
 	</File>
 	<File name="CAdvancedParticleSystemNode.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="28563" topLine="70" />
 		</Cursor>
 		<Folding>
-			<Collapse line="29" />
-			<Collapse line="34" />
-			<Collapse line="39" />
-			<Collapse line="67" />
-			<Collapse line="103" />
-			<Collapse line="105" />
-			<Collapse line="134" />
-			<Collapse line="139" />
-			<Collapse line="352" />
-			<Collapse line="559" />
-			<Collapse line="577" />
-			<Collapse line="595" />
-			<Collapse line="613" />
-			<Collapse line="630" />
-			<Collapse line="646" />
-			<Collapse line="662" />
-			<Collapse line="697" />
-			<Collapse line="704" />
-			<Collapse line="711" />
-			<Collapse line="717" />
-			<Collapse line="723" />
-			<Collapse line="729" />
-			<Collapse line="739" />
-			<Collapse line="750" />
-			<Collapse line="756" />
-			<Collapse line="869" />
-			<Collapse line="873" />
-			<Collapse line="877" />
-			<Collapse line="885" />
-			<Collapse line="1001" />
-			<Collapse line="1005" />
-			<Collapse line="1009" />
-			<Collapse line="1013" />
-			<Collapse line="1033" />
-			<Collapse line="1051" />
-			<Collapse line="1055" />
-			<Collapse line="1059" />
-			<Collapse line="1063" />
+			<Collapse line="532" />
+			<Collapse line="680" />
+			<Collapse line="1037" />
+			<Collapse line="1044" />
 		</Folding>
 	</File>
-	<EditorTabsLayout layout="0290efd05e0720570010a0d500000002=0;libAdvancedParticle:CAdvancedParticleSystemNode.h,1;libAdvancedParticle:CAdvancedParticleSystemNode.cpp,*3;libAdvancedParticle:CParticleExplosionEmitter.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=758;besth=296;minw=758;minh=296;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=0290efd05e0720570010a0d500000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+	<EditorTabsLayout layout="04201ac05e077d57001073bb00000002=0;libAdvancedParticle:CAdvancedParticleSystemNode.h,1;libAdvancedParticle:CAdvancedParticleSystemNode.cpp,*2;libAdvancedParticle:CParticleExplosionEmitter.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=758;besth=296;minw=758;minh=296;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=04201ac05e077d57001073bb00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>

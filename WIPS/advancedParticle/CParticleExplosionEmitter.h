@@ -36,16 +36,13 @@ class CParticleExplosionEmitter : public IParticleEmitter {
 
   public:
 
+  ///tecan quick hack to make everything compile.
 	 u32 getMinLifeTime() const  {};
-
 	//! Get the maximum particle life-time in milliseconds
 	 u32 getMaxLifeTime() const  {};
-
 	//!	Get maximal random derivation from the direction
 	 s32 getMaxAngleDegrees() const {};
-
 	 	virtual void setMinLifeTime( u32 lifeTimeMin ) {return;};
-
 	//! Set the maximum particle life-time in milliseconds
 	virtual void setMaxLifeTime( u32 lifeTimeMax ) {return;};
 

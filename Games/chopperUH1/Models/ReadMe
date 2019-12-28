@@ -1,0 +1,24 @@
+****************************
+ReadMe UH-1 for FlightGear
+****************************
+****************************
+Licence:
+
+GNU GPL V2.0
+****************************
+This is a Model of a Bell "Huey" UH-1 Helicopter for FlightGear 1.9.1 and later. It was modelled after a UH-1H/D-model.
+
+The fdm is based on real free available datas and measurements of the NASA, using a Bell UH-1H.
+The fdm was created with this datas by Maik Justus and tested by Todd Marois, Ex-US-Navy Pilot on a UH-1N.
+The sound is from a real UH-1D, recorded by Maik Justus.
+The 3d Model was created by Emmanuel Baranger and Heiko Schulz, using 3-view drawings out of the Flight Manual, published on http://www.huey.co.uk.
+#################
+Known Issues:
+-bad engine simulation- no autorotation possible (clutch simulation missing!)
+-panel not ready- need details pictures of the middle panel of the engine instrumentation
+-no lights yet
+-no gun/ rocket sounds
+-missing pieces in the cockpit like stick, pedals, overhead etc....
+
+
+

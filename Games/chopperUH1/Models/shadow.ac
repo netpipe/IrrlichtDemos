@@ -1,0 +1,88 @@
+AC3Db
+MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 50 trans 0
+OBJECT world
+kids 4
+OBJECT poly
+name "shadowfuselage"
+loc 0 0 -0
+data 14
+shadowfuselage
+texture "shadow.png"
+texrep 1 1
+numvert 4
+6.847675 0 -1.344307
+6.847675 0 1.344308
+-6.847676 0 1.344307
+-6.847675 0 -1.344308
+numsurf 1
+SURF 0x10
+mat 0
+refs 4
+0 1 0.999999701977
+3 0.000000055348 0.999999940395
+2 0 0.787131249905
+1 1 0.787131249905
+kids 0
+OBJECT poly
+name "shadowguns"
+loc 0 0 -0
+data 10
+shadowguns
+texture "shadow.png"
+texrep 1 1
+numvert 4
+-2.235018 0.02 -2.187747
+-3.439787 0.02 -2.187747
+-3.439788 0.02 2.187746
+-2.235018 0.02 2.187746
+numsurf 1
+SURF 0x10
+mat 0
+refs 4
+0 1 0.167982056737
+1 1 0.443147838116
+2 0 0.443209290504
+3 0.000000027956 0.168038412929
+kids 0
+OBJECT poly
+name "shadowrotor"
+loc 0 0 -0
+data 11
+shadowrotor
+texture "shadow.png"
+texrep 1 1
+numvert 4
+2.812777 0.01 0.385452
+2.812777 0.01 -0.385452
+-9.749676 0.01 -0.385452
+-9.749675 0.01 0.385452
+numsurf 1
+SURF 0x10
+mat 0
+refs 4
+0 1 0.703121066093
+1 1 0.543050408363
+2 0 0.543050408363
+3 0.000000055348 0.703121304512
+kids 0
+OBJECT poly
+name "shadowsprayer"
+loc 0 0 -0
+data 13
+shadowsprayer
+texture "shadow.png"
+texrep 1 1
+numvert 4
+-4.701514 0.02 -5.080743
+-4.800107 0.02 -5.080743
+-4.800107 0.02 5.080743
+-4.701515 0.02 5.080743
+numsurf 1
+SURF 0x10
+mat 0
+refs 4
+0 1 0.122966863215
+1 1 0.146458134055
+2 0 0.146519586444
+3 0.000000027956 0.123023204505
+kids 0

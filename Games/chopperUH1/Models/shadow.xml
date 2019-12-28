@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>shadow.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+
+    <!-- Objets transparents -->
+    <object-name>shadowfuselage</object-name>
+    <object-name>shadowrotor</object-name>
+    <object-name>shadowsprayer</object-name>
+    <object-name>shadowguns</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>shadowfuselage</object-name>
+    <object-name>shadowrotor</object-name>
+    <object-name>shadowsprayer</object-name>
+    <object-name>shadowguns</object-name>
+  </animation>
+
+  <!-- Une ombre pour OSG en attendant mieux ;) basé sur l'ombre du DC 3-->
+  <animation>
+    <name>AllShadow</name>
+    <object-name>shadowfuselage</object-name>
+    <object-name>shadowrotor</object-name>
+    <object-name>shadowsprayer</object-name>
+    <object-name>shadowguns</object-name>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>AllShadow</object-name>
+    <condition>
+      <not><property>sim/freeze/replay-state</property></not>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>shadowsprayer</object-name>
+    <condition>
+      <property>sim/model/hide-sprayer</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>shadowguns</object-name>
+    <condition>
+      <property>sim/model/hide-guns</property>
+    </condition>
+  </animation>
+
+  <!-- pitch -->
+  <animation>
+    <type>rotate</type>
+    <object-name>AllShadow</object-name>
+    <property>orientation/pitch-deg</property>
+    <factor> -1 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- roll -->
+  <animation>
+    <type>rotate</type>
+    <object-name>AllShadow</object-name>
+    <property>orientation/roll-deg</property>
+    <factor> 1</factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Translate to ground level -->
+  <animation>
+   <type>translate</type>
+   <object-name>AllShadow</object-name>
+   <property>sim/multiplay/generic/float[2]</property>
+   <factor> -1 </factor>
+   <axis>
+     <x> 0 </x>
+     <y> 0 </y>
+     <z> 1 </z>
+   </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>shadowrotor</object-name>
+    <property>rotors/main/blade[0]/position-deg</property>
+    <center>
+       <x-m> -3.468 </x-m>
+       <y-m>  0.000 </y-m>
+       <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z>  1 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

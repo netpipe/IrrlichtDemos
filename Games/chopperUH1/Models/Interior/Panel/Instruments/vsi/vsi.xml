@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>vsi.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name> 
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>  
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>/instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
+      <interpolation>
+        <entry><ind> -2000 </ind><dep> -173.5 </dep></entry>
+        <entry><ind> -1500 </ind><dep> -131.5 </dep></entry>
+        <entry><ind> -1000 </ind><dep>  -81.5 </dep></entry>
+        <entry><ind>  -500 </ind><dep>  -35.3 </dep></entry>
+        <entry><ind>     0 </ind><dep>    0.0 </dep></entry>
+        <entry><ind>   500 </ind><dep>   35.7 </dep></entry>
+        <entry><ind>  1000 </ind><dep>   81.5 </dep></entry>
+        <entry><ind>  1500 </ind><dep>  131.0 </dep></entry>
+        <entry><ind>  2000 </ind><dep>  172.9 </dep></entry>
+      </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+
+

@@ -1,0 +1,24 @@
+# Blender MTL File: ''
+# Material Count: 2
+newmtl DefaultWhite_colors.png
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd UH-1/Models/Interior/colors.png
+map_d UH-1/Models/Interior/colors.png
+
+
+newmtl transparent
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.720000 0.720000 0.720000
+Ks 0.640000 0.640000 0.640000
+Ni 1.000000
+d 0.150000
+illum 2
+
+

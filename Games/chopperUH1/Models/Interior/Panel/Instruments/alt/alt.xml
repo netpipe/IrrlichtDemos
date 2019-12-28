@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>alt.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>needle100</object-name>
+    <object-name>needle1000</object-name>
+    <object-name>needle10000</object-name>
+    <object-name>inhg</object-name>
+    <object-name>inhg.up</object-name>
+    <object-name>inhg.dn</object-name>
+    <object-name>onhgknob</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needle100</object-name>
+    <object-name>needle1000</object-name>
+    <object-name>needle10000</object-name>
+    <object-name>inhg</object-name>
+    <object-name>onhgknob</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>needle100</object-name>
+    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+    <factor>0.36</factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>needle1000</object-name>
+    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+    <factor>0.036</factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>needle10000</object-name>
+        <property>instrumentation/altimeter/indicated-altitude-ft</property>
+        <factor>0.0036</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>texrotate</type>
+        <object-name>inhg</object-name>
+        <property>instrumentation/altimeter/setting-inhg</property>
+        <interpolation>
+            <entry><ind>27.90</ind><dep>0.0</dep></entry>
+            <entry><ind>28.0</ind><dep>9.35</dep></entry>
+            <entry><ind>28.5</ind><dep>59.0</dep></entry>
+            <entry><ind>29.0</ind><dep>109.0</dep></entry>
+            <entry><ind>29.5</ind><dep>159.5</dep></entry>
+            <entry><ind>29.9</ind><dep>200.0</dep></entry>
+            <entry><ind>30.0</ind><dep>210.0</dep></entry>
+            <entry><ind>30.5</ind><dep>261.0</dep></entry>
+            <entry><ind>31.0</ind><dep>310.0</dep></entry>
+            <entry><ind>31.4</ind><dep>350.0</dep></entry>
+        </interpolation>
+        <center>
+            <x>0.25</x>
+            <y>0.25</y>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>-1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>inhg.dn</object-name>
+        <visible>0</visible>
+        <action>
+            <button>0</button>
+            <repeatable>true</repeatable>
+            <binding>
+            <command>property-adjust</command>
+            <property>instrumentation/altimeter/setting-inhg</property>
+            <step>-0.01</step>
+            <min>27.90</min>
+            <max>31.40</max>
+            <wrap>0</wrap>
+        </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>inhg.dn</object-name>
+        <visible>0</visible>
+        <action>
+            <button>1</button>
+            <repeatable>true</repeatable>
+            <binding>
+            <command>property-adjust</command>
+            <property>instrumentation/altimeter/setting-inhg</property>
+            <step>-0.1</step>
+            <min>27.90</min>
+            <max>31.40</max>
+            <wrap>0</wrap>
+        </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>inhg.up</object-name>
+        <visible>0</visible>
+        <action>
+            <button>0</button>
+            <repeatable>true</repeatable>
+            <binding>
+            <command>property-adjust</command>
+            <property>instrumentation/altimeter/setting-inhg</property>
+            <step>0.01</step>
+            <min>27.90</min>
+            <max>31.40</max>
+            <wrap>0</wrap>
+        </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>inhg.up</object-name>
+        <visible>0</visible>
+        <action>
+            <button>1</button>
+            <repeatable>true</repeatable>
+            <binding>
+            <command>property-adjust</command>
+            <property>instrumentation/altimeter/setting-inhg</property>
+            <step>0.1</step>
+            <min>27.90</min>
+            <max>31.40</max>
+            <wrap>0</wrap>
+        </binding>
+        </action>
+    </animation>
+
+</PropertyList>
+

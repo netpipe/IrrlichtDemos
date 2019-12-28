@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>sprayer.ac</path>
+
+  <animation>
+    <name>Guns</name>
+    <object-name>sprayer</object-name>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>sprayer</object-name>
+    <condition>
+      <property>sim/model/hide-sprayer</property>
+    </condition>
+  </animation>
+
+  <!-- Left -->
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m>  0.04639 </x-m>
+      <y-m> -4.93700 </y-m>
+      <z-m>  0.05026 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m>  0.04638 </x-m>
+      <y-m> -4.55600 </y-m>
+      <z-m>  0.03149 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m>  0.04638 </x-m>
+      <y-m> -4.26200 </y-m>
+      <z-m>  0.01824 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m>  0.046390 </x-m>
+      <y-m> -3.892000 </y-m>
+      <z-m>  0.001708 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m>  0.04638 </x-m>
+      <y-m> -3.50100 </y-m>
+      <z-m> -0.01817 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m>  0.04638 </x-m>
+      <y-m> -3.21100 </y-m>
+      <z-m> -0.03006 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m>  0.04638 </x-m>
+      <y-m> -2.85700 </y-m>
+      <z-m> -0.04047 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m>  0.04638 </x-m>
+      <y-m> -2.60400 </y-m>
+      <z-m> -0.04940 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m>  0.04638 </x-m>
+      <y-m> -2.25300 </y-m>
+      <z-m> -0.04129 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m>  0.04638 </x-m>
+      <y-m> -1.98300 </y-m>
+      <z-m> -0.03683 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m>  0.04638 </x-m>
+      <y-m> -1.73100 </y-m>
+      <z-m> -0.03237 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m>  0.04638 </x-m>
+      <y-m> -1.41900 </y-m>
+      <z-m> -0.02642 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m> -0.01630 </x-m>
+      <y-m> -0.82300 </y-m>
+      <z-m> -0.06535 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m> -0.01630 </x-m>
+      <y-m> -0.65100 </y-m>
+      <z-m> -0.06535 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m> -0.01630 </x-m>
+      <y-m> -0.42500 </y-m>
+      <z-m> -0.06535 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m> -0.01630 </x-m>
+      <y-m> -0.26600 </y-m>
+      <z-m> -0.06535 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Right -->
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m> -0.01630 </x-m>
+      <y-m>  0.26600 </y-m>
+      <z-m> -0.06535 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m> -0.01630 </x-m>
+      <y-m>  0.42500 </y-m>
+      <z-m> -0.06535 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m> -0.01630 </x-m>
+      <y-m>  0.65100 </y-m>
+      <z-m> -0.06535 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m> -0.01630 </x-m>
+      <y-m>  0.82300 </y-m>
+      <z-m> -0.06535 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m>  0.04638 </x-m>
+      <y-m>  1.41900 </y-m>
+      <z-m> -0.02642 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m>  0.04638 </x-m>
+      <y-m>  1.73100 </y-m>
+      <z-m> -0.03237 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m>  0.04638 </x-m>
+      <y-m>  1.98300 </y-m>
+      <z-m> -0.03683 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m>  0.04638 </x-m>
+      <y-m>  2.25300 </y-m>
+      <z-m> -0.04129 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m>  0.04638 </x-m>
+      <y-m>  2.60400 </y-m>
+      <z-m> -0.04940 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m>  0.04638 </x-m>
+      <y-m>  2.85700 </y-m>
+      <z-m> -0.04047 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m>  0.04638 </x-m>
+      <y-m>  3.21100 </y-m>
+      <z-m> -0.03006 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m>  0.04638 </x-m>
+      <y-m>  3.50100 </y-m>
+      <z-m> -0.01817 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m> 0.046390 </x-m>
+      <y-m> 3.892000 </y-m>
+      <z-m> 0.001708 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m> 0.04638 </x-m>
+      <y-m> 4.26200 </y-m>
+      <z-m> 0.01824 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m> 0.04638 </x-m>
+      <y-m> 4.55600 </y-m>
+      <z-m> 0.03149 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/Effects/Insecticid/insecticid.xml</path>
+    <offsets>
+      <x-m> 0.04639 </x-m>
+      <y-m> 4.93700 </y-m>
+      <z-m> 0.05026 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+</PropertyList>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>guns.ac</path>
+
+  <animation>    <name>Guns</name>
+    <object-name>supportguns</object-name>
+    <object-name>gun1left</object-name>
+    <object-name>gun2left</object-name>
+    <object-name>gun2right</object-name>
+    <object-name>gun1right</object-name>
+  </animation>
+  <animation>
+    <type>select</type>
+    <object-name>Guns</object-name>
+    <condition>
+      <property>sim/model/hide-guns</property>
+    </condition>
+  </animation>
+
+</PropertyList>
