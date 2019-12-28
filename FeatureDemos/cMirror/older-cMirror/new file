@@ -1,0 +1,16 @@
+#include "cMirror.h"
+
+
+Code:
+
+cMirror * mirror = new cMirror(smgr->getRootSceneNode(), smgr, 999, device, cam, driver->getTexture( "../media/mirrordirt.png"));
+//cMirror * mirror = new cMirror(smgr->getRootSceneNode(), smgr, 999, device, cam);
+mirror->setPosition(vector3df(0,-30,30.f));
+mirror->setRotation(vector3df(0,0,0));
+mirror->setScale(vector3df(1,2,0));
+
+
+Code:
+
+mirror->reflect();
+

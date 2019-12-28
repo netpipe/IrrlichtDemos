@@ -1,0 +1,48 @@
+irr::scene::SMesh* createRayMesh(irr::video::SColor clr) {
+    irr::scene::SMeshBuffer* buffer =new irr::scene::SMeshBuffer;
+
+    // Create indices
+    const u16 u[24] = {   0,1,2,   0,2,3,   4,5,6,   4,6,7,   8,9,10,   8,10,11,
+        12,13,14,   12,14,15};
+    buffer->Indices.set_used(24);
+    for (u32 i=0; i<24; ++i) {
+        buffer->Indices[i] = u[i];
+    }
+
+    // Create vertices
+    buffer->Vertices.reallocate(16);
+    buffer->Vertices.push_back(irr::video::S3DVertex(0,-0.5,-0.5, -1,-1,-1, clr, 0, 1)); //0
+    buffer->Vertices.push_back(irr::video::S3DVertex(0,-0.5,0.5,  1,-1,-1, clr, 1, 1)); //1
+    buffer->Vertices.push_back(irr::video::S3DVertex(0,0.5,0.5,  1, 1,-1, clr, 1, 0)); //2
+    buffer->Vertices.push_back(irr::video::S3DVertex(0,0.5,-0.5, -1, 1,-1, clr, 0, 0)); //3
+
+    buffer->Vertices.push_back(irr::video::S3DVertex(-0.5,0,-0.5,  1,-1, 1, clr, 0, 1)); //4
+    buffer->Vertices.push_back(irr::video::S3DVertex(-0.5,0,0.5,  1, 1, 1, clr, 0, 0)); //5
+    buffer->Vertices.push_back(irr::video::S3DVertex(0.5,0,0.5, -1, 1, 1, clr, 1, 0)); //6
+    buffer->Vertices.push_back(irr::video::S3DVertex(0.5,0,-0.5, -1,-1, 1, clr, 1, 1)); //7
+
+    buffer->Vertices.push_back(irr::video::S3DVertex(-0.35,-0.35,-0.5, -1, 1, 1, clr, 0, 1)); //8
+    buffer->Vertices.push_back(irr::video::S3DVertex(-0.35,-0.35,0.5, -1, 1,-1, clr, 1, 1)); //9
+    buffer->Vertices.push_back(irr::video::S3DVertex(0.35,0.35,0.5,  1,-1, 1, clr, 1, 0)); //10
+    buffer->Vertices.push_back(irr::video::S3DVertex(0.35,0.35,-0.5,  1,-1,-1, clr, 0, 0)); //11
+
+    buffer->Vertices.push_back(irr::video::S3DVertex(-0.35,0.35,-0.5, -1, 1, 1, clr, 0, 1)); //12
+    buffer->Vertices.push_back(irr::video::S3DVertex(-0.35,0.35,0.5, -1, 1,-1, clr, 1, 1)); //13
+    buffer->Vertices.push_back(irr::video::S3DVertex(0.35,-0.35,0.5,  1,-1, 1, clr, 1, 0)); //14
+    buffer->Vertices.push_back(irr::video::S3DVertex(0.35,-0.35,-0.5,  1,-1,-1, clr, 0, 0)); //15
+
+    // Recalculate bounding box
+    buffer->BoundingBox.reset(0,0,0);
+    for (u32 i=0; i<16; ++i) {
+        buffer->BoundingBox.addInternalPoint(buffer->Vertices[i].Pos);
+    }
+    //Create mesh
+    irr::scene::SMesh* mesh =new irr::scene::SMesh;
+    irr::video::SMaterial mat;
+    buffer->Material=mat;
+    mesh->addMeshBuffer(buffer);
+    buffer->drop();
+
+    mesh->recalculateBoundingBox();
+    return mesh;
+}
