@@ -1,0 +1,47 @@
+BY: jorgerosa
+EMAIL: jorge.bigarte@gmail
+WEBSITE: http://sites.google.com/site/jorgerosaportfolio
+
+IRRLICHT THREAD: http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?p=231249#231249
+
+
+************************************************************************
+************************************************************************
+************************************************************************
+
+LICENCE --> MUST AGREE TO USE!
+
+1) Use it as you wich, credits would be nice, but not necessary (This only applies to my own developed contents and code)
+
+2) You already should know by now, it´s obvious. But, just in case...
+Some contents are copyrighted, like that "U2 image" and the "Irrlicht.dll", etc.
+They have their own licences (at least I think so). And this one (for this project) NOT overwrite theirs, of course !!
+
+3) All (developed by me) 3D Objects and textures could be used in future, in my own commercial (or not) projects.
+BUT you can also use it (for any purpose, even in your own commercial projects, no permission is needed to ask to use my work),
+credits would be nice, but not necessary.
+You just can´t copyright that stuff for yourself, since they are for everyone use, and should remain free of all kinds and types of licences.
+
+(In case of any doubt, please feel free to contact me --> Sorry my english)
+
+************************************************************************
+************************************************************************
+************************************************************************
+
+
+
+
+************************************************************************
+************************************************************************
+************************************************************************
+
+INSTALLATION:
+
+1) Extract it to your Irrlicht "examples" folder, and everything should be "ready to go".
+(You must do this, at least to edit and compile the source code by yourself. (Use of Code::Blocks is recommended)
+
+2) If not, just click the ".exe" file to run it. (OpenGL must be installed in your system)
+
+************************************************************************
+************************************************************************
+************************************************************************
