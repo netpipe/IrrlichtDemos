@@ -1,0 +1,50 @@
+!!ARBvp1.0
+
+PARAM c[13] = { program.local[0],
+		state.matrix.modelview.inverse.row[0..2],
+		state.matrix.modelview.transpose,
+		state.light[0].position,
+		state.matrix.mvp };
+
+TEMP R0;
+TEMP R1;
+TEMP R2;
+TEMP R3;
+TEMP R4;
+
+MUL R0.xyz, vertex.normal.y, c[2];
+MAD R1.xyz, vertex.normal.x, c[1], R0;
+MAD R1.xyz, vertex.normal.z, c[3], R1;
+DP3 R0.w, R1, R1;
+RSQ R0.w, R0.w;
+MUL R0.xyz, vertex.position.y, c[5];
+MAD R0.xyz, vertex.position.x, c[4], R0;
+MAD R0.xyz, vertex.position.z, c[6], R0;
+MUL R3.xyz, vertex.texcoord[2].y, c[2];
+MUL R4.xyz, vertex.texcoord[1].y, c[2];
+MAD R3.xyz, vertex.texcoord[2].x, c[1], R3;
+MAD R4.xyz, vertex.texcoord[1].x, c[1], R4;
+MAD R4.xyz, vertex.texcoord[1].z, c[3], R4;
+DP3 R1.w, R4, R4;
+RSQ R1.w, R1.w;
+MAD R0.xyz, vertex.position.w, c[7], R0;
+MUL R2.xyz, R0.w, R1;
+ADD R1.xyz, -R0, c[8];
+MUL R4.xyz, R1.w, R4;
+MAD R3.xyz, vertex.texcoord[2].z, c[3], R3;
+DP3 R0.w, R3, R3;
+RSQ R0.w, R0.w;
+MUL R3.xyz, R0.w, R3;
+DP3 result.texcoord[1].z, R1, R2;
+DP3 result.texcoord[1].y, R1, R3;
+DP3 result.texcoord[1].x, R1, R4;
+DP3 result.texcoord[2].z, -R0, R2;
+DP3 result.texcoord[2].y, -R0, R3;
+DP3 result.texcoord[2].x, -R0, R4;
+MOV result.texcoord[0], vertex.texcoord[0];
+DP4 result.position.w, vertex.position, c[12];
+DP4 result.position.z, vertex.position, c[11];
+DP4 result.position.y, vertex.position, c[10];
+DP4 result.position.x, vertex.position, c[9];
+
+END

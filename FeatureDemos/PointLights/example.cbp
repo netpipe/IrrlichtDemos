@@ -20,13 +20,18 @@
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
 		</Compiler>
 		<Linker>
-			<Add library="Irrlicht" />
 			<Add library="GL" />
+			<Add library="Irrlicht" />
 			<Add library="Xxf86vm" />
 			<Add library="X11" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
 		</Linker>
+		<Unit filename="EventReceiver.cpp" />
+		<Unit filename="EventReceiver.h" />
+		<Unit filename="PointLights.cpp" />
+		<Unit filename="PointLights.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="main.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />
