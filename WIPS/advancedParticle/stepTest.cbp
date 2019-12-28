@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="stepTest" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="..\stepTest" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="..\..\advancedparticlenode" />
+				<Option object_output="..\..\..\_obj_dump\sandbox\particle_clone\stepTest\debug" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="..\stepTest" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="..\..\advancedparticlenode" />
+				<Option object_output="..\..\..\_obj_dump\sandbox\particle_clone\stepTest\release" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="..\..\..\libs\irrlicht-1.7.2\include" />
+			<Add directory="..\project" />
+		</Compiler>
+		<Linker>
+			<Add library="..\libAdvancedParticle.a" />
+			<Add library="Irrlicht" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="gdi32" />
+			<Add directory="..\..\..\libs\irrlicht-1.7.2\lib\Win32-gcc" />
+		</Linker>
+		<Unit filename="stepTest_main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="IrrRiftDemo" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="D:/myStuff/projects/bb_sandbox/IrrRift/Debug/IrrRiftDemo" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../Debug" />
+				<Option object_output="D:/myStuff/projects/_obj_dump/IrrRift/IrrRiftDemo/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="D:/myStuff/projects/bb_sandbox/IrrRift/Release/IrrRiftDemo" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../Release" />
+				<Option object_output="D:/myStuff/projects/_obj_dump/IrrRift/IrrRiftDemo/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="../../../libs/irrlicht-1.8/include" />
+			<Add directory="../IrrRiftDll" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="gdi32" />
+			<Add library="..\Release\IrrRiftDll.a" />
+			<Add directory="../../../libs/irrlicht-1.8/lib/Win32-gcc" />
+		</Linker>
+		<Unit filename="../IrrRiftDll/IrrRiftDll.h" />
+		<Unit filename="HMDStereoRender.cpp" />
+		<Unit filename="HMDStereoRender.h" />
+		<Unit filename="IrrRiftMain.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

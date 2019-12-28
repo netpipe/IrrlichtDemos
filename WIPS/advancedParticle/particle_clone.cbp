@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="particle_clone" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="./particle_clone" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="./" />
+				<Option object_output="../../../_obj_dump/sandbox/particle_clone/debug" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../particle_clone" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../bin/gcc-win32" />
+				<Option object_output="../../../_obj_dump/sandbox/particle_clone/release" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="Linux">
+				<Option output="./particle_clone" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="./" />
+				<Option object_output="../../../_obj_dump/sandbox/particle_clone/release" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="../" />
+					<Add directory="../../../../../LunaLibs/irrlicht-1.8.4/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="Irrlicht" />
+					<Add library="Xxf86vm" />
+					<Add library="X11" />
+					<Add library="AdvancedParticle" />
+					<Add library="GL" />
+					<Add directory="../../../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
+					<Add directory="../" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="../../../libs/irrlicht-1.7.2/include" />
+			<Add directory="../../../libs/irrlicht-1.7.1/source/Irrlicht" />
+			<Add directory="../project" />
+		</Compiler>
+		<Linker>
+			<Add library="../libAdvancedParticle.a" />
+			<Add library="Irrlicht" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="gdi32" />
+			<Add directory="../../../libs/irrlicht-1.7.2/lib/Win32-gcc" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
