@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<IrrRPG_Builder_DynamicObjects version="1.0">
+	<dynamic_object name="" set="../media/editor/editor.xml" />
+	<dynamic_object name="" set="../media/dynamic_objects/players.xml" />
+	<dynamic_object name="IRB-npc" set="../media/dynamic_objects/npc.xml" />
+	<dynamic_object name="IRB-props" set="../media/dynamic_objects/props.xml" />
+	<dynamic_object name="IRB-buildings" set="../media/dynamic_objects/buildings.xml" />
+	<dynamic_object name="IRB-The crypt" set="../media/dynamic_objects/tiles/Crypt/crypt.xml" />
+	<dynamic_object name="IRB-Test tiles" set="../media/dynamic_objects/tiles.xml" />
+	<dynamic_object name="IRB-Walls" set="../media/dynamic_objects/walls.xml" />
+	<dynamic_object name="IRB-Loot" set="../media/dynamic_objects/loot.xml" />
+</IrrRPG_Builder_DynamicObjects>

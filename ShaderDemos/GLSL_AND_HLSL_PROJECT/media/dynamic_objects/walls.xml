@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<IrrRPG_Builder_DynamicObjects version="1.0">
+   <dynamic_object name="wall_128 units" 			mesh="buildings/walls/irb_wall_128.obj" 				type="non-interactive"	scale="1.0" 	materialType="solid"
+					author="Christian Clavet" category="Walls"
+					thumbnail="" />
+					
+	<dynamic_object name="wall 256 units" 			mesh="buildings/walls/irb_wall_256.obj" 				type="non-interactive"	scale="1.0" 	materialType="solid"
+					author="Christian Clavet" category="Walls"
+					thumbnail="" />
+	
+	<dynamic_object name="wall 512 units" 			mesh="buildings/walls/irb_wall_512.obj" 				type="non-interactive"	scale="1.0" 	materialType="solid"
+					author="Christian Clavet" category="Walls"
+					thumbnail="" />
+					
+	<dynamic_object name="wall 1024 units" 			mesh="buildings/walls/irb_wall_1024.obj" 				type="non-interactive"	scale="1.0" 	materialType="solid"
+					author="Christian Clavet" category="Walls"
+					thumbnail="" />
+	<dynamic_object name="doorway normal" 			mesh="buildings/doorways/irb_doorway_normal.obj" 				type="non-interactive"	scale="1.0" 	materialType="solid"
+					author="Christian Clavet" category="Doors"
+					thumbnail="" />
+	<dynamic_object name="doorway large" 			mesh="buildings/doorways/irb_doorway_large.obj" 				type="non-interactive"	scale="1.0" 	materialType="solid"
+					author="Christian Clavet" category="Doors"
+					thumbnail="" />
+	<dynamic_object name="door large left side" 			mesh="buildings/doorways/Door_Left.obj"  type="interactive"		script="doubledoor.lua" scale="1.0" 	materialType="solid"
+					author="Christian Clavet" category="Doors"
+					thumbnail="">
+					</dynamic_object>
+	<dynamic_object name="Floor 1" 			mesh="buildings/floors/irb_floor1.obj"  type="walkable"		script="" scale="1.0" 	materialType="solid"
+					author="Christian Clavet" category="Floors"
+					thumbnail="">
+					</dynamic_object>
+</IrrRPG_Builder_DynamicObjects>

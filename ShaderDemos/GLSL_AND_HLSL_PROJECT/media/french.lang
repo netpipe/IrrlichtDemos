@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IrrRPG_Builder_LanguageFile version="1.0">
+		<text id="tab_project" str="Projet"/>
+		<text id="tab_environment" str="Environnements" />
+		<text id="tab_objects" str="Objets" />
+		<text id="tab_tools" str="Outils" />
+		<text id="tab_setup" str="Réglages" />
+		<text id="tab_script_debug" str="Panneau de débogage"/>
+		<text id="tab_script_templates" str="Modèles de script"/>
+		<text id="tab_console_message" str="Messages"/>
+		<text id="tab_console_log" str="Log"/>
+		<text id="bt_script_editor_linecount" str="Basculer la numérotation des lignes"/>
+		<text id="bt_dynamic_objects_close_script" str="Fermer"/>
+		<text id="bt_dynamic_objects_script_noerror" str="Aucune erreur trouvée"/>
+		<text id="bt_dynamic_objects_validate_script" str="Valider le script (F5)"/>
+		<text id="bt_dynamic_objects_load_script_template" str="Charger le modèle de script"/>
+		<text id="bt_dynamic_objects_move_rotate" str="Bouger/Tourner"/>
+		<text id="bt_dynamic_objects_remove" str="Enlever l'objet"/>
+		<text id="bt_dynamic_objects_edit_script" str="Éditer le script Lua"/>
+		<text id="bt_dynamic_objects_cancel" str="Abandonner"/>
+		<text id="bt_dynamic_objects_mode" str="Édition objet"/>
+		<text id="info_dynamic_objects_mode" str="Pressez et maintenez la touche <ESPACE> pour aller en mode navigation"/>
+		<text id="info_drag" str="Mode navigation actif. Souris gauche: rotation, Souris droite: déplacement, Molette: Zoom"/>
+		<text id="bt_paint_vegetation" str="Peindre la végétation"/>
+		<text id="bt_new_project" str="Nouv. projet"/>
+		<text id="bt_save_project" str="Sauver le projet"/>
+		<text id="bt_load_project" str="Charger le projet"/>
+		<text id="bt_show_playable_area" str="Zone plateau"/>
+		<text id="bt_terrain_segments" str="Tuile terrain"/>
+		<text id="bt_terrain_custom_segments" str="Éditer tuile objet"/>
+		<text id="bt_terrain_empty_segments" str="Tuile vide"/>
+		<text id="bt_terrain_transform" str="Éditer l'élevation"/>
+		<text id="bt_terrain_brush" str="Outils brosse"/>
+		<text id="bt_terrain_transform_brush_strength_label" str="Force:"/>
+		<text id="bt_terrain_transform_brush_radius_label" str="Grandeur:"/>
+		<text id="bt_terrain_transform_brush_radius_inner" str="Rayon interne"/>
+		<text id="bt_terrain_transform_plateau" str="Hauteur du plateau:"/>
+		<text id="bt_play_game" str="Jouer"/>
+		<text id="bt_stop_game" str="Arrêter le jeu"/>
+		<text id="bt_edit_character" str="Éditer le joueur"/>
+		<text id="bt_dynamic_objects_prop" str="Éditer les objets"/>
+		<text id="bt_dynamic_objects_loot" str="Éditer butin"/>
+		<text id="bt_player_edit_script" str="Scripter le joueur"/>
+		<text id="bt_close_program" str="Quitter"/>
+		<text id="bt_about" str="À Propos"/>
+		<text id="bt_help" str="Console"/>
+		<text id="bt_dialog_yes" str="Oui"/>
+		<text id="bt_dialog_no" str="Non"/>
+		<text id="bt_view_items" str="Voir les items"/>
+		<text id="bt_use_item" str="Utiliser l'item"/>
+		<text id="bt_drop_item" str="Jeter l'item"/>
+		<text id="bt_close_items_window" str="Retour au jeu"/>
+		<text id="bt_edit_script_global" str="Script global"/>
+		<text id="bt_config" str="Éditer réglages IRB"/>
+		<text id="bt_cfg_window_ok" str="OK"/>
+		<text id="bt_cfg_window_cancel" str="Annuler"/>
+		<text id="bt_terrain_transform_vegetation_paint_strength" str="{TO TRANSLATE}"/>
+		<text id="txt_cfg_window_changes_msg" str="Les changements s'activeronts la prochaine fois que vous démarrerez le programme"/>
+		<text id="txt_cfg_window_caption" str="Éditer réglages IRB"/>
+		<text id="txt_cfg_window_resolution" str="Résolution d'affichage"/>
+		<text id="txt_cfg_window_language" str="Langue"/>
+		<text id="txt_cfg_window_tab_system" str="Système"/>
+		<text id="txt_cfg_window_tab_scenary" str="Paysage"/>
+		<text id="txt_cfg_window_fullscreen" str="Plein Écran"/>
+		<text id="txt_cfg_window_resizeable" str="Agrandissable"/>
+		<text id="txt_cfg_window_vsync" str="VSync"/>
+		<text id="txt_cfg_window_antialias" str="Antialias"/>
+		<text id="txt_cfg_window_silouette" str="Dessiner silouhette quand caché"/>
+		<text id="txt_cfg_window_terrain_mesh" str="Modèle du terrain"/>
+		<text id="txt_cfg_window_terrain_scale" str="Grandeur"/>
+		<text id="txt_cfg_window_terrain_layers" str="Texture de la couche du terrain"/>
+		<text id="txt_cfg_window_ocean_mesh" str="Objet pour l'océan"/>
+		<text id="txt_cfg_window_ocean_normalmap" str="Normal map océan"/>
+		<text id="txt_cfg_window_ocean_reflection" str="Réflection océan"/>
+		<text id="txt_player_life" str="VIE:"/>
+		<text id="txt_player_money" str="OR:"/>
+		<text id="msg_error" str="Erreur"/>
+		<text id="msg_invalid_project_file" str="Fichier projet invalide!"/>
+		<text id="msg_override_project" str="Sauver le projet actuel?"/>
+		<text id="msg_saved_ok" str=" sauvegarde réussie!"/>
+		<text id="msg_new_project_name" str="Entrez le nom du projet:"/>
+		<text id="msg_loaded_error" str="Erreur chargement!"/>
+		<text id="msg_loaded_ok" str=" chargement réussi!"/>
+		<text id="msg_override_script" str="Cette operation va anuler les scripts actuels, voulez-vous poursuivre?"/>
+		<text id="txt_dynobjsel" str="Édition d'objets dynamique" />
+		<text id="txt_cussegsel" str="Édition de tuiles spéciale" />
+		<text id="txt_dynobjcur" str="Modèle actuel" />
+		<text id="txt_objectcol" str="Collection d'objet" />
+		<text id="txt_dynobjcat" str="Catégorie" />
+		<text id="txt_dynobjitm" str="Item" />
+		<text id="txt_tool_des0" str="Outils Projet IRB" />
+		<text id="txt_tool_des1" str="Édition" />
+		<text id="txt_tool_des2" str="Scripts" />
+		<text id="txt_tool_des3" str="Configuration" />
+		<text id="txt_tool_des4" str="Playtest" />
+		<text id="txt_tool_des_tile" str="Tuiles" />
+		<text id="txt_tool_des5" str="Terrain" />
+		<text id="txt_tool_des6" str="Végétation" />
+		<text id="txt_tool_des7" str="Contrôles du joueur" />
+		<text id="txt_tool_edit" str="Mode édition" />
+		<text id="txt_tool_edpl" str="Mode jeu" />
+		<text id="txt_tool_scrp" str="Script joueur" />
+		<text id="txt_tool_scrg" str="Script global" />
+		<text id="txt_tool_sete" str="Configuration éditeur" />
+		<text id="txt_tool_setg" str="Config jeu" />
+		<text id="txt_tool_gc" str="Afficher la console" />
+		<text id="txt_tool_play" str="Play mode" />
+		<text id="txt_tool_edim" str="Edit mode" />
+		<text id="txt_tool_edsg" str="Éditer les segments" />
+		<text id="txt_tool_edel" str="Éditer l'élévation" />
+		<text id="txt_tool_tree" str="Arbres" />
+		<text id="txt_tool_bush" str="Buissons" />
+		<text id="txt_tool_rock" str="Roches" />
+		<text id="msg_welcome" str="Bienvenue dans IRR RPG Builder" />
+		<text id="msg_prj_np0" str="Nouveau projet" />
+		<text id="msg_prj_np1" str='Ceci fera un nouveau projet. Est-ce que vous êtes sûrs?' />
+		<text id="msg_prj_np2" str="Nouveau projet crée!" />
+		<text id="msg_prj_sp0" str="Sauvegarde du projet" />
+		<text id="msg_prj_sp1" str="Vous voulez sauvegarder ce projet?" />
+		<text id="msg_prj_sp2" str="Le projet %s est sauvegardé avec succès!" />
+		<text id="msg_prj_lp0" str="Charger un nouveau projet" />
+		<text id="msg_prj_lp1" str="Est-ce que vous sauvez le projet actuel?" />
+		<text id="msg_prj_lp2" str="Projet '%s' sauvé" />
+		<text id="msg_prj_lp3" str="Spécifiez le fichier du projet à charger" />
+		<text id="msg_prj_lp4" str="Le projet %s est chargé avec succès!" />
+		<text id="msg_dlg_warn" str="Avertissement IRR Rpg Builder!" />
+		<text id="msg_dlg_yes" str="&Oui" />
+		<text id="msg_dlg_no" str="&Non" />
+		<text id="msg_dlg_cancel" str="Annuler" />
+		<!-- New stuff added august 2014 -->
+	<text id="status_title" str="Bienvenue à IRR RPG Builder!" />
+	<text id="status_campos" str="Position de la caméra:" />
+	<text id="status_target" str="    Cible:  " />
+	<text id="status_objpos" str="Position objet: " />
+	<text id="status_objrot" str="    Rotation:  " />
+	<text id="loader_gen" str="Chargement..." />
+	<text id="loader_fonts" str="Chargement des polices..." />
+	<text id="loader_graphics" str="Chargement des graphiques d'interface..." />
+	<text id="sgrid_default" str="Grille par défaut" />
+	<text id="sgrid2" str="2 unités" />
+	<text id="sgrid4" str="4 unités" />
+	<text id="sgrid8" str="8 unités" />
+	<text id="sgrid16" str="16 unités" />
+	<text id="sgrid32" str="32 unités" />
+	<text id="sgrid64" str="64 unités" />
+	<text id="sgrid128" str="128 unités" />
+	<text id="sgrid256" str="256 unités" />
+	<text id="sgrid512" str="512 unités" />
+	<text id="sgrid1024" str="1024 unités" />
+	<text id="view_gen" str="Modifie réglages de la vue" />
+	<text id="view_top" str="vue dessus" />
+	<text id="view_bottom" str="vue dessous" />
+	<text id="view_left" str="vue gauche" />
+	<text id="view_right" str="vue droite" />
+	<text id="view_front" str="vue avant" />
+	<text id="view_back" str="vue arrière" />
+	<text id="view_ortho" str="vue orthographique" />
+	<text id="view_pers" str="vue perspective" />
+	<text id="panel_infobut" str=">> panneau d'information" />
+	<text id="panel_infotext" str="Informations sur cet objet" />
+	<text id="panel_infomodel" str="Nom du modèle:" />
+	<text id="panel_infodesc" str="Description:" />
+	<text id="panel_infoauthor" str="Auteur:" />
+	<text id="panel_infolicence" str="License:" />
+	<text id="panel_sel_object" str="Objet sélectionné:" />
+	<text id="panel_sel_sel1" str="aucune selection" />
+	<text id="panel_sel_type" str="Type object sélectionné:" />
+	<text id="panel_sel_script" str="L'objet est scripté?:" />
+	<text id="panel_sel_template" str="Item actuel:" />
+	<text id="panel_sel_position" str="Position" />
+	<text id="panel_sel_rotation" str="Rotation" />
+	<text id="panel_sel_scale" str="Grandeur" />
+	<text id="panel_sel_lock" str="Fixé" />
+	<text id="panel_tile_rmode" str="Mode de rotation" />
+	<text id="panel_tile_rleft" str="À gauche" />
+	<text id="panel_tile_rright" str="À droite" />
+	<text id="panel_sellist" str="Liste de sélections" />
+	<text id="panel_sellist_filter" str="Filtre par type d'objet:" />
+	<text id="panel_selcombo_all" str="Tous" />
+	<text id="panel_selcombo_npc" str="NPC" />
+	<text id="panel_selcombo_loot" str="Butin" />
+	<text id="panel_selcombo_prop" str="Objet non-intéractif" />
+	<text id="panel_selcombo_intprop" str="Objet intéractif" />
+	<text id="panel_selcombo_walk" str="Objet praticable" />
+	<text id="panel_sel_noscene" str="Aucun item dans la scène" />
+	<text id="txt_context_title" str="Action" />
+	<text id="bt_dynamic_objects_replace" str="Remplacer avec l'item courant" />
+	<text id="bt_dynamic_objects_centerview" str="Centrer la vue sur l'objet" />
+	<text id="bt_centerview" str="Centrer la vue sur cette position" />
+	<text id="txt_context_spawn" str="Créer un objet ici" />
+	<text id="txt_context_replace_file" str="Remplacer avec un modèle fichier" />
+	<text id="script_window_title" str="Éditeur de script" />
+	<text id="console_window_title" str="Fenêtre console" />
+	<text id="objtype_player" str="L'objet est le joueur" />
+	<text id="objtype_NPC" str="L'objet est un NPC" />
+	<text id="objtype_loot" str="L'objet est du butin" />
+	<text id="objtype_int" str="L'objet est intéractif" />
+	<text id="objtype_nint" str="L'objet est non-intéractif" />
+	<text id="objtype_walkable" str="L'objet est praticable" />
+	<text id="script_editor_copy" str="copier" />
+	<text id="script_editor_cut" str="couper" />
+	<text id="script_editor_delete" str="effacer" />
+	<text id="script_editor_paste" str="coller" />
+	<text id="script_editor_redo" str="rétablir" />
+	<text id="script_editor_undo" str="annuler" />	
+	<text id="game_stats_title" str="Statistiques" />
+	<text id="game_inventory_title" str="Inventaire" />
+	<text id="game_skills_title" str="Habiletés" />
+	<text id="game_quests_title" str="Quêtes" />
+	<text id="file_close_button" str="Fermer" />	
+	<text id="file_open_button" str="Ouvrir" />
+	<text id="file_save_button" str="Sauver" />
+	<text id="file_cancel_button" str="Annuler" />
+	<text id="file_text_favorites" str="Favoris" />
+	<text id="file_text_files" str="Fichers" />
+	<text id="file_text_allfiles" str="Tous" />
+	<text id="file_text_warning" str="Avertissement " />
+	<text id="file_text_overwrite" str="Voulez-vous écrire sur ce fichier?!" />
+	<text id="file_text_supported" str="Supporté " />
+	<text id="file_text_desktop" str="Bureau" />
+	<text id="file_text_documents" str="Mes documents" />
+	<text id="file_text_pictures" str="Mes images" />
+	<text id="file_text_music" str="Ma musique" />
+	<text id="file_text_videos" str="Mes vidéos" />
+	<text id="file_text_pubdocuments" str="Documents public" />
+	<text id="file_text_pubpictures" str="Images publique" />
+	<text id="file_text_pubmusic" str="Musique publique" />
+	<text id="file_text_pubvideos" str="Vidéos public" />
+	<text id="file_text_home" str="Dossier maison" />
+	<text id="file_text_media" str="Dossier Media" />
+	<text id="file_text_usr" str="Dossier Usr" />
+	<text id="file_text_dev" str="Dossier Dev" />
+	<text id="file_text_mnt" str="Dossier Mnt" />
+	<text id="file_IRB_files" str="Fichiers projets IRB" />
+	<text id="file_IRB_path" str="Dossier projets IRB" />
+	<text id="float_text_hit" str="Touché! " />
+	<text id="float_text_miss" str="Manqué." />
+	<text id="float_text_die" str="Mort." />
+	<text id="btn_obj_add_mode" str="Mode ajout" />
+	<text id="btn_obj_select_mode" str="Mode sélection" />
+	<text id="btn_obj_move_mode" str="Mode déplacement" />
+	<text id="btn_obj_rotate_mode" str="Mode rotation" />
+	<text id="btn_obj_scale_mode" str="Mode agrandissement" />
+	<text id="text_file_save_report" str="Résultat de la sauvegarde:">
+	<text id="text_file_load_report" str="Résulat du chargement:">
+	<text id="text_file_scene" str="Scene ">
+	
+	<text id="txt_player_info" str="Player informations">
+	<text id="bt_camera_rts" str="RTS type controls">
+	<text id="bt_camera_rpg" str="RPG type controls">
+	<text id="bt_camera_fps" str="FPS type controls">
+	
+	
+		<about str="IrrRPG Builder v0.3 Alpha"/>
+		<about str="    par Andres Jesse Porfirio"/>
+		<about str="    et Christian Clavet"/>
+		<about str=" "/>
+		<about str="Programmation et scripts par:"/>
+		<about str="    Andres Jesse Porfirio (www.andresjesse.com)"/>
+		<about str="    Christian Clavet (www.clavet.org)" />
+		<about str="    Votre nom ici"/>
+		<about str=" " />
+		<about str="Désign de l'interface:" />
+		<about str="    Andres Jesse Porfirio" />
+		<about str="    Christian Clavet" />
+		<about str=" " />
+		<about str="Désign du logo:" />
+		<about str="    Borges (www.vhborges.tk)" />
+		<about str=" " />
+		<about str="Modèles 3D par:" />
+		<about str="    Votre nom ici" />
+		<about str="    Votre nom ici" />
+		<about str=" " />
+		<about str="Animations:" />
+		<about str="    Votre nom ici" />
+		<about str="    Votre nom ici" />
+		<about str=" " />
+		<about str="Shaders:" />
+		<about str="    Andres Jesse Porfirio" />
+		<about str="    Votre nom ici" />
+		<about str="    Votre nom ici" />
+		<about str=" " />
+		<about str="Thanks: " />
+		<about str="The IRRlicht team (irrlicht.sourceforge.net) " />
+		<about str="TBW from the IRRlicht forum for the postFX system " />
+		<about str="Consultez irrrpgbuilder.sourceforge.net" />
+		<about str="Amusez-vous!"/>
+</IrrRPG_Builder_LanguageFile>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<IrrRPG_Builder_DynamicObjects version="1.0">
+    <dynamic_object name="Small health potion" 		
+					mesh="props/horse_food.b3d"
+					type="loot"	
+					scale="18" 	
+					materialType="solid"
+					category="potions"
+					description="This small health potion will give back 10HP"
+					thumbnail="loot/health_potion_image.jpg" 
+					script = "loot_small_potion.lua"/>
+	<dynamic_object name="Big health potion" 	
+					mesh="props/horse_food_empty.b3d" 	
+					type="loot" 
+					scale="18" 	
+					materialType="solid"
+					category="potions"
+					description="This big health potion will give back 100HP"
+					thumbnail="loot/health_potion_image.jpg"
+					script = "loot_big_potion.lua" />
+	<dynamic_object name="Sword" mesh="loot/sword.obj" type="loot" scale="1" materialType="solid" category="weapons"
+					description="Test weapon" thumbnail="loot/health_potion_image.jpg" script = "" 					
+					/>
+</IrrRPG_Builder_DynamicObjects>

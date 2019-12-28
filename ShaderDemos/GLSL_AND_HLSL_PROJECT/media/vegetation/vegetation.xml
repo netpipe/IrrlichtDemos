@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<IrrRPG_Builder_Vegetation version="1.0">
+    <vegetation trunk_mesh="trees/tree1_t.b3d" leafs_mesh="trees/tree1_l.b3d"/>
+    <vegetation trunk_mesh="trees/tree2_t.b3d" leafs_mesh="trees/tree2_l.b3d"/>
+    <vegetation trunk_mesh="trees/tree4_t.b3d" leafs_mesh="trees/tree4_l.b3d"/>
+    <vegetation trunk_mesh="" leafs_mesh="trees/tree3_l.b3d"/>
+</IrrRPG_Builder_Vegetation> 

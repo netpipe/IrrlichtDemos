@@ -1,0 +1,15 @@
+# Blender3D v2.50 (sub 16) OBJ File: .B25.blend
+# www.blender3d.org
+mtllib shadow.mtl
+o Mesh
+v 1.000000 -0.000000 -1.000000
+v 1.000000 0.000000 1.000000
+v -1.000000 0.000000 1.000000
+v -1.000000 -0.000000 -1.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 1.000000 1.000000
+vt 0.000000 1.000000
+usemtl None_vegetation0.png
+s off
+f 1/1 4/2 3/3 2/4

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<IrrRPG_Builder_DynamicObjects version="1.0">
+	<dynamic_object name="tile_NS" mesh="tiles/tileNS.obj"  type="walkable" special="segment" scale="1.0"
+					description="North-South tile" author="Christian Clavet" licence="Creative Commons"
+					thumbnail="tiles/info_TileNS.jpg" >
+	</dynamic_object>
+	<dynamic_object name="tile_Corner" mesh="tiles/tileCorner.obj"  type="walkable" special="segment" scale="1.0"
+					description="North-South Tile" author="Christian Clavet" licence="Creative Commons"
+					thumbnail="tiles/info_tileCorner.jpg" >
+	</dynamic_object>
+	<dynamic_object name="test terrain" mesh="untitled.obj"  type="walkable" scale="1.0" special="segment"
+					description="test terrain" author="Christian Clavet" licence="Creative Commons" >
+					<material id="0" shader="TERRAIN" />
+					<material id="1" shader="WATER" />
+	</dynamic_object>
+</IrrRPG_Builder_DynamicObjects>

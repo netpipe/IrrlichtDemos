@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<IrrRPG_Builder_TemplateScripts version="1.0">
+  <script file="generic_player.lua"/>
+  <script file="generic_enemy.lua"/>
+  <script file="generic_follower.lua"/>
+  <script file="generic_merchant.lua"/>
+  <script file="global_lifepotion_script.lua"/>  
+</IrrRPG_Builder_TemplateScripts>  

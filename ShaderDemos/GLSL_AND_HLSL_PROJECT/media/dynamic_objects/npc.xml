@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<IrrRPG_Builder_DynamicObjects version="1.0">
+<!-- Frog -->
+	<dynamic_object name="frog" mesh="npc/frog.b3d" type="npc" script="ai_frogs.lua" scale="36" materialType="solid"
+					description="A frog" author="Andres Jesse Porfirio" licence="Creative Commons" category="Animal"
+					thumbnail="npc/info_frog.jpg">
+		<animation name="idle" start="0" end="0" speed="1"/>
+		<animation name="attack" start="10" end="20" speed="25" attackevent="16" loop="false" soundevent="17" sound="Frog/frog_croak_b.ogg"/>
+		<animation name="hurt" start="16" end="20" speed="3.0"/>
+		<animation name="walk" start="1" end="15" speed="30.0" movespeed="33.0" soundevent="1" sound="Frog/frog_croak.ogg"/>
+		<animation name="die" start="0" end="0" speed="1.0"/>
+		<animation name="despawn" start="0" end="0" speed="1.0"/>
+	</dynamic_object>
+<!-- Goblin -->
+	<dynamic_object name="goblin" mesh="npc/goblin_anims.b3d" type="npc" script="ai_goblin.lua" scale="46" materialType="solid"
+					description="A goblin" author="Christian Clavet" licence="Creative Commons" category="Monster - medium"
+					thumbnail="npc/info_goblin.jpg" >
+		<animation name="idle" start="1" end="240" speed="30.0"/>
+		<animation name="attack" start="281" end="295" speed="18.0" attackevent="288" attackevent1="293" 
+			loop="false" soundevent="288" sound="goblin/goblin_attack.ogg"/>
+			
+		<animation name="walk" start="241" end="270" speed="30.0" movespeed="145.0"/>
+		<animation name="hurt"  start="306" end="317" speed="30.0" loop="false" soundevent="307" sound="goblin/goblin_hurt.ogg"/>
+		<animation name="die" start="321" end="345" speed="30.0" loop="false" soundevent="322" sound="goblin/goblin_die.ogg"/>
+		<animation name="despawn" start="346" end="370" speed="5.0" loop="false" />
+	</dynamic_object>
+<!-- Goblin Giant -->
+	<dynamic_object name="goblin giant version" mesh="npc/goblin_walk.b3d" type="npc" script="generic_enemy.lua" scale="160" materialType="solid"
+					description="A goblin based on the small one" author="Christian Clavet" licence="Creative Commons" category="Monster - Big"
+					thumbnail="npc/info_goblin_giant.jpg">
+		<animation name="idle" start="1" end="1" speed="10"/>
+		<animation name="walk" start="1" end="100" speed="30" movespeed="52.2"/>
+		<animation name="attack" start="75" end="100" speed="60" attackevent="85" loop="false"/>
+		<animation name="hurt" start="1" end="5" speed="60.0"/>
+		<animation name="die" start="1" end="1" speed="10.0"/>
+		<animation name="despawn" start="1" end="1" speed="10.0"/>
+	</dynamic_object>
+<!-- Peasant -->
+	<dynamic_object name="peasant" mesh="npc/peasant.b3d" type="npc" script="generic_follower.lua" scale="60" materialType="solid"
+					description="A peasant" author="Andres Jesse Porfirio" licence="Creative Commons" category="Human"
+					thumbnail="npc/info_peasant.jpg" >
+		<animation name="idle" start="0" end="0" speed="1.0"/>
+		<animation name="walk" start="1" end="25" speed="24.0" movespeed="40.0"/>
+	</dynamic_object>
+<!-- Wizard -->
+	<dynamic_object name="wizard" mesh="npc/mago.b3d" type="npc" script="ai_goblin.lua" scale="60" materialType="solid"
+					description="A evil wizard" author="Andres Jesse Porfirio" licence="Creative Commons" category="Human" 
+					thumbnail="npc/info_wizard.jpg">
+		<animation name="idle" start="0" end="0" loop="false" speed="1.0"/>
+		<animation name="attack" start="26" end="36" speed="25.0" loop="false" attackevent="30" soundevent="30"/>
+		<animation name="die" start="37" end="47" speed="25.0" loop="false"/>
+		<animation name="walk" start="0" end="25" speed="50.0" movespeed="84.0"/>
+		<animation name="despawn" start="47" end="47" speed="1.0" loop="false"/>
+<!-- Elf Female -->
+	<dynamic_object name="Elf Female" mesh="npc/Elf_female/elf_female.b3d" type="non-interactive" scale="1" materialType="transparent_1bit" 
+		thumbnail="npc/info_elffemale.jpg" category="need animation"/>
+<!-- Wolf -->
+	<dynamic_object name="Wolf" mesh="npc/wolf/wolf.obj" type="non-interactive" scale="1" materialType="solid" 
+		thumbnail="npc/info_wolf.jpg"  category="need animation" />
+<!-- Horse -->
+	<dynamic_object name="Horse1" mesh="npc/Horse/Horse1.obj" type="non-interactive" scale="1" materialType="solid"  
+		thumbnail="npc/info_horse.jpg"  category="need animation" />	
+		</dynamic_object>
+<!-- Firedragon -->
+		<dynamic_object name="Firedragon" mesh="npc/Firedragon/Firedragon.b3d" type="npc" script="generic_enemy.lua" scale="12" materialType="solid"
+					description="A strong Dragon" author="Alexander Diehl" licence="Creative Commons" category="Monster - medium"
+					thumbnail="npc/Firedragon/info_firedragon.jpg">
+		<animation name="idle" start="1" end="70" speed="10"/>
+		<animation name="walk" start="100" end="120" speed="35" movespeed="72.2"/>
+		<animation name="attack" start="70" end="100" speed="60" attackevent="85" loop="false"/>
+	</dynamic_object>
+	
+	
+</IrrRPG_Builder_DynamicObjects>

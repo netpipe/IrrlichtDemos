@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<IrrRPG_Builder_DynamicObjects version="1.0">
+	<dynamic_object name="player_normal" mesh="../player/warrior_anims.b3d" script="generic_player.lua" type="player" scale="80.0"
+					description="Warrior with sword and buckle" author="Christian Clavet" licence="Creative Commons">
+		<animation name="idle"  start="146" end="165" speed="3.0" /> <!-- Stardard Idle anim -->
+		<animation name="idle1"  start="1" end="48" speed="30.0" /> <!-- Move back the neck idle anim -->
+		<animation name="idle2"  start="49" end="159" speed="30.0" /> <!-- Winner Idle anim -->
+		<animation name="walk"  start="301" end="330" speed="30.0" movespeed="34.0"> 
+		<animation name="run" start="333" end="362" speed="40.0" movespeed="162.0"/>
+		<!-- old end for attack is 396-->
+		<animation name="attack" start="365" end="390" speed="30.0" loop="false" attackevent="383" soundevent="370" sound="player/98341__punch1.ogg"/>
+		<animation name="die" start="396" end="420" speed="30.0" loop="false" soundevent="397" sound="player/44262__Erdie__male_fight02.ogg"/>
+		<animation name="hurt" start="427" end="457" speed="30.0" loop="false" soundevent="428" sound="player/44268__Erdie__male_fight08.ogg"/>
+		 <attachment name="head" bonename="Bip01_HeadNub" posx="0" posy="0" posZ="0" rotx="0" roty="0" rotz="-90" />
+	</dynamic_object>
+</IrrRPG_Builder_DynamicObjects>

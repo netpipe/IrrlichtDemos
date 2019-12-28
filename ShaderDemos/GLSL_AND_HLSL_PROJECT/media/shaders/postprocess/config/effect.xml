@@ -1,0 +1,551 @@
+<?xml version="1.0"?>
+<!-- 
+Setup of the PostProcessManager (effectchains)
+
+parameters for Effect:
+**********************
+id:                 E_POSTPROCESS_EFFECT, id of the effect
+name:               name of the effect
+
+parameters for ShaderPostProcess:
+***************************
+name:               name of the shader postprocess
+vsFile:             vertex shader program (located in media/shaders/hlsl/ for DirectX and in  media/shaders/glsl for OpenGL)
+vsEntry:            entrypoint for the vertex shader program, Default: main
+vsType:             E_VERTEX_SHADER_TYPE, Default: EVST_VS_1_1
+psFile:             pixel shader program (located in media/shaders/hlsl/ for DirectX and in  media/shaders/glsl for OpenGL)
+psEntry:            entrypoint for the pixel shader program, Default: main
+psType:             E_PIXEL_SHADER_TYPE, Default: EPST_PS_1_1
+psUseElapsedTime:   if set to 1 the elapsed device time im ms is passed to the pixelshader -> "uniform float ElapsedTime", 
+                    Default: 0, disabled 
+psUseRandom:        if set to 1 a random value interval [0, 1] is passed to the pixelshader -> "uniform float RandomValue", 
+                    Default: 0, disabled  
+psUseBufferWidth:   if set to 1 the width of the input buffer is passed to the pixelshader -> "uniform float BufferWidth", 
+                    Default: 0, disabled  
+psUseBufferHeight:  if set to 1 the height of the input buffer is passed to the pixelshader -> "uniform float BufferHeight", 
+                    Default: 0, disabled  
+psUseProjection:    if set to 1 the projection matrix is passed to the pixelshader -> "uniform ProjMatrix", 
+                    Default: 0, disabled  
+psUseView:          if set to 1 the view matrix is passed to the pixelshader -> "uniform ViewMatrix", 
+                    Default: 0, disabled  
+psUseWorld:         if set to 1 the world matrix is passed to the pixelshader -> "uniform WorldMatrix", 
+                    Default: 0, disabled  
+psUseWorldViewProj: if set to 1 the world view projection matrix is passed to the pixelshader -> "uniform WorldViewProjMatrix", 
+                    Default: 0, disabled  
+vsUseElapsedTime:   if set to 1 the elapsed device time im ms is passed to the vertexshader -> "uniform float ElapsedTime", 
+                    Default: 0, disabled 
+vsUseRandom:        if set to 1 a random value interval [0, 1] is passed to the vertexshader -> "uniform float RandomValue", 
+                    Default: 0, disabled  
+vsUseBufferWidth:   if set to 1 the width of the input buffer is passed to the vertexshader -> "uniform float BufferWidth", 
+                    Default: 0, disabled  
+vsUseBufferHeight:  if set to 1 the height of the input buffer is passed to the vertexshader -> "uniform float BufferHeight", 
+                    Default: 0, disabled  
+vsUseProjection:    if set to 1 the projection matrix is passed to the vertexshader -> "uniform ProjMatrix", 
+                    Default: 0, disabled  
+vsUseView:          if set to 1 the view matrix is passed to the vertexshader -> "uniform ViewMatrix", 
+                    Default: 0, disabled  
+vsUseWorld:         if set to 1 the world matrix is passed to the vertexshader -> "uniform WorldMatrix", 
+                    Default: 0, disabled  
+vsUseWorldViewProj: if set to 1 the world view projection matrix is passed to the vertexshader -> "uniform WorldViewProjMatrix", 
+                    Default: 0, disabled  
+baseMaterial:       E_MATERIAL_TYPE, Default: EMT_SOLID
+
+parameters for PixelShaderConstant:
+***********************************
+name:               name of the variable in the shader program (uniform float name) />
+value:              value that is passed to the shader variable by setPixelShaderConstant(name, &value, 1)
+
+parameters for VertexShaderConstant:
+************************************
+name:               name of the variable in the shader program (uniform float name) />
+value:              value that is passed to the shader variable by setVertexShaderConstant(name, &value, 1)
+
+parameters for Texture:
+***********************
+index:              index of the texturelayer
+path:               path to render target texture
+textureClamp:       E_TEXTURE_CLAMP, Default: ETC_REPEAT
+name:               name of the texture (only used for glsl shaders), Default: texture0, texture1, ...
+lodBias:            bias for the mipmap choosing decision, Default: 0
+bilinearFilter:     bilinear filtering, Default: true, enabled
+trilinearFilter:    trilinear filtering, Default: 0, disabled
+anisotropicFilter:  anisotropic filtering, Default: 0, disabled
+
+parameters for RenderSource:
+****************************
+path:               path to texture
+
+parameters for RenderTarget:
+****************************
+path:               path to render target texture
+
+********************************************************************************************************
+vsType:             psType:             textureClamp:                   baseMaterial:
+********************************************************************************************************
+EVST_VS_1_1 = 0,    EPST_PS_1_1 = 0,    ETC_REPEAT = 0,                 one of the E_MATERIAL_TYPE enums
+EVST_VS_2_0 = 1,    EPST_PS_1_2 = 1,    ETC_CLAMP = 1,
+EVST_VS_2_a = 2,    EPST_PS_1_3 = 2,    ETC_CLAMP_TO_EDGE = 2,
+EVST_VS_3_0 = 3,    EPST_PS_1_4 = 3,    ETC_CLAMP_TO_BORDER = 3,
+EVST_VS_4_0 = 4,    EPST_PS_2_0 = 4,    ETC_MIRROR = 4,
+EVST_VS_4_1 = 5,    EPST_PS_2_a = 5,    ETC_MIRROR_CLAMP = 5,
+EVST_VS_5_0 = 6,    EPST_PS_2_b = 6,    ETC_MIRROR_CLAMP_TO_EDGE = 6,
+                    EPST_PS_3_0 = 7,    ETC_MIRROR_CLAMP_TO_BORDER = 7,
+                    EPST_PS_4_0 = 8,
+                    EPST_PS_4_1 = 9,
+                    EPST_PS_5_0 = 10,
+-->
+<PostProcess>
+  <!-- EPPE_NOEFFECT = 0 -->
+  <Effect id="0" name="No Effect">
+    <ShaderPostProcess name="Full Screen Quad" vsFile="vertex.fx" vsType="1" psFile="screenquad.fx" psType="4" >
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="auxIn" />
+      <RenderTarget path="auxOut" />
+    </ShaderPostProcess>
+  </Effect>
+
+  <!-- EPPE_INVERT = 1 -->  
+  <Effect id="1" name="Invert">
+    <ShaderPostProcess name="Invert" vsFile="vertex.fx" vsType="0" psFile="invert.fx" psType="4" >
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="auxIn" />
+      <RenderTarget path="auxOut" />
+    </ShaderPostProcess>
+  </Effect>
+  
+  <!-- EPPE_SEPIA = 2 -->
+  <Effect id="2" name="Sepia">
+    <ShaderPostProcess name="Sepia" vsFile="vertex.fx" vsType="0" psFile="sepia.fx" psType="4" >
+      <PixelShaderConstant name="Toning" value="1.0" />
+      <PixelShaderConstant name="Desaturation" value="0.0" />
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="auxIn" />
+      <RenderTarget path="auxOut" />
+    </ShaderPostProcess>
+  </Effect>
+
+  <!-- EPPE_GRAYSCALE = 3 -->
+  <Effect id="3" name="Grayscale">
+    <ShaderPostProcess name="Grayscale" vsFile="vertex.fx" vsType="0" psFile="grayscale.fx" psType="4" >
+      <PixelShaderConstant name="BaseGray" value="0.0" />
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="auxIn" />
+      <RenderTarget path="auxOut" />
+    </ShaderPostProcess>
+  </Effect>
+
+  <!-- EPPE_SIMPLE_BOOLM = 4 -->
+  <Effect id="4" name="Simple Bloom">
+    <ShaderPostProcess name="Simple Bloom" vsFile="vertex.fx" vsType="0" psFile="simplebloom.fx" psType="4" >
+      <PixelShaderConstant name="EffectStrength" value="8.5" />
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="auxIn" />
+      <RenderTarget path="auxOut" />
+    </ShaderPostProcess>
+  </Effect>
+
+  <!-- EPPE_ADAPTIVE_BLOOM = 5 -->
+  <Effect id="5" name="Adaptive Bloom">
+    <!-- downscale pass -->
+    <ShaderPostProcess name="Downscale" vsFile="vertex.fx" vsType="0" psFile="screenquad.fx" psType="4" >
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="auxIn" />
+      <RenderTarget path="rtt1" />
+    </ShaderPostProcess>
+    
+    <!-- luminance pass -->
+    <ShaderPostProcess name="Luminance Pass 1 (Init)" vsFile="vertex.fx" vsType="0" psFile="luminance_init.fx" psType="4" psUseBufferWidth="1" psUseBufferHeight="1" >
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="rtt1" />
+      <RenderTarget path="rtt_lg0" />
+    </ShaderPostProcess>
+    <ShaderPostProcess name="Luminance Pass 2 (Iteration)" vsFile="vertex.fx" vsType="0" psFile="luminance_iter.fx" psType="4" psUseBufferWidth="1" psUseBufferHeight="1" >
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="rtt_lg0" />
+      <RenderTarget path="rtt_lg1" />
+    </ShaderPostProcess>
+    <ShaderPostProcess name="Luminance Pass 3 (Iteration)" vsFile="vertex.fx" vsType="0" psFile="luminance_iter.fx" psType="4" psUseBufferWidth="1" psUseBufferHeight="1" >
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="rtt_lg1" />
+      <RenderTarget path="rtt_lg2" />
+    </ShaderPostProcess>
+    <ShaderPostProcess name="Luminance Pass 4 (Iteration)" vsFile="vertex.fx" vsType="0" psFile="luminance_iter.fx" psType="4" psUseBufferWidth="1" psUseBufferHeight="1" >
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="rtt_lg2" />
+      <RenderTarget path="rtt_lg3" />
+    </ShaderPostProcess>
+    <ShaderPostProcess name="Luminance Pass 5 (Iteration)" vsFile="vertex.fx" vsType="0" psFile="luminance_iter.fx" psType="4" psUseBufferWidth="1" psUseBufferHeight="1" >
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="rtt_lg3" />
+      <RenderTarget path="rtt_lg4" />
+    </ShaderPostProcess>
+
+    <!-- luminance adaption -->
+    <ShaderPostProcess name="Luminance Pass 6 (Adaption)" vsFile="vertex.fx" vsType="0" psFile="luminance_adapt.fx" psType="4" >
+      <PixelShaderConstant name="EffectStrength" value="0.1" />
+      <Texture index="0" textureClamp="1" />
+      <Texture index="1" path="rtt_lg4" textureClamp="1" />
+      <RenderSource path="prevLum" />
+      <RenderTarget path="finalLum" />
+    </ShaderPostProcess>
+
+    <!-- brightpass -->
+    <ShaderPostProcess name="Brightpass" vsFile="vertex.fx" vsType="0" psFile="brightpass.fx" psType="4" >
+      <PixelShaderConstant name="EffectStrength" value="3.5" />
+      <Texture index="0" textureClamp="1" />
+      <Texture index="1" path="finalLum" textureClamp="1" />
+      <RenderSource path="rtt1" />
+      <RenderTarget path="rtt0" />
+    </ShaderPostProcess>
+
+    <!-- save luminance for next adaption step -->
+    <ShaderPostProcess name="Luminance (Save)" vsFile="vertex.fx" vsType="0" psFile="screenquad.fx" psType="4" >
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="finalLum" />
+      <RenderTarget path="prevLum" />
+    </ShaderPostProcess>
+    
+    <!-- blur 1st pass -->
+    <ShaderPostProcess name="Horizontal Blur (Pass 0)" vsFile="vertex.fx" vsType="0" psFile="hblur.fx" psType="4" psUseBufferWidth="1" >
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="rtt0" />
+      <RenderTarget path="rtt1" />
+    </ShaderPostProcess>
+    <ShaderPostProcess name="Vertical Blur (Pass 0)" vsFile="vertex.fx" vsType="0" psFile="vblur.fx" psType="4" psUseBufferHeight="1" >
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="rtt1" />
+      <RenderTarget path="rtt0" />
+    </ShaderPostProcess>
+
+    <!-- donwscale and blur 2nd pass -->
+    <ShaderPostProcess name="Downscale Blur (Pass 1)" vsFile="vertex.fx" vsType="1" psFile="screenquad.fx" psType="4" >
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="rtt0" />
+      <RenderTarget path="rtt2" />
+    </ShaderPostProcess>
+    <ShaderPostProcess name="Horizontal Blur (Pass 1)" vsFile="vertex.fx" vsType="0" psFile="hblur.fx" psType="4" psUseBufferWidth="1" >
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="rtt2" />
+      <RenderTarget path="rtt3" />
+    </ShaderPostProcess>
+    <ShaderPostProcess name="Vertical Blur (Pass 1)" vsFile="vertex.fx" vsType="0" psFile="vblur.fx" psType="4" psUseBufferHeight="1" >
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="rtt3" />
+      <RenderTarget path="rtt2" />
+    </ShaderPostProcess>
+
+    <!-- donwscale and blur 3rd pass -->
+    <ShaderPostProcess name="Downscale Blur (Pass 2)" vsFile="vertex.fx" vsType="1" psFile="screenquad.fx" psType="4" >
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="rtt2" />
+      <RenderTarget path="rtt4" />
+    </ShaderPostProcess>
+    <ShaderPostProcess name="Horizontal Blur (Pass 2)" vsFile="vertex.fx" vsType="0" psFile="hblur.fx" psType="4" psUseBufferWidth="1" >
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="rtt4" />
+      <RenderTarget path="rtt5" />
+    </ShaderPostProcess>
+    <ShaderPostProcess name="Vertical Blur (Pass 2)" vsFile="vertex.fx" vsType="0" psFile="vblur.fx" psType="4" psUseBufferHeight="1">
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="rtt5" />
+      <RenderTarget path="rtt4" />
+    </ShaderPostProcess>
+
+    <!-- donwscale and blur 4th pass -->
+    <ShaderPostProcess name="Downscale Blur (Pass 3)" vsFile="vertex.fx" vsType="1" psFile="screenquad.fx" psType="4" >
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="rtt4" />
+      <RenderTarget path="rtt6" />
+    </ShaderPostProcess>
+    <ShaderPostProcess name="Horizontal Blur (Pass 3)" vsFile="vertex.fx" vsType="0" psFile="hblur.fx" psType="4" psUseBufferWidth="1">
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="rtt6" />
+      <RenderTarget path="rtt7" />
+    </ShaderPostProcess>
+    <ShaderPostProcess name="Vertical Blur (Pass 3)" vsFile="vertex.fx" vsType="0" psFile="vblur.fx" psType="4" psUseBufferHeight="1">
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="rtt7" />
+      <RenderTarget path="rtt6" />
+    </ShaderPostProcess>
+
+    <!-- upscale blur -->
+    <ShaderPostProcess name="Upscale Blur (Pass 0)" vsFile="vertex.fx" vsType="1" psFile="screenquad.fx" psType="4" >
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="rtt6" />
+      <RenderTarget path="rtt4" />
+    </ShaderPostProcess>
+    <ShaderPostProcess name="Upscale Blur (Pass 1)" vsFile="vertex.fx" vsType="1" psFile="screenquad.fx" psType="4" >
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="rtt4" />
+      <RenderTarget path="rtt2" />
+    </ShaderPostProcess>
+    <ShaderPostProcess name="Upscale Blur (Pass 2)" vsFile="vertex.fx" vsType="1" psFile="screenquad.fx" psType="4" >
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="rtt2" />
+      <RenderTarget path="rtt0" />
+    </ShaderPostProcess> 
+    
+    <!-- accumulate blur and original buffer-->
+    <ShaderPostProcess name="Accumulate (Final Pass)" vsFile="vertex.fx" vsType="0" psFile="accumulate.fx" psType="4" >
+      <PixelShaderConstant name="EffectStrength" value="1.5" />
+      <Texture index="0" textureClamp="1" />
+      <Texture index="1" path="rtt0" textureClamp="1" />
+      <RenderSource path="auxIn" />
+      <RenderTarget path="auxOut" />
+    </ShaderPostProcess>
+  </Effect>
+
+  <!-- EPPE_MOTION_BLUR = 6 -->
+  <Effect id="6" name="Motion Blur">
+    <ShaderPostProcess name="Motion Blur" vsFile="vertex.fx" vsType="0" psFile="motionblur.fx" psType="4" >
+      <PixelShaderConstant name="EffectStrength" value="0.45" />
+      <Texture index="0" textureClamp="1" />
+      <Texture index="1" path="prevBuffer" textureClamp="1" />
+      <RenderSource path="auxIn" />
+      <RenderTarget path="auxOut" />
+    </ShaderPostProcess>
+    <ShaderPostProcess name="Save Frame" vsFile="vertex.fx" vsType="0" psFile="screenquad.fx" psEntry="downscale2x2" psType="4"  psUseBufferWidth="1" psUseBufferHeight="1" >
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="auxOut" />
+      <RenderTarget path="prevBuffer" />
+    </ShaderPostProcess>
+  </Effect>
+
+  <!-- EPPE_NIGHT_VISION = 7 -->
+  <Effect id="7" name="Night Vision">
+    <ShaderPostProcess name="Nightvison" vsFile="vertex.fx" vsType="0" psFile="nightvision.fx" psType="4" psUseRandom="1" >
+      <PixelShaderConstant name="LuminanceThreshold" value="0.01" />
+      <PixelShaderConstant name="ColorAmplification" value="0.4" />
+      <PixelShaderConstant name="NoiseStrength" value="1.2" />
+      <PixelShaderConstant name="VisionColorR" value="0.1" />
+      <PixelShaderConstant name="VisionColorG" value="0.99" />
+      <PixelShaderConstant name="VisionColorB" value="0.1" />
+      <Texture index="0" textureClamp="1" />
+      <Texture index="1" path="../media/shaders/postprocess/textures/noise1.png" />
+      <Texture index="2" path="../media/shaders/postprocess/textures/scope.png" textureClamp="1" />
+      <RenderSource path="auxIn" />
+      <RenderTarget path="auxOut" />
+    </ShaderPostProcess>
+  </Effect>
+
+  <!-- EPPE_DREAM_VISION = 8 -->
+  <Effect id="8" name="Dream Vision">
+    <ShaderPostProcess name="Dreamvision" vsFile="vertex.fx" vsType="0" psFile="dreamvision.fx" psType="4" >
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="auxIn" />
+      <RenderTarget path="auxOut" />
+    </ShaderPostProcess>
+  </Effect>
+
+  <!-- EPPE_POSTERIZE = 9 -->
+  <Effect id="9" name="Posterize">
+    <ShaderPostProcess name="Posterize" vsFile="vertex.fx" vsType="0" psFile="posterize.fx" psType="4" >
+      <PixelShaderConstant name="NumColors" value="8.0" />
+      <PixelShaderConstant name="Gamma" value="0.6" />
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="auxIn" />
+      <RenderTarget path="auxOut" />
+    </ShaderPostProcess>
+  </Effect>
+
+  <!-- EPPE_SHARPEN = 10 -->
+  <Effect id="10" name="Sharpen Edges">
+    <ShaderPostProcess name="Sharpen" vsFile="vertex.fx" vsType="0" psFile="sharpen.fx" psType="4" psUseBufferWidth="1" psUseBufferHeight="1" >
+      <UseBufferWidth/>
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="auxIn" />
+      <RenderTarget path="auxOut" />
+    </ShaderPostProcess>
+  </Effect>
+
+  <!-- EPPE_EMBOSSED = 11 -->
+  <Effect id="11" name="Embossed">
+    <ShaderPostProcess name="Embossed" vsFile="vertex.fx" vsType="0" psFile="embossed.fx" psType="4" psUseBufferWidth="1" psUseBufferHeight="1" >
+      <PixelShaderConstant name="Contrast" value="2.0" />
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="auxIn" />
+      <RenderTarget path="auxOut" />
+    </ShaderPostProcess>
+  </Effect>
+
+  <!-- EPPE_TILING = 12 -->
+  <Effect id="12" name="Tiling">
+    <ShaderPostProcess name="Tiling" vsFile="vertex.fx" vsType="0" psFile="tiling.fx" psType="4" >
+      <PixelShaderConstant name="NumTilesX" value="102.0" />
+      <PixelShaderConstant name="NumTilesY" value="96.0" />
+      <PixelShaderConstant name="Threshhold" value="0.1" />
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="auxIn" />
+      <RenderTarget path="auxOut" />
+    </ShaderPostProcess>
+  </Effect>
+
+  <!-- EPPE_DISPLACEMENT = 13 -->
+  <Effect id="13" name="Displacement">
+    <ShaderPostProcess name="Displacement" vsFile="vertex.fx" vsType="0" psFile="displacement.fx" psType="4" >
+      <PixelShaderConstant name="EffectStrength" value="0.05" />
+      <Texture index="0" textureClamp="4" />
+      <Texture index="1" path="../media/shaders/postprocess/textures/water.png" />
+      <RenderSource path="auxIn" />
+      <RenderTarget path="auxOut" />
+    </ShaderPostProcess>
+  </Effect>
+  
+  <!-- EPPE_SCRATCHED = 14 -->
+  <Effect id="14" name="Scratched">
+    <ShaderPostProcess name="Scratched" vsFile="vertex.fx" vsType="0" psFile="scratched.fx" psType="7" psUseElapsedTime="1" >
+      <PixelShaderConstant name="Speed1" value="0.03" />
+      <PixelShaderConstant name="Speed2" value="0.01" />
+      <PixelShaderConstant name="ScratchIntensity" value="0.65" />
+      <PixelShaderConstant name="IS" value="0.01" />
+      <Texture index="0" textureClamp="1" />
+      <Texture index="1" path="../media/shaders/postprocess/textures/noise2.png" />
+      <RenderSource path="auxIn" />
+      <RenderTarget path="auxOut" />
+    </ShaderPostProcess>
+  </Effect>
+
+  <!-- EPPE_PENCIL = 15 -->
+  <Effect id="15" name="Pencil Scetch">
+    <ShaderPostProcess name="Pencil Scetch" vsFile="vertex.fx" vsType="0" psFile="pencil.fx" psType="4" psUseElapsedTime="1">
+      <PixelShaderConstant name="Brightness" value="1.5" />
+      <PixelShaderConstant name="EffectStrength" value="15.0" />
+      <Texture index="0" textureClamp="1" />
+      <Texture index="1" path="../media/shaders/postprocess/textures/pencil.png" />
+      <RenderSource path="auxIn" />
+      <RenderTarget path="auxOut" />
+    </ShaderPostProcess>
+  </Effect>
+  
+  <!-- EPPE_BLUR = 16 -->
+  <Effect id="16" name="Gaussian Blur">
+    <ShaderPostProcess name="Downscale" vsFile="vertex.fx" vsType="1" psFile="screenquad.fx" psType="4" psEntry="downscale2x2"  psUseBufferWidth="1"  psUseBufferHeight="1">
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="auxIn" />
+      <RenderTarget path="blur0" />
+    </ShaderPostProcess>
+    <ShaderPostProcess name="Horizontal Blur" vsFile="vertex.fx" vsType="0" psFile="hblur.fx" psType="4" psUseBufferWidth="1" >
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="blur0" />
+      <RenderTarget path="blur1" />
+    </ShaderPostProcess>
+    <ShaderPostProcess name="Vertical Blur" vsFile="vertex.fx" vsType="0" psFile="vblur.fx" psType="4" psUseBufferHeight="1" >
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="blur1" />
+      <RenderTarget path="auxOut" />
+    </ShaderPostProcess>
+  </Effect>
+  
+  <!-- EPPE_WATER = 17 -->
+  <Effect id="17" name="Water">
+    <ShaderPostProcess name="Water" vsFile="vertex.fx" vsType="0" psFile="water.fx" psType="4" psUseElapsedTime="1" >
+      <PixelShaderConstant name="EffectStrength" value="0.05" />
+      <PixelShaderConstant name="Speed" value="0.05" />
+      <Texture index="0" textureClamp="4" />
+      <Texture index="1" path="../media/shaders/postprocess/textures/water.png" />
+      <RenderSource path="auxIn" />
+      <RenderTarget path="auxOut" />
+    </ShaderPostProcess>
+  </Effect>
+
+  <!-- EPPE_COLOR = 18 -->
+  <Effect id="18" name="Color">
+    <ShaderPostProcess name="Color" vsFile="vertex.fx" vsType="1" psFile="color.fx" psType="4" >
+      <PixelShaderConstant name="ColorR" value="0.7" />
+      <PixelShaderConstant name="ColorG" value="1.0" />
+      <PixelShaderConstant name="ColorB" value="2.0" />
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="auxIn" />
+      <RenderTarget path="auxOut" />
+    </ShaderPostProcess>
+  </Effect>
+
+  <!-- EPPE_PULSING = 19 -->
+  <Effect id="19" name="Pulsing">
+    <ShaderPostProcess name="Pulsing" vsFile="pulsing.fx" vsType="1" psFile="screenquad.fx" psType="4" vsUseElapsedTime="1" >
+      <VertexShaderConstant name="Speed" value="0.25" />
+      <VertexShaderConstant name="Speed2" value="2.2" />
+      <VertexShaderConstant name="Pulse" value="0.65" />
+      <VertexShaderConstant name="PulseE" value="1.5" />
+      <VertexShaderConstant name="CenterX" value="0.5" />
+      <VertexShaderConstant name="CenterY" value="0.5" />
+      <Texture index="0" textureClamp="0" />
+      <RenderSource path="auxIn" />
+      <RenderTarget path="auxOut" />
+    </ShaderPostProcess>
+  </Effect>
+
+  <!-- EPPE_SHAKE = 20 -->
+  <Effect id="20" name="Shaking">
+    <ShaderPostProcess name="Shake" vsFile="shake.fx" vsType="1" psFile="screenquad.fx" psType="4" vsUseRandom="1" >
+      <VertexShaderConstant name="Sharpness" value="2.2" />
+      <VertexShaderConstant name="Shake" value="0.1" />
+      <Texture index="0" textureClamp="4" />
+      <RenderSource path="auxIn" />
+      <RenderTarget path="auxOut" />
+    </ShaderPostProcess>
+  </Effect>
+
+  <!-- EPPE_DESTAURATE = 21 -->
+  <Effect id="21" name="Desaturation">
+    <ShaderPostProcess name="Desaturate" vsFile="vertex.fx" vsType="1" psFile="desaturate.fx" psType="4" >
+      <PixelShaderConstant name="Desaturation" value="0.5" />
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="auxIn" />
+      <RenderTarget path="auxOut" />
+    </ShaderPostProcess>
+  </Effect>
+
+  <!-- EPPE_RADIAL_BLUR = 21 -->
+  <Effect id="22" name="Radial Blur">
+    <ShaderPostProcess name="Radial Blur" vsFile="vertex.fx" vsType="1" psFile="radialblur.fx" psType="4" >
+      <PixelShaderConstant name="SampleDist" value="0.60" />
+      <PixelShaderConstant name="SampleStrength" value="1.5" />
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="auxIn" />
+      <RenderTarget path="auxOut" />
+    </ShaderPostProcess>
+  </Effect>
+  
+  <!-- EPPE_DEPTH_OF_FIELD = 23 -->
+  <Effect id="23" name="Depth of Field">
+    <!-- donwscale pass -->
+    <ShaderPostProcess name="Downscale" vsFile="vertex.fx" vsType="1" psFile="screenquad.fx" psType="4" psEntry="downscale2x2" psUseBufferWidth="1"  psUseBufferHeight="1">
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="auxIn" />
+      <RenderTarget path="blur0" />
+    </ShaderPostProcess>
+    
+    <!-- blur pass -->
+    <ShaderPostProcess name="Horizontal Blur" vsFile="vertex.fx" vsType="0" psFile="hblur.fx" psType="4" psUseBufferWidth="1" >
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="blur0" />
+      <RenderTarget path="blur1" />
+    </ShaderPostProcess>
+    <ShaderPostProcess name="Vertical Blur" vsFile="vertex.fx" vsType="0" psFile="vblur.fx" psType="4" psUseBufferHeight="1" >
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="blur1" />
+      <RenderTarget path="blur0" />
+    </ShaderPostProcess>
+
+    <!-- depth of field -->
+    <ShaderPostProcess name="Depth of Field" vsFile="vertex.fx" vsType="1" psFile="depthoffield.fx" psType="4" >
+      <Texture index="0" textureClamp="1" />
+      <Texture index="1" path="blur0" textureClamp="1" />
+      <Texture index="2" path="rttDepth" textureClamp="1" />    
+      <RenderSource path="auxIn" />
+      <RenderTarget path="auxOut" />
+    </ShaderPostProcess>
+  </Effect>
+
+  <!-- EPPE_VIGNETTE = 24 -->
+  <Effect id="24" name="Vignette">
+    <ShaderPostProcess name="Vignette" vsFile="vertex.fx" vsType="0" psFile="vignette.fx" psType="4" >
+      <PixelShaderConstant name="EdgeDarkness" value="1.0" />
+      <Texture index="0" textureClamp="1" />
+      <RenderSource path="auxIn" />
+      <RenderTarget path="auxOut" />
+    </ShaderPostProcess>
+  </Effect>
+
+</PostProcess>

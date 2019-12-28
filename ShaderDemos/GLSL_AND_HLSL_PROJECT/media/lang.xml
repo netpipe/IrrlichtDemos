@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IrrRPG_Builder_LanguageFile version="1.0">
+	<language name="en-us" description="English, United States" filename="english.lang">
+	</language>
+	<language name="pt-br" description="Português, Brasil" filename="portuges.lang">
+	</language>	
+	<language name="fr-ca" description="Français, Canada" filename="french.lang">
+	</language>
+	<language name="de-ge" description="Deutsch, Germany" filename="deutch.lang">
+	</language>
+	<language name="sp-sp" description="Spanish, spain" filename="espagnol.lang">
+	</language>
+	<language name="su-su" description="Suomi, Suomi" filename="suomi.lang">
+	</language>
+</IrrRPG_Builder_LanguageFile>

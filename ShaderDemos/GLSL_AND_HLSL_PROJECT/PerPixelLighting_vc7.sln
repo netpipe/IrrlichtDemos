@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11.PerPixelLighting_vc8", "PerPixelLighting_vc7.vcproj", "{C4B42409-542D-4EFC-9E6B-44713FD47A33}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{C4B42409-542D-4EFC-9E6B-44713FD47A33}.Debug.ActiveCfg = Debug|Win32
+		{C4B42409-542D-4EFC-9E6B-44713FD47A33}.Debug.Build.0 = Debug|Win32
+		{C4B42409-542D-4EFC-9E6B-44713FD47A33}.Release.ActiveCfg = Release|Win32
+		{C4B42409-542D-4EFC-9E6B-44713FD47A33}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
