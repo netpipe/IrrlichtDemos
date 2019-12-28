@@ -3,8 +3,9 @@
 // For conditions of distribution and use, see copyright notice in irrlicht.h
 //
 // created by Dean Wadsworth aka Varmint Jan 12th 2008
-#include "COpenGLDriver.h"
-#include "COpenGLTexture.h"
+#include <COpenGLDriver.h>
+
+#include <COpenGLTexture.h>
 
 
 #include "CMotionTrailSceneNode.h"
