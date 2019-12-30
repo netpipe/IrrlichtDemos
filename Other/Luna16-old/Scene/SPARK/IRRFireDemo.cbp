@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="IRRFireDemo" />
+		<Option pch_mode="0" />
+		<Option default_target="Linux" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Win32">
+				<Option output="../../../../CoreEngine16/IRRFireDemo" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="../../../../CoreEngine16" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+			<Target title="Linux">
+				<Option output="../../../../CoreEngine16/IRRFireDemo" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="../../../../CoreEngine16" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="Win32;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="/home/Dev/libs/game/irrlicht/irrlicht-1.6/include" />
+			<Add directory="./include" />
+			<Add directory="/home/Dev/libs/gui/freetype-2.3.9/include" />
+			<Add directory="./" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="GL" />
+			<Add library="glut" />
+			<Add library="SDL" />
+			<Add library="GLU" />
+			<Add library="ftgl" />
+			<Add library="freetype" />
+			<Add directory="/home/Dev/libs/game/irrlicht/irrlicht-1.6/lib/Linux" />
+			<Add directory="/home/Dev/libs/gui/freetype-2.3.9/objs/.libs" />
+		</Linker>
+		<Unit filename="IRRFireDemo.cpp" />
+		<Unit filename="SPK_All.cpp" />
+		<Unit filename="SPK_GL_All.cpp" />
+		<Unit filename="SPK_IRR_ALL.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -28,6 +28,7 @@
 					<Add directory="../../../emscripten-projects/irrlicht-ogl-es-2019dec/include" />
 					<Add directory="../../../emscripten-projects/scripting/EmCPython/Python-2.7/Include" />
 					<Add directory="../../../emscripten-projects/scripting/EmCPython/Python-2.7/" />
+					<Add directory="../../../emscripten-projects/compression/libtar/build/include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s FULL_ES2=1" />
@@ -46,6 +47,7 @@
 					<Add library="tar" />
 					<Add directory="../../../emscripten-projects/irrlicht-ogl-es-2019dec/lib/Linux" />
 					<Add directory="../../../emscripten-projects/scripting/EmCPython/Python-2.7/" />
+					<Add directory="../../../emscripten-projects/compression/libtar/lib/.libs" />
 				</Linker>
 			</Target>
 		</Build>

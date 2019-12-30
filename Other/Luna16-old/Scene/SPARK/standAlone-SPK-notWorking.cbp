@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="IRRFireDemo" />
+		<Option pch_mode="0" />
+		<Option default_target="Linux" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Win32">
+				<Option output="IRRFireDemo" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="../SparkPortable" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+			<Target title="Linux">
+				<Option output="IRRFireDemo" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="../SparkPortable" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="Win32;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="/home/Dev/libs/game/irrlicht/irrlicht-1.6/include" />
+			<Add directory="./include" />
+			<Add directory="/home/Dev/libs/gui/freetype-2.3.9/include" />
+			<Add directory="./" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="GL" />
+			<Add library="glut" />
+			<Add library="SDL" />
+			<Add library="GLU" />
+			<Add library="ftgl" />
+			<Add library="freetype" />
+			<Add directory="/home/Dev/libs/game/irrlicht/irrlicht-1.6/lib/Linux" />
+			<Add directory="/home/Dev/libs/gui/freetype-2.3.9/objs/.libs" />
+		</Linker>
+		<Unit filename="Core/SPK_BufferHandler.cpp" />
+		<Unit filename="Core/SPK_DEF.cpp" />
+		<Unit filename="Core/SPK_Emitter.cpp" />
+		<Unit filename="Core/SPK_Factory.cpp" />
+		<Unit filename="Core/SPK_Group.cpp" />
+		<Unit filename="Core/SPK_Interpolator.cpp" />
+		<Unit filename="Core/SPK_Model.cpp" />
+		<Unit filename="Core/SPK_Modifier.cpp" />
+		<Unit filename="Core/SPK_Particle.cpp" />
+		<Unit filename="Core/SPK_Registerable.cpp" />
+		<Unit filename="Core/SPK_Renderer.cpp" />
+		<Unit filename="Core/SPK_System.cpp" />
+		<Unit filename="Core/SPK_Transformable.cpp" />
+		<Unit filename="Core/SPK_Vector3D.cpp" />
+		<Unit filename="Core/SPK_Zone.cpp" />
+		<Unit filename="Extensions/Emitters/SPK_NormalEmitter.cpp" />
+		<Unit filename="Extensions/Emitters/SPK_RandomEmitter.cpp" />
+		<Unit filename="Extensions/Emitters/SPK_SphericEmitter.cpp" />
+		<Unit filename="Extensions/Emitters/SPK_StraightEmitter.cpp" />
+		<Unit filename="Extensions/Modifiers/SPK_Collision.cpp" />
+		<Unit filename="Extensions/Modifiers/SPK_Destroyer.cpp" />
+		<Unit filename="Extensions/Modifiers/SPK_LinearForce.cpp" />
+		<Unit filename="Extensions/Modifiers/SPK_ModifierGroup.cpp" />
+		<Unit filename="Extensions/Modifiers/SPK_Obstacle.cpp" />
+		<Unit filename="Extensions/Modifiers/SPK_PointMass.cpp" />
+		<Unit filename="Extensions/Modifiers/SPK_Vortex.cpp" />
+		<Unit filename="Extensions/Renderers/SPK_Oriented3DRendererInterface.cpp" />
+		<Unit filename="Extensions/Renderers/SPK_QuadRendererInterface.cpp" />
+		<Unit filename="Extensions/Zones/SPK_AABox.cpp" />
+		<Unit filename="Extensions/Zones/SPK_Line.cpp" />
+		<Unit filename="Extensions/Zones/SPK_Plane.cpp" />
+		<Unit filename="Extensions/Zones/SPK_Point.cpp" />
+		<Unit filename="Extensions/Zones/SPK_Ring.cpp" />
+		<Unit filename="Extensions/Zones/SPK_Sphere.cpp" />
+		<Unit filename="FountainDemo.cpp" />
+		<Unit filename="RenderingAPIs/Irrlicht/SPK_IRRBuffer.cpp" />
+		<Unit filename="RenderingAPIs/Irrlicht/SPK_IRRLineRenderer.cpp" />
+		<Unit filename="RenderingAPIs/Irrlicht/SPK_IRRPointRenderer.cpp" />
+		<Unit filename="RenderingAPIs/Irrlicht/SPK_IRRQuadRenderer.cpp" />
+		<Unit filename="RenderingAPIs/Irrlicht/SPK_IRRRenderer.cpp" />
+		<Unit filename="RenderingAPIs/Irrlicht/SPK_IRRSystem.cpp" />
+		<Unit filename="RenderingAPIs/OpenGL/SPK_GLExtHandler.cpp" />
+		<Unit filename="RenderingAPIs/OpenGL/SPK_GLLineRenderer.cpp" />
+		<Unit filename="RenderingAPIs/OpenGL/SPK_GLLineTrailRenderer.cpp" />
+		<Unit filename="RenderingAPIs/OpenGL/SPK_GLPointRenderer.cpp" />
+		<Unit filename="RenderingAPIs/OpenGL/SPK_GLQuadRenderer.cpp" />
+		<Unit filename="RenderingAPIs/OpenGL/SPK_GLRenderer.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,39 @@
+Changelog for Klasker's Procedural Trees.
+-----------------------------------------
+
+Major versions increase when everything is rewritten from scratch.
+Minor versions increase when new features are added.
+A character is appended for bug fixes and minor changes to the demo.
+
+-----------------------------------------
+
+Version 2.1c
+    * Compatible with Irrlicht 1.4.
+
+Version 2.1b
+    * Compatible with Irrlicht 1.3.
+    * Now uses swscanf instead of wcstof to convert strings to float, so msvc should compile it now.
+    * The demo now renders leaves using a shader, so vertex colors are respected in OpenGL.
+
+Version 2.1a
+    * Fixed a bug that would prevent leaves from rotating when they were far away from the camera.
+
+
+Version 2.1
+    * Optimized the leaf billboards. Great performance boost in forests.
+    * Refactored the code to allow many trees to share the same set of leaves. Previously only the mesh could be shared.
+    * Fixed a bug that would hide the leaves near the transition to the billboard LOD.
+
+
+Version 2.0
+    * Loads tree designs from XML files.
+    * Four tree designs included: Oak, Pine, Aspen and Willow.
+    * Leaves are now billboards. Looks a lot better.
+    * Leaves can have variable vertex colors (defined in the XML file). Very effective.
+    * Shadows can be emulated by darkening those leaves on the side of the tree facing away from the light source.
+    * The automatic LOD has been revamped. The old method was not very good. Trees now have three levels of detail:
+      1. Full detail
+      2. Low detail: Radial segments reduced to 4, highest branches are cut.
+      3. Billboard: Tree becomes a billboard.
+    * Trees can be scaled and rotated without breaking (mostly the billboard leaves were problematic here). This is useful for water reflections.
+    * Note that wind is no longer supported. I will work on this.

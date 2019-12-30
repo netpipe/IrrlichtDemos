@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Luna Engine 1.6" />
+		<Option makefile="makefile" />
+		<Option pch_mode="0" />
+		<Option default_target="Linux Debug" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Linux Debug">
+				<Option output="../Luna" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="../" />
+				<Option object_output=".dobjs" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Compiler>
+					<Add directory="../../libs/ffmpeg/libavcodec" />
+					<Add directory="../../libs/ffmpeg/libavformat" />
+					<Add directory="../../libs/ffmpeg" />
+					<Add directory="../../libs/ffmpeg/libswscale" />
+					<Add directory="../../libs/ffmpeg/libavutil" />
+					<Add directory="../../libs/ffmpeg/libavdevice" />
+					<Add directory="../../libs/net/irrNetLite21" />
+					<Add directory="../../libs/net/enet/include" />
+					<Add directory="../../libs/bullet-2.75/src" />
+					<Add directory="../../libs/freetype-2.3.9/include" />
+					<Add directory="../../libs/net/enet-1.2.1" />
+					<Add directory="FileSystem/readblend" />
+					<Add directory="../../libs/cAudio2/include" />
+					<Add directory="../../libs/libtheora-1.1.1/include/theora" />
+					<Add directory="/home/Dev/libs/Media/libtheoraplayer/include" />
+					<Add directory="/usr/include/AL" />
+				</Compiler>
+				<Linker>
+					<Add library="GL" />
+					<Add library="cAudio" />
+					<Add library="openal" />
+					<Add library="Xxf86vm" />
+					<Add library="bz2" />
+					<Add library="avutil" />
+					<Add library="irrNetLite21" />
+					<Add library="pthread" />
+					<Add library="theora" />
+					<Add library="theoraplayer" />
+					<Add library="X11" />
+					<Add library="enet" />
+					<Add library="irrnet" />
+					<Add directory="/home/Dev/libs/scripting/Python-2.6.2/Lib" />
+					<Add directory="../../libs/ffmpeg/libavcodec" />
+					<Add directory="../../libs/ffmpeg/libavformat" />
+					<Add directory="../../libs/ffmpeg/libswscale" />
+					<Add directory="../../libs/ffmpeg/libavutil" />
+					<Add directory="../../libs/ffmpeg/libavdevice" />
+					<Add directory="../../libs/freetype-2.3.9/objs/.libs" />
+					<Add directory="../../libs/net/enet-1.2.1" />
+					<Add directory="../../libs/net/irrNetLite21" />
+					<Add directory="../../libs/bullet-2.75/src/BulletDynamics" />
+					<Add directory="../../libs/bullet-2.75/src/BulletSoftBody" />
+					<Add directory="../../libs/bullet-2.75/src/BulletCollision" />
+					<Add directory="../../libs/bullet-2.75/src/LinearMath" />
+					<Add directory="../../libs/cAudio2/bin/gcc" />
+					<Add directory="../../libs/Compiled/Linux" />
+					<Add directory="/home/Dev/libs/Media/libtheoraplayer/bin/.libs" />
+				</Linker>
+			</Target>
+			<Target title="Linux Release">
+				<Option output="../dLuna" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="../" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Option projectResourceIncludeDirsRelation="0" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DNDEBUG" />
+					<Add directory="/home/Dev/libs/scripting/Python-2.6.2/" />
+					<Add directory="/home/Dev/libs/scripting/Python-2.6.2/Include" />
+					<Add directory="../../libs/ffmpeg/libavcodec" />
+					<Add directory="../../libs/ffmpeg/libavformat" />
+					<Add directory="../../libs/ffmpeg" />
+					<Add directory="../../libs/ffmpeg/libswscale" />
+					<Add directory="../../libs/ffmpeg/libavutil" />
+					<Add directory="../../libs/ffmpeg/libavdevice" />
+					<Add directory="../../libs/net/irrNetLite21" />
+					<Add directory="../../libs/net/enet/include" />
+					<Add directory="../../libs/bullet-2.75/src" />
+					<Add directory="../../libs/freetype-2.3.9/include" />
+					<Add directory="../../libs/net/enet-1.2.1" />
+					<Add directory="FileSystem/readblend" />
+					<Add directory="../../libs/cAudio2/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="openal" />
+					<Add library="Xxf86vm" />
+					<Add library="GL" />
+					<Add library="swscale" />
+					<Add library="bz2" />
+					<Add library="boost_thread" />
+					<Add library="python2.6" />
+					<Add library="irrNetLite21" />
+					<Add library="pthread" />
+					<Add library="cAudio" />
+					<Add directory="/home/Dev/libs/scripting/Python-2.6.2/Lib" />
+					<Add directory="../../libs/ffmpeg/libavcodec" />
+					<Add directory="../../libs/ffmpeg/libavformat" />
+					<Add directory="../../libs/ffmpeg/libswscale" />
+					<Add directory="../../libs/ffmpeg/libavutil" />
+					<Add directory="../../libs/ffmpeg/libavdevice" />
+					<Add directory="../../libs/freetype-2.3.9/objs/.libs" />
+					<Add directory="../../libs/net/enet-1.2.1" />
+					<Add directory="../../libs/net/irrNetLite21" />
+					<Add directory="../../libs/bullet-2.75/src/BulletDynamics" />
+					<Add directory="../../libs/bullet-2.75/src/BulletSoftBody" />
+					<Add directory="../../libs/bullet-2.75/src/BulletCollision" />
+					<Add directory="../../libs/bullet-2.75/src/LinearMath" />
+					<Add directory="../../libs/cAudio2/bin/gcc" />
+					<Add directory="../../libs/Compiled/Linux" />
+				</Linker>
+			</Target>
+			<Target title="WinDebug">
+				<Option output="../Luna_win.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="../" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Option projectIncludeDirsRelation="1" />
+				<Option projectResourceIncludeDirsRelation="0" />
+				<Option projectLibDirsRelation="1" />
+				<Compiler>
+					<Add directory="../../libs/pthreads-w32-2-8-0-release" />
+					<Add directory="../../libs/bullet-2.75/src" />
+					<Add directory="../../Libs/libogg-1.1.4/include" />
+					<Add directory="../../libs/libvorbis-1.2.3/include" />
+					<Add directory="../../Libs/freetype-2.3.9/include" />
+					<Add directory="C:/Program Files/OpenAL 1.1 SDK" />
+					<Add directory="../../Libs/net/enet-1.2.1/include" />
+					<Add directory="../../Libs/net/irrNetLite21" />
+					<Add directory="../../Libs/ffmpeg-0.5/libavcodec" />
+					<Add directory="../../Libs/ffmpeg-0.5/libavdevice" />
+					<Add directory="../../Libs/ffmpeg-0.5/" />
+					<Add directory="../../Libs/ffmpeg-0.5/libavformat" />
+					<Add directory="../../Libs/ffmpeg-0.5/libswscale" />
+					<Add directory="C:/Program Files/Python2.6/include" />
+					<Add directory="../../libs/cAudio2/include" />
+					<Add directory="../../libs/net/syncsys/include" />
+					<Add directory="../../libs/angelscript/include" />
+					<Add directory="../../libs/angelscript" />
+					<Add directory="../../libs/SparkEngine/include" />
+				</Compiler>
+				<Linker>
+					<Add library="OpenAL32" />
+					<Add library="WSock32" />
+					<Add library="Winmm" />
+					<Add library="python26" />
+					<Add library="pthreads" />
+					<Add library="cAudio" />
+					<Add directory="../../libs/bullet-2.75/out/release71/libs" />
+					<Add directory="../../libs/irrlicht-1.6/lib/Win32-gcc" />
+					<Add directory="C:/Program Files/OpenAL 1.1 SDK/libs/Win32" />
+					<Add directory="../../Libs/libogg-1.1.4/" />
+					<Add directory="../../Libs/libvorbis-1.2.3/" />
+					<Add directory="../../Libs/freetype-2.3.9" />
+					<Add directory="../../Libs/pthreads-w32-2-8-0-release" />
+					<Add directory="../../Libs/net/irrNetLite21" />
+					<Add directory="../../Libs/net/enet-1.2.1" />
+					<Add directory="C:/Program Files/Python2.6/libs" />
+					<Add directory="C:/Dev/Agnostic/Libs/bullet/out/release8/libs" />
+					<Add directory="../../Libs/net/enet-1.2/bin/Debug" />
+					<Add directory="../../libs/cAudio2/bin/win32-gcc" />
+					<Add directory="../../libs/angelscript" />
+					<Add directory="../../libs/zlib-1.2.3" />
+					<Add directory="../../libs/SparkEngine/lib/mingw/static" />
+				</Linker>
+			</Target>
+			<Target title="WinRelease">
+				<Option output="../Azadi.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="../" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Option projectResourceIncludeDirsRelation="0" />
+				<Compiler>
+					<Add option="-march=pentium3" />
+					<Add option="-O2" />
+					<Add option="-DNDEBUG" />
+					<Add directory="../../libs/pthreads-w32-2-8-0-release" />
+					<Add directory="../../libs/bullet/src" />
+					<Add directory="../../Libs/libogg-1.1.4/include" />
+					<Add directory="../../libs/libvorbis-1.2.3/include" />
+					<Add directory="../../Libs/freetype-2.3.9/include" />
+					<Add directory="C:/Program Files/OpenAL 1.1 SDK" />
+					<Add directory="../../Libs/net/enet-1.2.1/include" />
+					<Add directory="../../Libs/net/irrNetLite21" />
+					<Add directory="../../Libs/ffmpeg-0.5/libavcodec" />
+					<Add directory="../../Libs/ffmpeg-0.5/libavdevice" />
+					<Add directory="../../Libs/ffmpeg-0.5/" />
+					<Add directory="../../Libs/ffmpeg-0.5/libavformat" />
+					<Add directory="../../Libs/ffmpeg-0.5/libswscale" />
+					<Add directory="C:/Program Files/Python2.6/include" />
+					<Add directory="../../libs/cAudio2/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="OpenAL32" />
+					<Add library="WSock32" />
+					<Add library="Winmm" />
+					<Add library="python26" />
+					<Add library="irrnet" />
+					<Add library="pthreads" />
+					<Add library="cAudio" />
+					<Add directory="../../Libs/bullet/out/release8/libs" />
+					<Add directory="C:/Program Files/OpenAL 1.1 SDK/libs/Win32" />
+					<Add directory="../../Libs/libogg-1.1.4/" />
+					<Add directory="../../Libs/libvorbis-1.2.3/" />
+					<Add directory="../../Libs/freetype-2.3.9" />
+					<Add directory="../../Libs/pthreads-w32-2-8-0-release" />
+					<Add directory="../../Libs/net/irrNetLite21" />
+					<Add directory="../../Libs/net/enet-1.2.1/bin/Release" />
+					<Add directory="C:/Program Files/Python2.6/libs" />
+					<Add directory="C:/Dev/Agnostic/Libs/bullet/out/release8/libs" />
+					<Add directory="../../Libs/net/enet-1.2/bin/Debug" />
+				</Linker>
+			</Target>
+			<Target title="mineDBG">
+				<Option output="../Luna" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="../" />
+				<Option object_output=".dobjs" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Compiler>
+					<Add directory="../../libs/ffmpeg/libavcodec" />
+					<Add directory="../../libs/ffmpeg/libavformat" />
+					<Add directory="../../libs/ffmpeg" />
+					<Add directory="../../libs/ffmpeg/libswscale" />
+					<Add directory="../../libs/ffmpeg/libavutil" />
+					<Add directory="../../libs/ffmpeg/libavdevice" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/source/Irrlicht" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+					<Add directory="../../libs/net/irrNetLite21" />
+					<Add directory="../../libs/net/enet/include" />
+					<Add directory="../../libs/bullet-2.75/src" />
+					<Add directory="../../libs/freetype-2.3.9/include" />
+					<Add directory="../../libs/net/enet-1.2.1" />
+					<Add directory="FileSystem/readblend" />
+					<Add directory="../../libs/cAudio2/include" />
+					<Add directory="../../libs/libtheora-1.1.1/include/theora" />
+					<Add directory="/home/Dev/libs/Media/libtheoraplayer/include" />
+					<Add directory="/usr/include/AL" />
+					<Add directory="../../../libs/Media/cAudio/cAudio-2.1.0/cAudio/include" />
+				</Compiler>
+				<Linker>
+					<Add library="GL" />
+					<Add library="openal" />
+					<Add library="Xxf86vm" />
+					<Add library="avutil" />
+					<Add library="pthread" />
+					<Add library="theora" />
+					<Add library="theoraplayer" />
+					<Add library="Xcursor" />
+					<Add library="cAudio" />
+					<Add library="X11" />
+					<Add library="dl" />
+					<Add library="irrnet" />
+					<Add library="enet" />
+					<Add directory="/home/Dev/libs/scripting/Python-2.6.2/Lib" />
+					<Add directory="../../libs/ffmpeg/libavcodec" />
+					<Add directory="../../libs/ffmpeg/libavformat" />
+					<Add directory="../../libs/ffmpeg/libswscale" />
+					<Add directory="../../libs/ffmpeg/libavutil" />
+					<Add directory="../../libs/ffmpeg/libavdevice" />
+					<Add directory="../../libs/freetype-2.3.9/objs/.libs" />
+					<Add directory="../../libs/net/enet-1.2.1" />
+					<Add directory="../../libs/bullet-2.75/src/BulletDynamics" />
+					<Add directory="../../libs/bullet-2.75/src/BulletSoftBody" />
+					<Add directory="../../libs/bullet-2.75/src/BulletCollision" />
+					<Add directory="../../libs/bullet-2.75/src/LinearMath" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+					<Add directory="../../libs/Compiled/Linux" />
+					<Add directory="/home/Dev/libs/Media/libtheoraplayer/bin/.libs" />
+					<Add directory="../../libs/cAudio2/bin/gcc" />
+					<Add directory="../../libs/net/irrNetLite21" />
+				</Linker>
+			</Target>
+			<Target title="mineREL">
+				<Option output="../dLuna" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="../" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Compiler>
+					<Add option="-DNDEBUG" />
+					<Add directory="../../libs/ffmpeg/libavcodec" />
+					<Add directory="../../libs/ffmpeg/libavformat" />
+					<Add directory="../../libs/ffmpeg" />
+					<Add directory="../../libs/ffmpeg/libswscale" />
+					<Add directory="../../libs/ffmpeg/libavutil" />
+					<Add directory="../../libs/ffmpeg/libavdevice" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/source/Irrlicht" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+					<Add directory="../../libs/net/irrNetLite21" />
+					<Add directory="../../libs/net/enet/include" />
+					<Add directory="../../libs/bullet-2.75/src" />
+					<Add directory="../../libs/freetype-2.3.9/include" />
+					<Add directory="../../libs/net/enet-1.2.1" />
+					<Add directory="FileSystem/readblend" />
+					<Add directory="../../libs/cAudio2/include" />
+					<Add directory="../../libs/libtheora-1.1.1/include/theora" />
+					<Add directory="/home/Dev/libs/Media/libtheoraplayer/include" />
+					<Add directory="/usr/include/AL" />
+				</Compiler>
+				<Linker>
+					<Add library="GL" />
+					<Add library="openal" />
+					<Add library="Xxf86vm" />
+					<Add library="bz2" />
+					<Add library="avutil" />
+					<Add library="pthread" />
+					<Add library="theora" />
+					<Add library="theoraplayer" />
+					<Add library="Xcursor" />
+					<Add library="cAudio" />
+					<Add library="X11" />
+					<Add library="irrnet" />
+					<Add library="enet" />
+					<Add directory="/home/Dev/libs/scripting/Python-2.6.2/Lib" />
+					<Add directory="../../libs/ffmpeg/libavcodec" />
+					<Add directory="../../libs/ffmpeg/libavformat" />
+					<Add directory="../../libs/ffmpeg/libswscale" />
+					<Add directory="../../libs/ffmpeg/libavutil" />
+					<Add directory="../../libs/ffmpeg/libavdevice" />
+					<Add directory="../../libs/freetype-2.3.9/objs/.libs" />
+					<Add directory="../../libs/net/enet-1.2.1" />
+					<Add directory="../../libs/bullet-2.75/src/BulletDynamics" />
+					<Add directory="../../libs/bullet-2.75/src/BulletSoftBody" />
+					<Add directory="../../libs/bullet-2.75/src/BulletCollision" />
+					<Add directory="../../libs/bullet-2.75/src/LinearMath" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+					<Add directory="../../libs/Compiled/Linux" />
+					<Add directory="/home/Dev/libs/Media/libtheoraplayer/bin/.libs" />
+					<Add directory="../../libs/cAudio2/bin/gcc" />
+					<Add directory="../../libs/net/irrNetLite21" />
+				</Linker>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="Linux Debug;Linux Release;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-DPARTICLES" />
+			<Add directory="Scene/SPARK" />
+			<Add directory="../../libs/angelscript/include" />
+			<Add directory="../../libs/angelscript/" />
+		</Compiler>
+		<Linker>
+			<Add library="angelscript" />
+			<Add library="Irrlicht" />
+			<Add library="vorbisfile" />
+			<Add library="vorbis" />
+			<Add library="ogg" />
+			<Add library="BulletSoftBody" />
+			<Add library="BulletDynamics" />
+			<Add library="BulletCollision" />
+			<Add library="LinearMath" />
+			<Add library="freetype" />
+			<Add library="enet" />
+			<Add library="zlib" />
+			<Add directory="../../libs/angelscript" />
+		</Linker>
+		<Unit filename="DevLoop.h" />
+		<Unit filename="Equipment/Rifle.cpp" />
+		<Unit filename="Equipment/Rifle.h" />
+		<Unit filename="Equipment/firstPersonWeapon.cpp" />
+		<Unit filename="Equipment/firstPersonWeapon.h" />
+		<Unit filename="Events/Events.cpp" />
+		<Unit filename="Events/Events.h" />
+		<Unit filename="Events/InGameEventReceiver.cpp" />
+		<Unit filename="Events/InGameEventReceiver.h" />
+		<Unit filename="FileSystem/BulletBlendReader.cpp" />
+		<Unit filename="FileSystem/BulletBlendReader.h" />
+		<Unit filename="FileSystem/BulletBlendReaderNew.cpp" />
+		<Unit filename="FileSystem/BulletBlendReaderNew.h" />
+		<Unit filename="FileSystem/BulletIrrlichtUtils.cpp" />
+		<Unit filename="FileSystem/BulletIrrlichtUtils.h" />
+		<Unit filename="FileSystem/Compress/Compress.cpp" />
+		<Unit filename="FileSystem/Compress/Compress.h" />
+		<Unit filename="FileSystem/IrrBlend.cpp" />
+		<Unit filename="FileSystem/IrrBlend.h" />
+		<Unit filename="FileSystem/IrrBlendNew.cpp" />
+		<Unit filename="FileSystem/IrrBlendNew.h" />
+		<Unit filename="FileSystem/bBlenderFile.cpp" />
+		<Unit filename="FileSystem/bBlenderFile.h" />
+		<Unit filename="FileSystem/bChunk.cpp" />
+		<Unit filename="FileSystem/bChunk.h" />
+		<Unit filename="FileSystem/bCommon.h" />
+		<Unit filename="FileSystem/bDNA.cpp" />
+		<Unit filename="FileSystem/bDNA.h" />
+		<Unit filename="FileSystem/bDefines.h" />
+		<Unit filename="FileSystem/bFile.cpp" />
+		<Unit filename="FileSystem/bFile.h" />
+		<Unit filename="FileSystem/bLog.cpp" />
+		<Unit filename="FileSystem/bLog.h" />
+		<Unit filename="FileSystem/bMain.cpp" />
+		<Unit filename="FileSystem/bMain.h" />
+		<Unit filename="FileSystem/blenderUp.h" />
+		<Unit filename="FileSystem/blendtype.h" />
+		<Unit filename="FileSystem/dna249-64bit.cpp" />
+		<Unit filename="FileSystem/dna249.cpp" />
+		<Unit filename="FileSystem/readblend.h" />
+		<Unit filename="GUI/CHUD.h" />
+		<Unit filename="GUI/CodeEditor/CGUIEditBoxIRB.cpp" />
+		<Unit filename="GUI/CodeEditor/CGUIEditBoxIRB.h" />
+		<Unit filename="GUI/Font/CGUITTFont.cpp" />
+		<Unit filename="GUI/Font/CGUITTFont.h" />
+		<Unit filename="GUI/Video/CAudioInterface_OpenAL.cpp" />
+		<Unit filename="GUI/Video/CAudioInterface_OpenAL.h" />
+		<Unit filename="GUI/Video/CVideoMaster.cpp" />
+		<Unit filename="GUI/Video/CVideoMaster.h" />
+		<Unit filename="GUI/cImage2D.h" />
+		<Unit filename="GUI/compass/Compass.cpp" />
+		<Unit filename="GUI/compass/Compass.h" />
+		<Unit filename="Luna.cpp" />
+		<Unit filename="Luna.h" />
+		<Unit filename="LunaLobby.cpp" />
+		<Unit filename="Main.cpp" />
+		<Unit filename="MainLoop.h" />
+		<Unit filename="Net/CGUIChatBox.cpp" />
+		<Unit filename="Net/CGUIChatBox.h" />
+		<Unit filename="Net/IRRc/Application.cpp" />
+		<Unit filename="Net/IRRc/Application.h" />
+		<Unit filename="Net/IRRc/Socket.cpp" />
+		<Unit filename="Net/IRRc/Socket.h" />
+		<Unit filename="Net/IRRc/botFuncts.h" />
+		<Unit filename="Net/IRRc/gui/Gui.h" />
+		<Unit filename="Net/irrNetClient.cpp" />
+		<Unit filename="Net/irrNetClient.h" />
+		<Unit filename="Net/irrNetServer.cpp" />
+		<Unit filename="Net/irrNetServer.h" />
+		<Unit filename="Net/syncsys/NetworkBuffer.h" />
+		<Unit filename="Net/syncsys/Portable.h" />
+		<Unit filename="Net/syncsys/SecureList.h" />
+		<Unit filename="Net/syncsys/SecureMap.h" />
+		<Unit filename="Net/syncsys/SecureVector.h" />
+		<Unit filename="Net/syncsys/SyncSystem.cpp" />
+		<Unit filename="Net/syncsys/SyncSystem.h" />
+		<Unit filename="Net/syncsys/Sync_Network.h" />
+		<Unit filename="Net/syncsys/ThreadedObject.cpp" />
+		<Unit filename="Net/syncsys/ThreadedObject.h" />
+		<Unit filename="Net/syncsys/network.cpp" />
+		<Unit filename="Net/syncsys/network.h" />
+		<Unit filename="Physics/Collision.cpp" />
+		<Unit filename="Physics/Collision.hpp" />
+		<Unit filename="Physics/Physics.cpp" />
+		<Unit filename="Physics/Physics.h" />
+		<Unit filename="Physics/Ragdoll.cpp" />
+		<Unit filename="Physics/Ragdoll.h" />
+		<Unit filename="Physics/SoftBody.cpp" />
+		<Unit filename="Physics/Vehicle.cpp" />
+		<Unit filename="Physics/Vehicle.h" />
+		<Unit filename="Physics/missile.cpp" />
+		<Unit filename="Scene/ATMOsphere.cpp" />
+		<Unit filename="Scene/BoltSceneNode.cpp" />
+		<Unit filename="Scene/BoltSceneNode.h" />
+		<Unit filename="Scene/CBeamSceneNode.cpp" />
+		<Unit filename="Scene/CBeamSceneNode.h" />
+		<Unit filename="Scene/Elevator.cpp" />
+		<Unit filename="Scene/Elevator.hpp" />
+		<Unit filename="Scene/Flag/CFlagSceneNode.cpp" />
+		<Unit filename="Scene/Flag/CFlagSceneNode.h" />
+		<Unit filename="Scene/Flag/CWindGen.h" />
+		<Unit filename="Scene/Flag/FlagManager.h" />
+		<Unit filename="Scene/Flag/SimpleFlag.h" />
+		<Unit filename="Scene/Flag/perlin.h" />
+		<Unit filename="Scene/Obstacle.cpp" />
+		<Unit filename="Scene/Obstacle.hpp" />
+		<Unit filename="Scene/PostProcessing/CEffectPostProc.cpp" />
+		<Unit filename="Scene/PostProcessing/CEffectPostProc.h" />
+		<Unit filename="Scene/PostProcessing/CLensFlarePostProc.cpp" />
+		<Unit filename="Scene/PostProcessing/CLensFlarePostProc.h" />
+		<Unit filename="Scene/PostProcessing/CRendererPostProc.cpp" />
+		<Unit filename="Scene/PostProcessing/CRendererPostProc.h" />
+		<Unit filename="Scene/PostProcessing/CShaderCallbacks.h" />
+		<Unit filename="Scene/PostProcessing/CSplitPostProc.cpp" />
+		<Unit filename="Scene/PostProcessing/CSplitPostProc.h" />
+		<Unit filename="Scene/PostProcessing/CTransitionPostProc.cpp" />
+		<Unit filename="Scene/PostProcessing/CTransitionPostProc.h" />
+		<Unit filename="Scene/PostProcessing/CWaterPostProc.cpp" />
+		<Unit filename="Scene/PostProcessing/CWaterPostProc.h" />
+		<Unit filename="Scene/PostProcessing/IPostProc.cpp" />
+		<Unit filename="Scene/PostProcessing/IPostProc.h" />
+		<Unit filename="Scene/PostProcessing/main.cpp" />
+		<Unit filename="Scene/PostProcessing/shaders.h" />
+		<Unit filename="Scene/RealisticWater.cpp" />
+		<Unit filename="Scene/RealisticWater.h" />
+		<Unit filename="Scene/RibbonTrailSceneNode/RibbonTrailSceneNode.cpp" />
+		<Unit filename="Scene/RibbonTrailSceneNode/RibbonTrailSceneNode.h" />
+		<Unit filename="Scene/SPARK/SPK.h" />
+		<Unit filename="Scene/SPARK/SPK_All.cpp" />
+		<Unit filename="Scene/SPARK/SPK_IRR.h" />
+		<Unit filename="Scene/SPARK/SPK_IRR_ALL.cpp" />
+		<Unit filename="Scene/Scene.cpp" />
+		<Unit filename="Scene/Scene.h" />
+		<Unit filename="Scene/ShaderFactory.cpp" />
+		<Unit filename="Scene/ShaderFactory.h" />
+		<Unit filename="Scene/boids/BoidSceneNode.cpp" />
+		<Unit filename="Scene/boids/BoidSceneNode.h" />
+		<Unit filename="Scene/boids/Flock.cpp" />
+		<Unit filename="Scene/boids/Flock.h" />
+		<Unit filename="Scene/decalManager/CBatchingMesh.cpp" />
+		<Unit filename="Scene/decalManager/CBatchingMesh.h" />
+		<Unit filename="Scene/decalManager/DecalManager.cpp" />
+		<Unit filename="Scene/decalManager/DecalManager.h" />
+		<Unit filename="Scene/decalManager/DecalSceneNode.cpp" />
+		<Unit filename="Scene/decalManager/DecalSceneNode.h" />
+		<Unit filename="Scene/decals/decalscenenode.cpp" />
+		<Unit filename="Scene/decals/decalscenenode.h" />
+		<Unit filename="Scene/extras.h" />
+		<Unit filename="Scene/flares/CLensFlareSceneNode.cpp" />
+		<Unit filename="Scene/flares/CLensFlareSceneNode.h" />
+		<Unit filename="Scene/flares/ILensFlareSceneNode.h" />
+		<Unit filename="Scene/occlusion/OcclusionCulling.cpp" />
+		<Unit filename="Scene/occlusion/OcclusionCulling.h" />
+		<Unit filename="Scene/occlusion/Renderer.cpp" />
+		<Unit filename="Scene/occlusion/Renderer.h" />
+		<Unit filename="Scripting/scriptEngine.cpp" />
+		<Unit filename="Scripting/scriptstring/scriptstring.cpp" />
+		<Unit filename="Scripting/scriptstring/scriptstring.h" />
+		<Unit filename="Scripting/scriptstring/scriptstring_utils.cpp" />
+		<Unit filename="TerrainFactory/CloudSceneNode/CCloudSceneNode.cpp" />
+		<Unit filename="TerrainFactory/CloudSceneNode/CCloudSceneNode.h" />
+		<Unit filename="TerrainFactory/ProceduralTrees/CBillboardGroupSceneNode.cpp" />
+		<Unit filename="TerrainFactory/ProceduralTrees/CTreeGenerator.cpp" />
+		<Unit filename="TerrainFactory/ProceduralTrees/CTreeSceneNode.cpp" />
+		<Unit filename="TerrainFactory/Terrain.cpp" />
+		<Unit filename="TerrainFactory/Terrain.h" />
+		<Unit filename="TerrainFactory/WaterNode/CReflectedWater.cpp" />
+		<Unit filename="TerrainFactory/simplexnoise1234.cpp" />
+		<Unit filename="TerrainFactory/simplexnoise1234.h" />
+		<Unit filename="TidBits.cpp" />
+		<Unit filename="entities/player.cpp" />
+		<Unit filename="entities/player.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

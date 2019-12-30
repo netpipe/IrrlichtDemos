@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ProceduralTreesExample" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="tree" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../../" />
+				<Option object_output=".obj/DebugW32" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-W" />
+					<Add option="-g" />
+					<Add option="-O0" />
+					<Add directory="C:/Development/irrlicht-1.4/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="C:/Development/irrlicht-1.4/include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="Irrlicht" />
+					<Add directory="C:/Development/irrlicht-1.4/lib/Win32-visualstudio" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="tree" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../../" />
+				<Option object_output=".obj/ReleaseW32" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-W" />
+					<Add directory="C:/Development/irrlicht-1.4/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="C:/Development/irrlicht-1.4/include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="Irrlicht" />
+					<Add directory="C:/Development/irrlicht-1.4/lib/Win32-visualstudio" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="/home/Dev/libs/Irrlicht/include" />
+		</Compiler>
+		<Linker>
+			<Add library="Xxf86vm" />
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add directory="/home/Dev/libs/Irrlicht/lib/gcc" />
+		</Linker>
+		<Unit filename="./CBillboardGroupSceneNode.cpp" />
+		<Unit filename="./CBillboardGroupSceneNode.h" />
+		<Unit filename="./CTreeGenerator.cpp" />
+		<Unit filename="./CTreeGenerator.h" />
+		<Unit filename="./CTreeSceneNode.cpp" />
+		<Unit filename="./CTreeSceneNode.h" />
+		<Unit filename="./STreeMesh.h" />
+		<Unit filename="./main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Clouds" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="cloud" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug Win32" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-W" />
+					<Add option="-g" />
+					<Add option="-O0" />
+					<Add directory="C:/Development/irrlicht-1.4/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="C:/Development/irrlicht-1.4/include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="Irrlicht" />
+					<Add directory="C:/Development/irrlicht-1.4/lib/Win32-visualstudio" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="ProceduralTreesExample" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release Win32" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-W" />
+					<Add directory="C:/Development/irrlicht-1.4/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="C:/Development/irrlicht-1.4/include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="Irrlicht" />
+					<Add directory="C:/Development/irrlicht-1.4/lib/Win32-visualstudio" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="../../../../libs/irrlicht-1.6/include" />
+		</Compiler>
+		<Linker>
+			<Add library="Xxf86vm" />
+			<Add library="GL" />
+			<Add directory="../../../../libs/irrlicht-1.6/lib/Linux" />
+		</Linker>
+		<Unit filename="CCloudSceneNode.cpp" />
+		<Unit filename="CCloudSceneNode.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
