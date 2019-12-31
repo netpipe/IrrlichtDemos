@@ -1,11 +1,12 @@
 # depslib dependency file v1.0
-1259994922 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Shaders/STUFF/ShadowMap/EventReceiver.cpp
-	"EventReceiver.h"
+1268035675 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/non-working-code/16stuff/3 irrlicht projects-projective textures/Bloom/Bloom.cpp
+	"Bloom.h"
 
-1260036774 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Shaders/STUFF/ShadowMap/EventReceiver.h
+1260075018 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/non-working-code/16stuff/3 irrlicht projects-projective textures/Bloom/Bloom.h
 	"main.h"
+	"Grid.h"
 
-1260813908 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Shaders/STUFF/ShadowMap/main.h
+1261388796 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/non-working-code/16stuff/3 irrlicht projects-projective textures/Bloom/main.h
 	<irrlicht.h>
 
 1514384332 /home/Dev/libs/game/Irrlicht-SVN/include/irrlicht.h
@@ -1056,43 +1057,47 @@
 	"matrix4.h"
 	"IVideoDriver.h"
 
-1260075020 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Shaders/STUFF/ShadowMap/Grid.cpp
-	"Grid.h"
-
-1260075020 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Shaders/STUFF/ShadowMap/Grid.h
+1260075018 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/non-working-code/16stuff/3 irrlicht projects-projective textures/Bloom/Grid.h
 	"main.h"
 
-1261388550 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Shaders/STUFF/ShadowMap/main.cpp
-	"ShadowMap.h"
+1259994922 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/non-working-code/16stuff/3 irrlicht projects-projective textures/Bloom/EventReceiver.cpp
+	"EventReceiver.h"
+
+1260036774 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/non-working-code/16stuff/3 irrlicht projects-projective textures/Bloom/EventReceiver.h
+	"main.h"
+
+1260075018 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/non-working-code/16stuff/3 irrlicht projects-projective textures/Bloom/Grid.cpp
+	"Grid.h"
+
+1261388776 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/non-working-code/16stuff/3 irrlicht projects-projective textures/Bloom/main.cpp
+	"Bloom.h"
 	"EventReceiver.h"
 	"Grid.h"
 
-1260642522 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Shaders/STUFF/ShadowMap/ShadowMap.h
+1268035675 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/ShaderDemos/Bloom/Bloom.cpp
+	"Bloom.h"
+
+1260075018 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/ShaderDemos/Bloom/Bloom.h
 	"main.h"
+	"Grid.h"
 
-1259994922 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/ShaderDemos/ShadowMap/EventReceiver.cpp
-	"EventReceiver.h"
-
-1260036774 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/ShaderDemos/ShadowMap/EventReceiver.h
-	"main.h"
-
-1260813908 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/ShaderDemos/ShadowMap/main.h
+1261388796 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/ShaderDemos/Bloom/main.h
 	<irrlicht.h>
 
-1260075020 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/ShaderDemos/ShadowMap/Grid.cpp
-	"Grid.h"
-
-1260075020 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/ShaderDemos/ShadowMap/Grid.h
+1260075018 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/ShaderDemos/Bloom/Grid.h
 	"main.h"
 
-1261388550 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/ShaderDemos/ShadowMap/main.cpp
-	"ShadowMap.h"
+1259994922 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/ShaderDemos/Bloom/EventReceiver.cpp
+	"EventReceiver.h"
+
+1260036774 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/ShaderDemos/Bloom/EventReceiver.h
+	"main.h"
+
+1260075018 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/ShaderDemos/Bloom/Grid.cpp
+	"Grid.h"
+
+1261388776 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/ShaderDemos/Bloom/main.cpp
+	"Bloom.h"
 	"EventReceiver.h"
 	"Grid.h"
-
-1260642522 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/ShaderDemos/ShadowMap/ShadowMap.h
-	"main.h"
-
-1577521791 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/ShaderDemos/ShadowMap/ShadowMap.cpp
-	"ShadowMap.h"
 

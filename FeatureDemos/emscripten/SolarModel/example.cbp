@@ -27,7 +27,7 @@
 					<Add option="-D_IRR_STATIC_LIB_" />
 					<Add option="-D_IRR_EMSCRIPTEN_PLATFORM_" />
 					<Add option="-D__EMSCRIPTEN__" />
-					<Add directory="../../../../EMLibs/irrlicht-ogl-es/irrlicht/include" />
+					<Add directory="../../../../emscripten-projects/irrlicht-ogl-es-2019dec/include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s ALLOW_MEMORY_GROWTH=1" />
@@ -40,7 +40,7 @@
 					<Add library="GL" />
 					<Add library="Irrlicht" />
 					<Add library="SDL" />
-					<Add directory="../../../../EMLibs/irrlicht-ogl-es/irrlicht/lib/Linux" />
+					<Add directory="../../../../emscripten-projects/irrlicht-ogl-es-2019dec/lib/Linux" />
 				</Linker>
 			</Target>
 		</Build>
@@ -91,10 +91,6 @@
 		<Unit filename="GameSkyBoxObject.cpp" />
 		<Unit filename="GameSkyboxObject.h" />
 		<Unit filename="resource.h" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-			<envvars />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
