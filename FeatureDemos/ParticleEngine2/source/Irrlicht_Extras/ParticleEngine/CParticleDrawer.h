@@ -1,8 +1,8 @@
 #ifndef CPARTICLEDRAWER_H
 #define CPARTICLEDRAWER_H
 
-#include "Particle.h"
-#include "IParticleDrawer.h"
+#include "Irrlicht_Extras/ParticleEngine/Particle.h"
+#include "Irrlicht_Extras/ParticleEngine/IParticleDrawer.h"
 #include <irrList.h>
 #include <SMaterial.h>
 #include <CMeshBuffer.h>

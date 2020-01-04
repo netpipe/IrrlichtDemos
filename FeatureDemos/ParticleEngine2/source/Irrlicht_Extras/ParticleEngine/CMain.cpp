@@ -20,11 +20,11 @@
   Daniel Sudmann suddani@googlemail.com
 */
 #include "CMain.h"
-#include <IParticleSystem.h>
-#include <IParticleDrawer.h>
-#include <IEmitterRegion.h>
-#include <IParticleEmitter.h>
-#include <Particle.h>
+#include <Irrlicht_Extras/ParticleEngine/IParticleSystem.h>
+#include <Irrlicht_Extras/ParticleEngine/IParticleDrawer.h>
+#include <Irrlicht_Extras/ParticleEngine/IEmitterRegion.h>
+#include <Irrlicht_Extras/ParticleEngine/IParticleEmitter.h>
+#include <Irrlicht_Extras/ParticleEngine/Particle.h>
 
 void addExplosion(const irr::core::vector3df& pos, const irr::core::vector3df& rot, const irr::u32& scale, irr::scene::ISceneManager* smgr, const irr::core::plane3df& p);
 
