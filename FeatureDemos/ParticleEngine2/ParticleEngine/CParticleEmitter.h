@@ -1,8 +1,8 @@
 #ifndef CPARTICLEEMITTER_H
 #define CPARTICLEEMITTER_H
 
-#include "Irrlicht_Extras/ParticleEngine/Particle.h"
-#include "Irrlicht_Extras/ParticleEngine/IParticleEmitter.h"
+#include "Particle.h"
+#include "IParticleEmitter.h"
 
 class CParticleEmitter : public irr::scene::particle::IParticleEmitter
 {

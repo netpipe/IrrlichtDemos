@@ -20,7 +20,7 @@
   Daniel Sudmann suddani@googlemail.com
 */
 #include "CParticleEmitter.h"
-#include "Irrlicht_Extras/ParticleEngine/IEmitterRegion.h"
+#include "IEmitterRegion.h"
 
 CParticleEmitter::CParticleEmitter(void)
 {

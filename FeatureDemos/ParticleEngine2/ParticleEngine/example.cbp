@@ -43,6 +43,11 @@
 		<Unit filename="CParticleSystem.h" />
 		<Unit filename="CTrailParticleDrawer.cpp" />
 		<Unit filename="CTrailParticleDrawer.h" />
+		<Unit filename="IEmitterRegion.h" />
+		<Unit filename="IParticleDrawer.h" />
+		<Unit filename="IParticleEmitter.h" />
+		<Unit filename="IParticleSystem.h" />
+		<Unit filename="Particle.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

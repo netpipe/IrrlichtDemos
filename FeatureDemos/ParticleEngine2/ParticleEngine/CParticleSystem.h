@@ -1,7 +1,7 @@
 #ifndef CPARTICLESYSTEM_H
 #define CPARTICLESYSTEM_H
 
-#include "Irrlicht_Extras/ParticleEngine/IParticleSystem.h"
+#include "IParticleSystem.h"
 namespace irr
 {
     namespace scene
