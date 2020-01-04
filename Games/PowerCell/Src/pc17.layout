@@ -2,26 +2,80 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="emscripten" />
-	<File name="Timer.hpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="matrix.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Obstacle.hpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="244" topLine="0" />
 		</Cursor>
 		<Folding>
 			<Collapse line="6" />
 		</Folding>
 	</File>
-	<File name="Launch.cpp" open="1" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Launch.cpp" open="1" top="1" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="7557" topLine="10" />
+			<Cursor1 position="7762" topLine="112" />
+		</Cursor>
+	</File>
+	<File name="Camera.cpp" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1561" topLine="0" />
 		</Cursor>
 		<Folding>
-			<Collapse line="45" />
-			<Collapse line="109" />
-			<Collapse line="221" />
-			<Collapse line="246" />
+			<Collapse line="6" />
+			<Collapse line="23" />
 		</Folding>
 	</File>
-	<File name="Elevator.cpp" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Scene.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2827" topLine="1" />
+		</Cursor>
+		<Folding>
+			<Collapse line="103" />
+		</Folding>
+	</File>
+	<File name="Stage.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="421" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Collision.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4785" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="11" />
+			<Collapse line="19" />
+			<Collapse line="25" />
+			<Collapse line="43" />
+			<Collapse line="49" />
+		</Folding>
+	</File>
+	<File name="Obstacle.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="316" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="36" />
+		</Folding>
+	</File>
+	<File name="Timer.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Sound.hpp" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="973" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="7" />
+		</Folding>
+	</File>
+	<File name="PowerCell.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
@@ -33,29 +87,6 @@
 		<Folding>
 			<Collapse line="103" />
 		</Folding>
-	</File>
-	<File name="Player.cpp" open="1" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="141" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="25" />
-			<Collapse line="43" />
-			<Collapse line="48" />
-			<Collapse line="107" />
-			<Collapse line="121" />
-			<Collapse line="135" />
-			<Collapse line="151" />
-			<Collapse line="188" />
-			<Collapse line="220" />
-			<Collapse line="225" />
-			<Collapse line="229" />
-		</Folding>
-	</File>
-	<File name="Globals.hpp" open="0" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="16" />
-		</Cursor>
 	</File>
 	<File name="Sound/SoundFactory.cpp" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
@@ -82,82 +113,73 @@
 			<Collapse line="271" />
 		</Folding>
 	</File>
-	<File name="Sound.cpp" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Globals.hpp" open="1" top="0" tabpos="23" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="4857" topLine="4" />
+			<Cursor1 position="262" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="8" />
-			<Collapse line="16" />
-			<Collapse line="23" />
-			<Collapse line="137" />
-			<Collapse line="155" />
-		</Folding>
 	</File>
-	<File name="Obstacle.hpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="244" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="6" />
-		</Folding>
-	</File>
-	<File name="Scene.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="5079" topLine="1" />
-		</Cursor>
-		<Folding>
-			<Collapse line="103" />
-		</Folding>
-	</File>
-	<File name="Camera.cpp" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1561" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="6" />
-			<Collapse line="23" />
-		</Folding>
-	</File>
-	<File name="Sound.hpp" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="757" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="7" />
-		</Folding>
-	</File>
-	<File name="PowerCell.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Timer.hpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="6" />
+		</Folding>
+	</File>
+	<File name="Elevator.cpp" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="CGUITexturedSkin.cpp" open="1" top="0" tabpos="25" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="147" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="Event.cpp" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
+			<Cursor1 position="909" topLine="0" />
 		</Cursor>
 		<Folding>
 			<Collapse line="3" />
 		</Folding>
 	</File>
-	<File name="Collision.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Scene.hpp" open="1" top="0" tabpos="22" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="4785" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="11" />
-			<Collapse line="19" />
-			<Collapse line="25" />
-			<Collapse line="43" />
-			<Collapse line="49" />
-		</Folding>
-	</File>
-	<File name="Scene.hpp" open="0" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
+			<Cursor1 position="817" topLine="0" />
 		</Cursor>
 		<Folding>
 			<Collapse line="6" />
+		</Folding>
+	</File>
+	<File name="Player.cpp" open="1" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="141" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="25" />
+			<Collapse line="43" />
+			<Collapse line="48" />
+			<Collapse line="107" />
+			<Collapse line="121" />
+			<Collapse line="135" />
+			<Collapse line="151" />
+			<Collapse line="188" />
+			<Collapse line="220" />
+			<Collapse line="225" />
+			<Collapse line="229" />
+		</Folding>
+	</File>
+	<File name="Sound.cpp" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="257" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="8" />
+			<Collapse line="16" />
+			<Collapse line="23" />
+			<Collapse line="28" />
+			<Collapse line="155" />
 		</Folding>
 	</File>
 	<File name="Sound/Ogg/OggFile.cpp" open="0" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -191,14 +213,6 @@
 			<Collapse line="175" />
 		</Folding>
 	</File>
-	<File name="Obstacle.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="316" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="36" />
-		</Folding>
-	</File>
 	<File name="Sound/audio.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="53" topLine="0" />
@@ -215,20 +229,13 @@
 			<Collapse line="3" />
 		</Folding>
 	</File>
-	<File name="Stage.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Stage.hpp" open="1" top="0" tabpos="24" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
+			<Cursor1 position="284" topLine="0" />
 		</Cursor>
+		<Folding>
+			<Collapse line="6" />
+		</Folding>
 	</File>
-	<File name="matrix.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Timer.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<EditorTabsLayout layout="030cfec05deec04400127c4000000002=17;PowerCell:Sound/audio.h,19;PowerCell:PowerCell.cpp,0;PowerCell:Collision.cpp,1;PowerCell:Scene.cpp,2;PowerCell:Stage.cpp,3;PowerCell:Obstacle.cpp,4;PowerCell:Obstacle.hpp,5;PowerCell:Timer.cpp,6;PowerCell:Timer.hpp,7;PowerCell:Highscore.cpp,8;PowerCell:matrix.h,9;PowerCell:Elevator.cpp,10;PowerCell:Camera.cpp,11;PowerCell:Event.cpp,12;PowerCell:Sound.cpp,18;PowerCell:Sound.hpp,13;PowerCell:Sound/audio.cpp,14;PowerCell:Sound/SoundSource/SoundSource.cpp,15;PowerCell:Sound/SoundFactory.cpp,20;PowerCell:Launch.cpp,16;PowerCell:Player.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=700;besth=296;minw=700;minh=296;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=030cfec05deec04400127c4000000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+	<EditorTabsLayout layout="04715bb05e0d6b7900124ce000000002=0;PowerCell:Sound/audio.h,1;PowerCell:PowerCell.cpp,2;PowerCell:Collision.cpp,3;PowerCell:Scene.cpp,4;PowerCell:Stage.cpp,5;PowerCell:Obstacle.cpp,6;PowerCell:Obstacle.hpp,7;PowerCell:Timer.cpp,8;PowerCell:Timer.hpp,9;PowerCell:Highscore.cpp,10;PowerCell:matrix.h,11;PowerCell:Elevator.cpp,12;PowerCell:Camera.cpp,13;PowerCell:Event.cpp,14;PowerCell:Sound.cpp,15;PowerCell:Sound.hpp,16;PowerCell:Sound/audio.cpp,17;PowerCell:Sound/SoundSource/SoundSource.cpp,18;PowerCell:Sound/SoundFactory.cpp,*19;PowerCell:Launch.cpp,20;PowerCell:Player.cpp,21;PowerCell:Scene.hpp,22;PowerCell:Globals.hpp,23;PowerCell:Stage.hpp,24;PowerCell:CGUITexturedSkin.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=814;besth=348;minw=814;minh=348;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=04715bb05e0d6b7900124ce000000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>

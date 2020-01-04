@@ -2,7 +2,62 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Linux" />
-	<File name="CWaypointEntity.h" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="DScriptedFunctions.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="7" />
+			<Collapse line="20" />
+			<Collapse line="30" />
+			<Collapse line="40" />
+		</Folding>
+	</File>
+	<File name="CWaypointEntity.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="luna.h" open="1" top="0" tabpos="23" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="916" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="13" />
+		</Folding>
+	</File>
+	<File name="CScriptManager.h" open="1" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="192" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="24" />
+		</Folding>
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="64" />
+		</Cursor>
+	</File>
+	<File name="CScriptManager.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="35" />
+		</Cursor>
+	</File>
+	<File name="CPhysicsManager.cpp" open="1" top="0" tabpos="24" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="98" />
+		</Cursor>
+	</File>
+	<File name="CMapManager.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="3" />
+		</Folding>
+	</File>
+	<File name="CItemPickupEntity.h" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
@@ -10,27 +65,52 @@
 			<Collapse line="9" />
 		</Folding>
 	</File>
-	<File name="CScriptManager.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="26" />
-		</Cursor>
-	</File>
-	<File name="CPositionalAudioEntity.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="CEventManager.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
+		<Folding>
+			<Collapse line="3" />
+		</Folding>
 	</File>
-	<File name="CPhysicsManager.cpp" open="1" top="0" tabpos="24" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="CAudioStream.cpp" open="1" top="0" tabpos="22" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="54" />
+			<Cursor1 position="1089" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="3" />
+		</Folding>
+	</File>
+	<File name="CDefaultEntityFactory.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="682" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="3" />
+		</Folding>
+	</File>
+	<File name="AgEngine.h" open="1" top="0" tabpos="25" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="46" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="CMapManager.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="DScriptedFunctions.h" open="1" top="0" tabpos="26" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="38" />
+			<Cursor1 position="0" topLine="0" />
 		</Cursor>
+		<Folding>
+			<Collapse line="5" />
+		</Folding>
 	</File>
-	<File name="CItemPickupEntity.h" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="CEventEntity.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="4" />
+		</Folding>
+	</File>
+	<File name="CWaypointEntity.h" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
@@ -39,64 +119,51 @@
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
-	</File>
-	<File name="CEventManager.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="CAudioStream.cpp" open="1" top="0" tabpos="22" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1089" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="CHUD.h" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1227" topLine="0" />
-		</Cursor>
 		<Folding>
-			<Collapse line="11" />
+			<Collapse line="4" />
 		</Folding>
 	</File>
 	<File name="CAudioOgg.h" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
-	</File>
-	<File name="CEventEntity.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="luna.h" open="1" top="1" tabpos="23" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="916" topLine="31" />
-		</Cursor>
 		<Folding>
-			<Collapse line="2" />
+			<Collapse line="16" />
 		</Folding>
 	</File>
-	<File name="CScriptManager.h" open="1" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="CMapManager.h" open="1" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="192" topLine="0" />
+			<Cursor1 position="0" topLine="0" />
 		</Cursor>
+		<Folding>
+			<Collapse line="9" />
+		</Folding>
 	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="CPositionalAudioEntity.cpp" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="DScriptedFunctions.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="CBaseEntity.h" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
+			<Cursor1 position="75" topLine="0" />
 		</Cursor>
+		<Folding>
+			<Collapse line="11" />
+		</Folding>
 	</File>
-	<File name="CConsole.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="CHUD.h" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
+			<Cursor1 position="1227" topLine="0" />
 		</Cursor>
+		<Folding>
+			<Collapse line="40" />
+			<Collapse line="46" />
+			<Collapse line="124" />
+			<Collapse line="138" />
+		</Folding>
 	</File>
-	<File name="CWaypointEntity.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="CConsole.cpp" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
@@ -104,35 +171,30 @@
 			<Collapse line="3" />
 		</Folding>
 	</File>
-	<File name="CBaseEntity.h" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="CConsole.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="75" topLine="0" />
+			<Cursor1 position="0" topLine="0" />
 		</Cursor>
+		<Folding>
+			<Collapse line="8" />
+			<Collapse line="15" />
+		</Folding>
 	</File>
 	<File name="CEntityManager.cpp" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
-	</File>
-	<File name="CConsole.cpp" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="57" />
-		</Cursor>
-	</File>
-	<File name="CDefaultEntityFactory.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="682" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="CMapManager.h" open="1" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+		<Folding>
+			<Collapse line="3" />
+		</Folding>
 	</File>
 	<File name="CEntityManager.h" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
+		<Folding>
+			<Collapse line="14" />
+		</Folding>
 	</File>
-	<EditorTabsLayout layout="02c84c005de054b50014051800000002=0;FPSDemo25:CScriptManager.cpp,1;FPSDemo25:CWaypointEntity.cpp,2;FPSDemo25:DScriptedFunctions.cpp,3;FPSDemo25:CPositionalAudioEntity.cpp,4;FPSDemo25:CEventEntity.cpp,5;FPSDemo25:CEventManager.cpp,6;FPSDemo25:CItemPickupEntity.cpp,7;FPSDemo25:CDefaultEntityFactory.cpp,8;FPSDemo25:CMapManager.cpp,9;FPSDemo25:CConsole.cpp,10;FPSDemo25:main.cpp,11;FPSDemo25:CConsole.h,12;FPSDemo25:CEntityManager.h,13;FPSDemo25:CItemPickupEntity.h,14;FPSDemo25:CWaypointEntity.h,15;FPSDemo25:CAudioOgg.h,16;FPSDemo25:CEntityManager.cpp,17;FPSDemo25:CHUD.h,18;FPSDemo25:CBaseEntity.h,19;FPSDemo25:CMapManager.h,20;FPSDemo25:CScriptManager.h,21;FPSDemo25:CAudioStream.cpp,*22;FPSDemo25:luna.h,23;FPSDemo25:CPhysicsManager.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=758;besth=296;minw=758;minh=296;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=02c84c005de054b50014051800000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+	<EditorTabsLayout layout="046a5d505e0d4d7d0014211100000002=0;FPSDemo25:CScriptManager.cpp,1;FPSDemo25:CWaypointEntity.cpp,2;FPSDemo25:DScriptedFunctions.cpp,*3;FPSDemo25:CPositionalAudioEntity.cpp,4;FPSDemo25:CEventEntity.cpp,5;FPSDemo25:CEventManager.cpp,6;FPSDemo25:CItemPickupEntity.cpp,7;FPSDemo25:CDefaultEntityFactory.cpp,8;FPSDemo25:CMapManager.cpp,9;FPSDemo25:CConsole.cpp,10;FPSDemo25:main.cpp,11;FPSDemo25:CConsole.h,12;FPSDemo25:CEntityManager.h,13;FPSDemo25:CItemPickupEntity.h,14;FPSDemo25:CWaypointEntity.h,15;FPSDemo25:CAudioOgg.h,16;FPSDemo25:CEntityManager.cpp,17;FPSDemo25:CHUD.h,18;FPSDemo25:CBaseEntity.h,19;FPSDemo25:CMapManager.h,20;FPSDemo25:CScriptManager.h,21;FPSDemo25:CAudioStream.cpp,22;FPSDemo25:luna.h,23;FPSDemo25:CPhysicsManager.cpp,24;FPSDemo25:AgEngine.h,25;FPSDemo25:DScriptedFunctions.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=328;besth=271;minw=328;minh=271;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=046a5d505e0d4d7d0014211100000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>
