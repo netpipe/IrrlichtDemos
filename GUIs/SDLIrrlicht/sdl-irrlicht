@@ -1,0 +1,51 @@
+  SDL_Init(SDL_INIT_VIDEO );
+    SDL_Surface * sdldisplay = SDL_SetVideoMode(800,600,16,SDL_OPENGL);
+       
+    SDL_SysWMinfo sdlinfo;
+    SDL_VERSION(&sdlinfo.version);
+    SDL_GetWMInfo(&sdlinfo);
+    SIrrlichtCreationParameters irrparas = SIrrlichtCreationParameters ();
+   
+    irrparas.Bits=16;
+    irrparas.Fullscreen=false;
+    irrparas.WindowSize=dimension2d<s32>(800,600);
+    irrparas.DriverType=EDT_OPENGL;
+    irrparas.WindowId = sdlinfo.info.x11.window;
+   
+    IrrlichtDevice *device = createDeviceEx(irrparas); 
+
+
+
+
+No, no. You have to compile Irrlicht with the SDL device and create the device with EDT_SDL. Then you can ask Irrlicht video driver->getExposedVideoData() for the internal device structures, which, if you are lucky, are the screen value. But you have to look this up in the SDL device source code, because it's not yet documented.
+
+
+Postby a4z » Tue Oct 23, 2007 1:30 pm
+I have to reaktivate this old thread because I saw that in the newest version of irrlicht there is the option to run irrlicht based on SDL
+
+to get it running on my linux pc I had to do a few steps
+
+in makefile (irrlicht/source)
+CPPFLAGS = $(CXXINCS) -DIRRLICHT_EXPORTS=1 -D_IRR_USE_SDL_DEVICE_
+
+in COpenGLExtensionHandler.h
+
+line 37, I added
+#include <SDL/SDL_video.h>
+(for SDL_GL_GetProcAddress )
+
+for compiling the samples I added
+-I/usr/include/SDL -D_GNU_SOURCE=1 -D_REENTRANT
+to CPPFLAGS
+and
+-L/usr/lib -lSDL
+to LDFLAGS
+in the sample makefiles 
+
+
+
+http://irrlicht.sourceforge.net/forum//viewtopic.php?t=19048&highlight=sdl+createdeviceex
+
+
+ reinterpret_cast<HWND>(video::IVideoDriver::getExposedVideoData()->OpenGLWin32.HWnd)
+
