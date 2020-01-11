@@ -1,6 +1,9 @@
 # QtIRC
 Irc client using qt and irrlicht.
 
+cannachat has superceded this development available https://github.com/tecan/cannachat
+
+
 
 Authors / Credits
 
