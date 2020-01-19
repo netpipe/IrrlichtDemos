@@ -2,6 +2,7 @@
 #define TOONOUTLINE_H
 #include <irrlicht.h>
 
+//http://irrlicht.sourceforge.net/forum/viewtopic.php?f=6&t=43697&p=249009&hilit=toon+outline#p249009
 struct indexRedirect {
    int oldIndex;
    int newIndex;
