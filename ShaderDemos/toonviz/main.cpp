@@ -91,7 +91,11 @@ int main()
 
    smgr->addCameraSceneNodeFPS();
    device->getCursorControl()->setVisible(false);
-
+node->getMaterial(0).Shininess = 20.0f;
+node2->getMaterial(0).Shininess = 20.0f;
+node3->getMaterial(0).Shininess = 20.0f;
+node4->getMaterial(0).Shininess = 20.0f;
+node5->getMaterial(0).Shininess = 20.0f;
    while(device->run())
    {
       driver->beginScene(true, true, video::SColor(255,113,113,133));
