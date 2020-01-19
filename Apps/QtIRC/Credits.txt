@@ -3,6 +3,7 @@ Irc client using qt and irrlicht.
 
 cannachat has superceded this development available https://github.com/tecan/cannachat
 
+also libircclient was used in ../Irrlicht-IRC the same library was ported to qt called libcommuni both seem to be maintained for important fixes.
 
 
 Authors / Credits

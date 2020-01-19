@@ -49,20 +49,26 @@ void IrrCoreRenderer::init()
     {
         scene::ISceneManager* smgr = this->device->getSceneManager();
 
-        this->device->getFileSystem()->addFileArchive("media/map-20kdm2.pk3");
+        scene::ISceneNode* n = smgr->addAnimatedMeshSceneNode(smgr->getMesh("./media/sydney.md2"));
 
-        scene::IAnimatedMesh* mesh = smgr->getMesh("20kdm2.bsp");
-        scene::ISceneNode* node = 0;
+        n->setMaterialTexture(0, this->device->getVideoDriver()->getTexture("./media/sydney.bmp"));
+        n->setMaterialFlag( video::EMF_LIGHTING, false );
+    //    smgr->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,5,0));
 
-        if (mesh)
-        {
-            node = smgr->addOctreeSceneNode(mesh->getMesh(0), 0, -1, 1024);
-        }
+//        this->device->getFileSystem()->addFileArchive("media/map-20kdm2.pk3");
 
-        if (node)
-        {
-            node->setPosition(core::vector3df(-1300, -144, -1299));
-        }
+//        scene::IAnimatedMesh* mesh = smgr->getMesh("20kdm2.bsp");
+//        scene::ISceneNode* node = 0;
+
+//        if (mesh)
+//        {
+//            node = smgr->addOctreeSceneNode(mesh->getMesh(0), 0, -1, 1024);
+//        }
+
+//        if (node)
+//        {
+//            node->setPosition(core::vector3df(-1300, -144, -1299));
+//        }
 
         smgr->addCameraSceneNode();
 

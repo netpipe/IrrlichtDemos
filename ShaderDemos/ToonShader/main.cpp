@@ -71,6 +71,12 @@ int main()
 	IVideoDriver* driver = device->getVideoDriver();
 	ISceneManager* smgr = device->getSceneManager();
 
+	scene::ILightSceneNode * lightNode  = smgr->addLightSceneNode(0, core::vector3df(0,0,0),
+		video::SColorf(1.0f, 0.6f, 0.7f, 1.0f), 800.0f);
+	scene::ISceneNodeAnimator* anim = 0;
+	anim = smgr->createFlyCircleAnimator (core::vector3df(0,150,0),250.0f, 0.0005f);
+	lightNode ->addAnimator(anim);
+	anim->drop();
 	// Set a window caption
 	device->setWindowCaption(L"ToonShader - Irrlicht Engine Demo");
 
