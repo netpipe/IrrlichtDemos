@@ -16,6 +16,7 @@ Application::Application(){
 
   this->device = createDevice(driverType, core::dimension2d<u32>(800,600), 16, false, false, false, 0);
   this->device->getLogger()->setLogLevel(ELL_NONE);
+    device->getFileSystem()->addFileArchive("./media.zip");
   #if (DEBUG_OUTPUT_MASK & 2)
       // this->device->getLogger()->setLogLevel(ELL_DEBUG);
   #endif

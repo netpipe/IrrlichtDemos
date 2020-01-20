@@ -1,6 +1,3 @@
-i have zipped the media folder to keep the repo smaller. please unzip to run
-
-
 <a href="http://irrlicht.sourceforge.net/">
     <img src="http://irrlicht.sourceforge.net/images/irrlicht_logo.png" alt="Irrlicht logo" title="Irrlicht" align="right" height="60" />
 </a>
