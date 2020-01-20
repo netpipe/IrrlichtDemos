@@ -1,0 +1,77 @@
+Bullet-FLUIDS
+	Experimental SPH fluid and heightfield fluid system for:
+
+		Bullet Physics 2.81
+		http://bulletphysics.org
+	SPH fluid system based on
+		FLUIDS v.2
+		http://www.rchoetzlein.com/eng/graphics/fluids.htm
+	Heightfield fluid system based on 
+		'HeightfieldFluidDemo' of Bullet Physics 2.80(rev2531)
+	
+/Requires:
+	Visual C++ 2005/2008/2010
+	bullet-2.81-rev2613
+
+/Tested with:
+	Windows 7
+	Radeon HD 5850; Catalyst 13.4
+
+	Visual C++ 2008 Express Edition
+	bullet-2.81-rev2613
+	AMD APP SDK v2.8
+
+
+/Visual C++ Build instructions:
+	-Copy bullet-2.81-rev2613 over the directory supplied by Bullet.
+	(replaced files:
+		bullet-2.81-rev2613/build/premake4.lua
+		bullet-2.81-rev2613/Demos/premake4.lua)
+	
+	-Run vs20*.bat in ./bullet-2.81-rev2613/build
+		(e.g. vs2008.bat)
+
+	-Build project 'App_FluidSphDemo' or 'App_HeightfieldFluidDemo' in 
+	./bullet-2.81-rev2613/build/vs20*/0BulletSolution.sln
+
+/FluidSphDemo build notes(default assumes AMD/Radeon OpenCL):
+	-If using an OpenCL Library from NVIDIA,
+	edit 'function createFluidSphDemo()' in Demos/premake4.lua:
+		USING_AMD_OPENCL = false
+		
+	-If building without OpenCL, edit 
+	'function createFluidSphDemo()' in Demos/premake4.lua,
+		USING_OPENCL = false
+
+	and comment out this line of FluidSphDemo/FluidSphDemo.h:
+		//#define ENABLE_OPENCL_FLUID_SOLVER
+		
+	-Run vs20*.bat in ./bullet-2.81-rev2613/build after modifying premake4.lua
+	
+/FluidSphDemo - enabling Multithreading support:
+	-Requires 'BulletMultiThreaded' library, which may
+	be obtained by building Bullet with CMake(see Bullet instructions).
+
+	-Add BulletMultiThreaded.lib to linker options.
+	
+	-Uncomment this line of FluidSphDemo/FluidSphDemo.cpp
+		#define ENABLE_MULTITHREADED_FLUID_SOLVER
+		
+/FluidSphDemo Controls:
+	'q' - switch rendering mode(points, spheres, marching cubes)
+	'e' - toggle between CPU and OpenCL/GPU
+	'[' - previous demo
+	']' - next demo
+	'n' - halve the number of fluid particles
+	'm' - double the number of fluid particles
+	'/' - spray particles
+	
+/HeightfieldFluidDemo Controls:
+	'k' - toggle fluid rendering as triangles
+	'l' - toggle ground rendering as triangles
+	';' - toggle fluid rendering as columns
+	 '  - toggle ground rendering as columns
+	
+	'v' - draw voxels
+	'/' - draw velocity field
+	
