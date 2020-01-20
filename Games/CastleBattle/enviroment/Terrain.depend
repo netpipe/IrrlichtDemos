@@ -1,0 +1,2 @@
+src/enviroment/Terrain.o: src/enviroment/Terrain.cpp \
+ src/enviroment/Terrain.h

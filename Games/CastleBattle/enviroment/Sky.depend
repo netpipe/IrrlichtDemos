@@ -1,0 +1,1 @@
+src/enviroment/Sky.o: src/enviroment/Sky.cpp src/enviroment/Sky.h

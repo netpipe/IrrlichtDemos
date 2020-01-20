@@ -1,0 +1,2 @@
+src/game/ball.o: src/game/ball.cpp src/game/ball.h src/game/physics.h \
+ src/helper/bullethelper.h src/game/camera.h

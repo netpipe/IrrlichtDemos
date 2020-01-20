@@ -1,0 +1,1 @@
+src/game/camera.o: src/game/camera.cpp src/game/camera.h

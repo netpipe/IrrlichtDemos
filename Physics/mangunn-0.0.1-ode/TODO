@@ -1,0 +1,12 @@
+
+Make ray below capsule so that player can't move while falling.
+
+Place all body pulling-pushing code inside SMPlayer class.
+
+Remove meshes from cache
+
+All objs now are cube-mass, i.e. their physics is cube-like, we really need to repair it
+
+Implement Edit for all objects. It'll ease creation of in-game editor and will let scripts
+to do something
+

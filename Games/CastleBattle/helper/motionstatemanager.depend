@@ -1,0 +1,2 @@
+src/helper/motionstatemanager.o: src/helper/motionstatemanager.cpp \
+ src/helper/motionstatemanager.h src/helper/bullethelper.h

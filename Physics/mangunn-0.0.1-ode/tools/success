@@ -1,0 +1,46 @@
+#!/bin/bash
+
+#
+#This script displays coloured "Compilation succeeded!" :) 
+#
+
+# Escape code
+esc=`echo -en "\033"`
+
+# Set colors
+c_black="${esc}[0;30m"
+c_red="${esc}[0;31m"
+c_green="${esc}[0;32m"
+c_yellow="${esc}[0;33m"
+c_blue="${esc}[0;34m"
+c_magenta="${esc}[0;35m"
+c_cyan="${esc}[0;36m"
+c_white="${esc}[0;37m"
+c_normal=`echo -en "${esc}[m\017"`
+
+# Set styles
+s_none="${esc}[0;00m"
+s_bold="${esc}[0;01m"
+s_underscore="${esc}[0;04m"
+s_blink="${esc}[0;05m"
+s_reverse="${esc}[0;07m"
+s_concealed="${esc}[0;08m"
+
+#Set background colors
+b_black="${esc}[0;40m"
+b_red="${esc}[0;41m"
+b_green="${esc}[0;42m"
+b_yellow="${esc}[0;43m"
+b_blue="${esc}[0;44m"
+b_magenta="${esc}[0;45m"
+b_cyan="${esc}[0;46m"
+b_white="${esc}[0;47m"
+
+#echo "Here's ${c_green}some green text${c_normal} for you."
+#echo "Here's ${c_blue}some green text${c_normal} for you."
+echo "                        ${c_red}================================${c_normal}"
+echo "                        ${c_red}=${c_green}==============================${c_red}=${c_normal}"
+echo "                        ${c_red}=${c_green}=${c_cyan}${s_reverse}   Compilation succeeded!   ${c_green}=${c_red}=${c_normal}"
+echo "                        ${c_red}=${c_green}==============================${c_red}=${c_normal}"
+echo "                        ${c_red}================================${c_normal}"
+echo "${c_normal}"

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Irrlicht Pong" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./Pong" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="../../../LunaLibs/Irrlicht/include" />
+			<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/game/irrlicht/Irrlicht-SVN/include" />
+			<Add directory="./game" />
+			<Add directory="./environment" />
+			<Add directory="./helper" />
+			<Add directory="./hud" />
+			<Add directory="./main" />
+			<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/bullet3-2.86.1/src" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="X11" />
+			<Add library="BulletDynamics" />
+			<Add library="BulletCollision" />
+			<Add library="LinearMath" />
+			<Add directory="../../../LunaLibs/Irrlicht/lib/Linux" />
+			<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux" />
+			<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/bullet3-2.86.1/src/BulletCollision" />
+			<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/bullet3-2.86.1/src/BulletDynamics" />
+			<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/bullet3-2.86.1/src/LinearMath" />
+		</Linker>
+		<Unit filename="enviroment/Sky.cpp" />
+		<Unit filename="enviroment/Sky.h" />
+		<Unit filename="enviroment/Terrain.cpp" />
+		<Unit filename="enviroment/Terrain.h" />
+		<Unit filename="enviroment/castle.cpp" />
+		<Unit filename="enviroment/castle.h" />
+		<Unit filename="game/Application.cpp" />
+		<Unit filename="game/Application.h" />
+		<Unit filename="game/ball.cpp" />
+		<Unit filename="game/ball.h" />
+		<Unit filename="game/camera.cpp" />
+		<Unit filename="game/camera.h" />
+		<Unit filename="game/cannon.cpp" />
+		<Unit filename="game/cannon.h" />
+		<Unit filename="game/gamemanager.cpp" />
+		<Unit filename="game/gamemanager.h" />
+		<Unit filename="game/keyboard.cpp" />
+		<Unit filename="game/keyboard.h" />
+		<Unit filename="game/physics.cpp" />
+		<Unit filename="game/physics.h" />
+		<Unit filename="game/player.cpp" />
+		<Unit filename="game/player.h" />
+		<Unit filename="game/target.cpp" />
+		<Unit filename="game/target.h" />
+		<Unit filename="helper/Logger.cpp" />
+		<Unit filename="helper/Logger.h" />
+		<Unit filename="helper/bullethelper.cpp" />
+		<Unit filename="helper/bullethelper.h" />
+		<Unit filename="helper/motionstatemanager.cpp" />
+		<Unit filename="helper/motionstatemanager.h" />
+		<Unit filename="hud/hud.cpp" />
+		<Unit filename="hud/hud.h" />
+		<Unit filename="hud/launcher.cpp" />
+		<Unit filename="hud/launcher.h" />
+		<Unit filename="main/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

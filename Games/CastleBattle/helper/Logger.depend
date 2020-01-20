@@ -1,0 +1,2 @@
+src/helper/Logger.o: src/helper/Logger.cpp src/helper/Logger.h \
+ src/helper/bullethelper.h

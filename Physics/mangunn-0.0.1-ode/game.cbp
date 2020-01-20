@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="OSRPG Project: Maggun 0.0.1" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="game" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="/home/Dev/libs/Irrlicht/include" />
+			<Add directory="/home/Dev/libs/physics/ode/include" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="GL" />
+			<Add library="Xxf86vm" />
+			<Add library="ode" />
+			<Add directory="/home/Dev/libs/physics/ode/lib" />
+			<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
+		</Linker>
+		<Unit filename="src/core.cpp" />
+		<Unit filename="src/core.h" />
+		<Unit filename="src/gui/edit_menu.cpp" />
+		<Unit filename="src/gui/edit_menu.h" />
+		<Unit filename="src/gui/main_menu.cpp" />
+		<Unit filename="src/gui/main_menu.h" />
+		<Unit filename="src/gui/options_menu.cpp" />
+		<Unit filename="src/gui/options_menu.h" />
+		<Unit filename="src/map/entity.cpp" />
+		<Unit filename="src/map/entity.h" />
+		<Unit filename="src/map/format.h" />
+		<Unit filename="src/map/joint.cpp" />
+		<Unit filename="src/map/joint.h" />
+		<Unit filename="src/map/joint_bs.cpp" />
+		<Unit filename="src/map/joint_bs.h" />
+		<Unit filename="src/map/joint_hinge.cpp" />
+		<Unit filename="src/map/joint_hinge.h" />
+		<Unit filename="src/map/light.cpp" />
+		<Unit filename="src/map/light.h" />
+		<Unit filename="src/map/mesh.cpp" />
+		<Unit filename="src/map/mesh.h" />
+		<Unit filename="src/map/place_tag.cpp" />
+		<Unit filename="src/map/place_tag.h" />
+		<Unit filename="src/map/player.cpp" />
+		<Unit filename="src/map/player.h" />
+		<Unit filename="src/map/scene.cpp" />
+		<Unit filename="src/map/scene.h" />
+		<Unit filename="src/map/sky.cpp" />
+		<Unit filename="src/map/sky.h" />
+		<Unit filename="src/misc/events.h" />
+		<Unit filename="src/misc/help.cpp" />
+		<Unit filename="src/misc/help.h" />
+		<Unit filename="src/registry.cpp" />
+		<Unit filename="src/registry.h" />
+		<Unit filename="src/settings.cpp" />
+		<Unit filename="src/settings.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

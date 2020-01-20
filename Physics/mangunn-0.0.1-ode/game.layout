@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="All" />
+	<File name="src/settings.h" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="304" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="13" />
+		</Folding>
+	</File>
+	<File name="src/settings.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="11" />
+			<Collapse line="22" />
+			<Collapse line="27" />
+			<Collapse line="31" />
+			<Collapse line="35" />
+			<Collapse line="39" />
+			<Collapse line="56" />
+			<Collapse line="60" />
+			<Collapse line="64" />
+			<Collapse line="69" />
+			<Collapse line="74" />
+			<Collapse line="79" />
+			<Collapse line="101" />
+			<Collapse line="157" />
+		</Folding>
+	</File>
+	<File name="src/map/player.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="12" />
+			<Collapse line="27" />
+			<Collapse line="32" />
+			<Collapse line="37" />
+			<Collapse line="69" />
+			<Collapse line="77" />
+			<Collapse line="81" />
+			<Collapse line="106" />
+			<Collapse line="112" />
+		</Folding>
+	</File>
+	<File name="src/map/mesh.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="14" />
+			<Collapse line="33" />
+			<Collapse line="39" />
+			<Collapse line="55" />
+			<Collapse line="150" />
+			<Collapse line="154" />
+			<Collapse line="165" />
+			<Collapse line="170" />
+			<Collapse line="178" />
+			<Collapse line="185" />
+		</Folding>
+	</File>
+	<File name="src/misc/help.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/core.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="17" />
+			<Collapse line="33" />
+			<Collapse line="44" />
+			<Collapse line="63" />
+			<Collapse line="73" />
+			<Collapse line="108" />
+			<Collapse line="165" />
+		</Folding>
+	</File>
+	<File name="src/map/place_tag.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="8" />
+			<Collapse line="12" />
+			<Collapse line="16" />
+			<Collapse line="21" />
+		</Folding>
+	</File>
+	<File name="src/map/format.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/map/mesh.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="11" />
+		</Folding>
+	</File>
+	<EditorTabsLayout layout="03f8a7605e25dc58001cebad00000002=*0;OSRPG Project: Maggun 0.0.1:src/settings.h,1;OSRPG Project: Maggun 0.0.1:src/map/format.h,2;OSRPG Project: Maggun 0.0.1:src/map/mesh.h,3;OSRPG Project: Maggun 0.0.1:src/map/place_tag.cpp,4;OSRPG Project: Maggun 0.0.1:src/map/player.cpp,5;OSRPG Project: Maggun 0.0.1:src/core.cpp,6;OSRPG Project: Maggun 0.0.1:src/settings.cpp,7;OSRPG Project: Maggun 0.0.1:src/map/mesh.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=328;besth=341;minw=328;minh=341;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03f8a7605e25dc58001cebad00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+</CodeBlocks_layout_file>

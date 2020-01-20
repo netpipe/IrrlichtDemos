@@ -1,0 +1,2 @@
+src/helper/bullethelper.o: src/helper/bullethelper.cpp \
+ src/helper/bullethelper.h

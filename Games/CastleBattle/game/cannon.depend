@@ -1,0 +1,3 @@
+src/game/cannon.o: src/game/cannon.cpp src/game/cannon.h src/game/ball.h \
+ src/game/physics.h src/helper/bullethelper.h src/game/camera.h \
+ src/game/keyboard.h src/helper/Logger.h

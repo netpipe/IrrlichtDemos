@@ -1,0 +1,198 @@
+---------------------------------------
+			Contents
+---------------------------------------
+0. Requirements
+	0.1. Operating system
+	0.2. Libraries
+	0.3. Compiler
+
+---------------------------------------
+1. Compilation
+	1.1. Compilation environment
+	1.2. Libraries compilation
+	1.3. Application compilation
+
+---------------------------------------
+2. Documentation
+	2.1. Getting API
+
+---------------------------------------
+3. Notes
+	3.1. About Open Source and everything...
+
+---------------------------------------
+4. Usage
+	4.1. System settings
+
+---------------------------------------
+
+
+---------------------------------------
+	0.1. Operating system
+---------------------------------------
+
+Best: GNU/Linux.
+Worst: M$ Windows.
+
+It may work on other POSIX systems, I didn't check it.
+
+---------------------------------------
+	0.2. Libraries
+---------------------------------------
+
+a) Irrlicht SVN revision 267;
+b) ODE >= 0.7;
+c) OpenGL >= 1.2.
+
+M$ DirectX is not supported at the moment, and I hope
+it'll never be supported.
+
+---------------------------------------
+	0.3. Compiler
+---------------------------------------
+
+Under GNU/Linux you'll need, of course, GCC >= 3.
+Under M$ Windows I recommend to use GCC >= 3 too.
+
+---------------------------------------
+1.1. Compilation environment
+---------------------------------------
+
+Almost all GNU/Linux distributions install development packages by default,
+so you already have everything for development.
+
+Under Windows you need:
+a) MinGW + MSYS + msys-DTK, or CygWin (didn't check that one);
+b) Code::Blocks >= 1.0 RC2 Studio.
+
+---------------------------------------
+1.2. Libraries compilation
+---------------------------------------
+
+a) Irrlicht
+
+Under GNU/Linux simply run
+	$ make
+in irrlicht/source/Irrlicht directory.
+
+NOTE: You must install Irrlicht library and headers into /usr/local
+to conform Makefile.
+
+You may encounter the problem with glXGetProcAddress or smth when
+compiling COpenGLDriver.cpp
+That's not a big problem. You should just add
+	#define IRR_OGL_LOAD_EXTENSION glXGetProcAddressARB
+or
+	#define IRR_OGL_LOAD_EXTENSION glXGetProcAddress
+after
+	#ifdef GLX_VERSION_<ver_num>
+	...
+	#endif
+block.
+
+Under M$ Windows you need to install MinGW (or CygWin)
+[both contain GCC], then Code::Blocks Studio.
+Code::Blocks Studio will automatically detect available compilers,
+but I will only explain how to compile with GCC. So set GCC as default
+compiler.
+
+Now go to irrlicht/sorce/Irrlicht directory and simply
+double-click on Irrlicht.cbp file.
+Since we don't support M$ DirectX you can disable its support in Irrlicht.
+Go to Headers->Include->IrrCompileConfig.h and comment the following lines:
+	#define _IRR_COMPILE_WITH_DIRECT3D_<ver_num>
+Select Build menu->Build or press <Ctrl+F9> to build Irrlicht.
+
+You will find Irrlicht.dll and libIrrlicht.a libraries in
+irrlicht/bin/Win32-gcc directory.
+
+You may encounter the problem with gluCheckExtension or smth.
+That's not a big problem either. Simply comment
+	#ifdef GLU_VERSION_<ver_num>
+	...
+	#else
+block and also
+	#endif
+a bit lower.
+
+b) ODE
+
+Under GNU/Linux simply run
+	$ ./configure --enable-opcode
+	$ make
+
+NOTE: You must install ODE library and headers into /usr/local
+to conform Makefile.
+
+Under M$ Windows you need either MinGW + MSYS + msys-DTK, or CygWin.
+If you use MSYS and msys-DTK, you can simply run
+	$ ./configure --enable-opcode
+	$ make
+
+---------------------------------------
+1.3. Application compilation
+---------------------------------------
+
+Under GNU/Linux simply run
+	$ make
+
+Under M$ Windows use Code::Blocks Studio.
+You must make sure Code::Blocks Studio can find Irrlicht and ODE.
+Go to Build menu->Compiler options->Linker tab.
+Add path(s) to libIrrlicht.a and libode.a
+Go to Directories tab->Compiler tab.
+Add path(s) to Irrlicht and ODE headers.
+Go to Directories tab->Linker tab.
+Add path(s) to libIrrlicht.a and libode.a
+
+Application will require Irrlicht.dll and libode.dll in order to run.
+You can place them to WINDOWS/SYSTEM directory.
+
+---------------------------------------
+2.1. Getting API
+---------------------------------------
+
+NOTE: sources are not yet marked up, so you'll get no real API
+
+Under GNU/Linux if you have Doxygen installed, you can generate
+API documentation running
+	$ make api
+
+May be it's possible to install Doxygen under MinGW and CygWin,
+I didn't try that.
+
+---------------------------------------
+	3.1. About Open Source and everything...
+---------------------------------------
+
+NOTE: A thing about killing OpenGL by M$ is outdated, but here it is
+to show you that M$ will be trying to kill it when another "new" Windows
+is to be released.
+
+GNU/Linux (and probaly all POSIX) are best suitable for OpenGL.
+M$ Windows' OpenGL is not that good, and it becomes now even more
+buggy with political M$ decision to kill OpenGL by making M$ Windows'
+OpenGL just a layer upon M$ DirectX.
+You know, I don't like M$ for that and many-many other things.
+You should really try GNU/Linux. You will find a great amount of
+distributions which offer either more user friendly approach, or
+more internals-learning approach. It's no longer true that GNU/Linux
+is harder to install/use than M$ Windows. You can even have Ubuntu
+distribution CDs shipped for you for zero money!
+The OSRPG project purpose is to create Open Source RPG to prove
+that Open Source can make anything and that you can do everything under
+GNU/Linux. Even play the best RPG!
+
+Also, nVIDIA supports *nix best of all, while ATI lacks video drivers
+for recent notebook video card graphics chipsets (correct me if I'm wrong).
+Decide wisely which video card to use.
+
+---------------------------------------
+	4.1. System settings
+---------------------------------------
+
+Maggun can use file named "settings" within either current directory, or
+within $(HOME)/.config/osrpg/maggun/settings
+"settings" in current directory has higher priority.
+Create empty "settings" file if in doubt.
+

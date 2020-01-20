@@ -1,0 +1,2 @@
+src/game/target.o: src/game/target.cpp src/helper/Logger.h \
+ src/helper/bullethelper.h src/game/target.h src/game/physics.h

@@ -1,0 +1,2 @@
+src/game/physics.o: src/game/physics.cpp src/helper/motionstatemanager.h \
+ src/helper/bullethelper.h src/game/physics.h src/helper/bullethelper.h

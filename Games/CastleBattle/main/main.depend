@@ -1,0 +1,6 @@
+src/main/main.o: src/main/main.cpp src/game/Application.h \
+ src/enviroment/Terrain.h src/game/physics.h src/game/gamemanager.h \
+ src/hud/hud.h src/game/player.h src/game/keyboard.h src/game/ball.h \
+ src/helper/bullethelper.h src/game/camera.h src/game/target.h \
+ src/enviroment/castle.h src/game/target.h src/game/physics.h \
+ src/game/cannon.h src/helper/Logger.h src/hud/launcher.h

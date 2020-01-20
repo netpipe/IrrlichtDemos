@@ -1,0 +1,38 @@
+
+Merge AddMesh and EditMesh
+
+Modify Makefile for correct sources dependency
+
+Make better look for (un)selected light, zone, placetag objects
+
+Allow to save maps without explicit ".omf" extension designation
+
+Make hotkeys config
+
+//Display X-Y-Z axes when an object is selected, or make AxesNode child of cam
+
+When adding an object, place it in front of the camera
+
+Add "Apply" to Map properties dialog
+
+Move objects by holding them
+
+[LOWERING MEMORY USAGE] Remove IAnimatedMesh from cache
+
+Add joints to OMF
+
+Use exceptions for good description in scene.h in Add*, Edit*. That will
+greatly ease debugging
+
+Clear the code
+
+Make possible to click on a file so that its filename appears in path (SaveAs)
+
+[PERFORMANCE INCREASE] Modify MapScene::DrawAddons so that it doesn't check all
+joint addons for rendering, but uses vector of pointers to draw only necessary addons 
+
+[PERFORMANCE INCREASE] Make one-one table of mesh indices, etc instead of
+for (...) cycles. Although, it's goddamn hard to accomplish
+
+Cosnstrain angles must be floats
+

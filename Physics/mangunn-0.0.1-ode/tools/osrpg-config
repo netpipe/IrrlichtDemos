@@ -1,0 +1,27 @@
+#!/bin/bash
+
+return_cxxflags () {
+	# dirs
+	cxxflags="-I/usr/local/include/irrlicht -I/usr/X11/include"
+	# flags
+	cxxflags="$cxxflags -g -Wall"
+	echo "$cxxflags"
+}
+
+return_libs () {
+	# dirs
+	libs="-L/usr/local/lib -L/usr/X11/lib"
+	# flags
+	libs="$libs -lIrrlicht -lode -lGL -lGLU -lXxf86vm -lXext -lX11"
+	echo "$libs"
+}
+
+case $1 in
+	--cxxflags)
+	return_cxxflags
+	;;
+	--libs)
+	return_libs
+	;;
+esac
+

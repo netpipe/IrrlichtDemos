@@ -1,0 +1,2 @@
+src/hud/hud.o: src/hud/hud.cpp src/hud/hud.h src/helper/Logger.h \
+ src/helper/bullethelper.h
