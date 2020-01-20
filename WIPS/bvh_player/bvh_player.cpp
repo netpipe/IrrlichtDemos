@@ -314,7 +314,7 @@ void  keyboard( unsigned char key, int mx, int my )
 //		open_file.Flags = OFN_PATHMUSTEXIST | OFN_FILEMUSTEXIST | OFN_HIDEREADONLY;
 //
 //		// ファイルダイアログを表示
-		BOOL  ret = GetOpenFileName( &open_file );
+		bool  ret = GetOpenFileName( &open_file );
 //
 //		// ファイルが指定されたら新しい動作を設定
 //		if( ret )

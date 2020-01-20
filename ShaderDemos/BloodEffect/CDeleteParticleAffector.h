@@ -1,7 +1,7 @@
 #ifndef CLASS_DELETE_PARTICLE_AFFECTOR_H_INC
 #define CLASS_DELETE_PARTICLE_AFFECTOR_H_INC
 
-#include <Irrlicht.h>
+#include <irrlicht.h>
 
 class CDeleteParticleAffector : public irr::scene::IParticleAffector
 {

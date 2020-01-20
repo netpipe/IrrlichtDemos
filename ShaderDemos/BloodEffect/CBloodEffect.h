@@ -1,7 +1,7 @@
 #ifndef CLASS_BLOOD_EFFECT_H_INC
 #define CLASS_BLOOD_EFFECT_H_INC
 
-#include <Irrlicht.h>
+#include <irrlicht.h>
 
 class CDeleteParticleAffector;
 

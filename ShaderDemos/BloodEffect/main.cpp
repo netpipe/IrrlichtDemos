@@ -1,4 +1,4 @@
-#include <Irrlicht.h>
+#include <irrlicht.h>
 #include "CBloodEffect.h"
 #include "CBloodShader.h"
 
@@ -98,7 +98,7 @@ int main()
   SIrrlichtCreationParameters deviceParams;
 
   //deviceParams.DriverType = EDT_OPENGL;
-  deviceParams.DriverType = EDT_DIRECT3D9;
+  deviceParams.DriverType = EDT_OPENGL;
   deviceParams.WindowSize = dimension2du(800, 600);
   deviceParams.Bits       = 32;
   deviceParams.Fullscreen = false;
@@ -166,4 +166,4 @@ int main()
   device->drop();
 
   return 0;
-} 
+}
