@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Irrlicht Example 10 Shaders" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Windows">
+				<Option platforms="Windows;" />
+				<Option output="../../bin/Win32-gcc/Shaders" prefix_auto="0" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add directory="../../lib/Win32-gcc" />
+				</Linker>
+			</Target>
+			<Target title="Linux">
+				<Option platforms="Unix;" />
+				<Option output="../../bin/Linux/Shaders" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+				</Compiler>
+				<Linker>
+					<Add library="Xxf86vm" />
+					<Add library="X11" />
+					<Add library="GL" />
+					<Add directory="../../lib/Linux" />
+				</Linker>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="Windows;Linux;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-g" />
+			<Add directory="../../include" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+		</Linker>
+		<Unit filename="include/Buttons.h" />
+		<Unit filename="include/CollisionMaterialInteraction.h" />
+		<Unit filename="include/Event.h" />
+		<Unit filename="include/IAngularThruster.h" />
+		<Unit filename="include/IBobAnimator.h" />
+		<Unit filename="include/IBody.h" />
+		<Unit filename="include/IBoxCollisionGeometry.h" />
+		<Unit filename="include/ICamera.h" />
+		<Unit filename="include/ICameraCollider.h" />
+		<Unit filename="include/ICameraController.h" />
+		<Unit filename="include/ICharacter.h" />
+		<Unit filename="include/ICharacterController.h" />
+		<Unit filename="include/ICollisionGeometry.h" />
+		<Unit filename="include/ICollisionMaterial.h" />
+		<Unit filename="include/IController.h" />
+		<Unit filename="include/IDynamicBody.h" />
+		<Unit filename="include/IEngine.h" />
+		<Unit filename="include/IEventQueue.h" />
+		<Unit filename="include/IGraphic.h" />
+		<Unit filename="include/IInputProfile.h" />
+		<Unit filename="include/ILinearThrustRotationController.h" />
+		<Unit filename="include/ILinearThruster.h" />
+		<Unit filename="include/IMesh.h" />
+		<Unit filename="include/IMeshCollisionGeometry.h" />
+		<Unit filename="include/IMotionAnimator.h" />
+		<Unit filename="include/IMotionSensor.h" />
+		<Unit filename="include/INodeHandler.h" />
+		<Unit filename="include/IPausable.h" />
+		<Unit filename="include/IPhysics.h" />
+		<Unit filename="include/IPositionController.h" />
+		<Unit filename="include/IPostProcessingChain.h" />
+		<Unit filename="include/IProxyTransformable.h" />
+		<Unit filename="include/IRenderSystem.h" />
+		<Unit filename="include/IRotationController.h" />
+		<Unit filename="include/ISensor.h" />
+		<Unit filename="include/IShader.h" />
+		<Unit filename="include/ISound.h" />
+		<Unit filename="include/ISound2D.h" />
+		<Unit filename="include/ISound3D.h" />
+		<Unit filename="include/ISoundQueue.h" />
+		<Unit filename="include/ISoundSource.h" />
+		<Unit filename="include/ISoundSystem.h" />
+		<Unit filename="include/ISphereCollisionGeometry.h" />
+		<Unit filename="include/IStaticBody.h" />
+		<Unit filename="include/IThirdPersonCameraCollider.h" />
+		<Unit filename="include/IThirdPersonCameraController.h" />
+		<Unit filename="include/IThruster.h" />
+		<Unit filename="include/ITransformable.h" />
+		<Unit filename="include/IUpdatable.h" />
+		<Unit filename="include/IUpdater.h" />
+		<Unit filename="include/IVisibleGraphic.h" />
+		<Unit filename="include/IWantEvents.h" />
+		<Unit filename="include/IWantInput.h" />
+		<Unit filename="include/IWorld.h" />
+		<Unit filename="include/Litha.h" />
+		<Unit filename="include/collision_structs.h" />
+		<Unit filename="include/litha_internal.h" />
+		<Unit filename="include/utils/Set.h" />
+		<Unit filename="include/utils/Variant.h" />
+		<Unit filename="include/utils/VariantMap.h" />
+		<Unit filename="include/utils/file.h" />
+		<Unit filename="include/utils/log.h" />
+		<Unit filename="include/utils/maths.h" />
+		<Unit filename="include/utils/os.h" />
+		<Unit filename="include/utils/os/path.h" />
+		<Unit filename="include/utils/str.h" />
+		<Unit filename="source/Animators/BobAnimator.cpp" />
+		<Unit filename="source/Animators/BobAnimator.h" />
+		<Unit filename="source/Animators/RotationAnimator.cpp" />
+		<Unit filename="source/Animators/RotationAnimator.h" />
+		<Unit filename="source/Camera.cpp" />
+		<Unit filename="source/Camera.h" />
+		<Unit filename="source/Character.cpp" />
+		<Unit filename="source/Character.h" />
+		<Unit filename="source/Engine.cpp" />
+		<Unit filename="source/Engine.h" />
+		<Unit filename="source/EventQueue.cpp" />
+		<Unit filename="source/EventQueue.h" />
+		<Unit filename="source/InfiniteRunningAverage.h" />
+		<Unit filename="source/InputProfile.cpp" />
+		<Unit filename="source/InputProfile.h" />
+		<Unit filename="source/Kernel.cpp" />
+		<Unit filename="source/Kernel.h" />
+		<Unit filename="source/LogicTask.cpp" />
+		<Unit filename="source/LogicTask.h" />
+		<Unit filename="source/Mesh.cpp" />
+		<Unit filename="source/Mesh.h" />
+		<Unit filename="source/MotionSensor.cpp" />
+		<Unit filename="source/MotionSensor.h" />
+		<Unit filename="source/NodeHandler.cpp" />
+		<Unit filename="source/NodeHandler.h" />
+		<Unit filename="source/Physics/BoxCollisionGeometry.cpp" />
+		<Unit filename="source/Physics/BoxCollisionGeometry.h" />
+		<Unit filename="source/Physics/CollisionGeometry.cpp" />
+		<Unit filename="source/Physics/CollisionGeometry.h" />
+		<Unit filename="source/Physics/CollisionMaterial.cpp" />
+		<Unit filename="source/Physics/CollisionMaterial.h" />
+		<Unit filename="source/Physics/DynamicBody.cpp" />
+		<Unit filename="source/Physics/DynamicBody.h" />
+		<Unit filename="source/Physics/MeshCollisionGeometry.cpp" />
+		<Unit filename="source/Physics/MeshCollisionGeometry.h" />
+		<Unit filename="source/Physics/Physics.cpp" />
+		<Unit filename="source/Physics/Physics.h" />
+		<Unit filename="source/Physics/SphereCollisionGeometry.cpp" />
+		<Unit filename="source/Physics/SphereCollisionGeometry.h" />
+		<Unit filename="source/Physics/StaticBody.cpp" />
+		<Unit filename="source/Physics/StaticBody.h" />
+		<Unit filename="source/Physics/ode_utility.cpp" />
+		<Unit filename="source/Physics/ode_utility.h" />
+		<Unit filename="source/Physics/ray_collision.cpp" />
+		<Unit filename="source/Physics/ray_collision.h" />
+		<Unit filename="source/PostProcessingChain.cpp" />
+		<Unit filename="source/PostProcessingChain.h" />
+		<Unit filename="source/ProxyTransformable.cpp" />
+		<Unit filename="source/ProxyTransformable.h" />
+		<Unit filename="source/RenderTask.cpp" />
+		<Unit filename="source/RenderTask.h" />
+		<Unit filename="source/Shader.cpp" />
+		<Unit filename="source/Shader.h" />
+		<Unit filename="source/ShaderInstance.cpp" />
+		<Unit filename="source/ShaderInstance.h" />
+		<Unit filename="source/ShaderInstanceDef.h" />
+		<Unit filename="source/ShaderManager.cpp" />
+		<Unit filename="source/ShaderManager.h" />
+		<Unit filename="source/SoundMotionCallback.h" />
+		<Unit filename="source/SoundQueue.cpp" />
+		<Unit filename="source/SoundQueue.h" />
+		<Unit filename="source/SoundSource.cpp" />
+		<Unit filename="source/SoundSource.h" />
+		<Unit filename="source/SoundSystems/OpenALSoundSystem/OpenALSound.cpp" />
+		<Unit filename="source/SoundSystems/OpenALSoundSystem/OpenALSound.h" />
+		<Unit filename="source/SoundSystems/OpenALSoundSystem/OpenALSound2D.cpp" />
+		<Unit filename="source/SoundSystems/OpenALSoundSystem/OpenALSound2D.h" />
+		<Unit filename="source/SoundSystems/OpenALSoundSystem/OpenALSound3D.cpp" />
+		<Unit filename="source/SoundSystems/OpenALSoundSystem/OpenALSound3D.h" />
+		<Unit filename="source/SoundSystems/OpenALSoundSystem/OpenALSoundSystem.cpp" />
+		<Unit filename="source/SoundSystems/OpenALSoundSystem/OpenALSoundSystem.h" />
+		<Unit filename="source/SoundSystems/OpenALSoundSystem/openal_stuff.cpp" />
+		<Unit filename="source/SoundSystems/OpenALSoundSystem/openal_stuff.h" />
+		<Unit filename="source/SoundSystems/OpenALSoundSystem/sound_reg.cpp" />
+		<Unit filename="source/SoundSystems/OpenALSoundSystem/sound_reg.h" />
+		<Unit filename="source/SoundSystems/OpenALSoundSystem/stb_vorbis.h" />
+		<Unit filename="source/Task.h" />
+		<Unit filename="source/ThirdPersonCameraController.cpp" />
+		<Unit filename="source/ThirdPersonCameraController.h" />
+		<Unit filename="source/Updater.h" />
+		<Unit filename="source/UserCharacterController.cpp" />
+		<Unit filename="source/UserCharacterController.h" />
+		<Unit filename="source/World.cpp" />
+		<Unit filename="source/World.h" />
+		<Unit filename="source/utils/Variant.cpp" />
+		<Unit filename="source/utils/VariantMap.cpp" />
+		<Unit filename="source/utils/file.cpp" />
+		<Unit filename="source/utils/log.cpp" />
+		<Unit filename="source/utils/maths.cpp" />
+		<Unit filename="source/utils/os.cpp" />
+		<Unit filename="source/utils/os/path.cpp" />
+		<Unit filename="source/utils/str.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
