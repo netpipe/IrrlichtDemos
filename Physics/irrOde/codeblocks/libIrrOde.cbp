@@ -36,18 +36,17 @@
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
-					<Add library="../../libs/ode-0.11-gcc/lib/ReleaseSingleDLL/libode_single.a" />
+					<Add library="ode" />
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
 			<Add directory="../include/IrrOde" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
-			<Add directory="/home/Dev/libs/physics/ODE/ode-0.13/include" />
+			<Add directory="../../../../LunaLibs/physics/ode-0.13/include" />
 		</Compiler>
 		<Linker>
-			<Add library="../../libs/irrlicht-1.7.1/lib/Win32-gcc/libIrrlicht.a" />
-			<Add directory="/home/Dev/libs/physics/ODE/ode-0.13/" />
+			<Add directory="../../../../LunaLibs/physics/ode-0.13/ode/src/.libs" />
 		</Linker>
 		<Unit filename="../include/IrrOde/CIrrOdeBody.h" />
 		<Unit filename="../include/IrrOde/CIrrOdeContactParameters.h" />

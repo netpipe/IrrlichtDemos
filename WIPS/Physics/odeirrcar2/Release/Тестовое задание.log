@@ -1,0 +1,103 @@
+﻿Построение начато 15.06.2011 16:24:58.
+     1>Проект "C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\Тестовое задание.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Обращение к "Release\Тестовое задание.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde" /I"C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\irrlicht" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Car.cpp GUI.cpp main.cpp NPCCar.cpp PlayerCar.cpp
+         Car.cpp
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\CSerializer.h(148): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105): см. объявление "strcpy"
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\CSerializer.h(273): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105): см. объявление "strcpy"
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\event/CIrrOdeEventBodyMoved.h(50): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\event/CIrrOdeEventBodyMoved.h(51): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\event/CIrrOdeEventBodyMoved.h(52): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\event/CIrrOdeEventBodyMoved.h(53): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\event/CIrrOdeEventBodyMoved.h(54): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+     1>c:\users\андрей\documents\visual studio 2010\projects\тестовое задание\тестовое задание\Wheel.h(64): warning C4305: аргумент: усечение из "double" к "irr::f32"
+     1>Car.cpp(62): warning C4305: =: усечение из "double" к "irr::f32"
+     1>Car.cpp(70): warning C4305: =: усечение из "double" к "irr::f32"
+     1>Car.cpp(73): warning C4305: инициализация: усечение из "double" к "const irr::f32"
+         GUI.cpp
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\CSerializer.h(148): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105): см. объявление "strcpy"
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\CSerializer.h(273): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105): см. объявление "strcpy"
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\event/CIrrOdeEventBodyMoved.h(50): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\event/CIrrOdeEventBodyMoved.h(51): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\event/CIrrOdeEventBodyMoved.h(52): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\event/CIrrOdeEventBodyMoved.h(53): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\event/CIrrOdeEventBodyMoved.h(54): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+         main.cpp
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\CSerializer.h(148): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105): см. объявление "strcpy"
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\CSerializer.h(273): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105): см. объявление "strcpy"
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\event/CIrrOdeEventBodyMoved.h(50): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\event/CIrrOdeEventBodyMoved.h(51): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\event/CIrrOdeEventBodyMoved.h(52): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\event/CIrrOdeEventBodyMoved.h(53): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\event/CIrrOdeEventBodyMoved.h(54): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+     1>c:\users\андрей\documents\visual studio 2010\projects\тестовое задание\тестовое задание\Wheel.h(64): warning C4305: аргумент: усечение из "double" к "irr::f32"
+     1>c:\users\андрей\documents\visual studio 2010\projects\тестовое задание\тестовое задание\NPCCar.h(24): warning C4244: =: преобразование "irr::u32" в "irr::f32", возможна потеря данных
+     1>c:\users\андрей\documents\visual studio 2010\projects\тестовое задание\тестовое задание\NPCCar.h(36): warning C4305: +=: усечение из "double" к "irr::f32"
+     1>c:\users\андрей\documents\visual studio 2010\projects\тестовое задание\тестовое задание\NPCCar.h(45): warning C4244: инициализация: преобразование "irr::f32" в "int", возможна потеря данных
+     1>c:\users\андрей\documents\visual studio 2010\projects\тестовое задание\тестовое задание\NPCCar.h(45): warning C4244: инициализация: преобразование "irr::f32" в "int", возможна потеря данных
+     1>c:\users\андрей\documents\visual studio 2010\projects\тестовое задание\тестовое задание\NPCCar.h(52): warning C4244: =: преобразование "double" в "irr::f32", возможна потеря данных
+     1>c:\users\андрей\documents\visual studio 2010\projects\тестовое задание\тестовое задание\Cube.h(91): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+     1>c:\users\андрей\documents\visual studio 2010\projects\тестовое задание\тестовое задание\Cube.h(92): warning C4244: аргумент: преобразование "int" в "irr::f32", возможна потеря данных
+     1>c:\users\андрей\documents\visual studio 2010\projects\тестовое задание\тестовое задание\Cube.h(92): warning C4244: аргумент: преобразование "int" в "irr::f32", возможна потеря данных
+     1>c:\users\андрей\documents\visual studio 2010\projects\тестовое задание\тестовое задание\Cube.h(92): warning C4244: аргумент: преобразование "int" в "irr::f32", возможна потеря данных
+     1>c:\users\андрей\documents\visual studio 2010\projects\тестовое задание\тестовое задание\Cube.h(94): warning C4244: аргумент: преобразование "int" в "irr::f32", возможна потеря данных
+     1>c:\users\андрей\documents\visual studio 2010\projects\тестовое задание\тестовое задание\Cube.h(94): warning C4244: аргумент: преобразование "int" в "irr::f32", возможна потеря данных
+     1>main.cpp(111): warning C4244: инициализация: преобразование "irr::u32" в "irr::f32", возможна потеря данных
+     1>main.cpp(261): warning C4244: =: преобразование "irr::u32" в "irr::f32", возможна потеря данных
+         NPCCar.cpp
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\CSerializer.h(148): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105): см. объявление "strcpy"
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\CSerializer.h(273): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105): см. объявление "strcpy"
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\event/CIrrOdeEventBodyMoved.h(50): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\event/CIrrOdeEventBodyMoved.h(51): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\event/CIrrOdeEventBodyMoved.h(52): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\event/CIrrOdeEventBodyMoved.h(53): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\event/CIrrOdeEventBodyMoved.h(54): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+     1>c:\users\андрей\documents\visual studio 2010\projects\тестовое задание\тестовое задание\Wheel.h(64): warning C4305: аргумент: усечение из "double" к "irr::f32"
+     1>c:\users\андрей\documents\visual studio 2010\projects\тестовое задание\тестовое задание\NPCCar.h(24): warning C4244: =: преобразование "irr::u32" в "irr::f32", возможна потеря данных
+     1>c:\users\андрей\documents\visual studio 2010\projects\тестовое задание\тестовое задание\NPCCar.h(36): warning C4305: +=: усечение из "double" к "irr::f32"
+     1>c:\users\андрей\documents\visual studio 2010\projects\тестовое задание\тестовое задание\NPCCar.h(45): warning C4244: инициализация: преобразование "irr::f32" в "int", возможна потеря данных
+     1>c:\users\андрей\documents\visual studio 2010\projects\тестовое задание\тестовое задание\NPCCar.h(45): warning C4244: инициализация: преобразование "irr::f32" в "int", возможна потеря данных
+     1>c:\users\андрей\documents\visual studio 2010\projects\тестовое задание\тестовое задание\NPCCar.h(52): warning C4244: =: преобразование "double" в "irr::f32", возможна потеря данных
+         PlayerCar.cpp
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\CSerializer.h(148): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105): см. объявление "strcpy"
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\CSerializer.h(273): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105): см. объявление "strcpy"
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\event/CIrrOdeEventBodyMoved.h(50): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\event/CIrrOdeEventBodyMoved.h(51): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\event/CIrrOdeEventBodyMoved.h(52): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\event/CIrrOdeEventBodyMoved.h(53): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+     1>C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\headers\IrrOde\event/CIrrOdeEventBodyMoved.h(54): warning C4800: int: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+     1>c:\users\андрей\documents\visual studio 2010\projects\тестовое задание\тестовое задание\Wheel.h(64): warning C4305: аргумент: усечение из "double" к "irr::f32"
+     1>PlayerCar.cpp(13): warning C4244: =: преобразование "double" в "irr::f32", возможна потеря данных
+     1>PlayerCar.cpp(14): warning C4244: =: преобразование "double" в "irr::f32", возможна потеря данных
+     1>PlayerCar.cpp(42): warning C4305: инициализация: усечение из "double" к "irr::f32"
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Release\Тестовое задание.exe" /NOLOGO /LIBPATH:"C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\libs\ODE" /LIBPATH:"C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\libs\IrrOde" /LIBPATH:"C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\include\libs\irrlicht" irrlicht.lib libIrrOde.lib ode_singled.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Тестовое задание.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Release\Тестовое задание.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Release\Тестовое задание.lib" /MACHINE:X86 Release\Car.obj
+         Release\GUI.obj
+         Release\main.obj
+         Release\NPCCar.obj
+         Release\PlayerCar.obj
+         Создание кода
+         Создание кода завершено
+         Тестовое задание.vcxproj -> C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Release\Тестовое задание.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Release\Тестовое задание.exe;#1" /manifest "Release\Тестовое задание.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         Файл "Release\Тестовое задание.unsuccessfulbuild" удаляется.
+         Обращение к "Release\Тестовое задание.lastbuildstate".
+     1>Построение проекта "C:\Users\Андрей\Documents\Visual Studio 2010\Projects\Тестовое задание\Тестовое задание\Тестовое задание.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:12.38

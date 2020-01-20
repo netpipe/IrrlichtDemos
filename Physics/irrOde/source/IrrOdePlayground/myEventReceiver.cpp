@@ -1,4 +1,4 @@
-#include <IrrODE.h>
+#include <IrrOde.h>
 #include "myEventReceiver.h"
 
 myEventReceiver::myEventReceiver() {

@@ -4,32 +4,23 @@
 	<ActiveTarget name="Release" />
 	<File name="TrueAxisClass.h" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1144" topLine="15" />
+			<Cursor1 position="1144" topLine="55" />
 		</Cursor>
-		<Folding>
-			<Collapse line="43" />
-		</Folding>
 	</File>
 	<File name="TrueAxisClass.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="149" />
+			<Cursor1 position="0" topLine="14" />
 		</Cursor>
 		<Folding>
-			<Collapse line="30" />
-			<Collapse line="52" />
-			<Collapse line="206" />
+			<Collapse line="64" />
+			<Collapse line="88" />
+			<Collapse line="185" />
 		</Folding>
 	</File>
 	<File name="Main.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="11" />
-			<Collapse line="28" />
-			<Collapse line="33" />
-			<Collapse line="38" />
-		</Folding>
 	</File>
-	<EditorTabsLayout layout="01bfb0505dcc7099004f2f1e00000002=0;TrueAxis:TrueAxisClass.cpp,*1;TrueAxis:TrueAxisClass.h,2;TrueAxis:Main.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=328;besth=326;minw=328;minh=326;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=01bfb0505dcc7099004f2f1e00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+	<EditorTabsLayout layout="025255c05e25566f001dcbd100000002=0;TrueAxis:TrueAxisClass.cpp,*1;TrueAxis:TrueAxisClass.h,2;TrueAxis:Main.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=408;besth=331;minw=408;minh=331;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=025255c05e25566f001dcbd100000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>

@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include <conio.h>
+//#include <conio.h>
 #include <time.h>
 #include <irrlicht.h>
-#include <IrrODE.h>
+#include <IrrOde.h>
 #include <CIrrOdeDevice.h>
 
 #include "myEventReceiver.h"
@@ -280,11 +280,11 @@ int main(int argc, char** argv) {
   printf(  "\t********************************\n\n");
   printf("Use shadows (y/n)? ");
   char c=' ';
-  do { c=getch(); printf("%c",c); } while (c!='y' && c!='n');
-  bShadows=c=='y';
+//  do { c=getch(); printf("%c",c); } while (c!='y' && c!='n');
+  bShadows=1;//c=='y';
   printf("\nUse trimesh for terrain (y/n)? ");
-  do { c=getch(); printf("%c",c); } while (c!='y' && c!='n');
-  bTerrainTrimesh=c=='y';
+ // do { c=getch(); printf("%c",c); } while (c!='y' && c!='n');
+  bTerrainTrimesh=1;//c=='y';
   printf("\nshadows: %s\nterrain trimesh: %s\n\n",bShadows?"YES":"NO",bTerrainTrimesh?"YES":"NO");
 
   g_pParams[0].setMode(dContactBounce | dContactSoftERP | dContactSoftCFM | dContactSlip1 | dContactSlip2);

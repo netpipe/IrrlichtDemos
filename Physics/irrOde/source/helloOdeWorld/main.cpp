@@ -18,7 +18,7 @@ int main(int argc, char** argv) {
   do { c=getchar(); } while (c!='1' && c!='2' && c!='3');
   if (c=='3') return 0;
 
-  IrrlichtDevice *device=createDevice(EDT_DIRECT3D9,dimension2d<u32>(640,480),16,false,false,false,0);
+  IrrlichtDevice *device=createDevice(EDT_OPENGL,dimension2d<u32>(640,480),16,false,false,false,0);
 
   device->setWindowCaption(L"HelloOdeWorld");
 
