@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<VehicleSceneNodeParams>
+	<BodyMeshFile>lancer_evo_6/pw-evoviwrc.obj</BodyMeshFile>
+	<TireMeshFile>lancer_evo_6/tire.obj</TireMeshFile>
+	<BodyMeshRot X="0.00" Y="90.00" Z="0.00" />
+	<FrontRightTireRot X="0.00" Y="-90.00" Z="0.00" />
+	<FrontLeftTireRot X="0.00" Y="90.00" Z="0.00" />
+	<RearRightTireRot X="0.00" Y="-90.00" Z="0.00" />
+	<RearLeftTireRot X="0.00" Y="90.00" Z="0.00" />
+	<TireScale Value="0.60" />
+	<TireOffsetDx Value="0.65" />
+	<TireOffsetDy Value="0.10" />
+	<TireOffsetDz1 Value="1.35" />
+	<TireOffsetDz2 Value="-1.25" />
+</VehicleSceneNodeParams>
+

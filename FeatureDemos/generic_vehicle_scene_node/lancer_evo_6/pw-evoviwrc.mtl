@@ -1,0 +1,24 @@
+# Blender3D MTL File: pw-evoviwrc.blend
+# Material Count: 2
+newmtl ac3dmat1_pw-evoviwrc.rgb
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.390625 0.390625 0.390625
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd pw-evoviwrc.png
+
+
+newmtl win_mat_pw-evoviwrc.rgb
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 0.050000
+illum 2
+map_Kd pw-evoviwrc.png
+
+
