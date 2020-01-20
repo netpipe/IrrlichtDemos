@@ -1,0 +1,4 @@
+[squid]
+Textures = squid1.png, squid2.png;
+Hitpoints = 10;
+Mark = S;

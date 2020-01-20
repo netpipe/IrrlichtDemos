@@ -1,0 +1,181 @@
+// Copyright (C) 2007 Kevin van Leeuwen
+// This file is part of the "LeeuwenGfx" Library.
+// For conditions of distribution and use, see copyright notice in LeeuwenGfx.h
+
+#ifndef _KeyCodesGfxHeader_
+#define _KeyCodesGfxHeader_
+
+namespace lew
+{
+	namespace gfx
+	{
+		enum KeyCode
+		{
+			EKC_BACKSPACE 		= 8,
+			EKC_TAB 			= 9,
+			EKC_CLEAR 			= 12,
+			EKC_RETURN 			= 13,
+			EKC_PAUSE 			= 19,
+			EKC_ESCAPE			= 27,
+			EKC_SPACE 			= 32,
+			EKC_EXCLAIM 		= 33,
+			EKC_QUOTEDBL 		= 34,
+			EKC_HASH 			= 35,
+			EKC_DOLLAR 			= 36,
+			EKC_AMPERSAND 		= 38,
+			EKC_QUOTE 			= 39,
+			EKC_LEFTPAREN 		= 40,
+			EKC_RIGHTPAREN 		= 41,
+			EKC_ASTERISK 		= 42,
+			EKC_PLUS 			= 43,
+			EKC_COMMA 			= 44,
+			EKC_MINUS 			= 45,
+			EKC_PERIOD 			= 46,
+			EKC_SLASH 			= 47,
+			EKC_0 				= 48,
+			EKC_1 				= 49,
+			EKC_2 				= 50,
+			EKC_3 				= 51,
+			EKC_4 				= 52,
+			EKC_5 				= 53,
+			EKC_6 				= 54,
+			EKC_7 				= 55,
+			EKC_8 				= 56,
+			EKC_9 				= 57,
+			EKC_COLON 			= 58,
+			EKC_SEMICOLON 		= 59,
+			EKC_LESS 			= 50,
+			EKC_EQUALS 			= 61,
+			EKC_GREATER 		= 62,
+			EKC_QUESTION 		= 63,
+			EKC_AT 				= 64,
+			EKC_LEFTBRACKET 	= 91,
+			EKC_BACKSLASH 		= 92,
+			EKC_RIGHTBRACKET 	= 93,
+			EKC_CARET 			= 94,
+			EKC_UNDERSCORE 		= 95,
+			EKC_BACKQUOTE 		= 96,
+			EKC_A 				= 97,
+			EKC_B 				= 98,
+			EKC_C 				= 99,
+			EKC_D 				= 100,
+			EKC_E 				= 101,
+			EKC_F 				= 102,
+			EKC_G 				= 103,
+			EKC_H 				= 104,
+			EKC_I 				= 105,
+			EKC_J 				= 106,
+			EKC_K 				= 107,
+			EKC_L 				= 108,
+			EKC_M 				= 109,
+			EKC_N 				= 110,
+			EKC_O 				= 111,
+			EKC_P 				= 112,
+			EKC_Q 				= 113,
+			EKC_R 				= 114,
+			EKC_S 				= 115,
+			EKC_T 				= 116,
+			EKC_U 				= 117,
+			EKC_V 				= 118,
+			EKC_W 				= 119,
+			EKC_X 				= 120,
+			EKC_Y 				= 121,
+			EKC_Z 				= 122,
+			EKC_DELETE 			= 127,
+			EKC_KEYPAD_0 		= 256,
+			EKC_KEYPAD_1 		= 257,
+			EKC_KEYPAD_2 		= 258,
+			EKC_KEYPAD_3 		= 259,
+			EKC_KEYPAD_4 		= 260,
+			EKC_KEYPAD_5 		= 261,
+			EKC_KEYPAD_6 		= 262,
+			EKC_KEYPAD_7 		= 263,
+			EKC_KEYPAD_8 		= 264,
+			EKC_KEYPAD_9 		= 265,
+			EKC_KEYPAD_PERIOD 	= 266,
+			EKC_KEYPAD_DIVIDE	= 267,
+			EKC_KEYPAD_MULTIPLY = 268,
+			EKC_KEYPAD_MINUS	= 269,
+			EKC_KEYPAD_PLUS		= 270,
+			EKC_KEYPAD_ENTER	= 271,
+			EKC_KEYPAD_EQUALS	= 272,
+			EKC_UP 				= 273,
+			EKC_DOWN 			= 274,
+			EKC_RIGHT 			= 275,
+			EKC_LEFT 			= 276,
+			EKC_INSERT 			= 277,
+			EKC_HOME 			= 278,
+			EKC_END 			= 279,
+			EKC_PAGEUP 			= 280,
+			EKC_PAGEDOWN 		= 281,
+			EKC_F1 				= 282,
+			EKC_F2 				= 283,
+			EKC_F3 				= 284,
+			EKC_F4 				= 285,
+			EKC_F5 				= 286,
+			EKC_F6 				= 287,
+			EKC_F7 				= 288,
+			EKC_F8 				= 289,
+			EKC_F9 				= 290,
+			EKC_F10 			= 291,
+			EKC_F11 			= 292,
+			EKC_F12 			= 293,
+			EKC_F13 			= 294,
+			EKC_F14 			= 295,
+			EKC_F15 			= 296,
+			EKC_NUMLOCK 		= 300,
+			EKC_CAPSLOCK 		= 301,
+			EKC_SCROLLLOCK 		= 302,
+			EKC_RIGHT_SHIFT 	= 303,
+			EKC_LEFT_SHIFT 		= 304,
+			EKC_RIGHT_CONTROL 	= 305,
+			EKC_LEFT_CONTROL 	= 306,
+			EKC_RIGHT_ALT 		= 307,
+			EKC_LEFT_ALT 		= 308,
+			EKC_RIGHT_META 		= 309,
+			EKC_LEFT_META 		= 310,
+			EKC_LEFT_SUPER 		= 311,
+			EKC_RIGHT_SUPER 	= 312,
+			EKC_MODE 			= 313,
+			EKC_HELP 			= 315,
+			EKC_PRINT 			= 316,
+			EKC_SYSREQ 			= 317,
+			EKC_BREAK 			= 318,
+			EKC_MENU 			= 319,
+			EKC_POWER 			= 320,
+			EKC_EURO 			= 321
+		};
+
+		enum ButtonCode
+		{
+			EBC_LEFT = 1,
+			EBC_RIGHT = 3,
+			EBC_MIDDLE = 2,
+			EBC_NONE = -1
+		};
+
+		enum WheelCode
+		{
+			EWC_UP,
+			EWC_DOWN,
+			EWC_NONE
+		};
+		
+		enum HatCode
+		{
+			EHC_CENTERED,
+			EHC_UP,
+			EHC_RIGHT,
+			EHC_DOWN,
+			EHC_LEFT,
+			EHC_RIGHTUP,
+			EHC_RIGHTDOWN,
+			EHC_LEFTUP,
+			EHC_LEFTDOWN,
+			EHC_NONE
+		};
+	};
+};
+
+#endif
+

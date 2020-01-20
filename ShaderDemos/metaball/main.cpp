@@ -28,13 +28,14 @@ int main() {
    cam->setPosition(vector3df(0, 0, -400));
 
    MetaballSceneNode *meta = (MetaballSceneNode *)smgr->addSceneNode("MetaballSceneNode", 0);
-   meta->setSampleWidth(.125);
-   meta->setBound(2.25);
+   meta->setSampleWidth(0.125);
+   meta->setBound(3.25);
    meta->setThreshold(1);
 
    meta->addMetaball(vector3df(1, -1, 1), SColor(255, 0, 0, 255));
    meta->addMetaball(vector3df(-1, -1, -1), SColor(255, 0, 255, 0));
    meta->addMetaball(vector3df(0, 1, 0), SColor(255, 255, 0, 0));
+//   meta->addMetaball(vector3df(1, 1, 0), SColor(155, 155, 120, 0));
    meta->triangulateVolume();
 
    meta->setScale(vector3df(100, 100, 100));
@@ -42,8 +43,16 @@ int main() {
 
    device->getCursorControl()->setVisible(false);
    int lastFPS = -1;
+
+   //animate the blobs coming together with threshold. 0.4 seems to be lowest without causing issues
+            meta->setThreshold(0.4);
+            meta->triangulateVolume();
+
    while(device->run()) {
       driver->beginScene(true, true, SColor(0,200,200,200));
+
+
+
       smgr->drawAll();
       driver->endScene();
    }

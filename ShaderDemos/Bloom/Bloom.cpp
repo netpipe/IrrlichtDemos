@@ -37,17 +37,20 @@ CBloom::CBloom()
 	// Create materials.
 	material0.setTexture(0,tex0);
 	material0.setFlag(EMF_TEXTURE_WRAP,true);
-//	material0.TextureLayer[0].TextureWrap = ETC_CLAMP_TO_EDGE;
+	material0.TextureLayer[0].TextureWrapU = ETC_CLAMP_TO_EDGE;
+	material0.TextureLayer[0].TextureWrapV = ETC_CLAMP_TO_EDGE;
 	material0.MaterialType = (E_MATERIAL_TYPE)filter;
 
 	material1.setTexture(0,tex1);
 	material1.setFlag(EMF_TEXTURE_WRAP,true);
-//	material1.TextureLayer[0].TextureWrap = ETC_CLAMP_TO_EDGE;
+	material1.TextureLayer[0].TextureWrapU = ETC_CLAMP_TO_EDGE;
+	material1.TextureLayer[0].TextureWrapV = ETC_CLAMP_TO_EDGE;
 	material1.MaterialType = (E_MATERIAL_TYPE)vblur;
 
 	material2.setTexture(0,tex2);
 	material2.setFlag(EMF_TEXTURE_WRAP,true);
-//	material2.TextureLayer[0].TextureWrap = ETC_CLAMP_TO_EDGE;
+	material2.TextureLayer[0].TextureWrapU = ETC_CLAMP_TO_EDGE;
+	material2.TextureLayer[0].TextureWrapV = ETC_CLAMP_TO_EDGE;
 	material2.MaterialType = (E_MATERIAL_TYPE)hblur;
 
 	material3.setTexture(1,tex3);
@@ -55,8 +58,10 @@ CBloom::CBloom()
 	material3.setFlag(EMF_TEXTURE_WRAP,true);
 	material3.TextureLayer[0].BilinearFilter = false;
 	material3.TextureLayer[0].TrilinearFilter = true;
-//	material3.TextureLayer[0].TextureWrap = ETC_CLAMP_TO_EDGE;
-//	material3.TextureLayer[1].TextureWrap = ETC_CLAMP_TO_EDGE;
+	material3.TextureLayer[0].TextureWrapU = ETC_CLAMP_TO_EDGE;
+	material3.TextureLayer[0].TextureWrapV = ETC_CLAMP_TO_EDGE;
+	material3.TextureLayer[1].TextureWrapU = ETC_CLAMP_TO_EDGE;
+	material3.TextureLayer[1].TextureWrapV = ETC_CLAMP_TO_EDGE;
 	material3.MaterialType = (E_MATERIAL_TYPE)combine;
 
 	blurValue = 0.005f;
