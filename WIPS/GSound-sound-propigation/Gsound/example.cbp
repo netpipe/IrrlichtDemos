@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Irrlicht Pong" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./Pong" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-std=c++11" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+			<Add directory="/usr/include/AL" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="X11" />
+			<Add library="alut" />
+			<Add library="AL" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+		</Linker>
+		<Unit filename="GSound/Header.h" />
+		<Unit filename="GSound/Lesson2.cpp" />
+		<Unit filename="GSound/Listner.cpp" />
+		<Unit filename="GSound/Listner.h" />
+		<Unit filename="GSound/MyMath.h" />
+		<Unit filename="GSound/Position.cpp" />
+		<Unit filename="GSound/Position.h" />
+		<Unit filename="GSound/Ray.cpp" />
+		<Unit filename="GSound/Ray.h" />
+		<Unit filename="GSound/Room.cpp" />
+		<Unit filename="GSound/Room.h" />
+		<Unit filename="GSound/Scene.cpp" />
+		<Unit filename="GSound/Scene.h" />
+		<Unit filename="GSound/Sel_Intersect.cpp" />
+		<Unit filename="GSound/Sel_Intersect.h" />
+		<Unit filename="GSound/Sound.cpp" />
+		<Unit filename="GSound/Sound.h" />
+		<Unit filename="GSound/SoundFile.cpp" />
+		<Unit filename="GSound/SoundFile.h" />
+		<Unit filename="GSound/Source.cpp" />
+		<Unit filename="GSound/Source.h" />
+		<Unit filename="GSound/Vector2D.h" />
+		<Unit filename="GSound/Wall.cpp" />
+		<Unit filename="GSound/Wall.h" />
+		<Unit filename="GSound/main.cpp" />
+		<Unit filename="GSound/sio.cpp" />
+		<Unit filename="GSound/sio.h" />
+		<Unit filename="GSound/solver.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

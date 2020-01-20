@@ -47,7 +47,7 @@ camera->setFarValue(4203300.0f);
         @param gap       - The gap between parts.
     */
 
-TesselatedImage *tesImage = new TesselatedImage(device, "test.bmp", vector3df(-600,0,500), vector3df(500, 550, 1000), vector3df(-130,50,100), 45, 1500, 10);
+TesselatedImage *tesImage = new TesselatedImage(device, "media/test.bmp", vector3df(-600,0,500), vector3df(500, 550, 1000), vector3df(-130,50,100), 45, 1500, 10);
 tesImage->startAnimation();
 
     // In order to do framerate independent movement, we have to know

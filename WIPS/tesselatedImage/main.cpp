@@ -36,7 +36,7 @@ using namespace gui;
 #define SPEED 5 // Speed of balls moving
 
 #define BALL_TEXTURE "ballf.png" // Balls billboards texture
-#define IMG_TEXTURE "test.bmp"  // Image to build
+#define IMG_TEXTURE "square.bmp"  // Image to build
 
 
 int main() {
@@ -242,7 +242,7 @@ int main() {
 		}
 
 		/* RENDER */
-		driver->beginScene(true, true, video::SColor(255,245,245,245));
+		driver->beginScene(true, true, video::SColor(155,145,245,245));
 		smgr->drawAll();
 		driver->endScene();
 	}
