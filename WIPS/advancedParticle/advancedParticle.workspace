@@ -5,8 +5,5 @@
 			<Depends filename="libAdvancedParticle.cbp" />
 		</Project>
 		<Project filename="libAdvancedParticle.cbp" active="1" />
-		<Project filename="stepTest.cbp">
-			<Depends filename="libAdvancedParticle.cbp" />
-		</Project>
 	</Workspace>
 </CodeBlocks_workspace_file>

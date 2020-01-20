@@ -115,21 +115,12 @@ CAdvancedParticleSystemNode::CAdvancedParticleSystemNode(ISceneNode *parent,ISce
   m_bIsActive=true;
   m_cParticleSize=dimension2df(5.0f,5.0f);
   m_iLastEmitTime=0;
-  m_iLastMove=0;
-  m_iThreshold=0;
-  m_fMove=0.0f;
-  m_vMove=core::vector3df(0.0f,0.0f,0.0f);
-  m_vMoveDir=core::vector3df(0.0f,0.0f,1.0f);
 
   m_pBuffer=new SMeshBuffer();
 
   m_cScaleTarget=dimension2df(1.0f,1.0f);
   m_iAtlasSize=1;
   m_bAtlasTexture=false;
-  m_bInterpolate=false;
-  m_bStepped=false;
-  m_vLastPos=core::vector3df(0.0f,0.0f,0.0f);
-  m_vScale=getAbsoluteTransformation().getScale();
 }
 
 CAdvancedParticleSystemNode::~CAdvancedParticleSystemNode() {
@@ -147,11 +138,6 @@ void CAdvancedParticleSystemNode::deserializeAttributes(io::IAttributes *in, io:
   m_eEmitter=(eParticleEmitter)in->getAttributeAsEnumeration("EmitterType",(const c8 *const *)m_sEmitterNames);
 
   m_iMaxAngleDegrees=in->getAttributeAsInt("maxAngleDegrees");
-
-  m_bInterpolate=in->getAttributeAsBool("Interpolate");
-  if (m_bInterpolate) m_iThreshold=in->getAttributeAsInt("Threshold"); else m_iThreshold=0;
-  m_bStepped=in->getAttributeAsBool("stepped");
-  if (m_bStepped) m_vMoveDir=in->getAttributeAsVector3d("MoveDirection");
 
   m_iMinTtl=in->getAttributeAsInt("minTtl");
   m_iMaxTtl=in->getAttributeAsInt("maxTtl");
@@ -362,11 +348,6 @@ void CAdvancedParticleSystemNode::serializeAttributes(io::IAttributes *out, io::
 
   out->addBool("AtlasTexture",m_bAtlasTexture);
   out->addInt("AtlasCount",m_iAtlasSize);
-
-  out->addBool("Interpolate",m_bInterpolate);
-  if (m_bInterpolate) out->addInt("Threshold",m_iThreshold);
-  out->addBool("stepped",m_bStepped);
-  if (m_bStepped) out->addVector3d("MoveDirection",m_vMoveDir);
 
   if (m_pEmitter) {
     out->addVector3d("Direction",m_pEmitter->getDirection());
@@ -885,13 +866,9 @@ void CAdvancedParticleSystemNode::setParticleSize( const dimension2d<f32> &cSize
 
 void CAdvancedParticleSystemNode::doParticleSystem(u32 iTime) {
   m_iCurrentTime=iTime;
-  updateAbsolutePosition();
 	if (m_iLastEmitTime==0)
 	{
 		m_iLastEmitTime = iTime;
-		m_vLastPos=getAbsolutePosition();
-		m_iLastMove=m_iLastEmitTime;
-		m_vScale=getAbsoluteTransformation().getScale();
 		return;
 	}
 
@@ -899,31 +876,6 @@ void CAdvancedParticleSystemNode::doParticleSystem(u32 iTime) {
 	u32 timediff = iTime - m_iLastEmitTime;
 	m_iLastEmitTime = iTime;
 
-	core::vector3df vPos=getAbsolutePosition(),vOff=core::vector3df(0.0f,0.0f,0.0f);
-
-	if (m_bInterpolate) {
-    if (vPos!=m_vLastPos) {
-      m_vVel=(vPos-m_vLastPos)/(f32)(iTime-m_iLastMove);
-      m_vLastPos=vPos;
-      m_iLastMove=iTime;
-    }
-    else {
-      u32 iDiff=iTime-m_iLastMove;
-      if (m_iThreshold==0 || iDiff<m_iThreshold) {
-        f32 fDiff=(f32)iDiff;
-        vOff=m_vVel*fDiff;
-      }
-    }
-	}
-
-	if (m_bStepped) {
-	  if (vPos!=m_vLastPos) {
-      m_vMove=vPos-m_vLastPos;
-      m_fMove=m_vMove.getLength();
-      m_vMove.normalize();
-	    m_vLastPos=vPos;
-	  }
-	}
 	// run emitter
 
 	if (m_pEmitter && IsVisible)
@@ -942,14 +894,6 @@ void CAdvancedParticleSystemNode::doParticleSystem(u32 iTime) {
 			for (s32 i=j; i<j+newParticles; ++i)
 			{
 				m_aParticles[i]=array[i-j];
-
-				if (m_bInterpolate) {
-          m_aParticles[i].pos+=vOff;
-				}
-				if (m_bStepped) {
-				  f32 f=((f32)(os::Randomizer().rand()%1000))/1000.0f;
-				  m_aParticles[i].pos-=f*m_fMove*m_vMoveDir;
-				}
 				AbsoluteTransformation.rotateVect(m_aParticles[i].startVector);
 				if (m_bParticlesAreGlobal)
 					AbsoluteTransformation.transformVect(m_aParticles[i].pos);
@@ -1008,7 +952,7 @@ ESCENE_NODE_TYPE CAdvancedParticleSystemNode::getType() const {
 }
 
 void CAdvancedParticleSystemNode::OnAnimate(u32 timeMs) {
-  doParticleSystem(timeMs);//os::Timer::getTime());
+  doParticleSystem(os::Timer::getTime());
 }
 
 void CAdvancedParticleSystemNode::setAtlasSize(u32 iSize) {

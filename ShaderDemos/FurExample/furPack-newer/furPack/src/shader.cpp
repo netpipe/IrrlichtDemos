@@ -62,19 +62,20 @@ void InitShaders()
     EMT_FUR = 0;
     if(blShader)
     {
-        /*EMT_FUR = gpu->addHighLevelShaderMaterialFromFiles(
+        EMT_FUR = gpu->addHighLevelShaderMaterialFromFiles(
 	        "../res/fur1.vert", "main", video::EVST_VS_1_1,
 	        "../res/fur1.frag", "main", video::EPST_PS_1_3,
 	        ShaderCB, video::EMT_ONETEXTURE_BLEND
-        );*/
-		//EMT_TRANSPARENT_ALPHA_CHANNEL_REF
-		//EMT_ONETEXTURE_BLEND
-		const video::E_GPU_SHADING_LANGUAGE shadingLanguage = video::EGSL_CG;
+        );
+	//	EMT_TRANSPARENT_ALPHA_CHANNEL_REF
+//		EMT_ONETEXTURE_BLEND
 
-		EMT_FUR = gpu->addHighLevelShaderMaterialFromFiles(
-			"../res/fur.hlsl", "vertexMain", video::EVST_VS_1_1,
-			"../res/fur.hlsl", "pixelMain", video::EPST_PS_1_3,
-			ShaderCB, video::EMT_ONETEXTURE_BLEND, 0, shadingLanguage);
+		//const video::E_GPU_SHADING_LANGUAGE shadingLanguage = video::EGSL_CG;
+
+//		EMT_FUR = gpu->addHighLevelShaderMaterialFromFiles(
+//			"../res/fur.hlsl", "vertexMain", video::EVST_VS_1_1,
+//			"../res/fur.hlsl", "pixelMain", video::EPST_PS_1_3,
+//			ShaderCB, video::EMT_ONETEXTURE_BLEND, 0, shadingLanguage);
     }
     else EMT_FUR = EMT_SOLID;
 }

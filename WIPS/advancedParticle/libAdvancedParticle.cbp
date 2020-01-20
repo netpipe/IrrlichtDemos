@@ -35,15 +35,19 @@
 			</Target>
 		</Build>
 		<Compiler>
-			<Add directory="../project" />
-			<Add directory="../../../../../LunaLibs/irrlicht-1.8.4/include" />
-			<Add directory="../../../../../LunaLibs/irrlicht-1.8.4/source/Irrlicht" />
+			<Add directory="D:/myStuff/projects/bbsandbox/particle_clone/project/" />
+			<Add directory="../../../../LunaLibs/irrlicht-1.8.4/include" />
+			<Add directory="../../../../LunaLibs/irrlicht-1.8.4/source/Irrlicht" />
+			<Add directory="D:/myStuff/projects/bb_sandbox/particle_clone/project/" />
+			<Add directory="./" />
 		</Compiler>
 		<Unit filename="CAdvancedParticleSystemNode.cpp" />
 		<Unit filename="CAdvancedParticleSystemNode.h" />
 		<Unit filename="CParticleExplosionEmitter.cpp" />
 		<Unit filename="CParticleExplosionEmitter.h" />
 		<Extensions>
+			<code_completion />
+			<debugger />
 			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>

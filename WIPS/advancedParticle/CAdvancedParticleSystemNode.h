@@ -30,13 +30,6 @@ class CAdvancedParticleSystemNode : public irr::scene::IParticleSystemSceneNode 
      * @enum eParticleEmitter
      * This is a enum for the indices of the comboboxes in IrrEdit
      */
-
-//virtual const core::list<IParticleAffector*>& getAffectors() {return 0;};
-//     virtual void clearParticles() { };
-
- void clearParticles(){};
- const core::list<IParticleAffector*>& getAffectors()  const { int i=0; };
-
     enum eParticleEmitter {
       eEmitterNone=0,         /**<! no emitter */
       eEmitterPoint,          /**<! point emitter */
@@ -89,27 +82,16 @@ class CAdvancedParticleSystemNode : public irr::scene::IParticleSystemSceneNode 
         m_iLastEmitTime,      /**<! timestamp of the last particle emission */
         m_iCurrentTime,       /**<! timestamp of the current render pass */
         m_iAtlasSize,         /**<! atlas size. Defines how many atlas parts the texture has in X and Y direction */
-        m_iAtlasCount,        /**<! number of atlas segments */
-        m_iLastMove,          /**<! last time the node was moved */
-        m_iThreshold;         /**<! movement threshold */
-    f32 m_fAtlasSize,
-        m_fMove;
+        m_iAtlasCount;
+    f32 m_fAtlasSize;
 
     array<vector2df> m_aAtlasPos; /**<! positions of the atlas parts */
 
     SMeshBuffer *m_pBuffer;   /**<! buffer for rendering */
 
-    core::vector3df m_vLastPos, /**<! the last position used for interpolation */
-                    m_vVel,     /**<! the velocity of the particle system used for interpolation */
-                    m_vScale,
-                    m_vMove,
-                    m_vMoveDir;
-
     bool m_bParticlesAreGlobal, /**<! are the particles global? */
          m_bIsActive,           /**<! is this system active? */
-         m_bAtlasTexture,       /**<! use an Atlas texture? */
-         m_bInterpolate,        /**<! interpolate movement. Useful for stepped physics simulations */
-         m_bStepped;            /**<! stepped mode. Particles will be emitted on a line between the last and the current position */
+         m_bAtlasTexture;       /**<! use an Atlas texture? */
 
     void reallocateBuffers();   /**<! buffer reallocation */
 
@@ -147,6 +129,10 @@ class CAdvancedParticleSystemNode : public irr::scene::IParticleSystemSceneNode 
      * @return a clone
      */
     virtual ISceneNode *clone(ISceneNode *newParent=0, ISceneManager *newManager=0);
+
+    	void clearParticles() {};
+
+ virtual const core::list<IParticleAffector*>& getAffectors() const {};
 
     /**
      * Create an animatedMeshSceneNodeEmitter. See Irrlicht documentation for parameters.
@@ -340,29 +326,11 @@ class CAdvancedParticleSystemNode : public irr::scene::IParticleSystemSceneNode 
       m_bIsActive=b;
     }
 
-    /**
-     * Is the particle system active? I.e. is it still emitting particles
-     * and are there particles of this system still present?
-     * @return "true" if the particle system is active, "false" otherwise
-     */
     bool isActive() { return m_bIsActive || m_aParticles.size()>0; }
 
-    /**
-     * Get the number of currently visible particles
-     * @return the number of currently visible particles
-     */
     u32 getParticleCount() { return m_aParticles.size(); }
 
-    /**
-     * Set the atlas size, i.e. the number of segments the particle texture has
-     */
     void setAtlasSize(u32 iSize);
-
-    void setInterpolate(bool b) { m_bInterpolate=b; }   /**<! set the interpolate flag */
-    bool doesInterpolate() { return m_bInterpolate; }   /**<! get the interpolate flag */
-
-    void setInterpolateThreshold(u32 i) { m_iThreshold=i; } /**<! set the interpolate threshold */
-    u32 getInterpolateThreshold() { return m_iThreshold; }  /**<! get the interpolate threshold */
 };
 
 /**

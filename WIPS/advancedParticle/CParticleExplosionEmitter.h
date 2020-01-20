@@ -19,7 +19,6 @@ namespace scene
 //! A default box emitter
 class CParticleExplosionEmitter : public IParticleEmitter {
   protected:
-
     core::array<SParticle> Particles;
 
     core::vector3df	Center;
@@ -34,20 +33,25 @@ class CParticleExplosionEmitter : public IParticleEmitter {
     u32 Time;
     u32 Emitted;
 
-  public:
 
-  ///tecan quick hack to make everything compile.
-	 u32 getMinLifeTime() const  {};
-	//! Get the maximum particle life-time in milliseconds
-	 u32 getMaxLifeTime() const  {};
-	//!	Get maximal random derivation from the direction
-	 s32 getMaxAngleDegrees() const {};
-	 	virtual void setMinLifeTime( u32 lifeTimeMin ) {return;};
+    	 void setMinLifeTime( u32 lifeTimeMin ) {};
+
 	//! Set the maximum particle life-time in milliseconds
-	virtual void setMaxLifeTime( u32 lifeTimeMax ) {return;};
+	 void setMaxLifeTime( u32 lifeTimeMax )  {};
 
 	//!	Set maximal random derivation from the direction
-	virtual void setMaxAngleDegrees( s32 maxAngleDegrees ) {return;};
+	 void setMaxAngleDegrees( s32 maxAngleDegrees ) {};
+
+	 	 u32 getMinLifeTime() const {};
+
+	//! Get the maximum particle life-time in milliseconds
+	 u32 getMaxLifeTime() const {};
+
+	//!	Get maximal random derivation from the direction
+	 s32 getMaxAngleDegrees() const {};
+
+  public:
+
     //! constructor
     CParticleExplosionEmitter(
       const core::vector3df& center, f32 radius, core::vector3df vDirection=core::vector3df(0.0f,0.03f,0.0f),
