@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="boids" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Win32 Release">
+				<Option output=".\bin\boids.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir=".\bin" />
+				<Option object_output=".\obj" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="0" />
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-fexpensive-optimizations" />
+			<Add directory="C:\CodeBlocks\AB-AddOn\include\Irrlicht" />
+			<Add directory="C:\CodeBlocks\AB-AddOn\include\Newton" />
+			<Add directory="C:\CodeBlocks\AB-AddOn\include\OpenSteer" />
+		</Compiler>
+		<Linker>
+			<Add option="-s" />
+			<Add library="Irrlicht" />
+			<Add library="Newton" />
+			<Add library="OpenSteer" />
+			<Add directory="C:\CodeBlocks\AB-AddOn\lib" />
+		</Linker>
+		<Unit filename=".\MaterialDataBaseClass.cpp" />
+		<Unit filename=".\MaterialDataBaseClass.h" />
+		<Unit filename=".\NewtonBaseObject.cpp" />
+		<Unit filename=".\NewtonBaseObject.h" />
+		<Unit filename=".\NewtonBoid.cpp" />
+		<Unit filename=".\NewtonBoid.h" />
+		<Unit filename=".\NewtonLeader.cpp" />
+		<Unit filename=".\NewtonLeader.h" />
+		<Unit filename=".\NewtonLump.cpp" />
+		<Unit filename=".\NewtonLump.h" />
+		<Unit filename=".\Quaternion.cpp" />
+		<Unit filename=".\Quaternion.h" />
+		<Unit filename=".\SpecialEffectStruct.cpp" />
+		<Unit filename=".\SpecialEffectStruct.h" />
+		<Unit filename=".\main.cpp" />
+		<Unit filename=".\main.h" />
+		<Unit filename=".\mathutils.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

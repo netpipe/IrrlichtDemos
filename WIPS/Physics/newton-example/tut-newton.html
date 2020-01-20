@@ -1,0 +1,246 @@
+<font face=verdana>
+
+This tutorial will explain how to integrate <a href="http://www.physicsengine.com">Newton Game Dynamics</a><br>
+with the <a href="http://irrlicht.sourceforge.net/">Irrlicht 3D engine</a>. I will assume that you have both<br>
+newton & irrlicht installed and working in your compiler.<br>
+<br>
+
+This tutorial is based on my example application. You can download the source code & binary <a href="http://www.mercior.com/files/newton-irrlicht.zip">HERE</a>.<br>
+<br>
+
+The example I have written loads a BSP map and creates a newton collision tree for the map so that<br>
+objects will collide with the mesh. Clicking the left mouse button adds a cube into the world.<br>
+I will assume that you have a basic knowledge of how to use irrlicht - I shant go over the irrlicht<br>
+code because it is already covered in the beginners tutorials.<p>
+
+<img src="screenshot-newton.jpg"border=0><p>
+
+<h1><u>Initialising</u></h1>
+<br>
+
+<pre>
+	// Init newton
+	nWorld = NewtonCreate(NULL, NULL);
+
+	// Set up default material properties for newton
+	int i = NewtonMaterialGetDefaultGroupID(nWorld);
+	NewtonMaterialSetDefaultFriction   (nWorld, i, i, 0.8f, 0.4f);
+	NewtonMaterialSetDefaultElasticity (nWorld, i, i, 0.3f);
+	NewtonMaterialSetDefaultSoftness   (nWorld, i, i, 0.05f);
+	NewtonMaterialSetCollisionCallback (nWorld, i, i, NULL, NULL, NULL, NULL);
+</pre>
+
+To start off, we create the newton object with NewtonCreate().<br>
+
+Next, we set the default properties for materials. Materials define how objects interact when they collide<br>
+and you can use different materials to simulate ice, wood, sand, etc. In this example we will just create<br>
+all our objects with the default material.
+
+<h1><u>Newton Callbacks</u></h1>
+<br>
+
+Newton will call back to staticly definied functions in your code to tell you information such as when an<br>
+object is moving. I will show how to assign the events to bodies further down the page.
+
+<pre>
+void _cdecl CGame::SetMeshTransformEvent(const NewtonBody* body, const float* matrix)
+{
+	// copy the matrix into an irrlicht matrix4
+	matrix4 mat;
+	memcpy(mat.M, matrix, sizeof(float)*16);
+
+	// Retreive the user data attached to the newton body
+	ISceneNode *tmp = (ISceneNode *)NewtonBodyGetUserData(body);
+	if (tmp)
+	{
+		// Position the node
+		tmp->setPosition(mat.getTranslation());		// set position
+		tmp->setRotation(mat.getRotationDegrees());	// and rotation
+	}
+}
+</pre>
+
+This function will be called by newton bodies when they move. By storing an ISceneNode pointer in the userData<br>
+of the body, we can position the corresponding scenenode easily.
+
+<pre>
+void _cdecl CGame::ApplyForceAndTorqueEvent (const NewtonBody* body) 
+{ 
+   float mass; 
+   float Ixx; 
+   float Iyy; 
+   float Izz; 
+   float force[3]; 
+   float torque[3]; 
+
+   NewtonBodyGetMassMatrix (body, &mass, &Ixx, &Iyy, &Izz); 
+
+   force[0] = 0.0f; 
+   force[1] = NEWTON_GRAVITY * mass; 
+   force[2] = 0.0f; 
+
+   torque[0] = 0.0f; 
+   torque[1] = 0.0f; 
+   torque[2] = 0.0f; 
+
+   NewtonBodyAddForce (body, force); 
+   NewtonBodyAddTorque (body, torque); 
+}
+</pre>
+
+This function is called by the Newton Engine every time an active body is going to be simulated. We add gravity<br>
+to our bodies by means of a downwards force.
+
+<h1><u>Setting up the scene</u></h1>
+<br>
+
+<pre>
+	g_newtonmap = NewtonCreateTreeCollision(nWorld, NULL);
+	NewtonTreeCollisionBeginBuild(g_newtonmap);
+	int cMeshBuffer, j;
+	int v1i, v2i, v3i;
+	IMeshBuffer *mb;
+
+	float vArray[9]; // vertex array (3*3 floats)
+
+	int tmpCount = 0;
+
+	for (cMeshBuffer=0; cMeshBuffer<g_map->getMesh(0)->getMeshBufferCount(); cMeshBuffer++)
+	{	
+		mb = g_map->getMesh(0)->getMeshBuffer(cMeshBuffer);
+
+		video::S3DVertex2TCoords* mb_vertices = (irr::video::S3DVertex2TCoords*)mb->getVertices();
+
+		u16* mb_indices  = mb->getIndices();
+
+		// add each triangle from the mesh
+		for (j=0; j<mb->getIndexCount(); j+=3)
+		{
+			v1i = mb_indices[j];
+			v2i = mb_indices[j+1];
+			v3i = mb_indices[j+2];
+	
+			vArray[0] = mb_vertices[v1i].Pos.X;
+			vArray[1] = mb_vertices[v1i].Pos.Y;
+			vArray[2] = mb_vertices[v1i].Pos.Z;
+			vArray[3] = mb_vertices[v2i].Pos.X;
+			vArray[4] = mb_vertices[v2i].Pos.Y;
+			vArray[5] = mb_vertices[v2i].Pos.Z;
+			vArray[6] = mb_vertices[v3i].Pos.X;
+			vArray[7] = mb_vertices[v3i].Pos.Y;
+			vArray[8] = mb_vertices[v3i].Pos.Z;
+
+			NewtonTreeCollisionAddFace(g_newtonmap, 3, (float*)vArray, 12, 1);
+		}
+
+	}
+	NewtonTreeCollisionEndBuild(g_newtonmap, 0);
+	g_newtonmapbody = NewtonCreateBody(nWorld, g_newtonmap);
+</pre>
+
+After loading the bsp mesh in irrlicht we must create a newton collision tree consisting of all the triangles<br>
+in the bsp mesh. To do this we loop through the indices list and add vertices 3 at a time into newton. I should<br>
+mention here that I was lazy when writing this and just used a straight cast to video::S3DVertex2TCoords - this is because<br>
+bsp meshes have lightmap textures on them. If you are using a mesh with only 1 set of texture co-ordinates (like<br>
+a landscape or .x level) then use (video::S3DVertex).<br>
+Newton requires 2 pointers for every object - a NewtonBody* for the rigid body, and a NewtonCollision* that<br>
+describes the objects geometry. After creating the tree collision geometry, we create a body for the map and<br>
+assign it to the collision. Bodys which have a tree collision for their geometry are static and their mass<br>
+will be ignored by newton - so you can only use meshes for your scenery!<br>
+
+
+<pre>
+	// set the newton world size based on the bsp size
+	float boxP0[3]; 
+	float boxP1[3]; 
+	float matrix[4][4]; 
+	NewtonBodyGetMatrix (g_newtonmapbody, &matrix[0][0]); 
+	NewtonCollisionCalculateAABB (g_newtonmap, &matrix[0][0],  &boxP0[0], &boxP1[0]); 
+	// you can pad the box here if you wish
+	//boxP0.y -= somevalue; 
+	//boxP1.y += somevaluef; 
+	NewtonSetWorldSize (nWorld, (float*)boxP0, (float*)boxP1);
+</pre>
+
+After loading the map, we can calculate the bounding box surrounding it and set the newton world size to<br>
+match. Newton should automatically disable anything which falls out of the map this way.
+
+
+<br>
+
+<h1><u>Creating Cubes</u></h1>
+<br>
+
+<pre>
+	// Create a box primitive. 
+	tmp->collision = NewtonCreateBox(nWorld, 38, 38, 38, NULL);
+	tmp->body = NewtonCreateBody(nWorld, tmp->collision);
+
+	// Set user data pointer to the scene node
+	NewtonBodySetUserData(tmp->body, tmp->node);
+
+	// Set body mass & inertia matrix
+	NewtonBodySetMassMatrix (tmp->body, 10.0f, 150.0f, 150.0f, 150.0f);
+
+	// Set the freeze threshhold to 1 unit (default is 0.01 but irrlight uses a large unit scale)
+	NewtonBodySetFreezeTreshold(tmp->body, 1.0, 1.0, 1.0, 1.0); 
+
+	// Set callback functions for the body
+	NewtonBodySetTransformCallback(tmp->body, SetMeshTransformEvent);
+	NewtonBodySetForceAndTorqueCallback(tmp->body, ApplyForceAndTorqueEvent);
+
+	// Set the position of the body
+	matrix4 mat;
+	mat.setTranslation(loc);
+	NewtonBodySetMatrix(tmp->body, &mat.M[0]);
+</pre>
+
+To start with we create a box primitive. Note that 38 is just a value I used to match the cube model<br>
+in the examples size.<br><br>
+We set the cubes userData pointer to the ISceneNode related to this cube - this is so that we can move the<br>
+scene node when newton tells us the body is moving.<br><br>
+Next, we set the mass. The moment of inertia for a box is given by the expression
+<pre>
+Ixx = M * (z * z + y * y) / 12
+</pre>
+I have used a hard value of 150.0 for the inertia matrix, but you could write some better code<br>
+here to automatically calculate the inertia matrix based on box size, mass and how you want the weight<br>
+to be distributed inside the box.<br><br>
+
+Finally, set the transform and force callbacks of the newton body to our callback functions, and set<br>
+the initial position of the body.
+
+
+<h1><u>Making everything move</u></h1>
+<br>
+OK so we have our scene all set up - but we need to make everything move!<br>
+A simple call to newtonUpdate() will do the trick :)<br>
+<pre>
+NewtonUpdate(nWorld, 0.01f);
+</pre>
+
+In the example I call NewtonUpdate 100 times a second, with a 0.01 second timestep to match.<br>
+You can update less often with a larger timestep but be aware that the larger your timestep is, the less<br>
+accurate the collisions will become. I would recommend updating between 50 to 100 times a second for a game.<br>
+
+<h1><u>Cleaning Up</u></h1>
+<br>
+
+<pre>
+	// release the collision tree
+	NewtonReleaseCollision(nWorld, g_newtonmap);
+
+	// release the box primitives
+	for (int i=0; i<currentCube; i++)
+		NewtonReleaseCollision(nWorld, cubes[i]->collision);
+
+	// destory the newton world object
+	NewtonDestroy(nWorld);
+</pre>
+
+I think the comments explain well enough ;)<br><br><br>
+
+Well thats it! I hope you've found this tutorial helpful. If you didnt see the link at the top, you can download<br>
+the example source code & binary for this tutorial <a href="http://www.mercior.com/files/newton-irrlicht.zip">HERE</a>.<p>
+
+-Mercior

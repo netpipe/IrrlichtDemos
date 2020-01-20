@@ -1,0 +1,8 @@
+this source code package depends on:
+
+- irrlicht 1.4.1
+- irrklang 1.1.0
+- Newton Game Dynamics 1.53
+- irrnewt 0.4
+- lua 5.1 (will need to link statically if your not using msvc 2005)
+

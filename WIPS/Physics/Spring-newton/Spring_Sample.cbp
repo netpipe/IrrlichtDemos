@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Spring Sample" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="Spring_Sample" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="Spring_Sample" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="$(#irrlicht.include)\" />
+			<Add directory="$(#newton.include)\" />
+			<Add directory="$(#irrnewt.include)\" />
+		</Compiler>
+		<Linker>
+			<Add library="libIrrlicht.a" />
+			<Add library="Newton" />
+			<Add library="libIrrNewt.a" />
+			<Add directory="$(#newton.lib)\" />
+			<Add directory="$(#irrlicht.lib)\Win32-gcc" />
+			<Add directory="$(#irrnewt.lib)\" />
+		</Linker>
+		<Unit filename="CSpring.cpp" />
+		<Unit filename="CSpring.h" />
+		<Unit filename="Spring_Sample.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
