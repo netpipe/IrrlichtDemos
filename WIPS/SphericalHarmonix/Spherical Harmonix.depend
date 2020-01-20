@@ -1,0 +1,971 @@
+# depslib dependency file v1.0
+1291842938 source:/home/kielanmatt/Desktop/irrlicht-1.7.1/examples/Spherical Harmonix/main.cpp
+	<irrlicht.h>
+	<math.h>
+
+1266152774 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/irrlicht.h
+	"IrrCompileConfig.h"
+	"aabbox3d.h"
+	"CDynamicMeshBuffer.h"
+	"CIndexBuffer.h"
+	"CMeshBuffer.h"
+	"coreutil.h"
+	"CVertexBuffer.h"
+	"dimension2d.h"
+	"ECullingTypes.h"
+	"EDebugSceneTypes.h"
+	"EDriverFeatures.h"
+	"EDriverTypes.h"
+	"EGUIAlignment.h"
+	"EGUIElementTypes.h"
+	"EHardwareBufferFlags.h"
+	"EMaterialFlags.h"
+	"EMaterialTypes.h"
+	"EMeshWriterEnums.h"
+	"EMessageBoxFlags.h"
+	"ESceneNodeAnimatorTypes.h"
+	"ESceneNodeTypes.h"
+	"ETerrainElements.h"
+	"fast_atof.h"
+	"heapsort.h"
+	"IAnimatedMesh.h"
+	"IAnimatedMeshMD2.h"
+	"IAnimatedMeshMD3.h"
+	"IAnimatedMeshSceneNode.h"
+	"IAttributeExchangingObject.h"
+	"IAttributes.h"
+	"IBillboardSceneNode.h"
+	"IBillboardTextSceneNode.h"
+	"IBoneSceneNode.h"
+	"ICameraSceneNode.h"
+	"ICursorControl.h"
+	"IDummyTransformationSceneNode.h"
+	"IDynamicMeshBuffer.h"
+	"IEventReceiver.h"
+	"IFileList.h"
+	"IFileSystem.h"
+	"IGeometryCreator.h"
+	"IGPUProgrammingServices.h"
+	"IGUIButton.h"
+	"IGUICheckBox.h"
+	"IGUIColorSelectDialog.h"
+	"IGUIComboBox.h"
+	"IGUIContextMenu.h"
+	"IGUIEditBox.h"
+	"IGUIElement.h"
+	"IGUIElementFactory.h"
+	"IGUIEnvironment.h"
+	"IGUIFileOpenDialog.h"
+	"IGUIFont.h"
+	"IGUIFontBitmap.h"
+	"IGUIImage.h"
+	"IGUIInOutFader.h"
+	"IGUIListBox.h"
+	"IGUIMeshViewer.h"
+	"IGUIScrollBar.h"
+	"IGUISkin.h"
+	"IGUISpinBox.h"
+	"IGUISpriteBank.h"
+	"IGUIStaticText.h"
+	"IGUITabControl.h"
+	"IGUITable.h"
+	"IGUIToolbar.h"
+	"IGUIWindow.h"
+	"IGUITreeView.h"
+	"IImage.h"
+	"IImageLoader.h"
+	"IImageWriter.h"
+	"IIndexBuffer.h"
+	"ILightSceneNode.h"
+	"ILogger.h"
+	"IMaterialRenderer.h"
+	"IMaterialRendererServices.h"
+	"IMesh.h"
+	"IMeshBuffer.h"
+	"IMeshCache.h"
+	"IMeshLoader.h"
+	"IMeshManipulator.h"
+	"IMeshSceneNode.h"
+	"IMeshWriter.h"
+	"IMetaTriangleSelector.h"
+	"IOSOperator.h"
+	"IParticleSystemSceneNode.h"
+	"IQ3LevelMesh.h"
+	"IQ3Shader.h"
+	"IReadFile.h"
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"IrrlichtDevice.h"
+	"irrList.h"
+	"irrMap.h"
+	"irrMath.h"
+	"irrString.h"
+	"irrTypes.h"
+	"path.h"
+	"irrXML.h"
+	"ISceneCollisionManager.h"
+	"ISceneManager.h"
+	"ISceneNode.h"
+	"ISceneNodeAnimator.h"
+	"ISceneNodeAnimatorCameraFPS.h"
+	"ISceneNodeAnimatorCameraMaya.h"
+	"ISceneNodeAnimatorCollisionResponse.h"
+	"ISceneNodeAnimatorFactory.h"
+	"ISceneNodeFactory.h"
+	"ISceneUserDataSerializer.h"
+	"IShaderConstantSetCallBack.h"
+	"IShadowVolumeSceneNode.h"
+	"ISkinnedMesh.h"
+	"ITerrainSceneNode.h"
+	"ITextSceneNode.h"
+	"ITexture.h"
+	"ITimer.h"
+	"ITriangleSelector.h"
+	"IVertexBuffer.h"
+	"IVideoDriver.h"
+	"IVideoModeList.h"
+	"IVolumeLightSceneNode.h"
+	"IWriteFile.h"
+	"IXMLReader.h"
+	"IXMLWriter.h"
+	"ILightManager.h"
+	"Keycodes.h"
+	"line2d.h"
+	"line3d.h"
+	"matrix4.h"
+	"plane3d.h"
+	"position2d.h"
+	"quaternion.h"
+	"rect.h"
+	"S3DVertex.h"
+	"SAnimatedMesh.h"
+	"SceneParameters.h"
+	"SColor.h"
+	"SExposedVideoData.h"
+	"SIrrCreationParameters.h"
+	"SKeyMap.h"
+	"SLight.h"
+	"SMaterial.h"
+	"SMesh.h"
+	"SMeshBuffer.h"
+	"SMeshBufferLightMap.h"
+	"SMeshBufferTangents.h"
+	"SParticle.h"
+	"SSharedMeshBuffer.h"
+	"SSkinMeshBuffer.h"
+	"SVertexIndex.h"
+	"SViewFrustum.h"
+	"triangle3d.h"
+	"vector2d.h"
+	"vector3d.h"
+	"SIrrCreationParameters.h"
+
+1284575957 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IrrCompileConfig.h
+	<stdio.h>
+	<xtl.h>
+
+1266152700 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/aabbox3d.h
+	"irrMath.h"
+	"plane3d.h"
+	"line3d.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/irrMath.h
+	"IrrCompileConfig.h"
+	"irrTypes.h"
+	<math.h>
+	<float.h>
+	<stdlib.h>
+	<limits.h>
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/irrTypes.h
+	"IrrCompileConfig.h"
+	<wchar.h>
+	<crtdbg.h>
+	"assert.h"
+	<stdlib.h>
+	<crtdbg.h>
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/plane3d.h
+	"irrMath.h"
+	"vector3d.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/vector3d.h
+	"irrMath.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/line3d.h
+	"irrTypes.h"
+	"vector3d.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/CDynamicMeshBuffer.h
+	"IDynamicMeshBuffer.h"
+	"CVertexBuffer.h"
+	"CIndexBuffer.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IDynamicMeshBuffer.h
+	"IMeshBuffer.h"
+	"IVertexBuffer.h"
+	"IIndexBuffer.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IMeshBuffer.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+	"aabbox3d.h"
+	"S3DVertex.h"
+	"SVertexIndex.h"
+	"EHardwareBufferFlags.h"
+	"EPrimitiveTypes.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IReferenceCounted.h
+	"irrTypes.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/SMaterial.h
+	"SColor.h"
+	"matrix4.h"
+	"irrArray.h"
+	"irrMath.h"
+	"EMaterialTypes.h"
+	"EMaterialFlags.h"
+	"SMaterialLayer.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/SColor.h
+	"irrTypes.h"
+	"irrMath.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/matrix4.h
+	"irrMath.h"
+	"vector3d.h"
+	"vector2d.h"
+	"plane3d.h"
+	"aabbox3d.h"
+	"rect.h"
+	"irrString.h"
+	<windows.h>
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/vector2d.h
+	"irrMath.h"
+	"dimension2d.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/dimension2d.h
+	"irrTypes.h"
+	"irrMath.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/rect.h
+	"irrTypes.h"
+	"dimension2d.h"
+	"position2d.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/position2d.h
+	"vector2d.h"
+
+1266152700 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/irrString.h
+	"irrTypes.h"
+	"irrAllocator.h"
+	"irrMath.h"
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/irrAllocator.h
+	"irrTypes.h"
+	<new>
+	<memory.h>
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/irrArray.h
+	"irrTypes.h"
+	"heapsort.h"
+	"irrAllocator.h"
+	"irrMath.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/heapsort.h
+	"irrTypes.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/EMaterialTypes.h
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/EMaterialFlags.h
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/SMaterialLayer.h
+	"matrix4.h"
+	"irrAllocator.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/S3DVertex.h
+	"vector3d.h"
+	"vector2d.h"
+	"SColor.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/SVertexIndex.h
+	"irrTypes.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/EHardwareBufferFlags.h
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/EPrimitiveTypes.h
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IVertexBuffer.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"S3DVertex.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IIndexBuffer.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"SVertexIndex.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/CVertexBuffer.h
+	"IVertexBuffer.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/CIndexBuffer.h
+	"IIndexBuffer.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/CMeshBuffer.h
+	"irrArray.h"
+	"IMeshBuffer.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/coreutil.h
+	"irrString.h"
+	"path.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/path.h
+	"irrString.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/ECullingTypes.h
+	"irrTypes.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/EDebugSceneTypes.h
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/EDriverFeatures.h
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/EDriverTypes.h
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/EGUIAlignment.h
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/EGUIElementTypes.h
+	"irrTypes.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/EMeshWriterEnums.h
+	"irrTypes.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/EMessageBoxFlags.h
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/ESceneNodeAnimatorTypes.h
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/ESceneNodeTypes.h
+	"irrTypes.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/ETerrainElements.h
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/fast_atof.h
+	"irrMath.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IAnimatedMesh.h
+	"aabbox3d.h"
+	"IMesh.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IMesh.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+	"EHardwareBufferFlags.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IAnimatedMeshMD2.h
+	"IAnimatedMesh.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IAnimatedMeshMD3.h
+	"IAnimatedMesh.h"
+	"IQ3Shader.h"
+	"quaternion.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IQ3Shader.h
+	"irrArray.h"
+	"fast_atof.h"
+	"IFileSystem.h"
+	"IVideoDriver.h"
+	"coreutil.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IFileSystem.h
+	"IReferenceCounted.h"
+	"IXMLReader.h"
+	"IFileArchive.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IXMLReader.h
+	"IReferenceCounted.h"
+	"irrXML.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/irrXML.h
+	<stdio.h>
+	"IrrCompileConfig.h"
+	<irrXML.h>
+	<string>
+	<irrXML.h>
+	<irrXML.h>
+	<irrXML.h>
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IFileArchive.h
+	"IReadFile.h"
+	"IFileList.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IReadFile.h
+	"IReferenceCounted.h"
+	"coreutil.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IFileList.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IVideoDriver.h
+	"rect.h"
+	"SColor.h"
+	"ITexture.h"
+	"irrArray.h"
+	"matrix4.h"
+	"plane3d.h"
+	"dimension2d.h"
+	"position2d.h"
+	"SMaterial.h"
+	"IMeshBuffer.h"
+	"triangle3d.h"
+	"EDriverTypes.h"
+	"EDriverFeatures.h"
+	"SExposedVideoData.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/ITexture.h
+	"IReferenceCounted.h"
+	"IImage.h"
+	"dimension2d.h"
+	"EDriverTypes.h"
+	"path.h"
+	"matrix4.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IImage.h
+	"IReferenceCounted.h"
+	"position2d.h"
+	"rect.h"
+	"SColor.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/triangle3d.h
+	"vector3d.h"
+	"line3d.h"
+	"plane3d.h"
+	"aabbox3d.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/SExposedVideoData.h
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/quaternion.h
+	"irrTypes.h"
+	"irrMath.h"
+	"matrix4.h"
+	"vector3d.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IAnimatedMeshSceneNode.h
+	"ISceneNode.h"
+	"IBoneSceneNode.h"
+	"IAnimatedMeshMD2.h"
+	"IAnimatedMeshMD3.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/ISceneNode.h
+	"IAttributeExchangingObject.h"
+	"ESceneNodeTypes.h"
+	"ECullingTypes.h"
+	"EDebugSceneTypes.h"
+	"ISceneNodeAnimator.h"
+	"ITriangleSelector.h"
+	"SMaterial.h"
+	"irrString.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"irrList.h"
+	"IAttributes.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IAttributeExchangingObject.h
+	"IReferenceCounted.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/ISceneNodeAnimator.h
+	"IReferenceCounted.h"
+	"vector3d.h"
+	"ESceneNodeAnimatorTypes.h"
+	"IAttributeExchangingObject.h"
+	"IEventReceiver.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IEventReceiver.h
+	"ILogger.h"
+	"position2d.h"
+	"Keycodes.h"
+	"irrString.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/ILogger.h
+	"IReferenceCounted.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/Keycodes.h
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/ITriangleSelector.h
+	"IReferenceCounted.h"
+	"triangle3d.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"line3d.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/irrList.h
+	"irrTypes.h"
+	"irrAllocator.h"
+	"irrMath.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IAttributes.h
+	"IReferenceCounted.h"
+	"SColor.h"
+	"vector3d.h"
+	"vector2d.h"
+	"line2d.h"
+	"line3d.h"
+	"triangle3d.h"
+	"position2d.h"
+	"rect.h"
+	"matrix4.h"
+	"quaternion.h"
+	"plane3d.h"
+	"triangle3d.h"
+	"line2d.h"
+	"line3d.h"
+	"irrString.h"
+	"irrArray.h"
+	"IXMLReader.h"
+	"EAttributes.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/line2d.h
+	"irrTypes.h"
+	"vector2d.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/EAttributes.h
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IBoneSceneNode.h
+	"ISceneNode.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IBillboardSceneNode.h
+	"ISceneNode.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IBillboardTextSceneNode.h
+	"IBillboardSceneNode.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/ICameraSceneNode.h
+	"ISceneNode.h"
+	"IEventReceiver.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/ICursorControl.h
+	"IReferenceCounted.h"
+	"position2d.h"
+	"rect.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IDummyTransformationSceneNode.h
+	"ISceneNode.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGeometryCreator.h
+	"IReferenceCounted.h"
+	"IMesh.h"
+	"IImage.h"
+
+1266152700 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGPUProgrammingServices.h
+	"EShaderTypes.h"
+	"EMaterialTypes.h"
+	"EPrimitiveTypes.h"
+	"path.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/EShaderTypes.h
+	"irrTypes.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUIButton.h
+	"IGUIElement.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUIElement.h
+	"IAttributeExchangingObject.h"
+	"irrList.h"
+	"rect.h"
+	"irrString.h"
+	"IEventReceiver.h"
+	"EGUIElementTypes.h"
+	"EGUIAlignment.h"
+	"IAttributes.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUICheckBox.h
+	"IGUIElement.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUIColorSelectDialog.h
+	"IGUIElement.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUIComboBox.h
+	"IGUIElement.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUIContextMenu.h
+	"IGUIElement.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUIEditBox.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUIElementFactory.h
+	"IReferenceCounted.h"
+	"EGUIElementTypes.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUIEnvironment.h
+	"IReferenceCounted.h"
+	"IGUISkin.h"
+	"rect.h"
+	"EMessageBoxFlags.h"
+	"IEventReceiver.h"
+	"IXMLReader.h"
+	"path.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUISkin.h
+	"IAttributeExchangingObject.h"
+	"EGUIAlignment.h"
+	"SColor.h"
+	"rect.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUIFileOpenDialog.h
+	"IGUIElement.h"
+	"path.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUIFont.h
+	"IReferenceCounted.h"
+	"SColor.h"
+	"rect.h"
+	"irrString.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUIFontBitmap.h
+	"IGUIFont.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUIImage.h
+	"IGUIElement.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUIInOutFader.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUIListBox.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUIMeshViewer.h
+	"IGUIElement.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUIScrollBar.h
+	"IGUIElement.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUISpinBox.h
+	"IGUIElement.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUISpriteBank.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"SColor.h"
+	"rect.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUIStaticText.h
+	"IGUIElement.h"
+	"SColor.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUITabControl.h
+	"IGUIElement.h"
+	"SColor.h"
+	"IGUISkin.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUITable.h
+	"IGUIElement.h"
+	"irrTypes.h"
+	"SColor.h"
+	"IGUISkin.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUIToolbar.h
+	"IGUIElement.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUIWindow.h
+	"IGUIElement.h"
+	"EMessageBoxFlags.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUITreeView.h
+	"IGUIElement.h"
+	"IGUIImageList.h"
+	"irrTypes.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IGUIImageList.h
+	"IGUIElement.h"
+	"rect.h"
+	"irrTypes.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IImageLoader.h
+	"IReferenceCounted.h"
+	"IImage.h"
+	"path.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IImageWriter.h
+	"IReferenceCounted.h"
+	"irrString.h"
+	"coreutil.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/ILightSceneNode.h
+	"ISceneNode.h"
+	"SLight.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/SLight.h
+	"SColor.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IMaterialRenderer.h
+	"IReferenceCounted.h"
+	"SMaterial.h"
+	"S3DVertex.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IMaterialRendererServices.h
+	"SMaterial.h"
+	"S3DVertex.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IMeshCache.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IMeshLoader.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IMeshManipulator.h
+	"IReferenceCounted.h"
+	"vector3d.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"IAnimatedMesh.h"
+	"IMeshBuffer.h"
+	"SVertexManipulator.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/SVertexManipulator.h
+	"S3DVertex.h"
+	"SColor.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IMeshSceneNode.h
+	"ISceneNode.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IMeshWriter.h
+	"IReferenceCounted.h"
+	"EMeshWriterEnums.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IMetaTriangleSelector.h
+	"ITriangleSelector.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IOSOperator.h
+	"IReferenceCounted.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IParticleSystemSceneNode.h
+	"ISceneNode.h"
+	"IParticleAnimatedMeshSceneNodeEmitter.h"
+	"IParticleBoxEmitter.h"
+	"IParticleCylinderEmitter.h"
+	"IParticleMeshEmitter.h"
+	"IParticleRingEmitter.h"
+	"IParticleSphereEmitter.h"
+	"IParticleAttractionAffector.h"
+	"IParticleFadeOutAffector.h"
+	"IParticleGravityAffector.h"
+	"IParticleRotationAffector.h"
+	"dimension2d.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IParticleAnimatedMeshSceneNodeEmitter.h
+	"IParticleEmitter.h"
+	"IAnimatedMeshSceneNode.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IParticleEmitter.h
+	"IAttributeExchangingObject.h"
+	"SParticle.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/SParticle.h
+	"vector3d.h"
+	"dimension2d.h"
+	"SColor.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IParticleBoxEmitter.h
+	"IParticleEmitter.h"
+	"aabbox3d.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IParticleCylinderEmitter.h
+	"IParticleEmitter.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IParticleMeshEmitter.h
+	"IParticleEmitter.h"
+	"IMesh.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IParticleRingEmitter.h
+	"IParticleEmitter.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IParticleSphereEmitter.h
+	"IParticleEmitter.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IParticleAttractionAffector.h
+	"IParticleAffector.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IParticleAffector.h
+	"IAttributeExchangingObject.h"
+	"SParticle.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IParticleFadeOutAffector.h
+	"IParticleAffector.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IParticleGravityAffector.h
+	"IParticleAffector.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IParticleRotationAffector.h
+	"IParticleAffector.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IQ3LevelMesh.h
+	"IAnimatedMesh.h"
+	"IQ3Shader.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IrrlichtDevice.h
+	"IReferenceCounted.h"
+	"dimension2d.h"
+	"IVideoDriver.h"
+	"EDriverTypes.h"
+	"EDeviceTypes.h"
+	"IEventReceiver.h"
+	"ICursorControl.h"
+	"IVideoModeList.h"
+	"ITimer.h"
+	"IOSOperator.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/EDeviceTypes.h
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IVideoModeList.h
+	"IReferenceCounted.h"
+	"dimension2d.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/ITimer.h
+	"IReferenceCounted.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/irrMap.h
+	"irrTypes.h"
+	"irrMath.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/ISceneCollisionManager.h
+	"IReferenceCounted.h"
+	"vector3d.h"
+	"triangle3d.h"
+	"position2d.h"
+	"line3d.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/ISceneManager.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"irrString.h"
+	"path.h"
+	"vector3d.h"
+	"dimension2d.h"
+	"SColor.h"
+	"ETerrainElements.h"
+	"ESceneNodeTypes.h"
+	"ESceneNodeAnimatorTypes.h"
+	"EMeshWriterEnums.h"
+	"SceneParameters.h"
+	"IGeometryCreator.h"
+	"ISkinnedMesh.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/SceneParameters.h
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/ISkinnedMesh.h
+	"irrArray.h"
+	"IBoneSceneNode.h"
+	"IAnimatedMesh.h"
+	"SSkinMeshBuffer.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/SSkinMeshBuffer.h
+	"IMeshBuffer.h"
+	"S3DVertex.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/ISceneNodeAnimatorCameraFPS.h
+	"ISceneNodeAnimator.h"
+	"IEventReceiver.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/ISceneNodeAnimatorCameraMaya.h
+	"ISceneNodeAnimator.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/ISceneNodeAnimatorCollisionResponse.h
+	"ISceneNode.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/ISceneNodeAnimatorFactory.h
+	"IReferenceCounted.h"
+	"ESceneNodeAnimatorTypes.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/ISceneNodeFactory.h
+	"IReferenceCounted.h"
+	"ESceneNodeTypes.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/ISceneUserDataSerializer.h
+	"IReferenceCounted.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IShaderConstantSetCallBack.h
+	"IReferenceCounted.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IShadowVolumeSceneNode.h
+	"ISceneNode.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/ITerrainSceneNode.h
+	"ETerrainElements.h"
+	"ISceneNode.h"
+	"IDynamicMeshBuffer.h"
+	"irrArray.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/ITextSceneNode.h
+	"ISceneNode.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IVolumeLightSceneNode.h
+	"ISceneNode.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IWriteFile.h
+	"IReferenceCounted.h"
+	"path.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/IXMLWriter.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+	"irrString.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/ILightManager.h
+	"IReferenceCounted.h"
+	"irrArray.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/SAnimatedMesh.h
+	"IAnimatedMesh.h"
+	"IMesh.h"
+	"aabbox3d.h"
+	"irrArray.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/SIrrCreationParameters.h
+	"EDriverTypes.h"
+	"EDeviceTypes.h"
+	"dimension2d.h"
+	"ILogger.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/SKeyMap.h
+	"Keycodes.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/SMesh.h
+	"IMesh.h"
+	"IMeshBuffer.h"
+	"aabbox3d.h"
+	"irrArray.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/SMeshBuffer.h
+	"CMeshBuffer.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/SMeshBufferLightMap.h
+	"CMeshBuffer.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/SMeshBufferTangents.h
+	"CMeshBuffer.h"
+
+1264953826 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/SSharedMeshBuffer.h
+	"irrArray.h"
+	"IMeshBuffer.h"
+
+1264953824 /home/kielanmatt/Desktop/irrlicht-1.7.1/include/SViewFrustum.h
+	"plane3d.h"
+	"vector3d.h"
+	"line3d.h"
+	"aabbox3d.h"
+	"matrix4.h"
+	"IVideoDriver.h"
+
+1308524286 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Advanced/Spherical Harmonix/main.cpp
+	<irrlicht.h>
+	<math.h>
+
