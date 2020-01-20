@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Demo" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="demo">
+				<Option output="data\bin\Demo" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="data\bin" />
+				<Option object_output="data\obj\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="C:\Documents and Settings\Tanner\Desktop\irrlicht-1.5\include" />
+			<Add directory="..\NewtonSDK\sdk" />
+			<Add directory="..\tumle\include" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="gdi32" />
+			<Add library="..\NewtonSDK\sdk\dll\Newton.lib" />
+			<Add directory="C:\Documents and Settings\Tanner\Desktop\irrlicht-1.5\lib\Win32-gcc" />
+			<Add directory="..\NewtonSDK\sdk" />
+			<Add directory="..\tumle\lib" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Unit filename="..\tumle\source\CCameraFPSPhysicsNode.cpp" />
+		<Unit filename="..\tumle\source\CCameraFPSPhysicsNode.h" />
+		<Unit filename="..\tumle\source\CControllablePhysicsNode.cpp" />
+		<Unit filename="..\tumle\source\CControllablePhysicsNode.h" />
+		<Unit filename="..\tumle\source\CMaterialInteraction.cpp" />
+		<Unit filename="..\tumle\source\CMaterialInteraction.h" />
+		<Unit filename="..\tumle\source\CMaterialManager.cpp" />
+		<Unit filename="..\tumle\source\CMaterialManager.h" />
+		<Unit filename="..\tumle\source\CPhysicsManager.cpp" />
+		<Unit filename="..\tumle\source\CPhysicsManager.h" />
+		<Unit filename="..\tumle\source\CPhysicsNode.cpp" />
+		<Unit filename="..\tumle\source\CPhysicsNode.h" />
+		<Unit filename="..\tumle\source\configure.sh" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
