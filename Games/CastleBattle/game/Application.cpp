@@ -63,6 +63,10 @@ bool Application::init(){
 
   this->device->getCursorControl()->setVisible(false);
   log1("Gameplay initialized.");
+
+  //unzip media folder manually does not seem to load yet
+//device->getFileSystem()->addFileArchive("media.zip");
+
   return true;
 }
 bool Application::end(){
