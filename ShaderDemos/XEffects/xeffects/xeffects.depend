@@ -913,7 +913,7 @@
 1229264168 /home/Dev/libs/Irrlicht/include/IImageWriter.h
 	"IReferenceCounted.h"
 
-1229264168 /home/Dev/libs/Irrlicht/include/IMeshLoader.h
+1272010586 /home/Dev/libs/Irrlicht/include/IMeshLoader.h
 	"IReferenceCounted.h"
 
 1229264168 /home/Dev/libs/Irrlicht/include/ISceneNodeAnimatorCameraFPS.h
@@ -978,6 +978,38 @@
 	"effectWrapper.h"
 
 1236656713 source:/home/Dev/A-AgnosSVN/AgnosDemos/Stuff/Irrlicht Demos/ShaderDemos/XEffects/Source/example.cpp
+	<irrlicht.h>
+	<iostream>
+	"effectWrapper.h"
+
+1362078445 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/ShaderDemos/XEffects/Source/CShaderPre.cpp
+	"CShaderPre.h"
+	<iostream>
+	<string>
+	<fstream>
+
+1362078445 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/ShaderDemos/XEffects/Source/CShaderPre.h
+	<irrlicht.h>
+
+1575390598 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/ShaderDemos/XEffects/Source/effectWrapper.cpp
+	"effectWrapper.h"
+	"effectWrapperCB.h"
+	<string>
+	<iostream>
+	<fstream>
+
+1362078445 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/ShaderDemos/XEffects/Source/effectWrapper.h
+	<irrlicht.h>
+	"CShaderPre.h"
+	"CScreenQuad.h"
+
+1362078445 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/ShaderDemos/XEffects/Source/CScreenQuad.h
+	<irrlicht.h>
+
+1362078445 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/ShaderDemos/XEffects/Source/effectWrapperCB.h
+	"effectWrapper.h"
+
+1362078445 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/ShaderDemos/XEffects/Source/example.cpp
 	<irrlicht.h>
 	<iostream>
 	"effectWrapper.h"

@@ -1,0 +1,17 @@
+https://www.developpez.net/forums/d1173323/applications/developpement-2d-3d-jeux/api-graphiques/sdl/sdl-xlib-sdl_getwminfo/
+
+
+	display = XOpenDisplay(NULL);
+	if (display == NULL) cout << "Echec XOpenDisplay" << endl ;
+	screen = *(int*)DefaultScreenOfDisplay(display);
+	window = XCreateSimpleWindow(display, ROOT,
+			0, 0, WIDTH, HEIGHT,
+			2, BLACK,
+			WHITE);
+	XMapWindow(display, window);
+ 
+        XMoveWindow(display, window,200,200);
+ 
+	XEvent ev;
+	while(true)
+	    XNextEvent(display,&ev);

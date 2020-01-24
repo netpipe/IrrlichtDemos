@@ -1,0 +1,25 @@
+
+	SDL_SysWMinfo info;
+	Window root;
+	Window parent;
+	Window *children;
+	unsigned int children_count;
+	SDL_VERSION(&info.version);
+
+	if (SDL_GetWMInfo(&info) > 0 ) {
+		if (info.subsystem == SDL_SYSWM_X11) {
+			XQueryTree(	info.info.x11.display,
+					info.info.x11.window,
+					&root,
+					&parent,
+					&children,
+					&children_count);
+			info.info.x11.lock_func();
+			XMoveWindow(	info.info.x11.display,
+					parent,
+					x,
+					y);
+			info.info.x11.unlock_func();
+			if( children ) XFree(children);
+		}
+	}
