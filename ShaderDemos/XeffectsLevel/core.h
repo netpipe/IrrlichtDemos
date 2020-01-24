@@ -180,6 +180,7 @@ void Core::init_device(const char * winName)
 
 	this->effect_handler->setClearColour(irr::video::SColor(255, 100, 100, 100));
 	this->effect_handler->setAmbientColor(irr::video::SColor(255, 10, 10, 10));
+	    device->getFileSystem()->addFileArchive("./media.zip");
 }
 
 void Core::load_shaders(void)
@@ -240,7 +241,7 @@ void Core::load_lights(void)
 
 		irr::scene::ISceneNodeAnimator * lightAnimator = this->scene_manager->createFlyCircleAnimator(irr::core::vector3df(0, 1, 0), 5, 0.001);
 		if(lightAnimator) {
-			//light0->addAnimator(lightAnimator);
+			light0->addAnimator(lightAnimator);
 			lightAnimator->drop();
 		}
 	}

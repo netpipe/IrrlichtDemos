@@ -20,7 +20,7 @@
 
 #define CORE_STENCIL_BUFFER  false
 
-#define CORE_FULLSCREEN  true
+#define CORE_FULLSCREEN  false
 
 #define CORE_VSYNC  true
 
