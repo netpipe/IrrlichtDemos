@@ -2,6 +2,14 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="All" />
+	<File name="main/main.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="207" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="9" />
+		</Folding>
+	</File>
 	<File name="game/Application.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="85" topLine="0" />
@@ -10,12 +18,14 @@
 			<Collapse line="13" />
 		</Folding>
 	</File>
-	<File name="enviroment/castle.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="game/Application.cpp" open="1" top="1" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="56" topLine="0" />
+			<Cursor1 position="544" topLine="0" />
 		</Cursor>
 		<Folding>
-			<Collapse line="15" />
+			<Collapse line="30" />
+			<Collapse line="38" />
+			<Collapse line="72" />
 		</Folding>
 	</File>
 	<File name="game/player.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -28,28 +38,18 @@
 			<Collapse line="30" />
 		</Folding>
 	</File>
-	<File name="main/main.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="enviroment/Terrain.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="207" topLine="0" />
+			<Cursor1 position="393" topLine="32" />
+		</Cursor>
+	</File>
+	<File name="enviroment/castle.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="56" topLine="0" />
 		</Cursor>
 		<Folding>
-			<Collapse line="9" />
+			<Collapse line="15" />
 		</Folding>
-	</File>
-	<File name="game/Application.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="135" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="30" />
-			<Collapse line="38" />
-			<Collapse line="72" />
-		</Folding>
-	</File>
-	<File name="enviroment/Terrain.cpp" open="1" top="1" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
 	</File>
 	<File name="game/physics.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
@@ -73,5 +73,5 @@
 			<Collapse line="149" />
 		</Folding>
 	</File>
-	<EditorTabsLayout layout="040d4ba05e2ac8a6001f80d600000002=0;Irrlicht Pong:enviroment/castle.h,1;Irrlicht Pong:game/physics.h,2;Irrlicht Pong:game/Application.h,3;Irrlicht Pong:game/player.h,4;Irrlicht Pong:game/Application.cpp,5;Irrlicht Pong:game/physics.cpp,6;Irrlicht Pong:main/main.cpp,*7;Irrlicht Pong:enviroment/Terrain.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=814;besth=344;minw=814;minh=344;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=040d4ba05e2ac8a6001f80d600000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+	<EditorTabsLayout layout="038b56f05e2ac888001f1b2d00000002=0;Irrlicht Pong:enviroment/castle.h,1;Irrlicht Pong:game/physics.h,2;Irrlicht Pong:game/Application.h,3;Irrlicht Pong:game/player.h,*4;Irrlicht Pong:game/Application.cpp,5;Irrlicht Pong:game/physics.cpp,6;Irrlicht Pong:main/main.cpp,7;Irrlicht Pong:enviroment/Terrain.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=814;besth=344;minw=814;minh=344;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=038b56f05e2ac888001f1b2d00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>

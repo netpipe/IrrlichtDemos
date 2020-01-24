@@ -187,6 +187,7 @@ void Core::init_device(const char * winName)
 //
 	this->effect_handler->setClearColour(irr::video::SColor(255, 100, 100, 100));
 	this->effect_handler->setAmbientColor(irr::video::SColor(255, 10, 10, 10));
+	 device->getFileSystem()->addFileArchive("./media.zip");
 }
 
 void Core::load_shaders(void)
