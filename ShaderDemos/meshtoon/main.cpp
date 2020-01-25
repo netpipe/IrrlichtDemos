@@ -13,8 +13,8 @@ support the stencil buffer, and then disables shadows by itself.
 
 #include <irrlicht.h>
 #include <iostream>
-#include "driverChoice.h"
-#include "exampleHelper.h"
+//#include "driverChoice.h"
+//#include "exampleHelper.h"
 
 #include "meshToon.h"
 
@@ -36,9 +36,9 @@ int main()
 	const bool shadows = (i == 'y');
 
 	// ask user for driver
-	video::E_DRIVER_TYPE driverType=driverChoiceConsole();
-	if (driverType==video::EDT_COUNT)
-		return 1;
+//	video::E_DRIVER_TYPE driverType=driverChoiceConsole();
+//	if (driverType==video::EDT_COUNT)
+//		return 1;
 
 
 	/*
@@ -47,7 +47,7 @@ int main()
 	*/
 
 	IrrlichtDevice *device =
-		createDevice(driverType, core::dimension2d<u32>(640, 480),
+		createDevice(video::EDT_OPENGL, core::dimension2d<u32>(640, 480),
 		16, false, shadows);
 
 	if (device == 0)
@@ -107,12 +107,6 @@ int main()
 
 	node->setMaterialType(video::EMT_REFLECTION_2_LAYER);
 
-	/*
-	The second special effect is very basic, I bet you saw it already in
-	some Irrlicht Engine demos: A transparent billboard combined with a
-	dynamic light. We simply create a light scene node, let it fly around,
-	and to make it look more cool, we attach a billboard scene node to it.
-	*/
 
 	// create light
 	scene::ILightSceneNode * lightNode  = smgr->addLightSceneNode(0, core::vector3df(0,0,0),
@@ -129,40 +123,6 @@ int main()
 	node->setMaterialType(video::EMT_TRANSPARENT_ADD_COLOR);
 	node->setMaterialTexture(0, driver->getTexture(mediaPath + "particlewhite.bmp"));
 
-	/*
-	The next special effect is a lot more interesting: A particle system.
-	The particle system in the Irrlicht Engine is quite modular and
-	extensible, but yet easy to use. There is a particle system scene node
-	into which you can put a particle emitter, which makes particles come out
-	of nothing. These emitters are quite flexible and usually have lots of
-	parameters like direction, amount, and color of the particles they
-	create.
-
-	There are different emitters, for example a point emitter which lets
-	particles pop out at a fixed point. If the particle emitters available
-	in the engine are not enough for you, you can easily create your own
-	ones, you'll simply have to create a class derived from the
-	IParticleEmitter interface and attach it to the particle system using
-	setEmitter(). In this example we create a box particle emitter, which
-	creates particles randomly inside a box. The parameters define the box,
-	direction of the particles, minimal and maximal new particles per
-	second, color, and minimal and maximal lifetime of the particles.
-
-	Because only with emitters particle system would be a little bit
-	boring, there are particle affectors which modify particles while
-	they fly around. Affectors can be added to a particle system for
-	simulating additional effects like gravity or wind.
-	The particle affector we use in this example is an affector which
-	modifies the color of the particles: It lets them fade out. Like the
-	particle emitters, additional particle affectors can also be
-	implemented by you, simply derive a class from IParticleAffector and
-	add it with addAffector().
-
-	After we set a nice material to the particle system, we have a cool
-	looking camp fire. By adjusting material, texture, particle emitter,
-	and affector parameters, it is also easily possible to create smoke,
-	rain, explosions, snow, and so on.
-	*/
 
 	// create a particle system
 
@@ -236,22 +196,6 @@ int main()
 		glow->drop();
 	}
 
-	/*
-	As our last special effect, we want a dynamic shadow be cast from an
-	animated character. For this we load a DirectX .x model and place it
-	into our world. For creating the shadow, we simply need to call
-	addShadowVolumeSceneNode(). The color of shadows is only adjustable
-	globally for all shadows, by calling ISceneManager::setShadowColor().
-	Voila, here is our dynamic shadow.
-
-	Because the character is a little bit too small for this scene, we make
-	it bigger using setScale(). And because the character is lighted by a
-	dynamic light, we need to normalize the normals to make the lighting on
-	it correct. This is always necessary if the scale of a dynamic lighted
-	model is not (1,1,1). Otherwise it would get too dark or too bright
-	because the normals will be scaled too.
-	*/
-
 	// add animated character
 
 //	    scene::ISceneNode* n2 = smgr->addCubeSceneNode();
@@ -273,9 +217,10 @@ int main()
 	mesh = smgr->getMesh(mediaPath + "dwarf.x");
 	scene::IAnimatedMeshSceneNode* anode = 0;
 
-	irr::scene::IMesh *meshmesh1=createToonOutlineMesh( smgr, smgr->getMesh(mediaPath + "1.x"),20.0f,video::SColor(150,0,0,0));
+	//mesh =smgr->getMesh(mediaPath + "1.x")
+	irr::scene::IMesh *meshmesh1=createToonOutlineMesh( smgr,mesh ,20.0f,video::SColor(150,0,0,0));
 //	irr::scene::IMesh *meshmesh1=createToonOutlineMesh( smgr, n2->getMesh(0),20.0f,video::SColor(150,0,0,0));
-smgr->addMeshSceneNode(meshmesh1);
+	smgr->addMeshSceneNode(meshmesh1);
 
 
 //	anode = smgr->addAnimatedMeshSceneNode(mesh);
@@ -324,7 +269,7 @@ smgr->addMeshSceneNode(meshmesh1);
 	if (device->isWindowActive())
 	{
 		driver->beginScene(video::ECBF_COLOR | video::ECBF_DEPTH, video::SColor(0));
-
+	//	driver->beginScene(true, false, irr::video::SColor(0));
 		smgr->drawAll();
 
 		driver->endScene();
