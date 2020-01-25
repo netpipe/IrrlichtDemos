@@ -1,7 +1,7 @@
 #include <irrlicht.h>
-#include "newton.h"
-#include "tumle.h"
-#include "SDL.h"
+//#include "newton.h"
+//#include "tumle.h"
+#include <SDL/SDL.h>
 //http://irrlicht.sourceforge.net/forum//viewtopic.php?f=1&t=30750&p=174159&hilit=sdl#p174159
 
 using namespace irr;
@@ -10,7 +10,7 @@ using namespace scene;
 using namespace video;
 using namespace io;
 using namespace gui;
-using namespace tumle;
+//using namespace tumle;
 
 //initialize first joystick globaly
 SDL_Joystick *joystick1 = NULL;
@@ -24,8 +24,8 @@ SDL_Event event;
 //}
 
 //{create an irrlicht device
-    IrrlichtDevice* device = createDevice(EDT_OPENGL, dimension2d<s32>(1024, 768), 32,
-    true, false, true, 0);
+    IrrlichtDevice* device = createDevice(EDT_OPENGL, dimension2d<u32>(1024, 768), 32,
+    false, false, false, 0);
 
     //initialize SDL
     if(SDL_Init(SDL_INIT_JOYSTICK|SDL_INIT_TIMER) < 0)  return 1;
@@ -44,8 +44,8 @@ SDL_Event event;
      IGUIEnvironment* guienv = device->getGUIEnvironment();
      if (!guienv) return 1;
      //create and check physics manager
-     IPhysicsManager* pmgr = createPhysicsManager(device);
-     if (!pmgr) return 1;
+//     IPhysicsManager* pmgr = createPhysicsManager(device);
+//     if (!pmgr) return 1;
      //}
      //}
 
@@ -87,7 +87,7 @@ rotate->drop();
 //}
 
 //{battle background
-IMeshSceneNode* battle = smgr->addMeshSceneNode(smgr->getMesh("battlefield_stage.obj") );
+IMeshSceneNode* battle = smgr->addMeshSceneNode(smgr->getMesh("ShadRoom.b3d") );
 if (battle)
 {
 battle->setScale(vector3df(3,3,3) );
@@ -96,7 +96,7 @@ battle->setMaterialFlag(EMF_NORMALIZE_NORMALS, true);
 battle->setMaterialFlag(EMF_BACK_FACE_CULLING, false);
 battle->setMaterialFlag(EMF_LIGHTING, true);
 battle->setMaterialType(EMT_TRANSPARENT_ALPHA_CHANNEL);
-battle->setMaterialTexture( 0, driver->getTexture("battlefield_UV_map.png") );
+battle->setMaterialTexture( 0, driver->getTexture("wall.bmp") );
 battle->getMaterial(0).EmissiveColor.set(0,100,100,100);
 }
 //}
@@ -306,7 +306,7 @@ guienv->drawAll();
 driver->endScene();
 
 //update the newton world
-pmgr->update();
+//pmgr->update();
 //}
 //=======================================================================
 
