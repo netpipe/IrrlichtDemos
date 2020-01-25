@@ -198,7 +198,7 @@ SDL_Event event;
   //  screen = SDL_SetVideoMode( 640, 480, 32, SDL_SWSURFACE );
 
     //Load image
-    hello = SDL_LoadBMP( "hello.bmp" );
+    hello = SDL_LoadBMP( "sdltest.bmp" );
 
     //Apply image to screen
    // SDL_BlitSurface( hello, NULL, screen, NULL );
