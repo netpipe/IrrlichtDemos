@@ -1,0 +1,9 @@
+#!/bin/bash
+
+conf=$HOME/.xurfaced
+init="main"
+
+echo $init > $conf/head
+> $conf/history
+echo "Welcome to xurfaced" > $conf/notify
+$conf/sethead $init

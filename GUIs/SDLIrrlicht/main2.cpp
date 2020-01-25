@@ -193,7 +193,23 @@ if( SDL_GL_SetSwapInterval( 1 ) < 0 )
 //{ printf( "Unable to initialize OpenGL!\n" ); success = false; }
 //
 
-
+//code posted for sdl1 makes 2 windows
+//        SDL_Init(SDL_INIT_VIDEO );
+//        SDL_Surface * sdldisplay = SDL_SetVideoMode(800,600,16,SDL_OPENGL);
+//
+//        SDL_SysWMinfo sdlinfo;
+//        SDL_VERSION(&sdlinfo.version);
+//        SDL_GetWMInfo(&sdlinfo);
+//        SIrrlichtCreationParameters irrparas = SIrrlichtCreationParameters ();
+//
+//        irrparas.Bits=16;
+//        irrparas.Fullscreen=false;
+//        irrparas.WindowSize=dimension2d<s32>(800,600);
+//        irrparas.DriverType=EDT_OPENGL;
+//        irrparas.WindowId = sdlinfo.info.x11.window;
+//
+//        IrrlichtDevice *device = createDeviceEx(irrparas);
+// eoc
 
   irr::SIrrlichtCreationParameters   params;
   params.AntiAlias=false;

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ "$1" = "" ]; then
+    exit
+fi
+
+conf=$HOME/.xurfaced
+target="$conf/$1"
+repository="$(cat $conf/plugins/repository)"
+
+mkdir $target
+
+if [ $? -ne 0 ]; then
+    exit
+fi
+
+echo $1 >> $conf/plugins/list
+curl -s $repository/$1.install -o $conf/plugins/$1.install
+chmod +x $conf/plugins/$1.install
+$conf/plugins/$1.install $target $repository/$1
+$conf/sethead main

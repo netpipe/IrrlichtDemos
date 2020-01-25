@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="All" />
+	<File name="client.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="78" topLine="84" />
+		</Cursor>
+	</File>
+	<File name="window.c" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="16" />
+		</Cursor>
+	</File>
+	<File name="config.c" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="render.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="96" topLine="167" />
+		</Cursor>
+	</File>
+	<File name="display.c" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="301" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="33" />
+		</Folding>
+	</File>
+	<File name="xurfaced.c" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3995" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="53" />
+			<Collapse line="181" />
+			<Collapse line="217" />
+		</Folding>
+	</File>
+	<EditorTabsLayout layout="addf6d805bce83c20014420000000002=0;Irrlicht Pong:client.c,1;Irrlicht Pong:render.c,*2;Irrlicht Pong:xurfaced.c,3;Irrlicht Pong:display.c,4;Irrlicht Pong:config.c,5;Irrlicht Pong:window.c@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=371;besth=341;minw=371;minh=341;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=addf6d805bce83c20014420000000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+</CodeBlocks_layout_file>

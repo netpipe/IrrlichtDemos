@@ -1,0 +1,6 @@
+#!/bin/bash
+
+conf=$HOME/.xurfaced
+repository=$(cat $conf/plugins/repository)
+
+curl -s $repository/list

@@ -1,0 +1,15 @@
+xufaced
+=======
+
+Xurfaced is a X11 window manager that uses Cairo's vector graphic library as the base for the user interface. It is ment to work in a simular fashion as the menu systems used for the PS3 or XBOX with the ability to load games, movies or whatever else you might think of.
+
+USAGE
+-----
+
+Either put "exec xurfaced" to your .xinitrc and type xinit or if you are already have an xserver running you can use the run.sh script to load xurfaced into another tty (default 5).
+
+LICENCE
+-------
+
+It is licensed using the MIT Licence.
+

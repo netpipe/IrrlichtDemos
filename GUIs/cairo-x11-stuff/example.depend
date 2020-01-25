@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1540262004 source:/home/netpipe/desktops/5/cairo-x11-stuff/cairo-test.cpp
+	<assert.h>
+	<stdio.h>
+	<cairo.h>
+	<cairo-xlib.h>
+	<X11/Xlib.h>
+
+1530634394 /usr/include/cairo/cairo.h
+	"cairo-version.h"
+	"cairo-features.h"
+	"cairo-deprecated.h"
+
+1530634394 /usr/include/cairo/cairo-version.h
+
+1530634394 /usr/include/cairo/cairo-features.h
+
+1530634394 /usr/include/cairo/cairo-deprecated.h
+
+1530634394 /usr/include/cairo/cairo-xlib.h
+	"cairo.h"
+	<X11/Xlib.h>
+

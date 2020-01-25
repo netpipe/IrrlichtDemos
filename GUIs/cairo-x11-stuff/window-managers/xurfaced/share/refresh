@@ -1,0 +1,8 @@
+#!/bin/bash
+
+conf=$HOME/.xurfaced
+pid="$conf/pid"
+
+if [ -e $pid ]; then
+    kill -SIGUSR1 $(cat $pid)
+fi

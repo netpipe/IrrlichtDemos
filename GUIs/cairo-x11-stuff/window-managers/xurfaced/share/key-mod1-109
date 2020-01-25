@@ -1,0 +1,6 @@
+#!/bin/bash
+
+conf=$HOME/.xurfaced
+h=$(cat $conf/history | tail -n 1)
+
+echo $h > $conf/mark

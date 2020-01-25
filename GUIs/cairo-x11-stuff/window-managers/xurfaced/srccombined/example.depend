@@ -1,0 +1,131 @@
+# depslib dependency file v1.0
+1540177527 source:/home/clay/Desktop/xurfaced/srccombined/client.c
+	<stdlib.h>
+	<X11/Xlib.h>
+	<X11/extensions/Xrender.h>
+	<client.h>
+
+1540177527 /home/clay/Desktop/xurfaced/srccombined//client.h
+
+1540177527 source:/home/clay/Desktop/xurfaced/srccombined/config.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<unistd.h>
+	<sys/stat.h>
+	<xurfaced.h>
+	<config.h>
+
+1540177527 /home/clay/Desktop/xurfaced/srccombined//xurfaced.h
+
+1540177527 /home/clay/Desktop/xurfaced/srccombined//config.h
+
+1540261381 source:/home/clay/Desktop/xurfaced/srccombined/display.c
+	<stdlib.h>
+	<stdio.h>
+	<X11/Xlib.h>
+	<X11/extensions/Xrender.h>
+	<display.h>
+
+1540177527 /home/clay/Desktop/xurfaced/srccombined//display.h
+
+1540177527 source:/home/clay/Desktop/xurfaced/srccombined/event.c
+	<stdlib.h>
+	<stdio.h>
+	<sys/stat.h>
+	<sys/wait.h>
+	<X11/Xlib.h>
+	<X11/keysym.h>
+	<X11/extensions/Xrender.h>
+	<animation.h>
+	<config.h>
+	<client.h>
+	<display.h>
+	<menu.h>
+	<xurfaced.h>
+	<event.h>
+
+1540177527 /home/clay/Desktop/xurfaced/srccombined//animation.h
+
+1540177527 /home/clay/Desktop/xurfaced/srccombined//menu.h
+
+1540177527 /home/clay/Desktop/xurfaced/srccombined//event.h
+
+1540177527 source:/home/clay/Desktop/xurfaced/srccombined/menu.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<unistd.h>
+	<sys/stat.h>
+	<X11/Xlib.h>
+	<X11/extensions/Xrender.h>
+	<animation.h>
+	<config.h>
+	<display.h>
+	<xurfaced.h>
+	<menu.h>
+
+1540177527 source:/home/clay/Desktop/xurfaced/srccombined/render.c
+	<stdlib.h>
+	<math.h>
+	<X11/Xlib.h>
+	<X11/extensions/Xrender.h>
+	<cairo.h>
+	<cairo-xlib.h>
+	<animation.h>
+	<display.h>
+	<menu.h>
+	<render.h>
+
+1519563674 /usr/include/cairo/cairo.h
+	"cairo-version.h"
+	"cairo-features.h"
+	"cairo-deprecated.h"
+
+1519563674 /usr/include/cairo/cairo-version.h
+
+1519563674 /usr/include/cairo/cairo-features.h
+
+1519563674 /usr/include/cairo/cairo-deprecated.h
+
+1519563674 /usr/include/cairo/cairo-xlib.h
+	"cairo.h"
+	<X11/Xlib.h>
+
+1540177527 /home/clay/Desktop/xurfaced/srccombined//render.h
+
+1540177527 source:/home/clay/Desktop/xurfaced/srccombined/window.c
+	<X11/Xlib.h>
+	<X11/Xatom.h>
+	<X11/Xproto.h>
+	<X11/extensions/Xcomposite.h>
+	<X11/extensions/Xrender.h>
+	<X11/extensions/Xfixes.h>
+	<X11/extensions/shape.h>
+	<display.h>
+	<window.h>
+
+1540177527 /home/clay/Desktop/xurfaced/srccombined//window.h
+
+1540260386 source:/home/clay/Desktop/xurfaced/srccombined/xurfaced.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<signal.h>
+	<unistd.h>
+	<pthread.h>
+	<sys/stat.h>
+	<sys/time.h>
+	<sys/wait.h>
+	<X11/Xlib.h>
+	<X11/extensions/Xrender.h>
+	<animation.h>
+	<config.h>
+	<client.h>
+	<display.h>
+	<event.h>
+	<xurfaced.h>
+	<menu.h>
+	<render.h>
+	<window.h>
+

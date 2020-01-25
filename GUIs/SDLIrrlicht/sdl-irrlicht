@@ -17,6 +17,46 @@
 
 
 
+
+
+
+
+
+//! \return Pointer to a list with all video modes supported
+video::IVideoModeList* CIrrDeviceSDL::getVideoModeList()
+{
+    if (!VideoModeList.getVideoModeCount())
+    {
+        // enumerate video modes.
+        const SDL_VideoInfo *vi = SDL_GetVideoInfo();
+        #ifdef __amigaos4__
+        // to get list of all modes works even in window moe
+        SDL_Rect **modes = SDL_ListModes(vi->vfmt, SDL_Flags|SDL_FULLSCREEN);
+        #else
+        SDL_Rect **modes = SDL_ListModes(vi->vfmt, SDL_Flags);
+        #endif
+        if (modes != 0)
+        {
+            if (modes == (SDL_Rect **)-1)
+                os::Printer::log("All modes available.\n");
+            else
+            {
+                for (u32 i=0; modes[i]; ++i)
+                    VideoModeList.addMode(core::dimension2d<u32>(modes[i]->w, modes[i]->h), vi->vfmt->BitsPerPixel);
+            }
+        }
+    }
+ 
+    return &VideoModeList;
+}
+
+
+
+
+
+
+
+
 No, no. You have to compile Irrlicht with the SDL device and create the device with EDT_SDL. Then you can ask Irrlicht video driver->getExposedVideoData() for the internal device structures, which, if you are lucky, are the screen value. But you have to look this up in the SDL device source code, because it's not yet documented.
 
 

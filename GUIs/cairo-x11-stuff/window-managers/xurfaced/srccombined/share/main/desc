@@ -1,0 +1,12 @@
+#!/bin/bash
+
+conf=$HOME/.xurfaced
+plugins=$conf/plugins/list
+
+if [ -e $plugins ]; then
+    cat $plugins
+    echo ""
+fi
+
+echo "Information and configuration"
+echo "Turn off system"

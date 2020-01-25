@@ -1,0 +1,13 @@
+#!/bin/bash
+
+conf=$HOME/.xurfaced
+pid=$(cat $conf/pid)
+plugins=$conf/plugins/list
+
+if [ -e $plugins ]; then
+    cat $plugins | sed -r "s:(.*):$conf/sethead \1:"
+    echo ""
+fi
+
+echo "$conf/sethead system"
+echo "$conf/quit"

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+conf=$HOME/.xurfaced
+
+cat $conf/plugins/list | sed -r "s:(.*):$conf/plugins/remove \1:"

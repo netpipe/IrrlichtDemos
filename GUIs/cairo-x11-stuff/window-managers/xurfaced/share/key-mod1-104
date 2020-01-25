@@ -1,0 +1,5 @@
+#!/bin/bash
+
+conf=$HOME/.xurfaced
+
+$conf/sethead main
