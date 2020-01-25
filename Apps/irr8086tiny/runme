@@ -3,7 +3,7 @@ clear
 stty cbreak raw -echo min 0
 if [ -f hd.img ]
 then
-    ./8086tiny bios fd.img hd.img
+    ./8086tiny ./media/bios ./media/fd.img ./media/hd.img
 else
     ./8086tiny bios fd.img
 fi

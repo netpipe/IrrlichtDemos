@@ -11,6 +11,17 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Option projectResourceIncludeDirsRelation="1" />
+				<Compiler>
+					<Add option="-fpermissive" />
+					<Add option="-DGRAPHICS_UPDATE_DELAY=25000" />
+					<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
+				</Compiler>
+				<Linker>
+					<Add library="X11" />
+					<Add library="Xxf86vm" />
+					<Add library="Irrlicht" />
+					<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
+				</Linker>
 			</Target>
 			<Target title="emscripten">
 				<Option output="./8086tiny.html" prefix_auto="0" extension_auto="0" />
@@ -124,13 +135,10 @@
 			<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/upstream/emscripten/tests/bullet/src/.libs" />
 			<Add directory="../../../Libs/irrlicht-ogl-es/irrlicht/lib/Linux" />
 		</Linker>
-		<Unit filename="8086tiny.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="tmt.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="tmt.h" />
-		<Extensions />
+		<Unit filename="8086tiny.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

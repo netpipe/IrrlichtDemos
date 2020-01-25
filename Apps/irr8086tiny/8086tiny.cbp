@@ -30,7 +30,9 @@
 			<Add library="SDL" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
 		</Linker>
-		<Unit filename="main.cpp" />
+		<Unit filename="8086tiny.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Extensions>
 			<code_completion />
 			<debugger />
