@@ -135,6 +135,7 @@ void Core::update(void)
 	if(this->event_reciever->keyDown(irr::KEY_ESCAPE)) {
 		this->device->closeDevice();
 	}
+	device->sleep(80);
 }
 
 void Core::render(void)
