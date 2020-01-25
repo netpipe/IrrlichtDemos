@@ -1,0 +1,52 @@
+sdl1
+ SDL_SaveBMP( source, "your_snapshot_name.bmp" );}
+
+
+sdl2
+IMG_SavePNG( _surface, file.c_str()
+
+
+
+
+// Save screenshot
+// file: Filename for created screenshot
+// renderer: pointer to SDL_Renderer
+bool saveScreenshot(const std::string &file, SDL_Renderer *renderer ) {
+  // Used temporary variables
+  SDL_Rect _viewport;
+  SDL_Surface *_surface = NULL;
+  
+  // Get viewport size
+  SDL_RenderGetViewport( renderer, &_viewport);
+  
+  // Create SDL_Surface with depth of 32 bits
+  _surface = SDL_CreateRGBSurface( 0, _viewport.w, _viewport.h, 32, 0, 0, 0, 0 );
+  
+  // Check if the surface is created properly
+  if ( _surface == NULL ) {
+    std::cout << "Cannot create SDL_Surface: " << SDL_GetError() << std::endl;
+    return false;
+   }
+  
+  // Get data from SDL_Renderer and save them into surface
+  if ( SDL_RenderReadPixels( renderer, NULL, _surface->format->format, _surface->pixels, _surface->pitch ) != 0 ) {
+    std::cout << "Cannot read data from SDL_Renderer: " << SDL_GetError() << std::endl;
+    
+    // Don't forget to free memory
+    SDL_FreeSurface(_surface);
+    return false;
+  }
+  
+  // Save screenshot as PNG file
+  if ( IMG_SavePNG( _surface, file.c_str() ) != 0 ) {
+    std::cout << "Cannot save PNG file: " << SDL_GetError() << std::endl;
+    
+    // Free memory
+    SDL_FreeSurface(_surface);
+    return false;
+  }
+  
+  // Free memory
+  SDL_FreeSurface(_surface);
+  return true;
+}
