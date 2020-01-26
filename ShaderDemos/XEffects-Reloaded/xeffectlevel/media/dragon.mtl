@@ -1,0 +1,107 @@
+#
+# Wavefront material file: d:\a-turbo-squid\dragon\obj\dragon.mtl
+#
+# Converted by the PolyTrans geometry converter from Okino Computer Graphics, Inc.
+# Date/time of export: 06/10/2008 16:03:51
+#
+# Bounding box of geometry = (-4.40109,-5.20747,-5.49345) to (4.40109,0.465131,5.34053).
+
+newmtl default
+	Ns 32
+	d 1
+	illum 2
+	Kd 0.4 0.4 0.4
+	Ks 0.7 0.7 0.7
+	Ka 0.3 0.3 0.3
+
+newmtl Gaurdian_Gums
+	Ns 16
+	d 1
+	illum 2
+	Kd 0.384314 0.282353 0.207843
+	Ks 0.126824 0.0931765 0.0685882
+	Ka 0.115294 0.0847059 0.0623529
+
+newmtl Gaurdian_Horn
+	Ns 16
+	d 1
+	illum 2
+	Kd 0.309804 0.278431 0.266667
+	Ks 0.102235 0.0918824 0.088
+	Ka 0.0929412 0.0835294 0.08
+
+newmtl Gaurdian_Mouth
+	Ns 16
+	d 1
+	illum 2
+	Kd 0.223529 0.152941 0.109804
+	Ks 0.0737647 0.0504706 0.0362353
+	Ka 0.0670588 0.0458824 0.0329412
+
+newmtl Gaurdian_Nails
+	Ns 64
+	d 1
+	illum 2
+	Kd 0.454902 0.45098 0.396078
+	Ks 0.150118 0.148824 0.130706
+	Ka 0.136471 0.135294 0.118824
+
+newmtl Gaurdian_Skin
+	Ns 16
+	d 1
+	illum 2
+	Kd 0.690196 0.643137 0.54902
+	Ks 0.0379608 0.0353726 0.0301961
+	Ka 0.207059 0.192941 0.164706
+	map_Kd d:\a-turbo-squid\dragon\lw\d-top-view.jpg
+	map_d d:\a-turbo-squid\dragon\lw\wings-trans.jpg
+	map_bump -bm 0.0416667 d:\a-turbo-squid\dragon\lw\d-side-view.jpg
+
+newmtl Gaurdian_Tounge
+	Ns 16
+	d 1
+	illum 2
+	Kd 0.803922 0.313726 0.188235
+	Ks 0.265294 0.103529 0.0621177
+	Ka 0.241177 0.0941177 0.0564706
+
+newmtl Gaurdian_eye_ball
+	Ns 64
+	d 1
+	illum 2
+	Kd 1 1 1
+	Ks 0.33 0.33 0.33
+	Ka 0.3 0.3 0.3
+
+newmtl Gaurdian_eye_center
+	Ns 64
+	d 1
+	illum 2
+	Kd 0 0 0
+	Ks 0 0 0
+	Ka 0 0 0
+
+newmtl Gaurdian_eye_color
+	Ns 64
+	d 1
+	illum 2
+	Kd 0.807843 0.262745 0
+	Ks 0.266588 0.0867059 0
+	Ka 0.242353 0.0788235 0
+
+newmtl Gaurdian_eye_iris
+	Ns 64
+	d 1
+	illum 2
+	Kd 0.682353 0.219608 0
+	Ks 0.225176 0.0724706 0
+	Ka 0.204706 0.0658824 0
+
+newmtl Teeth
+	Ns 64
+	d 1
+	illum 2
+	Kd 0.803922 0.803922 0.803922
+	Ks 0.530588 0.530588 0.530588
+	Ka 0.241177 0.241177 0.241177
+
