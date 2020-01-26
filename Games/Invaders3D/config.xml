@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<FullScreen bool="0" />
+<Depth bool="0" />
+<Fps bool="0" />
+<Shaders bool="1" />
+<Driver int="0" />
+<Screen width="640" height="480" />

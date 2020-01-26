@@ -23,9 +23,16 @@ and tell the linker to link with the .lib file.
 
 using namespace irr;
 
+using namespace core;
+using namespace scene;
+using namespace video;
+using namespace io;
+using namespace gui;
+
 IrrlichtDevice *device;
 video::IVideoDriver* driver;
 video::ITexture* images;
+IGUIEnvironment* env;
 
 #include "path.h"
 static io::path getExampleMediaPath()
@@ -86,6 +93,9 @@ void rendermain(){
 //		printf("%i",i);
 		printf("%4.2f %4.2f %4.2f\n", position.x, position.y, angle);
 
+		env->addImage(driver->getTexture("../../media/irrlichtlogo2.png"),position2d<int>(position.x, position.y));
+
+
 			// draw fire & dragons background world
 			driver->draw2DImage(images, core::position2d<s32>(50,50),
 				core::rect<s32>(0,0,342,224), 0,
@@ -134,6 +144,8 @@ void rendermain(){
 			core::position2d<s32> m = device->getCursorControl()->getPosition();
 			driver->draw2DRectangle(video::SColor(100,255,255,255),
 				core::rect<s32>(m.X-20, m.Y-20, m.X+20, m.Y+20));
+
+env->drawAll();
 
 			driver->endScene();
 //		}
@@ -227,7 +239,7 @@ int main()
 	 positionIterations = 2;
 
 
-
+env = device->getGUIEnvironment();
 
 
 	images = driver->getTexture(mediaPath + "2ddemo.png");
