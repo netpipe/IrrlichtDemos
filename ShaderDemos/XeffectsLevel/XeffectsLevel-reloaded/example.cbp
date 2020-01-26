@@ -17,19 +17,15 @@
 			<Add alias="All" targets="default;" />
 		</VirtualTargets>
 		<Compiler>
-			<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
+			<Add directory="../../../../LunaLibs/irrlicht-1.8.4/include" />
 			<Add directory="../../../LunaLibs/bullet-2.78/src" />
 		</Compiler>
 		<Linker>
 			<Add library="GL" />
 			<Add library="Irrlicht" />
 			<Add library="Xxf86vm" />
-			<Add library="BulletSoftBody" />
-			<Add library="BulletDynamics" />
-			<Add library="BulletCollision" />
-			<Add library="LinearMath" />
 			<Add library="X11" />
-			<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
+			<Add directory="../../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 			<Add directory="../../../LunaLibs/bullet-2.78/src/BulletSoftBody" />
 			<Add directory="../../../LunaLibs/bullet-2.78/src/LinearMath" />
 			<Add directory="../../../LunaLibs/bullet-2.78/src/BulletDynamics" />

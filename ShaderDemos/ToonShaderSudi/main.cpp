@@ -198,8 +198,11 @@ int main()
 		mtlToonShader = video::EMT_SOLID;
 	}
 
+	    device->getFileSystem()->addFileArchive("../../media/map-20kdm2.pk3");
+
 	// Add an animated mesh
 	IAnimatedMesh* mesh = smgr->getMesh("../../media/ninja.b3d");
+	//IAnimatedMesh* mesh = smgr->getMesh("maps/20kdm2.bsp");
 	IAnimatedMeshSceneNode* node = smgr->addAnimatedMeshSceneNode( mesh );
 	if (node)
 	{
@@ -234,7 +237,7 @@ scene::ICameraSceneNode * cam = smgr->addCameraSceneNodeFPS(0, 100.0f, 0.10f);
 	node3 = smgr->addLightSceneNode(0, core::vector3df(0,0,0),
 		video::SColorf(1.0f, 0.6f, 0.7f, 1.0f), 800.0f);
 	scene::ISceneNodeAnimator* anim = 0;
-	anim = smgr->createFlyCircleAnimator (core::vector3df(0,150,0),250.0f);
+	anim = smgr->createFlyCircleAnimator (core::vector3df(0,250,0),550.0f, 20.001f);
 	node3->addAnimator(anim);
 	anim->drop();
 

@@ -90,8 +90,9 @@ int main()
 	cam->setFarValue(50.0f);
 	cam->setNearValue(0.1f);
 
-	//  device->getFileSystem()->addFileArchive("./media.zip");
-	  	  device->getFileSystem()->addFileArchive("./rq3-base-maps-01.pk3");
+	  device->getFileSystem()->addFileArchive("../../../media/map-20kdm2.pk3");
+	  //device->getFileSystem()->addFileArchive("./rq3-base-maps-01.pk3");
+	  device->getFileSystem()->addFileArchive("./egyptians.pk3");
 
 	// Initialise the EffectHandler, pass it the working Irrlicht device and the screen buffer resolution.
 	// Shadow map resolution setting has been moved to SShadowLight for more flexibility.
@@ -101,19 +102,20 @@ int main()
 	EffectHandler* effect = new EffectHandler(device, driver->getScreenSize(), false, true);
 
 	// Load a basic room mesh.
-	//IAnimatedMesh* room =smgr->getMesh("maps/420main.bsp");
-IAnimatedMesh* room =smgr->getMesh("./media/ShadRoom.b3d");
+//	IAnimatedMesh* room =smgr->getMesh("maps/20kdm2.bsp");
+	IAnimatedMesh* room =smgr->getMesh("maps/egyptians.bsp");
+	//IAnimatedMesh* room =smgr->getMesh("./media/ShadRoom.b3d");
 
-irr::scene::IAnimatedMeshSceneNode * rNode = smgr->addAnimatedMeshSceneNode(room);
+		irr::scene::IAnimatedMeshSceneNode * rNode = smgr->addAnimatedMeshSceneNode(room);
 
 		rNode->setMaterialType(irr::video::EMT_SOLID);
 		rNode->setMaterialFlag(irr::video::EMF_LIGHTING, true);
 		rNode->setScale(irr::core::vector3df(0.01f, 0.01f, 0.01f));
 
 
-	rNode->setScale(vector3df(3.0f, 2.0f, 3.0f));
-	rNode->setPosition(vector3df(4.5f, 0.5f, 4.0f));
-	rNode->setMaterialTexture(0, driver->getTexture("media/wall.jpg"));
+	rNode->setScale(vector3df(0.10f, 0.10f, 0.10f));
+	//rNode->setPosition(vector3df(0.5f, -5.5f, 0.0f));
+//	rNode->setMaterialTexture(0, driver->getTexture("media/wall.jpg"));
 
 	// We disable lighting on the mesh, because the lighting will be handled by
 	// the shadow map overlay, the new additive system in XEffects which allows
@@ -168,9 +170,9 @@ irr::scene::IAnimatedMeshSceneNode * rNode = smgr->addAnimatedMeshSceneNode(room
 	// Add two light scene nodes. We will not actually use them for lighting in this
 	// demo, but add animators to them instead and make the shadow lights follow them.
 	ILightSceneNode* light = smgr->addLightSceneNode();
-	light->addAnimator(smgr->createFlyCircleAnimator(vector3df(5, 20, 5), 38));
+	light->addAnimator(smgr->createFlyCircleAnimator(vector3df(5, 10, 5), 38));
 	ILightSceneNode* light2 = smgr->addLightSceneNode();
-	light2->addAnimator(smgr->createFlyCircleAnimator(vector3df(5, 20, 5), 38, -0.001f));
+	light2->addAnimator(smgr->createFlyCircleAnimator(vector3df(5, 10, 5), 38, -0.001f));
 
 	// Add some post processing effects, a very subtle bloom here.
 	const stringc shaderExt = (driver->getDriverType() == EDT_DIRECT3D9) ? ".hlsl" : ".glsl";
@@ -194,9 +196,9 @@ irr::scene::IAnimatedMeshSceneNode * rNode = smgr->addAnimatedMeshSceneNode(room
 	// will be unlit by this particular light, similar to how a spot light works.
 	// We will add one red light and one yellow light.
 	effect->addShadowLight(SShadowLight(shadowDimen, vector3df(0, 0, 0), vector3df(5, 0, 5),
-		SColor(0, 255, 0, 0), 20.0f, 60.0f, 30.0f * DEGTORAD));
+		SColor(110, 255, 110, 0), 20.0f, 60.0f, 30.0f * DEGTORAD));
 	effect->addShadowLight(SShadowLight(shadowDimen, vector3df(0, 0, 0), vector3df(5, 0, 5),
-		SColor(0, 0, 255, 0), 20.0f, 60.0f, 30.0f * DEGTORAD));
+		SColor(110, 110, 255, 0), 20.0f, 60.0f, 30.0f * DEGTORAD));
 
 	// We will add a particle system here to show that you can use transparent materials in this new
 	// XEffects version (This code is copied from the SpecialFX Irrlicht Example).
@@ -264,7 +266,7 @@ int icount=0;
 //		}
 //		icount = icount+1;
 
-		device->sleep(70);
+		device->sleep(60);
 
 
 		driver->endScene();

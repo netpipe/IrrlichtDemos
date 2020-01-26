@@ -13,7 +13,8 @@ public:
 	{
 		this->device->grab();
 
-		this->mesh = this->smgr->getMesh("media/models/cs_office.obj");
+		//this->mesh = this->smgr->getMesh("media/models/cs_office.obj");
+		this->mesh = this->smgr->getMesh("maps/egyptians.bsp");
 		if(this->mesh) {
 			this->rNode = this->smgr->addAnimatedMeshSceneNode(this->mesh);
 		}
