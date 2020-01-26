@@ -87,12 +87,16 @@ int main()
 	// Create a basic fps camera.
 	ICameraSceneNode* cam = smgr->addCameraSceneNodeFPS(0, 100.0f, 0.05f);
 	cam->setPosition(vector3df(0.0f, 10.0f, 0.0f));
-	cam->setFarValue(50.0f);
+	cam->setFarValue(5000.0f);
 	cam->setNearValue(0.1f);
-
+#ifdef TEST
 	  device->getFileSystem()->addFileArchive("../../../media/map-20kdm2.pk3");
 	  //device->getFileSystem()->addFileArchive("./rq3-base-maps-01.pk3");
 	  device->getFileSystem()->addFileArchive("./egyptians.pk3");
+	  device->getFileSystem()->addFileArchive("./q3pacman.pk3");
+	  	  device->getFileSystem()->addFileArchive("./reqkitchen.pk3");
+	  	  device->getFileSystem()->addFileArchive("./cht2.pk3");
+#endif
 
 	// Initialise the EffectHandler, pass it the working Irrlicht device and the screen buffer resolution.
 	// Shadow map resolution setting has been moved to SShadowLight for more flexibility.
@@ -102,21 +106,34 @@ int main()
 	EffectHandler* effect = new EffectHandler(device, driver->getScreenSize(), false, true);
 
 	// Load a basic room mesh.
-//	IAnimatedMesh* room =smgr->getMesh("maps/20kdm2.bsp");
-	IAnimatedMesh* room =smgr->getMesh("maps/egyptians.bsp");
-	//IAnimatedMesh* room =smgr->getMesh("./media/ShadRoom.b3d");
 
+	#ifndef TEST
+	IAnimatedMesh* room =smgr->getMesh("./media/ShadRoom.b3d");
+			irr::scene::IAnimatedMeshSceneNode * rNode = smgr->addAnimatedMeshSceneNode(room);
+				rNode->setScale(vector3df(4.810f, 4.810f, 4.810f));
+	//rNode->setPosition(vector3df(0.5f, -5.5f, 0.0f));
+			rNode->setMaterialTexture(0, driver->getTexture("./media/wall.jpg"));
+	#else
+	//	IAnimatedMesh* room =smgr->getMesh("maps/20kdm2.bsp");
+	//IAnimatedMesh* room =smgr->getMesh("maps/egyptians.bsp");
+	//	IAnimatedMesh* room =smgr->getMesh("maps/q3pacman.bsp");
+	IAnimatedMesh* room =smgr->getMesh("./maps/reqkitchen.bsp");
+	//IAnimatedMesh* room =smgr->getMesh("./maps/cht2.bsp");
 		irr::scene::IAnimatedMeshSceneNode * rNode = smgr->addAnimatedMeshSceneNode(room);
 
-		rNode->setMaterialType(irr::video::EMT_SOLID);
+	#endif
+
+
+
+	#ifdef TEST
+			rNode->setMaterialType(irr::video::EMT_SOLID);
 		rNode->setMaterialFlag(irr::video::EMF_LIGHTING, true);
 		rNode->setScale(irr::core::vector3df(0.01f, 0.01f, 0.01f));
 
-
-	rNode->setScale(vector3df(0.10f, 0.10f, 0.10f));
+	//rNode->setScale(vector3df(0.10f, 0.10f, 0.10f));
 	//rNode->setPosition(vector3df(0.5f, -5.5f, 0.0f));
-//	rNode->setMaterialTexture(0, driver->getTexture("media/wall.jpg"));
-
+	//	rNode->setMaterialTexture(0, driver->getTexture("media/wall.jpg"));
+	#endif
 	// We disable lighting on the mesh, because the lighting will be handled by
 	// the shadow map overlay, the new additive system in XEffects which allows
 	// us to realitically utilize multiple lights. You can still choose to perform
@@ -196,9 +213,18 @@ int main()
 	// will be unlit by this particular light, similar to how a spot light works.
 	// We will add one red light and one yellow light.
 	effect->addShadowLight(SShadowLight(shadowDimen, vector3df(0, 0, 0), vector3df(5, 0, 5),
-		SColor(110, 255, 110, 0), 20.0f, 60.0f, 30.0f * DEGTORAD));
+		SColor(0, 255, 0, 0), 20.0f, 60.0f, 30.0f * DEGTORAD));
 	effect->addShadowLight(SShadowLight(shadowDimen, vector3df(0, 0, 0), vector3df(5, 0, 5),
-		SColor(110, 110, 255, 0), 20.0f, 60.0f, 30.0f * DEGTORAD));
+		SColor(0, 0, 255, 0), 20.0f, 60.0f, 30.0f * DEGTORAD));
+
+			effect->addShadowLight(SShadowLight(shadowDimen, vector3df(0, 0, 0), vector3df(5, 0, 5),
+		SColor(110, 110, 255, 0), 200.0f, 60.0f, 30.0f * DEGTORAD));
+
+					effect->addShadowLight(SShadowLight(shadowDimen, vector3df(0, 0, 0), vector3df(5, 0, 5),
+		SColor(110, 110, 255, 0), 200.0f, 60.0f, 60.0f * DEGTORAD));
+
+							effect->addShadowLight(SShadowLight(shadowDimen, vector3df(0, 0, 0), vector3df(5, 0, 5),
+		SColor(110, 110, 255, 0), 200.0f, 60.0f, 160.0f * DEGTORAD));
 
 	// We will add a particle system here to show that you can use transparent materials in this new
 	// XEffects version (This code is copied from the SpecialFX Irrlicht Example).
@@ -266,7 +292,7 @@ int icount=0;
 //		}
 //		icount = icount+1;
 
-		device->sleep(60);
+//		device->sleep(10);
 
 
 		driver->endScene();
