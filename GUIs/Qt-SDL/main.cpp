@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 #include <QApplication>
 #include <SDL2/SDL.h>
-
+//https://stackoverflow.com/questions/25232756/sdl2-rendering-into-qwidget
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
