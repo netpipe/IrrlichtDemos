@@ -12,9 +12,12 @@ public:
 	Vehicle(EffectHandler * effhand, irr::IrrlichtDevice * dev, irr::s32 shad) : ehandler(effhand), device(dev), smgr(dev->getSceneManager()), shader(shad)
 	{
 		this->device->grab();
-
+		//#define STOCKTEST   //only enable if you own or a friend would lend you a copy of counterstrike sometimes there are free promotions on too.
+		#ifdef STOCKTEST
 		this->mesh = this->smgr->getMesh("media/models/cs_office.obj");
-		//this->mesh = this->smgr->getMesh("maps/egyptians.bsp");
+		#else
+		this->mesh = this->smgr->getMesh("maps/egyptians.bsp");
+		#endif
 		if(this->mesh) {
 			this->rNode = this->smgr->addAnimatedMeshSceneNode(this->mesh);
 		}
@@ -25,7 +28,8 @@ public:
 
 		this->rNode->setMaterialType(irr::video::EMT_SOLID);
 		this->rNode->setMaterialFlag(irr::video::EMF_LIGHTING, true);
-		this->rNode->setScale(irr::core::vector3df(0.01f, 0.01f, 0.01f));
+		this->rNode->setScale(irr::core::vector3df(0.0208f, 0.0208f, 0.0208f));
+		this->rNode->setPosition(irr::core::vector3df(10.008f, 0.008f, 10.008f));
 
 		irr::scene::ISceneNodeAnimator * anim = this->smgr->createFlyCircleAnimator(irr::core::vector3df(0, 1, 0), 2, 0.002);
 		if(anim) {

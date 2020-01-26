@@ -241,7 +241,7 @@ void Core::load_lights(void)
 		//light0->getLightData().Direction = irr::core::vector3df(1.0f, -1.0f, 1.0f);
 		light0->setName("light0");
 
-		irr::scene::ISceneNodeAnimator * lightAnimator = this->scene_manager->createFlyCircleAnimator(irr::core::vector3df(0, 1, 0), 5, 0.001);
+		irr::scene::ISceneNodeAnimator * lightAnimator = this->scene_manager->createFlyCircleAnimator(irr::core::vector3df(0, 1, 0), 1, 0.008);
 		if(lightAnimator) {
 			light0->addAnimator(lightAnimator);
 			lightAnimator->drop();
