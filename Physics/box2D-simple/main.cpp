@@ -148,6 +148,7 @@ void rendermain(){
 env->drawAll();
 
 			driver->endScene();
+			device->sleep(30);
 //		}
 	//}
 
@@ -226,7 +227,7 @@ int main()
 	fixtureDef.density = 1.0f;
 
 	// Override the default friction.
-	fixtureDef.friction = 0.3f;
+	fixtureDef.friction = 0.1f;
 
 	// Add the shape to the body.
 	body->CreateFixture(&fixtureDef);
