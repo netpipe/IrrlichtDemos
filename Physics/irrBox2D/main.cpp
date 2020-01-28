@@ -195,7 +195,7 @@ b2Vec2 gravity(0.0f, 10.0f);
 bool doSleep = true;
 
 //b2World world(gravity,doSleep); //box2d 2.1.2
-b2World world(gravity,true);
+b2World world(gravity);
    bwBody* bww;
 
 class MyEventReceiver : public IEventReceiver
