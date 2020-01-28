@@ -34,6 +34,9 @@ video::IVideoDriver* driver;
 video::ITexture* images;
 IGUIEnvironment* env;
 
+IGUIImage* test;
+b2Vec2 position;
+
 #include "path.h"
 static io::path getExampleMediaPath()
 {
@@ -55,7 +58,7 @@ using namespace video;
 	int32 positionIterations ;
 
 	// Define the gravity vector.
-	b2Vec2 gravity(0.0f, -10.0f);
+	b2Vec2 gravity(0.0f, 50.0f);
 
 	// Construct a world object, which will hold and simulate the rigid bodies.
 	b2World world(gravity,true);
@@ -88,14 +91,18 @@ void rendermain(){
 		world.Step(timeStep, velocityIterations, positionIterations);
 
 		// Now print the position and angle of the body.
-		b2Vec2 position = body->GetPosition();
+		position = body->GetPosition();
 		float32 angle = body->GetAngle();
 //		printf("%i",i);
 		printf("%4.2f %4.2f %4.2f\n", position.x, position.y, angle);
 
-		env->addImage(driver->getTexture("../../media/irrlichtlogo2.png"),position2d<int>(position.x, position.y));
+//body->SetPosition(position);
 
 
+
+	//	IGUIImage* test = env->addImage(driver->getTexture("../../media/irrlichtlogo2.png"),position2d<int>(position.x, position.y));
+		test->setRelativePosition(position2d<int>(position.x, position.y));
+	//	test->setRoatation(angle);
 			// draw fire & dragons background world
 			driver->draw2DImage(images, core::position2d<s32>(50,50),
 				core::rect<s32>(0,0,342,224), 0,
@@ -148,7 +155,7 @@ void rendermain(){
 env->drawAll();
 
 			driver->endScene();
-			device->sleep(30);
+			device->sleep(2);
 //		}
 	//}
 
@@ -258,6 +265,9 @@ env = device->getGUIEnvironment();
 	driver->getMaterial2D().TextureLayer[0].BilinearFilter=true;
 	driver->getMaterial2D().AntiAliasing=video::EAAM_FULL_BASIC;
 
+test = env->addImage(driver->getTexture("../../media/irrlichtlogo2.png"),position2d<int>(position.x, position.y));
+//test->setRelativePosition(position2d<int>(-20, -400));
+body->SetTransform(b2Vec2(110,-200),body->GetAngle());
 
 
 #ifdef __EMSCRIPTEN__
