@@ -21,6 +21,8 @@ and tell the linker to link with the .lib file.
 #include <emscripten.h>
 #endif
 
+#include <unistd.h>
+
 using namespace irr;
 
 using namespace core;
@@ -61,7 +63,7 @@ using namespace video;
 	b2Vec2 gravity(0.0f, 50.0f);
 
 	// Construct a world object, which will hold and simulate the rigid bodies.
-	b2World world(gravity,true);
+	b2World world(gravity);
 	b2Body* body ;
 	core::rect<s32> imp1(349,15,385,78);
 	core::rect<s32> imp2(387,15,423,78);
@@ -74,8 +76,8 @@ void rendermain(){
 	//	if (device->isWindowActive())
 	//	{
 			u32 time = device->getTimer()->getTime();
-
-			driver->beginScene(video::ECBF_COLOR | video::ECBF_DEPTH, video::SColor(255,120,102,136));
+      driver->beginScene(true, true, SColor(255,100,101,140));
+		//	driver->beginScene(video::ECBF_COLOR | video::ECBF_DEPTH, video::SColor(255,120,102,136));
 
 			/*
 			First, we draw 3 sprites, using the alpha channel we
@@ -94,7 +96,7 @@ void rendermain(){
 		position = body->GetPosition();
 		float32 angle = body->GetAngle();
 //		printf("%i",i);
-		printf("%4.2f %4.2f %4.2f\n", position.x, position.y, angle);
+		//printf("%4.2f %4.2f %4.2f\n", position.x, position.y, angle);
 
 //body->SetPosition(position);
 
@@ -155,7 +157,8 @@ void rendermain(){
 env->drawAll();
 
 			driver->endScene();
-			device->sleep(2);
+			//device->sleep(2);
+			usleep(200);
 //		}
 	//}
 
@@ -172,10 +175,14 @@ int main()
 	//video::E_DRIVER_TYPE driverType=driverChoiceConsole();
 	//if (driverType==video::EDT_COUNT)
 	//	return 1;
-
+#ifndef __EMSCRIPTEN__
 	// create device
 	device = createDevice(EDT_OPENGL,
 		core::dimension2d<u32>(512, 384));
+#else
+	device = createDevice(EDT_OGLES2,
+		core::dimension2d<u32>(512, 384));
+#endif
 
 	if (device == 0)
 		return 1; // could not create selected driver.
@@ -265,7 +272,7 @@ env = device->getGUIEnvironment();
 	driver->getMaterial2D().TextureLayer[0].BilinearFilter=true;
 	driver->getMaterial2D().AntiAliasing=video::EAAM_FULL_BASIC;
 
-test = env->addImage(driver->getTexture("../../media/irrlichtlogo2.png"),position2d<int>(position.x, position.y));
+test = env->addImage(driver->getTexture("./media/irrlichtlogo2.png"),position2d<int>(position.x, position.y));
 //test->setRelativePosition(position2d<int>(-20, -400));
 body->SetTransform(b2Vec2(110,-200),body->GetAngle());
 

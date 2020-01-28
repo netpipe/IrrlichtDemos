@@ -84,14 +84,15 @@
 				<Option type="1" />
 				<Option compiler="emscripten" />
 				<Option projectIncludeDirsRelation="1" />
+				<Option projectLibDirsRelation="1" />
 				<Compiler>
 					<Add option="-g" />
 					<Add option="-s FULL_ES2=1" />
 					<Add option="-D_IRR_STATIC_LIB_" />
 					<Add option="-D_IRR_EMSCRIPTEN_PLATFORM_" />
-					<Add directory="/home/Dev/libs/Scripting/emsdk/emscripten-projects/irrlicht-ogl-es/irrlicht/include" />
-					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/emscripten-projects/webports-master-ports/box2d/Box2D_v2.2.1/Box2D" />
-					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/emscripten-projects/webports-master-ports/box2d/Box2D_v2.2.1" />
+					<Add directory="../../../emscripten-projects/irrlicht-ogl-es-2019dec/lib/Linux" />
+					<Add directory="../../../emscripten-projects/physics/embox2d/" />
+					<Add directory="../../../emscripten-projects/irrlicht-ogl-es-2019dec/include" />
 				</Compiler>
 				<ResourceCompiler>
 					<Add option="-s FULL_ES2=1" />
@@ -107,8 +108,8 @@
 					<Add library="GL" />
 					<Add library="Box2D" />
 					<Add directory="../../lib/Linux" />
-					<Add directory="/home/Dev/libs/Scripting/emsdk/emscripten-projects/irrlicht-ogl-es/irrlicht/lib/Linux" />
-					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/emscripten-projects/webports-master-ports/box2d/Box2D_v2.2.1/Box2D" />
+					<Add directory="../../../emscripten-projects/irrlicht-ogl-es-2019dec/lib/Linux" />
+					<Add directory="../../../emscripten-projects/physics/embox2d/Box2D" />
 				</Linker>
 			</Target>
 		</Build>
@@ -124,6 +125,9 @@
 			<Add library="Irrlicht" />
 		</Linker>
 		<Unit filename="main.cpp" />
-		<Extensions />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
