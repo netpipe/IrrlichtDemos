@@ -270,8 +270,12 @@ void rendermain(){
 int main()
 {
     MyEventReceiver receiver;
+    #ifndef __EMSCRIPTEN__
    device = createDevice( video::EDT_SOFTWARE, dimension2d<u32>(640, 480), 16, false, false, false, &receiver);
+#else
+   device = createDevice( video::EDT_OGLES2, dimension2d<u32>(640, 480), 16, false, false, false, &receiver);
 
+#endif
    if (!device)
       return 1;
 

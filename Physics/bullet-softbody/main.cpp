@@ -39,6 +39,49 @@ std::map<btSoftBody::Node*, int> node_map;
 
 #define CUBE_HALF_EXTENTS 15
 
+
+//// If we have defined Camera, World, and device as global we can call Shoot() without arguments.
+//void Shoot(btDiscreteDynamicsWorld *World, IrrlichtDevice * device, ICameraSceneNode * Camera)
+//{
+//  ISceneManager *smgr = device->getSceneManager();
+//  IVideoDriver * driver = device->getVideoDriver();
+//
+//  // Creating the irrlicht scene node of a sphere
+//  ISceneNode * node = smgr->addSphereSceneNode(1.);
+//
+//  node->setMaterialFlag(EMF_LIGHTING, false);
+//  node->setMaterialTexture(0, driver->getTexture("<texture path>")); // You have to specify your texture path
+//
+//
+//  // Now we create the bullet rigidbody in the same position of the camera
+//  btVector3 StartPos(Camera->getPosition().X, Camera->getPosition().Y, Camera->getPosition().Z);
+//  btCollisionShape * Shape = new btSphereShape(radius);
+//  btTransform Transform;
+//  Transform.setIdentity();
+//  Transform.setOrigin(StartPos);
+//
+//  btVector3 localInertia;
+//  double mass = 1.;
+//  Shape->calculateLocalInertia(mass, localInertia);
+//  btDefaultMotionState *myMotionState = new btDefaultMotionState(Transform);
+//  btRigidBody::btRigidBodyConstructionInfo constructor(mass, myMotionState, Shape, localInertia);
+//
+//  btRigidBody *body = new btRigidBody(constructor);
+//
+//  // Linking the body to the irrlicht node so that we can update it later as proposed by punong_bisyonaryo's tutorial
+//  body->setUserPointer((void*)node);
+//
+//  // Now we create a vector ImpulseForce that point to the direction in which the camera is pointing
+//  btVector3 Target(Camera->getTarget().X, Camera->getTarget().Y, Camera->getTarget().Z);
+//  btVector3 ImpulseForce(700 *( Target[0] - StartPos[0]), 700* (Target[1] - StartPos[1]), 700 * (Target[2] -StartPos[2]));
+//  body->applyCentralForce(ImpulseForce);
+//  World->addRigidBody(body);
+//
+//  /*  Objects is a list of rigidbody that is used to updating the irrlicht nodes. I've defined this as a global variable (out of the main), as we see in  punong_bisyonaryo's tutorial . Otherwise you can pass it as pointer to the  function. */
+//  Objects.push_back(body);
+//}
+
+
 struct MeshData
 {
     btScalar *mqo_vertices;
@@ -61,7 +104,7 @@ int main (void)
     camera->setFarValue(10000);
     camera->setTarget(core::vector3df(0, 300, 0));
 
-    IAnimatedMesh *cubeMesh = smgr->getMesh("../../media/sydney.md2");
+    IAnimatedMesh *cubeMesh = smgr->getMesh("../../media/earth.x");
     IAnimatedMeshSceneNode *cubeNode = smgr->addAnimatedMeshSceneNode(cubeMesh, 0, -1, vector3df(0, 500, 50), vector3df(0,110,0), vector3df(1,1,1), false);
     cubeNode->setMaterialFlag(video::EMF_LIGHTING, false);
     cubeNode->setMaterialTexture(0, driver->getTexture("../../media/sydney.bmp"));
@@ -259,7 +302,9 @@ int main (void)
     dynamicsWorld->addSoftBody(cubeSoftBody);
 
     std::cout << "start simulation" << std::endl;
+//void Shoot(btDiscreteDynamicsWorld *World, IrrlichtDevice * device, ICameraSceneNode * Camera)
 
+  //  Shoot(world,device,camera);
     while(device->run())
     {
         // 60Hz
@@ -276,7 +321,7 @@ int main (void)
 
         if (KEY_SPACE)
         {
-            cubeSoftBody->addForce(btVector3(0, 10, 0), 0);
+            cubeSoftBody->addForce(btVector3(110, 00, 0), 0);
         }
         else if (KEY_ESCAPE)
         {
