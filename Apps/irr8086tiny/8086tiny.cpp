@@ -1103,9 +1103,14 @@ void main_loop()
 						CAST(short)mem[SEGREG(REG_ES, REG_BX, 36+)] = ms_clock.millitm;
 					OPCODE 2: // DISK_READ
 					OPCODE_CHAIN 3: // DISK_WRITE
-						regs8[REG_AL] = ~lseek(disk[regs8[REG_DL]], CAST(unsigned)regs16[REG_BP] << 9, 0)
+					    if(~fseek(disk[regs8[REG_DL]], CAST(unsigned)regs16[REG_BP] << 9, SEEK_SET))
+                            if((char)i_data0 == 3)
+                                regs8[REG_AL] = fwrite(mem + SEGREG(REG_ES, REG_BX,), 1, regs16[REG_AX], disk[regs8[REG_DL]]);
+                            else
+                                regs8[REG_AL] = fread(mem + SEGREG(REG_ES, REG_BX,), 1, regs16[REG_AX], disk[regs8[REG_DL]]);
+						/*regs8[REG_AL] = ~fseek(disk[regs8[REG_DL]], CAST(unsigned)regs16[REG_BP] << 9, SEEK_SET)
 							? ((char)i_data0 == 3 ? (int(*)())write : (int(*)())read)(disk[regs8[REG_DL]], mem + SEGREG(REG_ES, REG_BX,), regs16[REG_AX])
-							: 0;
+							: 0;*/
 
 				}
 
