@@ -4,7 +4,7 @@
 // Revision 1.25
 //
 // This work is licensed under the MIT License. See included LICENSE.TXT.
-//#define IRRLICHT
+#define IRRLICHT
 
 #ifdef IRRLICHT
 #include <irrlicht.h>
@@ -18,10 +18,12 @@ using namespace gui;
 
 IrrlichtDevice * device;
    IVideoDriver *driver;
+   ISceneManager* smgr ;
 
 IGUIEnvironment* env;
 IGUIStaticText* joy_error;
 #endif
+
 #include <time.h>
 #include <sys/timeb.h>
 #include <memory.h>
@@ -1227,7 +1229,7 @@ void main_loop()
             }
             if(SDL_MUSTLOCK(sdl_screen)) SDL_UnlockSurface(sdl_screen);
             SDL_Flip(sdl_screen);
-            //    	SDL_SaveBMP( sdl_screen, "your_snapshot_name.bmp" );
+                	SDL_SaveBMP( sdl_screen, "your_snapshot_name.bmp" );
 
         }
         else
@@ -1248,9 +1250,14 @@ void main_loop()
         SDL_PumpEvents();
 #endif
 
+
+
+}
+
+void irrlichtloop(){
 #ifdef IRRLICHT
 //	env->addImage(driver->getTexture("your_snapshot_name.bmp"),position2d<int>(10,10));
-
+//main_loop();
 			device->run();
 
 		//{check joysticks
@@ -1260,15 +1267,16 @@ void main_loop()
 			//	if (device->isWindowActive())
 			//{
 			//	driver->beginScene(video::ECBF_COLOR | video::ECBF_DEPTH, SColor(0,200,200,200));
-		driver->beginScene(true, true, video::SColor(0,220,220,220));
+				driver->beginScene(true, true, video::SColor(0,220,220,220));
 
 				env->drawAll();
 
 				driver->endScene();
+				device->sleep(20);
 			//}
 			#endif
 
-}
+		}
 
 int main(int argc, char** argv)
 {
@@ -1283,20 +1291,28 @@ int main(int argc, char** argv)
 #endif
     argv = arg;
 #endif
-
+	char *argv1[]={"appname",EMSCRIPTEN_BIOS_FILE,EMSCRIPTEN_FD_FILE,"test"};//rectangular_BFS
+	int argc1 = sizeof(argv1) / sizeof(char*) - 1;
 //SDL_Event event;
-    init(argc, argv);
+    init(argc1, argv1);
 
     #ifdef IRRLICHT
-	device = createDevice(EDT_OPENGL, core::dimension2d<u32>(640, 480));
+	//device = createDevice(EDT_OPENGL, core::dimension2d<u32>(640, 480));
+
+	device =
+		createDevice( video::EDT_BURNINGSVIDEO, dimension2d<u32>(640, 480), 16,
+			false, false, false, 0);
+
 	driver=device->getVideoDriver();
-//	if (device == 0)
-//		return 1; // could not create selected driver.
+	 smgr = device->getSceneManager();
+	if (device == 0)
+		return 1; // could not create selected driver.
+//		//
+//		device->setWindowCaption(L"Irrlicht Engine - User Interface Demo");
+//		device->setResizable(true);
 	#endif
 
-//
-//		device->setWindowCaption(L"Irrlicht Engine - User Interface Demo");
-//	device->setResizable(true);
+
 
 
 
@@ -1324,6 +1340,39 @@ int main(int argc, char** argv)
     emscripten_set_main_loop(main_loop, EMSCRIPTEN_MAIN_LOOP_FRAMERATE, 1);
 #else
     while(cont_main_loop == 1) main_loop();
+
+#ifdef IRRLICHT
+
+	smgr->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,5,0));
+
+	while(device->run())
+	{
+	main_loop();
+
+	env->addImage(driver->getTexture("your_snapshot_name.bmp"),position2d<int>(10,10));
+		/*
+		Anything can be drawn between a beginScene() and an endScene()
+		call. The beginScene() call clears the screen with a color and
+		the depth buffer, if desired. Then we let the Scene Manager and
+		the GUI Environment draw their content. With the endScene()
+		call everything is presented on the screen.
+		*/
+		driver->beginScene(true, true, video::SColor(0,220,220,220));
+		//driver->beginScene(ECBF_COLOR | ECBF_DEPTH, SColor(255,100,101,140));
+
+		smgr->drawAll();
+	//	guienv->drawAll();
+
+		driver->endScene();
+	}
+
+//
+//while(1){
+//irrlichtloop();
+//};
+device->drop();
+#endif
+
 #endif
 #ifndef __EMSCRIPTEN__
     quit();
