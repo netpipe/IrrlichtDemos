@@ -1,0 +1,28 @@
+compiled date Feb  8 2020
+compiled time 16:05:01
+Linux 4.12.14-lp150.12.82-default #1 SMP Tue Nov 12 16:32:38 UTC 2019 (c939e24) x86_64
+Desktop width:1920
+Desktop height:1080
+Desktop depth:24
+createDevice
+Resolution width:1024
+Resolution height:768
+Resolution depth:32
+createDevice ok
+mGui->Init
+OPEN_AL
+AL_VERSION: 1.1 ALSOFT 1.12.854
+AL_RENDERER: OpenAL Soft
+AL_VENDOR: OpenAL Community
+Loading menu dialogs
+Warning: *** GuiMenuChampionshipProgress::Load GUI element not known: season1
+Warning: *** GuiMenuChampionshipProgress::Load GUI element not known: season2
+Warning: *** GuiMenuChampionshipProgress::Load GUI element not known: season3
+Warning: GuiMenuGraphics::Load GUI element not known: sld_lights
+Warning: GuiMenuGraphics::Load GUI element not known: sld_texture_resolution
+Init finished
+MODE_GUI enabled
+start running
+mesh had no triangle selector: /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Games/h-craft-git/media/levels/tutorial01.lmo
+clean quit start
+clean quit successful

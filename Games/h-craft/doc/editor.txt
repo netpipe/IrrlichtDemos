@@ -1,0 +1,75 @@
+H-Craft comes with a small scene-editor and a little tool to help editing the gui-dialogs.
+Note that those have been written in a few weeks and haven't been touched by me in ~8 years.
+So code quality and usability both have some room for improvement.
+
+To enable the editor you have to recompile H-Craft with the following changes in IrrCompileConfig.h:
+Comment out the define for HOVER_RELEASE.
+Enable the define for HC1_ENABLE_EDITOR.
+
+It's also usually easier to work in windowed-mode with the editor. Especially as you also have to dig into xml files often.
+So in media/config.xml set: fullscreen="0" use_screen_res="0"
+Chose any resolution you are comfortable with. Although for gui-editing it might make sense to work with 640x480 as dialogs are scaled from that base.
+
+When you start the game now you will have a empty screen with a toolbar.
+
+You are currently in the edit-mode. Switch to normal (ingame) gui by pressing <m>.
+Also switch back to edit-mode with <m>
+
+And you have also different application modes - editor, gui or game. 
+There's also a freefly mode (with 'f') but it doesn't really work well currently so avoid that.
+
+In short use editor-mode when you want to edit a scene.
+Use GUI-Mode for gui-editing.
+Use game-mode for playing the game.
+
+<e> Put's you in editor-mode.
+<s> While in the editor starts a game with the current scene and put's you in game-mode. Go back to editor with <ESC> followed by <e>.
+<ESC> while in editor or freefly-mode will put you back in gui-mode
+
+Keys <1> <2> <3> <4> let's you choose from which place to start a race.
+
+Clicking the file-open icon will do the same as "File - Load Level"
+File - Load Level will load a scene and set the edit-mode.
+File - Open model file ... I think it was to add new models which can then be used in the scene.
+File - Open GUI dialog will allow you to open a xml file describing some gui dialog.
+
+Using gui-editor:
+Open a xml with File - Open GUI dialog.
+<g> with an open dialog will reload that dialog (for changing textures you have to restart completely).
+Edit the dialogs in xml with a texteditor and press <g> once in a while.
+That's it.
+If you need an exampe: media/ui/menu_championship_progress_touch.xml is probably the most advanced dialog.
+
+Using scene-editor:
+There is no undo - sorry. What you do is what you get.
+You can move around with the cursor-keys.
+Press <shift> to move faster.
+Press <ctrl> to lock the height while moving.
+Select object with left mouse button.
+Drag and drop by selecting with left mouse button, moving around and release the button.
+When you press <x>, <y> or <z> while selecting an object you can rotate it instead around the corresponding axis.
+
+To use a model in the scene you have to add it first. You use the Models/Nodes menu for that or edit the media/models.xml.
++ mesh is for adding a static-mesh
++ Animesh for animated meshes (.X format)
++ Light for lights (but only 3-4 are supported right now at the same time in Android)
+You have to SAVE after adding new ones or they will be gone on next start.
+While selecting a model in that menu you will see the corresponding node - it is not placed - just there for a quick preview.
+Models can have child-models which move around together with the parent at certain distances/rotations.
+
+To place objects in the scene you have to use the Objects menu.
+
+There are also a bunch of special objects:
+player start: The 4 positions from which players and bots start the race.
+track markers: Show the direction. Also each time a player drops off the track the h-craft will be set to the last track marker reached.
+TP source and TP target let you set the start and end for one teleport per scene.
+finish line set's the start/finish line.
+
+AI is a little complicated.
+Basically the trick used for AI is that you enable a recorder and then drive a track. 
+That's the track the AI will try to follow.
+But there's also some other info the AI needs - like track-borders and track-centers.
+There's a bunch of helper-functions trying to get smooth lines for those.
+And lastly - in situations all that doesn't work out you can dig into the xml's for the AI and modify them with a text-editor.
+And this all is very h-craft specific - the tool functions to find track-borders work for example only because the tracks are floating in empty space.
+I haven't used all this for a long time, so I probably would need a while myself to figure out how to create a working AI again.

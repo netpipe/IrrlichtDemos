@@ -1,0 +1,29 @@
+Some tracks specialities (to find it faster when testing specific stuff).
+
+kids playground: short track
+short downhill: teleport, u-turn
+toxic snake: jump, small hill, steep turn
+holidays: u-turn, small drop
+the lane: teleport, slick curve, u-turn, deep drop, steep turn
+sunset chillout: steep turn, short track
+nightwish: short track
+dark cobra: u-turn, teleport
+the doublebow: steep turn, u-turn, short track
+absinth: small drop, slick curve, slope, small hill, drop jump
+sinatra: steep turn, slick curve, drops, slope, jump, small hill, u-turn, deep drop
+maniac: u-turn, jump, slick curve, drop, drop jump, steep turn, teleport
+dizzy: small hill, u-turn, slick curve, steep turn
+falloff: drop, slant, slick curve, steep turn
+skate or die: high border, jump, slant, drop, teleport
+owl: u-turn
+white camel: u-turn, small hill
+triplex: u-turn, stacked, small drop, slant, deep drop
+road to nowhere: 180° drop, steep turn, slick curve, drop
+round and round: u-turn, stacked, slick curve, jump
+the ring: thin road, drop, u-turn, steep turn, drop
+eternity: u-turn, slick curve
+butterfly: jump, steep turn
+loosetrack: gap, slick curve, jump
+logic: u-turn
+technocratic: slick curve, small hill, 90° u-turn, jump, teleport
+tutorial: extra wide
