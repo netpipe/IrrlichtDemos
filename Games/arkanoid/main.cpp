@@ -12,6 +12,12 @@ This Game is public domain.
 #include <wchar.h>
 #include <irrlicht.h>
 
+#ifdef __EMSCRIPTEN__
+#include <emscripten.h>
+#endif
+
+    int lastFPS = 0;
+
 /*
 
 In the Irrlicht Engine, everything can be found in the namespace
@@ -182,59 +188,11 @@ public:
 	}
 };
 
-/*
-This is the main method.
-*/
-int main()
-{
-	#ifdef USE_IRRKLANG
-   // start the sound engine with default parameters
-	sound = createIrrKlangDevice();
 
-	if (sound)
-	{	// play some sound stream, looped
-	    sound->play2D("./media/getout.ogg", true);
-	}
-	#endif
-	/*
-	The most important function of the engine is the 'createDevice'
-	function. The Irrlicht Device can be created with it, which is the
-	root object for doing everything with the engine.
-	*/
-
-	device = createDevice( video::EDT_OPENGL, dimension2d<s32>(screenwidth, screenheight), 32,
-			false, true, true);
-
-	device->setWindowCaption(L"WOS 06 Game Demo - Irrlicht Engine");
-
-	/*
-	Get a pointer to the video driver, the SceneManager and the
-	graphical user interface environment, so that
-	we do not always have to write device->getVideoDriver(),
-	device->getSceneManager() and device->getGUIEnvironment().
-	*/
-	driver = device->getVideoDriver();
-	smgr = device->getSceneManager();
-
-	MyEventReceiver receiver;
- 	device->setEventReceiver(&receiver);
-
-	env = device->getGUIEnvironment();
-
-    /* initialize the playfield */
-    DrawPlayfield();
-
-    /* show the menu */
-	GameMenu();
-
-    int lastFPS = 0;
-
+void main_loop(){
 	/* let the game begin	*/
-    while(device->run() && driver)
-	{
-      if (device->isWindowActive())
-		{
 
+device->run();
 		/* start the scene*/
 		driver->beginScene(true, true, SColor(255,100,101,140));
 		smgr->drawAll();
@@ -356,9 +314,71 @@ int main()
             changedir = false;
 
        }
-	  }
-	}
+	//  }
+	//}
 
+}
+/*
+This is the main method.
+*/
+int main()
+{
+	#ifdef USE_IRRKLANG
+   // start the sound engine with default parameters
+	sound = createIrrKlangDevice();
+
+	if (sound)
+	{	// play some sound stream, looped
+	    sound->play2D("./media/getout.ogg", true);
+	}
+	#endif
+	/*
+	The most important function of the engine is the 'createDevice'
+	function. The Irrlicht Device can be created with it, which is the
+	root object for doing everything with the engine.
+	*/
+    #ifdef __EMSCRIPTEN__
+	device = createDevice( video::EDT_OGLES2, dimension2d<u32>(screenwidth, screenheight), 32,
+			false, true, true);
+			#else
+				device = createDevice( video::EDT_OPENGL, dimension2d<u32>(screenwidth, screenheight), 32,
+			false, true, true);
+			#endif
+
+
+
+	device->setWindowCaption(L"WOS 06 Game Demo - Irrlicht Engine");
+
+	/*
+	Get a pointer to the video driver, the SceneManager and the
+	graphical user interface environment, so that
+	we do not always have to write device->getVideoDriver(),
+	device->getSceneManager() and device->getGUIEnvironment().
+	*/
+	driver = device->getVideoDriver();
+	smgr = device->getSceneManager();
+
+	MyEventReceiver receiver;
+ 	device->setEventReceiver(&receiver);
+
+	env = device->getGUIEnvironment();
+
+    /* initialize the playfield */
+    DrawPlayfield();
+
+    /* show the menu */
+	GameMenu();
+
+
+
+    #ifdef __EMSCRIPTEN__
+	emscripten_set_main_loop(main_loop,0,1);
+#else
+    while(driver)
+	{
+	main_loop();
+}
+#endif
 
 	/*
 	After we are finished, we have to delete the Irrlicht Device
@@ -389,7 +409,7 @@ void GameMenu()  // Init Game Menu
 	// Statustext
 	const int lwidth = 450;
 	const int lheight = 50;
-	core::dimension2d<int> size = device->getVideoDriver()->getScreenSize();
+	core::dimension2du size = device->getVideoDriver()->getScreenSize();
 	core::rect<int> pos(10, size.Height-lheight-10, 10+lwidth, size.Height-10);
 	env->addImage(pos);
 

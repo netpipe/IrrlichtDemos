@@ -18,7 +18,7 @@
 			<Add alias="All" targets="default;" />
 		</VirtualTargets>
 		<Compiler>
-			<Add directory="/home/Dev/libs/Irrlicht/include" />
+			<Add directory="../../../../LunaLibs/irrlicht-1.8.4/include" />
 			<Add directory="/home/Dev/libs/audio/audiere/src" />
 		</Compiler>
 		<Linker>
@@ -30,7 +30,8 @@
 			<Add library="vorbisfile" />
 			<Add library="pthread" />
 			<Add library="rt" />
-			<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
+			<Add library="X11" />
+			<Add directory="../../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 			<Add directory="/home/Dev/libs/audio/audiere/src/.libs" />
 		</Linker>
 		<Unit filename="../audiere.h" />

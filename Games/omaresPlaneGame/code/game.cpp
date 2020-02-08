@@ -51,7 +51,7 @@ void CGame::createWindow()
 void CGame::Init()
 {
 	// Init the Irrlicht engine
-	device = createDevice(driverType, dimension2d<s32>(resX, resY), 32, fullscreen, true,true, this);
+	device = createDevice(driverType, dimension2d<u32>(resX, resY), 32, fullscreen, true,true, this);
 
 	driver = device->getVideoDriver();
 	smgr = device->getSceneManager();
@@ -71,7 +71,8 @@ void CGame::Init()
 
 void CGame::Start()
 {
-	driver->setFog(video::SColor(0,255,255,255), true, 0, 0,		0.001f, true, true);
+
+	driver->setFog(video::SColor(0,255,255,255), EFT_FOG_LINEAR, 0.0f, 0.0f,0.001f, true, true);
 
 
 //////////load graphics zip//////////////////
