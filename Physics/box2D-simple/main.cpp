@@ -63,6 +63,7 @@ using namespace video;
 	b2Vec2 gravity(0.0f, 50.0f);
 
 	// Construct a world object, which will hold and simulate the rigid bodies.
+
 	b2World world(gravity);
 	b2Body* body ;
 	core::rect<s32> imp1(349,15,385,78);
