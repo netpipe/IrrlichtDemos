@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="clear_scene.h" open="1" top="0" tabpos="5">
+		<Cursor position="376" topLine="0" />
+	</File>
+	<File name="load_audio.h" open="1" top="0" tabpos="6">
+		<Cursor position="625" topLine="0" />
+	</File>
+	<File name="load_map.h" open="1" top="0" tabpos="4">
+		<Cursor position="2470" topLine="64" />
+	</File>
+	<File name="main.cpp" open="1" top="1" tabpos="2">
+		<Cursor position="9015" topLine="263" />
+	</File>
+	<File name="main.h" open="1" top="0" tabpos="3">
+		<Cursor position="3006" topLine="18" />
+	</File>
+	<File name="main_menu.h" open="1" top="0" tabpos="1">
+		<Cursor position="1271" topLine="18" />
+	</File>
+</CodeBlocks_layout_file>
