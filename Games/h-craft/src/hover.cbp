@@ -7,6 +7,57 @@
 		<Option default_target="linux64es2 debug" />
 		<Option compiler="gcc" />
 		<Build>
+			<Target title="working">
+				<Option platforms="Unix;" />
+				<Option output="../hovercraft64" prefix_auto="0" extension_auto="0" />
+				<Option working_dir=".." />
+				<Option object_output=".linux64objs" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Compiler>
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-W" />
+					<Add option="-fno-strict-aliasing" />
+					<Add option="-Wno-unused-parameter" />
+					<Add option="-fno-rtti" />
+					<Add option="-fno-exceptions" />
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DHOVER_RELEASE" />
+					<Add directory="../libs/libogg/linux/include" />
+					<Add directory="../libs/freealut/linux/include" />
+					<Add directory="../libs/openal/linux/include" />
+					<Add directory="../libs/sdl/linux/include" />
+					<Add directory="../../../../../../Dev/libs/game/irrlicht/Irrlicht-SVN/include" />
+					<Add directory="../libs/libfreetypef/freetype-2.5.2/include" />
+					<Add directory="../libs/libvorbis/libvorbis-1.3.4/include" />
+					<Add directory="/usr/include/freetype2/" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-Wl,-rpath -Wl,./libs/linux_shared" />
+					<Add library="Irrlicht" />
+					<Add library="GL" />
+					<Add library="GLU" />
+					<Add library="Xext" />
+					<Add library="X11" />
+					<Add library="pthread" />
+					<Add library="Xrandr" />
+					<Add library="Xxf86vm" />
+					<Add library="vorbisfile" />
+					<Add library="vorbisenc" />
+					<Add library="vorbis" />
+					<Add library="ogg" />
+					<Add library="freetype" />
+					<Add library="SDL" />
+					<Add library="openal" />
+					<Add library="alut" />
+					<Add directory="../../../../../../Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux" />
+				</Linker>
+			</Target>
 			<Target title="linux64 debug">
 				<Option platforms="Unix;" />
 				<Option output="../hovercraftD64" prefix_auto="0" extension_auto="0" />
@@ -366,56 +417,6 @@
 					<Add library="EGL" />
 					<Add library="GL" />
 					<Add directory="../libs/irrlicht_ogl-es/lib/Linux" />
-				</Linker>
-			</Target>
-			<Target title="tecan">
-				<Option platforms="Unix;" />
-				<Option output="../hovercraft64" prefix_auto="0" extension_auto="0" />
-				<Option working_dir=".." />
-				<Option object_output=".linux64objs" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Option projectResourceIncludeDirsRelation="1" />
-				<Compiler>
-					<Add option="-fexpensive-optimizations" />
-					<Add option="-O2" />
-					<Add option="-Wall" />
-					<Add option="-W" />
-					<Add option="-fno-strict-aliasing" />
-					<Add option="-Wno-unused-parameter" />
-					<Add option="-fno-rtti" />
-					<Add option="-fno-exceptions" />
-					<Add option="-D_IRR_STATIC_LIB_" />
-					<Add option="-DNDEBUG" />
-					<Add option="-DHOVER_RELEASE" />
-					<Add directory="../libs/libogg/linux/include" />
-					<Add directory="../libs/libvorbis/linux/include" />
-					<Add directory="../libs/freealut/linux/include" />
-					<Add directory="../libs/openal/linux/include" />
-					<Add directory="../libs/sdl/linux/include" />
-					<Add directory="../libs/irrlicht/include" />
-					<Add directory="/usr/include/freetype2/" />
-				</Compiler>
-				<Linker>
-					<Add option="-s" />
-					<Add option="-Wl,-rpath -Wl,./libs/linux_shared" />
-					<Add library="Irrlicht" />
-					<Add library="GL" />
-					<Add library="GLU" />
-					<Add library="Xext" />
-					<Add library="X11" />
-					<Add library="pthread" />
-					<Add library="Xrandr" />
-					<Add library="Xxf86vm" />
-					<Add library="../libs/libvorbis/libvorbis-1.3.4/lib/.libs/libvorbisfile.a" />
-					<Add library="../libs/libvorbis/libvorbis-1.3.4/lib/.libs/libvorbisenc.a" />
-					<Add library="../libs/libvorbis/libvorbis-1.3.4/lib/.libs/libvorbis.a" />
-					<Add library="../libs/libogg/libogg-1.3.1/src/.libs/libogg.a" />
-					<Add library="../libs/libfreetypef/freetype-2.5.2/objs/.libs/libfreetype.so" />
-					<Add library="../libs/sdl/linux/lib64/libSDL.so" />
-					<Add library="../libs/openal/linux/lib/libopenal.so" />
-					<Add library="../libs/freealut/linux/lib/libalut.so" />
-					<Add directory="../libs/irrlicht/lib/Linux" />
 				</Linker>
 			</Target>
 		</Build>
