@@ -49,7 +49,7 @@ void MapMesh::CreateNode (const OMFMesh *m) {
 	if (!mesh.optimize)
 		sn = reg->smgr->addAnimatedMeshSceneNode (am);
 	else
-		sn = reg->smgr->addOctTreeSceneNode (am->getMesh (0));
+		sn = reg->smgr->addOctreeSceneNode (am->getMesh (0));
 	PositionNode (mesh);
 }
 

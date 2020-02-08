@@ -17,16 +17,18 @@
 			<Add alias="All" targets="default;" />
 		</VirtualTargets>
 		<Compiler>
-			<Add directory="/home/Dev/libs/Irrlicht/include" />
-			<Add directory="/home/Dev/libs/physics/ode/include" />
+			<Add option="-fpermissive" />
+			<Add directory="../../../../../Dev/libs/game/irrlicht/Irrlicht-SVN/include" />
+			<Add directory="../../../LunaLibs/physics/ode-0.13/include" />
 		</Compiler>
 		<Linker>
 			<Add library="Irrlicht" />
 			<Add library="GL" />
 			<Add library="Xxf86vm" />
 			<Add library="ode" />
-			<Add directory="/home/Dev/libs/physics/ode/lib" />
-			<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
+			<Add library="pthread" />
+			<Add directory="../../../LunaLibs/physics/ode-0.13/ode/src/.libs" />
+			<Add directory="../../../../../Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux" />
 		</Linker>
 		<Unit filename="src/core.cpp" />
 		<Unit filename="src/core.h" />

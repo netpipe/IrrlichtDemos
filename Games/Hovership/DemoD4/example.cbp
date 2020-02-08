@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="IHoverCraft - ODE demo" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./IHoverCraft" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-fpermissive" />
+			<Add directory="../../../../LunaLibs/irrlicht-1.8.4/include" />
+			<Add directory="../../../../LunaLibs/ode-0.11.1/include" />
+			<Add directory="../../../../../LunaLibs/ode-0.11.1/include" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="GL" />
+			<Add library="Xxf86vm" />
+			<Add library="ode" />
+			<Add library="X11" />
+			<Add directory="../../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
+			<Add directory="../../../../LunaLibs/ode-0.11.1/ode/src/.libs" />
+		</Linker>
+		<Unit filename="Application.cpp" />
+		<Unit filename="Application.h" />
+		<Unit filename="Configuration.cpp" />
+		<Unit filename="Configuration.h" />
+		<Unit filename="Game.cpp" />
+		<Unit filename="Game.h" />
+		<Unit filename="GlobalState.h" />
+		<Unit filename="IntroState.h" />
+		<Unit filename="State.h" />
+		<Unit filename="StateManager.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

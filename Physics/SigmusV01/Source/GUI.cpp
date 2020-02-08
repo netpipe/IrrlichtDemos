@@ -32,7 +32,7 @@ core::stringw CGUI::MainMenu()
     CGUI::HelperText = CGUI::gui->addStaticText(L"Only currently working map is \"Intro.xml\"", rect<s32>(215,250,600,270));
     CGUI::HelperText->setOverrideColor(SColor(255, 255, 255, 255));
 
-    CGUI::BackgroundNode = CGUI::smgr->addOctTreeSceneNode(CGUI::smgr->getMesh("./Media/Maps/Menu_Warehouse/Warehouse.obj"));
+    CGUI::BackgroundNode = CGUI::smgr->addOctreeSceneNode(CGUI::smgr->getMesh("./Media/Maps/Menu_Warehouse/Warehouse.obj"));
 
     if(DEBUG_CONSOLE)
     {

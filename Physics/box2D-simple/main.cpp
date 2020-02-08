@@ -60,7 +60,7 @@ using namespace video;
 	int32 positionIterations ;
 
 	// Define the gravity vector.
-	b2Vec2 gravity(0.0f, 50.0f);
+	b2Vec2 gravity(0.0f, 40.0f);
 
 	// Construct a world object, which will hold and simulate the rigid bodies.
 
@@ -159,7 +159,7 @@ env->drawAll();
 
 			driver->endScene();
 			//device->sleep(2);
-			usleep(200);
+			usleep(10000);
 //		}
 	//}
 

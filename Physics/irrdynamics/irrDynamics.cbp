@@ -39,8 +39,8 @@
 			<Add directory="/usr/include/irrlicht" />
 			<Add directory="../include" />
 		</Compiler>
-		<Unit filename="../include/irrDynamics.h" />
-		<Unit filename="../src/irrDynamics.cpp" />
+		<Unit filename="irrDynamics.cpp" />
+		<Unit filename="irrDynamics.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

@@ -119,7 +119,7 @@ CMap::CMap(core::stringc filename, ISceneManager* smgr, IVideoDriver* driver, CS
 	if(CMap::mesh == NULL)
         cout<<"Failed to load: "<<path.c_str()<<endl;
 
-	CMap::node = smgr->addOctTreeSceneNode(CMap::mesh->getMesh(0));
+	CMap::node = smgr->addOctreeSceneNode(CMap::mesh->getMesh(0));
 
     //Setup
     CMap::node->setMaterialFlag(EMF_LIGHTING,LIGHTING);

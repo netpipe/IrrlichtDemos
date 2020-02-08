@@ -40,13 +40,13 @@ void GOList::InsertNode(GameObject* n)
 	}
 }
 
-//Remove a node from the list by index	
+//Remove a node from the list by index
 void GOList::RemoveNode(int index)
 {
 	//size--;
 }
 
-//Remove a node from the list by GameObject*. 
+//Remove a node from the list by GameObject*.
 //Objects are check against each other with unique id
 GameObject* GOList::RemoveNode(GameObject* n)
 {
@@ -75,7 +75,7 @@ GameObject* GOList::RemoveNode(GameObject* n)
 	prev = 0;
 	return 0;
 }
-	
+
 GameObject* GOList::GetNode(int index)
 {
 	GameObject* c = start->next;
@@ -93,9 +93,9 @@ GameObject* GOList::GetNode(int index)
 			}
 		}
 	}
-	return false;
+//	return false;
 }
-	
+
 int GOList::GetSize()
 {
 	return size;

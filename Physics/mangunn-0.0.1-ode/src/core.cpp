@@ -108,12 +108,12 @@ void Core::Run () {
 
 void Core::Start () {
 	// Create renderer
-	dev = createDevice (EDT_OPENGL, core::dimension2d<s32> (
+	dev = createDevice (EDT_OPENGL, core::dimension2d<u32> (
 				settings->GetScreenWidth (),settings->GetScreenHeight ()),
 			32, 0, true, false, this);
 	// Window caption
 	dev->setWindowCaption (L"OSRPG Project: Maggun 0.0.1");
-	dev->setResizeAble (false);
+//	dev->setResizeAble (false);
 	// Create camera
 	cam = dev->getSceneManager ()->addCameraSceneNodeFPS (0, 50, 10);
 	// ATTENTION: This must be done ONLY after setting up

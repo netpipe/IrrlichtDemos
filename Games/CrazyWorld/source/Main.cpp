@@ -16,7 +16,7 @@ int main()
 	//std::string a = "../res/xml/config.xml" ;
 	//xml = irr::io::createIrrXMLReader(a.c_str());
 
-	IrrlichtDevice* device = createDevice(driverType, core::dimension2d<s32>(800, 600),bit,false);
+	IrrlichtDevice* device = createDevice(driverType, core::dimension2d<u32>(800, 600),bit,false);
 	GameWorld *gWorld = new GameWorld(device);
 
 	gWorld->run();

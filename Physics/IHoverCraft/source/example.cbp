@@ -18,7 +18,7 @@
 		</VirtualTargets>
 		<Compiler>
 			<Add option="-fpermissive" />
-			<Add directory="/home/Dev/libs/game/irrlicht/irrlicht-1.7/include" />
+			<Add directory="../../../../LunaLibs/irrlicht-1.8.4/include" />
 			<Add directory="/home/Dev/libs/physics/ODE/ode-0.11.1/include" />
 		</Compiler>
 		<Linker>
@@ -27,7 +27,7 @@
 			<Add library="Xxf86vm" />
 			<Add library="ode" />
 			<Add library="X11" />
-			<Add directory="/home/Dev/libs/game/irrlicht/irrlicht-1.6/lib/Linux" />
+			<Add directory="../../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 			<Add directory="/home/Dev/libs/physics/ODE/ode-0.11.1/ode/src/.libs" />
 		</Linker>
 		<Unit filename="core/Application.cpp" />
