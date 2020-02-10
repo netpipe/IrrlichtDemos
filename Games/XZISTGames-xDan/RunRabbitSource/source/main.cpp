@@ -149,7 +149,7 @@ int main()
                 smgr->drawAll();
                 guienv->drawAll();
                 driver->endScene();
-
+device->sleep(30);
                 time_start = timer->getTime();
             }
 

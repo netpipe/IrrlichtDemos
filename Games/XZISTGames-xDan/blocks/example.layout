@@ -2,122 +2,55 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="All" />
-	<File name="player.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="14" />
-		</Cursor>
-		<Folding>
-			<Collapse line="5" />
-			<Collapse line="61" />
-			<Collapse line="65" />
-			<Collapse line="124" />
-			<Collapse line="130" />
-			<Collapse line="137" />
-			<Collapse line="142" />
-			<Collapse line="148" />
-			<Collapse line="154" />
-			<Collapse line="160" />
-			<Collapse line="166" />
-			<Collapse line="172" />
-			<Collapse line="178" />
-			<Collapse line="186" />
-			<Collapse line="192" />
-		</Folding>
-	</File>
-	<File name="block.h" open="1" top="1" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="65" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="17" />
-		</Folding>
-	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="281" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="16" />
-		</Folding>
+	</File>
+	<File name="player.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="12" />
+		</Cursor>
 	</File>
 	<File name="collision.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="4" />
-			<Collapse line="12" />
-			<Collapse line="17" />
-			<Collapse line="22" />
-			<Collapse line="27" />
-			<Collapse line="32" />
-		</Folding>
 	</File>
-	<File name="level.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="block.h" open="1" top="1" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
+			<Cursor1 position="85" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="15" />
-		</Folding>
 	</File>
 	<File name="block.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="249" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="7" />
-			<Collapse line="74" />
-			<Collapse line="81" />
-			<Collapse line="93" />
-			<Collapse line="113" />
-			<Collapse line="120" />
-			<Collapse line="129" />
-		</Folding>
-	</File>
-	<File name="events.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="7" />
-		</Folding>
-	</File>
-	<File name="info.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1261" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="14" />
-		</Folding>
 	</File>
 	<File name="level.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="13817" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="4" />
-			<Collapse line="185" />
-			<Collapse line="282" />
-			<Collapse line="298" />
-			<Collapse line="391" />
-			<Collapse line="437" />
-		</Folding>
+	</File>
+	<File name="events.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="info.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1261" topLine="0" />
+		</Cursor>
 	</File>
 	<File name="magnet.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="6" />
-			<Collapse line="72" />
-			<Collapse line="76" />
-			<Collapse line="82" />
-			<Collapse line="87" />
-			<Collapse line="96" />
-			<Collapse line="105" />
-			<Collapse line="144" />
-		</Folding>
 	</File>
-	<EditorTabsLayout layout="036cb1105dde6458000fd97f00000002=0;Irrlicht Pong:main.cpp,1;Irrlicht Pong:block.cpp,2;Irrlicht Pong:collision.cpp,3;Irrlicht Pong:level.h,4;Irrlicht Pong:events.h,5;Irrlicht Pong:magnet.cpp,6;Irrlicht Pong:player.cpp,7;Irrlicht Pong:level.cpp,8;Irrlicht Pong:info.h,*9;Irrlicht Pong:block.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=814;besth=348;minw=814;minh=348;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=036cb1105dde6458000fd97f00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+	<File name="level.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<EditorTabsLayout layout="0351f1605e40b27b0021840f00000002=0;Irrlicht Pong:main.cpp,1;Irrlicht Pong:block.cpp,2;Irrlicht Pong:collision.cpp,3;Irrlicht Pong:level.h,4;Irrlicht Pong:events.h,5;Irrlicht Pong:magnet.cpp,6;Irrlicht Pong:player.cpp,7;Irrlicht Pong:level.cpp,8;Irrlicht Pong:info.h,*9;Irrlicht Pong:block.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=328;besth=341;minw=328;minh=341;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=0351f1605e40b27b0021840f00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>
