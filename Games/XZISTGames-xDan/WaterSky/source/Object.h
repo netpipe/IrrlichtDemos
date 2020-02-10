@@ -34,7 +34,7 @@ extern OBJECT_TYPE OBJECT_TYPE_FROM_STRING(const wchar_t *);
 struct LocRot
 {
     core::vector3df pos,rot;
-    
+
     LocRot()
     {
     }
@@ -60,32 +60,32 @@ public:
     Object(WorldBase *);
     virtual ~Object();
     void remove();
-    
+
     u32 newID();
     u32 getID();
-    
+
     core::vector3df getPosition();
     core::vector3df getRotation();
     void setPosition(core::vector3df);
     void setRotation(core::vector3df);
     void setActive(bool f) { active = f; }
     bool isActive() { return active; }
-    
+
     virtual void setFileName(const wchar_t *fileName) { this->fileName = fileName; }
-    
+
     scene::ISceneNode *getNode();
-    
+
     void preUpdate(f32);
     virtual void update(f32) {};
-    
+
     ODEAnimator *getPhysicsAnimator() { return dAnimator; }
-    
+
     void activatedBy(u32);
     void activatedBy(Object *);
     void clearActivatedBy();
     void pruneActivatedByObjects();
     bool isActivatedBy(u32);
-    
+
     // control points
     bool isLimitedPoints() { return limitedPointCount; }
     u32 getPointCount() { return points.size(); }
@@ -93,35 +93,35 @@ public:
     void addPoint(LocRot);
     void setPoint(u32, LocRot);
     LocRot &getPoint(u32);
-    
+
     void renderRelations(bool,s32);
-    
+
     Object *clone();
     virtual Object *createNew() = 0;
     virtual void serializeToXML(XMLNode &);
     virtual void deserializeFromXML(XMLNode &);
-    
+
     virtual OBJECT_TYPE getType() = 0;
-    
+
 protected:
     scene::ISceneNode *sceneNode;
     ODEAnimator *dAnimator;
     SoundAnimator *soundAnimator;
-    
+
     // activity...
     bool active;
     core::array <u32> activatedByObjects;
-    
+
     // Only some objects will use this. If they require a mesh file or data file etc.
     core::stringw fileName;
-    
+
     // Extra position/rotations - e.g. AI paths, lift stop/start locations
     core::array <LocRot> points;
     bool limitedPointCount;
-    
+
     void addActivatableExclamationMark();
     void createSoundAnimator();
-    
+
     // remove other object from World list. Any pointers now invalid...
     void removeObject(Object *);
     f32 getBoundsDistance(Object *);
@@ -131,13 +131,13 @@ protected:
     // from a specified position
     Object *getNearestObject(core::vector3df);
     Object *getNearestObject(core::vector3df, OBJECT_TYPE);
-    
+
     Object *getObject(u32);
-    
+
 private:
     const static f32 exclamationMarkDisplayDistance = 1.5;
     const static f32 exclamationMarkHoverHeight = 0.3;
-    
+
     u32 id;
     scene::ISceneNode *activatableExclamationMark;
     bool exclamationMarkGrowing;

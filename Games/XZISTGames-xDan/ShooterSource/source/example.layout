@@ -2,196 +2,102 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="All" />
-	<File name="Demon.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Game.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
+			<Cursor1 position="13402" topLine="339" />
 		</Cursor>
-	</File>
-	<File name="Person.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3619" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="4" />
-			<Collapse line="38" />
-			<Collapse line="95" />
-			<Collapse line="100" />
-			<Collapse line="143" />
-		</Folding>
-	</File>
-	<File name="AttributeBarManager.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="UFO.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="124" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="7" />
-		</Folding>
-	</File>
-	<File name="Game.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="15263" topLine="32" />
-		</Cursor>
-		<Folding>
-			<Collapse line="5" />
-			<Collapse line="40" />
-			<Collapse line="51" />
-			<Collapse line="87" />
-			<Collapse line="116" />
-			<Collapse line="122" />
-			<Collapse line="138" />
-			<Collapse line="377" />
-			<Collapse line="394" />
-			<Collapse line="432" />
-			<Collapse line="502" />
-			<Collapse line="513" />
-			<Collapse line="519" />
-			<Collapse line="536" />
-			<Collapse line="545" />
-			<Collapse line="573" />
-			<Collapse line="625" />
-			<Collapse line="635" />
-			<Collapse line="646" />
-			<Collapse line="659" />
-		</Folding>
-	</File>
-	<File name="Target.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1488" topLine="8" />
-		</Cursor>
-		<Folding>
-			<Collapse line="5" />
-			<Collapse line="18" />
-			<Collapse line="24" />
-			<Collapse line="47" />
-			<Collapse line="52" />
-			<Collapse line="71" />
-			<Collapse line="79" />
-			<Collapse line="86" />
-			<Collapse line="113" />
-			<Collapse line="120" />
-			<Collapse line="127" />
-			<Collapse line="135" />
-			<Collapse line="140" />
-		</Folding>
-	</File>
-	<File name="Effects.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1990" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="8" />
-			<Collapse line="52" />
-		</Folding>
-	</File>
-	<File name="Duck.cpp" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1888" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="4" />
-			<Collapse line="32" />
-			<Collapse line="42" />
-			<Collapse line="48" />
-		</Folding>
-	</File>
-	<File name="Duck.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="128" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="7" />
-		</Folding>
-	</File>
-	<File name="Game.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="386" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="15" />
-		</Folding>
-	</File>
-	<File name="Person.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="7" />
-		</Folding>
-	</File>
-	<File name="Target.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="681" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="13" />
-			<Collapse line="19" />
-		</Folding>
-	</File>
-	<File name="ParabolaAnimator.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="11" />
-			<Collapse line="22" />
-		</Folding>
-	</File>
-	<File name="TargetManager.cpp" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="4203" topLine="2" />
-		</Cursor>
-		<Folding>
-			<Collapse line="8" />
-			<Collapse line="24" />
-			<Collapse line="32" />
-			<Collapse line="70" />
-			<Collapse line="198" />
-			<Collapse line="208" />
-			<Collapse line="218" />
-			<Collapse line="228" />
-			<Collapse line="238" />
-			<Collapse line="248" />
-		</Folding>
-	</File>
-	<File name="main.cpp" open="1" top="1" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="188" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="11" />
-		</Folding>
 	</File>
 	<File name="Effects.cpp" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="2116" topLine="0" />
 		</Cursor>
 		<Folding>
-			<Collapse line="5" />
-			<Collapse line="14" />
-			<Collapse line="51" />
-			<Collapse line="103" />
+			<Collapse line="11" />
+			<Collapse line="42" />
 		</Folding>
 	</File>
-	<File name="OS.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Effects.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3497" topLine="65" />
+			<Cursor1 position="1990" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Duck.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="128" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Target.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="681" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="AttributeBarManager.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Game.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="386" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Duck.cpp" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1888" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="TargetManager.cpp" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4203" topLine="2" />
 		</Cursor>
 	</File>
 	<File name="UFO.cpp" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="16" topLine="0" />
 		</Cursor>
+	</File>
+	<File name="Demon.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="OS.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3497" topLine="65" />
+		</Cursor>
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="188" topLine="56" />
+		</Cursor>
+	</File>
+	<File name="Target.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1488" topLine="8" />
+		</Cursor>
+	</File>
+	<File name="Person.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="ParabolaAnimator.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
 		<Folding>
-			<Collapse line="4" />
-			<Collapse line="44" />
-			<Collapse line="54" />
-			<Collapse line="60" />
+			<Collapse line="3" />
 		</Folding>
 	</File>
-	<EditorTabsLayout layout="f1e1d7905bcfc3850012778b00000002=0;Irrlicht Pong:Game.cpp,1;Irrlicht Pong:OS.cpp,2;Irrlicht Pong:ParabolaAnimator.cpp,3;Irrlicht Pong:Person.h,4;Irrlicht Pong:Person.cpp,*5;Irrlicht Pong:main.cpp,6;Irrlicht Pong:Game.h,7;Irrlicht Pong:Target.h,8;Irrlicht Pong:Target.cpp,9;Irrlicht Pong:Effects.h,10;Irrlicht Pong:Duck.h,11;Irrlicht Pong:UFO.h,12;Irrlicht Pong:UFO.cpp,13;Irrlicht Pong:TargetManager.cpp,14;Irrlicht Pong:Duck.cpp,15;Irrlicht Pong:Effects.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=814;besth=343;minw=814;minh=343;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=f1e1d7905bcfc3850012778b00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+	<File name="Person.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3619" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="UFO.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="124" topLine="0" />
+		</Cursor>
+	</File>
+	<EditorTabsLayout layout="02bb0fe05e40b41b002323b000000002=*0;Irrlicht Pong:Game.cpp,1;Irrlicht Pong:OS.cpp,2;Irrlicht Pong:ParabolaAnimator.cpp,3;Irrlicht Pong:Person.h,4;Irrlicht Pong:Person.cpp,5;Irrlicht Pong:main.cpp,6;Irrlicht Pong:Game.h,7;Irrlicht Pong:Target.h,8;Irrlicht Pong:Target.cpp,9;Irrlicht Pong:Effects.h,10;Irrlicht Pong:Duck.h,11;Irrlicht Pong:UFO.h,12;Irrlicht Pong:UFO.cpp,13;Irrlicht Pong:TargetManager.cpp,14;Irrlicht Pong:Duck.cpp,15;Irrlicht Pong:Effects.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=328;besth=341;minw=328;minh=341;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=02bb0fe05e40b41b002323b000000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>

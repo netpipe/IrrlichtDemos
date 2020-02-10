@@ -4,9 +4,11 @@
 
 #include <assert.h>
 #include <irrlicht.h>
-#include <irrKlang.h>
+//#include <irrKlang.h>
 #include "ODEPhysics.h"
-#include <xmlParser.h>
+#include "./xmlParser.h"
+//#include <xmlParser.h> // XMLNode
+
 
 using namespace irr;
 
@@ -17,13 +19,13 @@ class WorldBase
 public:
     WorldBase(IrrlichtDevice *);
     WorldBase(WorldBase *);
-    
+
     IrrlichtDevice *device;
-    audio::ISoundEngine *sengine;
+//    audio::ISoundEngine *sengine;
     ODEPhysics *dPhysics;
     core::array <Object *> *objects;
     XMLNode *xTranslation;
-    
+
     // Set automatically
     scene::ISceneManager *smgr;
     video::IVideoDriver *driver;

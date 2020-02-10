@@ -171,7 +171,7 @@
 	"vector3d.h"
 	"SIrrCreationParameters.h"
 
-1574686284 /home/Dev/libs/game/Irrlicht-SVN/include/IrrCompileConfig.h
+1579501613 /home/Dev/libs/game/Irrlicht-SVN/include/IrrCompileConfig.h
 	<stdio.h>
 	<xtl.h>
 	<tchar.h>
@@ -181,7 +181,7 @@
 	"plane3d.h"
 	"line3d.h"
 
-1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/irrMath.h
+1576734526 /home/Dev/libs/game/Irrlicht-SVN/include/irrMath.h
 	"IrrCompileConfig.h"
 	"irrTypes.h"
 	<math.h>
@@ -189,7 +189,7 @@
 	<stdlib.h>
 	<limits.h>
 
-1514384332 /home/Dev/libs/game/Irrlicht-SVN/include/irrTypes.h
+1575857101 /home/Dev/libs/game/Irrlicht-SVN/include/irrTypes.h
 	"IrrCompileConfig.h"
 	<limits.h>
 	<wchar.h>
@@ -232,7 +232,7 @@
 	"irrTypes.h"
 	"leakHunter.h"
 
-1568095855 /home/Dev/libs/game/Irrlicht-SVN/include/SMaterial.h
+1581202165 /home/Dev/libs/game/Irrlicht-SVN/include/SMaterial.h
 	"SColor.h"
 	"matrix4.h"
 	"irrArray.h"
@@ -245,7 +245,7 @@
 	"irrTypes.h"
 	"irrMath.h"
 
-1568095854 /home/Dev/libs/game/Irrlicht-SVN/include/matrix4.h
+1576309644 /home/Dev/libs/game/Irrlicht-SVN/include/matrix4.h
 	"irrMath.h"
 	"vector3d.h"
 	"vector2d.h"
@@ -270,7 +270,7 @@
 1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/position2d.h
 	"vector2d.h"
 
-1568095853 /home/Dev/libs/game/Irrlicht-SVN/include/irrString.h
+1576260548 /home/Dev/libs/game/Irrlicht-SVN/include/irrString.h
 	"irrTypes.h"
 	"irrAllocator.h"
 	"irrMath.h"
@@ -292,7 +292,7 @@
 1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/heapsort.h
 	"irrTypes.h"
 
-1568095855 /home/Dev/libs/game/Irrlicht-SVN/include/EMaterialTypes.h
+1581202164 /home/Dev/libs/game/Irrlicht-SVN/include/EMaterialTypes.h
 
 1574563396 /home/Dev/libs/game/Irrlicht-SVN/include/EMaterialFlags.h
 
@@ -430,7 +430,7 @@
 	"IReferenceCounted.h"
 	"path.h"
 
-1574563391 /home/Dev/libs/game/Irrlicht-SVN/include/IVideoDriver.h
+1581202164 /home/Dev/libs/game/Irrlicht-SVN/include/IVideoDriver.h
 	"rect.h"
 	"SColor.h"
 	"ITexture.h"
@@ -454,7 +454,7 @@
 	"path.h"
 	"matrix4.h"
 
-1574563391 /home/Dev/libs/game/Irrlicht-SVN/include/IImage.h
+1581202165 /home/Dev/libs/game/Irrlicht-SVN/include/IImage.h
 	"IReferenceCounted.h"
 	"position2d.h"
 	"rect.h"
@@ -470,7 +470,7 @@
 
 1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/SExposedVideoData.h
 
-1568095854 /home/Dev/libs/game/Irrlicht-SVN/include/quaternion.h
+1581202164 /home/Dev/libs/game/Irrlicht-SVN/include/quaternion.h
 	"irrTypes.h"
 	"irrMath.h"
 	"matrix4.h"
@@ -573,7 +573,7 @@
 	"ISceneNode.h"
 	"IEventReceiver.h"
 
-1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/ICursorControl.h
+1575857100 /home/Dev/libs/game/Irrlicht-SVN/include/ICursorControl.h
 	"IReferenceCounted.h"
 	"position2d.h"
 	"rect.h"
@@ -581,7 +581,7 @@
 1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IDummyTransformationSceneNode.h
 	"ISceneNode.h"
 
-1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/IGeometryCreator.h
+1576260548 /home/Dev/libs/game/Irrlicht-SVN/include/IGeometryCreator.h
 	"IReferenceCounted.h"
 	"IMesh.h"
 	"IImage.h"
@@ -629,7 +629,7 @@
 	"IReferenceCounted.h"
 	"EGUIElementTypes.h"
 
-1553911456 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIEnvironment.h
+1576260548 /home/Dev/libs/game/Irrlicht-SVN/include/IGUIEnvironment.h
 	"IReferenceCounted.h"
 	"IGUISkin.h"
 	"rect.h"
@@ -689,7 +689,7 @@
 	"IGUIElement.h"
 	"SColor.h"
 
-1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IGUITabControl.h
+1576260548 /home/Dev/libs/game/Irrlicht-SVN/include/IGUITabControl.h
 	"IGUIElement.h"
 	"SColor.h"
 	"IGUISkin.h"
@@ -727,11 +727,11 @@
 	"irrString.h"
 	"coreutil.h"
 
-1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/ILightSceneNode.h
+1576260548 /home/Dev/libs/game/Irrlicht-SVN/include/ILightSceneNode.h
 	"ISceneNode.h"
 	"SLight.h"
 
-1433162419 /home/Dev/libs/game/Irrlicht-SVN/include/SLight.h
+1576260548 /home/Dev/libs/game/Irrlicht-SVN/include/SLight.h
 	"SColor.h"
 
 1544224167 /home/Dev/libs/game/Irrlicht-SVN/include/IMaterialRenderer.h
@@ -752,7 +752,7 @@
 	"path.h"
 	"IMeshTextureLoader.h"
 
-1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/IMeshManipulator.h
+1576260548 /home/Dev/libs/game/Irrlicht-SVN/include/IMeshManipulator.h
 	"IReferenceCounted.h"
 	"vector3d.h"
 	"aabbox3d.h"
@@ -761,7 +761,7 @@
 	"IMeshBuffer.h"
 	"SVertexManipulator.h"
 
-1472138715 /home/Dev/libs/game/Irrlicht-SVN/include/SVertexManipulator.h
+1576260548 /home/Dev/libs/game/Irrlicht-SVN/include/SVertexManipulator.h
 	"S3DVertex.h"
 	"SColor.h"
 
@@ -875,7 +875,7 @@
 	"position2d.h"
 	"line3d.h"
 
-1568095854 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneManager.h
+1575857100 /home/Dev/libs/game/Irrlicht-SVN/include/ISceneManager.h
 	"IReferenceCounted.h"
 	"irrArray.h"
 	"irrString.h"
@@ -1178,7 +1178,7 @@
 	"path.h"
 	"IReferenceCounted.h"
 
-1494856606 /home/Dev/libs/game/Irrlicht-SVN/include/IOctreeSceneNode.h
+1576260548 /home/Dev/libs/game/Irrlicht-SVN/include/IOctreeSceneNode.h
 	"IMeshSceneNode.h"
 
 1540152605 /home/Dev/libs/game/Irrlicht-SVN/include/IRenderTarget.h
@@ -1351,4 +1351,89 @@
 
 1379563462 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/WIPs/Games/xDan/ShooterSource/source/UFO.cpp
 	"UFO.h"
+
+1272782130 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Games/XZISTGames-xDan/ShooterSource/source/AttributeBarManager.cpp
+	"AttributeBarManager.h"
+
+1182309346 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Games/XZISTGames-xDan/ShooterSource/source/AttributeBarManager.h
+	<irrlicht.h>
+	<vector>
+
+1274703870 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Games/XZISTGames-xDan/ShooterSource/source/Demon.cpp
+	"Demon.h"
+
+1272782186 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Games/XZISTGames-xDan/ShooterSource/source/Demon.h
+	"Target.h"
+
+1379563065 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Games/XZISTGames-xDan/ShooterSource/source/Target.h
+	<irrlicht.h>
+	"Effects.h"
+	<vector>
+
+1379563215 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Games/XZISTGames-xDan/ShooterSource/source/Effects.h
+	<irrlicht.h>
+
+1379563608 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Games/XZISTGames-xDan/ShooterSource/source/Duck.cpp
+	"Duck.h"
+
+1379563160 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Games/XZISTGames-xDan/ShooterSource/source/Duck.h
+	"Target.h"
+
+1274703994 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Games/XZISTGames-xDan/ShooterSource/source/Effects.cpp
+	"Effects.h"
+	"ParabolaAnimator.h"
+
+1181788242 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Games/XZISTGames-xDan/ShooterSource/source/ParabolaAnimator.h
+	"ISceneNode.h"
+
+1379563733 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Games/XZISTGames-xDan/ShooterSource/source/main.cpp
+	<stdlib.h>
+	<irrlicht.h>
+	"Game.h"
+	"OS.h"
+
+1379562991 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Games/XZISTGames-xDan/ShooterSource/source/Game.h
+	"TargetManager.h"
+	<irrlicht.h>
+	"AttributeBarManager.h"
+	<vector>
+
+1274704026 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Games/XZISTGames-xDan/ShooterSource/source/TargetManager.h
+	<vector>
+	"Target.h"
+	<irrlicht.h>
+
+1183065194 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Games/XZISTGames-xDan/ShooterSource/source/OS.h
+
+1379563559 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Games/XZISTGames-xDan/ShooterSource/source/OS.cpp
+
+1274704369 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Games/XZISTGames-xDan/ShooterSource/source/ParabolaAnimator.cpp
+	"ParabolaAnimator.h"
+
+1379563083 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Games/XZISTGames-xDan/ShooterSource/source/Person.cpp
+	"Person.h"
+
+1274704369 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Games/XZISTGames-xDan/ShooterSource/source/Person.h
+	"Target.h"
+
+1379563149 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Games/XZISTGames-xDan/ShooterSource/source/Target.cpp
+	"Target.h"
+	<assert.h>
+
+1379563202 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Games/XZISTGames-xDan/ShooterSource/source/TargetManager.cpp
+	"TargetManager.h"
+	"Person.h"
+	"Duck.h"
+	"UFO.h"
+	"Demon.h"
+
+1379563175 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Games/XZISTGames-xDan/ShooterSource/source/UFO.h
+	"Target.h"
+
+1379563462 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Games/XZISTGames-xDan/ShooterSource/source/UFO.cpp
+	"UFO.h"
+
+1581298794 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Games/XZISTGames-xDan/ShooterSource/source/Game.cpp
+	"Game.h"
+	"OS.h"
 

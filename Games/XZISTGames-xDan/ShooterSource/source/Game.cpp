@@ -352,6 +352,7 @@ bool Game::run()
 
                 startTime = timer->getTime();
             }
+            device->sleep(20);
 
             int fps = driver->getFPS();
 

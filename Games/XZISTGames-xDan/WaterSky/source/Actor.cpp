@@ -11,30 +11,30 @@ Actor::Actor(WorldBase *world)
 void Actor::update(f32 dt)
 {
     // Rotate towards an angle
-    
+
     f32 currentAngle = sceneNode->getRotation().Y * M_PI/180.0;
-    
+
     core::vector2df currentAim = core::vector2df(
         cos(currentAngle),
         -sin(currentAngle)
         );
-    
+
     currentAim.normalize();
     currentAim = currentAim.getInterpolated(desiredAim, 1.0 - (10.0*dt));
-    
+
     core::vector3df newRotation = sceneNode->getRotation();
     newRotation.Y = currentAim.getAngle();
-    
+
     sceneNode->setRotation(newRotation);
-    
+
     if (dAnimator)
     {
         dAnimator->addTorqueDamping(0.1);
     }
-    
+
     // Remove any objects from list that no longer exist...
     pruneObjectsCarrying();
-    
+
     // update positions of anything it is carrying
     core::vector3df pos = sceneNode->getPosition();
     pos.Y += sceneNode->getBoundingBox().MaxEdge.Y;
@@ -72,9 +72,9 @@ core::array <dBodyID> *Actor::getBodies()
 void Actor::setNextAnimation(ANIMATION anim)
 {
     if (anim == currentAnimation || anim == nextAnimation) return;
-    
+
     nextAnimation = anim;
-    
+
     scene::IAnimatedMeshSceneNode *amSceneNode = (scene::IAnimatedMeshSceneNode *)sceneNode;
     amSceneNode->setAnimationEndCallback(this);
     amSceneNode->setLoopMode(false);
@@ -89,25 +89,25 @@ void Actor::setAnimation(ANIMATION anim)
 {
     currentAnimation = anim;
     nextAnimation = ANIM_UNSET;
-    
+
     scene::IAnimatedMeshSceneNode *amSceneNode = (scene::IAnimatedMeshSceneNode *)sceneNode;
     amSceneNode->setLoopMode(true);
     //amSceneNode->setAnimationSpeed(6000);
-    
+
     if (currentAnimation < (int)anims.size() && currentAnimation != ANIM_UNSET)
     {
         if (anims[currentAnimation].set)
         {
             amSceneNode->setFrameLoop(anims[currentAnimation].startFrame, anims[currentAnimation].endFrame);
-            if (anims[currentAnimation].sound.size() && soundAnimator)
-            {
-                soundAnimator->clearAll();
-                soundAnimator->play(anims[currentAnimation].sound.c_str(), SOUNDANIM_ENQUEUE|SOUNDANIM_LOOP);
-            }
-            else if (soundAnimator)
-            {
-                soundAnimator->breakLoop();
-            }
+//            if (anims[currentAnimation].sound.size() && soundAnimator)
+//            {
+//                soundAnimator->clearAll();
+//                soundAnimator->play(anims[currentAnimation].sound.c_str(), SOUNDANIM_ENQUEUE|SOUNDANIM_LOOP);
+//            }
+//            else if (soundAnimator)
+//            {
+//                soundAnimator->breakLoop();
+//            }
         }
         else
         {
@@ -118,7 +118,7 @@ void Actor::setAnimation(ANIMATION anim)
     {
         printf("Actor::setAnimation: Animation not present!\n");
     }
-    
+
     // FOLLOWING SWITCH() SHOULD PROBABLY BE IN DERIVED CLASS.
     // e.g. virtual void onAnimationChange() = 0;
     // Heck, could even load it from XML!
@@ -154,7 +154,7 @@ void Actor::defineAnimation(ANIMATION anim, int startFrame, int endFrame, char *
         AnimationCycle a = { false,0,0,"" };
         anims.push_back( a );
     }
-    
+
     anims[anim].set = true;
     anims[anim].startFrame = startFrame;
     anims[anim].endFrame = endFrame;

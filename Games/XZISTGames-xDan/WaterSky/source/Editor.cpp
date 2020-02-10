@@ -8,7 +8,7 @@ Editor::Editor(IrrlichtDevice *device)
     editing = false;
     accurateObjectPositioning = false;
     multipleObjectSelect = false;
-    
+
     player = NULL;
     thirdPersonCamera = new ThirdPersonCamera(this);
 }
@@ -16,12 +16,12 @@ Editor::Editor(IrrlichtDevice *device)
 void Editor::initEditor()
 {
     // Window caption
-    device->setWindowCaption( xTranslation->getChildNode(L"window").getAttribute(L"caption") );
-    
+//    device->setWindowCaption( xTranslation->getChildNode(L"window").getAttribute(L"caption") );
+
     // Game Editor language
     XMLNode xEditor = xTranslation->getChildNode(L"editor");
     XMLNode xObjectNames = xEditor.getChildNode(L"objectNames");
-    
+
     // NOTE: These must be in the same order as OBJECT_TYPE_STRINGS in Object.cpp
     objectNames.push_back( xObjectNames.getChildNode(OBJECT_TYPE_STRINGS[OBJECT_TYPE_PLATFORM]).getAttribute(L"name") );
     objectNames.push_back( xObjectNames.getChildNode(OBJECT_TYPE_STRINGS[OBJECT_TYPE_SCENERY]).getAttribute(L"name") );
@@ -30,7 +30,7 @@ void Editor::initEditor()
     objectNames.push_back( xObjectNames.getChildNode(OBJECT_TYPE_STRINGS[OBJECT_TYPE_LIFT]).getAttribute(L"name") );
     objectNames.push_back( xObjectNames.getChildNode(OBJECT_TYPE_STRINGS[OBJECT_TYPE_BLOCK]).getAttribute(L"name") );
     objectNames.push_back( xObjectNames.getChildNode(OBJECT_TYPE_STRINGS[OBJECT_TYPE_CREATURE]).getAttribute(L"name") );
-    
+
     // Load world...
     loadWorld(L"game");
 }
@@ -38,7 +38,7 @@ void Editor::initEditor()
 void Editor::startEditor()
 {
     editing = true;
-    
+
     // Add new camera
     oldCamera = smgr->getActiveCamera();
     SKeyMap keyMap[8];
@@ -62,10 +62,10 @@ void Editor::startEditor()
     editCamera->setPosition(oldCamera->getPosition());
     editCamera->setTarget(oldCamera->getTarget());
     editCamera->setInputReceiverEnabled(false);
-    
+
     // Create editor GUI
     guienv->loadGUI("editor.xml");
-    
+
     // Hide window close buttons (using own one)
     getWindowFromID(WINDOW_WORLD_EDITOR)->getCloseButton()->setVisible(false);
     getWindowFromID(WINDOW_ADD_OBJECT)->getCloseButton()->setVisible(false);
@@ -73,14 +73,14 @@ void Editor::startEditor()
     getWindowFromID(WINDOW_CREATE_PLATFORM)->getCloseButton()->setVisible(false);
     getWindowFromID(WINDOW_CREATE_SCENERY)->getCloseButton()->setVisible(false);
     getWindowFromID(WINDOW_WORLD_NAME)->getCloseButton()->setVisible(false);
-    
+
     // Hide sub windows to start with
     getWindowFromID(WINDOW_OBJECT_SETTINGS)->setVisible(false);
     getWindowFromID(WINDOW_ADD_OBJECT)->setVisible(false);
     getWindowFromID(WINDOW_CREATE_PLATFORM)->setVisible(false);
     getWindowFromID(WINDOW_CREATE_SCENERY)->setVisible(false);
     getWindowFromID(WINDOW_WORLD_NAME)->setVisible(false);
-    
+
     // Populate Add Object list
     objDefListBox = (gui::IGUIListBox *)guienv->getRootGUIElement()->
         getElementFromId(LISTBOX_DEFINED_OBJECTS, true);
@@ -88,26 +88,26 @@ void Editor::startEditor()
     {
         objDefListBox->addItem(objectNames[i].c_str());
     }
-    
+
     curcon->setVisible(true);
 }
 
 void Editor::stopEditor()
 {
     deselectObjects();
-    
+
     editing = false;
     guienv->clear();
     curcon->setVisible(false);
     curcon->setPosition(0.5f,0.5f);
-    
+
     // Restore old camera
     smgr->setActiveCamera(oldCamera);
 }
 
 bool Editor::editorOnEvent(SEvent e)
 {
-    
+
     if (e.EventType == EET_KEY_INPUT_EVENT)
     {
         if (e.KeyInput.Key == KEY_SPACE)
@@ -119,7 +119,7 @@ bool Editor::editorOnEvent(SEvent e)
             multipleObjectSelect = e.KeyInput.PressedDown;
         }
     }
-    
+
     if (e.EventType == EET_KEY_INPUT_EVENT && e.KeyInput.PressedDown)
     {
         switch (e.KeyInput.Key)
@@ -130,7 +130,7 @@ bool Editor::editorOnEvent(SEvent e)
         default:
             break;
         }
-        
+
         // Can move object with: WSAD,RF
         // As long as no GUI element has focus and camera is not using input.
         if (selectedObjects.size()
@@ -138,9 +138,9 @@ bool Editor::editorOnEvent(SEvent e)
             && !editCamera->isInputReceiverEnabled())
         {
             f32 angle = (editCamera->getTarget() - editCamera->getPosition()).getHorizontalAngle().Y*0.017453;
-            
+
             core::vector3df moveVec;
-            
+
             switch (e.KeyInput.Key)
             {
             case KEY_KEY_W:
@@ -168,21 +168,21 @@ bool Editor::editorOnEvent(SEvent e)
             default:
                 break;
             }
-            
+
             if (moveVec.getLength() > 0.0)
             {
                 moveVec.normalize();
                 moveVec *= 0.5;
-                
+
                 // smaller movements when a certain key is being held down
                 if (accurateObjectPositioning) moveVec *= 0.05;
-                
+
                 // But which object position is being modified?
                 // (actual position, or one of its control points?)
                 s32 point = ((gui::IGUIComboBox *)guienv->getRootGUIElement()
                     ->getElementFromId(COMBOBOX_ACTIVE_POINT, true))
                     ->getSelected();
-                
+
                 if (point <= 0) // Main object position
                 {
                     // Move ALL selected objects
@@ -200,14 +200,14 @@ bool Editor::editorOnEvent(SEvent e)
                 }
             }
         }
-        
+
     }
-    
+
     if (e.EventType == EET_GUI_EVENT)
     {
-        
+
         s32 id = e.GUIEvent.Caller->getID();
-        
+
         switch (e.GUIEvent.EventType)
         {
         case gui::EGET_BUTTON_CLICKED:
@@ -238,27 +238,27 @@ bool Editor::editorOnEvent(SEvent e)
                 guienv->getRootGUIElement()->getElementFromId(EDITBOX_WORLD_NAME, true)->setText(worldName.c_str());
                 getWindowFromID(WINDOW_WORLD_NAME)->setVisible(true);
                 return true;
-            
+
             // World Name buttons
-            
+
             case BUTTON_WORLD_NAME_CANCEL:
                 getWindowFromID(WINDOW_WORLD_NAME)->setVisible(false);
                 return true;
-                
+
             case BUTTON_WORLD_NAME_OK:
             {
                 getWindowFromID(WINDOW_WORLD_NAME)->setVisible(false);
-                
+
                 core::stringw chosenName = guienv->getRootGUIElement()
                     ->getElementFromId(EDITBOX_WORLD_NAME, true)->getText();
-                
+
                 if (!chosenName.size())
                 {
                     getWindowFromID(WINDOW_WORLD_NAME)->setVisible(true);
                     errorMsg(L"noFilenameSpecified");
                     return false;
                 }
-                
+
                 switch (worldOperation)
                 {
                 case WORLD_OPERATION_NEW:
@@ -291,10 +291,10 @@ bool Editor::editorOnEvent(SEvent e)
                     saveWorld(worldFilePath, chosenName);
                     return true;
                 }
-                
+
                 return true;
             }
-            
+
             // Add Object buttons
             case BUTTON_ADD_OBJECT_CLOSE:
                 getWindowFromID(WINDOW_ADD_OBJECT)->setVisible(false);
@@ -311,31 +311,31 @@ bool Editor::editorOnEvent(SEvent e)
                 }
                 getWindowFromID(WINDOW_ADD_OBJECT)->setVisible(false);
                 return true;
-            
+
             // Platform create options
             case BUTTON_CREATE_PLATFORM_CANCEL:
                 getWindowFromID(WINDOW_CREATE_PLATFORM)->setVisible(false);
                 return true;
-            
+
             case BUTTON_CREATE_PLATFORM_OK:
                 createObject(OBJECT_TYPE_PLATFORM,
                     (void *)guienv->getRootGUIElement()->getElementFromId(EDITBOX_PLATFORM_MESHNAME, true)->getText()
                     );
                 getWindowFromID(WINDOW_CREATE_PLATFORM)->setVisible(false);
                 return true;
-                
+
             // Scenery create options
             case BUTTON_CREATE_SCENERY_CANCEL:
                 getWindowFromID(WINDOW_CREATE_SCENERY)->setVisible(false);
                 return true;
-            
+
             case BUTTON_CREATE_SCENERY_OK:
                 createObject(OBJECT_TYPE_SCENERY,
                     (void *)guienv->getRootGUIElement()->getElementFromId(EDITBOX_SCENERY_MESHNAME, true)->getText()
                     );
                 getWindowFromID(WINDOW_CREATE_SCENERY)->setVisible(false);
                 return true;
-            
+
             // Object Settings buttons
             case BUTTON_DELETE_OBJECT:
                 // Remove first selected and deselect all others.
@@ -368,7 +368,7 @@ bool Editor::editorOnEvent(SEvent e)
                 }
             }
             break;
-        
+
         case gui::EGET_SCROLL_BAR_CHANGED:
             switch (id)
             {
@@ -376,12 +376,12 @@ bool Editor::editorOnEvent(SEvent e)
                 s32 point = ((gui::IGUIComboBox *)guienv->getRootGUIElement()
                     ->getElementFromId(COMBOBOX_ACTIVE_POINT, true))
                     ->getSelected();
-                
+
                 core::vector3df rot = core::vector3df(
                     0,
                     ((gui::IGUIScrollBar *)e.GUIEvent.Caller)->getPos(),
                     0);
-                
+
                 if (point <= 0)
                 {
                     selectedObjects[0]->setRotation(rot);
@@ -390,11 +390,11 @@ bool Editor::editorOnEvent(SEvent e)
                 {
                     selectedObjects[0]->getPoint(point-1).rot = rot;
                 }
-                
+
                 return true;
             }
             break;
-        
+
         case gui::EGET_COMBO_BOX_CHANGED:
             switch (id)
             {
@@ -404,7 +404,7 @@ bool Editor::editorOnEvent(SEvent e)
                 break;
             }
             break;
-        
+
         case gui::EGET_CHECKBOX_CHANGED:
             switch (id)
             {
@@ -415,12 +415,12 @@ bool Editor::editorOnEvent(SEvent e)
                 return true;
             }
             break;
-        
+
         default:
             break;
         }
     }
-    
+
     if (e.EventType == EET_MOUSE_INPUT_EVENT)
     {
         switch (e.MouseInput.Event)
@@ -438,7 +438,7 @@ bool Editor::editorOnEvent(SEvent e)
                 getWindowFromID(WINDOW_CREATE_PLATFORM)->setVisible(false);
                 getWindowFromID(WINDOW_CREATE_SCENERY)->setVisible(false);
                 getWindowFromID(WINDOW_WORLD_NAME)->setVisible(false);
-                
+
                 // returning true prevents GUI from acting on this click
                 // (i.e. so a button in object settings is not pressed accidentally)
                 return true;
@@ -454,7 +454,7 @@ bool Editor::editorOnEvent(SEvent e)
             break;
         }
     }
-    
+
     return false;
 }
 
@@ -462,16 +462,16 @@ void Editor::renderRelations()
 {
     Object *selectedObject = NULL;
     s32 point = -1;
-    
+
     if (selectedObjects.size())
     {
         selectedObject = selectedObjects[0];
-        
+
         point = ((gui::IGUIComboBox *)guienv->getRootGUIElement()
             ->getElementFromId(COMBOBOX_ACTIVE_POINT, true))
             ->getSelected();
     }
-    
+
     for (u32 i = 0; i < objects->size(); i ++)
     {
         (*objects)[i]->renderRelations(
@@ -485,12 +485,12 @@ void Editor::saveWorld(core::stringw path, core::stringw filename)
 {
     worldName = filename;
     filename = path + filename + L".world";
-    
+
     XMLNode xWorld;
     saveWorld(xWorld);
-    
+
     XMLError err = xWorld.writeToFile(filename.c_str(), NULL, 1);
-    
+
     if (err != eXMLErrorNone)
     {
         // Error!
@@ -500,9 +500,9 @@ void Editor::saveWorld(core::stringw path, core::stringw filename)
 void Editor::saveWorld(XMLNode &xWorld)
 {
     xWorld = XMLNode::createXMLTopNode(L"world");
-    
+
     XMLNode xObjectList = xWorld.addChild(L"objectList");
-    
+
     for (u32 i = 0; i < objects->size(); i ++)
     {
         XMLNode xObject = xObjectList.addChild(L"object");
@@ -515,30 +515,30 @@ void Editor::loadWorld(core::stringw filename)
     // open XML
     // for objects, get type ID from type name (index into TYPE_NAMES is the ID)
     // then createObject(type, xObject)
-    
+
     worldName = filename;
     filename = worldFilePath + filename + L".world";
-    
+
     XMLNode xWorld = XMLNode::openFileHelper(filename.c_str(), L"world");
-    
+
     loadWorld(xWorld);
 }
 
 void Editor::loadWorld(XMLNode &xWorld)
 {
     clearObjects();
-    
+
     XMLNode xObjectList = xWorld.getChildNode(L"objectList");
-    
+
     int objectListSize = xObjectList.nChildNode(L"object");
-    
+
     for (int i = 0; i < objectListSize; i ++)
     {
         XMLNode xObject = xObjectList.getChildNode(L"object", i);
-        
+
         createObject( OBJECT_TYPE_FROM_STRING(xObject.getAttribute(L"type", 0)) , &xObject);
     }
-    
+
     if (!player)
     {
         printf("No player, so default one created.\n");
@@ -559,7 +559,7 @@ void Editor::clearObjects()
 void Editor::createPlayer()
 {
     if (player) delete player;
-    
+
     player = new Player(this);
     thirdPersonCamera->setup(player->getNode());
 }
@@ -598,7 +598,7 @@ void Editor::createObject(s32 type, XMLNode *xObject)
         printf("Error: createObject (XML): Invalid Object %i!\n", type);
         return;
     }
-    
+
     if (newObj) newObj->deserializeFromXML(*xObject);
 }
 
@@ -609,11 +609,11 @@ void Editor::createObject(s32 type, XMLNode *xObject)
 void Editor::createObject(s32 type, void *extraData)
 {
     core::vector3df pos = chooseNewObjectPosition();
-    
+
     // If created in editor...
     switch (type)
     {
-    
+
     case OBJECT_TYPE_PLATFORM:
         if (extraData)
         {
@@ -633,7 +633,7 @@ void Editor::createObject(s32 type, void *extraData)
             return;
         }
         break;
-        
+
     case OBJECT_TYPE_SCENERY:
         if (extraData)
         {
@@ -653,17 +653,17 @@ void Editor::createObject(s32 type, void *extraData)
             return;
         }
         break;
-    
+
     case OBJECT_TYPE_GENERATOR:
         new Generator(this,
             pos,
             core::vector3df(0,0,0));
         break;
-    
+
     case OBJECT_TYPE_FUELCAN:
         new FuelCan(this, pos);
         break;
-    
+
     case OBJECT_TYPE_LIFT:
     {
         if (extraData) // is two LocRots, start and end.
@@ -681,21 +681,21 @@ void Editor::createObject(s32 type, void *extraData)
         }
         break;
     }
-    
+
     case OBJECT_TYPE_BLOCK:
         new Block(this, pos);
         break;
-    
+
     case OBJECT_TYPE_CREATURE:
         new Creature(this, pos);
         break;
-    
+
     default:
         // No object could be created, so return
         printf("Error: createObject: Invalid Object! %i\n", type);
         return;
     }
-    
+
     // Select newly added object
     selectObject( (*objects)[objects->size() - 1] );
 }
@@ -703,11 +703,11 @@ void Editor::createObject(s32 type, void *extraData)
 core::vector3df Editor::chooseNewObjectPosition()
 {
     core::vector3df pos = editCamera->getPosition() - editCamera->getTarget().normalize()*4.0;
-    
+
     pos.X += rand()%100 / 100.0;
     pos.Y += rand()%100 / 100.0;
     pos.Z += rand()%100 / 100.0;
-    
+
     return pos;
 }
 
@@ -716,10 +716,10 @@ core::stringw Editor::getTime()
     time_t rawtime;
     time(&rawtime);
     tm *theTime = localtime(&rawtime);
-    
+
     char tstr[256];
     strftime(tstr,256, "%d-%m-%Y %H.%M.%S", theTime);
-    
+
     return core::stringw(tstr);
 }
 
@@ -756,7 +756,7 @@ void Editor::objectSelectByMouse()
 {
     core::line3df ray = smgr->getSceneCollisionManager()->
         getRayFromScreenCoordinates(curcon->getPosition(), editCamera);
-    
+
     // Problems may be caused here by non-object scene nodes.
     // e.g. Light has a large radius, and will prevent objects behind it
     // from being selected.
@@ -773,7 +773,7 @@ Object *Editor::selectObject(Object *obj)
     {
         if (selectedObjects[i] == obj) return NULL;
     }
-    
+
     if (obj)
     {
         // If is not selecting multiple objects, then deselect all previously selected.
@@ -790,7 +790,7 @@ Object *Editor::selectObject(Object *obj)
     {
         deselectObjects();
     }
-    
+
     return obj; // Return newly selected object (NOT first selected)
 }
 
@@ -814,7 +814,7 @@ Object *Editor::deselectObjects()
 
 void Editor::fillObjectSettings()
 {
-    
+
     // Fill active position list
     gui::IGUIComboBox *box = (gui::IGUIComboBox *)guienv->getRootGUIElement()
         ->getElementFromId(COMBOBOX_ACTIVE_POINT, true);
@@ -829,7 +829,7 @@ void Editor::fillObjectSettings()
         str += i;
         box->addItem(str.c_str());
     }
-    
+
     updateObjectSettings();
 }
 
@@ -838,7 +838,7 @@ void Editor::updateObjectSettings()
     // Add points button visible?
     guienv->getRootGUIElement()->getElementFromId(BUTTON_NEW_POINT, true)
         ->setVisible( !selectedObjects[0]->isLimitedPoints() );
-    
+
     // Yaw rotation scrollbar
     s32 point = ((gui::IGUIComboBox *)guienv->getRootGUIElement()
         ->getElementFromId(COMBOBOX_ACTIVE_POINT, true))
@@ -854,7 +854,7 @@ void Editor::updateObjectSettings()
     }
     ((gui::IGUIScrollBar *)guienv->getRootGUIElement()->getElementFromId(SCROLLBAR_ROTATION_YAW, true))
         ->setPos(rot);
-    
+
     // Activated check box
     ((gui::IGUICheckBox *)guienv->getRootGUIElement()->getElementFromId(CHECKBOX_ACTIVATED, true))
         ->setChecked(selectedObjects[0]->isActive());

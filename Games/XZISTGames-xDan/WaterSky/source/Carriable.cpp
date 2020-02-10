@@ -20,11 +20,11 @@ void Carriable::update(f32 dt)
             {
                 ((Actor *)actor)->carry(this);
                 beingCarried = true;
-                
-                if (soundAnimator && pickUpSound.size())
-                {
-                    soundAnimator->play(pickUpSound, 0);
-                }
+
+//                if (soundAnimator && pickUpSound.size())
+//                {
+//                    soundAnimator->play(pickUpSound, 0);
+//                }
             }
         }
     }

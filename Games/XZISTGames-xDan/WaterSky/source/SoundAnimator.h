@@ -3,7 +3,7 @@
 #define __SoundAnimator_h
 
 #include "ISceneNode.h"
-#include <irrKlang.h>
+//#include <irrKlang.h>
 
 using namespace irr;
 
@@ -20,7 +20,7 @@ struct Sound
 {
     core::stringc fileName;
     u32 flags;
-    audio::ISound *isound;
+//    audio::ISound *isound;
     bool started;
     u32 lastPlayPosition;
 };
@@ -28,25 +28,25 @@ struct Sound
 class SoundAnimator : public scene::ISceneNodeAnimator
 {
 public:
-    SoundAnimator(audio::ISoundEngine *);
+//    SoundAnimator(audio::ISoundEngine *);
     ~SoundAnimator();
-    
+
     void clearAll();
-    audio::ISound *play(core::stringc, u32);
+  //  audio::ISound *play(core::stringc, u32);
     void breakLoop();
-    
+
     void animateNode(scene::ISceneNode *, u32);
-    
+
     // should only set one animator as listener
     // (e.g. attached to camera scene node)
     void setAsListener(bool);
-    
+
 private:
-    audio::ISoundEngine *sengine;
+//    audio::ISoundEngine *sengine;
     u32 lastTimeMs;
     bool listener;
     core::vector3df lastPos;
-    
+
     core::array <Sound> sounds;
 };
 
