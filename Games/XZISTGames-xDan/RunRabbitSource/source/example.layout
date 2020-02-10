@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="All" />
+	<File name="carrots.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="5405" topLine="155" />
+	</File>
+	<File name="event.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="968" topLine="36" />
+	</File>
+	<File name="main.cpp" open="1" top="1" tabpos="3">
+		<Cursor position="1690" topLine="33" />
+	</File>
+	<File name="misc.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="71" topLine="0" />
+	</File>
+	<File name="platforms.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="1327" topLine="39" />
+	</File>
+	<File name="rabbit.cpp" open="1" top="0" tabpos="6">
+		<Cursor position="5867" topLine="148" />
+	</File>
+	<File name="text.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="558" topLine="3" />
+	</File>
+</CodeBlocks_layout_file>

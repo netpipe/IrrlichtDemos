@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ODEblocks" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./ODEblocks" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/game/irrlicht/Irrlicht-SVN/include" />
+			<Add directory="/home/Dev/libs/physics/ODE/ode-0.13/include" />
+			<Add directory="./" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="ode" />
+			<Add library="pthread" />
+			<Add library="X11" />
+			<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux" />
+			<Add directory="/home/Dev/libs/physics/ODE/ode-0.13/ode/src/.libs" />
+		</Linker>
+		<Unit filename="CBeamNode.h" />
+		<Unit filename="CTileNode.cpp" />
+		<Unit filename="CTileNode.h" />
+		<Unit filename="TileMap.cpp" />
+		<Unit filename="TileMap.h" />
+		<Unit filename="collision.cpp" />
+		<Unit filename="collision.h" />
+		<Unit filename="debug.h" />
+		<Unit filename="entity.cpp" />
+		<Unit filename="entity.h" />
+		<Unit filename="event.h" />
+		<Unit filename="hovercraft.cpp" />
+		<Unit filename="hovercraft.h" />
+		<Unit filename="irrInfo.h" />
+		<Unit filename="level.cpp" />
+		<Unit filename="level.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="servo.cpp" />
+		<Unit filename="servo.h" />
+		<Unit filename="spaceship.cpp" />
+		<Unit filename="spaceship.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

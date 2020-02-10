@@ -1,0 +1,475 @@
+Irrlicht Engine version 1.9.0
+Linux 4.12.14-lp150.12.82-default #1 SMP Tue Nov 12 16:32:38 UTC 2019 (c939e24) x86_64
+Creating X window...
+GLX >= 1.3
+Visual chosen: : 322
+Using renderer: OpenGL 3.0
+Mesa DRI Intel(R) HD Graphics (Coffeelake 3x8 GT2) : Intel Open Source Technology Center
+OpenGL driver version is 1.2 or better.
+GLSL version: 1.3
+-read ChunkTEXS
+read Texture: wall.jpg
+Flags: 1
+Blend: 2
+read Texture: wall.jpg
+Flags: 1
+Blend: 2
+read Texture: grass.jpg
+Flags: 1
+Blend: 2
+read Texture: grass.jpg
+Flags: 1
+Blend: 2
+-read ChunkBRUS
+read Material: Wall
+Blend: 1
+FX: 0
+Layer: 0
+using texture: wall.jpg
+-read ChunkBRUS
+read Material: grass
+Blend: 1
+FX: 0
+Layer: 0
+using texture: grass.jpg
+-read ChunkBRUS
+read Material: wall.jpg
+Blend: 1
+FX: 0
+Layer: 0
+using texture: wall.jpg
+-read ChunkBRUS
+read Material: grass.jpg
+Blend: 1
+FX: 0
+Layer: 0
+using texture: grass.jpg
+-read ChunkNODE: root
+--read ChunkMESH
+---ChunkVRTS
+---ChunkTRIS
+Loaded texture: wall.jpg
+---ChunkTRIS
+Loaded texture: grass.jpg
+Skinned Mesh - finalize
+Loaded mesh: walls.b3d
+-read ChunkTEXS
+read Texture: person.tga
+Flags: 1
+Blend: 2
+-read ChunkBRUS
+read Material: Material
+Blend: 1
+FX: 0
+-read ChunkBRUS
+read Material: person.tga
+Blend: 1
+FX: 0
+Layer: 0
+using texture: person.tga
+-read ChunkNODE: root
+--read ChunkMESH
+---ChunkVRTS
+---ChunkTRIS
+Loaded texture: person.tga
+--read ChunkANIM
+FPS: 24.000000
+--read ChunkNODE: body
+---read ChunkBONE
+---read ChunkKEYS
+---read ChunkNODE: armright
+----read ChunkBONE
+----read ChunkKEYS
+---read ChunkNODE: armleft
+----read ChunkBONE
+----read ChunkKEYS
+---read ChunkNODE: head
+----read ChunkBONE
+----read ChunkKEYS
+--read ChunkNODE: legleft
+---read ChunkBONE
+---read ChunkKEYS
+--read ChunkNODE: legright
+---read ChunkBONE
+---read ChunkKEYS
+Skinned Mesh - finalize
+Loaded mesh: person.b3d
+debug DataObject:: template
+CXFileReader: Reading template
+debug DataObject:: template
+CXFileReader: Reading template
+debug DataObject:: template
+CXFileReader: Reading template
+debug DataObject:: Frame
+CXFileReader: Reading frame
+creating joint : RootFrame
+debug DataObject in frame:: FrameTransformMatrix
+CXFileReader: Reading Transformation Matrix
+debug DataObject in frame:: Frame
+CXFileReader: Reading frame
+creating joint : Cube
+debug DataObject in frame:: FrameTransformMatrix
+CXFileReader: Reading Transformation Matrix
+debug DataObject in frame:: Mesh
+CXFileReader: Reading mesh: 
+debug DataObject in mesh:: MeshMaterialList
+CXFileReader: Reading mesh material list
+CXFileReader: Reading mesh material
+CXFileReader: Reading mesh material
+CXFileReader: reading texture filename
+Loaded texture: duck_body.tga
+debug DataObject in mesh:: MeshNormals
+CXFileReader: reading mesh normals
+debug DataObject in mesh:: MeshTextureCoords
+CXFileReader: reading mesh texture coordinates
+debug DataObject in frame:: Frame
+CXFileReader: Reading frame
+creating joint : Cube001
+debug DataObject in frame:: FrameTransformMatrix
+CXFileReader: Reading Transformation Matrix
+debug DataObject in frame:: Mesh
+CXFileReader: Reading mesh: 
+debug DataObject in mesh:: MeshMaterialList
+CXFileReader: Reading mesh material list
+CXFileReader: Reading mesh material
+CXFileReader: Reading mesh material
+CXFileReader: reading texture filename
+Loaded texture: duck_leg.tga
+debug DataObject in mesh:: MeshNormals
+CXFileReader: reading mesh normals
+debug DataObject in mesh:: MeshTextureCoords
+CXFileReader: reading mesh texture coordinates
+debug DataObject in frame:: }
+debug DataObject in frame:: Frame
+CXFileReader: Reading frame
+creating joint : Cube002
+debug DataObject in frame:: FrameTransformMatrix
+CXFileReader: Reading Transformation Matrix
+debug DataObject in frame:: Mesh
+CXFileReader: Reading mesh: 
+debug DataObject in mesh:: MeshMaterialList
+CXFileReader: Reading mesh material list
+CXFileReader: Reading mesh material
+CXFileReader: Reading mesh material
+CXFileReader: reading texture filename
+debug DataObject in mesh:: MeshNormals
+CXFileReader: reading mesh normals
+debug DataObject in mesh:: MeshTextureCoords
+CXFileReader: reading mesh texture coordinates
+debug DataObject in frame:: }
+debug DataObject in frame:: }
+debug DataObject in frame:: Frame
+CXFileReader: Reading frame
+creating joint : Cube003
+debug DataObject in frame:: FrameTransformMatrix
+CXFileReader: Reading Transformation Matrix
+debug DataObject in frame:: Mesh
+CXFileReader: Reading mesh: 
+debug DataObject in mesh:: MeshMaterialList
+CXFileReader: Reading mesh material list
+CXFileReader: Reading mesh material
+CXFileReader: Reading mesh material
+CXFileReader: reading texture filename
+Loaded texture: duck_beak.tga
+debug DataObject in mesh:: MeshNormals
+CXFileReader: reading mesh normals
+debug DataObject in mesh:: MeshTextureCoords
+CXFileReader: reading mesh texture coordinates
+debug DataObject in frame:: }
+debug DataObject in frame:: }
+debug DataObject:: AnimationSet
+CXFileReader: Reading animation set
+Reading animationset : 
+CXFileReader: reading animation
+CXFileReader: reading animation key
+frame name: Cube
+CXFileReader: reading animation
+CXFileReader: reading animation key
+frame name: Cube001
+CXFileReader: reading animation
+CXFileReader: reading animation key
+frame name: Cube002
+CXFileReader: reading animation
+CXFileReader: reading animation key
+frame name: Cube003
+Skinned Mesh - finalize
+Skinned Mesh - redundant position frames kicked:: 8
+Time to load ascii X file: 1ms
+Loaded mesh: duck.x
+debug DataObject:: template
+CXFileReader: Reading template
+debug DataObject:: template
+CXFileReader: Reading template
+debug DataObject:: template
+CXFileReader: Reading template
+debug DataObject:: Frame
+CXFileReader: Reading frame
+creating joint : RootFrame
+debug DataObject in frame:: FrameTransformMatrix
+CXFileReader: Reading Transformation Matrix
+debug DataObject in frame:: Frame
+CXFileReader: Reading frame
+creating joint : Sphere
+debug DataObject in frame:: FrameTransformMatrix
+CXFileReader: Reading Transformation Matrix
+debug DataObject in frame:: Mesh
+CXFileReader: Reading mesh: 
+debug DataObject in mesh:: MeshMaterialList
+CXFileReader: Reading mesh material list
+CXFileReader: Reading mesh material
+CXFileReader: Reading mesh material
+CXFileReader: reading texture filename
+Loaded texture: ufo_silver.tga
+debug DataObject in mesh:: MeshNormals
+CXFileReader: reading mesh normals
+debug DataObject in mesh:: MeshTextureCoords
+CXFileReader: reading mesh texture coordinates
+debug DataObject in frame:: }
+debug DataObject in frame:: Frame
+CXFileReader: Reading frame
+creating joint : Sphere001
+debug DataObject in frame:: FrameTransformMatrix
+CXFileReader: Reading Transformation Matrix
+debug DataObject in frame:: Mesh
+CXFileReader: Reading mesh: 
+debug DataObject in mesh:: MeshMaterialList
+CXFileReader: Reading mesh material list
+CXFileReader: Reading mesh material
+CXFileReader: Reading mesh material
+CXFileReader: reading texture filename
+Loaded texture: ufo_glass.tga
+debug DataObject in mesh:: MeshNormals
+CXFileReader: reading mesh normals
+debug DataObject in mesh:: MeshTextureCoords
+CXFileReader: reading mesh texture coordinates
+debug DataObject in frame:: }
+debug DataObject in frame:: Frame
+CXFileReader: Reading frame
+creating joint : Tube
+debug DataObject in frame:: FrameTransformMatrix
+CXFileReader: Reading Transformation Matrix
+debug DataObject in frame:: Mesh
+CXFileReader: Reading mesh: 
+debug DataObject in mesh:: MeshMaterialList
+CXFileReader: Reading mesh material list
+CXFileReader: Reading mesh material
+debug DataObject in mesh:: MeshNormals
+CXFileReader: reading mesh normals
+debug DataObject in mesh:: MeshTextureCoords
+CXFileReader: reading mesh texture coordinates
+debug DataObject in frame:: }
+debug DataObject in frame:: Frame
+CXFileReader: Reading frame
+creating joint : Cylinder
+debug DataObject in frame:: FrameTransformMatrix
+CXFileReader: Reading Transformation Matrix
+debug DataObject in frame:: Mesh
+CXFileReader: Reading mesh: 
+debug DataObject in mesh:: MeshMaterialList
+CXFileReader: Reading mesh material list
+CXFileReader: Reading mesh material
+debug DataObject in mesh:: MeshNormals
+CXFileReader: reading mesh normals
+debug DataObject in frame:: }
+debug DataObject in frame:: Frame
+CXFileReader: Reading frame
+creating joint : Cube
+debug DataObject in frame:: FrameTransformMatrix
+CXFileReader: Reading Transformation Matrix
+debug DataObject in frame:: Mesh
+CXFileReader: Reading mesh: 
+debug DataObject in mesh:: MeshMaterialList
+CXFileReader: Reading mesh material list
+debug DataObject in mesh:: MeshNormals
+CXFileReader: reading mesh normals
+debug DataObject in frame:: }
+debug DataObject in frame:: }
+debug DataObject:: AnimationSet
+CXFileReader: Reading animation set
+Reading animationset : 
+CXFileReader: reading animation
+CXFileReader: reading animation key
+frame name: Sphere
+CXFileReader: reading animation
+CXFileReader: reading animation key
+frame name: Sphere001
+CXFileReader: reading animation
+CXFileReader: reading animation key
+frame name: Tube
+CXFileReader: reading animation
+CXFileReader: reading animation key
+frame name: Cylinder
+CXFileReader: reading animation
+CXFileReader: reading animation key
+frame name: Cube
+Skinned Mesh - finalize
+Time to load ascii X file: 38ms
+Loaded mesh: ufo.x
+-read ChunkTEXS
+read Texture: demon.tga
+Flags: 1
+Blend: 2
+-read ChunkBRUS
+read Material: demon.tga
+Blend: 1
+FX: 0
+Layer: 0
+using texture: demon.tga
+-read ChunkNODE: root
+--read ChunkMESH
+---ChunkVRTS
+---ChunkTRIS
+Loaded texture: demon.tga
+--read ChunkANIM
+FPS: 24.000000
+--read ChunkNODE: spine
+---read ChunkBONE
+---read ChunkKEYS
+---read ChunkNODE: shoulderright
+----read ChunkBONE
+----read ChunkKEYS
+----read ChunkNODE: armright
+-----read ChunkBONE
+-----read ChunkKEYS
+-----read ChunkNODE: arm2right
+------read ChunkBONE
+------read ChunkKEYS
+------read ChunkNODE: arm3right
+-------read ChunkBONE
+-------read ChunkKEYS
+---read ChunkNODE: shoulderleft
+----read ChunkBONE
+----read ChunkKEYS
+----read ChunkNODE: armleft
+-----read ChunkBONE
+-----read ChunkKEYS
+-----read ChunkNODE: arm2left
+------read ChunkBONE
+------read ChunkKEYS
+------read ChunkNODE: arm3left
+-------read ChunkBONE
+-------read ChunkKEYS
+---read ChunkNODE: neck
+----read ChunkBONE
+----read ChunkKEYS
+----read ChunkNODE: skull
+-----read ChunkBONE
+-----read ChunkKEYS
+---read ChunkNODE: hipright
+----read ChunkBONE
+----read ChunkKEYS
+----read ChunkNODE: legright
+-----read ChunkBONE
+-----read ChunkKEYS
+---read ChunkNODE: hipleft
+----read ChunkBONE
+----read ChunkKEYS
+----read ChunkNODE: legleft
+-----read ChunkBONE
+-----read ChunkKEYS
+Skinned Mesh - finalize
+Loaded mesh: demon.b3d
+Loaded texture: splatscreen.png
+Loaded texture: scorefont0.png
+Loaded texture: scorefont1.png
+Loaded texture: scorefont2.png
+Loaded texture: scorefont3.png
+Loaded texture: scorefont4.png
+Loaded texture: smallfont0.png
+Loaded texture: bar.png
+Loaded texture: wall3.jpg
+Loaded texture: intro.png
+Loaded texture: bang.tga
+-read ChunkTEXS
+read Texture: shell.png
+Flags: 1
+Blend: 2
+-read ChunkBRUS
+read Material: shell
+Blend: 1
+FX: 0
+-read ChunkBRUS
+read Material: shell.png
+Blend: 1
+FX: 0
+Layer: 0
+using texture: shell.png
+-read ChunkNODE: root
+--read ChunkMESH
+---ChunkVRTS
+---ChunkTRIS
+Loaded texture: shell.png
+Skinned Mesh - finalize
+Loaded mesh: shell.b3d
+Loaded texture: blood_dark.tga
+Loaded texture: bloodstain0.tga
+Loaded texture: bloodstain1.tga
+Loaded texture: bloodstain2.tga
+-read ChunkTEXS
+read Texture: person.tga
+Flags: 1
+Blend: 2
+-read ChunkBRUS
+read Material: Material
+Blend: 1
+FX: 0
+-read ChunkBRUS
+read Material: blood
+Blend: 1
+FX: 0
+-read ChunkBRUS
+read Material: person.tga
+Blend: 1
+FX: 0
+Layer: 0
+using texture: person.tga
+-read ChunkNODE: root
+--read ChunkMESH
+---ChunkVRTS
+---ChunkTRIS
+---ChunkTRIS
+Skinned Mesh - finalize
+Loaded mesh: person_gib0.b3d
+-read ChunkTEXS
+read Texture: person.tga
+Flags: 1
+Blend: 2
+-read ChunkBRUS
+read Material: Material
+Blend: 1
+FX: 0
+-read ChunkBRUS
+read Material: blood
+Blend: 1
+FX: 0
+-read ChunkBRUS
+read Material: person.tga
+Blend: 1
+FX: 0
+Layer: 0
+using texture: person.tga
+-read ChunkNODE: root
+--read ChunkMESH
+---ChunkVRTS
+---ChunkTRIS
+---ChunkTRIS
+Skinned Mesh - finalize
+Loaded mesh: person_gib1.b3d
+-read ChunkTEXS
+read Texture: person.tga
+Flags: 1
+Blend: 2
+-read ChunkBRUS
+read Material: Material
+Blend: 1
+FX: 0
+-read ChunkBRUS
+read Material: blood
+Blend: 1
+FX: 0
+-read ChunkBRUS
+read Material: person.tga
+Blend: 1
+FX: 0
+Layer: 0
+using 

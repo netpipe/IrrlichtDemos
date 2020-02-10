@@ -1,0 +1,42 @@
+# Blender MTL File: spaceship1.blend
+# Material Count: 4
+newmtl Material.002
+Ns 96.0
+Ka 0.0 0.0 0.0
+Kd 0.28867 0.266376 0.316866
+Ks 0.5 0.5 0.5
+Ni 1.0
+d 1.0
+illum 2
+
+
+newmtl Material.003
+Ns 96.0
+Ka 0.0 0.0 0.0
+Kd 0.114908 0.145201 0.165397
+Ks 0.5 0.5 0.5
+Ni 1.0
+d 1.0
+illum 2
+
+
+newmtl Material.001
+Ns 96.0
+Ka 0.0 0.0 0.0
+Kd 0.377454 0.658629 0.64
+Ks 0.5 0.5 0.5
+Ni 1.0
+d 1.0
+illum 2
+
+
+newmtl Material.004
+Ns 96.0
+Ka 0.0 0.0 0.0
+Kd 0.8 0.135103 0.100979
+Ks 0.5 0.5 0.5
+Ni 1.0
+d 1.0
+illum 2
+
+

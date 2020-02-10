@@ -1,0 +1,48 @@
+# Project: Project1
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = main.o level.o odeMesh.o block.o player.o magnet.o collision.o $(RES)
+LINKOBJ  = main.o level.o odeMesh.o block.o player.o magnet.o collision.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib" irrlicht/libIrrlicht.a ode/libode.a -s  
+INCS =  -I"C:/Dev-Cpp/include"  -I"irrlicht"  -I"." 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include"  -I"irrlicht"  -I"." 
+BIN  = blocks.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before blocks.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "blocks.exe" $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+level.o: level.cpp
+	$(CPP) -c level.cpp -o level.o $(CXXFLAGS)
+
+odeMesh.o: odeMesh.cpp
+	$(CPP) -c odeMesh.cpp -o odeMesh.o $(CXXFLAGS)
+
+block.o: block.cpp
+	$(CPP) -c block.cpp -o block.o $(CXXFLAGS)
+
+player.o: player.cpp
+	$(CPP) -c player.cpp -o player.o $(CXXFLAGS)
+
+magnet.o: magnet.cpp
+	$(CPP) -c magnet.cpp -o magnet.o $(CXXFLAGS)
+
+collision.o: collision.cpp
+	$(CPP) -c collision.cpp -o collision.o $(CXXFLAGS)

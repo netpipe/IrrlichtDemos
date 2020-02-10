@@ -1,0 +1,8 @@
+This software is copyright ©2007 XZIST Games (a.k.a. Daniel Frith).
+
+http://games.xzist.org
+
+Everything is released for free EXCEPT the contents of the sfx directory and the two textures mentioned below.
+
+funtime.ogg is copyright ibaudio.com and some of the .wav files are copyright A1 sound effects
+grass.jpg and wall.jpg are from "Darkmatter"

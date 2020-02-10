@@ -1,0 +1,66 @@
+header {
+  version { "0.9" }
+  build { "2005.01.29" }
+}
+environment {
+  grid { 1 10 50 50 }
+  framerate { 24 }
+}
+texture { "tiles"
+  file { 
+    "C:\\Documents and Settings\\Daniel\\My Documents\\My Projects\\blocks\\tiles.bmp"
+    }
+}
+object { "object01"
+  material { "material01"
+    surface {
+      /* RGB chunk no longer used */
+      rgb { 224 224 224 }
+      lockambiantdiffuse { }
+      ambiant {
+        rgb { 224 224 224 }
+        factor { 0.30000 }
+      }
+      diffuse {
+        rgb { 224 224 224 }
+        factor { 0.70000 }
+        texturename { "tiles" }
+        textureparams {
+          blendmode { decal }
+          alphamode { none }
+        }
+      }
+      specular {
+        rgb { 255 255 255 }
+        factor { 0.20000 }
+      }
+      phongsize { 32 }
+    }
+  }
+  mesh {
+    name { "mesh01" }
+    base {
+      origin { (-0.44944 0 0) }
+    }
+    material { "material01" }
+    smoothangle { 45 }
+    /* 6 points, 4 faces, 6 uvCoords */
+    materiallist {
+      materialname { "material01" }
+    }
+    points {
+      (901.33 0 -1561.1) (1802.7 0 0) (901.33 0 1561.1) (-901.33 0 1561.1) 
+      (-1802.7 0 0) (-901.33 0 -1561.1)
+    }
+    texcoords {
+      (-74.357 -94.678) (-149.18 0.50000) (75.283 -94.678) (150.11 0.50000) 
+      (75.283 95.678) (-74.357 95.678)
+    }
+    faces {
+      3 5 0 -1 ( (3 0) (4 1) (2 2) )
+      3 5 0 -1 ( (1 3) (2 2) (0 4) )
+      3 5 0 -1 ( (4 1) (5 5) (2 2) )
+      3 5 0 -1 ( (0 4) (2 2) (5 5) )
+    }
+  }
+}
