@@ -17,9 +17,11 @@
 			<Add alias="All" targets="default;" />
 		</VirtualTargets>
 		<Compiler>
+			<Add option="-fpermissive" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
-			<Add directory="../../../../LunaLibs/physics/ode-0.13/include" />
-			<Add directory="../../../../LunaLibs/ode-0.11.1/include/s" />
+			<Add directory="../../../../LunaLibs/physics/ode-0.13/includes" />
+			<Add directory="../../../../../LunaLibs/ode-0.11.1/include/" />
+			<Add directory="../../../../../../../../../../../home/Dev/libs/game/Irrlicht-SVN/source/Irrlicht" />
 		</Compiler>
 		<Linker>
 			<Add library="Irrlicht" />
@@ -28,25 +30,57 @@
 			<Add library="ode" />
 			<Add library="pthread" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
-			<Add directory="../../../../LunaLibs/ode-0.11.1/ode/src/.libs2" />
-			<Add directory="../../../../LunaLibs/physics/ode-0.13/ode/src/.libs" />
+			<Add directory="../../../../../LunaLibs/ode-0.11.1/ode/src/.libs" />
+			<Add directory="../../../../LunaLibs/physics/ode-0.13/ode/src/.libss" />
 		</Linker>
-		<Unit filename="block.cpp" />
-		<Unit filename="block.h" />
-		<Unit filename="collision.cpp" />
-		<Unit filename="collision.h" />
-		<Unit filename="events.h" />
-		<Unit filename="info.h" />
-		<Unit filename="level.cpp" />
-		<Unit filename="level.h" />
-		<Unit filename="magnet.cpp" />
-		<Unit filename="magnet.h" />
+		<Unit filename="Actor.cpp" />
+		<Unit filename="Actor.h" />
+		<Unit filename="Block.cpp" />
+		<Unit filename="Block.h" />
+		<Unit filename="Carriable.cpp" />
+		<Unit filename="Carriable.h" />
+		<Unit filename="Creature.cpp" />
+		<Unit filename="Creature.h" />
+		<Unit filename="Editor.cpp" />
+		<Unit filename="Editor.h" />
+		<Unit filename="FuelCan.cpp" />
+		<Unit filename="FuelCan.h" />
+		<Unit filename="Generator.cpp" />
+		<Unit filename="Generator.h" />
+		<Unit filename="Lift.cpp" />
+		<Unit filename="Lift.h" />
+		<Unit filename="ODEAnimator.cpp" />
+		<Unit filename="ODEAnimator.h" />
+		<Unit filename="ODEBoxAnimator.cpp" />
+		<Unit filename="ODEBoxAnimator.h" />
+		<Unit filename="ODEMaterial.h" />
+		<Unit filename="ODEMeshAnimator.cpp" />
+		<Unit filename="ODEMeshAnimator.h" />
+		<Unit filename="ODEPhysics.cpp" />
+		<Unit filename="ODEPhysics.h" />
+		<Unit filename="ODESphereAnimator.cpp" />
+		<Unit filename="ODESphereAnimator.h" />
+		<Unit filename="Object.cpp" />
+		<Unit filename="Object.h" />
+		<Unit filename="Platform.cpp" />
+		<Unit filename="Platform.h" />
+		<Unit filename="Player.cpp" />
+		<Unit filename="Player.h" />
+		<Unit filename="Scenery.cpp" />
+		<Unit filename="Scenery.h" />
+		<Unit filename="Shader.cpp" />
+		<Unit filename="Shader.h" />
+		<Unit filename="SoundAnimator.cpp" />
+		<Unit filename="SoundAnimator.h" />
+		<Unit filename="ThirdPersonCamera.cpp" />
+		<Unit filename="ThirdPersonCamera.h" />
+		<Unit filename="Weather.cpp" />
+		<Unit filename="Weather.h" />
+		<Unit filename="World.cpp" />
+		<Unit filename="World.h" />
+		<Unit filename="WorldBase.cpp" />
+		<Unit filename="WorldBase.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="mesh.blend" />
-		<Unit filename="odeMesh.cpp" />
-		<Unit filename="odeMesh.h" />
-		<Unit filename="player.cpp" />
-		<Unit filename="player.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />
