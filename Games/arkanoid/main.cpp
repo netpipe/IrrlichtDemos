@@ -278,9 +278,14 @@ device->run();
                        speedz = (i * abs(speedz)) + (1 + ( rand() % 15 ));
                     }
                     changedir=true;
-
-                          	 	           test->setPosition(core::vector3df((bpos.X,bpos.Y,bpos.Z)));
-
+//				bpos = ball->getPosition();
+//                test->setPosition(core::vector3df((bpos.X,bpos.Y,bpos.Z)));
+//         test->updateAbsolutePosition();
+if (sound_loop_then_quit()){
+		#ifdef SDLMIXER
+			mainplay("./media/bgsound.mp3");
+		#endif
+}
 
    	 	            if (lev[level][n]<5) { // crate 5 is undestroyable
       	 	           crates[n]->setVisible(false); // disable crate
@@ -313,12 +318,15 @@ device->run();
                  /* move into new direction */
                  changedir=true;
      		}
+     		       //    test->updateAbsolutePosition(core::vector3df((bpos.X,-9.0f,bpos.Z)));
+
 
         }
 
        if (changedir) { // switch ballanimation
            ball->removeAnimator(anim);
            ball->setPosition(core::vector3df(bpos.X,-9.0f,bpos.Z));
+
             /* fly with the ball to another direction */
             anim = smgr->createFlyStraightAnimator(core::vector3df(bpos.X,-9.0f,bpos.Z),
                                                    core::vector3df((bpos.X+speedx),-9.0f,(bpos.Z+speedz)), 2500, true);
@@ -329,6 +337,8 @@ device->run();
        }
 	//  }
 	//}
+
+
 
 }
 /*
@@ -446,6 +456,7 @@ void GameMenu()  // Init Game Menu
 
 void StartGame()
 {
+
 }
 
 void InitLevel()  // Draw Playfield
@@ -511,6 +522,9 @@ void InitLevel()  // Draw Playfield
           crates[n]->setVisible(false);
         }
     }
+    		#ifdef SDLMIXER
+			mainplay("./media/bgsound.mp3");
+		#endif
 }
 
 void DrawPlayfield()  // Draw Playfield

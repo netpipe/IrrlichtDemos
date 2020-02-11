@@ -11,9 +11,9 @@
 
 Mix_Chunk *wave = NULL;
 
-void sound_loop_then_quit() {
+int sound_loop_then_quit() {
     if (Mix_Playing(-1))
-        return;
+        return false;
   //  printf("Done audio\n");
     Mix_FreeChunk(wave);
     Mix_CloseAudio();
@@ -22,6 +22,7 @@ void sound_loop_then_quit() {
     #endif
    // printf("Shutting down\n");
 //    REPORT_RESULT(1);
+return true;
 }
 
 int mainplay(char* test){
