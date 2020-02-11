@@ -10,7 +10,15 @@
 				<Option output="./Arkanaoid" prefix_auto="0" extension_auto="0" />
 				<Option type="1" />
 				<Option compiler="gcc" />
+				<Option projectIncludeDirsRelation="1" />
 				<Option projectResourceIncludeDirsRelation="1" />
+				<Option projectLibDirsRelation="1" />
+				<Compiler>
+					<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
+				</Compiler>
+				<Linker>
+					<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
+				</Linker>
 			</Target>
 			<Target title="emscripten">
 				<Option output="example.html" prefix_auto="0" extension_auto="0" />
@@ -47,12 +55,13 @@
 			<Add library="GL" />
 			<Add library="Xxf86vm" />
 			<Add library="X11" />
+			<Add library="openal" />
+			<Add library="SDL2_mixer" />
+			<Add library="SDL2" />
 			<Add directory="/home/Dev/libs/Irrlicht/lib/gcc" />
 		</Linker>
 		<Unit filename="main.cpp" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-		</Extensions>
+		<Unit filename="sound.h" />
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

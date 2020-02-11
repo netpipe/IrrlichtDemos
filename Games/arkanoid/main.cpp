@@ -557,11 +557,12 @@ void DrawPlayfield()  // Draw Playfield
     }
 
 }
-
+	#include "sound.h"
 void SoundFx() {
 	#ifdef USE_IRRKLANG
 	if (sound) {
        sound->play2D("./media/klack.wav",false);
 	}
 	#endif
+mainplay("./media/klack.wav");
 }
