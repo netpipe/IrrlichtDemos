@@ -1,17 +1,6 @@
-/** Example 005 User Interface
-
-This tutorial shows how to use the built in User Interface of
-the Irrlicht Engine. It will give a brief overview and show
-how to create and use windows, buttons, scroll bars, static
-texts, and list boxes.
-
-As always, we include the header files, and use the irrlicht
-namespaces. We also store a pointer to the Irrlicht device,
-a counter variable for changing the creation position of a window,
-and a pointer to a listbox.
-*/
+//WIPSTILL
 #include <irrlicht.h>
-
+#include "selfextract.h"
 using namespace irr;
 
 using namespace core;

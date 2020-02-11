@@ -2,14 +2,14 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="3dQrCode" />
+		<Option title="SelfExtractor" />
 		<Option pch_mode="0" />
 		<Option default_target="Linux" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Windows">
 				<Option platforms="Windows;" />
-				<Option output="./3dqrcode" prefix_auto="0" extension_auto="1" />
+				<Option output="./selfextractor" prefix_auto="0" extension_auto="1" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Option projectResourceIncludeDirsRelation="1" />
@@ -22,7 +22,7 @@
 			</Target>
 			<Target title="Linux">
 				<Option platforms="Unix;" />
-				<Option output="./3dqrcode" prefix_auto="0" extension_auto="0" />
+				<Option output="./selfextractor" prefix_auto="0" extension_auto="0" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -58,7 +58,7 @@
 			<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/assimp-3.3.1/lib" />
 		</Linker>
 		<Unit filename="main.cpp" />
-		<Unit filename="selfextract.cpp" />
+		<Unit filename="selfextract.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
