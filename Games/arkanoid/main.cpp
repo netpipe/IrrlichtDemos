@@ -16,6 +16,11 @@ This Game is public domain.
 #include <emscripten.h>
 #endif
 
+#define SDLMIXER
+	#ifdef SDLMIXER
+	#include "sound.h"
+#endif
+
     int lastFPS = 0;
 
 /*
@@ -128,6 +133,7 @@ public:
 				if (id == 101)
 				{
 					device->closeDevice();
+					exit(1);
 					return true;
 				}
 				if (id == 102)
@@ -557,12 +563,15 @@ void DrawPlayfield()  // Draw Playfield
     }
 
 }
-	#include "sound.h"
+
 void SoundFx() {
+
 	#ifdef USE_IRRKLANG
 	if (sound) {
        sound->play2D("./media/klack.wav",false);
 	}
 	#endif
+	#ifdef SDLMIXER
 mainplay("./media/klack.wav");
+#endif
 }
