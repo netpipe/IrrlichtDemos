@@ -23,6 +23,7 @@ This Game is public domain.
 
     int lastFPS = 0;
 
+
 /*
 
 In the Irrlicht Engine, everything can be found in the namespace
@@ -61,7 +62,8 @@ Irrlicht.lib. We could set this option in the project settings, but
 to make it easy, we use a pragma comment lib:
 */
 #pragma comment(lib, "Irrlicht.lib")
-
+core::array<video::ITexture*> textures;
+scene::IVolumeLightSceneNode * test;
 
 scene::ISceneNode* batter;
 scene::IAnimatedMeshSceneNode* ball;
@@ -276,6 +278,10 @@ device->run();
                        speedz = (i * abs(speedz)) + (1 + ( rand() % 15 ));
                     }
                     changedir=true;
+
+                          	 	           test->setPosition(core::vector3df((bpos.X,bpos.Y,bpos.Z)));
+
+
    	 	            if (lev[level][n]<5) { // crate 5 is undestroyable
       	 	           crates[n]->setVisible(false); // disable crate
       	 	           cratesleft--;
@@ -307,6 +313,7 @@ device->run();
                  /* move into new direction */
                  changedir=true;
      		}
+
         }
 
        if (changedir) { // switch ballanimation
@@ -444,6 +451,45 @@ void StartGame()
 void InitLevel()  // Draw Playfield
 {
 	video::IVideoDriver* driver = device->getVideoDriver();
+
+	 test = smgr->addVolumeLightSceneNode(0, -1,
+				32,                              // Subdivisions on U axis
+				32,                              // Subdivisions on V axis
+				video::SColor(0, 255, 255, 255), // foot color
+				video::SColor(0, 0, 0, 0));      // tail color
+
+	if (test)
+	{
+		test->setScale(core::vector3df(5.0f, 5.0f, 5.0f));
+		test->setPosition(core::vector3df(0,0,0));
+
+
+
+
+		for (s32 g=7; g > 0; --g)
+		{
+			core::stringc tmp("../../media/");
+			tmp += "portal";
+			tmp += g;
+			tmp += ".bmp";
+			video::ITexture* t = driver->getTexture( tmp.c_str() );
+			textures.push_back(t);
+		}
+
+	}
+
+
+		// create texture animator
+		scene::ISceneNodeAnimator* glow = smgr->createTextureAnimator(textures, 100);
+
+//		test->setPosition(core::vector3df((bpos.X,bpos.Y,bpos.Z)));
+
+		// add the animator
+		test->addAnimator(glow);
+
+
+		// drop the animator because it was created with a create() function
+		glow->drop();
 
     int n;
     cratesleft=0;

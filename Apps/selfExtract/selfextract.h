@@ -6,8 +6,8 @@
 #include <unistd.h>
 #include <sys/mman.h>
 
-//cat main test.txt test.zip > combined
-//./combined apple // string to parse
+//cat selfextractor test.txt test.zip > combined
+//./combined apple // string to parse from text.txt
 
 int getExecutablePath(char* szBuff, unsigned long ulBufferLen)
 {
