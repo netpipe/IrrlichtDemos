@@ -17,13 +17,14 @@
 			<Add alias="All" targets="default;" />
 		</VirtualTargets>
 		<Compiler>
-			<Add directory="/home/Dev/libs/Irrlicht/include" />
+			<Add directory="../../../../../Dev/libs/Irrlicht/include" />
 		</Compiler>
 		<Linker>
 			<Add library="GL" />
 			<Add library="Irrlicht" />
 			<Add library="Xxf86vm" />
-			<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
+			<Add library="X11" />
+			<Add directory="../../../../../Dev/libs/Irrlicht/lib/gcc" />
 		</Linker>
 		<Unit filename="3DP.cpp" />
 		<Unit filename="3DP.h" />
@@ -34,10 +35,6 @@
 		<Unit filename="Skeleton.cpp" />
 		<Unit filename="Skeleton.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="main.h" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

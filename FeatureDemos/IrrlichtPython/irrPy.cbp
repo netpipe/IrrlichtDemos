@@ -38,8 +38,8 @@
 					<Add option="-s TOTAL_MEMORY=64Mb" />
 					<Add option="-s ASSERTIONS=2" />
 					<Add option="--memory-init-file 0" />
-					<Add option="-s EMULATE_FUNCTION_POINTER_CASTS=1" />
 					<Add option="-s ERROR_ON_UNDEFINED_SYMBOLS=0" />
+					<Add option="-s EMULATE_FUNCTION_POINTER_CASTS=1" />
 					<Add library="GLESv2" />
 					<Add library="GL" />
 					<Add library="Irrlicht" />

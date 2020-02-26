@@ -97,7 +97,7 @@ namespace agEngine
 	/*
 		Audio Sources
 	*/
-	AudioSource::AudioSource(AudioDevice *audioDevice = NULL, const unsigned int &newSourceId = 0, const unsigned int &buffSize)
+	AudioSource::AudioSource(AudioDevice *audioDevice , const unsigned int &newSourceId = 0, const unsigned int &buffSize)
 	{
 		device = audioDevice;
 		sourceId = newSourceId;
@@ -277,7 +277,7 @@ namespace agEngine
 		alSourcei(sourceId, AL_SOURCE_RELATIVE, relative?AL_TRUE:AL_FALSE);
 	}
 
-	/* 
+	/*
 		Sound Data
 	*/
 	SoundData* SoundData::LoadAudio(const std::string &filename, const bool &loadToMemory = false)
@@ -299,7 +299,7 @@ namespace agEngine
 	{
 		refCount = 1;
 		std::string extension = filename.substr ( filename.size() - 3, 3 );
-		if ( extension == "ogg" ) 
+		if ( extension == "ogg" )
 		{
 			ogg = new OggFile();
 			ogg->open(filename, loadToMemory);

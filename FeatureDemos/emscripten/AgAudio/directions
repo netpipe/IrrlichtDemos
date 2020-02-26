@@ -52,3 +52,18 @@ void Sound::PlayBackgroundMusic(int music)
 		musicSource->stop();
 		musicSource->attachSound(menuM);
 		musicSource->play();
+
+
+
+
+init
+
+    Sound::Instance()->Create();
+    Sound::Instance()->PlayBackgroundMusic(MUSIC_MENU);
+
+
+in main loop add
+
+ Sound::Instance()->PlayAll();
+
+    Sound::Instance()->Drop();
