@@ -189,14 +189,14 @@ public:
 
 int main() {
 	// ask user for driver
-	video::E_DRIVER_TYPE driverType = driverChoiceConsole();
-	if (driverType == video::EDT_COUNT)
-		return 1;
+	//video::E_DRIVER_TYPE driverType = driverChoiceConsole();
+	//if (driverType == video::EDT_COUNT)
+	//	return 1;
 
 	// create device with full flexibility over creation parameters
 	// you can add more parameters if desired, check irr::SIrrlichtCreationParameters
 	irr::SIrrlichtCreationParameters params;
-	params.DriverType = driverType;
+	params.DriverType = irr::video::EDT_OPENGL;
 	params.WindowSize = core::dimension2d<u32>(1024, 768);
 	IrrlichtDevice* device = createDeviceEx(params);
 
@@ -274,7 +274,7 @@ int main() {
 
 	while (device->run()) {
 		if (device->isWindowActive()) {
-			driver->beginScene(true, true, 0);
+			driver->beginScene(true, true, irr::video::SColor(255,100,101,140));
 
 			smgr->drawAll();
 

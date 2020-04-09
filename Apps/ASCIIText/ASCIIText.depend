@@ -26,9 +26,13 @@
 
 1581398754 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Apps/ASCIIText/inflate.h
 
-1582818808 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Apps/ASCIIText/main.cpp
+1582961391 source:/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Apps/ASCIIText/main.cpp
 	<irrlicht.h>
-	"figlet.cpp"
+	"figlet.h"
+	<stdio.h>
+	<wctype.h>
+	<sstream>
+	<iostream>
 
 1514384332 /home/Dev/libs/game/irrlicht/Irrlicht-SVN/include/irrlicht.h
 	"IrrCompileConfig.h"
@@ -1124,6 +1128,20 @@
 	<wchar.h>
 
 1582818842 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Apps/ASCIIText/figlet.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<wchar.h>
+	<wctype.h>
+	"utf8.h"
+	"zipio.h"
+
+1582818842 /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/Apps/ASCIIText/figlet.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>

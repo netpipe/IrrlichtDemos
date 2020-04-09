@@ -7,10 +7,11 @@
 			<Cursor1 position="63" topLine="0" />
 		</Cursor>
 		<Folding>
-			<Collapse line="21" />
-			<Collapse line="29" />
-			<Collapse line="40" />
-			<Collapse line="51" />
+			<Collapse line="45" />
+			<Collapse line="53" />
+			<Collapse line="64" />
+			<Collapse line="75" />
+			<Collapse line="248" />
 		</Folding>
 	</File>
 	<File name="inflate.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -54,8 +55,8 @@
 	</File>
 	<File name="getopt.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2889" topLine="77" />
+			<Cursor1 position="2889" topLine="28" />
 		</Cursor>
 	</File>
-	<EditorTabsLayout layout="0364e5a05e57e4cf000f934100000002=0;SelfExtractor:getopt.cpp,*1;SelfExtractor:main.cpp,2;SelfExtractor:inflate.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=728;besth=286;minw=728;minh=286;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=0364e5a05e57e4cf000f934100000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+	<EditorTabsLayout layout="030b6f605e66a8e2012d66ed00000002=0;SelfExtractor:getopt.cpp,*1;SelfExtractor:main.cpp,2;SelfExtractor:inflate.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=814;besth=339;minw=814;minh=339;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=030b6f605e66a8e2012d66ed00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>

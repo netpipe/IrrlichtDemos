@@ -60,6 +60,7 @@
 		</Linker>
 		<Unit filename="crc.cpp" />
 		<Unit filename="crc.h" />
+		<Unit filename="figlet.h" />
 		<Unit filename="getopt.cpp" />
 		<Unit filename="inflate.cpp" />
 		<Unit filename="inflate.h" />

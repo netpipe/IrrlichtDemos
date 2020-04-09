@@ -60,7 +60,7 @@ int main()
     driver->setTextureCreationFlag(video::ETCF_CREATE_MIP_MAPS, false);
     scene::ISceneNode*  q3node =0;
 
-    if(q3levelmesh) q3node = smgr->addOctTreeSceneNode(q3levelmesh->getMesh(0));
+    if(q3levelmesh) q3node = smgr->addOctreeSceneNode(q3levelmesh->getMesh(0));
     scene::ITriangleSelector* selector = 0;
     q3node->setMaterialFlag(video::EMF_LIGHTING, true);
     if(q3node)
@@ -86,7 +86,8 @@ int main()
     }
     int nextDecal=0;
 
-const ISceneNode* outNode;
+ISceneNode* outNode;
+
 	while(device->run())
 	{
 		driver->beginScene(true, true, SColor(255,100,101,140));

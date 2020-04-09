@@ -1,8 +1,8 @@
 //WIPSTILL
 #include <irrlicht.h>
-extern "C"{
+
 #include "figlet.h"
-}
+
 //#include "selfextract.h"
 using namespace irr;
 
@@ -15,6 +15,30 @@ using namespace gui;
 #ifdef _MSC_VER
 #pragma comment(lib, "Irrlicht.lib")
 #endif
+#include <stdio.h>
+#include <wctype.h>
+#include <sstream>
+#include <iostream>
+#include <wchar.h>
+
+IGUIEditBox *editbox1;
+
+
+//char* WideCharToChar(LPCWSTR lpWideCharStr)
+//{
+//      size_t length = wcslen(lpWideCharStr);
+//      ++length;
+//      char* lpszConvertedStr = new char[length];
+//      int nReturnVal =  WideCharToMultiByte( CP_OEMCP, 0, lpWideCharStr, -1,lpszConvertedStr, (int)length, NULL, NULL );
+//      //If not succeed delete pointer
+//      if( 0 == nReturnVal)
+//      {
+//            delete[] lpszConvertedStr;
+//            lpszConvertedStr = NULL;
+//      }
+//      return lpszConvertedStr;
+//}
+
 
 // Declare a structure to hold some context for the event receiver so that it
 // has it available inside its OnEvent() method.
@@ -113,6 +137,73 @@ public:
 					// We set the title, make it a modal window, and make sure
 					// that the working directory is restored after the dialog
 					// is finished.
+//wchar_t c;
+//  int i=0;
+wchar_t test=editbox1->getText();
+printf ("string %S",test);
+//wchar_t test[] = L"Example sentence to test iswspace\n";
+//char *test2="testing";
+//string test3 = std::ws(test);
+//std::wstring string(test);
+//std::wstring ws(test);
+//// your new String
+//string str(ws.begin(), ws.end());
+//  while (test[i])
+//  {
+//
+//    c=test[i];
+//    if (iswspace(c)) c = L' ';
+//    putwchar (c);
+//    i++;
+//  }
+//   char *str = "This is tutorialspoint.com";
+//   wchar_t mb[100];
+//   int len;
+//
+//   len = mblen(NULL, MB_CUR_MAX);
+//
+//   mbtowc(mb, str, len*strlen(str) );
+//
+//
+//        char *str;
+////
+//   wchar_t array[] = L"Hello World";
+//	wcstombs(str, array, 100);
+
+//
+//   	char pmb[] = "Welcome to Programiz.com";
+//	wchar_t pwc[100];
+//	int len, ret_val;
+//
+//	/* resets internal conversion state */
+//	mbtowc (NULL, NULL, 0);
+//	len = strlen(pmb);
+//	ret_val = mbtowc(pwc, pmb, strlen(pmb));
+
+    //A std:string  using the char* constructor.
+//    std::string str2((char*)test);
+//    printf ("string %S",str2.c_str());
+
+//    std::string str("string");
+//std::wstring wstr;
+//for (size_t i = 0; i < str2.length(); i++)
+//    wstr.push_back(str2[i]);
+
+
+//wstring_t
+//char *test2=(char)test;
+
+	char *argv1[]={"appname","-f","./fonts/standard", test,"test"};//rectangular_BFS
+
+	int argc1 = sizeof(argv1) / sizeof(char*) - 1;
+
+    	figlet( argc1, argv1 );
+//
+//  }
+
+
+
+
 					env->addFileOpenDialog(L"Please choose a file.", true, 0, -1, true);
 					return true;
 
@@ -213,7 +304,7 @@ int main()
 
 	env->addStaticText(L"Logging ListBox:", rect<s32>(10,110,350,130), true);
 	IGUIListBox * listbox = env->addListBox(rect<s32>(10, 140, 350, 210));
-	env->addEditBox(L"Editable Text", rect<s32>(350, 80, 550, 100));
+	editbox1 = env->addEditBox(L"Editable Text", rect<s32>(350, 80, 550, 100));
 
 	// Store the appropriate data in a context structure.
 	SAppContext context;
@@ -231,6 +322,7 @@ int main()
 //	env->addImage(driver->getTexture( "irrlichtlogo2.png"),
 //			position2d<int>(10,10));
 //
+
 
 
 	while(device->run() && driver)
