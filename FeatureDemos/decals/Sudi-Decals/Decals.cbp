@@ -38,14 +38,14 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
-			<Add directory="$(#irrlicht.include)" />
+			<Add directory="../../../../LunaLibs/irrlicht-1.8.4/include" />
 		</Compiler>
 		<Linker>
 			<Add library="Irrlicht" />
 			<Add library="X11" />
 			<Add library="GL" />
 			<Add library="Xxf86vm" />
-			<Add directory="$(#irrlicht.lib)" />
+			<Add directory="../../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 		</Linker>
 		<Unit filename="CDecal.cpp" />
 		<Unit filename="CDecal.h" />
@@ -55,9 +55,6 @@
 		<Unit filename="CMain.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
-			<code_completion />
-			<envvars />
-			<debugger />
 			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>

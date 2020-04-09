@@ -150,7 +150,7 @@ void CMain::run(void)
     mat.TextureLayer[0].TextureWrapU = irr::video::ETC_CLAMP_TO_BORDER;
     mat.TextureLayer[0].TextureWrapV = irr::video::ETC_CLAMP_TO_BORDER;
     mat.setTexture(0, Device->getVideoDriver()->getTexture("leafs.png"));
-    mat.ZWriteEnable = false;
+///    mat.ZWriteEnable = false;
     mat.MaterialType = irr::video::EMT_TRANSPARENT_ALPHA_CHANNEL;
 
     irr::video::SMaterial wireDecal;
