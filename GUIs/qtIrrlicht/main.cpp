@@ -1,6 +1,6 @@
-
 //http://irrlicht.sourceforge.net/forum/viewtopic.php?f=5&t=50533
 //main.cpp
+
 
 #include "mainwindow.h"
 #include <QApplication>

@@ -1,6 +1,7 @@
 
 //irrcorerenderer.cpp
 
+
 #include "irrcorerenderer.h"
 
 IrrCoreRenderer::IrrCoreRenderer(QWidget *irrRenderTarget, bool softwareRenderer)

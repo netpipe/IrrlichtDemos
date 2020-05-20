@@ -19,7 +19,7 @@
 		<Compiler>
 			<Add option="-DGLEW_STATIC" />
 			<Add option="-DHAVE_MALLOC_H" />
-			<Add directory="/home/Dev/libs/Irrlicht/include" />
+			<Add directory="../../../../LunaLibs/irrlicht-1.8.4/include" />
 			<Add directory="readblend" />
 			<Add directory="../bullet/src" />
 		</Compiler>
@@ -46,9 +46,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="readblend/readblend.h" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

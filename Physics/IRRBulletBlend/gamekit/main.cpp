@@ -4,8 +4,8 @@ Copyright (c) 2009 Erwin Coumans  http://gamekit.googlecode.com
 
 This software is provided 'as-is', without any express or implied warranty.
 In no event will the authors be held liable for any damages arising from the use of this software.
-Permission is granted to anyone to use this software for any purpose, 
-including commercial applications, and to alter it and redistribute it freely, 
+Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter it and redistribute it freely,
 subject to the following restrictions:
 
 1. The origin of this software must not be misrepresented; you must not claim that you wrote the original software. If you use this software in a product, an acknowledgment in the product documentation would be appreciated but is not required.
@@ -38,15 +38,15 @@ btScalar	physicsWorldScaling = 1.f;
 #endif
 
 //Blender/OpenGL
-//left/right = X axis 
-//front/back = Y axis 
-//top/bottom = Z axis 
+//left/right = X axis
+//front/back = Y axis
+//top/bottom = Z axis
 //
-//In DirectX's and Irrlicht's and many other coordinate systems it's like this 
+//In DirectX's and Irrlicht's and many other coordinate systems it's like this
 //
-//left/right = X axis 
-//top/bottom = Y axis 
-//front/back = Z axis 
+//left/right = X axis
+//top/bottom = Y axis
+//front/back = Z axis
 
 
 ///mapping between right handed and left-handed coordinate system
@@ -106,14 +106,14 @@ void	MatrixToEuler(const btMatrix3x3& mat,btVector3& TEuler)
 	m[9] = IRR_Y_M*IRR_Z_M*mat[IRR_Y][IRR_Z];
 	m[10] = mat[IRR_Z][IRR_Z];
 	m[11] = 0;
-	
+
 	m[12] = 0;//IRR_X_M*btr.getOrigin()[IRR_X];
 	m[13] = 0;//IRR_Y_M*btr.getOrigin()[IRR_Y];
 	m[14] = 0;//IRR_Z_M*btr.getOrigin()[IRR_Z];
 	m[15] = 0;
 
 	imat.setM(m);
-	
+
 	irr::core::vector3df eulerrot = imat.getRotationDegrees();
 	TEuler[0] = eulerrot.X;
 	TEuler[1] = eulerrot.Y;
@@ -178,7 +178,7 @@ public:
 	*/
 		irr::core::vector3df minBounds(1e30f,1e30f,1e30f);
 		irr::core::vector3df maxBounds(-1e30f,-1e30f,-1e30f);
-		
+
 		m_boundingBox = core::aabbox3df(minBounds,maxBounds);
 		//better to use Bullet for this
 
@@ -220,7 +220,7 @@ public:
 	*/
 	virtual void render()
 	{
-		
+
 		video::IVideoDriver* driver = SceneManager->getVideoDriver();
 
 		driver->setMaterial(Material);
@@ -251,7 +251,7 @@ public:
 	virtual video::SMaterial& getMaterial(u32 i)
 	{
 		return Material;
-	}	
+	}
 };
 
 
@@ -271,7 +271,7 @@ public:
 	{
 	}
 	///synchronizes world transform from user to physics
-	virtual void	getWorldTransform(btTransform& centerOfMassWorldTrans ) const 
+	virtual void	getWorldTransform(btTransform& centerOfMassWorldTrans ) const
 	{
 		centerOfMassWorldTrans = m_graphicsWorldTrans;
 	}
@@ -285,7 +285,7 @@ public:
 	///Bullet only calls the update of worldtransform for active objects
 	virtual void	setWorldTransform(const btTransform& centerOfMassWorldTrans)
 	{
-		
+
 		m_startWorldTrans = centerOfMassWorldTrans;
 		m_graphicsWorldTrans = centerOfMassWorldTrans;
 
@@ -293,12 +293,12 @@ public:
 		// Set rotation
 		btVector3 EulerRotation;
 		MatrixToEuler(centerOfMassWorldTrans.getBasis(), EulerRotation);
-	
+
 		for (int i=0;i<m_irrNodes.size();i++)
 		{
 			m_irrNodes[i]->setPosition(core::vector3df((f32)Point[IRR_X], (f32)Point[IRR_Y], (f32)Point[IRR_Z])/physicsWorldScaling);
 			m_irrNodes[i]->setRotation(core::vector3df(EulerRotation[0], EulerRotation[1], EulerRotation[2]));
-			
+
 		}
 	}
 
@@ -317,7 +317,7 @@ public:
 		m_guid(666)
 	{
 	}
-	
+
 	virtual	void	addCamera(_bObj* tmpObject)
 	{
 		irr::scene::ICameraSceneNode* cam = m_sceneManager->getActiveCamera();
@@ -330,7 +330,7 @@ public:
 			MatrixToEuler(mat, EulerRotation);
 			cam->setRotation(core::vector3df(EulerRotation[0], EulerRotation[1], EulerRotation[2]));
 			cam->updateAbsolutePosition();
-			
+
 		}
 	}
 
@@ -355,7 +355,7 @@ public:
 				body->setMotionState(newMotionState);
 			}
 		}
-		
+
 
 		if (tmpObject->data.mesh && tmpObject->data.mesh->vert_count && tmpObject->data.mesh->face_count)
 		{
@@ -369,14 +369,14 @@ public:
 
 			video::S3DVertex* orgVertices= new video::S3DVertex[tmpObject->data.mesh->vert_count];
 			video::S3DVertex* newVertices= new video::S3DVertex[maxVerts];
-			
+
 			for (int v=0;v<tmpObject->data.mesh->vert_count;v++)
 			{
 				float* vt3 = tmpObject->data.mesh->vert[v].xyz;
 				orgVertices[v] = video::S3DVertex(	IRR_X_M*vt3[IRR_X],	IRR_Y_M*vt3[IRR_Y],	IRR_Z_M*vt3[IRR_Z], 1,1,0,		video::SColor(255,255,255,255), 0, 1);
 			}
 
-			
+
 			int numVertices = 0;
 			int numTriangles=0;
 			int numIndices = 0;
@@ -452,7 +452,7 @@ public:
 					newVertices[currentIndex] = orgVertices[originalIndex];
 					newVertices[currentIndex].TCoords.X = tmpObject->data.mesh->face[t].uv[IRR_TRI_1_Z][0];
 					newVertices[currentIndex].TCoords.Y = tmpObject->data.mesh->face[t].uv[IRR_TRI_1_Z][1];
-					
+
 					numIndices++;
 					numVertices++;
 					currentIndex++;
@@ -460,14 +460,14 @@ public:
 					numTriangles++;
 				}
 
-				
+
 				///subdivide the mesh into smaller parts, so that indices fit in short int
 				if (numVertices>=maxVerts)
 				{
 					scene::ISceneNode* node = createMeshNode(newVertices,numVertices,indices,numIndices,numTriangles,bulletObject,tmpObject);
 					if (newMotionState && node)
 						newMotionState->addIrrlichtNode(node);
-					
+
 					numVertices = 0;
 					numTriangles = 0;
 					numIndices = 0;
@@ -487,8 +487,8 @@ public:
 
 			}
 		}
-	
-		
+
+
 	}
 
 	scene::ISceneNode*	createMeshNode(video::S3DVertex* vertices, int numVertices, unsigned short int* indices, int numIndices,int numTriangles,class btCollisionObject* bulletObject,_bObj* tmpObject)
@@ -501,7 +501,7 @@ public:
 		if (tmpObject->data.mesh->face[0].m_image)
 		{
 			const char* fileName = tmpObject->data.mesh->face[0].m_image->m_imagePathName;
-			
+
 			texture0 = driver->findTexture(fileName);
 			if (!texture0)
 			{
@@ -528,26 +528,26 @@ public:
 					for(int x=0;x<256;++x)
 					{
 						const int		s=x>>4;
-						const unsigned char	b=180;					
+						const unsigned char	b=180;
 						unsigned char			c=b+((s+t&1)&1)*(255-b);
 						pi[0]= 255;
 						pi[1]=pi[2]=c;pi+=3;
 					}
 				}
-				irr::core::dimension2d<int> dim(256,256);
+				irr::core::dimension2du dim(256,256);
 				irr::video::IImage* image = driver->createImageFromData(irr::video::ECF_R8G8B8,dim,imageData);
 				delete imageData;
 				notFoundTexture = driver->addTexture("notFound",image);
 				image->drop();
 			}
-			
+
 			texture0 = notFoundTexture;
 		}
 
 		if (texture0)
 		{
 
-	
+
 	#ifdef USE_CUSTOM_NODE
 				myNode = new CSampleSceneNode(m_sceneManager->getRootSceneNode(), m_sceneManager, m_guid++,vertices,numVertices,indices,numTriangles,texture0);
 	#else
@@ -563,7 +563,7 @@ public:
 				myNode->setMaterialTexture(0,texture0);
 				myNode->setMaterialFlag(irr::video::EMF_LIGHTING,false);
 	#endif
-			
+
 				// Set rotation
 				btVector3 EulerRotation;
 				btTransform btr = bulletObject->getWorldTransform();
@@ -586,14 +586,14 @@ public:
 				m[9] = IRR_Y_M*IRR_Z_M*btr.getBasis()[IRR_Y][IRR_Z];
 				m[10] = btr.getBasis()[IRR_Z][IRR_Z];
 				m[11] = 0;
-				
+
 				m[12] = IRR_X_M*btr.getOrigin()[IRR_X];
 				m[13] = IRR_Y_M*btr.getOrigin()[IRR_Y];
 				m[14] = IRR_Z_M*btr.getOrigin()[IRR_Z];
 				m[15] = 0;
 
 				imat.setM(m);
-				
+
 				irr::core::vector3df eulerrot = imat.getRotationDegrees();
 				myNode->setRotation(eulerrot);
 				myNode->setPosition(irr::core::vector3df(IRR_X_M*btr.getOrigin()[IRR_X],	IRR_Y_M*btr.getOrigin()[IRR_Y],	IRR_Z_M*btr.getOrigin()[IRR_Z]));
@@ -645,9 +645,9 @@ int main(int argc,char** argv)
 #endif
 	// create device
 
-	device = createDevice(driverType,		core::dimension2d<s32>(640, 480), 16, false);
+	device = createDevice(driverType,		core::dimension2du(640, 480), 16, false);
 	//device = createDevice(driverType,		core::dimension2d<s32>(1024, 768), 32, true);
-		
+
 	if (device == 0)
 		return 1; // could not create selected driver.
 
@@ -664,7 +664,7 @@ int main(int argc,char** argv)
 	//irr::scene::ICameraSceneNode* cam = smgr->addCameraSceneNodeFPS(0,10,10);
 	//irr::scene::ICameraSceneNode* cam = smgr->addCameraSceneNode(0, core::vector3df(0,50,30), core::vector3df(0,0,0));
 	//cam->setUpVector(irr::core::vector3df(0,1,0));
-	
+
 
 	// add light 1 (nearly red)
 	scene::ILightSceneNode* light1 =
@@ -678,7 +678,7 @@ int main(int argc,char** argv)
 	btConstraintSolver* constraintSolver = new btSequentialImpulseConstraintSolver();
 	btDiscreteDynamicsWorld* physicsWorld = new btDiscreteDynamicsWorld(dispatcher,pairCache,constraintSolver,collisionConfiguration);
 
-	
+
 //#ifdef SWAP_COORDINATE_SYSTEMS
 	physicsWorld->setGravity(btVector3(0,0,-10));
 //#endif //SWAP_COORDINATE_SYSTEMS
@@ -697,7 +697,7 @@ int main(int argc,char** argv)
 		//bulletBlendReader.openFile("../../bin/Win32-VisualStudio/level_2_home.blend");
 		//if (!bulletBlendReader.openFile("0_FPS_Template.blend"))
 		if (!bulletBlendReader.openFile("PhysicsAnimationBakingDemo.blend"))
-			
+
 		{
 			printf("trying again with different path\n");
 			//if (!bulletBlendReader.openFile("../../bin/Win32-VisualStudio/PhysicsAnimationBakingDemo.blend"))
@@ -707,18 +707,18 @@ int main(int argc,char** argv)
 			}
 		}
 	}
-	
+
 
 //				//io::IReadFile* file = io::createMemoryReadFile(jpgData, jpgSize, fileName, false);
 //				irr::io::CMemoryReadFile* file = new irr::io::CMemoryReadFile(jpgData, jpgSize, fileName, false);
-				
 
-	
+
+
 
 	bulletBlendReader.convertAllObjects();
 	//now create graphics objects for each Bullet object?
 
-	
+
 	/*
 	Now draw everything and finish.
 	*/
@@ -732,7 +732,7 @@ int main(int argc,char** argv)
 		int deltaTimeMs = newTime-ms;
 		ms = newTime;
 
-		
+
 		physicsWorld->stepSimulation(deltaTimeMs*0.001f);
 
 		smgr->drawAll();
@@ -751,6 +751,6 @@ int main(int argc,char** argv)
 	}
 
 	device->drop();
-	
+
 	return 0;
 }
