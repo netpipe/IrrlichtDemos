@@ -19,6 +19,7 @@
 		<Compiler>
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
 			<Add directory="./" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
 		</Compiler>
 		<Linker>
 			<Add library="Irrlicht" />
@@ -26,6 +27,7 @@
 			<Add library="Xxf86vm" />
 			<Add library="X11" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 		</Linker>
 		<Unit filename="camera/RiggedCamera.h" />
 		<Unit filename="collision/metaselector.h" />
