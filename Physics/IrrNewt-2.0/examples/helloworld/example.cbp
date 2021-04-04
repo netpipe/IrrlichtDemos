@@ -31,13 +31,15 @@
 				<Compiler>
 					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
 					<Add directory="../../include" />
-					<Add directory="../../libs/newtonSDK/sdk" />
+					<Add directory="../../libs/newtonSDK/sdk2" />
+					<Add directory="/home/Dev/libs/physics/newtonSDK/sdk" />
 				</Compiler>
 				<Linker>
 					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
-					<Add directory="../../libs/newtonSDK/sdk" />
+					<Add directory="../../libs/newtonSDK/sdk2" />
 					<Add directory="./" />
 					<Add directory="../../" />
+					<Add directory="/home/Dev/libs/physics/newtonSDK/sdk" />
 				</Linker>
 			</Target>
 			<Target title="Linux-static232">
@@ -64,7 +66,7 @@
 		</VirtualTargets>
 		<Compiler>
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
-			<Add directory="/home/Dev/libs/physics/newtonSDK/sdk" />
+			<Add directory="/home/Dev/libs/physics/newtonSDK/sdk2" />
 		</Compiler>
 		<Linker>
 			<Add library="Xxf86vm" />
@@ -73,8 +75,9 @@
 			<Add library="Irrlicht" />
 			<Add library="Newton" />
 			<Add library="X11" />
+			<Add library="pthread" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
-			<Add directory="/home/Dev/libs/physics/newtonSDK/sdk" />
+			<Add directory="/home/Dev/libs/physics/newtonSDK/sdk2" />
 			<Add directory="../../" />
 		</Linker>
 		<Unit filename="hello world.cpp" />

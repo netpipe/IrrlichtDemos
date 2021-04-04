@@ -711,9 +711,9 @@ irr::f32 irr::newton::IWorld::getTimeStep() {
 	return 0.f; //return NewtonGetTimeStep(this->world);
 }
 
-irr::s32 irr::newton::IWorld::getNewtonVersion() {
-	return NewtonWorldGetVersion();
-}
+///irr::s32 irr::newton::IWorld::getNewtonVersion() {
+///	return NewtonWorldGetVersion();
+///}
 
 //get all bodies
 irr::core::array<irr::newton::IBody*> all_bodies;

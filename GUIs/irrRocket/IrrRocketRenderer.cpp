@@ -30,7 +30,7 @@ IrrRocketRenderer::IrrRocketRenderer(irr::video::IVideoDriver* driver) : Driver(
 
     Material2D.Lighting = false;
     Material2D.MaterialType = irr::video::EMT_TRANSPARENT_ALPHA_CHANNEL;
-    Material2D.ZWriteEnable = false;
+//    Material2D.ZWriteEnable = false;
     Material2D.ZBuffer = true;
 
     irr::scene::SMeshBuffer* b = new irr::scene::SMeshBuffer();
@@ -47,7 +47,7 @@ IrrRocketRenderer::IrrRocketRenderer(irr::video::IVideoDriver* driver) : Driver(
     b->Indices.push_back(3);
     b->Indices.push_back(2);
 
-    b->Material.ZWriteEnable = true;
+//    b->Material.ZWriteEnable = true;
     b->Material.ZBuffer = true;
     b->Material.ColorMask = irr::video::ECM_NONE;
     b->Material.Lighting = false;
