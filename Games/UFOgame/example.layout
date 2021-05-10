@@ -7,98 +7,42 @@
 			<Cursor1 position="778" topLine="25" />
 		</Cursor>
 		<Folding>
-			<Collapse line="46" />
-			<Collapse line="56" />
-			<Collapse line="77" />
-			<Collapse line="136" />
-			<Collapse line="193" />
-			<Collapse line="256" />
-			<Collapse line="281" />
-			<Collapse line="330" />
-			<Collapse line="371" />
-			<Collapse line="377" />
-			<Collapse line="412" />
-			<Collapse line="441" />
-			<Collapse line="463" />
+			<Collapse line="102" />
+			<Collapse line="230" />
 		</Folding>
-	</File>
-	<File name="CParticleSystem2SceneNode.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="CParticleSystem2SceneNode.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="225" topLine="0" />
-		</Cursor>
 	</File>
 	<File name="scrollergame.cpp" open="1" top="1" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="54747" topLine="0" />
 		</Cursor>
 		<Folding>
-			<Collapse line="29" />
-			<Collapse line="39" />
-			<Collapse line="106" />
-			<Collapse line="160" />
-			<Collapse line="166" />
-			<Collapse line="180" />
-			<Collapse line="193" />
-			<Collapse line="204" />
-			<Collapse line="213" />
-			<Collapse line="227" />
-			<Collapse line="234" />
-			<Collapse line="306" />
-			<Collapse line="343" />
-			<Collapse line="353" />
-			<Collapse line="357" />
-			<Collapse line="373" />
-			<Collapse line="377" />
-			<Collapse line="488" />
-			<Collapse line="495" />
-			<Collapse line="502" />
-			<Collapse line="515" />
-			<Collapse line="571" />
-			<Collapse line="575" />
-			<Collapse line="629" />
-			<Collapse line="703" />
-			<Collapse line="707" />
-			<Collapse line="731" />
-			<Collapse line="759" />
-			<Collapse line="772" />
-			<Collapse line="784" />
-			<Collapse line="795" />
-			<Collapse line="854" />
-			<Collapse line="859" />
-			<Collapse line="864" />
-			<Collapse line="906" />
-			<Collapse line="913" />
-			<Collapse line="959" />
-			<Collapse line="974" />
-			<Collapse line="1013" />
-			<Collapse line="1023" />
-			<Collapse line="1039" />
-			<Collapse line="1046" />
-			<Collapse line="1140" />
-			<Collapse line="1174" />
-			<Collapse line="1206" />
-			<Collapse line="1212" />
-			<Collapse line="1220" />
-			<Collapse line="1230" />
-			<Collapse line="1247" />
-			<Collapse line="1342" />
-			<Collapse line="1426" />
-			<Collapse line="1431" />
-			<Collapse line="1438" />
-			<Collapse line="1445" />
-			<Collapse line="1587" />
-			<Collapse line="1594" />
+			<Collapse line="8" />
+			<Collapse line="647" />
+		</Folding>
+	</File>
+	<File name="CParticleSystem2SceneNode.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="9" />
+		</Folding>
+	</File>
+	<File name="CParticleSystem2SceneNode.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="225" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="10" />
 		</Folding>
 	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="924" topLine="0" />
 		</Cursor>
+		<Folding>
+			<Collapse line="20" />
+		</Folding>
 	</File>
-	<EditorTabsLayout layout="03d636b05e3f2844001f0e5700000002=0;Scroller Game:scrollergame.h,1;Scroller Game:main.cpp,2;Scroller Game:CParticleSystem2SceneNode.h,3;Scroller Game:CParticleSystem2SceneNode.cpp,*4;Scroller Game:scrollergame.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=328;besth=341;minw=328;minh=341;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03d636b05e3f2844001f0e5700000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+	<EditorTabsLayout layout="02d4eab06069d362000ff1cf00000002=0;Scroller Game:scrollergame.h,1;Scroller Game:main.cpp,2;Scroller Game:CParticleSystem2SceneNode.h,3;Scroller Game:CParticleSystem2SceneNode.cpp,*4;Scroller Game:scrollergame.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=333;besth=350;minw=333;minh=350;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=02d4eab06069d362000ff1cf00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>
