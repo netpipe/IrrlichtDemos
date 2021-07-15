@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include <QApplication>
 #include <SDL2/SDL.h>
+#include <irrlicht.h>
 //https://stackoverflow.com/questions/25232756/sdl2-rendering-into-qwidget
 
 SDL_Joystick *joystick1 = NULL;

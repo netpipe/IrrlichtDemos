@@ -74,8 +74,8 @@ SDL_Thread *thread,*kbThread;
 int i;
 //HWND sdl_hWnd;
 
-//  if (SDL_Init(SDL_INIT_EVERYTHING)<0) { printf( "Unable to init SDL: %s\n", SDL_GetError() ); return 1; }
-//  SDL_Surface* screen = SDL_SetVideoMode(640, 480, 16,SDL_SWSURFACE|SDL_DOUBLEBUF);//SDL_HWSURFACE
+  if (SDL_Init(SDL_INIT_EVERYTHING)<0) { printf( "Unable to init SDL: %s\n", SDL_GetError() ); return 1; }
+  SDL_Surface* screen = SDL_SetVideoMode(640, 480, 16,SDL_SWSURFACE|SDL_DOUBLEBUF);//SDL_HWSURFACE
   //  SDL_Surface * sdldisplay = SDL_SetVideoMode(800,600,16,SDL_OPENGL);
 
 //  static SDL_SysWMinfo pInfo;

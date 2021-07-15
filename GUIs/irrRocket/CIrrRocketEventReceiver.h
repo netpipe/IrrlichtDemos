@@ -1,6 +1,7 @@
 #ifndef CIRRROCKETEVENTRECEIVER_H
 #define CIRRROCKETEVENTRECEIVER_H
 
+#include <irrlicht.h>
 #include <IEventReceiver.h>
 
 namespace Rocket

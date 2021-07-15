@@ -37,7 +37,6 @@
 			<Add option="-DQT_OPENGL_LIB" />
 			<Add option="-DQT_WIDGETS_LIB" />
 			<Add option="-DQT_GUI_LIB" />
-			<Add option="-DQT_NETWORK_LIB" />
 			<Add option="-DQT_CORE_LIB" />
 			<Add library="Irrlicht" />
 			<Add library="GL" />
@@ -49,8 +48,8 @@
 			<Add library="Qt5Gui" />
 			<Add library="Qt5Core" />
 			<Add library="Qt5X11Extras" />
-			<Add library="QtNetwork" />
 			<Add library="Qt5Qml" />
+			<Add library="SDL2" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
 			<Add directory="/home/Dev/libs/net/IRC/libcommuni/lib" />
 		</Linker>
@@ -63,10 +62,6 @@
 		<Unit filename="moc_mainwindow.cpp" />
 		<Unit filename="moc_predefs.h" />
 		<Unit filename="ui_mainwindow.h" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-			<envvars />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

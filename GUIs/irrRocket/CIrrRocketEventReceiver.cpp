@@ -34,6 +34,11 @@ CIrrRocketEventReceiver::~CIrrRocketEventReceiver()
 
 bool CIrrRocketEventReceiver::OnEvent(const irr::SEvent& event)
 {
+    if ( event.EventType == irr::EET_GUI_EVENT )
+	{
+        irr::s32 cid = event.GUIEvent.Caller->getID();
+        printf("GUI event");
+    }
     if (event.EventType == irr::EET_MOUSE_INPUT_EVENT)
     {
         //Rocket::Core::Input::KeyModifier mod;
@@ -53,6 +58,15 @@ bool CIrrRocketEventReceiver::OnEvent(const irr::SEvent& event)
         }
         else if (event.MouseInput.Event == irr::EMIE_LMOUSE_PRESSED_DOWN)
         {
+            //printf("Mouse event\n");
+            //Context->UnloadAllDocuments();
+            //Rocket::Core::ElementDocument* document = Context->LoadDocument("media/assets/second.rml");
+            //if (document != NULL)
+            //{
+            //    document->Focus();
+            //    document->Show();
+            //    document->RemoveReference();
+            //}
             Context->ProcessMouseButtonDown(0, mod);
         }
         else if (event.MouseInput.Event == irr::EMIE_RMOUSE_PRESSED_DOWN)

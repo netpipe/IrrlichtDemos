@@ -1,0 +1,79 @@
+<rml>
+	<head>
+        <style>
+        /* Force the tabset element to a fixed size. */
+tabset
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: solid;
+}
+
+/* Display the tab container as a block element 20 pixels high; it will
+   be positioned at the top of the tabset. */
+tabset tabs
+{
+    display: block;
+    height: 20px;
+}
+
+/* Force each tab to only take up 80 pixels across the tabs element. */
+tabset tab
+{
+    width: 80px;
+    border: solid;
+    border-width: 1px 1px 0 1px;
+}
+
+/* DOESN'T WORK
+tabset tab:focus
+{
+    background-color: #DEADBEEF;
+    border: solid;
+    border-width: 1px 1px 0 1px;
+}*/
+
+/* DOESN'T WORK
+tabset tab:active
+{
+    background-color: #DEADBEEF;
+    border: solid;
+    border-width: 1px 1px 0 1px;
+}
+*/
+/* Display the panel container as a block element 180 pixels high; it will
+   be positioned below the tab container and take up the rest of the space
+   in the tabset. */
+tabset panels
+{
+    display: block;
+    height: 100%;
+    border: solid;
+}
+
+/* Fix each panel to take up exactly the panelled space. */
+tabset panels panel
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: solid;
+    border-width: 1px 1px 0 1px;
+}
+
+        </style>
+	</head>
+	<body>
+		<tabset>
+			<tab>Tab 1</tab>
+			<panel>
+				Welcome to the first tab!
+			</panel>
+			<tab>Tab 2</tab>
+			<panel>
+				Welcome to the second tab!
+			</panel>
+		</tabset>
+		</body>
+</rml>

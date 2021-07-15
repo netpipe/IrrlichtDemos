@@ -19,6 +19,7 @@
 
   Daniel Sudmann suddani@googlemail.com
 */
+#include <cstdlib>
 #include "CIrrRocketGUI.h"
 
 #include <Rocket/Core.h>
@@ -30,9 +31,10 @@
 #include "IrrRocketRenderer.h"
 
 #include "CIrrRocketEventReceiver.h"
-
+#include "EventInstancer.h"
 
 unsigned int CIrrRocketGUI::RocketContextCount = 0;
+Rocket::Core::Context* context = NULL;
 
 CIrrRocketGUI::CIrrRocketGUI(irr::IrrlichtDevice* device) : Device(device)
 {
@@ -60,6 +62,7 @@ CIrrRocketGUI::CIrrRocketGUI(irr::IrrlichtDevice* device) : Device(device)
 	Rocket::Core::FontDatabase::LoadFontFace("media/assets/Delicious-BoldItalic.otf");
 
 	RocketContext = Rocket::Core::CreateContext("default", Rocket::Core::Vector2i(Device->getVideoDriver()->getScreenSize().Width, Device->getVideoDriver()->getScreenSize().Height));
+    context = RocketContext;
 
 	InputEvents = new CIrrRocketEventReceiver(RocketContext);
 
@@ -73,14 +76,35 @@ CIrrRocketGUI::CIrrRocketGUI(irr::IrrlichtDevice* device) : Device(device)
 	///DEMO
 	Device->setEventReceiver(InputEvents);
 
+	// Initialise the event instancer and handlers.
+	EventInstancer* event_instancer = new EventInstancer(context);
+	Rocket::Core::Factory::RegisterEventListenerInstancer(event_instancer);
+	event_instancer->RemoveReference();
+	//EventManager::RegisterEventHandler("first", new EventHandlerNavigation());
+
 	Rocket::Core::ElementDocument* cursor = RocketContext->LoadMouseCursor("media/assets/cursor.rml");
 	if (cursor)
 		cursor->RemoveReference();
 
-	Rocket::Core::ElementDocument* document = RocketContext->LoadDocument("media/assets/demo.rml");
+    system("php media/assets/first.php > media/assets/first.rml");
+    system("php media/assets/second.php > media/assets/second.rml");
+    system("php media/assets/third.php > media/assets/third.rml");
+
+    Rocket::Core::ElementDocument* document2 = RocketContext->LoadDocument("media/assets/second.rml");
+	if (document2)
+	{
+		document2->Show();
+		document2->RemoveReference();
+	}
+	Rocket::Core::ElementDocument* document = RocketContext->LoadDocument("media/assets/first.rml");
 	if (document)
 	{
 		document->Show();
+		//myeventlistener = new MyEventListener(context);
+		//Rocket::Core::Element* button = document->GetElementById("button");
+		//context->AddEventListener("click", myeventlistener, true);
+		//context->AddEventListener("mouseover", &myeventlistener, true);
+        //button->AddEventListener("click", myeventlistener, true);
 		document->RemoveReference();
 	}
 }

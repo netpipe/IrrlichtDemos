@@ -53,6 +53,8 @@
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
 			<Add directory="../" />
 			<Add directory="/home/Dev/libs/GUI/libRocket/Include" />
+			<Add directory="/home/gamedev/gamedev/libRocket/Include" />
+			<Add directory="/home/gamedev/gamedev/irrlicht-1.8.4/include" />
 		</Compiler>
 		<Linker>
 			<Add library="Irrlicht" />
@@ -61,13 +63,22 @@
 			<Add library="X11" />
 			<Add library="RocketCore" />
 			<Add library="freetype" />
+			<Add library="/home/gamedev/gamedev/libRocket/Build/libRocketControls.so" />
+			<Add library="/home/gamedev/gamedev/libRocket/Build/libRocketCore.so" />
+			<Add library="/home/gamedev/gamedev/libRocket/Build/libRocketDebugger.so" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
 			<Add directory="/home/Dev/libs/GUI/libRocket/Build" />
+			<Add directory="/home/gamedev/gamedev/libRocket/Build" />
+			<Add directory="/home/gamedev/gamedev/irrlicht-1.8.4/bin/Linux" />
 		</Linker>
 		<Unit filename="CIrrRocketEventReceiver.cpp" />
 		<Unit filename="CIrrRocketEventReceiver.h" />
 		<Unit filename="CIrrRocketGUI.cpp" />
 		<Unit filename="CIrrRocketGUI.h" />
+		<Unit filename="Event.cpp" />
+		<Unit filename="Event.h" />
+		<Unit filename="EventInstancer.cpp" />
+		<Unit filename="EventInstancer.h" />
 		<Unit filename="IrrRocketFileInterface.cpp" />
 		<Unit filename="IrrRocketFileInterface.h" />
 		<Unit filename="IrrRocketInterface.cpp" />
@@ -75,6 +86,50 @@
 		<Unit filename="IrrRocketRenderer.cpp" />
 		<Unit filename="IrrRocketRenderer.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="media/Shaders/COGLES2DetailMap.fsh" />
+		<Unit filename="media/Shaders/COGLES2LightmapAdd.fsh" />
+		<Unit filename="media/Shaders/COGLES2LightmapModulate.fsh" />
+		<Unit filename="media/Shaders/COGLES2NormalMap.fsh" />
+		<Unit filename="media/Shaders/COGLES2NormalMap.vsh" />
+		<Unit filename="media/Shaders/COGLES2OneTextureBlend.fsh" />
+		<Unit filename="media/Shaders/COGLES2ParallaxMap.fsh" />
+		<Unit filename="media/Shaders/COGLES2ParallaxMap.vsh" />
+		<Unit filename="media/Shaders/COGLES2Reflection2Layer.fsh" />
+		<Unit filename="media/Shaders/COGLES2Reflection2Layer.vsh" />
+		<Unit filename="media/Shaders/COGLES2Renderer2D.fsh" />
+		<Unit filename="media/Shaders/COGLES2Renderer2D.vsh" />
+		<Unit filename="media/Shaders/COGLES2Solid.fsh" />
+		<Unit filename="media/Shaders/COGLES2Solid.vsh" />
+		<Unit filename="media/Shaders/COGLES2Solid2.vsh" />
+		<Unit filename="media/Shaders/COGLES2Solid2Layer.fsh" />
+		<Unit filename="media/Shaders/COGLES2SphereMap.fsh" />
+		<Unit filename="media/Shaders/COGLES2SphereMap.vsh" />
+		<Unit filename="media/Shaders/COGLES2TransparentAlphaChannelRef.fsh" />
+		<Unit filename="media/Shaders/COGLES2TransparentVertexAlpha.fsh" />
+		<Unit filename="media/assets/Delicious-Bold.otf" />
+		<Unit filename="media/assets/Delicious-BoldItalic.otf" />
+		<Unit filename="media/assets/Delicious-Italic.otf" />
+		<Unit filename="media/assets/Delicious-Roman.otf" />
+		<Unit filename="media/assets/clouds.jpg" />
+		<Unit filename="media/assets/cursor.rml" />
+		<Unit filename="media/assets/demo (copy).rml" />
+		<Unit filename="media/assets/demo.rml" />
+		<Unit filename="media/assets/demo.rml3" />
+		<Unit filename="media/assets/demo5.rml" />
+		<Unit filename="media/assets/first.php" />
+		<Unit filename="media/assets/first.rml" />
+		<Unit filename="media/assets/invader.rcss" />
+		<Unit filename="media/assets/invader.tga" />
+		<Unit filename="media/assets/present.tga" />
+		<Unit filename="media/assets/rkt.rcss" />
+		<Unit filename="media/assets/second.php" />
+		<Unit filename="media/assets/second.rml" />
+		<Unit filename="media/assets/test-1.rml" />
+		<Unit filename="media/assets/test-2.rml" />
+		<Unit filename="media/assets/third.php" />
+		<Unit filename="media/assets/third.rml" />
+		<Unit filename="media/assets/treeview.rml" />
+		<Unit filename="media/assets/window.rml" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

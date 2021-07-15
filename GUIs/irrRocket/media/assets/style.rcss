@@ -1,0 +1,158 @@
+<-- Style Drop Down Menu -->
+
+body {
+background:#414141;
+font-size:small;
+	font-family: Delicious;
+	font-weight: normal;
+	font-style: normal;
+}
+#wrapper{background:#2D3851;margin:auto;width:90%;border-radius: 15px 15px 15px 15px;border:10px black double;}
+h1 {margin:0 0 10px 10px;line-height:2em;}
+h2 {border-left:10px solid #cc0;color:#c30;padding-left:10px;margin:20px 0 10px 10px;font-size:.9em}
+p {margin:5px 10px}
+#body {background:#5A6570;width:100%;}
+.footer {height:11px ; border-top:2px black solid ; background:#2D3851;}
+/*
+c30 orange
+999 duno
+000 black
+*/
+
+
+.fling-minislide {width:200px; height:200px; overflow:hidden; position:relative; }
+.fling-minislide img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;}
+
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.fling-minislide img:nth-child(4){animation-delay:0s;}
+.fling-minislide img:nth-child(3){animation-delay:3s;}
+.fling-minislide img:nth-child(2){animation-delay:6s;}
+.fling-minislide img:nth-child(1){animation-delay:9s;}
+
+
+
+
+
+#TJK_dropDownMenu,
+#TJK_dropDownMenu * { margin:0;padding:0;}
+/* "Master" UL (the whole Menu) */
+#TJK_dropDownMenu {background:white;width:100%;font-size:.8em;position:relative;}
+/* sub-menu ULs */
+#TJK_dropDownMenu li ul {
+	width:10em !important;/* leaves room for padding */
+	cursor:default;
+	position:absolute;
+	height:auto;
+	display:none;
+	left:-10px;
+	padding:1px 10px 10px 10px;
+	background:url(/img/clear.gif);/* trick to keep'em open */
+}
+/* All LIs */
+#TJK_dropDownMenu li {
+	width:8em;
+	cursor:pointer;
+	list-style-type:none;
+	font-weight:bold;
+	float:left;
+	position:relative;
+
+}
+/* sub-menu LIs */
+#TJK_dropDownMenu li ul li {
+	width:8em/*FF*/;
+	padding:0;
+	border:none;
+	max-width:120%;
+	border:8px solid #333;
+	border-top:none;
+}
+/* All anchors */
+#TJK_dropDownMenu li a {
+	cursor:default;
+	color:#c1c1c1;
+	border-left:1px solid #333;
+	text-decoration:none;
+	display:block;
+/*  uncomment the declaration below if you want to go "full width" */
+/*	width:7.47em; */
+	height:2em;
+	line-height:2em;
+}
+/* sub-menu Anchors */
+#TJK_dropDownMenu li ul li a {
+	width:9em/*FF*/;
+	position:relative !important; /* ie Mac */
+	cursor:pointer !important;
+	white-space:nowrap;
+	line-height:1.7em;
+	height:1.7em;
+	font-weight:normal;
+	border:1px solid #fff;
+	color:#fff;
+	background-position:0 50% !important;
+}
+/* :hover and stuff */
+#TJK_dropDownMenu li a:hover,
+#TJK_dropDownMenu li a:focus,
+#TJK_dropDownMenu li a:active {color:#000}
+/* move the declarations from the rule below the one above if you want a background swap on *all* anchors, including the top level ones */
+#TJK_dropDownMenu ul a:hover,
+#TJK_dropDownMenu ul a:focus,
+#TJK_dropDownMenu ul a:active {color:#fff !important;background:#c30}
+/* display and z-index for the sub-menus */
+#TJK_dropDownMenu li:hover ul,
+#TJK_dropDownMenu li.msieFix ul {display:block;z-index:10;top:2em !important;}
+/* safari: users can keep sub-menus up by from sub-menus to next top level  */
+/* didn't find a solution for users going back from the last one. I prefer  */
+/* to leave it like that vs. taking the last sub-menu *out of* the wrapper  */
+#TJK_dropDownMenu li#AB {z-index:6;}
+#TJK_dropDownMenu li#CF {z-index:5;}
+#TJK_dropDownMenu li#GJ {z-index:4;}
+#TJK_dropDownMenu li#KR {z-index:3;}
+#TJK_dropDownMenu li#ST {z-index:2;}
+#TJK_dropDownMenu li#UZ {z-index:1;}
+
+/* Current location - class on Body must match LI's id */
+.AB #TJK_dropDownMenu li#AB a,
+.CF #TJK_dropDownMenu li#CF a,
+.GJ #TJK_dropDownMenu li#GJ a,
+.KR #TJK_dropDownMenu li#KR a,
+.ST #TJK_dropDownMenu li#ST a,
+.UZ #TJK_dropDownMenu li#UZ a {color:#000;}
+/* Keeping current menu accessible to JAWS */
+.AB #TJK_dropDownMenu li#AB ul,
+.CF #TJK_dropDownMenu li#CF ul,
+.GJ #TJK_dropDownMenu li#GJ ul,
+.KR #TJK_dropDownMenu li#KR ul,
+.ST #TJK_dropDownMenu li#ST ul,
+.UZ #TJK_dropDownMenu li#UZ ul {display:block;top:-1000px}
+
+/* background colors */
+#AB,#AB li a {background-color:#616C7A;}
+#CF,#CF li a {background-color:#5C6776;}/*second menu banner color*/
+#GJ,#GJ li a {background-color:#546070;}
+#KR,#KR li a {background-color:#fccae5;}
+#ST,#ST li a {background-color:#c4c4c4;}
+#UZ,#UZ li a {background-color:#c3c3c3;}
+/* "trigger" and "msieFix" classes */
+#TJK_dropDownMenu li.msieFix a {}
+/* last nested UL. keeping it in */
+#TJK_dropDownMenu li#UZ ul {left:-2.3em !important;}
+
+/* If JS is OFF we need to style the links in the sub-menu of the current page     */
+/* so they are accessible to keyboard users. Using a class on each link would let  */
+/* us stick each link in the same place, but we would have to plug a lot of        */
+/* attributes in the markup and many rules here, so...                             */
+.AB #TJK_dropDownMenu li#AB ul li a:focus,
+.AB #TJK_dropDownMenu li#AB ul li a:active,
+.CF #TJK_dropDownMenu li#CF ul li a:focus,
+.CF #TJK_dropDownMenu li#CF ul li a:active,
+.GJ #TJK_dropDownMenu li#GJ ul li a:focus,
+.GJ #TJK_dropDownMenu li#GJ ul li a:active,
+.KR #TJK_dropDownMenu li#KR ul li a:focus,
+.KR #TJK_dropDownMenu li#KR ul li a:active,
+.ST #TJK_dropDownMenu li#ST ul li a:focus,
+.ST #TJK_dropDownMenu li#ST ul li a:active,
+.UZ #TJK_dropDownMenu li#UZ ul li a:focus,
+.UZ #TJK_dropDownMenu li#UZ ul li a:active {position:absolute !important;top:1028px !important;}
