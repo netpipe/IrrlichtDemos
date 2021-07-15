@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="All" />
+	<File name="system.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1064" topLine="3" />
+		</Cursor>
+		<Folding>
+			<Collapse line="5" />
+		</Folding>
+	</File>
+	<File name="sound.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="main.cpp" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="20625" topLine="209" />
+		</Cursor>
+		<Folding>
+			<Collapse line="51" />
+			<Collapse line="68" />
+			<Collapse line="74" />
+			<Collapse line="362" />
+			<Collapse line="380" />
+			<Collapse line="398" />
+			<Collapse line="433" />
+			<Collapse line="465" />
+			<Collapse line="566" />
+			<Collapse line="662" />
+			<Collapse line="703" />
+		</Folding>
+	</File>
+	<File name="draw.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9100" topLine="171" />
+		</Cursor>
+		<Folding>
+			<Collapse line="16" />
+			<Collapse line="21" />
+			<Collapse line="29" />
+			<Collapse line="121" />
+			<Collapse line="137" />
+			<Collapse line="139" />
+			<Collapse line="157" />
+			<Collapse line="163" />
+			<Collapse line="191" />
+			<Collapse line="200" />
+			<Collapse line="202" />
+			<Collapse line="214" />
+			<Collapse line="415" />
+			<Collapse line="436" />
+			<Collapse line="453" />
+			<Collapse line="507" />
+		</Folding>
+	</File>
+	<EditorTabsLayout layout="0407f15060ef7a1800161d9a00000002=0;Irrlicht Pong:sound.h,1;Irrlicht Pong:draw.cpp,*2;Irrlicht Pong:main.cpp,3;Irrlicht Pong:sound.cpp,4;Irrlicht Pong:system.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=814;besth=350;minw=814;minh=350;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=0407f15060ef7a1800161d9a00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+</CodeBlocks_layout_file>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Irrlicht Pong" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="../Pong" prefix_auto="0" extension_auto="0" />
+				<Option working_dir=".." />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+			<Target title="emscripten">
+				<Option output="../irrRocket.html" prefix_auto="0" extension_auto="0" />
+				<Option working_dir=".." />
+				<Option type="1" />
+				<Option compiler="emscripten" />
+				<Option projectCompilerOptionsRelation="1" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Option projectIncludeDirsRelation="1" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Option projectLibDirsRelation="1" />
+				<Compiler>
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_IRR_EMSCRIPTEN_PLATFORM_" />
+					<Add option="-D__EMSCRIPTEN__" />
+					<Add directory="/home/netpipe/Desktop/EMScripten-AddonBundle/Libs/libRocket/Include" />
+					<Add directory="../../../EMLibs/irrlicht-ogl-es/irrlicht/include" />
+					<Add directory="../../../EMLibs/freetype2/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s ALLOW_MEMORY_GROWTH=1" />
+					<Add option="--preload-file media/" />
+					<Add option="-s FULL_ES2=1" />
+					<Add option="-s DISABLE_EXCEPTION_CATCHING=0" />
+					<Add option="-s NO_EXIT_RUNTIME=1" />
+					<Add library="Irrlicht" />
+					<Add library="GL" />
+					<Add library="RocketCore" />
+					<Add library="GLESv2" />
+					<Add library="freetype" />
+					<Add directory="/home/netpipe/Desktop/EMScripten-AddonBundle/Libs/libRocket/Build" />
+					<Add directory="../../../EMLibs/irrlicht-ogl-es/irrlicht/lib/Linux" />
+					<Add directory="../../../EMLibs/freetype2/build" />
+				</Linker>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="/home/netpipe/Desktop/irrlicht-1.8.4/include" />
+			<Add directory="../" />
+			<Add directory="/home/Dev/libs/GUI/libRocket/Include" />
+			<Add directory="/home/gamedev/gamedev/libRocket/Include" />
+			<Add directory="/home/gamedev/gamedev/irrlicht-1.8.4/include" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="GL" />
+			<Add library="Xxf86vm" />
+			<Add library="X11" />
+			<Add library="freetype" />
+			<Add directory="/home/netpipe/Desktop/irrlicht-1.8.4/lib/Linux" />
+			<Add directory="/home/Dev/libs/GUI/libRocket/Build" />
+			<Add directory="/home/gamedev/gamedev/libRocket/Build" />
+			<Add directory="/home/gamedev/gamedev/irrlicht-1.8.4/bin/Linux" />
+		</Linker>
+		<Unit filename="blokus.cpp" />
+		<Unit filename="blokus.h" />
+		<Unit filename="common.h" />
+		<Unit filename="conio.h" />
+		<Unit filename="draw.cpp" />
+		<Unit filename="draw.h" />
+		<Unit filename="gui.cpp" />
+		<Unit filename="gui.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="resource.h" />
+		<Unit filename="sound.cpp" />
+		<Unit filename="sound.h" />
+		<Unit filename="system.cpp" />
+		<Unit filename="system.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
