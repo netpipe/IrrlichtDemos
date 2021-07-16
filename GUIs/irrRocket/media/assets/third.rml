@@ -26,7 +26,7 @@
 	<body template="window">
         <p>Third RML</p>
         <p>Custom content for third.rml</p>
-         <p>Current date: 2021-07-15 11:46:53</p>
+         <p>Current date: 2021-07-16 15:10:09</p>
         <button onclick="first" id="button-first" type="button">Load first.rml</button> <br></br>
         <button onclick="second" id="button-second" type="button">Load second.rml</button> <br></br>
 

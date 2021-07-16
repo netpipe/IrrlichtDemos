@@ -51,7 +51,7 @@ CIrrRocketGUI::CIrrRocketGUI(irr::IrrlichtDevice* device) : Device(device)
         Rocket::Core::Initialise();
 
         /// TODO (sudi#1#): Have to check if the Rocket::Controls are needed
-        //Rocket::Controls::Initialise();
+        Rocket::Controls::Initialise();
     }
 
     printf("Loading fonts\n");
@@ -100,6 +100,8 @@ CIrrRocketGUI::CIrrRocketGUI(irr::IrrlichtDevice* device) : Device(device)
 	if (document)
 	{
 		document->Show();
+		//Rocket::Core::Element* textarea = document->GetElementById("textarea");
+		//Rocket::Controls::ElementFormControlTextArea* textarea2 = dynamic_cast< Rocket::Controls::ElementFormControlTextArea** >(textarea);
 		//myeventlistener = new MyEventListener(context);
 		//Rocket::Core::Element* button = document->GetElementById("button");
 		//context->AddEventListener("click", myeventlistener, true);

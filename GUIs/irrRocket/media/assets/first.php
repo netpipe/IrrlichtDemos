@@ -51,6 +51,12 @@
                 z-index: -1;
 			}
 
+			#textarea {
+                border-width: 1px;
+                background-color: white;
+                color: black;
+			}
+
 		</style>
 	</head>
 
@@ -70,9 +76,14 @@
             echo date('Y-m-d H:i:s');
             echo "</p>";
          ?>
+
+        <form id="form" onsubmit="input">
+            <textarea id="textarea" cols="20" rows="2"/>
+			<input type="submit">Print to console</input>
+		</form>
+
         <p>Click on the image to load second.rml</p>
         <img src="clouds.jpg" onclick="second"/>
-
 
     </body>
 </rml>
