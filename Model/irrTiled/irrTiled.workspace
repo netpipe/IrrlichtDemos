@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="2DBasic/2DBasic.cbp" />
+		<Project filename="3DBasic/3DBasic.cbp" />
+		<Project filename="Animation/Animation.cbp" />
+		<Project filename="Levels/Levels.cbp" />
+		<Project filename="Objects/Objects.cbp" />
+		<Project filename="Property/Property.cbp" />
+		<Project filename="Shapes/Shapes.cbp" />
+		<Project filename="Tilesets/Tilesets.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

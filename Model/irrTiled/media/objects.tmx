@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="16" height="16" tilewidth="64" tileheight="64" infinite="0" nextlayerid="30" nextobjectid="654">
+ <tileset firstgid="1" name="housetileset" tilewidth="64" tileheight="64" tilecount="112" columns="8">
+  <image source="housetileset.png" width="512" height="896"/>
+ </tileset>
+ <layer id="28" name="floor" width="16" height="16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,29,36,29,29,29,29,53,0,0,0,
+0,0,0,0,0,29,29,29,29,29,36,36,53,0,0,0,
+0,0,0,0,0,0,36,0,0,0,36,29,53,0,0,0,
+0,0,0,0,0,0,29,29,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,36,36,0,0,0,0,0,0,0,0,
+0,29,36,29,0,0,29,29,29,0,0,0,0,0,0,0,
+0,29,29,29,0,0,36,36,29,0,0,0,0,0,0,0,
+0,36,29,36,0,0,36,29,29,0,0,0,0,0,0,0,
+0,36,36,36,0,0,29,29,0,0,0,0,0,0,0,0,
+0,29,29,29,36,36,29,36,0,0,0,0,0,0,0,0,
+0,36,36,29,0,0,29,29,0,0,0,0,0,0,0,0,
+0,29,29,29,0,0,36,29,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="13" name="wall" width="16" height="16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,94,94,94,94,94,94,94,94,0,0,
+0,0,0,0,0,94,0,0,0,0,0,0,0,104,0,0,
+0,0,0,0,94,0,0,94,0,0,0,0,0,102,0,0,
+0,0,0,0,94,94,103,111,94,94,0,0,0,104,0,0,
+0,0,0,0,86,96,0,0,96,86,94,94,94,0,0,0,
+94,94,94,94,94,86,0,0,86,86,0,0,0,0,0,0,
+94,0,0,0,94,96,0,0,0,86,0,0,0,0,0,0,
+109,0,0,0,94,86,0,0,0,96,0,0,0,0,0,0,
+94,0,0,0,94,96,0,0,0,86,0,0,0,0,0,0,
+109,0,0,0,94,86,0,0,86,86,0,0,0,0,0,0,
+94,0,0,0,0,103,0,0,96,86,0,0,0,0,0,0,
+109,0,0,0,94,86,0,0,86,86,0,0,0,0,0,0,
+94,0,0,0,94,96,0,0,96,86,0,0,0,0,0,0,
+94,94,94,94,94,86,86,86,86,86,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="29" name="ceiling" width="16" height="16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,66,66,66,66,66,66,66,0,0,0,
+0,0,0,0,0,66,66,66,66,66,66,66,66,0,0,0,
+0,0,0,0,0,0,66,0,0,0,66,66,66,0,0,0,
+0,0,0,0,0,0,61,61,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,61,61,0,0,0,0,0,0,0,0,
+0,60,60,60,0,0,61,61,61,0,0,0,0,0,0,0,
+0,60,60,60,0,0,61,61,61,0,0,0,0,0,0,0,
+0,60,60,60,0,0,61,61,61,0,0,0,0,0,0,0,
+0,60,60,60,0,0,61,61,0,0,0,0,0,0,0,0,
+0,60,60,60,61,61,61,61,0,0,0,0,0,0,0,0,
+0,60,60,60,0,0,61,61,0,0,0,0,0,0,0,0,
+0,60,60,60,0,0,61,61,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="27" name="fan">
+  <object id="646" x="128" y="496" width="64" height="64"/>
+  <object id="647" x="48" y="768" width="64" height="64"/>
+ </objectgroup>
+ <objectgroup id="26" name="plant2">
+  <object id="642" x="464" y="368" width="64" height="64"/>
+  <object id="643" x="304" y="256" width="64" height="64"/>
+  <object id="648" x="416" y="912" width="64" height="64"/>
+ </objectgroup>
+ <objectgroup id="25" name="chair">
+  <object id="579" x="176" y="640" width="64" height="64"/>
+  <object id="631" x="176" y="512" width="64" height="64"/>
+  <object id="618" x="176" y="832" width="64" height="64"/>
+  <object id="586" x="208" y="640" width="64" height="64"/>
+  <object id="628" x="208" y="512" width="64" height="64"/>
+  <object id="615" x="208" y="832" width="64" height="64"/>
+  <object id="582" x="80" y="640" width="64" height="64"/>
+  <object id="626" x="80" y="512" width="64" height="64"/>
+  <object id="613" x="80" y="832" width="64" height="64"/>
+  <object id="589" x="80" y="704" width="64" height="64"/>
+  <object id="624" x="80" y="576" width="64" height="64"/>
+  <object id="611" x="80" y="896" width="64" height="64"/>
+  <object id="592" x="208" y="704" width="64" height="64"/>
+  <object id="622" x="208" y="576" width="64" height="64"/>
+  <object id="609" x="208" y="896" width="64" height="64"/>
+  <object id="581" x="48" y="640" width="64" height="64"/>
+  <object id="621" x="48" y="512" width="64" height="64"/>
+  <object id="608" x="48" y="832" width="64" height="64"/>
+  <object id="588" x="48" y="704" width="64" height="64"/>
+  <object id="620" x="48" y="576" width="64" height="64"/>
+  <object id="607" x="48" y="896" width="64" height="64"/>
+  <object id="591" x="176" y="704" width="64" height="64"/>
+  <object id="619" x="176" y="576" width="64" height="64"/>
+  <object id="606" x="176" y="896" width="64" height="64"/>
+  <object id="639" x="368" y="176" width="64" height="64"/>
+  <object id="640" x="400" y="176" width="64" height="64"/>
+  <object id="641" x="432" y="176" width="64" height="64"/>
+ </objectgroup>
+ <objectgroup id="17" name="player">
+  <object id="584" x="416" y="576" width="64" height="64"/>
+ </objectgroup>
+ <objectgroup id="19" name="plant">
+  <object id="563" x="528" y="496" width="64" height="64"/>
+  <object id="632" x="784" y="176" width="64" height="64"/>
+  <object id="633" x="784" y="336" width="64" height="64"/>
+  <object id="564" x="528" y="656" width="64" height="64"/>
+  <object id="651" x="128" y="912" width="64" height="64"/>
+ </objectgroup>
+ <objectgroup id="20" name="table">
+  <object id="573" x="64" y="640" width="64" height="64"/>
+  <object id="630" x="64" y="512" width="64" height="64"/>
+  <object id="617" x="64" y="832" width="64" height="64"/>
+  <object id="587" x="64" y="704" width="64" height="64"/>
+  <object id="627" x="64" y="576" width="64" height="64"/>
+  <object id="614" x="64" y="896" width="64" height="64"/>
+  <object id="590" x="192" y="704" width="64" height="64"/>
+  <object id="625" x="192" y="576" width="64" height="64"/>
+  <object id="612" x="192" y="896" width="64" height="64"/>
+  <object id="575" x="192" y="640" width="64" height="64"/>
+  <object id="623" x="192" y="512" width="64" height="64"/>
+  <object id="610" x="192" y="832" width="64" height="64"/>
+ </objectgroup>
+ <objectgroup id="22" name="lamp1"/>
+ <objectgroup id="23" name="lamp2">
+  <object id="577" x="128" y="672" width="64" height="64"/>
+  <object id="629" x="128" y="544" width="64" height="64"/>
+  <object id="616" x="128" y="864" width="64" height="64"/>
+  <object id="634" x="768" y="256" width="64" height="64"/>
+  <object id="635" x="672" y="192" width="64" height="64"/>
+  <object id="636" x="672" y="320" width="64" height="64"/>
+ </objectgroup>
+ <objectgroup id="24" name="lamp3">
+  <object id="565" x="416" y="448" width="64" height="64"/>
+  <object id="653" x="512" y="576" width="64" height="64"/>
+  <object id="652" x="416" y="576" width="64" height="64"/>
+  <object id="566" x="416" y="704" width="64" height="64"/>
+  <object id="650" x="256" y="768" width="64" height="64"/>
+  <object id="568" x="416" y="832" width="64" height="64"/>
+  <object id="637" x="544" y="224" width="64" height="64"/>
+  <object id="638" x="384" y="256" width="64" height="64"/>
+ </objectgroup>
+</map>

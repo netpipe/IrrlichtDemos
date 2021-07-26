@@ -1,0 +1,75 @@
+
+
+Files:
+- pH64_doors_and_windows_OGA_alpha
+- pH64_electronics_OGA_alpha
+- pH64_furniture_OGA_alpha
+- pH64_plants_OGA_alpha
+
+License:
+Use any of the licenses I've selected.
+Only artist attribution is required. (See details below.)
+Use any of the five licenses selected. Attribute me by name, Stacy Kendra Love.
+Attribute my brand, Narcissist Interactive, in addition to my name, if your
+work is published in video or game format. Provide a link to my resources if
+your work is published in an online gallery such as Instagram, OpenGameArt,
+deviantArt, or your personal gallery or blog. That's it. :D
+
+Link:
+https://opengameart.org/content/ph64-pixel-pack-100s-of-sideview-assets
+
+#=============================================================
+
+Files:
+- housetileset
+
+License:
+his asset pack can be used in both free and commercial projects.
+You can modify it to suit your own needs. And if you modify it, let me know!
+I want to see ways to improve this or what else I can do to grow as an
+artist & designer.
+
+Link:
+https://btl-games.itch.io/topdown
+
+#=============================================================
+
+Files:
+- inca_front
+
+License:
+Assets are public domain. This means you can use it for your personal and
+commercial games. No credit needed, but if you do, please, let me know via
+twitter at @DavitMasia , so i can do some RT ;).
+
+Link:
+https://kronbits.itch.io/inca-game-assets
+
+#=============================================================
+
+Files:
+- Vikings_tilemaps_001
+
+License:
+If you are in doubt as to whether or not you need to credit the creator,
+it's best to get in touch with him/her. 
+
+Link:
+http://mirror.motherhamster.org/wiki/rpg.hamsterrepublic.com/ohrrpgce/Free_Tilemaps.html
+
+#=============================================================
+
+Files:
+- TX Plant
+- TX Props
+- TX Struct
+- TX Tileset Grass
+- TX Tileset Wall
+
+License:
+This asset pack can be used in both free and commercial projects.
+You can modify it to suit your own needs. Credit is not needed but appreciated.
+You may not redistribute it or resell it.
+
+Link:
+https://cainos.itch.io/pixel-art-top-down-basic

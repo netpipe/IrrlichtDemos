@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.0" orientation="orthogonal" renderorder="right-down" width="32" height="24" tilewidth="20" tileheight="20" infinite="0" nextlayerid="20" nextobjectid="558">
+ <tileset firstgid="1" name="Vikings_tilemaps_001" tilewidth="20" tileheight="20" tilecount="160" columns="16">
+  <image source="Vikings_tilemaps_001.png" trans="ff00ff" width="320" height="200"/>
+ </tileset>
+ <objectgroup id="19" name="shape">
+  <object id="512" x="20" y="120" width="60" height="60"/>
+  <object id="513" x="100" y="140" width="80" height="40"/>
+  <object id="514" x="20" y="200" width="20" height="180"/>
+  <object id="515" x="60" y="220" width="60" height="60">
+   <ellipse/>
+  </object>
+  <object id="516" x="120" y="200" width="60" height="60">
+   <ellipse/>
+  </object>
+  <object id="517" x="140" y="300" width="20" height="20">
+   <ellipse/>
+  </object>
+  <object id="518" x="140" y="340" width="20" height="20">
+   <ellipse/>
+  </object>
+  <object id="519" x="180" y="380" width="20" height="20">
+   <ellipse/>
+  </object>
+  <object id="520" x="200" y="200">
+   <polygon points="0,0 20,60 60,60 20,140 40,180 80,200 140,160 80,100 160,140 200,120 200,60 140,40 100,20 40,0"/>
+  </object>
+  <object id="521" x="200" y="140">
+   <polygon points="0,0 20,-20 120,0 180,-20 200,20 160,40 80,20 40,40"/>
+  </object>
+  <object id="522" x="440" y="160">
+   <point/>
+  </object>
+  <object id="523" x="600" y="400">
+   <point/>
+  </object>
+  <object id="524" x="420" y="400">
+   <point/>
+  </object>
+  <object id="525" x="460" y="300">
+   <point/>
+  </object>
+  <object id="526" x="560" y="180" width="60" height="60">
+   <ellipse/>
+  </object>
+  <object id="527" x="480" y="120" width="60" height="40"/>
+  <object id="528" x="560" y="120" width="20" height="20"/>
+  <object id="529" x="600" y="140" width="20" height="20"/>
+  <object id="530" x="420" y="320">
+   <polygon points="0,0 60,0 80,-20 140,-60 200,-40 200,20 160,40 140,80 120,60 100,20 60,40 0,20"/>
+  </object>
+  <object id="531" x="400" y="180" width="20" height="20">
+   <ellipse/>
+  </object>
+  <object id="532" x="440" y="180" width="40" height="40">
+   <ellipse/>
+  </object>
+  <object id="533" x="500" y="220" width="40" height="40">
+   <ellipse/>
+  </object>
+  <object id="534" x="420" y="240" width="20" height="20">
+   <ellipse/>
+  </object>
+  <object id="535" x="500" y="180" width="20" height="20">
+   <ellipse/>
+  </object>
+  <object id="536" x="520" y="180" width="20" height="20">
+   <ellipse/>
+  </object>
+  <object id="537" x="60" y="300" width="60" height="60">
+   <ellipse/>
+  </object>
+  <object id="538" x="80" y="380" width="20" height="20">
+   <ellipse/>
+  </object>
+  <object id="539" x="180" y="280" width="40" height="40">
+   <ellipse/>
+  </object>
+  <object id="540" x="360" y="200" width="20" height="20">
+   <ellipse/>
+  </object>
+  <object id="541" x="460" y="380" width="20" height="20">
+   <ellipse/>
+  </object>
+  <object id="542" x="360" y="380" width="20" height="20">
+   <ellipse/>
+  </object>
+  <object id="543" x="20" y="20">
+   <polygon points="0,0 20,80 60,40 100,80 160,40 240,80 380,20 460,80 600,60 540,0 420,20 380,0 220,20 120,0 20,20"/>
+  </object>
+  <object id="544" x="20" y="400">
+   <polygon points="0,0 160,40 300,20 600,40 300,60 0,60"/>
+  </object>
+  <object id="545" x="380" y="80" width="20" height="20">
+   <ellipse/>
+  </object>
+  <object id="546" x="120" y="380" width="40" height="40"/>
+  <object id="547" x="160" y="100" width="20" height="20"/>
+  <object id="548" x="320" y="80" width="40" height="40"/>
+  <object id="549" x="80" y="100">
+   <point/>
+  </object>
+  <object id="550" x="420" y="100">
+   <point/>
+  </object>
+  <object id="551" x="400" y="120">
+   <point/>
+  </object>
+  <object id="552" x="220" y="420">
+   <point/>
+  </object>
+  <object id="553" x="520" y="420">
+   <point/>
+  </object>
+  <object id="554" x="500" y="380">
+   <point/>
+  </object>
+  <object id="555" x="420" y="300">
+   <point/>
+  </object>
+  <object id="556" x="300" y="200">
+   <point/>
+  </object>
+  <object id="557" x="340" y="220">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

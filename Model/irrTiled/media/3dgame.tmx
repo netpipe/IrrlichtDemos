@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.0" orientation="orthogonal" renderorder="right-down" width="16" height="16" tilewidth="128" tileheight="128" infinite="0" nextlayerid="21" nextobjectid="521">
+ <tileset firstgid="1" name="DYcZs8l" tilewidth="128" tileheight="128" tilecount="15" columns="5">
+  <image source="DYcZs8l.png" trans="ff00ff" width="640" height="384"/>
+ </tileset>
+ <layer id="13" name="wall" width="16" height="16">
+  <data encoding="csv">
+1,1,2,1,2,1,1,1,1,1,1,4,1,1,1,1,
+1,0,0,0,0,0,1,0,0,1,0,0,0,1,0,1,
+4,0,0,0,0,0,1,0,0,0,0,1,0,0,0,6,
+3,0,0,0,0,15,1,0,0,1,1,1,1,1,1,1,
+1,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,
+2,0,0,0,0,1,5,0,0,1,0,0,0,7,9,7,
+1,0,0,0,0,1,1,0,0,1,0,0,0,8,0,10,
+2,0,0,0,0,0,0,0,0,0,7,7,7,7,0,7,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,
+1,0,1,1,1,1,1,0,0,1,7,7,7,7,0,7,
+1,0,0,0,0,0,1,0,0,1,0,0,0,10,0,8,
+1,6,1,2,1,1,1,0,0,1,0,0,0,7,0,7,
+0,0,11,12,12,14,11,0,0,1,0,0,0,8,0,10,
+11,12,0,0,0,0,0,0,0,1,0,0,0,7,0,7,
+6,0,0,0,0,0,0,0,0,1,0,0,0,10,0,8,
+11,12,11,13,11,13,11,1,1,1,0,0,0,7,7,7
+</data>
+ </layer>
+ <objectgroup id="19" name="lamp">
+  <object id="516" x="1792" y="1664" width="128" height="128"/>
+  <object id="517" x="1792" y="1408" width="128" height="128"/>
+  <object id="518" x="1792" y="1152" width="128" height="128"/>
+  <object id="520" x="1792" y="896" width="128" height="128"/>
+ </objectgroup>
+ <objectgroup id="18" name="player">
+  <object id="515" x="1792" y="1792" width="128" height="128"/>
+ </objectgroup>
+</map>

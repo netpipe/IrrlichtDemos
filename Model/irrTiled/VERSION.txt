@@ -1,0 +1,10 @@
+Version 1.1
+- Source code cleanup.
+- It is possible to load external tilesets in ".tsx" format.
+- Improvement in the examples, easier to understand.
+- More structures have been added (Group, ImageLayer, Tile, Animation, Frame)
+- Images/Sprites corresponding to the game "Wolfenstein 3D" have been removed
+  to avoid Copyright problems.
+
+Version 1.0
+- Release 4/07/2021
