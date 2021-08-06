@@ -6,7 +6,15 @@
 
 SDL_Joystick *joystick1 = NULL;
 
-IGUIEnvironment* env;
+
+using namespace irr;
+using namespace video;
+using namespace core;
+using namespace gui;
+using namespace scene;
+using namespace io;
+
+    IGUIEnvironment* env;
     SDL_Event event;
 
 

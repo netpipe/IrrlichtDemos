@@ -149,9 +149,9 @@ public:
 				}
 				if (id == 111)
 				{
-					bool flg = !font->TransParency;
+//					bool flg = !font->TransParency;
 					for (int i = 0;i < 6;i++){
-						fonts[i]->TransParency = flg;
+			//			fonts[i]->TransParency = flg;
 					}
 					return true;
 				}
@@ -199,7 +199,7 @@ int main()
 	 *	Create CGUITTFont and Bind with CGUITTFace
 	 */
 	for (int i = 0;i < 6;i++){
-		fonts[i] = new CGUITTFont(Driver);
+		fonts[i] = new CGUITTFont(env);
 	}
 	fonts[0]->attach(&face2,12);
 	fonts[1]->attach(&face2,24);
@@ -218,7 +218,7 @@ int main()
 	btnNew = env->addButton(rect<s32>(10,250,100,290), 0, 102, L"New Window");
 	btnFile = env->addButton(rect<s32>(10,300,100,340), 0, 103, L"Open File");
 	chkAA = env->addCheckBox(font->AntiAlias,rect<s32>(10,350,180,390),0,110,L"AntiAlias");
-	chkTrans = env->addCheckBox(font->TransParency,rect<s32>(190,350,380,390),0,111,L"TransParent Font");
+//	chkTrans = env->addCheckBox(font->TransParency,rect<s32>(190,350,380,390),0,111,L"TransParent Font");
 	IGUIScrollBar* scrollbar = env->addScrollBar(true, rect<s32>(150, 45, 350, 60), 0, 104);
 	lstLang = env->addListBox(rect<s32>(10, 400, 250, 470),0,120);
 	lstLang->addItem(L"Arial");

@@ -2,24 +2,19 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="All" />
-	<File name="main.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="6377" topLine="97" />
-		</Cursor>
-		<Folding>
-			<Collapse line="51" />
-			<Collapse line="76" />
-		</Folding>
-	</File>
 	<File name="CGUITTFont.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="1679" topLine="53" />
 		</Cursor>
 	</File>
-	<File name="CGUITTFont.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="main.cpp" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3751" topLine="153" />
+		</Cursor>
+	</File>
+	<File name="CGUITTFont.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="7159" topLine="260" />
 		</Cursor>
 	</File>
-	<EditorTabsLayout layout="046a34805de4b43e007c166600000002=0;TrueTypeFont:CGUITTFont.h,*1;TrueTypeFont:CGUITTFont.cpp,2;TrueTypeFont:main.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=758;besth=296;minw=758;minh=296;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=046a34805de4b43e007c166600000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>

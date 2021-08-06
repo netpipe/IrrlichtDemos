@@ -17,7 +17,7 @@ CXX           = g++
 DEFINES       = -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -g -Wall -W -D_REENTRANT -fPIC $(DEFINES)
 CXXFLAGS      = -pipe -g -Wall -W -D_REENTRANT -fPIC $(DEFINES)
-INCPATH       = -I. -I/home/Dev/libs/game/irrlicht/Irrlicht-SVN/include -I/home/Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui -isystem /usr/include/qt5/QtCore -I. -I. -I/usr/lib64/qt5/mkspecs/linux-g++
+INCPATH       = -I. -I/home/Dev/libs/game/irrlicht/Irrlicht-SVN/include/ -I/home/netpipe/gamedev/irrlicht-1.8.4/include -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui -isystem /usr/include/qt5/QtCore -I. -I. -I/usr/lib64/qt5/mkspecs/linux-g++
 QMAKE         = /usr/bin/qmake-qt5
 DEL_FILE      = rm -f
 CHK_DIR_EXISTS= test -d
@@ -40,7 +40,7 @@ DISTNAME      = QT-SDL1.0.0
 DISTDIR = /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/GUIs/Qt-SDL/.tmp/QT-SDL1.0.0
 LINK          = g++
 LFLAGS        = 
-LIBS          = $(SUBLIBS) -L/home/Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux/ -lirrlicht -lSDL2 -lSDL2_image /usr/lib64/libQt5Widgets.so /usr/lib64/libQt5Gui.so /usr/lib64/libQt5Core.so /usr/lib64/libGL.so -lpthread   
+LIBS          = $(SUBLIBS) -L/home/netpipe/gamedev/irrlicht-1.8.4/lib/Linux/ -L/home/Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux/ -lirrlicht -lSDL2 -lSDL2_image /usr/lib64/libQt5Widgets.so /usr/lib64/libQt5Gui.so /usr/lib64/libQt5Core.so /usr/lib64/libGL.so -lpthread   
 AR            = ar cqs
 RANLIB        = 
 SED           = sed
@@ -67,6 +67,75 @@ DIST          = /usr/lib64/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib64/qt5/mkspecs/common/g++-unix.conf \
 		/usr/lib64/qt5/mkspecs/qconfig.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_AkonadiMime.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_Attica.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_Baloo.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_BluezQt.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KActivities.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KActivitiesStats.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KArchive.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KAuth.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KAuthCore.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KBookmarks.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KCMUtils.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KCodecs.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KCompletion.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KConfigCore.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KConfigGui.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KConfigWidgets.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KCoreAddons.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KCrash.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KDBusAddons.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KDeclarative.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KDESu.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KDEWebKit.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KDNSSD.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KEmoticons.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KFileMetaData.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KGlobalAccel.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KGuiAddons.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KHolidays.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KHtml.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KI18n.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KIconThemes.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KIdleTime.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KIOCore.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KIOFileWidgets.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KIOGui.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KIOWidgets.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_Kirigami.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_Kirigami2.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KItemModels.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KItemViews.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KJobWidgets.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KJS.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KJSApi.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KJsEmbed.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KNewStuff.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KNewStuffCore.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KNotifications.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KNotifyConfig.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KNTLM.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KParts.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KPeople.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KPeopleWidgets.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KPlotting.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KPty.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KrossCore.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KrossUi.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KRunner.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KScreen.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KService.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KSyntaxHighlighting.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KTextEditor.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KTextWidgets.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KUnitConversion.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KWallet.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KWaylandClient.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KWaylandServer.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KWidgetsAddons.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KWindowSystem.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KXmlGui.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KXmlRpcClient.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_3danimation.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_3danimation_private.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_3dcore.pri \
@@ -95,14 +164,10 @@ DIST          = /usr/lib64/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_bluetooth.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_bluetooth_private.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_bootstrap_private.pri \
-		/usr/lib64/qt5/mkspecs/modules/qt_lib_charts.pri \
-		/usr/lib64/qt5/mkspecs/modules/qt_lib_charts_private.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_concurrent.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_concurrent_private.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_core.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_core_private.pri \
-		/usr/lib64/qt5/mkspecs/modules/qt_lib_datavisualization.pri \
-		/usr/lib64/qt5/mkspecs/modules/qt_lib_datavisualization_private.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_dbus.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_dbus_private.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_designer.pri \
@@ -225,7 +290,13 @@ DIST          = /usr/lib64/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_xml_private.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_xmlpatterns.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_xmlpatterns_private.pri \
-		/usr/lib64/qt5/mkspecs/modules/qt_Qt5Keychain.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_phonon4qt5.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_Prison.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_QuickAddons.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_Solid.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_SonnetCore.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_SonnetUi.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_ThreadWeaver.pri \
 		/usr/lib64/qt5/mkspecs/features/qt_functions.prf \
 		/usr/lib64/qt5/mkspecs/features/qt_config.prf \
 		/usr/lib64/qt5/mkspecs/linux-g++/qmake.conf \
@@ -272,6 +343,75 @@ Makefile: main.pro /usr/lib64/qt5/mkspecs/linux-g++/qmake.conf /usr/lib64/qt5/mk
 		/usr/lib64/qt5/mkspecs/common/g++-unix.conf \
 		/usr/lib64/qt5/mkspecs/qconfig.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_AkonadiMime.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_Attica.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_Baloo.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_BluezQt.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KActivities.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KActivitiesStats.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KArchive.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KAuth.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KAuthCore.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KBookmarks.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KCMUtils.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KCodecs.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KCompletion.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KConfigCore.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KConfigGui.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KConfigWidgets.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KCoreAddons.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KCrash.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KDBusAddons.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KDeclarative.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KDESu.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KDEWebKit.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KDNSSD.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KEmoticons.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KFileMetaData.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KGlobalAccel.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KGuiAddons.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KHolidays.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KHtml.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KI18n.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KIconThemes.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KIdleTime.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KIOCore.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KIOFileWidgets.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KIOGui.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KIOWidgets.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_Kirigami.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_Kirigami2.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KItemModels.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KItemViews.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KJobWidgets.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KJS.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KJSApi.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KJsEmbed.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KNewStuff.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KNewStuffCore.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KNotifications.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KNotifyConfig.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KNTLM.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KParts.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KPeople.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KPeopleWidgets.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KPlotting.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KPty.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KrossCore.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KrossUi.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KRunner.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KScreen.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KService.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KSyntaxHighlighting.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KTextEditor.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KTextWidgets.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KUnitConversion.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KWallet.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KWaylandClient.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KWaylandServer.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KWidgetsAddons.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KWindowSystem.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KXmlGui.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_KXmlRpcClient.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_3danimation.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_3danimation_private.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_3dcore.pri \
@@ -300,14 +440,10 @@ Makefile: main.pro /usr/lib64/qt5/mkspecs/linux-g++/qmake.conf /usr/lib64/qt5/mk
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_bluetooth.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_bluetooth_private.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_bootstrap_private.pri \
-		/usr/lib64/qt5/mkspecs/modules/qt_lib_charts.pri \
-		/usr/lib64/qt5/mkspecs/modules/qt_lib_charts_private.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_concurrent.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_concurrent_private.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_core.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_core_private.pri \
-		/usr/lib64/qt5/mkspecs/modules/qt_lib_datavisualization.pri \
-		/usr/lib64/qt5/mkspecs/modules/qt_lib_datavisualization_private.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_dbus.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_dbus_private.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_designer.pri \
@@ -430,7 +566,13 @@ Makefile: main.pro /usr/lib64/qt5/mkspecs/linux-g++/qmake.conf /usr/lib64/qt5/mk
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_xml_private.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_xmlpatterns.pri \
 		/usr/lib64/qt5/mkspecs/modules/qt_lib_xmlpatterns_private.pri \
-		/usr/lib64/qt5/mkspecs/modules/qt_Qt5Keychain.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_phonon4qt5.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_Prison.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_QuickAddons.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_Solid.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_SonnetCore.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_SonnetUi.pri \
+		/usr/lib64/qt5/mkspecs/modules/qt_ThreadWeaver.pri \
 		/usr/lib64/qt5/mkspecs/features/qt_functions.prf \
 		/usr/lib64/qt5/mkspecs/features/qt_config.prf \
 		/usr/lib64/qt5/mkspecs/linux-g++/qmake.conf \
@@ -466,6 +608,75 @@ Makefile: main.pro /usr/lib64/qt5/mkspecs/linux-g++/qmake.conf /usr/lib64/qt5/mk
 /usr/lib64/qt5/mkspecs/common/g++-unix.conf:
 /usr/lib64/qt5/mkspecs/qconfig.pri:
 /usr/lib64/qt5/mkspecs/modules/qt_AkonadiMime.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_Attica.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_Baloo.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_BluezQt.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KActivities.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KActivitiesStats.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KArchive.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KAuth.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KAuthCore.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KBookmarks.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KCMUtils.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KCodecs.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KCompletion.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KConfigCore.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KConfigGui.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KConfigWidgets.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KCoreAddons.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KCrash.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KDBusAddons.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KDeclarative.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KDESu.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KDEWebKit.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KDNSSD.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KEmoticons.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KFileMetaData.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KGlobalAccel.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KGuiAddons.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KHolidays.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KHtml.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KI18n.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KIconThemes.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KIdleTime.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KIOCore.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KIOFileWidgets.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KIOGui.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KIOWidgets.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_Kirigami.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_Kirigami2.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KItemModels.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KItemViews.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KJobWidgets.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KJS.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KJSApi.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KJsEmbed.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KNewStuff.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KNewStuffCore.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KNotifications.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KNotifyConfig.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KNTLM.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KParts.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KPeople.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KPeopleWidgets.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KPlotting.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KPty.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KrossCore.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KrossUi.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KRunner.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KScreen.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KService.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KSyntaxHighlighting.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KTextEditor.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KTextWidgets.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KUnitConversion.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KWallet.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KWaylandClient.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KWaylandServer.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KWidgetsAddons.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KWindowSystem.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KXmlGui.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_KXmlRpcClient.pri:
 /usr/lib64/qt5/mkspecs/modules/qt_lib_3danimation.pri:
 /usr/lib64/qt5/mkspecs/modules/qt_lib_3danimation_private.pri:
 /usr/lib64/qt5/mkspecs/modules/qt_lib_3dcore.pri:
@@ -494,14 +705,10 @@ Makefile: main.pro /usr/lib64/qt5/mkspecs/linux-g++/qmake.conf /usr/lib64/qt5/mk
 /usr/lib64/qt5/mkspecs/modules/qt_lib_bluetooth.pri:
 /usr/lib64/qt5/mkspecs/modules/qt_lib_bluetooth_private.pri:
 /usr/lib64/qt5/mkspecs/modules/qt_lib_bootstrap_private.pri:
-/usr/lib64/qt5/mkspecs/modules/qt_lib_charts.pri:
-/usr/lib64/qt5/mkspecs/modules/qt_lib_charts_private.pri:
 /usr/lib64/qt5/mkspecs/modules/qt_lib_concurrent.pri:
 /usr/lib64/qt5/mkspecs/modules/qt_lib_concurrent_private.pri:
 /usr/lib64/qt5/mkspecs/modules/qt_lib_core.pri:
 /usr/lib64/qt5/mkspecs/modules/qt_lib_core_private.pri:
-/usr/lib64/qt5/mkspecs/modules/qt_lib_datavisualization.pri:
-/usr/lib64/qt5/mkspecs/modules/qt_lib_datavisualization_private.pri:
 /usr/lib64/qt5/mkspecs/modules/qt_lib_dbus.pri:
 /usr/lib64/qt5/mkspecs/modules/qt_lib_dbus_private.pri:
 /usr/lib64/qt5/mkspecs/modules/qt_lib_designer.pri:
@@ -624,7 +831,13 @@ Makefile: main.pro /usr/lib64/qt5/mkspecs/linux-g++/qmake.conf /usr/lib64/qt5/mk
 /usr/lib64/qt5/mkspecs/modules/qt_lib_xml_private.pri:
 /usr/lib64/qt5/mkspecs/modules/qt_lib_xmlpatterns.pri:
 /usr/lib64/qt5/mkspecs/modules/qt_lib_xmlpatterns_private.pri:
-/usr/lib64/qt5/mkspecs/modules/qt_Qt5Keychain.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_phonon4qt5.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_Prison.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_QuickAddons.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_Solid.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_SonnetCore.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_SonnetUi.pri:
+/usr/lib64/qt5/mkspecs/modules/qt_ThreadWeaver.pri:
 /usr/lib64/qt5/mkspecs/features/qt_functions.prf:
 /usr/lib64/qt5/mkspecs/features/qt_config.prf:
 /usr/lib64/qt5/mkspecs/linux-g++/qmake.conf:
@@ -704,7 +917,7 @@ compiler_moc_header_clean:
 moc_mainwindow.cpp: mainwindow.h \
 		moc_predefs.h \
 		/usr/lib64/qt5/bin/moc
-	/usr/lib64/qt5/bin/moc $(DEFINES) --include /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/GUIs/Qt-SDL/moc_predefs.h -I/usr/lib64/qt5/mkspecs/linux-g++ -I/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/GUIs/Qt-SDL -I/home/Dev/libs/game/irrlicht/Irrlicht-SVN/include -I/home/Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtCore -I/usr/include/c++/7 -I/usr/include/c++/7/x86_64-suse-linux -I/usr/include/c++/7/backward -I/usr/lib64/gcc/x86_64-suse-linux/7/include -I/usr/local/include -I/usr/lib64/gcc/x86_64-suse-linux/7/include-fixed -I/usr/x86_64-suse-linux/include -I/usr/include mainwindow.h -o moc_mainwindow.cpp
+	/usr/lib64/qt5/bin/moc $(DEFINES) --include /run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/GUIs/Qt-SDL/moc_predefs.h -I/usr/lib64/qt5/mkspecs/linux-g++ -I/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/IrrlichtDemos-git/GUIs/Qt-SDL -I/home/Dev/libs/game/irrlicht/Irrlicht-SVN/include -I/home/netpipe/gamedev/irrlicht-1.8.4/include -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtCore -I/usr/include/c++/7 -I/usr/include/c++/7/x86_64-suse-linux -I/usr/include/c++/7/backward -I/usr/lib64/gcc/x86_64-suse-linux/7/include -I/usr/local/include -I/usr/lib64/gcc/x86_64-suse-linux/7/include-fixed -I/usr/x86_64-suse-linux/include -I/usr/include mainwindow.h -o moc_mainwindow.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -731,7 +944,188 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 
 ####### Compile
 
-main.o: main.cpp mainwindow.h
+main.o: main.cpp mainwindow.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/irrlicht.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IrrCompileConfig.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/aabbox3d.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/irrMath.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/irrTypes.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/plane3d.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/vector3d.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/line3d.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/CDynamicMeshBuffer.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IDynamicMeshBuffer.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IMeshBuffer.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IReferenceCounted.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/SMaterial.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/SColor.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/matrix4.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/vector2d.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/dimension2d.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/rect.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/position2d.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/irrString.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/irrAllocator.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/irrArray.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/heapsort.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/EMaterialTypes.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/EMaterialFlags.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/SMaterialLayer.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/S3DVertex.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/SVertexIndex.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/EHardwareBufferFlags.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/EPrimitiveTypes.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IVertexBuffer.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IIndexBuffer.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/CVertexBuffer.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/CIndexBuffer.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/CMeshBuffer.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/coreutil.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/path.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/ECullingTypes.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/EDebugSceneTypes.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/EDriverFeatures.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/EDriverTypes.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/EGUIAlignment.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/EGUIElementTypes.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/EMeshWriterEnums.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/EMessageBoxFlags.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/ESceneNodeAnimatorTypes.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/ESceneNodeTypes.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/ETerrainElements.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/fast_atof.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IAnimatedMesh.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IMesh.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IAnimatedMeshMD2.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IAnimatedMeshMD3.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IQ3Shader.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IFileSystem.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IXMLReader.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/irrXML.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IFileArchive.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IReadFile.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IFileList.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IVideoDriver.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/ITexture.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IImage.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/triangle3d.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/SExposedVideoData.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/quaternion.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/irrpack.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/irrunpack.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IAnimatedMeshSceneNode.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/ISceneNode.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IAttributeExchangingObject.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/ISceneNodeAnimator.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IEventReceiver.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/ILogger.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/Keycodes.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/ITriangleSelector.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/irrList.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IAttributes.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/line2d.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/EAttributes.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IBoneSceneNode.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IBillboardSceneNode.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IBillboardTextSceneNode.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/ICameraSceneNode.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/ICursorControl.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IDummyTransformationSceneNode.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGeometryCreator.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGPUProgrammingServices.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/EShaderTypes.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUIButton.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUIElement.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUICheckBox.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUIColorSelectDialog.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUIComboBox.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUIContextMenu.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUIEditBox.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUIElementFactory.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUIEnvironment.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUISkin.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUIFileOpenDialog.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUIFont.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUIFontBitmap.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUIImage.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUIInOutFader.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUIListBox.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUIMeshViewer.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUIScrollBar.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUISpinBox.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUISpriteBank.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUIStaticText.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUITabControl.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUITable.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUIToolbar.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUIWindow.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUITreeView.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IGUIImageList.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IImageLoader.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IImageWriter.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/ILightSceneNode.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/SLight.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IMaterialRenderer.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IMaterialRendererServices.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IMeshCache.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IMeshLoader.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IMeshManipulator.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/SVertexManipulator.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IMeshSceneNode.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IMeshWriter.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IColladaMeshWriter.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IMetaTriangleSelector.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IOSOperator.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IParticleSystemSceneNode.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IParticleAnimatedMeshSceneNodeEmitter.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IParticleEmitter.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/SParticle.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IParticleBoxEmitter.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IParticleCylinderEmitter.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IParticleMeshEmitter.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IParticleRingEmitter.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IParticleSphereEmitter.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IParticleAttractionAffector.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IParticleAffector.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IParticleFadeOutAffector.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IParticleGravityAffector.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IParticleRotationAffector.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IQ3LevelMesh.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IRandomizer.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IrrlichtDevice.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/EDeviceTypes.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IVideoModeList.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/ITimer.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/irrMap.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/ISceneCollisionManager.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/ISceneLoader.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/ISceneManager.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/SceneParameters.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/ISkinnedMesh.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/SSkinMeshBuffer.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/ISceneNodeAnimatorCameraFPS.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/ISceneNodeAnimatorCameraMaya.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/ISceneNodeAnimatorCollisionResponse.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/ISceneNodeAnimatorFactory.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/ISceneNodeFactory.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/ISceneUserDataSerializer.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IShaderConstantSetCallBack.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IShadowVolumeSceneNode.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/ITerrainSceneNode.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/ITextSceneNode.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IVolumeLightSceneNode.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IWriteFile.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/IXMLWriter.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/ILightManager.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/SAnimatedMesh.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/SIrrCreationParameters.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/SKeyMap.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/SMesh.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/SMeshBuffer.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/SMeshBufferLightMap.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/SMeshBufferTangents.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/SSharedMeshBuffer.h \
+		/home/netpipe/gamedev/irrlicht-1.8.4/include/SViewFrustum.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
 
 mainwindow.o: mainwindow.cpp mainwindow.h \

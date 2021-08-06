@@ -23,10 +23,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 win32:INCLUDEPATH+=C:\Users\TEST\Downloads\irrlicht-1.8.4\irrlicht-1.8.4\include
-else:unix:INCLUDEPATH+= /home/Dev/libs/game/irrlicht/Irrlicht-SVN/include/ /home/Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux/
+else:unix:INCLUDEPATH+= /home/Dev/libs/game/irrlicht/Irrlicht-SVN/include/ /home/netpipe/gamedev/irrlicht-1.8.4/include
 
 win32:LIBS += -LC:\Users\TEST\Downloads\irrlicht-1.8.4\irrlicht-1.8.4\lib\Win32-visualstudio
-else:unix:LIBS += -L/home/Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux/ -lirrlicht -lSDL2 -lSDL2_image#-lSDLmain
+else:unix:LIBS += -L/home/netpipe/gamedev/irrlicht-1.8.4/lib/Linux/ -L/home/Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux/ -lirrlicht -lSDL2 -lSDL2_image#-lSDLmain
 
 
 SOURCES += \

@@ -17,17 +17,17 @@
 			<Add alias="All" targets="default;" />
 		</VirtualTargets>
 		<Compiler>
-			<Add directory="../../../LunaLibs/Irrlicht/include" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
 			<Add directory="../../../LunaLibs/freetype-2.3.9/include" />
 		</Compiler>
 		<Linker>
 			<Add library="GL" />
 			<Add library="Irrlicht" />
 			<Add library="Xxf86vm" />
-			<Add library="freetype" />
+			<Add library="../../../LunaLibs/freetype-2.3.9/libfreetype.a" />
 			<Add library="X11" />
-			<Add directory="../../../LunaLibs/Irrlicht/lib/Linux" />
-			<Add directory="../../../LunaLibs/freetype-2.3.9/3" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
+			<Add directory="../../../LunaLibs/freetype-2.3.9/" />
 		</Linker>
 		<Unit filename="CGUITTFont.cpp" />
 		<Unit filename="CGUITTFont.h" />

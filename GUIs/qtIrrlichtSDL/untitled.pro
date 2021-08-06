@@ -37,13 +37,13 @@ FORMS += \
 
 win32:CONFIG(release, debug|release): LIBS += -L/home/Dev/libs/game/Irrlicht-SVN/lib/Linux/release/ -lIrrlicht
 else:win32:CONFIG(debug, debug|release): LIBS += -L/home/Dev/libs/game/Irrlicht-SVN/lib/Linux/debug/ -lIrrlicht
-else:unix: LIBS += -L/home/Dev/libs/game/Irrlicht-SVN/lib/Linux/ -lIrrlicht -lX11 -lGL -lXxf86vm -lSDL2 -lSDL2_image
+else:unix: LIBS += -L/home/Dev/libs/game/Irrlicht-SVN/lib/Linux/  -L/home/netpipe/gamedev/irrlicht-1.8.4/lib/Linux/ -lIrrlicht -lX11 -lGL -lXxf86vm -lSDL2 -lSDL2_image
 
-INCLUDEPATH += /home/Dev/libs/game/Irrlicht-SVN/include
+INCLUDEPATH += /home/Dev/libs/game/Irrlicht-SVN/include /home/netpipe/gamedev/irrlicht-1.8.4/include
 DEPENDPATH += /home/Dev/libs/game/Irrlicht-SVN/include
 
 win32-g++:CONFIG(release, debug|release): PRE_TARGETDEPS += /home/Dev/libs/game/Irrlicht-SVN/lib/Linux/release/libIrrlicht.a
 else:win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += /home/Dev/libs/game/Irrlicht-SVN/lib/Linux/debug/libIrrlicht.a
 else:win32:!win32-g++:CONFIG(release, debug|release): PRE_TARGETDEPS += /home/Dev/libs/game/Irrlicht-SVN/lib/Linux/release/Irrlicht.lib
 else:win32:!win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += /home/Dev/libs/game/Irrlicht-SVN/lib/Linux/debug/Irrlicht.lib
-else:unix: PRE_TARGETDEPS += /home/Dev/libs/game/Irrlicht-SVN/lib/Linux/libIrrlicht.a
+else:unix: PRE_TARGETDEPS +=
