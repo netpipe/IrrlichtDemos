@@ -210,8 +210,8 @@ int main()
 	font = fonts[0];
 	font2 = fonts[1];
 
-	skin = env->getSkin();
-	skin->setFont(font);
+	//skin = env->getSkin();
+	//skin->setFont(font);
 
 	txtTrans = env->addStaticText(L"Transparency:", rect<s32>(150,20,350,40), true);
 	btnQuit = env->addButton(rect<s32>(10,210,100,240), 0, 101, L"Quit");
