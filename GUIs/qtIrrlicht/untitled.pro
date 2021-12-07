@@ -38,11 +38,11 @@ FORMS += \
 
 win32:INCLUDEPATH+=C:\Users\TEST\Downloads\irrlicht-1.8.4\irrlicht-1.8.4\include
 #else:unix:INCLUDEPATH+= /home/Dev/libs/game/irrlicht/Irrlicht-SVN/include/ /home/Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux/
-else:unix:INCLUDEPATH+=/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/irrlicht-1.8.4/include/
+else:unix:INCLUDEPATH+=/home/netpipe/gamedev/irrlicht-1.8.4/include/
 
 win32:LIBS += -LC:\Users\TEST\Downloads\irrlicht-1.8.4\irrlicht-1.8.4\lib\Win32-visualstudio -lIrrlicht
 #else:unix:LIBS += -L/home/Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux/ -lIrrlicht -lGL -lX11 -lXxf86vm
-else:unix:LIBS += -L/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/irrlicht-1.8.4/lib/Linux/ -lIrrlicht -lGL -lX11 -lXxf86vm
+else:unix:LIBS += -L/home/netpipe/gamedev/irrlicht-1.8.4/lib/Linux/ -lIrrlicht -lGL -lX11 -lXxf86vm
 
 
 
