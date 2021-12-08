@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
             IVideoDriver *driver = renderer.getIrrlichtDevice()->getVideoDriver();
 
             // Just display a simple mesh
-            IAnimatedMesh* mesh = smgr->getMesh("media/sydney.md2");
+            IAnimatedMesh* mesh = smgr->getMesh("../../media/sydney.md2");
             if (!mesh)
             {
                 renderer.getIrrlichtDevice()->drop();
@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
             {
                 node->setMaterialFlag(EMF_LIGHTING, false);
                 node->setMD2Animation(scene::EMAT_STAND);
-                node->setMaterialTexture( 0, driver->getTexture("media/sydney.bmp") );
+                node->setMaterialTexture( 0, driver->getTexture("../../media/sydney.bmp") );
             }
         }
 
