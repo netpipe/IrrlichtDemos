@@ -14,7 +14,7 @@ class MainWindow;
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
-
+bool eventFilter( QObject *o, QEvent *e );
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();

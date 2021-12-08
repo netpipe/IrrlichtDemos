@@ -3,11 +3,13 @@
 #include "irrcorerenderer.h"
 #include "irrutil.h"
 #include <SKeyMap.h>
+#include <qdebug.h>
 
 //using namespace irr;
 //using namespace irr::core;
 //using namespace irr::scene;
 //using namespace irr::video;
+
 
 IrrCoreRenderer::IrrCoreRenderer(QWidget *irrRenderTarget, bool softwareRenderer)
 {
@@ -42,6 +44,7 @@ IrrCoreRenderer::IrrCoreRenderer(QWidget *irrRenderTarget, bool softwareRenderer
     this->params.ZBufferBits = 16;
 
     this->device = createDeviceEx(this->params);
+
 }
 
 IrrCoreRenderer::~IrrCoreRenderer()
@@ -149,7 +152,7 @@ void IrrCoreRenderer::irrlichtKeyEvent(QKeyEvent* event, bool pressed){
     irrEvent.KeyInput.PressedDown = pressed;
 
     this->device->postEventFromUser(irrEvent);
-
+ qDebug() << "skey";
     repaint();
 }
 
@@ -159,9 +162,10 @@ void IrrCoreRenderer::irrlichtMouseEvent(QMouseEvent* event, bool keyPressed) {
     irrEvent.EventType = irr::EET_MOUSE_INPUT_EVENT;
 
     switch ( event->button() ){
-    case Qt::LeftButton:
+    case Qt::LeftButton:{
         irrEvent.MouseInput.Event = keyPressed ? irr::EMIE_LMOUSE_PRESSED_DOWN:irr::EMIE_LMOUSE_LEFT_UP;
-        break;
+    qDebug() << "leftmouse";
+    }break;
 
     case Qt::MidButton:
         irrEvent.MouseInput.Event = keyPressed ? irr::EMIE_MMOUSE_PRESSED_DOWN:irr::EMIE_MMOUSE_LEFT_UP;
@@ -179,7 +183,7 @@ void IrrCoreRenderer::irrlichtMouseEvent(QMouseEvent* event, bool keyPressed) {
     irrEvent.MouseInput.X = event->x();
     irrEvent.MouseInput.Y = event->y();
     irrEvent.MouseInput.Wheel = 0.0f; // Zero is better than undefined
-
+ qDebug() << irrEvent.MouseInput.X;
     this->device->postEventFromUser( irrEvent );
 
     repaint();

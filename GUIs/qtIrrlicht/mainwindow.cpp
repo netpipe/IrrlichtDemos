@@ -13,7 +13,23 @@ MainWindow::MainWindow(QWidget *parent) :
     //Init an Irrlicht instance and give it a target widget into where Irrlicht should show its output - here I named it "irrRenderWidget0" and "irrRenderWidget1".
     this->initIrrInstance0(ui->centralWidget->findChild<QWidget *>("irrRenderWidget0"));
     this->initIrrInstance1(ui->centralWidget->findChild<QWidget *>("irrRenderWidget1"));
+  this->installEventFilter(this);
 }
+
+
+bool MainWindow::eventFilter( QObject *o, QEvent *e )
+{
+    if ( e->type() == QEvent::KeyPress ) {
+        // special processing for key press
+        QKeyEvent *k = (QKeyEvent *)e;
+        qDebug( "Ate key press %d", k->key() );
+        return 1; // eat event
+    } else {
+        // standard event processing
+        return 0;
+    }
+}
+
 
 MainWindow::~MainWindow()
 {
