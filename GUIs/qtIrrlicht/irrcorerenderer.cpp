@@ -1,6 +1,13 @@
 //irrcorerenderer.cpp
 
 #include "irrcorerenderer.h"
+#include "irrutil.h"
+#include <SKeyMap.h>
+
+//using namespace irr;
+//using namespace irr::core;
+//using namespace irr::scene;
+//using namespace irr::video;
 
 IrrCoreRenderer::IrrCoreRenderer(QWidget *irrRenderTarget, bool softwareRenderer)
 {
@@ -103,4 +110,77 @@ void IrrCoreRenderer::resizeIrrWidget(int x, int y, int newWidth, int newHeight)
             cam->setAspectRatio((f32)widgetSize.Width / (f32)widgetSize.Height);
         }
     }
+}
+
+void IrrCoreRenderer::keyPressEvent(QKeyEvent* event){
+    irrlichtKeyEvent(event, true);
+    emit keyPressed(event);
+}
+
+void IrrCoreRenderer::keyReleaseEvent(QKeyEvent *event){
+    irrlichtKeyEvent(event, false);
+}
+
+void IrrCoreRenderer::mouseMoveEvent(QMouseEvent* event){
+    irrlichtMouseEvent(event, event->button() != Qt::NoButton);
+}
+
+void IrrCoreRenderer::mousePressEvent(QMouseEvent *event){
+    irrlichtMouseEvent(event, true);
+}
+
+void IrrCoreRenderer::mouseReleaseEvent(QMouseEvent *event){
+    irrlichtMouseEvent(event, false);
+}
+
+void IrrCoreRenderer::irrlichtKeyEvent(QKeyEvent* event, bool pressed){
+    irr::SEvent irrEvent;
+    irrEvent.EventType = irr::EET_KEY_INPUT_EVENT;
+
+    SIrrlichtKey irrKey = convertToIrrlichtKey(event->key());
+    if(irrKey.code == 0){
+        return;
+    }
+    irrEvent.KeyInput.Key = irrKey.code;
+    irrEvent.KeyInput.Key = irrKey.code;
+    irrEvent.KeyInput.Control = ((event->modifiers() & Qt::ControlModifier) != 0);
+    irrEvent.KeyInput.Shift = ((event->modifiers() & Qt::ShiftModifier) != 0);
+    irrEvent.KeyInput.Char = irrKey.ch;
+    irrEvent.KeyInput.PressedDown = pressed;
+
+    this->device->postEventFromUser(irrEvent);
+
+    repaint();
+}
+
+void IrrCoreRenderer::irrlichtMouseEvent(QMouseEvent* event, bool keyPressed) {
+    irr::SEvent irrEvent;
+
+    irrEvent.EventType = irr::EET_MOUSE_INPUT_EVENT;
+
+    switch ( event->button() ){
+    case Qt::LeftButton:
+        irrEvent.MouseInput.Event = keyPressed ? irr::EMIE_LMOUSE_PRESSED_DOWN:irr::EMIE_LMOUSE_LEFT_UP;
+        break;
+
+    case Qt::MidButton:
+        irrEvent.MouseInput.Event = keyPressed ? irr::EMIE_MMOUSE_PRESSED_DOWN:irr::EMIE_MMOUSE_LEFT_UP;
+        break;
+
+    case Qt::RightButton:
+        irrEvent.MouseInput.Event = keyPressed ? irr::EMIE_RMOUSE_PRESSED_DOWN:irr::EMIE_RMOUSE_LEFT_UP;
+        break;
+
+    default:
+        irrEvent.MouseInput.Event = EMIE_MOUSE_MOVED;
+        break;
+    }
+
+    irrEvent.MouseInput.X = event->x();
+    irrEvent.MouseInput.Y = event->y();
+    irrEvent.MouseInput.Wheel = 0.0f; // Zero is better than undefined
+
+    this->device->postEventFromUser( irrEvent );
+
+    repaint();
 }
