@@ -73,7 +73,8 @@ void IrrCoreRenderer::init()
             node->setPosition(core::vector3df(-1300, -144, -1299));
         }
 
-        smgr->addCameraSceneNode();
+  //      smgr->addCameraSceneNode();
+        smgr->addCameraSceneNodeFPS();
 
         startTimer(0);
     }
