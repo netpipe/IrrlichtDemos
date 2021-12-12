@@ -4,7 +4,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-#define irr2
+//#define irr2
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -35,8 +35,21 @@ bool MainWindow::eventFilter( QObject *o, QEvent *e )
          QKeyEvent *k = (QKeyEvent *)e;
         this->irr0->keyReleaseEvent(k);
 
-      return 1; // eat event
-    } else {
+      return 1;
+    } else if ( e->type() == QEvent::MouseButtonPress) {
+        QMouseEvent* ee =(QMouseEvent*)e;
+        this->irr0->mousePressEvent(ee);
+            return 1;
+     } else if ( e->type() == QEvent::MouseButtonRelease) {
+           QMouseEvent* ee =(QMouseEvent*)e;
+           this->irr0->mouseReleaseEvent(ee);
+               return 1;
+        }  else if ( e->type() == QEvent::MouseMove) {
+               QMouseEvent* ee =(QMouseEvent*)e;
+               this->irr0->mouseMoveEvent(ee);
+                   return 1;
+            }
+    else {
         // standard event processing
         return 0;
     }
