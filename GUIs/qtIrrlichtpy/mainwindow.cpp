@@ -22,6 +22,8 @@ MainWindow::MainWindow(QWidget *parent) :
     this->initIrrInstance1(ui->centralWidget->findChild<QWidget *>("irrRenderWidget1"));
 #endif
   this->installEventFilter(this);
+    this->irr0->grabKeyboard();
+    //this->irr0->grabMouse();
 }
 
 
