@@ -1,0 +1,12 @@
+#################################
+#INITIALIZE
+#called externally so it is set from functions.py or init.py
+init=1
+#################################
+if (init) :
+ import QT
+
+ QT.settext('test')
+
+
+
