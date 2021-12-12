@@ -63,7 +63,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::initIrrInstance0(QWidget *irrRenderTarget)
 {
-    this->irr0 = new IrrCoreRenderer(irrRenderTarget, false);
+    this->irr0 = new IrrCoreRenderer(irrRenderTarget, true);
 
     this->irr0->init();
 }
@@ -71,7 +71,7 @@ void MainWindow::initIrrInstance0(QWidget *irrRenderTarget)
 void MainWindow::initIrrInstance1(QWidget *irrRenderTarget)
 {
     #ifdef irr2
-    this->irr1 = new IrrCoreRenderer(irrRenderTarget, 1);
+    this->irr1 = new IrrCoreRenderer(irrRenderTarget, false);
 
     this->irr1->init();
 #endif

@@ -91,6 +91,7 @@ void IrrCoreRenderer::timerEvent(QTimerEvent* event)
         this->device->getVideoDriver()->beginScene(true, true, color);
         this->device->getSceneManager()->drawAll();
         this->device->getVideoDriver()->endScene();
+        this->device->sleep(15);
     }
 }
 
