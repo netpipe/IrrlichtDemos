@@ -17,7 +17,7 @@ private:
 	int Height;
 	int Width;
 
-	Hexagon Hexagons[7][7];
+	Hexagon Hexagons[20][20];
 };
 
 #endif

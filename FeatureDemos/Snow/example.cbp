@@ -45,6 +45,7 @@
 		</VirtualTargets>
 		<Compiler>
 			<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
+			<Add directory="/home/netpipe/gamedev/irrlicht-1.8.4/include" />
 		</Compiler>
 		<Linker>
 			<Add library="GL" />
@@ -52,6 +53,7 @@
 			<Add library="Xxf86vm" />
 			<Add library="X11" />
 			<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
+			<Add directory="/home/netpipe/gamedev/irrlicht-1.8.4/lib/Linux" />
 		</Linker>
 		<Unit filename="main.cpp" />
 		<Extensions />

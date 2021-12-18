@@ -68,7 +68,7 @@ public:
                 if (texture->getSize() == texdummy->getSize() && texture->getPitch() == texdummy->getPitch() && texture->getColorFormat() == texdummy->getColorFormat())
                 {
                     void* target = texture->lock();
-                    const void* source = texdummy->lock(true);
+                    const void* source = texdummy->lock();
                     memcpy(target, source, texture->getSize().Height*texture->getPitch());
                     texture->unlock();
                     texdummy->unlock();
@@ -102,7 +102,7 @@ int main(void)
 
     irr::scene::ISceneNode* box = smgr->addCubeSceneNode();
     box->setMaterialFlag(irr::video::EMF_LIGHTING, false);
-    box->setMaterialTexture(0, driver->getTexture("tex.png"));
+    box->setMaterialTexture(0, driver->getTexture("tex.jpg"));
 
     TextureReloader reloader(driver, device->getFileSystem());
 

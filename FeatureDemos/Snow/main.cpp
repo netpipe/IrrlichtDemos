@@ -12,6 +12,7 @@ using namespace gui;
 
 #ifdef __EMSCRIPTEN__
 #include <emscripten.h>
+
 #endif
 
 #pragma comment(lib, "Irrlicht.lib")
@@ -171,7 +172,8 @@ mesh = smgr->getMesh("media/merrychristmas.3ds");
 		driver->getTexture("media/mountainmid.jpg"),
 		driver->getTexture("media/mountain.jpg"));
 
-	camera=smgr->addCameraSceneNode(0, vector3df(-50, 80, -200),vector3df(0, 0, 250));
+	//camera=smgr->addCameraSceneNode(0, vector3df(-50, 80, -200),vector3df(0, 0, 250));
+	camera=smgr->addCameraSceneNodeFPS();
 
 
 	// create a particle system

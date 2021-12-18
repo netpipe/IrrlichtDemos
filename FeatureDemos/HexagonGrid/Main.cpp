@@ -6,13 +6,13 @@
 
 int main()
 {
-	IrrlichtDevice* dvc = createDevice(EDT_OPENGL, dimension2d<s32>(800, 600), 32, false, true, true, 0);
+	IrrlichtDevice* dvc = createDevice(EDT_OPENGL, dimension2d<u32>(800, 600), 32, false, true, true, 0);
 	IVideoDriver* drv = dvc->getVideoDriver();
 
 	dvc->setWindowCaption(L"Hexagon Grid");
 
 	Grid grid;
-	grid.create(7, 7, 35); // 7x7 grid - side of hexagon is 35 units. 7 is max, see grid.h for why
+	grid.create(10, 10, 35); // 7x7 grid - side of hexagon is 35 units. 7 is max, see grid.h for why
 
 	while(dvc->run())
 	{
