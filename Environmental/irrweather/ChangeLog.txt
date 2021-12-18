@@ -1,0 +1,46 @@
+irrWeatherManager 0.1.58 Release:
+	Changed: irrWeatherManager project now uses global variables instead of full include paths
+	Fixed: for loop starting at 1 in ICloudSceneNode::makeRandomCloud() (Thanks CarlS)
+	Changed: Uncommented line setting particle color in ICloudSceneNode.cpp (Thanks CarlS)
+	Fixed: sun and moon "jitter" bug
+	Removed: IAtmosphereStarSceneNode::setMoonPosition()
+	Fixed: small memory leak in IAtmosphereSkySceneNode
+	API CHANGE: IAtmosphereStarSceneNode renamed to ICompoundCelestialBodySceneNode
+	Updated: ICompoundCelestialBodySceneNode::getMaterial()
+	Added: IWeatherManagerAtmosphere::getCompoundCelestialBodySceneNode()
+	Added: "Imposter" LOD system for clouds (experimental)
+	Added: ICloudLayer::get/setImposterUpdateFrequency(), get/setImposterImposterDistance(), get/setImposterEnabled()
+	Added: camera position and target threshold-based particle-orientation LOD system
+	Added: irrWeatherManager SVN (hosted by Sourceforge)
+	Added: ICloudLayer::get/setCameraPositionThreshold() and get/setCameraTargetThreshold
+	Changed: renamed ICloudSceneNode::getCurrentCloudCount() to getCurrentParticleCount()
+	Added: ICloudSceneNode::getCloudLayer()
+	Improved: random cloud placement
+	Removed: ICloudSceneNode::setLOD()
+	Changed: ICloudLayer now grab()s clouds upon adding them and drop()s them upon removing them
+	Removed: ICloudSceneNode::setMaxDepth()
+	Fixed: ICloudLayer memory leak
+	Updated: irrWeatherManage example; cloud size and particle size increased; altitude increased
+irrWeatherManager 0.1.5 Release:
+	Added: random texture coordinates for each cloud particle on the cloud's palette
+	Removed: cloud particle sorting and child particles
+	Improved: added setDefaults() function to SCloudCreationInfo
+	Removed: SCloudCreationInfo constructor
+	Added: better support for cloud creation info in cloud layer creation
+	Added: support for random cloud particle palettes for each cloud
+	Added: simple moon
+	Added: ICloudLayer class that keeps a list of all clouds in it and provides access functions to them
+	Added: functions to add, get, and remove cloud layers to the weather manager
+	Added: two new cumulus particle palettes
+	Fixed: crash when application using irrWeatherManager is closed
+	Added: lightning effects using Sudi's CBoltSceneNode
+	Added: "host cloud" lights up when lightning bolt comes out of it (early test)
+	Fixed: ICloudSceneNode's bounding box now fits over the particles, not just their positions, so it's the "true" bounding box
+	Changed: sky and starbox textures now fade into a fog color; atmosphere looks more expansive and unlimited now
+	Fixed: cloud rendering bug
+	Added: ICloudSceneNode::setCloudParticleSize()
+	Fixed: corrected some credits in source files
+	Changed: cleaned up code
+	Changed: updated skydome and skybox textures to use alpha channel for "fog"
+	Added: some changes to IAtmosphereSkySceneNode
+	Added: auto-update fog color to IAtmosphereSkySceneNode

@@ -1,0 +1,41 @@
+﻿Build started 5/19/2010 12:04:41 AM.
+     1>Project "C:\Programming\Library\irrWeatherManager\src\irrWeatherManager\irrWeatherManager\irrWeatherManager.vcxproj" on node 2 (build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>InitializeBuildStatus:
+         Creating "Debug\irrWeatherManager.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\CWeatherManagerAtmosphere.cpp
+         CWeatherManagerAtmosphere.cpp
+     1>c:\programming\library\irrweathermanager\src\cweathermanageratmosphere.cpp(10): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>c:\programming\library\irrweathermanager\src\cweathermanageratmosphere.cpp(81): warning C4244: '=' : conversion from 'double' to 'irr::f32', possible loss of data
+     1>c:\programming\library\irrweathermanager\src\cweathermanageratmosphere.cpp(82): warning C4244: '=' : conversion from 'double' to 'irr::f32', possible loss of data
+     1>c:\programming\library\irrweathermanager\src\cweathermanageratmosphere.cpp(96): warning C4244: '=' : conversion from 'double' to 'irr::f32', possible loss of data
+     1>c:\programming\library\irrweathermanager\src\cweathermanageratmosphere.cpp(97): warning C4244: '=' : conversion from 'double' to 'irr::f32', possible loss of data
+     1>c:\programming\library\irrweathermanager\src\cweathermanageratmosphere.cpp(119): warning C4244: 'argument' : conversion from 'irr::f64' to 'irr::f32', possible loss of data
+     1>c:\programming\library\irrweathermanager\src\cweathermanageratmosphere.cpp(123): warning C4244: 'argument' : conversion from 'irr::f64' to 'irr::f32', possible loss of data
+     1>c:\programming\library\irrweathermanager\src\cweathermanageratmosphere.cpp(126): warning C4244: 'argument' : conversion from 'irr::f64' to 'irr::f32', possible loss of data
+     1>c:\programming\library\irrweathermanager\src\cweathermanageratmosphere.cpp(129): warning C4244: 'argument' : conversion from 'irr::f64' to 'irr::f32', possible loss of data
+     1>c:\programming\library\irrweathermanager\src\cweathermanageratmosphere.cpp(132): warning C4244: 'argument' : conversion from 'irr::f64' to 'irr::f32', possible loss of data
+     1>c:\programming\library\irrweathermanager\src\cweathermanageratmosphere.cpp(135): warning C4244: 'argument' : conversion from 'irr::f64' to 'irr::f32', possible loss of data
+     1>c:\programming\library\irrweathermanager\src\cweathermanageratmosphere.cpp(137): warning C4244: 'argument' : conversion from 'irr::f64' to 'irr::f32', possible loss of data
+     1>c:\programming\library\irrweathermanager\src\cweathermanageratmosphere.cpp(211): warning C4244: '=' : conversion from 'irr::u32' to 'irr::f32', possible loss of data
+     1>c:\programming\library\irrweathermanager\src\cweathermanageratmosphere.cpp(212): warning C4244: '=' : conversion from 'irr::u32' to 'irr::f32', possible loss of data
+     1>c:\programming\library\irrweathermanager\src\cweathermanageratmosphere.cpp(223): warning C4244: '=' : conversion from 'irr::u32' to 'irr::f32', possible loss of data
+     1>c:\programming\library\irrweathermanager\src\cweathermanageratmosphere.cpp(268): warning C4244: 'argument' : conversion from 'irr::f64' to 'irr::f32', possible loss of data
+     1>c:\programming\library\irrweathermanager\src\cweathermanageratmosphere.cpp(280): warning C4244: 'initializing' : conversion from 'irr::f64' to 'irr::f32', possible loss of data
+     1>c:\programming\library\irrweathermanager\src\cweathermanageratmosphere.cpp(281): warning C4244: '=' : conversion from 'irr::f64' to 'irr::f32', possible loss of data
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"..\..\..\lib\static\irrWeatherManager.lib" /NOLOGO Debug\CAtmosphereSkySceneNode.obj
+         Debug\CAtmosphereStarSceneNode.obj
+         Debug\CCloudSceneNode.obj
+         Debug\CWeatherManagerAtmosphere.obj
+         Debug\irrWeatherManager.obj
+         irrWeatherManager.vcxproj -> C:\Programming\Library\irrWeatherManager\src\irrWeatherManager\irrWeatherManager\..\..\..\lib\static\irrWeatherManager.lib
+       FinalizeBuildStatus:
+         Deleting file "Debug\irrWeatherManager.unsuccessfulbuild".
+         Touching "Debug\irrWeatherManager.lastbuildstate".
+     1>Done Building Project "C:\Programming\Library\irrWeatherManager\src\irrWeatherManager\irrWeatherManager\irrWeatherManager.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.55

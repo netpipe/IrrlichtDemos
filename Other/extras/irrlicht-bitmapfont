@@ -1,0 +1,55 @@
+ 
+    irr::gui::CGUIFontBitmapScalable* BaseApplication::loadFont(irr::io::path relative)
+    {
+        #ifdef _IRR_COMPILE_WITH_GUI_
+        // check if already loaded
+        irr::gui::CGUIFontBitmapScalable* font = NULL;
+        irr::core::map<irr::io::path, irr::gui::CGUIFontBitmapScalable*>::Node* node = scalableFonts.find(relative);
+        if(node) font = node->getValue();
+        else font = new irr::gui::CGUIFontBitmapScalable(iGui, relative, iLogger); // not already loaded
+ 
+        if(font->load(getBaseAssetDir() + relative)) return getCheckedFont(relative, font);
+        else
+        {
+            irr::io::path xml = getBaseAssetDir() + relative;
+            irr::u32 di = xml.findLast('/') + 1;
+            irr::io::path imageDir = xml.subString(0, di);
+            irr::io::IXMLReader* xRead = iFileSystem->createXMLReader(xml);
+            if(xRead && font->load(xRead, imageDir))
+            {
+                xRead->drop();
+                return getCheckedFont(relative, font);
+            }
+        }
+ 
+        irr::core::string<irr::c8> err = "Font not loaded: ";
+        err.append(getBaseAssetDir() + relative);
+        iLogger->log(err.c_str(), irr::ELL_ERROR);
+        delete font;
+        #endif // _IRR_COMPILE_WITH_GUI_
+        return NULL;
+    }
+ 
+    #ifdef _IRR_COMPILE_WITH_GUI_
+    irr::gui::CGUIFontBitmapScalable* BaseApplication::getCheckedFont(irr::io::path relative, irr::gui::CGUIFontBitmapScalable* font)
+    {
+        irr::gui::IGUIFont* testFont = iGui->addFont(relative, font);
+        irr::gui::CGUIFontBitmapScalable* fontResizable = dynamic_cast<irr::gui::CGUIFontBitmapScalable*>(testFont);
+        if(!fontResizable)
+        {
+            iGui->removeFont(testFont);
+            fontResizable = (irr::gui::CGUIFontBitmapScalable*)iGui->addFont(relative, font);
+        }
+        scalableFonts.insert(relative, fontResizable);
+        return fontResizable;
+    }
+    #endif // _IRR_COMPILE_WITH_GUI_
+ 
+    irr::io::path BaseApplication::getBaseAssetDir()
+    {
+        #ifdef _IRR_ANDROID_PLATFORM_
+        return "";
+        #else
+        return "assets/";
+        #endif // _IRR_ANDROID_PLATFORM_
+    }

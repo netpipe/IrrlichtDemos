@@ -1,0 +1,6 @@
+//http://irrlicht.sourceforge.net/forum/viewtopic.php?f=9&t=12352&p=72070&hilit=scrolling+texture#p72070
+
+u32 time = device->getTimer()->getTime();
+driver->draw2DImage(ITEXTUREHERE, position2d<s32>((driver->getScreenSize().Width - ITEXTUREHERE->getOriginalSize().Width)/2, ((time/20)%(driver->getScreenSize().Height+ITEXTUREHERE->getOriginalSize().Height))-ITEXTUREHERE->getOriginalSize().Height));
+
+
