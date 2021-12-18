@@ -1,0 +1,98 @@
+#################################
+#INITIALIZE
+#called externally so it is set from functions.py or init.py
+init=1
+#################################
+if (init) :
+ import QT
+
+ import os
+ import itertools
+ #import hashlib #causes issues with emscripten
+ import random
+ import math
+ import time
+ #import shuffle
+
+#import itertools
+#not needed includes just for testing
+ QT.using ('./string.py',"1");
+
+
+
+
+# QT.using ('./lib/python2.7/random.py',"1"); #not working
+ QT.using ('./random.py',"1");
+
+
+
+
+ ticks = time.time()
+
+ responses = ["Not so sure", "42", "Most likely", "Absolutely not", "Outlook is good", "I see good things happening", "Never", "Negative", "Could be", "Unclear, ask again", "Yes", "No", "Possible, but not probable"]
+
+ myr.time_reseed();
+ print randint(1,8);
+ print(choice(responses))
+# QT.settext('test')
+ QT.settext(choice(responses))
+
+# myr.time_reseed();
+
+#for(u32 i = 0 ; i < 1000 ; i++)
+# {
+ # f32 cx = 100.0f + rand()%10040;
+#  f32 cy = 100.0f + rand()%10040;
+ # int type = rand()%8+1;
+#  int seed = rand();
+
+
+
+# teststring = "string"
+# teststring2 = list(teststring)
+# print teststring2
+  #0s.isupper()
+ # test = [1,2,3]
+  #test.append(2)
+  #test.pop(1)
+
+   #  fout            =            open('/etc/passwd','w')
+
+   #  try:
+   #  fin            =            open('bad_file')
+   #  for line  in  fin:
+   #  print
+   #   linefin.close()
+   #  except:
+   #  print'Something            went            wrong.'
+
+
+ # test.pop(1)
+
+     #    distance            =            #math.sqrt(blank.x**2            +            blank.y**2
+      # fp            =            os.popen(cmd)
+
+      #     os.path.exists('memo.txt')
+      #     os.listdir(cwd)
+      #     if            os.path.isfile(path):
+      # cwd            =            os.getcwd()
+  #sum(test)
+
+  # deck[i][0]deck[i][1]
+
+   #1Spade
+   #1Heart
+   #1Diamond
+   #1Clubs
+
+# icount=0
+#################################
+# init = 0 #initialization finish - needs whitespace infront
+#################################
+
+#MAIN LOOP gets ran everytime
+
+#################################
+
+
+

@@ -15,7 +15,7 @@ TEMPLATE = app
 # any feature of Qt which as been marked as deprecated (the exact warnings
 # depend on your compiler). Please consult the documentation of the
 # deprecated API in order to know how to port your code away from it.
-DEFINES += QT_DEPRECATED_WARNINGS
+DEFINES += QT_DEPRECATED_WARNINGS IRRLICHT
 
 # You can also make your code fail to compile if you use deprecated APIs.
 # In order to do so, uncomment the following line.
@@ -24,11 +24,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
+    irrutil.cpp \
         main.cpp \
         mainwindow.cpp \
     irrcorerenderer.cpp
 
 HEADERS += \
+    irrutil.h \
         mainwindow.h \
     irrcorerenderer.h
 
@@ -38,11 +40,11 @@ FORMS += \
 
 win32:INCLUDEPATH+=C:\Users\TEST\Downloads\irrlicht-1.8.4\irrlicht-1.8.4\include
 #else:unix:INCLUDEPATH+= /home/Dev/libs/game/irrlicht/Irrlicht-SVN/include/ /home/Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux/
-else:unix:INCLUDEPATH+=/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/irrlicht-1.8.4/include/
+else:unix:INCLUDEPATH+=/home/netpipe/gamedev/irrlicht-1.8.4/include/
 
 win32:LIBS += -LC:\Users\TEST\Downloads\irrlicht-1.8.4\irrlicht-1.8.4\lib\Win32-visualstudio -lIrrlicht
 #else:unix:LIBS += -L/home/Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux/ -lIrrlicht -lGL -lX11 -lXxf86vm
-else:unix:LIBS += -L/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/irrlicht-1.8.4/lib/Linux/ -lIrrlicht -lGL -lX11 -lXxf86vm
+else:unix:LIBS += -L/home/netpipe/gamedev/irrlicht-1.8.4/lib/Linux/ -lIrrlicht -lGL -lX11 -lXxf86vm
 
 
 

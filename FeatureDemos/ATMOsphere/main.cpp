@@ -111,7 +111,7 @@ int main()
 {
 
 MyEventReceiver receiver;
-   device = createDevice(video::EDT_OPENGL, core::dimension2d<s32>(800, 600),
+   device = createDevice(video::EDT_OPENGL, core::dimension2d<u32>(800, 600),
       32,false, true, false, &receiver);//EDT_DIRECT3D9
 
    device->setEventReceiver(&receiver);
