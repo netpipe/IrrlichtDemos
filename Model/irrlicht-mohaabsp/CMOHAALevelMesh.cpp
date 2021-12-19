@@ -5,7 +5,7 @@
 // For conditions of distribution and use, see copyright notice in irrlicht.h
 
 #include "IrrCompileConfig.h"
-#ifdef _IRR_COMPILE_WITH_BSP_LOADER_
+//#ifdef _IRR_COMPILE_WITH_BSP_LOADER_
 
 #include "CMOHAALevelMesh.h"
 #include "ISceneManager.h"
@@ -1961,4 +1961,4 @@ E_ANIMATED_MESH_TYPE CMOHAALevelMesh::getMeshType() const
 } // end namespace scene
 } // end namespace irr
 
-#endif // _IRR_COMPILE_WITH_BSP_LOADER_
+//#endif // _IRR_COMPILE_WITH_BSP_LOADER_

@@ -3,10 +3,11 @@
 
 #include <irrlicht.h>
     #include <iostream>
-     #include "CMOHAALevelMesh.h"
+    #include "CMOHAALevelMesh.h"
+#include "CBSPMeshFileLoader.h"
 
     using namespace irr;
-
+using namespace scene;
 
     int main( ) {
             video::E_DRIVER_TYPE driverType = video::EDT_OPENGL;
@@ -28,14 +29,30 @@
             scene::IAnimatedMesh *mesh = 0;
             scene::ISceneNode *node = 0;
 
-            mesh = smgr->getMesh("mohdm6.bsp");
+
+        CBSPMeshFileLoader cmesh(smgr, device->getFileSystem()); //createMesh
+
+      //  irr::io::path path2("mohdm6.bsp");
+        irr::io::IReadFile *file("mohdm6.bsp");
+     //   file->getFileName(path2);
+        cmesh.createMesh( file);
+
+       // cmesh.getMesh( "mohdm6.bsp");
+
+      //  mesh =cmesh.getMesh();
+        //cmesh->loadFile
+      //  CMOHAALevelMesh mesh=new CMOHAALevelMesh(,smgr,"mohdm6.bsp");
+
+      //  CMOHAALevelMesh *mesh;
+
+            //mesh->getMesh("mohdm6.bsp")
 
             if ( mesh )
                     node = smgr->addOctreeSceneNode( mesh->getMesh(0) );
 
             if (node) {
-    //              node->setMaterialFlag(video::EMF_LIGHTING,false);
-    //              node->setMaterialFlag(video::EMF_WIREFRAME,true);
+             //     node->setMaterialFlag(video::EMF_LIGHTING,false);
+             //     node->setMaterialFlag(video::EMF_WIREFRAME,true);
             }
 
             smgr->addCameraSceneNodeFPS();

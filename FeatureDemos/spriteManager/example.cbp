@@ -19,6 +19,7 @@
 		<Compiler>
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
 			<Add directory="./" />
+			<Add directory="/home/netpipe/gamedev/irrlicht-1.8.4/include" />
 		</Compiler>
 		<Linker>
 			<Add library="Irrlicht" />
@@ -26,6 +27,7 @@
 			<Add library="Xxf86vm" />
 			<Add library="X11" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+			<Add directory="/home/netpipe/gamedev/irrlicht-1.8.4/lib/Linux" />
 		</Linker>
 		<Unit filename="BmFont.cpp" />
 		<Unit filename="BmFont.h" />
@@ -39,10 +41,6 @@
 		<Unit filename="SpriteManager.h" />
 		<Unit filename="Util.h" />
 		<Unit filename="main.cpp" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-			<envvars />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

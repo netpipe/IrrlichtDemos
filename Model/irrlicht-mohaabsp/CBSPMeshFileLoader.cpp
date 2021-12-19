@@ -3,7 +3,7 @@
 // For conditions of distribution and use, see copyright notice in irrlicht.h
 
 #include "IrrCompileConfig.h"
-#ifdef _IRR_COMPILE_WITH_BSP_LOADER_
+//#ifdef _IRR_COMPILE_WITH_BSP_LOADER_
 
 #include "CBSPMeshFileLoader.h"
 #include "CQ3LevelMesh.h"
@@ -126,5 +126,5 @@ IAnimatedMesh* CBSPMeshFileLoader::createMesh(io::IReadFile* file)
 } // end namespace scene
 } // end namespace irr
 
-#endif // _IRR_COMPILE_WITH_BSP_LOADER_
+//#endif // _IRR_COMPILE_WITH_BSP_LOADER_
 

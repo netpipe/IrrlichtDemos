@@ -6,18 +6,25 @@
 	<cairo-xlib.h>
 	<X11/Xlib.h>
 
-1530634394 /usr/include/cairo/cairo.h
+1591407856 /usr/include/cairo/cairo.h
 	"cairo-version.h"
 	"cairo-features.h"
 	"cairo-deprecated.h"
 
-1530634394 /usr/include/cairo/cairo-version.h
+1591407856 /usr/include/cairo/cairo-version.h
 
-1530634394 /usr/include/cairo/cairo-features.h
+1591407856 /usr/include/cairo/cairo-features.h
 
-1530634394 /usr/include/cairo/cairo-deprecated.h
+1591407856 /usr/include/cairo/cairo-deprecated.h
 
-1530634394 /usr/include/cairo/cairo-xlib.h
+1591407856 /usr/include/cairo/cairo-xlib.h
 	"cairo.h"
+	<X11/Xlib.h>
+
+1638898400 source:/home/netpipe/gamedev/IrrlichtDemos/GUIs/cairo-x11-stuff/cairo-test.cpp
+	<assert.h>
+	<stdio.h>
+	<cairo.h>
+	<cairo-xlib.h>
 	<X11/Xlib.h>
 

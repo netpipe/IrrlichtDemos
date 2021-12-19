@@ -4,8 +4,7 @@
 	<ActiveTarget name="All" />
 	<File name="cairo-test.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="287" topLine="0" />
+			<Cursor1 position="611" topLine="4" />
 		</Cursor>
 	</File>
-	<EditorTabsLayout layout="030bb8805e2b88ad001e06c500000002=*0;Irrlicht Pong:cairo-test.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=601;besth=291;minw=601;minh=291;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=030bb8805e2b88ad001e06c500000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>
