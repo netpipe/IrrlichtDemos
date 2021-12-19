@@ -7,9 +7,9 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Release">
-				<Option output="..\bin\win32_gcc\irrWeatherManagerExample" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="..\bin\win32_gcc" />
-				<Option object_output="obj\Release\" />
+				<Option output="../bin/win32_gcc/irrWeatherManagerExample" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../bin/win32_gcc" />
+				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -18,20 +18,24 @@
 					<Add directory="$(#irrlicht.include)" />
 				</Compiler>
 				<Linker>
-					<Add library="..\lib\static\libirrWeatherManager.a" />
-					<Add library="$(#irrlicht.lib)\libIrrlicht.a" />
+					<Add library="../lib/static/libirrWeatherManager.a" />
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add option="-fpermissive" />
+			<Add directory="/home/netpipe/gamedev/irrlicht-1.8.4/include" />
 		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="X11" />
+			<Add library="Xxf86vm" />
+			<Add library="GL" />
+			<Add directory="/home/netpipe/gamedev/irrlicht-1.8.4/lib/Linux" />
+		</Linker>
 		<Unit filename="main.cpp" />
-		<Extensions>
-			<code_completion />
-			<envvars />
-			<debugger />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

@@ -9,10 +9,10 @@ using namespace core;
 using namespace video;
 using namespace scene;
 
-float round( float d )
-{
-   return floor( d + 0.5 );
-}
+//float round( float d )
+//{
+//   return floor( d + 0.5 );
+//}
 
 IWeatherManagerAtmosphere::IWeatherManagerAtmosphere(irr::IrrlichtDevice* const irrDevice,irr::scene::ISceneNode* const parent, irr::s32 id)
 {

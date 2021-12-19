@@ -35,6 +35,7 @@
 				<Option object_output="obj/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="1" />
 				<Compiler>
 					<Add option="-g" />
 					<Add directory="bin" />
@@ -52,8 +53,6 @@
 				<Linker>
 					<Add library="audiere" />
 					<Add library="Irrlicht" />
-					<Add library="gcc" />
-					<Add library="stdc++" />
 					<Add library="Xxf86vm" />
 					<Add library="dl" />
 					<Add library="X11" />

@@ -2,20 +2,24 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Linux" />
+	<File name="libraries/irrBullet-0.1.9/include/irrBullet.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="libraries/bullet3/src/BulletDynamics/Dynamics/btDynamicsWorld.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4368" topLine="91" />
+		</Cursor>
+	</File>
 	<File name="game-start.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3930" topLine="90" />
+			<Cursor1 position="824" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="192" />
-			<Collapse line="209" />
-			<Collapse line="802" />
-			<Collapse line="825" />
-		</Folding>
 	</File>
-	<File name="libraries/IrrExtras/CProgressBar.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="libraries/bullet3/src/LinearMath/btScalar.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="896" topLine="32" />
+			<Cursor1 position="2100" topLine="41" />
 		</Cursor>
 	</File>
 	<File name="libraries/bullet3/src/Bullet3Common/b3Scalar.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -23,9 +27,14 @@
 			<Cursor1 position="13512" topLine="402" />
 		</Cursor>
 	</File>
-	<File name="libraries/bullet3/src/BulletDynamics/Dynamics/btDynamicsWorld.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="libraries/IrrExtras/CProgressBar.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="4368" topLine="91" />
+			<Cursor1 position="896" topLine="32" />
+		</Cursor>
+	</File>
+	<File name="libraries/bullet3/src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.cpp" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="382" topLine="0" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

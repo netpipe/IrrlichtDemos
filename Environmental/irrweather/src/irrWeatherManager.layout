@@ -1,52 +1,85 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Release" />
-	<File name="IAtmosphereSkySceneNode.cpp" open="1" top="0" tabpos="4">
-		<Cursor position="737" topLine="26" />
+	<File name="irrWeatherManager.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
 	</File>
-	<File name="IAtmosphereSkySceneNode.h" open="1" top="0" tabpos="3">
-		<Cursor position="764" topLine="12" />
+	<File name="IWeatherManagerAtmosphere.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
 	</File>
-	<File name="IBoltSceneNode.cpp" open="1" top="0" tabpos="12">
-		<Cursor position="694" topLine="0" />
+	<File name="ICompoundCelestialBodySceneNode.h" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
 	</File>
-	<File name="IBoltSceneNode.h" open="1" top="0" tabpos="11">
-		<Cursor position="2971" topLine="72" />
+	<File name="ICloudSceneNode.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
 	</File>
-	<File name="ICloudLayer.cpp" open="1" top="0" tabpos="8">
-		<Cursor position="1264" topLine="22" />
+	<File name="ICloudSceneNode.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
 	</File>
-	<File name="ICloudLayer.h" open="1" top="0" tabpos="7">
-		<Cursor position="1622" topLine="96" />
+	<File name="irrWeatherManager.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
 	</File>
-	<File name="ICloudLayerCone.cpp" open="1" top="1" tabpos="16">
-		<Cursor position="5570" topLine="168" />
+	<File name="ICloudLayerCone.h" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1241" topLine="24" />
+		</Cursor>
 	</File>
-	<File name="ICloudLayerCone.h" open="1" top="0" tabpos="15">
-		<Cursor position="2106" topLine="43" />
+	<File name="ICompoundCelestialBodySceneNode.cpp" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
 	</File>
-	<File name="ICloudSceneNode.cpp" open="1" top="0" tabpos="6">
-		<Cursor position="20098" topLine="725" />
+	<File name="IAtmosphereSkySceneNode.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
 	</File>
-	<File name="ICloudSceneNode.h" open="1" top="0" tabpos="5">
-		<Cursor position="3707" topLine="0" />
+	<File name="IWeatherManagerAtmosphere.cpp" open="1" top="1" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="469" topLine="0" />
+		</Cursor>
 	</File>
-	<File name="ICompoundCelestialBodySceneNode.cpp" open="1" top="0" tabpos="14">
-		<Cursor position="4078" topLine="108" />
+	<File name="IAtmosphereSkySceneNode.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
 	</File>
-	<File name="ICompoundCelestialBodySceneNode.h" open="1" top="0" tabpos="13">
-		<Cursor position="1798" topLine="11" />
+	<File name="IBoltSceneNode.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
 	</File>
-	<File name="IWeatherManagerAtmosphere.cpp" open="1" top="0" tabpos="10">
-		<Cursor position="6213" topLine="167" />
+	<File name="ICloudLayerCone.cpp" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
 	</File>
-	<File name="IWeatherManagerAtmosphere.h" open="1" top="0" tabpos="9">
-		<Cursor position="3494" topLine="87" />
+	<File name="ICloudLayer.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
 	</File>
-	<File name="irrWeatherManager.cpp" open="1" top="0" tabpos="2">
-		<Cursor position="1171" topLine="3" />
+	<File name="IBoltSceneNode.cpp" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
 	</File>
-	<File name="irrWeatherManager.h" open="1" top="0" tabpos="1">
-		<Cursor position="2540" topLine="37" />
+	<File name="ICloudLayer.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
 	</File>
 </CodeBlocks_layout_file>
