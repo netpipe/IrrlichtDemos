@@ -29,6 +29,45 @@
 					<Add option="-s" />
 				</Linker>
 			</Target>
+			<Target title="Linux">
+				<Option output="bin/PIRATES_Debug" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="bin" />
+					<Add directory="libraries/mingw32/i686-w64-mingw32/bin" />
+					<Add directory="libraries/mingw32/i686-w64-mingw32/include" />
+					<Add directory="libraries/mingw32/i686-w64-mingw32/lib" />
+					<Add directory="libraries/irrlicht-1.8.4/include" />
+					<Add directory="libraries/bullet3/src" />
+					<Add directory="libraries/irrBullet-0.1.9/include" />
+					<Add directory="libraries/irrBullet-0.1.9/src" />
+					<Add directory="libraries/audiere-1.9.4-win32/include" />
+					<Add directory="libraries/audiere-1.9.4-win32/lib" />
+				</Compiler>
+				<Linker>
+					<Add library="audiere" />
+					<Add library="Irrlicht" />
+					<Add library="gcc" />
+					<Add library="stdc++" />
+					<Add library="Xxf86vm" />
+					<Add library="dl" />
+					<Add library="X11" />
+					<Add directory="bin" />
+					<Add directory="libraries/mingw32/i686-w64-mingw32/bin" />
+					<Add directory="libraries/mingw32/i686-w64-mingw32/include" />
+					<Add directory="libraries/mingw32/i686-w64-mingw32/lib" />
+					<Add directory="libraries/irrlicht-1.8.4/lib/Win32-gcc" />
+					<Add directory="libraries/bullet3/src" />
+					<Add directory="libraries/irrBullet-0.1.9/include" />
+					<Add directory="libraries/irrBullet-0.1.9/src" />
+					<Add directory="libraries/audiere-1.9.4-win32/include" />
+					<Add directory="libraries/audiere-1.9.4-win32/lib" />
+				</Linker>
+			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
@@ -44,11 +83,10 @@
 			<Add directory="libraries/audiere-1.9.4-win32/lib" />
 		</Compiler>
 		<Linker>
-			<Add option="-static-libstdc++" />
-			<Add option="-static-libgcc" />
-			<Add option="-static" />
-			<Add library="libraries/irrlicht-1.8.4/lib/Win32-gcc/libIrrlicht.a" />
-			<Add library="libraries/audiere-1.9.4-win32/lib/audiere.lib" />
+			<Add library="Irrlicht" />
+			<Add library="audiere" />
+			<Add library="gcc" />
+			<Add library="stdc++" />
 			<Add directory="bin" />
 			<Add directory="libraries/mingw32/i686-w64-mingw32/bin" />
 			<Add directory="libraries/mingw32/i686-w64-mingw32/include" />
@@ -618,10 +656,6 @@
 		<Unit filename="libraries/irrBullet-0.1.9/src/irrBulletTriangleMeshShape.cpp" />
 		<Unit filename="libraries/irrBullet-0.1.9/src/irrBulletWorld.cpp" />
 		<Unit filename="libraries/irrBullet-0.1.9/src/irrBulletcommon.cpp" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-			<envvars />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
