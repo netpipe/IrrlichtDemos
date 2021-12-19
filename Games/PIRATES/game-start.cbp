@@ -47,6 +47,7 @@
 					<Add directory="libraries/irrBullet-0.1.9/src" />
 					<Add directory="libraries/audiere-1.9.4-win32/include" />
 					<Add directory="libraries/audiere-1.9.4-win32/lib" />
+					<Add directory="/home/netpipe/gamedev/irrlicht-1.8.4/include" />
 				</Compiler>
 				<Linker>
 					<Add library="audiere" />
@@ -56,6 +57,7 @@
 					<Add library="Xxf86vm" />
 					<Add library="dl" />
 					<Add library="X11" />
+					<Add library="GL" />
 					<Add directory="bin" />
 					<Add directory="libraries/mingw32/i686-w64-mingw32/bin" />
 					<Add directory="libraries/mingw32/i686-w64-mingw32/include" />
@@ -66,6 +68,8 @@
 					<Add directory="libraries/irrBullet-0.1.9/src" />
 					<Add directory="libraries/audiere-1.9.4-win32/include" />
 					<Add directory="libraries/audiere-1.9.4-win32/lib" />
+					<Add directory="/home/netpipe/gamedev/irrlicht-1.8.4/lib/Linux" />
+					<Add directory="libraries/audiere-1.9.4/src/.libs" />
 				</Linker>
 			</Target>
 		</Build>
