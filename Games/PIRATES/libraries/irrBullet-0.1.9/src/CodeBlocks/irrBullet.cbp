@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="irrBullet" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../lib/irrBullet" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output=".obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add directory="../../include/" />
+					<Add directory="$(BulletHome)/src" />
+					<Add directory="$(IrrlichtHome)" />
+					<Add directory="$(IrrlichtHome)/include" />
+				</Compiler>
+
+			</Target>
+			<Target title="Release">
+				<Option output="../../lib/irrBullet" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output=".obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-std=c++11" />
+					<Add directory="../../include/" />
+					<Add directory="$(BulletHome)/src" />
+					<Add directory="$(IrrlichtHome)" />
+					<Add directory="$(IrrlichtHome)/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="../irrBullet.cpp" />
+		<Unit filename="../irrBulletBoxShape.cpp" />
+		<Unit filename="../irrBulletBvhTriangleMeshShape.cpp" />
+		<Unit filename="../irrBulletCapsuleShape.cpp" />
+		<Unit filename="../irrBulletCollisionCallBackInformation.cpp" />
+		<Unit filename="../irrBulletCollisionObject.cpp" />
+		<Unit filename="../irrBulletCollisionObjectAffector.cpp" />
+		<Unit filename="../irrBulletCollisionObjectAffectorAttract.cpp" />
+		<Unit filename="../irrBulletCollisionObjectAffectorDelete.cpp" />
+		<Unit filename="../irrBulletCollisionShape.cpp" />
+		<Unit filename="../irrBulletConvexHullShape.cpp" />
+		<Unit filename="../irrBulletCylinderShape.cpp" />
+		<Unit filename="../irrBulletGImpactMeshShape.cpp" />
+		<Unit filename="../irrBulletKinematicCharacterController.cpp" />
+		<Unit filename="../irrBulletLiquidBody.cpp" />
+		<Unit filename="../irrBulletMotionState.cpp" />
+		<Unit filename="../irrBulletPhysicsDebug.cpp" />
+		<Unit filename="../irrBulletRayCastVehicle.cpp" />
+		<Unit filename="../irrBulletRigidBody.cpp" />
+		<Unit filename="../irrBulletSoftBody.cpp" />
+		<Unit filename="../irrBulletSphereShape.cpp" />
+		<Unit filename="../irrBulletTriangleMeshShape.cpp" />
+		<Unit filename="../irrBulletWorld.cpp" />
+		<Unit filename="../irrBulletcommon.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

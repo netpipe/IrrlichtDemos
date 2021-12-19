@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Debug" />
+	<File name="libraries\IrrExtras\NewMeshCombiner\CMeshCombiner.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="608" topLine="6" />
+		</Cursor>
+	</File>
+	<File name="libraries\irrBullet-0.1.9\include\irrBulletRigidBody.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9680" topLine="293" />
+		</Cursor>
+	</File>
+	<File name="libraries\irrBullet-0.1.9\include\irrBulletWorld.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1896" topLine="51" />
+		</Cursor>
+	</File>
+	<File name="libraries\IrrExtras\NewMeshCombiner\CMeshCombiner.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1079" topLine="26" />
+		</Cursor>
+	</File>
+	<File name="libraries\irrBullet-0.1.9\include\irrBulletCollisionObject.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2089" topLine="82" />
+		</Cursor>
+	</File>
+	<File name="libraries\IrrExtras\Water\RealisticWater.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2382" topLine="24" />
+		</Cursor>
+	</File>
+	<File name="main.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="18878" topLine="416" />
+		</Cursor>
+	</File>
+	<File name="libraries\IrrExtras\CProgressBar.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="881" topLine="33" />
+		</Cursor>
+	</File>
+	<File name="libraries\IrrExtras\Water\RealisticWater.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="19" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

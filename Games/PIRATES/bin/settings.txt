@@ -1,0 +1,24 @@
+
+// Aspect Ratio Resolution - Examples:
+// 4:3   -> 640x480, 800x600, 960x720, 1024x768, 1280x960, 1400x1050, 1440x1080 , 1600x1200, 1856x1392, 1920x1440, 2048x1536
+// 16:9  -> 960x540, 1024x576, 1152x648, 1280x720, 1366x768, 1600x900, 1920x1080, 2000x1125, 2048x1152, 2304x1296
+// 16:10 -> 1280x800, 1440x900, 1680x1050, 1920x1200, 2560x1600
+
+// GAME SETTINGS - OPTIONS EXAMPLE:
+// FULLSCREEN       = false (true or false)
+// SCREEN_WIDTH     = 1024 (screen width)
+// SCREEN_HEIGHT    = 576 (screen height)
+// BACKGROUND_MUSIC = true (true or false)
+// VIEW_TEXTS       = true (true or false)
+// MAX_BALLS        = 2 (any number between 1 and 10)
+// NAMES_TEXTS      = true (true or false)
+
+
+// GAME SETTINGS:
+FULLSCREEN       = false
+SCREEN_WIDTH     = 1024
+SCREEN_HEIGHT    = 576
+BACKGROUND_MUSIC = true
+VIEW_TEXTS       = true
+MAX_BALLS        = 2
+NAMES_TEXTS      = true
