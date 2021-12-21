@@ -17,7 +17,7 @@ int main()
 {
 	video::E_DRIVER_TYPE driverType = video::EDT_OPENGL;
 
-	IrrlichtDevice* device = createDevice(driverType, core::dimension2d<s32>(640, 480));
+	IrrlichtDevice* device = createDevice(driverType, core::dimension2d<u32>(640, 480));
 
 	if (device == 0)
 		return 1; // could not create selected driver.
@@ -105,7 +105,7 @@ int main()
 
 
 	// create offscreen render target
-	ITexture *tex_offscr = driver->createRenderTargetTexture(core::dimension2d<s32>(512,512));
+	ITexture *tex_offscr = driver->addRenderTargetTexture(core::dimension2d<u32>(512,512));
 
 
 	// instanitate callback
