@@ -22,7 +22,7 @@ using namespace irr;
 
 int main(int argc, char *argv[])
 {
-    IrrlichtDevice* device = createDevice( video::EDT_OPENGL, core::dimension2d<s32>( 800, 600 ), 32, false );
+    IrrlichtDevice* device = createDevice( video::EDT_OPENGL, core::dimension2d<u32>( 800, 600 ), 32, false );
 
     scene::ISceneManager* manager = device->getSceneManager();
     video::IVideoDriver* driver = device->getVideoDriver();

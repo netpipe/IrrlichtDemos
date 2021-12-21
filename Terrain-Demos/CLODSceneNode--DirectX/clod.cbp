@@ -52,9 +52,6 @@
 		<Unit filename="SceneReader.cpp" />
 		<Unit filename="SceneReader.h" />
 		<Unit filename="main.cpp" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

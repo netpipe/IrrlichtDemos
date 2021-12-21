@@ -60,7 +60,7 @@ void CLensFlareSceneNode::render() {
 
     core::vector3df campos = camera->getAbsolutePosition();
 
-    core::dimension2d< s32 > sz = SceneManager->getVideoDriver()->getScreenSize();
+    core::dimension2d< u32 > sz = SceneManager->getVideoDriver()->getScreenSize();
     core::vector2df mid = core::vector2df( sz.Width, sz.Height );
     mid /= 2;
 

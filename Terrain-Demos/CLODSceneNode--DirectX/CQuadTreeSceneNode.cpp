@@ -38,7 +38,7 @@ CQuadTreeSceneNode::CQuadTreeSceneNode( ISceneNode* parent, ISceneManager* mgr, 
 void CQuadTreeSceneNode::setDebugDataVisible( bool visible ) {
     DebugDataVisible = visible;
     if ( Level > ( Depth - 2 ) ) return;
-    CQuadTreeSceneNode::CQuadTreeSceneNode* nod = this;
+    CQuadTreeSceneNode* nod = this;
     nod->childs[0]->setDebugDataVisible( visible );
     nod->childs[1]->setDebugDataVisible( visible );
     nod->childs[2]->setDebugDataVisible( visible );
