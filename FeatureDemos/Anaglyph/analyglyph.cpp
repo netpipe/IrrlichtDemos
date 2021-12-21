@@ -16,7 +16,7 @@ toggles between solid and detail mapped material.
 */
 #include <irrlicht.h>
 #include "driverChoice.h"
-#include "exampleHelper.h"
+//#include "exampleHelper.h"
 
 using namespace irr;
 using namespace core;
