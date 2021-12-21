@@ -17,7 +17,7 @@ int main()
 {
 	video::E_DRIVER_TYPE driverType = video::EDT_OPENGL;
 
-	IrrlichtDevice* device = createDevice(driverType, core::dimension2d<s32>(screen_w,screen_h),16,false,true);
+	IrrlichtDevice* device = createDevice(driverType, core::dimension2d<u32>(screen_w,screen_h),16,false,true);
 
 	if (device == 0)
 		return 1; // could not create selected driver.
