@@ -81,7 +81,7 @@ public:
 	CWater* water;
 	CWaveParticle* waveParticle;
 		// Irrlicht Graphics init.
-		device = createDevice(EDT_OPENGL, dimension2di(800, 600), 32);
+		device = createDevice(EDT_OPENGL, dimension2d<u32>(800, 600), 32);
 		driver = device->getVideoDriver();
 		smgr = device->getSceneManager();
 
@@ -151,7 +151,7 @@ public:
 		lightSpark->getMaterial(0).Lighting = false;
 		lightSpark->getMaterial(0).MaterialType = EMT_TRANSPARENT_ADD_COLOR;
 
-		effectHandler* effect = new effectHandler(device, dimension2di(1024, 1024), "shaders");
+		effectHandler* effect = new effectHandler(device, dimension2du(1024, 1024), "shaders");
 		effect->setClearColour(SColor(255, 32, 32, 64));
 
 		effect->addShadowLight(

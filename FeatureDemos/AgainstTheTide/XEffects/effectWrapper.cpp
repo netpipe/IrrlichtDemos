@@ -10,22 +10,22 @@ using namespace scene;
 using namespace video;
 using namespace core;
 
-effectHandler::effectHandler(IrrlichtDevice* dev, dimension2d<s32> mapSize, core::stringc shaderFolder, irr::core::dimension2d<irr::s32> screenRTTSize)
+effectHandler::effectHandler(IrrlichtDevice* dev, dimension2d<u32> mapSize, core::stringc shaderFolder, irr::core::dimension2d<irr::u32> screenRTTSize)
 : device(dev), smgr(dev->getSceneManager()), driver(dev->getVideoDriver()),
-ScreenRTTSize((screenRTTSize == dimension2d<s32>(0,0)) ? dev->getVideoDriver()->getScreenSize() : screenRTTSize),
+ScreenRTTSize((screenRTTSize == dimension2d<u32>(0,0)) ? dev->getVideoDriver()->getScreenSize() : screenRTTSize),
 ClearColour(0x0), shadowsUnsupported(false), DepthRTT(0), DepthPass(false), depthMC(0), shadowMC(0),
 AmbientColour(0x0), layerToExclude(-1)
 {
 	CShaderPreprocessor sPP(driver);
 	sPP.addShaderDefine("MAPRES", core::stringc(mapSize.Height));
-	
+
 	bool tempTexFlagMipMaps = driver->getTextureCreationFlag(ETCF_CREATE_MIP_MAPS);
 	bool tempTexFlag32 = driver->getTextureCreationFlag(ETCF_ALWAYS_32_BIT);
 
-	ShadowMapTex = driver->createRenderTargetTexture(mapSize);
-	ScreenRTT = driver->createRenderTargetTexture(ScreenRTTSize);
-	ScreenQuad.rt[0] = driver->createRenderTargetTexture(ScreenRTTSize);
-	ScreenQuad.rt[1] = driver->createRenderTargetTexture(ScreenRTTSize);
+	ShadowMapTex = driver->addRenderTargetTexture(mapSize);
+	ScreenRTT = driver->addRenderTargetTexture(ScreenRTTSize);
+	ScreenQuad.rt[0] = driver->addRenderTargetTexture(ScreenRTTSize);
+	ScreenQuad.rt[1] = driver->addRenderTargetTexture(ScreenRTTSize);
 
 	driver->setTextureCreationFlag(ETCF_CREATE_MIP_MAPS, tempTexFlagMipMaps);
 	driver->setTextureCreationFlag(ETCF_ALWAYS_32_BIT, tempTexFlag32);
@@ -42,7 +42,7 @@ AmbientColour(0x0), layerToExclude(-1)
 
 	stringc SDFNV = shaderFolder + stringc("ShadowPass2V") + platformExt;
 	stringc SDFNP = shaderFolder + stringc("ShadowPass2P") + platformExt;
-	
+
 	stringc GOOCHV = shaderFolder + stringc("ShaderGoochPtV") + platformExt;
 	stringc WIGGLEV = shaderFolder + stringc("ShaderMrWiggleV") + platformExt;
 	stringc DEPTHWIGGLEV = shaderFolder + stringc("ShaderDepthWiggleV") + platformExt;
@@ -57,7 +57,7 @@ AmbientColour(0x0), layerToExclude(-1)
 	stringc BRDFP = shaderFolder + stringc("ShaderBRDFP") + platformExt;
 
 	video::IGPUProgrammingServices* gpu = driver->getGPUProgrammingServices();
-	
+
 	if(gpu && ((driver->getDriverType() == EDT_OPENGL && driver->queryFeature(EVDF_ARB_GLSL)) ||
 			   (driver->getDriverType() == EDT_DIRECT3D9 && driver->queryFeature(EVDF_PIXEL_SHADER_1_4))))
 	{
@@ -101,7 +101,7 @@ AmbientColour(0x0), layerToExclude(-1)
 					DFNV.c_str(), "vertexMain", video::EVST_VS_2_0,
 					DFNP.c_str(), "pixelMain", video::EPST_PS_2_0,
 					depthMC, video::EMT_SOLID);
-				
+
 				DepthWiggle = gpu->addHighLevelShaderMaterialFromFiles(
 					DEPTHWIGGLEV.c_str(), "vertexMain", video::EVST_VS_2_0,
 					DFNP.c_str(), "pixelMain", video::EPST_PS_2_0,
@@ -186,7 +186,7 @@ AmbientColour(0x0), layerToExclude(-1)
 
 		for(u32 i = 0;i < EET_COUNT;++i)
 			Effects[i] = EMT_SOLID;
-		
+
 		device->getLogger()->log("XEffects: Shadow maps not supported on this system.");
 		device->getLogger()->log("XEffects: Effects not supported on this system.");
 	}
@@ -200,7 +200,7 @@ void effectHandler::enableDepthPass(bool enableDepthPass)
 	{
 		bool tempTexFlag32 = driver->getTextureCreationFlag(ETCF_ALWAYS_32_BIT);
 		driver->setTextureCreationFlag(ETCF_ALWAYS_32_BIT, true);
-		DepthRTT = driver->createRenderTargetTexture(ScreenRTTSize);
+		DepthRTT = driver->addRenderTargetTexture(ScreenRTTSize);
 		driver->setTextureCreationFlag(ETCF_ALWAYS_32_BIT, tempTexFlag32);
 	}
 };
@@ -225,8 +225,8 @@ void effectHandler::addNodeToDepthPass(irr::scene::ISceneNode *node)
 void effectHandler::removeNodeFromDepthPass(irr::scene::ISceneNode *node)
 {
 	s32 i = DepthPassArray.binary_search(node);
-	
-	if(i != -1) 
+
+	if(i != -1)
 		DepthPassArray.erase(i);
 }
 
@@ -235,8 +235,8 @@ void effectHandler::removeShadowFromNode(irr::scene::ISceneNode *node)
 	u32 i = 0;
 	while(ShadowNodeArray[i].node != node && i < ShadowNodeArray.size())
 		i++;
-	
-	if(i < ShadowNodeArray.size()) 
+
+	if(i < ShadowNodeArray.size())
 		ShadowNodeArray.erase(i);
 }
 
@@ -258,7 +258,7 @@ void effectHandler::update(irr::video::ITexture* outputTarget)
 {
 	if(shadowsUnsupported || smgr->getActiveCamera() == 0)
 		return;
-	
+
 	if(!ShadowNodeArray.empty() && !LightList.empty())
 	{
 		driver->setRenderTarget(ScreenQuad.rt[0], true, true, AmbientColour);
@@ -276,9 +276,9 @@ void effectHandler::update(irr::video::ITexture* outputTarget)
 
 			driver->setTransform(ETS_VIEW, LightList[l].getViewMatrix());
 			driver->setTransform(ETS_PROJECTION, LightList[l].getProjectionMatrix());
-			
+
 			driver->setRenderTarget(ShadowMapTex, true, true, SColor(0xffffffff));
-			
+
 			const u32 ShadowNodeArraySize = ShadowNodeArray.size();
 			for(u32 i = 0;i < ShadowNodeArraySize;++i)
 			{
@@ -303,7 +303,7 @@ void effectHandler::update(irr::video::ITexture* outputTarget)
 				for(u32 m = 0;m < BufferMaterialListSize;++m)
 					ShadowNodeArray[i].node->getMaterial(m).MaterialType = (E_MATERIAL_TYPE)BufferMaterialList[m];
 			}
-		
+
 			driver->setTransform(ETS_VIEW, activeCam->getViewMatrix());
 			driver->setTransform(ETS_PROJECTION, activeCam->getProjectionMatrix());
 
@@ -312,7 +312,7 @@ void effectHandler::update(irr::video::ITexture* outputTarget)
 			shadowMC->FarLink = LightList[l].getFarValue();
 			shadowMC->ViewLink = LightList[l].getViewMatrix();
 			shadowMC->ProjLink = LightList[l].getProjectionMatrix();
-			
+
 			driver->setRenderTarget(ScreenQuad.rt[1], true, true, SColor(0xffffffff));
 
 			for(u32 i = 0;i < ShadowNodeArraySize;++i)
@@ -325,16 +325,16 @@ void effectHandler::update(irr::video::ITexture* outputTarget)
 				BufferMaterialList.set_used(0);
 				BufferTextureList.set_used(0);
 				BilinearBuffer.set_used(0);
-				
+
 				for(u32 m = 0;m < CurrentMaterialCount;++m)
 				{
 					BufferMaterialList.push_back(ShadowNodeArray[i].node->getMaterial(m).MaterialType);
 					BufferTextureList.push_back(ShadowNodeArray[i].node->getMaterial(m).getTexture(0));
 					BilinearBuffer.push_back(ShadowNodeArray[i].node->getMaterial(m).TextureLayer[0].BilinearFilter);
-				
+
 					if(m == layerToExclude) continue;
 
-					ShadowNodeArray[i].node->getMaterial(m).MaterialType = 
+					ShadowNodeArray[i].node->getMaterial(m).MaterialType =
 						(ShadowNodeArray[i].shadowMode == ESM_CAST) ? (E_MATERIAL_TYPE)WhiteWash
 						: (E_MATERIAL_TYPE)Solid[ShadowNodeArray[i].filterType];
 
@@ -358,7 +358,7 @@ void effectHandler::update(irr::video::ITexture* outputTarget)
 			driver->setRenderTarget(ScreenQuad.rt[0], false, false, SColor(0x0));
 			ScreenQuad.getMaterial().setTexture(0, ScreenQuad.rt[1]);
 			ScreenQuad.getMaterial().MaterialType = (E_MATERIAL_TYPE)Simple;
-			
+
 			ScreenQuad.render(driver);
 		}
 	}
@@ -366,13 +366,13 @@ void effectHandler::update(irr::video::ITexture* outputTarget)
 	{
 		driver->setRenderTarget(ScreenQuad.rt[0], true, true, SColor(0xffffffff));
 	}
-	
+
 	driver->setRenderTarget(ScreenQuad.rt[1], true, true, ClearColour);
 	smgr->drawAll();
 
 	const u32 PostProcessingRoutinesSize = PostProcessingRoutines.size();
 
-	driver->setRenderTarget(PostProcessingRoutinesSize 
+	driver->setRenderTarget(PostProcessingRoutinesSize
 		? ScreenRTT : outputTarget, true, true, SColor(0x0));
 
 	ScreenQuad.getMaterial().setTexture(0, ScreenQuad.rt[1]);
@@ -380,7 +380,7 @@ void effectHandler::update(irr::video::ITexture* outputTarget)
 
 	ScreenQuad.getMaterial().MaterialType = (E_MATERIAL_TYPE)LightModulate;
 	ScreenQuad.render(driver);
-	
+
 	if(PostProcessingRoutinesSize)
 	{
 		bool Alter = 0;
@@ -423,15 +423,15 @@ void effectHandler::update(irr::video::ITexture* outputTarget)
 	}
 }
 
-const c8* ScreenQuadVGLSL = 
-"void main() \n" 
-"{\n" 
-"	gl_Position = vec4(gl_Vertex.xy, 0.0, 1.0); \n" 
-"	gl_TexCoord[0].x = 0.5 * (1.0 + gl_Vertex.x - (1.0 / float(SCREENX))); \n" 
-"	gl_TexCoord[0].y = 0.5 * (1.0 + gl_Vertex.y - (1.0 / float(SCREENY))); \n" 
+const c8* ScreenQuadVGLSL =
+"void main() \n"
+"{\n"
+"	gl_Position = vec4(gl_Vertex.xy, 0.0, 1.0); \n"
+"	gl_TexCoord[0].x = 0.5 * (1.0 + gl_Vertex.x - (1.0 / float(SCREENX))); \n"
+"	gl_TexCoord[0].y = 0.5 * (1.0 + gl_Vertex.y - (1.0 / float(SCREENY))); \n"
 "} \n";
 
-const c8* ScreenQuadVHLSL = 
+const c8* ScreenQuadVHLSL =
 "struct VS_OUTPUT"
 "{"
 "	float4 Position		: POSITION0;"
@@ -441,13 +441,13 @@ const c8* ScreenQuadVHLSL =
 "{"
 "	VS_OUTPUT  OUT;"
 "   OUT.Position = float4(Position.x,Position.y, 0.0, 1.0);"
-"	OUT.TexCoords.x = 0.5 * (1 + Position.x - (1 / SCREENX)); \n" 
-"	OUT.TexCoords.y = -0.5 * (1 + Position.y - (1 / SCREENY)); \n" 
+"	OUT.TexCoords.x = 0.5 * (1 + Position.x - (1 / SCREENX)); \n"
+"	OUT.TexCoords.y = -0.5 * (1 + Position.y - (1 / SCREENY)); \n"
 "	return(OUT); \n"
 "} \n";
 
 
-irr::s32 effectHandler::obtainScreenQuadMaterialFromFile(const irr::core::stringc& filename, 
+irr::s32 effectHandler::obtainScreenQuadMaterialFromFile(const irr::core::stringc& filename,
 	irr::video::E_MATERIAL_TYPE baseMaterial)
 {
 	CShaderPreprocessor sPP(driver);
@@ -456,7 +456,7 @@ irr::s32 effectHandler::obtainScreenQuadMaterialFromFile(const irr::core::string
 	sPP.addShaderDefine("SCREENY", core::stringc(ScreenRTTSize.Height));
 
 	ScreenQuadCB* SQCB = new ScreenQuadCB();
-	
+
 	video::E_VERTEX_SHADER_TYPE VertexLevel = driver->queryFeature(video::EVDF_VERTEX_SHADER_3_0) ? EVST_VS_3_0 : EVST_VS_2_0;
 	video::E_PIXEL_SHADER_TYPE PixelLevel = driver->queryFeature(video::EVDF_PIXEL_SHADER_3_0) ? EPST_PS_3_0 : EPST_PS_2_0;
 
@@ -468,7 +468,7 @@ irr::s32 effectHandler::obtainScreenQuadMaterialFromFile(const irr::core::string
 	sPP.ppShader(VShad).c_str(), "vertexMain", VertexLevel,
 	sPP.ppShaderFF(filename.c_str()).c_str(), "pixelMain", PixelLevel,
 	SQCB, baseMaterial);
-	
+
 	SQCB->drop();
 
 	return PostMat;
@@ -476,7 +476,7 @@ irr::s32 effectHandler::obtainScreenQuadMaterialFromFile(const irr::core::string
 
 void effectHandler::addPostProcessingEffectFromFile(const irr::core::stringc& filename)
 {
-	s32 PostMat = obtainScreenQuadMaterialFromFile(filename);	
+	s32 PostMat = obtainScreenQuadMaterialFromFile(filename);
 	this->addPostProcessingEffect(PostMat);
 }
 

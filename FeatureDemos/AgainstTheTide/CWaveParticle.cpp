@@ -31,11 +31,11 @@ CWaveParticle::CWaveParticle(irr::IrrlichtDevice* irrlichtDevice,
 
 		vector3df pOut;
 		triangle3df triOut;
-
-		if(smgr->getSceneCollisionManager()->getCollisionPoint(ray, selector, pOut, triOut))
+ISceneNode* outNode;
+		if(smgr->getSceneCollisionManager()->getCollisionPoint(ray, selector, pOut, triOut,outNode))
 			addQuad(pOut);
 	}
-	
+
 	meshBuffer->setHardwareMappingHint(EHM_STATIC);
 	meshBuffer->recalculateBoundingBox();
 	mesh->recalculateBoundingBox();

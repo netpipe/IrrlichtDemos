@@ -111,6 +111,8 @@ class CAdvancedParticleSystemNode : public irr::scene::IParticleSystemSceneNode 
 
     void reallocateBuffers();   /**<! buffer reallocation */
 
+  //  	void clearParticles(){};
+
   public:
     /**
      * Standard ISceneNode constructor
