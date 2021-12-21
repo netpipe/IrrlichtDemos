@@ -22,7 +22,7 @@ void createTilesForImage(c8 * ImageFileName, c8 * TileName, irr::video::IVideoDr
 
 	u16 TileSize = 256;
 	u16 TileSize2 = TileSize;
-	core::dimension2di dim;
+	core::dimension2du dim;
 
 	// si c'est une heightmap on forme des tiles de 2^n+1 (257)
 	if(IsHeightMap)
@@ -194,7 +194,7 @@ int main(int argc, char **argv)
 	f32 minFog = 400;
 	f32 maxFog = param2.DistanceMaxRender * param2.Scale.X * 0.85f;
 	video::SColor fogColor = video::SColor(0,150,150,255);
-	driver->setFog(fogColor, true, minFog, maxFog);
+	driver->setFog(fogColor, irr::video::EFT_FOG_LINEAR, minFog, maxFog);
 
 
     // loop application

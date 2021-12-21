@@ -3,7 +3,7 @@ original code by Copland (original source) : http://forum.irrlicht.fr/viewtopic.
 modified version of _CTerrain by fredakilla@gmail.com
 
 Modified version :
-- change map loader for support 2^N+1 heightmap size 
+- change map loader for support 2^N+1 heightmap size
 - add internally VBO support
 - add VBO destuction (for paging)
 - add colormap destruction (for paging)
@@ -26,12 +26,12 @@ using namespace irr;
 // Constructor
 //----------------------------------------------------------------------------------------
 CTerrain::CTerrain(c8* HeightmapFile, E_TERRAIN_QUALITY Quality, f32 ScaleTexture, scene::ISceneNode* parent, scene::ISceneManager* smgr, s32 id) : scene::ISceneNode(parent, smgr, id)
-{	
+{
 	// get heightmap
     video::IImage *Heightmap = SceneManager->getVideoDriver()->createImageFromFile(HeightmapFile);
-    
-    // get heightmap dimensions 
-    u16 Size = Heightmap->getDimension().Width;	
+
+    // get heightmap dimensions
+    u16 Size = Heightmap->getDimension().Width;
 
     // set tiles size for Terrain
     s32 SizeOfTiles = 0;
@@ -73,19 +73,19 @@ CTerrain::CTerrain(c8* HeightmapFile, E_TERRAIN_QUALITY Quality, f32 ScaleTextur
             break;
     }
 
-    // create terrain mesh 
+    // create terrain mesh
     TerrainMesh = new scene::SMesh();
 
     // compute quality factor
     u32 SOTiles = irr::core::ceil32((f32)SizeOfTiles/(f32)Quality);
 
-    // init MeshBuffer array 
+    // init MeshBuffer array
     CTTileBuffer=new scene::SMeshBufferLightMap* [NbsTiles];
 
     // create MeshBuffer
     u32 TileX=0, TileZ=0;
     for (u32 i =0; i < NbsTiles; ++i)
-    {		
+    {
 		CTTileBuffer[i]=new scene::SMeshBufferLightMap();
         CTTileBuffer[i]->Vertices.set_used(SizeOfTiles*SizeOfTiles);
         CTTileBuffer[i]->Indices.set_used(SizeOfTiles*SizeOfTiles*6);
@@ -114,7 +114,7 @@ CTerrain::CTerrain(c8* HeightmapFile, E_TERRAIN_QUALITY Quality, f32 ScaleTextur
                     }
                 }
 
-				// read heightmap and set vertices 
+				// read heightmap and set vertices
 				video::S3DVertex2TCoords Vertex;
                 Vertex.Normal = core::vector3df(0,1,0);
                 Vertex.Pos.X = (f32)x;
@@ -122,30 +122,30 @@ CTerrain::CTerrain(c8* HeightmapFile, E_TERRAIN_QUALITY Quality, f32 ScaleTextur
                 Vertex.Pos.Y = (f32) pixelColor.getLuminance()/10.0f;
                 Vertex.Pos.Z = (f32)z;
                 Vertex.TCoords = core::vector2d<f32>( (f32)(x*tdSize), (f32)((Size-1-z)*tdSize));
-                Vertex.TCoords2 = core::vector2d<f32>( (f32)(x*tdSize), (f32)((Size-1-z)*tdSize))*ScaleTexture;	
+                Vertex.TCoords2 = core::vector2d<f32>( (f32)(x*tdSize), (f32)((Size-1-z)*tdSize))*ScaleTexture;
 				Vertex.Color = video::SColor(255,255,255,255);
 
 				CTTileBuffer[i]->Vertices[NbsVertices]=Vertex;
 
-                NbsVertices++;				
+                NbsVertices++;
             }
         }
-		
+
 		// set material flags
         CTTileBuffer[i]->Material.Lighting = false;
         CTTileBuffer[i]->Material.Wireframe = false;
         CTTileBuffer[i]->Material.BackfaceCulling = true;
         CTTileBuffer[i]->Material.GouraudShading = true;
-        CTTileBuffer[i]->Material.FogEnable = false;		
-		
+        CTTileBuffer[i]->Material.FogEnable = false;
+
 		CTTileBuffer[i]->Vertices.set_used(NbsVertices);
         CTTileBuffer[i]->Indices.set_used(NbsIndices);
-		
-		// smoothing 
-		for(s32 j = 0; j < ((Quality+1)/2); j++) 
+
+		// smoothing
+		for(s32 j = 0; j < ((Quality+1)/2); j++)
         {
-            for(u32 index = 2; index < (SOTiles * SOTiles - 2); index++) 
-            {                
+            for(u32 index = 2; index < (SOTiles * SOTiles - 2); index++)
+            {
                 CTTileBuffer[i]->Vertices[index].Pos.Y += (1/8)*
                 (CTTileBuffer[i]->Vertices[index-2].Pos.Y +
                 2*CTTileBuffer[i]->Vertices[index-1].Pos.Y +
@@ -154,37 +154,37 @@ CTerrain::CTerrain(c8* HeightmapFile, E_TERRAIN_QUALITY Quality, f32 ScaleTextur
                 CTTileBuffer[i]->Vertices[index+2].Pos.Y);
             }
         }
-        
-		// smoothing 
-        for(s32 k = 0; k < ((Quality+1)/2); k++) 
-        { 
-            for(u32 index = SOTiles; index < (SOTiles * (SOTiles - 1)); index++) 
-            { 
-                CTTileBuffer[i]->Vertices[index].Pos.Y = (CTTileBuffer[i]->Vertices[index - SOTiles].Pos.Y + CTTileBuffer[i]->Vertices[index + SOTiles].Pos.Y ) / 2.0f; 
-			} 
-        }		
+
+		// smoothing
+        for(s32 k = 0; k < ((Quality+1)/2); k++)
+        {
+            for(u32 index = SOTiles; index < (SOTiles * (SOTiles - 1)); index++)
+            {
+                CTTileBuffer[i]->Vertices[index].Pos.Y = (CTTileBuffer[i]->Vertices[index - SOTiles].Pos.Y + CTTileBuffer[i]->Vertices[index + SOTiles].Pos.Y ) / 2.0f;
+			}
+        }
 
         // recalculate bounding box
         CTTileBuffer[i]->recalculateBoundingBox();
 
 		// active VBO for performance
-		CTTileBuffer[i]->setHardwareMappingHint(scene::EHM_STATIC);	
+		CTTileBuffer[i]->setHardwareMappingHint(scene::EHM_STATIC);
 
         // add meshBuffer to terrain mesh
         TerrainMesh->addMeshBuffer(CTTileBuffer[i]);
-       
+
 		// set TileX and TileY
 		TileX+=SizeOfTiles-1;
 		if(TileX >= NbsTiles)
         {
             TileX=0;
-            
+
             TileZ+=SizeOfTiles-1;
             if(TileZ >= NbsTiles)
             {
                 TileZ=0;
             }
-        }		
+        }
     }
 
 	// disable automatic culling
@@ -202,20 +202,20 @@ CTerrain::CTerrain(c8* HeightmapFile, E_TERRAIN_QUALITY Quality, f32 ScaleTextur
 // destructor (important for paging)
 //----------------------------------------------------------------------------------------
 CTerrain::~CTerrain()
-{	
+{
 	// free color texture
 	SceneManager->getVideoDriver()->removeTexture(CTTileBuffer[0]->Material.getTexture(0));
-	
+
 	// remove MeshBuffers
 	for(u32 i=0;i<NbsTiles;++i)
     {
         if (CTerrain::CTTileBuffer[i] != NULL)
-        {	
+        {
 			SceneManager->getVideoDriver()->removeHardwareBuffer(CTTileBuffer[i]);
 			CTerrain::CTTileBuffer[i]->drop();
         }
     }
-	delete [] CTTileBuffer;	
+	delete [] CTTileBuffer;
 
 	// remove terrain mesh
 	SceneManager->getMeshCache()->removeMesh(TerrainMesh);
@@ -225,7 +225,7 @@ CTerrain::~CTerrain()
         CTerrain::TerrainMesh->drop();
     }
 
-	this->remove();	
+	this->remove();
 
 }
 
@@ -250,8 +250,8 @@ void CTerrain::render()
     const scene::SViewFrustum* frustum = cam->getViewFrustum();
     video::IVideoDriver* Driver = SceneManager->getVideoDriver();
     core::vector3df Pos = cam->getPosition();
-	Pos.Y = getPosition().Y;	
-	Driver->setTransform(video::ETS_WORLD,AbsoluteTransformation);	
+	Pos.Y = getPosition().Y;
+	Driver->setTransform(video::ETS_WORLD,AbsoluteTransformation);
 
 	// debug with wireframe
 	if (DebugDataVisible & scene::EDS_MESH_WIRE_OVERLAY)
@@ -267,7 +267,7 @@ void CTerrain::render()
 		// set material
 		Driver->setMaterial(video::SMaterial(CTTileBuffer[0]->Material));
 	}
-	
+
 	// for each TilesBuffer
     for (u32 i=0; i<NbsTiles; i++)
     {
@@ -277,45 +277,45 @@ void CTerrain::render()
 			// if frustum intersect with TileBuffer then render TileBuffer
             if( frustum->getBoundingBox().intersectsWithBox(CTTileBuffer[i]->getBoundingBox())==true)
             {
-                // if TileBuffer is in max distance then render TileBuffer 
+                // if TileBuffer is in max distance then render TileBuffer
 				if(CTTileBuffer[i]->BoundingBox.getCenter().getDistanceFromSQ(Pos) < RenderDistance)
-                {					
+                {
 					// render TileBuffer
 					Driver->drawMeshBuffer(CTTileBuffer[i]);
 				}
             }
         }
-    }	
+    }
 
 	// debug mode
-	if(DebugDataVisible) 	
-    {  
+	if(DebugDataVisible)
+    {
         for (u32 i=0;i<NbsTiles;i++)
-        {			
+        {
 			if (CTTileBuffer[i] != NULL)
             {
                 // Tiles Box Buffer
 				if (DebugDataVisible & scene::EDS_BBOX_BUFFERS)
-				{							
+				{
 					video::SMaterial m;
 					m.Lighting = false;
 					Driver->setMaterial(m);
-					video::SColor c (255,0,255,0);				
-					
+					video::SColor c (255,0,255,0);
+
 					Driver->draw3DBox(CTTileBuffer[i]->getBoundingBox(), c);
 				}
 
 				// Entire Terrain Box
 				if (DebugDataVisible & scene::EDS_BBOX)
-				{							
+				{
 					video::SMaterial m;
 					m.Lighting = false;
 					Driver->setMaterial(m);
-					video::SColor c (255,255,0,0);				
-					
+					video::SColor c (255,255,0,0);
+
 					Driver->draw3DBox(this->getBoundingBox(), c);
-				}				
-				
+				}
+
 				// add frustum optimisation
 				if( frustum->getBoundingBox().intersectsWithBox(CTTileBuffer[i]->getBoundingBox())==true)
                 {
@@ -324,7 +324,7 @@ void CTerrain::render()
                     {
 						// normals
 						if (DebugDataVisible & scene::EDS_NORMALS)
-						{	
+						{
 							video::SMaterial m;
 							m.Lighting = false;
 							Driver->setMaterial(m);
@@ -369,11 +369,11 @@ void CTerrain::recalculateBoundingBox()
 
 	// get higher and lower TileBuffer
     for(s32 i=0; i<NbsTiles; i++)
-	{		
-		if(BoundingBox.MinEdge.Y > CTTileBuffer[i]->getBoundingBox().MinEdge.Y) 
+	{
+		if(BoundingBox.MinEdge.Y > CTTileBuffer[i]->getBoundingBox().MinEdge.Y)
 			BoundingBox.MinEdge.Y = CTTileBuffer[i]->getBoundingBox().MinEdge.Y;
 
-        if(BoundingBox.MaxEdge.Y < CTTileBuffer[i]->getBoundingBox().MaxEdge.Y) 
+        if(BoundingBox.MaxEdge.Y < CTTileBuffer[i]->getBoundingBox().MaxEdge.Y)
 			BoundingBox.MaxEdge.Y = CTTileBuffer[i]->getBoundingBox().MaxEdge.Y;
     }
 }
@@ -441,7 +441,7 @@ void CTerrain::setColorTexture(c8* FileName)
         {
 			CTTileBuffer[i]->Material.MaterialType = video::EMT_SOLID;
             CTTileBuffer[i]->Material.TextureLayer[0].Texture = SceneManager->getVideoDriver()->getTexture(FileName);
-			CTTileBuffer[i]->Material.TextureLayer[0].TextureWrap = video::ETC_CLAMP;
+			CTTileBuffer[i]->Material.TextureLayer[0].TextureWrapU = video::ETC_CLAMP;
 		}
     }
 }
@@ -456,7 +456,7 @@ void CTerrain::setDetailTexture(c8* FileName)
     {
         if (CTTileBuffer[i] != NULL)
         {
-			
+
             CTTileBuffer[i]->Material.MaterialType = video::EMT_DETAIL_MAP;
             CTTileBuffer[i]->Material.TextureLayer[1].Texture = SceneManager->getVideoDriver()->getTexture(FileName);
 			//CTTileBuffer[i]->Material.TextureLayer[1].TextureWrap = video::ETC_REPEAT;
@@ -547,13 +547,14 @@ f32 CTerrain::getHeight(f32 x, f32 z)
 
         core::vector3df intersection;
         core::triangle3df tri;
+        ISceneNode* outNode;
 
-        if (SceneManager->getSceneCollisionManager()->getCollisionPoint(line, selector, intersection,tri))
+        if (SceneManager->getSceneCollisionManager()->getCollisionPoint(line, selector, intersection,tri,outNode))
         {
             ValueReturn = intersection.Y;
         }
         selector->drop();
-        Mesh->drop();        
+        Mesh->drop();
     }
     else
     {
@@ -582,18 +583,18 @@ void CTerrain::setTexture(u32 NumTex, c8* FileName)
 				//irr::video::IVideoDriver * driver = this->SceneManager->getVideoDriver();
 				//driver->setTextureCreationFlag(video::ETCF_CREATE_MIP_MAPS, false);
 				CTTileBuffer[i]->Material.TextureLayer[0].Texture = SceneManager->getVideoDriver()->getTexture(FileName);
-				CTTileBuffer[i]->Material.TextureLayer[0].TextureWrap = video::ETC_CLAMP;
+				CTTileBuffer[i]->Material.TextureLayer[0].TextureWrapU = video::ETC_CLAMP;
 				//driver->setTextureCreationFlag(video::ETCF_CREATE_MIP_MAPS, true);
 				break;
 
-			case 1:				
-				CTTileBuffer[i]->Material.TextureLayer[1].BilinearFilter = true;				
+			case 1:
+				CTTileBuffer[i]->Material.TextureLayer[1].BilinearFilter = true;
 				//CTTileBuffer[i]->Material.TextureLayer[1].TrilinearFilter = true;
 				//driver->setTextureCreationFlag(video::ETCF_CREATE_MIP_MAPS, false);
 				CTTileBuffer[i]->Material.TextureLayer[1].Texture = SceneManager->getVideoDriver()->getTexture(FileName);
 				//CTTileBuffer[i]->Material.TextureLayer[1].TextureWrap = video::ETC_REPEAT;
-				//driver->setTextureCreationFlag(video::ETCF_CREATE_MIP_MAPS, true);				
-				
+				//driver->setTextureCreationFlag(video::ETCF_CREATE_MIP_MAPS, true);
+
 				break;
 
 			default:
@@ -617,7 +618,7 @@ void CTerrain::setShader(c8 * shaderFileName, scene::ISceneManager* smgr)
     video::IVideoDriver* driver = smgr->getVideoDriver();
     s32 newMaterialType1 = 0;
     video::IGPUProgrammingServices* gpu = smgr->getVideoDriver()->getGPUProgrammingServices();
-	
+
     if (gpu)
     {
         MyShaderCallBack* mc = new MyShaderCallBack();
@@ -626,9 +627,9 @@ void CTerrain::setShader(c8 * shaderFileName, scene::ISceneManager* smgr)
 			shaderFileName, "VS", video::EVST_VS_2_0,
 			shaderFileName, "PS", video::EPST_PS_2_0,
 			mc, video::EMT_SOLID);
-		
-		mc->drop();
-    }  	
 
-    setMaterialType((video::E_MATERIAL_TYPE)newMaterialType1);	
+		mc->drop();
+    }
+
+    setMaterialType((video::E_MATERIAL_TYPE)newMaterialType1);
 }
