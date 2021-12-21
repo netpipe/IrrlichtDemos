@@ -10,7 +10,7 @@
 #include "InputHandler.h"
 #include "Player.h"
 
-inline float round( float f ){ return (f > 0.0) ? (float)floor(f + 0.5) : (float)ceil(f - 0.5); }
+//inline float round( float f ){ return (f > 0.0) ? (float)floor(f + 0.5) : (float)ceil(f - 0.5); }
 
 using namespace irr;
 using namespace core;

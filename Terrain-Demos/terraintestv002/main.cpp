@@ -61,7 +61,7 @@ public:
 						16,
 						5) ;		// this is the scale
 						nodeterrain = smgr->addAnimatedMeshSceneNode( meshterrain );
-						nodeterrain->setMaterialTexture( 0, driver->getTexture("HeightMapTerrain.jpg"));
+						nodeterrain->setMaterialTexture( 0, driver->getTexture("./media/HeightMapTerrain.jpg"));
 						smgr->setActiveCamera(camera);
 						window->setVisible(false);
 						device->getCursorControl()->setVisible(false);
@@ -77,7 +77,7 @@ public:
 						core::dimension2d< f32 >(1.0f, 1.0f),
 						16);
 						nodeterrain = smgr->addAnimatedMeshSceneNode( meshterrain );
-						nodeterrain->setMaterialTexture( 0, driver->getTexture("HeightMapTerrain.jpg"));
+						nodeterrain->setMaterialTexture( 0, driver->getTexture("./media/HeightMapTerrain.jpg"));
 						smgr->setActiveCamera(camera);
 						window->setVisible(false);
 						device->getCursorControl()->setVisible(false);
@@ -133,7 +133,7 @@ int main()
 	int fps, lastfps;
 	MyEventReceiver receiver;
 
-	device = createDevice(video::EDT_OPENGL, core::dimension2d<s32>(1024, 768),
+	device = createDevice(video::EDT_OPENGL, core::dimension2d<u32>(1024, 768),
 		16, false, false, &receiver);
 
 	driver = device->getVideoDriver();

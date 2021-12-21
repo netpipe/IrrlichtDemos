@@ -24,16 +24,12 @@
 			<Add library="GL" />
 			<Add library="Irrlicht" />
 			<Add library="Xxf86vm" />
-			<Add library="/home/Dev/libs/mini/libMini.a" />
 			<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
 			<Add directory="/home/Dev/libs/mini" />
 		</Linker>
 		<Unit filename="main.cpp" />
 		<Unit filename="terrain.cpp" />
 		<Unit filename="terrain.h" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
