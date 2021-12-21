@@ -20,6 +20,7 @@
 			<Add option="-fpermissive" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
 			<Add directory="/home/Dev/libs/GUI/freetype-2.5.5/include" />
+			<Add directory="/usr/include/freetype2" />
 		</Compiler>
 		<Linker>
 			<Add library="GL" />
@@ -77,10 +78,6 @@
 		<Unit filename="stdafx.cpp" />
 		<Unit filename="stdafx.h" />
 		<Unit filename="targetver.h" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-			<envvars />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

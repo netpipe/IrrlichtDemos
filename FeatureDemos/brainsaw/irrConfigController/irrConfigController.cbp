@@ -8,8 +8,8 @@
 		<Build>
 			<Target title="Debug">
 				<Option output="irrConfigController" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="..\irrConfigController" />
-				<Option object_output="..\..\_obj_dump\extensions\IrrConfigController\debug" />
+				<Option working_dir="../irrConfigController" />
+				<Option object_output="../../_obj_dump/extensions/IrrConfigController/debug" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -18,8 +18,8 @@
 			</Target>
 			<Target title="Release">
 				<Option output="irrConfigController" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="..\irrConfigController" />
-				<Option object_output="..\..\_obj_dump\extensions\IrrConfigController\release" />
+				<Option working_dir="../irrConfigController" />
+				<Option object_output="../../_obj_dump/extensions/IrrConfigController/release" />
 				<Option type="0" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -29,32 +29,48 @@
 					<Add option="-s" />
 				</Linker>
 			</Target>
+			<Target title="linux">
+				<Option output="irrConfigController" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../irrConfigController" />
+				<Option object_output="../../_obj_dump/extensions/IrrConfigController/debug" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="Irrlicht" />
+					<Add library="Xxf86vm" />
+					<Add library="GL" />
+					<Add library="X11" />
+				</Linker>
+			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
-			<Add directory="..\..\libs\irrlicht-1.7.1\include" />
+			<Add directory="../../libs/irrlicht-1.7.1/include" />
 			<Add directory="include" />
+			<Add directory="/home/netpipe/gamedev/irrlicht-1.8.4/include" />
 		</Compiler>
 		<Linker>
 			<Add library="Irrlicht" />
 			<Add library="opengl32" />
 			<Add library="glu32" />
 			<Add library="gdi32" />
-			<Add directory="..\..\libs\irrlicht-1.7.1\lib\Win32-gcc" />
+			<Add directory="../../libs/irrlicht-1.7.1/lib/Win32-gcc" />
+			<Add directory="/home/netpipe/gamedev/irrlicht-1.8.4/lib/Linux" />
 		</Linker>
-		<Unit filename="include\CStateDemo.h" />
-		<Unit filename="include\CStateMachine.h" />
-		<Unit filename="include\CStateSetup.h" />
-		<Unit filename="include\IState.h" />
-		<Unit filename="include\irrCC.h" />
-		<Unit filename="source\CStateDemo.cpp" />
-		<Unit filename="source\CStateMachine.cpp" />
-		<Unit filename="source\CStateSetup.cpp" />
-		<Unit filename="source\irrCC.cpp" />
-		<Unit filename="source\main.cpp" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-		</Extensions>
+		<Unit filename="include/CStateDemo.h" />
+		<Unit filename="include/CStateMachine.h" />
+		<Unit filename="include/CStateSetup.h" />
+		<Unit filename="include/IState.h" />
+		<Unit filename="include/irrCC.h" />
+		<Unit filename="source/CStateDemo.cpp" />
+		<Unit filename="source/CStateMachine.cpp" />
+		<Unit filename="source/CStateSetup.cpp" />
+		<Unit filename="source/irrCC.cpp" />
+		<Unit filename="source/main.cpp" />
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

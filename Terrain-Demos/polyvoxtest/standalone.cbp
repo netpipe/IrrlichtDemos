@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Irrlicht Pong" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./Pong" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Linker>
+					<Add option="-std=c++11" />
+				</Linker>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-std=c++11" />
+			<Add option="-fpermissive" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+			<Add directory="/home/Dev/libs/csg-stuff/polyvox-0.2.1/library/PolyVoxCore/include" />
+			<Add directory="/home/Dev/libs/csg-stuff/polyvox-0.2.1/library/PolyVoxCore/" />
+			<Add directory="../../../LunaLibs/PolyVox/library/PolyVoxCore2" />
+			<Add directory="../../../LunaLibs/PolyVox/library/PolyVoxCore/include2" />
+			<Add directory="../../../LunaLibs/polyvox-0.2.1/library/PolyVoxCore" />
+			<Add directory="../../../LunaLibs/polyvox-0.2.1/library/PolyVoxUtil" />
+			<Add directory="../../../LunaLibs/polyvox-0.2.1/library/PolyVoxCore/include" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="GL" />
+			<Add library="Xxf86vm" />
+			<Add library="X11" />
+			<Add library="PolyVoxCore" />
+			<Add library="PolyVoxUtil" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+			<Add directory="/home/Dev/libs/csg-stuff/polyvox-0.2.1/library/PolyVoxCore" />
+			<Add directory="/home/Dev/libs/csg-stuff/polyvox-0.2.1/library/PolyVoxUtil" />
+			<Add directory="../../../LunaLibs/PolyVox/library/PolyVoxCore2" />
+			<Add directory="../../../LunaLibs/PolyVox/library/PolyVoxUtil2" />
+			<Add directory="../../../LunaLibs/polyvox-0.2.1/library/PolyVoxCore" />
+			<Add directory="../../../LunaLibs/polyvox-0.2.1/library/PolyVoxUtil" />
+		</Linker>
+		<Unit filename="include/PolyVoxCore/AStarPathfinder.h" />
+		<Unit filename="include/PolyVoxCore/AStarPathfinder.inl" />
+		<Unit filename="include/PolyVoxCore/AmbientOcclusionCalculator.h" />
+		<Unit filename="include/PolyVoxCore/AmbientOcclusionCalculator.inl" />
+		<Unit filename="include/PolyVoxCore/Array.h" />
+		<Unit filename="include/PolyVoxCore/Array.inl" />
+		<Unit filename="include/PolyVoxCore/ArraySizes.h" />
+		<Unit filename="include/PolyVoxCore/BaseVolume.h" />
+		<Unit filename="include/PolyVoxCore/BaseVolume.inl" />
+		<Unit filename="include/PolyVoxCore/BaseVolumeSampler.inl" />
+		<Unit filename="include/PolyVoxCore/ConstVolumeProxy.h" />
+		<Unit filename="include/PolyVoxCore/CubicSurfaceExtractor.h" />
+		<Unit filename="include/PolyVoxCore/CubicSurfaceExtractor.inl" />
+		<Unit filename="include/PolyVoxCore/CubicSurfaceExtractorWithNormals.h" />
+		<Unit filename="include/PolyVoxCore/CubicSurfaceExtractorWithNormals.inl" />
+		<Unit filename="include/PolyVoxCore/DefaultIsQuadNeeded.h" />
+		<Unit filename="include/PolyVoxCore/DefaultMarchingCubesController.h" />
+		<Unit filename="include/PolyVoxCore/Density.h" />
+		<Unit filename="include/PolyVoxCore/GradientEstimators.h" />
+		<Unit filename="include/PolyVoxCore/GradientEstimators.inl" />
+		<Unit filename="include/PolyVoxCore/Impl/AStarPathfinderImpl.h" />
+		<Unit filename="include/PolyVoxCore/Impl/ArraySizesImpl.h" />
+		<Unit filename="include/PolyVoxCore/Impl/ArraySizesImpl.inl" />
+		<Unit filename="include/PolyVoxCore/Impl/Block.h" />
+		<Unit filename="include/PolyVoxCore/Impl/Block.inl" />
+		<Unit filename="include/PolyVoxCore/Impl/MarchingCubesTables.h" />
+		<Unit filename="include/PolyVoxCore/Impl/RandomUnitVectors.h" />
+		<Unit filename="include/PolyVoxCore/Impl/RandomVectors.h" />
+		<Unit filename="include/PolyVoxCore/Impl/SubArray.h" />
+		<Unit filename="include/PolyVoxCore/Impl/SubArray.inl" />
+		<Unit filename="include/PolyVoxCore/Impl/TypeDef.h" />
+		<Unit filename="include/PolyVoxCore/Impl/Utility.h" />
+		<Unit filename="include/PolyVoxCore/Interpolation.h" />
+		<Unit filename="include/PolyVoxCore/IteratorController.h" />
+		<Unit filename="include/PolyVoxCore/IteratorController.inl" />
+		<Unit filename="include/PolyVoxCore/LargeVolume.h" />
+		<Unit filename="include/PolyVoxCore/LargeVolume.inl" />
+		<Unit filename="include/PolyVoxCore/LargeVolumeSampler.inl" />
+		<Unit filename="include/PolyVoxCore/Log.h" />
+		<Unit filename="include/PolyVoxCore/LowPassFilter.h" />
+		<Unit filename="include/PolyVoxCore/LowPassFilter.inl" />
+		<Unit filename="include/PolyVoxCore/MarchingCubesSurfaceExtractor.h" />
+		<Unit filename="include/PolyVoxCore/MarchingCubesSurfaceExtractor.inl" />
+		<Unit filename="include/PolyVoxCore/Material.h" />
+		<Unit filename="include/PolyVoxCore/MaterialDensityPair.h" />
+		<Unit filename="include/PolyVoxCore/MeshDecimator.h" />
+		<Unit filename="include/PolyVoxCore/MeshDecimator.inl" />
+		<Unit filename="include/PolyVoxCore/PolyVoxForwardDeclarations.h" />
+		<Unit filename="include/PolyVoxCore/RawVolume.h" />
+		<Unit filename="include/PolyVoxCore/RawVolume.inl" />
+		<Unit filename="include/PolyVoxCore/RawVolumeSampler.inl" />
+		<Unit filename="include/PolyVoxCore/Raycast.h" />
+		<Unit filename="include/PolyVoxCore/Raycast.inl" />
+		<Unit filename="include/PolyVoxCore/Region.h" />
+		<Unit filename="include/PolyVoxCore/SimpleInterface.h" />
+		<Unit filename="include/PolyVoxCore/SimpleVolume.h" />
+		<Unit filename="include/PolyVoxCore/SimpleVolume.inl" />
+		<Unit filename="include/PolyVoxCore/SimpleVolumeBlock.inl" />
+		<Unit filename="include/PolyVoxCore/SimpleVolumeSampler.inl" />
+		<Unit filename="include/PolyVoxCore/SurfaceMesh.h" />
+		<Unit filename="include/PolyVoxCore/SurfaceMesh.inl" />
+		<Unit filename="include/PolyVoxCore/Vector.h" />
+		<Unit filename="include/PolyVoxCore/Vector.inl" />
+		<Unit filename="include/PolyVoxCore/VertexTypes.h" />
+		<Unit filename="include/PolyVoxCore/VolumeResampler.h" />
+		<Unit filename="include/PolyVoxCore/VolumeResampler.inl" />
+		<Unit filename="include/PolyVoxCore/VoxelFilters.h" />
+		<Unit filename="include/PolyVoxCore/VoxelFilters.inl" />
+		<Unit filename="polyvoxtest.cpp" />
+		<Unit filename="source/AStarPathfinder.cpp" />
+		<Unit filename="source/ArraySizes.cpp" />
+		<Unit filename="source/Impl/MarchingCubesTables.cpp" />
+		<Unit filename="source/Impl/RandomUnitVectors.cpp" />
+		<Unit filename="source/Impl/RandomVectors.cpp" />
+		<Unit filename="source/Impl/Utility.cpp" />
+		<Unit filename="source/Log.cpp" />
+		<Unit filename="source/MeshDecimator.cpp" />
+		<Unit filename="source/Region.cpp" />
+		<Unit filename="source/SimpleInterface.cpp" />
+		<Unit filename="source/VertexTypes.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

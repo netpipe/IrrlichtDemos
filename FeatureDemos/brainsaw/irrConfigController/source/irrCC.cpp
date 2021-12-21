@@ -29,6 +29,7 @@ bool CIrrCC::CIrrCCItem::isButton() {
   return m_eType==CIrrCC::eCtrlButton || m_eType==CIrrCC::eCtrlToggleButton;
 }
 
+//should use  map and case instead to boost speed instead of if
 stringw CIrrCC::CIrrCCItem::keyCodeToString(EKEY_CODE e) {
   if (e == KEY_LBUTTON)    return stringw(L"KEY_LBUTTON");
   if (e == KEY_RBUTTON)    return stringw(L"KEY_RBUTTON");
