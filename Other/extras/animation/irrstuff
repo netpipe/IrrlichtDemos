@@ -1,0 +1,197 @@
+Postby CuteAlien » Tue Oct 06, 2009 10:38 pm
+I'm not really sure if it even is still needed with all recent changes, but anyway - I updated my code recently to 1.6. And due to nice changes in the engine it's no longer necessary to patch Irrlicht, but can be done outside: 
+
+
+       IAnimatedMesh *meshtest=smgr->getMesh("media/soldierMad.b3d");//    loading mesh that contains bones
+       IMeshCache *k=smgr->getMeshCache(); 
+       core::stringw newname="blah";
+       newname+=1;// make new unique file name
+        const irr::c8* namw;
+        namw=(irr::c8*)newname;
+       k->setMeshFilename(meshtest,namw);
+      ISkinnedMesh* meshdewalk= (ISkinnedMesh*)meshtest;
+//! Create a skinned mesh which has copied all meshbuffers and joints of the original mesh
+/** Note, that this will not copy any other information like joints data.
+\param mesh Original mesh
+\return Newly created skinned mesh. You should call drop() when you don't need it anymore.
+See IReferenceCounted::drop() for more information. */
+
+irr::scene::ISkinnedMesh* createSkinnedMeshCopy(irr::scene::ISkinnedMesh* mesh, irr::scene::ISceneManager * sceneManager)
+{
+   using namespace irr;
+   using namespace scene;
+
+   ISkinnedMesh* skinnedMesh = sceneManager->createSkinnedMesh();
+
+    if ( !mesh )
+        return skinnedMesh;
+
+    for ( u32 i=0; i < mesh->getMeshBuffers().size(); ++i )
+    {
+        SSkinMeshBuffer * buffer = skinnedMesh->addMeshBuffer();
+        *buffer = *(mesh->getMeshBuffers()[i]);
+    }
+
+    for ( u32 j=0; j < mesh->getAllJoints().size(); ++j )
+    {
+        ISkinnedMesh::SJoint *joint = skinnedMesh->addJoint();
+        *joint = *(mesh->getAllJoints()[j]);
+   }
+
+    // fix children pointers (they still have old pointers)
+    core::array<ISkinnedMesh::SJoint*> & newJoints = skinnedMesh->getAllJoints();
+    core::array<ISkinnedMesh::SJoint*> & oldJoints = mesh->getAllJoints();
+    for ( u32 i=0; i < newJoints.size(); ++i )
+    {
+        ISkinnedMesh::SJoint * joint = newJoints[i];
+        for ( u32 c=0; c < joint->Children.size(); ++c )
+        {
+            // the child is one of the oldJoints and must be replaced by the newjoint on the same index
+            for ( u32 k=0; k < oldJoints.size(); ++k )
+            {
+                if ( joint->Children[c] == oldJoints[k] )
+                {
+                    joint->Children[c] = newJoints[k];
+                    break;
+                }
+            }
+        }
+    }
+
+   skinnedMesh->finalize();
+
+    return skinnedMesh;
+}
+
+
+
+
+
+
+
+
+    void applyPose (const PxRigidActor *fromPx, ISceneNode *toIrr)
+    {
+        PxTransform posePx = fromPx->getGlobalPose();
+        matrix4 matIrr = quaternion(posePx.q.x,posePx.q.y,posePx.q.z,posePx.q.w).makeInverse().getMatrix();
+        matIrr.setTranslation(vector3df(posePx.p.x,posePx.p.y,posePx.p.z));
+        if (toIrr->getParent() != gScene->getRootSceneNode())// this would work with rootSceneNode as parent as well
+        {
+            matrix4 pTrans;
+            toIrr->getParent()->getAbsoluteTransformation().getInverse(pTrans);
+            matIrr = pTrans*matIrr;
+        }
+        toIrr->setPosition(matIrr.getTranslation());
+        vector3df rot = matIrr.getRotationDegrees();
+        toIrr->setRotation(rot);
+        toIrr->updateAbsolutePosition();
+    }
+
+
+
+
+
+
+
+
+
+
+IBoneSceneNode* Bone = Node->getJointNode("Your_Bone");
+ 
+ISceneNode* tempNode = Bone;
+std::vector<ISceneNode*> Parents;
+ 
+while(Node != tempNode)
+{
+    tempNode = tempNode->getParent();
+    Parents.push_back(tempNode);
+}
+ 
+for(int i = Parents.size() - 1; i >= 0; --i)
+    Parents[i]->updateAbsolutePosition();
+ 
+Parents.clear();
+ 
+if(Bone)
+{
+    matrix4 ParentTransform = Bone->getParent()->getAbsoluteTransformation();
+    ParentTransform.makeInverse();
+ 
+    vector3df Position = Your_Position;
+ 
+    ParentTransform.transformVect(Position);
+ 
+    Bone->setPosition(Position);
+}
+
+
+
+
+
+
+ 
+#include <irrlicht.h>
+ 
+using namespace irr;
+using namespace core;
+using namespace scene;
+using namespace video;
+using namespace io;
+using namespace gui;
+ 
+int main()
+{
+ 
+        IrrlichtDevice *device = createDevice( video::EDT_OPENGL, (const dimension2du&)dimension2d<u32>(1280, 752), 32, false, false, false, false);
+ 
+        if (!device)
+                return 1;
+ 
+        IVideoDriver* driver = device->getVideoDriver();
+        ISceneManager* smgr = device->getSceneManager();
+        IGUIEnvironment* guienv = device->getGUIEnvironment();
+ 
+        IAnimatedMesh* mesh = smgr->getMesh("./player01.ms3d");
+ 
+        if (!mesh)
+        {
+                device->drop();
+                return 1;
+        }
+        IAnimatedMeshSceneNode* node = smgr->addAnimatedMeshSceneNode( mesh );
+        ISceneNode* nodeGlasses = NULL;
+ 
+        if (node)
+        {
+                node->setMaterialFlag(EMF_LIGHTING, false);
+                node->setMaterialTexture( 0, driver->getTexture("./outfieldplayer.png") );
+ 
+                nodeGlasses = smgr->addAnimatedMeshSceneNode(smgr->getMesh("./glasses-2.ms3d"));
+                nodeGlasses->setMaterialFlag(EMF_LIGHTING, true);
+                nodeGlasses->setMaterialFlag(EMF_FOG_ENABLE, true);
+                nodeGlasses->setRotation(vector3df(0, -90 + 180, -90));
+                nodeGlasses->setPosition(vector3df(-21 + 21, 0, 0)); //y: 0
+        }
+        node->getJointNode("Bip01 HeadNub")->addChild(nodeGlasses);    
+ 
+        ICameraSceneNode* camera = smgr->addCameraSceneNode(0, vector3df(0, 100,-100), vector3df(0,0,0));
+        camera->setFarValue(500.0f * 100);
+        camera->setNearValue(1.0f * 100);
+        smgr->setAmbientLight(video::SColorf(1, 1, 1, 1));
+       
+        while(device->run())
+        {
+                driver->beginScene(true, true, SColor(255,100,101,140));
+                smgr->drawAll();
+                guienv->drawAll();
+                driver->endScene();
+        }
+ 
+        device->drop();
+ 
+        return 0;
+}
+
+
+
+

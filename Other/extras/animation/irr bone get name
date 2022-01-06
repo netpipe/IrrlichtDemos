@@ -1,0 +1,3 @@
+ IAnimatedMeshSceneNode *node;
+node->getJointNode("foreArm"); // get Joint by name
+node->getJointNode(14);  // get Joint by ID 
