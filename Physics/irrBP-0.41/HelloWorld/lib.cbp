@@ -8,7 +8,7 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug Win32">
-				<Option output="haa" prefix_auto="1" extension_auto="1" />
+				<Option output="bp" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
 				<Option object_output="Debug Win32" />
 				<Option type="2" />
@@ -36,7 +36,7 @@
 				</Linker>
 			</Target>
 			<Target title="Release Win32">
-				<Option output="lib" prefix_auto="1" extension_auto="1" />
+				<Option output="bp" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
 				<Option object_output="Release Win32" />
 				<Option type="2" />
@@ -45,9 +45,6 @@
 				<Compiler>
 					<Add option="-W" />
 					<Add option="-O3" />
-					<Add directory="E:/Documenti/Lavori Stefano/ProgettoFPS/Engine/Engine/IrrBP/include" />
-					<Add directory="E:/Programmi/PROGRAMMAZIONE/Bullet Physics/bullet-2.77/src" />
-					<Add directory="E:/Documenti/Lavori Stefano/ProgettoFPS/Engine/Engine/irrlicht/include" />
 				</Compiler>
 				<ResourceCompiler>
 					<Add directory="E:/Documenti/Lavori Stefano/ProgettoFPS/Engine/Engine/IrrBP/include" />
@@ -56,6 +53,14 @@
 				</ResourceCompiler>
 			</Target>
 		</Build>
+		<Compiler>
+			<Add directory="E:/Documenti/Lavori Stefano/ProgettoFPS/Engine/Engine/IrrBP/include" />
+			<Add directory="E:/Programmi/PROGRAMMAZIONE/Bullet Physics/bullet-2.77/src" />
+			<Add directory="E:/Documenti/Lavori Stefano/ProgettoFPS/Engine/Engine/irrlicht/include" />
+			<Add directory="/home/netpipe/gamedev/LunaLibs/bullet-2.78/src" />
+			<Add directory="/home/netpipe/gamedev/IrrlichtDemos/Physics/irrBP-0.41/include" />
+			<Add directory="/home/netpipe/gamedev/LunaLibs/irrlicht-1.8.4/include" />
+		</Compiler>
 		<Unit filename="../include/CIrrBPCollisionObject.h" />
 		<Unit filename="../include/CIrrBPDebugDrawer.h" />
 		<Unit filename="../include/CIrrBPManager.h" />
@@ -117,10 +122,6 @@
 		<Unit filename="../src/softbody/CIrrBPPatchSoftBody.cpp" />
 		<Unit filename="../src/softbody/CIrrBPRopeSoftBody.cpp" />
 		<Unit filename="../src/softbody/CIrrBPSoftBody.cpp" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-			<envvars />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

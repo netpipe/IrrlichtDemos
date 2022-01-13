@@ -18,13 +18,15 @@
 					<Add directory="/home/Dev/libs/physics/bullet-2.77/src" />
 					<Add directory="../src" />
 					<Add directory="../include" />
+					<Add directory="../../../../LunaLibs/bullet-2.78/src" />
+					<Add directory="../../../../LunaLibs/irrlicht-1.8.4/include" />
 				</Compiler>
 				<Linker>
 					<Add library="Irrlicht" />
 					<Add library="GL" />
 					<Add library="Xxf86vm" />
 					<Add library="X11" />
-					<Add library="haa" />
+					<Add library="libbp" />
 					<Add library="BulletSoftBody" />
 					<Add library="BulletDynamics" />
 					<Add library="BulletCollision" />
@@ -35,6 +37,11 @@
 					<Add directory="/home/Dev/libs/physics/bullet-2.77/src/BulletSoftBody" />
 					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
 					<Add directory="./" />
+					<Add directory="../../../../LunaLibs/bullet-2.78/src/BulletCollision" />
+					<Add directory="../../../../LunaLibs/bullet-2.78/src/BulletDynamics" />
+					<Add directory="../../../../LunaLibs/bullet-2.78/src/LinearMath" />
+					<Add directory="../../../../LunaLibs/bullet-2.78/src/BulletSoftBody" />
+					<Add directory="../../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 				</Linker>
 			</Target>
 			<Target title="Release Win32">
