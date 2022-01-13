@@ -20,7 +20,7 @@ using namespace scene;
             }
 
             device->setWindowCaption( L"Irrlicht: Allied Assault" );
-            device->getFileSystem()->addFileArchive("main",true,false,io::EFAT_FOLDER,"");
+        ///    device->getFileSystem()->addFileArchive("main",true,false,io::EFAT_FOLDER,"");
 
             video::IVideoDriver *driver = device->getVideoDriver();
             scene::ISceneManager *smgr = device->getSceneManager();
@@ -30,24 +30,30 @@ using namespace scene;
             scene::ISceneNode *node = 0;
 
 
-        CBSPMeshFileLoader cmesh(smgr, device->getFileSystem()); //createMesh
 
-      //  irr::io::path path2("mohdm6.bsp");
-        irr::io::IReadFile *file("mohdm6.bsp");
-     //   file->getFileName(path2);
-        cmesh.createMesh( file);
+
+        io::IFileSystem *filesys;
+
+     //  irr::io::path path2("mohdm6.bsp");
+       irr::io::IReadFile *file;
+         file=filesys->createAndOpenFile("mohdm6.bsp");
+      //  file->getFileName();
+            //  CBSPMeshFileLoader2 cmesh(smgr, device->getFileSystem()); //createMesh
+              CBSPMeshFileLoader cmesh(smgr,filesys); //createMesh
+
+        mesh=cmesh.createMesh( file);
 
        // cmesh.getMesh( "mohdm6.bsp");
 
-      //  mesh =cmesh.getMesh();
+//        mesh =cmesh.getMesh();
         //cmesh->loadFile
-      //  CMOHAALevelMesh mesh=new CMOHAALevelMesh(,smgr,"mohdm6.bsp");
+       // CMOHAALevelMesh mesh2=new CMOHAALevelMesh(filesys,smgr,cmesh.LoadParam);
 
-      //  CMOHAALevelMesh *mesh;
+     //   CMOHAALevelMesh *mesh2;
+       // s32
+           // mesh2->getMesh(L"./mohdm6.bsp");
 
-            //mesh->getMesh("mohdm6.bsp")
-
-            if ( mesh )
+          //  if ( mesh )
                     node = smgr->addOctreeSceneNode( mesh->getMesh(0) );
 
             if (node) {

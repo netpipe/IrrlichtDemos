@@ -1,0 +1,6 @@
+irrBP is distributed under Creative Commons by-SA.
+
+You can share and edit the source code, but you must attribute the work to Stefano Guerrini.
+
+For more details:
+http://creativecommons.org/licenses/by-sa/3.0/

@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_c_irr_b_p_world.html#a566ce1f1107d563cec07c2406946bb2c" title="CIrrBPWorld::addCollisionObject" alt="" coords="237,32,448,61"/>
+<area shape="rect" id="node9" href="$class_c_irr_b_p_manager.html#a86bdf76b8d75cc71d4085fcd4c2e242f" title="CIrrBPManager::addPatchSoftBody" alt="" coords="229,85,456,115"/>
+<area shape="rect" id="node11" href="$class_c_irr_b_p_manager.html#a577e90c2f73c3f85cda094ebe5bda6cb" title="CIrrBPManager::addRopeSoftBody" alt="" coords="232,139,453,168"/>
+<area shape="rect" id="node5" href="$class_c_irr_b_p_manager.html#a58e4019b664a6f3be5500394c4950206" title="CIrrBPManager::addCollisionObjectToBulletQueue" alt="" coords="505,5,815,35"/>
+<area shape="rect" id="node7" href="$class_c_irr_b_p_manager.html#aa1fcb8607fbf34dc6db3775176c7e8b2" title="CIrrBPManager::createCamera" alt="" coords="561,59,759,88"/>
+</map>

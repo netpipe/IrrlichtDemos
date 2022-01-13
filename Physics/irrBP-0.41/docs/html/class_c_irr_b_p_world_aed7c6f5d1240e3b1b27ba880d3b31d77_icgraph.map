@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_c_irr_b_p_world.html#a566ce1f1107d563cec07c2406946bb2c" title="CIrrBPWorld::addCollisionObject" alt="" coords="249,32,460,61"/>
+<area shape="rect" id="node9" href="$class_c_irr_b_p_manager.html#aa5e3d1f316a03a6dd516fe17dcc1da32" title="CIrrBPManager::addConvexHullBody" alt="" coords="239,85,471,115"/>
+<area shape="rect" id="node11" href="$class_c_irr_b_p_manager.html#ae3e4a46bee9a42574cbcf1c9be2acd37" title="CIrrBPManager::addRigidBox" alt="" coords="260,139,449,168"/>
+<area shape="rect" id="node13" href="$class_c_irr_b_p_manager.html#a765ab3eef826c3661d3060343927c03a" title="CIrrBPManager::addRigidCapsule" alt="" coords="248,192,461,221"/>
+<area shape="rect" id="node15" href="$class_c_irr_b_p_manager.html#ac4b4a89db125219c20579e80b67db930" title="CIrrBPManager::addRigidCone" alt="" coords="256,245,453,275"/>
+<area shape="rect" id="node17" href="$class_c_irr_b_p_manager.html#aceded2f7fe4a80dfe5742ae022ceb626" title="CIrrBPManager::addRigidCylinder" alt="" coords="248,299,461,328"/>
+<area shape="rect" id="node19" href="$class_c_irr_b_p_manager.html#a70d065af84b364a1483a2f1e5a96c11f" title="CIrrBPManager::addRigidSphere" alt="" coords="251,352,459,381"/>
+<area shape="rect" id="node21" href="$class_c_irr_b_p_manager.html#af01497ccf86c0c50462e658b50766c6e" title="CIrrBPManager::addTrimesh" alt="" coords="263,405,447,435"/>
+<area shape="rect" id="node5" href="$class_c_irr_b_p_manager.html#a58e4019b664a6f3be5500394c4950206" title="CIrrBPManager::addCollisionObjectToBulletQueue" alt="" coords="521,5,831,35"/>
+<area shape="rect" id="node7" href="$class_c_irr_b_p_manager.html#aa1fcb8607fbf34dc6db3775176c7e8b2" title="CIrrBPManager::createCamera" alt="" coords="577,59,775,88"/>
+</map>

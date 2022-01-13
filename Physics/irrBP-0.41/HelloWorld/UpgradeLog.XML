@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="HelloWorld_vc10">
+</Property><Property Name="File di soluzione" Value="E:\Documenti\Lavori Stefano\ProgettoFPS\Engine\Engine\IrrBP\HelloWorld\HelloWorld_vc10.sln">
+</Property><Property Name="Date" Value="mercoledì 18 gennaio 2012">
+</Property><Property Name="Time" Value="17:33:00">
+</Property></Properties><Event ErrorLevel="0" Project="HelloWorld_vc10" Source="HelloWorld_vc10.vcproj" Description="Converting project file 'E:\Documenti\Lavori Stefano\ProgettoFPS\Engine\Engine\IrrBP\HelloWorld\HelloWorld_vc10.vcproj'.">
+</Event><Event ErrorLevel="1" Project="HelloWorld_vc10" Source="HelloWorld_vc10.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="HelloWorld_vc10" Source="HelloWorld_vc10.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="HelloWorld_vc10" Source="HelloWorld_vc10.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="HelloWorld_vc10" Source="HelloWorld_vc10.vcproj" Description="Done converting to new project file 'E:\Documenti\Lavori Stefano\ProgettoFPS\Engine\Engine\IrrBP\HelloWorld\HelloWorld_vc10.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="HelloWorld_vc10" Source="HelloWorld_vc10.vcproj" Description="Converted">
+</Event></UpgradeLog>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="IrrBPLib" />
+		<Option execution_dir="/home/ernestas/Desktop/irrBP/irrbp-read-only/IrrBPLib/" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="haa" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug Win32" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.77/src" />
+					<Add directory="../src" />
+					<Add directory="../include" />
+				</Compiler>
+				<Linker>
+					<Add library="Irrlicht" />
+					<Add library="GL" />
+					<Add library="Xxf86vm" />
+					<Add library="X11" />
+					<Add library="haa" />
+					<Add library="BulletSoftBody" />
+					<Add library="BulletDynamics" />
+					<Add library="BulletCollision" />
+					<Add library="LinearMath" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.77/src/BulletCollision" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.77/src/BulletDynamics" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.77/src/LinearMath" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.77/src/BulletSoftBody" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+					<Add directory="./" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="lib" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="Release Win32" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-W" />
+					<Add option="-O3" />
+					<Add directory="E:/Documenti/Lavori Stefano/ProgettoFPS/Engine/Engine/IrrBP/include" />
+					<Add directory="E:/Programmi/PROGRAMMAZIONE/Bullet Physics/bullet-2.77/src" />
+					<Add directory="E:/Documenti/Lavori Stefano/ProgettoFPS/Engine/Engine/irrlicht/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="E:/Documenti/Lavori Stefano/ProgettoFPS/Engine/Engine/IrrBP/include" />
+					<Add directory="E:/Programmi/PROGRAMMAZIONE/Bullet Physics/bullet-2.77/src" />
+					<Add directory="E:/Documenti/Lavori Stefano/ProgettoFPS/Engine/Engine/irrlicht/include" />
+				</ResourceCompiler>
+			</Target>
+		</Build>
+		<Unit filename="example.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

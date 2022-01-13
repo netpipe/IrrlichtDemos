@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_c_irr_b_p_world.html#a566ce1f1107d563cec07c2406946bb2c" title="CIrrBPWorld::addCollisionObject" alt="" coords="365,32,576,61"/>
+<area shape="rect" id="node5" href="$class_c_irr_b_p_world.html#aed7c6f5d1240e3b1b27ba880d3b31d77" title="CIrrBPWorld::addRigidBody" alt="" coords="625,5,807,35"/>
+<area shape="rect" id="node9" href="$class_c_irr_b_p_world.html#aa0f65ab61bfef47d9e0792141ebc8e35" title="CIrrBPWorld::addSoftBody" alt="" coords="628,59,804,88"/>
+<area shape="rect" id="node7" href="$class_c_irr_b_p_collision_object.html#a7dd1e62100c72cebd6c6758d07567f25" title="CIrrBPCollisionObject::setValidStatus" alt="" coords="856,32,1096,61"/>
+</map>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="IrrBPLib" />
+		<Option execution_dir="/home/ernestas/Desktop/irrBP/irrbp-read-only/IrrBPLib/" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="haa" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug Win32" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.77/src" />
+					<Add directory="../src" />
+					<Add directory="../include" />
+				</Compiler>
+				<Linker>
+					<Add library="Irrlicht" />
+					<Add library="GL" />
+					<Add library="Xxf86vm" />
+					<Add library="X11" />
+					<Add library="BulletSoftBody" />
+					<Add library="BulletDynamics" />
+					<Add library="BulletCollision" />
+					<Add library="LinearMath" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.77/src/BulletCollision" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.77/src/BulletDynamics" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.77/src/LinearMath" />
+					<Add directory="/home/Dev/libs/physics/bullet-2.77/src/BulletSoftBody" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="lib" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="Release Win32" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-W" />
+					<Add option="-O3" />
+					<Add directory="E:/Documenti/Lavori Stefano/ProgettoFPS/Engine/Engine/IrrBP/include" />
+					<Add directory="E:/Programmi/PROGRAMMAZIONE/Bullet Physics/bullet-2.77/src" />
+					<Add directory="E:/Documenti/Lavori Stefano/ProgettoFPS/Engine/Engine/irrlicht/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="E:/Documenti/Lavori Stefano/ProgettoFPS/Engine/Engine/IrrBP/include" />
+					<Add directory="E:/Programmi/PROGRAMMAZIONE/Bullet Physics/bullet-2.77/src" />
+					<Add directory="E:/Documenti/Lavori Stefano/ProgettoFPS/Engine/Engine/irrlicht/include" />
+				</ResourceCompiler>
+			</Target>
+		</Build>
+		<Unit filename="../include/CIrrBPCamera.h" />
+		<Unit filename="../include/CIrrBPCollisionObject.h" />
+		<Unit filename="../include/CIrrBPDebugDrawer.h" />
+		<Unit filename="../include/CIrrBPManager.h" />
+		<Unit filename="../include/CIrrBPWorld.h" />
+		<Unit filename="../include/CMotionState.h" />
+		<Unit filename="../include/IrrBP.h" />
+		<Unit filename="../include/actions/CIrrBPActionInterface.h" />
+		<Unit filename="../include/actions/CIrrBPRaycastVehicle.h" />
+		<Unit filename="../include/actions/wheel.h" />
+		<Unit filename="../include/animator/CIrrBPAnimator.h" />
+		<Unit filename="../include/animator/CIrrBPCollisionCallbackAnimator.h" />
+		<Unit filename="../include/animator/CIrrBPCollisionDeleteAnimator.h" />
+		<Unit filename="../include/animator/CIrrBPDeleteAnimator.h" />
+		<Unit filename="../include/animator/CIrrBPFPSCameraAnimator.h" />
+		<Unit filename="../include/animator/CIrrBPFollowAnimator.h" />
+		<Unit filename="../include/animator/CIrrBPTimeCallBackAnimator.h" />
+		<Unit filename="../include/body/CIrrBPBoxBody.h" />
+		<Unit filename="../include/body/CIrrBPCapsuleBody.h" />
+		<Unit filename="../include/body/CIrrBPConeBody.h" />
+		<Unit filename="../include/body/CIrrBPConvexHullBody.h" />
+		<Unit filename="../include/body/CIrrBPCylinderBody.h" />
+		<Unit filename="../include/body/CIrrBPRigidBody.h" />
+		<Unit filename="../include/body/CIrrBPSphereBody.h" />
+		<Unit filename="../include/body/CIrrBPTrimeshBody.h" />
+		<Unit filename="../include/constraint/CIrrBP6DOFConstraint.h" />
+		<Unit filename="../include/constraint/CIrrBPConeTwistConstraint.h" />
+		<Unit filename="../include/constraint/CIrrBPConstraint.h" />
+		<Unit filename="../include/constraint/CIrrBPHingeConstraint.h" />
+		<Unit filename="../include/constraint/CIrrBPP2PConstraint.h" />
+		<Unit filename="../include/constraint/CIrrBPSlideConstraint.h" />
+		<Unit filename="../include/convert.h" />
+		<Unit filename="../include/softbody/CIrrBPPatchSoftBody.h" />
+		<Unit filename="../include/softbody/CIrrBPRopeSoftBody.h" />
+		<Unit filename="../include/softbody/CIrrBPSoftBody.h" />
+		<Unit filename="../include/torus.h" />
+		<Unit filename="../include/types.h" />
+		<Unit filename="../src/CIrrBPCamera.cpp" />
+		<Unit filename="../src/CIrrBPCollisionObject.cpp" />
+		<Unit filename="../src/CIrrBPDebugDrawer.cpp" />
+		<Unit filename="../src/CIrrBPManager.cpp" />
+		<Unit filename="../src/CIrrBPWorld.cpp" />
+		<Unit filename="../src/CMotionState.cpp" />
+		<Unit filename="../src/CSceneNodeAnimatorCameraFPS.cpp" />
+		<Unit filename="../src/CSceneNodeAnimatorCameraFPS.h" />
+		<Unit filename="../src/actions/CIrrBPRaycastVehicle.cpp" />
+		<Unit filename="../src/animator/CIrrBPAnimator.cpp" />
+		<Unit filename="../src/animator/CIrrBPCollisionCallbackAnimator.cpp" />
+		<Unit filename="../src/animator/CIrrBPCollisionDeleteAnimator.cpp" />
+		<Unit filename="../src/animator/CIrrBPDeleteAnimator.cpp" />
+		<Unit filename="../src/animator/CIrrBPFPSCameraAnimator.cpp" />
+		<Unit filename="../src/animator/CIrrBPFollowAnimator.cpp" />
+		<Unit filename="../src/animator/CIrrBPTimeCallBackAnimator.cpp" />
+		<Unit filename="../src/body/CIrrBPBoxBody.cpp" />
+		<Unit filename="../src/body/CIrrBPCapsuleBody.cpp" />
+		<Unit filename="../src/body/CIrrBPConeBody.cpp" />
+		<Unit filename="../src/body/CIrrBPConvexHullBody.cpp" />
+		<Unit filename="../src/body/CIrrBPCylinderBody.cpp" />
+		<Unit filename="../src/body/CIrrBPRigidBody.cpp" />
+		<Unit filename="../src/body/CIrrBPSphereBody.cpp" />
+		<Unit filename="../src/body/CIrrBPTrimeshBody.cpp" />
+		<Unit filename="../src/constraint/CIrrBP6DOFConstraint.cpp" />
+		<Unit filename="../src/constraint/CIrrBPConeTwistConstraint.cpp" />
+		<Unit filename="../src/constraint/CIrrBPConstraint.cpp" />
+		<Unit filename="../src/constraint/CIrrBPHingeConstraint.cpp" />
+		<Unit filename="../src/constraint/CIrrBPP2PConstraint.cpp" />
+		<Unit filename="../src/constraint/CIrrBPSlideConstraint.cpp" />
+		<Unit filename="../src/constraint/CIrrBPSpringConstraint.cpp" />
+		<Unit filename="../src/softbody/CIrrBPPatchSoftBody.cpp" />
+		<Unit filename="../src/softbody/CIrrBPRopeSoftBody.cpp" />
+		<Unit filename="../src/softbody/CIrrBPSoftBody.cpp" />
+		<Unit filename="example.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

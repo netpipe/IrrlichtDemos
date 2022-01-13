@@ -17,6 +17,7 @@
 			<Add alias="All" targets="default;" />
 		</VirtualTargets>
 		<Compiler>
+			<Add option="-fpermissive" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
 			<Add directory="/home/netpipe/gamedev/irrlicht-1.8.4/include" />
 			<Add directory="/home/netpipe/gamedev/irrlicht-1.8.4/source/Irrlicht" />

@@ -1,0 +1,197 @@
+r61:
++ SVN fix
+
+IrrBP 0.41(r59-r60):
++ FULL Support for Bullet 2.79
++ Updated C::B Project
+
+r58:
++ Added support for VS2010 (Bullet precomp libraries can be downloaded from irrBP download section)
++ Folder re-organization
+- Removed support for VS2005 and VS2008
+
+r57:
++ Improved the physic camera, but it stills remain in beta status
++ Added removeConstraint function
+
+r56:
++ Fixes for 0.4 Release
+
+r55:
++ Fixed Physics Camera Node Memory Leaks
+
+r54:
++ Updated Code::Blocks project
+
+r53:
++ Added Follow Animator
++ Added Physic Camera Node (Beta)
+
+r52:
++ Fixed bug in the raycast test functions
+
+r51:
++ Source code cleaned
++ Removed all namespace using in header files [Thanks to Serengeor for the tip]
+
+r50:
++ Fixed some bugs rayCastTest and rayCastClosestHitTest functions
++ Added support in rayCastTest and rayCastClosestHitTest functions to retrieve the collision triangle (included in the collision point structure)
+
+r49:
++ Added rigid body type for future function implementations
+
+r48:
++ Corrected an error in rayCastClosestHitTest function
+
+r47:
++ Added rayCastClosestHitTest function.
+
+r46:
++ Added Bullet Multithread Support, activable by using createMultithreadedBulletManager function instead of createBulletManager [BETA - MEMORY LEAKS PRESENT, use at your own risk]
+
+r45:
++ Added activate function to Rigid Body class, to force body activation.
++ Removed unused pointer from the bullet's rigid body. Unused since CMotionState class introduction.
+
+r44:
++ Modified contactPoint structure
++ Added rayCastTest method in CIrrBPWorld class (beta)
+
+r43:
++ Fixed Code::Blocks Project
+
+IrrBP 0.31-Release (r42):
++ Added 6DOF Constraint
++ New Constructor for the cone twist constraint
++ Improved Slide Constraint
++ LINUX PACKAGE ADDED
+
+IrrBP 0.31 (r41):
++ Fixed linux path issue
++ Created new download package for linux
+
+r40:
++ Fixed setRotation() and getRotation() methods. [issue 4]
++ Fixed body collding test functions. [issue 5]
++ Increased rotation precision by introducing a new conversion method, based on matrix.
+
+r39:
++ Added isPairColliding method to test collision between two objects.
+
+r38:
++ Fixed a memory bug in the CIrrBPWorld class. It caused a heap corruption after inserting a constraint.
+
+r37:
++ Added setDeactivation function in rigidBody class, so the user can manually set the deactivation flag of a body.
+
+IrrBP 0.30 Final (r36):
++ Updated irrBP Project with actions folder
+
+IrrBP 0.30 (r35):
++ Updated documentation (in the downloadable package)
++ Added support to Physics Action 
++ Added Raycast Vehicle support.
+
+r34:
++ Fixed RigidBody setPosition() method
++ Added setRotation() method in Rigid Body class
+
+r33:
++ Fixed mesh->clear() function missing bug. The function was only implemented in SVN Versions of irrlicht
++ Fixed header include folder, to cleanly compile irrBP on other platforms (thanks to serengeor).
++ Added Code::Blocks Project File (thanks to serengeor).
+
+r32:
++ Minor documentation bugfix.
+
+r31:
++ Updated rigid bodies destructors. The older versions of destructor can have some problems
+
+r30:
+- Removed bug when using Patch Soft Body without assign it a mesh
+
+IrrBP 0.21 (r29):
++ Fixed an important bug that can swallow bullet determinism when FPS changes
+
+IrrBP 0.2 (r28):
++ Implemented convex hull bodies
+- SVN Docs wont be update by now. You must download the SDK to view the updated doxygen documentation
+
+r27:
++ Re-wrote the CollisionCallbackAnimator with CollisionResultCallback to customize the callback
++ Re-wrote the TimeCallbackAnimator with EndTimeCallback to customize the callback
++ Preparing for irrBP 0.2 release
+
+r26:
++ Adjusted setPosition() function. It's now possible to move KINEMATIC objects trough the levels like an irrlicht node.
+
+r25:
++ Added new animator, called TimeCallBackAnimator that helps to call a function after a defined time
+
+r22:
++ Removed an unused variable, updated irrBPLib VS project
+
+r21:
++ Added new animator, called CollisionCallbackAnimator that helps to retrieve the collision-point of an object by calling a user function
+
+r20:
++ New function clear() to remove all bodies and constraints from the world
+
+r19:
++ Added ERP-ERP2-CFM modifier functions
++ Added Time-Step modifier function
+
+IrrBP 0.11 (r18):
++ Updated Documentation to solve linking problems with bullet > 2.76
+
+r17:
++ Removed an un-necessary library from Hello World example
+
+r16:
++ Added CCD support
+
+IrrBP 0.1 (r15):
++ Updated VC Projects
+
+r14:
++ Completely changed the object hierarchy to easily implements other futures objects.
++ Bullet Manager Updated
++ Soft Bodies optimization
++ IrrBP Bullet World optimization
++ Code tweaks to avoid strange memory leaks
+
+r13:
++ Completed mesh support for Patch/Ropes. You can new use getMesh() [Only for patch] or setDraw(true) [Only for Rope] to draw the objects
+
+r12:
++ Added mesh support for basic soft bodies (Patch and Rope). You can now use the getMesh() function to retrieve the mesh to attach to a node
+
+r8-r11:
++ New Wiki Article. SVN syncronized
+
+r7:
++ World's destructor optimized. Needed due to soft-body preparation
++ Added Soft Body Implementation (Minimal). In the next releases the implementation will be improved.
+  + Cloth
+  + Rope
+
+r6:
++ SVN Adjust
+
+r5:
++ Added body orientation support to cone body
++ Doxygen documentation renewed
+
+r4 [minor]:
++ adjusted error in doxygen documentation
+
+IrrBP 0.01 (r3):
+* First irrBP release
++ Added (minimal) Debug Drawer for bullet' world
++ Added Cone Twist Constraint
++ Set new flag (IRRBP_DEBUG_TEXT) to write debug text into the console.
++ Improved Bullet Manager
+
+r2:
+First SVN release

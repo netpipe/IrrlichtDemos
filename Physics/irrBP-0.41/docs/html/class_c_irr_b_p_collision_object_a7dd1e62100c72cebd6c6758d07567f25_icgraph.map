@@ -1,0 +1,19 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_c_irr_b_p_world.html#aed7c6f5d1240e3b1b27ba880d3b31d77" title="CIrrBPWorld::addRigidBody" alt="" coords="319,219,500,248"/>
+<area shape="rect" id="node25" href="$class_c_irr_b_p_world.html#aa0f65ab61bfef47d9e0792141ebc8e35" title="CIrrBPWorld::addSoftBody" alt="" coords="321,432,497,461"/>
+<area shape="rect" id="node32" href="$class_c_irr_b_p_world.html#ab5e0297133d23d91f2400148072df1b9" title="CIrrBPWorld::removeCollisionObject" alt="" coords="295,512,524,541"/>
+<area shape="rect" id="node5" href="$class_c_irr_b_p_world.html#a566ce1f1107d563cec07c2406946bb2c" title="CIrrBPWorld::addCollisionObject" alt="" coords="585,379,796,408"/>
+<area shape="rect" id="node11" href="$class_c_irr_b_p_manager.html#aa5e3d1f316a03a6dd516fe17dcc1da32" title="CIrrBPManager::addConvexHullBody" alt="" coords="575,5,807,35"/>
+<area shape="rect" id="node13" href="$class_c_irr_b_p_manager.html#ae3e4a46bee9a42574cbcf1c9be2acd37" title="CIrrBPManager::addRigidBox" alt="" coords="596,59,785,88"/>
+<area shape="rect" id="node15" href="$class_c_irr_b_p_manager.html#a765ab3eef826c3661d3060343927c03a" title="CIrrBPManager::addRigidCapsule" alt="" coords="584,112,797,141"/>
+<area shape="rect" id="node17" href="$class_c_irr_b_p_manager.html#ac4b4a89db125219c20579e80b67db930" title="CIrrBPManager::addRigidCone" alt="" coords="592,165,789,195"/>
+<area shape="rect" id="node19" href="$class_c_irr_b_p_manager.html#aceded2f7fe4a80dfe5742ae022ceb626" title="CIrrBPManager::addRigidCylinder" alt="" coords="584,219,797,248"/>
+<area shape="rect" id="node21" href="$class_c_irr_b_p_manager.html#a70d065af84b364a1483a2f1e5a96c11f" title="CIrrBPManager::addRigidSphere" alt="" coords="587,272,795,301"/>
+<area shape="rect" id="node23" href="$class_c_irr_b_p_manager.html#af01497ccf86c0c50462e658b50766c6e" title="CIrrBPManager::addTrimesh" alt="" coords="599,325,783,355"/>
+<area shape="rect" id="node7" href="$class_c_irr_b_p_manager.html#a58e4019b664a6f3be5500394c4950206" title="CIrrBPManager::addCollisionObjectToBulletQueue" alt="" coords="857,352,1167,381"/>
+<area shape="rect" id="node9" href="$class_c_irr_b_p_manager.html#aa1fcb8607fbf34dc6db3775176c7e8b2" title="CIrrBPManager::createCamera" alt="" coords="913,405,1111,435"/>
+<area shape="rect" id="node28" href="$class_c_irr_b_p_manager.html#a86bdf76b8d75cc71d4085fcd4c2e242f" title="CIrrBPManager::addPatchSoftBody" alt="" coords="577,432,804,461"/>
+<area shape="rect" id="node30" href="$class_c_irr_b_p_manager.html#a577e90c2f73c3f85cda094ebe5bda6cb" title="CIrrBPManager::addRopeSoftBody" alt="" coords="580,485,801,515"/>
+<area shape="rect" id="node34" href="$class_c_irr_b_p_world.html#a7133c6b9763ac425ac579cdfbda8788b" title="CIrrBPWorld::removeRigidBody" alt="" coords="589,539,792,568"/>
+<area shape="rect" id="node36" href="$class_c_irr_b_p_manager.html#ad4896d9448a572add3c84ca5118c6baa" title="CIrrBPManager::removeBody" alt="" coords="917,539,1107,568"/>
+</map>

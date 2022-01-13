@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$class_c_irr_b_p_rigid_body.html" title="CIrrBPRigidBody" alt="" coords="60,101,177,131"/>
+<area shape="rect" id="node6" href="$class_c_motion_state.html" title="Should not be used. Only for internal use." alt="" coords="50,197,152,227"/>
+<area shape="rect" id="node9" href="$class_c_irr_b_p_follow_animator.html" title="CIrrBPFollowAnimator" alt="" coords="176,197,325,227"/>
+<area shape="rect" id="node4" href="$class_c_irr_b_p_collision_object.html" title="CIrrBPCollisionObject" alt="" coords="125,5,272,35"/>
+<area shape="rect" id="node11" href="$class_c_irr_b_p_animator.html" title="CIrrBPAnimator" alt="" coords="228,101,340,131"/>
+</map>

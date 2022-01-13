@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$class_c_irr_b_p_animator.html" title="CIrrBPAnimator" alt="" coords="5,112,117,141"/>
+<area shape="rect" id="node3" href="$class_c_irr_b_p_collision_callback_animator.html" title="Please note that collision callback against soft body is not yet implemented in Bullet Physics..." alt="" coords="165,5,376,35"/>
+<area shape="rect" id="node5" href="$class_c_irr_b_p_collision_delete_animator.html" title="Please note that collision callback against soft body is not yet implemented in Bullet Physics..." alt="" coords="172,59,369,88"/>
+<area shape="rect" id="node7" href="$class_c_irr_b_p_delete_animator.html" title="CIrrBPDeleteAnimator" alt="" coords="196,112,345,141"/>
+<area shape="rect" id="node9" href="$class_c_irr_b_p_follow_animator.html" title="CIrrBPFollowAnimator" alt="" coords="196,165,345,195"/>
+<area shape="rect" id="node11" href="$class_c_irr_b_p_time_callback_animator.html" title="CIrrBPTimeCallbackAnimator" alt="" coords="176,219,365,248"/>
+</map>

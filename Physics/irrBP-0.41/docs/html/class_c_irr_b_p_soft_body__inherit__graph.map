@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$class_c_irr_b_p_patch_soft_body.html" title="CIrrBPPatchSoftBody" alt="" coords="5,160,152,189"/>
+<area shape="rect" id="node7" href="$class_c_irr_b_p_rope_soft_body.html" title="CIrrBPRopeSoftBody" alt="" coords="176,160,317,189"/>
+<area shape="rect" id="node2" href="$class_c_irr_b_p_collision_object.html" title="CIrrBPCollisionObject" alt="" coords="89,5,236,35"/>
+</map>
