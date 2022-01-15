@@ -190,49 +190,81 @@ void CRaycastTankExample::runExample()
 
 void CRaycastTankExample::updateTank()
 {
-    leftTrackSpeed = 0.0f;
-    rightTrackSpeed = 0.0f;
+//    leftTrackSpeed = 0.0f;
+ //   rightTrackSpeed = 0.0f;
 
-    if(IsKeyDown(KEY_KEY_Q) && IsKeyDown(KEY_KEY_D))
+    if(IsKeyDown(KEY_KEY_Q) && IsKeyDown(KEY_KEY_D))//turning left
     {
-        leftTrackSpeed = -4600.0f;
-        rightTrackSpeed = -4600.0f;
+     //   if (leftTrackSpeed < 800 && leftTrackSpeed > -800){
+        leftTrackSpeed += -100.0f;
+        rightTrackSpeed += -100.0f;
+     //   }
     }
 
     else
-    if(IsKeyDown(KEY_KEY_E) && IsKeyDown(KEY_KEY_A))
+    if(IsKeyDown(KEY_KEY_E) && IsKeyDown(KEY_KEY_A)) //turning right
     {
-        leftTrackSpeed = 4600.0f;
-        rightTrackSpeed = 4600.0f;
+   //     if (rightTrackSpeed < 800 && rightTrackSpeed > -800){
+        leftTrackSpeed += 100.0f;
+        rightTrackSpeed += 100.0f;
+    //    }
+//                leftTrackSpeed = 4600.0f;
+//        rightTrackSpeed = 4600.0f;
     }
 
     else
     {
         if(IsKeyDown(KEY_KEY_Q))
         {
-            leftTrackSpeed = 160.0f;
+            if (leftTrackSpeed < 2500 && leftTrackSpeed > -1500)
+                leftTrackSpeed += 60.0f;
+//            if (rightTrackSpeed < 4600 && rightTrackSpeed > 0)
+//                rightTrackSpeed -= 100.0f;
         }
 
         if(IsKeyDown(KEY_KEY_E))
         {
-            rightTrackSpeed = -160.0f;
+            if (rightTrackSpeed > -2500 && rightTrackSpeed < 1500)
+                rightTrackSpeed += -60.0f;
+//            if (leftTrackSpeed < 4600 && leftTrackSpeed > 0)
+//                leftTrackSpeed -= 100.0f;
         }
 
         if(IsKeyDown(KEY_KEY_A))
         {
-            leftTrackSpeed = -160.0f;
+           // if (leftTrackSpeed < -2600)
+                leftTrackSpeed += -60.0f;
+//            if (rightTrackSpeed < 4600 && rightTrackSpeed > 0)
+//                rightTrackSpeed -= 100.0f;
         }
 
         if(IsKeyDown(KEY_KEY_D))
         {
-            rightTrackSpeed = 160.0f;
+          //  if (rightTrackSpeed > 2600)
+                rightTrackSpeed += 60.0f;
+//            if (leftTrackSpeed < 4600 && leftTrackSpeed > 0)
+//                leftTrackSpeed -= 100.0f;
         }
 
         if(IsKeyDown(KEY_KEY_F))
         {
             tank->applyForce(vector3df(0,1600,1200), vector3df(0,0,0), ERBTS_LOCAL);
         }
-    }
+
+        //do resistance for forward and backwards find direction vector ?
+//                    if (rightTrackSpeed < 4600 && rightTrackSpeed > -2600)
+//                rightTrackSpeed -= 50.0f;
+                                    if (rightTrackSpeed != 0){
+                 if (rightTrackSpeed > 0) rightTrackSpeed -= 50.0f;
+                 if (rightTrackSpeed < 0) rightTrackSpeed += 50.0f;
+                 }
+                    if (leftTrackSpeed != 0){
+                 if (leftTrackSpeed > 0) leftTrackSpeed -= 50.0f;
+                 if (leftTrackSpeed < 0) leftTrackSpeed += 50.0f;
+                 }
+}
+
+
 
     for(u32 i=0; i < vehicle->getNumWheels(); i++)
     {
