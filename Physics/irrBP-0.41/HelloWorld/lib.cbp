@@ -39,12 +39,13 @@
 				<Option output="bp" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
 				<Option object_output="Release Win32" />
-				<Option type="2" />
+				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option createDefFile="1" />
 				<Compiler>
 					<Add option="-W" />
 					<Add option="-O3" />
+					<Add option="-fPIC" />
 				</Compiler>
 				<ResourceCompiler>
 					<Add directory="E:/Documenti/Lavori Stefano/ProgettoFPS/Engine/Engine/IrrBP/include" />
@@ -58,7 +59,7 @@
 			<Add directory="E:/Programmi/PROGRAMMAZIONE/Bullet Physics/bullet-2.77/src" />
 			<Add directory="E:/Documenti/Lavori Stefano/ProgettoFPS/Engine/Engine/irrlicht/include" />
 			<Add directory="/home/netpipe/gamedev/LunaLibs/bullet-2.78/src" />
-			<Add directory="/home/netpipe/gamedev/IrrlichtDemos/Physics/irrBP-0.41/include" />
+			<Add directory="../include" />
 			<Add directory="/home/netpipe/gamedev/LunaLibs/irrlicht-1.8.4/include" />
 		</Compiler>
 		<Unit filename="../include/CIrrBPCollisionObject.h" />
@@ -94,16 +95,21 @@
 		<Unit filename="../include/softbody/CIrrBPRopeSoftBody.h" />
 		<Unit filename="../include/softbody/CIrrBPSoftBody.h" />
 		<Unit filename="../include/types.h" />
+		<Unit filename="../src/CIrrBPCamera.cpp" />
 		<Unit filename="../src/CIrrBPCollisionObject.cpp" />
 		<Unit filename="../src/CIrrBPDebugDrawer.cpp" />
 		<Unit filename="../src/CIrrBPManager.cpp" />
 		<Unit filename="../src/CIrrBPWorld.cpp" />
 		<Unit filename="../src/CMotionState.cpp" />
+		<Unit filename="../src/CSceneNodeAnimatorCameraFPS.cpp" />
+		<Unit filename="../src/CSceneNodeAnimatorCameraFPS.h" />
 		<Unit filename="../src/actions/CIrrBPRaycastVehicle.cpp" />
 		<Unit filename="../src/animator/CIrrBPAnimator.cpp" />
 		<Unit filename="../src/animator/CIrrBPCollisionCallbackAnimator.cpp" />
 		<Unit filename="../src/animator/CIrrBPCollisionDeleteAnimator.cpp" />
 		<Unit filename="../src/animator/CIrrBPDeleteAnimator.cpp" />
+		<Unit filename="../src/animator/CIrrBPFPSCameraAnimator.cpp" />
+		<Unit filename="../src/animator/CIrrBPFollowAnimator.cpp" />
 		<Unit filename="../src/animator/CIrrBPTimeCallBackAnimator.cpp" />
 		<Unit filename="../src/body/CIrrBPBoxBody.cpp" />
 		<Unit filename="../src/body/CIrrBPCapsuleBody.cpp" />

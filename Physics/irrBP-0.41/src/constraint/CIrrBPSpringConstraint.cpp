@@ -1,5 +1,5 @@
-#include "constraint/CIrrBulletSpringConstraint.h"
-#include "body/CIrrBulletRigidBody.h"
+#include "constraint/CIrrBPSlideConstraint.h"
+#include "body/CIrrBPRigidBody.h"
 
 
 CIrrBulletSpringConstraint::CIrrBulletSpringConstraint(CIrrBulletRigidBody *bodyA, CIrrBulletRigidBody *bodyB)

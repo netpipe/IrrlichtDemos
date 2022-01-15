@@ -18,6 +18,7 @@
 					<Add directory="/home/Dev/libs/physics/bullet-2.77/src" />
 					<Add directory="../src" />
 					<Add directory="../include" />
+					<Add directory="../../../../LunaLibs/bullet-2.78/src" />
 				</Compiler>
 				<Linker>
 					<Add library="Irrlicht" />
@@ -28,11 +29,14 @@
 					<Add library="BulletDynamics" />
 					<Add library="BulletCollision" />
 					<Add library="LinearMath" />
-					<Add directory="/home/Dev/libs/physics/bullet-2.77/src/BulletCollision" />
-					<Add directory="/home/Dev/libs/physics/bullet-2.77/src/BulletDynamics" />
-					<Add directory="/home/Dev/libs/physics/bullet-2.77/src/LinearMath" />
-					<Add directory="/home/Dev/libs/physics/bullet-2.77/src/BulletSoftBody" />
+					<Add library="BulletMultiThreaded" />
+					<Add library="pthread" />
+					<Add directory="../../../../LunaLibs/bullet-2.78/src/BulletCollision" />
+					<Add directory="../../../../LunaLibs/bullet-2.78/src/BulletDynamics" />
+					<Add directory="../../../../LunaLibs/bullet-2.78/src/LinearMath" />
+					<Add directory="../../../../LunaLibs/bullet-2.78/src/BulletSoftBody" />
 					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+					<Add directory="../../../../LunaLibs/bullet-2.78/src/BulletMultiThreaded" />
 				</Linker>
 			</Target>
 			<Target title="Release Win32">
@@ -123,15 +127,10 @@
 		<Unit filename="../src/constraint/CIrrBPHingeConstraint.cpp" />
 		<Unit filename="../src/constraint/CIrrBPP2PConstraint.cpp" />
 		<Unit filename="../src/constraint/CIrrBPSlideConstraint.cpp" />
-		<Unit filename="../src/constraint/CIrrBPSpringConstraint.cpp" />
 		<Unit filename="../src/softbody/CIrrBPPatchSoftBody.cpp" />
 		<Unit filename="../src/softbody/CIrrBPRopeSoftBody.cpp" />
 		<Unit filename="../src/softbody/CIrrBPSoftBody.cpp" />
 		<Unit filename="example.cpp" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-			<envvars />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

@@ -25,7 +25,7 @@
 		#define USE_PTHREADS
 		#else
 		#warning Cannot use irrBP with multithread support (only works with Win32 and Posix compliant systems).
-		#endif	
+		#endif
 	#endif
 #endif
 
@@ -40,15 +40,15 @@ btThreadSupportInterface* createSolverThreadSupport(int maxNumThreads)
 #elif defined (USE_PTHREADS)
 	PosixThreadSupport::ThreadConstructionInfo solverConstructionInfo("solver", SolverThreadFunc,
 																	  SolverlsMemoryFunc, maxNumThreads);
-	
+
 	PosixThreadSupport* threadSupport = new PosixThreadSupport(solverConstructionInfo);
-	
+
 #else
 	SequentialThreadSupport::SequentialThreadConstructionInfo tci("solverThreads",SolverThreadFunc,SolverlsMemoryFunc);
 	SequentialThreadSupport* threadSupport = new SequentialThreadSupport(tci);
 	threadSupport->startSPU();
 #endif
-	
+
 	return threadSupport;
 }
 
@@ -115,24 +115,24 @@ CIrrBPWorld::~CIrrBPWorld()
 	if(dDrawer)
 		delete dDrawer;
 	delete World;
-	
-	
+
+
 	delete constraintSolver;
-	
+
 	if (m_threadSupportSolver) //!Only multithread
 	{
 		delete m_threadSupportSolver;
 	}
-		
+
 	delete pairCache;
 	delete dispatcher;
-	
+
 	if (m_threadSupportCollision) //!Only multithread
 	{
 		delete m_threadSupportCollision;
 	}
 	delete CollisionConfiguration;
-	
+
 	for (int i=0;i<sLocalStorePointers.size();i++) //!Only multithread
 	{
 		delete sLocalStorePointers[i];
@@ -157,7 +157,7 @@ CIrrBPWorld::CIrrBPWorld(irr::IrrlichtDevice *device,const irr::core::vector3df 
 	this->driver = device->getVideoDriver();
 
 	this->Gravity = bullet::irrVectorToBulletVector(Gravity);
-	
+
 	if(multithread)
 	{
 		#ifdef _WIN32
@@ -177,8 +177,8 @@ CIrrBPWorld::CIrrBPWorld(irr::IrrlichtDevice *device,const irr::core::vector3df 
 
 			SequentialThreadSupport::SequentialThreadConstructionInfo colCI("collision",processCollisionTask,createCollisionLocalStoreMemory);
 			SequentialThreadSupport* m_threadSupportCollision = new SequentialThreadSupport(colCI);
-				
-		#endif 
+
+		#endif
 
 		m_threadSupportSolver = createSolverThreadSupport(maxtasks);
 	}
@@ -189,19 +189,19 @@ CIrrBPWorld::CIrrBPWorld(irr::IrrlichtDevice *device,const irr::core::vector3df 
 	else
 		dispatcher = new SpuGatheringCollisionDispatcher(m_threadSupportCollision,maxtasks,CollisionConfiguration);
 
-	
+
 	pairCache = new btDbvtBroadphase();
 
 	if(!multithread)
 		constraintSolver = new btSequentialImpulseConstraintSolver();
 	else
 		constraintSolver = new btParallelConstraintSolver(m_threadSupportSolver);
-	
+
     World = new btSoftRigidDynamicsWorld(dispatcher, pairCache,
         constraintSolver, CollisionConfiguration);
 
 	btGImpactCollisionAlgorithm::registerAlgorithm(/*(btCollisionDispatcher*)*/dispatcher);
-	
+
 	irrTimer = device->getTimer();
 	World->setGravity(this->Gravity);
 	isClosing = false;
@@ -214,10 +214,10 @@ CIrrBPWorld::CIrrBPWorld(irr::IrrlichtDevice *device,const irr::core::vector3df 
 		World->getSimulationIslandManager()->setSplitIslands(false);
 		World->getSolverInfo().m_solverMode = SOLVER_SIMD+SOLVER_USE_WARMSTARTING;//+SOLVER_RANDMIZE_ORDER;
 		World->getDispatchInfo().m_enableSPU = true;
-	}	
+	}
 
 	/*Set soft body informer*/
-	
+
 	m_worldInfo.m_broadphase = pairCache;
     m_worldInfo.m_dispatcher = dispatcher;
 	m_worldInfo.m_sparsesdf.Initialize();
@@ -357,7 +357,7 @@ btVector3 triangle_v[3];
 
 	triangle_v[j] = btVector3(graphicsbase[0]*meshScaling.getX(),
 							  graphicsbase[1]*meshScaling.getY(),
-							  graphicsbase[2]*meshScaling.getZ());	
+							  graphicsbase[2]*meshScaling.getZ());
 
 	}
 
@@ -370,7 +370,7 @@ meshInterface->unLockVertexBase(0);
 		gimp_shape->postUpdate();
 	}
 #endif
-	
+
 triangle.pointA = bullet::bulletVectorToIrrVector(triangle_v[0]);
 triangle.pointB = bullet::bulletVectorToIrrVector(triangle_v[1]);
 triangle.pointC = bullet::bulletVectorToIrrVector(triangle_v[2]);
@@ -456,7 +456,7 @@ struct	AllHitsRayResultModCallback : public btCollisionWorld::RayResultCallback
 bool CIrrBPWorld::rayCastTest(irr::core::vector3df from,irr::core::vector3df to, irr::core::array<contactPoint> * points)
 {
 	AllHitsRayResultModCallback cb(bullet::irrVectorToBulletVector(from),bullet::irrVectorToBulletVector(to));
-	
+
 	World->rayTest(bullet::irrVectorToBulletVector(from),bullet::irrVectorToBulletVector(to),cb);
 	bool hit = cb.hasHit();
 	if(points && hit)
@@ -473,7 +473,7 @@ bool CIrrBPWorld::rayCastTest(irr::core::vector3df from,irr::core::vector3df to,
 				{
 					irr::core::triangle3df tr;
 					getTriangleFromCallBack(cb.m_collisionObjects[i]->getCollisionShape(),cb.m_hitTriangles[i],tr);
-					
+
 					if(cp.triangle)
 						delete cp.triangle;
 					cp.triangle = new irr::core::triangle3df(tr);
@@ -490,16 +490,16 @@ bool CIrrBPWorld::rayCastTest(irr::core::vector3df from,irr::core::vector3df to,
 bool CIrrBPWorld::rayCastClosestHitTest(irr::core::vector3df from,irr::core::vector3df to, contactPoint * point)
 {
 	ClosestRayResultCallback cb(bullet::irrVectorToBulletVector(from),bullet::irrVectorToBulletVector(to));
-	
+
 	World->rayTest(bullet::irrVectorToBulletVector(from),bullet::irrVectorToBulletVector(to),cb);
 	bool hit = cb.hasHit();
-		
+
 	if(point && hit)
 	{
 		point->contact = true;
 		point->point = bullet::bulletVectorToIrrVector(cb.m_hitPointWorld);
 		point->body = getObjectByPointer(cb.m_collisionObject);
-		
+
 		if(point->body->getObjectType() == RIGID_BODY)
 		{
 			if(((CIrrBPRigidBody*)point->body)->getRigidBodyType() == TRIMESH)
@@ -523,7 +523,7 @@ bool CIrrBPWorld::isPairColliding(CIrrBPCollisionObject *body1,CIrrBPCollisionOb
 	if(!body2)
 		assert(!body2);
 	collisionCallback cBack(body1->getPtr(),body2->getPtr());
-	World->contactPairTest(body1->getPtr(),body2->getPtr(),cBack);	
+	World->contactPairTest(body1->getPtr(),body2->getPtr(),cBack);
 
 	if(dCP)
 	{
@@ -533,7 +533,7 @@ bool CIrrBPWorld::isPairColliding(CIrrBPCollisionObject *body1,CIrrBPCollisionOb
 			dCP->point = bullet::bulletVectorToIrrVector(cBack.pos2);
 		dCP->contact = cBack.collided;
 	}
-	
+
 	return cBack.collided;
 
 }
@@ -584,15 +584,15 @@ void CIrrBPWorld::addSoftBody(CIrrBPSoftBody * sbody)
 	#ifdef IRRBP_DEBUG_TEXT
 	std::cout<<"# Added new Soft Body"<<std::endl;
 	#endif
-	
+
 }
 void CIrrBPWorld::addRigidBody(CIrrBPRigidBody *body)
 {
-	
+
 	collisionObj.push_back(body);
 	World->addRigidBody(body->getBodyPtr());
 	body->setValidStatus(true);
-	
+
 	#ifdef IRRBP_DEBUG_TEXT
 	std::cout<<"# Added new Body "<<std::endl<<"## Body ID: "<<body->getID()<<std::endl<<"## Absolute Body ID: "<<body->getUniqueID()<<std::endl;
 	#endif
@@ -617,7 +617,7 @@ void CIrrBPWorld::addRigidBodyConstraint(CIrrBPConstraint * constraint)
 	World->addConstraint(constraint->getConstraintPtr());
 	#ifdef IRRBP_DEBUG_TEXT
 	std::cout<<"# Added new constraint"<<std::endl<<"## Body ID (A): "<<constraint->getBodyA()->getID()<<std::endl<<"## Body UID (A): "<<constraint->getBodyA()->getUniqueID()<<std::endl;
-	
+
 	if(constraint->getBodyB())
 		std::cout<<"## Body ID (B): "<<constraint->getBodyB()->getID()<<std::endl<<"## Body UID (B): "<<constraint->getBodyB()->getUniqueID()<<std::endl;
 	#endif
@@ -689,7 +689,7 @@ void CIrrBPWorld::removeCollisionObject(CIrrBPCollisionObject * cobj)
 void CIrrBPWorld::removeRigidBody(CIrrBPRigidBody *body)
 {
 	this->removeCollisionObject(body);
-	
+
 }
 void CIrrBPWorld::autoMaxSubSteps(int minFPS)
 {
@@ -702,7 +702,7 @@ void CIrrBPWorld::autoMaxSubSteps(int minFPS)
 }
 void CIrrBPWorld::stepSimulation()
 {
-	
+
 	DeltaTime = irrTimer->getRealTime();
 	#ifdef IRRBP_DEBUG_TEXT
 		if((DeltaTime-TimeStamp) / 1000.0f >= (10*timestep))
@@ -714,8 +714,8 @@ void CIrrBPWorld::stepSimulation()
 
 	m_worldInfo.m_sparsesdf.GarbageCollect();
 	updateObjects();
-	
-	
+
+
 };
 
 void CIrrBPWorld::updateObjects()
@@ -732,7 +732,7 @@ void CIrrBPWorld::updateObjects()
 		for(irr::u32 k=0;k<anims.size();k++)
 			anims[k]->animate();
 
-		
+
 		if(collisionObj[i]->getObjectType() == SOFT_BODY)
 			static_cast<CIrrBPSoftBody*>(collisionObj[i])->update();
 		i++;
@@ -744,16 +744,16 @@ CIrrBPCollisionObject * CIrrBPWorld::getBodyFromUId(irr::u32 uid)
 	for(irr::u32 i=0;i<this->collisionObj.size();i++)
 		if(collisionObj[i]->getUniqueID() == uid)
 			return collisionObj[i];
-	
+
 	return NULL;
 }
 CIrrBPCollisionObject * CIrrBPWorld::getBodyFromId(irr::s32 id)
 {
-	
+
 	for(irr::u32 i=0;i<this->collisionObj.size();i++)
 		if(collisionObj[i]->getID() == id)
 			return collisionObj[i];
-	
+
 	return NULL;
 }
 CIrrBPCollisionObject * CIrrBPWorld::getBodyFromName(irr::c8* name)
@@ -770,16 +770,16 @@ CIrrBPActionInterface * CIrrBPWorld::getActionFromId(irr::s32 id)
 	for(irr::u32 i=0;i<this->actionObj.size();i++)
 		if(actionObj[i]->getID() == id)
 			return actionObj[i];
-	
+
 	return NULL;
 }
 CIrrBPActionInterface * CIrrBPWorld::getActionFromUId(irr::u32 uid)
 {
-	
+
 	for(irr::u32 i=0;i<this->actionObj.size();i++)
 		if(actionObj[i]->getUniqueID() == uid)
 			return actionObj[i];
-	
+
 	return NULL;
 }
 CIrrBPActionInterface * CIrrBPWorld::getActionFromName(irr::c8* name)
@@ -787,7 +787,7 @@ CIrrBPActionInterface * CIrrBPWorld::getActionFromName(irr::c8* name)
 	for(irr::u32 i=0;i<this->actionObj.size();i++)
 		if(strcmp(actionObj[i]->getName(),name)==0)
 			return actionObj[i];
-	
+
 	return NULL;
 }
 
@@ -814,7 +814,7 @@ void CIrrBPWorld::setDebugDrawerFlags(int flags)
 		dDrawer->setDebugMode(flags);
 }
 
-btSoftBodyWorldInfo& CIrrBPWorld::getSoftBodyWorldInfo() 
+btSoftBodyWorldInfo& CIrrBPWorld::getSoftBodyWorldInfo()
 {
 	return m_worldInfo;
 }
