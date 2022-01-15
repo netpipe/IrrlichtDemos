@@ -10,27 +10,27 @@
     sky_animation->drop();
 
     /// Create dynamic CLOUDS:
-    scene::CCloudSceneNode* cloudLayer1;
-    scene::CCloudSceneNode* cloudLayer2;
-	// Add 1st cloud layer
-	cloudLayer1 = new scene::CCloudSceneNode(smgr->getRootSceneNode(), smgr);
-	core::vector2d<f32> sp1 = vector2d<f32>(-0.010f, 0.0f);  // Defining the vector2d variable, before function (else it crashes)
-	cloudLayer1->setTranslation(sp1);                        // set translation (speed of the clouds)
-	cloudLayer1->getMaterial(0).setTexture(0, driver->getTexture("clouds_day_01.png"));
-	cloudLayer1->setCloudHeight(0.5f, 0.1f, -0.05f);
-	cloudLayer1->setTextureScale(1.0f);
-	cloudLayer1->setRotation(vector3df(0,90,0));
-	cloudLayer1->setMaterialFlag(video::EMF_LIGHTING, true);
-	// cloudLayer1->setID(ID_ISNOTPICKABLE);
-	// Add 2nd cloud layer
-	cloudLayer2 = new scene::CCloudSceneNode(smgr->getRootSceneNode(), smgr);
-	core::vector2d<f32> sp2 = vector2d<f32>(-0.005f, 0.0f);  // Defining the vector2d variable, before function (else it crashes)
-	cloudLayer2->setTranslation(sp2);                        // set translation (speed of the clouds)
-	cloudLayer2->getMaterial(0).setTexture(0, driver->getTexture("clouds_day_02.png"));
-	cloudLayer2->setCloudHeight(0.4f, 0.02f, -0.1f);
-	cloudLayer2->setTextureScale(1.0f);
-	cloudLayer2->setRotation(vector3df(0,90,0));
-	cloudLayer2->setMaterialFlag(video::EMF_LIGHTING, true);
+//    scene::CCloudSceneNode* cloudLayer1;
+//    scene::CCloudSceneNode* cloudLayer2;
+//	// Add 1st cloud layer
+//	cloudLayer1 = new scene::CCloudSceneNode(smgr->getRootSceneNode(), smgr);
+//	core::vector2d<f32> sp1 = vector2d<f32>(-0.010f, 0.0f);  // Defining the vector2d variable, before function (else it crashes)
+//	cloudLayer1->setTranslation(sp1);                        // set translation (speed of the clouds)
+//	cloudLayer1->getMaterial(0).setTexture(0, driver->getTexture("clouds_day_01.png"));
+//	cloudLayer1->setCloudHeight(0.5f, 0.1f, -0.05f);
+//	cloudLayer1->setTextureScale(1.0f);
+//	cloudLayer1->setRotation(vector3df(0,90,0));
+//	cloudLayer1->setMaterialFlag(video::EMF_LIGHTING, true);
+//	// cloudLayer1->setID(ID_ISNOTPICKABLE);
+//	// Add 2nd cloud layer
+//	cloudLayer2 = new scene::CCloudSceneNode(smgr->getRootSceneNode(), smgr);
+//	core::vector2d<f32> sp2 = vector2d<f32>(-0.005f, 0.0f);  // Defining the vector2d variable, before function (else it crashes)
+//	cloudLayer2->setTranslation(sp2);                        // set translation (speed of the clouds)
+//	cloudLayer2->getMaterial(0).setTexture(0, driver->getTexture("clouds_day_02.png"));
+//	cloudLayer2->setCloudHeight(0.4f, 0.02f, -0.1f);
+//	cloudLayer2->setTextureScale(1.0f);
+//	cloudLayer2->setRotation(vector3df(0,90,0));
+//	cloudLayer2->setMaterialFlag(video::EMF_LIGHTING, true);
 	// cloudLayer2->setID(ID_ISNOTPICKABLE);
 
 	/// Main light:
@@ -54,10 +54,10 @@
 
 
 	/// XEffects:
-	if(XEFFECTS){ effect = new EffectHandler(device, driver->getScreenSize()); }
+//	if(XEFFECTS){ effect = new EffectHandler(device, driver->getScreenSize()); }
 
 
-	if(XEFFECTS){
+//	if(XEFFECTS){
     /*
     // Set the background clear color to sky blue.
 	effect->setClearColour(SColor(255, 50, 100, 200));
@@ -83,7 +83,7 @@
 	// Add terrain to depth pass.
 	effect->addNodeToDepthPass(terrain);
 	*/
-	};
+//	};
 
 
 
@@ -260,7 +260,7 @@
     world->addRigidBody(terraShape);
 
 	/// Effects:
-	if(XEFFECTS){ effect->addShadowToNode(terrainNode, EFT_NONE, ESM_BOTH); };
+//	if(XEFFECTS){ effect->addShadowToNode(terrainNode, EFT_NONE, ESM_BOTH); };
 	/// if(IRRSHADOWS){ terrainNode->addShadowVolumeSceneNode(); terrainNode->enableCastShadow(); };
 
     /// Get mesh size:
@@ -311,7 +311,7 @@
 	siteNode->setMaterialFlag(video::EMF_BACK_FACE_CULLING, false);
 	siteNode->setMaterialFlag(video::EMF_FOG_ENABLE, true);
 	/// Effects:
-	if(XEFFECTS){ effect->addShadowToNode(siteNode, EFT_NONE, ESM_BOTH); };
+//	if(XEFFECTS){ effect->addShadowToNode(siteNode, EFT_NONE, ESM_BOTH); };
 	if(IRRSHADOWS){ siteNode->addShadowVolumeSceneNode(); };
 
     /// NODE -> NAU:
@@ -358,7 +358,7 @@
 	millNode[i]->setMaterialFlag(video::EMF_BACK_FACE_CULLING, false);
 	millNode[i]->setMaterialFlag(video::EMF_FOG_ENABLE, true);
 	/// Effects:
-	if(XEFFECTS){ effect->addShadowToNode(millNode[i], EFT_NONE, ESM_BOTH); };
+//	if(XEFFECTS){ effect->addShadowToNode(millNode[i], EFT_NONE, ESM_BOTH); };
 	if(IRRSHADOWS){ millNode[i]->addShadowVolumeSceneNode(); };
 
     /// NODE -> MILL SAILS:
@@ -373,7 +373,7 @@
 	millSailNode[i]->setMaterialFlag(video::EMF_FOG_ENABLE, true);
 	millSailNode[i]->setMaterialType(video::EMT_TRANSPARENT_ALPHA_CHANNEL); // Transparent sail
 	/// Effects:
-	if(XEFFECTS){ effect->addShadowToNode(millSailNode[i], EFT_NONE, ESM_BOTH); };
+//	if(XEFFECTS){ effect->addShadowToNode(millSailNode[i], EFT_NONE, ESM_BOTH); };
 	if(IRRSHADOWS){ millSailNode[i]->addShadowVolumeSceneNode(); };
 	/// Animator:
 	anims[i] = smgr->createRotationAnimator(vector3df(rotSpeed[i], 0.0, 0.0));
@@ -414,7 +414,7 @@
     bridgeNode[i]->setMaterialFlag(video::EMF_BACK_FACE_CULLING, true);
     bridgeNode[i]->setMaterialFlag(video::EMF_FOG_ENABLE, true);
     /// Effects:
-	if(XEFFECTS){ effect->addShadowToNode(bridgeNode[i], EFT_NONE, ESM_BOTH); };
+//	if(XEFFECTS){ effect->addShadowToNode(bridgeNode[i], EFT_NONE, ESM_BOTH); };
 	/// if(IRRSHADOWS){ bridgeNode[i]->addShadowVolumeSceneNode(); bridgeNode[i]->enableCastShadow(); };
     // For the terrain, instead of adding a cube or sphere shape, we are going to add a BvhTriangleMeshShape. This is the standard trimesh shape for static objects.
     // The first parameter is of course the node to control, the second parameter is the collision mesh, incase you want a low-poly collision mesh, and the third parameter is the mass.
@@ -576,7 +576,7 @@
     // For the terrain, instead of adding a cube or sphere shape, we are going to add a BvhTriangleMeshShape. This is the standard trimesh shape for static objects.
     // The first parameter is of course the node to control, the second parameter is the collision mesh, incase you want a low-poly collision mesh, and the third parameter is the mass.
     /// Effects:
-	if(XEFFECTS){ effect->addShadowToNode(trunkNode[i], EFT_NONE, ESM_BOTH); };
+//	if(XEFFECTS){ effect->addShadowToNode(trunkNode[i], EFT_NONE, ESM_BOTH); };
 	if(IRRSHADOWS){ trunkNode[i]->addShadowVolumeSceneNode(); };
 	tkshape[i] = new IGImpactMeshShape(trunkNode[i], device->getSceneManager()->getMesh("trunk.b3d"), 6000*tscale[i]);
 	tkshape[i]->setMargin(smo);
@@ -646,7 +646,7 @@
 	boxNode[i]->setMaterialFlag(video::EMF_NORMALIZE_NORMALS, true); // (make the model a little bit bigger) and normalize its normals, because of the scaling, for correct lighting
 	boxNode[i]->setMaterialFlag(video::EMF_ANISOTROPIC_FILTER, true); // Increase view distance quality (similar to sharpness)
 	/// Effects:
-	if(XEFFECTS){ effect->addShadowToNode(boxNode[i], EFT_NONE, ESM_BOTH); };
+//	if(XEFFECTS){ effect->addShadowToNode(boxNode[i], EFT_NONE, ESM_BOTH); };
 	if(IRRSHADOWS){ boxNode[i]->addShadowVolumeSceneNode(); };
 	/// IGImpactMeshShape *boxshape = new IGImpactMeshShape(boxNode, device->getSceneManager()->getMesh("box.b3d"), 10); // OK
 	boxshape[i] = new IBoxShape(boxNode[i], 90, 0.0); // node, mass, margin
@@ -697,7 +697,7 @@
 	vehicleNode->setMaterialFlag(video::EMF_NORMALIZE_NORMALS, true);  // (make the model a little bit bigger) and normalize its normals, because of the scaling, for correct lighting
     vehicleNode->setMaterialFlag(video::EMF_ANISOTROPIC_FILTER, true); // Increase view distance quality (similar to sharpness)
 	/// add shadows:
-	if(XEFFECTS){ effect->addShadowToNode(vehicleNode, EFT_NONE, ESM_BOTH); };
+//	if(XEFFECTS){ effect->addShadowToNode(vehicleNode, EFT_NONE, ESM_BOTH); };
 	if(IRRSHADOWS){ vehicleNode->addShadowVolumeSceneNode(); };
 
 
@@ -759,7 +759,7 @@
 	rodaNode[r]->setMaterialFlag(video::EMF_NORMALIZE_NORMALS, true);  // (make the model a little bit bigger) and normalize its normals, because of the scaling, for correct lighting
     rodaNode[r]->setMaterialFlag(video::EMF_ANISOTROPIC_FILTER, true); // Increase view distance quality (similar to sharpness)
     /// Effects:
-	if(XEFFECTS){ effect->addShadowToNode(rodaNode[r], EFT_NONE, ESM_BOTH); };
+//	if(XEFFECTS){ effect->addShadowToNode(rodaNode[r], EFT_NONE, ESM_BOTH); };
 	if(IRRSHADOWS){ rodaNode[r]->addShadowVolumeSceneNode(); };
     };
     };
@@ -1069,7 +1069,7 @@ btRigidBody * rb = new btRigidBody(info);
 	trailerNode->setMaterialFlag(video::EMF_NORMALIZE_NORMALS, true);  // (make the model a little bit bigger) and normalize its normals, because of the scaling, for correct lighting
     trailerNode->setMaterialFlag(video::EMF_ANISOTROPIC_FILTER, true); // Increase view distance quality (similar to sharpness)
     /// Effects:
-	if(XEFFECTS){ effect->addShadowToNode(trailerNode, EFT_NONE, ESM_BOTH); };
+//	if(XEFFECTS){ effect->addShadowToNode(trailerNode, EFT_NONE, ESM_BOTH); };
 	if(IRRSHADOWS){ trailerNode->addShadowVolumeSceneNode(); };
 
     /// Create impacts mesh shapes:
@@ -1107,7 +1107,7 @@ btRigidBody * rb = new btRigidBody(info);
 	rodaTNode[r]->setMaterialFlag(video::EMF_NORMALIZE_NORMALS, true);  // (make the model a little bit bigger) and normalize its normals, because of the scaling, for correct lighting
     rodaTNode[r]->setMaterialFlag(video::EMF_ANISOTROPIC_FILTER, true); // Increase view distance quality (similar to sharpness)
     /// Effects:
-	if(XEFFECTS){ effect->addShadowToNode(rodaTNode[r], EFT_NONE, ESM_BOTH); };
+//	if(XEFFECTS){ effect->addShadowToNode(rodaTNode[r], EFT_NONE, ESM_BOTH); };
 	if(IRRSHADOWS){ rodaTNode[r]->addShadowVolumeSceneNode(); };
     };
     };

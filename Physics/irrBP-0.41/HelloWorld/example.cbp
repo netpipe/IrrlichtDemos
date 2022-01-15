@@ -27,10 +27,10 @@
 					<Add library="Xxf86vm" />
 					<Add library="X11" />
 					<Add library="libbp" />
-					<Add library="BulletSoftBody" />
-					<Add library="BulletDynamics" />
-					<Add library="BulletCollision" />
 					<Add library="LinearMath" />
+					<Add library="BulletCollision" />
+					<Add library="BulletDynamics" />
+					<Add library="BulletSoftBody" />
 					<Add directory="/home/Dev/libs/physics/bullet-2.77/src/BulletCollision" />
 					<Add directory="/home/Dev/libs/physics/bullet-2.77/src/BulletDynamics" />
 					<Add directory="/home/Dev/libs/physics/bullet-2.77/src/LinearMath" />

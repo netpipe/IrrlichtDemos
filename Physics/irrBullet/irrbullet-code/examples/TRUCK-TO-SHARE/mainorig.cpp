@@ -34,40 +34,12 @@ bool DEBUG        = false;
 bool IRRSHADOWS   = false;
 bool XEFFECTS     = false;
 
-//EffectHandler* effect = 0;
+EffectHandler* effect = 0;
 
 
 
 
-class MyEventReceiver : public IEventReceiver
-{
-public:
-	// This is the one method that we have to implement
-	virtual bool OnEvent(const SEvent& event)
-	{
-		// Remember whether each key is down or up
-		if (event.EventType == irr::EET_KEY_INPUT_EVENT)
-			KeyIsDown[event.KeyInput.Key] = event.KeyInput.PressedDown;
 
-		return false;
-	}
-
-	// This is used to check whether a key is being held down
-	virtual bool IsKeyDown(EKEY_CODE keyCode) const
-	{
-		return KeyIsDown[keyCode];
-	}
-
-	MyEventReceiver()
-	{
-		for (u32 i=0; i<KEY_KEY_CODES_COUNT; ++i)
-			KeyIsDown[i] = false;
-	}
-
-private:
-	// We use this array to store the current state of each key
-	bool KeyIsDown[KEY_KEY_CODES_COUNT];
-};
 
 
 
@@ -81,13 +53,13 @@ int main(int argc, char** argv){
 
     /// Loop to chose driver from all available:
     video::E_DRIVER_TYPE driverType;
-//    for(int i=0; i<irr::video::EDT_COUNT; ++i){
-//    if(irr::IrrlichtDevice::isDriverSupported(irr::video::E_DRIVER_TYPE(i))){ driverType = irr::video::E_DRIVER_TYPE(i); }
-//    };
+    for(int i=0; i<irr::video::EDT_COUNT; ++i){
+    if(irr::IrrlichtDevice::isDriverSupported(irr::video::E_DRIVER_TYPE(i))){ driverType = irr::video::E_DRIVER_TYPE(i); }
+    };
 
 
     /// Create device from the above found driver:
-	device = createDevice(EDT_OPENGL, core::dimension2d<u32>(SCREEN_WIDTH, SCREEN_HEIGHT), 32, false, IRRSHADOWS, false);
+	device = createDevice(driverType, core::dimension2d<u32>(SCREEN_WIDTH, SCREEN_HEIGHT), 32, false, IRRSHADOWS, false);
 	if(device == 0){ return 1; }; // If OpenGL doesn´t exist
 
 	video::IVideoDriver* driver  = device->getVideoDriver();     // Create Driver
@@ -186,23 +158,23 @@ int main(int argc, char** argv){
 
 
 	/// XEffects:
-//	if(XEFFECTS){
-//    // Disable lighting on the dragon.
-//	vehicleNode->setMaterialFlag(EMF_LIGHTING, false);
-//	// effect->setClearColour(SColor(0,250,250,250)); // Set the background clear color to black.
-//	// effect->addShadowLight(SShadowLight(1024, vector3df(0,50,0), vector3df(0,-1,0), SColor(255,255,255,255), 20.0f, 60.0f, 30.0f * DEGTORAD));
-//
-//	effect->addShadowLight(
-//    SShadowLight(
-//      1024,
-//      vector3df(10, 30,30),    // position
-//      vector3df(10,-10,30),    // target
-//      SColor(0,255,255,255),   // o,r,g,b
-//      1.0f,                    // nearValue
-//      1000.0f,                 // farValue
-//      90.0f * DEGTORAD         // field of view
-//    ));
-//	};
+	if(XEFFECTS){
+    // Disable lighting on the dragon.
+	vehicleNode->setMaterialFlag(EMF_LIGHTING, false);
+	// effect->setClearColour(SColor(0,250,250,250)); // Set the background clear color to black.
+	// effect->addShadowLight(SShadowLight(1024, vector3df(0,50,0), vector3df(0,-1,0), SColor(255,255,255,255), 20.0f, 60.0f, 30.0f * DEGTORAD));
+
+	effect->addShadowLight(
+    SShadowLight(
+      1024,
+      vector3df(10, 30,30),    // position
+      vector3df(10,-10,30),    // target
+      SColor(0,255,255,255),   // o,r,g,b
+      1.0f,                    // nearValue
+      1000.0f,                 // farValue
+      90.0f * DEGTORAD         // field of view
+    ));
+	};
 
 
 
@@ -1078,14 +1050,14 @@ int main(int argc, char** argv){
             /// RENDER ALL:
             /// driver->setMaterial(driver->getMaterial2D()); // Updates all 2D materials (else some will be inverted/distorted when using postprocess effects)
             /// XEffects:
-//            if(XEFFECTS){
-//                effect->update();   // EffectHandler->update() replaces smgr->drawAll(). It handles all of the shadow maps, render targets switching, post processing, etc.
-//                                    // driver->setMaterial(driver->getMaterial2D());
-//                };                  // effectHandler->update() now replaces smgr->drawAll()!
-//            /// Normal Render:
-//            if(!XEFFECTS){
+            if(XEFFECTS){
+                effect->update();   // EffectHandler->update() replaces smgr->drawAll(). It handles all of the shadow maps, render targets switching, post processing, etc.
+                                    // driver->setMaterial(driver->getMaterial2D());
+                };                  // effectHandler->update() now replaces smgr->drawAll()!
+            /// Normal Render:
+            if(!XEFFECTS){
                 smgr->drawAll();
-//                }; /// Draw scene
+                }; /// Draw scene
 
             guienv->drawAll();  /// Draw GUI
             driver->endScene(); /// ENDS RENDER

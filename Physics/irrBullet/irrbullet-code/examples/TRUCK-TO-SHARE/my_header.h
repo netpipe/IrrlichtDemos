@@ -28,14 +28,14 @@
 
 
     /// Events (For Irrlicht)
-    #include "libraries/MainLibs/myEvents.h"    // MY EVENTS (KEYS + MOUSE + USER EVENTS)
-    #include "libraries/MainLibs/myEffects.h"   // MY EFFECTS (motion blur, bloom)
+ //   #include "libraries/MainLibs/myEvents.h"    // MY EVENTS (KEYS + MOUSE + USER EVENTS)
+ //   #include "libraries/MainLibs/myEffects.h"   // MY EFFECTS (motion blur, bloom)
     // #include "my3DAudio.h"                   // MY 3D AUDIO (Using Audiere)
     // #include "CEffects.h"                    // MORE EFFECTS (motion blur, bloom)
     // #include "readXML.h"
 
-    #include "libraries/MainLibs/CWaterSurface.h"        // For ocean effects.
-    #include "libraries/MainLibs/CWaterShader.h"         // For ocean effects.
+//    #include "libraries/MainLibs/CWaterSurface.h"        // For ocean effects.
+ //   #include "libraries/MainLibs/CWaterShader.h"         // For ocean effects.
 
     /// Ball reflexions:
     /// #include "libraries/MainLibs/CSphereMapRendererSceneNode.h"
@@ -50,14 +50,14 @@
     /// #include "libraries/MainLibs/CSceneNodeAnimatorFlyCircleExtended.h"
 
     /// Clouds for Irrlicht (3 Layers)
-    #include "libraries/MainLibs/CloudSceneNode.h"
+  //  #include "libraries/MainLibs/CloudSceneNode.h"
 
     /// Custom Animator Irrlicht ( http://irrlicht.sourceforge.net/forum/viewtopic.php?t=34606 )
     // #include "libraries/MainLibs/CFollowPathAnimator.h"
     // #include "libraries/MainLibs/CBSplineAnimator.h"
 
     /// XEffects: ( http://irrlicht.sourceforge.net/forum/viewtopic.php?f=6&t=30631 )
-    #include "libraries/XEffects/Source/XEffects.h"
+ //   #include "libraries/XEffects/Source/XEffects.h"
 
     /// Decal System / Manager: ( http://irrlicht.sourceforge.net/forum/viewtopic.php?f=6&t=44968 )
     /// #include "libraries/DecalSystem/DecalManager.h"
