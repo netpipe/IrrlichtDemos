@@ -3,11 +3,20 @@
 
 #include <irrlicht.h>
     #include <iostream>
+
+using namespace irr;
+using namespace scene;
+using namespace gui;
+using namespace video;
+using namespace core;
+using namespace quake3;
+using namespace io;
+
     #include "CMOHAALevelMesh.h"
 #include "CBSPMeshFileLoader.h"
 
-    using namespace irr;
-using namespace scene;
+	Q3LevelLoadParameter loadParam;
+
 
     int main( ) {
             video::E_DRIVER_TYPE driverType = video::EDT_OPENGL;
@@ -20,7 +29,12 @@ using namespace scene;
             }
 
             device->setWindowCaption( L"Irrlicht: Allied Assault" );
-        ///    device->getFileSystem()->addFileArchive("main",true,false,io::EFAT_FOLDER,"");
+           // device->getFileSystem()->addFileArchive("main",true,false,io::EFAT_FOLDER,"");
+            device->getFileSystem()->addFileArchive("./Pak0.pk3");
+             device->getFileSystem()->addFileArchive("./Pak1.pk3");
+            device->getFileSystem()->addFileArchive("./Pak2.pk3");
+  device->getFileSystem()->addFileArchive("./pak6.pk3");
+
 
             video::IVideoDriver *driver = device->getVideoDriver();
             scene::ISceneManager *smgr = device->getSceneManager();
@@ -29,20 +43,35 @@ using namespace scene;
             scene::IAnimatedMesh *mesh = 0;
             scene::ISceneNode *node = 0;
 
-
+	// default Quake3 loadParam
+	loadParam.defaultLightMapMaterial = EMT_LIGHTMAP;
+	loadParam.defaultModulate = EMFN_MODULATE_1X;
+	loadParam.defaultFilter = EMF_ANISOTROPIC_FILTER;
+	loadParam.verbose = 2;
+	loadParam.mergeShaderBuffer = 1;		// merge meshbuffers with same material
+	loadParam.cleanUnResolvedMeshes = 1;	// should unresolved meshes be cleaned. otherwise blue texture
+	loadParam.loadAllShaders = 1;			// load all scripts in the script directory
+	loadParam.loadSkyShader = 0;			// load sky Shader
+	loadParam.alpharef = 1;
 
 
         io::IFileSystem *filesys;
 
+        filesys=device->getFileSystem();
+
      //  irr::io::path path2("mohdm6.bsp");
-       irr::io::IReadFile *file;
-         file=filesys->createAndOpenFile("mohdm6.bsp");
+      // irr::io::IReadFile *file;
+       //  file=filesys->createAndOpenFile("mohdm6.bsp");
       //  file->getFileName();
             //  CBSPMeshFileLoader2 cmesh(smgr, device->getFileSystem()); //createMesh
-              CBSPMeshFileLoader cmesh(smgr,filesys); //createMesh
+              CMOHAALevelMesh cmesh(filesys,smgr,loadParam); //createMesh
 
-        mesh=cmesh.createMesh( file);
+//        mesh=cmesh.createMesh( filesys->createAndOpenFile("mohdm6.bsp"));
+//        mesh=cmesh.createMesh( filesys->createAndOpenFile("m1l1.bsp"));
 
+        cmesh.loadFile(filesys->createAndOpenFile("mohdm6.bsp"));
+        //mesh=cmesh.getMesh(0,0,0,1);
+      //  IMesh* CMOHAALevelMesh::getMesh(s32 frameInMs, s32 detailLevel, s32 startFrameLoop, s32 endFrameLoop)
        // cmesh.getMesh( "mohdm6.bsp");
 
 //        mesh =cmesh.getMesh();
@@ -53,8 +82,8 @@ using namespace scene;
        // s32
            // mesh2->getMesh(L"./mohdm6.bsp");
 
-          //  if ( mesh )
-                    node = smgr->addOctreeSceneNode( mesh->getMesh(0) );
+//            if ( cmesh )
+                    node = smgr->addOctreeSceneNode( cmesh.getMesh(0,0,0,1) );
 
             if (node) {
              //     node->setMaterialFlag(video::EMF_LIGHTING,false);

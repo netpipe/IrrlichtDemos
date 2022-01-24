@@ -18,6 +18,8 @@
 		</VirtualTargets>
 		<Compiler>
 			<Add option="-fpermissive" />
+			<Add option="-D_DEBUG" />
+			<Add directory="./" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
 			<Add directory="/home/netpipe/gamedev/irrlicht-1.8.4/include" />
 			<Add directory="/home/netpipe/gamedev/irrlicht-1.8.4/source/Irrlicht" />
@@ -30,11 +32,8 @@
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
 			<Add directory="/home/netpipe/gamedev/irrlicht-1.8.4/lib/Linux" />
 		</Linker>
-		<Unit filename="CBSPMeshFileLoader.cpp" />
-		<Unit filename="CBSPMeshFileLoader.h" />
 		<Unit filename="CMOHAALevelMesh.cpp" />
 		<Unit filename="CMOHAALevelMesh.h" />
-		<Unit filename="CQ3LevelMesh.h" />
 		<Unit filename="main.cpp" />
 		<Extensions />
 	</Project>
