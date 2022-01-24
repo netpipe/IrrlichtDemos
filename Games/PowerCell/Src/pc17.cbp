@@ -38,9 +38,7 @@
 				<Option object_output=".obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option projectIncludeDirsRelation="1" />
 				<Option projectResourceIncludeDirsRelation="1" />
-				<Option projectLibDirsRelation="1" />
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="/home/Dev/libs/game/irrlicht/irrlicht-1.7/include" />
