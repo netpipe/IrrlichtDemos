@@ -141,6 +141,7 @@ void Scene::LoadStage(stringc Stage)
 		0.01f,
 		false,false);
 
+
   /*
   Add meshes
   */

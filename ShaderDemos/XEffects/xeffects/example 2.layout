@@ -2,7 +2,12 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="../Source/effectWrapper.h" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="../Source/example2.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1730" topLine="95" />
+		</Cursor>
+	</File>
+	<File name="../Source/effectWrapper.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="577" topLine="7" />
 		</Cursor>
@@ -13,23 +18,14 @@
 			<Collapse line="40" />
 		</Folding>
 	</File>
-	<File name="../Source/example2.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="../Source/effectWrapper.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1384" topLine="0" />
+			<Cursor1 position="213" topLine="8" />
 		</Cursor>
-		<Folding>
-			<Collapse line="16" />
-		</Folding>
 	</File>
 	<File name="../Source/CShaderPre.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="../Source/effectWrapper.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="213" topLine="8" />
-		</Cursor>
-	</File>
-	<EditorTabsLayout layout="01f571505e2b4566001f3ee400000002=0;Xeffects example 2:../Source/example2.cpp,1;Xeffects example 2:../Source/effectWrapper.cpp,2;Xeffects example 2:../Source/CShaderPre.cpp,*3;Xeffects example 2:../Source/effectWrapper.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=328;besth=341;minw=328;minh=341;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=01f571505e2b4566001f3ee400000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>

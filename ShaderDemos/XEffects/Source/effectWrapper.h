@@ -56,7 +56,7 @@ struct SShadowLight
 	/// parameter is whether the light is directional or not, if it is, an orthogonal
 	/// projection matrix will be created instead of a perspective one.
 	SShadowLight(	const irr::core::vector3df& position, const irr::core::vector3df& target,
-					irr::video::SColorf lightColour = irr::video::SColor(0xffffffff), 
+					irr::video::SColorf lightColour = irr::video::SColor(0xffffffff),
 					irr::f32 nearValue = 10.0, irr::f32 farValue = 100.0,
 					irr::f32 fov = 90.0 * irr::core::DEGTORAD64, bool directional = false)
 					: pos(position), tar(target), farPlane(farValue), diffuseColour(lightColour)
@@ -64,7 +64,7 @@ struct SShadowLight
 		nearValue = nearValue <= 0.0f ? 0.1f : nearValue;
 
 		updateViewMatrix();
-		
+
 		if(directional)
 			projMat.buildProjectionMatrixOrthoLH(fov, fov, nearValue, farValue);
 		else
@@ -137,7 +137,7 @@ struct SShadowLight
 	}
 
 	/// Sets the light's color.
-	void setLightColor(const irr::video::SColorf& lightColour) 
+	void setLightColor(const irr::video::SColorf& lightColour)
 	{
 		diffuseColour = lightColour;
 	}
@@ -148,7 +148,7 @@ private:
 	{
 		viewMat.buildCameraLookAtMatrixLH(pos, tar,
 			(pos - tar).dotProduct(irr::core::vector3df(1.0f, 0.0f, 1.0f)) == 0.0f ?
-			irr::core::vector3df(0.0f, 0.0f, 1.0f) : irr::core::vector3df(0.0f, 1.0f, 0.0f)); 
+			irr::core::vector3df(0.0f, 0.0f, 1.0f) : irr::core::vector3df(0.0f, 1.0f, 0.0f));
 	}
 
 	irr::video::SColorf diffuseColour;
@@ -171,9 +171,9 @@ public:
 	/// To initialize the effectHandler, pass it the current Irrlicht device, the shadow map size and the folder where the
 	/// shaders are contained. You may also pass an alternate size for the post-processing RTT (Using the default initializes
 	/// it to the same size as the screen.)
-	effectHandler(irr::IrrlichtDevice* dev, irr::core::dimension2d<irr::s32> mapSize, irr::core::stringc shaderFolder = "", 
-		irr::core::dimension2d<irr::s32> screenRTTSize = irr::core::dimension2d<irr::s32>(0,0));
-	
+	effectHandler(irr::IrrlichtDevice* dev, irr::core::dimension2d<irr::u32> mapSize, irr::core::stringc shaderFolder = "",
+		irr::core::dimension2d<irr::u32> screenRTTSize = irr::core::dimension2d<irr::u32>(0,0));
+
 	/// Adds an effect to a scene node by applying a shader material. Look at the E_EFFECT_TYPE enums for the various effect
 	/// types available.
 	void addEffectToNode(irr::scene::ISceneNode* node, E_EFFECT_TYPE etype);
@@ -239,19 +239,19 @@ public:
 	/// ESM_CAST only casts shadows, and is unaffected by shadows or lighting, and ESM_RECEIVE
 	/// only receives but does not cast shadows.
 	void addShadowToNode(irr::scene::ISceneNode* node, E_FILTER_TYPE filterType = EFT_NONE, E_SHADOW_MODE shadowMode = ESM_BOTH);
-	
+
 	/// Returns the device time divided by 100, for use with the shader callbacks.
-	irr::f32 getTime() 
-	{ 
+	irr::f32 getTime()
+	{
 		return device->getTimer()->getTime() / 100.0f;
 	}
-	
+
 	/// Sets the scene clear colour, for when the scene is cleared before smgr->drawAll().
 	void setClearColour(irr::video::SColor ClearCol)
 	{
 		ClearColour = ClearCol;
 	}
-	
+
 	/**
 	A very easy to use post processing function. Simply add a material type to apply to the screen as a post processing
 	effect and it will be applied. You can add as many material types as you desire, and they will be double buffered and
@@ -260,7 +260,7 @@ public:
 	(When using OpenGL, in DirectX uniforms are not required to bind textures).
 	Please note that this will only work in OpenGL on vanilla Irrlicht, DX requires the large RTT patch to be able to create
 	sufficiently sized rendertargets for post processing. (Or you can just remove the engine check for Pow2).
-	
+
 	The structure of the textures is as follows:
 
 	Texture1 - "ColorMapSampler"
@@ -279,7 +279,7 @@ public:
 	If a depth pass has been enabled using enableDepthPass, then this sampler will contain the screen space depth information.
 	For better quality this is encoded to 16bits, and can be decoded like so:
 		Texture.red + (Texture.green / 256.0f);
-	That is by adding the red channel to the green channel which is first divided by 256. 
+	That is by adding the red channel to the green channel which is first divided by 256.
 	The data can still be used without decoding, in 8 bit precision, by just accessing the red component of the texture. Though
 	this is not recommended as 8 bit precision is usually not sufficient for modern post processing effects.
 	*/
@@ -302,7 +302,7 @@ public:
 
 	/// Returns the screen quad scene node. This is not required in any way, but some advanced users may want to adjust
 	/// its material settings accordingly.
-	const CScreenQuad& getScreenQuad() 
+	const CScreenQuad& getScreenQuad()
 	{
 		return ScreenQuad;
 	}
@@ -318,7 +318,7 @@ public:
 	{
 		return smgr;
 	}
-	
+
 	/// This allows the user to specify a custom, fourth texture to be used in the post-processing effects.
 	void setPostProcessingUserTexture(irr::video::ITexture* userTexture)
 	{
@@ -341,14 +341,14 @@ public:
 	}
 
 private:
-	irr::s32 obtainScreenQuadMaterialFromFile(const irr::core::stringc& filename, 
+	irr::s32 obtainScreenQuadMaterialFromFile(const irr::core::stringc& filename,
 		irr::video::E_MATERIAL_TYPE baseMaterial = irr::video::EMT_SOLID);
 
 	irr::IrrlichtDevice* device;
 	irr::video::IVideoDriver* driver;
 	irr::scene::ISceneManager* smgr;
 	irr::core::dimension2d<irr::s32> mapRes;
-	
+
 	irr::s32 Depth;
 	irr::s32 DepthWiggle;
 	irr::s32 Solid[5];
@@ -356,7 +356,7 @@ private:
 	irr::s32 LightModulate;
 	irr::s32 Simple;
 	irr::s32 WhiteWash;
-	
+
 	DepthShaderCB* depthMC;
 	ShadowShaderCB* shadowMC;
 
@@ -371,7 +371,7 @@ private:
 	irr::core::array<SShadowNode> ShadowNodeArray;
 	irr::core::array<irr::scene::ISceneNode*> DepthPassArray;
 
-	irr::core::dimension2d<irr::s32> ScreenRTTSize;
+	irr::core::dimension2d<irr::u32> ScreenRTTSize;
 	irr::video::SColor ClearColour;
 	irr::video::SColor AmbientColour;
 	CScreenQuad ScreenQuad;
@@ -382,4 +382,4 @@ private:
 
 #endif
 
-// Copyright (C) 2007-2008 Ahmed Hilali 
+// Copyright (C) 2007-2008 Ahmed Hilali

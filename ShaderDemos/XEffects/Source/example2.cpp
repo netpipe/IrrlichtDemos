@@ -32,21 +32,21 @@ int main()
 
 	std::cin >> C;
 
-	dimension2d<s32> shadowDimen = dimension2d<s32>(1024,1024);
+	dimension2d<u32> shadowDimen = dimension2d<u32>(1024,1024);
 
 	switch(C)
 	{
 	case '1':
-		shadowDimen = dimension2d<s32>(512,512);
+		shadowDimen = dimension2d<u32>(512,512);
 		break;
 	case '2':
-		shadowDimen = dimension2d<s32>(1024,1024);
+		shadowDimen = dimension2d<u32>(1024,1024);
 		break;
 	case '3':
-		shadowDimen = dimension2d<s32>(2048,2048);
+		shadowDimen = dimension2d<u32>(2048,2048);
 		break;
 	case '4':
-		shadowDimen = dimension2d<s32>(4096,4096);
+		shadowDimen = dimension2d<u32>(4096,4096);
 		break;
 	}
 
@@ -61,7 +61,7 @@ int main()
 
 	E_FILTER_TYPE filterType = (E_FILTER_TYPE)core::clamp<u32>((u32)C - '1', 0, 4);
 
-	IrrlichtDevice* device = createDevice(EDT_OPENGL, dimension2d<s32>(800,600), 32);
+	IrrlichtDevice* device = createDevice(EDT_OPENGL, dimension2d<u32>(800,600), 32);
 
 	if(!device)
 		return 1;
@@ -69,14 +69,14 @@ int main()
 	ISceneManager* smgr = device->getSceneManager();
 	IVideoDriver* driver = device->getVideoDriver();
 
-	ICameraSceneNode* cam = smgr->addCameraSceneNodeFPS(0,100,10);
+	ICameraSceneNode* cam = smgr->addCameraSceneNodeFPS(0,100,0.05);
 	cam->setPosition(vector3df(0,10,0));
 	cam->setNearValue(0.1f);
 	cam->setFarValue(50);
 
-	dimension2d<s32> ScreenRTT =
+	dimension2d<u32> ScreenRTT =
 		// Comment JUST the next line if "getVendorInfo()" is not defined.
-		!driver->getVendorInfo().equals_ignore_case("NVIDIA Corporation") ? dimension2d<s32>(512,512) :
+		!driver->getVendorInfo().equals_ignore_case("NVIDIA Corporation") ? dimension2d<u32>(512,512) :
 		driver->getScreenSize();
 
 	effectHandler* effect = new effectHandler(device, shadowDimen, "shaders", ScreenRTT);

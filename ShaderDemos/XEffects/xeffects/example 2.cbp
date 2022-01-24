@@ -21,7 +21,7 @@
 					<Add library="Irrlicht" />
 					<Add library="Xxf86vm" />
 					<Add library="X11" />
-					<Add directory="/home/Dev/libs/Irrlicht/lib/gcc" />
+					<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -48,9 +48,6 @@
 		<Unit filename="../Source/effectWrapper.h" />
 		<Unit filename="../Source/effectWrapperCB.h" />
 		<Unit filename="../Source/example2.cpp" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

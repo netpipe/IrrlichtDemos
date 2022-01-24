@@ -13,6 +13,9 @@ MenuGUI *MenuGUI::Instance()
 
 void MenuGUI::Init(void)
 {
+
+		irrDevice->getFileSystem()->addFileArchive("../Src/media.zip");
+
   irrDevice->getCursorControl()->setVisible(true);
 	IGUISkin* skin = irrDevice->getGUIEnvironment()->getSkin();
 

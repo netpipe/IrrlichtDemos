@@ -10,9 +10,9 @@ using namespace scene;
 using namespace video;
 using namespace core;
 
-effectHandler::effectHandler(IrrlichtDevice* dev, dimension2d<s32> mapSize, core::stringc shaderFolder, irr::core::dimension2d<irr::s32> screenRTTSize)
+effectHandler::effectHandler(IrrlichtDevice* dev, dimension2d<u32> mapSize, core::stringc shaderFolder, irr::core::dimension2d<irr::u32> screenRTTSize)
 : device(dev), smgr(dev->getSceneManager()), driver(dev->getVideoDriver()),
-ScreenRTTSize((screenRTTSize == dimension2d<s32>(0,0)) ? dev->getVideoDriver()->getScreenSize() : screenRTTSize),
+ScreenRTTSize((screenRTTSize == dimension2d<u32>(0,0)) ? dev->getVideoDriver()->getScreenSize() : screenRTTSize),
 ClearColour(0x0), shadowsUnsupported(false), DepthRTT(0), DepthPass(false), depthMC(0), shadowMC(0),
 AmbientColour(0x0)
 {
@@ -22,10 +22,10 @@ AmbientColour(0x0)
 	bool tempTexFlagMipMaps = driver->getTextureCreationFlag(ETCF_CREATE_MIP_MAPS);
 	bool tempTexFlag32 = driver->getTextureCreationFlag(ETCF_ALWAYS_32_BIT);
 
-	ShadowMapTex = driver->createRenderTargetTexture(mapSize);
-	ScreenRTT = driver->createRenderTargetTexture(ScreenRTTSize);
-	ScreenQuad.rt[0] = driver->createRenderTargetTexture(ScreenRTTSize);
-	ScreenQuad.rt[1] = driver->createRenderTargetTexture(ScreenRTTSize);
+	ShadowMapTex = driver->addRenderTargetTexture(mapSize);
+	ScreenRTT = driver->addRenderTargetTexture(ScreenRTTSize);
+	ScreenQuad.rt[0] = driver->addRenderTargetTexture(ScreenRTTSize);
+	ScreenQuad.rt[1] = driver->addRenderTargetTexture(ScreenRTTSize);
 
 	driver->setTextureCreationFlag(ETCF_CREATE_MIP_MAPS, tempTexFlagMipMaps);
 	driver->setTextureCreationFlag(ETCF_ALWAYS_32_BIT, tempTexFlag32);
@@ -200,7 +200,7 @@ void effectHandler::enableDepthPass(bool enableDepthPass)
 	{
 		bool tempTexFlag32 = driver->getTextureCreationFlag(ETCF_ALWAYS_32_BIT);
 		driver->setTextureCreationFlag(ETCF_ALWAYS_32_BIT, true);
-		DepthRTT = driver->createRenderTargetTexture(ScreenRTTSize);
+		DepthRTT = driver->addRenderTargetTexture(ScreenRTTSize);
 		driver->setTextureCreationFlag(ETCF_ALWAYS_32_BIT, tempTexFlag32);
 	}
 };

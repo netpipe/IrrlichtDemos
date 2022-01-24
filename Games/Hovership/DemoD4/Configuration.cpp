@@ -65,7 +65,7 @@ const void Configuration::read()
 			}
 
 			this->params.DriverType = driverType;
-			this->params.Fullscreen = xml->getAttributeValueAsInt(L"fullscreen");
+			this->params.Fullscreen = 0;//xml->getAttributeValueAsInt(L"fullscreen");
 			this->params.Stencilbuffer = xml->getAttributeValueAsInt(L"stencilbuffer");
 			this->params.Vsync = xml->getAttributeValueAsInt(L"vsync");
 		}
