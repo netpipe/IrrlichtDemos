@@ -96,8 +96,8 @@ video::IGPUProgrammingServices* gpu = driver->getGPUProgrammingServices();
                fragShader.c_str(), "main", video::EPST_PS_1_1,
                callback, (video::EMT_SOLID)
         );
-      rt0 = driver->createRenderTargetTexture(core::dimension2d<s32>(sizeW,sizeH));
-      rt1 = driver->createRenderTargetTexture(core::dimension2d<s32>(sizeW,sizeH));
+      rt0 = driver->addRenderTargetTexture(core::dimension2d<u32>(sizeW,sizeH));
+      rt1 = driver->addRenderTargetTexture(core::dimension2d<u32>(sizeW,sizeH));
 
       Material.Wireframe = false;
       Material.Lighting = false;

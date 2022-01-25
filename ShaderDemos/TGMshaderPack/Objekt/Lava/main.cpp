@@ -83,7 +83,7 @@ int main()
 {
    // Create device
    video::E_DRIVER_TYPE driverType = video::EDT_OPENGL;
-   device = createDevice(driverType, dimension2di(1024, 768), 32, false, false, false, 0);
+   device = createDevice(driverType, dimension2du(1024, 768), 32, false, false, false, 0);
    IVideoDriver* driver = device->getVideoDriver();
    ISceneManager* smgr = device->getSceneManager();
    // Set a window caption
