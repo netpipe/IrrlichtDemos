@@ -25,7 +25,7 @@ int main()
 	// create device and exit if creation failed
 
 	IrrlichtDevice *device =
-		createDevice(video::EDT_OPENGL, core::dimension2d<s32>(1024, 768),
+		createDevice(video::EDT_OPENGL, core::dimension2d<u32>(1024, 768),
 		16, false, false);
 
 

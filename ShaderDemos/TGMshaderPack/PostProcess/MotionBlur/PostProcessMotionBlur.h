@@ -106,9 +106,9 @@ video::IGPUProgrammingServices* gpu = driver->getGPUProgrammingServices();
                fragShader2.c_str(), "main", video::EPST_PS_1_1,
                NULL, (video::EMT_SOLID)
         );
-      next = driver->addRenderTargetTexture(core::dimension2d<s32>(sizeW,sizeH));
-      prev = driver->addRenderTargetTexture(core::dimension2d<s32>(sizeW,sizeH));
-      accum = driver->addRenderTargetTexture(core::dimension2d<s32>(sizeW,sizeH));
+      next = driver->addRenderTargetTexture(core::dimension2d<u32>(sizeW,sizeH));
+      prev = driver->addRenderTargetTexture(core::dimension2d<u32>(sizeW,sizeH));
+      accum = driver->addRenderTargetTexture(core::dimension2d<u32>(sizeW,sizeH));
 
       Material.Wireframe = false;
       Material.Lighting = false;
