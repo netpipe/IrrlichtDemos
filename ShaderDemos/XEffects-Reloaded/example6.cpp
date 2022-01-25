@@ -15,6 +15,7 @@ using namespace core;
 
 int main()
 {
+int counter=0;
 	char C = 0;
 
 	// Ask the user for the driver type.
@@ -52,7 +53,7 @@ int main()
 	cam->setTarget(vector3df(5.0f, 5.0f, 5.0f));
 	cam->setFarValue(50.0f);
 	cam->setNearValue(0.1f);
-	
+
 	// Initialise the EffectHandler, pass it the working Irrlicht device and the screen buffer resolution.
 	// Shadow map resolution setting has been moved to SShadowLight for more flexibility.
 	// (The screen buffer resolution need not be the same as the screen resolution.)
@@ -66,7 +67,7 @@ int main()
 	room->setScale(vector3df(3.0f, 2.0f, 3.0f));
 	room->setPosition(vector3df(4.5f, 0.5f, 4.0f));
 	room->setMaterialTexture(0, driver->getTexture("media/wall.jpg"));
-	
+
 	// We disable lighting on the mesh.
 	room->getMaterial(0).Lighting = false;
 
@@ -95,7 +96,7 @@ int main()
 	// Set the background clear color to black.
 	effect->setClearColour(SColor(0x0));
 
-	// Add two shadow lights. 
+	// Add two shadow lights.
 	// The first parameter specifies the shadow map resolution for the shadow light.
 	// The shadow map is always square, so you need only pass 1 dimension, preferably
 	// a power of two between 512 and 2048, maybe larger depending on your quality
@@ -108,11 +109,11 @@ int main()
 	// is outside of a lights frustum (Too close, too far, or outside of it's field of view)
 	// will be unlit by this particular light, similar to how a spot light works.
 	// We will add one red light and one yellow light.
-	effect->addShadowLight(SShadowLight(1024, vector3df(-15, 30, -15), vector3df(5, 0, 5), 
+	effect->addShadowLight(SShadowLight(1024, vector3df(-15, 30, -15), vector3df(5, 0, 5),
 		SColor(255, 255, 255, 255), 20.0f, 60.0f, 30.0f * DEGTORAD));
 
 	s32 oldFps = 0;
-	
+
 	// Main loop here.
 	while(device->run())
 	{
@@ -128,9 +129,25 @@ int main()
 
 		// EffectHandler->update() replaces smgr->drawAll(). It handles all
 		// of the shadow maps, render targets switching, post processing, etc.
-		effect->update();
+		irr::ITimer* timer = device->getTimer();
+ irr::u32 timeThisFrame = timer->getTime();
+ timeThisFrame = timer->getTime();
+
+while( (timer->getTime() - timeThisFrame) <= 26 ) // frame rate limiter
+{    timer->tick();
+};
+counter++;
+// if (counter > 10) {
+// effect->update();
+// counter=0;
+// }
+ effect->update();
+
+
 
 		driver->endScene();
+
+			//	device->sleep(10);
 	}
 
 	device->drop();

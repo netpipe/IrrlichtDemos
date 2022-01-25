@@ -43,6 +43,7 @@ After we have set up the IDE, the compiler will know where to find the Irrlicht
 Engine header files so we can include it now in our code.
 */
 #include <irrlicht.h>
+#include "CBrittleNode.h"
 
 /*
 In the Irrlicht Engine, everything can be found in the namespace 'irr'. So if
@@ -311,9 +312,18 @@ int main()
 		return 1;
 	}
 	IMesh* mesh2;
-	IMesh* ha = getCrushedMesh(mesh , plane3df(10,0,10,-10,0,-10));
+	//IMesh* ha = getCrushedMesh(mesh , plane3df(10,0,10,-10,0,-10));
 	//IMesh* ha2 = getSlicedMesh(mesh , mesh2,plane3df(10,0,10,-10,0,-10));
-	IMeshSceneNode* node = smgr->addMeshSceneNode( ha );
+//	ISceneNode* test2=
+  //  IMesh* ha3 = smgr->getMesh("../../media/sydney.md2");
+//	IMeshSceneNode* node = smgr->addMeshSceneNode( ha3 );
+//	CBrittleNode* test = new CBrittleNode( smgr->getRootSceneNode(),smgr,0);
+//	CBrittleNode* test = new CBrittleNode( smgr->getMesh("../../media/sydney.md2"),smgr,0);
+	CBrittleNode* test = new CBrittleNode( smgr->addAnimatedMeshSceneNode(smgr->getMesh("../../media/sydney.md2")),smgr,0);
+ITexture* tex1=driver->getTexture("../../media/sydney.bmp");
+	test->LoadMesh("../../media/sydney.md2",tex1,tex1);
+
+	//IMeshSceneNode* node = smgr->addMeshSceneNode( );
 
 
 
@@ -325,12 +335,12 @@ int main()
 	texture to the mesh. Without it the mesh would be drawn using only a
 	color.
 	*/
-	if (node)
-	{
-		node->setMaterialFlag(EMF_LIGHTING, false);
-//		node->setMD2Animation(scene::EMAT_STAND);
-		node->setMaterialTexture( 0, driver->getTexture("../../media/sydney.bmp") );
-	}
+//	if (node)
+//	{
+//		node->setMaterialFlag(EMF_LIGHTING, false);
+////		node->setMD2Animation(scene::EMAT_STAND);
+//		node->setMaterialTexture( 0, driver->getTexture("../../media/sydney.bmp") );
+//	}
 
 	/*
 	To look at the mesh, we place a camera into 3d space at the position
@@ -356,7 +366,7 @@ int main()
 		call everything is presented on the screen.
 		*/
 		driver->beginScene(true, true, SColor(255,100,101,140));
-
+test->render() ;
 		smgr->drawAll();
 		guienv->drawAll();
 
