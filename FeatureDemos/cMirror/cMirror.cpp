@@ -27,7 +27,7 @@ using namespace std;
       {
 
 
-		  ReflectTexture = driver->addRenderTargetTexture(core::dimension2d<s32>(1024,1024));
+		  ReflectTexture = driver->addRenderTargetTexture(core::dimension2d<u32>(1024,1024));
          this->setMaterialTexture(0, ReflectTexture); // set material of mirror to render target and settings
          this->setMaterialFlag(video::EMF_NORMALIZE_NORMALS, true);
          this->setMaterialFlag(video::EMF_LIGHTING, false);
