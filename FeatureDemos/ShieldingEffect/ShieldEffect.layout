@@ -2,17 +2,10 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="LinuxSVN" />
-	<File name="CShieldManager.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="main.cpp" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="11745" topLine="0" />
+			<Cursor1 position="10167" topLine="317" />
 		</Cursor>
-		<Folding>
-			<Collapse line="9" />
-			<Collapse line="65" />
-			<Collapse line="77" />
-			<Collapse line="129" />
-			<Collapse line="241" />
-		</Folding>
 	</File>
 	<File name="CShieldManager.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
@@ -22,10 +15,12 @@
 			<Collapse line="17" />
 		</Folding>
 	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="CShieldManager.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="8822" topLine="38" />
+			<Cursor1 position="10696" topLine="177" />
 		</Cursor>
+		<Folding>
+			<Collapse line="129" />
+		</Folding>
 	</File>
-	<EditorTabsLayout layout="9ae789805bd57bb20014bcec00000002=0;ShieldEffect:CShieldManager.h,*1;ShieldEffect:CShieldManager.cpp,2;ShieldEffect:main.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=814;besth=343;minw=814;minh=343;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=9ae789805bd57bb20014bcec00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>

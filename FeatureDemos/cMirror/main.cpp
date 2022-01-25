@@ -397,17 +397,17 @@ int IRRCALLCONV main(int argc, char* argv[])
 	prevents the engine render to set the position of the mouse cursor
 	after task switching when other program are active.
 	*/
-	cMirror * mirror2 = new cMirror(smgr->getRootSceneNode(), smgr, 998, device, camera, driver->getTexture("../media/mirrordirt.png"));
-	mirror2->setPosition(vector3df(2193,445,1800.f));
-	mirror2->setRotation(vector3df(0,0.f,0));
-	mirror2->setScale(vector3df(1,2,0));
+	//cMirror * mirror2 = new cMirror(smgr->getRootSceneNode(), smgr, 998, device, camera, driver->getTexture("../media/mirrordirt.png"));
+	//mirror2->setPosition(vector3df(2193,445,1800.f));
+	//mirror2->setRotation(vector3df(0,0.f,0));
+	//mirror2->setScale(vector3df(1,2,0));
 	int lastFPS = -1;
 
 	while(device->run())
 	if (device->isWindowActive())
 	{
 		driver->beginScene(true, true, video::SColor(255,20,20,40));
-		mirror2->reflect();
+	//	mirror2->reflect();
 		smgr->drawAll();
 		gui->drawAll();
 

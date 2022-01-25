@@ -225,7 +225,7 @@ int main(int argc, char** argv)
 
     manipulator->scaleTCoords(shield_node2->getMesh(),core::vector2df(6,6),1);
     shield_node2->setMaterialFlag(video::EMF_BACK_FACE_CULLING,false);
-    shield_node2->setMaterialType(video::EMT_TRANSPARENT_ALPHA_CHANNEL_REF);
+  //  shield_node2->setMaterialType(video::EMT_TRANSPARENT_ALPHA_CHANNEL_REF);
   //  shield_node2->setMaterialFlag(video::EMF_BLEND_OPERATION,true);
     shield_node2->setMaterialTexture(0,driver->getTexture("Data/textures/transparent.png"));
     shield_node2->setScale(core::vector3df(1.1,1.1,1.1));
