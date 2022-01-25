@@ -24,13 +24,9 @@
 			<Add library="GL" />
 			<Add library="Xxf86vm" />
 			<Add library="X11" />
-			<Add directory="/home/Dev/libs/Irrlicht/lib/gcc" />
+			<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
 		</Linker>
 		<Unit filename="main.cpp" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-			<envvars />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

@@ -61,7 +61,7 @@ int main()
 {
 	// Create device
 	video::E_DRIVER_TYPE driverType = video::EDT_OPENGL;
-	IrrlichtDevice *device = createDevice(driverType, dimension2di(800, 600), 32, false, false, false, 0);
+	IrrlichtDevice *device = createDevice(driverType, dimension2du(800, 600), 32, false, false, false, 0);
 	if (!device) {
 		printf("Error creating Irrlicht device\n");
 		return 0;
