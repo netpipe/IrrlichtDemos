@@ -4,7 +4,7 @@
 // Remember to include "XEffects.h" in every project that uses XEffects, and add all the XEffects .cpp
 // files to your project/makefile.
 #include "XEffects.h"
-
+#define TEST
 // Namespaces.
 using namespace irr;
 using namespace scene;
@@ -115,9 +115,9 @@ int main()
 			rNode->setMaterialTexture(0, driver->getTexture("./media/wall.jpg"));
 	#else
 	//	IAnimatedMesh* room =smgr->getMesh("maps/20kdm2.bsp");
-	//IAnimatedMesh* room =smgr->getMesh("maps/egyptians.bsp");
+	IAnimatedMesh* room =smgr->getMesh("maps/egyptians.bsp");
 	//	IAnimatedMesh* room =smgr->getMesh("maps/q3pacman.bsp");
-	IAnimatedMesh* room =smgr->getMesh("./maps/reqkitchen.bsp");
+	//IAnimatedMesh* room =smgr->getMesh("./maps/reqkitchen.bsp");
 	//IAnimatedMesh* room =smgr->getMesh("./maps/cht2.bsp");
 		irr::scene::IAnimatedMeshSceneNode * rNode = smgr->addAnimatedMeshSceneNode(room);
 
@@ -127,8 +127,8 @@ int main()
 
 	#ifdef TEST
 			rNode->setMaterialType(irr::video::EMT_SOLID);
-		rNode->setMaterialFlag(irr::video::EMF_LIGHTING, true);
-		rNode->setScale(irr::core::vector3df(0.01f, 0.01f, 0.01f));
+		//rNode->setMaterialFlag(irr::video::EMF_LIGHTING, true);
+		rNode->setScale(irr::core::vector3df(0.1f, 0.1f, 0.1f));
 
 	//rNode->setScale(vector3df(0.10f, 0.10f, 0.10f));
 	//rNode->setPosition(vector3df(0.5f, -5.5f, 0.0f));
@@ -138,7 +138,7 @@ int main()
 	// the shadow map overlay, the new additive system in XEffects which allows
 	// us to realitically utilize multiple lights. You can still choose to perform
 	// your own lighting alongside if you wish to however.
-	rNode->getMaterial(0).Lighting = false;
+	//rNode->getMaterial(0).Lighting = true;
 
 	// Add the room to the shadow node list, using the chosen filtertype.
 	// It will use the default shadow mode, ESM_BOTH, which allows it to
