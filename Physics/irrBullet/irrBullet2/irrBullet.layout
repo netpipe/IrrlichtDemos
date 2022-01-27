@@ -2,22 +2,20 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Linux Static" />
-	<File name="irrBulletCollisionObjectAffector.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="irrBulletWorld.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
+			<Cursor1 position="602" topLine="2" />
 		</Cursor>
 		<Folding>
-			<Collapse line="11" />
 			<Collapse line="21" />
+			<Collapse line="38" />
+			<Collapse line="47" />
 		</Folding>
 	</File>
-	<File name="irrBulletCommon.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="irrBulletCollisionObject.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1557" topLine="30" />
+			<Cursor1 position="1883" topLine="1" />
 		</Cursor>
-		<Folding>
-			<Collapse line="65" />
-		</Folding>
 	</File>
 	<File name="irrBulletCollisionObject.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
@@ -62,20 +60,28 @@
 			<Collapse line="346" />
 		</Folding>
 	</File>
-	<File name="irrBulletGImpactMeshShape.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="irrBulletCollisionCallBackInformation.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="499" topLine="0" />
+			<Cursor1 position="818" topLine="0" />
 		</Cursor>
 		<Folding>
-			<Collapse line="17" />
+			<Collapse line="12" />
 			<Collapse line="28" />
 			<Collapse line="39" />
-			<Collapse line="45" />
 		</Folding>
 	</File>
-	<File name="irrBulletCollisionObject.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="irrBulletCollisionObjectAffector.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1883" topLine="1" />
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="11" />
+			<Collapse line="21" />
+		</Folding>
+	</File>
+	<File name="irrBullet.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="irrBulletCollisionShape.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -88,30 +94,23 @@
 			<Collapse line="49" />
 		</Folding>
 	</File>
-	<File name="irrBullet.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="irrBulletCommon.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="irrBulletCollisionCallBackInformation.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="818" topLine="0" />
+			<Cursor1 position="1557" topLine="30" />
 		</Cursor>
 		<Folding>
-			<Collapse line="12" />
+			<Collapse line="65" />
+		</Folding>
+	</File>
+	<File name="irrBulletGImpactMeshShape.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="499" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="17" />
 			<Collapse line="28" />
 			<Collapse line="39" />
+			<Collapse line="45" />
 		</Folding>
 	</File>
-	<File name="irrBulletWorld.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="602" topLine="2" />
-		</Cursor>
-		<Folding>
-			<Collapse line="21" />
-			<Collapse line="38" />
-			<Collapse line="47" />
-		</Folding>
-	</File>
-	<EditorTabsLayout layout="034c3cc05e3f2386001e337600000002=0;irrBullet:irrBulletWorld.h,*1;irrBullet:irrBulletGImpactMeshShape.cpp,2;irrBullet:irrBulletCollisionObject.cpp,3;irrBullet:irrBulletCollisionShape.h,4;irrBullet:irrBullet.h,5;irrBullet:irrBulletCollisionObjectAffector.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=328;besth=341;minw=328;minh=341;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=034c3cc05e3f2386001e337600000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>

@@ -7,7 +7,7 @@ namespace IGE
 	float getRandomFloat(float min, float max) { return float((double)rand() / (RAND_MAX + 1) * (max - min) + min); }
 
 	//! constructor
-	IGE_SceneNode_Vegetation::IGE_SceneNode_Vegetation(ITerrainSceneNode* parent, stringc layoutimagefilename, float viewdistance, vector3df layoutRandomness, bool uselight, bool usefog, 
+	IGE_SceneNode_Vegetation::IGE_SceneNode_Vegetation(ITerrainSceneNode* parent, stringc layoutimagefilename, float viewdistance, vector3df layoutRandomness, bool uselight, bool usefog,
 		ISceneManager* smgr, s32 id)
 		: ISceneNode(parent, smgr, id, vector3df(),vector3df(), vector3df(1,1,1)),m_Terrain(parent),m_ViewDistance(viewdistance),m_LayoutRandomness(layoutRandomness),m_UseLight(uselight),m_UseFog(usefog)
 	{
@@ -90,6 +90,7 @@ namespace IGE
 			node->setMaterialFlag(EMF_FOG_ENABLE, m_UseFog);
 			node->setMaterialFlag(EMF_LIGHTING, m_UseLight);
 			node->setMaterialType(EMT_TRANSPARENT_ALPHA_CHANNEL_REF);
+		//	meshfilename
 
 			// add the mesh to the list
 			IGE_MeshTemplate t(node, YOffset);
@@ -189,12 +190,12 @@ namespace IGE
 					SColor pixel = m_LayoutImage->getPixel(x2, y2);
 
 					vector3df pos(terrainX + i + randomness.X, height + randomness.Y, terrainZ + ii + randomness.Z);
-					
+
 					// let the user select a style based on the color
 					int         style		= getStyleFromLayoutImageColor(pixel, m_MeshTemplate.size(), pos);
 					vector3df   scale		= getScaleFromLayoutImageColor(pixel, m_MeshTemplate.size(), style, pos);
 					vector3df   rotation	= getRotationFromLayoutImageColor(pixel, m_MeshTemplate.size(), style, pos);
-				
+
 					density = getDensityFromLayoutImageColor(pixel);
 					ii += density;
 
@@ -216,7 +217,7 @@ namespace IGE
 		}
 	}
 
-	// check if a point is inside the viewfromcamera view frustrum 
+	// check if a point is inside the viewfromcamera view frustrum
 	bool IGE_SceneNode_Vegetation::canBeSeenByCamPyramidPlanes(const SViewFrustum& frust, const vector3df& pos)
 	{
 		for (s32 i = 0; i < scene::SViewFrustum::VF_PLANE_COUNT; ++i)
@@ -279,17 +280,17 @@ namespace IGE
 	}
 
 	int	IGE_SceneNode_Vegetation::getStyleFromLayoutImageColor(SColor pixel, int templatesize, vector3df pos)
-	{ 
+	{
 		return (getRandomInteger(1,templatesize))-1;
 	}
 
 	vector3df   IGE_SceneNode_Vegetation::getRotationFromLayoutImageColor(SColor pixel, int templatesize, int style, vector3df pos)
-	{ 
+	{
 		return vector3df(0, getRandomFloat(0, 360), 0);
 	}
 
 	vector3df   IGE_SceneNode_Vegetation::getScaleFromLayoutImageColor(SColor pixel, int templatesize, int style, vector3df pos)
-	{ 
+	{
 		return vector3df(getRandomFloat(1, 3), getRandomFloat(1, 3), getRandomFloat(1, 3));
 	}
 
@@ -322,7 +323,7 @@ namespace IGE
 		for (u32 i = 0; i < m_Nodes.size(); i++)
 			if (m_Nodes[i] != nullptr)
 				m_Nodes[i]->setVisible(v);
-		
+
 		for (u32 i = 0; i < m_MeshTemplate.size(); i++)
 				m_MeshTemplate[i].m_Node->setVisible(v);
 	}

@@ -40,7 +40,7 @@ int main()
 	IrrAssimp assimp(smgr);
  //  IAnimatedMesh* mesh = assimp.getMesh("Media/textures/Christmas 2012e2.dae");
    IAnimatedMesh* mesh = assimp.getMesh("Media/ninja.b3d");
-//   IAnimatedMesh* mesh = assimp.getMesh("Media/ninja.b3d");
+  // IAnimatedMesh* mesh = assimp.getMesh("./dedust/maps/de_dust2_2020.bsp");
 //   IAnimatedMesh* mesh = assimp.getMesh("Media/ninja.b3d");
  //  IAnimatedMesh* mesh = assimp.getMesh("Media/mohdm6.bsp");
 //    IAnimatedMesh* mesh = assimp.getMesh("Media/xmas/Scene.irr");
