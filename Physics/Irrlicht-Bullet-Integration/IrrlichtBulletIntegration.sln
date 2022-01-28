@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IrrlichtBulletIntegration", "IrrlichtBulletIntegration\IrrlichtBulletIntegration.vcxproj", "{5ED7D8C8-654C-4084-B920-7E87140C1BD0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SoftbodyDemo", "SoftbodyDemo\SoftbodyDemo.vcxproj", "{4DB22E48-41FC-44E9-A9ED-7F8F3AC54EE0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VehicleDemo", "VehicleDemo\VehicleDemo.vcxproj", "{97BD2AF1-D909-46B4-8AD7-6B34F2DCC9CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5ED7D8C8-654C-4084-B920-7E87140C1BD0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5ED7D8C8-654C-4084-B920-7E87140C1BD0}.Debug|Win32.Build.0 = Debug|Win32
+		{5ED7D8C8-654C-4084-B920-7E87140C1BD0}.Release|Win32.ActiveCfg = Release|Win32
+		{5ED7D8C8-654C-4084-B920-7E87140C1BD0}.Release|Win32.Build.0 = Release|Win32
+		{4DB22E48-41FC-44E9-A9ED-7F8F3AC54EE0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4DB22E48-41FC-44E9-A9ED-7F8F3AC54EE0}.Debug|Win32.Build.0 = Debug|Win32
+		{4DB22E48-41FC-44E9-A9ED-7F8F3AC54EE0}.Release|Win32.ActiveCfg = Release|Win32
+		{4DB22E48-41FC-44E9-A9ED-7F8F3AC54EE0}.Release|Win32.Build.0 = Release|Win32
+		{97BD2AF1-D909-46B4-8AD7-6B34F2DCC9CE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{97BD2AF1-D909-46B4-8AD7-6B34F2DCC9CE}.Debug|Win32.Build.0 = Debug|Win32
+		{97BD2AF1-D909-46B4-8AD7-6B34F2DCC9CE}.Release|Win32.ActiveCfg = Release|Win32
+		{97BD2AF1-D909-46B4-8AD7-6B34F2DCC9CE}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -322,9 +322,9 @@ void createScene()
 	// add the primary user controlled camera
 	MainCamera = smgr->addCameraSceneNodeFPS(0, 100.0f, 1.2f);
 		MainCamera->setPosition(core::vector3df(0, 500, 500));
-		MainCamera->setTarget(core::vector3df(0, 0, 0));
+	//	MainCamera->setTarget(core::vector3df(0, 0, 0));
 		MainCamera->setFarValue(42000.0f);
-		MainCamera->setInputReceiverEnabled(false);
+	//	MainCamera->setInputReceiverEnabled(false);
 
 	// add some lighting and fog
 	smgr->addLightSceneNode(MainCamera, vector3df(0, -50, 0), SColorf(0.5, 1, 1, 1), 4000);
@@ -468,7 +468,7 @@ bool genericDemoSetup()
 
 
 	// create event receiver
-	device->setEventReceiver(&receiver);
+	//device->setEventReceiver(&receiver);
 
 	return true;
 }

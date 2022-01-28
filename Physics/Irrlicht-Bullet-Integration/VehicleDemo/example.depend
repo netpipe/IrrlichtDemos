@@ -1,15 +1,9 @@
 # depslib dependency file v1.0
-1377828469 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/examples/framework/exampleframework.cpp
+1576566742 source:/home/netpipe/Desktop/Irrlicht-Bullet-Integration-master/IrrlichtBulletIntegration/InputEventHandler.cpp
+	"InputEventHandler.h"
+
+1576566742 /home/netpipe/Desktop/Irrlicht-Bullet-Integration-master/IrrlichtBulletIntegration/InputEventHandler.h
 	<irrlicht.h>
-	<bulletworld.h>
-	<rigidbody.h>
-	<boxshape.h>
-	<sphereshape.h>
-	<gimpactmeshshape.h>
-	<raycastvehicle.h>
-	<collisionobjectaffectordelete.h>
-	<collisionobjectaffectorattract.h>
-	"exampleframework.h"
 
 1352153652 /home/Dev/libs/game/Irrlicht-SVN/include/irrlicht.h
 	"IrrCompileConfig.h"
@@ -999,457 +993,14 @@
 	"matrix4.h"
 	"IVideoDriver.h"
 
-1377828422 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/source/bulletworld.h
-	"irrbulletcommon.h"
-	"rigidbody.h"
-	"softbody.h"
-	"physicsdebug.h"
-	"BulletSoftBody/btSoftRigidDynamicsWorld.h"
-	"collisioncallbackinformation.h"
-	"irrbullet_compile_config.h"
-
-1377828438 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/source/irrbulletcommon.h
-	<matrix4.h>
-	<ISceneNode.h>
-
-1377828423 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/source/rigidbody.h
-	"irrbulletcommon.h"
-	"collisionobject.h"
-	"BulletDynamics/Dynamics/btRigidBody.h"
-	"raycastvehicle.h"
-
-1377828438 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/source/collisionobject.h
-	"irrbulletcommon.h"
-	"collisionshape.h"
-	"BulletCollision/CollisionDispatch/btCollisionObject.h"
-	"collisionobjectaffector.h"
-	<IAttributes.h>
-
-1377828423 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/source/collisionshape.h
-	"BulletCollision/CollisionShapes/btCollisionShape.h"
-	<vector3d.h>
-	<irrTypes.h>
-	<irrString.h>
-	"irrbulletcommon.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btCollisionShape.h
-	"LinearMath/btTransform.h"
-	"LinearMath/btVector3.h"
-	"LinearMath/btMatrix3x3.h"
-	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btTransform.h
-	"btMatrix3x3.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btMatrix3x3.h
-	"btVector3.h"
-	"btQuaternion.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btVector3.h
-	"btScalar.h"
-	"btMinMax.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btScalar.h
-	<math.h>
-	<stdlib.h>
-	<float.h>
-	<ppcintrinsics.h>
-	<emmintrin.h>
-	<assert.h>
-	<assert.h>
-	<spu_printf.h>
-	<assert.h>
-	<emmintrin.h>
-	<assert.h>
-	<assert.h>
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btMinMax.h
-	"LinearMath/btScalar.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btQuaternion.h
-	"btVector3.h"
-	"btQuadWord.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btQuadWord.h
-	"btScalar.h"
-	"btMinMax.h"
-	<altivec.h>
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
-	"LinearMath/btScalar.h"
-	"LinearMath/btVector3.h"
-	"LinearMath/btAlignedAllocator.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btAlignedAllocator.h
-	"btScalar.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionDispatch/btCollisionObject.h
-	"LinearMath/btTransform.h"
-	"LinearMath/btMotionState.h"
-	"LinearMath/btAlignedAllocator.h"
-	"LinearMath/btAlignedObjectArray.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btMotionState.h
-	"btTransform.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btAlignedObjectArray.h
-	"btScalar.h"
-	"btAlignedAllocator.h"
-	<memory.h>
-	<string.h>
-	<new>
-
-1377828438 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/source/collisionobjectaffector.h
-	<irrTypes.h>
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/Dynamics/btRigidBody.h
-	"LinearMath/btAlignedObjectArray.h"
-	"LinearMath/btTransform.h"
-	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
-	"BulletCollision/CollisionDispatch/btCollisionObject.h"
-
-1377828438 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/source/raycastvehicle.h
-	"irrbulletcommon.h"
-	"BulletDynamics/Vehicle/btRaycastVehicle.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/Vehicle/btRaycastVehicle.h
-	"BulletDynamics/Dynamics/btRigidBody.h"
-	"BulletDynamics/ConstraintSolver/btTypedConstraint.h"
-	"btVehicleRaycaster.h"
-	"LinearMath/btAlignedObjectArray.h"
-	"btWheelInfo.h"
-	"BulletDynamics/Dynamics/btActionInterface.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/ConstraintSolver/btTypedConstraint.h
-	"LinearMath/btScalar.h"
-	"btSolverConstraint.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/ConstraintSolver/btSolverConstraint.h
-	"LinearMath/btVector3.h"
-	"LinearMath/btMatrix3x3.h"
-	"btJacobianEntry.h"
-	"btSolverBody.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/ConstraintSolver/btJacobianEntry.h
-	"LinearMath/btVector3.h"
-	"BulletDynamics/Dynamics/btRigidBody.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/ConstraintSolver/btSolverBody.h
-	"LinearMath/btVector3.h"
-	"LinearMath/btMatrix3x3.h"
-	"BulletDynamics/Dynamics/btRigidBody.h"
-	"LinearMath/btAlignedAllocator.h"
-	"LinearMath/btTransformUtil.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btTransformUtil.h
-	"btTransform.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/Vehicle/btVehicleRaycaster.h
-	"LinearMath/btVector3.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/Vehicle/btWheelInfo.h
-	"LinearMath/btVector3.h"
-	"LinearMath/btTransform.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/Dynamics/btActionInterface.h
-	"LinearMath/btScalar.h"
-	"btRigidBody.h"
-
-1377828438 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/source/softbody.h
-	"collisionobject.h"
-	"BulletSoftBody/btSoftBodyHelpers.h"
-	"BulletSoftBody/btSoftBody.h"
-	<irrTypes.h>
-	<map>
-	<vector>
-	<irrArray.h>
-	<S3DVertex.h>
-	<IMeshBuffer.h>
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletSoftBody/btSoftBodyHelpers.h
-	"btSoftBody.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletSoftBody/btSoftBody.h
-	"LinearMath/btAlignedObjectArray.h"
-	"LinearMath/btTransform.h"
-	"LinearMath/btIDebugDraw.h"
-	"BulletDynamics/Dynamics/btRigidBody.h"
-	"BulletCollision/CollisionShapes/btConcaveShape.h"
-	"BulletCollision/CollisionDispatch/btCollisionCreateFunc.h"
-	"btSparseSDF.h"
-	"BulletCollision/BroadphaseCollision/btDbvt.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btIDebugDraw.h
-	"btVector3.h"
-	"btTransform.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btConcaveShape.h
-	"btCollisionShape.h"
-	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
-	"btTriangleCallback.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btTriangleCallback.h
-	"LinearMath/btVector3.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionDispatch/btCollisionCreateFunc.h
-	"LinearMath/btAlignedObjectArray.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletSoftBody/btSparseSDF.h
-	"BulletCollision/CollisionDispatch/btCollisionObject.h"
-	"BulletCollision/NarrowPhaseCollision/btGjkEpa2.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/NarrowPhaseCollision/btGjkEpa2.h
-	"BulletCollision/CollisionShapes/btConvexShape.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btConvexShape.h
-	"btCollisionShape.h"
-	"LinearMath/btVector3.h"
-	"LinearMath/btTransform.h"
-	"LinearMath/btMatrix3x3.h"
-	"btCollisionMargin.h"
-	"LinearMath/btAlignedAllocator.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btCollisionMargin.h
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/BroadphaseCollision/btDbvt.h
-	"LinearMath/btAlignedObjectArray.h"
-	"LinearMath/btVector3.h"
-	"LinearMath/btTransform.h"
-	"LinearMath/btAabbUtil2.h"
-	<emmintrin.h>
-	<memory.h>
-	<string.h>
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btAabbUtil2.h
-	"btTransform.h"
-	"btVector3.h"
-	"btMinMax.h"
-
-1377829517 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/source/physicsdebug.h
-	"LinearMath/btIDebugDraw.h"
-	"irrbulletcommon.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletSoftBody/btSoftRigidDynamicsWorld.h
-	"BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h"
-	"btSoftBody.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h
-	"btDynamicsWorld.h"
-	"LinearMath/btAlignedObjectArray.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/Dynamics/btDynamicsWorld.h
-	"BulletCollision/CollisionDispatch/btCollisionWorld.h"
-	"BulletDynamics/ConstraintSolver/btContactSolverInfo.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionDispatch/btCollisionWorld.h
-	"LinearMath/btVector3.h"
-	"LinearMath/btTransform.h"
-	"btCollisionObject.h"
-	"btCollisionDispatcher.h"
-	"BulletCollision/BroadphaseCollision/btOverlappingPairCache.h"
-	"LinearMath/btAlignedObjectArray.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionDispatch/btCollisionDispatcher.h
-	"BulletCollision/BroadphaseCollision/btDispatcher.h"
-	"BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
-	"BulletCollision/CollisionDispatch/btManifoldResult.h"
-	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
-	"LinearMath/btAlignedObjectArray.h"
-	"btCollisionCreateFunc.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/BroadphaseCollision/btDispatcher.h
-	"LinearMath/btScalar.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/NarrowPhaseCollision/btPersistentManifold.h
-	"LinearMath/btVector3.h"
-	"LinearMath/btTransform.h"
-	"btManifoldPoint.h"
-	"LinearMath/btAlignedAllocator.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/NarrowPhaseCollision/btManifoldPoint.h
-	"LinearMath/btVector3.h"
-	"LinearMath/btTransformUtil.h"
-	"physics_effects/base_level/solver/pfx_constraint_row.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionDispatch/btManifoldResult.h
-	"BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
-	"BulletCollision/NarrowPhaseCollision/btDiscreteCollisionDetectorInterface.h"
-	"LinearMath/btTransform.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/NarrowPhaseCollision/btDiscreteCollisionDetectorInterface.h
-	"LinearMath/btTransform.h"
-	"LinearMath/btVector3.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/BroadphaseCollision/btOverlappingPairCache.h
-	"btBroadphaseInterface.h"
-	"btBroadphaseProxy.h"
-	"btOverlappingPairCallback.h"
-	"LinearMath/btAlignedObjectArray.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
-	"btBroadphaseProxy.h"
-	"LinearMath/btVector3.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/BroadphaseCollision/btOverlappingPairCallback.h
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/ConstraintSolver/btContactSolverInfo.h
-
-1377829517 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/source/collisioncallbackinformation.h
-	<irrTypes.h>
-	<vector3d.h>
-	"irrbulletcommon.h"
-	"BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
-
-1377828422 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/source/irrbullet_compile_config.h
-
-1377828438 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/source/boxshape.h
-	"collisionshape.h"
-
-1377829517 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/source/sphereshape.h
-	"collisionshape.h"
-	"BulletCollision/CollisionShapes/btSphereShape.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btSphereShape.h
-	"btConvexInternalShape.h"
-	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btConvexInternalShape.h
-	"btConvexShape.h"
-	"LinearMath/btAabbUtil2.h"
-
-1377828438 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/source/gimpactmeshshape.h
-	"irrbulletcommon.h"
-	"BulletCollision/Gimpact/btGImpactShape.h"
-	"trianglemeshshape.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/Gimpact/btGImpactShape.h
-	"BulletCollision/CollisionShapes/btCollisionShape.h"
-	"BulletCollision/CollisionShapes/btTriangleShape.h"
-	"BulletCollision/CollisionShapes/btStridingMeshInterface.h"
-	"BulletCollision/CollisionShapes/btCollisionMargin.h"
-	"BulletCollision/CollisionDispatch/btCollisionWorld.h"
-	"BulletCollision/CollisionShapes/btConcaveShape.h"
-	"BulletCollision/CollisionShapes/btTetrahedronShape.h"
-	"LinearMath/btVector3.h"
-	"LinearMath/btTransform.h"
-	"LinearMath/btMatrix3x3.h"
-	"LinearMath/btAlignedObjectArray.h"
-	"btGImpactQuantizedBvh.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btTriangleShape.h
-	"btConvexShape.h"
-	"btBoxShape.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btBoxShape.h
-	"btPolyhedralConvexShape.h"
-	"btCollisionMargin.h"
-	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
-	"LinearMath/btVector3.h"
-	"LinearMath/btMinMax.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btPolyhedralConvexShape.h
-	"LinearMath/btMatrix3x3.h"
-	"btConvexInternalShape.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btStridingMeshInterface.h
-	"LinearMath/btVector3.h"
-	"btTriangleCallback.h"
-	"btConcaveShape.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btTetrahedronShape.h
-	"btPolyhedralConvexShape.h"
-	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/Gimpact/btGImpactQuantizedBvh.h
-	"btGImpactBvh.h"
-	"btQuantization.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/Gimpact/btGImpactBvh.h
-	"LinearMath/btAlignedObjectArray.h"
-	"btBoxCollision.h"
-	"btTriangleShapeEx.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/Gimpact/btBoxCollision.h
-	"LinearMath/btTransform.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/Gimpact/btTriangleShapeEx.h
-	"BulletCollision/CollisionShapes/btCollisionShape.h"
-	"BulletCollision/CollisionShapes/btTriangleShape.h"
-	"btBoxCollision.h"
-	"btClipPolygon.h"
-	"btGeometryOperations.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/Gimpact/btClipPolygon.h
-	"LinearMath/btTransform.h"
-	"LinearMath/btGeometryUtil.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btGeometryUtil.h
-	"btVector3.h"
-	"btAlignedObjectArray.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/Gimpact/btGeometryOperations.h
-	"btBoxCollision.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/Gimpact/btQuantization.h
-	"LinearMath/btTransform.h"
-
-1377828438 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/source/trianglemeshshape.h
-	"collisionshape.h"
-	"BulletCollision/CollisionShapes/btTriangleMesh.h"
-	"irrbulletcommon.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btTriangleMesh.h
-	"btTriangleIndexVertexArray.h"
-	"LinearMath/btVector3.h"
-	"LinearMath/btAlignedObjectArray.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btTriangleIndexVertexArray.h
-	"btStridingMeshInterface.h"
-	"LinearMath/btAlignedObjectArray.h"
-	"LinearMath/btScalar.h"
-
-1377828423 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/source/collisionobjectaffectordelete.h
-	"collisionobjectaffector.h"
-	<irrTypes.h>
-
-1377828423 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/source/collisionobjectaffectorattract.h
-	"collisionobjectaffector.h"
-	<irrTypes.h>
-	<vector3d.h>
-	<ISceneNode.h>
-
-1377828469 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/examples/framework/exampleframework.h
-	<irrTypes.h>
-	<vector3d.h>
-	<SColor.h>
-	<SMaterial.h>
-	<IEventReceiver.h>
-
-1377828468 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/examples/LoadScene/loadsceneexample.cpp
+1643412191 source:/home/netpipe/Desktop/Irrlicht-Bullet-Integration-master/IrrlichtBulletIntegration/IrrlichtBulletIntegration.cpp
+	"baseheader.h"
+	"InputEventHandler.h"
+	"physicsutils.h"
+
+1576566742 /home/netpipe/Desktop/Irrlicht-Bullet-Integration-master/IrrlichtBulletIntegration/baseheader.h
 	<irrlicht.h>
-	<irrBullet.h>
-	"loadsceneexample.h"
-
-1377829517 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/source/irrBullet.h
-	"irrbullet_compile_config.h"
 	"btBulletDynamicsCommon.h"
-	"btBulletCollisionCommon.h"
-	"BulletCollision/Gimpact/btGImpactCollisionAlgorithm.h"
-	"irrbulletcommon.h"
-	"bulletworld.h"
-	"boxshape.h"
-	"sphereshape.h"
-	"gimpactmeshshape.h"
-	"bvhtrianglemeshshape.h"
-	"convexhullshape.h"
-	"motionstate.h"
-	"raycastvehicle.h"
-	"collisionobjectaffector.h"
-	"collisionobjectaffectordelete.h"
-	"collisionobjectaffectorattract.h"
-	"collisioncallbackinformation.h"
-	"liquidbody.h"
-	"kinematiccharactercontroller.h"
 
 1574859755 /home/Dev/libs/physics/bullet-2.78/src//btBulletDynamicsCommon.h
 	"btBulletCollisionCommon.h"
@@ -1503,6 +1054,164 @@
 	"LinearMath/btIDebugDraw.h"
 	"LinearMath/btSerializer.h"
 
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionDispatch/btCollisionWorld.h
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransform.h"
+	"btCollisionObject.h"
+	"btCollisionDispatcher.h"
+	"BulletCollision/BroadphaseCollision/btOverlappingPairCache.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btVector3.h
+	"btScalar.h"
+	"btMinMax.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btScalar.h
+	<math.h>
+	<stdlib.h>
+	<float.h>
+	<ppcintrinsics.h>
+	<emmintrin.h>
+	<assert.h>
+	<assert.h>
+	<spu_printf.h>
+	<assert.h>
+	<emmintrin.h>
+	<assert.h>
+	<assert.h>
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btMinMax.h
+	"LinearMath/btScalar.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btTransform.h
+	"btMatrix3x3.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btMatrix3x3.h
+	"btVector3.h"
+	"btQuaternion.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btQuaternion.h
+	"btVector3.h"
+	"btQuadWord.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btQuadWord.h
+	"btScalar.h"
+	"btMinMax.h"
+	<altivec.h>
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionDispatch/btCollisionObject.h
+	"LinearMath/btTransform.h"
+	"LinearMath/btMotionState.h"
+	"LinearMath/btAlignedAllocator.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btMotionState.h
+	"btTransform.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btAlignedAllocator.h
+	"btScalar.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btAlignedObjectArray.h
+	"btScalar.h"
+	"btAlignedAllocator.h"
+	<memory.h>
+	<string.h>
+	<new>
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionDispatch/btCollisionDispatcher.h
+	"BulletCollision/BroadphaseCollision/btDispatcher.h"
+	"BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
+	"BulletCollision/CollisionDispatch/btManifoldResult.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"LinearMath/btAlignedObjectArray.h"
+	"btCollisionCreateFunc.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/BroadphaseCollision/btDispatcher.h
+	"LinearMath/btScalar.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/NarrowPhaseCollision/btPersistentManifold.h
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransform.h"
+	"btManifoldPoint.h"
+	"LinearMath/btAlignedAllocator.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/NarrowPhaseCollision/btManifoldPoint.h
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransformUtil.h"
+	"physics_effects/base_level/solver/pfx_constraint_row.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btTransformUtil.h
+	"btTransform.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionDispatch/btManifoldResult.h
+	"BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
+	"BulletCollision/NarrowPhaseCollision/btDiscreteCollisionDetectorInterface.h"
+	"LinearMath/btTransform.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/NarrowPhaseCollision/btDiscreteCollisionDetectorInterface.h
+	"LinearMath/btTransform.h"
+	"LinearMath/btVector3.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
+	"LinearMath/btScalar.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btAlignedAllocator.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionDispatch/btCollisionCreateFunc.h
+	"LinearMath/btAlignedObjectArray.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/BroadphaseCollision/btOverlappingPairCache.h
+	"btBroadphaseInterface.h"
+	"btBroadphaseProxy.h"
+	"btOverlappingPairCallback.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
+	"btBroadphaseProxy.h"
+	"LinearMath/btVector3.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/BroadphaseCollision/btOverlappingPairCallback.h
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btBoxShape.h
+	"btPolyhedralConvexShape.h"
+	"btCollisionMargin.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btMinMax.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btPolyhedralConvexShape.h
+	"LinearMath/btMatrix3x3.h"
+	"btConvexInternalShape.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btConvexInternalShape.h
+	"btConvexShape.h"
+	"LinearMath/btAabbUtil2.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btConvexShape.h
+	"btCollisionShape.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransform.h"
+	"LinearMath/btMatrix3x3.h"
+	"btCollisionMargin.h"
+	"LinearMath/btAlignedAllocator.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btCollisionShape.h
+	"LinearMath/btTransform.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btMatrix3x3.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btCollisionMargin.h
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btAabbUtil2.h
+	"btTransform.h"
+	"btVector3.h"
+	"btMinMax.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btSphereShape.h
+	"btConvexInternalShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+
 1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btCapsuleShape.h
 	"btConvexInternalShape.h"
 	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
@@ -1519,10 +1228,33 @@
 1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btStaticPlaneShape.h
 	"btConcaveShape.h"
 
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btConcaveShape.h
+	"btCollisionShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"btTriangleCallback.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btTriangleCallback.h
+	"LinearMath/btVector3.h"
+
 1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btConvexHullShape.h
 	"btPolyhedralConvexShape.h"
 	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
 	"LinearMath/btAlignedObjectArray.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btTriangleMesh.h
+	"btTriangleIndexVertexArray.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btTriangleIndexVertexArray.h
+	"btStridingMeshInterface.h"
+	"LinearMath/btAlignedObjectArray.h"
+	"LinearMath/btScalar.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btStridingMeshInterface.h
+	"LinearMath/btVector3.h"
+	"btTriangleCallback.h"
+	"btConcaveShape.h"
 
 1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btConvexTriangleMeshShape.h
 	"btPolyhedralConvexShape.h"
@@ -1578,6 +1310,10 @@
 	"btCollisionMargin.h"
 	"LinearMath/btAlignedObjectArray.h"
 
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btTetrahedronShape.h
+	"btPolyhedralConvexShape.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+
 1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionShapes/btEmptyShape.h
 	"btConcaveShape.h"
 	"LinearMath/btVector3.h"
@@ -1630,6 +1366,15 @@
 	"BulletCollision/BroadphaseCollision/btOverlappingPairCache.h"
 	"LinearMath/btQuickprof.h"
 
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/BroadphaseCollision/btDbvt.h
+	"LinearMath/btAlignedObjectArray.h"
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransform.h"
+	"LinearMath/btAabbUtil2.h"
+	<emmintrin.h>
+	<memory.h>
+	<string.h>
+
 1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btQuickprof.h
 	<stdio.h>
 	"btScalar.h"
@@ -1644,16 +1389,57 @@
 1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btDefaultMotionState.h
 	"btMotionState.h"
 
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//LinearMath/btIDebugDraw.h
+	"btVector3.h"
+	"btTransform.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h
+	"btDynamicsWorld.h"
+	"LinearMath/btAlignedObjectArray.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/Dynamics/btDynamicsWorld.h
+	"BulletCollision/CollisionDispatch/btCollisionWorld.h"
+	"BulletDynamics/ConstraintSolver/btContactSolverInfo.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/ConstraintSolver/btContactSolverInfo.h
+
 1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/Dynamics/btContinuousDynamicsWorld.h
 	"btDiscreteDynamicsWorld.h"
 
 1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/Dynamics/btSimpleDynamicsWorld.h
 	"btDynamicsWorld.h"
 
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/Dynamics/btRigidBody.h
+	"LinearMath/btAlignedObjectArray.h"
+	"LinearMath/btTransform.h"
+	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
+	"BulletCollision/CollisionDispatch/btCollisionObject.h"
+
 1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/ConstraintSolver/btPoint2PointConstraint.h
 	"LinearMath/btVector3.h"
 	"btJacobianEntry.h"
 	"btTypedConstraint.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/ConstraintSolver/btJacobianEntry.h
+	"LinearMath/btVector3.h"
+	"BulletDynamics/Dynamics/btRigidBody.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/ConstraintSolver/btTypedConstraint.h
+	"LinearMath/btScalar.h"
+	"btSolverConstraint.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/ConstraintSolver/btSolverConstraint.h
+	"LinearMath/btVector3.h"
+	"LinearMath/btMatrix3x3.h"
+	"btJacobianEntry.h"
+	"btSolverBody.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/ConstraintSolver/btSolverBody.h
+	"LinearMath/btVector3.h"
+	"LinearMath/btMatrix3x3.h"
+	"BulletDynamics/Dynamics/btRigidBody.h"
+	"LinearMath/btAlignedAllocator.h"
+	"LinearMath/btTransformUtil.h"
 
 1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/ConstraintSolver/btHingeConstraint.h
 	"LinearMath/btVector3.h"
@@ -1707,239 +1493,67 @@
 	"btTypedConstraint.h"
 	"BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
 
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/Gimpact/btGImpactCollisionAlgorithm.h
-	"BulletCollision/CollisionDispatch/btActivatingCollisionAlgorithm.h"
-	"BulletCollision/BroadphaseCollision/btDispatcher.h"
-	"BulletCollision/BroadphaseCollision/btBroadphaseInterface.h"
-	"BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
-	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
-	"BulletCollision/CollisionDispatch/btCollisionCreateFunc.h"
-	"BulletCollision/CollisionDispatch/btCollisionDispatcher.h"
-	"LinearMath/btAlignedObjectArray.h"
-	"btGImpactShape.h"
-	"BulletCollision/CollisionShapes/btStaticPlaneShape.h"
-	"BulletCollision/CollisionShapes/btCompoundShape.h"
-	"BulletCollision/CollisionDispatch/btConvexConvexAlgorithm.h"
-	"LinearMath/btIDebugDraw.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/CollisionDispatch/btConvexConvexAlgorithm.h
-	"btActivatingCollisionAlgorithm.h"
-	"BulletCollision/NarrowPhaseCollision/btGjkPairDetector.h"
-	"BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
-	"BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
-	"BulletCollision/NarrowPhaseCollision/btVoronoiSimplexSolver.h"
-	"btCollisionCreateFunc.h"
-	"btCollisionDispatcher.h"
-	"LinearMath/btTransformUtil.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/NarrowPhaseCollision/btGjkPairDetector.h
-	"btDiscreteCollisionDetectorInterface.h"
-	"BulletCollision/CollisionShapes/btCollisionMargin.h"
-	"btSimplexSolverInterface.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/NarrowPhaseCollision/btSimplexSolverInterface.h
-	"LinearMath/btVector3.h"
-	"btVoronoiSimplexSolver.h"
-
-1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/NarrowPhaseCollision/btVoronoiSimplexSolver.h
-	"btSimplexSolverInterface.h"
-
-1377828438 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/source/bvhtrianglemeshshape.h
-	"trianglemeshshape.h"
-
-1377828438 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/source/convexhullshape.h
-	"irrbulletcommon.h"
-
-1377829517 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/source/motionstate.h
-	<iostream>
-	"irrbulletcommon.h"
-	"rigidbody.h"
-	"LinearMath/btDefaultMotionState.h"
-
-1377828423 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/source/liquidbody.h
-	<vector3d.h>
-	<irrTypes.h>
-	<aabbox3d.h>
-	<IrrlichtDevice.h>
-
-1377828424 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/source/kinematiccharactercontroller.h
-	<irrTypes.h>
-	<vector3d.h>
-	<matrix4.h>
-
-1377828468 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/examples/LoadScene/loadsceneexample.h
-	"../framework/exampleframework.h"
-	<irrString.h>
-	<irrTypes.h>
-
-1377828468 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/physics/irrbullet/irrbullet-code/examples/LoadScene/main.cpp
-	<irrlicht.h>
-	"loadsceneexample.h"
-
-1638898435 source:/home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/examples/LoadScene/main.cpp
-	<irrlicht.h>
-	"loadsceneexample.h"
-
-1638898435 /home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/examples/LoadScene/loadsceneexample.h
-	"../framework/exampleframework.h"
-	<irrString.h>
-	<irrTypes.h>
-
-1638898435 /home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/examples/framework/exampleframework.h
-	<irrTypes.h>
-	<vector3d.h>
-	<SColor.h>
-	<SMaterial.h>
-	<IEventReceiver.h>
-
-1638898435 source:/home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/examples/framework/exampleframework.cpp
-	<irrlicht.h>
-	<bulletworld.h>
-	<rigidbody.h>
-	<boxshape.h>
-	<sphereshape.h>
-	<gimpactmeshshape.h>
-	<raycastvehicle.h>
-	<collisionobjectaffectordelete.h>
-	<collisionobjectaffectorattract.h>
-	"exampleframework.h"
-
-1638898436 /home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/source/bulletworld.h
-	"irrbulletcommon.h"
-	"rigidbody.h"
-	"softbody.h"
-	"physicsdebug.h"
-	"BulletSoftBody/btSoftRigidDynamicsWorld.h"
-	"collisioncallbackinformation.h"
-	"irrbullet_compile_config.h"
-
-1638898436 /home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/source/irrbulletcommon.h
-	<matrix4.h>
-	<ISceneNode.h>
-
-1638898436 /home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/source/rigidbody.h
-	"irrbulletcommon.h"
-	"collisionobject.h"
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/Vehicle/btRaycastVehicle.h
 	"BulletDynamics/Dynamics/btRigidBody.h"
-	"raycastvehicle.h"
+	"BulletDynamics/ConstraintSolver/btTypedConstraint.h"
+	"btVehicleRaycaster.h"
+	"LinearMath/btAlignedObjectArray.h"
+	"btWheelInfo.h"
+	"BulletDynamics/Dynamics/btActionInterface.h"
 
-1638898436 /home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/source/collisionobject.h
-	"irrbulletcommon.h"
-	"collisionshape.h"
-	"BulletCollision/CollisionDispatch/btCollisionObject.h"
-	"collisionobjectaffector.h"
-	<IAttributes.h>
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/Vehicle/btVehicleRaycaster.h
+	"LinearMath/btVector3.h"
 
-1638898436 /home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/source/collisionshape.h
-	"BulletCollision/CollisionShapes/btCollisionShape.h"
-	<vector3d.h>
-	<irrTypes.h>
-	<irrString.h>
-	"irrbulletcommon.h"
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/Vehicle/btWheelInfo.h
+	"LinearMath/btVector3.h"
+	"LinearMath/btTransform.h"
 
-1638898436 /home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/source/collisionobjectaffector.h
-	<irrTypes.h>
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletDynamics/Dynamics/btActionInterface.h
+	"LinearMath/btScalar.h"
+	"btRigidBody.h"
 
-1638898436 /home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/source/raycastvehicle.h
-	"irrbulletcommon.h"
-	"BulletDynamics/Vehicle/btRaycastVehicle.h"
-
-1638898436 /home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/source/softbody.h
-	"collisionobject.h"
-	"BulletSoftBody/btSoftBodyHelpers.h"
-	"BulletSoftBody/btSoftBody.h"
-	<irrTypes.h>
-	<map>
-	<vector>
-	<irrArray.h>
-	<S3DVertex.h>
-	<IMeshBuffer.h>
-
-1638898436 /home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/source/physicsdebug.h
-	"LinearMath/btIDebugDraw.h"
-	"irrbulletcommon.h"
-
-1638898436 /home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/source/collisioncallbackinformation.h
-	<irrTypes.h>
-	<vector3d.h>
-	"irrbulletcommon.h"
-	"BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
-
-1638898436 /home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/source/irrbullet_compile_config.h
-
-1638898436 /home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/source/boxshape.h
-	"collisionshape.h"
-
-1638898436 /home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/source/sphereshape.h
-	"collisionshape.h"
-	"BulletCollision/CollisionShapes/btSphereShape.h"
-
-1638898436 /home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/source/gimpactmeshshape.h
-	"irrbulletcommon.h"
-	"BulletCollision/Gimpact/btGImpactShape.h"
-	"trianglemeshshape.h"
-
-1638898436 /home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/source/trianglemeshshape.h
-	"collisionshape.h"
-	"BulletCollision/CollisionShapes/btTriangleMesh.h"
-	"irrbulletcommon.h"
-
-1638898436 /home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/source/collisionobjectaffectordelete.h
-	"collisionobjectaffector.h"
-	<irrTypes.h>
-
-1638898436 /home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/source/collisionobjectaffectorattract.h
-	"collisionobjectaffector.h"
-	<irrTypes.h>
-	<vector3d.h>
-	<ISceneNode.h>
-
-1638898435 source:/home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/examples/LoadScene/loadsceneexample.cpp
-	<irrlicht.h>
-	<irrBullet.h>
-	"loadsceneexample.h"
-
-1638898436 /home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/source/irrBullet.h
-	"irrbullet_compile_config.h"
+1643412176 /home/netpipe/Desktop/Irrlicht-Bullet-Integration-master/IrrlichtBulletIntegration/physicsutils.h
 	"btBulletDynamicsCommon.h"
-	"btBulletCollisionCommon.h"
-	"BulletCollision/Gimpact/btGImpactCollisionAlgorithm.h"
-	"irrbulletcommon.h"
-	"bulletworld.h"
-	"boxshape.h"
-	"sphereshape.h"
-	"gimpactmeshshape.h"
-	"bvhtrianglemeshshape.h"
-	"convexhullshape.h"
-	"motionstate.h"
-	"raycastvehicle.h"
-	"collisionobjectaffector.h"
-	"collisionobjectaffectordelete.h"
-	"collisionobjectaffectorattract.h"
-	"collisioncallbackinformation.h"
-	"liquidbody.h"
-	"kinematiccharactercontroller.h"
 
-1638898436 /home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/source/bvhtrianglemeshshape.h
-	"trianglemeshshape.h"
+1643412759 source:/home/netpipe/Desktop/Irrlicht-Bullet-Integration-master/VehicleDemo/main.cpp
+	"PhysicsManager.h"
+	"../IrrlichtBulletIntegration/InputEventHandler.h"
 
-1638898436 /home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/source/convexhullshape.h
-	"irrbulletcommon.h"
+1643412828 /home/netpipe/Desktop/Irrlicht-Bullet-Integration-master/VehicleDemo/PhysicsManager.h
+	"../IrrlichtBulletIntegration/baseheader.h"
+	"../IrrlichtBulletIntegration/InputEventHandler.h"
+	"BulletSoftBody/btSoftRigidDynamicsWorld.h"
+	"BulletSoftBody/btSoftBodyHelpers.h"
+	"BulletSoftBody/btSoftBodyRigidBodyCollisionConfiguration.h"
 
-1638898436 /home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/source/motionstate.h
-	<iostream>
-	"irrbulletcommon.h"
-	"rigidbody.h"
-	"LinearMath/btDefaultMotionState.h"
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletSoftBody/btSoftRigidDynamicsWorld.h
+	"BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h"
+	"btSoftBody.h"
 
-1638898436 /home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/source/liquidbody.h
-	<vector3d.h>
-	<irrTypes.h>
-	<aabbox3d.h>
-	<IrrlichtDevice.h>
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletSoftBody/btSoftBody.h
+	"LinearMath/btAlignedObjectArray.h"
+	"LinearMath/btTransform.h"
+	"LinearMath/btIDebugDraw.h"
+	"BulletDynamics/Dynamics/btRigidBody.h"
+	"BulletCollision/CollisionShapes/btConcaveShape.h"
+	"BulletCollision/CollisionDispatch/btCollisionCreateFunc.h"
+	"btSparseSDF.h"
+	"BulletCollision/BroadphaseCollision/btDbvt.h"
 
-1638898436 /home/netpipe/gamedev/IrrlichtDemos/Physics/irrBullet/irrbullet-code/source/kinematiccharactercontroller.h
-	<irrTypes.h>
-	<vector3d.h>
-	<matrix4.h>
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletSoftBody/btSparseSDF.h
+	"BulletCollision/CollisionDispatch/btCollisionObject.h"
+	"BulletCollision/NarrowPhaseCollision/btGjkEpa2.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletCollision/NarrowPhaseCollision/btGjkEpa2.h
+	"BulletCollision/CollisionShapes/btConvexShape.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletSoftBody/btSoftBodyHelpers.h
+	"btSoftBody.h"
+
+1574859755 /home/Dev/libs/physics/bullet-2.78/src//BulletSoftBody/btSoftBodyRigidBodyCollisionConfiguration.h
+	"BulletCollision/CollisionDispatch/btDefaultCollisionConfiguration.h"
+
+1643412830 source:/home/netpipe/Desktop/Irrlicht-Bullet-Integration-master/VehicleDemo/PhysicsManager.cpp
+	"PhysicsManager.h"
+	<vector>
 
