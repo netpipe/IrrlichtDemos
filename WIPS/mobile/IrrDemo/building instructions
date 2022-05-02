@@ -1,0 +1,23 @@
+export ANDROID_HOME=/home/Dev/android-sdk-linux
+export PATH=:/home/Dev/android-sdk-linux/tools/lib:/home/Dev/android-sdk-linux/tools:/home/Dev/android-sdk-linux/platform-tools:/home/Dev/android-ndk-r9d
+
+
+export ANDROID_NDK=/home/Dev/android-ndk-r9d
+export PATH=.:/home/micha/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/sbin:/usr/local/bin:/usr/games:/:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:/home/micha/android/android-ndk-r9b
+
+
+
+
+adb -d logcat -c;adb logcat Irrlicht:V DEBUG:V *:S
+
+adb shell
+logcat-enable
+reboot
+
+
+./../../../../ndk-build && ant debug && adb install -r bin/NativeActivity-debug.apk
+
+ /home/Dev/android-sdk-linux/tools/android update project --path . --target android-19
+.
+
+<meta-data android:name="NativeActivity.ForwardNativeEventsToDalvik" android:value="true" />

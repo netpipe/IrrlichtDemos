@@ -1,0 +1,6 @@
+#!/bin/bash
+
+./../../../../ndk-build && ant debug && adb install -r bin/NativeActivity-debug.apk && adb kill-server
+
+#exit 0
+

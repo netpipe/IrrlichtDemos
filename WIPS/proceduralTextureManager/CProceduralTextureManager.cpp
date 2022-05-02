@@ -10,7 +10,7 @@ namespace scene{
 ProcTexture::ProcTexture(ITimer* Timer, video::IVideoDriver* Driver, s32 TexX, s32 TexY, u32 Step) : timer(Timer), driver(Driver), texX(TexX), texY(TexY), timer1(0), step(Step)
 {
 	prevTime = timer->getTime();
-	texture = driver->addTexture(core::dimension2d<s32>(texX, texY), "proceduralTexture", video::ECF_R8G8B8);
+	texture = driver->addTexture(core::dimension2du(texX, texY), "proceduralTexture", video::ECF_R8G8B8);
 	texY_1 = texY - 1;
 	texX_1 = texX - 1;
 }
@@ -175,7 +175,7 @@ video::ITexture* CProceduralTextureManager::getTexture(u8 num)
 		return NULL;
 	}
 	else
-		printf("\n\tReturning texture: %s\n\n", textures[num]->texture->getName().c_str());
+///		printf("\n\tReturning texture: %s\n\n", textures[num]->texture->getName().c_str());
 	return textures[num]->texture;
 }
 
@@ -185,7 +185,7 @@ bool CProceduralTextureManager::deleteTexture(u8 num)
 	delete textures[num];
 	return true;
 }
-	
+
 u8 CProceduralTextureManager::addTestTexture(s32 x, s32 y, u32 step)
 {
 	for (u8 i = 0; i < _MX_PROC_TEXTURES_; i++){
@@ -207,6 +207,6 @@ u8 CProceduralTextureManager::addFireTexture(c8* coolingTextureFilename, s32 x, 
 	}
 	return _MX_PROC_TEXTURES_;
 }
-	
+
 }
 }

@@ -20,6 +20,8 @@
 			<Add directory="/home/Dev/libs/Irrlicht/include" />
 			<Add directory="/home/Dev/libs/Irrlicht/source/Irrlicht" />
 			<Add directory="./include" />
+			<Add directory="../../../irrlicht-1.8.5/include" />
+			<Add directory="../../../irrlicht-1.8.5/source/Irrlicht" />
 		</Compiler>
 		<Linker>
 			<Add library="GL" />
@@ -27,6 +29,7 @@
 			<Add library="Xxf86vm" />
 			<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
 			<Add directory="include" />
+			<Add directory="../../../irrlicht-1.8.5/lib/Linux" />
 		</Linker>
 		<Unit filename="include/BMaths.cpp" />
 		<Unit filename="include/BMaths.h" />
@@ -76,9 +79,6 @@
 		<Unit filename="include/World.cpp" />
 		<Unit filename="include/World.h" />
 		<Unit filename="main.cpp" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

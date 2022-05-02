@@ -1,0 +1,52 @@
+8
+
+dir
+169
+https://secure.cosmodio.net/projects/Azadi/trunk/CoreEngine/src/Sound/Ogg
+https://secure.cosmodio.net/projects/Azadi
+
+
+
+2007-08-20T16:31:28.907163Z
+1
+aren
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+15d18298-2238-0410-98d7-a1685df1ef88
+
+OggFile.h
+file
+
+
+
+
+2007-09-11T05:01:58.000000Z
+c9c786606659f7d652d3c799ecb9c5e3
+2007-08-20T16:31:28.907163Z
+1
+aren
+
+OggFile.cpp
+file
+
+
+
+
+2007-09-11T05:01:58.000000Z
+eaeffe146685ae25cb111a7b23cea575
+2007-08-20T16:31:28.907163Z
+1
+aren
+

@@ -1,6 +1,6 @@
 #pragma once
 #include <irrlicht.h>
-#include "Physics.h"
+#include "Physic.h"
 
 enum TA_BODY_TYPE
 {
@@ -23,7 +23,7 @@ public:
 	static irr::core::vector3df convertTAPos(const TA::Vec3 &p);
 	static TA::Mat33 convertIrrlichtRot(irr::core::vector3df &rot);
 	static irr::core::vector3df convertTARot(const TA::Mat33 &r);
-	
+
 //	neRigidBody *m_RigidBody;
 //	neAnimatedBody *m_AnimatedBody;
 	irr::u32 m_Collided;
