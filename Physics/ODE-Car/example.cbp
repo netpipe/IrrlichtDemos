@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="ODEirr" />
+		<Option title="ODE-Car" />
 		<Option pch_mode="0" />
 		<Option compiler="gcc" />
 		<Build>
@@ -20,17 +20,22 @@
 		<Compiler>
 			<Add directory="../../../../../Dev/libs/game/irrlicht/Irrlicht-SVN/include" />
 			<Add directory="../../../../../Dev/libs/physics/ODE/ode-0.11.1/include" />
+			<Add directory="../../../LunaLibs/ode-0.11.1/include" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
 		</Compiler>
 		<Linker>
-			<Add library="GL" />
 			<Add library="Irrlicht" />
 			<Add library="Xxf86vm" />
 			<Add library="ode" />
 			<Add library="drawstuff" />
 			<Add library="X11" />
+			<Add library="GL" />
 			<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux" />
 			<Add directory="../../../../../Dev/libs/physics/ODE/ode-0.11.1/ode/src/.libs" />
 			<Add directory="../../../../../Dev/libs/physics/ODE/ode-0.11.1/drawstuff/src/.libs" />
+			<Add directory="../../../LunaLibs/ode-0.11.1/ode/src/.libs" />
+			<Add directory="../../../LunaLibs/ode-0.11.1/drawstuff/src/.libs" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 		</Linker>
 		<Unit filename="src/cars/Car.cpp" />
 		<Unit filename="src/cars/Car.h" />
@@ -43,9 +48,6 @@
 		<Unit filename="src/cars/World.cpp" />
 		<Unit filename="src/cars/World.h" />
 		<Unit filename="src/cars/car_test.cpp" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

@@ -18,11 +18,47 @@
 					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/game/irrlicht/Irrlicht-SVN/source/Irrlicht" />
 					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/physics/ODE/ode/include" />
 					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/physics/ODE/ode/lib" />
+					<Add directory="../../../../LunaLibs/ode-0.11.1/includess" />
+					<Add directory="../../../../LunaLibs/irrlicht-1.8.4/include" />
+					<Add directory="../../../../LunaLibs/ode/include" />
 				</Compiler>
 				<Linker>
 					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux" />
 					<Add directory="/home/Dev/libs/physics/ode/lib2" />
 					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/physics/ODE/ode/lib" />
+					<Add directory="../../../../LunaLibs/ode-0.11.1/ode/src/.libss" />
+					<Add directory="../../../../LunaLibs/ode-0.11.1/drawstuff/src/.libss" />
+					<Add directory="../../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
+					<Add directory="../../../../LunaLibs/ode/lib" />
+				</Linker>
+			</Target>
+			<Target title="emscripten">
+				<Option output="../Marbles" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="../" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Compiler>
+					<Add directory="/home/Dev/libs/physics/ode/included" />
+					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/game/irrlicht/Irrlicht-SVN/include" />
+					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/game/irrlicht/Irrlicht-SVN/source/Irrlicht" />
+					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/physics/ODE/ode/include" />
+					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/physics/ODE/ode/lib" />
+					<Add directory="../../../../LunaLibs/ode-0.11.1/include" />
+					<Add directory="../../../../LunaLibs/irrlicht-1.8.4/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s ALLOW_MEMORY_GROWTH=1" />
+					<Add option="--preload-file media/" />
+					<Add option="-s FULL_ES2=1" />
+					<Add option="-s DISABLE_EXCEPTION_CATCHING=0" />
+					<Add option="-s NO_EXIT_RUNTIME=1" />
+					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux" />
+					<Add directory="/home/Dev/libs/physics/ode/lib2" />
+					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/physics/ODE/ode/lib" />
+					<Add directory="../../../LunaLibs/ode-0.11.1/ode/src/.libs" />
+					<Add directory="../../../../LunaLibs/ode-0.11.1/drawstuff/src/.libs" />
+					<Add directory="../../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 				</Linker>
 			</Target>
 			<Environment>
@@ -32,15 +68,13 @@
 		<VirtualTargets>
 			<Add alias="All" targets="default;" />
 		</VirtualTargets>
+		<Compiler>
+			<Add option="-fpermissive" />
+		</Compiler>
 		<ResourceCompiler>
 			<Add directory="$(IRR_BASE)/include" />
 		</ResourceCompiler>
 		<Linker>
-			<Add option="-s ALLOW_MEMORY_GROWTH=1" />
-			<Add option="--preload-file media/" />
-			<Add option="-s FULL_ES2=1" />
-			<Add option="-s DISABLE_EXCEPTION_CATCHING=0" />
-			<Add option="-s NO_EXIT_RUNTIME=1" />
 			<Add library="Irrlicht" />
 			<Add library="ode" />
 			<Add library="Xxf86vm" />
@@ -69,9 +103,6 @@
 		<Unit filename="ode/IIrrOdeBase.h" />
 		<Unit filename="ode/IIrrOdeEntity.cpp" />
 		<Unit filename="ode/IIrrOdeEntity.h" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

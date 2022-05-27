@@ -19,16 +19,22 @@
 		<Compiler>
 			<Add directory="../../../../libs/irrlicht-1.6/include" />
 			<Add directory="../../../../libs/ode-0.11.1/include" />
+			<Add directory="../../../LunaLibs/ode-0.11.1/include" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
 		</Compiler>
 		<Linker>
-			<Add library="GL" />
 			<Add library="Irrlicht" />
 			<Add library="Xxf86vm" />
 			<Add library="ode" />
 			<Add library="drawstuff" />
+			<Add library="X11" />
+			<Add library="GL" />
 			<Add directory="../../../../libs/irrlicht-1.6/lib/Linux" />
 			<Add directory="../../../../libs/ode-0.11.1/ode/src/.libs" />
 			<Add directory="../../../../libs/ode-0.11.1/drawstuff/src/.libs" />
+			<Add directory="../../../LunaLibs/ode-0.11.1/ode/src/.libs" />
+			<Add directory="../../../LunaLibs/ode-0.11.1/drawstuff/src/.libs" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 		</Linker>
 		<Unit filename="base/box.cpp" />
 		<Unit filename="base/box.h" />
@@ -67,9 +73,6 @@
 		<Unit filename="physics/rag_doll.h" />
 		<Unit filename="settings.cpp" />
 		<Unit filename="settings.h" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

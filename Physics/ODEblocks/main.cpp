@@ -113,7 +113,7 @@ int main()
 
 
 	IrrlichtDevice *device =
-		createDevice( video::EDT_OPENGL, dimension2d<s32>(800, 600), 32,
+		createDevice( video::EDT_OPENGL, dimension2d<u32>(800, 600), 32,
 			false, false, false, 0);
 
 

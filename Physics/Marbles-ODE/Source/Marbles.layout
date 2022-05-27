@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
-	<ActiveTarget name="All" />
-	<File name="main.cpp" open="1" top="1" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="131" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="CMenu.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="4134" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="82" />
-		</Folding>
-	</File>
-	<File name="ode/IIrrOdeEntity.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="5698" topLine="19" />
-		</Cursor>
-		<Folding>
-			<Collapse line="144" />
-		</Folding>
-	</File>
+	<ActiveTarget name="default" />
 	<File name="CLevelData.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="89" topLine="0" />
@@ -31,10 +10,32 @@
 			<Collapse line="4" />
 		</Folding>
 	</File>
+	<File name="CGame.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="CMenu.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4134" topLine="56" />
+		</Cursor>
+		<Folding>
+			<Collapse line="82" />
+		</Folding>
+	</File>
+	<File name="ode/IIrrOdeEntity.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5698" topLine="181" />
+		</Cursor>
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="176" topLine="0" />
+		</Cursor>
+	</File>
 	<File name="ode/IIrrOdeBase.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="46" topLine="0" />
 		</Cursor>
 	</File>
-	<EditorTabsLayout layout="034b56e05dcc16c9000bfacc00000002=0;BulletByte Marbles:ode/IIrrOdeBase.h,1;BulletByte Marbles:ode/IIrrOdeEntity.cpp,2;BulletByte Marbles:CLevelData.cpp,3;BulletByte Marbles:CMenu.cpp,*4;BulletByte Marbles:main.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=758;besth=296;minw=758;minh=296;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=034b56e05dcc16c9000bfacc00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>

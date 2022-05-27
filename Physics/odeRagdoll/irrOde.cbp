@@ -38,15 +38,20 @@
 				<Compiler>
 					<Add directory="../../../../../Dev/libs/physics/ODE/ode-0.11/include" />
 					<Add directory="../../../../../Dev/libs/game/irrlicht/Irrlicht-SVN/include" />
+					<Add directory="../../../LunaLibs/ode-0.11.1/include" />
+					<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
 				</Compiler>
 				<Linker>
-					<Add library="GL" />
 					<Add library="Irrlicht" />
 					<Add library="Xxf86vm" />
 					<Add library="ode" />
 					<Add library="X11" />
+					<Add library="GL" />
 					<Add directory="../../../../../Dev/libs/physics/ODE/ode-0.11/ode/src/.libs" />
 					<Add directory="../../../../../Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux" />
+					<Add directory="../../../LunaLibs/ode-0.11.1/ode/src/.libs" />
+					<Add directory="../../../LunaLibs/ode-0.11.1/drawstuff/src/.libs" />
+					<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 				</Linker>
 			</Target>
 		</Build>
@@ -65,9 +70,6 @@
 			<Add directory="../../libs/ode-0.11/lib/DebugSingleDLL" />
 		</Linker>
 		<Unit filename="odeRagdoll.cpp" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

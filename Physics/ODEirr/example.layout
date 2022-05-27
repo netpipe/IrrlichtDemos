@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
-	<ActiveTarget name="All" />
-	<File name="globals.h" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<ActiveTarget name="default" />
+	<File name="globals.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="274" topLine="0" />
+			<Cursor1 position="512" topLine="0" />
 		</Cursor>
 	</File>
-	<EditorTabsLayout layout="01ecb1b05e3ef3c10033582c00000002=*0;ODEirr:globals.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=328;besth=341;minw=328;minh=341;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=01ecb1b05e3ef3c10033582c00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+	<File name="settings.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="138" />
+		</Cursor>
+	</File>
 </CodeBlocks_layout_file>

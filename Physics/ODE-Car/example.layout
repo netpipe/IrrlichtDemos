@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
-	<ActiveTarget name="All" />
-	<File name="src/cars/car_test.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<ActiveTarget name="default" />
+	<File name="src/cars/Car.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="766" topLine="0" />
+			<Cursor1 position="455" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="src/cars/GUI.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -17,14 +17,19 @@
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
+	<File name="src/cars/car_test.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="766" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/cars/Car.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1155" topLine="0" />
+		</Cursor>
+	</File>
 	<File name="src/cars/World.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="2867" topLine="24" />
-		</Cursor>
-	</File>
-	<File name="src/cars/Car.cpp" open="1" top="1" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="873" topLine="19" />
 		</Cursor>
 	</File>
 	<File name="src/cars/PhysicAnimator.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -32,20 +37,14 @@
 			<Cursor1 position="45" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cars/GameContext.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1387" topLine="15" />
-		</Cursor>
-	</File>
 	<File name="src/cars/PhysicAnimator.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src/cars/Car.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/cars/GameContext.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="455" topLine="0" />
+			<Cursor1 position="1387" topLine="15" />
 		</Cursor>
 	</File>
-	<EditorTabsLayout layout="03c4e9705e3eb859001f1ffb00000002=0;ODEirr:src/cars/PhysicAnimator.h,1;ODEirr:src/cars/World.cpp,2;ODEirr:src/cars/GUI.cpp,3;ODEirr:src/cars/GameContext.cpp,*4;ODEirr:src/cars/Car.cpp,5;ODEirr:src/cars/Car.h,6;ODEirr:src/cars/PhysicAnimator.cpp,7;ODEirr:src/cars/car_test.cpp,8;ODEirr:src/cars/GUI.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=814;besth=344;minw=814;minh=344;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03c4e9705e3eb859001f1ffb00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>
