@@ -1,0 +1,37 @@
+Author FuzzySpoon
+
+void C2DHudWindow::setVisible(bool trueFalse)
+{
+	if(mVisible) { fadingup = false; fading = true; } //shown, fade down
+	if(!mVisible) { fadingup = true; fading = true;  mVisible = true; } //hidden, fade up
+}
+ 
+void C2DHudWindow::render()
+{
+	if(fading && fadingup)
+	{
+		f32 result = 0.1f + ((opacity) * gEngine->SGEGfx()->gGetDeltaTime());
+		opacity = opacity + result;
+		if(opacity > 1.0f)
+		{ 
+			fading = false; 
+			fadingup = false; 
+			opacity = 1.0f; 
+		} 
+	}
+	if(fading && !fadingup)
+	{
+		f32 result = 0.1f + ((opacity) * gEngine->SGEGfx()->gGetDeltaTime());
+		opacity = opacity - result;
+		if(opacity <= 0.0f) 
+		{	
+			fading = false; 
+			fadingup = false; 
+			mVisible = false; 
+			opacity = 0.001f;
+		} 
+	}
+ 
+	mImg->setColor(video::SColor((u32)(255*opacity),255,255,255));
+	mImg->setVisible(mVisible);
+}

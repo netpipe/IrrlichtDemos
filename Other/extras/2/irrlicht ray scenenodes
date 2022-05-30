@@ -1,0 +1,15 @@
+18<25gingerheadman> ISceneNode* CMachinegun::getTargetSceneNode()
+18<25gingerheadman> {
+18<25gingerheadman>     // Create a line to work out where the gun hit
+18<25gingerheadman>     line3d<f32> ray;
+18<25gingerheadman>     ray.start = smgr->getActiveCamera()->getPosition();
+18<25gingerheadman>     ray.end = ray.start + (smgr->getActiveCamera()->getTarget() - ray.start).normalize() * 4000.0f;
+18<25gingerheadman>     vector3df intersection; // This is the point of impact
+18<25gingerheadman>     triangle3df tri;
+18<25gingerheadman>     ISceneNode* selectedSceneNode = smgr->getSceneCollisionManager()->
+18<25gingerheadman>             getSceneNodeAndCollisionPointFromRay(ray, intersection, tri);
+18<25gingerheadman>     return selectedSceneNode;
+
+
+SceneManager->getSceneCollisionManager()->getSceneNodeFromScreenCoordinatesBB(device->getCursorControl()->getPosition());
+            if(selectednode && selectednode->getType() == ESNT_BILLBOARD) 
