@@ -28,13 +28,15 @@
 		<Compiler>
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
 			<Add directory="../" />
+			<Add directory="../../../../LunaLibs/irrlicht-1.8.4/include" />
 		</Compiler>
 		<Linker>
-			<Add library="GL" />
 			<Add library="Irrlicht" />
 			<Add library="Xxf86vm" />
 			<Add library="X11" />
+			<Add library="GL" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+			<Add directory="../../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 		</Linker>
 		<Unit filename="../CScreenQuad.h" />
 		<Unit filename="../CShaderPre.cpp" />
@@ -45,10 +47,6 @@
 		<Unit filename="../EffectShaders.h" />
 		<Unit filename="../XEffects.h" />
 		<Unit filename="example.cpp" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-			<envvars />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

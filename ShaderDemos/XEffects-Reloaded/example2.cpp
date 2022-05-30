@@ -27,15 +27,15 @@ int main()
 
 	E_DRIVER_TYPE dType = EDT_OPENGL;
 
-	switch(C)
-	{
-	case '1':
-		dType = EDT_OPENGL;
-		break;
-	case '2':
-		dType = EDT_DIRECT3D9;
-		break;
-	}
+//	switch(C)
+//	{
+//	case '1':
+//		dType = EDT_OPENGL;
+//		break;
+//	case '2':
+//		dType = EDT_DIRECT3D9;
+//		break;
+//	}
 
 	std::cout	<< "Please select the ShadowMap resolution:\n"
 				<< "(For this demo a low resolution is recommended)\n"
@@ -74,7 +74,7 @@ int main()
 	std::cin >> C;
 
 	E_FILTER_TYPE filterType = (E_FILTER_TYPE)core::clamp<u32>((u32)C - '1', 0, 4);
-	
+
 	IrrlichtDevice* device = createDevice(dType, dimension2du(800,600), 32);
 
 	if(!device)
@@ -87,7 +87,7 @@ int main()
 	cam->setPosition(vector3df(0,10,0));
 	cam->setNearValue(0.1f);
 	cam->setFarValue(50);
-	
+
 	EffectHandler* effect = new EffectHandler(device, driver->getScreenSize());
 
 	IMeshSceneNode* room = smgr->addMeshSceneNode(smgr->getMesh("media/ShadRoom.b3d")->getMesh(0));
@@ -128,10 +128,10 @@ int main()
 	effect->addPostProcessingEffectFromFile(core::stringc("shaders/BloomP") + shaderExt);
 
 	u32 oldFps = 0;
-	
+
 	// A fairly close farValue is ok for this point light.
 	f32 farValue = 22.0f;
-	
+
 	// The FOV is nearly 90 degrees. I set it a little lower to make the seems less visible.
 	f32 fov = 89.99f * DEGTORAD;
 
@@ -139,14 +139,14 @@ int main()
 	// later in the draw loop.
 	for(u32 i = 0;i < 6;++i)
 	{
-		effect->addShadowLight(SShadowLight(shadowDimen.Width, vector3df(0,0,0), vector3df(0,0,0), 
+		effect->addShadowLight(SShadowLight(shadowDimen.Width, vector3df(0,0,0), vector3df(0,0,0),
 			SColor(0, 255, 0, 0), 1.0f, farValue, fov));
 	}
-	
+
 	// Make a little sphere to follow the light around.
 	ISceneNode* sphere = smgr->addSphereSceneNode(0.2f, 16, light);
 	sphere->getMaterial(0).Lighting = false;
-	
+
 	while(device->run())
 	{
 		if(oldFps != driver->getFPS())
@@ -160,7 +160,7 @@ int main()
 		// Set all the shadow lights to the same position as the light scene node.
 		for(u32 i = 0;i < 6;++i)
 			effect->getShadowLight(i).setPosition(light->getPosition());
-		
+
 		// So the idea here is to make each of the six lights face a different
 		// direction, since they all cover a 90.0 degree area, having six aligned
 		// correctly will cover the entire range visible from a single point.
@@ -170,7 +170,7 @@ int main()
 		effect->getShadowLight(3).setTarget(light->getPosition() + vector3df(-1,0,0));
 		effect->getShadowLight(4).setTarget(light->getPosition() + vector3df(0,1,0));
 		effect->getShadowLight(5).setTarget(light->getPosition() + vector3df(0,-1,0));
-		
+
 		driver->beginScene(true, true, SColor(0x0));
 
 		// effectHandler->update() now replaces smgr->drawAll()!

@@ -31,13 +31,13 @@ public:
 		this->rNode->setScale(irr::core::vector3df(0.0208f, 0.0208f, 0.0208f));
 		this->rNode->setPosition(irr::core::vector3df(10.008f, 0.008f, 10.008f));
 
-		irr::scene::ISceneNodeAnimator * anim = this->smgr->createFlyCircleAnimator(irr::core::vector3df(0, 1, 0), 2, 0.002);
-		if(anim) {
+		//irr::scene::ISceneNodeAnimator * anim = this->smgr->createFlyCircleAnimator(irr::core::vector3df(0, 1, 0), 2, 0.002);
+		//if(anim) {
 			//this->rNode->addAnimator(anim);
-			anim->drop();
-		}
+//			anim->drop();
+		//}
 
-		this->ehandler->addShadowToNode(this->rNode, EFT_16PCF, ESM_BOTH);
+		this->ehandler->addShadowToNode(this->rNode, EFT_4PCF, ESM_BOTH);
 
 		//this->ehandler->excludeNodeFromLightingCalculations(this->rNode);
 	}

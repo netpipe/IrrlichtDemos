@@ -15,12 +15,15 @@
 				<Compiler>
 					<Add option="-g" />
 					<Add directory="/home/Dev/libs/Irrlicht/include" />
+					<Add directory="/home/netpipe/Dev/irrlicht-1.8.5/include" />
 				</Compiler>
 				<Linker>
-					<Add library="GL" />
 					<Add library="Irrlicht" />
 					<Add library="Xxf86vm" />
+					<Add library="GL" />
+					<Add library="X11" />
 					<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
+					<Add directory="/home/netpipe/Dev/irrlicht-1.8.5/lib/Linux" />
 				</Linker>
 			</Target>
 			<Target title="Release">

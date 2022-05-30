@@ -138,12 +138,12 @@ int main()
 	// the shadow map overlay, the new additive system in XEffects which allows
 	// us to realitically utilize multiple lights. You can still choose to perform
 	// your own lighting alongside if you wish to however.
-	//rNode->getMaterial(0).Lighting = true;
+	rNode->getMaterial(0).Lighting = true;
 
 	// Add the room to the shadow node list, using the chosen filtertype.
 	// It will use the default shadow mode, ESM_BOTH, which allows it to
 	// both cast and receive shadows.
-	//effect->addShadowToNode(rNode, filterType);
+	effect->addShadowToNode(rNode, filterType);
 	effect->addShadowToNode(rNode, EFT_16PCF, ESM_BOTH);
 
 	// Set a global ambient color. A very dark gray.
@@ -187,9 +187,9 @@ int main()
 	// Add two light scene nodes. We will not actually use them for lighting in this
 	// demo, but add animators to them instead and make the shadow lights follow them.
 	ILightSceneNode* light = smgr->addLightSceneNode();
-	light->addAnimator(smgr->createFlyCircleAnimator(vector3df(5, 10, 5), 38));
+	light->addAnimator(smgr->createFlyCircleAnimator(vector3df(5, 6, 5), 38));
 	ILightSceneNode* light2 = smgr->addLightSceneNode();
-	light2->addAnimator(smgr->createFlyCircleAnimator(vector3df(5, 10, 5), 38, -0.001f));
+	light2->addAnimator(smgr->createFlyCircleAnimator(vector3df(5, 6, 5), 38, -0.001f));
 
 	// Add some post processing effects, a very subtle bloom here.
 	const stringc shaderExt = (driver->getDriverType() == EDT_DIRECT3D9) ? ".hlsl" : ".glsl";
