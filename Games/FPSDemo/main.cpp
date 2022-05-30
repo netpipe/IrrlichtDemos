@@ -5,6 +5,10 @@
 #include <string.h>
 #include "CHUD.h"
 
+
+// FPSDemo25 , just a simple FPS framework with lua support - incomplete and mostly for research
+
+
 //#include "world.cpp"
 
 using namespace std;
