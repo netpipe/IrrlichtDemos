@@ -18,7 +18,7 @@
 		</VirtualTargets>
 		<Compiler>
 			<Add directory="/home/Dev/libs/Irrlicht/include" />
-			<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
+			<Add directory="../../../../LunaLibs/irrlicht-1.8.4/include" />
 		</Compiler>
 		<Linker>
 			<Add library="Irrlicht" />
@@ -26,7 +26,7 @@
 			<Add library="GL" />
 			<Add library="X11" />
 			<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
-			<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
+			<Add directory="../../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 		</Linker>
 		<Unit filename="AgainstTheTide.cpp" />
 		<Unit filename="CWater.cpp" />
@@ -38,9 +38,10 @@
 		<Unit filename="XEffects/CScreenQuad.h" />
 		<Unit filename="XEffects/CShaderPre.cpp" />
 		<Unit filename="XEffects/CShaderPre.h" />
-		<Unit filename="XEffects/effectWrapper.cpp" />
-		<Unit filename="XEffects/effectWrapper.h" />
-		<Unit filename="XEffects/effectWrapperCB.h" />
+		<Unit filename="XEffects/EffectCB.h" />
+		<Unit filename="XEffects/EffectHandler.cpp" />
+		<Unit filename="XEffects/EffectHandler.h" />
+		<Unit filename="XEffects/EffectShaders.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
