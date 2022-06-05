@@ -133,7 +133,8 @@ int main()
 		room->getMaterial(0).Shininess = 0.f;
 
 		room->setMaterialFlag(video::EMF_FOG_ENABLE, true);
-		room->setMaterialType(video::EMT_PARALLAX_MAP_SOLID);
+	//	room->setMaterialType(video::EMT_PARALLAX_MAP_SOLID);
+		room->setMaterialType(video::EMT_NORMAL_MAP_SOLID);
 		// adjust height for parallax effect
 		room->getMaterial(0).MaterialTypeParam = 1.f / 64.f;
 
@@ -341,10 +342,27 @@ int main()
 
 	room->setPosition(core::vector3df(-200,-200,-200));
 
+//https://irrlicht.sourceforge.io/forum/viewtopic.php?p=266998&hilit=flashlight#p266998
+	scene::ILightSceneNode* flashlight = smgr->addLightSceneNode();
+                video::SLight flashlightData;
+                flashlightData.Direction= camera[0].getRotation();
+                flashlightData.OuterCone= 20;
+                flashlightData.Position= camera[0].getPosition();
+                flashlightData.Falloff= 30;
+                flashlightData.Type= video::ELT_SPOT;
+                flashlight->setLightData(flashlightData);
+                flashlight->setRadius(20);
+                flashlight->setParent(camera);
+
+
 	while(device->run())
 	if (device->isWindowActive())
 	{
 		driver->beginScene(true, true, 0);
+
+				                flashlightData.Direction= camera[0].getRotation();
+                flashlight->setLightData(flashlightData);
+
 
 		smgr->drawAll();
 
