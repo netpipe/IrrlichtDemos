@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TowerDefense_starterkit" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug_win32">
+				<Option platforms="Windows;" />
+				<Option output="bin/Debug/TowerDefense_starterkit" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add directory="$(#irrlicht.lib)" />
+				</Linker>
+			</Target>
+			<Target title="Release_win32">
+				<Option platforms="Windows;" />
+				<Option output="bin/TowerDefense_starterkit" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add directory="$(#irrlicht.lib)" />
+				</Linker>
+			</Target>
+			<Target title="Release_linux">
+				<Option platforms="Unix;" />
+				<Option output="bin/TowerDefense_starterkit" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/Release/unix/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="/home/Dev/libs/game/irrlicht-1.6/include" />
+					<Add directory="/home/netpipe/Dev/irrlicht-1.8.5/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="GL" />
+					<Add library="Xxf86vm" />
+					<Add library="X11" />
+					<Add directory="/home/Dev/libs/game/irrlicht-1.6/lib/Linux" />
+					<Add directory="/home/netpipe/Dev/irrlicht-1.8.5/lib/Linux" />
+				</Linker>
+			</Target>
+			<Target title="Debug_linux">
+				<Option platforms="Unix;" />
+				<Option output="bin/Debug/TowerDefense_starterkit" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/Debug/unix/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="/home/Dev/libs/game/irrlicht-1.6/include" />
+				</Compiler>
+				<Linker>
+					<Add library="GL" />
+					<Add library="Xxf86vm" />
+					<Add directory="/home/Dev/libs/game/irrlicht-1.6/lib/Linux" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="include" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+		</Linker>
+		<Unit filename="bin/scripts/hero.xml" />
+		<Unit filename="include/CApplication.h" />
+		<Unit filename="include/CComponent.h" />
+		<Unit filename="include/CComponentFactory.h" />
+		<Unit filename="include/CEditor.h" />
+		<Unit filename="include/CEnemyBehaviour.h" />
+		<Unit filename="include/CEnemyBehaviourFly.h" />
+		<Unit filename="include/CEnemyMovement.h" />
+		<Unit filename="include/CEntity.h" />
+		<Unit filename="include/CEntityManager.h" />
+		<Unit filename="include/CEventDispatcher.h" />
+		<Unit filename="include/CGame.h" />
+		<Unit filename="include/CHealthComponent.h" />
+		<Unit filename="include/CInput_catcher.h" />
+		<Unit filename="include/CMainMenu.h" />
+		<Unit filename="include/CMap.h" />
+		<Unit filename="include/CPlayer.h" />
+		<Unit filename="include/CSimpleGraphic.h" />
+		<Unit filename="include/CSpatialHash.h" />
+		<Unit filename="include/CSprite.h" />
+		<Unit filename="include/CState.h" />
+		<Unit filename="include/CStateFactory.h" />
+		<Unit filename="include/CStateManager.h" />
+		<Unit filename="include/CTile.h" />
+		<Unit filename="include/CTurretBehaviour.h" />
+		<Unit filename="include/CWaveSpawner.h" />
+		<Unit filename="include/Functor.h" />
+		<Unit filename="include/GameVariables.h" />
+		<Unit filename="include/PathNode.h" />
+		<Unit filename="include/Property.h" />
+		<Unit filename="include/gui_catch.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/CApplication.cpp" />
+		<Unit filename="src/CComponent.cpp" />
+		<Unit filename="src/CEditor.cpp" />
+		<Unit filename="src/CEnemyBehaviour.cpp" />
+		<Unit filename="src/CEnemyBehaviourFly.cpp" />
+		<Unit filename="src/CEnemyMovement.cpp" />
+		<Unit filename="src/CEntity.cpp" />
+		<Unit filename="src/CEntityManager.cpp" />
+		<Unit filename="src/CEventDispatcher.cpp" />
+		<Unit filename="src/CGame.cpp" />
+		<Unit filename="src/CHealthComponent.cpp" />
+		<Unit filename="src/CInput_catcher.cpp" />
+		<Unit filename="src/CMainMenu.cpp" />
+		<Unit filename="src/CMap.cpp" />
+		<Unit filename="src/CPlayer.cpp" />
+		<Unit filename="src/CSimpleGraphic.cpp" />
+		<Unit filename="src/CSpatialHash.cpp" />
+		<Unit filename="src/CSprite.cpp" />
+		<Unit filename="src/CState.cpp" />
+		<Unit filename="src/CStateManager.cpp" />
+		<Unit filename="src/CTile.cpp" />
+		<Unit filename="src/CTurretBehaviour.cpp" />
+		<Unit filename="src/CWaveSpawner.cpp" />
+		<Unit filename="src/PathNode.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
