@@ -67,8 +67,9 @@ int main()
 	has a specular light color which I don't really like. I'll switch it
 	off too with this code.
 	*/
+	device->getFileSystem()->addFileArchive("../../media/map-20kdm2.pk3");
 
-	scene::IAnimatedMesh* roomMesh = smgr->getMesh("../../media/room.3ds");
+	scene::IAnimatedMesh* roomMesh = smgr->getMesh("20kdm2.bsp");//smgr->getMesh("../../media/room.3ds");
 	scene::ISceneNode* room = 0;
 	scene::ISceneNode* earth = 0;
 
@@ -121,7 +122,8 @@ int main()
 		scene::IMesh* tangentMesh = smgr->getMeshManipulator()->
 				createMeshWithTangents(roomMesh->getMesh(0));
 
-		room = smgr->addMeshSceneNode(tangentMesh);
+		room = smgr->addOctreeSceneNode(tangentMesh, 0, -1, 1024);
+		//->addMeshSceneNode(tangentMesh);
 		room->setMaterialTexture(0,
 				driver->getTexture("../../media/rockwall.bmp"));
 		room->setMaterialTexture(1, normalMap);
@@ -336,6 +338,8 @@ int main()
 	device->getCursorControl()->setVisible(false);
 
 	s32 lastFPS = -1;
+
+	room->setPosition(core::vector3df(-200,-200,-200));
 
 	while(device->run())
 	if (device->isWindowActive())
