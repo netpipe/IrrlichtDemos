@@ -123,7 +123,7 @@ int main()
 
 		room = smgr->addMeshSceneNode(tangentMesh);
 		room->setMaterialTexture(0,
-				driver->getTexture("../../media/rockwall.jpg"));
+				driver->getTexture("../../media/rockwall.bmp"));
 		room->setMaterialTexture(1, normalMap);
 
 		// Stones don't glitter..
