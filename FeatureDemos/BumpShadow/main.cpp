@@ -351,9 +351,10 @@ node->setMaterialType(video::EMT_PARALLAX_MAP_SOLID);
                 flashlightData.OuterCone= 20;
                 flashlightData.Position= camera->getPosition();
                 flashlightData.Falloff= 30;
-                //flashlightData.Type= video::ELT_SPOT;
+                flashlightData.CastShadows=1;
+                flashlightData.Type= video::ELT_SPOT;
                 flashlight->setLightData(flashlightData);
-                flashlight->setRadius(20);
+                flashlight->setRadius(200);
                 flashlight->setParent(camera);
 
 
