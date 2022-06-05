@@ -345,10 +345,16 @@ node->setMaterialType(video::EMT_PARALLAX_MAP_SOLID);
 	room->setPosition(core::vector3df(-200,-200,-200));
 
 //https://irrlicht.sourceforge.io/forum/viewtopic.php?p=266998&hilit=flashlight#p266998
-	scene::ILightSceneNode* flashlight = smgr->addLightSceneNode();
+	scene::ILightSceneNode* flashlight = smgr->addLightSceneNode(0, core::vector3df(0,0,0),
+		video::SColorf(1.0f, 0.6f, 0.7f, 1.0f), 100.0f);
+
+		//smgr->addLightSceneNode();
                 video::SLight flashlightData;
                 flashlightData.Direction= camera->getRotation();
-                flashlightData.OuterCone= 20;
+                flashlightData.OuterCone= 40;
+                flashlightData.InnerCone = 10;
+//                flashlightData.OuterCone = (float)cos(flashlightData.OuterCone*3.141615926f/180.0f);
+//                flashlightData.InnerCone = (float)cos(flashlightData.InnerCone*3.141615926f/180.0f);
                 flashlightData.Position= camera->getPosition();
                 flashlightData.Falloff= 30;
                 flashlightData.CastShadows=1;
