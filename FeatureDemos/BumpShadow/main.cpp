@@ -25,12 +25,12 @@ using namespace irr;
 int main()
 {
 	// ask if user would like shadows
-	char i;
-	printf("Please press 'y' if you want to use realtime shadows.\n");
+	//char i;
+	//printf("Please press 'y' if you want to use realtime shadows.\n");
 
-	std::cin >> i;
+	//std::cin >> i;
 
-	const bool shadows = (i == 'y');
+	const bool shadows = 1;//(i == 'y');
 
 	// ask user for driver
 	video::E_DRIVER_TYPE driverType=driverChoiceConsole();
@@ -119,6 +119,7 @@ int main()
 		EMF_FOG_ENABLE to true to enable fog in the room.
 		*/
 
+
 		scene::IMesh* tangentMesh = smgr->getMeshManipulator()->
 				createMeshWithTangents(roomMesh->getMesh(0));
 
@@ -137,7 +138,7 @@ int main()
 		//room->setMaterialType(video::EMT_NORMAL_MAP_SOLID);
 		// adjust height for parallax effect
 		room->getMaterial(0).MaterialTypeParam = 1.f / 64.f;
-
+room->setMaterialFlag(video::EMF_LIGHTING, true);
 		// drop mesh because we created it with a create.. call.
 		tangentMesh->drop();
 	}
@@ -165,6 +166,7 @@ int main()
 	node->setMaterialTexture(1, driver->getTexture("../../media/water.jpg"));
 
 	//node->setMaterialType(video::EMT_REFLECTION_2_LAYER);
+//node->setMaterialType(video::EMT_NORMAL_MAP_SOLID);
 node->setMaterialType(video::EMT_PARALLAX_MAP_SOLID);
 	/*
 	The second special effect is very basic, I bet you saw it already in
@@ -345,9 +347,9 @@ node->setMaterialType(video::EMT_PARALLAX_MAP_SOLID);
 //https://irrlicht.sourceforge.io/forum/viewtopic.php?p=266998&hilit=flashlight#p266998
 	scene::ILightSceneNode* flashlight = smgr->addLightSceneNode();
                 video::SLight flashlightData;
-                flashlightData.Direction= camera[0].getRotation();
+                flashlightData.Direction= camera->getRotation();
                 flashlightData.OuterCone= 20;
-                flashlightData.Position= camera[0].getPosition();
+                flashlightData.Position= camera->getPosition();
                 flashlightData.Falloff= 30;
                 //flashlightData.Type= video::ELT_SPOT;
                 flashlight->setLightData(flashlightData);
@@ -360,7 +362,8 @@ node->setMaterialType(video::EMT_PARALLAX_MAP_SOLID);
 	{
 		driver->beginScene(true, true, 0);
 
-				                flashlightData.Direction= camera[0].getRotation();
+		flashlightData.Position= camera->getPosition();
+				flashlightData.Direction= camera->getRotation();
                 flashlight->setLightData(flashlightData);
 
 
