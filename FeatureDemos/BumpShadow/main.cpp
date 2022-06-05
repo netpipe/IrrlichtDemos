@@ -133,8 +133,8 @@ int main()
 		room->getMaterial(0).Shininess = 0.f;
 
 		room->setMaterialFlag(video::EMF_FOG_ENABLE, true);
-	//	room->setMaterialType(video::EMT_PARALLAX_MAP_SOLID);
-		room->setMaterialType(video::EMT_NORMAL_MAP_SOLID);
+		room->setMaterialType(video::EMT_PARALLAX_MAP_SOLID);
+		//room->setMaterialType(video::EMT_NORMAL_MAP_SOLID);
 		// adjust height for parallax effect
 		room->getMaterial(0).MaterialTypeParam = 1.f / 64.f;
 
@@ -164,8 +164,8 @@ int main()
 	node->setMaterialTexture(0, driver->getTexture("../../media/stones.jpg"));
 	node->setMaterialTexture(1, driver->getTexture("../../media/water.jpg"));
 
-	node->setMaterialType(video::EMT_REFLECTION_2_LAYER);
-
+	//node->setMaterialType(video::EMT_REFLECTION_2_LAYER);
+node->setMaterialType(video::EMT_PARALLAX_MAP_SOLID);
 	/*
 	The second special effect is very basic, I bet you saw it already in
 	some Irrlicht Engine demos: A transparent billboard combined with a
@@ -349,7 +349,7 @@ int main()
                 flashlightData.OuterCone= 20;
                 flashlightData.Position= camera[0].getPosition();
                 flashlightData.Falloff= 30;
-                flashlightData.Type= video::ELT_SPOT;
+                //flashlightData.Type= video::ELT_SPOT;
                 flashlight->setLightData(flashlightData);
                 flashlight->setRadius(20);
                 flashlight->setParent(camera);
@@ -380,6 +380,7 @@ int main()
 			device->setWindowCaption(str.c_str());
 			lastFPS = fps;
 		}
+		device->sleep(30);
 	}
 
 	device->drop();
