@@ -19,7 +19,7 @@ public:
 	IC_MessageSink();
 	//! destructor
 	virtual ~IC_MessageSink();
-	
+
 	//! log a UTF-8 message to the sink
 	void logMessage_ANSI(irr::ELOG_LEVEL logLevel, const String message);
 	//! log a UTF-8 message to the sink at info log level
@@ -29,7 +29,7 @@ public:
 	//! log a UTF-8 message to the sink at error log level
 	void logError_ANSI(const String message);
 
-	//! log a UTF-16 message to the sink 
+	//! log a UTF-16 message to the sink
 	void logMessage(irr::ELOG_LEVEL logLevel,const WideString message);
 	//! log a UTF-16 message to the sink at info log level
 	void logInfo(const WideString message);
@@ -37,8 +37,8 @@ public:
 	void logWarning(const WideString message);
 	//! log a UTF-16 message to the sink at error log level
 	void logError(const WideString message);
-	
-	
+
+
 	//! get a string for a log level
 	virtual const WideString getLevelTag(irr::ELOG_LEVEL logLevel);
 	//! add a UTF-16 message to the sink
@@ -56,10 +56,10 @@ class IC_Command
 public:
 	//! the destructor
 	virtual ~IC_Command();
-	
+
 	//! invoke the command with supplied args
 	virtual bool invoke(const array<WideString>& args, IC_Dispatcher* pDispatcher, IC_MessageSink* pOutput)=0;
-	
+
 	//! get command name
 	const WideString getName();
 	//! get the usage string for the command
@@ -218,7 +218,7 @@ public:
 	//! get the console config reference
 	IC_ConsoleConfig& getConfig();
 	//! (re)initialize the console with current config
-	void initializeConsole(irr::gui::IGUIEnvironment* guienv, const irr::core::dimension2d<s32>& screenSize);
+	void initializeConsole(irr::gui::IGUIEnvironment* guienv, const irr::core::dimension2d<u32>& screenSize);
 
 	//! loads a few default commands into the console
 	void loadDefaultCommands(irr::IrrlichtDevice* device);
@@ -238,7 +238,7 @@ public:
 	void clearMessages();
 
 	//
-	//	console rendering 
+	//	console rendering
 	//
 
 	//! render the console (it internally checks if the console is visible)
@@ -257,7 +257,7 @@ private:
 	//! add a line to history
 	void addToHistory(WideString& line);
 	//! calculate the whole console rect
-	void calculateConsoleRect(const irr::core::dimension2d<s32>& screenSize);
+	void calculateConsoleRect(const irr::core::dimension2d<u32>& screenSize);
 	//! calculate the messages rect and prompt / shell rect
 	void calculatePrintRects(rect<s32>& textRect,rect<s32>& shellRect);
 	//! calculate the various limits of the console
@@ -269,10 +269,10 @@ private:
 
 	//! console config data
 	IC_ConsoleConfig consoleConfig;
-	
+
 	//! visibility flag
 	bool bVisible;
-	
+
 	//! the font of the console
 	irr::gui::IGUIFont* guiFont;
 

@@ -73,6 +73,7 @@
 			<Add directory="libraries/KissFFT-1.3.0" />
 			<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/games/Luna/LunaLibs/irrlicht-1.8.4/include" />
 			<Add directory="libraries/audiere/audiere/src" />
+			<Add directory="../../../irrlicht-1.8.5/include" />
 		</Compiler>
 		<ResourceCompiler>
 			<Add directory="bin" />

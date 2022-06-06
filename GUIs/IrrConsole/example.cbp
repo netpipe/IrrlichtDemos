@@ -18,12 +18,15 @@
 		</VirtualTargets>
 		<Compiler>
 			<Add directory="/home/Dev/libs/Irrlicht/include" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
 		</Compiler>
 		<Linker>
-			<Add library="GL" />
 			<Add library="Irrlicht" />
 			<Add library="Xxf86vm" />
+			<Add library="X11" />
+			<Add library="GL" />
 			<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 		</Linker>
 		<Unit filename="IrrConsole/console.h" />
 		<Unit filename="IrrConsole/defaultCmds.h" />
@@ -36,9 +39,6 @@
 		<Unit filename="nodeViewer.cpp" />
 		<Unit filename="testApp.cpp" />
 		<Unit filename="utils.cpp" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

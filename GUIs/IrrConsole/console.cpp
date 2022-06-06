@@ -211,7 +211,7 @@ bool IC_Dispatcher::hasCommand(const WideString cmdName)
 }
 //=========================================================================================
 //! dispatch a command with the name and the supplied args
-void IC_Dispatcher::dispatch(const WideString cmdName, const array<WideString>& args, IC_MessageSink* pOutput)
+void IC_Dispatcher::dispatch(const WideString cmdName, const irr::core::array<WideString>& args, IC_MessageSink* pOutput)
 {
 	map<WideString,IC_Command*>::iterator iter = commandTable.find(cmdName);
 	if(iter != commandTable.end())
@@ -274,7 +274,7 @@ void IC_Dispatcher::deregisterAllCommands()
 }
 //=========================================================================================
 //! get the list of registered commands
-u32  IC_Dispatcher::getRegisteredCommands(array<WideString>& cmdNames)
+u32  IC_Dispatcher::getRegisteredCommands(irr::core::array<WideString>& cmdNames)
 {
 	cmdNames.clear();
 	map<WideString,IC_Command*>::iterator iter = commandTable.begin();
@@ -291,7 +291,7 @@ u32  IC_Dispatcher::getRegisteredCommands(array<WideString>& cmdNames)
 //! print a list of commands
 void IC_Dispatcher::printCommandList(IC_MessageSink* pOutput, bool bUsage)
 {
-	array<WideString> cmdNames;
+	irr::core::array<WideString> cmdNames;
 	getRegisteredCommands(cmdNames);
 
 	for(u32 i = 0; i < cmdNames.size(); i++)
@@ -352,7 +352,7 @@ IC_ConsoleConfig& IC_Console::getConfig()
 }
 //=========================================================================================
 //! (re)initialize the console with current config
-void IC_Console::initializeConsole(irr::gui::IGUIEnvironment* guienv, const irr::core::dimension2d<s32>& screenSize)
+void IC_Console::initializeConsole(irr::gui::IGUIEnvironment* guienv, const irr::core::dimension2du& screenSize)
 {
 	//load the font
 	guiFont = guienv->getFont(consoleConfig.fontName.c_str());
@@ -598,7 +598,7 @@ void IC_Console::handleCommandString(WideString& wstr)
 
 		//parsing logic
 
-		array<WideString> args;
+		irr::core::array<WideString> args;
 		WideString cmdName;
 		IC_CmdLineParser parser(cmdLine);
 		if(parser.parse(cmdName,args))
@@ -630,7 +630,7 @@ void IC_Console::addToHistory(WideString& wstr)
 }
 //=========================================================================================
 //! calculate the whole console rect
-void IC_Console::calculateConsoleRect(const irr::core::dimension2d<s32>& screenSize)
+void IC_Console::calculateConsoleRect(const irr::core::dimension2d<u32>& screenSize)
 {
 	if(consoleConfig.dimensionRatios.X == 0 || consoleConfig.dimensionRatios.Y == 0)
 	{
@@ -639,7 +639,7 @@ void IC_Console::calculateConsoleRect(const irr::core::dimension2d<s32>& screenS
 	else
 	{
 		//calculate console dimension
-		dimension2d<s32> consoleDim = screenSize;
+		dimension2d<u32> consoleDim = screenSize;
 		consoleDim.Width = (s32)((f32)consoleDim.Width  * consoleConfig.dimensionRatios.X);
 		consoleDim.Height= (s32)((f32)consoleDim.Height * consoleConfig.dimensionRatios.Y);
 
@@ -739,7 +739,7 @@ void IC_Console::tabComplete()
 		return;
 	}
 	WideString ccStr = currentCommand.subString(1,currentCommand.size() - 1);
-	array<WideString> names;
+	irr::core::array<WideString> names;
 	getRegisteredCommands(names);
 	for(u32 i = 0; i < names.size(); i++)
 	{

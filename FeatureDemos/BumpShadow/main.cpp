@@ -33,9 +33,9 @@ int main()
 	const bool shadows = 1;//(i == 'y');
 
 	// ask user for driver
-	video::E_DRIVER_TYPE driverType=driverChoiceConsole();
-	if (driverType==video::EDT_COUNT)
-		return 1;
+//	video::E_DRIVER_TYPE driverType=driverChoiceConsole();
+//	if (driverType==video::EDT_COUNT)
+//		return 1;
 
 
 	/*
@@ -44,7 +44,7 @@ int main()
 	*/
 
 	IrrlichtDevice *device =
-		createDevice(driverType, core::dimension2d<u32>(640, 480),
+		createDevice(video::EDT_OPENGL, core::dimension2d<u32>(640, 480),
 		16, false, shadows);
 
 	if (device == 0)
@@ -52,7 +52,13 @@ int main()
 
 	video::IVideoDriver* driver = device->getVideoDriver();
 	scene::ISceneManager* smgr = device->getSceneManager();
-	driver->setFog(video::SColor(0,138,125,81), video::EFT_FOG_LINEAR, 250, 1000, .003f, true, false);
+//	driver->setFog(video::SColor(0,138,125,81), video::EFT_FOG_LINEAR, 250, 1000, .003f, true, false);
+
+
+
+	scene::ICameraSceneNode* camera = smgr->addCameraSceneNodeFPS();
+	camera->setPosition(core::vector3df(-50,50,-150));
+	camera->setFarValue(10000.0f); // this increase a shadow visible range.
 
 	/*
 	For our environment, we load a .3ds file. It is a small room I modelled
@@ -133,7 +139,7 @@ int main()
 		room->getMaterial(0).SpecularColor.set(0,0,0,0);
 		room->getMaterial(0).Shininess = 0.f;
 
-		room->setMaterialFlag(video::EMF_FOG_ENABLE, true);
+		//room->setMaterialFlag(video::EMF_FOG_ENABLE, true);
 		room->setMaterialType(video::EMT_PARALLAX_MAP_SOLID);
 		//room->setMaterialType(video::EMT_NORMAL_MAP_SOLID);
 		// adjust height for parallax effect
@@ -177,12 +183,14 @@ node->setMaterialType(video::EMT_PARALLAX_MAP_SOLID);
 
 	// create light
 
-	node = smgr->addLightSceneNode(0, core::vector3df(0,0,0),
+	scene::ISceneNode* lnode = smgr->addLightSceneNode(0, core::vector3df(0,150,0),
 		video::SColorf(1.0f, 0.6f, 0.7f, 1.0f), 800.0f);
 	scene::ISceneNodeAnimator* anim = 0;
 	anim = smgr->createFlyCircleAnimator (core::vector3df(0,150,0),250.0f);
-	node->addAnimator(anim);
+	lnode->addAnimator(anim);
 	anim->drop();
+//	 lnode->setParent(camera);
+	// video::ELT_SPOT;
 
 	// attach billboard to light
 
@@ -262,38 +270,38 @@ node->setMaterialType(video::EMT_PARALLAX_MAP_SOLID);
 	texture for the desired effect, though this time we'll use a texture animator
 	to create the illusion of a magical glowing area effect.
 	*/
-	scene::IVolumeLightSceneNode * n = smgr->addVolumeLightSceneNode(0, -1,
-				32,                              // Subdivisions on U axis
-				32,                              // Subdivisions on V axis
-				video::SColor(0, 255, 255, 255), // foot color
-				video::SColor(0, 0, 0, 0));      // tail color
-
-	if (n)
-	{
-		n->setScale(core::vector3df(56.0f, 56.0f, 56.0f));
-		n->setPosition(core::vector3df(-120,50,40));
-
-		// load textures for animation
-		core::array<video::ITexture*> textures;
-		for (s32 g=7; g > 0; --g)
-		{
-			core::stringc tmp;
-			tmp = "../../media/portal";
-			tmp += g;
-			tmp += ".bmp";
-			video::ITexture* t = driver->getTexture( tmp.c_str() );
-			textures.push_back(t);
-		}
-
-		// create texture animator
-		scene::ISceneNodeAnimator* glow = smgr->createTextureAnimator(textures, 150);
-
-		// add the animator
-		n->addAnimator(glow);
-
-		// drop the animator because it was created with a create() function
-		glow->drop();
-	}
+//	scene::IVolumeLightSceneNode * n = smgr->addVolumeLightSceneNode(0, -1,
+//				32,                              // Subdivisions on U axis
+//				32,                              // Subdivisions on V axis
+//				video::SColor(0, 255, 255, 255), // foot color
+//				video::SColor(0, 0, 0, 0));      // tail color
+//
+//	if (n)
+//	{
+//		n->setScale(core::vector3df(56.0f, 56.0f, 56.0f));
+//		n->setPosition(core::vector3df(-120,50,40));
+//
+//		// load textures for animation
+//		core::array<video::ITexture*> textures;
+//		for (s32 g=7; g > 0; --g)
+//		{
+//			core::stringc tmp;
+//			tmp = "../../media/portal";
+//			tmp += g;
+//			tmp += ".bmp";
+//			video::ITexture* t = driver->getTexture( tmp.c_str() );
+//			textures.push_back(t);
+//		}
+//
+//		// create texture animator
+//		scene::ISceneNodeAnimator* glow = smgr->createTextureAnimator(textures, 150);
+//
+//		// add the animator
+//		n->addAnimator(glow);
+//
+//		// drop the animator because it was created with a create() function
+//		glow->drop();
+//	}
 
 	/*
 	As our last special effect, we want a dynamic shadow be casted from an
@@ -333,10 +341,6 @@ node->setMaterialType(video::EMT_PARALLAX_MAP_SOLID);
 	Finally we simply have to draw everything, that's all.
 	*/
 
-	scene::ICameraSceneNode* camera = smgr->addCameraSceneNodeFPS();
-	camera->setPosition(core::vector3df(-50,50,-150));
-	camera->setFarValue(10000.0f); // this increase a shadow visible range.
-
 	// disable mouse cursor
 	device->getCursorControl()->setVisible(false);
 
@@ -346,35 +350,44 @@ node->setMaterialType(video::EMT_PARALLAX_MAP_SOLID);
 
 //https://irrlicht.sourceforge.io/forum/viewtopic.php?p=266998&hilit=flashlight#p266998
 	scene::ILightSceneNode* flashlight = smgr->addLightSceneNode(0, core::vector3df(0,0,0),
-		video::SColorf(1.0f, 0.6f, 0.7f, 1.0f), 100.0f);
+		video::SColorf(1.0f, 0.6f, 0.7f, 0.0f), 1000.0f);
 
 		//smgr->addLightSceneNode();
                 video::SLight flashlightData;
                 flashlightData.Direction= camera->getRotation();
                 flashlightData.OuterCone= 40;
-                flashlightData.InnerCone = 10;
+                flashlightData.InnerCone = 20;
 //                flashlightData.OuterCone = (float)cos(flashlightData.OuterCone*3.141615926f/180.0f);
 //                flashlightData.InnerCone = (float)cos(flashlightData.InnerCone*3.141615926f/180.0f);
                 flashlightData.Position= camera->getPosition();
-                flashlightData.Falloff= 30;
+                flashlightData.Falloff= 5;
                 flashlightData.CastShadows=1;
                 flashlightData.Type= video::ELT_SPOT;
                 flashlight->setLightData(flashlightData);
-                flashlight->setRadius(200);
-                flashlight->setParent(camera);
-
+                flashlight->setRadius(20);
+             //   flashlight->setParent(camera);
+             flashlight->setMaterialFlag(video::EMF_NORMALIZE_NORMALS, true);
+flashlight->setVisible(1);
+        //        lnode->setLightData(flashlightData);
 
 	while(device->run())
 	if (device->isWindowActive())
 	{
 		driver->beginScene(true, true, 0);
 
-		flashlightData.Position= camera->getPosition();
-				flashlightData.Direction= camera->getRotation();
-                flashlight->setLightData(flashlightData);
+
+//flashlight->updateAbsolutePosition();
+//                lnode->setPosition(camera->getPosition());
+//                lnode->setRotation(camera->getRotation());
+
 
 
 		smgr->drawAll();
+                flashlightData.Position= camera->getPosition();
+				flashlightData.Direction= camera->getTarget();//camera->getRotation();
+                flashlight->setLightData(flashlightData);
+ flashlight->setPosition(camera->getPosition());
+ flashlight->setRotation(camera->getRotation());
 
 		driver->endScene();
 

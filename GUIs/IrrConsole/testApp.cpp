@@ -171,7 +171,7 @@ void hideNode()
 void drawCaptions()
 {
 	static const irr::video::SColor fontColor(200,200,200,200);
-	dimension2d<s32> screenDim = device->getVideoDriver()->getScreenSize();
+	dimension2d<u32> screenDim = device->getVideoDriver()->getScreenSize();
 	rect<s32> lineRect(10,10,screenDim.Width, screenDim.Height);
 	for(u32 i = 0; i < captionText.size(); i++)
 	{
@@ -235,7 +235,7 @@ int main()
 
 	irr::video::E_DRIVER_TYPE driverType = irr::video::EDT_OPENGL;
 	s32 bitsPerPixel = 32;
-	dimension2d<s32> screenDim(800,600);
+	irr::core::dimension2du screenDim(800,600);
 	bool fullscreen = false;
 	bool stencil = true;
 	bool vsync = false;
