@@ -309,7 +309,7 @@
 
         while (device->run())
         {
-            driver->beginScene(video::ECBF_COLOR | video::ECBF_DEPTH, video::SColor(255,113,113,133));
+            driver->beginScene();
               //   driver->beginScene(true, true, 0);
             currentTime = device->getTimer()->getTime();
 
