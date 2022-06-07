@@ -15,7 +15,7 @@ using namespace video;
 
 int main()
 {
-	IrrlichtDevice* device = createDevice( video::EDT_OPENGL, core::dimension2d<s32>(640, 480),
+	IrrlichtDevice* device = createDevice( video::EDT_OPENGL, core::dimension2d<u32>(640, 480),
 		16, false, false, false);
 
 	if (device == 0)

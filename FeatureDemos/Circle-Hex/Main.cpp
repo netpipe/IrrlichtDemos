@@ -10,11 +10,13 @@ using namespace scene;
 int main()
 {
 
-	IrrlichtDevice* device = createDevice(EDT_OPENGL, dimension2d<s32>(800, 600), 32, false, true, true, 0);
+	IrrlichtDevice* device = createDevice(EDT_OPENGL, dimension2d<u32>(800, 600), 32, false, true, true, 0);
 	IVideoDriver* driver = device->getVideoDriver();
     irr::scene::ISceneManager* smgr = device->getSceneManager();
 
 	device->setWindowCaption(L"Hexagon Grid");
+
+	int t = 3.14;
 
     smgr->addCameraSceneNodeFPS();
 
@@ -38,8 +40,8 @@ circleNode->drop();
 
 SMaterial NM;
 NM.EmissiveColor = SColor(255, 255,0,0);
-circleNode->setMaterialFlag(EMF_LIGHTING, false);
-circleNode->setMaterial(NM);
+c->setMaterialFlag(EMF_LIGHTING, false);
+c->setMaterial(NM);
 
 	while(device->run())
 	{
