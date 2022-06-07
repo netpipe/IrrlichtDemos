@@ -10,7 +10,7 @@ using namespace io;
 using namespace gui;
 
 int main(int argc, char** argv) {
-  IrrlichtDevice *device=createDevice(EDT_OPENGL,dimension2d<s32>(1024,600),16,false,false,false,0);
+  IrrlichtDevice *device=createDevice(EDT_OPENGL,dimension2d<u32>(1024,600),16,false,false,false,0);
 
   device->setWindowCaption(L"FollowPathAnimator");
 
