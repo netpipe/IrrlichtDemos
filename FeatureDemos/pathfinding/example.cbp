@@ -18,6 +18,7 @@
 		</VirtualTargets>
 		<Compiler>
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
 		</Compiler>
 		<Linker>
 			<Add library="Irrlicht" />
@@ -25,6 +26,7 @@
 			<Add library="GL" />
 			<Add library="Xxf86vm" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 		</Linker>
 		<Unit filename="catmull_rom.cpp" />
 		<Unit filename="catmull_rom.h" />
@@ -43,10 +45,6 @@
 		<Unit filename="simple_util.cpp" />
 		<Unit filename="simple_util.h" />
 		<Unit filename="stlastar.h" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-			<envvars />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
