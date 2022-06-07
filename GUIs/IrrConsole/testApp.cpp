@@ -314,6 +314,7 @@ int main()
 		{
 			setRunning(false);
 		}
+		device->sleep(1);
 	}
 
 }

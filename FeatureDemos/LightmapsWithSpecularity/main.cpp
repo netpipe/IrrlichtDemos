@@ -17,7 +17,7 @@ int main()
 
 	// create device and exit if creation failed
 	IrrlichtDevice *device =
-		createDevice(driverType, core::dimension2d<s32>(640, 480),
+		createDevice(driverType, core::dimension2d<u32>(640, 480),
 		16, false, false);
 
 	if (device == 0)
@@ -31,7 +31,7 @@ int main()
 
     video::IGPUProgrammingServices* gpu = driver->getGPUProgrammingServices();
 	// create offscreen render target
-	ITexture *tex_offscr = driver->createRenderTargetTexture(core::dimension2d<s32>(256,256));
+	ITexture *tex_offscr = driver->addRenderTargetTexture(core::dimension2d<u32>(256,256));
 
 
 	// glass shader
@@ -69,7 +69,10 @@ int main()
 	{
       IMeshBuffer *imb = m->getMeshBuffer(mb);
 	  char sbuf[255];
-	  strcpy(sbuf, imb->getMaterial().getTexture(0)->getName().c_str());
+	  core::stringc test;
+	  irr::io::SNamedPath test2 = imb->getMaterial().getTexture(0)->getName();
+	  test=test2;
+	  strcpy(sbuf, test.c_str());
 	  char C[2];
 	  C[1] = NULL;
 	  char pure_fn[255];
@@ -97,8 +100,10 @@ int main()
 		continue;
 	  }
 
+	 test2 = imb->getMaterial().getTexture(0)->getName();
+	  test=test2;
 
-	  strcpy(sbuf,imb->getMaterial().getTexture(0)->getName().c_str());
+	  strcpy(sbuf,test.c_str());
 	  imb->getMaterial().setFlag(video::EMF_LIGHTING , false);
 	  if (no_specular) continue;
 	  imb->getMaterial().MaterialType = (video::E_MATERIAL_TYPE)material;

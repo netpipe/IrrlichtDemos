@@ -192,6 +192,13 @@ node->setMaterialType(video::EMT_PARALLAX_MAP_SOLID);
 //	 lnode->setParent(camera);
 	// video::ELT_SPOT;
 
+		lnode = smgr->addLightSceneNode(0, core::vector3df(0,250,0),
+		video::SColorf(1.0f, 0.6f, 0.7f, 1.0f), 800.0f);
+	scene::ISceneNodeAnimator* anim2 = 0;
+	anim2 = smgr->createFlyCircleAnimator (core::vector3df(100,150,100),250.0f);
+	lnode->addAnimator(anim2);
+	anim2->drop();
+
 	// attach billboard to light
 
 	node = smgr->addBillboardSceneNode(node, core::dimension2d<f32>(50, 50));
@@ -331,6 +338,9 @@ node->setMaterialType(video::EMT_PARALLAX_MAP_SOLID);
 	// add shadow
 	anode->addShadowVolumeSceneNode();
 	smgr->setShadowColor(video::SColor(150,0,0,0));
+	//smgr->setOptimization(scene::ESV_NONE);
+
+//IShadowVolumeSceneNode::setOptimization set to ESV_NONE
 
 	// make the model a little bit bigger and normalize its normals
 	// because of the scaling, for correct lighting
@@ -350,10 +360,11 @@ node->setMaterialType(video::EMT_PARALLAX_MAP_SOLID);
 
 //https://irrlicht.sourceforge.io/forum/viewtopic.php?p=266998&hilit=flashlight#p266998
 	scene::ILightSceneNode* flashlight = smgr->addLightSceneNode(0, core::vector3df(0,0,0),
-		video::SColorf(1.0f, 0.6f, 0.7f, 0.0f), 1000.0f);
+		video::SColorf(1.0f, 0.6f, 0.7f, 0.0f), 100.0f);
 
-		//smgr->addLightSceneNode();
+//	smgr->addLightSceneNode(flashlight);
                 video::SLight flashlightData;
+            //    flashlightData.Direction= camera->getTarget();//camera->getRotation();
                 flashlightData.Direction= camera->getRotation();
                 flashlightData.OuterCone= 40;
                 flashlightData.InnerCone = 20;
@@ -361,33 +372,35 @@ node->setMaterialType(video::EMT_PARALLAX_MAP_SOLID);
 //                flashlightData.InnerCone = (float)cos(flashlightData.InnerCone*3.141615926f/180.0f);
                 flashlightData.Position= camera->getPosition();
                 flashlightData.Falloff= 5;
-                flashlightData.CastShadows=1;
+               // flashlightData.CastShadows=1;
                 flashlightData.Type= video::ELT_SPOT;
                 flashlight->setLightData(flashlightData);
-                flashlight->setRadius(20);
-             //   flashlight->setParent(camera);
-             flashlight->setMaterialFlag(video::EMF_NORMALIZE_NORMALS, true);
-flashlight->setVisible(1);
+                flashlight->setRadius(80);
+            //    flashlight->setParent(camera);
+            // flashlight->setMaterialFlag(video::EMF_NORMALIZE_NORMALS, true);
+            flashlight->setVisible(1);
+
         //        lnode->setLightData(flashlightData);
 
 	while(device->run())
 	if (device->isWindowActive())
 	{
-		driver->beginScene(true, true, 0);
+		driver->beginScene();
 
 
 //flashlight->updateAbsolutePosition();
 //                lnode->setPosition(camera->getPosition());
 //                lnode->setRotation(camera->getRotation());
-
+//                flashlightData.Position= camera->getPosition();
+//			//	flashlightData.Direction= camera->getTarget();//camera->getRotation();
+//				flashlightData.Direction= camera->getRotation();
+//                flashlight->setLightData(flashlightData);
+// flashlight->setPosition(camera->getPosition());
+// flashlight->setRotation(camera->getRotation());
 
 
 		smgr->drawAll();
-                flashlightData.Position= camera->getPosition();
-				flashlightData.Direction= camera->getTarget();//camera->getRotation();
-                flashlight->setLightData(flashlightData);
- flashlight->setPosition(camera->getPosition());
- flashlight->setRotation(camera->getRotation());
+
 
 		driver->endScene();
 
