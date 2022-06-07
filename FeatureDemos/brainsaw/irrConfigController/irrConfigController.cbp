@@ -38,12 +38,14 @@
 				<Option projectLinkerOptionsRelation="1" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="../../../../LunaLibs/irrlicht-1.8.4/include" />
 				</Compiler>
 				<Linker>
 					<Add library="Irrlicht" />
 					<Add library="Xxf86vm" />
 					<Add library="GL" />
 					<Add library="X11" />
+					<Add directory="../../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 				</Linker>
 			</Target>
 		</Build>
