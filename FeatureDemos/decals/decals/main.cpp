@@ -88,6 +88,8 @@ int main()
 
 ISceneNode* outNode;
 
+    camera->setPosition(vector3df(1,200,1));
+
 	while(device->run())
 	{
 		driver->beginScene(true, true, SColor(255,100,101,140));

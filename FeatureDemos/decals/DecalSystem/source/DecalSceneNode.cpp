@@ -43,7 +43,7 @@ DecalSceneNode::DecalSceneNode(scene::ISceneNode* parent, scene::ISceneManager* 
 	material.Lighting = false;
 	material.BackfaceCulling = false;
 	material.MaterialType = irr::video::EMT_TRANSPARENT_ALPHA_CHANNEL;
-	material.MaterialTypeParam = irr::video::pack_texureBlendFunc(irr::video::EBF_SRC_ALPHA, irr::video::EBF_ONE_MINUS_SRC_ALPHA, irr::video::EMFN_MODULATE_1X, irr::video::EAS_TEXTURE | irr::video::EAS_VERTEX_COLOR);
+///	material.MaterialTypeParam = irr::video::pack_texureBlendFunc(irr::video::EBF_SRC_ALPHA, irr::video::EBF_ONE_MINUS_SRC_ALPHA, irr::video::EMFN_MODULATE_1X, irr::video::EAS_TEXTURE | irr::video::EAS_VERTEX_COLOR);
 
 	material.TextureLayer[0].TextureWrapU = video::ETC_CLAMP_TO_BORDER;
 	material.TextureLayer[0].TextureWrapV = video::ETC_CLAMP_TO_BORDER;

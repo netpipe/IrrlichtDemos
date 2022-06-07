@@ -40,7 +40,7 @@ CMain::CMain()
 
     Decal = new CDecal(driver);
 
-    Device->getFileSystem()->addFileArchive("media/map-20kdm2.pk3");
+    Device->getFileSystem()->addFileArchive("../../../media/map-20kdm2.pk3");
 
     node = smgr->addAnimatedMeshSceneNode(smgr->getMesh("20kdm2.bsp"));
     //node->setMaterialFlag(irr::video::EMF_WIREFRAME, true);
@@ -56,7 +56,7 @@ CMain::CMain()
 
     irr::scene::ICameraSceneNode* cam = smgr->addCameraSceneNodeFPS(0, 100, 0.1);
     //irr::scene::ICameraSceneNode* cam = smgr->addCameraSceneNode();
-    cam->setPosition(irr::core::vector3df(15.f));
+    cam->setPosition(irr::core::vector3df(10,115.f,100));
     cam->setTarget(irr::core::vector3df(0.f));
 
     Device->setEventReceiver(this);
@@ -149,7 +149,7 @@ void CMain::run(void)
     //mat.NormalizeNormals = true;
     mat.TextureLayer[0].TextureWrapU = irr::video::ETC_CLAMP_TO_BORDER;
     mat.TextureLayer[0].TextureWrapV = irr::video::ETC_CLAMP_TO_BORDER;
-    mat.setTexture(0, Device->getVideoDriver()->getTexture("leafs.png"));
+    mat.setTexture(0, Device->getVideoDriver()->getTexture("./bin/leafs.png"));
 ///    mat.ZWriteEnable = false;
     mat.MaterialType = irr::video::EMT_TRANSPARENT_ALPHA_CHANNEL;
 
@@ -160,11 +160,14 @@ void CMain::run(void)
     wireDecal.AmbientColor = irr::video::SColor(255,255,0,0);
     wireDecal.EmissiveColor = irr::video::SColor(255,255,0,0);
     wireDecal.SpecularColor = irr::video::SColor(255,255,0,0);
-    wireDecal.setTexture(0, Device->getVideoDriver()->getTexture("red.bmp"));
+    wireDecal.setTexture(0, Device->getVideoDriver()->getTexture("./bin/red.bmp"));
 
     irr::video::SMaterial groundDecal;
     wireDecal.Lighting = false;
     wireDecal.Wireframe = true;
+
+  //  cam->setPosition(vector3df(10,200,100));
+
     while(Device->run())
     {
         driver->beginScene();//true, true, irr::video::SColor(255,200,200,200));
