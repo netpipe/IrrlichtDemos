@@ -19,14 +19,16 @@
 		<Compiler>
 			<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/game/irrlicht/Irrlicht-SVN/include" />
 			<Add directory="/home/netpipe/gamedev/irrlicht-1.8.4/include" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
 		</Compiler>
 		<Linker>
-			<Add library="GL" />
 			<Add library="Irrlicht" />
 			<Add library="Xxf86vm" />
 			<Add library="X11" />
+			<Add library="GL" />
 			<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux" />
 			<Add directory="/home/netpipe/gamedev/irrlicht-1.8.4/lib/Linux" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 		</Linker>
 		<Unit filename="main.cpp" />
 		<Extensions />

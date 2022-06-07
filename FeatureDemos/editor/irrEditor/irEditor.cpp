@@ -217,7 +217,7 @@ public:
 int main()
 {
    // create the device
-   device =  createDevice( video::EDT_OPENGL, dimension2d<s32>(640, 480), 16, false, false, false, 0);
+   device =  createDevice( video::EDT_OPENGL, dimension2d<u32>(640, 480), 16, false, false, false, 0);
     if (!device) return 1;
 
    MyEventReceiver receiver;
@@ -245,7 +245,7 @@ int main()
    guienv->addButton(core::rect<s32>(x,y,x+width,y+height),0,ID_SCALE,L"Scale");
 
    // load a mesh
-   IAnimatedMesh* mesh = smgr->getMesh("../../media/sydney.md2");
+   IAnimatedMesh* mesh = smgr->getMesh("../../../media/sydney.md2");
     if (!mesh) return 1;
 
    // create a node
@@ -254,7 +254,7 @@ int main()
     {
       node->setMaterialFlag(EMF_LIGHTING, false);
       node->setMD2Animation(scene::EMAT_STAND);
-      node->setMaterialTexture( 0, driver->getTexture("../../media/sydney.bmp") );
+      node->setMaterialTexture( 0, driver->getTexture("../../../media/sydney.bmp") );
     }
 
    // add a camera

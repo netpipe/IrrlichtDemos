@@ -21,9 +21,9 @@ Core::Core () {
 		in.close ();
 		settings = new Settings ("settings");
 	}
-	dev = createDevice (EDT_OPENGL, core::dimension2d<s32> (800, 600), 32,
+	dev = createDevice (EDT_OPENGL, core::dimension2d<u32> (800, 600), 32,
 			false, true, false, this);
-	dev->setResizeAble (true);
+	//dev->setResizeAble (true);
 	dev->getSceneManager ()->addCameraSceneNodeFPS (0, 50, 200, -1);
 	reg = new Registry (dev, settings);
 	ln = reg->smgr->addLightSceneNode (0, core::vector3df (0, 0, 0),

@@ -80,7 +80,7 @@ void SaveAs::Show (bool state) {
 		list->clear ();
 		for (unsigned short i = 0; i < fl->getFileCount (); i++)
 			if (!fl->isDirectory (i))
-				if (strstr (fl->getFileName (i), ".omf") != 0)
+				if (strstr (fl->getFileName (i).c_str(), ".omf") != 0)
 					list->addItem (stringw (fl->getFileName (i)).c_str ());
 	}
 }
