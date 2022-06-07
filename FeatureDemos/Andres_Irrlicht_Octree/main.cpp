@@ -23,7 +23,7 @@ int resY = 600;
 
 bool useOctree = true;
 bool splitScreen = false;
-int cubesSpace = 300;
+int cubesSpace = 100;
 
 int main()
 {
@@ -38,7 +38,9 @@ int main()
     //cam2 = smgr->addCameraSceneNode(0, vector3df(20,10,0), vector3df(0,0,0));
     cam2 = smgr->addCameraSceneNodeFPS(0,100,.01);
     cam2->setAspectRatio( (resX/2)/resY );
-    //cam2->setFarValue(20);
+
+    //comment out far value to see how it really helps speed things up on a quadcore also set cubesSpace to 300
+    cam2->setFarValue(80); // increase this to see further
 
     device->getCursorControl()->setVisible(false);
 

@@ -18,6 +18,7 @@
 		</VirtualTargets>
 		<Compiler>
 			<Add directory="/home/netpipe/gamedev/irrlicht-1.8.4/include" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
 		</Compiler>
 		<Linker>
 			<Add library="Irrlicht" />
@@ -25,6 +26,7 @@
 			<Add library="Xxf86vm" />
 			<Add library="X11" />
 			<Add directory="/home/netpipe/gamedev/irrlicht-1.8.4/lib/Linux" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 		</Linker>
 		<Unit filename="IOctreSceneManager.cpp" />
 		<Unit filename="IOctreSceneManager.h" />
