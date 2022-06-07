@@ -18,7 +18,6 @@
 		</VirtualTargets>
 		<Compiler>
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
-			<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
 		</Compiler>
 		<Linker>
 			<Add library="Irrlicht" />
@@ -26,9 +25,12 @@
 			<Add library="Xxf86vm" />
 			<Add library="X11" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
-			<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 		</Linker>
 		<Unit filename="main.cpp" />
-		<Extensions />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
