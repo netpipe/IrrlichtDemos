@@ -319,13 +319,32 @@ int main()
 //	IMeshSceneNode* node = smgr->addMeshSceneNode( ha3 );
 //	CBrittleNode* test = new CBrittleNode( smgr->getRootSceneNode(),smgr,0);
 //	CBrittleNode* test = new CBrittleNode( smgr->getMesh("../../media/sydney.md2"),smgr,0);
-	CBrittleNode* test = new CBrittleNode( smgr->addAnimatedMeshSceneNode(smgr->getMesh("../../media/sydney.md2")),smgr,0);
+
+IAnimatedMeshSceneNode* node = smgr->addAnimatedMeshSceneNode(smgr->getMesh("../../media/sydney.md2"));
+
+	if (node)
+	{
+		node->setMaterialFlag(EMF_LIGHTING, false);
+		node->setMD2Animation(scene::EMAT_STAND);
+		node->setMaterialTexture( 0, driver->getTexture("../../media/sydney.bmp") );
+	}
+
+
+//	    ISceneNode* sn3;
+	CBrittleNode* test = new CBrittleNode(0,smgr,0);
+
+	test->CrackMesh(vector3df(0,10,0),vector3df(0,1,0));
+
 ITexture* tex1=driver->getTexture("../../media/sydney.bmp");
+
+
+
 	test->LoadMesh("../../media/sydney.md2",tex1,tex1);
 
-	//IMeshSceneNode* node = smgr->addMeshSceneNode( );
+	//IMeshSceneNode* node = smgr->addMeshSceneNode( test->);
+//	ISceneNode * tester = smgr->addSceneNode(test);
 
-
+node->setPosition(vector3df(10,0,10));
 
 	/*
 	To let the mesh look a little bit nicer, we change its material. We
