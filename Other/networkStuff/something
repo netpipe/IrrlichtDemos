@@ -1,0 +1,146 @@
+#include <enet/enet.h>
+#include <irrlicht.h>
+struct SOnlineStorageAccess
+{
+    SOnlineStorageAccess(void)
+    {
+        enet_initialize();
+    }
+    ~SOnlineStorageAccess(void)
+    {
+        enet_deinitialize();
+    }
+    bool sendDataToServer(const char* ip, const short& port, const char* varname, const char* var)
+    {
+        bool pError = false;
+
+        ENetAddress address;
+        enet_address_set_host(&address, ip);
+        address.port = port;
+
+        ENetSocket s = enet_socket_create(ENET_SOCKET_TYPE_STREAM);
+
+        if(pError==false)
+        {
+            if(enet_socket_connect(s, &address) < 0)
+            {
+                printf("Couldn't connect\n");
+                pError = true;
+                return !pError;
+            }
+        }
+        else
+        {
+            return !pError;
+        }
+
+        if (pError)
+            printf("ERROR\n");
+
+        char command[1000];
+        sprintf(command, "POST /%s=%s\r\n\r\n", varname, var);
+        ENetBuffer CommandBuffer;
+        CommandBuffer.data = command;
+        CommandBuffer.dataLength =  sizeof(command);
+        enet_socket_send(s, 0, &CommandBuffer, 1);
+
+        enet_socket_destroy(s);
+
+        return !pError;
+    }
+    bool grabFileFromServer(const char* ip, const short& port, const char* filename, char* buffer, unsigned long& buffersize)
+    {
+        bool pError = false;
+
+        ENetAddress address;
+        enet_address_set_host(&address, ip);
+        address.port = port;
+
+        ENetSocket s = enet_socket_create(ENET_SOCKET_TYPE_STREAM);
+
+        if(pError==false)
+        {
+            if(enet_socket_connect(s, &address) < 0)
+            {
+                printf("Couldn't connect\n");
+                pError = true;
+                return !pError;
+            }
+        }
+        else
+        {
+            return !pError;
+        }
+
+        if (pError)
+            printf("ERROR\n");
+
+        char command[1000];
+        sprintf(command, "GET /%s\r\n\r\n", filename);
+        ENetBuffer CommandBuffer;
+        CommandBuffer.data = command;
+        CommandBuffer.dataLength =  sizeof(command);
+        enet_socket_send(s, 0, &CommandBuffer, 1);
+
+
+        ENetBuffer ReceiveBuffer;
+        ReceiveBuffer.data = buffer;
+        ReceiveBuffer.dataLength = buffersize;
+        long index = 0;
+        int tries = 5;
+        while (index < buffersize)
+        {
+            ReceiveBuffer.data = &buffer[index];
+            ReceiveBuffer.dataLength = buffersize-index;
+            long d = enet_socket_receive(s, 0, &ReceiveBuffer, 1);
+            if (d < 0)
+            {
+                pError = true;
+                break;
+            }
+            index += d;
+            if (d == 0)
+            {
+                tries--;
+                if (tries <= 0)
+                    break;
+            }
+        }
+
+        buffersize = index;
+
+        realloc(buffer, buffersize);
+
+        printf("Received %i bytes\n", buffersize);
+
+        enet_socket_destroy(s);
+
+        return !pError;
+    }
+
+    irr::io::IReadFile* grabFileFromServer(irr::io::IFileSystem* filesystem, const char* ip, const short& port, const char* filename, const unsigned long& buffersize)
+    {
+        unsigned long size = buffersize;
+        char* buffer = new char[size];
+        if (!grabFileFromServer(ip, port, filename, buffer, size))
+        {
+            printf("Failed grabbing File\n");
+            delete [] buffer;
+            return 0;
+        }
+        irr::io::IReadFile* file = filesystem->createMemoryReadFile(buffer, size, filename, true);
+        return file;
+    }
+
+    bool addOnlineArchive(irr::io::IFileSystem* filesystem, const char* ip, const short& port, const char* filename, const unsigned long& archivesize)
+    {
+        irr::io::IReadFile* file = grabFileFromServer(filesystem, ip, port, filename, archivesize);
+        printf("Downloaded Archive is %i bytes long\n",file->getSize());
+        bool added = false;
+        if (file)
+            added = filesystem->addFileArchive(file, true, false, false, "");
+        if (file && !added)
+            file->drop();
+        return added;
+    }
+}; 

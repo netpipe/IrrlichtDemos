@@ -1,0 +1,20 @@
+
+int main(void)
+{
+    irr::IrrlichtDevice* Device = irr::createDevice(irr::video::EDT_OPENGL);
+    irr::io::IFileSystem* fs = Device->getFileSystem();
+
+    SOnlineStorageAccess access;
+    access.addOnlineArchive(fs, "localhost", 80, "Test.zip", 100000000);
+
+    irr::gui::IGUIImage* img = Device->getGUIEnvironment()->addImage(irr::core::rect<irr::s32>(0,0,640,480));
+    img->setImage(Device->getVideoDriver()->getTexture("hello.png"));
+    img->setScaleImage(true);
+    while (Device->run())
+    {
+        Device->getVideoDriver()->beginScene();
+        Device->getGUIEnvironment()->drawAll();
+        Device->getVideoDriver()->endScene();
+    }
+    return 0;
+}; 
