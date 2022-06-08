@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="8086tiny" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./8086tiny" prefix_auto="1" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+			<Target title="emscripten">
+				<Option output="./8086tiny.html" prefix_auto="0" extension_auto="0" />
+				<Option object_output=".emobjs" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectCompilerOptionsRelation="1" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Option projectIncludeDirsRelation="1" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Compiler>
+					<Add option="-D__EMSCRIPTEN__" />
+					<Add option="-DUSE_TMT" />
+					<Add option="-DTMT_HAS_WCWIDTH" />
+					<Add directory="../../../../irrlicht-ogl-es/irrlicht/include" />
+					<Add directory="../../../Libs/physics/Bullet278/src" />
+					<Add directory="../../../Libs/irrlicht-ogl-es/irrlicht/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s ALLOW_MEMORY_GROWTH=1" />
+					<Add option="-s NO_EXIT_RUNTIME=1" />
+					<Add option="--embed-file bios" />
+					<Add option="--embed-file fd.img" />
+					<Add option="-s USE_SDL=1" />
+					<Add option="-s EXIT_RUNTIME=1" />
+					<Add library="SDL" />
+					<Add directory="../../../irrlicht-ogl-es/irrlicht/lib/Linux" />
+					<Add directory="../../../Libs/physics/Bullet278/msvc/2008/lib/Release" />
+					<Add directory="../../../Libs/irrlicht-ogl-es/irrlicht/lib/Linux" />
+					<Add directory="../irrBulletSDK-0.1.8/lib/linux/Release" />
+				</Linker>
+			</Target>
+			<Target title="Copy of emscripten">
+				<Option output="./8086tiny.html" prefix_auto="0" extension_auto="0" />
+				<Option object_output=".emobjs" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectIncludeDirsRelation="1" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Option projectLibDirsRelation="1" />
+				<Compiler>
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_IRR_EMSCRIPTEN_PLATFORM_" />
+					<Add option="-D__EMSCRIPTEN__" />
+					<Add option="-DUSE_TMT" />
+					<Add option="-DNO_AUDIO" />
+					<Add option="-DGRAPHICS_UPDATE_DELAY=25000" />
+					<Add directory="../../../../irrlicht-ogl-es/irrlicht/include" />
+					<Add directory="/home/netpipe/Desktop/EMScripten-AddonBundle/Libs/physics/Bullet/bullet/src" />
+					<Add directory="../../../Libs/irrlicht-ogl-es/irrlicht/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s ALLOW_MEMORY_GROWTH=1" />
+					<Add option="--preload-file media/" />
+					<Add option="-s DISABLE_EXCEPTION_CATCHING=0" />
+					<Add option="-s NO_EXIT_RUNTIME=1" />
+					<Add option="--embed-file bios" />
+					<Add option="--embed-file fd.img" />
+					<Add library="SDL" />
+					<Add directory="../../../irrlicht-ogl-es/irrlicht/lib/Linux" />
+					<Add directory="/home/netpipe/Desktop/EMScripten-AddonBundle/Libs/physics/Bullet/bullet/msvc/2008/lib/Release" />
+					<Add directory="../../../Libs/irrlicht-ogl-es/irrlicht/lib/Linux" />
+					<Add directory="/home/netpipe/Desktop/EMScripten-AddonBundle/Projects/Irrlicht/irrBulletSDK-0.1.8/lib/linux/Release" />
+				</Linker>
+			</Target>
+			<Target title="emscripte-node">
+				<Option output="./8086tiny.html" prefix_auto="0" extension_auto="0" />
+				<Option object_output=".emobjs" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectCompilerOptionsRelation="1" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Option projectIncludeDirsRelation="1" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Compiler>
+					<Add option="-D__EMSCRIPTEN__" />
+					<Add option="-DVTERM_USE_CR" />
+					<Add option="-DNO_GRAPHICS" />
+					<Add directory="../../../../irrlicht-ogl-es/irrlicht/include" />
+					<Add directory="../../../Libs/physics/Bullet278/src" />
+					<Add directory="../../../Libs/irrlicht-ogl-es/irrlicht/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s ALLOW_MEMORY_GROWTH=1" />
+					<Add option="-s NO_EXIT_RUNTIME=1" />
+					<Add option="--embed-file bios" />
+					<Add option="--embed-file fd.img" />
+					<Add option="-s USE_SDL=1" />
+					<Add option="-s EXIT_RUNTIME=1" />
+					<Add library="SDL" />
+					<Add directory="../../../irrlicht-ogl-es/irrlicht/lib/Linux" />
+					<Add directory="../../../Libs/physics/Bullet278/msvc/2008/lib/Release" />
+					<Add directory="../../../Libs/irrlicht-ogl-es/irrlicht/lib/Linux" />
+					<Add directory="../irrBulletSDK-0.1.8/lib/linux/Release" />
+				</Linker>
+			</Target>
+			<Target title="sdl">
+				<Option output="./8086tiny" prefix_auto="1" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="0" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Linker>
+					<Add option="`sdl-config --libs`" />
+					<Add library="SDL" />
+					<Add library="SDL_ttf" />
+					<Add library="SDL_image" />
+				</Linker>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="`sdl-config --cflags`" />
+			<Add directory="../../../../irrlicht-ogl-es/irrlicht/include" />
+			<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/upstream/emscripten/tests/bullet/src" />
+			<Add directory="../../../Libs/irrlicht-ogl-es/irrlicht/include" />
+		</Compiler>
+		<Linker>
+			<Add library="SDL" />
+			<Add library="SDL_ttf" />
+			<Add library="SDL_image" />
+			<Add directory="../../../irrlicht-ogl-es/irrlicht/lib/Linux" />
+			<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/Scripting/emsdk/upstream/emscripten/tests/bullet/src/.libs" />
+			<Add directory="../../../Libs/irrlicht-ogl-es/irrlicht/lib/Linux" />
+		</Linker>
+		<Unit filename="consolemgr.cpp" />
+		<Unit filename="consolemgr.h" />
+		<Unit filename="sdl_console.cpp" />
+		<Unit filename="tmt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tmt.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

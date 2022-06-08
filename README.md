@@ -12,6 +12,7 @@ https://github.com/tecan/LunaLibs
 
 https://github.com/netpipe/IrrPAL physics wrapper
 
+FKeditor and PartED (particleEditor) are kept in Luna engine for now so get them there thanks.
 
 Looking for other volunteer coders on this project, if interested email.
 admin@netpipe.ca

@@ -17,6 +17,7 @@
 					<Add directory="/home/Dev/libs/physics/bullet-SVN/src" />
 					<Add directory="/home/Dev/libs/Irrlicht/source/Irrlicht" />
 					<Add directory="/home/Dev/libs/gui/freetype-2.3.9/include" />
+					<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
 				</Compiler>
 				<Linker>
 					<Add library="Xxf86vm" />
@@ -29,6 +30,7 @@
 					<Add directory="/home/Dev/libs/scripting/lua-5.1.4/src" />
 					<Add directory="/home/Dev/libs/physics/bullet-SVN/src" />
 					<Add directory="/home/Dev/libs/gui/freetype-2.3.9/objs/.libs" />
+					<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 				</Linker>
 			</Target>
 			<Target title="Debug-Win32">
@@ -163,9 +165,6 @@
 		<Unit filename="luna.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
-			<code_completion />
-			<envvars />
-			<debugger />
 			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>

@@ -5,8 +5,7 @@
 #include "IOctree.h"
 
 ///TODO: remove nodes from oct, dinamic objs (movement/scale/rot)
-
-// also distance based culling / occlusion alt -tecan
+// distance based culling/occlusion alt
 
 using namespace std;
 
@@ -27,7 +26,7 @@ int cubesSpace = 100;
 
 int main()
 {
-    IrrlichtDevice *device = createDevice(EDT_OPENGL,dimension2du(resX,resY), 32, false,false, false);
+    IrrlichtDevice *device = createDevice(EDT_OPENGL,dimension2du(resX,resY), 32, false,false, true);
 
     ISceneManager *smgr = device->getSceneManager();
     IVideoDriver *driver = device->getVideoDriver();
@@ -46,6 +45,12 @@ int main()
 
     IOctree* octree = new IOctree(cam2);
 
+    //octree->
+
+    //maybe fog makes it faster ?
+   // driver->setFog(video::SColor(0,138,125,221), video::EFT_FOG_LINEAR, 0.1f, 255.0f, 1.0f, false, true);
+
+
     //---------------------------------cubes
 
     vector<ISceneNode*> cubes;
@@ -55,6 +60,7 @@ int main()
         for(int j=-cubesSpace;j<cubesSpace;j+=5)
         {
             ISceneNode* c = smgr->addCubeSceneNode(1.1);
+            c->setMaterialFlag(video::EMF_FOG_ENABLE, true);
             c->setPosition(vector3df(i+0.5*(rand()%10),0,j+0.5*(rand()%10)));
             c->setScale(vector3df(0.5*(rand()%10),0.5*(rand()%10),0.5*(rand()%10)));
 
@@ -120,6 +126,7 @@ int main()
                 device->setWindowCaption(str.c_str());
                 lastFPS = fps;
         }
+        device->sleep(1);
     }
 
     device->drop();

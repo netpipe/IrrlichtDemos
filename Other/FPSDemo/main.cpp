@@ -32,7 +32,7 @@ int main(int argc, char** argv)
     CHUD* CHUD2 = new CHUD();
     // Set up the video
     IrrlichtDevice *device =
-        createDevice(EDT_OPENGL, dimension2d<s32>(640, 480), 16,
+        createDevice(EDT_OPENGL, dimension2d<u32>(640, 480), 16,
             false, false, false, 0);
 
     device->setWindowCaption(L"Agnostic Games - FPS Demo");

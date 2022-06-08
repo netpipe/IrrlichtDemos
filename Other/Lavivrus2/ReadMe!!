@@ -1,0 +1,14 @@
+Lavivrus2 Engine Doc
+--------------------------------------------
+
+it had been so long i decided to revive it 2022 hopefully i can get some basic model loaders working.
+
+
+Compile Instructions
+
+
+run this :P
+
+gcc lavivrus.cpp ObjLoader.cpp -I/usr/include/SDL -L/usr/lib64 -lGL -lSDL -lGLU -o Lavivrus  
+
+gcc lavivrus.cpp ObjLoader.cpp -I/usr/include/SDL -L/usr/lib64 -lGL -lSDL -lGLU -lm -lstdc++ -o Lavivrus
