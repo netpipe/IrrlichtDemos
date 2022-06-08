@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="irrAR-0.3" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/irrAR" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="./bin/" />
+				<Option object_output=".obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="/home/Dev/libs/game/irrlicht/irrlicht-1.7/include" />
+					<Add directory="./" />
+					<Add directory="./include" />
+					<Add directory="/usr/include/gstreamer-1.0" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="Irrlicht" />
+					<Add library="GL" />
+					<Add library="Xxf86vm" />
+					<Add library="Xext" />
+					<Add library="X11" />
+					<Add library="GLU" />
+					<Add library="AR" />
+					<Add library="ARMulti" />
+					<Add library="ARvideo" />
+					<Add library="jpeg" />
+					<Add library="gstreamer-1.0" />
+					<Add library="libgstbase-1.0" />
+					<Add directory="./" />
+					<Add directory="../ARToolKit/lib" />
+					<Add directory="/home/Dev/libs/game/irrlicht/irrlicht-1.7/lib/Linux" />
+					<Add directory="/usr/include/gstreamer-1.0" />
+				</Linker>
+			</Target>
+			<Target title="linux">
+				<Option output="bin/Debug/opencv" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="/home/Dev/libs/game/OpenCVlibrary/trunk/opencv/include/opencv" />
+					<Add directory="/home/Dev/libs/game/OpenCVlibrary/trunk/opencv/src/cv/src" />
+					<Add directory="/home/Dev/libs/game/OpenCVlibrary/trunk/opencv/src/cvaux/include" />
+					<Add directory="/home/Dev/libs/game/OpenCVlibrary/trunk/opencv/src/cvaux/src" />
+					<Add directory="/home/Dev/libs/game/OpenCVlibrary/trunk/opencv/src/cxcore/include" />
+					<Add directory="/home/Dev/libs/game/OpenCVlibrary/trunk/opencv/src/cxcore/src" />
+					<Add directory="/home/Dev/libs/game/OpenCVlibrary/trunk/opencv/src/otherlibs/highgui" />
+					<Add directory="/home/Dev/libs/game/OpenCVlibrary/trunk/opencv/src/ml/include" />
+					<Add directory="/home/Dev/libs/game/OpenCVlibrary/trunk/opencv/src/ml/src" />
+					<Add directory="/home/Dev/libs/game/irrlicht/irrlicht-1.7/include" />
+					<Add directory="./" />
+					<Add directory="./include" />
+					<Add directory="/usr/include/gstreamer-0.10" />
+				</Compiler>
+				<Linker>
+					<Add library="Irrlicht" />
+					<Add library="GL" />
+					<Add library="GLU" />
+					<Add library="Xxf86vm" />
+					<Add library="cv" />
+					<Add library="cxcore" />
+					<Add library="highgui" />
+					<Add library="cvaux" />
+					<Add library="ml" />
+					<Add library="AR" />
+					<Add library="ARMulti" />
+					<Add library="ARvideo" />
+					<Add library="jpeg" />
+					<Add library="gstreamer-1.0" />
+					<Add library="X11" />
+					<Add directory="/home/Dev/libs/game/OpenCVlibrary/trunk/opencv/lib" />
+					<Add directory="/home/Dev/Agnostic-SF/Stuff/Demos/WIPs/Camera/augmentedReality/ARToolKit/lib" />
+					<Add directory="./" />
+					<Add directory="../ARToolKit/lib" />
+					<Add directory="/home/Dev/libs/game/irrlicht/irrlicht-1.7/lib/Linux" />
+					<Add directory="/usr/include/gstreamer-1.0" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="include/AR/ar.h" />
+		<Unit filename="include/AR/arMulti.h" />
+		<Unit filename="include/AR/arvrml.h" />
+		<Unit filename="include/AR/config.h" />
+		<Unit filename="include/AR/gsub.h" />
+		<Unit filename="include/AR/gsubUtil.h" />
+		<Unit filename="include/AR/gsub_lite.h" />
+		<Unit filename="include/AR/matrix.h" />
+		<Unit filename="include/AR/param.h" />
+		<Unit filename="include/AR/sys/videoGStreamer.h" />
+		<Unit filename="include/AR/sys/videoLinux1394Cam.h" />
+		<Unit filename="include/AR/sys/videoLinuxDV.h" />
+		<Unit filename="include/AR/sys/videoLinuxV4L.h" />
+		<Unit filename="include/AR/sys/videoMacOSX.h" />
+		<Unit filename="include/AR/sys/videoSGI.h" />
+		<Unit filename="include/AR/sys/videoWin32DirectShow.h" />
+		<Unit filename="include/AR/video.h" />
+		<Unit filename="include/irrAR.cpp" />
+		<Unit filename="include/irrAR.h" />
+		<Unit filename="test.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

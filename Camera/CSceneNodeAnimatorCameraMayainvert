@@ -1,0 +1,204 @@
+
+#include <irrlicht.h>
+
+using namespace irr;
+
+using namespace core;
+using namespace scene;
+using namespace video;
+
+class CSceneNodeAnimatorCamera2 : public scene::ISceneNodeAnimator
+{
+   s32 m_bZoomIn; // 1 = Zoom in, 0 = No Zoom, -1 = Zoom out
+   s32 m_bDragging;
+   s32 SCREENWIDTH;
+   s32 SCREENHEIGHT;
+   core::vector2df m_lastMousePos;
+   core::vector2df m_curMousePos;
+
+public:
+   CSceneNodeAnimatorCamera2(s32 screenWidth, s32 screenHeight)
+      : m_bDragging(0), m_bZoomIn(0), SCREENWIDTH(screenWidth), SCREENHEIGHT(screenHeight)
+   {
+   }
+
+   virtual void animateNode(ISceneNode* node, u32 timeMs)
+   {
+      if (!node || node->getType() != ESNT_CAMERA)
+         return;
+
+      scene::ICameraSceneNode* camera = static_cast<ICameraSceneNode*>(node);
+
+      // active ?
+      if(!camera->isInputReceiverEnabled())
+         return;
+
+      scene::ISceneManager * smgr = camera->getSceneManager();
+      if(smgr && smgr->getActiveCamera() != camera)
+         return;
+
+      if( m_bDragging )
+      {
+         // Calculate a rotational offset in the range of -PI to +PI
+         f32 dx = -(( m_curMousePos.X - m_lastMousePos.X ) / SCREENWIDTH ) * PI * 2;
+         f32 dy = -(( m_curMousePos.Y - m_lastMousePos.Y ) / SCREENHEIGHT ) * PI * 2;
+
+         if(core::max_(core::abs_(dx), core::abs_(dy)) >= 0.1f)
+         {
+            core::vector3df pos = camera->getPosition();
+            core::vector3df target = camera->getTarget();
+            core::vector3df originUp = camera->getUpVector();
+
+            originUp.normalize();
+
+            core::vector3df tgtv = target - pos;
+            tgtv.normalize();
+
+            f32 dp = tgtv.dotProduct(originUp);
+
+            if ( core::equals(core::abs_<f32>(dp), 1.f) )
+            {
+               originUp.X += 0.5f;
+            }
+
+            core::vector3df right = originUp.crossProduct(tgtv);
+            right.normalize();
+
+            core::vector3df up = tgtv.crossProduct(right);
+
+            core::quaternion q;
+            if(core::abs_(dy) > core::abs_(dx))
+            {
+               q.fromAngleAxis(dy, right.normalize());
+            }
+            else
+            {
+               q.fromAngleAxis(dx, up.normalize());
+            }
+
+            core::matrix4 mx = q.getMatrix();
+
+            core::vector3df relatedpos;
+            mx.rotateVect(relatedpos, pos - target);
+
+            camera->setPosition(relatedpos + target);
+            camera->setUpVector(up);
+
+
+            m_lastMousePos.X = m_curMousePos.X;
+            m_lastMousePos.Y = m_curMousePos.Y;
+         }
+      }
+      else if (m_bZoomIn != 0)
+      {
+         const core::vector3df& pos = camera->getPosition();
+         const core::vector3df& target = camera->getTarget();
+
+         core::vector3df newpos = target + (pos - target) * (1 + (m_bZoomIn > 0 ? -0.1f : 0.1f));
+
+         camera->setPosition(newpos);
+
+         m_bZoomIn = 0;
+      }
+   }
+
+   virtual bool OnEvent(const SEvent& event)
+   {
+      if (event.EventType == EET_MOUSE_INPUT_EVENT)
+      {
+         const SEvent::SMouseInput *ev = &event.MouseInput;
+
+         if( ev->Event == EMIE_MOUSE_WHEEL )
+         {
+            if( ev->Wheel >= 0 )
+               m_bZoomIn = 1;
+            else
+               m_bZoomIn = -1;
+         }
+         else
+         {
+            if( !m_bDragging && ev->isLeftPressed() )
+            {
+               m_lastMousePos.X = ev->X;
+               m_lastMousePos.Y = ev->Y;
+               m_bDragging = true;
+
+               m_curMousePos = m_lastMousePos;
+            }
+            else if( m_bDragging && !ev->isLeftPressed() )
+            {
+               m_bDragging = false;
+            }
+            else if( m_bDragging && ev->isLeftPressed() )
+            {
+               m_curMousePos.X = ev->X;
+               m_curMousePos.Y = ev->Y;
+            }
+         }
+      }
+
+      return false;
+   }
+
+   virtual bool isEventReceiverEnabled() const
+   {
+      return true;
+   }
+
+   virtual ESCENE_NODE_ANIMATOR_TYPE getType() const
+   {
+      return ESNAT_UNKNOWN;
+   }
+
+   virtual ISceneNodeAnimator* createClone(ISceneNode* node, ISceneManager* newManager=0)
+   {
+      return new CSceneNodeAnimatorCamera2(SCREENWIDTH, SCREENHEIGHT);
+   }
+};
+
+int main()
+{
+   IrrlichtDevice *device = device = createDevice(EDT_OPENGL);
+   
+   if (!device)
+      return 1;
+   
+   device->setWindowCaption(L"Camera2");
+
+   video::IVideoDriver *driver = device->getVideoDriver();
+   ISceneManager* smgr = device->getSceneManager();
+
+   scene::ICameraSceneNode * camera = smgr->addCameraSceneNode();
+   camera->setPosition(core::vector3df(30, 20, 30));
+   camera->setTarget(core::vector3df(10, 0, 0));
+   
+   if(camera)
+   {
+      CSceneNodeAnimatorCamera2* anim = new CSceneNodeAnimatorCamera2(driver->getScreenSize().Width, driver->getScreenSize().Height);
+      camera->addAnimator(anim);
+      anim->drop();
+   }
+
+   scene::ISceneNode* node = 0;
+
+   scene::ISceneNode* cube = smgr->addCubeSceneNode();
+   cube->setPosition(core::vector3df(10, 0, 0));
+   cube->setMaterialFlag(video::EMF_LIGHTING, false);
+   cube->getMaterial(0).setTexture(0, driver->getTexture("../../media/fire.bmp"));
+
+
+   while(device->run())
+   {
+      driver->beginScene(true, true, SColor(255,100,100,100));
+
+      smgr->drawAll();
+
+      driver->endScene();
+   }
+
+
+   device->drop();
+   device = 0;
+
+   return 0;
+} 

@@ -1,0 +1,19 @@
+if ( receiver.IsKeyDown(KEY_SHIFT) )
+ {
+  for(int i=0; i < selector->getTriangleCount(); ++i)
+  {
+   if ( tris[i].getIntersectionWithLimitedLine( character_ray, collision_point ) == true )
+   {
+   render_mesh->setFrameLoop(121,181);
+  render_mesh->setLoopMode(false);
+  render_mesh->setAnimationSpeed(70);
+   }
+
+  }
+
+ }
+
+  if ( render_mesh->getFrameNr() > 121 && render_mesh->getFrameNr() < 179 )
+ {
+  irrSimplePhysics->addObjectUserForce( ipObject, vector3df( 0 , jump_str , 0 ) );
+ } 
