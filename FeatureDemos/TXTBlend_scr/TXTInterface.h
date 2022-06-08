@@ -24,7 +24,7 @@ gui::IGUIEditBox* namebox;
 gui::IGUIComboBox* dirbox, *typebox;
 
 
-video::ITexture* createBoxTexture(core::dimension2d<s32> size, s32 border,
+video::ITexture* createBoxTexture(core::dimension2d<u32> size, s32 border,
     video::SColor color, video::SColor bordercolor)
 {
     video::ITexture* texture = device->getVideoDriver()
@@ -103,9 +103,9 @@ void createInterface()
     guienv->addStaticText (L"Output name:", core::rect<s32>(20,150,110,180), false, false, 0, -1, false);
 
     // add main buttons
-    video::ITexture* upmbtext = createBoxTexture(core::dimension2d<s32>(140,30), 2,
+    video::ITexture* upmbtext = createBoxTexture(core::dimension2d<u32>(140,30), 2,
         buttcolor, bordcolor);
-    video::ITexture* dwnmbtext = createBoxTexture(core::dimension2d<s32>(140,30), 4,
+    video::ITexture* dwnmbtext = createBoxTexture(core::dimension2d<u32>(140,30), 4,
         deepcolor, bordcolor);
 
     gui::IGUIButton* button = guienv->addButton(core::rect<s32>(20,200, 20+140,200+30), 0, 100, L"Exit");
@@ -121,12 +121,12 @@ void createInterface()
     button->setPressedImage(dwnmbtext);
 
     // add load buttons
-    video::ITexture* upldtext = createBoxTexture(core::dimension2d<s32>(40,30), 2,
+    video::ITexture* upldtext = createBoxTexture(core::dimension2d<u32>(40,30), 2,
         buttcolor, bordcolor);
-    addIconToTexture(upldtext, "Media/loadico.bmp");
-    video::ITexture* dwnldtex = createBoxTexture(core::dimension2d<s32>(40,30), 4,
+    addIconToTexture(upldtext, "../../media/2ddemo.bmp");
+    video::ITexture* dwnldtex = createBoxTexture(core::dimension2d<u32>(40,30), 4,
         deepcolor, bordcolor);
-    addIconToTexture(dwnldtex, "Media/loadico.bmp");
+    addIconToTexture(dwnldtex, "../../media/Faerie5.BMP");
 
     button = guienv->addButton(core::rect<s32>(120,20, 120+40,20+30), 0, 200);
     button->setImage(upldtext);
@@ -137,13 +137,13 @@ void createInterface()
     button->setPressedImage(dwnldtex);
 
     // add textureinfo text
-    video::ITexture* tntext = createBoxTexture(core::dimension2d<s32>(210,30), 2,
+    video::ITexture* tntext = createBoxTexture(core::dimension2d<u32>(210,30), 2,
         deepcolor, bordcolor);
 
     guienv->addImage(tntext, core::position2d<s32>(170,20));
     guienv->addImage(tntext, core::position2d<s32>(170,60));
 
-    video::ITexture* tstext = createBoxTexture(core::dimension2d<s32>(90,30), 2,
+    video::ITexture* tstext = createBoxTexture(core::dimension2d<u32>(90,30), 2,
         deepcolor, bordcolor);
 
     guienv->addImage(tstext, core::position2d<s32>(390,20));
@@ -156,14 +156,14 @@ void createInterface()
     t2sizetext = guienv->addStaticText (L"", core::rect<s32>(390,60,480,90), false, false, 0, -1, false);
 
     // add directory selection
-    video::ITexture* drtext = createBoxTexture(core::dimension2d<s32>(360,30), 2,
+    video::ITexture* drtext = createBoxTexture(core::dimension2d<u32>(360,30), 2,
         deepcolor, bordcolor);
     guienv->addImage(drtext, core::position2d<s32>(120,110));
 
     dirbox = guienv->addComboBox(core::rect<s32>(122,112, 120+360-2,110+30-2));
 
     // add name edit dialog
-    video::ITexture* edtext = createBoxTexture(core::dimension2d<s32>(260,30), 2,
+    video::ITexture* edtext = createBoxTexture(core::dimension2d<u32>(260,30), 2,
         deepcolor, bordcolor);
     guienv->addImage(edtext, core::position2d<s32>(120,150));
 
@@ -178,7 +178,7 @@ void createInterface()
     typebox->addItem(L"png");
 
     // ad info dialog
-    video::ITexture* intext = createBoxTexture(core::dimension2d<s32>(460,30), 2,
+    video::ITexture* intext = createBoxTexture(core::dimension2d<u32>(460,30), 2,
         deepcolor, bordcolor);
     guienv->addImage(intext, core::position2d<s32>(20,250));
 
@@ -323,8 +323,8 @@ public:
                     if(id == 300)
                     {
                         gui::IGUIFileOpenDialog* dialog = (gui::IGUIFileOpenDialog*)event.GUIEvent.Caller;
+                        core::stringc name(dialog->getFileName());
 
-                        core::stringc name(dialog->getFilename());
                         s32 i = name.findLast('/');
                         name = name.subString(i+1, name.size() - i);
                         core::string<wchar_t> text;
@@ -360,7 +360,8 @@ public:
                     {
                         gui::IGUIFileOpenDialog* dialog = (gui::IGUIFileOpenDialog*)event.GUIEvent.Caller;
 
-                        core::stringc name(dialog->getFilename());
+                        core::stringc name(dialog->getFileName());
+
                         s32 i = name.findLast('/');
                         name = name.subString(i+1, name.size() - i);
                         core::string<wchar_t> text;

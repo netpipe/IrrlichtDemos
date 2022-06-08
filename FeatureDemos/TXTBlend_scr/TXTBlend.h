@@ -7,10 +7,10 @@ using namespace irr;
 class IImageData
 {
     u32* data;
-    core::dimension2d<s32> sz;
+    core::dimension2d<u32> sz;
 
 public:
-    IImageData(core::dimension2d<s32> size) : sz(size)
+    IImageData(core::dimension2d<u32> size) : sz(size)
     {
         data = new u32[sz.Width * sz.Height];
     }
@@ -24,7 +24,7 @@ public:
         data[height*sz.Width + width]  = color.color;
     }
 
-    core::dimension2d<s32> size() { return sz; }
+    core::dimension2d<u32> size() { return sz; }
 };
 
 class TXTBlend
@@ -62,7 +62,7 @@ class TXTBlend
             }
     }
 
-    f32 getMergingKoeficient(core::dimension2d<s32> size, s32 width, s32 height, s32 method)
+    f32 getMergingKoeficient(core::dimension2d<u32> size, s32 width, s32 height, s32 method)
     {
         switch(method)
         {
@@ -114,31 +114,31 @@ class TXTBlend
         }
     }
 
-    f32 getMKLeft(core::dimension2d<s32> size, s32 width, s32 height)
+    f32 getMKLeft(core::dimension2d<u32> size, s32 width, s32 height)
     {
         size.Width--;
         return (f32)(width) / (f32)(size.Width);
     }
 
-    f32 getMKRight(core::dimension2d<s32> size, s32 width, s32 height)
+    f32 getMKRight(core::dimension2d<u32> size, s32 width, s32 height)
     {
         size.Width--;
         return 1.0f - (f32)(width) / (f32)(size.Width);
     }
 
-    f32 getMKTop(core::dimension2d<s32> size, s32 width, s32 height)
+    f32 getMKTop(core::dimension2d<u32> size, s32 width, s32 height)
     {
         size.Height--;
         return (f32)(height) / (f32)(size.Height);
     }
 
-    f32 getMKBottom(core::dimension2d<s32> size, s32 width, s32 height)
+    f32 getMKBottom(core::dimension2d<u32> size, s32 width, s32 height)
     {
         size.Height--;
         return 1.0f - (f32)(height) / (f32)(size.Height);
     }
 
-    f32 getMKTopLeft(core::dimension2d<s32> size, s32 width, s32 height)
+    f32 getMKTopLeft(core::dimension2d<u32> size, s32 width, s32 height)
     {
         size.Width--;
         f32 r = (f32)(width) / (f32)(size.Width);
@@ -150,7 +150,7 @@ class TXTBlend
         return p;
     }
 
-    f32 getMKTopRight(core::dimension2d<s32> size, s32 width, s32 height)
+    f32 getMKTopRight(core::dimension2d<u32> size, s32 width, s32 height)
     {
         size.Width--;
         f32 r = 1.0f -(f32)(width) / (f32)(size.Width);
@@ -162,7 +162,7 @@ class TXTBlend
         return p;
     }
 
-    f32 getMKBottomRight(core::dimension2d<s32> size, s32 width, s32 height)
+    f32 getMKBottomRight(core::dimension2d<u32> size, s32 width, s32 height)
     {
         size.Width--;
         f32 r = 1.0f -(f32)(width) / (f32)(size.Width);
@@ -174,7 +174,7 @@ class TXTBlend
         return p;
     }
 
-    f32 getMKBottomLeft(core::dimension2d<s32> size, s32 width, s32 height)
+    f32 getMKBottomLeft(core::dimension2d<u32> size, s32 width, s32 height)
     {
         size.Width--;
         f32 r = (f32)(width) / (f32)(size.Width);
@@ -186,7 +186,7 @@ class TXTBlend
         return p;
     }
 
-    f32 getMKTopLeftReverse(core::dimension2d<s32> size, s32 width, s32 height)
+    f32 getMKTopLeftReverse(core::dimension2d<u32> size, s32 width, s32 height)
     {
         size.Width--;
         f32 r = (f32)(width) / (f32)(size.Width);
@@ -198,7 +198,7 @@ class TXTBlend
         return p;
     }
 
-    f32 getMKTopRightReverse(core::dimension2d<s32> size, s32 width, s32 height)
+    f32 getMKTopRightReverse(core::dimension2d<u32> size, s32 width, s32 height)
     {
         size.Width--;
         f32 r = 1.0f -(f32)(width) / (f32)(size.Width);
@@ -210,7 +210,7 @@ class TXTBlend
         return p;
     }
 
-    f32 getMKBottomRightReverse(core::dimension2d<s32> size, s32 width, s32 height)
+    f32 getMKBottomRightReverse(core::dimension2d<u32> size, s32 width, s32 height)
     {
         size.Width--;
         f32 r = 1.0f -(f32)(width) / (f32)(size.Width);
@@ -222,7 +222,7 @@ class TXTBlend
         return p;
     }
 
-    f32 getMKBottomLeftReverse(core::dimension2d<s32> size, s32 width, s32 height)
+    f32 getMKBottomLeftReverse(core::dimension2d<u32> size, s32 width, s32 height)
     {
         size.Width--;
         f32 r = (f32)(width) / (f32)(size.Width);
@@ -234,7 +234,7 @@ class TXTBlend
         return p;
     }
 
-    f32 getMKTopLeftBottomRight(core::dimension2d<s32> size, s32 width, s32 height)
+    f32 getMKTopLeftBottomRight(core::dimension2d<u32> size, s32 width, s32 height)
     {
         size.Width--;
         f32 r = (f32)(width) / (f32)(size.Width);
@@ -256,7 +256,7 @@ class TXTBlend
         return e;
     }
 
-    f32 getMKTopRightBottomLeft(core::dimension2d<s32> size, s32 width, s32 height)
+    f32 getMKTopRightBottomLeft(core::dimension2d<u32> size, s32 width, s32 height)
     {
         size.Width--;
         f32 t = (f32)(width) / (f32)(size.Width);
