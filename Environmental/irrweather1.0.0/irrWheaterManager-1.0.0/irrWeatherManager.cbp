@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="irrWeatherManager" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option show_notes="0">
+			<notes>
+				<![CDATA[irrWeatherManager 0.1.5 Release:
+	Added: random texture coordinates for each cloud particle on the cloud's palette
+	Removed: cloud particle sorting and child particles
+	Improved: added setDefaults() function to SCloudCreationInfo
+	Removed: SCloudCreationInfo constructor
+	Added: better support for cloud creation info in cloud layer creation
+	Added: support for random cloud particle palettes for each cloud
+	Added: simple moon
+	Added: ICloudLayer class that keeps a list of all clouds in it and provides access functions to them
+	Added: functions to add, get, and remove cloud layers to the weather manager
+	Added: two new cumulus particle palettes
+	Fixed: crash when application using irrWeatherManager is closed
+	Added: lightning effects using Sudi's CBoltSceneNode
+	Added: "host cloud" lights up when lightning bolt comes out of it (early test)
+	Fixed: ICloudSceneNode's bounding box now fits over the particles, not just their positions, so it's the "true" bounding box
+	Changed: sky and starbox textures now fade into a fog color; atmosphere looks more expansive and unlimited now
+	Fixed: cloud rendering bug
+	Added: ICloudSceneNode::setCloudParticleSize()
+	Fixed: corrected some credits in source files
+	Changed: cleaned up code
+	Changed: updated skydome and skybox textures to use alpha channel for "fog"
+	Added: some changes to IAtmosphereSkySceneNode
+	Added: auto-update fog color to IAtmosphereSkySceneNode]]>
+			</notes>
+		</Option>
+		<Build>
+			<Target title="Debug">
+				<Option output="./bin/Debug/irrWeatherManager_Debug" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="./bin/Debug" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="../../irrlicht-1.7.1/lib/Win32-gcc/libIrrlicht.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="./bin/Debug/irrWeatherManager" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="./bin/Debug" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+		</Compiler>
+		<Linker>
+			<Add library="Xcursor" />
+			<Add library="Xxf86vm" />
+			<Add library="Irrlicht" />
+			<Add library="X11" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+		</Linker>
+		<Unit filename="CloudSceneNode.cpp" />
+		<Unit filename="CloudSceneNode.h" />
+		<Unit filename="IAtmosphereCloudSceneNode.cpp" />
+		<Unit filename="IAtmosphereCloudSceneNode.h" />
+		<Unit filename="IAtmosphereRainSceneNode.cpp" />
+		<Unit filename="IAtmosphereRainSceneNode.h" />
+		<Unit filename="IAtmosphereSkySceneNode.cpp" />
+		<Unit filename="IAtmosphereSkySceneNode.h" />
+		<Unit filename="IAtmosphereStarSceneNode.cpp" />
+		<Unit filename="IAtmosphereStarSceneNode.h" />
+		<Unit filename="IWeatherManagerAtmosphere.cpp" />
+		<Unit filename="IWeatherManagerAtmosphere.h" />
+		<Unit filename="irrWeatherManager.cpp" />
+		<Unit filename="irrWeatherManager.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

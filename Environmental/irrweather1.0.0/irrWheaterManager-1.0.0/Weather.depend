@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1379169497 source:c:\users\youri\desktop\irrwheatermanager-1.0.0\cloudscenenode.cpp
+	"CloudSceneNode.h"
+
+1379169497 c:\users\youri\desktop\irrwheatermanager-1.0.0\cloudscenenode.h
+	<irr/irrlicht.h>
+
+1379169212 source:c:\users\youri\desktop\irrwheatermanager-1.0.0\iatmospherecloudscenenode.cpp
+	"IAtmosphereCloudSceneNode.h"
+
+1379169212 c:\users\youri\desktop\irrwheatermanager-1.0.0\iatmospherecloudscenenode.h
+	"CloudSceneNode.h"
+
+1379169212 source:c:\users\youri\desktop\irrwheatermanager-1.0.0\iatmosphererainscenenode.cpp
+	"IAtmosphereRainSceneNode.h"
+
+1379169212 c:\users\youri\desktop\irrwheatermanager-1.0.0\iatmosphererainscenenode.h
+	<irr/irrlicht.h>
+
+1379169212 source:c:\users\youri\desktop\irrwheatermanager-1.0.0\iatmosphereskyscenenode.cpp
+	"IAtmosphereSkySceneNode.h"
+
+1379169211 c:\users\youri\desktop\irrwheatermanager-1.0.0\iatmosphereskyscenenode.h
+	<irr/irrlicht.h>
+
+1379169212 source:c:\users\youri\desktop\irrwheatermanager-1.0.0\iatmospherestarscenenode.cpp
+	"IAtmosphereStarSceneNode.h"
+
+1379169211 c:\users\youri\desktop\irrwheatermanager-1.0.0\iatmospherestarscenenode.h
+	<irr/irrlicht.h>
+
+1379169212 source:c:\users\youri\desktop\irrwheatermanager-1.0.0\irrweathermanager.cpp
+	"irrWeatherManager.h"
+
+1379169497 c:\users\youri\desktop\irrwheatermanager-1.0.0\irrweathermanager.h
+	"IWeatherManagerAtmosphere.h"
+
+1379169212 c:\users\youri\desktop\irrwheatermanager-1.0.0\iweathermanageratmosphere.h
+	"IAtmosphereSkySceneNode.h"
+	"IAtmosphereStarSceneNode.h"
+	"IAtmosphereRainSceneNode.h"
+	"IAtmosphereCloudSceneNode.h"
+
+1379170483 source:c:\users\youri\desktop\irrwheatermanager-1.0.0\iweathermanageratmosphere.cpp
+	"IWeatherManagerAtmoSphere.h"
+
+1379170593 source:c:\users\youri\desktop\irrwheatermanager-1.0.0\main.cpp
+	<irr\irrlicht.h>
+	"irrWeatherManager.h"
+

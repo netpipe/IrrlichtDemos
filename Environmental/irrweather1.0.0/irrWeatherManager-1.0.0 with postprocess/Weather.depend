@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1379200630 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/terrain-demos/Weather 1.0.0/irrWeatherManager-1.0.0 with postprocess/CloudSceneNode.cpp
+	"CloudSceneNode.h"
+
+1379194697 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/terrain-demos/Weather 1.0.0/irrWeatherManager-1.0.0 with postprocess/CloudSceneNode.h
+	<irr/irrlicht.h>
+
+1379194412 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/terrain-demos/Weather 1.0.0/irrWeatherManager-1.0.0 with postprocess/IAtmosphereCloudSceneNode.cpp
+	"IAtmosphereCloudSceneNode.h"
+
+1379194412 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/terrain-demos/Weather 1.0.0/irrWeatherManager-1.0.0 with postprocess/IAtmosphereCloudSceneNode.h
+	"CloudSceneNode.h"
+
+1379194412 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/terrain-demos/Weather 1.0.0/irrWeatherManager-1.0.0 with postprocess/IAtmosphereSkySceneNode.cpp
+	"IAtmosphereSkySceneNode.h"
+
+1379194411 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/terrain-demos/Weather 1.0.0/irrWeatherManager-1.0.0 with postprocess/IAtmosphereSkySceneNode.h
+	<irr/irrlicht.h>
+
+1379194412 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/terrain-demos/Weather 1.0.0/irrWeatherManager-1.0.0 with postprocess/IAtmosphereStarSceneNode.cpp
+	"IAtmosphereStarSceneNode.h"
+
+1379194411 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/terrain-demos/Weather 1.0.0/irrWeatherManager-1.0.0 with postprocess/IAtmosphereStarSceneNode.h
+	<irr/irrlicht.h>
+
+1379201536 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/terrain-demos/Weather 1.0.0/irrWeatherManager-1.0.0 with postprocess/irrWeatherManager.cpp
+	"irrWeatherManager.h"
+
+1379201428 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/terrain-demos/Weather 1.0.0/irrWeatherManager-1.0.0 with postprocess/irrWeatherManager.h
+	"IWeatherManagerAtmosphere.h"
+	"PostProcessManager.h"
+	"ShaderPostProcess.h"
+
+1379194412 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/terrain-demos/Weather 1.0.0/irrWeatherManager-1.0.0 with postprocess/IWeatherManagerAtmosphere.h
+	"IAtmosphereSkySceneNode.h"
+	"IAtmosphereStarSceneNode.h"
+	"IAtmosphereRainSceneNode.h"
+	"IAtmosphereCloudSceneNode.h"
+
+1379194412 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/terrain-demos/Weather 1.0.0/irrWeatherManager-1.0.0 with postprocess/IAtmosphereRainSceneNode.h
+	<irr/irrlicht.h>
+
+1378683714 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/terrain-demos/Weather 1.0.0/irrWeatherManager-1.0.0 with postprocess/PostProcessManager.h
+	<irr/irrlicht.h>
+
+1326209126 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/terrain-demos/Weather 1.0.0/irrWeatherManager-1.0.0 with postprocess/ShaderPostProcess.h
+	"IPostprocess.h"
+	"ShaderMaterial.h"
+
+1378603948 /home/Dev/agnostic-code/Stuff2/Demos/WIPs/terrain-demos/Weather 1.0.0/irrWeatherManager-1.0.0 with postprocess/ShaderMaterial.h
+	<irr/irrlicht.h>
+
+1379202455 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/terrain-demos/Weather 1.0.0/irrWeatherManager-1.0.0 with postprocess/IWeatherManagerAtmosphere.cpp
+	"IWeatherManagerAtmoSphere.h"
+
+1379202219 source:/home/Dev/agnostic-code/Stuff2/Demos/WIPs/terrain-demos/Weather 1.0.0/irrWeatherManager-1.0.0 with postprocess/main.cpp
+	<irr/irrlicht.h>
+	"PostProcessManager.h"
+	"ShaderPostProcess.h"
+	"irrWeatherManager.h"
+
