@@ -25,6 +25,8 @@ int main(int argc,char* argv[])
 	params.Bits          = 32;
 	params.EventReceiver = &eventReceiver;
 	device = createDeviceEx(params);
+	
+	    device->getFileSystem()->addZipFileArchive("./media.zip");
 
 	// Title of the window.
 	device->setWindowCaption(L"Projective Textures [ Copyright (C) 2009 VIZ.fuerte ]");
