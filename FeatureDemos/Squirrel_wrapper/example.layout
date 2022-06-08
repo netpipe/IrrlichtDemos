@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="All" />
+	<File name="src/Scene_Interface.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="22" />
+		</Cursor>
+		<Folding>
+			<Collapse line="3" />
+			<Collapse line="9" />
+			<Collapse line="13" />
+			<Collapse line="18" />
+			<Collapse line="23" />
+			<Collapse line="35" />
+			<Collapse line="45" />
+			<Collapse line="55" />
+			<Collapse line="65" />
+			<Collapse line="75" />
+			<Collapse line="85" />
+			<Collapse line="95" />
+			<Collapse line="106" />
+			<Collapse line="117" />
+			<Collapse line="127" />
+			<Collapse line="137" />
+			<Collapse line="146" />
+			<Collapse line="156" />
+			<Collapse line="166" />
+		</Folding>
+	</File>
+	<File name="src/definitions.h" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="351" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/main.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2396" topLine="7" />
+		</Cursor>
+		<Folding>
+			<Collapse line="23" />
+			<Collapse line="53" />
+			<Collapse line="80" />
+			<Collapse line="94" />
+			<Collapse line="177" />
+			<Collapse line="221" />
+		</Folding>
+	</File>
+	<File name="src/Squirrel_interface.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="3" />
+			<Collapse line="11" />
+			<Collapse line="62" />
+			<Collapse line="67" />
+			<Collapse line="92" />
+			<Collapse line="116" />
+			<Collapse line="133" />
+			<Collapse line="144" />
+		</Folding>
+	</File>
+	<EditorTabsLayout layout="03438fc05e25675f001d284900000002=*0;Squirrel:src/definitions.h,1;Squirrel:src/main.cpp,2;Squirrel:src/Scene_Interface.cpp,3;Squirrel:src/Squirrel_interface.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=408;besth=331;minw=408;minh=331;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03438fc05e25675f001d284900000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+</CodeBlocks_layout_file>
