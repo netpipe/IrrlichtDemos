@@ -1,0 +1,9 @@
+Moon Phase Calculator
+
+With this Moon Phase Calculator you can calculate the date and time (maximum +/- 2 mins) of new moon and full moon of any given month of any year. By default it will display the moon phase according to the current PC system time.
+
+contact me:
+
+sourab_bose2002@yahoo.co.in
+
+file submitted at www.planet-source-code.com

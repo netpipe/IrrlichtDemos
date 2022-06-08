@@ -1,0 +1,76 @@
+
+
+define /
+{
+	system next goto "\n"
+}
+
+define myType
+{
+	print "\nThis is code.";
+}
+
+
+// This is the second test program for the Goldfish interpreter
+
+print "\nWelcome to Goldfish test program #2\n";
+
+print "\nWould you like to test the \"memory alter_type\" command?(true/false):";
+
+// testing the "memory alter_type" command
+if ( input )
+{
+	print "\nNow testing \"memory alter_type\"command...";
+
+	// create a random variable
+	obj = "empty";
+
+	// obtain the object to look for: use myType
+	print "\nWould you like this to be myType?(true/false):";
+
+	// myType
+	if ( input )
+	{
+		// change the object type
+		memory alter_type "obj" "myType"
+
+		// indicate using myType
+		print "\nmyType is now the object type...";
+	}
+
+	// return the contents of the object
+	print "\nWould you like to see the return?(true/false):";
+	if ( input )
+	{
+		print "\nObject=" obj;
+	}
+} else {
+	// math command tests
+
+	print "\nNow testing \"math\" command...";
+
+	// obtain object value
+	print "\nObject value (any):";
+	obj = input;
+
+	// obtain a second object name
+	print "\nSecond object value (any):";
+	obj2 = input;
+
+	print "\nTesting addition:" ( math str add obj obj2 )
+		"\nTesting subtraction:" ( math str sub obj obj2 );
+}
+
+//
+print "\nnow testing manip slot:\nenter a slot value: ";
+obj3 = input;
+print "\nenter a new value: ";
+obj4 = input;
+
+print "\nold obj:" obj "\nnew obj:";
+manip slot obj obj3 = obj4;
+print obj "\nLike it?\n";
+
+// Program end
+print "\nThank you for using this program."
+input;

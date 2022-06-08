@@ -1,0 +1,9 @@
+to-do list
+============
+
+math numerical power
+(in the math_command function)
+
+file delete
+
+check to see if in_command() is malfunctioning (which I sort of doubt) or if the problem is with system next total

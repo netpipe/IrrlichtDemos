@@ -1,0 +1,45 @@
+
+
+define /
+{
+	if ( system GIVEN_SUB next value == "/" )
+	{
+		system sub GIVEN_SUB next goto "\n"
+	} else {
+		if ( system GIVEN_SUB next value == "*" )
+		{
+			end = false;
+			while ( end == false )
+			{
+				system sub GIVEN_SUB next goto "*"
+				if ( system GIVEN_SUB next value == "/" )
+				{ end = true; }
+			}
+		} else {
+		math num div
+			system previous value
+			system sub GIVEN_SUB next total
+		}
+	}
+}
+
+
+// DOCUMENTATION
+//===============
+//
+// This is the standard user-defined library for Goldfish.
+//
+// Since / had not yet been defined, it has been defined above.
+// The backslash has two functions:
+// 	> To ignore characters
+//		>> between // and the newline character
+//		>> between /* and */
+//	> To divide two numbers
+// 
+// When it ignores characters, / looks at characters from the file in the runtime stack GIVEN_SUB from the end.
+// By doing so, the user can define / in their program to use the StandardLib definition without having to worry about it only operating in their definition's {} (which is default).
+//
+// When dividing numbers, / uses the system's built-in system division function which requests two inputs, a numerator and a denominator.
+//
+
+/* print "Fail of / and * combination. */

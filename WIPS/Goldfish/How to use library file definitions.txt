@@ -1,0 +1,14 @@
+How to use definitions of tokens in other libraries:
+
+Define a single character (e.g. #) whose definition is to get the next token and search for its definition in a spefic file.
+
+ex:
+
+define #
+{
+token = system previous name; // obtains the next token and stores it in the new variable "token"
+in "Library_file.txt" Type token; // find the object of type "Type" in the library file "Library_file.txt"
+token = system previous value; // stores the final value returned from the definition in the library file
+return token; // returns the value of token
+delete token; // delete the variable so that it isn't using up memory
+}

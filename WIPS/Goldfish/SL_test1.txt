@@ -1,0 +1,9 @@
+
+
+define /
+{
+	GIVEN_SUB = 0;
+	in "StandardLib.txt" define /
+}
+
+// This is an attempt to call the backslash operation from StandardLib.
