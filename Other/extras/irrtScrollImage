@@ -1,0 +1,1 @@
+node->getMaterial(0)->getTextureMatrix(0).setTextureTranslate(x, y) 
