@@ -20,6 +20,7 @@
 			<Add directory="/home/Dev/libs/Irrlicht/include" />
 			<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
 			<Add directory="./" />
+			<Add directory="./source" />
 		</Compiler>
 		<Linker>
 			<Add library="Irrlicht" />
@@ -30,6 +31,7 @@
 			<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 			<Add directory="../../../Dev/LunaLibs/irrlicht-1.8.4/lib/Linux" />
 		</Linker>
+		<Unit filename="main.cpp" />
 		<Unit filename="source/CBloodEffect.cpp" />
 		<Unit filename="source/CBloodEffect.h" />
 		<Unit filename="source/CBloodShader.cpp" />

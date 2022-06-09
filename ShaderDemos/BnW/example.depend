@@ -1017,3 +1017,40 @@
 1654751192 /home/netpipe/Dev/IrrlichtDemos/Games/BnW2/source/CDeleteParticleAffector.h
 	<irrlicht.h>
 
+1654751361 source:/home/netpipe/Dev/IrrlichtDemos/ShaderDemos/BnW/main.cpp
+	<irrlicht.h>
+	"CWaterSurface.h"
+	"CWaterShader.h"
+	"CBloodEffect.h"
+	"CBloodShader.h"
+
+1282204250 source:/home/netpipe/Dev/IrrlichtDemos/ShaderDemos/BnW/source/CBloodEffect.cpp
+	"CBloodEffect.h"
+	"CBloodShader.h"
+	"CDeleteParticleAffector.h"
+
+1654751172 /home/netpipe/Dev/IrrlichtDemos/ShaderDemos/BnW/source/CBloodEffect.h
+	<irrlicht.h>
+
+1654751178 /home/netpipe/Dev/IrrlichtDemos/ShaderDemos/BnW/source/CBloodShader.h
+	<irrlicht.h>
+
+1654751192 /home/netpipe/Dev/IrrlichtDemos/ShaderDemos/BnW/source/CDeleteParticleAffector.h
+	<irrlicht.h>
+
+1282166008 source:/home/netpipe/Dev/IrrlichtDemos/ShaderDemos/BnW/source/CBloodShader.cpp
+	"CBloodShader.h"
+
+1282196148 source:/home/netpipe/Dev/IrrlichtDemos/ShaderDemos/BnW/source/CWaterShader.cpp
+	"CWaterShader.h"
+
+1654751182 /home/netpipe/Dev/IrrlichtDemos/ShaderDemos/BnW/source/CWaterShader.h
+	<irrlicht.h>
+
+1282217707 source:/home/netpipe/Dev/IrrlichtDemos/ShaderDemos/BnW/source/CWaterSurface.cpp
+	"CWaterSurface.h"
+	"CWaterShader.h"
+
+1654751187 /home/netpipe/Dev/IrrlichtDemos/ShaderDemos/BnW/source/CWaterSurface.h
+	<irrlicht.h>
+
