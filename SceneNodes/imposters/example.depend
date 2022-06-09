@@ -1005,3 +1005,26 @@
 	"CMeshBuffer.h"
 	"IAttributes.h"
 
+1645472545 source:/home/netpipe/Dev/IrrlichtDemos/SceneNodes/imposters/CImpostorSceneNode.cpp
+	"CImpostorSceneNode.h"
+	"ISceneCollisionManager.h"
+	"IVideoDriver.h"
+	"ICameraSceneNode.h"
+	"SViewFrustum.h"
+	"ISceneManager.h"
+	"ITimer.h"
+	"IGUIEnvironment.h"
+	"IGUIFont.h"
+
+1645472545 /home/netpipe/Dev/IrrlichtDemos/SceneNodes/imposters/CImpostorSceneNode.h
+	"ISceneNode.h"
+	"ITexture.h"
+	"CMeshBuffer.h"
+	"IAttributes.h"
+
+1645472545 source:/home/netpipe/Dev/IrrlichtDemos/SceneNodes/imposters/main.cpp
+	<irrlicht.h>
+	"CImpostorSceneNode.h"
+	"../../tools/GUIEditor/CGUIEditFactory.h"
+	"../../tools/GUIEditor/CGUIAttributeEditor.h"
+
