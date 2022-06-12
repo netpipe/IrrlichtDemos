@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="OpenSteer Demos" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="All (Full Demo)">
+				<Option output="./bin/OpenSteer" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="./bin" />
+				<Option object_output=".objs/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+			<Target title="emscripten">
+				<Option output="./bin/OpenSteer.html" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="./bin" />
+				<Option object_output=".objs/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Option projectIncludeDirsRelation="1" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Option projectLibDirsRelation="1" />
+				<Compiler>
+					<Add option="-D_IRR_STATIC_LIB_" />
+					<Add option="-D_IRR_EMSCRIPTEN_PLATFORM_" />
+					<Add option="-D__EMSCRIPTEN__" />
+					<Add directory="../include" />
+					<Add directory="../../OpenSteer/include" />
+					<Add directory="../../irrlicht-ogl-es/irrlicht/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s ALLOW_MEMORY_GROWTH=1" />
+					<Add option="--preload-file media/" />
+					<Add option="-s FULL_ES2=1" />
+					<Add option="-s DISABLE_EXCEPTION_CATCHING=0" />
+					<Add option="-s NO_EXIT_RUNTIME=1" />
+					<Add library="GL" />
+					<Add library="GLESv2" />
+					<Add library="Irrlicht" />
+					<Add library="IrrOpenSteer" />
+					<Add library="SDL" />
+					<Add directory="../lib" />
+					<Add directory="../../OpenSteer" />
+					<Add directory="../../irrlicht-ogl-es/irrlicht/lib/Linux" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-fexpensive-optimizations" />
+			<Add option="-Os" />
+			<Add option="-O3" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+			<Add directory="../include" />
+			<Add directory="/home/netpipe/Dev/LunaLibs/irrlicht-1.8.4/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-s" />
+			<Add library="Irrlicht" />
+			<Add library="IrrOpenSteer" />
+			<Add library="GL" />
+			<Add library="X11" />
+			<Add library="Xxf86vm" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+			<Add directory="../lib" />
+			<Add directory="/home/netpipe/Dev/LunaLibs/irrlicht-1.8.4/lib/Linux" />
+		</Linker>
+		<Unit filename="cMeshTool.cpp" />
+		<Unit filename="cMeshTool.h" />
+		<Unit filename="cOpenSteerDemo.cpp" />
+		<Unit filename="cOpenSteerDemo.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="plugins/1-OneTurning/cOneTurning.cpp" />
+		<Unit filename="plugins/1-OneTurning/cOneTurning.h" />
+		<Unit filename="plugins/1-OneTurning/cOneTurningPlugIn.cpp" />
+		<Unit filename="plugins/1-OneTurning/cOneTurningPlugIn.h" />
+		<Unit filename="plugins/2-LowSpeedTurn/cLowSpeedTurn.cpp" />
+		<Unit filename="plugins/2-LowSpeedTurn/cLowSpeedTurn.h" />
+		<Unit filename="plugins/2-LowSpeedTurn/cLowSpeedTurnPlugIn.cpp" />
+		<Unit filename="plugins/2-LowSpeedTurn/cLowSpeedTurnPlugIn.h" />
+		<Unit filename="plugins/3-Boids/cBoids.cpp" />
+		<Unit filename="plugins/3-Boids/cBoids.h" />
+		<Unit filename="plugins/3-Boids/cBoidsPlugIn.cpp" />
+		<Unit filename="plugins/3-Boids/cBoidsPlugIn.h" />
+		<Unit filename="plugins/4-MultiplePursuit/cMultiplePursuit.cpp" />
+		<Unit filename="plugins/4-MultiplePursuit/cMultiplePursuit.h" />
+		<Unit filename="plugins/4-MultiplePursuit/cMultiplePursuitPlugIn.cpp" />
+		<Unit filename="plugins/4-MultiplePursuit/cMultiplePursuitPlugIn.h" />
+		<Unit filename="plugins/5-Soccer/cSoccer.cpp" />
+		<Unit filename="plugins/5-Soccer/cSoccer.h" />
+		<Unit filename="plugins/5-Soccer/cSoccerPlugIn.cpp" />
+		<Unit filename="plugins/5-Soccer/cSoccerPlugIn.h" />
+		<Unit filename="plugins/6-Pedestrian/cPedestrian.cpp" />
+		<Unit filename="plugins/6-Pedestrian/cPedestrian.h" />
+		<Unit filename="plugins/6-Pedestrian/cPedestrianPlugIn.cpp" />
+		<Unit filename="plugins/6-Pedestrian/cPedestrianPlugIn.h" />
+		<Unit filename="plugins/7-PedestriansWalkingAnEight/cPedestriansWalkingAnEight.cpp" />
+		<Unit filename="plugins/7-PedestriansWalkingAnEight/cPedestriansWalkingAnEight.h" />
+		<Unit filename="plugins/7-PedestriansWalkingAnEight/cPedestriansWalkingAnEightPlugIn.cpp" />
+		<Unit filename="plugins/7-PedestriansWalkingAnEight/cPedestriansWalkingAnEightPlugIn.h" />
+		<Unit filename="plugins/8-CaptureTheFlag/cCaptureTheFlag.cpp" />
+		<Unit filename="plugins/8-CaptureTheFlag/cCaptureTheFlag.h" />
+		<Unit filename="plugins/8-CaptureTheFlag/cCaptureTheFlagPlugIn.cpp" />
+		<Unit filename="plugins/8-CaptureTheFlag/cCaptureTheFlagPlugIn.h" />
+		<Unit filename="plugins/9-MapDrive/cMapDrive.cpp" />
+		<Unit filename="plugins/9-MapDrive/cMapDrive.h">
+			<Option weight="3" />
+		</Unit>
+		<Unit filename="plugins/9-MapDrive/cMapDrivePlugIn.cpp" />
+		<Unit filename="plugins/9-MapDrive/cMapDrivePlugIn.h">
+			<Option weight="0" />
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
