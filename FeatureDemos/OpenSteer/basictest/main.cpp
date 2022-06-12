@@ -18,7 +18,7 @@ int main()
     //make a opengl device without keymap
     IrrlichtDevice *device =
     device = createDevice(video::EDT_OPENGL, // Render com openGL
-       core::dimension2d<s32>(800, 600),     // resolucao 800X600
+       core::dimension2d<u32>(800, 600),     // resolucao 800X600
        32,                                   // colors
        false,                                // full screen
        false,                                // stencilbuffer
@@ -30,14 +30,14 @@ int main()
     scene::ISceneManager* smgr = device->getSceneManager();
 
        //get mesh
-    scene::IAnimatedMesh * mesh = smgr->getMesh("inimigo.mesh");
+    scene::IAnimatedMesh * mesh = smgr->getMesh("../../../media/dwarf.x");
     scene::IAnimatedMeshSceneNode * enemynode = smgr->addAnimatedMeshSceneNode( mesh );
 
     //make a scene node
     MyObject * obj;
     if (enemynode )
     {
-        enemynode->setMaterialTexture( 0, driver->getTexture("inimigo.jpg") );
+        enemynode->setMaterialTexture( 0, driver->getTexture("../../../media/crate.png") );
         enemynode->setPosition(core::vector3df(30, 0, 30));
         enemynode->setScale(core::vector3df(1,1,1));
                    enemynode->setMaterialFlag(video::EMF_LIGHTING, false);
@@ -46,8 +46,7 @@ int main()
     }
 
        // add camera
-    scene::ICameraSceneNode * camera = smgr->addCameraSceneNodeFPS(smgr->getRootSceneNode(), 10.0f,   0.01f,
-        -1, false, 0 );
+    scene::ICameraSceneNode * camera = smgr->addCameraSceneNodeFPS();
     camera->setPosition(core::vector3df(-15.0f,0.0f, -40));
 
     float angulo;

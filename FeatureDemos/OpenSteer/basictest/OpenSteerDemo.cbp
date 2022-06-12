@@ -8,7 +8,7 @@
 		<Build>
 			<Target title="All (Full Demo)">
 				<Option output="./bin/OpenSteer" prefix_auto="0" extension_auto="0" />
-				<Option working_dir="./bin" />
+				<Option working_dir="./" />
 				<Option object_output=".objs/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -54,7 +54,9 @@
 			<Add option="-Os" />
 			<Add option="-O3" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
-			<Add directory="/home/clayton/games/Luna/libs/libIrrOpenSteer_10-02-15/include" />
+			<Add directory="/home/netpipe/Dev/LunaLibs/opensteer/include/OpenSteer" />
+			<Add directory="/home/netpipe/Dev/LunaLibs/irrlicht-1.8.4/include" />
+			<Add directory="/home/netpipe/Dev/LunaLibs/opensteer/include" />
 		</Compiler>
 		<Linker>
 			<Add option="-s" />
@@ -63,17 +65,15 @@
 			<Add library="GL" />
 			<Add library="X11" />
 			<Add library="Xxf86vm" />
-			<Add library="opensteer" />
 			<Add library="glfw" />
+			<Add library="GLU" />
+			<Add library="glut" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
-			<Add directory="/home/clayton/games/Luna/libs/libIrrOpenSteer_10-02-15/lib" />
+			<Add directory="/home/netpipe/Dev/LunaLibs/opensteer/lib" />
+			<Add directory="/home/netpipe/Dev/LunaLibs/irrlicht-1.8.4/lib/Linux" />
 		</Linker>
 		<Unit filename="main.cpp" />
 		<Unit filename="main.h" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-			<envvars />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

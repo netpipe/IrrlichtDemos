@@ -50,14 +50,14 @@ using namespace irr;
             applySteeringForce (Vec3 (-2, 0, -3), elapsedTime);
             MeshNode->setPosition(core::vector3df (position().x, position().y, position().z) );
 /// extrafix
-  MeshNode->setRotation(curva);
-  curva = MeshNode->getRotation();
-  curva.X = -90;
-  MeshNode->setRotation(curva);
+//  MeshNode->setRotation(curva);
+ // curva = MeshNode->getRotation();
+ // curva.X = -90;
+ // MeshNode->setRotation(curva);
 
    // Forward
    core::matrix4 m;
-   core::vector3df vel = core::vector3df( velocidade,0,0);
+   core::vector3df vel = core::vector3df( 1,0,0);
    m.setRotationDegrees(MeshNode->getRotation());
    m.transformVect(vel);
    MeshNode->setPosition(MeshNode->getPosition() + vel);
