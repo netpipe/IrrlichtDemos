@@ -1,0 +1,270 @@
+# depslib dependency file v1.0
+1655062047 source:/home/netpipe/Desktop/opensteer-code/plugins/Boids.cpp
+	<sstream>
+	"OpenSteer/SimpleVehicle.h"
+	"OpenSteer/OpenSteerDemo.h"
+	"OpenSteer/Proximity.h"
+	"OpenSteer/Color.h"
+	"OpenSteer/UnusedParameter.h"
+	<iomanip>
+	<limits>
+
+1655062048 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/SimpleVehicle.h
+	"OpenSteer/AbstractVehicle.h"
+	"OpenSteer/SteerLibrary.h"
+	"OpenSteer/Annotation.h"
+
+1655062047 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/AbstractVehicle.h
+	"OpenSteer/LocalSpace.h"
+	<vector>
+
+1655062049 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/LocalSpace.h
+	"OpenSteer/Vec3.h"
+
+1655062048 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/Vec3.h
+	"OpenSteer/Utilities.h"
+
+1655062048 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/Utilities.h
+	<iostream>
+	<cstdlib>
+	<cfloat>
+	<cmath>
+	<vector>
+	<cassert>
+	<limits>
+
+1655062048 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/SteerLibrary.h
+	"OpenSteer/AbstractVehicle.h"
+	"OpenSteer/Pathway.h"
+	"OpenSteer/Obstacle.h"
+	"OpenSteer/Utilities.h"
+	"Color.h"
+
+1655062049 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/Pathway.h
+
+1655062049 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/Obstacle.h
+	"OpenSteer/Vec3.h"
+	"OpenSteer/LocalSpace.h"
+	"OpenSteer/AbstractVehicle.h"
+
+1655062048 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/Color.h
+
+1655062048 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/Annotation.h
+	"OpenSteer/Draw.h"
+	"OpenSteer/Vec3.h"
+	"OpenSteer/Color.h"
+
+1655062047 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/Draw.h
+	"OpenSteer/Vec3.h"
+	"OpenSteer/Color.h"
+	"OpenSteer/AbstractVehicle.h"
+	"OpenSteer/Obstacle.h"
+
+1655062047 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/OpenSteerDemo.h
+	"OpenSteer/Clock.h"
+	"OpenSteer/PlugIn.h"
+	"OpenSteer/Camera.h"
+	"OpenSteer/Utilities.h"
+	"OpenSteer/Draw.h"
+
+1655062048 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/Clock.h
+	"OpenSteer/Utilities.h"
+	<xtl.h>
+	<windows.h>
+
+1655062049 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/PlugIn.h
+	<iostream>
+	"OpenSteer/AbstractVehicle.h"
+
+1655062048 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/Camera.h
+	"OpenSteer/LocalSpace.h"
+	"OpenSteer/AbstractVehicle.h"
+
+1655062047 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/Proximity.h
+	<algorithm>
+	<vector>
+	"OpenSteer/Vec3.h"
+	"OpenSteer/lq.h"
+
+1655062049 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/lq.h
+
+1655062049 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/UnusedParameter.h
+
+1655062047 source:/home/netpipe/Desktop/opensteer-code/plugins/CaptureTheFlag.cpp
+	<iomanip>
+	<string>
+	<sstream>
+	"OpenSteer/SimpleVehicle.h"
+	"OpenSteer/OpenSteerDemo.h"
+	"OpenSteer/Color.h"
+
+1655062047 source:/home/netpipe/Desktop/opensteer-code/plugins/LowSpeedTurn.cpp
+	<iomanip>
+	<sstream>
+	"OpenSteer/SimpleVehicle.h"
+	"OpenSteer/OpenSteerDemo.h"
+	"OpenSteer/Color.h"
+
+1655062047 source:/home/netpipe/Desktop/opensteer-code/plugins/MapDrive.cpp
+	<iomanip>
+	<sstream>
+	<cassert>
+	"OpenSteer/OpenSteerDemo.h"
+	"OpenSteer/SimpleVehicle.h"
+	"OpenSteer/Color.h"
+	"OpenSteer/UnusedParameter.h"
+	"OpenSteer/PolylineSegmentedPathwaySegmentRadii.h"
+	"OpenSteer/QueryPathAlike.h"
+	"OpenSteer/QueryPathAlikeUtilities.h"
+	"OpenSteer/SegmentedPathAlikeUtilities.h"
+	"OpenSteer/Utilities.h"
+	"OpenSteer/StandardTypes.h"
+	"OpenSteer/TerrainMap.h"
+
+1655062049 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/PolylineSegmentedPathwaySegmentRadii.h
+	<vector>
+	"OpenSteer/SegmentedPathway.h"
+	"OpenSteer/PolylineSegmentedPath.h"
+	"OpenSteer/QueryPathAlikeBaseDataExtractionPolicies.h"
+	"OpenSteer/Vec3.h"
+	"OpenSteer/Vec3Utilities.h"
+
+1655062049 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/SegmentedPathway.h
+	"OpenSteer/Pathway.h"
+	"OpenSteer/StandardTypes.h"
+
+1655062047 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/StandardTypes.h
+	<cstddef>
+
+1655062047 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/PolylineSegmentedPath.h
+	<vector>
+	"OpenSteer/SegmentedPath.h"
+	"OpenSteer/QueryPathAlikeBaseDataExtractionPolicies.h"
+	"OpenSteer/Vec3.h"
+	"OpenSteer/Vec3Utilities.h"
+
+1655062048 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/SegmentedPath.h
+	"OpenSteer/Path.h"
+	"OpenSteer/StandardTypes.h"
+
+1655062049 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/Path.h
+
+1655062047 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/QueryPathAlikeBaseDataExtractionPolicies.h
+
+1655062047 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/Vec3Utilities.h
+	"OpenSteer/Vec3.h"
+	"OpenSteer/StandardTypes.h"
+	"OpenSteer/Utilities.h"
+
+1655062048 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/QueryPathAlike.h
+	<limits>
+	"OpenSteer/Vec3.h"
+	"OpenSteer/Vec3Utilities.h"
+	"OpenSteer/Utilities.h"
+	"OpenSteer/QueryPathAlikeBaseDataExtractionPolicies.h"
+
+1655062049 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/QueryPathAlikeUtilities.h
+
+1655062049 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/SegmentedPathAlikeUtilities.h
+	<cassert>
+	"OpenSteer/StandardTypes.h"
+
+1655062047 source:/home/netpipe/Desktop/opensteer-code/plugins/MultiplePursuit.cpp
+	"OpenSteer/SimpleVehicle.h"
+	"OpenSteer/OpenSteerDemo.h"
+	"OpenSteer/Color.h"
+
+1655062047 source:/home/netpipe/Desktop/opensteer-code/plugins/OneTurning.cpp
+	<iomanip>
+	<sstream>
+	"OpenSteer/SimpleVehicle.h"
+	"OpenSteer/OpenSteerDemo.h"
+	"OpenSteer/Color.h"
+
+1655062047 source:/home/netpipe/Desktop/opensteer-code/plugins/Pedestrian.cpp
+	<iomanip>
+	<sstream>
+	"OpenSteer/PolylineSegmentedPathwaySingleRadius.h"
+	"OpenSteer/SimpleVehicle.h"
+	"OpenSteer/OpenSteerDemo.h"
+	"OpenSteer/Proximity.h"
+	"OpenSteer/Color.h"
+
+1655062047 /home/netpipe/Desktop/opensteer-code/include/OpenSteer/PolylineSegmentedPathwaySingleRadius.h
+	"OpenSteer/SegmentedPathway.h"
+	"OpenSteer/PolylineSegmentedPath.h"
+	"OpenSteer/QueryPathAlikeBaseDataExtractionPolicies.h"
+	"OpenSteer/Vec3.h"
+	"OpenSteer/Vec3Utilities.h"
+
+1655062047 source:/home/netpipe/Desktop/opensteer-code/plugins/Soccer.cpp
+	<iomanip>
+	<sstream>
+	"OpenSteer/SimpleVehicle.h"
+	"OpenSteer/OpenSteerDemo.h"
+	"OpenSteer/Draw.h"
+	"OpenSteer/Color.h"
+	"OpenSteer/UnusedParameter.h"
+
+1655062050 source:/home/netpipe/Desktop/opensteer-code/src/Camera.cpp
+	"OpenSteer/Camera.h"
+	"OpenSteer/Draw.h"
+
+1655062047 source:/home/netpipe/Desktop/opensteer-code/src/Clock.cpp
+	"OpenSteer/Clock.h"
+	<xtl.h>
+	<windows.h>
+	<sys/time.h>
+
+1655062047 source:/home/netpipe/Desktop/opensteer-code/src/lq.c
+	<stdlib.h>
+	<float.h>
+	<limits.h>
+	"OpenSteer/lq.h"
+	"OpenSteer/debuglq.c"
+
+1655062047 source:/home/netpipe/Desktop/opensteer-code/src/main.cpp
+	"OpenSteer/OpenSteerDemo.h"
+	"OpenSteer/Draw.h"
+	<cstdlib>
+
+1655062047 source:/home/netpipe/Desktop/opensteer-code/src/OpenSteerDemo.cpp
+	"OpenSteer/OpenSteerDemo.h"
+	"OpenSteer/Annotation.h"
+	"OpenSteer/Color.h"
+	"OpenSteer/Vec3.h"
+	<algorithm>
+	<string>
+	<sstream>
+	<iomanip>
+	<GLUT/glut.h>
+	<GL/glut.h>
+
+1655062047 source:/home/netpipe/Desktop/opensteer-code/src/Pathway.cpp
+	"OpenSteer/Pathway.h"
+
+1655062120 source:/home/netpipe/Desktop/opensteer-code/src/Draw.cpp
+	"OpenSteer/Draw.h"
+	<iomanip>
+	<sstream>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GLUT/glut.h>
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	"OpenSteer/Vec3.h"
+	"OpenSteer/Utilities.h"
+
+1655062047 source:/home/netpipe/Desktop/opensteer-code/src/PlugIn.cpp
+	"OpenSteer/PlugIn.h"
+	<cstring>
+
+1655062047 source:/home/netpipe/Desktop/opensteer-code/src/SimpleVehicle.cpp
+	"OpenSteer/SimpleVehicle.h"
+	<algorithm>
+
+1655062047 source:/home/netpipe/Desktop/opensteer-code/src/Vec3.cpp
+	"OpenSteer/Vec3.h"
+
