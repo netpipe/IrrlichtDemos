@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="All (Full Demo)" />
+	<File name="lib/include/osSimpleVehicle.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2574" topLine="44" />
+		</Cursor>
+	</File>
+	<File name="main.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="432" topLine="14" />
+		</Cursor>
+	</File>
+	<File name="cOpenSteerDemo.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="11307" topLine="235" />
+		</Cursor>
+		<Folding>
+			<Collapse line="137" />
+			<Collapse line="208" />
+			<Collapse line="213" />
+			<Collapse line="219" />
+			<Collapse line="223" />
+			<Collapse line="291" />
+			<Collapse line="309" />
+			<Collapse line="318" />
+			<Collapse line="328" />
+			<Collapse line="343" />
+			<Collapse line="374" />
+			<Collapse line="403" />
+			<Collapse line="407" />
+			<Collapse line="427" />
+			<Collapse line="431" />
+			<Collapse line="443" />
+			<Collapse line="451" />
+			<Collapse line="499" />
+			<Collapse line="502" />
+			<Collapse line="505" />
+		</Folding>
+	</File>
+	<File name="lib/source/osClock.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1834" topLine="1" />
+		</Cursor>
+	</File>
+	<File name="cOpenSteerDemo.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="243" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cMeshTool.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="87" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cMeshTool.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="lib/include/osAbstractVehicle.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="735" topLine="24" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

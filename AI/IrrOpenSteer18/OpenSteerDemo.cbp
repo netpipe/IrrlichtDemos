@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="OpenSteer Demos" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="All (Full Demo)">
+				<Option output="./bin/OpenSteer" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="./bin" />
+				<Option object_output=".objs/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Compiler>
+					<Add option="-DOPENSTEER" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-fexpensive-optimizations" />
+			<Add option="-Os" />
+			<Add option="-O3" />
+			<Add option="-DOPENSTEER" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+			<Add directory="lib/include" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-s" />
+			<Add library="Irrlicht" />
+			<Add library="GL" />
+			<Add library="X11" />
+			<Add library="Xxf86vm" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
+		</Linker>
+		<Unit filename="cMeshTool.cpp" />
+		<Unit filename="cMeshTool.h" />
+		<Unit filename="cOpenSteerDemo.cpp" />
+		<Unit filename="cOpenSteerDemo.h" />
+		<Unit filename="lib/include/osAbstractVehicle.h" />
+		<Unit filename="lib/include/osAnnotation.h" />
+		<Unit filename="lib/include/osClock.h" />
+		<Unit filename="lib/include/osColor.h" />
+		<Unit filename="lib/include/osLocalSpace.h" />
+		<Unit filename="lib/include/osObstacle.h" />
+		<Unit filename="lib/include/osOldPathway.h" />
+		<Unit filename="lib/include/osPath.h" />
+		<Unit filename="lib/include/osPathway.h" />
+		<Unit filename="lib/include/osPlugIn.h" />
+		<Unit filename="lib/include/osPolylineSegmentedPath.h" />
+		<Unit filename="lib/include/osPolylineSegmentedPathwaySegmentRadii.h" />
+		<Unit filename="lib/include/osPolylineSegmentedPathwaySingleRadius.h" />
+		<Unit filename="lib/include/osProximity.h" />
+		<Unit filename="lib/include/osQueryPathAlike.h" />
+		<Unit filename="lib/include/osQueryPathAlikeBaseDataExtractionPolicies.h" />
+		<Unit filename="lib/include/osQueryPathAlikeMappings.h" />
+		<Unit filename="lib/include/osQueryPathAlikeUtilities.h" />
+		<Unit filename="lib/include/osSegmentedPath.h" />
+		<Unit filename="lib/include/osSegmentedPathAlikeUtilities.h" />
+		<Unit filename="lib/include/osSegmentedPathway.h" />
+		<Unit filename="lib/include/osSharedPointer.h" />
+		<Unit filename="lib/include/osSimpleVehicle.h" />
+		<Unit filename="lib/include/osStandardTypes.h" />
+		<Unit filename="lib/include/osSteerLibrary.h" />
+		<Unit filename="lib/include/osTerrainRayTest.h" />
+		<Unit filename="lib/include/osUnusedParameter.h" />
+		<Unit filename="lib/include/osUtilities.h" />
+		<Unit filename="lib/include/osVec3.h" />
+		<Unit filename="lib/include/osVec3Utilities.h" />
+		<Unit filename="lib/include/osVehicleSceneNode.h" />
+		<Unit filename="lib/include/osWaypoint.h" />
+		<Unit filename="lib/include/osWaypointMap.h" />
+		<Unit filename="lib/include/oslq.h" />
+		<Unit filename="lib/source/osClock.cpp" />
+		<Unit filename="lib/source/osColor.cpp" />
+		<Unit filename="lib/source/osObstacle.cpp" />
+		<Unit filename="lib/source/osOldPathway.cpp" />
+		<Unit filename="lib/source/osPath.cpp" />
+		<Unit filename="lib/source/osPathway.cpp" />
+		<Unit filename="lib/source/osPlugIn.cpp" />
+		<Unit filename="lib/source/osPolylineSegmentedPath.cpp" />
+		<Unit filename="lib/source/osPolylineSegmentedPathwaySegmentRadii.cpp" />
+		<Unit filename="lib/source/osPolylineSegmentedPathwaySingleRadius.cpp" />
+		<Unit filename="lib/source/osSegmentedPath.cpp" />
+		<Unit filename="lib/source/osSegmentedPathway.cpp" />
+		<Unit filename="lib/source/osSimpleVehicle.cpp" />
+		<Unit filename="lib/source/osTerrainRayTest.cpp" />
+		<Unit filename="lib/source/osVec3.cpp" />
+		<Unit filename="lib/source/osVec3Utilities.cpp" />
+		<Unit filename="lib/source/osVehicleSceneNode.cpp" />
+		<Unit filename="lib/source/osWaypoint.cpp" />
+		<Unit filename="lib/source/osWaypointMap.cpp" />
+		<Unit filename="lib/source/oslq.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.cpp" />
+		<Unit filename="plugins/1-OneTurning/cOneTurning.cpp" />
+		<Unit filename="plugins/1-OneTurning/cOneTurning.h" />
+		<Unit filename="plugins/1-OneTurning/cOneTurningPlugIn.cpp" />
+		<Unit filename="plugins/1-OneTurning/cOneTurningPlugIn.h" />
+		<Unit filename="plugins/2-LowSpeedTurn/cLowSpeedTurn.cpp" />
+		<Unit filename="plugins/2-LowSpeedTurn/cLowSpeedTurn.h" />
+		<Unit filename="plugins/2-LowSpeedTurn/cLowSpeedTurnPlugIn.cpp" />
+		<Unit filename="plugins/2-LowSpeedTurn/cLowSpeedTurnPlugIn.h" />
+		<Unit filename="plugins/3-Boids/cBoids.cpp" />
+		<Unit filename="plugins/3-Boids/cBoids.h" />
+		<Unit filename="plugins/3-Boids/cBoidsPlugIn.cpp" />
+		<Unit filename="plugins/3-Boids/cBoidsPlugIn.h" />
+		<Unit filename="plugins/4-MultiplePursuit/cMultiplePursuit.cpp" />
+		<Unit filename="plugins/4-MultiplePursuit/cMultiplePursuit.h" />
+		<Unit filename="plugins/4-MultiplePursuit/cMultiplePursuitPlugIn.cpp" />
+		<Unit filename="plugins/4-MultiplePursuit/cMultiplePursuitPlugIn.h" />
+		<Unit filename="plugins/5-Soccer/cSoccer.cpp" />
+		<Unit filename="plugins/5-Soccer/cSoccer.h" />
+		<Unit filename="plugins/5-Soccer/cSoccerPlugIn.cpp" />
+		<Unit filename="plugins/5-Soccer/cSoccerPlugIn.h" />
+		<Unit filename="plugins/6-Pedestrian/cPedestrian.cpp" />
+		<Unit filename="plugins/6-Pedestrian/cPedestrian.h" />
+		<Unit filename="plugins/6-Pedestrian/cPedestrianPlugIn.cpp" />
+		<Unit filename="plugins/6-Pedestrian/cPedestrianPlugIn.h" />
+		<Unit filename="plugins/7-PedestriansWalkingAnEight/cPedestriansWalkingAnEight.cpp" />
+		<Unit filename="plugins/7-PedestriansWalkingAnEight/cPedestriansWalkingAnEight.h" />
+		<Unit filename="plugins/7-PedestriansWalkingAnEight/cPedestriansWalkingAnEightPlugIn.cpp" />
+		<Unit filename="plugins/7-PedestriansWalkingAnEight/cPedestriansWalkingAnEightPlugIn.h" />
+		<Unit filename="plugins/8-CaptureTheFlag/cCaptureTheFlag.cpp" />
+		<Unit filename="plugins/8-CaptureTheFlag/cCaptureTheFlag.h" />
+		<Unit filename="plugins/8-CaptureTheFlag/cCaptureTheFlagPlugIn.cpp" />
+		<Unit filename="plugins/8-CaptureTheFlag/cCaptureTheFlagPlugIn.h" />
+		<Unit filename="plugins/9-MapDrive/cMapDrive.cpp" />
+		<Unit filename="plugins/9-MapDrive/cMapDrive.h">
+			<Option weight="3" />
+		</Unit>
+		<Unit filename="plugins/9-MapDrive/cMapDrivePlugIn.cpp" />
+		<Unit filename="plugins/9-MapDrive/cMapDrivePlugIn.h">
+			<Option weight="0" />
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
