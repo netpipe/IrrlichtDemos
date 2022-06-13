@@ -1,4 +1,3 @@
-#include "../../../../config.h"
 #ifdef OPENSTEER
 #include "osWaypointMap.h"
 

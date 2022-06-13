@@ -1,5 +1,4 @@
-//#include "../../../../config.h"
-//#ifdef OPENSTEER
+////#ifdef OPENSTEER
 //#ifndef C_Pedestrian_H
 //#define C_Pedestrian_H
 //

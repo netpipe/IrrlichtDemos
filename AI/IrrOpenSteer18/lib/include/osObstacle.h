@@ -28,7 +28,6 @@
     DEALINGS IN THE SOFTWARE.<br>
     ----------------------------------------------------------------------------<br>
 */
-#include "../../../../config.h"
 #ifdef OPENSTEER
 #ifndef OPENSTEER_OBSTACLE_H
 #define OPENSTEER_OBSTACLE_H

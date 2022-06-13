@@ -1,4 +1,3 @@
-#include "../../../../config.h"
 #ifdef OPENSTEER
 /*! \file osSteerLibrary.h
     ----------------------------------------------------------------------------<br>

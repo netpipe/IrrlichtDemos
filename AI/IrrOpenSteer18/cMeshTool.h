@@ -1,4 +1,4 @@
-#include "../../config.h"
+
 #ifdef OPENSTEER
 #ifndef CMESHTOOL_H
 #define CMESHTOOL_H

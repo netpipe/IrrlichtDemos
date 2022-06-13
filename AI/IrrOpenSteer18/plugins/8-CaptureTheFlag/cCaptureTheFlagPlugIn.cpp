@@ -1,4 +1,3 @@
-#include "../../../../config.h"
 #ifdef OPENSTEER2
 /*! Irrlicht implementation by A.Buschhüter (http://abusoft.g0dsoft.com)*/
 #include "cCaptureTheFlagPlugIn.h"

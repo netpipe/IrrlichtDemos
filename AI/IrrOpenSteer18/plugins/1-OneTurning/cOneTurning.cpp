@@ -1,4 +1,3 @@
-#include "../../../../config.h"
 #ifdef OPENSTEER
 /*! Irrlicht implementation by A.Buschhüter (http://abusoft.g0dsoft.com)*/
 #include "cOneTurning.h"

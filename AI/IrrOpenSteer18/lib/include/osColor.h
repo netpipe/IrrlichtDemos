@@ -36,7 +36,6 @@
 //
 //
 // ----------------------------------------------------------------------------<br>
-#include "../../../../config.h"
 #ifdef OPENSTEER
 #ifndef OPENSTEER_COLOR_H
 #define OPENSTEER_COLOR_H

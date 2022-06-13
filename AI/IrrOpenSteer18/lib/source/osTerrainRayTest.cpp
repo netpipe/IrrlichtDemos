@@ -1,4 +1,3 @@
-#include "../../../../config.h"
 #ifdef OPENSTEER
 /*! \file osTerrainRayTest.cpp
     ----------------------------------------------------------------------------<br>

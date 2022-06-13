@@ -39,7 +39,6 @@
 //
 // ----------------------------------------------------------------------------<br>
 
-#include "../../../../config.h"
 #ifdef OPENSTEER
 #ifndef OPENSTEER_OLD_PATHWAY_H
 #define OPENSTEER_OLD_PATHWAY_H

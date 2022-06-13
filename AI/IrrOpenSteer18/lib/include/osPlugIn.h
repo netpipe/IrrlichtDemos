@@ -28,7 +28,6 @@
     DEALINGS IN THE SOFTWARE.<br>
     ----------------------------------------------------------------------------<br>
 */
-#include "../../../../config.h"
 #ifdef OPENSTEER
 #ifndef OPENSTEER_PLUGIN_H
 #define OPENSTEER_PLUGIN_H

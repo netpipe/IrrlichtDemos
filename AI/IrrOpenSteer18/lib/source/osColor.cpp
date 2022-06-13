@@ -27,7 +27,6 @@
 //
 //
 // ----------------------------------------------------------------------------<br>
-#include "../../../../config.h"
 #ifdef OPENSTEER
 #include "osColor.h"
 #include "osVec3.h"

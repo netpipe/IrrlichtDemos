@@ -28,7 +28,6 @@
     DEALINGS IN THE SOFTWARE.<br>
     ----------------------------------------------------------------------------<br>
 */
-#include "../../../../config.h"
 #ifdef OPENSTEER
 #include "osClock.h"
 //#include <windows.h>

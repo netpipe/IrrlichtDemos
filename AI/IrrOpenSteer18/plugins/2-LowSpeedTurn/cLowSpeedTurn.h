@@ -1,4 +1,3 @@
-#include "../../../../config.h"
 #ifdef OPENSTEER
 #ifndef C_LowSpeedTurn_H
 #define C_LowSpeedTurn_H

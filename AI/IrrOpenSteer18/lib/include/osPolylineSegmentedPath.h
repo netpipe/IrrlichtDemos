@@ -32,7 +32,6 @@
  *
  * Segmented path build of polylines.
  */
-#include "../../../../config.h"
 #ifdef OPENSTEER
 #ifndef OPENSTEER_POLYLINESEGMENTEDPATH_H
 #define OPENSTEER_POLYLINESEGMENTEDPATH_H

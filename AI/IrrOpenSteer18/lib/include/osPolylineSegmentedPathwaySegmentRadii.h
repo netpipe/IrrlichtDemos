@@ -33,8 +33,7 @@
  * Segmented pathway build of polylines. Every segmented is associated with its
  * own radius.
  */
- #include "../../../../config.h"
-#ifdef OPENSTEER
+ #ifdef OPENSTEER
 #ifndef OPENSTEER_POLYLINESEGMENTEDPATHWAYSEGMENTRADII_H
 #define OPENSTEER_POLYLINESEGMENTEDPATHWAYSEGMENTRADII_H
 
