@@ -35,18 +35,18 @@ mxGamePlayer::~mxGamePlayer()
 
 void mxGamePlayer::Spawn()
 {
-	m_pController = new ::irr::scene::mxPlayerController( *this );
-	m_pCamera->addAnimator( m_pController );
-
-	// Create physics.
-	m_physics = GPhysicsWorld->CreatePlayerPhysics( GetOrigin(), 10 );
-
-	CreateHUD();
-	CreateCrosshair();
-
-	UpdateHUD();
-
-	m_pCurrentWeapon = mxGameWeapon::GetNullWeapon();
+//	m_pController = new ::irr::scene::mxPlayerController( *this );
+//	m_pCamera->addAnimator( m_pController );
+//
+//	// Create physics.
+//	m_physics = GPhysicsWorld->CreatePlayerPhysics( GetOrigin(), 10 );
+//
+//	CreateHUD();
+//	CreateCrosshair();
+//
+//	UpdateHUD();
+//
+//	m_pCurrentWeapon = mxGameWeapon::GetNullWeapon();
 }
 
 void mxGamePlayer::SetOrigin( const Vec3D& newOrigin )

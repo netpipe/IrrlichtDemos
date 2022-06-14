@@ -287,7 +287,7 @@ void Weapon_SMG::PrimaryFire()
 					// Apply impulse to the hit body.
 					if ( ! body->isStaticObject() )
 					{
-						body->setActivationState( ACTIVE_TAG );
+						///body->setActivationState( ACTIVE_TAG );
 						btVector3  impulse = rayTo;
 						impulse.normalize();
 

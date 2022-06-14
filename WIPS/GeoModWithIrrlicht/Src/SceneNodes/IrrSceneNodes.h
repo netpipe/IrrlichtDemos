@@ -78,9 +78,9 @@ public:
 
 	EPlayerMovementType		GetMovementType() const						{ return m_eMovementType; }
 	void					SetMovementType( EPlayerMovementType type )	{ m_eMovementType = type; }
-	virtual const core::array<SKeyMap>& getKeyMap() const;
-	virtual void setKeyMap(const core::array<SKeyMap>& keymap) ;
-	virtual void setInvertMouse(bool invert);
+//	virtual const core::array<SKeyMap>& getKeyMap() const;
+//	virtual void setKeyMap(const core::array<SKeyMap>& keymap) ;
+//	virtual void setInvertMouse(bool invert);
 private:
 	mxGamePlayer &		m_player;	// the player entity we're controlling
 

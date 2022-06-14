@@ -71,19 +71,22 @@
 					<Add directory="../../../LunaLibs/bullet-2.78/src" />
 				</Compiler>
 				<Linker>
-					<Add library="GL" />
 					<Add library="Irrlicht" />
 					<Add library="Xxf86vm" />
 					<Add library="BulletDynamics" />
-					<Add library="BulletCollision" />
 					<Add library="LinearMath" />
+					<Add library="GL" />
 					<Add library="X11" />
+					<Add library="BulletCollision" />
 					<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
 					<Add directory="/home/Dev/libs/physics/bullet/src/BulletCollision" />
 					<Add directory="/home/Dev/libs/physics/bullet/src/BulletDynamics" />
 					<Add directory="/home/Dev/libs/physics/bullet/src/LinearMath" />
 					<Add directory="/home/Dev/libs/audio/irrKlang-1.1.3/bin/linux-gcc" />
 					<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
+					<Add directory="../../../LunaLibs/bullet-2.78/src/BulletCollision" />
+					<Add directory="../../../LunaLibs/bullet-2.78/src/BulletDynamics" />
+					<Add directory="../../../LunaLibs/bullet-2.78/src/LinearMath" />
 				</Linker>
 			</Target>
 		</Build>

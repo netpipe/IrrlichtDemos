@@ -866,7 +866,7 @@ void mxWorld::Spawn()
 	//
 	m_pIrrlichtDevice = createDevice(
 		irr::video::EDT_OPENGL,
-		::irr::core::dimension2d< s32 >( m_renderWorld.GetScreenWidth(), m_renderWorld.GetScreenHeight() ),
+		::irr::core::dimension2d< u32 >( m_renderWorld.GetScreenWidth(), m_renderWorld.GetScreenHeight() ),
 		32,								// bits
 		m_renderWorld.IsFullScreen(),	// fullscreen ?
 
