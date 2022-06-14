@@ -67,6 +67,8 @@
 					<Add directory="/home/Dev/libs/Irrlicht/include" />
 					<Add directory="/home/Dev/libs/Media/irrKlang-1.1.3" />
 					<Add directory="/home/Dev/libs/Media/irrKlang-1.1.3/include" />
+					<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
+					<Add directory="../../../LunaLibs/bullet-2.78/src" />
 				</Compiler>
 				<Linker>
 					<Add library="GL" />
@@ -81,6 +83,7 @@
 					<Add directory="/home/Dev/libs/physics/bullet/src/BulletDynamics" />
 					<Add directory="/home/Dev/libs/physics/bullet/src/LinearMath" />
 					<Add directory="/home/Dev/libs/audio/irrKlang-1.1.3/bin/linux-gcc" />
+					<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 				</Linker>
 			</Target>
 		</Build>
@@ -143,9 +146,6 @@
 		<Unit filename="Src/WorldClasses.cpp" />
 		<Unit filename="Src/WorldClasses.h" />
 		<Unit filename="stdafx.h" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

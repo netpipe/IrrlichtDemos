@@ -56,7 +56,7 @@ public:
 		//game.Logger->log( m_buffer, ELOG_LEVEL::ELL_ERROR );
 		printf( m_buffer );
 
-		fprintf( stderr, "%s: Internal error: " );
+	//	fprintf( stderr, "%s: Internal error: " );
 		vfprintf( stderr, format, argptr );
 //		va_end( argptr );
 

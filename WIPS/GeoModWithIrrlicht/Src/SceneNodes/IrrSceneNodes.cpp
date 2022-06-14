@@ -126,6 +126,10 @@ mxPlayerController::mxPlayerController( ::mix::mxGamePlayer & player )
 //	DbgSpeed = ::mix::GRenderWorld->CreateText( 0.1f, 0.8f, ::mix::E_Colour::Color_Yellow );
 //	DbgState = ::mix::GRenderWorld->CreateText( 0.1f, 0.9f, ::mix::E_Colour::Color_Yellow );
 }
+//const = 0
+	//	virtual const core::array<SKeyMap>& mxPlayerController::getKeyMap(){};
+
+//virtual void mxPlayerController::setInvertMouse(bool invert) {};
 
 mxPlayerController::~mxPlayerController()
 {
