@@ -1,0 +1,196 @@
+* Idea: Portal sphere:
+
+  Sphere-portal with physics attached - the sphere rolls and teleports all entities it meets.
+  ( if the encountered entity is too big the sphere explodes causing massive damage. )
+
+* Portal
+	  StaticPortal
+	  DynamicPortal (MovablePortal)
+
+  Rectangular
+  Spherical
+  MeshShape
+  
+  RTT
+  StencilBuffer
+
+
+* use a single geometric database; use 'physics portals' to speed up collision detection
+ ( objects that are inside the cylinder/room/whatever cannot collide with other objects, etc. );
+ switch collision shapes ( physics LOD, to reduce system stress )
+
+* generate unique decals (based on damage info, surface material, etc)
+* re-create the portal technolodgy of the guy "nullsquared"
+
+* create a software image from a byte array, use procedural textures : 
+
+class IVideoDriver {
+public:
+//...
+	virtual IImage* createImageFromData(ECOLOR_FORMAT format,
+			const core::dimension2d<s32>& size, void *data,
+			bool ownForeignMemory=false,
+			bool deleteMemory = true) = 0;
+//...
+};
+
+  then use that image as a splash screen upon starting up.			
+
+* separate mxCharacterController and mxCharacterControllerAnimatorFPS,
+  create different controllers (animators) : normal, noclip, etc.
+* the player can jump off any surfaces (not only horizontal ones, floors, etc).
+
+* each entity has a pointer to Environment and the pointer is passed in ctor;
+  that entity is automaticly inserted into corresponding Environment.
+* rename DROP() to SAFE_DROP().
+  create SAFE_REMOVE().
+* use ESDF instead of WASD for movement; jump, crouch and shrink to move through hard areas.
+
+* Game editor with realistic materials: physical properties can be assigned to fluids, solids, etc.
+  level is not just polygons.
+
+*!!! Multiple environments with collision worlds, objects from different environments cannot collide with each other, etc.
+  Environments that are not seen by the player can be suspended ( not ticked ) for saving CPU time,
+  thus, environments are sort of portals.
+  Objects, crossing environments boundaries, will be re-inserted.
+  Environments will form a kind of a scene graph.
+  GWorld->GetRootEnvironment().
+
+* (on the future IDE and compiler) place restriction: some classes cannot be derived from certain classes.
+
+* (on the future IDE and compiler) on right-click an option in a menu - "Go To Instantiation" ( alongside "Go To Definition", etc. )
+
+* btCollisionShape::processAllTriangles
+ shape can cache results of prev. queries and remember aabbs, etc. and then use it.
+
+* player mass and strength can change ( how much food he has eaten, ammo and weapons he carries, etc. )
+
+* keep it simple, easy to use ( look at Irrlicht ),
+ give similar names to methods ( avoid using operator 'new' for creating entities,
+ use mxWorld::AddHumanPlayerEntity(), etc.
+
+* create advanced material system ( sound data base, generating sounds from impact, etc. )
+standard materials ( concrete, steel, wood, etc. ) for sounds, DMM, etc.
+
+* organize voxels in a BSP/BVH/etc. acceleration structure available.
+
+* clustering of random points in mxDecalSystem;
+ decals on edges and very dense clusters should be turned into CSG models and subtracted from the underlying geometry.
+
+
+* For detecting floating chunks of stuff use half-edge and determine volume of BSP cells
+(these chunks have limited volume, BSP divide space into convex subspaces by planes,
+if a cell has finite volume == linear programming feasibility (planes from ancestor partitions),
+also use linear programming for improving tree merging).
+We can establish a mass threshold (all bodies > certain mass are considered static).
+( Right from the book: "CSG operations are defined on surfaces that bound a volume of finite extent". )
+
+
+* Mesh smoothing for simulating metal melting, view dependent LoD.
+GeoMod works on coarse meshes, which are smoothed (possibly, fully on GPU)
+
+* dynamic self-balancing decision tree for algorithm selection
+* Mod for Irrlicht called "GeoMod"
+* Lightning scene node for Irrlicht
+* Stencil buffers in OpenGL ( OpenCSG ) "E:\project\gamedev\sources\geometry\_null\OpenCSG
+
+
+//------------------------------------------------------------------
+
+Compilers should be smart to give such warnings as "Don't use MemSet() in constructors in this class because you are overwriting virtual functions table"
+
+Compilers should insert "delete"s in source code themselves ( automated codegen ).
+
+"
+Besides, the real advantage of GC is not speed. It is reliability of 
+code, ease of programming, and separation of disparate issues (here, 
+memory management and program logic).
+"
+
+
+//------------------------------------------------------------------
+//
+// WorldManager
+// TODO: intelligent world manager with dynamic algorithm selection.
+// This manager should be able to optimize the scene for quickly responding to sequences of geometric queries.
+//
+//	Look at OpenGL performer.
+//
+//
+class WorldManager {
+public:
+			WorldManager();
+			~WorldManager();
+
+	//--- Interface should be simple. Let the engine decide which algorithms to use.
+	// The user of the engine won't need to know about, say, spatial partitioning algorithms,
+	// needn't specify exact types of scene nodes to create, adjust and experiment with settings,
+	// striving to achieve optimal performance, etc.
+
+private:
+	// For example, the engine can exploit parallelism, or fast and memory hungry algorithms, or anything else,
+	// based on the machine characteristics.
+	void	Pre_AnalyzeHardwareCapabilities();
+
+	void	Pre_AnalyzeScene();
+	/* Ideally, scenes shouldn't require heavy preprocessing.
+	   Internal acceleration structures should be refitted at run-time,
+	   using information about how they are used.
+	*/
+
+	void	Pre_MarkAreasWithAlgorithms();
+#ifdef DEVELOPER_MODE
+	// The engine may use neural nets trained by experts.
+	void	Pre_AskHumanAboutMyChoice();
+	void	Pre_AskHumanToSelectAlgorithms();
+#endif
+	void	SaveStatistics();
+
+	//--- Dynamic algorithm selection -----------------------------------------------
+
+	void	AnalyzeCurrentScene();
+
+	void	SelectAlgosForRendering();
+
+	/* use deferred, self-organizing, self-optimizing data structures,
+	   record usage history and refit them.
+	   Real-time portal generation ( probably, without BSP (image recognition, neural nets), selecting occluders,
+	   intelligent grouping of display objects ( for collision detection and culling ), selecting different bounding volumes,
+	   culling animations, shadows, special effects, etc.
+	*/
+
+	void	SelectAlgosForHandlingCollisions();
+	/* use probabilistic, non-deterministic algorithms if too many small polygons,
+	   approximations( physics LOD ) when the time left for physics is short.
+	*/
+
+	/* the engine should learn and experiment, recognize patterns.
+	*/
+
+	void	SelectBoundingVolumes();
+	void	RefitAccelerationStructures();
+
+	void	Schedule();
+	void	Predict();
+
+	void	Remember_achieved_FPS_and_Algorithms_used();
+	void	UpdateStatistics();
+
+	void	ReconsiderCurrentChoice();
+
+	// ...
+
+#ifdef DEVELOPER_MODE
+	void	AskHumanToClassifyTheScene();	// indoors/outdoors, closed/open, static/dynamic, structured/unstructured, etc.
+	void	AskHumanWhichTechniquesArePreferred();
+#endif
+
+/* The engine should be able to dynamicly switch between normal and voxel geometry
+*/
+
+/*
+private:
+	PriorityQueue< Task >	m_pendingTasks;
+	List< Task >			m_scheduledTasks;
+*/
+};

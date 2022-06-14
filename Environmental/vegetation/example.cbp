@@ -55,6 +55,7 @@
 			<Add directory="../libRocket/Include" />
 			<Add directory="../irrlicht-1.8.4/include" />
 			<Add directory="/home/netpipe/gamedev/irrlicht-1.8.4/include" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
 		</Compiler>
 		<Linker>
 			<Add library="Irrlicht" />
@@ -65,6 +66,7 @@
 			<Add directory="../libRocket/Build" />
 			<Add directory="../irrlicht-1.8.4/lib/Linux" />
 			<Add directory="/home/netpipe/gamedev/irrlicht-1.8.4/lib/Linux" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 		</Linker>
 		<Unit filename="IGE_SceneNode_Vegetation.cpp" />
 		<Unit filename="IGE_SceneNode_Vegetation.h" />

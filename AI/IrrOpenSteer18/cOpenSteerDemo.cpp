@@ -306,6 +306,7 @@ void OpenSteer::OpenSteerDemo::updateSimulationAndRedraw(){
     redrawSelectedPlugIn (clock.getTotalRealTime (),
                           clock.getElapsedRealTime ());
 }
+
 // redraw graphics for the currently selected plug-in
 void OpenSteer::OpenSteerDemo::redrawSelectedPlugIn(const float currentTime, const float elapsedTime){
   // switch to Draw phase

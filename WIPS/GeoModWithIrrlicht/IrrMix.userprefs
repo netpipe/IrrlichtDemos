@@ -1,0 +1,20 @@
+﻿<UserCombinePreferences version="1.0" filename="/home/tecan/Desktop/GeoModWithIrrlicht/IrrMix.sln">
+  <Files>
+    <File name="Welcome" />
+  </Files>
+  <Views>
+    <ViewMemento id="ProjectPad">
+      <Node />
+    </ViewMemento>
+    <ViewMemento id="ClassPad">
+      <Node />
+    </ViewMemento>
+    <ViewMemento id="MonoDevelop.NUnit.TestPad">
+      <Node />
+    </ViewMemento>
+  </Views>
+  <Properties>
+    <Property key="ActiveWindow" value="Welcome" />
+    <Property key="ActiveConfiguration" value="Debug|Win32" />
+  </Properties>
+</UserCombinePreferences>

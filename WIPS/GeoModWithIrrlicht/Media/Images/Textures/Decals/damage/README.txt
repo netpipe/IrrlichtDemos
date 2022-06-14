@@ -1,0 +1,1 @@
+Swiped from Quake 3

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="IrrMix" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="IrrMix3" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug Win32" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-W" />
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_CONSOLE" />
+					<Add directory="../GeoModWithIrrlicht" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="E:/sdk/Microsoft DirectX SDK (March 2009)/Include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="GL" />
+					<Add library="Irrlicht" />
+					<Add library="Xxf86vm" />
+					<Add library="BulletDynamics" />
+					<Add library="BulletCollision" />
+					<Add library="LinearMath" />
+					<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
+					<Add directory="/home/Dev/libs/physics/bullet/src/BulletCollision" />
+					<Add directory="/home/Dev/libs/physics/bullet/src/BulletDynamics" />
+					<Add directory="/home/Dev/libs/physics/bullet/src/LinearMath" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="IrrMix3" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release Win32" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_CONSOLE" />
+					<Add option="-W" />
+					<Add directory="E:/sdk/Microsoft DirectX SDK (March 2009)/Include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="E:/sdk/Microsoft DirectX SDK (March 2009)/Include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add directory="E:/sdk/Microsoft DirectX SDK (March 2009)/Lib/x86" />
+				</Linker>
+			</Target>
+			<Target title="Linux">
+				<Option output="IrrMix3" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Linux" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-W" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_CONSOLE" />
+					<Add directory="../GeoModWithIrrlicht" />
+					<Add directory="/home/Dev/libs/physics/bullet/src" />
+					<Add directory="/home/Dev/libs/Irrlicht/include" />
+					<Add directory="/home/Dev/libs/Media/irrKlang-1.1.3" />
+					<Add directory="/home/Dev/libs/Media/irrKlang-1.1.3/include" />
+				</Compiler>
+				<Linker>
+					<Add library="GL" />
+					<Add library="Irrlicht" />
+					<Add library="Xxf86vm" />
+					<Add library="BulletDynamics" />
+					<Add library="BulletCollision" />
+					<Add library="LinearMath" />
+					<Add library="X11" />
+					<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
+					<Add directory="/home/Dev/libs/physics/bullet/src/BulletCollision" />
+					<Add directory="/home/Dev/libs/physics/bullet/src/BulletDynamics" />
+					<Add directory="/home/Dev/libs/physics/bullet/src/LinearMath" />
+					<Add directory="/home/Dev/libs/audio/irrKlang-1.1.3/bin/linux-gcc" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="Demo/Main.cpp" />
+		<Unit filename="Include/BuildDefines.h" />
+		<Unit filename="Include/Debug.h" />
+		<Unit filename="Include/Defines.h" />
+		<Unit filename="Include/ICommon.h" />
+		<Unit filename="Include/IrrMix.h" />
+		<Unit filename="Include/Typedefs.h" />
+		<Unit filename="Lib/Containers/Hash.h" />
+		<Unit filename="Lib/Containers/Templates.h" />
+		<Unit filename="Lib/Math/Math.cpp" />
+		<Unit filename="Lib/Math/Math.h" />
+		<Unit filename="Lib/Math/Random.h" />
+		<Unit filename="Lib/Math/mxMath.cpp" />
+		<Unit filename="Lib/Math/mxMath.h" />
+		<Unit filename="Lib/Memory/AlignedAlloc/AlignedBlockAlloc.h" />
+		<Unit filename="Lib/Memory/FreeList/FreeList.h" />
+		<Unit filename="Lib/Memory/Memory.h" />
+		<Unit filename="Lib/Memory/Pool/Pool.cpp" />
+		<Unit filename="Lib/Memory/Pool/Pool.h" />
+		<Unit filename="Notes/GameWorld.txt" />
+		<Unit filename="Notes/Ideas.txt" />
+		<Unit filename="Notes/Links.txt" />
+		<Unit filename="Src/Destruction/CSG/BSP/BSP.cpp" />
+		<Unit filename="Src/Destruction/CSG/BSP/BSP.h" />
+		<Unit filename="Src/Destruction/CSG/BSP_old/BSP.cpp" />
+		<Unit filename="Src/Destruction/CSG/BSP_old/BSP.h" />
+		<Unit filename="Src/Destruction/CSG/BSP_old/BspCollisionShape.cpp" />
+		<Unit filename="Src/Destruction/CSG/BSP_old/Merge.cpp" />
+		<Unit filename="Src/Destruction/CSG/BSP_old/Merge.h" />
+		<Unit filename="Src/Destruction/CSG/BSP_old/MeshGen.cpp" />
+		<Unit filename="Src/Destruction/CSG/GeoMod.cpp" />
+		<Unit filename="Src/Destruction/CSG/GeoMod.h" />
+		<Unit filename="Src/Destruction/Common/Common.cpp" />
+		<Unit filename="Src/Destruction/Common/Common.h" />
+		<Unit filename="Src/Destruction/Common/Mesh.cpp" />
+		<Unit filename="Src/Destruction/Common/Mesh.h" />
+		<Unit filename="Src/Destruction/Destruction.h" />
+		<Unit filename="Src/Destruction/Internal/CDestructionManager.cpp" />
+		<Unit filename="Src/Destruction/Internal/CDestructionManager.h" />
+		<Unit filename="Src/Environment.cpp" />
+		<Unit filename="Src/Environment.h" />
+		<Unit filename="Src/Game/Player/Player.cpp" />
+		<Unit filename="Src/Game/Player/Player.h" />
+		<Unit filename="Src/Game/Player/PlayerMovement.h" />
+		<Unit filename="Src/Game/Weapon/GameWeapons.cpp" />
+		<Unit filename="Src/Game/Weapon/Weapon.cpp" />
+		<Unit filename="Src/Game/Weapon/Weapon.h" />
+		<Unit filename="Src/GameManager.h" />
+		<Unit filename="Src/Physics/Physics.cpp" />
+		<Unit filename="Src/Physics/Physics.h" />
+		<Unit filename="Src/SceneNodes/IrrSceneNodes.cpp" />
+		<Unit filename="Src/SceneNodes/IrrSceneNodes.h" />
+		<Unit filename="Src/Test/TestClasses.cpp" />
+		<Unit filename="Src/Test/TestClasses.h" />
+		<Unit filename="Src/World.cpp" />
+		<Unit filename="Src/World.h" />
+		<Unit filename="Src/WorldClasses.cpp" />
+		<Unit filename="Src/WorldClasses.h" />
+		<Unit filename="stdafx.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

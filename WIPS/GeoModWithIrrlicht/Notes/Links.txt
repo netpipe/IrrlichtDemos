@@ -1,0 +1,72 @@
+=== WORK =================================================
+
+On the "intelligent" engine :
+
+http://en.wikipedia.org/wiki/OpenGL_Performer
+
+http://en.wikipedia.org/wiki/Real-time_computing
+
+
+=== MISC =================================================
+
+// Real-time CSG via BSP tree merging by Stan Melax :
+http://www.melax.com/csg.html
+
+YouTube videos:
+
+Real-time CSG:
+
+http://www.youtube.com/watch?v=mw6PIM-MqbA&NR=1
+http://www.youtube.com/watch?v=zxaMGSCIphI
+
+
+// Very large worlds.
+
+// Infinity game engine.
+http://www.youtube.com/watch?v=DCzDKj3hjOE&feature=related
+
+
+=== Destruction ==========================================================================
+
+DMM: Physics animation and deformable objects (fractures, material stress, etc.)
+http://www.youtube.com/watch?v=3bKphYfUk-M
+
+Frostbite 2 ( massively destructible environment in BFBC2 )
+http://www.youtube.com/watch?v=iey04xp2lUc
+
+BFBC2 - a teaser, short gameplay trailer
+http://www.youtube.com/watch?v=K_PuLYqfO7w&NR=1
+
+DMM ( castle demo ):
+http://www.youtube.com/watch?v=VFtRbM6i0qY
+
+
+
+=== Prey-like portals ======================================================================
+
+Prey E3 1998 IMHz
+http://www.youtube.com/watch?v=eR1U7RvxLTI&feature=related
+
+Portalized Fun With Portals
+http://www.youtube.com/watch?v=KHiNjLbaSNM
+
+Portalized: Self Collision Through Portals
+http://www.youtube.com/watch?v=JwL-nTODl2E&feature=related
+
+Portalized Graphics Preview (v0.30)
+http://www.youtube.com/watch?v=rsD7AqVTQy8&feature=related
+
+Portalized Dynamically Scalable Portals
+http://www.youtube.com/watch?v=meedeHieHAE
+
+Fun with Portals Technology
+http://www.youtube.com/watch?v=zr1KQN3R6MM&feature=related
+
+Portal Demonstration from Valve's EA Summer Media Event
+http://www.youtube.com/watch?v=Wb7aDZeO_MQ
+
+Peter Molyneux's "The Room"
+http://www.youtube.com/watch?v=vGiPUx9Zgi0
+
+//===========================================================================
+

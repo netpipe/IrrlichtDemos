@@ -1494,3 +1494,423 @@
 	"../../cOpenSteerDemo.h"
 	"cMapDrive.h"
 
+1655085388 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/cMeshTool.cpp
+	"cMeshTool.h"
+
+1655085388 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/cMeshTool.h
+	<irrlicht.h>
+	"cOpenSteerDemo.h"
+
+1655085388 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/cOpenSteerDemo.h
+	"IrrOpenSteer.h"
+
+1645453710 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/IrrOpenSteer.h
+	<irrlicht.h>
+	"osSteerLibrary.h"
+	"osAbstractVehicle.h"
+	"osClock.h"
+	"osColor.h"
+	"oslq.h"
+	"osObstacle.h"
+	"osPath.h"
+	"osPathway.h"
+	"osPlugIn.h"
+	"osPolylineSegmentedPath.h"
+	"osProximity.h"
+	"osQueryPathAlike.h"
+	"osQueryPathAlikeBaseDataExtractionPolicies.h"
+	"osQueryPathAlikeMappings.h"
+	"osSegmentedPath.h"
+	"osSegmentedPathAlikeUtilities.h"
+	"osSegmentedPathway.h"
+	"osSharedPointer.h"
+	"osSimpleVehicle.h"
+	"osStandardTypes.h"
+	"osTerrainRayTest.h"
+	"osUnusedParameter.h"
+	"osUtilities.h"
+	"osVec3.h"
+	"osVec3Utilities.h"
+	"osQueryPathAlikeUtilities.h"
+	"osOldPathway.h"
+	"osLocalSpace.h"
+	"osAnnotation.h"
+	"osPolylineSegmentedPathwaySingleRadius.h"
+	"osPolylineSegmentedPathwaySegmentRadii.h"
+	"osWaypointMap.h"
+
+1655085389 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osSteerLibrary.h
+	"osAbstractVehicle.h"
+	"osPathway.h"
+	"osObstacle.h"
+	"osUtilities.h"
+	"osColor.h"
+
+1655085388 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osAbstractVehicle.h
+	"osLocalSpace.h"
+	<vector>
+
+1655085389 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osLocalSpace.h
+	"osVec3.h"
+
+1655085388 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osVec3.h
+	<irrlicht.h>
+	"osUtilities.h"
+
+1655085388 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osUtilities.h
+	<iostream>
+	<cstdlib>
+	<cfloat>
+	<cmath>
+	<vector>
+	<cassert>
+	<limits>
+
+1655085389 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osPathway.h
+
+1655085388 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osObstacle.h
+	"osVec3.h"
+	"osLocalSpace.h"
+	"osAbstractVehicle.h"
+
+1655085389 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osColor.h
+	<irrlicht.h>
+
+1655085391 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osClock.h
+	"osUtilities.h"
+	<irrlicht.h>
+
+1655085388 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/oslq.h
+
+1655085391 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osPath.h
+
+1655085388 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osPlugIn.h
+	<iostream>
+	"osAbstractVehicle.h"
+
+1655085390 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osPolylineSegmentedPath.h
+	<vector>
+	"osSegmentedPath.h"
+	"osQueryPathAlikeBaseDataExtractionPolicies.h"
+	"osVec3.h"
+	"osVec3Utilities.h"
+
+1655085390 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osSegmentedPath.h
+	"osPath.h"
+	"osStandardTypes.h"
+
+1655085388 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osStandardTypes.h
+	<cstddef>
+
+1655085391 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osQueryPathAlikeBaseDataExtractionPolicies.h
+
+1655085389 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osVec3Utilities.h
+	"osVec3.h"
+	"osStandardTypes.h"
+	"osUtilities.h"
+
+1655085389 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osProximity.h
+	<algorithm>
+	<vector>
+	"osVec3.h"
+	"oslq.h"
+
+1655085390 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osQueryPathAlike.h
+	<limits>
+	"osVec3.h"
+	"osVec3Utilities.h"
+	"osUtilities.h"
+	"osQueryPathAlikeBaseDataExtractionPolicies.h"
+
+1655085390 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osQueryPathAlikeMappings.h
+	"osQueryPathAlikeUtilities.h"
+	"osVec3.h"
+	"osStandardTypes.h"
+
+1655085389 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osQueryPathAlikeUtilities.h
+
+1655085389 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osSegmentedPathAlikeUtilities.h
+	<cassert>
+	"osStandardTypes.h"
+
+1655085389 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osSegmentedPathway.h
+	"osPathway.h"
+	"osStandardTypes.h"
+
+1655085392 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osSharedPointer.h
+	<algorithm>
+	<cassert>
+	"osStandardTypes.h"
+
+1655085388 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osSimpleVehicle.h
+	"osAbstractVehicle.h"
+	"osSteerLibrary.h"
+	"osAnnotation.h"
+
+1655085391 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osAnnotation.h
+	"IrrOpenSteer.h"
+
+1655085388 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osTerrainRayTest.h
+	<irrlicht.h>
+	<float.h>
+
+1655085390 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osUnusedParameter.h
+
+1655085391 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osOldPathway.h
+	"osVec3.h"
+
+1645453710 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osPolylineSegmentedPathwaySingleRadius.h
+	"osSegmentedPathway.h"
+	"osPolylineSegmentedPath.h"
+	"osQueryPathAlikeBaseDataExtractionPolicies.h"
+	"osVec3.h"
+	"osVec3Utilities.h"
+
+1655085390 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osPolylineSegmentedPathwaySegmentRadii.h
+	<vector>
+	"osSegmentedPathway.h"
+	"osPolylineSegmentedPath.h"
+	"osQueryPathAlikeBaseDataExtractionPolicies.h"
+	"osVec3.h"
+	"osVec3Utilities.h"
+
+1655085391 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osWaypointMap.h
+	"osWaypoint.h"
+	"IrrOpenSteer.h"
+
+1655085390 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osWaypoint.h
+	"IrrOpenSteer.h"
+
+1655088488 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/cOpenSteerDemo.cpp
+	"cOpenSteerDemo.h"
+	"cMeshTool.h"
+
+1655085390 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/source/osClock.cpp
+	"osClock.h"
+
+1655085388 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/source/osColor.cpp
+	"osColor.h"
+	"osVec3.h"
+	<cassert>
+
+1655085391 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/source/oslq.c
+	<stdlib.h>
+	<float.h>
+	<limits.h>
+	"oslq.h"
+	"debuglq.c"
+
+1655085390 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/source/osObstacle.cpp
+	"osObstacle.h"
+
+1655085391 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/source/osOldPathway.cpp
+	"osOldPathway.h"
+
+1655085391 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/source/osPath.cpp
+	"osPath.h"
+
+1655085388 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/source/osPathway.cpp
+	"osPathway.h"
+
+1655085388 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/source/osPlugIn.cpp
+	<string.h>
+	"osPlugIn.h"
+
+1655085390 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/source/osPolylineSegmentedPath.cpp
+	"osPolylineSegmentedPath.h"
+	<numeric>
+	<algorithm>
+	<cassert>
+	"osVec3.h"
+	"osQueryPathAlike.h"
+	"osQueryPathAlikeMappings.h"
+	"osQueryPathAlikeUtilities.h"
+	"osUtilities.h"
+
+1655085389 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/source/osPolylineSegmentedPathwaySegmentRadii.cpp
+	"osPolylineSegmentedPathwaySegmentRadii.h"
+	<algorithm>
+	<functional>
+	"osQueryPathAlike.h"
+	"osQueryPathAlikeMappings.h"
+	"osQueryPathAlikeUtilities.h"
+	"osUtilities.h"
+	"osStandardTypes.h"
+	"osUnusedParameter.h"
+
+1655085389 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/source/osPolylineSegmentedPathwaySingleRadius.cpp
+	"osPolylineSegmentedPathwaySingleRadius.h"
+	<algorithm>
+	"osQueryPathAlike.h"
+	"osQueryPathAlikeMappings.h"
+	"osQueryPathAlikeUtilities.h"
+	"osUnusedParameter.h"
+
+1655085390 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/source/osSegmentedPath.cpp
+	"osSegmentedPath.h"
+
+1655085389 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/source/osSegmentedPathway.cpp
+	"osSegmentedPathway.h"
+
+1655085389 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/source/osSimpleVehicle.cpp
+	"osSimpleVehicle.h"
+	<algorithm>
+
+1655085391 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/source/osTerrainRayTest.cpp
+	"osTerrainRayTest.h"
+	<cstdio>
+	<cstdlib>
+	<cmath>
+	<memory.h>
+	"osUtilities.h"
+
+1655085391 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/source/osVec3.cpp
+	"osVec3.h"
+
+1655085389 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/source/osVec3Utilities.cpp
+	"osVec3Utilities.h"
+	<cassert>
+	"osUtilities.h"
+
+1655085390 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/source/osVehicleSceneNode.cpp
+	"osVehicleSceneNode.h"
+	<algorithm>
+
+1655085388 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/include/osVehicleSceneNode.h
+	"osAbstractVehicle.h"
+	"osSteerLibrary.h"
+	"osAnnotation.h"
+
+1655085390 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/source/osWaypoint.cpp
+	"osWaypoint.h"
+
+1655085392 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/lib/source/osWaypointMap.cpp
+	"osWaypointMap.h"
+
+1655085390 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/1-OneTurning/cOneTurning.cpp
+	"cOneTurning.h"
+
+1655085390 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/1-OneTurning/cOneTurning.h
+	<irrlicht.h>
+	"../../cOpenSteerDemo.h"
+	"../../cMeshTool.h"
+
+1655085391 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/1-OneTurning/cOneTurningPlugIn.cpp
+	"cOneTurningPlugIn.h"
+
+1655085391 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/1-OneTurning/cOneTurningPlugIn.h
+	<irrlicht.h>
+	"../../cOpenSteerDemo.h"
+	"cOneTurning.h"
+
+1655085391 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/2-LowSpeedTurn/cLowSpeedTurn.cpp
+	"cLowSpeedTurn.h"
+
+1655085390 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/2-LowSpeedTurn/cLowSpeedTurn.h
+	<irrlicht.h>
+	"../../cOpenSteerDemo.h"
+	"../../cMeshTool.h"
+
+1655085391 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/2-LowSpeedTurn/cLowSpeedTurnPlugIn.cpp
+	"cLowSpeedTurnPlugIn.h"
+
+1655085392 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/2-LowSpeedTurn/cLowSpeedTurnPlugIn.h
+	<irrlicht.h>
+	"../../cOpenSteerDemo.h"
+	"cLowSpeedTurn.h"
+
+1655085389 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/3-Boids/cBoids.cpp
+	"cBoids.h"
+
+1655085390 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/3-Boids/cBoids.h
+	<irrlicht.h>
+	"../../cOpenSteerDemo.h"
+	"../../cMeshTool.h"
+
+1655085389 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/3-Boids/cBoidsPlugIn.cpp
+	"cBoidsPlugIn.h"
+
+1655085388 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/3-Boids/cBoidsPlugIn.h
+	<irrlicht.h>
+	"../../cOpenSteerDemo.h"
+	"cBoids.h"
+	"../../cMeshTool.h"
+
+1655085391 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/4-MultiplePursuit/cMultiplePursuit.cpp
+	"cMultiplePursuit.h"
+
+1655085389 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/4-MultiplePursuit/cMultiplePursuit.h
+	<irrlicht.h>
+	"../../cOpenSteerDemo.h"
+	"../../cMeshTool.h"
+
+1655085390 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/4-MultiplePursuit/cMultiplePursuitPlugIn.cpp
+	"cMultiplePursuitPlugIn.h"
+
+1655085390 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/4-MultiplePursuit/cMultiplePursuitPlugIn.h
+	<irrlicht.h>
+	"../../cOpenSteerDemo.h"
+	"cMultiplePursuit.h"
+
+1655076868 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/5-Soccer/cSoccer.cpp
+
+1655076854 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/5-Soccer/cSoccerPlugIn.cpp
+
+1655085390 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/6-Pedestrian/cPedestrian.cpp
+
+1655085391 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/6-Pedestrian/cPedestrianPlugIn.cpp
+
+1655085389 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/7-PedestriansWalkingAnEight/cPedestriansWalkingAnEight.cpp
+	"cPedestriansWalkingAnEight.h"
+
+1655085390 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/7-PedestriansWalkingAnEight/cPedestriansWalkingAnEight.h
+	<irrlicht.h>
+	"../../cOpenSteerDemo.h"
+	"../../cMeshTool.h"
+
+1655085388 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/7-PedestriansWalkingAnEight/cPedestriansWalkingAnEightPlugIn.cpp
+	"cPedestriansWalkingAnEightPlugIn.h"
+
+1655085391 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/7-PedestriansWalkingAnEight/cPedestriansWalkingAnEightPlugIn.h
+	<irrlicht.h>
+	"../../cOpenSteerDemo.h"
+	"../../cMeshTool.h"
+	"cPedestriansWalkingAnEight.h"
+
+1655085389 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/8-CaptureTheFlag/cCaptureTheFlag.cpp
+	"cCaptureTheFlag.h"
+
+1655085389 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/8-CaptureTheFlag/cCaptureTheFlag.h
+	<irrlicht.h>
+	"../../cOpenSteerDemo.h"
+	"../../cMeshTool.h"
+
+1655085390 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/8-CaptureTheFlag/cCaptureTheFlagPlugIn.cpp
+	"cCaptureTheFlagPlugIn.h"
+
+1655085389 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/8-CaptureTheFlag/cCaptureTheFlagPlugIn.h
+	<irrlicht.h>
+	"../../cOpenSteerDemo.h"
+	"cCaptureTheFlag.h"
+
+1655085391 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/9-MapDrive/cMapDrive.cpp
+	"cMapDrive.h"
+
+1655085389 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/9-MapDrive/cMapDrive.h
+	<irrlicht.h>
+	"../../cOpenSteerDemo.h"
+	"../../cMeshTool.h"
+
+1655085391 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/9-MapDrive/cMapDrivePlugIn.cpp
+	"cMapDrivePlugIn.h"
+
+1655085390 /home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/plugins/9-MapDrive/cMapDrivePlugIn.h
+	<irrlicht.h>
+	"../../cOpenSteerDemo.h"
+	"cMapDrive.h"
+
+1655088695 source:/home/netpipe/Dev/IrrlichtDemos/AI/IrrOpenSteer18/main.cpp
+	"cOpenSteerDemo.h"
+	<irrlicht.h>
+	<emscripten.h>
+

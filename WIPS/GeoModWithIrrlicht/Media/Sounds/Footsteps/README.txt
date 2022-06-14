@@ -1,0 +1,1 @@
+All sounds swiped from Call Of Duty 2.
