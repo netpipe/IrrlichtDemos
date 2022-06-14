@@ -1181,20 +1181,20 @@ void mxWorld::RunDebugInfo()
 
 mxGamePlayer* mxWorld::SpawnHumanPlayer( const Vec3D& initialPosition )
 {
-	if ( m_localPlayer ) {
-		GCommon->Warning( "Player has already been spawned." );
-		return NULL;
-	}
-
-	// Create the player.
-	mxGamePlayer * player = new mxGamePlayer();
-	player->Spawn();
-
-	player->SetOrigin( initialPosition );
-
-	m_localPlayer = player;
-
-	return player;
+//	if ( m_localPlayer ) {
+//		GCommon->Warning( "Player has already been spawned." );
+//		return NULL;
+//	}
+//
+//	// Create the player.
+//	mxGamePlayer * player = new mxGamePlayer();
+//	player->Spawn();
+//
+//	player->SetOrigin( initialPosition );
+//
+//	m_localPlayer = player;
+//
+//	return player;
 }
 
 }//end of namespace mix
