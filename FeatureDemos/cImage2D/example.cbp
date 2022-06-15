@@ -12,6 +12,21 @@
 				<Option compiler="gcc" />
 				<Option projectResourceIncludeDirsRelation="1" />
 			</Target>
+			<Target title="SVNLinux">
+				<Option output="./Pong" prefix_auto="0" extension_auto="0" />
+				<Option object_output=".svnobjs" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectIncludeDirsRelation="1" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Option projectLibDirsRelation="1" />
+				<Compiler>
+					<Add directory="../../../LunaLibs/irrlicht-code/include" />
+				</Compiler>
+				<Linker>
+					<Add directory="../../../LunaLibs/irrlicht-code/lib/Linux" />
+				</Linker>
+			</Target>
 		</Build>
 		<VirtualTargets>
 			<Add alias="All" targets="default;" />
