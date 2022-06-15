@@ -199,9 +199,9 @@ int main()
 
 
 
-		core::recti nsize(x1,y1,x2,y2);
-	core::recti textpos(xx1,yy1,xx2,yy2);
-	video::ITexture* images = driver->getTexture(texture);
+		core::recti nsize(10,10,200,200);
+	core::recti textpos(10,10,200,200);
+	video::ITexture* images = driver->getTexture("../../media/sydney.bmp");
 		//driver->makeColorKeyTexture(images, core::position2d<s32>(0,0));
 	cImage* aImage = new cImage(images, nsize, textpos);
 
@@ -224,6 +224,7 @@ int main()
 		driver->beginScene(true, true, SColor(255,100,101,140));
 
 		smgr->drawAll();
+		aImage->Draw(smgr);
 		guienv->drawAll();
 
 		driver->endScene();
