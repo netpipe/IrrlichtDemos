@@ -28,6 +28,7 @@
 					<Add option="-w" />
 					<Add option="-g" />
 					<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
+					<Add directory="../../../LunaLibs/irrlicht-1.8.4/source/Irrlicht" />
 				</Compiler>
 				<Linker>
 					<Add library="Xxf86vm" />
