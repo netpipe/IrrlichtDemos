@@ -7,8 +7,8 @@ class HealthCell
 {
   private:
 
-    array<ISceneNode*> healthCellArray;
-    array<IParticleSystemSceneNode*> particleNodeArray;
+    irr::core::array<ISceneNode*> healthCellArray;
+    irr::core::array<IParticleSystemSceneNode*> particleNodeArray;
     s32 healthCellCount;
     vector3df playerPos;
     ISceneNode *messageHpPlus;

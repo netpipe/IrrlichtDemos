@@ -14,7 +14,7 @@ class Stage
       bool Unlocked;
     };
 
-    array<STAGE> Stages;
+    irr::core::array<STAGE> Stages;
 
     s32 currentStage;
 

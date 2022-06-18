@@ -116,11 +116,11 @@ void Player::CheckFalling(void)
   playerRot.normalize();
 
 
-  irrDevice->getSceneManager()->getSceneCollisionManager()->getCollisionResultPosition(
-    Collision::Instance()->metaSelector, playerNode->getAbsolutePosition(),
-    Collision::Instance()->getEllipsoidRadius(),
-    playerRot,
-   tri, hitPos, isFalling, outNode, (irr::f32)0.005f, vector3df(0,-30,0));
+//  irrDevice->getSceneManager()->getSceneCollisionManager()->getCollisionResultPosition(
+//    Collision::Instance()->metaSelector, playerNode->getAbsolutePosition(),
+//    Collision::Instance()->getEllipsoidRadius(),
+//    playerRot,
+//   tri, hitPos, isFalling, outNode, (irr::f32)0.005f, vector3df(0,-30,0));
  //   printf ("%f %f %f",hitPos.X,hitPos.Y,hitPos.Z);
 
     if(isFalling)

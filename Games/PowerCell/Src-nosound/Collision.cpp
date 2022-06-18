@@ -145,7 +145,7 @@ void Collision::recursiveFillMetaSelector(ISceneNode* node, IMetaTriangleSelecto
   {
     Output::Instance()->w("Light! \n\n");
   }
-  if (node->getType() ==   ESNT_OCT_TREE)
+  if (node->getType() ==   ESNT_OCTREE)
   {
       // Occ Trees are for land
       Output::Instance()->w("Occtree! \n");

@@ -7,8 +7,8 @@ class PowerCell
 {
   private:
 
-    array<ISceneNode*> powerCellArray;
-    array<IParticleSystemSceneNode*> particleNodeArray;
+    irr::core::array<ISceneNode*> powerCellArray;
+    irr::core::array<IParticleSystemSceneNode*> particleNodeArray;
     s32 powerCellCount;
     vector3df playerPos;
 

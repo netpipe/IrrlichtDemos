@@ -238,8 +238,8 @@ int main(int argc, char** argv)
 
     SetDefaultValues();
 
-    Sound::Instance()->Create();
-    Sound::Instance()->PlayBackgroundMusic(MUSIC_MENU);
+//    Sound::Instance()->Create();
+//    Sound::Instance()->PlayBackgroundMusic(MUSIC_MENU);
 
 		device->getFileSystem()->changeWorkingDirectoryTo("media");
     //! Create main menu, and set state to match.
@@ -263,7 +263,7 @@ int main(int argc, char** argv)
 
     Output::Instance()->w("Entering main loop.\n");
     while(device->run())
-    {        Sound::Instance()->PlayAll();
+    {     //   Sound::Instance()->PlayAll();
       if(device->isWindowActive())
        {
 

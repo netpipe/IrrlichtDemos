@@ -1,5 +1,5 @@
 #include "SoundFactory.h"
-
+#include <unistd.h>
 SoundFactory* SoundFactory::instance = NULL;
 
 //! Sound factory constructor. Take's the working directory as it's initializer
@@ -10,16 +10,16 @@ SoundFactory::SoundFactory ( const std::string &workDir )
 	sourceRefCount = 1;
 	workingDirectory = workDir;
 
-	if ( !( soundDevice = alcOpenDevice ( NULL ) ) )
-	{
-		active = false;
-	}
-	else
-	{
-		active = true;
-		soundContext = alcCreateContext ( soundDevice, NULL );
-		alcMakeContextCurrent ( soundContext );
-	}
+//	if ( !( soundDevice = alcOpenDevice ( NULL ) ) )
+//	{
+//		active = false;
+//	}
+//	else
+//	{
+//		active = true;
+//		soundContext = alcCreateContext ( soundDevice, NULL );
+//		alcMakeContextCurrent ( soundContext );
+//	}
 
 }
 
@@ -232,7 +232,7 @@ void SoundFactory::run()
 #ifdef WIN32
 		Sleep ( 1 );
 #else
-//		usleep ( 100 );
+		usleep ( 100 );
 #endif
 		tick();
 	}

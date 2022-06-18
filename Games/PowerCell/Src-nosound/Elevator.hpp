@@ -15,8 +15,8 @@ class Elevator
     float elevatorPos;
 
 
-    array<ISceneNode*> elevatorNode;
-    array<vector2df> elevatorNodePos;
+    irr::core::array<ISceneNode*> elevatorNode;
+    irr::core::array<vector2df> elevatorNodePos;
 
   public:
     bool eleup;
