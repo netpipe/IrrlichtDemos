@@ -104,20 +104,21 @@ void Scene::LoadStage(stringc Stage)
 {
   irrDevice->getCursorControl()->setVisible(false);
   Output::Instance()->w("Loading character model.\n");
-
-  stringc t = "PlayerModel/Speedtroid-1-4-4-unwrap-1-3_Cube.png";
-  stringc m = "PlayerModel/speedtroid.x";
+//"PlayerModel/nskinrd.jpg";
+  stringc t ="PlayerModel/Speedtroid-1-4-4-unwrap-1-3_Cube.png";
+  stringc m = "PlayerModel/speedtroid249.blend.x";
 
   IAnimatedMesh* mesh = irrDevice->getSceneManager()->getMesh(m.c_str());
   Player::Instance()->setPlayerNode(irrDevice->getSceneManager()->addAnimatedMeshSceneNode(mesh));
 
+
   if (Player::Instance()->getPlayerNode())
   {
-    Player::Instance()->getPlayerNode()->setAnimationSpeed(10);
-  //  Player::Instance()->getPlayerNode()->setScale(vector3df(20.f,20.f,20.f));
-      Player::Instance()->getPlayerNode()->setFrameLoop(1,10);
+    Player::Instance()->getPlayerNode()->setAnimationSpeed(40);
+    Player::Instance()->getPlayerNode()->setScale(vector3df(5.f,5.f,5.f));
+      Player::Instance()->getPlayerNode()->setFrameLoop(1,50);
  //   Player::Instance()->getPlayerNode()->setMD2Animation(EMAT_STAND);
- //   Player::Instance()->getPlayerNode()->setMaterialTexture( 0, irrDevice->getVideoDriver()->getTexture(t.c_str()) );
+    Player::Instance()->getPlayerNode()->setMaterialTexture( 0, irrDevice->getVideoDriver()->getTexture(t.c_str()) );
     Player::Instance()->getPlayerNode()->setMaterialFlag(EMF_LIGHTING, false);
   }
 
@@ -129,17 +130,18 @@ void Scene::LoadStage(stringc Stage)
     "Skybox/sky_aboveclouds.jpg"),
     30, 30, 1, 2);
 
-	/*
-		Set fog values. Placed here because stages should have unique settings.
+
+//		Set fog values. Placed here because stages should have unique settings.
 
 	irrDevice->getVideoDriver()->setFog(
 		SColor(0,56,61,48),
-		true,
+		EFT_FOG_LINEAR,
 		250.0f,
 		1500.0f,
 		0.01f,
 		false,false);
-	*/
+
+
   /*
   Add meshes
   */

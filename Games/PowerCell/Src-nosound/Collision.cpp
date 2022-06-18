@@ -1,5 +1,10 @@
 #include "Collision.hpp"
+#include <irrlicht.h>
 
+using namespace irr;
+using namespace video;
+using namespace scene;
+using namespace gui;
 Collision *Collision::m_collision = NULL;
 Collision Collision::m_default_collision_buffer;
 
@@ -28,7 +33,7 @@ void Collision::createPlayerCollision(void)
     Player::Instance()->getPlayerNode(),
     vector3df(ellipsoidRadius),
     vector3df(0,-30,0),//-11 gravity on the y
-    vector3df(0,-23,0),
+    vector3df(0,-1.1,0),
     0.005f);
 
   Player::Instance()->getPlayerNode()->addAnimator(anim);
@@ -54,35 +59,51 @@ void Collision::recursiveFillMetaSelector(ISceneNode* node, IMetaTriangleSelecto
   {
   	node->setMaterialType(EMT_LIGHTMAP_M4);
   	node->setMaterialFlag(EMF_LIGHTING, false);
+    //node->setMaterialType(EMT_TRANSPARENT_ALPHA_CHANNEL);
     Elevator::Instance()->Add(node);
     Elevator::Instance()->elevatorStart = node->getAbsolutePosition();
   }
   if(strcmp(node->getName(), "obstacle") == 0)
   {
 		Obstacle::Instance()->Add(node);
+	//		node->setMaterialFlag(EMF_ZWRITE_ENABLE , false);
+	//	node->setMaterialTexture(0, irrDevice->getVideoDriver()->getTexture("StageData/ef_f1.tga"));
+		//node->setMaterialFlag(EMF_BACK_FACE_CULLING , true);
+        node->setMaterialFlag(EMF_FRONT_FACE_CULLING , false);
+		    node->setMaterialType(EMT_TRANSPARENT_ALPHA_CHANNEL_REF);
+//		    node->setAnimationSpeed(15);
   }
   if(strcmp(node->getName(), "level") == 0)
   {
     //! Enable fog for all materials on the level node.
 
-    u32 materialCount = node->getMaterialCount();
-    for(s32 i = 0; i < materialCount; i++)
-    {
-      node->getMaterial(i).FogEnable = false;
-    }
 
-   // node->setMaterialFlag(EMF_FOG_ENABLE, true);
+
+  //  node->setMaterialFlag(EMF_FOG_ENABLE, true);
     node->setMaterialType(EMT_LIGHTMAP_M4);
-    node->setMaterialFlag(EMF_LIGHTING, false);
+    node->setMaterialFlag(EMF_LIGHTING, true);
+        u32 materialCount = node->getMaterialCount();
+//    for(s32 i = 0; i < materialCount; i++)
+//    {
+//      node->getMaterial(i).FogEnable = false;
+//    }
   }
   if(strcmp(node->getName(), "glass") == 0)
   {
-    node->setMaterialTexture(1,	irrDevice->getVideoDriver()->getTexture("StageData/glass.tga"));
-    node->setMaterialFlag(EMF_LIGHTING, false);
-    node->setMaterialFlag(EMF_FOG_ENABLE, false);
-    node->setMaterialType(EMT_TRANSPARENT_REFLECTION_2_LAYER);
+ // irrDevice->getSceneManager()->getMeshManipulator()->setVertexColorAlpha(node->getMesh(), 128);
 
-    SColor col = SColor(155,37,207,243);
+   // node->setMaterialTexture(1, irrDevice->getVideoDriver()->getTexture("./StageData/glass.tga"));
+
+  //    node->setMaterialFlag(EMF_ZWRITE_ENABLE , true);
+    node->setMaterialFlag(EMF_LIGHTING, true);
+    node->setMaterialFlag(EMF_FOG_ENABLE, false);
+//    node->getMaterial(0).MaterialType = EMT_TRANSPARENT_ADD_COLOR;
+    node->getMaterial(1).MaterialType = EMT_TRANSPARENT_REFLECTION_2_LAYER;
+    node->setMaterialTexture(0,	irrDevice->getVideoDriver()->getTexture("./StageData/glass.tga"));
+  //node->setMaterialType(EMT_SPHERE_MAP);
+  node->setMaterialFlag(EMF_BLEND_OPERATION,1);
+
+    SColor col = SColor(255,37,207,243);
     for(s32 i = 0; i < node->getMaterialCount(); i++)
     {
 			node->getMaterial(i).Shininess = 0.0f;
@@ -90,14 +111,19 @@ void Collision::recursiveFillMetaSelector(ISceneNode* node, IMetaTriangleSelecto
 			node->getMaterial(i).EmissiveColor = col;
 			node->getMaterial(i).AmbientColor = col;
 			node->getMaterial(i).SpecularColor = col;
-			node->getMaterial(i).MaterialTypeParam = 0.01;
+			node->getMaterial(i).MaterialTypeParam = 0.1f;
+		//	    node->getMaterial(i).MaterialType = EMT_TRANSPARENT_REFLECTION_2_LAYER;
+			//node->getMaterial(i).DiffuseColor.setAlpha(0*255);
+		//	node->setMaterialFlag(EMF_ZWRITE_ENABLE , false);
+		//	node->getMaterial(i).MaterialTypeParam = video::pack_textureBlendFunc( video::EBF_SRC_ALPHA, video::EBF_ONE_MINUS_SRC_ALPHA, video::EMFN_MODULATE_1X );
     }
+
   }
 
   if (node->getType() ==   ESNT_UNKNOWN)
   {
   }
-  if (node->getType() ==   ESNT_MESH)
+  if (node->getType() ==   ESNT_MESH) //level mesh
   {
       io::IAttributes* attribs = irrDevice->getFileSystem()->createEmptyAttributes();
       if (attribs)
@@ -116,16 +142,46 @@ void Collision::recursiveFillMetaSelector(ISceneNode* node, IMetaTriangleSelecto
             metaSelector->addTriangleSelector(selector);
             selector->drop();
 
-            node->setMaterialFlag(video::EMF_LIGHTING, true);
-            node->getMaterial(0).Shininess = 100.0f;
-            node->getMaterial(0).DiffuseColor = SColor(255,255,255,255);
-            node->getMaterial(0).EmissiveColor = SColor(255,255,255,255);
-            node->getMaterial(0).AmbientColor = SColor(255,255,255,255);
-            node->getMaterial(0).SpecularColor = SColor(255,255,255,255);
-            node->getMaterial(0).MaterialTypeParam = 0.01;
 
-            //node->getMaterial(0).MaterialType = EMT_ONETEXTURE_BLEND;
-            //node->setFlag(EMF_TRILINEAR_FILTER, true);
+        //    node->setMaterialFlag(video::EMF_LIGHTING, true);
+//            node->getMaterial(0).Shininess = 100.0f;
+//            node->getMaterial(0).DiffuseColor = SColor(255,255,255,255);
+//            node->getMaterial(0).EmissiveColor = SColor(255,255,255,255);
+//            node->getMaterial(0).AmbientColor = SColor(255,255,255,255);
+//            node->getMaterial(0).SpecularColor = SColor(255,255,255,255);
+//            node->getMaterial(0).MaterialTypeParam = 0.01;
+          //  node->getMaterial(0).MaterialType = EMT_ONETEXTURE_BLEND;
+         //   node->setMaterialFlag(EMF_TRILINEAR_FILTER, true);
+        //      node->setMaterialFlag(EMF_BLEND_OPERATION,1);
+
+
+//            node->setMaterialFlag(video::EMF_LIGHTING, false);
+//            node->getMaterial(0).Shininess = 100.0f;
+//            node->getMaterial(0).DiffuseColor = SColor(255,255,255,255);
+//            node->getMaterial(0).EmissiveColor = SColor(255,255,255,255);
+//            node->getMaterial(0).AmbientColor = SColor(255,255,255,255);
+//            node->getMaterial(0).SpecularColor = SColor(255,255,255,255);
+//            node->getMaterial(0).MaterialTypeParam = 0.01;
+//            node->getMaterial(0).MaterialType = EMT_ONETEXTURE_BLEND;// EMT_ONETEXTURE_BLEND;
+//            node->setMaterialFlag(EMF_TRILINEAR_FILTER, true);
+//            //  node->setMaterialFlag(EMF_BLEND_OPERATION,1);
+//
+    SColor col = SColor(255,37,207,243);
+    for(s32 i = 0; i < node->getMaterialCount(); i++)
+    {
+			node->getMaterial(i).Shininess = 1.0f;
+			node->getMaterial(i).DiffuseColor = col;
+			node->getMaterial(i).EmissiveColor = col;
+			node->getMaterial(i).AmbientColor = col;
+			node->getMaterial(i).SpecularColor = col;
+			node->getMaterial(i).MaterialTypeParam = 0.1f;
+	//		node->getMaterial(i).DiffuseColor.setAlpha(255);
+
+
+		node->setMaterialFlag(EMF_ZWRITE_ENABLE , true);
+	//		node->getMaterial(i).MaterialTypeParam = video::pack_textureBlendFunc( video::EBF_SRC_ALPHA, video::EBF_ONE_MINUS_SRC_ALPHA, video::EMFN_MODULATE_1X );
+    }
+
          }
      }
   }

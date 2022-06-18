@@ -58,7 +58,7 @@ namespace agEngine
 	class AudioSource
 	{
 	public:
-		AudioSource(AudioDevice *device, const unsigned int &sourceId, const unsigned int &bufferSize=32768);
+		AudioSource(AudioDevice *device=0, const unsigned int &sourceId=0, const unsigned int &bufferSize=32768);
 
 		void attachSound(SoundData *soundData);
 		bool play();

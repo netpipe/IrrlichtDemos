@@ -140,12 +140,12 @@ virtual void draw3DTabButton(irr::gui::IGUIElement* element, bool active,
 							   const irr::core::rect<irr::s32> &rect,
 							   const irr::core::rect<irr::s32> *clip=0);
 
-//	virtual  irr::core::rect<irr::s32> draw3DWindowBackground(irr::gui::IGUIElement *element,
-//															 bool drawTitleBar,
-//															 irr::video::SColor titleBarColor,
-//															 const irr::core::rect< irr::s32 > &rect,
-//															 const irr::core::rect< irr::s32 > *clip,
-//															 core::rect<s32>* checkClientArea=0);
+	virtual irr::core::rect<irr::s32> draw3DWindowBackground(irr::gui::IGUIElement *element,
+															 bool drawTitleBar,
+															 irr::video::SColor titleBarColor,
+															 const irr::core::rect< irr::s32 > &rect,
+															 const irr::core::rect< irr::s32 > *clip=0,
+															 core::rect<s32>* checkClientArea=0);
 
 	virtual irr::video::SColor getColor(EGUI_DEFAULT_COLOR color) const;
 	virtual void setColor(EGUI_DEFAULT_COLOR which, irr::video::SColor newColor);

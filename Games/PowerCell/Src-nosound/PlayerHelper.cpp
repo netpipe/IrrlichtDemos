@@ -128,7 +128,7 @@ void PlayerHelper::ShowPickupEffect(int EFFECT)
 
       p->setMaterialFlag(video::EMF_LIGHTING, false);
       p->setMaterialTexture(0, irrDevice->getVideoDriver()->getTexture("FXTextures/Dee_FX_64x64_24.tga"));
-      p->setMaterialType(video::EMT_TRANSPARENT_VERTEX_ALPHA);
+      p->setMaterialType(video::EMT_TRANSPARENT_ADD_COLOR);
 
       //! Animator
       anim = irrDevice->getSceneManager()->createFlyCircleAnimator(vector3df(0,0,0), 20, 0.01f);
@@ -165,7 +165,7 @@ void PlayerHelper::ShowPickupEffect(int EFFECT)
 
       p->setMaterialFlag(video::EMF_LIGHTING, false);
       p->setMaterialTexture(0, irrDevice->getVideoDriver()->getTexture("FXTextures/Dee_FX_64x64_24.tga"));
-      p->setMaterialType(video::EMT_TRANSPARENT_VERTEX_ALPHA);
+      p->setMaterialType(video::EMT_TRANSPARENT_ADD_COLOR);//EMT_TRANSPARENT_VERTEX_ALPHA
 
       //! Animator
       anim = irrDevice->getSceneManager()->createFlyCircleAnimator(vector3df(0,0,0), 20, 0.01f);

@@ -18,14 +18,15 @@ void PowerCell::Add(vector3df position)
   sphere->setMaterialTexture(1, irrDevice->getVideoDriver()->getTexture("StageData/glass.tga"));
 
   sphere->setMaterialFlag(video::EMF_LIGHTING, false);
-  sphere->getMaterial(0).Shininess = 100.0f;
+  sphere->getMaterial(0).Shininess = 0.050f;
   sphere->getMaterial(0).DiffuseColor = SColor(255,0,220,250);
   sphere->getMaterial(0).EmissiveColor = SColor(255,0,220,250);
   sphere->getMaterial(0).AmbientColor = SColor(255,0,220,250);
   sphere->getMaterial(0).SpecularColor = SColor(255,0,220,250);
-  sphere->getMaterial(0).MaterialType = EMT_TRANSPARENT_REFLECTION_2_LAYER;
+  sphere->getMaterial(0).MaterialType = EMT_SPHERE_MAP;//video::EMT_SPHERE_MAP;//EMT_TRANSPARENT_REFLECTION_2_LAYER;
   sphere->getMaterial(0).MaterialTypeParam = 0.01;
-
+///		node->setMaterialFlag(video::EMF_LIGHTING, false);
+		sphere->setMaterialFlag(video::EMF_ZWRITE_ENABLE, false);
   u32 particleLifeTimeMax = 800;
   u32 particleMin = 100;
   u32 particleMax = 200;
@@ -52,10 +53,10 @@ void PowerCell::Add(vector3df position)
   scene::IParticleAffector* paf = p->createFadeOutParticleAffector(video::SColor(0,0,0,0), particleLifeTimeMax);
   p->addAffector(paf);
   paf->drop();
-
   p->setMaterialFlag(video::EMF_LIGHTING, false);
+  p->setMaterialFlag(EMF_ZWRITE_ENABLE, false);
   p->setMaterialTexture(0, irrDevice->getVideoDriver()->getTexture("FXTextures/Dee_FX_64x64_24.tga"));
-  p->setMaterialType(video::EMT_TRANSPARENT_VERTEX_ALPHA);
+  p->setMaterialType(video::EMT_TRANSPARENT_ADD_COLOR); //vertex_alpha
 
   //! Animator
   ISceneNodeAnimator *anim = irrDevice->getSceneManager()->createFlyCircleAnimator(vector3df(0,0,0), 20, 0.005f);

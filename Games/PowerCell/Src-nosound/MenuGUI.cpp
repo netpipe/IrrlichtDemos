@@ -13,21 +13,24 @@ MenuGUI *MenuGUI::Instance()
 
 void MenuGUI::Init(void)
 {
+
+		irrDevice->getFileSystem()->addFileArchive("../Src/media.zip");
+
   irrDevice->getCursorControl()->setVisible(true);
 	IGUISkin* skin = irrDevice->getGUIEnvironment()->getSkin();
 
-//	CGUITexturedSkin *pNewSkin = new CGUITexturedSkin(irrDevice->getGUIEnvironment(), irrDevice->getFileSystem());
+	CGUITexturedSkin * pNewSkin = new CGUITexturedSkin(irrDevice->getGUIEnvironment(), irrDevice->getFileSystem());
 
-//	pNewSkin->setSkin( "UI/guiskin.xml" );
-//	irrDevice->getGUIEnvironment()->setSkin(pNewSkin);
-//	pNewSkin->drop();
+	pNewSkin->setSkin( "UI/guiskin.xml" );
+	irrDevice->getGUIEnvironment()->setSkin(pNewSkin);
+	pNewSkin->drop();
 
 	IGUIFont* font = irrDevice->getGUIEnvironment()->getFont("fonts/cellfont1.png");
 
-//	if (font)
-//		pNewSkin->setFont(font, EGDF_DEFAULT);
+	if (font)
+		pNewSkin->setFont(font, EGDF_DEFAULT);
 
- // pNewSkin->setColor(EGDC_BUTTON_TEXT, SColor(255,6,30,67));
+  pNewSkin->setColor(EGDC_BUTTON_TEXT, SColor(255,6,30,67));
 
   irrDevice->getVideoDriver()->setTextureCreationFlag(ETCF_OPTIMIZED_FOR_QUALITY, true);
   irrDevice->getVideoDriver()->setTextureCreationFlag(ETCF_CREATE_MIP_MAPS, false);
@@ -71,7 +74,8 @@ void MenuGUI::Init(void)
 	score += Highscore::Instance()->GetTopHighScoreAsString(2);
 	score += Highscore::Instance()->GetTopHighScoreAsString(3);
 	score += L"\0";
-
+ // scene::IAnimatedMesh* mesh = irrDevice->getSceneManager()->getMesh("IrrlichtLogo.b3d");
+ // mesh->setMaterialFlag(EMF_ZWRITE_ENABLE, false);
 	// Convert to wide string.
 	// FIXME (lightsoda#1#): Should be made into a function. String conversion class perhaps?	s32 len = score.size();
 	wchar_t *buf = new wchar_t[len];

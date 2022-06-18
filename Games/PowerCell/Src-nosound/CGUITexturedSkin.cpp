@@ -722,9 +722,93 @@ void CGUITexturedSkin::draw3DToolBar(IGUIElement *element, const core::rect<s32>
 }
 
 
-//core::rect< s32 > CGUITexturedSkin::draw3DWindowBackground(IGUIElement *element, bool drawTitleBar, video::SColor titleBarColor, const core::rect< s32 > &rect, const core::rect< s32 > *clip,core::rect<s32>* checkClientArea)
-//{
-//}
+core::rect< s32 > CGUITexturedSkin::draw3DWindowBackground(IGUIElement *element, bool drawTitleBar, video::SColor titleBarColor, const core::rect< s32 > &rect, const core::rect< s32 > *clip,core::rect<s32>* checkClientArea)
+{
+	// Draw top left corner
+	core::rect<s32> topLeftCorner = skinTexCoords[ESTC_WINDOW_UPPER_LEFT_CORNER];
+	core::rect<s32> topLeftCornerDest = rect;
+	topLeftCornerDest.LowerRightCorner.X = topLeftCornerDest.UpperLeftCorner.X + topLeftCorner.getWidth();
+	topLeftCornerDest.LowerRightCorner.Y = topLeftCornerDest.UpperLeftCorner.Y + topLeftCorner.getHeight();
+	pVideo->draw2DImage(pSkinTexture,topLeftCornerDest,topLeftCorner,0,0,true);
+
+	// Draw top right corner
+	core::rect<s32> topRightCorner = skinTexCoords[ESTC_WINDOW_UPPER_RIGHT_CORNER];
+	core::rect<s32> topRightCornerDest = rect;
+	topRightCornerDest.UpperLeftCorner.X = rect.LowerRightCorner.X - topRightCorner.getWidth();
+	topRightCornerDest.LowerRightCorner.Y = rect.UpperLeftCorner.Y + topRightCorner.getHeight();
+	pVideo->draw2DImage(pSkinTexture,topRightCornerDest,topRightCorner,0,0,true);
+
+	// Draw bottom left corner
+	core::rect<s32> bottomLeftCorner = skinTexCoords[ESTC_WINDOW_LOWER_LEFT_CORNER];
+	core::rect<s32> bottomLeftCornerDest = rect;
+	bottomLeftCornerDest.LowerRightCorner.X = rect.UpperLeftCorner.X + bottomLeftCorner.getWidth();
+	bottomLeftCornerDest.UpperLeftCorner.Y = rect.LowerRightCorner.Y - bottomLeftCorner.getHeight();
+	pVideo->draw2DImage(pSkinTexture,bottomLeftCornerDest,bottomLeftCorner,0,0,true);
+
+	// Draw top right corner
+	core::rect<s32> bottomRightCorner = skinTexCoords[ESTC_WINDOW_LOWER_RIGHT_CORNER];
+	core::rect<s32> bottomRightCornerDest = rect;
+	bottomRightCornerDest.UpperLeftCorner.X = rect.LowerRightCorner.X - bottomRightCorner.getWidth();
+	bottomRightCornerDest.UpperLeftCorner.Y = rect.LowerRightCorner.Y - bottomRightCorner.getHeight();
+	pVideo->draw2DImage(pSkinTexture,bottomRightCornerDest,bottomRightCorner,0,0,true);
+
+	// Draw top edge
+	core::rect<s32> topEdge = skinTexCoords[ESTC_WINDOW_UPPER_EDGE];
+	core::rect<s32> topEdgeDest = rect;
+	topEdgeDest.UpperLeftCorner.X = rect.UpperLeftCorner.X + topLeftCorner.getWidth();
+	topEdgeDest.LowerRightCorner.X = rect.LowerRightCorner.X - topRightCorner.getWidth();
+	topEdgeDest.LowerRightCorner.Y = rect.UpperLeftCorner.Y + topEdge.getHeight();
+	pVideo->draw2DImage(pSkinTexture,topEdgeDest,topEdge,0,0,true);
+
+	// Draw bottom edge
+	core::rect<s32> bottomEdge = skinTexCoords[ESTC_WINDOW_LOWER_EDGE];
+	core::rect<s32> bottomEdgeDest = rect;
+	bottomEdgeDest.UpperLeftCorner.X = rect.UpperLeftCorner.X + bottomLeftCorner.getWidth();
+	bottomEdgeDest.UpperLeftCorner.Y = rect.LowerRightCorner.Y - bottomEdge.getHeight();
+	bottomEdgeDest.LowerRightCorner.X = rect.LowerRightCorner.X - bottomRightCorner.getWidth();
+	pVideo->draw2DImage(pSkinTexture,bottomEdgeDest,bottomEdge,0,0,true);
+
+	// Draw left edge
+	core::rect<s32> leftEdge = skinTexCoords[ESTC_WINDOW_LEFT_EDGE];
+	core::rect<s32> leftEdgeDest = rect;
+	leftEdgeDest.UpperLeftCorner.Y = rect.UpperLeftCorner.Y + topLeftCorner.getHeight();
+	leftEdgeDest.LowerRightCorner.X = rect.UpperLeftCorner.X + leftEdge.getWidth();
+	leftEdgeDest.LowerRightCorner.Y = rect.LowerRightCorner.Y - bottomLeftCorner.getHeight();
+	pVideo->draw2DImage(pSkinTexture,leftEdgeDest,leftEdge,0,0,true);
+
+	// Draw right edge
+	core::rect<s32> rightEdge = skinTexCoords[ESTC_WINDOW_RIGHT_EDGE];
+	core::rect<s32> rightEdgeDest = rect;
+	rightEdgeDest.UpperLeftCorner.X = rect.LowerRightCorner.X - rightEdge.getWidth();
+	rightEdgeDest.UpperLeftCorner.Y = rect.UpperLeftCorner.Y + topRightCorner.getHeight();
+	rightEdgeDest.LowerRightCorner.Y = rect.LowerRightCorner.Y - bottomRightCorner.getHeight();
+	pVideo->draw2DImage(pSkinTexture,rightEdgeDest,rightEdge,0,0,true);
+
+	// Draw interior
+	core::rect<s32> interior = skinTexCoords[ESTC_WINDOW_INTERIOR];
+	core::rect<s32> interiorDest = rect;
+	interiorDest.UpperLeftCorner.X = rect.UpperLeftCorner.X + leftEdge.getWidth();
+	interiorDest.UpperLeftCorner.Y = rect.UpperLeftCorner.Y + topEdge.getHeight();
+	interiorDest.LowerRightCorner.X = rect.LowerRightCorner.X - rightEdge.getWidth();
+	interiorDest.LowerRightCorner.Y = rect.LowerRightCorner.Y - bottomEdge.getHeight();
+	pVideo->draw2DImage(pSkinTexture,interiorDest,interior,0,0,true);
+
+	if (drawTitleBar)
+	{
+		// Draw title bar
+		core::rect<s32> titleBar = skinTexCoords[ESTC_WINDOW_TITLEBAR];
+		core::rect<s32> titleBarDest = rect;
+		titleBarDest.UpperLeftCorner.X = rect.UpperLeftCorner.X + 3;
+		titleBarDest.UpperLeftCorner.Y = rect.UpperLeftCorner.Y + 3;
+		titleBarDest.LowerRightCorner.X = rect.UpperLeftCorner.X + titleBar.getWidth();
+		titleBarDest.LowerRightCorner.Y = rect.UpperLeftCorner.Y + titleBar.getHeight();
+		pVideo->draw2DImage(pSkinTexture,titleBarDest,titleBar,0,0,true);
+
+		return titleBarDest;
+	}
+
+	return rect;
+}
 
 
 SColor CGUITexturedSkin::getColor(EGUI_DEFAULT_COLOR color) const

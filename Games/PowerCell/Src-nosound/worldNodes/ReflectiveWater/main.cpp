@@ -81,7 +81,7 @@ int main()
 		{EKA_STRAFE_LEFT,	KEY_KEY_A},
 		{EKA_STRAFE_RIGHT,	KEY_KEY_D},
 	};
-	_scene->addCameraSceneNodeFPS(0, 100.0f, 1000.0f, -1, keyMap, 4);
+	_scene->addCameraSceneNodeFPS(0, 100.0f, 1.0f, -1, keyMap, 4);
 	_scene->getActiveCamera()->setPosition(core::vector3df(0, 400, -5000));
 	float fFar = _scene->getActiveCamera()->getFarValue();
 	_scene->getActiveCamera()->setFarValue(fFar *= 1000); // TODO: revise this
@@ -95,8 +95,6 @@ int main()
 	castlenode->setMaterialFlag(video::EMF_BACK_FACE_CULLING, false);
 	castlenode->setScale(core::vector3df(10, 10, 10));
 	castlenode->setMaterialTexture(0, _driver->getTexture("rockwall.bmp"));
-
-
 
 	CMainOnSetConstants *_MainOnSetConstants = new CMainOnSetConstants;
 
@@ -153,7 +151,7 @@ int main()
 		"opengl2.vert", "main", EVST_VS_1_1, "opengl2.frag", "main",
 		EPST_PS_1_1, _MainOnSetConstants, EMT_SOLID, 0);
 
-
+		castlenode->setMaterialType((E_MATERIAL_TYPE)parallax);
 //	IMesh *plane = _scene->addHillPlaneMesh("plane", dimension2df(6000, 6000), dimension2di(10, 10),
 //		0, 0.0f, dimension2df(0, 0), dimension2df(100, 100))->getMesh(0);
 
@@ -175,7 +173,7 @@ int main()
 	ISceneNode *waternode = water->m_waternode;
 	waternode->setPosition(vector3df(0, 50, -3000));
 	water->m_WaveDisplacement /= 1.5f;
-	water->m_WaveHeight *= 2.0f;
+	water->m_WaveHeight *= 12.0f;
 	water->m_WaveSpeed *= 5.0f;
 	water->m_RefractionFactor = 0.51f;
 

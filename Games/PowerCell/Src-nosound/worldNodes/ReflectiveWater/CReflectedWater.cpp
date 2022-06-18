@@ -58,7 +58,7 @@ CReflectedWater::CReflectedWater(const irr::c8 *name, IrrlichtDevice *device, sc
 
     m_waternode->setMaterialType((video::E_MATERIAL_TYPE)dmat);
     m_waternode->setMaterialFlag(video::EMF_BACK_FACE_CULLING, false);
- //   m_waternode->setMaterialFlag(video::EMF_LIGHTING, false);
+    m_waternode->setMaterialFlag(video::EMF_LIGHTING, false);
     m_waternode->setMaterialFlag(video::EMF_FOG_ENABLE, false);
 
     m_rt = _driver->createRenderTargetTexture(RenderTargetSize);
@@ -133,7 +133,7 @@ void CReflectedWater::OnSetConstants(video::IMaterialRendererServices* services,
         worldViewProj = driver->getTransform(video::ETS_PROJECTION);
         worldViewProj *= driver->getTransform(video::ETS_VIEW);
         worldViewProj *= driver->getTransform(video::ETS_WORLD);
-        services->setVertexShaderConstant("mWorldViewProj", &worldViewProj.M[0], 16);
+        services->setVertexShaderConstant("mWorldViewProj", &worldViewProj[0], 16);
     }
     /*   if (userData == 1 || userData == 3) //Clamp Shaders
        {

@@ -16,6 +16,7 @@ void Elevator::SetDefaultValues(void)
   eleup=true;
   elevatorExists = false;
   ridingElevator = false;
+
 }
 
 void Elevator::Add(ISceneNode *node)
@@ -26,6 +27,7 @@ void Elevator::Add(ISceneNode *node)
   tempPos.X = tempPos.Y;
   elevatorNodePos.push_back(tempPos);
 
+node->setMaterialFlag(EMF_BACK_FACE_CULLING , false);
   elevatorExists = true;
 }
 
@@ -87,7 +89,7 @@ void Elevator::UpdatePlayerPosition(void)
             if (ridingElevator && Player::Instance()->isFalling){
              }else{
               playerNewPos = Player::Instance()->getPlayerNode()->getAbsolutePosition();
-              playerNewPos.Y = elevatorNode[i]->getAbsolutePosition().Y;
+              playerNewPos.Y = elevatorNode[i]->getAbsolutePosition().Y+1;
               Player::Instance()->getPlayerNode()->setPosition(playerNewPos);
              }
         }
@@ -95,9 +97,9 @@ void Elevator::UpdatePlayerPosition(void)
 
       else{ // update elevator anyway even if not ridingElevator
                 for(u32 i = 0; i < elevatorNode.size(); i++){
-            if( elevatorPos <= 0 && !eleup)
+            if( elevatorPos <= -100 && !eleup)
         {eleup=1;}
-        else if(elevatorPos == 200 && eleup)
+        else if(elevatorPos >= 400 && eleup)
         {eleup=0;}
 
         else if(!eleup){

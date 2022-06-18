@@ -45,6 +45,12 @@ void GameGUI::Init(void)
 
   powerCellCountTotal = irrDevice->getGUIEnvironment()->addStaticText(L"",
     rect<s32>(406,top,485,top+height), showFrame);
+
+//clearZBuffer ()=0;
+ // scene::IAnimatedMesh* mesh = irrDevice->getSceneManager()->getMesh("IrrlichtLogo.b3d");
+  //p->setMaterialTexture(0, irrDevice->getVideoDriver()->getTexture("FXTextures/Dee_FX_64x64_24.tga"));
+
+
 }
 
 void GameGUI::updatePowerCellInfo(u32 aquired, u32 total)

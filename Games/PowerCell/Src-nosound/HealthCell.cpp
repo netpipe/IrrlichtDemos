@@ -18,13 +18,16 @@ void HealthCell::Add(vector3df position)
   sphere->setMaterialTexture(1, irrDevice->getVideoDriver()->getTexture("StageData/glass.tga"));
 
   sphere->setMaterialFlag(video::EMF_LIGHTING, false);
-  sphere->getMaterial(0).Shininess = 100.0f;
-  sphere->getMaterial(0).DiffuseColor = SColor(255,250,128,0);
-  sphere->getMaterial(0).EmissiveColor = SColor(255,250,128,0);
-  sphere->getMaterial(0).AmbientColor = SColor(255,250,128,0);
-  sphere->getMaterial(0).SpecularColor = SColor(255,250,128,0);
-  sphere->getMaterial(0).MaterialType = EMT_TRANSPARENT_REFLECTION_2_LAYER;
+  sphere->getMaterial(0).Shininess = 0.50f;
+  sphere->getMaterial(0).DiffuseColor = SColor(255,0,128,250);
+  sphere->getMaterial(0).EmissiveColor = SColor(255,0,128,250);
+  sphere->getMaterial(0).AmbientColor = SColor(255,0,128,250);
+  sphere->getMaterial(0).SpecularColor = SColor(255,0,128,250);
+  sphere->getMaterial(0).DiffuseColor.setAlpha(0*255);
+  sphere->getMaterial(0).MaterialType = video::EMT_SPHERE_MAP;//EMT_TRANSPARENT_REFLECTION_2_LAYER
   sphere->getMaterial(0).MaterialTypeParam = 0.01;
+//sphere->setMaterialFlag(EMF_BLEND_OPERATION,1);
+		sphere->setMaterialFlag(video::EMF_ZWRITE_ENABLE, false);
 
   u32 particleLifeTimeMax = 800;
   u32 particleMin = 100;
@@ -54,9 +57,10 @@ void HealthCell::Add(vector3df position)
   p->addAffector(paf);
   paf->drop();
 
-  p->setMaterialFlag(video::EMF_LIGHTING, false);
+ // p->setMaterialFlag(video::EMF_LIGHTING, false);
+//    p->setMaterialFlag(EMF_ZWRITE_ENABLE, false);
   p->setMaterialTexture(0, irrDevice->getVideoDriver()->getTexture("FXTextures/Dee_FX_64x64_24.tga"));
-  p->setMaterialType(video::EMT_TRANSPARENT_VERTEX_ALPHA);
+  p->setMaterialType(video::EMT_TRANSPARENT_ADD_COLOR);//video::EMT_TRANSPARENT_VERTEX_ALPHA);
 
   //! Animator
   ISceneNodeAnimator *anim = irrDevice->getSceneManager()->createFlyCircleAnimator(vector3df(0,0,0), 20, 0.005f, vector3df(1,1,1));

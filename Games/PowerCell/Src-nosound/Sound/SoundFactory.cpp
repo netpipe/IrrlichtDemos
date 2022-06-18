@@ -10,16 +10,16 @@ SoundFactory::SoundFactory ( const std::string &workDir )
 	sourceRefCount = 1;
 	workingDirectory = workDir;
 
-//	if ( !( soundDevice = alcOpenDevice ( NULL ) ) )
-//	{
-//		active = false;
-//	}
-//	else
-//	{
-//		active = true;
-//		soundContext = alcCreateContext ( soundDevice, NULL );
-//		alcMakeContextCurrent ( soundContext );
-//	}
+	if ( !( soundDevice = alcOpenDevice ( NULL ) ) )
+	{
+		active = false;
+	}
+	else
+	{
+		active = true;
+		soundContext = alcCreateContext ( soundDevice, NULL );
+		alcMakeContextCurrent ( soundContext );
+	}
 
 }
 

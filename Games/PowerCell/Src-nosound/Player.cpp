@@ -1,8 +1,10 @@
 #include "Player.hpp"
-const irr::scene::ISceneNode* outNode;
+irr::scene::ISceneNode* outNode;
 vector3df hitPos;
 Player *Player::m_player = NULL;
 Player Player::m_default_player_buffer;
+   f32 headRotation = 0;
+   f32 headPosition = 0;
 
 void Player::SetDefaultValues()
 {
@@ -25,13 +27,17 @@ void Player::setIsRunning(bool run)
   if(run && !isRunning)
   {
     isRunning = true;
-    playerNode->setMD2Animation(EMAT_RUN);
+  //  playerNode->setMD2Animation(EMAT_RUN);
+  Player::Instance()->getPlayerNode()->setAnimationSpeed(100);
   }
   else if(!run && isRunning)
   {
     isRunning = false;
-    playerNode->setMD2Animation("stand");
+  //  playerNode->setMD2Animation("stand");
+  Player::Instance()->getPlayerNode()->setAnimationSpeed(0);
   }
+
+
 }
 
 bool Player::getIsRunning(void)
@@ -50,6 +56,52 @@ void Player::moveForward()
   playerNode->updateAbsolutePosition();
 
   setIsRunning(true);
+ #define cool
+#ifdef cool
+//playerNode->setLoopMode(false);
+playerNode->setJointMode(EJUOR_CONTROL);
+    //playerNode->setRenderFromIdentity(true);
+
+ IBoneSceneNode* thisJoint = playerNode->getJointNode("Head");// playerNode->getJointNode("Head");
+
+
+    if( thisJoint )
+      {
+         ISceneNode* parentJoint = thisJoint->getParent();
+
+         if( parentJoint )
+         {
+         // Get the default (animated) Joint's position and rotation
+            vector3df jointPos = thisJoint->getAbsolutePosition();
+            vector3df jointRot = thisJoint->getAbsoluteTransformation().getRotationDegrees();
+
+         // Get the absolute INVERSE Transformation matrix of the parent
+            matrix4 iparentTransform = parentJoint->getAbsoluteTransformation();
+               iparentTransform.makeInverse();
+
+         // Set the Absolute Position or Rotation of the Joint without fear!
+            vector3df newJointPos = jointPos + vector3df( 0, 1+(sin(headPosition)*2), 0 );
+            vector3df newJointRot = vector3df( 0, headRotation, 0 );
+
+         // Transform the Position by the Parent's Inverse matrix before applying it
+            iparentTransform.transformVect( newJointPos );
+
+         // APPLY
+            thisJoint->setPosition( newJointPos );
+            thisJoint->setRotation( newJointRot );
+         }
+      }
+
+
+//   // funny
+      headPosition += 0.01f;
+      if( headPosition > 2*PI ){ headPosition -= 0; }
+//
+      headRotation += 0.5f;
+      if( headRotation > 360 ){ headRotation -= 360; }
+//thisJoint->setRotation(thisJoint->getRotation() + vector3df(0,3,0));
+//playerNode->animateJoints(true);
+#endif
 }
 
 void Player::strafeLeft()
@@ -94,6 +146,8 @@ void Player::moveBackwards()
   setIsRunning(true);
 }
 
+
+
 void Player::jump()
 {
   playerNode->setPosition(
@@ -102,6 +156,7 @@ void Player::jump()
       playerNode->getPosition().Y+10,
       playerNode->getPosition().Z));
      // isFalling=true;
+  //   playerNode->setMaterialFlag(video::EMF_LIGHTING, true);
 }
 
 void Player::CheckFalling(void)
@@ -116,17 +171,18 @@ void Player::CheckFalling(void)
   playerRot.normalize();
 
 
-//  irrDevice->getSceneManager()->getSceneCollisionManager()->getCollisionResultPosition(
-//    Collision::Instance()->metaSelector, playerNode->getAbsolutePosition(),
+ // irrDevice->getSceneManager()->getSceneCollisionManager()->getCollisionResultPosition(
+ //   Collision::Instance()->metaSelector, playerNode->getAbsolutePosition(),
 //    Collision::Instance()->getEllipsoidRadius(),
-//    playerRot,
-//   tri, hitPos, isFalling, outNode, (irr::f32)0.005f, vector3df(0,-30,0));
+//    playerRot, tri, hitPos, isFalling, outNode, (irr::f32)0.005f, vector3df(0,-30,0));
  //   printf ("%f %f %f",hitPos.X,hitPos.Y,hitPos.Z);
 
     if(isFalling)
     {
-        PlayerHelper::Instance()->DecreaseHealth(5);
+     //   PlayerHelper::Instance()->DecreaseHealth(5);
     }
+
+
 }
 
 void Player::createShadow(void)
@@ -146,17 +202,17 @@ void Player::createShadow(void)
     IMeshSceneNode* blobNode = irrDevice->getSceneManager()->addMeshSceneNode(blobMesh->getMesh(0));
     blobNode->setMaterialTexture(0, irrDevice->getVideoDriver()->getTexture("PlayerModel/blob.tga"));
     blobNode->setParent(playerNode);
-    blobNode->setPosition(vector3df(0,-10,0));
-    blobNode->setMaterialType(EMT_TRANSPARENT_ALPHA_CHANNEL);
-    /*
+    blobNode->setPosition(vector3df(0,5,0));
+  //  blobNode->setMaterialType(EMT_TRANSPARENT_ALPHA_CHANNEL_REF);
+
     blobNode->setMaterialFlag(video::EMF_LIGHTING, false);
-    blobNode->getMaterial(0).Shininess = 100.0f;
+    blobNode->getMaterial(0).Shininess = 0.50f;
     blobNode->getMaterial(0).DiffuseColor = SColor(255,255,255,255);
     blobNode->getMaterial(0).EmissiveColor = SColor(255,255,255,255);
     blobNode->getMaterial(0).AmbientColor = SColor(255,255,255,255);
     blobNode->getMaterial(0).SpecularColor = SColor(255,255,255,255);
-    blobNode->getMaterial(0).MaterialType = EMT_SOLID;
-    */
+    blobNode->getMaterial(0).MaterialType = EMT_TRANSPARENT_ALPHA_CHANNEL;
+
     blobNode->getMaterial(0).MaterialTypeParam = 0.01;
   }
 }

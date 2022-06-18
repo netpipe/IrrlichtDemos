@@ -39,13 +39,18 @@ void Obstacle::CheckCollisionWithPlayer(void)
 
 	if(obstacleExists)
 	{
-		for(u32 i = 0; i < obstacleNode.size(); i++)
+        for(u32 i = 0; i < obstacleNode.size(); i++)
 		{
 			if(obstacleNode[i]->getTransformedBoundingBox().intersectsWithBox(
 				playerNode->getTransformedBoundingBox()))
 				{
 					PlayerHelper::Instance()->DecreaseHealth(30);
 				}
+		//		if
+        obstacleNode[i]->setPosition(vector3df( obstacleNode[i]->getPosition().X,
+                                        obstacleNode[i]->getPosition().Y,
+                                        obstacleNode[i]->getPosition().Z+1));
+
 		}
 	}
 }
