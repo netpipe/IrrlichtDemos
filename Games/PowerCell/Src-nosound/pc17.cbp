@@ -48,7 +48,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add directory="/home/Dev/libs/game/irrlicht/irrlicht-1.5.2-2010/include" />
-			<Add directory="../../../Dev/LunaLibs/irrlicht-1.8.4/include" />
+			<Add directory="../../../../Dev/LunaLibs/irrlicht-1.8.4/include" />
 		</Compiler>
 		<Linker>
 			<Add library="openal" />
@@ -61,7 +61,7 @@
 			<Add library="pthread" />
 			<Add library="X11" />
 			<Add directory="/home/Dev/libs/game/irrlicht/irrlicht-1.5.2-2010-mod/lib/Linux" />
-			<Add directory="../../../Dev/LunaLibs/irrlicht-1.8.4/lib/Linux" />
+			<Add directory="../../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 		</Linker>
 		<Unit filename="CGUITexturedSkin.cpp" />
 		<Unit filename="CGUITexturedSkin.h" />
