@@ -21,7 +21,7 @@ int resX = 1200;
 int resY = 600;
 
 bool useOctree = true;
-bool splitScreen = false;
+bool splitScreen = true;
 int cubesSpace = 100;
 
 int main()
@@ -35,7 +35,7 @@ int main()
     cam1->setAspectRatio( (resX/2)/resY );
 
     //cam2 = smgr->addCameraSceneNode(0, vector3df(20,10,0), vector3df(0,0,0));
-    cam2 = smgr->addCameraSceneNodeFPS(0,100,.01);
+    cam2 = smgr->addCameraSceneNodeFPS(0,100,.1);
     cam2->setAspectRatio( (resX/2)/resY );
 
     //comment out far value to see how it really helps speed things up on a quadcore also set cubesSpace to 300
@@ -52,7 +52,8 @@ int main()
 
 
     //---------------------------------cubes
-
+	device->getFileSystem()->addFileArchive("../../media/map-20kdm2.pk3");
+#ifndef TEST
     vector<ISceneNode*> cubes;
     //for(int i=-30;i<30;i+=5)
     //    for(int j=-30;j<30;j+=5)
@@ -72,7 +73,20 @@ int main()
 
             if(useOctree) octree->addSceneNode(c);
         }
-    //octree->addSceneNode(cubes[0]);
+#else
+	scene::IAnimatedMesh* mesh = smgr->getMesh("20kdm2.bsp");
+	scene::ISceneNode* node = 0;
+
+	if (mesh)
+		node = smgr->addOctreeSceneNode(mesh->getMesh(0), 0, -1, 1024);
+
+			if (node){
+		node->setPosition(core::vector3df(-1300,-144,-1249));
+      //  node->setScale(core::vector3df(-10,-14,-19));
+        }
+    octree->addSceneNode(node);
+    #endif
+
 
     smgr->setAmbientLight(SColorf(.1,.1,.1,.1));
     smgr->addLightSceneNode(0,vector3df(100,100,100));
@@ -105,14 +119,14 @@ int main()
         if(useOctree) octree->update();
 
         smgr->drawAll();
-/*
+
         const SViewFrustum* frustum = cam2->getViewFrustum();
         driver->setTransform(video::ETS_WORLD, core::IdentityMatrix);
         driver->draw3DLine(frustum->cameraPosition,frustum->getFarLeftDown(),SColor(255,255,255,255));
         driver->draw3DLine(frustum->cameraPosition,frustum->getFarLeftUp(),SColor(255,255,255,255));
         driver->draw3DLine(frustum->cameraPosition,frustum->getFarRightDown(),SColor(255,255,255,255));
         driver->draw3DLine(frustum->cameraPosition,frustum->getFarRightUp(),SColor(255,255,255,255));
-*/
+
         driver->endScene();
 
         const s32 fps = driver->getFPS();

@@ -7,6 +7,7 @@ using namespace scene;
 using namespace video;
 
 using namespace std;
+#define __IOCTREE_PRINT_DEBUG__
 
 IOctreeNode::IOctreeNode(IOctreeNode* parent, ICameraSceneNode* octreeCam)
 {
