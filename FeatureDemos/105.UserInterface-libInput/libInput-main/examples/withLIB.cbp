@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Rain Demo" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./RainDemo" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="/home/Dev/libs/Irrlicht/include" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="Xxf86vm" />
+			<Add library="X11" />
+			<Add library="Xau" />
+			<Add library="Xext" />
+			<Add library="Xi" />
+			<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
+		</Linker>
+		<Unit filename="../src/InputController.cpp" />
+		<Unit filename="../src/InputController.h" />
+		<Unit filename="../src/InputDevice.h" />
+		<Unit filename="../src/Keyboard.h" />
+		<Unit filename="../src/Mouse.h" />
+		<Unit filename="../src/x11/X11InputController.cpp" />
+		<Unit filename="../src/x11/X11InputController.h" />
+		<Unit filename="../src/x11/X11InputDevice.cpp" />
+		<Unit filename="../src/x11/X11InputDevice.h" />
+		<Unit filename="../src/x11/X11Keyboard.cpp" />
+		<Unit filename="../src/x11/X11Keyboard.h" />
+		<Unit filename="../src/x11/X11Mouse.cpp" />
+		<Unit filename="../src/x11/X11Mouse.h" />
+		<Unit filename="query_state.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

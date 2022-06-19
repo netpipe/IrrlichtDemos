@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Irrlicht Example 05 User Interface" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Windows">
+				<Option platforms="Windows;" />
+				<Option output="UserInterface" prefix_auto="0" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add directory="../../lib/Win32-gcc" />
+				</Linker>
+			</Target>
+			<Target title="Linux">
+				<Option platforms="Unix;" />
+				<Option output="UserInterface" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="Xxf86vm" />
+					<Add library="GL" />
+					<Add library="X11" />
+					<Add library="Xi" />
+					<Add directory="../../lib/Linux" />
+					<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
+				</Linker>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="Windows;Linux;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-g" />
+			<Add directory="../../include" />
+			<Add directory="libInput-main/include" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+		</Linker>
+		<Unit filename="libInput-main/include/InputController.h" />
+		<Unit filename="libInput-main/include/InputDevice.h" />
+		<Unit filename="libInput-main/include/Keyboard.h" />
+		<Unit filename="libInput-main/include/Mouse.h" />
+		<Unit filename="libInput-main/src/InputController.cpp" />
+		<Unit filename="libInput-main/src/x11/X11InputController.cpp" />
+		<Unit filename="libInput-main/src/x11/X11InputController.h" />
+		<Unit filename="libInput-main/src/x11/X11InputDevice.cpp" />
+		<Unit filename="libInput-main/src/x11/X11InputDevice.h" />
+		<Unit filename="libInput-main/src/x11/X11Keyboard.cpp" />
+		<Unit filename="libInput-main/src/x11/X11Keyboard.h" />
+		<Unit filename="libInput-main/src/x11/X11Mouse.cpp" />
+		<Unit filename="libInput-main/src/x11/X11Mouse.h" />
+		<Unit filename="main.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
