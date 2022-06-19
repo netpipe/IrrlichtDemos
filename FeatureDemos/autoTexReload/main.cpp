@@ -102,7 +102,7 @@ int main(void)
 
     irr::scene::ISceneNode* box = smgr->addCubeSceneNode();
     box->setMaterialFlag(irr::video::EMF_LIGHTING, false);
-    box->setMaterialTexture(0, driver->getTexture("tex.jpg"));
+    box->setMaterialTexture(0, driver->getTexture("tex.png"));
 
     TextureReloader reloader(driver, device->getFileSystem());
 
