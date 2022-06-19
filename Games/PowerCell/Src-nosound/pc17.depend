@@ -5358,3 +5358,195 @@
 1645472525 source:/home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src2/Timer.cpp
 	"Timer.hpp"
 
+1645472525 source:/home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Camera.cpp
+	"Camera.hpp"
+
+1645472525 /home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Camera.hpp
+	"Globals.hpp"
+
+1645472525 /home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Globals.hpp
+	<iostream>
+	<fstream>
+	<irrlicht.h>
+	"Stage.hpp"
+	"CGUITexturedSkin.h"
+	"Event.hpp"
+	"Timer.hpp"
+	"Scene.hpp"
+	"Highscore.hpp"
+	"Player.hpp"
+	"Camera.hpp"
+	"Collision.hpp"
+	"GameGUI.hpp"
+	"HealthCell.hpp"
+	"PlayerHelper.hpp"
+	"PowerCell.hpp"
+	"Sound.hpp"
+	"Obstacle.hpp"
+	"Output.hpp"
+	"Elevator.hpp"
+	"MenuGUI.hpp"
+	"worldNodes/water.h"
+
+1645472525 /home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Stage.hpp
+	"Globals.hpp"
+
+1645472525 /home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/CGUITexturedSkin.h
+	<irrlicht.h>
+
+1645472525 /home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Event.hpp
+	"Globals.hpp"
+
+1645472525 /home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Timer.hpp
+	"Globals.hpp"
+
+1645472525 /home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Scene.hpp
+	"Globals.hpp"
+
+1645472525 /home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Highscore.hpp
+	"Globals.hpp"
+
+1645472525 /home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Player.hpp
+	"Globals.hpp"
+
+1645472525 /home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Collision.hpp
+	"Globals.hpp"
+
+1645472525 /home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/GameGUI.hpp
+	"Globals.hpp"
+
+1645472525 /home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/HealthCell.hpp
+	"Globals.hpp"
+
+1645472525 /home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/PlayerHelper.hpp
+	"Globals.hpp"
+
+1645472525 /home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/PowerCell.hpp
+	"Globals.hpp"
+
+1645472525 /home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Sound.hpp
+	"Globals.hpp"
+	"Sound/audio.h"
+
+1645472525 /home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Sound/audio.h
+	<string>
+	<map>
+	<vector>
+	<AL/al.h>
+	<AL/alc.h>
+	"Ogg/OggFile.h"
+
+1645472525 /home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Sound/Ogg/OggFile.h
+	<OpenAL/al.h>
+	<AL/al.h>
+	<ogg/ogg.h>
+	<vorbis/codec.h>
+	<vorbis/vorbisfile.h>
+	<iostream>
+
+1645472525 /home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Obstacle.hpp
+	"Globals.hpp"
+
+1645472525 /home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Output.hpp
+	"Globals.hpp"
+
+1645472525 /home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Elevator.hpp
+	"Globals.hpp"
+
+1645472525 /home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/MenuGUI.hpp
+	"Globals.hpp"
+
+1645472525 /home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/worldNodes/water.h
+	"../Globals.hpp"
+
+1645472525 source:/home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/CGUITexturedSkin.cpp
+	"CGUITexturedSkin.h"
+
+1645472525 source:/home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Collision.cpp
+	"Collision.hpp"
+	<irrlicht.h>
+
+1645472525 source:/home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Elevator.cpp
+	"Elevator.hpp"
+
+1645472525 source:/home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Event.cpp
+	"Event.hpp"
+
+1645472525 source:/home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/GameGUI.cpp
+	"GameGUI.hpp"
+
+1645472525 source:/home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/HealthCell.cpp
+	"HealthCell.hpp"
+
+1645472525 source:/home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Highscore.cpp
+	"Highscore.hpp"
+
+1655596862 source:/home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Launch.cpp
+	"Globals.hpp"
+	"Output.hpp"
+	<emscripten.h>
+
+1655596368 source:/home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/MenuGUI.cpp
+	"MenuGUI.hpp"
+
+1645472525 source:/home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Obstacle.cpp
+	"Obstacle.hpp"
+
+1645472525 source:/home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Output.cpp
+	"Output.hpp"
+	"stdarg.h"
+
+1645472525 source:/home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Player.cpp
+	"Player.hpp"
+
+1645472525 source:/home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/PlayerHelper.cpp
+	"PlayerHelper.hpp"
+
+1645472525 source:/home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/PowerCell.cpp
+	"PowerCell.hpp"
+
+1655596918 source:/home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Scene.cpp
+	"Scene.hpp"
+
+1645472525 source:/home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Sound.cpp
+	"Sound.hpp"
+	<pthread.h>
+
+1645472525 source:/home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Sound/audio.cpp
+	"audio.h"
+
+1645472525 source:/home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Sound/Ogg/OggFile.cpp
+	"OggFile.h"
+	<memory.h>
+
+1645472525 source:/home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Sound/SoundFactory.cpp
+	"SoundFactory.h"
+	<unistd.h>
+
+1645472525 /home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Sound/SoundFactory.h
+	<AL/al.h>
+	<AL/alc.h>
+	<OpenAL/al.h>
+	<OpenAL/alc.h>
+	<string>
+	<map>
+	"Ogg/OggFile.h"
+	"SoundSource/SoundSource.h"
+	<windows.h>
+
+1645472525 /home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Sound/SoundSource/SoundSource.h
+	<AL/al.h>
+	<OpenAL/al.h>
+	"../Ogg/OggFile.h"
+
+1645472525 source:/home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Sound/SoundLua.cpp
+
+1645472525 source:/home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Sound/SoundSource/SoundSource.cpp
+	"SoundSource.h"
+
+1645472525 source:/home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Stage.cpp
+	"Stage.hpp"
+
+1645472525 source:/home/netpipe/Dev/IrrlichtDemos/Games/PowerCell/Src-nosound/Timer.cpp
+	"Timer.hpp"
+

@@ -223,7 +223,7 @@ void main_loop(){
 
 
     device->run();
-        Sound::Instance()->PlayAll();
+     //   Sound::Instance()->PlayAll();
      // if(device->isWindowActive())
     //   {
 

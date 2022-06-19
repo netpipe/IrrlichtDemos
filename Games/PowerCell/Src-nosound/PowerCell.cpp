@@ -75,7 +75,7 @@ void PowerCell::CheckCollisionWithPlayer(void)
   {
     if(powerCellArray[i]->getPosition().getDistanceFrom(playerPos) < 50.0f)
     {
-        Sound::Instance()->PlayCellPickupSample(powerCellArray[i]->getPosition());
+      //  Sound::Instance()->PlayCellPickupSample(powerCellArray[i]->getPosition());
 
  //     Output::Instance()->w("Player is colliding with power cell %d\n", i);
 
