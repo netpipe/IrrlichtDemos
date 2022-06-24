@@ -1,0 +1,2 @@
+This is an Irrlicht Mesh Loader for the common FBX format, as specified by AutoDesk. The Loader was initially developed by JoshM, and later on adapted to the Irrlicht style by hybrid.
+The loader is pretty basic so far, as it only supports the geometry loading, and a few material properties.

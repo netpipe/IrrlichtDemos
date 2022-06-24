@@ -1,0 +1,42 @@
+--------------------------------------------------------------------------------------------
+
+MDL3/MDL2        File              Loader
+Max Vertices     ?                 88888?
+Max Polygons     ?                 21845(65535/3)
+Max Frames       ?                 2048
+Max Textures     ?                 2(same size)
+Diff. Tex. Size  N                 N(convert same size)
+Tex Format       32bit ARGB-8888   32bit ARGB-8888
+                 24bit RGB-888     convert to 32bit
+                 16bit ARGB-4444   N
+                 16bit RGB-565     convert to 32bit
+                 8bit PAL-256      N
+                 DDS               N
+                 EXT               N
+Mip Map          ?                 N
+Max Groups       1                 1
+Material         N                 N
+Bones            N                 N
+Shader           N                 N
+
+--------------------------------------------------------------------------------------------
+
+IDPO             File              Loader
+Max Vertices     ?                 88888?
+Max Polygons     ?                 21845(65535/3)
+Max Frames       ?                 2048
+Max Textures     ?                 2(same size)
+Diff. Tex. Size  N                 N(convert same size)
+Tex Format       16bit RGB-565     convert to 32bit
+                 8bit PAL-256      N(needs palette)
+                 DDS               N
+                 EXT               N
+Mip Map          ?                 N
+Max Groups       1                 1
+Material         N                 N
+Bones            N                 N
+Shader           N                 N
+
+
+Bugs
+incorrect skin Tcoords in IDPO files(quake1 mdl)

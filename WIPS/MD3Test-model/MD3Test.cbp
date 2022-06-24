@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="MD3Test" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Linux">
+				<Option output="MD3Test" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="/home/Dev/libs/Irrlicht/include" />
+					<Add directory="source" />
+					<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
+				</Compiler>
+				<Linker>
+					<Add library="GL" />
+					<Add library="Xxf86vm" />
+					<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
+					<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="./MD3Test" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="source" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Unit filename="source/CQ3ModelMesh.cpp" />
+		<Unit filename="source/CQ3ModelMesh.h" />
+		<Unit filename="source/CQ3ModelMeshFileLoader.cpp" />
+		<Unit filename="source/CQ3ModelMeshFileLoader.h" />
+		<Unit filename="source/CQ3ModelSceneNode.cpp" />
+		<Unit filename="source/CQ3ModelSceneNode.h" />
+		<Unit filename="source/CQ3Surface.cpp" />
+		<Unit filename="source/CQ3Surface.h" />
+		<Unit filename="source/CShadowVolumeSceneNode.cpp" />
+		<Unit filename="source/CShadowVolumeSceneNode.h" />
+		<Unit filename="source/ICommandStageShader.cpp" />
+		<Unit filename="source/ICommandStageShader.h" />
+		<Unit filename="source/IQ3ModelMesh.h" />
+		<Unit filename="source/IQ3ModelSceneNode.h" />
+		<Unit filename="source/StageShader.cpp" />
+		<Unit filename="source/StageShader.h" />
+		<Unit filename="source/animation.cpp" />
+		<Unit filename="source/animation.h" />
+		<Unit filename="source/iparser.h" />
+		<Unit filename="source/os.cpp" />
+		<Unit filename="source/os.h" />
+		<Unit filename="source/pool.h" />
+		<Unit filename="source/script.cpp" />
+		<Unit filename="source/script.h" />
+		<Unit filename="source/shader.cpp" />
+		<Unit filename="source/shader.h" />
+		<Unit filename="source/skin.cpp" />
+		<Unit filename="source/skin.h" />
+		<Unit filename="source/token.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

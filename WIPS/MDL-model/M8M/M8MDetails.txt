@@ -1,0 +1,40 @@
+--------------------------------------------------------------------------------------------
+
+M8M              File              Loader               Writer
+Max Vertices     ?                 88888                88888
+Max Polygons     ?                 21845(65535/3)       21845(65535/3)
+Max Frames       ?                 2048                 2048
+Max Textures     2(same size)      2(same size)         2(same size)
+Diff. Tex. Size  N                 N(convert same size) N(convert same size)
+Tex Format       24bit RGBA-8772   24bit RGBA-8772      24bit RGBA-8772
+Mip Map          N                 N                    N
+Max Groups       1                 1                    1
+Material         N                 N                    N
+Bones            N                 N                    N
+Shader           N                 N                    N
+
+--------------------------------------------------------------------------------------------
+
+MDL5             File              Loader               Writer
+Max Vertices     ?                 88888                88888
+Max Polygons     ?                 21845(65535/3)       21845(65535/3)
+Max Frames       ?                 2048                 2048
+Max Textures     >128              2(same size)         2(same size)
+Diff. Tex. Size  Y                 N(convert same size) N(convert same size)
+Tex Format       32bit ARGB-8888   32bit ARGB-8888      32bit ARGB-8888
+                 24bit RGB-888     convert to 32bit     convert to 32bit
+                 16bit ARGB-4444   N                    N
+                 16bit RGB-565     convert to 32bit     convert to 32bit
+                 8bit PAL-256      N                    N
+                 DDS               N                    N
+                 EXT               N                    N
+Mip Map          Y                 N                    N
+Max Groups       1                 1                    1
+Material         N                 N                    N
+Bones            N                 N                    N
+Shader           N                 N                    N
+
+
+Bugs
+MDL5 skin Tcoords inaccuracy
+

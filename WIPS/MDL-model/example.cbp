@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Irrlicht Pong" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="./Pong" prefix_auto="0" extension_auto="0" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="X11" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+		</Linker>
+		<Unit filename="ASCII/CASCIIMeshConverter.cpp" />
+		<Unit filename="ASCII/CASCIIMeshConverter.h" />
+		<Unit filename="M8M/CM8MMeshLoader.cpp" />
+		<Unit filename="M8M/CM8MMeshLoader.h" />
+		<Unit filename="MDL3/CMDL3MeshLoader.cpp" />
+		<Unit filename="MDL3/CMDL3MeshLoader.h" />
+		<Unit filename="MDL7/CMDL7MeshLoader.cpp" />
+		<Unit filename="MDL7/CMDL7MeshLoader.h" />
+		<Unit filename="_m8mexp_.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

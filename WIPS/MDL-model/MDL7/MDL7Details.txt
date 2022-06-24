@@ -1,0 +1,21 @@
+--------------------------------------------------------------------------------------------
+
+MDL7             File              Loader
+Max Vertices     ?                 88888?
+Max Polygons     ?                 21845(65535/3)
+Max Frames       ?                 2048
+Max Textures     >128              2(same size)
+Diff. Tex. Size  Y                 N(convert same size)
+Tex Format       32bit ARGB-8888   32bit ARGB-8888
+                 24bit RGB-888     convert to 32bit
+                 16bit ARGB-4444   N
+                 16bit RGB-565     convert to 32bit
+                 8bit PAL-256      N
+                 DDS               N?
+                 EXT               N?
+Mip Map          Y                 N
+Max Groups       ?                 1
+Material         Y                 Y?
+Bones            Y                 N
+Shader           Y                 N
+

@@ -189,7 +189,7 @@ while( device->run() )
 //=======================================================================
 
 //{check joysticks
-if ( SDL_NumJoysticks() < 1 ) joy_error->setVisible(true); else joy_error->setVisible(false);
+if ( SDL_NumJoysticks() < 1 ){ joy_error->setVisible(true); printf("nojoystick");}else {joy_error->setVisible(false);}
 //}
 
 //{menu screen logic functions
@@ -273,21 +273,24 @@ while(SDL_PollEvent(&event))
             break;
 
             case SDL_JOYAXISMOTION:  /* Handle Joystick Motion */
-
-            if ( ( event.jaxis.value < -3200 ) || (event.jaxis.value > 3200 ) )
+{printf("testing");
+            if ( ( event.jaxis.value < -1200 ) || (event.jaxis.value > 1200 ) )//was 3200
             {
+               printf("testing");
                  if( event.jaxis.axis == 0)
                  {
+                 printf("testing");
                  menu_item++;
                  }
 
                  if( event.jaxis.axis == 1)
                  {
+                                  printf("testing");
                  menu_item--;
                  }
            }
            break;
-
+}
 
     }
 
