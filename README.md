@@ -13,7 +13,7 @@ https://github.com/netpipe/IrrPAL universal physics wrapper repo that might be i
 > Disclaimer - I did not make most of these so run at own risk. the newer irrlicht 1.8.53+ has security improvements to the model loaders.
 > the licence on the code is ususually irrlicht licence.
 
-## Looking for other volunteer coders on this project, if interested email. admin@netpipe.ca
+###### Looking for other volunteer coders on this project, if interested email. admin@netpipe.ca
 - windows build targets made for the demos.
 - Code improvements to the demos.
 
