@@ -9,9 +9,9 @@ its about 4.2 GB on disk and 1.2gb download so please use backups and reliable i
 
 https://github.com/netpipe/IrrPAL universal physics wrapper repo that might be interesting to you.
 
-## Licences / Disclaimer
+## Licenses / Disclaimer
 > Disclaimer - I did not make most of these so run at own risk. the newer irrlicht 1.8.53+ has security improvements to the model loaders.
-> the licence on the code is ususually irrlicht licence.
+> the license on the code is ususually irrlicht license.
 
 ###### Looking for other volunteer coders on this project, if interested email. admin@netpipe.ca
 - windows build targets made for the demos.
