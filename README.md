@@ -3,8 +3,8 @@
 its about 4.2 GB on disk and 1.2gb download so please use backups and reliable internet while downloading.
 
 ## Luna Game Engine
-- https://github.com/tecan/Luna
-- https://github.com/tecan/LunaLibs  << check spark engine out its very amazing.
+- https://github.com/netpipe/Luna
+- https://github.com/netpipe/LunaLibs  << check spark engine out its very amazing.
 - FKeditor and PartED (particleEditor) are kept in Luna engine for now so get them there thanks.
 
 https://github.com/netpipe/IrrPAL universal physics wrapper repo that might be interesting to you.
