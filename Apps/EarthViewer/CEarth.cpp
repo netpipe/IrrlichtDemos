@@ -26,7 +26,7 @@
 /*==============================================================================
   Constructor
 ==============================================================================*/
-CEarth::CEarth(IrrlichtDevice *device, core::dimension2du Res, ICameraSceneNode* _cam)
+CEarth::CEarth(IrrlichtDevice *device, core::dimension2du Res, ICameraSceneNode* _cam,vector3df position)
 {
   cam = _cam;
   forceCam = 0.1f;
@@ -90,9 +90,12 @@ CEarth::CEarth(IrrlichtDevice *device, core::dimension2du Res, ICameraSceneNode*
   node = smgr->addSphereSceneNode(5.f, 64);
   if (node)
   {
-    node->setPosition(core::vector3df(0,0,0));
+      node->setPosition(vector3df(position.X,position.Y,position.Z));
+
+   // node->setPosition(core::vector3df(0,0,0));
     //node->setRotation(vector3df(0,-90,0));
-    node->setScale(vector3df(32,32,32));
+  //  node->setScale(vector3df(32,32,32));
+    node->setScale(vector3df(20,20,20));
     node->setMaterialTexture(0, driver->getTexture("1_earth_8k.jpg"));
     //node->setMaterialTexture(0, driver->getTexture("2_no_clouds_8k.jpg"));
     //node->setDebugDataVisible(EDS_FULL);
@@ -169,9 +172,9 @@ bool CEarth::OnEvent(const SEvent& event)
 
       if (event.MouseInput.Event == EMIE_LMOUSE_LEFT_UP)
       {
-        this->setYimpulsion(((event.MouseInput.X - oldX)>0) ? -.01f : .01f);
+        this->setYimpulsion(((event.MouseInput.X - oldX)>0) ? -.101f : .01f);
 
-        this->setCamImpulsion( ((event.MouseInput.Y - oldZ)>0) ? .01f : -.01f);
+        this->setCamImpulsion( ((event.MouseInput.Y - oldZ)>0) ? .101f : -.01f);
 
         LMB = false;
       }
@@ -193,6 +196,7 @@ bool CEarth::OnEvent(const SEvent& event)
 ==============================================================================*/
 void CEarth::render()
 {
+
     if (forceY != 0)
     {
      vector3df rot = node->getRotation();
@@ -209,7 +213,7 @@ void CEarth::render()
      vector3df pos = cam->getPosition();
      pos.Y += forceCam;
      forceCam += (forceCam > 0) ? -strength : strength;
-     cam->setPosition(pos);
+   //  cam->setPosition(pos);
     }
 }
 

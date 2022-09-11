@@ -19,6 +19,7 @@
 		</VirtualTargets>
 		<Compiler>
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+			<Add directory="../../../irrlicht-1.8.5/include" />
 		</Compiler>
 		<Linker>
 			<Add library="Irrlicht" />
@@ -26,6 +27,7 @@
 			<Add library="Xxf86vm" />
 			<Add library="X11" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+			<Add directory="../../../irrlicht-1.8.5/lib/Linux" />
 		</Linker>
 		<Unit filename="CTerrainSphereNode.cpp" />
 		<Unit filename="CTerrainSphereNode.h" />

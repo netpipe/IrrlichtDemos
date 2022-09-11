@@ -75,7 +75,7 @@ water simulation, flag simulation, helper functions, etc.) that must be paid for
 				<Option working_dir="" />
 				<Option object_output="obj/Release/" />
 				<Option type="2" />
-				<Option compiler="emscripten" />
+				<Option compiler="gcc" />
 				<Option createDefFile="1" />
 				<Compiler>
 					<Add option="-Wall" />
@@ -204,10 +204,16 @@ water simulation, flag simulation, helper functions, etc.) that must be paid for
 		</Build>
 		<Compiler>
 			<Add option="-O3" />
-			<Add option="-W" />
 			<Add option="-g" />
+			<Add option="-W" />
 			<Add directory="Bullet" />
 			<Add directory="$(#irrlicht.include)" />
+			<Add directory="../../../../../LunaLibs/irrlicht-1.8.4/include" />
+			<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletCollision" />
+			<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletDynamics" />
+			<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletSoftBody" />
+			<Add directory="../../../../../LunaLibs/bullet-2.78/src/BulletMultiThreaded" />
+			<Add directory="../../../../../LunaLibs/bullet-2.78/src/" />
 		</Compiler>
 		<Unit filename="boxshape.cpp" />
 		<Unit filename="boxshape.h" />

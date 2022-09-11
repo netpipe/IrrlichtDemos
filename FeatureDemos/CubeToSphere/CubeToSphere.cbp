@@ -42,18 +42,16 @@
 			<Add option="-g" />
 			<Add directory="../../include" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+			<Add directory="../../../irrlicht-1.8.5/include" />
 		</Compiler>
 		<Linker>
 			<Add library="Irrlicht" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+			<Add directory="../../../irrlicht-1.8.5/lib/Linux" />
 		</Linker>
 		<Unit filename="SpheremapGenerator.cpp" />
 		<Unit filename="SpheremapGenerator.h" />
 		<Unit filename="main.cpp" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-			<envvars />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

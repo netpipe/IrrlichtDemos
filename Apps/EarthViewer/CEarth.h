@@ -55,7 +55,7 @@ class CEarth : public IEventReceiver
 
 public:
 
- CEarth(IrrlichtDevice *device, core::dimension2du Res, ICameraSceneNode* _cam);
+ CEarth(IrrlichtDevice *device, core::dimension2du Res, ICameraSceneNode* _cam,vector3df position);
 
  void addLights(ISceneManager* smgr);
 

@@ -20,6 +20,7 @@
 		<Compiler>
 			<Add option="-fPIC" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+			<Add directory="../../../irrlicht-1.8.5/include" />
 		</Compiler>
 		<Linker>
 			<Add library="Irrlicht" />
@@ -30,6 +31,7 @@
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
 			<Add directory="./" />
 			<Add directory="libf2c" />
+			<Add directory="../../../irrlicht-1.8.5/lib/Linux" />
 		</Linker>
 		<Unit filename="CBatchingMesh.cpp" />
 		<Unit filename="CBatchingMesh.h" />
@@ -46,10 +48,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="t96_01.h" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-			<envvars />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

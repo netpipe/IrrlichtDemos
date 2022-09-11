@@ -37,6 +37,9 @@ namespace scene
 		//! returns the axis aligned bounding box of this node
 		virtual const core::aabbox3d<f32>& getBoundingBox() const;
 
+	virtual IShadowVolumeSceneNode* addShadowVolumeSceneNode(const IMesh* shadowMesh=0,
+		s32 id=-1, bool zfailmethod=true, f32 infinity=1000.0f) {};
+
 		//! returns the material based on the zero based index i. To get the amount
 		//! of materials used by this scene node, use getMaterialCount().
 		//! This function is needed for inserting the node into the scene hirachy on a

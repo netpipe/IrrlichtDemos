@@ -174,8 +174,7 @@ ISceneNode* CSphericalTerrainSceneNode::clone(ISceneNode* newParent, ISceneManag
 		newManager = SceneManager;
 
     io::IReadFile* file = SceneManager->getFileSystem()->createAndOpenFile(HeightmapFile.c_str());
-	CSphericalTerrainSceneNode* nb = new CSphericalTerrainSceneNode(file, newManager, Radius, MaxHeight, newParent,
-		ID, RelativeTranslation);
+	CSphericalTerrainSceneNode* nb = new CSphericalTerrainSceneNode(file, newManager, Radius, MaxHeight, newParent,		ID, RelativeTranslation);
     if(file)
     {
         file->drop();

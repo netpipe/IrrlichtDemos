@@ -72,11 +72,11 @@
 					<Add option="-Wall" />
 					<Add option="-DDEF_LINUX" />
 					<Add directory="../../source" />
-					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
-					<Add directory="/home/Dev/libs/physics/bullet-2.78/src/BulletCollision" />
-					<Add directory="/home/Dev/libs/physics/bullet-2.78/src/BulletSoftBody" />
-					<Add directory="/home/Dev/libs/physics/bullet-2.78/src/BulletDynamics" />
-					<Add directory="/home/Dev/libs/physics/bullet-2.78/src/" />
+					<Add directory="../../../../../../LunaLibs/irrlicht-1.8.4/include" />
+					<Add directory="../../../../../../LunaLibs/bullet-2.78/src/BulletCollision" />
+					<Add directory="../../../../../../LunaLibs/bullet-2.78/src/BulletSoftBody" />
+					<Add directory="../../../../../../LunaLibs/bullet-2.78/src/BulletDynamics" />
+					<Add directory="../../../../../../LunaLibs/bullet-2.78/src/" />
 				</Compiler>
 				<Linker>
 					<Add library="../../lib/linux/Release/libirrBullet.a" />
@@ -93,11 +93,11 @@
 					<Add library="bz2" />
 					<Add library="X11" />
 					<Add directory="../../lib/linux" />
-					<Add directory="/home/Dev/libs/physics/bullet-2.78/src/BulletCollision" />
-					<Add directory="/home/Dev/libs/physics/bullet-2.78/src/BulletDynamics" />
-					<Add directory="/home/Dev/libs/physics/bullet-2.78/src/BulletSoftBody" />
-					<Add directory="/home/Dev/libs/physics/bullet-2.78/src/LinearMath" />
-					<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+					<Add directory="../../../../../../LunaLibs/bullet-2.78/src/BulletCollision" />
+					<Add directory="../../../../../../LunaLibs/bullet-2.78/src/BulletDynamics" />
+					<Add directory="../../../../../../LunaLibs/bullet-2.78/src/BulletSoftBody" />
+					<Add directory="../../../../../../LunaLibs/bullet-2.78/src/LinearMath" />
+					<Add directory="../../../../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 				</Linker>
 			</Target>
 			<Target title="Linux Debug">
@@ -117,22 +117,32 @@
 					<Add directory="/usr/include/BulletCollision" />
 					<Add directory="/usr/include/BulletSoftBody" />
 					<Add directory="/usr/include/BulletDynamics" />
+					<Add directory="../../../../../../LunaLibs/irrlicht-1.8.4/include" />
+					<Add directory="../../../../../../LunaLibs/bullet-2.78/src/BulletCollision" />
+					<Add directory="../../../../../../LunaLibs/bullet-2.78/src/BulletSoftBody" />
+					<Add directory="../../../../../../LunaLibs/bullet-2.78/src/BulletDynamics" />
+					<Add directory="../../../../../../LunaLibs/bullet-2.78/src/" />
 				</Compiler>
 				<Linker>
-					<Add library="../../lib/linux/Debug/libirrBulletDebug.a" />
 					<Add library="Irrlicht" />
-					<Add library="BulletDynamics" />
-					<Add library="BulletSoftBody" />
-					<Add library="LinearMath" />
-					<Add library="BulletCollision" />
 					<Add library="GL" />
-					<Add library="GLU" />
-					<Add library="Xxf86vm" />
-					<Add library="png" />
-					<Add library="jpeg" />
-					<Add library="bz2" />
 					<Add library="X11" />
+					<Add library="bz2" />
+					<Add library="GLU" />
+					<Add library="jpeg" />
+					<Add library="png" />
+					<Add library="Xxf86vm" />
+					<Add library="BulletSoftBody" />
+					<Add library="../../lib/linux/Debug/libirrBulletDebug.a" />
+					<Add library="BulletDynamics" />
+					<Add library="BulletCollision" />
+					<Add library="LinearMath" />
 					<Add directory="../../lib/linux" />
+					<Add directory="../../../../../../LunaLibs/bullet-2.78/src/BulletCollision" />
+					<Add directory="../../../../../../LunaLibs/bullet-2.78/src/BulletDynamics" />
+					<Add directory="../../../../../../LunaLibs/bullet-2.78/src/BulletSoftBody" />
+					<Add directory="../../../../../../LunaLibs/bullet-2.78/src/LinearMath" />
+					<Add directory="../../../../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 				</Linker>
 			</Target>
 		</Build>
@@ -141,6 +151,7 @@
 			<Add option="-fexceptions" />
 			<Add directory="../../../include" />
 			<Add directory="../../../include/bheaders/Bullet" />
+			<Add directory="../../../../../../LunaLibs/irrlicht-1.8.4/include" />
 		</Compiler>
 		<Unit filename="../framework/exampleframework.cpp" />
 		<Unit filename="../framework/exampleframework.h" />

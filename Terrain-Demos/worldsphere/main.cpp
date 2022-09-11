@@ -65,7 +65,11 @@ int main() {
 
       driver->endScene();
 
+      device->sleep(5);
+
+
    }
+
 
    device->drop();
 

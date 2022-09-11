@@ -17,7 +17,7 @@
 			<Add alias="All" targets="default;" />
 		</VirtualTargets>
 		<Compiler>
-			<Add directory="../../../../../Dev/libs/game/irrlicht/Irrlicht-SVN/include" />
+			<Add directory="/home/netpipe/Dev/LunaLibs/irrlicht-1.8.4/include" />
 		</Compiler>
 		<Linker>
 			<Add library="GL" />
@@ -25,16 +25,13 @@
 			<Add library="Xxf86vm" />
 			<Add library="X11" />
 			<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
-			<Add directory="../../../../../Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux" />
+			<Add directory="/home/netpipe/Dev/LunaLibs/irrlicht-1.8.4/lib/linux" />
 		</Linker>
 		<Unit filename="CEarth.cpp" />
 		<Unit filename="CEarth.h" />
 		<Unit filename="CGUIBar.cpp" />
 		<Unit filename="CGUIBar.h" />
 		<Unit filename="main.cpp" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

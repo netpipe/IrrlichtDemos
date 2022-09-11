@@ -20,6 +20,7 @@
 		<Compiler>
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
 			<Add directory="libf2c" />
+			<Add directory="./" />
 		</Compiler>
 		<Linker>
 			<Add library="GL" />
@@ -39,6 +40,7 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Geopack-2008.h" />
+		<Unit filename="f2c.h" />
 		<Unit filename="libf2c/abort_.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -537,10 +539,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="t96_01.h" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-			<envvars />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

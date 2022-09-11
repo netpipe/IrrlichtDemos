@@ -620,12 +620,12 @@ int main()
 
 		io::IReadFile* file[6];
 
-		file[0] = smgr->getFileSystem()->createAndOpenFile("../earthTex/out_5.jpg");
-		file[1] = smgr->getFileSystem()->createAndOpenFile("../earthTex/out_4.jpg");
-		file[2] = smgr->getFileSystem()->createAndOpenFile("../earthTex/out_2.jpg");
-		file[3] = smgr->getFileSystem()->createAndOpenFile("../earthTex/out_1.jpg");
-		file[4] = smgr->getFileSystem()->createAndOpenFile("../earthTex/out_3.jpg");
-		file[5] = smgr->getFileSystem()->createAndOpenFile("../earthTex/out_6.jpg");
+		file[0] = smgr->getFileSystem()->createAndOpenFile("./earthTex/out_5.jpg");
+		file[1] = smgr->getFileSystem()->createAndOpenFile("./earthTex/out_4.jpg");
+		file[2] = smgr->getFileSystem()->createAndOpenFile("./earthTex/out_2.jpg");
+		file[3] = smgr->getFileSystem()->createAndOpenFile("./earthTex/out_1.jpg");
+		file[4] = smgr->getFileSystem()->createAndOpenFile("./earthTex/out_3.jpg");
+		file[5] = smgr->getFileSystem()->createAndOpenFile("./earthTex/out_6.jpg");
 
 		planet->loadHeightMap(file,video::SColor(255,255,255,255),0,0.9);
 
@@ -640,12 +640,12 @@ int main()
 		//planet->setMaterialFlag(video::EMF_WIREFRAME, true);
 		//planet->setMaterialFlag(video::EMF_BACK_FACE_CULLING, false);
 
-		video::ITexture* back = driver->getTexture("../earthTex/earthfcm001.jpg");
-		video::ITexture* right = driver->getTexture("../earthTex/earthfcm002.jpg");
-		video::ITexture* front = driver->getTexture("../earthTex/earthfcm003.jpg");
-		video::ITexture* left = driver->getTexture("../earthTex/earthfcm000.jpg");
-		video::ITexture* top = driver->getTexture("../earthTex/earthfcm004.jpg");
-		video::ITexture* bottom = driver->getTexture("../earthTex/earthfcm005.jpg");
+		video::ITexture* back = driver->getTexture("./earthTex/earthfcm001.jpg");
+		video::ITexture* right = driver->getTexture("./earthTex/earthfcm002.jpg");
+		video::ITexture* front = driver->getTexture("./earthTex/earthfcm003.jpg");
+		video::ITexture* left = driver->getTexture("./earthTex/earthfcm000.jpg");
+		video::ITexture* top = driver->getTexture("./earthTex/earthfcm004.jpg");
+		video::ITexture* bottom = driver->getTexture("./earthTex/earthfcm005.jpg");
 
 		planet->setTextures(top,front,back,left,right,bottom,video::SColor(255,30,30,30),video::SColor(255,30,30,30),0);
 	}
@@ -668,12 +668,12 @@ int main()
 
 		io::IReadFile* file[6];
 
-		file[0] = smgr->getFileSystem()->createAndOpenFile("../marsTex/outmars5.jpg");
-		file[1] = smgr->getFileSystem()->createAndOpenFile("../marsTex/outmars4.jpg");
-		file[2] = smgr->getFileSystem()->createAndOpenFile("../marsTex/outmars2.jpg");
-		file[3] = smgr->getFileSystem()->createAndOpenFile("../marsTex/outmars1.jpg");
-		file[4] = smgr->getFileSystem()->createAndOpenFile("../marsTex/outmars3.jpg");
-		file[5] = smgr->getFileSystem()->createAndOpenFile("../marsTex/outmars6.jpg");
+		file[0] = smgr->getFileSystem()->createAndOpenFile("./marsTex/outmars5.jpg");
+		file[1] = smgr->getFileSystem()->createAndOpenFile("./marsTex/outmars4.jpg");
+		file[2] = smgr->getFileSystem()->createAndOpenFile("./marsTex/outmars2.jpg");
+		file[3] = smgr->getFileSystem()->createAndOpenFile("./marsTex/outmars1.jpg");
+		file[4] = smgr->getFileSystem()->createAndOpenFile("./marsTex/outmars3.jpg");
+		file[5] = smgr->getFileSystem()->createAndOpenFile("./marsTex/outmars6.jpg");
 
 		planet->loadHeightMap(file,video::SColor(255,255,255,255),0,1.4);
 
@@ -689,12 +689,12 @@ int main()
 		//planet->setMaterialFlag(video::EMF_BACK_FACE_CULLING, false);
 
 
-		video::ITexture* back = driver->getTexture("../marsTex/outmars_c2.jpg");
-		video::ITexture* right = driver->getTexture("../marsTex/outmars_c3.jpg");
-		video::ITexture* front = driver->getTexture("../marsTex/outmars_c4.jpg");
-		video::ITexture* left = driver->getTexture("../marsTex/outmars_c1.jpg");
-		video::ITexture* top = driver->getTexture("../marsTex/outmars_c5.jpg");
-		video::ITexture* bottom = driver->getTexture("../marsTex/outmars_c6.jpg");
+		video::ITexture* back = driver->getTexture("./marsTex/outmars_c2.jpg");
+		video::ITexture* right = driver->getTexture("./marsTex/outmars_c3.jpg");
+		video::ITexture* front = driver->getTexture("./marsTex/outmars_c4.jpg");
+		video::ITexture* left = driver->getTexture("./marsTex/outmars_c1.jpg");
+		video::ITexture* top = driver->getTexture("./marsTex/outmars_c5.jpg");
+		video::ITexture* bottom = driver->getTexture("./marsTex/outmars_c6.jpg");
 
 		planet->setTextures(top,front,back,left,right,bottom,video::SColor(255,30,30,30),video::SColor(255,30,30,30),0);
 
@@ -723,6 +723,7 @@ int main()
 		handleCam();
 		smgr->drawAll();
 		driver->endScene();
+		device->sleep(5);
 	}
 
 	device->drop();

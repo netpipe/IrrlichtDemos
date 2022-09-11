@@ -33,6 +33,10 @@
 */
 
 #include "CEarth.h"
+#include <stdio.h>
+#include <vector>
+
+using namespace std;
 
 /*==============================================================================
 // get fullscreen resolution
@@ -58,15 +62,34 @@ int main()
   ISceneManager* smgr = device->getSceneManager();
 
   ICameraSceneNode* cam = smgr->addCameraSceneNode();
-                    cam->setPosition(vector3df(0,100,260));
+                    cam->setPosition(vector3df(0,100,2060));
                     cam->setTarget(vector3df(0,0,0));
 
-  CEarth* earth = new CEarth(device, Res, cam);
-  device->setEventReceiver(earth);
+  CEarth* earth = new CEarth(device, Res, cam ,vector3df (0,400,500));
+  CEarth* earth2 = new CEarth(device, Res, cam, vector3df (0,700,500));
+  CEarth* earth3 = new CEarth(device, Res, cam, vector3df (0,1000,500));
+  //CEarth* earth4 = new CEarth(device, Res, cam, vector3df (0,1700,500));
+  //CEarth* earth5 = new CEarth(device, Res, cam, vector3df (0,2200,500));
 
-  earth->addLights(smgr);
-  // move it a bit at the beginning
-  earth->setYimpulsion(.01f);
+//   for (int i; i > 5;i++)
+//   {
+//        std::vector<CEarth*> Planets = new CEarth(device, Res, cam, vector3df (0,300+1000,500));
+//
+//        Planets(0)->addLights(smgr);
+//        // move it a bit at the beginning
+//        Planets(1)->setYimpulsion(.51f);
+//    }
+//
+
+        //earth = new CEarth(device, Res, cam, vector3df (0,300+1000,500));
+        earth->addLights(smgr);
+//        // move it a bit at the beginning
+        earth->setYimpulsion(.51f);
+
+ // earth2->set
+
+ // device->setEventReceiver(earth);
+
 
   u32 then = device->getTimer()->getTime();
 
