@@ -18,7 +18,7 @@
 		</VirtualTargets>
 		<Compiler>
 			<Add directory="/home/Dev/libs/Irrlicht/include" />
-			<Add directory="../../../irrlicht-1.8.5/include" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
 		</Compiler>
 		<Linker>
 			<Add library="Irrlicht" />
@@ -26,7 +26,7 @@
 			<Add library="X11" />
 			<Add library="GL" />
 			<Add directory="/home/Dev/libs/Irrlicht/lib/gcc" />
-			<Add directory="../../../irrlicht-1.8.5/lib/Linux" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 		</Linker>
 		<Unit filename="GameAnimatedMeshObject.cpp" />
 		<Unit filename="GameAnimatedMeshObject.h" />
