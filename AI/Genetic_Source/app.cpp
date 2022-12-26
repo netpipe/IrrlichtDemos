@@ -35,7 +35,7 @@ App::App()
 
     //Basic configs
     eventReceiver = new EventReceiver();
-    device = createDevice(EDT_OPENGL, dimension2d<s32>(w, h), b, f, false, true, eventReceiver);
+    device = createDevice(EDT_OPENGL, dimension2du(w, h), b, f, false, true, eventReceiver);
     driver = device->getVideoDriver();
     smgr = device->getSceneManager();
     guienv = device->getGUIEnvironment();
@@ -43,7 +43,7 @@ App::App()
     device->setWindowCaption(L"Genetic");
 
     //Fog Seetings
-    driver->setFog(SColor(255,150,170,200),true,0,800);
+//    driver->setFog(SColor(255,150,170,200),true,0,800);
     //Load 'n Config scenario.
     scenarioMesh=smgr->getMesh("../media/scenario.b3d");
     scenario = smgr->addMeshSceneNode(scenarioMesh);

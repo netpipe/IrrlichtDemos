@@ -67,7 +67,7 @@ Application::~Application()
 
 bool Application::init()
 {
-	this->device = irr::createDevice(irr::video::EDT_OPENGL, irr::core::dimension2d<irr::s32>(800, 600), 16, false);
+	this->device = irr::createDevice(irr::video::EDT_OPENGL, irr::core::dimension2d<irr::u32>(800, 600), 16, false);
 	if (!this->device)
 		return false;
 	this->device->setEventReceiver(this);

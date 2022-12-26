@@ -14,7 +14,7 @@ irr::gui::IGUIListBox* list;
 			guienv->getSkin()->setFont(font);
 
 
-		const irr::core::dimension2d<irr::s32>& screenSize = guienv->getVideoDriver()->getScreenSize();
+		const irr::core::dimension2d<irr::u32>& screenSize = guienv->getVideoDriver()->getScreenSize();
 		const irr::core::vector2d<irr::s32> tabcontrolSize(700, 500);
 		const irr::core::vector2d<irr::s32> pos((screenSize.Width-tabcontrolSize.X)/2, (screenSize.Height-tabcontrolSize.Y)/2);
 
