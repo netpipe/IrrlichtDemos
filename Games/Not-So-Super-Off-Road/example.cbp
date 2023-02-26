@@ -20,7 +20,7 @@
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
 			<Add directory="./include" />
 			<Add directory="./src" />
-			<Add directory="../../Dev/irrlicht-1.8.5/include" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
 		</Compiler>
 		<Linker>
 			<Add library="Irrlicht" />
@@ -28,7 +28,7 @@
 			<Add library="Xxf86vm" />
 			<Add library="X11" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
-			<Add directory="../../Dev/irrlicht-1.8.5/lib/Linux" />
+			<Add directory="../../../LunaLibs/irrlicht-1.8.5/lib/Linux" />
 		</Linker>
 		<Unit filename="include/Camera.h" />
 		<Unit filename="include/EventReciever.h" />

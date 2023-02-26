@@ -40,7 +40,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
-					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/game/irrlicht/Irrlicht-SVN/include" />
+					<Add directory="../../../LunaLibs/irrlicht-1.8.4/include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -48,7 +48,7 @@
 					<Add library="Irrlicht" />
 					<Add library="Xxf86vm" />
 					<Add library="X11" />
-					<Add directory="/run/media/netpipe/df7f53ef-2a98-4562-a498-7da578dab660/Dev/libs/game/irrlicht/Irrlicht-SVN/lib/Linux" />
+					<Add directory="../../../LunaLibs/irrlicht-1.8.4/lib/Linux" />
 				</Linker>
 			</Target>
 		</Build>
@@ -74,8 +74,6 @@
 		<Unit filename="CBox2DSceneNodeFactory.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
-			<code_completion />
-			<debugger />
 			<DoxyBlocks>
 				<comment_style block="0" line="0" />
 				<doxyfile_project />
@@ -85,7 +83,6 @@
 				<doxyfile_dot />
 				<general />
 			</DoxyBlocks>
-			<envvars />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
