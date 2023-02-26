@@ -1,0 +1,12 @@
+#ifndef _GAMESTATE_H_
+#define _GAMESTATE_H_
+
+enum GAME_STATE {
+	GS_START,
+	GS_COUNTING_DOWN,
+	GS_RUNNING,
+	GS_GAME_OVER,
+	GS_QUIT,
+};
+
+#endif

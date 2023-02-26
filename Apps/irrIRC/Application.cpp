@@ -8,6 +8,9 @@
 #include <fstream>
 #include <iostream>
 
+#include <string.h>
+#include <iostream>
+
 //#define test
 #ifdef test
 	const std::string serverName("127.0.0.1");
@@ -20,7 +23,7 @@
 	const unsigned short serverPort = 6667;
 	const std::string channelName("#irrlicht");
 	int aha = rand();
-	const std::string botName("aBot");
+	const std::string botName("aBot"+ std::to_wstring(aha));
 #endif
 
 
