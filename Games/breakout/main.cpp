@@ -58,7 +58,7 @@ int main()
 	std::cout<<"============================\n";
 
 	//создаем окошко
-	device = createDevice(EDT_OPENGL,dimension2d<s32>(640, 480),16,0,0,0,0);
+	device = createDevice(EDT_OPENGL,dimension2d<u32>(640, 480),16,0,0,0,0);
 	device->setWindowCaption(L"test");
 
 	//получаем хендлы девайсов
@@ -205,7 +205,7 @@ int main()
 		driver->endScene();
 		//************************************************************************
 
-
+device->sleep(100);
 	}
 
 	//удаляем девайс, тоесть закрываем окошко

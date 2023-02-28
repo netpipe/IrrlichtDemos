@@ -57,13 +57,15 @@
 		</VirtualTargets>
 		<Compiler>
 			<Add directory="../../../LunaLibs/Irrlicht/include" />
+			<Add directory="../../../irrlicht-1.8.5/include" />
 		</Compiler>
 		<Linker>
-			<Add library="GL" />
 			<Add library="Irrlicht" />
 			<Add library="Xxf86vm" />
 			<Add library="X11" />
+			<Add library="GL" />
 			<Add directory="../../../LunaLibs/Irrlicht/lib/Linux" />
+			<Add directory="../../../irrlicht-1.8.5/lib/Linux" />
 		</Linker>
 		<Unit filename="main.cpp" />
 		<Extensions />

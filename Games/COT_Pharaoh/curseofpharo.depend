@@ -934,3 +934,19 @@
 1369542838 source:/media/clay/0ca40d09-7d15-49f2-8630-1f2258a0a8c8/tecan/games/Luna/IrrlichtDemos-git/Games/COT_Pharaoh/SRC/PortalSceneNode.cpp
 	"PortalSceneNode.h"
 
+1645472520 source:/home/netpipe/Dev/IrrlichtDemos/Games/COT_Pharaoh/SRC/CurseOfThePharaoh.cpp
+	"CurseOfThePharaoh.h"
+	"PortalSceneNode.h"
+
+1645472520 /home/netpipe/Dev/IrrlichtDemos/Games/COT_Pharaoh/SRC/CurseOfThePharaoh.h
+	<irrlicht.h>
+	<iostream>
+	<vector>
+
+1645472520 /home/netpipe/Dev/IrrlichtDemos/Games/COT_Pharaoh/SRC/PortalSceneNode.h
+	<irrlicht.h>
+	<iostream>
+
+1645472520 source:/home/netpipe/Dev/IrrlichtDemos/Games/COT_Pharaoh/SRC/PortalSceneNode.cpp
+	"PortalSceneNode.h"
+
