@@ -1,2 +1,0 @@
-You can export ghosts through the timerace menu.
-Copy the .rec files from other players in here in order to compete against them in the game.
