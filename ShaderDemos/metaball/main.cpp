@@ -45,7 +45,7 @@ int main() {
    int lastFPS = -1;
 
    //animate the blobs coming together with threshold. 0.4 seems to be lowest without causing issues
-            meta->setThreshold(0.4);
+            meta->setThreshold(01.4);
             meta->triangulateVolume();
 
    while(device->run()) {

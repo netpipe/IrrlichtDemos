@@ -23,8 +23,6 @@
 				<Option output="../../bin/Linux/SpeciaFX" prefix_auto="0" extension_auto="0" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option projectIncludeDirsRelation="1" />
-				<Option projectLibDirsRelation="1" />
 				<Compiler>
 					<Add option="-g" />
 					<Add directory="../../../../../Dev/libs/game/irrlicht/Irrlicht-SVN/include" />
@@ -51,9 +49,6 @@
 		</Linker>
 		<Unit filename="main.cpp" />
 		<Unit filename="meshToon.h" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
