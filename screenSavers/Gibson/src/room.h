@@ -24,13 +24,13 @@
 #include <time.h>
 #include <stdlib.h>
 
-#define TOWER_COUNT 3600
+#define TOWER_COUNT 2000
 #define TOWER_XSIZE 60
 #define TOWER_YSIZE 60
 
 
 // number of milliseconds to wait before moving to next texture on tower text
-#define TEXT_ANIM_WAIT_TIME 200
+#define TEXT_ANIM_WAIT_TIME 500
 #define TOWER_TEXTURE_COUNT 8
 
 #define TOWER_DIST  30

@@ -41,7 +41,7 @@ test3ds=new object;
 	glLightfv(GL_LIGHT0, GL_DIFFUSE, light_diffuse);
 	glLightfv(GL_LIGHT0, GL_SPECULAR, light_specular);
 //	glLightfv(GL_LIGHT0, GL_POSITION, light_position);
-Load3dsObject(test3ds,"oldChevy-Truck.3ds");
+//Load3dsObject(test3ds,"oldChevy-Truck.3ds");
 CreateList();
 //DispMods();
   }

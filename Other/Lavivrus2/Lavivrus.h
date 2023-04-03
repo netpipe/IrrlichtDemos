@@ -4,7 +4,7 @@
 #include <GL/gl.h>
 #include <GL/glu.h>
 #include <math.h>
-#include "ObjLoader.h"
+//#include "ObjLoader.h"
 
 
 #define TRUE  1
@@ -73,35 +73,35 @@ glEndList();
 }
 
 
-void DispMods(){
-	ObjModel data;
-	ObjLoader LoaderClass;
-
-	LoaderClass.LoadObj("sphere.obj");
-	data = LoaderClass.ReturnObj();
-
-	gravy = glGenLists(1);
-	glNewList(ListID, GL_COMPILE);
-
-glBegin(GL_TRIANGLES);
-	for(int i = 0; i < data.NumTriangle; i++)  {
-glColor3f(1.0f, 1.0f, 1.0f);
-cout << i;
-glVertex3f(data.VertexArray[data.TriangleArray[i].Vertex[0]].X,data.VertexArray[data.TriangleArray[i].Vertex[0]].Y,data.VertexArray[data.TriangleArray[i].Vertex[0]].Z);
-glVertex3f(data.VertexArray[data.TriangleArray[i].Vertex[1]].X,data.VertexArray[data.TriangleArray[i].Vertex[1]].Y,data.VertexArray[data.TriangleArray[i].Vertex[1]].Z);
-glVertex3f(data.VertexArray[data.TriangleArray[i].Vertex[2]].X,data.VertexArray[data.TriangleArray[i].Vertex[2]].Y,data.VertexArray[data.TriangleArray[i].Vertex[2]].Z);
-	}
-glEnd();
-glEndList();
-
-cout << "loaderd it fine";
-
-/*
-
-*/
-
-/*
-//btexindex number
-		data.TriangleArray[i].Vertex[0] ;		data.TriangleArray[i].Vertex[1];		data.TriangleArray[i].Vertex[2];
-*/
-}
+//void DispMods(){
+//	ObjModel data;
+//	ObjLoader LoaderClass;
+//
+//	LoaderClass.LoadObj("sphere.obj");
+//	data = LoaderClass.ReturnObj();
+//
+//	gravy = glGenLists(1);
+//	glNewList(ListID, GL_COMPILE);
+//
+//glBegin(GL_TRIANGLES);
+//	for(int i = 0; i < data.NumTriangle; i++)  {
+//glColor3f(1.0f, 1.0f, 1.0f);
+//cout << i;
+//glVertex3f(data.VertexArray[data.TriangleArray[i].Vertex[0]].X,data.VertexArray[data.TriangleArray[i].Vertex[0]].Y,data.VertexArray[data.TriangleArray[i].Vertex[0]].Z);
+//glVertex3f(data.VertexArray[data.TriangleArray[i].Vertex[1]].X,data.VertexArray[data.TriangleArray[i].Vertex[1]].Y,data.VertexArray[data.TriangleArray[i].Vertex[1]].Z);
+//glVertex3f(data.VertexArray[data.TriangleArray[i].Vertex[2]].X,data.VertexArray[data.TriangleArray[i].Vertex[2]].Y,data.VertexArray[data.TriangleArray[i].Vertex[2]].Z);
+//	}
+//glEnd();
+//glEndList();
+//
+//cout << "loaderd it fine";
+//
+///*
+//
+//*/
+//
+///*
+////btexindex number
+//		data.TriangleArray[i].Vertex[0] ;//		data.TriangleArray[i].Vertex[1];//		data.TriangleArray[i].Vertex[2];
+//*/
+//}

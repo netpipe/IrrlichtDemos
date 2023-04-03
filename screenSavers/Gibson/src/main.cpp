@@ -48,7 +48,7 @@ int main(int argc, char **argv)
 
 	//Ray.init(OGL, 800,600, false, false, false);
 	dimension2d<u32> res;
-	res = getScreenResolution();
+	res = dimension2d<u32>(800,600);//getScreenResolution();
 
 	//Ray.init(OGL, res.Width,res.Height, true, false, false);
 
@@ -60,8 +60,7 @@ int main(int argc, char **argv)
 	params.Bits = 32;
 	params.DriverType = EDT_OPENGL;
 	params.EventReceiver = &rcv;
-	params.Fullscreen = true;
-	params.WindowSize = res;
+	params.Fullscreen = false;
 	params.Stencilbuffer = false;
 	params.WindowSize = res;
 
@@ -93,7 +92,7 @@ int main(int argc, char **argv)
 
     /* Window created */
 
-    irrlicht->getFileSystem()->changeWorkingDirectoryTo("C:\\Gibson\\");
+    irrlicht->getFileSystem()->changeWorkingDirectoryTo("/home/netpipe/Dev/IrrlichtDemos/screenSavers/Gibson");
 
 
 	Ray.hideCursor();
@@ -102,7 +101,7 @@ int main(int argc, char **argv)
 	IPostProc* ppRenderer = new CRendererPostProc( Scene, dimension2du( 1024, 1024 ), true, true, SColor( 255u, 0,10,15 ) );
 	// When setting up the effect, the parameters are:
 	// Input, size of output, effect ID (see CEffectPostProc.h for full list), effect parameters (in this case, blur size)
-	CEffectPostProc* ppBlur = new CEffectPostProc( ppRenderer, dimension2du( 1024, 1024 ), PP_BLOOM, 3, 0.005, 1.5);
+	CEffectPostProc* ppBlur = new CEffectPostProc( ppRenderer, dimension2du( 1024, 1024 ), PP_BLOOM, 1, 0.0005, 1.5);
 	//CEffectPostProc* ppBlur = new CEffectPostProc( ppRenderer, dimension2du( 1024, 1024 ), PP_MOTIONBLUR, 0.1);
 	//CEffectPostProc* ppBlur = new CEffectPostProc( ppRenderer, dimension2du( 1024, 1024 ), PP_BLOOM, 3, 0.005, 1.5);
 	//CEffectPostProc* ppBlur = new CEffectPostProc( ppRenderer, dimension2du( 1024, 1024 ), PP_INVERT);
@@ -132,12 +131,12 @@ int main(int argc, char **argv)
 
 	room.init();
 	//cam.init();
-	pulses.init(1000);
+	pulses.init(100);
 
 	setAmbient(0.4,0.4,0.4, 1);
 
 	cam.init();
-	cam.cam.camera->setFarValue(700);
+	cam.cam.camera->setFarValue(200);
 
 	int lastFPS = Video->getFPS();
 	then = Ray.getTime();
@@ -165,7 +164,7 @@ int main(int argc, char **argv)
 		room.update();
 		pulses.update();
 
-		/*
+
 		for(int x=0; x < KEY_KEY_CODES_COUNT; x++)
 		{
 			if(x != KEY_F10 && key[x])
@@ -176,9 +175,12 @@ int main(int argc, char **argv)
 		}
 		if(kill)
 			break;
-			*/
 
 
+		if(leftMouse)
+			break;
+		else if (rightMouse)
+            break;
 		/*
 		if(leftMouse)
 			creator.addPath(); // add path to list
@@ -206,7 +208,7 @@ int main(int argc, char **argv)
        	Gui->drawAll();
        	Video->endScene();
 
-
+        irrlicht->sleep(50);
        	/*
         fps = Video->getFPS();
 
