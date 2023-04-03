@@ -106,7 +106,8 @@ int main(int argc, char **argv)
 	//CEffectPostProc* ppBlur = new CEffectPostProc( ppRenderer, dimension2du( 1024, 1024 ), PP_BLOOM, 3, 0.005, 1.5);
 	//CEffectPostProc* ppBlur = new CEffectPostProc( ppRenderer, dimension2du( 1024, 1024 ), PP_INVERT);
 	// Change to a better quality - not all shaders will respect these, but they can be used to hint the rendering standard required.
-	ppBlur->setQuality( PPQ_BEST );
+	//ppBlur->setQuality( PPQ_BEST );
+	ppBlur->setQuality( PPQ_FAST );
 	// Options (worst to best): PPQ_CRUDE, PPQ_FAST, PPQ_DEFAULT, PPQ_GOOD, PPQ_BEST
 	// You can also call setOverallQuality( PPQ_WHATEVER ) to change the quality of all effects which are in the chain.
 
@@ -208,7 +209,7 @@ int main(int argc, char **argv)
        	Gui->drawAll();
        	Video->endScene();
 
-        irrlicht->sleep(50);
+        irrlicht->sleep(60);
        	/*
         fps = Video->getFPS();
 
