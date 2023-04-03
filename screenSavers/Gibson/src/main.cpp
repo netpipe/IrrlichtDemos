@@ -92,7 +92,7 @@ int main(int argc, char **argv)
 
     /* Window created */
 
-    irrlicht->getFileSystem()->changeWorkingDirectoryTo("/home/netpipe/Dev/IrrlichtDemos/screenSavers/Gibson");
+    //irrlicht->getFileSystem()->changeWorkingDirectoryTo("/home/netpipe/Dev/IrrlichtDemos/screenSavers/Gibson");
 
 
 	Ray.hideCursor();
