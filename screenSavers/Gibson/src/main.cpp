@@ -60,7 +60,7 @@ int main(int argc, char **argv)
 	params.Bits = 32;
 	params.DriverType = EDT_OPENGL;
 	params.EventReceiver = &rcv;
-	params.Fullscreen = false;
+	params.Fullscreen = true;
 	params.Stencilbuffer = false;
 	params.WindowSize = res;
 

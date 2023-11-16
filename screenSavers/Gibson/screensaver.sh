@@ -5,9 +5,9 @@
 #y = $(xdotool getmouselocation | cut -d ":" -f 3 |cut -d " " -f 1)
 
 exepath=Pong
-exedir=/home/netpipe/Dev/IrrlichtDemos/screenSavers/Gibson/
-#exedir=./
-minutes=1
+#exedir=/home/netpipe/Dev/IrrlichtDemos/screenSavers/Gibson/
+exedir=./
+minutes=15
 seconds=$minutes*60*10
 time=$seconds*100
 

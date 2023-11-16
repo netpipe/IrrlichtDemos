@@ -1,0 +1,159 @@
+header {
+  version { "1.00" }
+  build { "2017.5.29" }
+}
+environment {
+  grid { 1 10 50 50 }
+  lighting {
+    intensity { 1 }
+    ambientintensity { 0.20000 }
+  }
+  framerate { 30 }
+  limitplayback { }
+  film {
+    size { 400 300 }
+    ratio { 4 3 }
+  }
+}
+object { "object01"
+  mesh {
+    name { "mesh01" }
+    base {
+      orientation { (0.01749 -0.22781 -0.62534 0.74615) }
+    }
+    material { " -- default --" }
+    smoothangle { 45 }
+    /* 4 points, 1 faces, 4 uvCoords */
+    materiallist {
+      materialname { " -- default --" }
+    }
+    points {
+      (-18.673 -19.11 18.673) (-6.8563 4.2305 18.672) (18.673 -19.11 18.673) 
+      (18.673 19.11 18.673)
+    }
+    normals {
+      (0 0 1) (0 0 1) (0 0 1) (0 0 1) (0 0 1)
+    }
+    texcoords {
+      (0 0) (0 1) (1 0) (1 1)
+    }
+    faces {
+      4 6 0 0 ( (0 1 0) (1 2 1) (3 4 3) (2 3 2) )
+    }
+  }
+}
+figure { "figure01"
+  bone { "root"
+    length { 10 }
+    bone { "bone01"
+      length { 20.767 }
+      orientation { (-0.26412 -0.18606 -0.24298 0.91465) }
+      dof { "X"  0  0  0  
+        unlimited { }
+      }
+      dof { "Y"  0  0  0  
+        unlimited { }
+      }
+      dof { "Z"  0  0  0  
+        unlimited { }
+      }
+      bone { "test_lig"
+        length { 56.645 }
+        orientation { (0.22379 0.20085 -0.27737 0.91249) }
+        dof { "X"  0  0  0  
+          unlimited { }
+        }
+        dof { "Y"  0  0  0  
+          unlimited { }
+        }
+        dof { "Z"  0  0  0  
+          unlimited { }
+        }
+        influence { 0.25000 8.4967 22.658 0.63316 9.1209 30.357}
+        namedobject { "object01"
+          name { "namedobject01" }
+          base {
+            origin { (25 35 5) }
+            orientation { (-0.00137 -0.44772 -0.63864 0.62584) }
+          }
+          material { " -- default --" }
+          weightedby { "test_lig" }
+        }
+      }
+    }
+  }
+}
+sequence { "sequence01"
+  figure { "figure01" }
+  frames { 40 }
+  
+}
+scene { "scene01"
+  frames { 72 }
+  groundgrid { 1 }
+  shadowbias { 0.00100 }
+  background { 153 153 153 }
+  camera { "camera01"
+    loc { (150 100 200) }
+    orientation { (-0.04877 0.93733 -0.14632 -0.31244) }
+    fov { 60 }
+    number { 1 } 
+  }
+  figureelement { "efigure01" "figure01"
+    loc { (120.58 13.637 0) }
+    scale { 4.953 }
+    castshadow { }
+    receiveshadows { }
+    controller { "joint.bone01-X"
+      track {
+        floatkey { 0 8.5523 10 10 "S" }
+      }
+    }
+    controller { "joint.bone01-Y"
+      track {
+        floatkey { 0 -6.75 10 10 "S" }
+      }
+    }
+    controller { "joint.bone01-Z"
+      track {
+        floatkey { 0 16.509 10 10 "S" }
+      }
+    }
+    controller { "joint.test_lig-X"
+      track {
+        floatkey { 8 -2.553 1.9253 -1.9253 "S" }
+        floatkey { 25 3.223 -0.01287 0.01094 "S" }
+        floatkey { 45 -2.6244 -1.9491 1.9491 "S" }
+      }
+    }
+    controller { "joint.test_lig-Y"
+      track {
+        floatkey { 8 -6.3674 3.6664 -3.6664 "S" }
+        floatkey { 25 4.6319 -0.10931 0.09291 "S" }
+        floatkey { 45 -6.974 -3.8686 3.8686 "S" }
+      }
+    }
+    controller { "joint.test_lig-Z"
+      track {
+        floatkey { 8 -30.235 15.994 -15.994 "S" }
+        floatkey { 25 17.747 -0.51092 0.43428 "S" }
+        floatkey { 45 -33.07 -16.939 16.939 "S" }
+      }
+    }
+    controller { "scale"
+      track {
+        floatkey { 0 3.4556 0.14444 -0.14444 "S" }
+        floatkey { 8 4.953 0.14444 -0.14444 "S" }
+      }
+    }
+    controller { "position"
+      track {
+        pointkey { 0 (0 0 0) (12.044 6.6503 0) (-12.044 -6.6503 0) "S" }
+        pointkey { 8 (36.132 19.951 0) (33.048 3.7376 0) (-7.1455 -0.80812 0) 
+          "S" }
+        pointkey { 45 (120.58 13.637 0) (28.15 -2.1047 0) (-28.15 2.1047 0) "S" 
+        }
+      }
+    }
+  }
+}
