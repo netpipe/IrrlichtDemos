@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="DepthOfField" />
+		<Option title="Irrlicht Pong" />
 		<Option pch_mode="0" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="default">
-				<Option output="./DepthOfField" prefix_auto="0" extension_auto="0" />
+				<Option output="./Pong" prefix_auto="0" extension_auto="0" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Option projectResourceIncludeDirsRelation="1" />
@@ -17,19 +17,25 @@
 			<Add alias="All" targets="default;" />
 		</VirtualTargets>
 		<Compiler>
-			<Add directory="/home/Dev/libs/Irrlicht/include" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
+			<Add directory="/home/Dev/libs/game/OpenCVlibrary/OpenCV-2.0.0/include" />
 		</Compiler>
 		<Linker>
 			<Add library="GL" />
 			<Add library="Irrlicht" />
 			<Add library="Xxf86vm" />
-			<Add directory="/home/Dev/libs/Irrlicht/lib/Linux" />
+			<Add library="cv" />
+			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
+			<Add directory="/home/Dev/libs/game/OpenCVlibrary/OpenCV-2.0.0/lib" />
 		</Linker>
+		<Unit filename="RealisticWater.h" />
+		<Unit filename="ScreenQuad.h" />
+		<Unit filename="engine_sound.h" />
+		<Unit filename="intro.h" />
+		<Unit filename="joystick.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="shadergroup.cpp" />
-		<Unit filename="shadergroup.h" />
-		<Unit filename="shadermaterial.cpp" />
-		<Unit filename="shadermaterial.h" />
+		<Unit filename="players.h" />
+		<Unit filename="savegames.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />
