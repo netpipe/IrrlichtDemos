@@ -22,6 +22,8 @@
 			<Add option="-D_REENTRANT" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/include" />
 			<Add directory="/home/Dev/libs/net/IRC/libircclient/include" />
+			<Add directory="/home/netpipe/Dev/irrlicht-1.8.5/include" />
+			<Add directory="./libircclient/include" />
 		</Compiler>
 		<Linker>
 			<Add library="Irrlicht" />
@@ -35,6 +37,8 @@
 			<Add library="pthread" />
 			<Add directory="/home/Dev/libs/game/Irrlicht-SVN/lib/Linux" />
 			<Add directory="/home/Dev/libs/net/IRC/libircclient/src" />
+			<Add directory="/home/netpipe/Dev/irrlicht-1.8.5/lib/Linux" />
+			<Add directory="./libircclient/src" />
 		</Linker>
 		<Unit filename="Application.cpp" />
 		<Unit filename="Application.h" />
@@ -44,10 +48,6 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="server.cpp" />
 		<Unit filename="server.h" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-			<envvars />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
